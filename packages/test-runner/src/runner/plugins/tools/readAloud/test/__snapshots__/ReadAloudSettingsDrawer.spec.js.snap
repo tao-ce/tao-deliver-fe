@@ -1,0 +1,683 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ReadAloudSettingsDrawer > renders only pitch control if constraints say so 1`] = `
+<body>
+  <div>
+    <div
+      class="read-aloud-settings-drawer"
+    >
+       
+       
+      <div
+        class="control-row"
+      >
+        <label>
+          Pitch
+        </label>
+         
+        <span
+          class="stepper changed-control"
+        >
+          <button
+            aria-label="increase reading pitch"
+            class="icon-bar-btn actionable base-12 secondary circular"
+            title="increase reading pitch"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Plus icon
+              </title>
+              <path
+                d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+              />
+            </svg>
+             
+             
+          </button>
+           
+          <button
+            aria-label="decrease reading pitch"
+            class="icon-bar-btn actionable base-12 secondary circular"
+            title="decrease reading pitch"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ReadAloudSettingsDrawer > renders only speed control if constraints say so 1`] = `
+<body>
+  <div>
+    <div
+      class="read-aloud-settings-drawer"
+    >
+       
+      <div
+        class="control-row"
+      >
+        <label>
+          Speed
+        </label>
+         
+        <span
+          class="stepper changed-control"
+        >
+          <button
+            aria-label="increase reading speed"
+            class="icon-bar-btn actionable base-12 secondary circular"
+            title="increase reading speed"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Plus icon
+              </title>
+              <path
+                d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+              />
+            </svg>
+             
+             
+          </button>
+           
+          <button
+            aria-label="decrease reading speed"
+            class="icon-bar-btn actionable base-12 secondary circular"
+            title="decrease reading speed"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </span>
+      </div>
+       
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ReadAloudSettingsDrawer > renders only voice control if constraints say so 1`] = `
+<body>
+  <div>
+    <div
+      class="read-aloud-settings-drawer"
+    >
+      <div
+        class="control-row"
+      >
+        <label
+          for="voice"
+        >
+          Voice
+        </label>
+         
+        <div
+          class="radio-group grid"
+          style="--rowNum: 1; --colNum: 2;"
+        >
+          <div
+            class="radio"
+          >
+            <input
+              id="tao-option-123"
+              name="voice"
+              type="radio"
+              value="male"
+            />
+             
+            <label
+              class="radio-label"
+              for="tao-option-123"
+            >
+              <svg
+                class="radio-button"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Radio button
+                </title>
+                <circle
+                  class="radio-border"
+                  cx="8"
+                  cy="8"
+                  fill="none"
+                  r="7"
+                  stroke-width="2"
+                />
+              </svg>
+               
+              <span
+                class="radio-label-text"
+              >
+                Male
+              </span>
+            </label>
+             
+          </div>
+          <div
+            class="radio"
+          >
+            <input
+              id="tao-option-123"
+              name="voice"
+              type="radio"
+              value="female"
+            />
+             
+            <label
+              class="radio-label"
+              for="tao-option-123"
+            >
+              <svg
+                class="radio-button"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Radio button
+                </title>
+                <circle
+                  class="radio-check"
+                  cx="8"
+                  cy="8"
+                  r="4"
+                />
+                <circle
+                  class="radio-border"
+                  cx="8"
+                  cy="8"
+                  fill="none"
+                  r="7"
+                  stroke-width="2"
+                />
+              </svg>
+               
+              <span
+                class="radio-label-text"
+              >
+                Female
+              </span>
+            </label>
+             
+          </div>
+        </div>
+      </div>
+       
+       
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ReadAloudSettingsDrawer > renders restoring given toolState 1`] = `
+<body>
+  <div>
+    <div
+      class="read-aloud-settings-drawer"
+    >
+      <div
+        class="control-row"
+      >
+        <label
+          for="voice"
+        >
+          Voice
+        </label>
+         
+        <div
+          class="radio-group grid"
+          style="--rowNum: 1; --colNum: 2;"
+        >
+          <div
+            class="radio"
+          >
+            <input
+              id="tao-option-123"
+              name="voice"
+              type="radio"
+              value="male"
+            />
+             
+            <label
+              class="radio-label"
+              for="tao-option-123"
+            >
+              <svg
+                class="radio-button"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Radio button
+                </title>
+                <circle
+                  class="radio-check"
+                  cx="8"
+                  cy="8"
+                  r="4"
+                />
+                <circle
+                  class="radio-border"
+                  cx="8"
+                  cy="8"
+                  fill="none"
+                  r="7"
+                  stroke-width="2"
+                />
+              </svg>
+               
+              <span
+                class="radio-label-text"
+              >
+                Male
+              </span>
+            </label>
+             
+          </div>
+          <div
+            class="radio"
+          >
+            <input
+              id="tao-option-123"
+              name="voice"
+              type="radio"
+              value="female"
+            />
+             
+            <label
+              class="radio-label"
+              for="tao-option-123"
+            >
+              <svg
+                class="radio-button"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Radio button
+                </title>
+                <circle
+                  class="radio-border"
+                  cx="8"
+                  cy="8"
+                  fill="none"
+                  r="7"
+                  stroke-width="2"
+                />
+              </svg>
+               
+              <span
+                class="radio-label-text"
+              >
+                Female
+              </span>
+            </label>
+             
+          </div>
+        </div>
+      </div>
+       
+      <div
+        class="control-row"
+      >
+        <label>
+          Speed
+        </label>
+         
+        <span
+          class="stepper changed-control"
+        >
+          <button
+            aria-disabled="true"
+            aria-label="increase reading speed"
+            class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+            title="increase reading speed"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Plus icon
+              </title>
+              <path
+                d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+              />
+            </svg>
+             
+             
+          </button>
+           
+          <button
+            aria-label="decrease reading speed"
+            class="icon-bar-btn actionable base-12 secondary circular"
+            title="decrease reading speed"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </span>
+      </div>
+       
+      <div
+        class="control-row"
+      >
+        <label>
+          Pitch
+        </label>
+         
+        <span
+          class="stepper"
+        >
+          <button
+            aria-label="increase reading pitch"
+            class="icon-bar-btn actionable base-12 secondary circular"
+            title="increase reading pitch"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Plus icon
+              </title>
+              <path
+                d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+              />
+            </svg>
+             
+             
+          </button>
+           
+          <button
+            aria-disabled="true"
+            aria-label="decrease reading pitch"
+            class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+            title="decrease reading pitch"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ReadAloudSettingsDrawer > renders with default props & toolState 1`] = `
+<body>
+  <div>
+    <div
+      class="read-aloud-settings-drawer"
+    >
+      <div
+        class="control-row"
+      >
+        <label
+          for="voice"
+        >
+          Voice
+        </label>
+         
+        <div
+          class="radio-group grid"
+          style="--rowNum: 1; --colNum: 2;"
+        >
+          <div
+            class="radio"
+          >
+            <input
+              id="tao-option-123"
+              name="voice"
+              type="radio"
+              value="male"
+            />
+             
+            <label
+              class="radio-label"
+              for="tao-option-123"
+            >
+              <svg
+                class="radio-button"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Radio button
+                </title>
+                <circle
+                  class="radio-border"
+                  cx="8"
+                  cy="8"
+                  fill="none"
+                  r="7"
+                  stroke-width="2"
+                />
+              </svg>
+               
+              <span
+                class="radio-label-text"
+              >
+                Male
+              </span>
+            </label>
+             
+          </div>
+          <div
+            class="radio"
+          >
+            <input
+              id="tao-option-123"
+              name="voice"
+              type="radio"
+              value="female"
+            />
+             
+            <label
+              class="radio-label"
+              for="tao-option-123"
+            >
+              <svg
+                class="radio-button"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Radio button
+                </title>
+                <circle
+                  class="radio-check"
+                  cx="8"
+                  cy="8"
+                  r="4"
+                />
+                <circle
+                  class="radio-border"
+                  cx="8"
+                  cy="8"
+                  fill="none"
+                  r="7"
+                  stroke-width="2"
+                />
+              </svg>
+               
+              <span
+                class="radio-label-text"
+              >
+                Female
+              </span>
+            </label>
+             
+          </div>
+        </div>
+      </div>
+       
+      <div
+        class="control-row"
+      >
+        <label>
+          Speed
+        </label>
+         
+        <span
+          class="stepper changed-control"
+        >
+          <button
+            aria-label="increase reading speed"
+            class="icon-bar-btn actionable base-12 secondary circular"
+            title="increase reading speed"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Plus icon
+              </title>
+              <path
+                d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+              />
+            </svg>
+             
+             
+          </button>
+           
+          <button
+            aria-label="decrease reading speed"
+            class="icon-bar-btn actionable base-12 secondary circular"
+            title="decrease reading speed"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </span>
+      </div>
+       
+      <div
+        class="control-row"
+      >
+        <label>
+          Pitch
+        </label>
+         
+        <span
+          class="stepper changed-control"
+        >
+          <button
+            aria-label="increase reading pitch"
+            class="icon-bar-btn actionable base-12 secondary circular"
+            title="increase reading pitch"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Plus icon
+              </title>
+              <path
+                d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+              />
+            </svg>
+             
+             
+          </button>
+           
+          <button
+            aria-label="decrease reading pitch"
+            class="icon-bar-btn actionable base-12 secondary circular"
+            title="decrease reading pitch"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;

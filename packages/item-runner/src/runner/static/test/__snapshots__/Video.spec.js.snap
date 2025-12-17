@@ -1,0 +1,129 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Video > rendering > renders correctly with HTML attributes 1`] = `
+<body>
+  <div>
+    <div
+      aria-label="foo video"
+      class="qti-video-container not-printable fancy highlighted"
+      data-foo="bar"
+    >
+       
+      <div
+        aria-labelledby="tao-feedback-123"
+        class="player mode-video"
+        dir="ltr"
+        style="width: 600px; height: auto; --play-pause-button-display: none; --volume-slider-width: 18.5rem; --volume-input-display: block;"
+      >
+        <video
+          controls=""
+          crossorigin="anonymous"
+          id="tao-player-123"
+        />
+      </div>
+       
+      <span
+        class="visually-hidden"
+        id="tao-feedback-123"
+      >
+        media player
+      </span>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Video > rendering > renders correctly with a source and type 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-video-container not-printable"
+    >
+       
+      <div
+        aria-labelledby="tao-feedback-123"
+        class="player mode-video"
+        dir="ltr"
+        style="width: 100%; height: auto; --play-pause-button-display: none; --volume-slider-width: 18.5rem; --volume-input-display: block;"
+      >
+        <video
+          controls=""
+          crossorigin="anonymous"
+          id="tao-player-123"
+        />
+      </div>
+       
+      <span
+        class="visually-hidden"
+        id="tao-feedback-123"
+      >
+        media player
+      </span>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Video > rendering > renders correctly with min props 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-video-container not-printable"
+    >
+       
+      <div
+        aria-labelledby="tao-feedback-123"
+        class="player mode-video"
+        dir="ltr"
+        style="width: 100%; height: auto; --play-pause-button-display: none; --volume-slider-width: 18.5rem; --volume-input-display: block;"
+      >
+        <video
+          controls=""
+          crossorigin="anonymous"
+          id="tao-player-123"
+        />
+      </div>
+       
+      <span
+        class="visually-hidden"
+        id="tao-feedback-123"
+      >
+        media player
+      </span>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Video > rendering > resolves src through the asset manager, sets "lang" 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-video-container not-printable"
+    >
+       
+      <div
+        aria-labelledby="tao-feedback-123"
+        class="player mode-video"
+        dir="ltr"
+        style="width: 100%; height: auto; --play-pause-button-display: none; --volume-slider-width: 18.5rem; --volume-input-display: block;"
+      >
+        <video
+          controls=""
+          crossorigin="anonymous"
+          id="tao-player-123"
+        />
+      </div>
+       
+      <span
+        class="visually-hidden"
+        id="tao-feedback-123"
+        lang="ar-arb"
+      >
+        media player
+      </span>
+    </div>
+    
+  </div>
+</body>
+`;

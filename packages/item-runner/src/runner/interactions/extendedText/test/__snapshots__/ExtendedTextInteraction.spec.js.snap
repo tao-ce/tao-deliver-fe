@@ -1,0 +1,1332 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"base":2,"baseType":"integer"}, 10 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+/>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"base":2,"baseType":"integer"}, 10 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+/>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"base":2,"baseType":"integer"}, 12 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+/>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"base":2,"baseType":"integer"}, 12 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+/>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"baseType":"float"}, 10.2 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+/>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"baseType":"float"}, 10.2 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+/>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"baseType":"float"}, 10.2a 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+/>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"baseType":"float"}, 10.2a 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+/>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"expectedLength":1}, 1 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <strong>
+        1
+      </strong>
+       character(s) typed (recommended: 1).
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"expectedLength":1}, 1 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <strong>
+        1
+      </strong>
+       character(s) typed (recommended: 1).
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"expectedLength":3,"classes":"qti-counter-down"}, abcdef 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <strong>
+        -3
+      </strong>
+       characters left.
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"expectedLength":3,"classes":"qti-counter-down"}, abcdef 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <strong>
+        -3
+      </strong>
+       characters left.
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"expectedLength":5,"base":2,"baseType":"integer","patternMask":"[0-1]*","dataAttrs":{"data-patternmask-message":"Only binary number is allowed"},"required":true}, 1002 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        4
+      </strong>
+       character(s) typed (recommended: 5).
+    </span>
+     
+  </li>
+  <li
+    aria-live="polite"
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      Only binary number is allowed
+    </span>
+     
+  </li>
+  <li
+    aria-live="polite"
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      Answer required.
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"expectedLength":5,"base":2,"baseType":"integer","patternMask":"[0-1]*","dataAttrs":{"data-patternmask-message":"Only binary number is allowed"},"required":true}, 1002 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        4
+      </strong>
+       character(s) typed (recommended: 5).
+    </span>
+     
+  </li>
+  <li
+    aria-live="polite"
+    class="feedback error"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Warning icon
+        </title>
+        <path
+          d="M8 1a7 7 0 11-7 7 7 7 0 017-7m0-1a8 8 0 108 8 8 8 0 00-8-8z"
+        />
+        <path
+          d="M7 3h2v6H7zm0 8h2v2H7z"
+        />
+      </svg>
+    </span>
+     
+    <span>
+      Only binary number is allowed
+    </span>
+     
+  </li>
+  <li
+    aria-live="polite"
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      Answer required.
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"expectedLength":5,"classes":"qti-counter-up"}, a 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <strong>
+        1
+      </strong>
+       character(s) typed (recommended: 5).
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"expectedLength":5,"classes":"qti-counter-up"}, a 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <strong>
+        1
+      </strong>
+       character(s) typed (recommended: 5).
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"expectedLength":8,"expectedLines":10},  1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <strong>
+        0
+      </strong>
+       character(s) typed (recommended: 8).
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"expectedLength":8,"expectedLines":10},  2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <strong>
+        0
+      </strong>
+       character(s) typed (recommended: 8).
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"expectedLines":2}, abc 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <strong>
+        3
+      </strong>
+       character(s) typed (recommended: 144).
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"expectedLines":2}, abc 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <strong>
+        3
+      </strong>
+       character(s) typed (recommended: 144).
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"expectedLines":10,"classes":"qti-counter-down"}, abc 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <strong>
+        717
+      </strong>
+       characters left.
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"expectedLines":10,"classes":"qti-counter-down"}, abc 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <strong>
+        717
+      </strong>
+       characters left.
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":"(?:(?:[^\\\\s\\\\:\\\\!\\\\?\\\\;\\\\…\\\\€]+)[\\\\s\\\\:\\\\!\\\\?\\\\;\\\\…\\\\€]*){0,3}"}, one'two three four 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <strong>
+        3
+      </strong>
+       / 3 word(s) typed
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":"(?:(?:[^\\\\s\\\\:\\\\!\\\\?\\\\;\\\\…\\\\€]+)[\\\\s\\\\:\\\\!\\\\?\\\\;\\\\…\\\\€]*){0,3}"}, one'two three four 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <strong>
+        3
+      </strong>
+       / 3 word(s) typed
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":"(?:(?:[^\\\\s\\\\:\\\\!\\\\?\\\\;\\\\…\\\\€]+)[\\\\s\\\\:\\\\!\\\\?\\\\;\\\\…\\\\€]*){0,3}"}, one:two three four 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    aria-live="assertive"
+    class="feedback error"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Warning icon
+        </title>
+        <path
+          d="M8 1a7 7 0 11-7 7 7 7 0 017-7m0-1a8 8 0 108 8 8 8 0 00-8-8z"
+        />
+        <path
+          d="M7 3h2v6H7zm0 8h2v2H7z"
+        />
+      </svg>
+    </span>
+     
+    <span>
+      Maximum words reached (maximum: 3)
+    </span>
+     
+  </li>
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        4
+      </strong>
+       / 3 word(s) typed
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":"(?:(?:[^\\\\s\\\\:\\\\!\\\\?\\\\;\\\\…\\\\€]+)[\\\\s\\\\:\\\\!\\\\?\\\\;\\\\…\\\\€]*){0,3}"}, one:two three four 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    aria-live="assertive"
+    class="feedback error"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Warning icon
+        </title>
+        <path
+          d="M8 1a7 7 0 11-7 7 7 7 0 017-7m0-1a8 8 0 108 8 8 8 0 00-8-8z"
+        />
+        <path
+          d="M7 3h2v6H7zm0 8h2v2H7z"
+        />
+      </svg>
+    </span>
+     
+    <span>
+      Maximum words reached (maximum: 3)
+    </span>
+     
+  </li>
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        4
+      </strong>
+       / 3 word(s) typed
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":".*"},  1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+/>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":".*"},  2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+/>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":"[0-9]*","dataAttrs":{"data-patternmask-message":"Only numbers allowed"}},  1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    aria-live="polite"
+    class="feedback"
+  >
+     
+    <span>
+      Only numbers allowed
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":"[0-9]*","dataAttrs":{"data-patternmask-message":"Only numbers allowed"}},  2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    aria-live="polite"
+    class="feedback"
+  >
+     
+    <span>
+      Only numbers allowed
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":"[0-9]*","dataAttrs":{"data-patternmask-message":"Only numbers allowed"}}, ab 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    aria-live="polite"
+    class="feedback"
+  >
+     
+    <span>
+      Only numbers allowed
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":"[0-9]*","dataAttrs":{"data-patternmask-message":"Only numbers allowed"}}, ab 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    aria-live="polite"
+    class="feedback error"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Warning icon
+        </title>
+        <path
+          d="M8 1a7 7 0 11-7 7 7 7 0 017-7m0-1a8 8 0 108 8 8 8 0 00-8-8z"
+        />
+        <path
+          d="M7 3h2v6H7zm0 8h2v2H7z"
+        />
+      </svg>
+    </span>
+     
+    <span>
+      Only numbers allowed
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":"[0-9]*"}, ab 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+/>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":"[0-9]*"}, ab 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    aria-live="polite"
+    class="feedback error"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Warning icon
+        </title>
+        <path
+          d="M8 1a7 7 0 11-7 7 7 7 0 017-7m0-1a8 8 0 108 8 8 8 0 00-8-8z"
+        />
+        <path
+          d="M7 3h2v6H7zm0 8h2v2H7z"
+        />
+      </svg>
+    </span>
+     
+    <span>
+      Invalid format, please refer to the instructions.
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":"^[\\\\s\\\\S]{0,5}$"},  1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <span
+        aria-label="0 out of 5 characters typed"
+      >
+        <strong>
+          0
+        </strong>
+         / 5 character(s) typed
+      </span>
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":"^[\\\\s\\\\S]{0,5}$"},  2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <span
+        aria-label="0 out of 5 characters typed"
+      >
+        <strong>
+          0
+        </strong>
+         / 5 character(s) typed
+      </span>
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":"^[\\\\s\\\\S]{0,5}$"}, ab cd 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <span
+        aria-label="5 out of 5 characters typed"
+      >
+        <strong>
+          5
+        </strong>
+         / 5 character(s) typed
+      </span>
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"patternMask":"^[\\\\s\\\\S]{0,5}$"}, ab cd 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    class="feedback"
+  >
+     
+    <span>
+      <span
+        aria-label="5 out of 5 characters typed"
+      >
+        <strong>
+          5
+        </strong>
+         / 5 character(s) typed
+      </span>
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"required":true},  1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    aria-live="polite"
+    class="feedback"
+  >
+     
+    <span>
+      Answer required.
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"required":true},  2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    aria-live="polite"
+    class="feedback error"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Warning icon
+        </title>
+        <path
+          d="M8 1a7 7 0 11-7 7 7 7 0 017-7m0-1a8 8 0 108 8 8 8 0 00-8-8z"
+        />
+        <path
+          d="M7 3h2v6H7zm0 8h2v2H7z"
+        />
+      </svg>
+    </span>
+     
+    <span>
+      Answer required.
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"required":true}, cd 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    aria-live="polite"
+    class="feedback"
+  >
+     
+    <span>
+      Answer required.
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {"required":true}, cd 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+>
+  <li
+    aria-live="polite"
+    class="feedback"
+  >
+     
+    <span>
+      Answer required.
+    </span>
+     
+  </li>
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {}, 123 1`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+/>
+`;
+
+exports[`ExtendedTextInteraction > has correct feedbacks {}, 123 2`] = `
+<ul
+  class="feedbacks do-not-read"
+  dir="ltr"
+  id="tao-extendedTextInteraction-123"
+  lang="nb-NO"
+/>
+`;
+
+exports[`ExtendedTextInteraction > maxWords patternMask (plain text) with constraint class > can paste text if empty, but words truncated to maxWords, stays valid 1`] = `" 0 / 4 word(s) typed "`;
+
+exports[`ExtendedTextInteraction > maxWords patternMask (plain text) with constraint class > can paste text if empty, but words truncated to maxWords, stays valid 2`] = `" 4 / 4 word(s) typed "`;
+
+exports[`ExtendedTextInteraction > maxWords patternMask (plain text) with constraint class > can paste text if it won't exceed maxWords, stays valid 1`] = `" 2 / 4 word(s) typed "`;
+
+exports[`ExtendedTextInteraction > maxWords patternMask (plain text) with constraint class > can paste text if it won't exceed maxWords, stays valid 2`] = `" 4 / 4 word(s) typed "`;
+
+exports[`ExtendedTextInteraction > maxWords patternMask (plain text) with constraint class > cannot paste anything that would exceed maxWords, stays valid 1`] = `" 4 / 4 word(s) typed "`;
+
+exports[`ExtendedTextInteraction > maxWords patternMask (plain text) with constraint class > cannot paste anything that would exceed maxWords, stays valid 2`] = `" 4 / 4 word(s) typed "`;
+
+exports[`ExtendedTextInteraction > maxWords patternMask (plain text) with constraint class > cannot type anything that would exceed maxWords, stays valid 1`] = `" 4 / 4 word(s) typed "`;
+
+exports[`ExtendedTextInteraction > maxWords patternMask (plain text) with constraint class > cannot type anything that would exceed maxWords, stays valid 2`] = `" 4 / 4 word(s) typed "`;
+
+exports[`ExtendedTextInteraction > renders interaction with props and format plain 1`] = `
+<body>
+  <div>
+    <div
+      ariabar="baz"
+      ariafoo="12"
+      class="qti-interaction qti-blockInteraction qti-extendedTextInteraction foo bar baz"
+      data-baz="24"
+      data-foo="bar"
+      data-format="plain"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+    >
+       
+      <div
+        aria-controls="tao-extendedTextInteraction-123"
+        class="do-not-read has-feedbacks auto-height"
+        style="
+            --control-default-height: calc(
+                var(--base-control-height) - 0px - 0 - var(--feedbacks-margin-top)
+            );
+            --rows-count: null
+        "
+      >
+        <label
+          class="fullwidth"
+        >
+          <div
+            class="label-text visually-hidden"
+          >
+            Your answer
+             
+          </div>
+           
+          <div
+            class="positioning-wrapper"
+          >
+            <textarea
+              class="resize-vertical"
+              cols="25"
+              disabled=""
+              id="tao-extendedText-editor-123"
+              placeholder="some placeholder"
+              required=""
+              spellcheck="true"
+            />
+          </div>
+        </label>
+         
+        <label
+          for="tao-extendedText-editor-123"
+        >
+          <ul
+            class="feedbacks do-not-read"
+            dir="ltr"
+            id="tao-extendedTextInteraction-123"
+            lang="nb-NO"
+          >
+            <li
+              aria-live="polite"
+              class="feedback"
+            >
+               
+              <span>
+                Answer required.
+              </span>
+               
+            </li>
+          </ul>
+        </label>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`ExtendedTextInteraction > renders interaction with props and format preformatted 1`] = `
+<body>
+  <div>
+    <div
+      ariabar="baz"
+      ariafoo="12"
+      class="qti-interaction qti-blockInteraction qti-extendedTextInteraction foo bar baz"
+      data-baz="24"
+      data-foo="bar"
+      data-format="preformatted"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+    >
+       
+      <div
+        aria-controls="tao-extendedTextInteraction-123"
+        class="do-not-read has-feedbacks auto-height"
+        style="
+            --control-default-height: calc(
+                var(--base-control-height) - 0px - 0 - var(--feedbacks-margin-top)
+            );
+            --rows-count: null
+        "
+      >
+        <label
+          class="fullwidth"
+        >
+          <div
+            class="label-text visually-hidden"
+          >
+            Your answer
+             
+          </div>
+           
+          <div
+            class="positioning-wrapper"
+          >
+            <textarea
+              class="resize-vertical"
+              cols="25"
+              disabled=""
+              id="tao-extendedText-editor-123"
+              placeholder="some placeholder"
+              required=""
+              spellcheck="true"
+            />
+          </div>
+        </label>
+         
+        <label
+          for="tao-extendedText-editor-123"
+        >
+          <ul
+            class="feedbacks do-not-read"
+            dir="ltr"
+            id="tao-extendedTextInteraction-123"
+            lang="nb-NO"
+          >
+            <li
+              aria-live="polite"
+              class="feedback"
+            >
+               
+              <span>
+                Answer required.
+              </span>
+               
+            </li>
+          </ul>
+        </label>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`ExtendedTextInteraction > renders interaction with props and format xhtml 1`] = `
+<body>
+  <div>
+    <div
+      ariabar="baz"
+      ariafoo="12"
+      class="qti-interaction qti-blockInteraction qti-extendedTextInteraction foo bar baz"
+      data-baz="24"
+      data-foo="bar"
+      data-format="xhtml"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+    >
+       
+      <div
+        aria-controls="tao-extendedTextInteraction-123"
+        class="do-not-read has-feedbacks auto-height"
+        style="
+            --control-default-height: calc(
+                var(--base-control-height) - 0px - 0 - var(--feedbacks-margin-top)
+            );
+            --rows-count: null
+        "
+      >
+        <div
+          class="cke-wrapper resize-vertical disabled required"
+          style="--min-height: calc(4rem + 3 * var(--row-height))"
+        >
+          <textarea
+            aria-label="Your answer"
+            aria-required="true"
+            disabled=""
+            id="tao-texteditor-123"
+            maxlength="20000"
+            name="Text editor"
+            placeholder="some placeholder"
+            required=""
+            spellcheck="true"
+          />
+        </div>
+         
+        <label
+          for="tao-extendedText-editor-123"
+        >
+          <ul
+            class="feedbacks do-not-read"
+            dir="ltr"
+            id="tao-extendedTextInteraction-123"
+            lang="nb-NO"
+          >
+            <li
+              aria-live="polite"
+              class="feedback"
+            >
+               
+              <span>
+                Answer required.
+              </span>
+               
+            </li>
+          </ul>
+        </label>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`ExtendedTextInteraction > renders prompt 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-blockInteraction qti-extendedTextInteraction"
+    >
+      <div
+        class="qti-prompt cf"
+      >
+        Fill out the input
+        
+        
+      </div>
+       
+      <div
+        aria-controls="tao-extendedTextInteraction-123"
+        class="do-not-read auto-height"
+        style="
+            --control-default-height: calc(
+                var(--base-control-height) - 0px - 0 - var(--feedbacks-margin-top)
+            );
+            --rows-count: null
+        "
+      >
+        <label
+          class="fullwidth"
+        >
+          <div
+            class="label-text visually-hidden"
+          >
+            Your answer
+             
+          </div>
+           
+          <div
+            class="positioning-wrapper"
+          >
+            <textarea
+              class="resize-vertical"
+              cols="25"
+              id="tao-extendedText-editor-123"
+              spellcheck="true"
+            />
+          </div>
+        </label>
+         
+        <label
+          for="tao-extendedText-editor-123"
+        >
+          <ul
+            class="feedbacks do-not-read"
+            dir="ltr"
+            id="tao-extendedTextInteraction-123"
+            lang="nb-NO"
+          />
+        </label>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`ExtendedTextInteraction > word & character count > wordcount with maxWords patternMask (plain text) 1`] = `" 4 / 4 word(s) typed "`;
+
+exports[`ExtendedTextInteraction > word & character count > wordcount with maxWords patternMask (plain text) 2`] = `"Warning icon Maximum words reached (maximum: 4) • 5 / 4 word(s) typed "`;

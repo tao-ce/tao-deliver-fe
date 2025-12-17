@@ -1,0 +1,134 @@
+{
+    "testContext": {
+        "state": 1,
+        "navigationMode": 1,
+        "submissionMode": 0,
+        "remainingAttempts": -1,
+        "isAdaptive": false,
+        "isLinear": false,
+        "isTimeout": false,
+        "itemIdentifier": "item2",
+        "attempt": 1,
+        "itemSessionState": 1,
+        "isCatAdaptive": false,
+        "needMapUpdate": false,
+        "isLast": false,
+        "itemPosition": 1,
+        "itemFlagged": false,
+        "itemAnswered": false,
+        "timeConstraints": [],
+        "testPartId": "testPart-1",
+        "sectionId": "assessmentSection-1",
+        "sectionTitle": "Section 1",
+        "numberItems": 3,
+        "numberCompleted": 1,
+        "numberPresented": 1,
+        "considerProgress": true,
+        "isDeepestSectionVisible": true,
+        "canMoveBackward": true,
+        "numberRubrics": 0,
+        "enableAllowSkipping": true,
+        "allowSkipping": true,
+        "enableValidateResponses": true,
+        "validateResponses": false,
+        "hasFeedbacks": false,
+        "options": {
+            "allowComment": false,
+            "allowSkipping": true,
+            "exitButton": false,
+            "logoutButton": true,
+            "validateResponses": false,
+            "sectionPause": false
+        },
+        "securePauseStateRequired": false
+    },
+    "testMap": {
+        "scope": "test",
+        "parts": {
+            "testPart-1": {
+                "id": "testPart-1",
+                "label": "testPart-1",
+                "position": 0,
+                "isLinear": false,
+                "timeConstraint": null,
+                "sections": {
+                    "assessmentSection-1": {
+                        "id": "assessmentSection-1",
+                        "label": "Section 1",
+                        "isCatAdaptive": false,
+                        "position": 0,
+                        "timeConstraint": null,
+                        "items": {
+                            "item1": {
+                                "id": "item1",
+                                "label": "olga",
+                                "position": 0,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": true,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item2": {
+                                "id": "item2",
+                                "label": "andrey",
+                                "position": 1,
+                                "occurrence": 0,
+                                "remainingAttempts": 5,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": ["x-tao-option-eliminator", "x-tao-option-highlighter"],
+                                "informational": false
+                            },
+                            "item3": {
+                                "id": "item3",
+                                "label": "martin",
+                                "position": 2,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            }
+                        },
+                        "stats": {
+                            "questions": 3,
+                            "answered": 1,
+                            "flagged": 1,
+                            "viewed": 2,
+                            "total": 3,
+                            "questionsViewed": 2
+                        }
+                    }
+                },
+                "stats": {
+                    "questions": 3,
+                    "answered": 1,
+                    "flagged": 1,
+                    "viewed": 2,
+                    "total": 3,
+                    "questionsViewed": 2
+                }
+            }
+        },
+        "title": "Fake Test",
+        "identifier": "test-1",
+        "className": "assessmentTest",
+        "toolName": "tao",
+        "exclusivelyLinear": false,
+        "hasTimeLimits": false,
+        "stats": {
+            "questions": 3,
+            "answered": 1,
+            "flagged": 1,
+            "viewed": 2,
+            "total": 3,
+            "questionsViewed": 2
+        }
+    }
+}

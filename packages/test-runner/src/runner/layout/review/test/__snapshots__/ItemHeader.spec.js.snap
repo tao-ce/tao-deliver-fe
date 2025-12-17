@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ItemHeader component > Renders correctly with title prop 1`] = `
+<body>
+  <div>
+    <header
+      class="item-header"
+    >
+      <h3>
+        Item du jour
+      </h3>
+    </header>
+  </div>
+</body>
+`;

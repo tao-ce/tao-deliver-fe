@@ -1,0 +1,552 @@
+{
+    "success": true,
+    "displayFeedbacks": true,
+    "feedbacks": {
+        "responsedeclaration_65018d70098f9236679881": {
+            "mapping": [],
+            "areaMapping": [],
+            "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+            "correctResponses": ["choice_1", "choice_2"],
+            "defaultValue": [],
+            "mappingAttributes": {
+                "defaultValue": 0
+            },
+            "feedbackRules": {
+                "response_simplefeedbackrule_65018d700a568149751486": {
+                    "serial": "response_simplefeedbackrule_65018d700a568149751486",
+                    "qtiClass": "_simpleFeedbackRule",
+                    "comparedOutcome": "responsedeclaration_65018d70098f9236679881",
+                    "comparedValue": 0,
+                    "condition": "correct",
+                    "feedbackOutcome": "outcomedeclaration_65018d7009a00351142772",
+                    "feedbackThen": "feedback_modalfeedback_65018d7009a46890982902",
+                    "feedbackElse": "feedback_modalfeedback_65018d7009c67703365005"
+                }
+            }
+        },
+        "responsedeclaration_65018d700994a002891123": {
+            "mapping": [],
+            "areaMapping": [],
+            "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+            "correctResponses": [],
+            "defaultValue": [],
+            "mappingAttributes": {
+                "defaultValue": 0
+            },
+            "feedbackRules": []
+        },
+        "responsedeclaration_65018d700996b769046350": {
+            "mapping": [],
+            "areaMapping": [],
+            "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+            "correctResponses": [],
+            "defaultValue": [],
+            "mappingAttributes": {
+                "defaultValue": 0
+            },
+            "feedbackRules": []
+        },
+        "responsedeclaration_65018d7009988404862082": {
+            "mapping": [],
+            "areaMapping": [],
+            "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+            "correctResponses": ["Iroha-uta"],
+            "defaultValue": [],
+            "mappingAttributes": {
+                "defaultValue": 0
+            },
+            "feedbackRules": {
+                "response_simplefeedbackrule_65018d700a663925577273": {
+                    "serial": "response_simplefeedbackrule_65018d700a663925577273",
+                    "qtiClass": "_simpleFeedbackRule",
+                    "comparedOutcome": "responsedeclaration_65018d7009988404862082",
+                    "comparedValue": 0,
+                    "condition": "incorrect",
+                    "feedbackOutcome": "outcomedeclaration_65018d7009a13248611469",
+                    "feedbackThen": "feedback_modalfeedback_65018d7009cc3249537702",
+                    "feedbackElse": ""
+                }
+            }
+        },
+        "feedback_modalfeedback_65018d7009a46890982902": {
+            "identifier": "feedbackModal_1",
+            "serial": "feedback_modalfeedback_65018d7009a46890982902",
+            "qtiClass": "modalFeedback",
+            "attributes": {
+                "identifier": "feedbackModal_1",
+                "outcomeIdentifier": "FEEDBACK_1",
+                "showHide": "show",
+                "title": "Some title, yes"
+            },
+            "body": {
+                "serial": "container_containerstatic_65018d7009a6e758184578",
+                "body": "\n    <div class=\"x-tao-wrapper x-tao-relatedOutcome-RESPONSE\"><em>Some</em><strong>text</strong>, yes, </div>\n    <div class=\"x-tao-wrapper x-tao-relatedOutcome-RESPONSE\">then table</div>\n    <div class=\"x-tao-wrapper x-tao-relatedOutcome-RESPONSE\">\n      {{table_65018d7009aed081494088}}\n      <p>then stimulus</p>\n      <p> </p>\n      <div class=\"tao-xjl5dyodm\">\n    \n        <div class=\"grid-row\"><div class=\"col-12\"><div class=\"colrow\"><p>\n{{img_65018d7009bc9676081630}}\n\n\n\n <span> </span></p></div></div></div><div class=\"grid-row\"><div class=\"col-12\"><div class=\"custom-text-box tao-a15ppo59w\">\n<p>Recent evidence suggests that the more time young people spend on social media, the more likely they are to be depressed. Researchers from the University of Pittsburgh asked 1,787 Americans aged between 19 and 32 to track the time they spent on social media. Participants were also assessed for depression using a questionnaire. The results showed that participants who used social media very frequently were more than twice as likely to be depressed as those who used it less often.</p>\n</div></div></div>\n    \n</div>\n    </div>\n    <div class=\"x-tao-wrapper x-tao-relatedOutcome-RESPONSE\"> then image {{img_65018d7009be2280003150}} then media</div>\n    <div class=\"x-tao-wrapper x-tao-relatedOutcome-RESPONSE\">\n      {{qtiobject_65018d7009b9e935104115}}\n    </div>\n    <div class=\"x-tao-wrapper x-tao-relatedOutcome-RESPONSE\"> </div>\n  ",
+                "elements": {
+                    "table_65018d7009aed081494088": {
+                        "serial": "table_65018d7009aed081494088",
+                        "qtiClass": "table",
+                        "attributes": [],
+                        "body": {
+                            "serial": "container_containertable_65018d7009af5883403085",
+                            "body": "\n        <tbody>\n          <tr>\n            <td>aa</td>\n            <td>dd</td>\n          </tr>\n          <tr>\n            <td>bb</td>\n            <td>ee</td>\n          </tr>\n          <tr>\n            <td>cc</td>\n            <td>ff</td>\n          </tr>\n        </tbody>\n      ",
+                            "elements": [],
+                            "attributes": [],
+                            "debug": {
+                                "relatedItem": "item_65018d7009869445189127"
+                            }
+                        },
+                        "debug": {
+                            "relatedItem": "item_65018d7009869445189127"
+                        }
+                    },
+                    "qtiobject_65018d7009b9e935104115": {
+                        "serial": "qtiobject_65018d7009b9e935104115",
+                        "qtiClass": "object",
+                        "attributes": {
+                            "data": "shortvideo.mp4",
+                            "type": "video/mp4",
+                            "width": "100%"
+                        },
+                        "debug": {
+                            "relatedItem": "item_65018d7009869445189127"
+                        }
+                    },
+                    "img_65018d7009bc9676081630": {
+                        "serial": "img_65018d7009bc9676081630",
+                        "qtiClass": "img",
+                        "attributes": {
+                            "src": "1e67f6415de7a58b69316.jpg",
+                            "alt": "Screenshot 2023-08-08 at 08.32.38.jpg",
+                            "width": "100%",
+                            "type": "image/jpg;UTF-8"
+                        },
+                        "debug": {
+                            "relatedItem": "item_65018d7009869445189127"
+                        }
+                    },
+                    "img_65018d7009be2280003150": {
+                        "serial": "img_65018d7009be2280003150",
+                        "qtiClass": "img",
+                        "attributes": {
+                            "src": "1e67f6415de7a58b69316.jpg",
+                            "alt": "Screenshot 2023-08-08 at 08.32.38.jpg",
+                            "width": "100%",
+                            "type": "image/jpg"
+                        },
+                        "debug": {
+                            "relatedItem": "item_65018d7009869445189127"
+                        }
+                    }
+                },
+                "attributes": [],
+                "debug": {
+                    "relatedItem": "item_65018d7009869445189127"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_65018d7009869445189127"
+            }
+        },
+        "feedback_modalfeedback_65018d7009c67703365005": {
+            "identifier": "feedbackModal_2",
+            "serial": "feedback_modalfeedback_65018d7009c67703365005",
+            "qtiClass": "modalFeedback",
+            "attributes": {
+                "identifier": "feedbackModal_2",
+                "outcomeIdentifier": "FEEDBACK_1",
+                "showHide": "show",
+                "title": "Oh no"
+            },
+            "body": {
+                "serial": "container_containerstatic_65018d7009c89783584773",
+                "body": "\n    <div class=\"x-tao-wrapper x-tao-relatedOutcome-RESPONSE\">No-no</div>\n  ",
+                "elements": [],
+                "attributes": [],
+                "debug": {
+                    "relatedItem": "item_65018d7009869445189127"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_65018d7009869445189127"
+            }
+        },
+        "feedback_modalfeedback_65018d7009cc3249537702": {
+            "identifier": "feedbackModal_3",
+            "serial": "feedback_modalfeedback_65018d7009cc3249537702",
+            "qtiClass": "modalFeedback",
+            "attributes": {
+                "identifier": "feedbackModal_3",
+                "outcomeIdentifier": "FEEDBACK_2",
+                "showHide": "show",
+                "title": "Not correct, but it's IF condition"
+            },
+            "body": {
+                "serial": "container_containerstatic_65018d7009ce1985310688",
+                "body": "\n    <div class=\"x-tao-wrapper x-tao-relatedOutcome-RESPONSE_3\">Hmm!</div>\n  ",
+                "elements": [],
+                "attributes": [],
+                "debug": {
+                    "relatedItem": "item_65018d7009869445189127"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_65018d7009869445189127"
+            }
+        },
+        "response_templatesdriven_65018d700a67e537891822": {
+            "processingType": "templateDriven",
+            "responseRules": [
+                {
+                    "qtiClass": "responseCondition",
+                    "responseIf": {
+                        "qtiClass": "responseIf",
+                        "expression": {
+                            "qtiClass": "match",
+                            "expressions": [
+                                {
+                                    "qtiClass": "variable",
+                                    "attributes": {
+                                        "identifier": "RESPONSE"
+                                    }
+                                },
+                                {
+                                    "qtiClass": "correct",
+                                    "attributes": {
+                                        "identifier": "RESPONSE"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseRules": [
+                            {
+                                "qtiClass": "setOutcomeValue",
+                                "attributes": {
+                                    "identifier": "SCORE"
+                                },
+                                "expression": {
+                                    "qtiClass": "sum",
+                                    "expressions": [
+                                        {
+                                            "qtiClass": "variable",
+                                            "attributes": {
+                                                "identifier": "SCORE"
+                                            }
+                                        },
+                                        {
+                                            "qtiClass": "baseValue",
+                                            "attributes": {
+                                                "baseType": "integer"
+                                            },
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "qtiClass": "responseCondition",
+                    "responseIf": {
+                        "qtiClass": "responseIf",
+                        "expression": {
+                            "qtiClass": "match",
+                            "expressions": [
+                                {
+                                    "qtiClass": "variable",
+                                    "attributes": {
+                                        "identifier": "RESPONSE"
+                                    }
+                                },
+                                {
+                                    "qtiClass": "correct",
+                                    "attributes": {
+                                        "identifier": "RESPONSE"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseRules": [
+                            {
+                                "qtiClass": "setOutcomeValue",
+                                "attributes": {
+                                    "identifier": "FEEDBACK_1"
+                                },
+                                "expression": {
+                                    "qtiClass": "baseValue",
+                                    "attributes": {
+                                        "baseType": "identifier"
+                                    },
+                                    "value": "feedbackModal_1"
+                                }
+                            }
+                        ]
+                    },
+                    "responseElse": {
+                        "qtiClass": "responseElse",
+                        "responseRules": [
+                            {
+                                "qtiClass": "setOutcomeValue",
+                                "attributes": {
+                                    "identifier": "FEEDBACK_1"
+                                },
+                                "expression": {
+                                    "qtiClass": "baseValue",
+                                    "attributes": {
+                                        "baseType": "identifier"
+                                    },
+                                    "value": "feedbackModal_2"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "qtiClass": "responseCondition",
+                    "responseIf": {
+                        "qtiClass": "responseIf",
+                        "expression": {
+                            "qtiClass": "match",
+                            "expressions": [
+                                {
+                                    "qtiClass": "variable",
+                                    "attributes": {
+                                        "identifier": "RESPONSE_1"
+                                    }
+                                },
+                                {
+                                    "qtiClass": "correct",
+                                    "attributes": {
+                                        "identifier": "RESPONSE_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseRules": [
+                            {
+                                "qtiClass": "setOutcomeValue",
+                                "attributes": {
+                                    "identifier": "SCORE"
+                                },
+                                "expression": {
+                                    "qtiClass": "sum",
+                                    "expressions": [
+                                        {
+                                            "qtiClass": "variable",
+                                            "attributes": {
+                                                "identifier": "SCORE"
+                                            }
+                                        },
+                                        {
+                                            "qtiClass": "baseValue",
+                                            "attributes": {
+                                                "baseType": "integer"
+                                            },
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "qtiClass": "responseCondition",
+                    "responseIf": {
+                        "qtiClass": "responseIf",
+                        "expression": {
+                            "qtiClass": "match",
+                            "expressions": [
+                                {
+                                    "qtiClass": "variable",
+                                    "attributes": {
+                                        "identifier": "RESPONSE_2"
+                                    }
+                                },
+                                {
+                                    "qtiClass": "correct",
+                                    "attributes": {
+                                        "identifier": "RESPONSE_2"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseRules": [
+                            {
+                                "qtiClass": "setOutcomeValue",
+                                "attributes": {
+                                    "identifier": "SCORE"
+                                },
+                                "expression": {
+                                    "qtiClass": "sum",
+                                    "expressions": [
+                                        {
+                                            "qtiClass": "variable",
+                                            "attributes": {
+                                                "identifier": "SCORE"
+                                            }
+                                        },
+                                        {
+                                            "qtiClass": "baseValue",
+                                            "attributes": {
+                                                "baseType": "integer"
+                                            },
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "qtiClass": "responseCondition",
+                    "responseIf": {
+                        "qtiClass": "responseIf",
+                        "expression": {
+                            "qtiClass": "match",
+                            "expressions": [
+                                {
+                                    "qtiClass": "variable",
+                                    "attributes": {
+                                        "identifier": "RESPONSE_3"
+                                    }
+                                },
+                                {
+                                    "qtiClass": "correct",
+                                    "attributes": {
+                                        "identifier": "RESPONSE_3"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseRules": [
+                            {
+                                "qtiClass": "setOutcomeValue",
+                                "attributes": {
+                                    "identifier": "SCORE"
+                                },
+                                "expression": {
+                                    "qtiClass": "sum",
+                                    "expressions": [
+                                        {
+                                            "qtiClass": "variable",
+                                            "attributes": {
+                                                "identifier": "SCORE"
+                                            }
+                                        },
+                                        {
+                                            "qtiClass": "baseValue",
+                                            "attributes": {
+                                                "baseType": "integer"
+                                            },
+                                            "value": "1"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "qtiClass": "responseCondition",
+                    "responseIf": {
+                        "qtiClass": "responseIf",
+                        "expression": {
+                            "qtiClass": "not",
+                            "expressions": [
+                                {
+                                    "qtiClass": "match",
+                                    "expressions": [
+                                        {
+                                            "qtiClass": "variable",
+                                            "attributes": {
+                                                "identifier": "RESPONSE_3"
+                                            }
+                                        },
+                                        {
+                                            "qtiClass": "correct",
+                                            "attributes": {
+                                                "identifier": "RESPONSE_3"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "responseRules": [
+                            {
+                                "qtiClass": "setOutcomeValue",
+                                "attributes": {
+                                    "identifier": "FEEDBACK_2"
+                                },
+                                "expression": {
+                                    "qtiClass": "baseValue",
+                                    "attributes": {
+                                        "baseType": "identifier"
+                                    },
+                                    "value": "feedbackModal_3"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "itemSession": {
+        "numAttempts": {
+            "base": {
+                "integer": 2
+            }
+        },
+        "duration": {
+            "base": {
+                "duration": "PT11.072300S"
+            }
+        },
+        "completionStatus": {
+            "base": {
+                "identifier": "completed"
+            }
+        },
+        "SCORE": {
+            "base": {
+                "float": 1
+            }
+        },
+        "MAXSCORE": {
+            "base": {
+                "float": 2
+            }
+        },
+        "FEEDBACK_1": {
+            "base": {
+                "identifier": "feedbackModal_1"
+            }
+        },
+        "FEEDBACK_2": {
+            "base": null
+        },
+        "RESPONSE": {
+            "list": {
+                "identifier": ["choice_1", "choice_2"]
+            }
+        },
+        "RESPONSE_1": {
+            "base": null
+        },
+        "RESPONSE_2": {
+            "base": {
+                "string": ""
+            }
+        },
+        "RESPONSE_3": {
+            "base": {
+                "string": ""
+            }
+        },
+        "itemAnswered": true
+    },
+    "messages": []
+}

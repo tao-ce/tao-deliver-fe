@@ -1,0 +1,282 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5f6329ec4377b104e9ba14de5915372",
+            "serial": "item_5f6373d2d178c585402509",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5f6329ec4377b104e9ba14de5915372",
+                "title": "Item 3",
+                "label": "Item 3",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint137",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5f6373d2d1782694998512",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{interaction_hotspotinteraction_5f6373d2d1af9003730872}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "interaction_hotspotinteraction_5f6373d2d1af9003730872": {
+                        "serial": "interaction_hotspotinteraction_5f6373d2d1af9003730872",
+                        "qtiClass": "hotspotInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "maxChoices": 6,
+                            "minChoices": 2,
+                            "class": "responsive"
+                        },
+                        "debug": { "relatedItem": "item_5f6373d2d178c585402509" },
+                        "choices": {
+                            "choice_hotspotchoice_5f6b317e68cd9612129744": {
+                                "identifier": "hotspot_1",
+                                "serial": "choice_hotspotchoice_5f6b317e68cd9612129744",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_1",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "shape": "rect",
+                                    "coords": "311,358,385,402",
+                                    "hotspotLabel": "hotspot 1"
+                                },
+                                "debug": { "relatedItem": "item_5f6b317e6880c867457470" }
+                            },
+                            "choice_hotspotchoice_5f6b317e68d1f222198839": {
+                                "identifier": "hotspot_2",
+                                "serial": "choice_hotspotchoice_5f6b317e68d1f222198839",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_2",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "shape": "rect",
+                                    "coords": "116,89,188,126"
+                                },
+                                "debug": { "relatedItem": "item_5f6b317e6880c867457470" }
+                            },
+                            "choice_hotspotchoice_5f6b317e68d37570287685": {
+                                "identifier": "hotspot_3",
+                                "serial": "choice_hotspotchoice_5f6b317e68d37570287685",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_3",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "shape": "rect",
+                                    "coords": "215,495,288,538"
+                                },
+                                "debug": { "relatedItem": "item_5f6b317e6880c867457470" }
+                            },
+                            "choice_hotspotchoice_5f6b317e68d4b162356157": {
+                                "identifier": "hotspot_4",
+                                "serial": "choice_hotspotchoice_5f6b317e68d4b162356157",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_4",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "shape": "poly",
+                                    "coords": "112,491,190,482,193,551,106,549"
+                                },
+                                "debug": { "relatedItem": "item_5f6b317e6880c867457470" }
+                            },
+                            "choice_hotspotchoice_5f6b317e68d5e720141328": {
+                                "identifier": "hotspot_5",
+                                "serial": "choice_hotspotchoice_5f6b317e68d5e720141328",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_5",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "shape": "ellipse",
+                                    "coords": "153,41,51,39"
+                                },
+                                "debug": { "relatedItem": "item_5f6b317e6880c867457470" }
+                            },
+                            "choice_hotspotchoice_5f6b317e68d6f648660631": {
+                                "identifier": "hotspot_6",
+                                "serial": "choice_hotspotchoice_5f6b317e68d6f648660631",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_6",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "shape": "circle",
+                                    "coords": "50,50,50"
+                                },
+                                "debug": { "relatedItem": "item_5f6b317e6880c867457470" }
+                            },
+                            "choice_hotspotchoice_5f6b317e68d81988950174": {
+                                "identifier": "hotspot_7",
+                                "serial": "choice_hotspotchoice_5f6b317e68d81988950174",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_7",
+                                    "fixed": false,
+                                    "shape": "poly",
+                                    "showHide": "hide",
+                                    "coords": "55,683,125,619,205,622,102,683,137,736,111,740"
+                                },
+                                "debug": { "relatedItem": "item_5f6b317e6880c867457470" }
+                            },
+                            "choice_hotspotchoice_5f6b317e68d91227949476": {
+                                "identifier": "hotspot_8",
+                                "serial": "choice_hotspotchoice_5f6b317e68d91227949476",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_8",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "shape": "poly",
+                                    "coords": "284,628,383,626,486,689,242,752,204,748,420,679"
+                                },
+                                "debug": { "relatedItem": "item_5f6b317e6880c867457470" }
+                            },
+                            "choice_hotspotchoice_5f6b317e68da2804706099": {
+                                "identifier": "hotspot_9",
+                                "serial": "choice_hotspotchoice_5f6b317e68da2804706099",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_9",
+                                    "fixed": false,
+                                    "showHide": "hide",
+                                    "shape": "poly",
+                                    "coords": "404,479,438,391,435,489,543,532,433,526,464,625,401,532,252,610,359,506,261,432"
+                                },
+                                "debug": { "relatedItem": "item_5f6b317e6880c867457470" }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_5f6373d2d1ba4128675271",
+                            "body": "Choose scandinavian country flags",
+                            "elements": {},
+                            "debug": { "relatedItem": "item_5f6373d2d178c585402509" }
+                        },
+                        "object": {
+                            "serial": "qtiobject_5f6373d2d1d17481196243",
+                            "qtiClass": "object",
+                            "attributes": {
+                                "data": "graphic/map-of-the-europe.jpg",
+                                "type": "image/jpeg",
+                                "width": 1213,
+                                "height": 860
+                            },
+                            "debug": { "relatedItem": "" }
+                        }
+                    }
+                },
+                "debug": { "relatedItem": "item_5f6373d2d178c585402509" }
+            },
+            "debug": { "relatedItem": "item_5f6373d2d178c585402509" },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_5f6373d2d19af845200009": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5f6373d2d19af845200009",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "debug": { "relatedItem": "item_5f6373d2d178c585402509" },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_5f6373d2d1a25408238604": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_5f6373d2d1a25408238604",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": { "identifier": "MAXSCORE", "cardinality": "single", "baseType": "float" },
+                    "debug": { "relatedItem": "item_5f6373d2d178c585402509" },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "responsedeclaration_5f6373d2d190c064539931": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_5f6373d2d190c064539931",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE", "cardinality": "multiple", "baseType": "identifier" },
+                    "debug": { "relatedItem": "item_5f6373d2d178c585402509" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": ["hotspot_1", "hotspot_2", "hotspot_3"],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_5f6373d2d1df6143641411",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "debug": { "relatedItem": "item_5f6373d2d178c585402509" },
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    { "qtiClass": "variable", "attributes": { "identifier": "RESPONSE" } },
+                                    { "qtiClass": "correct", "attributes": { "identifier": "RESPONSE" } }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": { "baseType": "float" },
+                                        "value": "1"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseElse": {
+                            "qtiClass": "responseElse",
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": { "baseType": "float" },
+                                        "value": "0"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "http_2_test-sprint137_0_playground_0_kitchen_0_it_0_taocloud_0_org_1_tao_0_rdf_3_i5f6371f309bcf948187e66c242dc9e": "9ee3cca95f6371f3094ce.jpg"
+            }
+        }
+    },
+    "success": true,
+    "itemIdentifier": "item-1"
+}

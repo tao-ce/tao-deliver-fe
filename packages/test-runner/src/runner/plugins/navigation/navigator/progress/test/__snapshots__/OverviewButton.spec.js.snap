@@ -1,0 +1,208 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`OverviewButton > fails to render without a serviceCallId 1`] = `[TypeError: A "serviceCallId" is required to get the state store of the test session]`;
+
+exports[`OverviewButton > renders disabled button with disabled props 1`] = `
+<body>
+  <div>
+    <button
+      aria-disabled="true"
+      aria-label="Open overview of all 5 questions"
+      class="actionable secondary pill small"
+      disabled=""
+      name="overview"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Chevron up icon
+        </title>
+        <path
+          d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+        />
+      </svg>
+       
+       
+      Overview (5)
+    </button>
+  </div>
+</body>
+`;
+
+exports[`OverviewButton > renders on mobile screen and indicates informational current item 1`] = `
+<body>
+  <div>
+    <button
+      aria-label="Open overview. Currently informational item 3 of 5"
+      class="actionable secondary pill small"
+      name="overview"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Chevron up icon
+        </title>
+        <path
+          d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+        />
+      </svg>
+       
+       
+      𝒊 3 / 5
+    </button>
+  </div>
+</body>
+`;
+
+exports[`OverviewButton > renders on mobile screen and indicates non-informational current item 1`] = `
+<body>
+  <div>
+    <button
+      aria-label="Open overview. Currently question 4 of 5"
+      class="actionable secondary pill small"
+      name="overview"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Chevron up icon
+        </title>
+        <path
+          d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+        />
+      </svg>
+       
+       
+      4 / 5
+    </button>
+  </div>
+</body>
+`;
+
+exports[`OverviewButton > renders on mobile screen without count if all items informational 1`] = `
+<body>
+  <div>
+    <button
+      aria-label="Open overview. Currently informational item 8"
+      class="actionable secondary pill small"
+      name="overview"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Chevron up icon
+        </title>
+        <path
+          d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+        />
+      </svg>
+       
+       
+      𝒊 8
+    </button>
+  </div>
+</body>
+`;
+
+exports[`OverviewButton > renders on tablet/desktop screen with count of non-informational items 1`] = `
+<body>
+  <div>
+    <button
+      aria-label="Open overview of all 5 questions"
+      class="actionable secondary pill small"
+      name="overview"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Chevron up icon
+        </title>
+        <path
+          d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+        />
+      </svg>
+       
+       
+      Overview (5)
+    </button>
+  </div>
+</body>
+`;
+
+exports[`OverviewButton > renders on tablet/desktop screen without count if all items informational 1`] = `
+<body>
+  <div>
+    <button
+      aria-label="Open overview of all items"
+      class="actionable secondary pill small"
+      name="overview"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Chevron up icon
+        </title>
+        <path
+          d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+        />
+      </svg>
+       
+       
+      Overview
+    </button>
+  </div>
+</body>
+`;
+
+exports[`OverviewButton > renders with empty store 1`] = `
+<body>
+  <div>
+    <button
+      aria-label="Open overview. Currently question NaN"
+      class="actionable secondary pill small"
+      name="overview"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Chevron up icon
+        </title>
+        <path
+          d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+        />
+      </svg>
+       
+       
+      button
+    </button>
+  </div>
+</body>
+`;

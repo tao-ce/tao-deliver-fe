@@ -1,0 +1,147 @@
+{
+    "baseUrl": "./assets/",
+    "itemIdentifier": "item-2",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i61a77b164489f850976cd5e4604e2f7",
+            "serial": "i61b0ef262dc84",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i61a77b164489f850976cd5e4604e2f7",
+                "title": "Choice (no AE)",
+                "label": "Choice Interaction (Allow answer masking is disabled)",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "NextGen",
+                "class": ""
+            },
+            "body": {
+                "serial": "i61b0ef262dc76",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i61b0ef262ded1}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "i61b0ef262ded1": {
+                        "serial": "i61b0ef262ded1",
+                        "qtiClass": "choiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "shuffle": false,
+                            "maxChoices": 0,
+                            "minChoices": 0,
+                            "orientation": "vertical"
+                        },
+                        "choices": {
+                            "i61b0ef262dfd3": {
+                                "identifier": "choice_1",
+                                "serial": "i61b0ef262dfd3",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i61b0ef262dfff",
+                                    "body": "choice #1",
+                                    "elements": []
+                                }
+                            },
+                            "i61b0ef262e072": {
+                                "identifier": "choice_2",
+                                "serial": "i61b0ef262e072",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i61b0ef262e09b",
+                                    "body": "choice #2",
+                                    "elements": []
+                                }
+                            },
+                            "i61b0ef262e104": {
+                                "identifier": "choice_3",
+                                "serial": "i61b0ef262e104",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i61b0ef262e129",
+                                    "body": "choice #3",
+                                    "elements": []
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i61b0ef262df55",
+                            "body": "Choice Interaction (Allow answer masking is disabled)",
+                            "elements": []
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": {
+                "i61b0ef262ddba": {
+                    "identifier": "SCORE",
+                    "serial": "i61b0ef262ddba",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 0
+                    },
+                    "defaultValue": null
+                },
+                "i61b0ef262de07": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i61b0ef262de07",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "0"
+                }
+            },
+            "responses": {
+                "i61b0ef262dd30": {
+                    "identifier": "RESPONSE",
+                    "serial": "i61b0ef262dd30",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "multiple",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": []
+    },
+    "itemState": {},
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    }
+  }

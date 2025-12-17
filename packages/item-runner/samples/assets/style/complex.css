@@ -1,0 +1,63 @@
+/*
+ * SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+ */
+
+@import 'simple.css';
+
+/* stripped by scopeStyles fn - not allowed */
+body {
+    text-align: center;
+}
+
+div button:hover {
+    opacity: 0.5 !important;
+}
+
+label:hover {
+    transform: scaleY(1.1) !important;
+    transition: transform 0.3s !important;
+}
+
+input:checked + span > span {
+    background: seagreen !important;
+    animation: myAnimation 3s;
+}
+
+.qti-item {
+    background-color: pink;
+}
+
+/* legacy selectors from TAO authoring: scopeStyles prefix replacer will modify selectors so styles are applied */
+body div.qti-item,
+body div.qti-item > .qti-blockInteraction {
+    border: solid red 2px;
+}
+
+body section.qti-item {
+    outline: dashed rebeccapurple 2px;
+    outline-offset: -8px;
+}
+
+html body main .qti-item label {
+    border: solid blue 2px;
+}
+
+/* @media not supported in item stylesheet */
+@media all and (max-width: 1000px) {
+    div {
+        color: green !important;
+    }
+}
+
+/* @keyframes not supported in item stylesheet */
+@keyframes myAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

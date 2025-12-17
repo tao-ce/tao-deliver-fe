@@ -1,0 +1,114 @@
+{
+  "baseUrl": "./presets/items/assets/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "inlineChoice",
+      "serial": "item_5e984c282e72a146979009",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "inlineChoice",
+        "title": "Richard III (Take 2)",
+        "label": "Richard III (Take 2)",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint125",
+        "class": ""
+      },
+      "body": {
+        "serial": "container_containeritembody_5e984c282e71e115517141",
+        "body": "\n    <p>\n            Identify the missing word in this famous quote from Shakespeare's Richard III.\n        <\/p>\n    <blockquote>\n      <p>\n                Now is the winter of our discontent<br\/> Made glorious summer by this sun of\n                {{interaction_inlinechoiceinteraction_5e984c282e9b0814671061}};<br\/> And all the clouds that lour'd upon our house<br\/>\n                In the deep bosom of the ocean buried.\n            <\/p>\n    <\/blockquote>\n  ",
+        "elements": {
+          "interaction_inlinechoiceinteraction_5e984c282e9b0814671061": {
+            "serial": "interaction_inlinechoiceinteraction_5e984c282e9b0814671061",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "choice_inlinechoice_5e984c282ea19056708529": {
+                "identifier": "G",
+                "serial": "choice_inlinechoice_5e984c282ea19056708529",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "G",
+                  "fixed": false
+                },
+                "text": "Gloucester"
+              },
+              "choice_inlinechoice_5e984c282ea5e232454137": {
+                "identifier": "L",
+                "serial": "choice_inlinechoice_5e984c282ea5e232454137",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "L",
+                  "fixed": false
+                },
+                "text": "Lancaster"
+              },
+              "choice_inlinechoice_5e984c282ea9b024675926": {
+                "identifier": "Y",
+                "serial": "choice_inlinechoice_5e984c282ea9b024675926",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "Y",
+                  "fixed": false
+                },
+                "text": "York"
+              }
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p1",
+        "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p1": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p1\/imsqti_v2p1.xsd"
+      },
+      "stylesheets": [],
+      "outcomes": {
+        "outcomedeclaration_5e984c282e88a653817055": {
+          "identifier": "SCORE",
+          "serial": "outcomedeclaration_5e984c282e88a653817055",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": null
+        }
+      },
+      "responses": {
+        "responsedeclaration_5e984c282e7fe873608887": {
+          "identifier": "RESPONSE",
+          "serial": "responsedeclaration_5e984c282e7fe873608887",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        }
+      },
+      "feedbacks": [],
+      "apipAccessibility": ""
+    },
+    "assets": []
+  },
+  "itemState": {},
+  "itemIdentifier": "item-3",
+  "portableElements": {
+    "pci": [],
+    "pic": []
+  },
+  "success": true,
+  "messages": []
+}

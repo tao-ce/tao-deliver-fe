@@ -1,0 +1,49 @@
+{
+  "name": "@oat-sa-private/tao-previewer-app",
+  "private": true,
+  "version": "0.24.0",
+  "displayName": "TAO Deliver Previewer NUI PWA",
+  "description": "TAO Deliver progressive web application for previewing test & item content",
+  "homepage": "https://github.com/oat-sa/tao-deliver-fe#readme",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "license": "AGPL-3.0-only OR LicenseRef-TAO-Commercial-License",
+  "scripts": {
+    "build": "run-p build:static build:bootstrap",
+    "build:report": "BUILDREPORT=true npm run build",
+    "build:static": "cross-env NODE_ENV=production rollup -c ./rollup.config.js",
+    "build:bootstrap": "node ./build/bootstrap.js",
+    "watch:static": "rollup -c ./rollup.config.js --watch",
+    "serve:static": "cross-env PORT=8021 node build/webserver.js dist",
+    "serve:bootstrap": "cross-env PORT=8020 DOTENV_CONFIG_PATH=../../.env node -r dotenv/config server.js",
+    "dev:bootstrap": "run-s build:bootstrap serve:bootstrap",
+    "dev:static": "run-p watch:static serve:static",
+    "dev": "run-p dev:*",
+    "test": "vitest --config=../../vitest.config.js",
+    "test:ui": "npm test -- --watch --ui",
+    "test:cov": "npm test -- --coverage",
+    "test:cov:ci": "npm test -- --coverage --silent=passed-only --bail=1 --retry=1"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.21"
+  },
+  "dependencies": {
+    "@oat-sa-private/tao-deliver-apps-common": "^1.19.0",
+    "@oat-sa-private/tao-item-runner-qtinui": "^8.65.0",
+    "@oat-sa-private/tao-test-runner-qtinui": "^7.51.0",
+    "@oat-sa/tao-core-sdk": "^3.6.0",
+    "@oat-sa/tao-item-runner": "^1.0.0",
+    "@oat-sa/tao-test-runner": "^1.0.0",
+    "@oat-sa/tao-test-runner-qti": "^4.1.0",
+    "jquery": "^2.2.4"
+  },
+  "author": {
+    "name": "Open Assessment Technologies S.A.",
+    "url": "https://www.taotesting.com"
+  }
+}

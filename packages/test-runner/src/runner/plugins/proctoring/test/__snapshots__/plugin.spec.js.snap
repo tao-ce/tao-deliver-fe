@@ -1,0 +1,154 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`proctoring plugin > pause/resume > on pause show feedback, render wait screen, resume on click 1`] = `
+<body>
+  <div>
+    
+        
+    <main>
+      
+        
+      <div
+        class="proctor-wait transition"
+      />
+    </main>
+  </div>
+</body>
+`;
+
+exports[`proctoring plugin > pause/resume > on pause show feedback, render wait screen, resume on click 2`] = `
+<body>
+  <div>
+    
+        
+    <main>
+      
+        
+      <div
+        class="proctor-wait transition"
+      >
+        <h2
+          tabindex="-1"
+        >
+          Your test is paused
+        </h2>
+         
+        <div
+          aria-live="assertive"
+          class="loading-wrapper"
+          role="status"
+        >
+          <div
+            class="loading"
+          />
+           
+          <div
+            class="content"
+          >
+            <p
+              class="text"
+            >
+              Please wait for the proctor to resume your test.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+  </div>
+</body>
+`;
+
+exports[`proctoring plugin > pause/resume > on pause show feedback, render wait screen, resume on click 3`] = `
+<body>
+  <div>
+    
+        
+    <main>
+      
+        
+      <div
+        class="proctor-wait transition"
+      >
+        <h2
+          tabindex="-1"
+        >
+          Your test is ready
+        </h2>
+         
+         
+        <div
+          class="btn-container"
+        >
+          <button
+            class="actionable primary pill small fullwidth"
+            name="proctor-resume"
+            type="button"
+          >
+             
+             
+            Resume test
+          </button>
+        </div>
+        
+      </div>
+    </main>
+  </div>
+</body>
+`;
+
+exports[`proctoring plugin > pause/resume > on pause show feedback, render wait screen, resume on click 4`] = `
+<body>
+  <div>
+    
+        
+    <main>
+      
+        
+    </main>
+  </div>
+</body>
+`;
+
+exports[`proctoring plugin > pause/resume > when already paused on init 1`] = `
+<body>
+  <div>
+    
+        
+    <main>
+      
+        
+      <div
+        class="proctor-wait transition"
+      >
+        <h2
+          tabindex="-1"
+        >
+          Your test is paused
+        </h2>
+         
+        <div
+          aria-live="assertive"
+          class="loading-wrapper"
+          role="status"
+        >
+          <div
+            class="loading"
+          />
+           
+          <div
+            class="content"
+          >
+            <p
+              class="text"
+            >
+              Please wait for the proctor to resume your test.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </main>
+  </div>
+</body>
+`;

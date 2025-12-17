@@ -1,0 +1,90 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Circle hotspot choice > rendering > renders circle elements with given coords 1`] = `
+<body>
+  <div>
+    <g
+      class="shape"
+      tabindex="-1"
+    >
+      <circle
+        class="shape-outer-border"
+        cx="100"
+        cy="50"
+        r="44"
+      />
+      <circle
+        class="shape-inner-border"
+        cx="100"
+        cy="50"
+        r="36"
+      />
+      <circle
+        class="shape-dashed-outline"
+        cx="100"
+        cy="50"
+        r="44"
+      />
+      <circle
+        class="shape-checkmark"
+        cx="100"
+        cy="50"
+        r="10"
+      />
+    </g>
+  </div>
+</body>
+`;
+
+exports[`Circle hotspot choice > rendering > renders text label as a checkmark if label is set  1`] = `
+<body>
+  <div>
+    <g
+      class="shape selected"
+      tabindex="-1"
+    >
+      <circle
+        class="shape-outer-border"
+        cx="100"
+        cy="50"
+        r="44"
+      />
+      <circle
+        class="shape-inner-border"
+        cx="100"
+        cy="50"
+        r="36"
+      />
+      <circle
+        class="shape-dashed-outline"
+        cx="100"
+        cy="50"
+        r="44"
+      />
+      <text
+        class="shape-checkmark"
+        x="98.5"
+        y="48.5"
+      >
+        <tspan
+          dy="0"
+          x="98.5"
+        >
+          1
+        </tspan>
+      </text>
+    </g>
+  </div>
+</body>
+`;
+
+exports[`Circle hotspot choice > rendering > renders with no props 1`] = `
+<body>
+  <div>
+    <g
+      class="shape"
+      tabindex="-1"
+    />
+  </div>
+</body>
+`;

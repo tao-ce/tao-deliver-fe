@@ -1,0 +1,22 @@
+{
+    "fixturesFolder": "cypress/fixtures",
+    "integrationFolder": "cypress/tests",
+    "supportFile": "cypress/support",
+    "pluginsFile": "cypress/plugins",
+    "testFiles": "**/*.spec.js",
+    "video": false,
+    "videosFolder": "cypress/videos",
+    "retries": { "openMode": 0, "runMode": 1 },
+    "pageLoadTimeout": 30000,
+    "viewportWidth": 1024,
+    "viewportHeight": 768,
+    "chromeWebSecurity": true,
+    "env": {
+        "configFile": "cypress/envs/env-oatdev.json",
+        "SNAPSHOT_BASE_DIRECTORY": "cypress/snapshots/base",
+        "INTEGRATION_FOLDER": "cypress/integration",
+        "type": "base"        
+    },
+    "screenshotsFolder": "cypress/snapshots/actual",
+    "trashAssetsBeforeRuns": true
+}

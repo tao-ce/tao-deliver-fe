@@ -1,0 +1,637 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SortableList > rendering > should render with given selected slots 1`] = `
+<body>
+  <div>
+    <p
+      class="hidden"
+      id="tao-keyboard-info-def-123"
+    >
+      Press enter or space to grab. To move to next available answer, use the arrow keys
+    </p>
+     
+    <p
+      class="hidden"
+      id="tao-keyboard-info-sort-123"
+    >
+      Press enter or space to place down. To reorder use the arrow keys. Press escape to cancel
+    </p>
+     
+    <ol
+      aria-label="answer list, 2 items"
+      class="sortable-list orientation-vertical position-left"
+      role="application"
+      style="--item-width:400px;--item-height:44px"
+    >
+      <li>
+        <div
+          class="item-bullet"
+        >
+          1.
+        </div>
+         
+        <div
+          class="drop-area"
+          data-drag-drop-disabled="false"
+          data-drag-drop-key="0"
+        >
+          <div
+            class="answer-placeholder"
+            data-index="0"
+          >
+            <span
+              class="hidden"
+              id="tao-choice-label-123"
+            >
+              <div
+                class="item"
+              >
+                item0
+              </div>
+               
+              <p
+                class="visually-hidden"
+              >
+                Position 1
+              </p>
+            </span>
+             
+            <div
+              class="item-btn-container placed removable last"
+            >
+              <div
+                class="draggable-container draggable-source"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="item0"
+              >
+                 
+                <div
+                  aria-describedby="tao-keyboard-info-def-123"
+                  aria-grabbed="false"
+                  aria-labelledby="tao-choice-label-123"
+                  class="item-btn"
+                  role="button"
+                  tabindex="0"
+                >
+                  <div
+                    class="icon-container"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        Drag handle icon
+                      </title>
+                      <path
+                        d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                   
+                  <div
+                    class="label-container"
+                  >
+                    <div
+                      class="item"
+                    >
+                      item0
+                    </div>
+                     
+                    <p
+                      class="visually-hidden"
+                    >
+                      Position 1
+                    </p>
+                  </div>
+                   
+                   
+                </div>
+                 
+                <button
+                  aria-labelledby="remover_tao-choice-label-123"
+                  class="remover"
+                  tabindex="-1"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="icon medium"
+                    viewBox="0 0 16 16"
+                  >
+                    <title>
+                      Remove icon
+                    </title>
+                    <path
+                      d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+                    />
+                  </svg>
+                </button>
+                 
+                <div
+                  class="hidden"
+                  id="remover_tao-choice-label-123"
+                >
+                  <span
+                    slot="remover-aria-label"
+                  >
+                    Return 
+                     
+                    <span>
+                      <div
+                        class="item"
+                      >
+                        item0
+                      </div>
+                    </span>
+                     
+                    Position 1
+                     
+                     to the unordered options
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+             
+            <span
+              aria-hidden="true"
+              class="focus-keeper visually-hidden"
+              tabindex="-1"
+            />
+             
+          </div>
+        </div>
+         
+      </li>
+      <li>
+        <div
+          class="item-bullet"
+        >
+          2.
+        </div>
+         
+        <div
+          class="drop-area"
+          data-drag-drop-disabled="false"
+          data-drag-drop-key="1"
+        >
+          <div
+            class="answer-placeholder"
+            data-index="1"
+          >
+             
+          </div>
+        </div>
+         
+      </li>
+      <li>
+        <div
+          class="item-bullet"
+        >
+          3.
+        </div>
+         
+        <div
+          class="drop-area"
+          data-drag-drop-disabled="false"
+          data-drag-drop-key="2"
+        >
+          <div
+            class="answer-placeholder"
+            data-index="2"
+          >
+            <span
+              class="hidden"
+              id="tao-choice-label-123"
+            >
+              <div
+                class="item"
+              >
+                item2
+              </div>
+               
+              <p
+                class="visually-hidden"
+              >
+                Position 3
+              </p>
+            </span>
+             
+            <div
+              class="item-btn-container placed removable last"
+            >
+              <div
+                class="draggable-container draggable-source"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="item2"
+              >
+                 
+                <div
+                  aria-describedby="tao-keyboard-info-def-123"
+                  aria-grabbed="false"
+                  aria-labelledby="tao-choice-label-123"
+                  class="item-btn"
+                  role="button"
+                  tabindex="-1"
+                >
+                  <div
+                    class="icon-container"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        Drag handle icon
+                      </title>
+                      <path
+                        d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                   
+                  <div
+                    class="label-container"
+                  >
+                    <div
+                      class="item"
+                    >
+                      item2
+                    </div>
+                     
+                    <p
+                      class="visually-hidden"
+                    >
+                      Position 3
+                    </p>
+                  </div>
+                   
+                   
+                </div>
+                 
+                <button
+                  aria-labelledby="remover_tao-choice-label-123"
+                  class="remover"
+                  tabindex="-1"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="icon medium"
+                    viewBox="0 0 16 16"
+                  >
+                    <title>
+                      Remove icon
+                    </title>
+                    <path
+                      d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+                    />
+                  </svg>
+                </button>
+                 
+                <div
+                  class="hidden"
+                  id="remover_tao-choice-label-123"
+                >
+                  <span
+                    slot="remover-aria-label"
+                  >
+                    Return 
+                     
+                    <span>
+                      <div
+                        class="item"
+                      >
+                        item2
+                      </div>
+                    </span>
+                     
+                    Position 3
+                     
+                     to the unordered options
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+             
+            <span
+              aria-hidden="true"
+              class="focus-keeper visually-hidden"
+              tabindex="-1"
+            />
+             
+          </div>
+        </div>
+         
+      </li>
+    </ol>
+  </div>
+</body>
+`;
+
+exports[`SortableList > rendering > should render with max null - filled slots if selected is empty 1`] = `
+<body>
+  <div>
+    <p
+      class="hidden"
+      id="tao-keyboard-info-def-123"
+    >
+      Press enter or space to grab. To move to next available answer, use the arrow keys
+    </p>
+     
+    <p
+      class="hidden"
+      id="tao-keyboard-info-sort-123"
+    >
+      Press enter or space to place down. To reorder use the arrow keys. Press escape to cancel
+    </p>
+     
+    <ol
+      aria-label="answer list, 0 items"
+      class="sortable-list orientation-vertical position-left"
+      role="application"
+      style="--item-width:400px;--item-height:44px"
+    >
+      <li>
+        <div
+          class="item-bullet"
+        >
+          1.
+        </div>
+         
+        <div
+          class="drop-area"
+          data-drag-drop-disabled="false"
+          data-drag-drop-key="0"
+        >
+          <div
+            class="answer-placeholder"
+            data-index="0"
+          >
+             
+          </div>
+        </div>
+         
+      </li>
+      <li>
+        <div
+          class="item-bullet"
+        >
+          2.
+        </div>
+         
+        <div
+          class="drop-area"
+          data-drag-drop-disabled="false"
+          data-drag-drop-key="1"
+        >
+          <div
+            class="answer-placeholder"
+            data-index="1"
+          >
+             
+          </div>
+        </div>
+         
+      </li>
+      <li>
+        <div
+          class="item-bullet"
+        >
+          3.
+        </div>
+         
+        <div
+          class="drop-area"
+          data-drag-drop-disabled="false"
+          data-drag-drop-key="2"
+        >
+          <div
+            class="answer-placeholder"
+            data-index="2"
+          >
+             
+          </div>
+        </div>
+         
+      </li>
+    </ol>
+  </div>
+</body>
+`;
+
+exports[`SortableList > rendering > should render with max null - filled slots if selected length is less than max  1`] = `
+<body>
+  <div>
+    <p
+      class="hidden"
+      id="tao-keyboard-info-def-123"
+    >
+      Press enter or space to grab. To move to next available answer, use the arrow keys
+    </p>
+     
+    <p
+      class="hidden"
+      id="tao-keyboard-info-sort-123"
+    >
+      Press enter or space to place down. To reorder use the arrow keys. Press escape to cancel
+    </p>
+     
+    <ol
+      aria-label="answer list, 1 items"
+      class="sortable-list orientation-vertical position-left"
+      role="application"
+      style="--item-width:400px;--item-height:44px"
+    >
+      <li>
+        <div
+          class="item-bullet"
+        >
+          1.
+        </div>
+         
+        <div
+          class="drop-area"
+          data-drag-drop-disabled="false"
+          data-drag-drop-key="0"
+        >
+          <div
+            class="answer-placeholder"
+            data-index="0"
+          >
+            <span
+              class="hidden"
+              id="tao-choice-label-123"
+            >
+              <div
+                class="item"
+              >
+                item0
+              </div>
+               
+              <p
+                class="visually-hidden"
+              >
+                Position 1
+              </p>
+            </span>
+             
+            <div
+              class="item-btn-container placed removable last"
+            >
+              <div
+                class="draggable-container draggable-source"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="item0"
+              >
+                 
+                <div
+                  aria-describedby="tao-keyboard-info-def-123"
+                  aria-grabbed="false"
+                  aria-labelledby="tao-choice-label-123"
+                  class="item-btn"
+                  role="button"
+                  tabindex="0"
+                >
+                  <div
+                    class="icon-container"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        Drag handle icon
+                      </title>
+                      <path
+                        d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                   
+                  <div
+                    class="label-container"
+                  >
+                    <div
+                      class="item"
+                    >
+                      item0
+                    </div>
+                     
+                    <p
+                      class="visually-hidden"
+                    >
+                      Position 1
+                    </p>
+                  </div>
+                   
+                   
+                </div>
+                 
+                <button
+                  aria-labelledby="remover_tao-choice-label-123"
+                  class="remover"
+                  tabindex="-1"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="icon medium"
+                    viewBox="0 0 16 16"
+                  >
+                    <title>
+                      Remove icon
+                    </title>
+                    <path
+                      d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+                    />
+                  </svg>
+                </button>
+                 
+                <div
+                  class="hidden"
+                  id="remover_tao-choice-label-123"
+                >
+                  <span
+                    slot="remover-aria-label"
+                  >
+                    Return 
+                     
+                    <span>
+                      <div
+                        class="item"
+                      >
+                        item0
+                      </div>
+                    </span>
+                     
+                    Position 1
+                     
+                     to the unordered options
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+             
+            <span
+              aria-hidden="true"
+              class="focus-keeper visually-hidden"
+              tabindex="-1"
+            />
+             
+          </div>
+        </div>
+         
+      </li>
+      <li>
+        <div
+          class="item-bullet"
+        >
+          2.
+        </div>
+         
+        <div
+          class="drop-area"
+          data-drag-drop-disabled="false"
+          data-drag-drop-key="1"
+        >
+          <div
+            class="answer-placeholder"
+            data-index="1"
+          >
+             
+          </div>
+        </div>
+         
+      </li>
+      <li>
+        <div
+          class="item-bullet"
+        >
+          3.
+        </div>
+         
+        <div
+          class="drop-area"
+          data-drag-drop-disabled="false"
+          data-drag-drop-key="2"
+        >
+          <div
+            class="answer-placeholder"
+            data-index="2"
+          >
+             
+          </div>
+        </div>
+         
+      </li>
+    </ol>
+  </div>
+</body>
+`;

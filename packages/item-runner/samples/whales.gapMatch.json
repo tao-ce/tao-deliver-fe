@@ -1,0 +1,625 @@
+{
+    "baseUrl": "",
+    "itemIdentifier": "item-8",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5f75ea4f1aa119609f922225197a9a",
+            "serial": "i5f770027e9bb5",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5f75ea4f1aa119609f922225197a9a",
+                "title": "ND QA GapMatch 1",
+                "label": "ND QA GapMatch with smth else",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "NextGen",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5f770027e9bad",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i5f770027e9e88}}\n      <\/div>\n    <\/div>",
+                "elements": {
+                    "i5f770027e9e88": {
+                        "serial": "i5f770027e9e88",
+                        "qtiClass": "gapMatchInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "shuffle": false
+                        },
+                        "body": {
+                            "serial": "i5f770027e9eb1",
+                            "body": "<p>{{i5f770027eac81}}\u00a0are a widely distributed and diverse group of fully\u00a0aquatic\u00a0placental\u00a0marine {{i5f770027eac99}}. They are an informal grouping within the infraorder\u00a0Cetacea, usually excluding\u00a0{{i5f770027eaca8}}\u00a0and\u00a0porpoises. Whales, dolphins and {{i5f770027eacb6}} belong to the order\u00a0Cetartiodactyla, which consists of\u00a0even-toed ungulates. Their closest living relatives are the\u00a0hippopotamuses, having diverged about 40 million years ago. The two parvorders of whales,\u00a0baleen whales\u00a0(Mysticeti) and\u00a0toothed whales\u00a0(Odontoceti), are thought to have split apart around 34 million years ago. Whales consist of eight\u00a0extant\u00a0families:\u00a0{{i5f770027eacc3}}\u00a0(the rorquals),\u00a0{{i5f770027eacd0}}\u00a0(right whales),\u00a0{{i5f770027eacdc}}\u00a0(the pygmy right whale),\u00a0{{i5f770027eace9}}\u00a0(the grey whale),\u00a0{{i5f770027eacf5}}\u00a0(belugas and narwhals),\u00a0{{i5f770027ead01}}\u00a0(the sperm whale),\u00a0{{i5f770027ead0e}}\u00a0(the dwarf and pygmy sperm whale), and\u00a0{{i5f770027ead1b}}\u00a0(the beaked whales).<\/p>\n          <p>Whales are fully aquatic, open ocean creatures, and feed, mate, give birth, suckle and raise their young at sea. Whales range in size from the 2.6 {{i5f770027ead27}} (8.5\u00a0ft) and 135 {{i5f770027ead34}} (298\u00a0lb)\u00a0dwarf sperm whale\u00a0to the 29.9 metres (98\u00a0ft) and 190 {{i5f770027ead40}} (210 short tons)\u00a0blue whale, which is the largest known creature that has ever lived. The\u00a0sperm whale\u00a0is the largest toothed predator on earth. Several species exhibit\u00a0sexual dimorphism, in that the females are larger than males. Baleen whales have no teeth; instead they have plates of baleen, a fringe-like structure used to expel water while retaining the\u00a0krill\u00a0and\u00a0plankton\u00a0which they feed on. They use their throat pleats to expand the {{i5f770027ead4c}} to take in huge gulps of water. Balaenids have heads that can make up 40% of their body mass to take in water. Toothed whales, on the other hand, have conical teeth adapted to catching fish or\u00a0squid. Baleen whales have a well developed sense of \"{{i5f770027ead59}}\", whereas toothed whales have well-developed {{i5f770027ead66}} \u2212 their {{i5f770027ead72}}, that is adapted for both air and water, is so well developed that some can survive even if they are {{i5f770027ead7e}}. Some species, such as sperm whales, are well adapted for diving to great depths to catch squid and other favoured prey.<\/p>\n          <p>Whales evolved from land-living mammals. As such, whales must breathe air regularly, although they can remain submerged under water for long periods of time. Some species such as the\u00a0sperm whale\u00a0are able to stay submerged for as much as 90 minutes.[1]\u00a0They have\u00a0blowholes\u00a0(modified nostrils) located on top of their heads, through which air is taken in and expelled. They are\u00a0warm-blooded, and have a layer of fat, or\u00a0blubber, under the skin. With streamlined\u00a0fusiform\u00a0bodies and two limbs that are modified into flippers, whales can travel at up to 20\u00a0knots, though they are not as flexible or agile as\u00a0seals. Whales produce a great variety of vocalizations, notably the extended songs of the\u00a0humpback whale. Although whales are widespread, most species prefer the colder waters of the Northern and Southern Hemispheres, and migrate to the equator to give birth. Species such as humpbacks and blue whales are capable of travelling thousands of miles without feeding. Males typically mate with multiple females every year, but females only mate every two to three years. Calves are typically born in the spring and summer months and females bear all the responsibility for raising them. Mothers of some species fast and nurse their young for one to two years.<\/p>",
+                            "elements": {
+                                "i5f770027eac81": {
+                                    "identifier": "gap_1",
+                                    "serial": "i5f770027eac81",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_1",
+                                        "fixed": false,
+                                        "required": true
+                                    }
+                                },
+                                "i5f770027eac99": {
+                                    "identifier": "gap_2",
+                                    "serial": "i5f770027eac99",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_2",
+                                        "fixed": false,
+                                        "required": true
+                                    }
+                                },
+                                "i5f770027eaca8": {
+                                    "identifier": "gap_3",
+                                    "serial": "i5f770027eaca8",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_3",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027eacb6": {
+                                    "identifier": "gap_4",
+                                    "serial": "i5f770027eacb6",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_4",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027eacc3": {
+                                    "identifier": "gap_5",
+                                    "serial": "i5f770027eacc3",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_5",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027eacd0": {
+                                    "identifier": "gap_6",
+                                    "serial": "i5f770027eacd0",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_6",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027eacdc": {
+                                    "identifier": "gap_7",
+                                    "serial": "i5f770027eacdc",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_7",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027eace9": {
+                                    "identifier": "gap_8",
+                                    "serial": "i5f770027eace9",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_8",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027eacf5": {
+                                    "identifier": "gap_9",
+                                    "serial": "i5f770027eacf5",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_9",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027ead01": {
+                                    "identifier": "gap_10",
+                                    "serial": "i5f770027ead01",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_10",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027ead0e": {
+                                    "identifier": "gap_11",
+                                    "serial": "i5f770027ead0e",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_11",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027ead1b": {
+                                    "identifier": "gap_12",
+                                    "serial": "i5f770027ead1b",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_12",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027ead27": {
+                                    "identifier": "gap_13",
+                                    "serial": "i5f770027ead27",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_13",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027ead34": {
+                                    "identifier": "gap_14",
+                                    "serial": "i5f770027ead34",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_14",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027ead40": {
+                                    "identifier": "gap_15",
+                                    "serial": "i5f770027ead40",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_15",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027ead4c": {
+                                    "identifier": "gap_20",
+                                    "serial": "i5f770027ead4c",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_20",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027ead59": {
+                                    "identifier": "gap_16",
+                                    "serial": "i5f770027ead59",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_16",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027ead66": {
+                                    "identifier": "gap_17",
+                                    "serial": "i5f770027ead66",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_17",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027ead72": {
+                                    "identifier": "gap_18",
+                                    "serial": "i5f770027ead72",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_18",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "i5f770027ead7e": {
+                                    "identifier": "gap_19",
+                                    "serial": "i5f770027ead7e",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_19",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                }
+                            }
+                        },
+                        "choices": {
+                            "i5f770027e9fa3": {
+                                "identifier": "choice_2",
+                                "serial": "i5f770027e9fa3",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_2",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027e9fc2",
+                                    "body": "Whales",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea06c": {
+                                "identifier": "choice_3",
+                                "serial": "i5f770027ea06c",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "matchMax": 3,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea07f",
+                                    "body": "mammals",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea11f": {
+                                "identifier": "choice_1",
+                                "serial": "i5f770027ea11f",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_1",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea130",
+                                    "body": "dolphins",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea1be": {
+                                "identifier": "choice_4",
+                                "serial": "i5f770027ea1be",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_4",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea1ce",
+                                    "body": "porpoises",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea265": {
+                                "identifier": "choice_5",
+                                "serial": "i5f770027ea265",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_5",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea275",
+                                    "body": "Balaenopteridae",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea308": {
+                                "identifier": "choice_6",
+                                "serial": "i5f770027ea308",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_6",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea318",
+                                    "body": "Balaenidae",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea39f": {
+                                "identifier": "choice_7",
+                                "serial": "i5f770027ea39f",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_7",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea3ae",
+                                    "body": "Cetotheriidae",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea457": {
+                                "identifier": "choice_8",
+                                "serial": "i5f770027ea457",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_8",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea46a",
+                                    "body": "Eschrichtiidae",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea4f4": {
+                                "identifier": "choice_9",
+                                "serial": "i5f770027ea4f4",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_9",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea503",
+                                    "body": "Monodontidae",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea588": {
+                                "identifier": "choice_10",
+                                "serial": "i5f770027ea588",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_10",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea597",
+                                    "body": "Physeteridae",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea619": {
+                                "identifier": "choice_11",
+                                "serial": "i5f770027ea619",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_11",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea628",
+                                    "body": "Kogiidae",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea6a8": {
+                                "identifier": "choice_12",
+                                "serial": "i5f770027ea6a8",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_12",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea6b7",
+                                    "body": "Ziphiidae",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea73c": {
+                                "identifier": "choice_13",
+                                "serial": "i5f770027ea73c",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_13",
+                                    "fixed": false,
+                                    "matchMax": 2,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea74b",
+                                    "body": "metres",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea7ca": {
+                                "identifier": "choice_14",
+                                "serial": "i5f770027ea7ca",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_14",
+                                    "fixed": false,
+                                    "matchMax": 2,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea7e7",
+                                    "body": "kilograms",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea890": {
+                                "identifier": "choice_15",
+                                "serial": "i5f770027ea890",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_15",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea8a2",
+                                    "body": "metric tons",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea920": {
+                                "identifier": "choice_16",
+                                "serial": "i5f770027ea920",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_16",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea92f",
+                                    "body": "smell",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027ea9a9": {
+                                "identifier": "choice_17",
+                                "serial": "i5f770027ea9a9",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_17",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027ea9b7",
+                                    "body": "hearing",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027eaa34": {
+                                "identifier": "choice_18",
+                                "serial": "i5f770027eaa34",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_18",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027eaa43",
+                                    "body": "hearing",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027eaac2": {
+                                "identifier": "choice_19",
+                                "serial": "i5f770027eaac2",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_19",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027eaad2",
+                                    "body": "blind",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027eab4a": {
+                                "identifier": "choice_20",
+                                "serial": "i5f770027eab4a",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_20",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027eab59",
+                                    "body": "mouth",
+                                    "elements": []
+                                }
+                            },
+                            "i5f770027eabcd": {
+                                "identifier": "choice_21",
+                                "serial": "i5f770027eabcd",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_21",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f770027eabdb",
+                                    "body": "the biggest animals on planet Earth",
+                                    "elements": []
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f770027e9eab",
+                            "body": "Test your knowledge of sea creatures by filling the gaps in the text",
+                            "elements": []
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+                "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+                "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "i5f770027e9ce7": {
+                    "identifier": "SCORE",
+                    "serial": "i5f770027e9ce7",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": null
+                }
+            },
+            "responses": {
+                "i5f770027e9c75": {
+                    "identifier": "RESPONSE",
+                    "serial": "i5f770027e9c75",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "multiple",
+                        "baseType": "directedPair"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {}
+    },
+    "itemState": ""
+}

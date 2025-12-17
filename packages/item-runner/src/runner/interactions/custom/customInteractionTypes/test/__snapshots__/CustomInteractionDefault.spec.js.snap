@@ -1,0 +1,34 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CustomInteraction > renders props into markup 1`] = `
+<body>
+  <div>
+    <div
+      ariabar="baz"
+      ariafoo="12"
+      class="qti-interaction qti-blockInteraction qti-customInteraction foo bar baz"
+      data-baz="24"
+      data-foo="bar"
+      data-type-identifier="foo"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+    >
+      <div
+        class="qti-prompt cf"
+      >
+        Some prompt
+        
+        
+      </div>
+       
+      <div>
+        <div
+          class="markup"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;

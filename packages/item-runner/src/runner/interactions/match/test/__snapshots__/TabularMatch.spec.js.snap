@@ -1,0 +1,1596 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component correctly in checkbox mode 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-matchInteraction qti-match-tabular"
+      data-first-column-header="first column header"
+    >
+       
+      <div
+        class="qti-instruction-container"
+        dir="ltr"
+        lang="nb-NO"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must make a maximum of 1 association - Currently 1
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="match-tabular"
+      >
+        <fieldset>
+          <legend
+            class="visually-hidden"
+          >
+            
+          </legend>
+           
+          <table>
+            <thead>
+              <tr>
+                <th
+                  class="borderless match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  first column header
+                </th>
+                 
+                <th
+                  class="match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  A
+                  
+                  
+                   
+                </th>
+                <th
+                  class="match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  B
+                  
+                  
+                   
+                </th>
+              </tr>
+            </thead>
+             
+            <tbody>
+              <tr>
+                <th
+                  class="header-y match-tabular-header-cell font-weight-normal"
+                  scope="row"
+                >
+                  C
+                  
+                  
+                </th>
+                 
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_0_0_label"
+                    data-test-id="tabular_match_0_0"
+                    id="tao-tabularMatch-123_0_0"
+                    type="checkbox"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_0_0"
+                  >
+                    <div
+                      class="control"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Checkbox checked icon
+                        </title>
+                        <path
+                          d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
+                        />
+                      </svg>
+                    </div>
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_0_0_label"
+                  >
+                    A
+                    
+                    
+                    <span
+                      lang="nb-NO"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    C
+                    
+                    
+                    
+                  </span>
+                </td>
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_1_0_label"
+                    data-test-id="tabular_match_1_0"
+                    id="tao-tabularMatch-123_1_0"
+                    type="checkbox"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_1_0"
+                  >
+                    <div
+                      class="control"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Checkbox checked icon
+                        </title>
+                        <path
+                          d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
+                        />
+                      </svg>
+                    </div>
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_1_0_label"
+                  >
+                    B
+                    
+                    
+                    <span
+                      lang="nb-NO"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    C
+                    
+                    
+                    
+                  </span>
+                </td>
+                 
+              </tr>
+              <tr>
+                <th
+                  class="header-y match-tabular-header-cell font-weight-normal"
+                  scope="row"
+                >
+                  D
+                  
+                  
+                </th>
+                 
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_0_1_label"
+                    data-test-id="tabular_match_0_1"
+                    id="tao-tabularMatch-123_0_1"
+                    type="checkbox"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_0_1"
+                  >
+                    <div
+                      class="control"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Checkbox checked icon
+                        </title>
+                        <path
+                          d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
+                        />
+                      </svg>
+                    </div>
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_0_1_label"
+                  >
+                    A
+                    
+                    
+                    <span
+                      lang="nb-NO"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    D
+                    
+                    
+                    
+                  </span>
+                </td>
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_1_1_label"
+                    data-test-id="tabular_match_1_1"
+                    id="tao-tabularMatch-123_1_1"
+                    type="checkbox"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_1_1"
+                  >
+                    <div
+                      class="control"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Checkbox checked icon
+                        </title>
+                        <path
+                          d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
+                        />
+                      </svg>
+                    </div>
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_1_1_label"
+                  >
+                    B
+                    
+                    
+                    <span
+                      lang="nb-NO"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    D
+                    
+                    
+                    
+                  </span>
+                </td>
+                 
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`MatchInteraction Tabular > Complex content > renders tabular component with complex X & Y headers 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-matchInteraction qti-match-tabular"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must make a maximum of 1 association
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="match-tabular"
+      >
+        <fieldset>
+          <legend
+            class="visually-hidden"
+          >
+            
+          </legend>
+           
+          <table>
+            <thead>
+              <tr>
+                <th
+                  class="borderless match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  
+                </th>
+                 
+                <th
+                  class="match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  <span
+                    tabindex="0"
+                  >
+                    <mjx-container
+                      class="MathJax"
+                      jax="SVG"
+                      role="presentation"
+                      style="position: relative;"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        height="1ex"
+                        role="img"
+                        style="vertical-align: -0.025ex;"
+                        viewBox="0 -431 570 442"
+                        width="1.29ex"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <defs>
+                          <path
+                            d="M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"
+                            id="MJX-1-TEX-I-1D70B"
+                          />
+                        </defs>
+                        <g
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          transform="matrix(1 0 0 -1 0 0)"
+                        >
+                          <g
+                            data-mml-node="math"
+                          >
+                            <g
+                              data-mml-node="semantics"
+                            >
+                              <g
+                                data-mml-node="mstyle"
+                              >
+                                <g
+                                  data-mjx-texclass="ORD"
+                                  data-mml-node="TeXAtom"
+                                >
+                                  <g
+                                    data-mml-node="mi"
+                                  >
+                                    <use
+                                      xlink:href="#MJX-1-TEX-I-1D70B"
+                                    />
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <mjx-assistive-mml
+                        display="block"
+                        role="presentation"
+                        unselectable="on"
+                      >
+                        <math
+                          xmlns="http://www.w3.org/1998/Math/MathML"
+                        >
+                          <semantics>
+                            <mstyle
+                              displaystyle="true"
+                              scriptlevel="0"
+                            >
+                              <mrow
+                                data-mjx-texclass="ORD"
+                              >
+                                <mi>
+                                  π
+                                </mi>
+                              </mrow>
+                            </mstyle>
+                          </semantics>
+                        </math>
+                      </mjx-assistive-mml>
+                    </mjx-container>
+                  </span>
+                  
+                  
+                  
+                  <i>
+                    r
+                  </i>
+                  
+                  
+                  <sup>
+                    2
+                  </sup>
+                  
+                  
+                  <i>
+                    h
+                  </i>
+                  
+                  
+                  
+                   
+                </th>
+              </tr>
+            </thead>
+             
+            <tbody>
+              <tr>
+                <th
+                  class="header-y match-tabular-header-cell font-weight-normal"
+                  scope="row"
+                >
+                  <span
+                    tabindex="0"
+                  >
+                    <mjx-container
+                      class="MathJax"
+                      jax="SVG"
+                      role="presentation"
+                      style="position: relative;"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        height="1ex"
+                        role="img"
+                        style="vertical-align: -0.025ex;"
+                        viewBox="0 -431 570 442"
+                        width="1.29ex"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <defs>
+                          <path
+                            d="M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"
+                            id="MJX-2-TEX-I-1D70B"
+                          />
+                        </defs>
+                        <g
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          transform="matrix(1 0 0 -1 0 0)"
+                        >
+                          <g
+                            data-mml-node="math"
+                          >
+                            <g
+                              data-mml-node="semantics"
+                            >
+                              <g
+                                data-mml-node="mstyle"
+                              >
+                                <g
+                                  data-mjx-texclass="ORD"
+                                  data-mml-node="TeXAtom"
+                                >
+                                  <g
+                                    data-mml-node="mi"
+                                  >
+                                    <use
+                                      xlink:href="#MJX-2-TEX-I-1D70B"
+                                    />
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <mjx-assistive-mml
+                        display="block"
+                        role="presentation"
+                        unselectable="on"
+                      >
+                        <math
+                          xmlns="http://www.w3.org/1998/Math/MathML"
+                        >
+                          <semantics>
+                            <mstyle
+                              displaystyle="true"
+                              scriptlevel="0"
+                            >
+                              <mrow
+                                data-mjx-texclass="ORD"
+                              >
+                                <mi>
+                                  π
+                                </mi>
+                              </mrow>
+                            </mstyle>
+                          </semantics>
+                        </math>
+                      </mjx-assistive-mml>
+                    </mjx-container>
+                  </span>
+                  
+                  
+                  
+                  <em>
+                    d
+                  </em>
+                  
+                  
+                  
+                </th>
+                 
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_0_0_label"
+                    data-test-id="tabular_match_0_0"
+                    id="tao-tabularMatch-123_0_0"
+                    type="checkbox"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_0_0"
+                  >
+                    <div
+                      class="control"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Checkbox checked icon
+                        </title>
+                        <path
+                          d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
+                        />
+                      </svg>
+                    </div>
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_0_0_label"
+                  >
+                    {{i5f50a5ada92e3}} 
+                    <em>
+                      d
+                    </em>
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    {{i5f50a5ada918c}} 
+                    <em>
+                      d
+                    </em>
+                    
+                    
+                    
+                  </span>
+                </td>
+                 
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MatchInteraction Tabular > Radio X & Y mode > renders tabular component correctly 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-matchInteraction qti-match-tabular"
+      data-first-column-header="first column header"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      />
+       
+      <div
+        class="match-tabular radio radio-x radio-y"
+      >
+        <fieldset>
+          <legend
+            class="visually-hidden"
+          >
+            
+          </legend>
+           
+          <table>
+            <thead>
+              <tr>
+                <th
+                  class="borderless match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  first column header
+                </th>
+                 
+                <th
+                  class="match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  A
+                  
+                  
+                   
+                </th>
+                <th
+                  class="match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  B
+                  
+                  
+                   
+                </th>
+                <th
+                  class="match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  M
+                  
+                  
+                   
+                </th>
+              </tr>
+            </thead>
+             
+            <tbody>
+              <tr>
+                <th
+                  class="header-y match-tabular-header-cell font-weight-normal"
+                  scope="row"
+                >
+                  C
+                  
+                  
+                </th>
+                 
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_0_0_label"
+                    data-test-id="tabular_match_0_0"
+                    id="tao-tabularMatch-123_0_0"
+                    name="tao-tabularMatch-123_0"
+                    type="radio"
+                    value="0"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_0_0"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_0_0_label"
+                  >
+                    A
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    C
+                    
+                    
+                    
+                  </span>
+                </td>
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_1_0_label"
+                    data-test-id="tabular_match_1_0"
+                    id="tao-tabularMatch-123_1_0"
+                    name="tao-tabularMatch-123_1"
+                    type="radio"
+                    value="0"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_1_0"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_1_0_label"
+                  >
+                    B
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    C
+                    
+                    
+                    
+                  </span>
+                </td>
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_2_0_label"
+                    data-test-id="tabular_match_2_0"
+                    id="tao-tabularMatch-123_2_0"
+                    name="tao-tabularMatch-123_2"
+                    type="radio"
+                    value="0"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_2_0"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_2_0_label"
+                  >
+                    M
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    C
+                    
+                    
+                    
+                  </span>
+                </td>
+                 
+              </tr>
+              <tr>
+                <th
+                  class="header-y match-tabular-header-cell font-weight-normal"
+                  scope="row"
+                >
+                  D
+                  
+                  
+                </th>
+                 
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_0_1_label"
+                    data-test-id="tabular_match_0_1"
+                    id="tao-tabularMatch-123_0_1"
+                    name="tao-tabularMatch-123_0"
+                    type="radio"
+                    value="1"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_0_1"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_0_1_label"
+                  >
+                    A
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    D
+                    
+                    
+                    
+                  </span>
+                </td>
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_1_1_label"
+                    data-test-id="tabular_match_1_1"
+                    id="tao-tabularMatch-123_1_1"
+                    name="tao-tabularMatch-123_1"
+                    type="radio"
+                    value="1"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_1_1"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_1_1_label"
+                  >
+                    B
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    D
+                    
+                    
+                    
+                  </span>
+                </td>
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_2_1_label"
+                    data-test-id="tabular_match_2_1"
+                    id="tao-tabularMatch-123_2_1"
+                    name="tao-tabularMatch-123_2"
+                    type="radio"
+                    value="1"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_2_1"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_2_1_label"
+                  >
+                    M
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    D
+                    
+                    
+                    
+                  </span>
+                </td>
+                 
+              </tr>
+              <tr>
+                <th
+                  class="header-y match-tabular-header-cell font-weight-normal"
+                  scope="row"
+                >
+                  N
+                  
+                  
+                </th>
+                 
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_0_2_label"
+                    data-test-id="tabular_match_0_2"
+                    id="tao-tabularMatch-123_0_2"
+                    name="tao-tabularMatch-123_0"
+                    type="radio"
+                    value="2"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_0_2"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_0_2_label"
+                  >
+                    A
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    N
+                    
+                    
+                    
+                  </span>
+                </td>
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_1_2_label"
+                    data-test-id="tabular_match_1_2"
+                    id="tao-tabularMatch-123_1_2"
+                    name="tao-tabularMatch-123_1"
+                    type="radio"
+                    value="2"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_1_2"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_1_2_label"
+                  >
+                    B
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    N
+                    
+                    
+                    
+                  </span>
+                </td>
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_2_2_label"
+                    data-test-id="tabular_match_2_2"
+                    id="tao-tabularMatch-123_2_2"
+                    name="tao-tabularMatch-123_2"
+                    type="radio"
+                    value="2"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_2_2"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_2_2_label"
+                  >
+                    M
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    N
+                    
+                    
+                    
+                  </span>
+                </td>
+                 
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MatchInteraction Tabular > Radio X mode > renders tabular component correctly 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-matchInteraction qti-match-tabular"
+      data-first-column-header="first column header"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must make a maximum of 1 association - Currently 1
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="match-tabular radio radio-x"
+      >
+        <fieldset>
+          <legend
+            class="visually-hidden"
+          >
+            
+          </legend>
+           
+          <table>
+            <thead>
+              <tr>
+                <th
+                  class="borderless match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  first column header
+                </th>
+                 
+                <th
+                  class="match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  A
+                  
+                  
+                   
+                </th>
+                <th
+                  class="match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  B
+                  
+                  
+                   
+                </th>
+              </tr>
+            </thead>
+             
+            <tbody>
+              <tr>
+                <th
+                  class="header-y match-tabular-header-cell font-weight-normal"
+                  scope="row"
+                >
+                  C
+                  
+                  
+                </th>
+                 
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_0_0_label"
+                    data-test-id="tabular_match_0_0"
+                    id="tao-tabularMatch-123_0_0"
+                    name="tao-tabularMatch-123_0"
+                    type="radio"
+                    value="0"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_0_0"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_0_0_label"
+                  >
+                    A
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    C
+                    
+                    
+                    
+                  </span>
+                </td>
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_1_0_label"
+                    data-test-id="tabular_match_1_0"
+                    id="tao-tabularMatch-123_1_0"
+                    name="tao-tabularMatch-123_1"
+                    type="radio"
+                    value="0"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_1_0"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_1_0_label"
+                  >
+                    B
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    C
+                    
+                    
+                    
+                  </span>
+                </td>
+                 
+              </tr>
+              <tr>
+                <th
+                  class="header-y match-tabular-header-cell font-weight-normal"
+                  scope="row"
+                >
+                  D
+                  
+                  
+                </th>
+                 
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_0_1_label"
+                    data-test-id="tabular_match_0_1"
+                    id="tao-tabularMatch-123_0_1"
+                    name="tao-tabularMatch-123_0"
+                    type="radio"
+                    value="1"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_0_1"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_0_1_label"
+                  >
+                    A
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    D
+                    
+                    
+                    
+                  </span>
+                </td>
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_1_1_label"
+                    data-test-id="tabular_match_1_1"
+                    id="tao-tabularMatch-123_1_1"
+                    name="tao-tabularMatch-123_1"
+                    type="radio"
+                    value="1"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_1_1"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_1_1_label"
+                  >
+                    B
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    D
+                    
+                    
+                    
+                  </span>
+                </td>
+                 
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MatchInteraction Tabular > Radio Y mode > renders tabular component correctly 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-matchInteraction qti-match-tabular"
+      data-first-column-header="first column header"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must make a maximum of 1 association - Currently 1
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="match-tabular radio radio-y"
+      >
+        <fieldset>
+          <legend
+            class="visually-hidden"
+          >
+            
+          </legend>
+           
+          <table>
+            <thead>
+              <tr>
+                <th
+                  class="borderless match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  first column header
+                </th>
+                 
+                <th
+                  class="match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  A
+                  
+                  
+                   
+                </th>
+                <th
+                  class="match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  B
+                  
+                  
+                   
+                </th>
+              </tr>
+            </thead>
+             
+            <tbody>
+              <tr>
+                <th
+                  class="header-y match-tabular-header-cell font-weight-normal"
+                  scope="row"
+                >
+                  C
+                  
+                  
+                </th>
+                 
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_0_0_label"
+                    data-test-id="tabular_match_0_0"
+                    id="tao-tabularMatch-123_0_0"
+                    name="tao-tabularMatch-123_0"
+                    type="radio"
+                    value="0"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_0_0"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_0_0_label"
+                  >
+                    A
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    C
+                    
+                    
+                    
+                  </span>
+                </td>
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_1_0_label"
+                    data-test-id="tabular_match_1_0"
+                    id="tao-tabularMatch-123_1_0"
+                    name="tao-tabularMatch-123_0"
+                    type="radio"
+                    value="1"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_1_0"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_1_0_label"
+                  >
+                    B
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    C
+                    
+                    
+                    
+                  </span>
+                </td>
+                 
+              </tr>
+              <tr>
+                <th
+                  class="header-y match-tabular-header-cell font-weight-normal"
+                  scope="row"
+                >
+                  D
+                  
+                  
+                </th>
+                 
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_0_1_label"
+                    data-test-id="tabular_match_0_1"
+                    id="tao-tabularMatch-123_0_1"
+                    name="tao-tabularMatch-123_1"
+                    type="radio"
+                    value="0"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_0_1"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_0_1_label"
+                  >
+                    A
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    D
+                    
+                    
+                    
+                  </span>
+                </td>
+                <td>
+                  <input
+                    aria-labelledby="tao-tabularMatch-123_1_1_label"
+                    data-test-id="tabular_match_1_1"
+                    id="tao-tabularMatch-123_1_1"
+                    name="tao-tabularMatch-123_1"
+                    type="radio"
+                    value="1"
+                  />
+                   
+                  <label
+                    for="tao-tabularMatch-123_1_1"
+                  >
+                    <div
+                      class="control"
+                    />
+                  </label>
+                   
+                  <span
+                    class="hidden"
+                    id="tao-tabularMatch-123_1_1_label"
+                  >
+                    B
+                    
+                    
+                    <span
+                      lang="en"
+                    >
+                       matches 
+                      
+                       
+                    </span>
+                    
+                    D
+                    
+                    
+                    
+                  </span>
+                </td>
+                 
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</body>
+`;

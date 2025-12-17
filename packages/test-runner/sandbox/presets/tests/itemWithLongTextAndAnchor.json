@@ -1,0 +1,133 @@
+{
+    "testContext": {
+        "state": 1,
+        "remainingAttempts": -1,
+        "isLinear": true,
+        "isTimeout": 0,
+        "itemIdentifier": "item1",
+        "attempt": 1,
+        "itemSessionState": 1,
+        "needMapUpdate": false,
+        "itemPosition": 0,
+        "timeConstraints": [],
+        "testPartId": "TP01",
+        "sectionId": "S01",
+        "canMoveBackward": false,
+        "rubrics": "",
+        "allowSkipping": true,
+        "validateResponses": false
+    },
+    "testMap": {
+        "scope": "test",
+        "stats": {
+            "questionsViewed": 1,
+            "questions": 3,
+            "answered": 1,
+            "flagged": 0,
+            "viewed": 1,
+            "total": 3
+        },
+        "parts": {
+            "TP01": {
+                "id": "TP01",
+                "label": "Test Part 01",
+                "position": 0,
+                "isLinear": true,
+                "timeConstraint": {
+                    "allowLateSubmission": true,
+                    "label": "TP01",
+                    "maxTime": false,
+                    "maxTimeRemaining": false,
+                    "minTime": false,
+                    "minTimeRemaining": false,
+                    "qtiClassName": "testPart",
+                    "source": "TP01",
+                    "extraTime": {
+                        "total": 0,
+                        "consumed": 0,
+                        "remaining": 0
+                    }
+                },
+                "stats": {
+                    "questionsViewed": 1,
+                    "questions": 0,
+                    "answered": 1,
+                    "flagged": 0,
+                    "viewed": 0,
+                    "total": 3
+                },
+                "sections": {
+                    "S01": {
+                        "id": "S01",
+                        "label": "Section 01",
+                        "isCatAdaptive": false,
+                        "position": 0,
+                        "timeConstraint": {
+                            "allowLateSubmission": true,
+                            "label": "Section 01",
+                            "maxTime": false,
+                            "maxTimeRemaining": false,
+                            "minTime": false,
+                            "minTimeRemaining": false,
+                            "qtiClassName": "assessmentSection",
+                            "source": "S01",
+                            "extraTime": {
+                                "total": 0,
+                                "consumed": 0,
+                                "remaining": 0
+                            }
+                        },
+                        "stats": {
+                            "questionsViewed": 1,
+                            "questions": 3,
+                            "answered": 1,
+                            "flagged": 0,
+                            "viewed": 1,
+                            "total": 3
+                        },
+                        "items": {
+                            "item1": {
+                                "id": "item1",
+                                "label": "Clarimonde 2",
+                                "position": 0,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": true,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [
+                                    "x-tao-option-areaHider-topBar",
+                                    "x-tao-option-tts",
+                                    "x-tao-option-scratchpad",
+                                    "x-tao-option-eliminator",
+                                    "x-tao-option-highlighter",
+                                    "x-tao-option-lineReader",
+                                    "x-tao-option-calculatorBodmas"
+                                ],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "timeConstraint": {
+                                    "allowLateSubmission": true,
+                                    "label": "Clarimonde 2",
+                                    "maxTime": false,
+                                    "maxTimeRemaining": false,
+                                    "minTime": false,
+                                    "minTimeRemaining": false,
+                                    "qtiClassName": "assessmentItemRef",
+                                    "source": "item1",
+                                    "extraTime": {
+                                        "total": 0,
+                                        "consumed": 0,
+                                        "remaining": 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "title": "nonLinear2Sections",
+        "identifier": "T01"
+    }
+}

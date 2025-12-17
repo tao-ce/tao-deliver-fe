@@ -1,0 +1,110 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5f96f663310f5872725de2d3a34c66",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5f96f663310f5872725de2d3a34c66",
+                "title": "pci",
+                "label": "pci",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5f99746cd0ac7112324748",
+                "body": "{{interaction_portablecustominteraction_5f99746cd34ce142518154}}\n{{interaction_portablecustominteraction_5f99746cd34ce142518155}}",
+                "elements": {
+                    "interaction_portablecustominteraction_5f99746cd34ce142518154": {
+                        "serial": "interaction_portablecustominteraction_5f99746cd34ce142518154",
+                        "qtiClass": "customInteraction",
+                        "attributes": { "responseIdentifier": "RESPONSE" },
+                        "debug": { "relatedItem": "item_5f99746cd0b48818197690" },
+                        "choices": [],
+                        "typeIdentifier": "demoPCI",
+                        "markup": "<div class=\"demoPCI\"><h1>Demo PCI</h1><button class=\"decrease\">-</button><span class=\"valueContainer\"></span><button class=\"increase\">+</button></div>",
+                        "version": "0.0.0",
+                        "properties": { "step": 1, "initial": 55 },
+                        "xmlns": "http://www.imsglobal.org/xsd/portableCustomInteraction"
+                    },
+                    "interaction_portablecustominteraction_5f99746cd34ce142518155": {
+                        "serial": "interaction_portablecustominteraction_5f99746cd34ce142518155",
+                        "qtiClass": "customInteraction",
+                        "attributes": { "responseIdentifier": "RESPONSE2" },
+                        "debug": { "relatedItem": "item_5f99746cd0b48818197690" },
+                        "choices": [],
+                        "typeIdentifier": "demoPCI",
+                        "markup": "<div class=\"demoPCI\"><h1>Demo PCI</h1><button class=\"decrease\">-</button><span class=\"valueContainer\"></span><button class=\"increase\">+</button></div>",
+                        "version": "0.0.0",
+                        "properties": { "step": 2, "initial": 123 },
+                        "xmlns": "http://www.imsglobal.org/xsd/portableCustomInteraction"
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "html5": "html5",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "outcomes": {
+                "outcomedeclaration_5f99746cd2503907539846": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5f99746cd2503907539846",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": { "identifier": "SCORE", "cardinality": "single", "baseType": "float" },
+                    "debug": { "relatedItem": "item_5f99746cd0b48818197690" },
+                    "defaultValue": null
+                }
+            },
+            "responses": {
+                "responsedeclaration_5f99746cd180c007573054": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_5f99746cd180c007573054",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE", "cardinality": "single", "baseType": "integer" },
+                    "debug": { "relatedItem": "item_5f99746cd0b48818197690" },
+                    "defaultValue": []
+                },
+                "responsedeclaration_5f99746cd180c007573055": {
+                    "identifier": "RESPONSE2",
+                    "serial": "responsedeclaration_5f99746cd180c007573055",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE", "cardinality": "single", "baseType": "integer" },
+                    "debug": { "relatedItem": "item_5f99746cd0b48818197690" },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {}
+    },
+    "itemState": {},
+    "itemIdentifier": "item-1",
+    "portableElements": {
+        "pci": {
+            "demoPCI": [
+                {
+                    "response": { "baseType": "integer", "cardinality": "single" },
+                    "typeIdentifier": "demoPCI",
+                    "label": "Demo PCI",
+                    "short": "Demo PCI",
+                    "description": "Demo PCI implementation",
+                    "version": "0.1.*",
+                    "runtime": {
+                        "hook": "demoPCI/runtime/demoPCI.js"
+                    },
+                    "xmlns": "http://www.imsglobal.org/xsd/portableCustomInteraction",
+                    "baseUrl": "http://tao.docker.localhost/tao/File/accessFile/NWY4NTQ4ZDcyZGJiZiBQQ0kvMDNkZWQyZTljN2JjYjJjZDkxNTUxNTUyNTBjZDViZjQ=/"
+                }
+            ]
+        },
+        "pic": []
+    }
+}

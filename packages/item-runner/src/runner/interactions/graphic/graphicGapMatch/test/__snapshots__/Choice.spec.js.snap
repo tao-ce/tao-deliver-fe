@@ -1,0 +1,213 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GraphicGapMatch Choice > rendering > reacts to basic props 1`] = `
+<body>
+  <div>
+    <div
+      class="choice last"
+      data-drag-drop-disabled="false"
+      data-drag-drop-key="da_gap1_xyz_choice1"
+      data-droparea-area="gap1"
+      data-droparea-key="choice1"
+      style="--draw-x: 0px;--draw-y: 2px;--draw-width: 10px;--draw-height: 40px;--draw-selected-scale: 2;"
+    >
+      <div
+        aria-grabbed="false"
+        aria-label="undefined, undefined"
+        class="drag-anchor draggable-source"
+        data-drag-drop-disabled="false"
+        data-drag-drop-key="gap1__xyz__choice1"
+        role="button"
+      >
+        <div
+          class="drag-anchor-content"
+        >
+          <div
+            class="outline-container"
+          >
+            <img
+              aria-hidden="true"
+              class="image"
+              src="hello.png"
+            />
+          </div>
+        </div>
+      </div>
+       
+    </div>
+  </div>
+</body>
+`;
+
+exports[`GraphicGapMatch Choice > rendering > reacts to basic props 2`] = `
+<body>
+  <div>
+    <div
+      class="choice last selected"
+      data-drag-drop-disabled="false"
+      data-drag-drop-key="da_gap1_xyz_choice1"
+      data-droparea-area="gap1"
+      data-droparea-key="choice1"
+      style="--draw-x: 5px;--draw-y: 8px;--draw-width: 10px;--draw-height: 40px;--draw-selected-scale: 2;"
+    >
+      <div
+        aria-grabbed="false"
+        aria-label="undefined, undefined"
+        class="drag-anchor draggable-source"
+        data-drag-drop-disabled="false"
+        data-drag-drop-key="gap1__xyz__choice1"
+        role="button"
+      >
+        <div
+          class="drag-anchor-content"
+        >
+          <div
+            class="outline-container"
+          >
+            <img
+              aria-hidden="true"
+              class="image"
+              src="hello.png"
+            />
+          </div>
+        </div>
+      </div>
+       
+    </div>
+  </div>
+</body>
+`;
+
+exports[`GraphicGapMatch Choice > rendering > renders empty container without coords 1`] = `
+<body>
+  <div>
+    <div
+      class="choice last"
+      data-drag-drop-disabled="false"
+      data-drag-drop-key="da_choice_xyz_choice1"
+    >
+      <div
+        aria-grabbed="false"
+        aria-label="undefined, undefined"
+        class="drag-anchor draggable-source"
+        data-drag-drop-disabled="false"
+        data-drag-drop-key="choice__xyz__choice1"
+        role="button"
+      >
+        <div
+          class="drag-anchor-content"
+        >
+          <div
+            class="outline-container"
+          >
+            <img
+              aria-hidden="true"
+              class="image"
+            />
+          </div>
+        </div>
+      </div>
+       
+    </div>
+  </div>
+</body>
+`;
+
+exports[`GraphicGapMatch Choice > rendering > renders with detailed props 1`] = `
+<body>
+  <div>
+    <div
+      class="choice targetable targeted disabled"
+      data-drag-drop-disabled="true"
+      data-drag-drop-key="da_gap1_xyz_choice1"
+      style="--draw-x: 10px;--draw-y: 20px;--draw-width: 100px;--draw-height: 200px;--draw-selected-scale: 1.24;"
+    >
+      <div
+        aria-disabled="true"
+        aria-grabbed="false"
+        aria-label="this choice, press enter to select"
+        class="drag-anchor draggable-source"
+        data-drag-drop-disabled="true"
+        data-drag-drop-key="gap1__xyz__choice1"
+        role="button"
+      >
+        <div
+          class="drag-anchor-content"
+        >
+          <div
+            class="outline-container"
+          >
+            <img
+              alt="this choice"
+              aria-hidden="true"
+              class="image"
+              src="hello.png"
+            />
+          </div>
+        </div>
+      </div>
+       
+    </div>
+  </div>
+</body>
+`;
+
+exports[`GraphicGapMatch Choice > rendering > renders with placed props 1`] = `
+<body>
+  <div>
+    <div
+      class="choice placed last"
+      data-drag-drop-disabled="false"
+      data-drag-drop-key="da_gap1_xyz_choice1"
+      data-droparea-area="gap1"
+      data-droparea-key="choice1"
+      style="--draw-x: 0px;--draw-y: 0px;--draw-width: 10px;--draw-height: 10px;--draw-selected-scale: 2;"
+    >
+      <div
+        aria-grabbed="false"
+        aria-label="undefined, undefined"
+        class="drag-anchor draggable-source"
+        data-drag-drop-disabled="false"
+        data-drag-drop-key="gap1__xyz__choice1"
+        role="button"
+      >
+        <div
+          class="drag-anchor-content"
+        >
+          <div
+            class="outline-container"
+          >
+            <img
+              aria-hidden="true"
+              class="image"
+              src="hello.png"
+            />
+          </div>
+        </div>
+      </div>
+       
+      <button
+        class="remover"
+        tabindex="-1"
+      >
+        <div
+          class="icon-wrapper"
+        />
+         
+        <svg
+          aria-hidden="false"
+          class="icon small"
+          viewBox="0 0 12 12"
+        >
+          <title>
+            Remove icon
+          </title>
+          <path
+            d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</body>
+`;

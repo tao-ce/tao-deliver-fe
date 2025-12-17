@@ -1,0 +1,516 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SelectPointInteraction > Mouse events > click on marker fire feedback update 1`] = `
+<div
+  class="qti-instruction-container"
+>
+  <div
+    aria-atomic="true"
+    class="feedback warning fullwidth"
+    role="alert"
+  >
+     
+    <p>
+      You need to place from 1 to 3 answers
+    </p>
+  </div>
+</div>
+`;
+
+exports[`SelectPointInteraction > Rendering > renders correct feedbacks 1`] = `
+<div
+  class="qti-instruction-container"
+>
+  <div
+    aria-atomic="true"
+    class="feedback info fullwidth"
+    role="status"
+  >
+     
+    <p>
+      You need to place from 1 to 3 answers
+    </p>
+  </div>
+</div>
+`;
+
+exports[`SelectPointInteraction > Rendering > renders simple props into markup 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="true"
+      ariabar="baz"
+      ariafoo="12"
+      class="qti-interaction qti-blockInteraction qti-selectPointInteraction foo bar baz no-pins"
+      data-baz="24"
+      data-foo="bar"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+    >
+       
+      <div
+        class="info-area"
+      >
+        <div
+          class="qti-instruction-container"
+        />
+         
+      </div>
+       
+      <div
+        class="qti-flow-container"
+      >
+        <div
+          class="qti-block"
+          tabindex="0"
+        >
+           
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="672"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 848 672"
+            width="848"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(24, 68)"
+            >
+              <image
+                class="svg-image"
+                height="600"
+                href="graphic/map-of-the-europe.jpg"
+                preserveAspectRatio="none"
+                width="800"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+              />
+            </g>
+          </svg>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`SelectPointInteraction > Rendering > renders some MiniPins 1`] = `
+<div
+  class="info-area with-pins"
+>
+  <div
+    class="qti-instruction-container"
+  >
+    <div
+      aria-atomic="true"
+      class="feedback info fullwidth"
+      role="status"
+    >
+       
+      <p>
+        You can place up to 5 answers
+      </p>
+    </div>
+  </div>
+   
+  <ul
+    class="mini-pins"
+  >
+    <li
+      class="dimmed"
+    >
+      <svg
+        height="58"
+        version="1.1"
+        width="36"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          class="outer-line"
+          d="M18 0C8.06 0 0 8.058 0 18c0 2.784.633 5.425 1.763 7.777C1.826 25.91 18 57.6 18 57.6l16.042-31.43A17.912 17.912 0 0036 18c0-9.942-8.058-18-18-18"
+          fill="var(--color-brand-hover)"
+        />
+        <path
+          d="M18 4C10.269 4 4 10.267 4 18c0 2.166.492 4.22 1.371 6.048C5.421 24.152 18 48.8 18 48.8l12.477-24.445A13.932 13.932 0 0032 18c0-7.733-6.267-14-14-14"
+          fill="var(--color-gs-light)"
+        />
+        <circle
+          class="small-circle"
+          cx="18"
+          cy="18"
+          fill="var(--color-brand)"
+          r="3"
+        />
+        <circle
+          class="large-circle"
+          cx="18"
+          cy="18"
+          fill="var(--color-brand-hover-invert)"
+          r="5"
+        />
+      </svg>
+       
+    </li>
+    <li
+      class="dimmed"
+    >
+      <svg
+        height="58"
+        version="1.1"
+        width="36"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          class="outer-line"
+          d="M18 0C8.06 0 0 8.058 0 18c0 2.784.633 5.425 1.763 7.777C1.826 25.91 18 57.6 18 57.6l16.042-31.43A17.912 17.912 0 0036 18c0-9.942-8.058-18-18-18"
+          fill="var(--color-brand-hover)"
+        />
+        <path
+          d="M18 4C10.269 4 4 10.267 4 18c0 2.166.492 4.22 1.371 6.048C5.421 24.152 18 48.8 18 48.8l12.477-24.445A13.932 13.932 0 0032 18c0-7.733-6.267-14-14-14"
+          fill="var(--color-gs-light)"
+        />
+        <circle
+          class="small-circle"
+          cx="18"
+          cy="18"
+          fill="var(--color-brand)"
+          r="3"
+        />
+        <circle
+          class="large-circle"
+          cx="18"
+          cy="18"
+          fill="var(--color-brand-hover-invert)"
+          r="5"
+        />
+      </svg>
+       
+    </li>
+    <li>
+      <svg
+        height="58"
+        version="1.1"
+        width="36"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          class="outer-line"
+          d="M18 0C8.06 0 0 8.058 0 18c0 2.784.633 5.425 1.763 7.777C1.826 25.91 18 57.6 18 57.6l16.042-31.43A17.912 17.912 0 0036 18c0-9.942-8.058-18-18-18"
+          fill="var(--color-brand-hover)"
+        />
+        <path
+          d="M18 4C10.269 4 4 10.267 4 18c0 2.166.492 4.22 1.371 6.048C5.421 24.152 18 48.8 18 48.8l12.477-24.445A13.932 13.932 0 0032 18c0-7.733-6.267-14-14-14"
+          fill="var(--color-gs-light)"
+        />
+        <circle
+          class="small-circle"
+          cx="18"
+          cy="18"
+          fill="var(--color-brand)"
+          r="3"
+        />
+        <circle
+          class="large-circle"
+          cx="18"
+          cy="18"
+          fill="var(--color-brand-hover-invert)"
+          r="5"
+        />
+      </svg>
+       
+    </li>
+    <li>
+      <svg
+        height="58"
+        version="1.1"
+        width="36"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          class="outer-line"
+          d="M18 0C8.06 0 0 8.058 0 18c0 2.784.633 5.425 1.763 7.777C1.826 25.91 18 57.6 18 57.6l16.042-31.43A17.912 17.912 0 0036 18c0-9.942-8.058-18-18-18"
+          fill="var(--color-brand-hover)"
+        />
+        <path
+          d="M18 4C10.269 4 4 10.267 4 18c0 2.166.492 4.22 1.371 6.048C5.421 24.152 18 48.8 18 48.8l12.477-24.445A13.932 13.932 0 0032 18c0-7.733-6.267-14-14-14"
+          fill="var(--color-gs-light)"
+        />
+        <circle
+          class="small-circle"
+          cx="18"
+          cy="18"
+          fill="var(--color-brand)"
+          r="3"
+        />
+        <circle
+          class="large-circle"
+          cx="18"
+          cy="18"
+          fill="var(--color-brand-hover-invert)"
+          r="5"
+        />
+      </svg>
+       
+    </li>
+    <li>
+      <svg
+        height="58"
+        version="1.1"
+        width="36"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          class="outer-line"
+          d="M18 0C8.06 0 0 8.058 0 18c0 2.784.633 5.425 1.763 7.777C1.826 25.91 18 57.6 18 57.6l16.042-31.43A17.912 17.912 0 0036 18c0-9.942-8.058-18-18-18"
+          fill="var(--color-brand-hover)"
+        />
+        <path
+          d="M18 4C10.269 4 4 10.267 4 18c0 2.166.492 4.22 1.371 6.048C5.421 24.152 18 48.8 18 48.8l12.477-24.445A13.932 13.932 0 0032 18c0-7.733-6.267-14-14-14"
+          fill="var(--color-gs-light)"
+        />
+        <circle
+          class="small-circle"
+          cx="18"
+          cy="18"
+          fill="var(--color-brand)"
+          r="3"
+        />
+        <circle
+          class="large-circle"
+          cx="18"
+          cy="18"
+          fill="var(--color-brand-hover-invert)"
+          r="5"
+        />
+      </svg>
+       
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`SelectPointInteraction > Rendering > renders the instruction lang on the feedback block 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-selectPointInteraction"
+    >
+       
+      <div
+        class="info-area with-pins"
+      >
+        <div
+          class="qti-instruction-container"
+          dir="ltr"
+          lang="hi_IN"
+        >
+          <div
+            aria-atomic="true"
+            class="feedback info fullwidth"
+            role="status"
+          >
+             
+            <p>
+              You need to place from 1 to 3 answers
+            </p>
+          </div>
+        </div>
+         
+        <ul
+          class="mini-pins"
+        >
+          <li>
+            <svg
+              height="58"
+              version="1.1"
+              width="36"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="outer-line"
+                d="M18 0C8.06 0 0 8.058 0 18c0 2.784.633 5.425 1.763 7.777C1.826 25.91 18 57.6 18 57.6l16.042-31.43A17.912 17.912 0 0036 18c0-9.942-8.058-18-18-18"
+                fill="var(--color-brand-hover)"
+              />
+              <path
+                d="M18 4C10.269 4 4 10.267 4 18c0 2.166.492 4.22 1.371 6.048C5.421 24.152 18 48.8 18 48.8l12.477-24.445A13.932 13.932 0 0032 18c0-7.733-6.267-14-14-14"
+                fill="var(--color-gs-light)"
+              />
+              <circle
+                class="small-circle"
+                cx="18"
+                cy="18"
+                fill="var(--color-brand)"
+                r="3"
+              />
+              <circle
+                class="large-circle"
+                cx="18"
+                cy="18"
+                fill="var(--color-brand-hover-invert)"
+                r="5"
+              />
+            </svg>
+             
+          </li>
+          <li>
+            <svg
+              height="58"
+              version="1.1"
+              width="36"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="outer-line"
+                d="M18 0C8.06 0 0 8.058 0 18c0 2.784.633 5.425 1.763 7.777C1.826 25.91 18 57.6 18 57.6l16.042-31.43A17.912 17.912 0 0036 18c0-9.942-8.058-18-18-18"
+                fill="var(--color-brand-hover)"
+              />
+              <path
+                d="M18 4C10.269 4 4 10.267 4 18c0 2.166.492 4.22 1.371 6.048C5.421 24.152 18 48.8 18 48.8l12.477-24.445A13.932 13.932 0 0032 18c0-7.733-6.267-14-14-14"
+                fill="var(--color-gs-light)"
+              />
+              <circle
+                class="small-circle"
+                cx="18"
+                cy="18"
+                fill="var(--color-brand)"
+                r="3"
+              />
+              <circle
+                class="large-circle"
+                cx="18"
+                cy="18"
+                fill="var(--color-brand-hover-invert)"
+                r="5"
+              />
+            </svg>
+             
+          </li>
+          <li>
+            <svg
+              height="58"
+              version="1.1"
+              width="36"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                class="outer-line"
+                d="M18 0C8.06 0 0 8.058 0 18c0 2.784.633 5.425 1.763 7.777C1.826 25.91 18 57.6 18 57.6l16.042-31.43A17.912 17.912 0 0036 18c0-9.942-8.058-18-18-18"
+                fill="var(--color-brand-hover)"
+              />
+              <path
+                d="M18 4C10.269 4 4 10.267 4 18c0 2.166.492 4.22 1.371 6.048C5.421 24.152 18 48.8 18 48.8l12.477-24.445A13.932 13.932 0 0032 18c0-7.733-6.267-14-14-14"
+                fill="var(--color-gs-light)"
+              />
+              <circle
+                class="small-circle"
+                cx="18"
+                cy="18"
+                fill="var(--color-brand)"
+                r="3"
+              />
+              <circle
+                class="large-circle"
+                cx="18"
+                cy="18"
+                fill="var(--color-brand-hover-invert)"
+                r="5"
+              />
+            </svg>
+             
+          </li>
+        </ul>
+      </div>
+       
+      <div
+        class="qti-flow-container"
+      >
+        <div
+          class="qti-block"
+          tabindex="0"
+        >
+           
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="672"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 848 672"
+            width="848"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(24, 68)"
+            >
+              <image
+                class="svg-image"
+                height="600"
+                href="graphic/map-of-the-europe.jpg"
+                preserveAspectRatio="none"
+                width="800"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+              />
+            </g>
+          </svg>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;

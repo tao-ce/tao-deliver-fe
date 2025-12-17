@@ -1,0 +1,122 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Line > rendering > renders with given drawingGeometry (no geometry props) 1`] = `
+<body>
+  <div>
+    <line
+      class="shape"
+    />
+     
+    <line
+      class="line-hitbox"
+    />
+     
+    <line
+      class="bounding"
+    />
+     
+    
+  </div>
+</body>
+`;
+
+exports[`Line > rendering > renders with the given geometry 1`] = `
+<body>
+  <div>
+    <line
+      class="shape"
+      x1="100"
+      x2="300"
+      y1="100"
+      y2="300"
+    />
+     
+    <line
+      class="line-hitbox"
+      x1="100"
+      x2="300"
+      y1="100"
+      y2="300"
+    />
+     
+    <line
+      class="bounding"
+      x1="100"
+      x2="300"
+      y1="100"
+      y2="300"
+    />
+     
+    
+  </div>
+</body>
+`;
+
+exports[`Line > rendering > renders with the given key and selected state 1`] = `
+<body>
+  <div>
+    <line
+      class="shape"
+      x1="100"
+      x2="300"
+      y1="100"
+      y2="300"
+    />
+     
+    <line
+      class="line-hitbox"
+      x1="100"
+      x2="300"
+      y1="100"
+      y2="300"
+    />
+     
+    <line
+      class="bounding"
+      x1="100"
+      x2="300"
+      y1="100"
+      y2="300"
+    />
+     
+    <g
+      class="resize-hitbox-container"
+    >
+      <rect
+        class="resize-square"
+        height="10"
+        width="10"
+        x="95"
+        y="95"
+      />
+      <rect
+        class="resize-hitbox"
+        height="88"
+        width="88"
+        x="56"
+        y="56"
+      />
+    </g>
+     
+    <g
+      class="resize-hitbox-container"
+    >
+      <rect
+        class="resize-square"
+        height="10"
+        width="10"
+        x="295"
+        y="295"
+      />
+      <rect
+        class="resize-hitbox"
+        height="88"
+        width="88"
+        x="256"
+        y="256"
+      />
+    </g>
+    
+  </div>
+</body>
+`;

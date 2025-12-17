@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`convertPxToRem > updates all properties, if no specified 1`] = `
+"body div.qti-item .grid-row p:first-child {font-size: 1.5rem !important; --hello-world300px: 37.5rem; width: var(--hello-world300px); height: calc(1.3125rem + 3rem + var(--hello-world300px)); border: calc(-250 * -0.065rem) solid #aabbcc !important; background-color: orange;}
+body div.qti-item * {font-family: 'Tahoma', sans-serif !important; font-size: 3rem; border: 0.125rem solid #aabbcc !important; top: -1.5rem !important; bottom: -1rem; left: -0.1875rem !important; right: -0.125rem;}
+.elem-1 {font-size: var(--8pxvariable); border: calc(2 * 30.85rem) solid var(--20px) !important; margin: 2em 0.5rem 345rem 40rem !important;}
+.elem-2 {font-size: calc(1em - 1rem);}
+@media screen and (max-width: 1000px) {p * {font-size: calc(2*1.25rem); box-shadow: -2rem 1.375rem 1rem 1.125rem green;}.elem-2 {box-shadow: -2rem -1.375rem 1rem 1.125rem green;}}"
+`;
+
+exports[`convertPxToRem > updates specified properties 1`] = `
+"body div.qti-item .grid-row p:first-child {font-size: 1.5rem !important; --hello-world300px: 300px; width: var(--hello-world300px); height: calc(10.5px + 3rem + var(--hello-world300px)); border: calc(-250 * -0.52px) solid #aabbcc !important; background-color: orange;}
+body div.qti-item * {font-family: 'Tahoma', sans-serif !important; font-size: 3rem; border: 1px solid #aabbcc !important; top: -1.5rem !important; bottom: -1rem; left: -1.5px !important; right: -1px;}
+.elem-1 {font-size: var(--8pxvariable); border: calc(2 * 30.85rem) solid var(--20px) !important; margin: 2em 4px 345rem 320px !important;}
+.elem-2 {font-size: calc(1em - 1rem);}
+@media screen and (max-width: 1000px) {p * {font-size: calc(2*1.25rem); box-shadow: -16px 11px 8px 9px green;}.elem-2 {box-shadow: -16px -11px 8px 9px green;}}"
+`;

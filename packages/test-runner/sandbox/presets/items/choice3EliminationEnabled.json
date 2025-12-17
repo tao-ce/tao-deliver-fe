@@ -1,0 +1,298 @@
+{
+  "baseUrl": "./assets/",
+  "itemIdentifier": "item-3",
+  "itemData": {
+      "type": "qti",
+      "data": {
+          "identifier": "i61b0ebbddf76916cc6479e2d60b64bd",
+          "serial": "i61b105272a170",
+          "qtiClass": "assessmentItem",
+          "attributes": {
+              "identifier": "i61b0ebbddf76916cc6479e2d60b64bd",
+              "title": "Choices Default",
+              "label": "Choice Interaction 3x (Allow elimination is enable) ",
+              "xml:lang": "en-US",
+              "adaptive": false,
+              "timeDependent": false,
+              "toolName": "TAO",
+              "toolVersion": "NextGen",
+              "class": ""
+          },
+          "body": {
+              "serial": "i61b105272a15f",
+              "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i61b105272a4e9}}\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i61b105272a8eb}}\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i61b105272ac5d}}\n      </div>\n    </div>\n  ",
+              "elements": {
+                  "i61b105272a4e9": {
+                      "serial": "i61b105272a4e9",
+                      "qtiClass": "choiceInteraction",
+                      "attributes": {
+                          "responseIdentifier": "RESPONSE",
+                          "shuffle": false,
+                          "maxChoices": 0,
+                          "minChoices": 0,
+                          "orientation": "vertical",
+                          "class": "eliminable"
+                      },
+                      "choices": {
+                          "i61b105272a659": {
+                              "identifier": "choice_1",
+                              "serial": "i61b105272a659",
+                              "qtiClass": "simpleChoice",
+                              "attributes": {
+                                  "identifier": "choice_1",
+                                  "fixed": false,
+                                  "showHide": "show"
+                              },
+                              "body": {
+                                  "serial": "i61b105272a68a",
+                                  "body": "choice #1",
+                                  "elements": []
+                              }
+                          },
+                          "i61b105272a730": {
+                              "identifier": "choice_2",
+                              "serial": "i61b105272a730",
+                              "qtiClass": "simpleChoice",
+                              "attributes": {
+                                  "identifier": "choice_2",
+                                  "fixed": false,
+                                  "showHide": "show"
+                              },
+                              "body": {
+                                  "serial": "i61b105272a760",
+                                  "body": "choice #2",
+                                  "elements": []
+                              }
+                          },
+                          "i61b105272a804": {
+                              "identifier": "choice_3",
+                              "serial": "i61b105272a804",
+                              "qtiClass": "simpleChoice",
+                              "attributes": {
+                                  "identifier": "choice_3",
+                                  "fixed": false,
+                                  "showHide": "show"
+                              },
+                              "body": {
+                                  "serial": "i61b105272a834",
+                                  "body": "choice #3",
+                                  "elements": []
+                              }
+                          }
+                      },
+                      "prompt": {
+                          "serial": "i61b105272a572",
+                          "body": "Choice Interaction (Allow elimination is enable)",
+                          "elements": []
+                      }
+                  },
+                  "i61b105272a8eb": {
+                      "serial": "i61b105272a8eb",
+                      "qtiClass": "choiceInteraction",
+                      "attributes": {
+                          "responseIdentifier": "RESPONSE_1",
+                          "shuffle": false,
+                          "maxChoices": 0,
+                          "minChoices": 0,
+                          "orientation": "vertical",
+                          "class": "eliminable"
+                      },
+                      "choices": {
+                          "i61b105272aa35": {
+                              "identifier": "choice_4",
+                              "serial": "i61b105272aa35",
+                              "qtiClass": "simpleChoice",
+                              "attributes": {
+                                  "identifier": "choice_4",
+                                  "fixed": false,
+                                  "showHide": "show"
+                              },
+                              "body": {
+                                  "serial": "i61b105272aa64",
+                                  "body": "choice #1",
+                                  "elements": []
+                              }
+                          },
+                          "i61b105272aae9": {
+                              "identifier": "choice_5",
+                              "serial": "i61b105272aae9",
+                              "qtiClass": "simpleChoice",
+                              "attributes": {
+                                  "identifier": "choice_5",
+                                  "fixed": false,
+                                  "showHide": "show"
+                              },
+                              "body": {
+                                  "serial": "i61b105272ab17",
+                                  "body": "choice #2",
+                                  "elements": []
+                              }
+                          },
+                          "i61b105272ab9a": {
+                              "identifier": "choice_6",
+                              "serial": "i61b105272ab9a",
+                              "qtiClass": "simpleChoice",
+                              "attributes": {
+                                  "identifier": "choice_6",
+                                  "fixed": false,
+                                  "showHide": "show"
+                              },
+                              "body": {
+                                  "serial": "i61b105272abc7",
+                                  "body": "choice #3",
+                                  "elements": []
+                              }
+                          }
+                      },
+                      "prompt": {
+                          "serial": "i61b105272a971",
+                          "body": "Choice Interaction (Allow elimination is enable)",
+                          "elements": []
+                      }
+                  },
+                  "i61b105272ac5d": {
+                      "serial": "i61b105272ac5d",
+                      "qtiClass": "choiceInteraction",
+                      "attributes": {
+                          "responseIdentifier": "RESPONSE_2",
+                          "shuffle": false,
+                          "maxChoices": 0,
+                          "minChoices": 0,
+                          "orientation": "vertical",
+                          "class": "eliminable"
+                      },
+                      "choices": {
+                          "i61b105272ad73": {
+                              "identifier": "choice_7",
+                              "serial": "i61b105272ad73",
+                              "qtiClass": "simpleChoice",
+                              "attributes": {
+                                  "identifier": "choice_7",
+                                  "fixed": false,
+                                  "showHide": "show"
+                              },
+                              "body": {
+                                  "serial": "i61b105272ae3e",
+                                  "body": "choice #1",
+                                  "elements": []
+                              }
+                          },
+                          "i61b105272aec6": {
+                              "identifier": "choice_8",
+                              "serial": "i61b105272aec6",
+                              "qtiClass": "simpleChoice",
+                              "attributes": {
+                                  "identifier": "choice_8",
+                                  "fixed": false,
+                                  "showHide": "show"
+                              },
+                              "body": {
+                                  "serial": "i61b105272aef4",
+                                  "body": "choice #2",
+                                  "elements": []
+                              }
+                          },
+                          "i61b105272af74": {
+                              "identifier": "choice_9",
+                              "serial": "i61b105272af74",
+                              "qtiClass": "simpleChoice",
+                              "attributes": {
+                                  "identifier": "choice_9",
+                                  "fixed": false,
+                                  "showHide": "show"
+                              },
+                              "body": {
+                                  "serial": "i61b105272afa1",
+                                  "body": "choice #3",
+                                  "elements": []
+                              }
+                          }
+                      },
+                      "prompt": {
+                          "serial": "i61b105272acdf",
+                          "body": "Choice Interaction (Allow elimination is enable)",
+                          "elements": []
+                      }
+                  }
+              }
+          },
+          "namespaces": {
+              "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+              "m": "http://www.w3.org/1998/Math/MathML",
+              "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+          },
+          "schemaLocations": {
+              "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+          },
+          "stylesheets": [],
+          "outcomes": {
+              "i61b105272a37f": {
+                  "identifier": "SCORE",
+                  "serial": "i61b105272a37f",
+                  "qtiClass": "outcomeDeclaration",
+                  "attributes": {
+                      "identifier": "SCORE",
+                      "cardinality": "single",
+                      "baseType": "float",
+                      "normalMaximum": 0
+                  },
+                  "defaultValue": null
+              },
+              "i61b105272a3cf": {
+                  "identifier": "MAXSCORE",
+                  "serial": "i61b105272a3cf",
+                  "qtiClass": "outcomeDeclaration",
+                  "attributes": {
+                      "identifier": "MAXSCORE",
+                      "cardinality": "single",
+                      "baseType": "float"
+                  },
+                  "defaultValue": "0"
+              }
+          },
+          "responses": {
+              "i61b105272a252": {
+                  "identifier": "RESPONSE",
+                  "serial": "i61b105272a252",
+                  "qtiClass": "responseDeclaration",
+                  "attributes": {
+                      "identifier": "RESPONSE",
+                      "cardinality": "multiple",
+                      "baseType": "identifier"
+                  },
+                  "defaultValue": []
+              },
+              "i61b105272a2b9": {
+                  "identifier": "RESPONSE_1",
+                  "serial": "i61b105272a2b9",
+                  "qtiClass": "responseDeclaration",
+                  "attributes": {
+                      "identifier": "RESPONSE_1",
+                      "cardinality": "multiple",
+                      "baseType": "identifier"
+                  },
+                  "defaultValue": []
+              },
+              "i61b105272a31f": {
+                  "identifier": "RESPONSE_2",
+                  "serial": "i61b105272a31f",
+                  "qtiClass": "responseDeclaration",
+                  "attributes": {
+                      "identifier": "RESPONSE_2",
+                      "cardinality": "multiple",
+                      "baseType": "identifier"
+                  },
+                  "defaultValue": []
+              }
+          },
+          "feedbacks": [],
+          "apipAccessibility": ""
+      },
+      "assets": []
+  },
+  "itemState": {},
+  "portableElements": {
+      "pci": [],
+      "pic": []
+  }
+}

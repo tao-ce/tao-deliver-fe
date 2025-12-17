@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`sets css vars derived from style-editor theme, keeps other styles 1`] = `
+"body div.qti-item figure figcaption {font-size: 22px;}
+body div.qti-item .matrix th {background-color: var(--styleeditor-table-heading-bg-color);}
+body div.qti-item .solid,body div.qti-item .matrix, body div.qti-item table.matrix th, body div.qti-item table.matrix td {border-color: var(--styleeditor-border-color);}
+body div.qti-item {color: var(--styleeditor-text-color); font-family: var(--styleeditor-font-family); font-size: var(--styleeditor-font-size);}
+body div.qti-item, body div.qti-item .qti-associateInteraction .result-area > li > .target {background-color: var(--styleeditor-bg-color);}
+.qti-item {--styleeditor-bg-color: #7578f3; --styleeditor-text-color: #e7ef66; --styleeditor-border-color: #d89df6; --styleeditor-table-heading-bg-color: #5bbdad; --styleeditor-font-family: 'Avant Garde',Avantgarde,'Century Gothic',CenturyGothic,'AppleGothic',sans-serif; --styleeditor-font-size: 24px;}
+.qti-item {--color-bg-default: var(--styleeditor-bg-color); --color-bg-input-default: var(--styleeditor-bg-color); --color-bg-actionable-secondary: var(--styleeditor-bg-color); --color-text-default: var(--styleeditor-text-color); --color-text-feedback: var(--styleeditor-text-color); --color-link-primary: var(--styleeditor-text-color); --color-border-default: var(--styleeditor-border-color); --color-border-input-default: var(--styleeditor-border-color); --color-border-info: var(--styleeditor-border-color); --color-bg-table-heading: var(--styleeditor-table-heading-bg-color); --font-ui: var(--styleeditor-font-family); --fontsize-body: var(--styleeditor-font-size); --fontsize-body-xs: calc(var(--styleeditor-font-size) * 0.75); --fontsize-body-s: calc(var(--styleeditor-font-size) * 0.875); --fontsize-heading: var(--styleeditor-font-size); --fontsize-heading-l: calc(var(--styleeditor-font-size) * 1.25); --fontsize-heading-xl: calc(var(--styleeditor-font-size) * 1.875); --fontsize-heading-xxl: calc(var(--styleeditor-font-size) * 2.5);}"
+`;
+
+exports[`sets css vars if only some theme properties are defined 1`] = `
+".qti-item {--styleeditor-table-heading-bg-color: #98fb9e;}
+.qti-item {--color-bg-table-heading: var(--styleeditor-table-heading-bg-color);}"
+`;
+
+exports[`sets css vars if only some theme properties are defined 2`] = `
+"body div.qti-item {font-size: 24px;}
+.qti-item {--styleeditor-font-size: 24px;}
+.qti-item {--fontsize-body: var(--styleeditor-font-size); --fontsize-body-xs: calc(var(--styleeditor-font-size) * 0.75); --fontsize-body-s: calc(var(--styleeditor-font-size) * 0.875); --fontsize-heading: var(--styleeditor-font-size); --fontsize-heading-l: calc(var(--styleeditor-font-size) * 1.25); --fontsize-heading-xl: calc(var(--styleeditor-font-size) * 1.875); --fontsize-heading-xxl: calc(var(--styleeditor-font-size) * 2.5);}"
+`;

@@ -1,0 +1,355 @@
+{
+    "baseUrl": "./presets/items/assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "inline_beatles",
+            "serial": "i5ecb661e9d18f",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "inline_beatles",
+                "title": "Name these musicians (Inline Choice Interaction)",
+                "label": "Name these musicians (Inline choice Interaction)",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint117",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5ecb661e9d187",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <h1>Inline Choice Interaction<\/h1>\n        <h2>Do you know the names of these musicians?<\/h2>\n      <\/div>\n    <\/div>\n    <div class=\"grid-row\">\n      <div class=\"col-7\">\n        <p>The Beatles were an English rock band formed in Liverpool. Their career lasted from 1960 to 1970 and until today they are regularly cited as a major influence by many musicians.<\/p>\n        <p>For almost all the ten years the line-up consisted of four musicians:<\/p>\n        <p>One of the guitar players, {{i5ecb661e9d46c}} was a founding member and also one of the two main composers. He wrote most of the Beatles' hits together with {{i5ecb661e9d560}}, the bass player. The other guitar player's name is\u00a0{{i5ecb661e9d625}}, and the drums were played by {{i5ecb661e9d6be}}.\u00a0\u00a0<\/p>\n      <\/div>\n      <div class=\"col-1\"><\/div>\n      <div class=\"col-4\">\n        {{i5ecb661e9d817}}\n        <p>Picture by <a href=\"https:\/\/commons.wikimedia.org\/wiki\/File:The_Beatles_magical_mystery_tour_(cropped).jpg\" target=\"_blank\">Parlophone Music Sweden<\/a>, released under <a href=\"https:\/\/creativecommons.org\/licenses\/by-sa\/3.0\/deed.en\" target=\"_blank\">CC BY-SA 3.0<\/a>.<\/p>\n      <\/div>\n    <\/div>\n  ",
+                "elements": {
+                    "i5ecb661e9d46c": {
+                        "serial": "i5ecb661e9d46c",
+                        "qtiClass": "inlineChoiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "lennon",
+                            "shuffle": false,
+                            "required": true
+                        },
+                        "choices": {
+                            "i5ecb661e9d4c2": {
+                                "identifier": "choice_a1",
+                                "serial": "i5ecb661e9d4c2",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_a1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "John Lennon"
+                            },
+                            "i5ecb661e9d4fa": {
+                                "identifier": "choice_a2",
+                                "serial": "i5ecb661e9d4fa",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_a2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "Paul McCartney"
+                            },
+                            "i5ecb661e9d519": {
+                                "identifier": "choice_a3",
+                                "serial": "i5ecb661e9d519",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_a3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "George Harrison"
+                            },
+                            "i5ecb661e9d536": {
+                                "identifier": "choice_a4",
+                                "serial": "i5ecb661e9d536",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_a4",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "Ringo Starr"
+                            }
+                        }
+                    },
+                    "i5ecb661e9d560": {
+                        "serial": "i5ecb661e9d560",
+                        "qtiClass": "inlineChoiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "mccartney",
+                            "shuffle": false,
+                            "required": true
+                        },
+                        "choices": {
+                            "i5ecb661e9d591": {
+                                "identifier": "choice_b1",
+                                "serial": "i5ecb661e9d591",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_b1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "John Lennon"
+                            },
+                            "i5ecb661e9d5b2": {
+                                "identifier": "choice_b2",
+                                "serial": "i5ecb661e9d5b2",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_b2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "Paul McCartney"
+                            },
+                            "i5ecb661e9d5da": {
+                                "identifier": "choice_b3",
+                                "serial": "i5ecb661e9d5da",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_b3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "George Harrison"
+                            },
+                            "i5ecb661e9d5f4": {
+                                "identifier": "choice_b4",
+                                "serial": "i5ecb661e9d5f4",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_b4",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "Ringo Starr"
+                            }
+                        }
+                    },
+                    "i5ecb661e9d625": {
+                        "serial": "i5ecb661e9d625",
+                        "qtiClass": "inlineChoiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "harrison",
+                            "shuffle": false,
+                            "required": true
+                        },
+                        "choices": {
+                            "i5ecb661e9d64f": {
+                                "identifier": "choice_c1",
+                                "serial": "i5ecb661e9d64f",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_c1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "John Lennon"
+                            },
+                            "i5ecb661e9d66d": {
+                                "identifier": "choice_c2",
+                                "serial": "i5ecb661e9d66d",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_c2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "Paul McCartney"
+                            },
+                            "i5ecb661e9d686": {
+                                "identifier": "choice_c3",
+                                "serial": "i5ecb661e9d686",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_c3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "George Harrison"
+                            },
+                            "i5ecb661e9d69d": {
+                                "identifier": "choice_c4",
+                                "serial": "i5ecb661e9d69d",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_c4",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "Ringo Starr"
+                            }
+                        }
+                    },
+                    "i5ecb661e9d6be": {
+                        "serial": "i5ecb661e9d6be",
+                        "qtiClass": "inlineChoiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "starr",
+                            "shuffle": false,
+                            "required": true
+                        },
+                        "choices": {
+                            "i5ecb661e9d6ed": {
+                                "identifier": "choice_d1",
+                                "serial": "i5ecb661e9d6ed",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_d1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "John Lennon"
+                            },
+                            "i5ecb661e9d70c": {
+                                "identifier": "choice_d2",
+                                "serial": "i5ecb661e9d70c",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_d2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "Paul McCartney"
+                            },
+                            "i5ecb661e9d724": {
+                                "identifier": "choice_d3",
+                                "serial": "i5ecb661e9d724",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_d3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "George Harrison"
+                            },
+                            "i5ecb661e9d73b": {
+                                "identifier": "choice_d4",
+                                "serial": "i5ecb661e9d73b",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_d4",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "text": "Ringo Starr"
+                            }
+                        }
+                    },
+                    "i5ecb661e9d817": {
+                        "serial": "i5ecb661e9d817",
+                        "qtiClass": "img",
+                        "attributes": {
+                            "src": "639px-The_Beatles_magical_mystery_tour_(cropped).jpg",
+                            "alt": "Beatles",
+                            "width": "100%",
+                            "type": "image\/jpeg"
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+                "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+                "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": {
+                "i5ecb661e9d359": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i5ecb661e9d359",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "4"
+                },
+                "i5ecb661e9d382": {
+                    "identifier": "SCORE",
+                    "serial": "i5ecb661e9d382",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 4
+                    },
+                    "defaultValue": null
+                }
+            },
+            "responses": {
+                "i5ecb661e9d223": {
+                    "identifier": "lennon",
+                    "serial": "i5ecb661e9d223",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "lennon",
+                        "cardinality": "single",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                },
+                "i5ecb661e9d281": {
+                    "identifier": "mccartney",
+                    "serial": "i5ecb661e9d281",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "mccartney",
+                        "cardinality": "single",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                },
+                "i5ecb661e9d2c6": {
+                    "identifier": "starr",
+                    "serial": "i5ecb661e9d2c6",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "starr",
+                        "cardinality": "single",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                },
+                "i5ecb661e9d31d": {
+                    "identifier": "harrison",
+                    "serial": "i5ecb661e9d31d",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "harrison",
+                        "cardinality": "single",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "639px-The_Beatles_magical_mystery_tour_(cropped).jpg": "639px-The_Beatles_magical_mystery_tour_(cropped).jpg"
+            }
+        }
+    },
+    "itemState": {
+      "fooName": "barBeatles"
+    },
+    "itemIdentifier": "item-10",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    },
+    "success": true,
+    "messages": []
+}

@@ -1,0 +1,90 @@
+{
+  "baseUrl": "./assets/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "extended_text_mathentry",
+      "serial": "i5ec7d8d84b935",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "extended_text_mathentry",
+        "title": "ExtendedText with Math Entry ",
+        "label": "ExtendedText with Math Entry ",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint117",
+        "class": ""
+      },
+      "body": {
+        "serial": "i5ec7d8d84b92d",
+        "body": "<div class=\"grid-row\"><div class=\"col-12\"> <h1>Extended Text with Math Entry<\/h1> <\/div><\/div> <div class=\"grid-row\"><div class=\"col-12\"> <p> Given the following formula for standard deviation:<\/p> <p>{{math_5e5e7a713e1cf077548790}}<\/p> <p>derive a formula for the sample size <em>N<\/em> in terms of the mean <em>&mu;<\/em> and values <em>&#119909;<\/em>.<\/p><\/div><\/div> <div class=\"grid-row\"><div class=\"col-12\"> {{i5ec7d8d84baa2}}<\/div><\/div>",
+        "elements": {
+          "math_5e5e7a713e1cf077548790": {
+            "serial": "math_5e5e7a713e1cf077548790",
+            "qtiClass": "math",
+            "attributes": {},
+            "mathML": "<mi>&#x3C3;</mi>  <mo>=</mo>  <msqrt>    <mfrac>      <mn>1</mn>      <mi>N</mi>    </mfrac>    <munderover>      <mo data-mjx-texclass=\"OP\">&#x2211;</mo>      <mrow>        <mi>i</mi>        <mo>=</mo>        <mn>1</mn>      </mrow>      <mi>N</mi>    </munderover>    <mo stretchy=\"false\">(</mo>    <msub>      <mi>x</mi>      <mi>i</mi>    </msub>    <mo>&#x2212;</mo>    <mi>&#x3BC;</mi>    <msup>      <mo stretchy=\"false\">)</mo>      <mn>2</mn>    </msup>  </msqrt>",
+            "annotations": []
+          },
+          "i5ec7d8d84baa2": {
+            "serial": "i5ec7d8d84baa2",
+            "qtiClass": "extendedTextInteraction",
+            "attributes": {
+              "responseIdentifier": "extended_text_mathentry",
+              "base": 10,
+              "data-math-entry": "true",
+              "required": true,
+              "expectedLength": 500,
+              "placeholderText": "Your solution...",
+              "minStrings": 0,
+              "format": "xhtml",
+              "class" : "qti-counter-down",
+              "data-toolbar-remove-items": "strikethrough, subscript, superscript, blockQuote, indent, outdent, bulletedList, numberedList, fontFamily, fontColor, insertTable, uploadImage"
+            },
+            "choices": [],
+            "prompt": {
+              "serial": "i5ec7d8d84baf8",
+              "body": "",
+              "elements": []
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+        "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+        "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+      },
+      "stylesheets": [],
+      "outcomes": [],
+      "responses": {
+        "i5ec7d8d84b9b9": {
+          "identifier": "extended_text_mathentry",
+          "serial": "i5ec7d8d84b9b9",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "extended_text_mathentry",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": []
+        }
+      },
+      "feedbacks": [],
+      "apipAccessibility": ""
+    },
+    "assets": {}
+  },
+  "itemState": {},
+  "itemIdentifier": "item-8",
+  "portableElements": {
+    "pci": [],
+    "pic": []
+  },
+  "messages": []
+}

@@ -1,0 +1,81 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LetterSpacingSetting > renders correctly 1`] = `
+<body>
+  <div>
+    <span
+      class="control-row"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon medium"
+        fill="none"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Font spacing tool icon
+        </title>
+        <path
+          clip-rule="evenodd"
+          d="M3 1L3 2L13 2V1L15 2.5L13 4V3L3 3V4L1 2.5L3 1ZM8.296 15L7.36 12.828H2.944L2.008 15H1L4.72003 6H5.57203L9.292 15H8.296ZM3.292 12.012H7.012L5.15203 7.14L3.292 12.012ZM12.7788 8.47149C13.5228 8.47149 14.0748 8.66349 14.4348 9.04749C14.8028 9.42348 15 10.4548 15 11.2308V14.9988H14V13.9188C13.848 14.2628 13.6547 14.5308 13.3427 14.7228C13.0307 14.9068 12.6707 14.9988 12.2627 14.9988C11.8867 14.9988 11.5387 14.9228 11.2187 14.7708C10.9067 14.6188 10.6587 14.4068 10.4747 14.1348C10.2907 13.8628 10.1987 13.5628 10.1987 13.2348C10.1987 12.7948 10.3107 12.4548 10.5347 12.2148C10.7587 11.9668 11.1267 11.7908 11.6387 11.6868C12.1507 11.5748 12.8627 11.5188 13.7747 11.5188H14V11.1228C14 10.6348 13.9388 9.82749 13.7388 9.61149C13.5388 9.38749 13.2148 9.27549 12.7668 9.27549C12.0948 9.27549 11.4268 9.48349 10.7628 9.89949L10.4388 9.19149C10.7428 8.97549 11.1068 8.80349 11.5308 8.67549C11.9628 8.53949 12.3788 8.47149 12.7788 8.47149ZM12.3947 14.2308C12.8747 14.2308 13.2667 14.0708 13.5707 13.7508C13.8827 13.4228 14 13.0028 14 12.4908V12.1428H13.8227C13.1187 12.1428 12.5827 12.1748 12.2147 12.2388C11.8467 12.2948 11.5827 12.3948 11.4227 12.5388C11.2707 12.6748 11.1947 12.8788 11.1947 13.1508C11.1947 13.4628 11.3067 13.7228 11.5307 13.9308C11.7627 14.1308 12.0507 14.2308 12.3947 14.2308Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+          id="Union"
+        />
+      </svg>
+       
+      <label>
+        Letter spacing
+         
+      </label>
+       
+      <span
+        class="stepper"
+      >
+        <button
+          aria-label="increase letter spacing"
+          class="icon-bar-btn actionable base-12 secondary circular"
+          title="increase letter spacing"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Plus icon
+            </title>
+            <path
+              d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+            />
+          </svg>
+           
+           
+        </button>
+         
+        <button
+          aria-disabled="true"
+          aria-label="decrease letter spacing"
+          class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+          title="decrease letter spacing"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Minus icon
+            </title>
+            <path
+              d="M0 7h16v2H0z"
+            />
+          </svg>
+           
+           
+        </button>
+      </span>
+    </span>
+  </div>
+</body>
+`;

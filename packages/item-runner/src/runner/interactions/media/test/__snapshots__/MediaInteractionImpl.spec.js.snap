@@ -1,0 +1,318 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MediaInteraction > renders base props into markup 1`] = `
+<body>
+  <div>
+    <div
+      aria-bar="baz"
+      aria-foo="12"
+      class="qti-interaction qti-blockInteraction qti-mediaInteraction foo bar baz"
+      data-baz="24"
+      data-foo="bar"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+    >
+      <div
+        class="qti-prompt cf"
+      >
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+       
+       
+       
+       
+      <div>
+         
+        <div
+          aria-labelledby="tao-feedback-123"
+          class="player mode-video"
+          dir="ltr"
+          style="width: auto; height: auto; --play-pause-button-display: none; --volume-slider-width: 18.5rem; --volume-input-display: block;"
+        >
+          <video
+            controls=""
+            crossorigin="anonymous"
+            id="tao-player-123"
+          />
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control play"
+              data-plyr="play"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control progress"
+              data-plyr="progress"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control mute"
+              data-plyr="mute"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control volume"
+              data-plyr="volume"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control fullscreen"
+              data-plyr="fullscreen"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control play-large"
+              data-plyr="play-large"
+            />
+          </div>
+        </div>
+         
+        <span
+          class="visually-hidden"
+          id="tao-feedback-123"
+        >
+          media player
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MediaInteraction > renders player and controls labels with correct lang "ar-arb" 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-blockInteraction qti-mediaInteraction"
+    >
+       
+      <div
+        class="feedback"
+        dir="rtl"
+        lang="ar-arb"
+      >
+        You must play this media at least 1 times
+      </div>
+       
+       
+       
+      <div>
+         
+        <div
+          aria-labelledby="tao-feedback-123"
+          class="player mode-video linear"
+          dir="ltr"
+          style="width: auto; height: auto; --play-pause-button-display: none; --volume-slider-width: 18.5rem; --volume-input-display: block;"
+        >
+          <video
+            controls=""
+            crossorigin="anonymous"
+            id="tao-player-123"
+          />
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control play"
+              data-plyr="play"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control progress"
+              data-plyr="progress"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control mute"
+              data-plyr="mute"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control volume"
+              data-plyr="volume"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control fullscreen"
+              data-plyr="fullscreen"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control play-large"
+              data-plyr="play-large"
+            />
+          </div>
+        </div>
+         
+        <span
+          class="visually-hidden"
+          id="tao-feedback-123"
+          lang="ar-arb"
+        >
+          media player
+        </span>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`MediaInteraction > renders player and controls labels with correct lang "en-US" 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-blockInteraction qti-mediaInteraction"
+    >
+       
+      <div
+        class="feedback"
+        dir="ltr"
+        lang="en-US"
+      >
+        You must play this media at least 1 times
+      </div>
+       
+       
+       
+      <div>
+         
+        <div
+          aria-labelledby="tao-feedback-123"
+          class="player mode-video linear"
+          dir="ltr"
+          style="width: auto; height: auto; --play-pause-button-display: none; --volume-slider-width: 18.5rem; --volume-input-display: block;"
+        >
+          <video
+            controls=""
+            crossorigin="anonymous"
+            id="tao-player-123"
+          />
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control play"
+              data-plyr="play"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control progress"
+              data-plyr="progress"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control mute"
+              data-plyr="mute"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control volume"
+              data-plyr="volume"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control fullscreen"
+              data-plyr="fullscreen"
+            />
+          </div>
+          <div
+            class="plyr"
+            tabindex="0"
+          >
+            <div
+              class="control play-large"
+              data-plyr="play-large"
+            />
+          </div>
+        </div>
+         
+        <span
+          class="visually-hidden"
+          id="tao-feedback-123"
+          lang="en-US"
+        >
+          media player
+        </span>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;

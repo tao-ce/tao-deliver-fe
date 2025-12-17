@@ -1,0 +1,65 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Include > renders with a scrollable content 1`] = `
+<body>
+  <div>
+    <article
+      class="qti-include tao-overflow-y scrollable"
+      tabindex="0"
+    >
+      <div>
+        This 
+        <em>
+          is
+        </em>
+         some much much longer content.
+      </div>
+      
+      
+      
+    </article>
+  </div>
+</body>
+`;
+
+exports[`Include > renders with some content 1`] = `
+<body>
+  <div>
+    <article
+      class="qti-include"
+    >
+      <p>
+        <em>
+          Hello here
+          
+          <img
+            alt="dummy"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="
+          />
+          
+          
+          
+           
+        </em>
+        
+        
+        
+         
+      </p>
+      
+      
+      
+    </article>
+  </div>
+</body>
+`;
+
+exports[`Include > renders without any content 1`] = `
+<body>
+  <div>
+    <article
+      class="qti-include"
+    />
+  </div>
+</body>
+`;

@@ -1,0 +1,209 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`previewerNavigator plugin > renders and destroys without error 1`] = `
+<body>
+  <div>
+    <nav>
+      <div
+        class="navigator"
+      >
+        <div
+          class="button-container end"
+        >
+          <button
+            aria-disabled="true"
+            aria-label="Go to next question"
+            class="actionable primary circular medium"
+            disabled=""
+            name="next"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium rtl-flip"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Arrow right icon
+              </title>
+              <path
+                d="M8 16l-2-2 4.5-4.5H0v-3h10.5L6 2l2-2 8 8-8 8z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+          </button>
+        </div>
+         
+        <div
+          class="button-container start"
+        >
+          <button
+            aria-disabled="true"
+            aria-label="Go to previous question"
+            class="actionable secondary circular medium"
+            disabled=""
+            name="prev"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium rtl-flip"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Arrow left icon
+              </title>
+              <path
+                d="M7.7-.13l2 2-4.5 4.5h10.5v3H5.2l4.5 4.5-2 2-8-8 8-8z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+          </button>
+        </div>
+         
+        <div
+          class="progress-container"
+        >
+          <div
+            class="width-tracker"
+          >
+            <div
+              class="more"
+            />
+             
+            <div>
+              <ol
+                class="space-medium"
+              >
+                <li>
+                  <button
+                    aria-disabled="true"
+                    aria-label="Question 1."
+                    class="step completed"
+                    disabled=""
+                    tabindex="-1"
+                  >
+                     
+                     
+                    <span
+                      aria-hidden="true"
+                      class="step-label"
+                    >
+                      1
+                    </span>
+                  </button>
+                   
+                </li>
+                <li>
+                  <button
+                    aria-current="location"
+                    aria-disabled="true"
+                    aria-label="Question 2."
+                    class="step completed current"
+                    disabled=""
+                    tabindex="-1"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="indicator"
+                    >
+                      <svg
+                        aria-hidden="false"
+                        class="icon small"
+                        viewBox="0 0 12 12"
+                      >
+                        <title>
+                          Current item indicator
+                        </title>
+                        <path
+                          d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                     
+                     
+                    <span
+                      aria-hidden="true"
+                      class="step-label"
+                    >
+                      2
+                    </span>
+                  </button>
+                   
+                </li>
+                <li>
+                  <button
+                    aria-disabled="true"
+                    aria-label="Question 3."
+                    class="step completed"
+                    disabled=""
+                    tabindex="-1"
+                  >
+                     
+                     
+                    <span
+                      aria-hidden="true"
+                      class="step-label"
+                    >
+                      3
+                    </span>
+                  </button>
+                   
+                </li>
+                <li>
+                  <button
+                    aria-disabled="true"
+                    aria-label="Question 4."
+                    class="step completed"
+                    disabled=""
+                    tabindex="-1"
+                  >
+                     
+                     
+                    <span
+                      aria-hidden="true"
+                      class="step-label"
+                    >
+                      4
+                    </span>
+                  </button>
+                   
+                </li>
+                <li>
+                  <button
+                    aria-disabled="true"
+                    aria-label="Question 5."
+                    class="step completed"
+                    disabled=""
+                    tabindex="-1"
+                  >
+                     
+                     
+                    <span
+                      aria-hidden="true"
+                      class="step-label"
+                    >
+                      5
+                    </span>
+                  </button>
+                   
+                </li>
+              </ol>
+              
+            </div>
+             
+            <div
+              class="more"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</body>
+`;

@@ -1,0 +1,386 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`jump menu plugin > renders and destroys 1`] = `
+<body>
+  <div>
+    
+        
+    <div
+      id="top-bar-area"
+    >
+      
+          
+      <div
+        class="headerbar"
+      >
+        
+              
+        <aside>
+          
+                
+          <button />
+          
+              
+        </aside>
+        
+          
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      id="main-area"
+      tabindex="0"
+    >
+      
+            
+      <aside
+        id="test-content-aside-start"
+      />
+      
+            
+      <div
+        class="qti-item-container"
+      />
+      
+            
+      <div
+        id="a11y-main"
+      />
+      
+            
+      <aside
+        id="test-content-aside-end"
+      >
+        <button>
+          pdf
+        </button>
+      </aside>
+      
+        
+    </div>
+    
+        
+    <div
+      id="navigation"
+    >
+      <button />
+    </div>
+    
+        
+    <div
+      id="modalfeedbacknav-area"
+    >
+      <button />
+    </div>
+    
+        
+    <div
+      id="overview-area"
+    >
+      
+            
+      <div
+        class="tabpanel"
+      >
+        
+                
+        <button
+          class="step"
+        >
+          1
+        </button>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      id="jump-menu"
+    />
+  </div>
+</body>
+`;
+
+exports[`jump menu plugin > renders and destroys 2`] = `
+<body>
+  <div>
+    
+        
+    <div
+      id="top-bar-area"
+    >
+      
+          
+      <div
+        class="headerbar"
+      >
+        
+              
+        <aside>
+          
+                
+          <button />
+          
+              
+        </aside>
+        
+          
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      id="main-area"
+      tabindex="0"
+    >
+      
+            
+      <aside
+        id="test-content-aside-start"
+      />
+      
+            
+      <div
+        class="qti-item-container"
+      />
+      
+            
+      <div
+        id="a11y-main"
+      />
+      
+            
+      <aside
+        id="test-content-aside-end"
+      >
+        <button>
+          pdf
+        </button>
+      </aside>
+      
+        
+    </div>
+    
+        
+    <div
+      id="navigation"
+    >
+      <button />
+    </div>
+    
+        
+    <div
+      id="modalfeedbacknav-area"
+    >
+      <button />
+    </div>
+    
+        
+    <div
+      id="overview-area"
+    >
+      
+            
+      <div
+        class="tabpanel"
+      >
+        
+                
+        <button
+          class="step"
+        >
+          1
+        </button>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      id="jump-menu"
+    >
+      <div
+        aria-labelledby="a11y-jump-menu"
+        class="jump-menu"
+        role="region"
+      >
+        <h2
+          class="visually-hidden"
+          id="a11y-jump-menu"
+        >
+          Jump Menu
+        </h2>
+         
+        <ul>
+          <li>
+            <button
+              data-test-id="jump-toolbox"
+            >
+              Jump to
+               
+              <strong>
+                Toolbox & Configuration
+              </strong>
+            </button>
+             
+          </li>
+          <li>
+            <button
+              data-test-id="jump-question"
+            >
+              Jump to
+               
+              <strong>
+                Question 2: unanswered
+              </strong>
+            </button>
+             
+          </li>
+          <li>
+            <button
+              data-test-id="jump-navigation"
+            >
+              Jump to
+               
+              <strong>
+                Test Navigation
+              </strong>
+            </button>
+             
+          </li>
+          <li>
+            <button
+              data-test-id="jump-itemModalFeedback-navigation"
+            >
+              Jump to
+               
+              <strong>
+                Test Navigation
+              </strong>
+            </button>
+             
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`jump menu plugin > renders and destroys 3`] = `
+<body>
+  <div>
+    
+        
+    <div
+      id="top-bar-area"
+    >
+      
+          
+      <div
+        class="headerbar"
+      >
+        
+              
+        <aside>
+          
+                
+          <button />
+          
+              
+        </aside>
+        
+          
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      id="main-area"
+      tabindex="0"
+    >
+      
+            
+      <aside
+        id="test-content-aside-start"
+      />
+      
+            
+      <div
+        class="qti-item-container"
+      />
+      
+            
+      <div
+        id="a11y-main"
+      />
+      
+            
+      <aside
+        id="test-content-aside-end"
+      >
+        <button>
+          pdf
+        </button>
+      </aside>
+      
+        
+    </div>
+    
+        
+    <div
+      id="navigation"
+    >
+      <button />
+    </div>
+    
+        
+    <div
+      id="modalfeedbacknav-area"
+    >
+      <button />
+    </div>
+    
+        
+    <div
+      id="overview-area"
+    >
+      
+            
+      <div
+        class="tabpanel"
+      >
+        
+                
+        <button
+          class="step"
+        >
+          1
+        </button>
+        
+            
+      </div>
+      
+        
+    </div>
+    
+        
+    <div
+      id="jump-menu"
+    />
+  </div>
+</body>
+`;

@@ -1,0 +1,472 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`navigationFeedbackConfig > returns alertProctorTerminate & alertProctorPause config 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "proctor-terminated",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "I understand",
+      "skin": "primary",
+    },
+  ],
+  "heading": "Test terminated",
+  "message": "Your test has been terminated by the proctor and your answers have been submitted.",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns alertProctorTerminate & alertProctorPause config 2`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "proctor-paused",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "OK",
+      "skin": "primary",
+    },
+  ],
+  "heading": "Test paused",
+  "message": "Your test and its timer have been paused by proctor.",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns alertProctorTerminate & alertProctorPause config 3`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "proctor-paused",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "OK",
+      "skin": "primary",
+    },
+  ],
+  "heading": "Test paused",
+  "message": "Your test has been paused by the proctor.",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "item" and true props:  1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-submit-part",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Submit this part",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this item has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "item" and true props: lastPartInTest 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-finish-test",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Finish the test",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for the test has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "item" and true props: linearPart 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-submit-part",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Submit this part",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this item has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "item" and true props: linearPart,lastPartInTest 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-finish-test",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Finish the test",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for the test has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "item" and true props: linearPart,timeLeftAheadInPart 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-continue",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Continue",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this item has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "item" and true props: timeLeftInPart 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-submit-part",
+      "initialFocus": false,
+      "key": "proceed",
+      "label": "Submit this part",
+      "skin": "secondary",
+    },
+    {
+      "dataTestId": "timeout-review",
+      "initialFocus": true,
+      "key": "cancel",
+      "label": "Review my answers",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this item has been reached.",
+  "message": "You are at the end of this part. You can either submit this part or keep reviewing your answers.",
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "item" and true props: timeLeftInPart,lastPartInTest 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-finish-test",
+      "initialFocus": false,
+      "key": "proceed",
+      "label": "Finish the test",
+      "skin": "secondary",
+    },
+    {
+      "dataTestId": "timeout-review",
+      "initialFocus": true,
+      "key": "cancel",
+      "label": "Review my answers",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this item has been reached.",
+  "message": "You are at the end of the test. You can either finish the test or keep reviewing your answers.",
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "item" and true props: timeLeftInPart,timeLeftAheadInPart 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-continue",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Continue",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this item has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "section" and true props:  1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-submit-part",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Submit this part",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this section has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "section" and true props: lastPartInTest 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-finish-test",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Finish the test",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for the test has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "section" and true props: linearPart 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-submit-part",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Submit this part",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this section has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "section" and true props: linearPart,lastPartInTest 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-finish-test",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Finish the test",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for the test has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "section" and true props: linearPart,timeLeftAheadInPart 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-continue",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Continue",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this section has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "section" and true props: timeLeftInPart 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-submit-part",
+      "initialFocus": false,
+      "key": "proceed",
+      "label": "Submit this part",
+      "skin": "secondary",
+    },
+    {
+      "dataTestId": "timeout-review",
+      "initialFocus": true,
+      "key": "cancel",
+      "label": "Review my answers",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this section has been reached.",
+  "message": "You are at the end of this part. You can either submit this part or keep reviewing your answers.",
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "section" and true props: timeLeftInPart,lastPartInTest 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-finish-test",
+      "initialFocus": false,
+      "key": "proceed",
+      "label": "Finish the test",
+      "skin": "secondary",
+    },
+    {
+      "dataTestId": "timeout-review",
+      "initialFocus": true,
+      "key": "cancel",
+      "label": "Review my answers",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this section has been reached.",
+  "message": "You are at the end of the test. You can either finish the test or keep reviewing your answers.",
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "section" and true props: timeLeftInPart,timeLeftAheadInPart 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-continue",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Continue",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this section has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "test" and true props:  1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-finish-test",
+      "initialFocus": false,
+      "key": "proceed",
+      "label": "Finish the test",
+      "skin": "secondary",
+    },
+    {
+      "dataTestId": "timeout-review",
+      "initialFocus": true,
+      "key": "cancel",
+      "label": "Review my answers",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for the test has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "test" and true props: linearPart 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-finish-test",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Finish the test",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for the test has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "testPart" and true props:  1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-submit-part",
+      "initialFocus": false,
+      "key": "proceed",
+      "label": "Submit this part",
+      "skin": "secondary",
+    },
+    {
+      "dataTestId": "timeout-review",
+      "initialFocus": true,
+      "key": "cancel",
+      "label": "Review my answers",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this part has been reached.",
+  "message": "You are at the end of this part. You can either submit this part or keep reviewing your answers.",
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "testPart" and true props: lastPartInTest 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-finish-test",
+      "initialFocus": false,
+      "key": "proceed",
+      "label": "Finish the test",
+      "skin": "secondary",
+    },
+    {
+      "dataTestId": "timeout-review",
+      "initialFocus": true,
+      "key": "cancel",
+      "label": "Review my answers",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for the test has been reached.",
+  "message": "You are at the end of the test. You can either finish the test or keep reviewing your answers.",
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "testPart" and true props: linearPart 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-submit-part",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Submit this part",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this part has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`navigationFeedbackConfig > returns confirmTimerTimeout config > returns correct config for scope "testPart" and true props: linearPart,lastPartInTest 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-finish-test",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Finish the test",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for the test has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;

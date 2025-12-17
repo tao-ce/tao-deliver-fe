@@ -1,0 +1,188 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`bookletExport plugin > create booklet flow: interactive, specified item range 1`] = `
+<body>
+  <div>
+    <div
+      class="test-runner"
+    >
+      <div
+        class="top-bar"
+      >
+        <div
+          class="booklet-toolbar"
+        >
+          <button
+            class="actionable primary small"
+            name="booklet-html"
+            type="button"
+          >
+             
+             
+            Generate html
+          </button>
+           
+          <button
+            aria-disabled="true"
+            class="actionable primary small"
+            disabled=""
+            name="booklet-download-html"
+            type="button"
+          >
+             
+             
+            Download html
+          </button>
+           
+          <button
+            class="actionable primary small"
+            name="booklet-upload-html"
+            type="button"
+          >
+             
+             
+            Upload html
+          </button>
+           
+          <input
+            accept="text/html"
+            class="hidden"
+            type="file"
+          />
+           
+          <button
+            aria-disabled="true"
+            class="actionable primary small"
+            disabled=""
+            name="booklet-convert"
+            type="button"
+          >
+             
+             
+            Convert to file
+          </button>
+           
+          <button
+            aria-disabled="true"
+            class="actionable primary small"
+            disabled=""
+            name="booklet-download"
+            type="button"
+          >
+             
+             
+            Download file
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`bookletExport plugin > create booklet flow: non-interactive, whole test 1`] = `
+<body>
+  <div>
+    <div
+      class="test-runner"
+    >
+      <div
+        class="top-bar"
+      >
+        <div
+          class="booklet-toolbar"
+        >
+          <button
+            class="actionable primary small"
+            name="booklet-html"
+            type="button"
+          >
+             
+             
+            Generate html
+          </button>
+           
+          <button
+            aria-disabled="true"
+            class="actionable primary small"
+            disabled=""
+            name="booklet-download-html"
+            type="button"
+          >
+             
+             
+            Download html
+          </button>
+           
+          <button
+            class="actionable primary small"
+            name="booklet-upload-html"
+            type="button"
+          >
+             
+             
+            Upload html
+          </button>
+           
+          <input
+            accept="text/html"
+            class="hidden"
+            type="file"
+          />
+           
+          <button
+            aria-disabled="true"
+            class="actionable primary small"
+            disabled=""
+            name="booklet-convert"
+            type="button"
+          >
+             
+             
+            Convert to file
+          </button>
+           
+          <button
+            aria-disabled="true"
+            class="actionable primary small"
+            disabled=""
+            name="booklet-download"
+            type="button"
+          >
+             
+             
+            Download file
+          </button>
+        </div>
+      </div>
+      <div
+        class="transition"
+      >
+        <div
+          aria-live="assertive"
+          class="loading-wrapper"
+          role="alert"
+        >
+          <div
+            class="loading"
+          />
+           
+          <div
+            class="content"
+          >
+            <p
+              class="text"
+            >
+              exporting item 1 of 5
+            </p>
+          </div>
+        </div>
+         
+        <p>
+          Please wait while booklet export is in progress
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+`;

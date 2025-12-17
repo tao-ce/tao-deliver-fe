@@ -1,0 +1,95 @@
+{
+    "testContext": {
+        "state": 1,
+        "remainingAttempts": -1,
+        "isTimeout": 0,
+        "itemIdentifier": "item1",
+        "attempt": 1,
+        "itemSessionState": 1,
+        "needMapUpdate": false,
+        "itemPosition": 0,
+        "timeConstraints": [],
+        "testPartId": "testPart-1",
+        "sectionId": "assessmentSection-1",
+        "canMoveBackward": true,
+        "rubrics": "",
+        "allowSkipping": true,
+        "validateResponses": false
+    },
+    "testMap": {
+        "scope": "test",
+        "parts": {
+            "testPart-1": {
+                "id": "testPart-1",
+                "label": "testPart-1",
+                "position": 0,
+                "isLinear": false,
+                "timeConstraint": null,
+                "sections": {
+                    "assessmentSection-1": {
+                        "id": "assessmentSection-1",
+                        "label": "Section 1",
+                        "isCatAdaptive": false,
+                        "position": 0,
+                        "items": {
+                            "item1": {
+                                "id": "item-1",
+                                "label": "Item 1",
+                                "position": 0,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false
+                            },
+                            "item2": {
+                                "id": "item-2",
+                                "label": "Item 2",
+                                "position": 1,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false
+                            }
+                        },
+                        "stats": {
+                            "questions": 2,
+                            "answered": 0,
+                            "flagged": 0,
+                            "viewed": 1,
+                            "total": 2,
+                            "questionsViewed": 1
+                        }
+                    }
+                },
+                "stats": {
+                    "questions": 2,
+                    "answered": 0,
+                    "flagged": 0,
+                    "viewed": 1,
+                    "total": 2,
+                    "questionsViewed": 1
+                }
+            }
+        },
+        "title": "navigationFeedbackPreset",
+        "identifier": "navigationFeedbackPreset",
+        "stats": {
+            "questions": 2,
+            "answered": 0,
+            "flagged": 0,
+            "viewed": 1,
+            "total": 2,
+            "questionsViewed": 1
+        }
+    }
+}

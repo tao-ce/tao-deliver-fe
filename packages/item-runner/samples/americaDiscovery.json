@@ -1,0 +1,111 @@
+{
+  "baseUrl": "./assets/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "i154773520955169849",
+      "serial": "item_5e5e7a7132c7f579862307",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "i154773520955169849",
+        "title": "Item 13",
+        "label": "America",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint123",
+        "class": ""
+      },
+      "body": {
+        "serial": "container_containeritembody_5e5e7a7132c78020715996",
+        "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <h4>\n          <strong>In which year was the American contienent discovered by Christophe Colomb ?</strong>\n        </h4>\n        <p>\n          <em>Please enter your answer in the field below :</em>\n        </p>\n        <p> In year {{interaction_textentryinteraction_5e5e7a7132dd8915047479}}.</p>\n      </div>\n    </div>\n  ",
+        "elements": {
+          "interaction_textentryinteraction_5e5e7a7132dd8915047479": {
+            "serial": "interaction_textentryinteraction_5e5e7a7132dd8915047479",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "base": 10,
+              "expectedLength": 4,
+              "patternMask": "[0-9]{4}",
+              "placeholderText": "YYYY"
+            },
+            "choices": []
+          }
+        }
+      },
+      "namespaces": {
+        "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+        "m": "http://www.w3.org/1998/Math/MathML",
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+      },
+      "stylesheets": {
+        "stylesheet_5e5e7a7132cd6164420419": {
+          "serial": "stylesheet_5e5e7a7132cd6164420419",
+          "qtiClass": "stylesheet",
+          "attributes": {
+            "href": "tao-user-styles.css",
+            "type": "text/css",
+            "media": "all",
+            "title": ""
+          }
+        }
+      },
+      "outcomes": {
+        "outcomedeclaration_5e5e7a7132d40573118766": {
+          "identifier": "SCORE",
+          "serial": "outcomedeclaration_5e5e7a7132d40573118766",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float",
+            "normalMaximum": 0
+          },
+          "defaultValue": null
+        },
+        "outcomedeclaration_5e5e7a7132d6a411652527": {
+          "identifier": "MAXSCORE",
+          "serial": "outcomedeclaration_5e5e7a7132d6a411652527",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "MAXSCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "0"
+        }
+      },
+      "responses": {
+        "responsedeclaration_5e5e7a7132d05800972957": {
+          "identifier": "RESPONSE",
+          "serial": "responsedeclaration_5e5e7a7132d05800972957",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": []
+        }
+      },
+      "feedbacks": [],
+      "apipAccessibility": ""
+    },
+    "assets": {
+      "css": {
+        "tao-user-styles.css": "tao-user-styles.css"
+      }
+    }
+  },
+  "itemState": {},
+  "itemIdentifier": "item-2",
+  "portableElements": {
+    "pci": [],
+    "pic": []
+  }
+}

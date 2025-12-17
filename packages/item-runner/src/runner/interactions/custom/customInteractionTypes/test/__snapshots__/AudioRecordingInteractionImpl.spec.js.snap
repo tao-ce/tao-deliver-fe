@@ -1,0 +1,40 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AudioRecordingInteraction > renders props into markup 1`] = `
+<body>
+  <div>
+     
+    <div
+      ariabar="baz"
+      ariafoo="12"
+      class="qti-interaction qti-blockInteraction qti-customInteraction foo bar baz"
+      data-baz="24"
+      data-foo="bar"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+    >
+      <div
+        class="prompt"
+      >
+        undefined
+      </div>
+       
+      <div
+        class="exposed-pci-properties"
+      >
+        {"autoStart":false,"allowPlayback":true,"maxRecordingTime":7,"enableDomEvents":true}
+      </div>
+       
+      <div
+        class="container"
+      >
+        <div
+          class="markup"
+        />
+      </div>
+    </div>
+  </div>
+</body>
+`;

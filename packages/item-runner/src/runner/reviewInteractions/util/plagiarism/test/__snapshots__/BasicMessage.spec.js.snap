@@ -1,0 +1,118 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BasicMessage > renders with status clear 1`] = `
+<body>
+  <div>
+    <p
+      class="plagiarism-message clear"
+    >
+      <svg
+        aria-hidden="false"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Check mark icon
+        </title>
+        <path
+          d="M14.73 1.91L16 3.18 5.09 14.09 0 9l1.27-1.27 3.82 3.82z"
+        />
+      </svg>
+       
+      No suspicion of plagiarism.
+       
+    </p>
+    
+  </div>
+</body>
+`;
+
+exports[`BasicMessage > renders with status error 1`] = `
+<body>
+  <div>
+    <p
+      class="plagiarism-message error"
+    >
+      <svg
+        aria-hidden="false"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Lightning bolt icon
+        </title>
+        <path
+          d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
+        />
+      </svg>
+       
+      The plagiarism check could not be performed. Please contact an administrator.
+       
+    </p>
+    
+  </div>
+</body>
+`;
+
+exports[`BasicMessage > renders with status pending 1`] = `
+<body>
+  <div>
+    <p
+      class="plagiarism-message pending"
+    >
+      <svg
+        aria-hidden="false"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Timer icon
+        </title>
+        <path
+          d="M5.50001 1.50006H10.5V2.50182H8.50001V3.50357C9.90951 3.63247 11.2152 4.30073 12.1454 5.36936C13.0756 6.438 13.5587 7.82473 13.4943 9.24111C13.4299 10.6575 12.8229 11.9945 11.7996 12.974C10.7763 13.9535 9.41537 14.5001 8.00001 14.5001C6.58464 14.5001 5.22376 13.9535 4.20043 12.974C3.1771 11.9945 2.5701 10.6575 2.5057 9.24111C2.4413 7.82473 2.92445 6.438 3.85465 5.36936C4.78486 4.30073 6.0905 3.63247 7.50001 3.50357V2.50182H5.50001V1.50006ZM5.49994 12.7614C6.23996 13.2567 7.10999 13.5211 8.00001 13.5211C9.19267 13.5185 10.3357 13.0427 11.1791 12.1979C12.0224 11.353 12.4974 10.208 12.5 9.01322C12.5 8.12165 12.2361 7.25009 11.7416 6.50877C11.2472 5.76745 10.5443 5.18966 9.72208 4.84847C8.89981 4.50728 7.99501 4.41801 7.1221 4.59194C6.24918 4.76588 5.44736 5.19522 4.81802 5.82566C4.18869 6.4561 3.7601 7.25933 3.58647 8.13378C3.41284 9.00822 3.50195 9.91461 3.84255 10.7383C4.18314 11.562 4.75992 12.2661 5.49994 12.7614ZM7.5 5.50006H8.5V9.50006H7.5V5.50006Z"
+        />
+      </svg>
+       
+      A plagiarism check is in progress, awaiting the results.
+       
+    </p>
+    
+  </div>
+</body>
+`;
+
+exports[`BasicMessage > renders with status suspicious 1`] = `
+<body>
+  <div>
+    <p
+      class="plagiarism-message suspicious"
+    >
+      <svg
+        aria-hidden="false"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Warning icon
+        </title>
+        <path
+          d="M8 1a7 7 0 11-7 7 7 7 0 017-7m0-1a8 8 0 108 8 8 8 0 00-8-8z"
+        />
+        <path
+          d="M7 3h2v6H7zm0 8h2v2H7z"
+        />
+      </svg>
+       
+      Suspicion of plagiarism:
+       
+      <a
+        href="http://www.essays.net"
+        target="_blank"
+      >
+        view report
+      </a>
+    </p>
+    
+  </div>
+</body>
+`;

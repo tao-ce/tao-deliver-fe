@@ -1,0 +1,331 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i15888590838999290",
+            "serial": "item_5f4f84bf769ec190806821",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i15888590838999290",
+                "title": "Palace of Versailles (Hotspot Interaction)",
+                "label": "Palace of Versailles (Hotspot Interaction)",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint135",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5f4f84bf769e0942173535",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <h1>Hotspot Interaction</h1>\n        <h2>Find the\u00a0Palace of Versailles</h2>\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-5\">\n        <p>The\u00a0Palace of Versailles in France is famous, both for its architecture and its role in history.\u00a0</p>\n        <p>For more than a century, it has served as\u00a0the main residence of the\u00a0king\u00a0before the monarchy abruptly ended with the French Revolution in 1789.\u00a0When in 1783\u00a0the United Kingdom recognized the independence of the United States, the treaties have been signed at Versailles. In more recent times, the First World War found its formal end with the Treaty of Versailles in 1919.</p>\n        <p>The map to the right shows the locations of historical sites in France, which one is the Palace of Versailles?</p>\n        <p>\n          {{img_5f4f84bf770fc839656595}}\n        </p>\n        <p>Picture by <a href=\"https://unsplash.com/photos/WU1RbgzDoAs\" target=\"_blank\">Anthony Choren</a>, published under the <a href=\"https://unsplash.com/license\" target=\"_blank\">Unsplash License</a>.</p>\n        <p></p>\n      </div>\n      <div class=\"col-1\"></div>\n      <div class=\"col-6\">\n        {{interaction_hotspotinteraction_5f4f84bf76db3130795768}}\n        <p>Map based on the work of <a href=\"https://commons.wikimedia.org/wiki/File:R%C3%A9gions_de_France_2016.svg\" target=\"_blank\">Superbenjamin</a>, published under <a href=\"https://creativecommons.org/licenses/by/3.0/deed.en\" target=\"_blank\">CC BY 3.0</a>. We changed colors and font, added the sites.</p>\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "interaction_hotspotinteraction_5f4f84bf76db3130795768": {
+                        "serial": "interaction_hotspotinteraction_5f4f84bf76db3130795768",
+                        "qtiClass": "hotspotInteraction",
+                        "attributes": {
+                            "responseIdentifier": "france_sites",
+                            "maxChoices": 1,
+                            "minChoices": 0,
+                            "class": "responsive qti-unselected-hidden"
+                        },
+                        "choices": {
+                            "choice_hotspotchoice_5f4f84bf76ee2711942975": {
+                                "identifier": "site_1",
+                                "serial": "choice_hotspotchoice_5f4f84bf76ee2711942975",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "site_1",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "292,172,25",
+                                    "hotspotLabel": "Normandie"
+                                }
+                            },
+                            "choice_hotspotchoice_5f4f84bf76f2a355899823": {
+                                "identifier": "site_2",
+                                "serial": "choice_hotspotchoice_5f4f84bf76f2a355899823",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "site_2",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "501,227,25",
+                                    "hotspotLabel": "Ile-de-France"
+                                }
+                            },
+                            "choice_hotspotchoice_5f4f84bf76f41220975175": {
+                                "identifier": "site_3",
+                                "serial": "choice_hotspotchoice_5f4f84bf76f41220975175",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "site_3",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "868,238,25",
+                                    "hotspotLabel": "Grand Est"
+                                }
+                            },
+                            "choice_hotspotchoice_5f4f84bf76f55045665264": {
+                                "identifier": "site_4",
+                                "serial": "choice_hotspotchoice_5f4f84bf76f55045665264",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "site_4",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "250,244,25",
+                                    "hotspotLabel": "Normandie-Bretagne"
+                                }
+                            },
+                            "choice_hotspotchoice_5f4f84bf76f68925155586": {
+                                "identifier": "site_5",
+                                "serial": "choice_hotspotchoice_5f4f84bf76f68925155586",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "site_5",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "144,345,25",
+                                    "hotspotLabel": "Bretagne"
+                                }
+                            },
+                            "choice_hotspotchoice_5f4f84bf76f79712324344": {
+                                "identifier": "site_6",
+                                "serial": "choice_hotspotchoice_5f4f84bf76f79712324344",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "site_6",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "299,371,25",
+                                    "hotspotLabel": "Pays de Loire"
+                                }
+                            },
+                            "choice_hotspotchoice_5f4f84bf76f8b525758095": {
+                                "identifier": "site_7",
+                                "serial": "choice_hotspotchoice_5f4f84bf76f8b525758095",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "site_7",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "428,354,25",
+                                    "hotspotLabel": "Centre Val de Loire"
+                                }
+                            },
+                            "choice_hotspotchoice_5f4f84bf76f9b400811387": {
+                                "identifier": "site_8",
+                                "serial": "choice_hotspotchoice_5f4f84bf76f9b400811387",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "site_8",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "816,525,25",
+                                    "hotspotLabel": "Auvergne-Rhône-Alpes"
+                                }
+                            },
+                            "choice_hotspotchoice_5f4f84bf76fac918410327": {
+                                "identifier": "site_9",
+                                "serial": "choice_hotspotchoice_5f4f84bf76fac918410327",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "site_9",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "660,700,25",
+                                    "hotspotLabel": "Occitanie-Provence"
+                                }
+                            },
+                            "choice_hotspotchoice_5f4f84bf76fbd701490909": {
+                                "identifier": "site_10",
+                                "serial": "choice_hotspotchoice_5f4f84bf76fbd701490909",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "site_10",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "725,757,25",
+                                    "hotspotLabel": "Provence-Alpes-Côte d'Azur"
+                                }
+                            },
+                            "choice_hotspotchoice_5f4f84bf76fcd572126907": {
+                                "identifier": "site_11",
+                                "serial": "choice_hotspotchoice_5f4f84bf76fcd572126907",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "site_11",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "518,763,25",
+                                    "hotspotLabel": "Occitanie"
+                                }
+                            },
+                            "choice_hotspotchoice_5f4f84bf76fde685559353": {
+                                "identifier": "site_12",
+                                "serial": "choice_hotspotchoice_5f4f84bf76fde685559353",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "site_12",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "300,590,25",
+                                    "hotspotLabel": "Nouvelle Aquitaine"
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_5f4f84bf76e55825733563",
+                            "body": "",
+                            "elements": {}
+                        },
+                        "object": {
+                            "serial": "qtiobject_5f4f84bf76ffc258902756",
+                            "qtiClass": "object",
+                            "attributes": {
+                                "data": "graphic/map-france.png",
+                                "type": "image/png",
+                                "width": 1001,
+                                "height": 961
+                            }
+                        }
+                    },
+                    "img_5f4f84bf770fc839656595": {
+                        "serial": "img_5f4f84bf770fc839656595",
+                        "qtiClass": "img",
+                        "attributes": {
+                            "src": "graphic/Versailles.jpg",
+                            "alt": "Palace of Versailles by Anthony Choren",
+                            "width": "100%",
+                            "type": "image/jpeg"
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_5f4f84bf76c0a140319598": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5f4f84bf76c0a140319598",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_5f4f84bf76c87669089093": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_5f4f84bf76c87669089093",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "responsedeclaration_5f4f84bf76b75558531487": {
+                    "identifier": "france_sites",
+                    "serial": "responsedeclaration_5f4f84bf76b75558531487",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "france_sites",
+                        "cardinality": "single",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": ["site_2"],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_5f4f84bf772c7872510736",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "france_sites"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "france_sites"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "Versailles.jpg": "Versailles.jpg",
+                "map-france.png": "map-france.png"
+            }
+        }
+    },
+    "success": true,
+    "itemIdentifier": "item-1"
+}

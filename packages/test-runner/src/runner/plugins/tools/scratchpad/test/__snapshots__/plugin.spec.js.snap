@@ -1,0 +1,4763 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`scratchpad plugin > adds scratchpad to main area and removes when destroyed 1`] = `
+<main>
+  <div
+    aria-labelledby="tao-draggable-modal-title-123"
+    class="draggable-modal"
+    id="tao-draggable-modal-123"
+    style="
+            min-width: 640px;
+            min-height: 554px;
+            width: 992px;
+            height: 512px;
+            left: 144px;
+            top: 256px; --action-container-size: 11rem;"
+  >
+    <div
+      class="zoom-tracker visually-hidden"
+    />
+     
+    <div
+      class="contents"
+    >
+      <header
+        class="header inverted"
+      >
+        <div
+          class="action-container-start"
+        >
+          <button
+            aria-label="Close Panel"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            id="tao-draggable-modal-close-button-123"
+            title="Close Panel"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </div>
+         
+        <div
+          class="title-container"
+          id="tao-draggable-modal-title-123"
+        >
+          Scratchpad
+        </div>
+         
+        <div
+          class="action-container-end"
+        >
+          <button
+            aria-label="undo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="undo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Revert icon
+              </title>
+              <path
+                d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
+              />
+            </svg>
+             
+             
+          </button>
+          <button
+            aria-label="redo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="redo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Redo icon
+              </title>
+              <path
+                d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+          </button>
+           
+        </div>
+      </header>
+       
+      <div
+        class="content"
+      >
+        <div
+          class="scratchpad-container"
+        >
+          <ol
+            class="tools-main"
+          >
+            <li>
+              <button
+                aria-label="Select"
+                data-test-id="scratchpadTool-select"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    select tool
+                  </title>
+                  <path
+                    d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Text"
+                data-test-id="scratchpadTool-text"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    type tool
+                  </title>
+                  <path
+                    d="M1 0v2.001h6v14h2v-14h6V0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Brush"
+                data-test-id="scratchpadTool-brush"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Brush icon
+                  </title>
+                  <path
+                    d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-brush"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Small brush"
+                    data-test-id="scratchpadTool-subtool-brush-small"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 8 pixels
+                      </title>
+                      <path
+                        d="M8 4a4 4 0 100 8 4 4 0 100-8z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Medium brush"
+                    data-test-id="scratchpadTool-subtool-brush-medium"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 12 pixels
+                      </title>
+                      <path
+                        d="M8 2a6 6 0 100 12A6 6 0 108 2z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Large brush"
+                    data-test-id="scratchpadTool-subtool-brush-large"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 16 pixels
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 100 16A8 8 0 108 0z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Rectangle"
+                data-test-id="scratchpadTool-rectangle"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    rectangle tool
+                  </title>
+                  <path
+                    d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-rectangle"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Rectangle"
+                    data-test-id="scratchpadTool-subtool-rectangle"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        rectangle tool
+                      </title>
+                      <path
+                        d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Oval"
+                    data-test-id="scratchpadTool-subtool-oval"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        oval tool
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Line"
+                    data-test-id="scratchpadTool-subtool-line"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        line tool
+                      </title>
+                      <path
+                        d="M14.646.646l.708.708-14 14-.708-.708z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Eraser"
+                data-test-id="scratchpadTool-eraser"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Eraser icon
+                  </title>
+                  <path
+                    d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+          </ol>
+           
+          <svg
+            height="2160"
+            style=""
+            version="1.1"
+            viewBox="0 0 3840 2160"
+            width="3840"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          />
+        </div>
+      </div>
+       
+      <div
+        class="resize-hitbox hitbox-top-left"
+        data-direction="nw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top"
+        data-direction="n"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top-right"
+        data-direction="ne"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-right"
+        data-direction="e"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-right"
+        data-direction="se"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom"
+        data-direction="s"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-left"
+        data-direction="sw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-left"
+        data-direction="w"
+      />
+    </div>
+  </div>
+</main>
+`;
+
+exports[`scratchpad plugin > flushes next saved canvas states if change was made 1`] = `
+<main>
+  <div
+    aria-labelledby="tao-draggable-modal-title-123"
+    class="draggable-modal"
+    id="tao-draggable-modal-123"
+    style="
+            min-width: 640px;
+            min-height: 554px;
+            width: 992px;
+            height: 512px;
+            left: 144px;
+            top: 256px; --action-container-size: 11rem;"
+  >
+    <div
+      class="zoom-tracker visually-hidden"
+    />
+     
+    <div
+      class="contents"
+    >
+      <header
+        class="header inverted"
+      >
+        <div
+          class="action-container-start"
+        >
+          <button
+            aria-label="Close Panel"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            id="tao-draggable-modal-close-button-123"
+            title="Close Panel"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </div>
+         
+        <div
+          class="title-container"
+          id="tao-draggable-modal-title-123"
+        >
+          Scratchpad
+        </div>
+         
+        <div
+          class="action-container-end"
+        >
+          <button
+            aria-label="undo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="undo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Revert icon
+              </title>
+              <path
+                d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
+              />
+            </svg>
+             
+             
+          </button>
+          <button
+            aria-label="redo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="redo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Redo icon
+              </title>
+              <path
+                d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+          </button>
+           
+        </div>
+      </header>
+       
+      <div
+        class="content"
+      >
+        <div
+          class="scratchpad-container"
+        >
+          <ol
+            class="tools-main"
+          >
+            <li>
+              <button
+                aria-label="Select"
+                data-test-id="scratchpadTool-select"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    select tool
+                  </title>
+                  <path
+                    d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Text"
+                data-test-id="scratchpadTool-text"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    type tool
+                  </title>
+                  <path
+                    d="M1 0v2.001h6v14h2v-14h6V0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Brush"
+                data-test-id="scratchpadTool-brush"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Brush icon
+                  </title>
+                  <path
+                    d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-brush"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Small brush"
+                    data-test-id="scratchpadTool-subtool-brush-small"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 8 pixels
+                      </title>
+                      <path
+                        d="M8 4a4 4 0 100 8 4 4 0 100-8z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Medium brush"
+                    data-test-id="scratchpadTool-subtool-brush-medium"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 12 pixels
+                      </title>
+                      <path
+                        d="M8 2a6 6 0 100 12A6 6 0 108 2z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Large brush"
+                    data-test-id="scratchpadTool-subtool-brush-large"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 16 pixels
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 100 16A8 8 0 108 0z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li
+              class="selected"
+            >
+              <button
+                aria-label="Rectangle"
+                data-test-id="scratchpadTool-rectangle"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    rectangle tool
+                  </title>
+                  <path
+                    d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-rectangle"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Rectangle"
+                    data-test-id="scratchpadTool-subtool-rectangle"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        rectangle tool
+                      </title>
+                      <path
+                        d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Oval"
+                    data-test-id="scratchpadTool-subtool-oval"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        oval tool
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Line"
+                    data-test-id="scratchpadTool-subtool-line"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        line tool
+                      </title>
+                      <path
+                        d="M14.646.646l.708.708-14 14-.708-.708z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Eraser"
+                data-test-id="scratchpadTool-eraser"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Eraser icon
+                  </title>
+                  <path
+                    d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+          </ol>
+           
+          <svg
+            height="2160"
+            style=""
+            version="1.1"
+            viewBox="0 0 3840 2160"
+            width="3840"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          />
+        </div>
+      </div>
+       
+      <div
+        class="resize-hitbox hitbox-top-left"
+        data-direction="nw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top"
+        data-direction="n"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top-right"
+        data-direction="ne"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-right"
+        data-direction="e"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-right"
+        data-direction="se"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom"
+        data-direction="s"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-left"
+        data-direction="sw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-left"
+        data-direction="w"
+      />
+    </div>
+  </div>
+</main>
+`;
+
+exports[`scratchpad plugin > flushes next saved canvas states if change was made 2`] = `
+<main>
+  <div
+    aria-labelledby="tao-draggable-modal-title-123"
+    class="draggable-modal"
+    id="tao-draggable-modal-123"
+    style="
+            min-width: 640px;
+            min-height: 554px;
+            width: 992px;
+            height: 512px;
+            left: 144px;
+            top: 256px; --action-container-size: 11rem;"
+  >
+    <div
+      class="zoom-tracker visually-hidden"
+    />
+     
+    <div
+      class="contents"
+    >
+      <header
+        class="header inverted"
+      >
+        <div
+          class="action-container-start"
+        >
+          <button
+            aria-label="Close Panel"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            id="tao-draggable-modal-close-button-123"
+            title="Close Panel"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </div>
+         
+        <div
+          class="title-container"
+          id="tao-draggable-modal-title-123"
+        >
+          Scratchpad
+        </div>
+         
+        <div
+          class="action-container-end"
+        >
+          <button
+            aria-label="undo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            title="undo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Revert icon
+              </title>
+              <path
+                d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
+              />
+            </svg>
+             
+             
+          </button>
+          <button
+            aria-label="redo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="redo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Redo icon
+              </title>
+              <path
+                d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+          </button>
+           
+        </div>
+      </header>
+       
+      <div
+        class="content"
+      >
+        <div
+          class="scratchpad-container"
+        >
+          <ol
+            class="tools-main"
+          >
+            <li>
+              <button
+                aria-label="Select"
+                data-test-id="scratchpadTool-select"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    select tool
+                  </title>
+                  <path
+                    d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Text"
+                data-test-id="scratchpadTool-text"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    type tool
+                  </title>
+                  <path
+                    d="M1 0v2.001h6v14h2v-14h6V0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Brush"
+                data-test-id="scratchpadTool-brush"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Brush icon
+                  </title>
+                  <path
+                    d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-brush"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Small brush"
+                    data-test-id="scratchpadTool-subtool-brush-small"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 8 pixels
+                      </title>
+                      <path
+                        d="M8 4a4 4 0 100 8 4 4 0 100-8z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Medium brush"
+                    data-test-id="scratchpadTool-subtool-brush-medium"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 12 pixels
+                      </title>
+                      <path
+                        d="M8 2a6 6 0 100 12A6 6 0 108 2z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Large brush"
+                    data-test-id="scratchpadTool-subtool-brush-large"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 16 pixels
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 100 16A8 8 0 108 0z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li
+              class="selected"
+            >
+              <button
+                aria-label="Rectangle"
+                data-test-id="scratchpadTool-rectangle"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    rectangle tool
+                  </title>
+                  <path
+                    d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-rectangle"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Rectangle"
+                    data-test-id="scratchpadTool-subtool-rectangle"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        rectangle tool
+                      </title>
+                      <path
+                        d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Oval"
+                    data-test-id="scratchpadTool-subtool-oval"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        oval tool
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Line"
+                    data-test-id="scratchpadTool-subtool-line"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        line tool
+                      </title>
+                      <path
+                        d="M14.646.646l.708.708-14 14-.708-.708z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Eraser"
+                data-test-id="scratchpadTool-eraser"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Eraser icon
+                  </title>
+                  <path
+                    d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+          </ol>
+           
+          <svg
+            height="2160"
+            style=""
+            version="1.1"
+            viewBox="0 0 3840 2160"
+            width="3840"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            
+            <g
+              class="shape-container rectangle"
+              data-shape-key="tao-rectangle-123"
+              data-shape-type="rectangle"
+            >
+              <rect
+                class="shape"
+                height="50"
+                width="50"
+                x="50"
+                y="50"
+              />
+               
+              <rect
+                class="hitbox"
+                height="86"
+                width="86"
+                x="32"
+                y="32"
+              />
+               
+              <rect
+                class="bounding"
+                height="54"
+                width="54"
+                x="48"
+                y="48"
+              />
+               
+              
+            </g>
+            
+            
+            
+            <g
+              class="shape-container rectangle selected"
+              data-shape-key="tao-rectangle-123"
+              data-shape-type="rectangle"
+            >
+              <rect
+                class="shape"
+                height="170"
+                width="170"
+                x="30"
+                y="30"
+              />
+               
+              <rect
+                class="hitbox"
+                height="206"
+                width="206"
+                x="12"
+                y="12"
+              />
+               
+              <rect
+                class="bounding"
+                height="174"
+                width="174"
+                x="28"
+                y="28"
+              />
+               
+              <g
+                class="resize-hitbox-container"
+              >
+                <rect
+                  class="resize-square"
+                  height="10"
+                  width="10"
+                  x="193"
+                  y="193"
+                />
+                <rect
+                  class="resize-hitbox"
+                  height="88"
+                  width="88"
+                  x="154"
+                  y="154"
+                />
+              </g>
+              
+            </g>
+            
+            
+          </svg>
+        </div>
+      </div>
+       
+      <div
+        class="resize-hitbox hitbox-top-left"
+        data-direction="nw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top"
+        data-direction="n"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top-right"
+        data-direction="ne"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-right"
+        data-direction="e"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-right"
+        data-direction="se"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom"
+        data-direction="s"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-left"
+        data-direction="sw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-left"
+        data-direction="w"
+      />
+    </div>
+  </div>
+</main>
+`;
+
+exports[`scratchpad plugin > flushes next saved canvas states if change was made 3`] = `
+{
+  "canvasStateIndex": 0,
+  "canvasStateStackLength": 1,
+  "enableStateActions": true,
+  "height": 512,
+  "left": 144,
+  "open": true,
+  "shapes": [
+    {
+      "geometry": {
+        "height": 50,
+        "width": 50,
+        "x": 50,
+        "y": 50,
+      },
+      "key": "tao-rectangle-123",
+      "selected": false,
+      "type": "rectangle",
+    },
+    {
+      "geometry": {
+        "height": 170,
+        "width": 170,
+        "x": 30,
+        "y": 30,
+      },
+      "key": "tao-rectangle-123",
+      "selected": true,
+      "type": "rectangle",
+    },
+  ],
+  "tools": [
+    {
+      "expanded": false,
+      "icon": "select-16",
+      "key": "select",
+      "label": "Select",
+      "selected": false,
+      "type": "select",
+    },
+    {
+      "expanded": false,
+      "icon": "type-16",
+      "key": "text",
+      "label": "Text",
+      "selected": false,
+      "type": "text",
+    },
+    {
+      "expanded": false,
+      "icon": "brush-16",
+      "key": "brush",
+      "label": "Brush",
+      "onetime": true,
+      "opener": true,
+      "selected": false,
+      "tools": [
+        {
+          "icon": "brush-8px-16",
+          "key": "brush-small",
+          "label": "Small brush",
+          "options": {
+            "size": 8,
+          },
+        },
+        {
+          "icon": "brush-12px-16",
+          "key": "brush-medium",
+          "label": "Medium brush",
+          "options": {
+            "size": 12,
+          },
+        },
+        {
+          "icon": "brush-16px-16",
+          "key": "brush-large",
+          "label": "Large brush",
+          "options": {
+            "size": 16,
+          },
+        },
+      ],
+      "type": "brush",
+    },
+    {
+      "expanded": false,
+      "icon": "rectangle-16",
+      "key": "rectangle",
+      "label": "Rectangle",
+      "opener": true,
+      "selected": true,
+      "tools": [
+        {
+          "icon": "rectangle-16",
+          "key": "rectangle",
+          "label": "Rectangle",
+          "type": "rectangle",
+        },
+        {
+          "icon": "oval-16",
+          "key": "oval",
+          "label": "Oval",
+          "type": "oval",
+        },
+        {
+          "icon": "line-16",
+          "key": "line",
+          "label": "Line",
+          "type": "line",
+        },
+      ],
+      "type": "rectangle",
+    },
+    {
+      "expanded": false,
+      "icon": "eraser-16",
+      "key": "eraser",
+      "label": "Eraser",
+      "selected": false,
+      "type": "eraser",
+    },
+  ],
+  "top": 256,
+  "visible": true,
+  "width": 992,
+}
+`;
+
+exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
+<main>
+  <div
+    aria-labelledby="tao-draggable-modal-title-123"
+    class="draggable-modal"
+    id="tao-draggable-modal-123"
+    style="
+            min-width: 640px;
+            min-height: 554px;
+            width: 992px;
+            height: 512px;
+            left: 144px;
+            top: 256px; --action-container-size: 11rem;"
+  >
+    <div
+      class="zoom-tracker visually-hidden"
+    />
+     
+    <div
+      class="contents"
+    >
+      <header
+        class="header inverted"
+      >
+        <div
+          class="action-container-start"
+        >
+          <button
+            aria-label="Close Panel"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            id="tao-draggable-modal-close-button-123"
+            title="Close Panel"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </div>
+         
+        <div
+          class="title-container"
+          id="tao-draggable-modal-title-123"
+        >
+          Scratchpad
+        </div>
+         
+        <div
+          class="action-container-end"
+        >
+          <button
+            aria-label="undo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="undo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Revert icon
+              </title>
+              <path
+                d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
+              />
+            </svg>
+             
+             
+          </button>
+          <button
+            aria-label="redo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="redo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Redo icon
+              </title>
+              <path
+                d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+          </button>
+           
+        </div>
+      </header>
+       
+      <div
+        class="content"
+      >
+        <div
+          class="scratchpad-container"
+        >
+          <ol
+            class="tools-main"
+          >
+            <li>
+              <button
+                aria-label="Select"
+                data-test-id="scratchpadTool-select"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    select tool
+                  </title>
+                  <path
+                    d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Text"
+                data-test-id="scratchpadTool-text"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    type tool
+                  </title>
+                  <path
+                    d="M1 0v2.001h6v14h2v-14h6V0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Brush"
+                data-test-id="scratchpadTool-brush"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Brush icon
+                  </title>
+                  <path
+                    d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-brush"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Small brush"
+                    data-test-id="scratchpadTool-subtool-brush-small"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 8 pixels
+                      </title>
+                      <path
+                        d="M8 4a4 4 0 100 8 4 4 0 100-8z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Medium brush"
+                    data-test-id="scratchpadTool-subtool-brush-medium"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 12 pixels
+                      </title>
+                      <path
+                        d="M8 2a6 6 0 100 12A6 6 0 108 2z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Large brush"
+                    data-test-id="scratchpadTool-subtool-brush-large"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 16 pixels
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 100 16A8 8 0 108 0z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li
+              class="selected"
+            >
+              <button
+                aria-label="Rectangle"
+                data-test-id="scratchpadTool-rectangle"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    rectangle tool
+                  </title>
+                  <path
+                    d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-rectangle"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Rectangle"
+                    data-test-id="scratchpadTool-subtool-rectangle"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        rectangle tool
+                      </title>
+                      <path
+                        d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Oval"
+                    data-test-id="scratchpadTool-subtool-oval"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        oval tool
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Line"
+                    data-test-id="scratchpadTool-subtool-line"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        line tool
+                      </title>
+                      <path
+                        d="M14.646.646l.708.708-14 14-.708-.708z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Eraser"
+                data-test-id="scratchpadTool-eraser"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Eraser icon
+                  </title>
+                  <path
+                    d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+          </ol>
+           
+          <svg
+            height="2160"
+            style=""
+            version="1.1"
+            viewBox="0 0 3840 2160"
+            width="3840"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          />
+        </div>
+      </div>
+       
+      <div
+        class="resize-hitbox hitbox-top-left"
+        data-direction="nw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top"
+        data-direction="n"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top-right"
+        data-direction="ne"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-right"
+        data-direction="e"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-right"
+        data-direction="se"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom"
+        data-direction="s"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-left"
+        data-direction="sw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-left"
+        data-direction="w"
+      />
+    </div>
+  </div>
+</main>
+`;
+
+exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
+<main>
+  <div
+    aria-labelledby="tao-draggable-modal-title-123"
+    class="draggable-modal"
+    id="tao-draggable-modal-123"
+    style="
+            min-width: 640px;
+            min-height: 554px;
+            width: 992px;
+            height: 512px;
+            left: 144px;
+            top: 256px; --action-container-size: 11rem;"
+  >
+    <div
+      class="zoom-tracker visually-hidden"
+    />
+     
+    <div
+      class="contents"
+    >
+      <header
+        class="header inverted"
+      >
+        <div
+          class="action-container-start"
+        >
+          <button
+            aria-label="Close Panel"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            id="tao-draggable-modal-close-button-123"
+            title="Close Panel"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </div>
+         
+        <div
+          class="title-container"
+          id="tao-draggable-modal-title-123"
+        >
+          Scratchpad
+        </div>
+         
+        <div
+          class="action-container-end"
+        >
+          <button
+            aria-label="undo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            title="undo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Revert icon
+              </title>
+              <path
+                d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
+              />
+            </svg>
+             
+             
+          </button>
+          <button
+            aria-label="redo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="redo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Redo icon
+              </title>
+              <path
+                d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+          </button>
+           
+        </div>
+      </header>
+       
+      <div
+        class="content"
+      >
+        <div
+          class="scratchpad-container"
+        >
+          <ol
+            class="tools-main"
+          >
+            <li>
+              <button
+                aria-label="Select"
+                data-test-id="scratchpadTool-select"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    select tool
+                  </title>
+                  <path
+                    d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Text"
+                data-test-id="scratchpadTool-text"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    type tool
+                  </title>
+                  <path
+                    d="M1 0v2.001h6v14h2v-14h6V0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Brush"
+                data-test-id="scratchpadTool-brush"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Brush icon
+                  </title>
+                  <path
+                    d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-brush"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Small brush"
+                    data-test-id="scratchpadTool-subtool-brush-small"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 8 pixels
+                      </title>
+                      <path
+                        d="M8 4a4 4 0 100 8 4 4 0 100-8z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Medium brush"
+                    data-test-id="scratchpadTool-subtool-brush-medium"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 12 pixels
+                      </title>
+                      <path
+                        d="M8 2a6 6 0 100 12A6 6 0 108 2z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Large brush"
+                    data-test-id="scratchpadTool-subtool-brush-large"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 16 pixels
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 100 16A8 8 0 108 0z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li
+              class="selected"
+            >
+              <button
+                aria-label="Rectangle"
+                data-test-id="scratchpadTool-rectangle"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    rectangle tool
+                  </title>
+                  <path
+                    d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-rectangle"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Rectangle"
+                    data-test-id="scratchpadTool-subtool-rectangle"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        rectangle tool
+                      </title>
+                      <path
+                        d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Oval"
+                    data-test-id="scratchpadTool-subtool-oval"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        oval tool
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Line"
+                    data-test-id="scratchpadTool-subtool-line"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        line tool
+                      </title>
+                      <path
+                        d="M14.646.646l.708.708-14 14-.708-.708z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Eraser"
+                data-test-id="scratchpadTool-eraser"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Eraser icon
+                  </title>
+                  <path
+                    d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+          </ol>
+           
+          <svg
+            height="2160"
+            style=""
+            version="1.1"
+            viewBox="0 0 3840 2160"
+            width="3840"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            
+            <g
+              class="shape-container rectangle"
+              data-shape-key="tao-rectangle-123"
+              data-shape-type="rectangle"
+            >
+              <rect
+                class="shape"
+                height="50"
+                width="50"
+                x="50"
+                y="50"
+              />
+               
+              <rect
+                class="hitbox"
+                height="86"
+                width="86"
+                x="32"
+                y="32"
+              />
+               
+              <rect
+                class="bounding"
+                height="54"
+                width="54"
+                x="48"
+                y="48"
+              />
+               
+              
+            </g>
+            
+            
+          </svg>
+        </div>
+      </div>
+       
+      <div
+        class="resize-hitbox hitbox-top-left"
+        data-direction="nw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top"
+        data-direction="n"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top-right"
+        data-direction="ne"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-right"
+        data-direction="e"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-right"
+        data-direction="se"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom"
+        data-direction="s"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-left"
+        data-direction="sw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-left"
+        data-direction="w"
+      />
+    </div>
+  </div>
+</main>
+`;
+
+exports[`scratchpad plugin > goes to next saved canvas state on redo 3`] = `
+{
+  "canvasStateIndex": 0,
+  "canvasStateStackLength": 1,
+  "enableStateActions": true,
+  "height": 512,
+  "left": 144,
+  "open": true,
+  "shapes": [
+    {
+      "geometry": {
+        "height": 50,
+        "width": 50,
+        "x": 50,
+        "y": 50,
+      },
+      "key": "tao-rectangle-123",
+      "type": "rectangle",
+    },
+  ],
+  "tools": [
+    {
+      "expanded": false,
+      "icon": "select-16",
+      "key": "select",
+      "label": "Select",
+      "selected": false,
+      "type": "select",
+    },
+    {
+      "expanded": false,
+      "icon": "type-16",
+      "key": "text",
+      "label": "Text",
+      "selected": false,
+      "type": "text",
+    },
+    {
+      "expanded": false,
+      "icon": "brush-16",
+      "key": "brush",
+      "label": "Brush",
+      "onetime": true,
+      "opener": true,
+      "selected": false,
+      "tools": [
+        {
+          "icon": "brush-8px-16",
+          "key": "brush-small",
+          "label": "Small brush",
+          "options": {
+            "size": 8,
+          },
+        },
+        {
+          "icon": "brush-12px-16",
+          "key": "brush-medium",
+          "label": "Medium brush",
+          "options": {
+            "size": 12,
+          },
+        },
+        {
+          "icon": "brush-16px-16",
+          "key": "brush-large",
+          "label": "Large brush",
+          "options": {
+            "size": 16,
+          },
+        },
+      ],
+      "type": "brush",
+    },
+    {
+      "expanded": false,
+      "icon": "rectangle-16",
+      "key": "rectangle",
+      "label": "Rectangle",
+      "opener": true,
+      "selected": true,
+      "tools": [
+        {
+          "icon": "rectangle-16",
+          "key": "rectangle",
+          "label": "Rectangle",
+          "type": "rectangle",
+        },
+        {
+          "icon": "oval-16",
+          "key": "oval",
+          "label": "Oval",
+          "type": "oval",
+        },
+        {
+          "icon": "line-16",
+          "key": "line",
+          "label": "Line",
+          "type": "line",
+        },
+      ],
+      "type": "rectangle",
+    },
+    {
+      "expanded": false,
+      "icon": "eraser-16",
+      "key": "eraser",
+      "label": "Eraser",
+      "selected": false,
+      "type": "eraser",
+    },
+  ],
+  "top": 256,
+  "visible": true,
+  "width": 992,
+}
+`;
+
+exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
+<main>
+  <div
+    aria-labelledby="tao-draggable-modal-title-123"
+    class="draggable-modal"
+    id="tao-draggable-modal-123"
+    style="
+            min-width: 640px;
+            min-height: 554px;
+            width: 992px;
+            height: 512px;
+            left: 144px;
+            top: 256px; --action-container-size: 11rem;"
+  >
+    <div
+      class="zoom-tracker visually-hidden"
+    />
+     
+    <div
+      class="contents"
+    >
+      <header
+        class="header inverted"
+      >
+        <div
+          class="action-container-start"
+        >
+          <button
+            aria-label="Close Panel"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            id="tao-draggable-modal-close-button-123"
+            title="Close Panel"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </div>
+         
+        <div
+          class="title-container"
+          id="tao-draggable-modal-title-123"
+        >
+          Scratchpad
+        </div>
+         
+        <div
+          class="action-container-end"
+        >
+          <button
+            aria-label="undo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="undo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Revert icon
+              </title>
+              <path
+                d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
+              />
+            </svg>
+             
+             
+          </button>
+          <button
+            aria-label="redo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="redo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Redo icon
+              </title>
+              <path
+                d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+          </button>
+           
+        </div>
+      </header>
+       
+      <div
+        class="content"
+      >
+        <div
+          class="scratchpad-container"
+        >
+          <ol
+            class="tools-main"
+          >
+            <li>
+              <button
+                aria-label="Select"
+                data-test-id="scratchpadTool-select"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    select tool
+                  </title>
+                  <path
+                    d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Text"
+                data-test-id="scratchpadTool-text"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    type tool
+                  </title>
+                  <path
+                    d="M1 0v2.001h6v14h2v-14h6V0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Brush"
+                data-test-id="scratchpadTool-brush"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Brush icon
+                  </title>
+                  <path
+                    d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-brush"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Small brush"
+                    data-test-id="scratchpadTool-subtool-brush-small"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 8 pixels
+                      </title>
+                      <path
+                        d="M8 4a4 4 0 100 8 4 4 0 100-8z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Medium brush"
+                    data-test-id="scratchpadTool-subtool-brush-medium"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 12 pixels
+                      </title>
+                      <path
+                        d="M8 2a6 6 0 100 12A6 6 0 108 2z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Large brush"
+                    data-test-id="scratchpadTool-subtool-brush-large"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 16 pixels
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 100 16A8 8 0 108 0z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li
+              class="selected"
+            >
+              <button
+                aria-label="Rectangle"
+                data-test-id="scratchpadTool-rectangle"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    rectangle tool
+                  </title>
+                  <path
+                    d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-rectangle"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Rectangle"
+                    data-test-id="scratchpadTool-subtool-rectangle"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        rectangle tool
+                      </title>
+                      <path
+                        d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Oval"
+                    data-test-id="scratchpadTool-subtool-oval"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        oval tool
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Line"
+                    data-test-id="scratchpadTool-subtool-line"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        line tool
+                      </title>
+                      <path
+                        d="M14.646.646l.708.708-14 14-.708-.708z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Eraser"
+                data-test-id="scratchpadTool-eraser"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Eraser icon
+                  </title>
+                  <path
+                    d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+          </ol>
+           
+          <svg
+            height="2160"
+            style=""
+            version="1.1"
+            viewBox="0 0 3840 2160"
+            width="3840"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          />
+        </div>
+      </div>
+       
+      <div
+        class="resize-hitbox hitbox-top-left"
+        data-direction="nw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top"
+        data-direction="n"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top-right"
+        data-direction="ne"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-right"
+        data-direction="e"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-right"
+        data-direction="se"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom"
+        data-direction="s"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-left"
+        data-direction="sw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-left"
+        data-direction="w"
+      />
+    </div>
+  </div>
+</main>
+`;
+
+exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
+<main>
+  <div
+    aria-labelledby="tao-draggable-modal-title-123"
+    class="draggable-modal"
+    id="tao-draggable-modal-123"
+    style="
+            min-width: 640px;
+            min-height: 554px;
+            width: 992px;
+            height: 512px;
+            left: 144px;
+            top: 256px; --action-container-size: 11rem;"
+  >
+    <div
+      class="zoom-tracker visually-hidden"
+    />
+     
+    <div
+      class="contents"
+    >
+      <header
+        class="header inverted"
+      >
+        <div
+          class="action-container-start"
+        >
+          <button
+            aria-label="Close Panel"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            id="tao-draggable-modal-close-button-123"
+            title="Close Panel"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </div>
+         
+        <div
+          class="title-container"
+          id="tao-draggable-modal-title-123"
+        >
+          Scratchpad
+        </div>
+         
+        <div
+          class="action-container-end"
+        >
+          <button
+            aria-label="undo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="undo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Revert icon
+              </title>
+              <path
+                d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
+              />
+            </svg>
+             
+             
+          </button>
+          <button
+            aria-label="redo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            title="redo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Redo icon
+              </title>
+              <path
+                d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+          </button>
+           
+        </div>
+      </header>
+       
+      <div
+        class="content"
+      >
+        <div
+          class="scratchpad-container"
+        >
+          <ol
+            class="tools-main"
+          >
+            <li>
+              <button
+                aria-label="Select"
+                data-test-id="scratchpadTool-select"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    select tool
+                  </title>
+                  <path
+                    d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Text"
+                data-test-id="scratchpadTool-text"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    type tool
+                  </title>
+                  <path
+                    d="M1 0v2.001h6v14h2v-14h6V0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Brush"
+                data-test-id="scratchpadTool-brush"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Brush icon
+                  </title>
+                  <path
+                    d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-brush"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Small brush"
+                    data-test-id="scratchpadTool-subtool-brush-small"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 8 pixels
+                      </title>
+                      <path
+                        d="M8 4a4 4 0 100 8 4 4 0 100-8z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Medium brush"
+                    data-test-id="scratchpadTool-subtool-brush-medium"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 12 pixels
+                      </title>
+                      <path
+                        d="M8 2a6 6 0 100 12A6 6 0 108 2z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Large brush"
+                    data-test-id="scratchpadTool-subtool-brush-large"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 16 pixels
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 100 16A8 8 0 108 0z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li
+              class="selected"
+            >
+              <button
+                aria-label="Rectangle"
+                data-test-id="scratchpadTool-rectangle"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    rectangle tool
+                  </title>
+                  <path
+                    d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-rectangle"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Rectangle"
+                    data-test-id="scratchpadTool-subtool-rectangle"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        rectangle tool
+                      </title>
+                      <path
+                        d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Oval"
+                    data-test-id="scratchpadTool-subtool-oval"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        oval tool
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Line"
+                    data-test-id="scratchpadTool-subtool-line"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        line tool
+                      </title>
+                      <path
+                        d="M14.646.646l.708.708-14 14-.708-.708z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Eraser"
+                data-test-id="scratchpadTool-eraser"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Eraser icon
+                  </title>
+                  <path
+                    d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+          </ol>
+           
+          <svg
+            height="2160"
+            style=""
+            version="1.1"
+            viewBox="0 0 3840 2160"
+            width="3840"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          />
+        </div>
+      </div>
+       
+      <div
+        class="resize-hitbox hitbox-top-left"
+        data-direction="nw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top"
+        data-direction="n"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top-right"
+        data-direction="ne"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-right"
+        data-direction="e"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-right"
+        data-direction="se"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom"
+        data-direction="s"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-left"
+        data-direction="sw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-left"
+        data-direction="w"
+      />
+    </div>
+  </div>
+</main>
+`;
+
+exports[`scratchpad plugin > goes to previous saved canvas state on undo 3`] = `
+{
+  "canvasStateIndex": 0,
+  "canvasStateStackLength": 1,
+  "enableStateActions": true,
+  "height": 512,
+  "left": 144,
+  "open": true,
+  "shapes": [],
+  "tools": [
+    {
+      "expanded": false,
+      "icon": "select-16",
+      "key": "select",
+      "label": "Select",
+      "selected": false,
+      "type": "select",
+    },
+    {
+      "expanded": false,
+      "icon": "type-16",
+      "key": "text",
+      "label": "Text",
+      "selected": false,
+      "type": "text",
+    },
+    {
+      "expanded": false,
+      "icon": "brush-16",
+      "key": "brush",
+      "label": "Brush",
+      "onetime": true,
+      "opener": true,
+      "selected": false,
+      "tools": [
+        {
+          "icon": "brush-8px-16",
+          "key": "brush-small",
+          "label": "Small brush",
+          "options": {
+            "size": 8,
+          },
+        },
+        {
+          "icon": "brush-12px-16",
+          "key": "brush-medium",
+          "label": "Medium brush",
+          "options": {
+            "size": 12,
+          },
+        },
+        {
+          "icon": "brush-16px-16",
+          "key": "brush-large",
+          "label": "Large brush",
+          "options": {
+            "size": 16,
+          },
+        },
+      ],
+      "type": "brush",
+    },
+    {
+      "expanded": false,
+      "icon": "rectangle-16",
+      "key": "rectangle",
+      "label": "Rectangle",
+      "opener": true,
+      "selected": true,
+      "tools": [
+        {
+          "icon": "rectangle-16",
+          "key": "rectangle",
+          "label": "Rectangle",
+          "type": "rectangle",
+        },
+        {
+          "icon": "oval-16",
+          "key": "oval",
+          "label": "Oval",
+          "type": "oval",
+        },
+        {
+          "icon": "line-16",
+          "key": "line",
+          "label": "Line",
+          "type": "line",
+        },
+      ],
+      "type": "rectangle",
+    },
+    {
+      "expanded": false,
+      "icon": "eraser-16",
+      "key": "eraser",
+      "label": "Eraser",
+      "selected": false,
+      "type": "eraser",
+    },
+  ],
+  "top": 256,
+  "visible": true,
+  "width": 992,
+}
+`;
+
+exports[`scratchpad plugin > restores the scratchpad state from the user session 1`] = `
+<main>
+  <div
+    aria-labelledby="tao-draggable-modal-title-123"
+    class="draggable-modal"
+    id="tao-draggable-modal-123"
+    style="
+            min-width: 640px;
+            min-height: 284px;
+            width: 50px;
+            height: 50px;
+            left: 0px;
+            top: 0px; --action-container-size: 11rem;"
+  >
+    <div
+      class="zoom-tracker visually-hidden"
+    />
+     
+    <div
+      class="contents"
+    >
+      <header
+        class="header inverted"
+      >
+        <div
+          class="action-container-start"
+        >
+          <button
+            aria-label="Close Panel"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            id="tao-draggable-modal-close-button-123"
+            title="Close Panel"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </div>
+         
+        <div
+          class="title-container"
+          id="tao-draggable-modal-title-123"
+        >
+          Scratchpad
+        </div>
+         
+        <div
+          class="action-container-end"
+        >
+          <button
+            aria-label="undo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="undo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Revert icon
+              </title>
+              <path
+                d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
+              />
+            </svg>
+             
+             
+          </button>
+          <button
+            aria-label="redo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="redo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Redo icon
+              </title>
+              <path
+                d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+          </button>
+           
+        </div>
+      </header>
+       
+      <div
+        class="content"
+      >
+        <div
+          class="scratchpad-container"
+        >
+          <ol
+            class="tools-main"
+          >
+            <li>
+              <button
+                aria-label="Text"
+                data-test-id="scratchpadTool-text"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    type tool
+                  </title>
+                  <path
+                    d="M1 0v2.001h6v14h2v-14h6V0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li
+              class="selected"
+            >
+              <button
+                aria-label="Rectangle"
+                data-test-id="scratchpadTool-rectangle"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    rectangle tool
+                  </title>
+                  <path
+                    d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+          </ol>
+           
+          <svg
+            height="2160"
+            style=""
+            version="1.1"
+            viewBox="0 0 3840 2160"
+            width="3840"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            
+            <g
+              class="shape-container rectangle"
+              data-shape-key="tao-rectangle-123"
+              data-shape-type="rectangle"
+            >
+              <rect
+                class="shape too-small"
+                height="10"
+                width="10"
+                x="10"
+                y="10"
+              />
+               
+              <rect
+                class="hitbox"
+                height="46"
+                width="46"
+                x="-8"
+                y="-8"
+              />
+               
+              <rect
+                class="bounding"
+                height="14"
+                width="14"
+                x="8"
+                y="8"
+              />
+               
+              
+            </g>
+            
+            
+          </svg>
+        </div>
+      </div>
+       
+      <div
+        class="resize-hitbox hitbox-top-left"
+        data-direction="nw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top"
+        data-direction="n"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top-right"
+        data-direction="ne"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-right"
+        data-direction="e"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-right"
+        data-direction="se"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom"
+        data-direction="s"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-left"
+        data-direction="sw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-left"
+        data-direction="w"
+      />
+    </div>
+  </div>
+</main>
+`;
+
+exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] = `
+<main>
+  <div
+    aria-labelledby="tao-draggable-modal-title-123"
+    class="draggable-modal"
+    id="tao-draggable-modal-123"
+    style="
+            min-width: 640px;
+            min-height: 554px;
+            width: 992px;
+            height: 512px;
+            left: 144px;
+            top: 256px; --action-container-size: 11rem;"
+  >
+    <div
+      class="zoom-tracker visually-hidden"
+    />
+     
+    <div
+      class="contents"
+    >
+      <header
+        class="header inverted"
+      >
+        <div
+          class="action-container-start"
+        >
+          <button
+            aria-label="Close Panel"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            id="tao-draggable-modal-close-button-123"
+            title="Close Panel"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </div>
+         
+        <div
+          class="title-container"
+          id="tao-draggable-modal-title-123"
+        >
+          Scratchpad
+        </div>
+         
+        <div
+          class="action-container-end"
+        >
+          <button
+            aria-label="undo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="undo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Revert icon
+              </title>
+              <path
+                d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
+              />
+            </svg>
+             
+             
+          </button>
+          <button
+            aria-label="redo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="redo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Redo icon
+              </title>
+              <path
+                d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+          </button>
+           
+        </div>
+      </header>
+       
+      <div
+        class="content"
+      >
+        <div
+          class="scratchpad-container"
+        >
+          <ol
+            class="tools-main"
+          >
+            <li>
+              <button
+                aria-label="Select"
+                data-test-id="scratchpadTool-select"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    select tool
+                  </title>
+                  <path
+                    d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Text"
+                data-test-id="scratchpadTool-text"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    type tool
+                  </title>
+                  <path
+                    d="M1 0v2.001h6v14h2v-14h6V0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Brush"
+                data-test-id="scratchpadTool-brush"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Brush icon
+                  </title>
+                  <path
+                    d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-brush"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Small brush"
+                    data-test-id="scratchpadTool-subtool-brush-small"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 8 pixels
+                      </title>
+                      <path
+                        d="M8 4a4 4 0 100 8 4 4 0 100-8z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Medium brush"
+                    data-test-id="scratchpadTool-subtool-brush-medium"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 12 pixels
+                      </title>
+                      <path
+                        d="M8 2a6 6 0 100 12A6 6 0 108 2z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Large brush"
+                    data-test-id="scratchpadTool-subtool-brush-large"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 16 pixels
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 100 16A8 8 0 108 0z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Rectangle"
+                data-test-id="scratchpadTool-rectangle"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    rectangle tool
+                  </title>
+                  <path
+                    d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-rectangle"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Rectangle"
+                    data-test-id="scratchpadTool-subtool-rectangle"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        rectangle tool
+                      </title>
+                      <path
+                        d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Oval"
+                    data-test-id="scratchpadTool-subtool-oval"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        oval tool
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Line"
+                    data-test-id="scratchpadTool-subtool-line"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        line tool
+                      </title>
+                      <path
+                        d="M14.646.646l.708.708-14 14-.708-.708z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Eraser"
+                data-test-id="scratchpadTool-eraser"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Eraser icon
+                  </title>
+                  <path
+                    d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+          </ol>
+           
+          <svg
+            height="2160"
+            style=""
+            version="1.1"
+            viewBox="0 0 3840 2160"
+            width="3840"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          />
+        </div>
+      </div>
+       
+      <div
+        class="resize-hitbox hitbox-top-left"
+        data-direction="nw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top"
+        data-direction="n"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top-right"
+        data-direction="ne"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-right"
+        data-direction="e"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-right"
+        data-direction="se"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom"
+        data-direction="s"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-left"
+        data-direction="sw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-left"
+        data-direction="w"
+      />
+    </div>
+  </div>
+</main>
+`;
+
+exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] = `
+<main>
+  <div
+    aria-labelledby="tao-draggable-modal-title-123"
+    class="draggable-modal"
+    id="tao-draggable-modal-123"
+    style="
+            min-width: 640px;
+            min-height: 554px;
+            width: 992px;
+            height: 512px;
+            left: 144px;
+            top: 256px; --action-container-size: 11rem;"
+  >
+    <div
+      class="zoom-tracker visually-hidden"
+    />
+     
+    <div
+      class="contents"
+    >
+      <header
+        class="header inverted"
+      >
+        <div
+          class="action-container-start"
+        >
+          <button
+            aria-label="Close Panel"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            id="tao-draggable-modal-close-button-123"
+            title="Close Panel"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Minus icon
+              </title>
+              <path
+                d="M0 7h16v2H0z"
+              />
+            </svg>
+             
+             
+          </button>
+        </div>
+         
+        <div
+          class="title-container"
+          id="tao-draggable-modal-title-123"
+        >
+          Scratchpad
+        </div>
+         
+        <div
+          class="action-container-end"
+        >
+          <button
+            aria-label="undo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            title="undo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Revert icon
+              </title>
+              <path
+                d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
+              />
+            </svg>
+             
+             
+          </button>
+          <button
+            aria-label="redo"
+            class="icon-bar-btn actionable base-16 draggable-modal-action"
+            disabled=""
+            title="redo"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Redo icon
+              </title>
+              <path
+                d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+          </button>
+           
+        </div>
+      </header>
+       
+      <div
+        class="content"
+      >
+        <div
+          class="scratchpad-container"
+        >
+          <ol
+            class="tools-main"
+          >
+            <li>
+              <button
+                aria-label="Select"
+                data-test-id="scratchpadTool-select"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    select tool
+                  </title>
+                  <path
+                    d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Text"
+                data-test-id="scratchpadTool-text"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    type tool
+                  </title>
+                  <path
+                    d="M1 0v2.001h6v14h2v-14h6V0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+            <li>
+              <button
+                aria-label="Brush"
+                data-test-id="scratchpadTool-brush"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Brush icon
+                  </title>
+                  <path
+                    d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-brush"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Small brush"
+                    data-test-id="scratchpadTool-subtool-brush-small"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 8 pixels
+                      </title>
+                      <path
+                        d="M8 4a4 4 0 100 8 4 4 0 100-8z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Medium brush"
+                    data-test-id="scratchpadTool-subtool-brush-medium"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 12 pixels
+                      </title>
+                      <path
+                        d="M8 2a6 6 0 100 12A6 6 0 108 2z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Large brush"
+                    data-test-id="scratchpadTool-subtool-brush-large"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        brush size 16 pixels
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 100 16A8 8 0 108 0z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li
+              class="selected"
+            >
+              <button
+                aria-label="Rectangle"
+                data-test-id="scratchpadTool-rectangle"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    rectangle tool
+                  </title>
+                  <path
+                    d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                  />
+                </svg>
+              </button>
+               
+              <ol
+                class="tools-options"
+                data-test-id="scratchpadTool-subtools-rectangle"
+              >
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Rectangle"
+                    data-test-id="scratchpadTool-subtool-rectangle"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        rectangle tool
+                      </title>
+                      <path
+                        d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Oval"
+                    data-test-id="scratchpadTool-subtool-oval"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        oval tool
+                      </title>
+                      <path
+                        d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+                <li
+                  class="sub-option"
+                >
+                  <button
+                    aria-label="Line"
+                    data-test-id="scratchpadTool-subtool-line"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        line tool
+                      </title>
+                      <path
+                        d="M14.646.646l.708.708-14 14-.708-.708z"
+                      />
+                    </svg>
+                  </button>
+                   
+                </li>
+              </ol>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Eraser"
+                data-test-id="scratchpadTool-eraser"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Eraser icon
+                  </title>
+                  <path
+                    d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
+                  />
+                </svg>
+              </button>
+               
+               
+            </li>
+          </ol>
+           
+          <svg
+            height="2160"
+            style=""
+            version="1.1"
+            viewBox="0 0 3840 2160"
+            width="3840"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            
+            <g
+              class="shape-container rectangle selected"
+              data-shape-key="tao-rectangle-123"
+              data-shape-type="rectangle"
+            >
+              <rect
+                class="shape"
+                height="50"
+                width="50"
+                x="50"
+                y="50"
+              />
+               
+              <rect
+                class="hitbox"
+                height="86"
+                width="86"
+                x="32"
+                y="32"
+              />
+               
+              <rect
+                class="bounding"
+                height="54"
+                width="54"
+                x="48"
+                y="48"
+              />
+               
+              <g
+                class="resize-hitbox-container"
+              >
+                <rect
+                  class="resize-square"
+                  height="10"
+                  width="10"
+                  x="93"
+                  y="93"
+                />
+                <rect
+                  class="resize-hitbox"
+                  height="88"
+                  width="88"
+                  x="54"
+                  y="54"
+                />
+              </g>
+              
+            </g>
+            
+            
+          </svg>
+        </div>
+      </div>
+       
+      <div
+        class="resize-hitbox hitbox-top-left"
+        data-direction="nw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top"
+        data-direction="n"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-top-right"
+        data-direction="ne"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-right"
+        data-direction="e"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-right"
+        data-direction="se"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom"
+        data-direction="s"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-bottom-left"
+        data-direction="sw"
+      />
+       
+      <div
+        class="resize-hitbox hitbox-left"
+        data-direction="w"
+      />
+    </div>
+  </div>
+</main>
+`;
+
+exports[`scratchpad plugin > saves the scratchpad state in the user session 3`] = `
+{
+  "canvasStateIndex": 0,
+  "canvasStateStackLength": 1,
+  "enableStateActions": true,
+  "height": 512,
+  "left": 144,
+  "open": true,
+  "shapes": [
+    {
+      "geometry": {
+        "height": 50,
+        "width": 50,
+        "x": 50,
+        "y": 50,
+      },
+      "key": "tao-rectangle-123",
+      "selected": true,
+      "type": "rectangle",
+    },
+  ],
+  "tools": [
+    {
+      "expanded": false,
+      "icon": "select-16",
+      "key": "select",
+      "label": "Select",
+      "selected": false,
+      "type": "select",
+    },
+    {
+      "expanded": false,
+      "icon": "type-16",
+      "key": "text",
+      "label": "Text",
+      "selected": false,
+      "type": "text",
+    },
+    {
+      "expanded": false,
+      "icon": "brush-16",
+      "key": "brush",
+      "label": "Brush",
+      "onetime": true,
+      "opener": true,
+      "selected": false,
+      "tools": [
+        {
+          "icon": "brush-8px-16",
+          "key": "brush-small",
+          "label": "Small brush",
+          "options": {
+            "size": 8,
+          },
+        },
+        {
+          "icon": "brush-12px-16",
+          "key": "brush-medium",
+          "label": "Medium brush",
+          "options": {
+            "size": 12,
+          },
+        },
+        {
+          "icon": "brush-16px-16",
+          "key": "brush-large",
+          "label": "Large brush",
+          "options": {
+            "size": 16,
+          },
+        },
+      ],
+      "type": "brush",
+    },
+    {
+      "expanded": false,
+      "icon": "rectangle-16",
+      "key": "rectangle",
+      "label": "Rectangle",
+      "opener": true,
+      "selected": true,
+      "tools": [
+        {
+          "icon": "rectangle-16",
+          "key": "rectangle",
+          "label": "Rectangle",
+          "type": "rectangle",
+        },
+        {
+          "icon": "oval-16",
+          "key": "oval",
+          "label": "Oval",
+          "type": "oval",
+        },
+        {
+          "icon": "line-16",
+          "key": "line",
+          "label": "Line",
+          "type": "line",
+        },
+      ],
+      "type": "rectangle",
+    },
+    {
+      "expanded": false,
+      "icon": "eraser-16",
+      "key": "eraser",
+      "label": "Eraser",
+      "selected": false,
+      "type": "eraser",
+    },
+  ],
+  "top": 256,
+  "visible": true,
+  "width": 992,
+}
+`;

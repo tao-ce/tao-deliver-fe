@@ -1,0 +1,308 @@
+{
+    "success": true,
+    "displayFeedbacks": true,
+    "feedbacks": {
+        "responsedeclaration_6502b8cf75eba989066368": {
+            "mapping": [],
+            "areaMapping": [],
+            "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+            "correctResponses": ["choice_1", "choice_2"],
+            "defaultValue": [],
+            "mappingAttributes": {
+                "defaultValue": 0
+            },
+            "feedbackRules": {
+                "response_simplefeedbackrule_6502b8cf763bd226889601": {
+                    "serial": "response_simplefeedbackrule_6502b8cf763bd226889601",
+                    "qtiClass": "_simpleFeedbackRule",
+                    "comparedOutcome": "responsedeclaration_6502b8cf75eba989066368",
+                    "comparedValue": 0,
+                    "condition": "correct",
+                    "feedbackOutcome": "outcomedeclaration_6502b8cf75f2f403555392",
+                    "feedbackThen": "feedback_modalfeedback_6502b8cf75f6e961251132",
+                    "feedbackElse": "feedback_modalfeedback_6502b8cf76017068668555"
+                }
+            }
+        },
+        "responsedeclaration_6502b8cf75ef3682989215": {
+            "mapping": [],
+            "areaMapping": [],
+            "howMatch": "no_response_processing",
+            "correctResponses": [],
+            "defaultValue": [],
+            "mappingAttributes": {
+                "defaultValue": 0
+            },
+            "feedbackRules": {
+                "response_simplefeedbackrule_6502b8cf7644a749630544": {
+                    "serial": "response_simplefeedbackrule_6502b8cf7644a749630544",
+                    "qtiClass": "_simpleFeedbackRule",
+                    "comparedOutcome": "responsedeclaration_6502b8cf75ef3682989215",
+                    "comparedValue": 0,
+                    "condition": "incorrect",
+                    "feedbackOutcome": "outcomedeclaration_6502b8cf75f43628596842",
+                    "feedbackThen": "feedback_modalfeedback_6502b8cf760aa640308720",
+                    "feedbackElse": "feedback_modalfeedback_6502b8cf7613a214275968"
+                }
+            }
+        },
+        "feedback_modalfeedback_6502b8cf75f6e961251132": {
+            "identifier": "feedbackModal_1",
+            "serial": "feedback_modalfeedback_6502b8cf75f6e961251132",
+            "qtiClass": "modalFeedback",
+            "attributes": {
+                "identifier": "feedbackModal_1",
+                "outcomeIdentifier": "FEEDBACK_1",
+                "showHide": "show",
+                "title": "Correct title"
+            },
+            "body": {
+                "serial": "container_containerstatic_6502b8cf75f8e816628321",
+                "body": "\n    <div class=\"x-tao-wrapper x-tao-modalFeedback-negative x-tao-relatedOutcome-RESPONSE_1\">Correct body</div>\n  ",
+                "elements": [],
+                "attributes": [],
+                "debug": {
+                    "relatedItem": "item_6502b8cf75e6b723821849"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_6502b8cf75e6b723821849"
+            }
+        },
+        "feedback_modalfeedback_6502b8cf76017068668555": {
+            "identifier": "feedbackModal_2",
+            "serial": "feedback_modalfeedback_6502b8cf76017068668555",
+            "qtiClass": "modalFeedback",
+            "attributes": {
+                "identifier": "feedbackModal_2",
+                "outcomeIdentifier": "FEEDBACK_1",
+                "showHide": "show",
+                "title": "Incorrect titleIncorrect titleIncorrect titleIncorrect titleIncorrect titleIncorrect titleIncorrect titleIncorrect titleIncorrect titleIncorrect titleIncorrect titleIncorrect title"
+            },
+            "body": {
+                "serial": "container_containerstatic_6502b8cf76034604647849",
+                "body": "\n    <div class=\"x-tao-wrapper x-tao-modalFeedback-positive x-tao-relatedOutcome-RESPONSE_1\">Incorrect body</div>\n  ",
+                "elements": [],
+                "attributes": [],
+                "debug": {
+                    "relatedItem": "item_6502b8cf75e6b723821849"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_6502b8cf75e6b723821849"
+            }
+        },
+        "feedback_modalfeedback_6502b8cf760aa640308720": {
+            "identifier": "feedbackModal_3",
+            "serial": "feedback_modalfeedback_6502b8cf760aa640308720",
+            "qtiClass": "modalFeedback",
+            "attributes": {
+                "identifier": "feedbackModal_3",
+                "outcomeIdentifier": "FEEDBACK_2",
+                "showHide": "show",
+                "title": "If incorrect then"
+            },
+            "body": {
+                "serial": "container_containerstatic_6502b8cf760c6988316823",
+                "body": "\n    <div class=\"x-tao-wrapper x-tao-modalFeedback-positive x-tao-relatedOutcome-RESPONSE_2\">If incorrect then</div>\n  ",
+                "elements": [],
+                "attributes": [],
+                "debug": {
+                    "relatedItem": "item_6502b8cf75e6b723821849"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_6502b8cf75e6b723821849"
+            }
+        },
+        "feedback_modalfeedback_6502b8cf7613a214275968": {
+            "identifier": "feedbackModal_4",
+            "serial": "feedback_modalfeedback_6502b8cf7613a214275968",
+            "qtiClass": "modalFeedback",
+            "attributes": {
+                "identifier": "feedbackModal_4",
+                "outcomeIdentifier": "FEEDBACK_2",
+                "showHide": "show",
+                "title": "If incorrect else"
+            },
+            "body": {
+                "serial": "container_containerstatic_6502b8cf76155176904311",
+                "body": "\n    <div class=\"x-tao-wrapper x-tao-modalFeedback-negative x-tao-relatedOutcome-RESPONSE_2\">If incorrect else</div>\n  ",
+                "elements": [],
+                "attributes": [],
+                "debug": {
+                    "relatedItem": "item_6502b8cf75e6b723821849"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_6502b8cf75e6b723821849"
+            }
+        },
+        "response_templatesdriven_6502b8cf7645f363199210": {
+            "processingType": "templateDriven",
+            "responseRules": [
+                {
+                    "qtiClass": "responseCondition",
+                    "responseIf": {
+                        "qtiClass": "responseIf",
+                        "expression": {
+                            "qtiClass": "match",
+                            "expressions": [
+                                {
+                                    "qtiClass": "variable",
+                                    "attributes": {
+                                        "identifier": "RESPONSE_1"
+                                    }
+                                },
+                                {
+                                    "qtiClass": "correct",
+                                    "attributes": {
+                                        "identifier": "RESPONSE_1"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseRules": [
+                            {
+                                "qtiClass": "setOutcomeValue",
+                                "attributes": {
+                                    "identifier": "FEEDBACK_1"
+                                },
+                                "expression": {
+                                    "qtiClass": "baseValue",
+                                    "attributes": {
+                                        "baseType": "identifier"
+                                    },
+                                    "value": "feedbackModal_1"
+                                }
+                            }
+                        ]
+                    },
+                    "responseElse": {
+                        "qtiClass": "responseElse",
+                        "responseRules": [
+                            {
+                                "qtiClass": "setOutcomeValue",
+                                "attributes": {
+                                    "identifier": "FEEDBACK_1"
+                                },
+                                "expression": {
+                                    "qtiClass": "baseValue",
+                                    "attributes": {
+                                        "baseType": "identifier"
+                                    },
+                                    "value": "feedbackModal_2"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "qtiClass": "responseCondition",
+                    "responseIf": {
+                        "qtiClass": "responseIf",
+                        "expression": {
+                            "qtiClass": "not",
+                            "expressions": [
+                                {
+                                    "qtiClass": "match",
+                                    "expressions": [
+                                        {
+                                            "qtiClass": "variable",
+                                            "attributes": {
+                                                "identifier": "RESPONSE_2"
+                                            }
+                                        },
+                                        {
+                                            "qtiClass": "correct",
+                                            "attributes": {
+                                                "identifier": "RESPONSE_2"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "responseRules": [
+                            {
+                                "qtiClass": "setOutcomeValue",
+                                "attributes": {
+                                    "identifier": "FEEDBACK_2"
+                                },
+                                "expression": {
+                                    "qtiClass": "baseValue",
+                                    "attributes": {
+                                        "baseType": "identifier"
+                                    },
+                                    "value": "feedbackModal_3"
+                                }
+                            }
+                        ]
+                    },
+                    "responseElse": {
+                        "qtiClass": "responseElse",
+                        "responseRules": [
+                            {
+                                "qtiClass": "setOutcomeValue",
+                                "attributes": {
+                                    "identifier": "FEEDBACK_2"
+                                },
+                                "expression": {
+                                    "qtiClass": "baseValue",
+                                    "attributes": {
+                                        "baseType": "identifier"
+                                    },
+                                    "value": "feedbackModal_4"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "itemSession": {
+        "numAttempts": {
+            "base": {
+                "integer": 2
+            }
+        },
+        "duration": {
+            "base": {
+                "duration": "PT1M25.509499S"
+            }
+        },
+        "completionStatus": {
+            "base": {
+                "identifier": "completed"
+            }
+        },
+        "SCORE": {
+            "base": {
+                "float": 0
+            }
+        },
+        "FEEDBACK_1": {
+            "base": {
+                "identifier": "feedbackModal_2"
+            }
+        },
+        "FEEDBACK_2": {
+            "base": {
+                "identifier": "feedbackModal_4"
+            }
+        },
+        "RESPONSE_1": {
+            "base": {
+                "string": "ee"
+            }
+        },
+        "RESPONSE_2": {
+            "base": {
+                "string": "xx"
+            }
+        },
+        "itemAnswered": true
+    },
+    "messages": []
+}

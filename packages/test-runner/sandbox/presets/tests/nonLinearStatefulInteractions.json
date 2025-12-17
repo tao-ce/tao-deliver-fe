@@ -1,0 +1,196 @@
+{
+    "testContext": {
+        "state": 1,
+        "remainingAttempts": -1,
+        "isTimeout": 0,
+        "itemIdentifier": "item1",
+        "attempt": 1,
+        "itemSessionState": 1,
+        "needMapUpdate": false,
+        "itemPosition": 0,
+        "timeConstraints": [],
+        "testPartId": "testPart-1",
+        "sectionId": "assessmentSection-1",
+        "canMoveBackward": true,
+        "rubrics": "",
+        "allowSkipping": true,
+        "validateResponses": false,
+        "isProctored": true
+    },
+    "testMap": {
+        "scope": "test",
+        "parts": {
+            "testPart-1": {
+                "id": "testPart-1",
+                "label": "testPart-1",
+                "position": 0,
+                "isLinear": false,
+                "timeConstraint": null,
+                "sections": {
+                    "assessmentSection-1": {
+                        "id": "assessmentSection-1",
+                        "label": "Section 1",
+                        "isCatAdaptive": false,
+                        "position": 0,
+                        "items": {
+                            "item1": {
+                                "id": "item1",
+                                "label": "Chemistry (Media Interaction)",
+                                "position": 0,
+                                "occurrence": 0,
+                                "remainingAttempts": 7,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false,
+                                "allowSkipping": true,
+                                "validateResponses": false
+                            },
+                            "item2": {
+                                "id": "item2",
+                                "label": "Static Media",
+                                "position": 1,
+                                "occurrence": 0,
+                                "remainingAttempts": 7,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false,
+                                "allowSkipping": true,
+                                "validateResponses": false
+                            },
+                            "item3": {
+                                "id": "item3",
+                                "label": "Weights",
+                                "position": 2,
+                                "occurrence": 0,
+                                "remainingAttempts": 7,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false,
+                                "allowSkipping": true,
+                                "validateResponses": false
+                            },
+                            "item4": {
+                                "id": "item4",
+                                "label": "Planets",
+                                "position": 3,
+                                "occurrence": 0,
+                                "remainingAttempts": 7,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false,
+                                "allowSkipping": true,
+                                "validateResponses": false
+                            },
+                            "item5": {
+                                "id": "item5",
+                                "label": "US Population",
+                                "position": 4,
+                                "occurrence": 0,
+                                "remainingAttempts": 7,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false,
+                                "allowSkipping": true,
+                                "validateResponses": false
+                            },
+                            "item6": {
+                                "id": "item6",
+                                "label": "Space Shuttle",
+                                "position": 5,
+                                "occurrence": 0,
+                                "remainingAttempts": 7,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false,
+                                "allowSkipping": true,
+                                "validateResponses": false
+                            },
+                            "item7": {
+                              "id": "item7",
+                              "label": "Audios 1",
+                              "position": 6,
+                              "occurrence": 0,
+                              "remainingAttempts": -1,
+                              "answered": false,
+                              "flagged": false,
+                              "viewed": false,
+                              "categories": ["x-tao-sequence-ended-nav-next"],
+                              "hasFeedbacks": false,
+                              "allowComment": false,
+                              "informational": false,
+                              "allowSkipping": true,
+                              "validateResponses": false
+                          },
+                          "item8": {
+                            "id": "item8",
+                            "label": "Audios & Recordings",
+                            "position": 7,
+                            "occurrence": 0,
+                            "remainingAttempts": -1,
+                            "answered": false,
+                            "flagged": false,
+                            "viewed": false,
+                            "categories": ["x-tao-sequence-ended-nav-next"],
+                            "hasFeedbacks": false,
+                            "allowComment": false,
+                            "informational": false,
+                            "allowSkipping": true,
+                            "validateResponses": false
+                         }
+                        },
+                        "stats": {
+                            "questions": 9,
+                            "answered": 0,
+                            "flagged": 0,
+                            "viewed": 1,
+                            "total": 9,
+                            "questionsViewed": 1
+                        }
+                    }
+                },
+                "stats": {
+                    "questions": 9,
+                    "answered": 0,
+                    "flagged": 0,
+                    "viewed": 1,
+                    "total": 9,
+                    "questionsViewed": 1
+                }
+            }
+        },
+        "title": "nonLinearStateful",
+        "identifier": "nonLinearStateful",
+        "stats": {
+            "questions": 9,
+            "answered": 0,
+            "flagged": 0,
+            "viewed": 1,
+            "total": 9,
+            "questionsViewed": 1
+        }
+    }
+}

@@ -1,0 +1,69 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Transition component > Renders correctly with no props 1`] = `
+<body>
+  <div>
+    <div
+      class="transition"
+    >
+      <div
+        aria-live="assertive"
+        class="loading-wrapper small"
+        role="alert"
+      >
+        <div
+          class="loading"
+        />
+         
+        <div
+          class="content"
+        >
+          <p
+            class="visually-hidden"
+          >
+            Content is loading
+          </p>
+        </div>
+      </div>
+       
+      <p>
+        
+      </p>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Transition component > Renders correctly with text & subtext 1`] = `
+<body>
+  <div>
+    <div
+      class="transition"
+    >
+      <div
+        aria-live="assertive"
+        class="loading-wrapper small"
+        role="alert"
+      >
+        <div
+          class="loading"
+        />
+         
+        <div
+          class="content"
+        >
+          <p
+            class="text"
+          >
+            loading
+          </p>
+        </div>
+      </div>
+       
+      <p>
+        loady loady loady
+      </p>
+    </div>
+  </div>
+</body>
+`;

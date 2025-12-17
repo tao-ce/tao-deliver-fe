@@ -1,0 +1,25 @@
+{
+  "name": "@oat-sa-private/tao-deliver-apps-common",
+  "version": "1.19.0",
+  "displayName": "TAO Deliver Apps Common",
+  "description": "Common modules for TAO Deliver frontend apps",
+  "homepage": "https://github.com/oat-sa/tao-deliver-fe#readme",
+  "files": [
+    "src",
+    "!**/test/"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "build": "echo 'no build command implemented for apps-common'",
+    "test": "cross-env TZ=UTC vitest --config=../../vitest.config.js",
+    "test:ui": "npm test -- --watch --ui",
+    "test:watch": "npm test -- --watch",
+    "test:cov": "npm test -- --coverage",
+    "test:cov:ci": "npm test -- --coverage --silent=passed-only --bail=1 --retry=1"
+  },
+  "license": "AGPL-3.0-only OR LicenseRef-TAO-Commercial-License",
+  "author": {
+    "name": "Open Assessment Technologies S.A.",
+    "url": "https://www.taotesting.com"
+  }
+}

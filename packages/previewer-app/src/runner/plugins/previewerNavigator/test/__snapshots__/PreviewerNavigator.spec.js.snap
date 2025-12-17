@@ -1,0 +1,571 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PreviewerNavigator > fails rendering with no serviceCallId 1`] = `[TypeError: A "serviceCallId" is required to get the state store of the test session]`;
+
+exports[`PreviewerNavigator > renders previous button, steps and next button 1`] = `
+<body>
+  <div>
+    <div
+      class="navigator"
+    >
+      <div
+        class="button-container end"
+      >
+        <button
+          aria-label="Go to next question"
+          class="actionable primary circular medium"
+          name="next"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium rtl-flip"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Arrow right icon
+            </title>
+            <path
+              d="M8 16l-2-2 4.5-4.5H0v-3h10.5L6 2l2-2 8 8-8 8z"
+              fill-rule="evenodd"
+            />
+          </svg>
+           
+           
+        </button>
+      </div>
+       
+      <div
+        class="button-container start"
+      >
+        <button
+          aria-label="Go to previous question"
+          class="actionable secondary circular medium"
+          name="prev"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium rtl-flip"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Arrow left icon
+            </title>
+            <path
+              d="M7.7-.13l2 2-4.5 4.5h10.5v3H5.2l4.5 4.5-2 2-8-8 8-8z"
+              fill-rule="evenodd"
+            />
+          </svg>
+           
+           
+        </button>
+      </div>
+       
+      <div
+        class="progress-container"
+      >
+        <div
+          class="width-tracker"
+        >
+          <div
+            class="more"
+          />
+           
+          <div>
+            <ol
+              class="space-medium"
+            >
+              <li>
+                <button
+                  aria-label="Question 1."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    1
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-current="location"
+                  aria-label="Question 2."
+                  class="step completed current"
+                  tabindex="0"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="indicator"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon small"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Current item indicator
+                      </title>
+                      <path
+                        d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    2
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 3."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    3
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 4."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    4
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 5."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    5
+                  </span>
+                </button>
+                 
+              </li>
+            </ol>
+            
+          </div>
+           
+          <div
+            class="more"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PreviewerNavigator > renders without error if testStateStore is empty 1`] = `
+<body>
+  <div>
+    <div
+      class="navigator"
+    >
+      <div
+        class="button-container end"
+      />
+       
+      <div
+        class="button-container start"
+      />
+       
+      <div
+        class="progress-container"
+      >
+        <div
+          class="width-tracker"
+        >
+          <div
+            class="more"
+          />
+           
+          <div>
+            
+          </div>
+           
+          <div
+            class="more"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PreviewerNavigator > renders without next button if last item 1`] = `
+<body>
+  <div>
+    <div
+      class="navigator"
+    >
+      <div
+        class="button-container end"
+      />
+       
+      <div
+        class="button-container start"
+      >
+        <button
+          aria-label="Go to previous question"
+          class="actionable secondary circular medium"
+          name="prev"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium rtl-flip"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Arrow left icon
+            </title>
+            <path
+              d="M7.7-.13l2 2-4.5 4.5h10.5v3H5.2l4.5 4.5-2 2-8-8 8-8z"
+              fill-rule="evenodd"
+            />
+          </svg>
+           
+           
+        </button>
+      </div>
+       
+      <div
+        class="progress-container"
+      >
+        <div
+          class="width-tracker"
+        >
+          <div
+            class="more"
+          />
+           
+          <div>
+            <ol
+              class="space-medium"
+            >
+              <li>
+                <button
+                  aria-label="Question 1."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    1
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 2."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    2
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 3."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    3
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 4."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    4
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-current="location"
+                  aria-label="Question 5."
+                  class="step completed current"
+                  tabindex="0"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="indicator"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon small"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Current item indicator
+                      </title>
+                      <path
+                        d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    5
+                  </span>
+                </button>
+                 
+              </li>
+            </ol>
+            
+          </div>
+           
+          <div
+            class="more"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PreviewerNavigator > renders without previous button if first item 1`] = `
+<body>
+  <div>
+    <div
+      class="navigator"
+    >
+      <div
+        class="button-container end"
+      >
+        <button
+          aria-label="Go to next question"
+          class="actionable primary circular medium"
+          name="next"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium rtl-flip"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Arrow right icon
+            </title>
+            <path
+              d="M8 16l-2-2 4.5-4.5H0v-3h10.5L6 2l2-2 8 8-8 8z"
+              fill-rule="evenodd"
+            />
+          </svg>
+           
+           
+        </button>
+      </div>
+       
+      <div
+        class="button-container start"
+      />
+       
+      <div
+        class="progress-container"
+      >
+        <div
+          class="width-tracker"
+        >
+          <div
+            class="more"
+          />
+           
+          <div>
+            <ol
+              class="space-medium"
+            >
+              <li>
+                <button
+                  aria-current="location"
+                  aria-label="Question 1."
+                  class="step completed current"
+                  tabindex="0"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="indicator"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon small"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Current item indicator
+                      </title>
+                      <path
+                        d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    1
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 2."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    2
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 3."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    3
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 4."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    4
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 5."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    5
+                  </span>
+                </button>
+                 
+              </li>
+            </ol>
+            
+          </div>
+           
+          <div
+            class="more"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

@@ -1,0 +1,146 @@
+{
+  "baseUrl": "./assets/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "i15801387382910421",
+      "serial": "item_5ed4ca7395551781411599",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "i15801387382910421",
+        "title": "Passages Prompt",
+        "label": "Passages Prompt",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint128",
+        "class": "separator-between-columns"
+      },
+      "body": {
+        "serial": "container_containeritembody_5ed4ca739554c292044072",
+        "body": "<div class=\"grid-row\"><div class=\"col-12\">  {{interaction_choiceinteraction_5ed4ca7395689041975837}}  </div></div>",
+        "elements": {
+          "interaction_choiceinteraction_5ed4ca7395689041975837": {
+            "serial": "interaction_choiceinteraction_5ed4ca7395689041975837",
+            "qtiClass": "choiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "shuffle": false,
+              "maxChoices": 1,
+              "minChoices": 0,
+              "orientation": "horizontal"
+            },
+            "choices": {
+              "choice_simplechoice_5ed4ca73956f1584298257": {
+                "identifier": "choice_1",
+                "serial": "choice_simplechoice_5ed4ca73956f1584298257",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_1",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5ed4ca73956ff376551459",
+                  "body": "The passage is from <i>Sense and Sensibility</i>",
+                  "elements": []
+                }
+              },
+              "choice_simplechoice_5ed4ca7395729916863135": {
+                "identifier": "choice_2",
+                "serial": "choice_simplechoice_5ed4ca7395729916863135",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_2",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5ed4ca7395735113030522",
+                  "body": "The passage is from <i>Metamorphosis</i>",
+                  "elements": []
+                }
+              }
+            },
+            "prompt": {
+              "serial": "i6163ff46c65b1",
+              "body": "{{i6163ff46c65ff}}",
+              "elements": {
+                "i6163ff46c65ff": {
+                  "serial": "i6163ff46c65ff",
+                  "qtiClass": "include",
+                  "attributes": {
+                    "href": "taomedia://1.xml"
+                  },
+                  "body": {
+                    "serial": "i6163ff46c6663",
+                    "body": "<div><header><h1>Passage 1</h1>\n<h2>Sense and Sensibility</h2></header>\n<p>It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.</p>\n<p>However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.</p>\n<p>“My dear Mr. Bennet,” said his lady to him one day, “have you heard that Netherfield Park is let at last?”</p>\n<p>Mr. Bennet replied that he had not.</p>\n<p>“But it is,” returned\nshe; “for Mrs. Long has just been here, and she told me all about it.”</p>\n<p>Mr. Bennet made no answer.</p></div>",
+                    "elements": []
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+        "m": "http://www.w3.org/1998/Math/MathML",
+        "xi": "http://www.w3.org/2001/XInclude",
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+      },
+      "stylesheets": [],
+      "outcomes": {
+        "outcomedeclaration_5ed4ca73955dd228246025": {
+          "identifier": "SCORE",
+          "serial": "outcomedeclaration_5ed4ca73955dd228246025",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float",
+            "normalMaximum": 1
+          },
+          "defaultValue": null
+        },
+        "outcomedeclaration_5ed4ca73955f6210217132": {
+          "identifier": "MAXSCORE",
+          "serial": "outcomedeclaration_5ed4ca73955f6210217132",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "MAXSCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "1"
+        }
+      },
+      "responses": {
+        "responsedeclaration_5ed4ca739559f642453544": {
+          "identifier": "RESPONSE",
+          "serial": "responsedeclaration_5ed4ca739559f642453544",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "multiple",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        }
+      },
+      "feedbacks": [],
+      "apipAccessibility": ""
+    },
+    "assets": {
+      "xinclude": {
+        "taomedia://1.xml": "https://cdn-dev.gcp-eu.taocloud.org/tr-oat-demo/assets/aed413e53a46/item-1/1.xml"
+      }
+    }
+  },
+  "itemState": {},
+  "itemIdentifier": "item4"
+}

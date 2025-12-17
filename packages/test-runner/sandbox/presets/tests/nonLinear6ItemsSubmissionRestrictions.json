@@ -1,0 +1,161 @@
+{
+  "testContext": {
+    "state": 1,
+    "remainingAttempts": 3,
+    "isTimeout": 0,
+    "itemIdentifier": "item-1",
+    "attempt": 1,
+    "itemSessionState": 1,
+    "needMapUpdate": false,
+    "itemPosition": 0,
+    "timeConstraints": [],
+    "testPartId": "testPart-1",
+    "sectionId": "assessmentSection-1",
+    "canMoveBackward": false,
+    "rubrics": "",
+    "submissionMode": 0,
+    "allowSkipping": false,
+    "validateResponses": false
+  },
+  "testMap": {
+    "scope": "test",
+    "parts": {
+      "testPart-1": {
+        "id": "testPart-1",
+        "label": "Part 1",
+        "position": 0,
+        "isLinear": false,
+        "timeConstraint": null,
+        "sections": {
+          "assessmentSection-1": {
+            "id": "assessmentSection-1",
+            "label": "Section 1",
+            "isCatAdaptive": false,
+            "position": 0,
+            "timeConstraint": null,
+            "items": {
+              "item-1": {
+                "id": "item-1",
+                "label": "The Space Shuttle, 30 years of adventure",
+                "position": 0,
+                "occurrence": 0,
+                "remainingAttempts": 3,
+                "answered": false,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false,
+                "allowSkipping": false
+              },
+              "item-8": {
+                "id": "item-8",
+                "label": "Market Square in Germany",
+                "position": 1,
+                "occurrence": 0,
+                "remainingAttempts": 5,
+                "answered": true,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false,
+                "allowSkipping": false,
+                "validateResponses": true
+              },
+              "item-9": {
+                "id": "item-9",
+                "label": "Math Entry",
+                "position": 2,
+                "occurrence": 0,
+                "remainingAttempts": 3,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false,
+                "allowSkipping": false,
+                "validateResponses": true
+              },
+              "item-11": {
+                "id": "item-11",
+                "label": "The Netherlands",
+                "position": 3,
+                "occurrence": 0,
+                "remainingAttempts": 2,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false,
+                "validateResponses": true
+              },
+              "item-10": {
+                "id": "item-10",
+                "label": "The Beatles",
+                "position": 4,
+                "occurrence": 0,
+                "remainingAttempts": 5,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false,
+                "validateResponses": true
+              },
+              "item-2": {
+                "id": "item-2",
+                "label": "Arithmetic & Poetry",
+                "position": 5,
+                "occurrence": 0,
+                "remainingAttempts": 2,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false,
+                "validateResponses": true
+              }
+            },
+            "stats": {
+              "questions": 5,
+              "answered": 1,
+              "flagged": 0,
+              "viewed": 2,
+              "total": 5,
+              "questionsViewed": 2
+            }
+          }
+        },
+        "stats": {
+          "questions": 5,
+          "answered": 1,
+          "flagged": 0,
+          "viewed": 2,
+          "total": 5,
+          "questionsViewed": 2
+        }
+      }
+    },
+    "title": "nonLinear5ItemsSubmissionRestrictions",
+    "identifier": "nonLinear5ItemsSubmissionRestrictions",
+    "stats": {
+      "questions": 5,
+      "answered": 1,
+      "flagged": 0,
+      "viewed": 2,
+      "total": 5,
+      "questionsViewed": 2
+    }
+  }
+}

@@ -1,0 +1,71 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`QTI NUI test runner behavior > cannot initialize misconfigured 1`] = `[Error: The test session is launched without a unique identifier "serviceCallId"]`;
+
+exports[`QTI NUI test runner behavior > loads and renders an item, mounts areas, renders layout with plugins 1`] = `<section />`;
+
+exports[`QTI NUI test runner behavior > loads and renders an item, mounts areas, renders layout with plugins 2`] = `
+<section>
+  <div
+    class="test-runner loading"
+    style="--window-height:767px;"
+  >
+    <div
+      class="top-bar"
+      id="test-top-bar"
+    />
+     
+    <main
+      id="test-main"
+      tabindex="0"
+    >
+      <div
+        class="scroll-first-child"
+      />
+       
+      <div
+        class="qti-item-container hidden-item-container"
+      />
+       
+      <div
+        class="transition"
+      >
+        <div
+          aria-live="assertive"
+          class="loading-wrapper small"
+          role="alert"
+        >
+          <div
+            class="loading"
+          />
+           
+          <div
+            class="content"
+          >
+            <p
+              class="text"
+            >
+              loading
+            </p>
+          </div>
+        </div>
+         
+        <p
+          style="animation: __svelte_2884083938_0 500ms linear 4500ms 1 both;"
+        >
+          Please wait a little longer while your content loads
+        </p>
+      </div>
+       
+      <div
+        class="scroll-last-child"
+      />
+    </main>
+     
+    <nav
+      class="bottom-bar do-not-read"
+      id="test-navigation"
+    />
+  </div>
+</section>
+`;

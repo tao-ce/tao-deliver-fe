@@ -1,0 +1,206 @@
+{
+    "baseUrl": "./presets/items/assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "the_netherlands",
+            "serial": "i5ecb662029c7f",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "the_netherlands",
+                "title": "The Netherlands",
+                "label": "The Netherlands (Text Entry Interaction)",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint117",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5ecb662029c78",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <h1>Text Entry Interaction<\/h1>\n        <h2>The Netherlands<\/h2>\n      <\/div>\n    <\/div>\n    <div class=\"grid-row\">\n      <div class=\"col-7\">\n        <p>The Netherlands is a country with a large majority of its territory in Western Europe and several territories in the Caribbean Sea. In Europe, it borders {{i5ecb662029f67}} in the east, {{i5ecb662029fc7}} in the south, and the North Sea in the northwest.<\/p>\n        <p>The largest cities are Amsterdam, Rotterdam, The Hague, Utrecht, and Eindhoven. {{i5ecb662029fff}} is the capital, the government is located in {{i5ecb66202a033}} though.<\/p>\n        <p>Its official language is {{i5ecb66202a064}} but the province of Friesland has a secondary language, West Frisian.<\/p>\n      <\/div>\n      <div class=\"col-1\"><\/div>\n      <div class=\"col-4\">\n        {{i5ecb66202a150}}\n        <p>Picture by <a href=\"https:\/\/skitterphoto.com\/photos\/843\/colorful-houses\">Rudy van der Veen<\/a>, released under <a href=\"https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/\" target=\"_blank\">CC0 1.0<\/a>.<\/p>\n      <\/div>\n    <\/div>\n  ",
+                "elements": {
+                    "i5ecb662029f67": {
+                        "serial": "i5ecb662029f67",
+                        "qtiClass": "textEntryInteraction",
+                        "attributes": {
+                            "responseIdentifier": "germany",
+                            "base": 10,
+                            "patternMask": "^([A-Z][\\w]*)?$",
+                            "data-patternmask-message": "Must be capitalized",
+                            "placeholderText": ""
+                        },
+                        "choices": []
+                    },
+                    "i5ecb662029fc7": {
+                        "serial": "i5ecb662029fc7",
+                        "qtiClass": "textEntryInteraction",
+                        "attributes": {
+                            "responseIdentifier": "belgium",
+                            "base": 10,
+                            "patternMask": "^([A-Z][\\w]*)?$",
+                            "data-patternmask-message": "Must be capitalized",
+                            "placeholderText": ""
+                        },
+                        "choices": []
+                    },
+                    "i5ecb662029fff": {
+                        "serial": "i5ecb662029fff",
+                        "qtiClass": "textEntryInteraction",
+                        "attributes": {
+                            "responseIdentifier": "amsterdam",
+                            "base": 10,
+                            "patternMask": "^([A-Z][\\w]*)?$",
+                            "data-patternmask-message": "Must be capitalized",
+                            "placeholderText": ""
+                        },
+                        "choices": []
+                    },
+                    "i5ecb66202a033": {
+                        "serial": "i5ecb66202a033",
+                        "qtiClass": "textEntryInteraction",
+                        "attributes": {
+                            "responseIdentifier": "the_hague",
+                            "base": 10,
+                            "patternMask": "^([A-Z][\\w]*)?$",
+                            "data-patternmask-message": "Must be capitalized",
+                            "placeholderText": ""
+                        },
+                        "choices": []
+                    },
+                    "i5ecb66202a064": {
+                        "serial": "i5ecb66202a064",
+                        "qtiClass": "textEntryInteraction",
+                        "attributes": {
+                            "responseIdentifier": "dutch",
+                            "base": 10,
+                            "patternMask": "^([A-Z][\\w]*)?$",
+                            "data-patternmask-message": "Must be capitalized",
+                            "placeholderText": ""
+                        },
+                        "choices": []
+                    },
+                    "i5ecb66202a150": {
+                        "serial": "i5ecb66202a150",
+                        "qtiClass": "img",
+                        "attributes": {
+                            "src": "1e67f6415de7a58b69316.jpg",
+                            "alt": "Beautiful Colourful houses in The Netherlands",
+                            "width": "100%",
+                            "type": "image\/jpeg"
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+                "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+                "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": {
+                "i5ecb662029e74": {
+                    "identifier": "SCORE",
+                    "serial": "i5ecb662029e74",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 5
+                    },
+                    "defaultValue": null
+                },
+                "i5ecb662029ea9": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i5ecb662029ea9",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "5"
+                }
+            },
+            "responses": {
+                "i5ecb662029d0c": {
+                    "identifier": "germany",
+                    "serial": "i5ecb662029d0c",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "germany",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "defaultValue": []
+                },
+                "i5ecb662029d6a": {
+                    "identifier": "belgium",
+                    "serial": "i5ecb662029d6a",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "belgium",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "defaultValue": []
+                },
+                "i5ecb662029dbb": {
+                    "identifier": "amsterdam",
+                    "serial": "i5ecb662029dbb",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "amsterdam",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "defaultValue": []
+                },
+                "i5ecb662029df9": {
+                    "identifier": "the_hague",
+                    "serial": "i5ecb662029df9",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "the_hague",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "defaultValue": []
+                },
+                "i5ecb662029e37": {
+                    "identifier": "dutch",
+                    "serial": "i5ecb662029e37",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "dutch",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "1e67f6415de7a58b69316.jpg": "1e67f6415de7a58b69316.jpg"
+            }
+        }
+    },
+    "itemState": {
+      "fooName": "barNetherlands"
+    },
+    "itemIdentifier": "item-11",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    },
+    "success": true,
+    "messages": []
+}

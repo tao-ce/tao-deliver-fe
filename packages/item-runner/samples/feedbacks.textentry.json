@@ -1,0 +1,1684 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i605c68f5dfb8f82e8481d83625cbf4d",
+            "serial": "item_605c71d7d843b659132267",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i605c68f5dfb8f82e8481d83625cbf4d",
+                "title": "text-feedbacks",
+                "label": "text-feedbacks",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint150",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_605c71d7d842f950034066",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{table_605c71d7d8a7e457543514}}\n        <p>\u00a0</p>\n        {{table_605c71d7d915b464345856}}\n        <p>\u00a0</p>\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "table_605c71d7d8a7e457543514": {
+                        "serial": "table_605c71d7d8a7e457543514",
+                        "qtiClass": "table",
+                        "attributes": {},
+                        "body": {
+                            "serial": "container_containertable_605c71d7d8a9e629044266",
+                            "body": "\n          <thead>\n            <tr>\n              <th scope=\"col\">STRING</th>\n              <th scope=\"col\">\u00a0</th>\n              <th scope=\"col\">\u00a0</th>\n              <th scope=\"col\">\u00a0</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td>\u00a0</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d8d7a353741782}}\u00a0</td>\n              <td>\u00a0</td>\n              <td>RESPONSE</td>\n            </tr>\n            <tr>\n              <td>pattern[empty valid]</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d8e25864545672}}\u00a0</td>\n              <td>^[a-z]{0,4}$</td>\n              <td>RESPONSE_1</td>\n            </tr>\n            <tr>\n              <td>pattern[empty valid] + message</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d8e56783816655}}\u00a0</td>\n              <td>^[a-z]{0,4}$</td>\n              <td>RESPONSE_2</td>\n            </tr>\n            <tr>\n              <td>pattern[empty invalid]</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d8e80458450122}}\u00a0</td>\n              <td>^[a-z]{4}$</td>\n              <td>RESPONSE_3</td>\n            </tr>\n            <tr>\n              <td>pattern[empty invalid] + message</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d8ea8178890372}}\u00a0</td>\n              <td>^[a-z]{4}$</td>\n              <td>RESPONSE_4</td>\n            </tr>\n            <tr>\n              <td>maxlength</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d8ecf867898791}}\u00a0</td>\n              <td>\u00a0</td>\n              <td>RESPONSE_5</td>\n            </tr>\n            <tr>\n              <td>maxlength\u00a0 + message</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d8ef5753759667}}\u00a0</td>\n              <td>\u00a0</td>\n              <td>RESPONSE_6</td>\n            </tr>\n          </tbody>\n        ",
+                            "elements": {
+                                "interaction_textentryinteraction_605c71d7d8d7a353741782": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d8d7a353741782",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE",
+                                        "base": 10,
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d8e25864545672": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d8e25864545672",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_1",
+                                        "base": 10,
+                                        "patternMask": "^[a-z]{0,4}$",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d8e56783816655": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d8e56783816655",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_2",
+                                        "base": 10,
+                                        "patternMask": "^[a-z]{0,4}$",
+                                        "data-patternmask-message": "From author: guess the right match for my pattern",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d8e80458450122": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d8e80458450122",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_3",
+                                        "base": 10,
+                                        "patternMask": "^[a-z]{4}$",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d8ea8178890372": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d8ea8178890372",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_4",
+                                        "base": 10,
+                                        "patternMask": "^[a-z]{4}$",
+                                        "data-patternmask-message": "From author: guess the right match for my pattern",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d8ecf867898791": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d8ecf867898791",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_5",
+                                        "base": 10,
+                                        "patternMask": "^[\\s\\S]{0,4}$",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d8ef5753759667": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d8ef5753759667",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_6",
+                                        "base": 10,
+                                        "patternMask": "^[\\s\\S]{0,4}$",
+                                        "data-patternmask-message": "From author: guess the right match for my pattern",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                }
+                            },
+                            "debug": {
+                                "relatedItem": "item_605c71d7d843b659132267"
+                            }
+                        },
+                        "debug": {
+                            "relatedItem": "item_605c71d7d843b659132267"
+                        }
+                    },
+                    "table_605c71d7d915b464345856": {
+                        "serial": "table_605c71d7d915b464345856",
+                        "qtiClass": "table",
+                        "attributes": {},
+                        "body": {
+                            "serial": "container_containertable_605c71d7d9164221827984",
+                            "body": "\n          <thead>\n            <tr>\n              <th scope=\"col\">FLOAT</th>\n              <th scope=\"col\">\u00a0</th>\n              <th scope=\"col\">\u00a0</th>\n              <th scope=\"col\">\u00a0</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <td>\u00a0</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d94b9788901036}}\u00a0</td>\n              <td>\u00a0</td>\n              <td>RESPONSE_7</td>\n            </tr>\n            <tr>\n              <td>pattern[empty valid, not-number valid]</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d94ed573072601}}\u00a0</td>\n              <td>^[a-z0-9]{0,4}$</td>\n              <td>RESPONSE_8</td>\n            </tr>\n            <tr>\n              <td>pattern[empty valid, not-number valid] + message</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d9519905365136}}\u00a0</td>\n              <td>^[a-z0-9]{0,4}$</td>\n              <td>RESPONSE_9</td>\n            </tr>\n            <tr>\n              <td>pattern[empty valid, not-number invalid]</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d9541386866291}}\u00a0</td>\n              <td>^[0-9]{0,4}$</td>\n              <td>RESPONSE_10</td>\n            </tr>\n            <tr>\n              <td>pattern[empty valid, not-number invalid] + message</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d9568083613272}}\u00a0</td>\n              <td>^[0-9]{0,4}$</td>\n              <td>RESPONSE_11</td>\n            </tr>\n            <tr>\n              <td>pattern[empty invalid, not-number valid]</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d958e728424842}}\u00a0</td>\n              <td>^[\\s\\S]{4}$</td>\n              <td>RESPONSE_12</td>\n            </tr>\n            <tr>\n              <td>pattern[empty invalid, not-number valid] + message</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d95b4579375266}}\u00a0</td>\n              <td>^[\\s\\S]{4}$</td>\n              <td>RESPONSE_13</td>\n            </tr>\n            <tr>\n              <td>pattern[empty invalid, not-number invalid]</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d95d9651897322}}\u00a0</td>\n              <td>^[0-9]{4}$</td>\n              <td>RESPONSE_14</td>\n            </tr>\n            <tr>\n              <td>pattern[empty invalid, not-number invalid] + message</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d95fd318810243}}\u00a0</td>\n              <td>^[0-9]{4}$</td>\n              <td>RESPONSE_15</td>\n            </tr>\n            <tr>\n              <td>maxlength</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d9622830293722}}\u00a0</td>\n              <td>\u00a0</td>\n              <td>RESPONSE_16</td>\n            </tr>\n            <tr>\n              <td>maxlength + message</td>\n              <td>\u00a0{{interaction_textentryinteraction_605c71d7d9647195391282}}\u00a0</td>\n              <td>\u00a0</td>\n              <td>RESPONSE_17</td>\n            </tr>\n          </tbody>\n        ",
+                            "elements": {
+                                "interaction_textentryinteraction_605c71d7d94b9788901036": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d94b9788901036",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_7",
+                                        "base": 10,
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d94ed573072601": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d94ed573072601",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_8",
+                                        "base": 10,
+                                        "patternMask": "^[a-z0-9]{0,4}$",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d9519905365136": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d9519905365136",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_9",
+                                        "base": 10,
+                                        "patternMask": "^[a-z0-9]{0,4}$",
+                                        "data-patternmask-message": "From author: guess the right match for my pattern",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d9541386866291": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d9541386866291",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_10",
+                                        "base": 10,
+                                        "patternMask": "^[0-9]{0,4}$",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d9568083613272": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d9568083613272",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_11",
+                                        "base": 10,
+                                        "patternMask": "^[0-9]{0,4}$",
+                                        "data-patternmask-message": "From author: guess the right match for my pattern",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d958e728424842": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d958e728424842",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_12",
+                                        "base": 10,
+                                        "patternMask": "^[\\s\\S]{4}$",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d95b4579375266": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d95b4579375266",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_13",
+                                        "base": 10,
+                                        "patternMask": "^[\\s\\S]{4}$",
+                                        "data-patternmask-message": "From author: guess the right match for my pattern",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d95d9651897322": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d95d9651897322",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_14",
+                                        "base": 10,
+                                        "patternMask": "^[0-9]{4}$",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d95fd318810243": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d95fd318810243",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_15",
+                                        "base": 10,
+                                        "patternMask": "^[0-9]{4}$",
+                                        "data-patternmask-message": "From author: guess the right match for my pattern",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d9622830293722": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d9622830293722",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_16",
+                                        "base": 10,
+                                        "patternMask": "^[\\s\\S]{0,4}$",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                },
+                                "interaction_textentryinteraction_605c71d7d9647195391282": {
+                                    "serial": "interaction_textentryinteraction_605c71d7d9647195391282",
+                                    "qtiClass": "textEntryInteraction",
+                                    "attributes": {
+                                        "responseIdentifier": "RESPONSE_17",
+                                        "base": 10,
+                                        "patternMask": "^[\\s\\S]{0,4}$",
+                                        "data-patternmask-message": "From author: guess the right match for my pattern",
+                                        "placeholderText": ""
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_605c71d7d843b659132267"
+                                    },
+                                    "choices": {}
+                                }
+                            },
+                            "debug": {
+                                "relatedItem": "item_605c71d7d843b659132267"
+                            }
+                        },
+                        "debug": {
+                            "relatedItem": "item_605c71d7d843b659132267"
+                        }
+                    }
+                },
+                "debug": {
+                    "relatedItem": "item_605c71d7d843b659132267"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_605c71d7d843b659132267"
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {
+                "stylesheet_605c71d7d854b802891450": {
+                    "serial": "stylesheet_605c71d7d854b802891450",
+                    "qtiClass": "stylesheet",
+                    "attributes": {
+                        "href": "style/custom/tao-user-styles.css",
+                        "type": "text/css",
+                        "media": "all",
+                        "title": ""
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    }
+                }
+            },
+            "outcomes": {
+                "outcomedeclaration_605c71d7d88ab704602136": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_605c71d7d88ab704602136",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 0
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_605c71d7d892c445776066": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_605c71d7d892c445776066",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": "0"
+                }
+            },
+            "responses": {
+                "responsedeclaration_605c71d7d85e6287156991": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_605c71d7d85e6287156991",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d864a003837485": {
+                    "identifier": "RESPONSE_1",
+                    "serial": "responsedeclaration_605c71d7d864a003837485",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_1",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d8673925830712": {
+                    "identifier": "RESPONSE_2",
+                    "serial": "responsedeclaration_605c71d7d8673925830712",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_2",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d8697714325453": {
+                    "identifier": "RESPONSE_3",
+                    "serial": "responsedeclaration_605c71d7d8697714325453",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_3",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d86b9225178470": {
+                    "identifier": "RESPONSE_4",
+                    "serial": "responsedeclaration_605c71d7d86b9225178470",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_4",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d86d8344245677": {
+                    "identifier": "RESPONSE_5",
+                    "serial": "responsedeclaration_605c71d7d86d8344245677",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_5",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d86f6134504623": {
+                    "identifier": "RESPONSE_6",
+                    "serial": "responsedeclaration_605c71d7d86f6134504623",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_6",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d8714671933675": {
+                    "identifier": "RESPONSE_7",
+                    "serial": "responsedeclaration_605c71d7d8714671933675",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_7",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d8732475863153": {
+                    "identifier": "RESPONSE_8",
+                    "serial": "responsedeclaration_605c71d7d8732475863153",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_8",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d8751961902262": {
+                    "identifier": "RESPONSE_9",
+                    "serial": "responsedeclaration_605c71d7d8751961902262",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_9",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d876f183966967": {
+                    "identifier": "RESPONSE_10",
+                    "serial": "responsedeclaration_605c71d7d876f183966967",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_10",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d878e892728259": {
+                    "identifier": "RESPONSE_11",
+                    "serial": "responsedeclaration_605c71d7d878e892728259",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_11",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d87ac867038312": {
+                    "identifier": "RESPONSE_12",
+                    "serial": "responsedeclaration_605c71d7d87ac867038312",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_12",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d87cb742522222": {
+                    "identifier": "RESPONSE_13",
+                    "serial": "responsedeclaration_605c71d7d87cb742522222",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_13",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d87ea195372834": {
+                    "identifier": "RESPONSE_14",
+                    "serial": "responsedeclaration_605c71d7d87ea195372834",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_14",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d881a079567558": {
+                    "identifier": "RESPONSE_15",
+                    "serial": "responsedeclaration_605c71d7d881a079567558",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_15",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d8849164252241": {
+                    "identifier": "RESPONSE_16",
+                    "serial": "responsedeclaration_605c71d7d8849164252241",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_16",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_605c71d7d8869377933811": {
+                    "identifier": "RESPONSE_17",
+                    "serial": "responsedeclaration_605c71d7d8869377933811",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_17",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_605c71d7d843b659132267"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_605c71d7d9e85634121098",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "debug": {
+                    "relatedItem": "item_605c71d7d843b659132267"
+                },
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_1"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_1"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_2"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_2"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_3"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_3"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_4"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_4"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_5"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_5"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_6"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_6"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_7"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_7"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_8"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_8"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_9"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_9"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_10"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_10"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_11"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_11"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_12"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_12"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_13"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_13"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_14"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_14"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_15"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_15"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_16"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_16"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_17"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE_17"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "css": {
+                "tao-user-styles.css": "tao-user-styles.css"
+            }
+        }
+    },
+    "itemState": {},
+    "itemIdentifier": "item-1",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    }
+}

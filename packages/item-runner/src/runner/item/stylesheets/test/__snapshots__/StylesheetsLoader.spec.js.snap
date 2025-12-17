@@ -1,0 +1,103 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`StylesheetsLoader > applies style-editor theme if defined, and applies covertPxToRem to it 1`] = `
+".qti-item[data-item-id="item13"] {--styleeditor-font-size: 24px;}
+.qti-item[data-item-id="item13"] {--fontsize-body: var(--styleeditor-font-size); --fontsize-body-xs: calc(var(--styleeditor-font-size) * 0.75); --fontsize-body-s: calc(var(--styleeditor-font-size) * 0.875); --fontsize-heading: var(--styleeditor-font-size); --fontsize-heading-l: calc(var(--styleeditor-font-size) * 1.25); --fontsize-heading-xl: calc(var(--styleeditor-font-size) * 1.875); --fontsize-heading-xxl: calc(var(--styleeditor-font-size) * 2.5);}"
+`;
+
+exports[`StylesheetsLoader > renders link tags into head, and removes them after loading 1`] = `
+<head>
+  <link
+    crossorigin="anonymous"
+    href="style1.css"
+    media="none"
+    rel="stylesheet"
+  />
+  
+  <link
+    crossorigin="anonymous"
+    href="style2.css"
+    media="none"
+    rel="stylesheet"
+  />
+  
+  
+</head>
+`;
+
+exports[`StylesheetsLoader > renders link tags into head, and removes them after loading 2`] = `
+<head>
+  
+  <link
+    crossorigin="anonymous"
+    href="style2.css"
+    media="none"
+    rel="stylesheet"
+  />
+  
+  
+</head>
+`;
+
+exports[`StylesheetsLoader > renders nothing when no stylesheets 1`] = `
+<head>
+  
+</head>
+`;
+
+exports[`StylesheetsLoader > renders nothing when no stylesheets 2`] = `
+<body>
+  <div>
+     
+    <div
+      class="styles-container"
+    />
+  </div>
+</body>
+`;
+
+exports[`StylesheetsLoader > renders style tags for stylesheets without hrefs 1`] = `
+<body>
+  <div>
+     
+    <div
+      class="styles-container"
+    >
+      <style
+        data-scoped="true"
+      >
+        p { color: red; font-size: 8px; },div { color: blue; padding: 16px; }
+      </style>
+      <style
+        data-scoped="true"
+      >
+        span { background: green; }
+      </style>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`StylesheetsLoader > renders style tags in component after loading 1`] = `
+<body>
+  <div>
+     
+    <div
+      class="styles-container"
+    >
+      <style
+        data-scoped="true"
+        data-stylesheet-href="style1.css"
+      >
+        undefined
+      </style>
+      <style
+        data-scoped="true"
+        data-stylesheet-href="style2.css"
+      >
+        undefined
+      </style>
+    </div>
+  </div>
+</body>
+`;

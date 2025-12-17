@@ -1,0 +1,1946 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TestOverviewContent > fails to render without a serviceCallId 1`] = `[TypeError: A "serviceCallId" is required to get the state store of the test session]`;
+
+exports[`TestOverviewContent > renders if waitingForExternalScore with inline notification and no total score 1`] = `
+<body>
+  <div>
+    <div
+      class="overview"
+    >
+      <div
+        class="inline-notification"
+      >
+        <div
+          class="notification-wrapper button-fill neutral"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Info icon
+            </title>
+            <path
+              d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+              fill-rule="evenodd"
+            />
+          </svg>
+           
+          <div
+            aria-live="assertive"
+            class="notification-content"
+          >
+            <div
+              class="notification-text"
+            >
+              <span
+                class="notification-heading ui-heading"
+              >
+                There are still questions waiting to be scored
+              </span>
+               
+              <span
+                class="notification-body"
+              >
+                Your total score cannot be calculated until all of the questions have been scored. Please come back later to see your total score.
+              </span>
+              
+            </div>
+             
+          </div>
+           
+        </div>
+      </div>
+      
+       
+      <div
+        class="tabs"
+      >
+        <div
+          class="tabgroup"
+        >
+           
+          <div
+            class="scrollbox"
+          >
+            <ul
+              role="tablist"
+            >
+              <li
+                role="presentation"
+              >
+                <button
+                  aria-current="true"
+                  aria-selected="true"
+                  role="tab"
+                >
+                   
+                  all questions
+                   
+                </button>
+                 
+              </li>
+              <li
+                role="presentation"
+              >
+                <button
+                  aria-current="false"
+                  aria-selected="false"
+                  role="tab"
+                >
+                   
+                  incorrect
+                   
+                </button>
+                 
+              </li>
+            </ul>
+            <iframe
+              aria-hidden="true"
+              src="about:blank"
+              style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
+              tabindex="-1"
+            />
+          </div>
+           
+        </div>
+      </div>
+       
+      <div>
+        <div
+          class="tabpanel"
+          role="tabpanel"
+        >
+          <div>
+            
+            <div
+              class="ui-heading tabpanel-heading main"
+              id="tao-partheader-123"
+            >
+              Part I: Section 1
+            </div>
+             
+            
+             
+            <ol
+              class="space-large wrapped"
+            >
+              <li>
+                <button
+                  aria-label="Question 1. Not completed."
+                  class="step visited"
+                  tabindex="0"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    1
+                  </span>
+                </button>
+                 
+              </li>
+            </ol>
+            
+            
+            <div
+              class="ui-heading tabpanel-heading main"
+              id="tao-partheader-123"
+            >
+              Part II
+            </div>
+             
+            
+            <div
+              class="ui-heading tabpanel-heading"
+              id="tao-sectionheader-123"
+            >
+              Physics of elemetary particles: bosons, mesons, quarks and whatever is supposed to exist in this world
+            </div>
+             
+            <ol
+              class="space-large wrapped"
+            >
+              <li>
+                <button
+                  aria-label="Question 1. Correct."
+                  class="step correct"
+                  tabindex="-1"
+                >
+                   
+                  <span
+                    class="badge"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="icon small"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Check mark icon
+                      </title>
+                      <path
+                        clip-rule="evenodd"
+                        d="M12 2.7L4.7 10.5L0 5.8L1.3 4.6L4.6 7.9L10.7 1.5L12 2.7Z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    1
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 2. Not completed."
+                  class="step visited"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    2
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 3. Completed."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    3
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Informational Item."
+                  class="step visited"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <svg
+                    aria-hidden="true"
+                    class="icon medium"
+                    viewBox="0 0 16 16"
+                  >
+                    <title>
+                      Info icon
+                    </title>
+                    <path
+                      d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Informational Item."
+                  class="step visited"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <svg
+                    aria-hidden="true"
+                    class="icon medium"
+                    viewBox="0 0 16 16"
+                  >
+                    <title>
+                      Info icon
+                    </title>
+                    <path
+                      d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                 
+              </li>
+            </ol>
+            
+            <div
+              class="ui-heading tabpanel-heading"
+              id="tao-sectionheader-123"
+            >
+              Optics
+            </div>
+             
+            <ol
+              class="space-large wrapped"
+            >
+              <li>
+                <button
+                  aria-current="location"
+                  aria-label="Question 4. Awaiting manual scoring."
+                  class="step completedWaiting current"
+                  tabindex="-1"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="indicator"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon small"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Current item indicator
+                      </title>
+                      <path
+                        d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                   
+                  <span
+                    class="badge"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="icon small"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Timer icon
+                      </title>
+                      <path
+                        d="M6 1a5 5 0 11-5 5 5 5 0 015-5m0-1a6 6 0 106 6 6 6 0 00-6-6z"
+                      />
+                      <path
+                        d="M6 2H5v5h3V6H6V2z"
+                      />
+                    </svg>
+                  </span>
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    4
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 5. Not completed."
+                  class="step default"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    5
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Informational Item."
+                  class="step default"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <svg
+                    aria-hidden="true"
+                    class="icon medium"
+                    viewBox="0 0 16 16"
+                  >
+                    <title>
+                      Info icon
+                    </title>
+                    <path
+                      d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                 
+              </li>
+            </ol>
+            
+            
+          </div>
+           
+        </div>
+        <div
+          class="tabpanel hidden"
+          role="tabpanel"
+        >
+          <div>
+            
+            <div
+              class="ui-heading tabpanel-heading main"
+              id="tao-partheader-123"
+            >
+              Part I: Section 1
+            </div>
+             
+            
+             
+            <ol
+              class="space-large wrapped"
+            >
+              <li>
+                <button
+                  aria-label="Question 1. Not completed."
+                  class="step visited"
+                  tabindex="0"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    1
+                  </span>
+                </button>
+                 
+              </li>
+            </ol>
+            
+            
+            <div
+              class="ui-heading tabpanel-heading main"
+              id="tao-partheader-123"
+            >
+              Part II
+            </div>
+             
+            
+            <div
+              class="ui-heading tabpanel-heading"
+              id="tao-sectionheader-123"
+            >
+              Physics of elemetary particles: bosons, mesons, quarks and whatever is supposed to exist in this world
+            </div>
+             
+            <ol
+              class="space-large wrapped"
+            >
+              <li>
+                <button
+                  aria-label="Question 2. Not completed."
+                  class="step visited"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    2
+                  </span>
+                </button>
+                 
+              </li>
+            </ol>
+            
+            
+          </div>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`TestOverviewContent > renders incorrect tab and only incorrect elements on incorrect tab 1`] = `
+<div
+  class="tabpanel"
+  role="tabpanel"
+>
+  <div>
+    
+    <div
+      class="ui-heading tabpanel-heading main"
+      id="tao-partheader-123"
+    >
+      Part I: Section 1
+    </div>
+     
+    
+     
+    <ol
+      class="space-large wrapped"
+    >
+      <li>
+        <button
+          aria-label="Question 1. Not completed."
+          class="step visited"
+          tabindex="0"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            1
+          </span>
+        </button>
+         
+      </li>
+    </ol>
+    
+    
+    <div
+      class="ui-heading tabpanel-heading main"
+      id="tao-partheader-123"
+    >
+      Part II
+    </div>
+     
+    
+    <div
+      class="ui-heading tabpanel-heading"
+      id="tao-sectionheader-123"
+    >
+      Physics of elemetary particles: bosons, mesons, quarks and whatever is supposed to exist in this world
+    </div>
+     
+    <ol
+      class="space-large wrapped"
+    >
+      <li>
+        <button
+          aria-label="Question 2. Not completed."
+          class="step visited"
+          tabindex="-1"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            2
+          </span>
+        </button>
+         
+      </li>
+    </ol>
+    
+    <div
+      class="ui-heading tabpanel-heading"
+      id="tao-sectionheader-123"
+    >
+      Optics
+    </div>
+     
+    <ol
+      class="space-large wrapped"
+    >
+      <li>
+        <button
+          aria-current="location"
+          aria-label="Question 4. Partial."
+          class="step partial current"
+          tabindex="-1"
+        >
+          <span
+            aria-hidden="true"
+            class="indicator"
+          >
+            <svg
+              aria-hidden="false"
+              class="icon small"
+              viewBox="0 0 12 12"
+            >
+              <title>
+                Current item indicator
+              </title>
+              <path
+                d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+           
+          <span
+            class="badge"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon small"
+              viewBox="0 0 12 12"
+            >
+              <title>
+                Partial icon
+              </title>
+              <path
+                d="M1 9.5l8.5 -8.5l1.4 1.4l-8.5 8.5Z"
+              />
+            </svg>
+          </span>
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            4
+          </span>
+        </button>
+         
+      </li>
+    </ol>
+    
+    
+  </div>
+   
+</div>
+`;
+
+exports[`TestOverviewContent > renders steps with correct state based on score 1`] = `
+<div
+  class="tabpanel"
+  role="tabpanel"
+>
+  <div>
+    
+    <div
+      class="ui-heading tabpanel-heading main"
+      id="tao-partheader-123"
+    >
+      Part I: Section 1
+    </div>
+     
+    
+     
+    <ol
+      class="space-large wrapped"
+    >
+      <li>
+        <button
+          aria-label="Question 1. Not completed."
+          class="step visited"
+          tabindex="0"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            1
+          </span>
+        </button>
+         
+      </li>
+    </ol>
+    
+    
+    <div
+      class="ui-heading tabpanel-heading main"
+      id="tao-partheader-123"
+    >
+      Part II
+    </div>
+     
+    
+    <div
+      class="ui-heading tabpanel-heading"
+      id="tao-sectionheader-123"
+    >
+      Physics of elemetary particles: bosons, mesons, quarks and whatever is supposed to exist in this world
+    </div>
+     
+    <ol
+      class="space-large wrapped"
+    >
+      <li>
+        <button
+          aria-label="Question 1. Correct."
+          class="step correct"
+          tabindex="-1"
+        >
+           
+          <span
+            class="badge"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon small"
+              viewBox="0 0 12 12"
+            >
+              <title>
+                Check mark icon
+              </title>
+              <path
+                clip-rule="evenodd"
+                d="M12 2.7L4.7 10.5L0 5.8L1.3 4.6L4.6 7.9L10.7 1.5L12 2.7Z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            1
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Question 2. Not completed."
+          class="step visited"
+          tabindex="-1"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            2
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Question 3. Completed."
+          class="step completed"
+          tabindex="-1"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            3
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Informational Item."
+          class="step visited"
+          tabindex="-1"
+        >
+           
+           
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Info icon
+            </title>
+            <path
+              d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Informational Item."
+          class="step visited"
+          tabindex="-1"
+        >
+           
+           
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Info icon
+            </title>
+            <path
+              d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+         
+      </li>
+    </ol>
+    
+    <div
+      class="ui-heading tabpanel-heading"
+      id="tao-sectionheader-123"
+    >
+      Optics
+    </div>
+     
+    <ol
+      class="space-large wrapped"
+    >
+      <li>
+        <button
+          aria-current="location"
+          aria-label="Question 4. Partial."
+          class="step partial current"
+          tabindex="-1"
+        >
+          <span
+            aria-hidden="true"
+            class="indicator"
+          >
+            <svg
+              aria-hidden="false"
+              class="icon small"
+              viewBox="0 0 12 12"
+            >
+              <title>
+                Current item indicator
+              </title>
+              <path
+                d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+           
+          <span
+            class="badge"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon small"
+              viewBox="0 0 12 12"
+            >
+              <title>
+                Partial icon
+              </title>
+              <path
+                d="M1 9.5l8.5 -8.5l1.4 1.4l-8.5 8.5Z"
+              />
+            </svg>
+          </span>
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            4
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Question 5. Not completed."
+          class="step default"
+          tabindex="-1"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            5
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Informational Item."
+          class="step default"
+          tabindex="-1"
+        >
+           
+           
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Info icon
+            </title>
+            <path
+              d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+         
+      </li>
+    </ol>
+    
+    
+  </div>
+   
+</div>
+`;
+
+exports[`TestOverviewContent > renders steps with default state if score related state should not be shown 1`] = `
+<div
+  class="tabpanel"
+  role="tabpanel"
+>
+  <div>
+    
+    <div
+      class="ui-heading tabpanel-heading main"
+      id="tao-partheader-123"
+    >
+      Part I: Section 1
+    </div>
+     
+    
+     
+    <ol
+      class="space-large wrapped"
+    >
+      <li>
+        <button
+          aria-label="Question 1. Not completed."
+          class="step visited"
+          tabindex="0"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            1
+          </span>
+        </button>
+         
+      </li>
+    </ol>
+    
+    
+    <div
+      class="ui-heading tabpanel-heading main"
+      id="tao-partheader-123"
+    >
+      Part II
+    </div>
+     
+    
+    <div
+      class="ui-heading tabpanel-heading"
+      id="tao-sectionheader-123"
+    >
+      Physics of elemetary particles: bosons, mesons, quarks and whatever is supposed to exist in this world
+    </div>
+     
+    <ol
+      class="space-large wrapped"
+    >
+      <li>
+        <button
+          aria-label="Question 1. Completed."
+          class="step completed"
+          tabindex="-1"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            1
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Question 2. Not completed."
+          class="step visited"
+          tabindex="-1"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            2
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Question 3. Completed."
+          class="step completed"
+          tabindex="-1"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            3
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Informational Item."
+          class="step visited"
+          tabindex="-1"
+        >
+           
+           
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Info icon
+            </title>
+            <path
+              d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Informational Item."
+          class="step visited"
+          tabindex="-1"
+        >
+           
+           
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Info icon
+            </title>
+            <path
+              d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+         
+      </li>
+    </ol>
+    
+    <div
+      class="ui-heading tabpanel-heading"
+      id="tao-sectionheader-123"
+    >
+      Optics
+    </div>
+     
+    <ol
+      class="space-large wrapped"
+    >
+      <li>
+        <button
+          aria-current="location"
+          aria-label="Question 4. Completed."
+          class="step completed current"
+          tabindex="-1"
+        >
+          <span
+            aria-hidden="true"
+            class="indicator"
+          >
+            <svg
+              aria-hidden="false"
+              class="icon small"
+              viewBox="0 0 12 12"
+            >
+              <title>
+                Current item indicator
+              </title>
+              <path
+                d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            4
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Question 5. Not completed."
+          class="step default"
+          tabindex="-1"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            5
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Informational Item."
+          class="step default"
+          tabindex="-1"
+        >
+           
+           
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Info icon
+            </title>
+            <path
+              d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+         
+      </li>
+    </ol>
+    
+    
+  </div>
+   
+</div>
+`;
+
+exports[`TestOverviewContent > renders steps with review states, grouped into parts / sections, and indicates current step 1`] = `
+<div
+  class="tabpanel"
+  role="tabpanel"
+>
+  <div>
+    
+    <div
+      class="ui-heading tabpanel-heading main"
+      id="tao-partheader-123"
+    >
+      Part I: Section 1
+    </div>
+     
+    
+     
+    <ol
+      class="space-large wrapped"
+    >
+      <li>
+        <button
+          aria-label="Question 1. Not completed."
+          class="step visited"
+          tabindex="0"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            1
+          </span>
+        </button>
+         
+      </li>
+    </ol>
+    
+    
+    <div
+      class="ui-heading tabpanel-heading main"
+      id="tao-partheader-123"
+    >
+      Part II
+    </div>
+     
+    
+    <div
+      class="ui-heading tabpanel-heading"
+      id="tao-sectionheader-123"
+    >
+      Physics of elemetary particles: bosons, mesons, quarks and whatever is supposed to exist in this world
+    </div>
+     
+    <ol
+      class="space-large wrapped"
+    >
+      <li>
+        <button
+          aria-label="Question 1. Completed."
+          class="step completed"
+          tabindex="-1"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            1
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Question 2. Not completed."
+          class="step visited"
+          tabindex="-1"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            2
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Question 3. Completed."
+          class="step completed"
+          tabindex="-1"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            3
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Informational Item."
+          class="step visited"
+          tabindex="-1"
+        >
+           
+           
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Info icon
+            </title>
+            <path
+              d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Informational Item."
+          class="step visited"
+          tabindex="-1"
+        >
+           
+           
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Info icon
+            </title>
+            <path
+              d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+         
+      </li>
+    </ol>
+    
+    <div
+      class="ui-heading tabpanel-heading"
+      id="tao-sectionheader-123"
+    >
+      Optics
+    </div>
+     
+    <ol
+      class="space-large wrapped"
+    >
+      <li>
+        <button
+          aria-current="location"
+          aria-label="Question 4. Not completed."
+          class="step visited current"
+          tabindex="-1"
+        >
+          <span
+            aria-hidden="true"
+            class="indicator"
+          >
+            <svg
+              aria-hidden="false"
+              class="icon small"
+              viewBox="0 0 12 12"
+            >
+              <title>
+                Current item indicator
+              </title>
+              <path
+                d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            4
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Question 5. Not completed."
+          class="step default"
+          tabindex="-1"
+        >
+           
+           
+          <span
+            aria-hidden="true"
+            class="step-label"
+          >
+            5
+          </span>
+        </button>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Informational Item."
+          class="step default"
+          tabindex="-1"
+        >
+           
+           
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Info icon
+            </title>
+            <path
+              d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+         
+      </li>
+    </ol>
+    
+    
+  </div>
+   
+</div>
+`;
+
+exports[`TestOverviewContent > renders total score with cut score failed 1`] = `
+<article
+  class="total-score ui-heading-l"
+>
+  <h1
+    class="title"
+  >
+    Total score
+  </h1>
+   
+  <p
+    class="score-details"
+  >
+    <span>
+      6 / 10
+    </span>
+     
+    <span
+      class="cut-score-feedback failed"
+    >
+      <svg
+        aria-hidden="false"
+        class="icon large"
+        fill="none"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <title>
+          Warning unframed icon
+        </title>
+        <path
+          clip-rule="evenodd"
+          d="M14 2H10V15H14V2ZM14 18H10V22H14V18Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        />
+      </svg>
+      Fail
+    </span>
+    
+  </p>
+</article>
+`;
+
+exports[`TestOverviewContent > renders total score with cut score failed 2`] = `
+<article
+  class="total-score ui-heading-l"
+>
+  <h1
+    class="title"
+  >
+    Total score
+  </h1>
+   
+  <p
+    class="score-details"
+  >
+    <span>
+      6 / 10
+    </span>
+     
+    <span
+      class="cut-score-feedback failed"
+    >
+      <svg
+        aria-hidden="false"
+        class="icon large"
+        fill="none"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <title>
+          Warning unframed icon
+        </title>
+        <path
+          clip-rule="evenodd"
+          d="M14 2H10V15H14V2ZM14 18H10V22H14V18Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        />
+      </svg>
+      Fail
+    </span>
+    
+  </p>
+</article>
+`;
+
+exports[`TestOverviewContent > renders total score with cut score passed 1`] = `
+<article
+  class="total-score ui-heading-l"
+>
+  <h1
+    class="title"
+  >
+    Total score
+  </h1>
+   
+  <p
+    class="score-details"
+  >
+    <span>
+      6 / 10
+    </span>
+     
+    <span
+      class="cut-score-feedback passed"
+    >
+      <svg
+        aria-hidden="false"
+        class="icon large"
+        viewBox="0 0 24 24"
+      >
+        <title>
+          Checkbox check icon
+        </title>
+        <path
+          d="M5.57 8.79 10.71 13.93 18.43 4.93 21 7.5 10.71 19.07 3 11.36 5.57 8.79z"
+        />
+      </svg>
+      Pass
+    </span>
+    
+  </p>
+</article>
+`;
+
+exports[`TestOverviewContent > renders total score with cut score passed 2`] = `
+<article
+  class="total-score ui-heading-l"
+>
+  <h1
+    class="title"
+  >
+    Total score
+  </h1>
+   
+  <p
+    class="score-details"
+  >
+    <span>
+      6 / 10
+    </span>
+     
+    <span
+      class="cut-score-feedback passed"
+    >
+      <svg
+        aria-hidden="false"
+        class="icon large"
+        viewBox="0 0 24 24"
+      >
+        <title>
+          Checkbox check icon
+        </title>
+        <path
+          d="M5.57 8.79 10.71 13.93 18.43 4.93 21 7.5 10.71 19.07 3 11.36 5.57 8.79z"
+        />
+      </svg>
+      Pass
+    </span>
+    
+  </p>
+</article>
+`;
+
+exports[`TestOverviewContent > renders total score without cut score 1`] = `
+<article
+  class="total-score ui-heading-l"
+>
+  <h1
+    class="title"
+  >
+    Total score
+  </h1>
+   
+  <p
+    class="score-details"
+  >
+    <span>
+      6 / 10
+    </span>
+     
+  </p>
+</article>
+`;
+
+exports[`TestOverviewContent > renders total score without cut score 2`] = `
+<article
+  class="total-score ui-heading-l"
+>
+  <h1
+    class="title"
+  >
+    Total score
+  </h1>
+   
+  <p
+    class="score-details"
+  >
+    <span>
+      6 / 10
+    </span>
+     
+  </p>
+</article>
+`;
+
+exports[`TestOverviewContent > renders with empty store 1`] = `
+<body>
+  <div>
+    <div
+      class="overview"
+    >
+       
+    </div>
+  </div>
+</body>
+`;
+
+exports[`TestOverviewContent > renders without section header if only one section 1`] = `
+<body>
+  <div>
+    <div
+      class="overview"
+    >
+       
+      <div
+        class="tabs"
+      >
+        <div
+          class="tabgroup"
+        >
+           
+          <div
+            class="scrollbox"
+          >
+            <ul
+              role="tablist"
+            >
+              <li
+                role="presentation"
+              >
+                <button
+                  aria-current="true"
+                  aria-selected="true"
+                  role="tab"
+                >
+                   
+                  all questions
+                   
+                </button>
+                 
+              </li>
+            </ul>
+            <iframe
+              aria-hidden="true"
+              src="about:blank"
+              style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
+              tabindex="-1"
+            />
+          </div>
+           
+        </div>
+      </div>
+       
+      <div>
+        <div
+          class="tabpanel"
+          role="tabpanel"
+        >
+          <div>
+            
+            <div
+              class="ui-heading tabpanel-heading main"
+              id="tao-partheader-123"
+            >
+              Part I: Section 1
+            </div>
+             
+            
+             
+            <ol
+              class="space-large wrapped"
+            >
+              <li>
+                <button
+                  aria-current="location"
+                  aria-label="Question 1. Not completed."
+                  class="step visited current"
+                  tabindex="0"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="indicator"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon small"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Current item indicator
+                      </title>
+                      <path
+                        d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    1
+                  </span>
+                </button>
+                 
+              </li>
+            </ol>
+            
+            
+            <div
+              class="ui-heading tabpanel-heading main"
+              id="tao-partheader-123"
+            >
+              Part II
+            </div>
+             
+            
+            <div
+              class="ui-heading tabpanel-heading"
+              id="tao-sectionheader-123"
+            >
+              Physics of elemetary particles: bosons, mesons, quarks and whatever is supposed to exist in this world
+            </div>
+             
+            <ol
+              class="space-large wrapped"
+            >
+              <li>
+                <button
+                  aria-label="Question 1. Completed."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    1
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 2. Not completed."
+                  class="step visited"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    2
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 3. Completed."
+                  class="step completed"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    3
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Informational Item."
+                  class="step visited"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <svg
+                    aria-hidden="true"
+                    class="icon medium"
+                    viewBox="0 0 16 16"
+                  >
+                    <title>
+                      Info icon
+                    </title>
+                    <path
+                      d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Informational Item."
+                  class="step visited"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <svg
+                    aria-hidden="true"
+                    class="icon medium"
+                    viewBox="0 0 16 16"
+                  >
+                    <title>
+                      Info icon
+                    </title>
+                    <path
+                      d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                 
+              </li>
+            </ol>
+            
+            <div
+              class="ui-heading tabpanel-heading"
+              id="tao-sectionheader-123"
+            >
+              Optics
+            </div>
+             
+            <ol
+              class="space-large wrapped"
+            >
+              <li>
+                <button
+                  aria-label="Question 4. Not completed."
+                  class="step visited"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    4
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Question 5. Not completed."
+                  class="step default"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    5
+                  </span>
+                </button>
+                 
+              </li>
+              <li>
+                <button
+                  aria-label="Informational Item."
+                  class="step default"
+                  tabindex="-1"
+                >
+                   
+                   
+                  <svg
+                    aria-hidden="true"
+                    class="icon medium"
+                    viewBox="0 0 16 16"
+                  >
+                    <title>
+                      Info icon
+                    </title>
+                    <path
+                      d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                 
+              </li>
+            </ol>
+            
+            
+          </div>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

@@ -1,0 +1,412 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ScratchpadTools > rendering > should render correctly 1`] = `
+<body>
+  <div>
+    <ol
+      class="tools-main"
+    >
+      <li>
+        <button
+          aria-label="Select"
+          data-test-id="scratchpadTool-select"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              select tool
+            </title>
+            <path
+              d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+         
+         
+      </li>
+      <li>
+        <button
+          aria-label="Text"
+          data-test-id="scratchpadTool-text"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              type tool
+            </title>
+            <path
+              d="M1 0v2.001h6v14h2v-14h6V0z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+         
+         
+      </li>
+      <li>
+        <button
+          aria-label="Brush"
+          data-test-id="scratchpadTool-brush"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Brush icon
+            </title>
+            <path
+              d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+         
+        <ol
+          class="tools-options"
+          data-test-id="scratchpadTool-subtools-brush"
+        >
+          <li
+            class="sub-option"
+          >
+            <button
+              aria-label="Small brush"
+              data-test-id="scratchpadTool-subtool-brush-small"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  brush size 8 pixels
+                </title>
+                <path
+                  d="M8 4a4 4 0 100 8 4 4 0 100-8z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+             
+          </li>
+          <li
+            class="sub-option"
+          >
+            <button
+              aria-label="Medium brush"
+              data-test-id="scratchpadTool-subtool-brush-medium"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  brush size 12 pixels
+                </title>
+                <path
+                  d="M8 2a6 6 0 100 12A6 6 0 108 2z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+             
+          </li>
+          <li
+            class="sub-option"
+          >
+            <button
+              aria-label="Large brush"
+              data-test-id="scratchpadTool-subtool-brush-large"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  brush size 16 pixels
+                </title>
+                <path
+                  d="M8 0a8 8 0 100 16A8 8 0 108 0z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </button>
+             
+          </li>
+        </ol>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Rectangle"
+          data-test-id="scratchpadTool-rectangle"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              rectangle tool
+            </title>
+            <path
+              d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+            />
+          </svg>
+        </button>
+         
+        <ol
+          class="tools-options"
+          data-test-id="scratchpadTool-subtools-rectangle"
+        >
+          <li
+            class="sub-option"
+          >
+            <button
+              aria-label="Rectangle"
+              data-test-id="scratchpadTool-subtool-rectangle"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  rectangle tool
+                </title>
+                <path
+                  d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                />
+              </svg>
+            </button>
+             
+          </li>
+          <li
+            class="sub-option"
+          >
+            <button
+              aria-label="Oval"
+              data-test-id="scratchpadTool-subtool-oval"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  oval tool
+                </title>
+                <path
+                  d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
+                />
+              </svg>
+            </button>
+             
+          </li>
+          <li
+            class="sub-option"
+          >
+            <button
+              aria-label="Line"
+              data-test-id="scratchpadTool-subtool-line"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  line tool
+                </title>
+                <path
+                  d="M14.646.646l.708.708-14 14-.708-.708z"
+                />
+              </svg>
+            </button>
+             
+          </li>
+        </ol>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Eraser"
+          data-test-id="scratchpadTool-eraser"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Eraser icon
+            </title>
+            <path
+              d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
+            />
+          </svg>
+        </button>
+         
+         
+      </li>
+    </ol>
+  </div>
+</body>
+`;
+
+exports[`ScratchpadTools > rendering > should render correctly with custom tools set 1`] = `
+<body>
+  <div>
+    <ol
+      class="tools-main"
+    >
+      <li>
+        <button
+          aria-label="Rectangle"
+          data-test-id="scratchpadTool-rectangle"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              rectangle tool
+            </title>
+            <path
+              d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+            />
+          </svg>
+        </button>
+         
+        <ol
+          class="tools-options"
+          data-test-id="scratchpadTool-subtools-rectangle"
+        >
+          <li
+            class="sub-option"
+          >
+            <button
+              aria-label="Rectangle"
+              data-test-id="scratchpadTool-subtool-rectangle"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  rectangle tool
+                </title>
+                <path
+                  d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
+                />
+              </svg>
+            </button>
+             
+          </li>
+          <li
+            class="sub-option"
+          >
+            <button
+              aria-label="Oval"
+              data-test-id="scratchpadTool-subtool-oval"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  oval tool
+                </title>
+                <path
+                  d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
+                />
+              </svg>
+            </button>
+             
+          </li>
+          <li
+            class="sub-option"
+          >
+            <button
+              aria-label="Line"
+              data-test-id="scratchpadTool-subtool-line"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  line tool
+                </title>
+                <path
+                  d="M14.646.646l.708.708-14 14-.708-.708z"
+                />
+              </svg>
+            </button>
+             
+          </li>
+        </ol>
+         
+      </li>
+      <li>
+        <button
+          aria-label="Text"
+          data-test-id="scratchpadTool-text"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              type tool
+            </title>
+            <path
+              d="M1 0v2.001h6v14h2v-14h6V0z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+         
+         
+      </li>
+      <li>
+        <button
+          aria-label="Select"
+          data-test-id="scratchpadTool-select"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              select tool
+            </title>
+            <path
+              d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+         
+         
+      </li>
+    </ol>
+  </div>
+</body>
+`;

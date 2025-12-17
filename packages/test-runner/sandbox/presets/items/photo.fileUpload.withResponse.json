@@ -1,0 +1,225 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5ef34cc618602699bc22619664d9ce",
+            "serial": "item_5f02f08e081f1573942384",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5ef34cc618602699bc22619664d9ce",
+                "title": "Photo & CV (File Upload Interaction) - Submitted",
+                "label": "Photo & CV (File Upload Interaction) - Submitted",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint130",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5f02f08e08169904328439",
+                "body": "<div class=\"grid-row\">  <div class=\"col-6\">{{interaction_uploadinteraction_5f02f08e20f6f842600043}}</div>  <div class=\"col-6\">{{interaction_uploadinteraction_5f02f08e20f6f842600044}}</div>  </div>",
+                "elements": {
+                    "interaction_uploadinteraction_5f02f08e20f6f842600043": {
+                        "serial": "interaction_uploadinteraction_5f02f08e20f6f842600043",
+                        "qtiClass": "uploadInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_1",
+                            "type": "image/*",
+                            "class": ""
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_5f02f08e2588b881358897",
+                            "body": "<strong>Please select your photo</strong>",
+                            "elements": {}
+                        }
+                    },
+                    "interaction_uploadinteraction_5f02f08e20f6f842600044": {
+                        "serial": "interaction_uploadinteraction_5f02f08e20f6f842600043",
+                        "qtiClass": "uploadInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_2",
+                            "type": "application/pdf",
+                            "class": ""
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_5f02f08e2588b881358898",
+                            "body": "<strong>Please select your CV</strong>",
+                            "elements": {}
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {
+                "stylesheet_5f02f08e1121c531755218": {
+                    "serial": "stylesheet_5f02f08e1121c531755218",
+                    "qtiClass": "stylesheet",
+                    "attributes": {
+                        "href": "tao-user-styles.css",
+                        "type": "text/css",
+                        "media": "all",
+                        "title": ""
+                    }
+                }
+            },
+            "outcomes": {
+                "outcomedeclaration_5f02f08e19686601517033": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5f02f08e19686601517033",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": { "identifier": "SCORE", "cardinality": "single", "baseType": "float" },
+                    "defaultValue": null
+                }
+            },
+            "responses": {
+                "responsedeclaration_5f02f08e161e2675365574": {
+                    "identifier": "RESPONSE_1",
+                    "serial": "responsedeclaration_5f02f08e161e2675365574",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE_1", "cardinality": "single", "baseType": "file" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_5f02f08e161e2675365575": {
+                    "identifier": "RESPONSE_2",
+                    "serial": "responsedeclaration_5f02f08e161e2675365575",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE_2", "cardinality": "single", "baseType": "file" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_5f02f08e285f3765060564",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    { "qtiClass": "variable", "attributes": { "identifier": "RESPONSE_1" } },
+                                    { "qtiClass": "correct", "attributes": { "identifier": "RESPONSE_1" } },
+                                    { "qtiClass": "variable", "attributes": { "identifier": "RESPONSE_2" } },
+                                    { "qtiClass": "correct", "attributes": { "identifier": "RESPONSE_2" } }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": { "baseType": "float" },
+                                        "value": "1"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseElse": {
+                            "qtiClass": "responseElse",
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": { "baseType": "float" },
+                                        "value": "0"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": {}
+    },
+    "itemState": {
+        "RESPONSE_1": {
+            "response": {
+                "base": {
+                    "file": {
+                        "data": "iVBORw0KGgoAAAANSUhEUgAAAAgAAAAIAQMAAAD+wSzIAAAABlBMVEX///+/v7+jQ3Y5AAAADklEQVQI12P4AIX8EAgALgAD/aNpbtEAAAAASUVORK5CYII",
+                        "mime": "image/png",
+                        "name": "myphoto.png"
+                    }
+                }
+            },
+            "validity": true
+        },
+        "RESPONSE_2": {
+            "response": {
+                "base": {
+                    "file": {
+                        "data": "JVBERi0xLgoxIDAgb2JqPDwvUGFnZXMgMiAwIFI+PmVuZG9iagoyIDAgb2JqPDwvS2lkc1szIDAgUl0vQ291bnQgMT4+ZW5kb2JqCjMgMCBvYmo8PC9QYXJlbnQgMiAwIFI+PmVuZG9iagp0cmFpbGVyIDw8L1Jvb3QgMSAwIFI+Pg==",
+                        "mime": "application/pdf",
+                        "name": "mycv.pdf"
+                    }
+                }
+            },
+            "validity": true
+        }
+    },
+    "itemResponse": {
+        "RESPONSE_1": {
+            "base": {
+                "file": {
+                    "data": "iVBORw0KGgoAAAANSUhEUgAAAAgAAAAIAQMAAAD+wSzIAAAABlBMVEX///+/v7+jQ3Y5AAAADklEQVQI12P4AIX8EAgALgAD/aNpbtEAAAAASUVORK5CYII",
+                    "mime": "image/png",
+                    "name": "myphoto.png"
+                }
+            }
+        },
+        "RESPONSE_2": {
+            "base": {
+                "file": {
+                    "data": "JVBERi0xLgoxIDAgb2JqPDwvUGFnZXMgMiAwIFI+PmVuZG9iagoyIDAgb2JqPDwvS2lkc1szIDAgUl0vQ291bnQgMT4+ZW5kb2JqCjMgMCBvYmo8PC9QYXJlbnQgMiAwIFI+PmVuZG9iagp0cmFpbGVyIDw8L1Jvb3QgMSAwIFI+Pg==",
+                    "mime": "application/pdf",
+                    "name": "mycv.pdf"
+                }
+            }
+        }
+    },
+    "extraData": {
+        "plagiarismReports": [
+            {
+                "provider": "hbl",
+                "responses": {
+                    "RESPONSE_1": {
+                        "status": "pending"
+                    },
+                    "RESPONSE_2": {
+                        "status": "error"
+                    }
+                }
+            }
+        ]
+    }
+}

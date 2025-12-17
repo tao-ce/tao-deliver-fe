@@ -1,0 +1,319 @@
+{
+    "baseUrl": "./assets/graphic/flags/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5f64864389a41982e122d2eaaf7a40",
+            "serial": "item_5f6495806f6b6709909879",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5f64864389a41982e122d2eaaf7a40",
+                "title": "GraphicGapMatch",
+                "label": "GraphicGapMatch",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint137",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5f6495806f6ab253635167",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{interaction_graphicgapmatchinteraction_5f6495806fa18910242950}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "interaction_graphicgapmatchinteraction_5f6495806fa18910242950": {
+                        "serial": "interaction_graphicgapmatchinteraction_5f6495806fa18910242950",
+                        "qtiClass": "graphicGapMatchInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "class": "responsive"
+                        },
+                        "choices": {
+                            "choice_associablehotspot_5f6495806fc44588334105": {
+                                "identifier": "associablehotspot_1",
+                                "serial": "choice_associablehotspot_5f6495806fc44588334105",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "associablehotspot_1",
+                                    "fixed": false,
+                                    "matchMax": 0,
+                                    "matchMin": 0,
+                                    "shape": "rect",
+                                    "coords": "18,16,92,60"
+                                }
+                            },
+                            "choice_associablehotspot_5f6495806fc83262184706": {
+                                "identifier": "associablehotspot_2",
+                                "serial": "choice_associablehotspot_5f6495806fc83262184706",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "associablehotspot_2",
+                                    "fixed": false,
+                                    "matchMax": 0,
+                                    "matchMin": 0,
+                                    "shape": "rect",
+                                    "coords": "117,16,189,60"
+                                }
+                            },
+                            "choice_associablehotspot_5f6495806fca1937666579": {
+                                "identifier": "associablehotspot_3",
+                                "serial": "choice_associablehotspot_5f6495806fca1937666579",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "associablehotspot_3",
+                                    "fixed": false,
+                                    "matchMax": 0,
+                                    "matchMin": 0,
+                                    "shape": "rect",
+                                    "coords": "212,17,288,60"
+                                }
+                            },
+                            "choice_associablehotspot_5f6495806fcba835166453": {
+                                "identifier": "associablehotspot_4",
+                                "serial": "choice_associablehotspot_5f6495806fcba835166453",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "associablehotspot_4",
+                                    "fixed": false,
+                                    "matchMax": 0,
+                                    "matchMin": 0,
+                                    "shape": "rect",
+                                    "coords": "313,17,388,59"
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_5f6495806fa80589751959",
+                            "body": "",
+                            "elements": {}
+                        },
+                        "object": {
+                            "serial": "qtiobject_5f6495806fcdb927634817",
+                            "qtiClass": "object",
+                            "attributes": {
+                                "data": "eurCut.jpg",
+                                "type": "image/jpeg",
+                                "width": 600,
+                                "height": 480
+                            }
+                        },
+                        "gapImgs": {
+                            "choice_gapimg_5f6495806faf5173930131": {
+                                "identifier": "gapimg_1",
+                                "serial": "choice_gapimg_5f6495806faf5173930131",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "gapimg_1",
+                                    "fixed": false,
+                                    "matchMax": "0"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5f6495806fb4a255014197",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "flag1.png",
+                                        "type": "image/png",
+                                        "width": 72,
+                                        "height": 40
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5f6495806fb77200287079": {
+                                "identifier": "gapimg_2",
+                                "serial": "choice_gapimg_5f6495806fb77200287079",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "gapimg_2",
+                                    "fixed": false,
+                                    "matchMax": "0"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5f6495806fb95188569995",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "flag2.png",
+                                        "type": "image/png",
+                                        "width": 73,
+                                        "height": 41
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5f6495806fbb1309442917": {
+                                "identifier": "gapimg_3",
+                                "serial": "choice_gapimg_5f6495806fbb1309442917",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "gapimg_3",
+                                    "fixed": false,
+                                    "matchMax": "0"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5f6495806fbcc004341798",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "flag3.png",
+                                        "type": "image/png",
+                                        "width": 72,
+                                        "height": 40
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5f6495806fbe6318747481": {
+                                "identifier": "gapimg_4",
+                                "serial": "choice_gapimg_5f6495806fbe6318747481",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "gapimg_4",
+                                    "fixed": false,
+                                    "matchMax": "0"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5f6495806fc00651011329",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "flag4.png",
+                                        "type": "image/png",
+                                        "width": 85,
+                                        "height": 47
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_5f6495806f8a9745916873": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5f6495806f8a9745916873",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 0
+                    },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_5f6495806f922171176018": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_5f6495806f922171176018",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "0"
+                }
+            },
+            "responses": {
+                "responsedeclaration_5f6495806f83c251201959": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_5f6495806f83c251201959",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "multiple",
+                        "baseType": "directedPair"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_5f6495806fdca521203130",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": {
+                                            "baseType": "float"
+                                        },
+                                        "value": "1"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseElse": {
+                            "qtiClass": "responseElse",
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": {
+                                            "baseType": "float"
+                                        },
+                                        "value": "0"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "flag1.png": "flag1.png",
+                "flag2.png": "flag2.png",
+                "flag3.png": "flag3.png",
+                "flag4.png": "flag4.png",
+                "eurCut.jpg": "eurCut.jpg"
+            }
+        }
+    },
+    "success": true,
+    "itemIdentifier": "item-1"
+}

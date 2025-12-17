@@ -1,0 +1,1643 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GraphicGapMatchInteraction > rendering > renders correct feedbacks 1`] = `
+<div
+  class="qti-instruction-container"
+>
+  <div
+    aria-atomic="true"
+    class="feedback info fullwidth"
+    role="status"
+  >
+     
+    <p>
+      You must make at least 1 association and a maximum of 3 - Currently 2
+    </p>
+  </div>
+</div>
+`;
+
+exports[`GraphicGapMatchInteraction > rendering > renders props correctly into markup 1`] = `
+<body>
+  <div>
+    <div
+      ariabar="baz"
+      ariafoo="12"
+      class="qti-interaction qti-blockInteraction qti-graphicGapMatchInteraction foo bar baz"
+      data-baz="24"
+      data-foo="bar"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+    >
+      <div
+        class="qti-prompt cf"
+      >
+        Question 1
+        
+        
+      </div>
+       
+      <div
+        class="qti-instruction-container"
+      />
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+      />
+       
+      <div
+        class="qti-flow-container position-left horizontal"
+        style="--bay-width: 249px; --bay-height: 614px; --bay-scroll-height: 680px;"
+      >
+        
+        <div
+          class="scroll-shadows"
+        >
+          <div
+            class="shadow left hidden"
+          />
+          <div
+            class="shadow right hidden"
+          />
+          <div
+            class="shadow top hidden"
+          />
+          <div
+            class="shadow bottom hidden"
+          />
+           
+          <div
+            class="choice-area"
+            tabindex="-1"
+          >
+            <div
+              aria-labelledby="tao-bay-label-123"
+              class="bay-content"
+              data-droparea-area=""
+              data-droparea-key="tao-gapmatch-123"
+              role="application"
+            >
+              <span
+                class="hidden"
+                id="tao-bay-label-123"
+              >
+                Available options, 4 items
+              </span>
+               
+              
+              <div
+                class="choice last"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="da_choice_tao-gapmatch-123_A"
+                data-droparea-area=""
+                data-droparea-key="A"
+                style="--draw-x: 24px;--draw-y: 24px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+              >
+                <div
+                  aria-grabbed="false"
+                  aria-label="letter A option 1, Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys."
+                  class="drag-anchor draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="choice__tao-gapmatch-123__A"
+                  role="button"
+                  tabindex="0"
+                >
+                  <div
+                    class="drag-anchor-content"
+                  >
+                    <div
+                      class="outline-container"
+                    >
+                      <img
+                        alt="letter A option 1"
+                        aria-hidden="true"
+                        class="image"
+                        src="aa.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                 
+              </div>
+              
+              <div
+                class="choice"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="da_choice_tao-gapmatch-123_B"
+                data-droparea-area=""
+                data-droparea-key="B"
+                style="--draw-x: 24px;--draw-y: 192px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+              >
+                <div
+                  aria-grabbed="false"
+                  aria-label=" option 2, Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys."
+                  class="drag-anchor draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="choice__tao-gapmatch-123__B"
+                  role="button"
+                  tabindex="-1"
+                >
+                  <div
+                    class="drag-anchor-content"
+                  >
+                    <div
+                      class="outline-container"
+                    >
+                      <img
+                        alt=" option 2"
+                        aria-hidden="true"
+                        class="image"
+                        src="bb.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                 
+              </div>
+              
+              <div
+                class="choice last"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="da_choice_tao-gapmatch-123_C"
+                data-droparea-area=""
+                data-droparea-key="C"
+                style="--draw-x: 24px;--draw-y: 360px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+              >
+                <div
+                  aria-grabbed="false"
+                  aria-label="letter C option 3, Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys."
+                  class="drag-anchor draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="choice__tao-gapmatch-123__C"
+                  role="button"
+                  tabindex="-1"
+                >
+                  <div
+                    class="drag-anchor-content"
+                  >
+                    <div
+                      class="outline-container"
+                    >
+                      <img
+                        alt="letter C option 3"
+                        aria-hidden="true"
+                        class="image"
+                        src="cc.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                 
+              </div>
+              
+              <div
+                class="choice"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="da_choice_tao-gapmatch-123_D"
+                data-droparea-area=""
+                data-droparea-key="D"
+                style="--draw-x: 24px;--draw-y: 528px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+              >
+                <div
+                  aria-grabbed="false"
+                  aria-label=" option 4, Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys."
+                  class="drag-anchor draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="choice__tao-gapmatch-123__D"
+                  role="button"
+                  tabindex="-1"
+                >
+                  <div
+                    class="drag-anchor-content"
+                  >
+                    <div
+                      class="outline-container"
+                    >
+                      <img
+                        alt=" option 4"
+                        aria-hidden="true"
+                        class="image"
+                        src="dd.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+           
+        </div>
+        
+        
+        <div
+          aria-label="Answer area"
+          class="answer-area"
+          role="application"
+        >
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="600"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 800 600"
+            width="800"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(0, 0)"
+            >
+              <image
+                class="svg-image"
+                height="600"
+                href="background.jpg"
+                preserveAspectRatio="none"
+                width="800"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+              >
+                
+                <g
+                  class="associable-hotspot"
+                  data-droparea-area=""
+                  data-droparea-key="a"
+                  key="a"
+                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  tabindex="-1"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <rect
+                      class="shape-outer-border"
+                      height="68"
+                      width="88"
+                      x="6"
+                      y="-9"
+                    />
+                    <rect
+                      class="shape-inner-border"
+                      height="52"
+                      width="72"
+                      x="14"
+                      y="-1"
+                    />
+                    <rect
+                      class="shape-dashed-outline"
+                      height="68"
+                      width="88"
+                      x="6"
+                      y="-9"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    a spot gap 1. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
+                  </text>
+                </g>
+                
+                <g
+                  class="associable-hotspot"
+                  data-droparea-area=""
+                  data-droparea-key="b"
+                  key="b"
+                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  tabindex="-1"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="shape-outer-border"
+                      cx="100"
+                      cy="400"
+                      r="94"
+                    />
+                    <circle
+                      class="shape-inner-border"
+                      cx="100"
+                      cy="400"
+                      r="86"
+                    />
+                    <circle
+                      class="shape-dashed-outline"
+                      cx="100"
+                      cy="400"
+                      r="94"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                     gap 2. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
+                  </text>
+                </g>
+                
+                <g
+                  class="associable-hotspot"
+                  data-droparea-area=""
+                  data-droparea-key="c"
+                  key="c"
+                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  tabindex="-1"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <ellipse
+                      class="shape-outer-border"
+                      cx="400"
+                      cy="400"
+                      rx="94"
+                      ry="44"
+                    />
+                    <ellipse
+                      class="shape-inner-border"
+                      cx="400"
+                      cy="400"
+                      rx="86"
+                      ry="36"
+                    />
+                    <ellipse
+                      class="shape-dashed-outline"
+                      cx="400"
+                      cy="400"
+                      rx="94"
+                      ry="44"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    a spot gap 3. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
+                  </text>
+                </g>
+                
+                <g
+                  class="associable-hotspot"
+                  data-droparea-area=""
+                  data-droparea-key="d"
+                  key="d"
+                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  tabindex="-1"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <polygon
+                      class="shape-outer-border"
+                      points="406,6 585.5147186257615,6.000000000000001 406,185.51471862576142"
+                    />
+                    <polygon
+                      class="shape-inner-border"
+                      points="414,13.999999999999998 566.2010101267767,14 414,166.20101012677665"
+                    />
+                    <polygon
+                      class="shape-dashed-outline"
+                      points="406,6 585.5147186257615,6.000000000000001 406,185.51471862576142"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                     gap 4. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
+                  </text>
+                </g>
+                
+              </g>
+            </g>
+          </svg>
+          
+           
+           
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang on the feedback block 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-blockInteraction qti-graphicGapMatchInteraction"
+    >
+       
+      <div
+        class="qti-instruction-container"
+        dir="ltr"
+        lang="ro"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must make at least 1 association and a maximum of 3
+          </p>
+        </div>
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+        lang="ro"
+      />
+       
+      <div
+        class="qti-flow-container position-left horizontal"
+        style="--bay-width: 249px; --bay-height: 614px; --bay-scroll-height: 680px;"
+      >
+        
+        <div
+          class="scroll-shadows"
+        >
+          <div
+            class="shadow left hidden"
+          />
+          <div
+            class="shadow right hidden"
+          />
+          <div
+            class="shadow top hidden"
+          />
+          <div
+            class="shadow bottom hidden"
+          />
+           
+          <div
+            class="choice-area"
+            tabindex="-1"
+          >
+            <div
+              aria-labelledby="tao-bay-label-123"
+              class="bay-content"
+              data-droparea-area=""
+              data-droparea-key="tao-gapmatch-123"
+              role="application"
+            >
+              <span
+                class="hidden"
+                id="tao-bay-label-123"
+              >
+                Available options, 4 items
+              </span>
+               
+              
+              <div
+                class="choice last"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="da_choice_tao-gapmatch-123_A"
+                data-droparea-area=""
+                data-droparea-key="A"
+                style="--draw-x: 24px;--draw-y: 24px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+              >
+                <div
+                  aria-grabbed="false"
+                  aria-label="letter A option 1, Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys."
+                  class="drag-anchor draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="choice__tao-gapmatch-123__A"
+                  role="button"
+                  tabindex="0"
+                >
+                  <div
+                    class="drag-anchor-content"
+                  >
+                    <div
+                      class="outline-container"
+                    >
+                      <img
+                        alt="letter A option 1"
+                        aria-hidden="true"
+                        class="image"
+                        src="aa.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                 
+              </div>
+              
+              <div
+                class="choice"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="da_choice_tao-gapmatch-123_B"
+                data-droparea-area=""
+                data-droparea-key="B"
+                style="--draw-x: 24px;--draw-y: 192px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+              >
+                <div
+                  aria-grabbed="false"
+                  aria-label=" option 2, Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys."
+                  class="drag-anchor draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="choice__tao-gapmatch-123__B"
+                  role="button"
+                  tabindex="-1"
+                >
+                  <div
+                    class="drag-anchor-content"
+                  >
+                    <div
+                      class="outline-container"
+                    >
+                      <img
+                        alt=" option 2"
+                        aria-hidden="true"
+                        class="image"
+                        src="bb.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                 
+              </div>
+              
+              <div
+                class="choice last"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="da_choice_tao-gapmatch-123_C"
+                data-droparea-area=""
+                data-droparea-key="C"
+                style="--draw-x: 24px;--draw-y: 360px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+              >
+                <div
+                  aria-grabbed="false"
+                  aria-label="letter C option 3, Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys."
+                  class="drag-anchor draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="choice__tao-gapmatch-123__C"
+                  role="button"
+                  tabindex="-1"
+                >
+                  <div
+                    class="drag-anchor-content"
+                  >
+                    <div
+                      class="outline-container"
+                    >
+                      <img
+                        alt="letter C option 3"
+                        aria-hidden="true"
+                        class="image"
+                        src="cc.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                 
+              </div>
+              
+              <div
+                class="choice"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="da_choice_tao-gapmatch-123_D"
+                data-droparea-area=""
+                data-droparea-key="D"
+                style="--draw-x: 24px;--draw-y: 528px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+              >
+                <div
+                  aria-grabbed="false"
+                  aria-label=" option 4, Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys."
+                  class="drag-anchor draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="choice__tao-gapmatch-123__D"
+                  role="button"
+                  tabindex="-1"
+                >
+                  <div
+                    class="drag-anchor-content"
+                  >
+                    <div
+                      class="outline-container"
+                    >
+                      <img
+                        alt=" option 4"
+                        aria-hidden="true"
+                        class="image"
+                        src="dd.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+           
+        </div>
+        
+        
+        <div
+          aria-label="Answer area"
+          class="answer-area"
+          role="application"
+        >
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="600"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 800 600"
+            width="800"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(0, 0)"
+            >
+              <image
+                class="svg-image"
+                height="600"
+                href="background.jpg"
+                preserveAspectRatio="none"
+                width="800"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+              >
+                
+                <g
+                  class="associable-hotspot"
+                  data-droparea-area=""
+                  data-droparea-key="a"
+                  key="a"
+                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  tabindex="-1"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <rect
+                      class="shape-outer-border"
+                      height="68"
+                      width="88"
+                      x="6"
+                      y="-9"
+                    />
+                    <rect
+                      class="shape-inner-border"
+                      height="52"
+                      width="72"
+                      x="14"
+                      y="-1"
+                    />
+                    <rect
+                      class="shape-dashed-outline"
+                      height="68"
+                      width="88"
+                      x="6"
+                      y="-9"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                    lang="ro"
+                  >
+                    a spot gap 1. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
+                  </text>
+                </g>
+                
+                <g
+                  class="associable-hotspot"
+                  data-droparea-area=""
+                  data-droparea-key="b"
+                  key="b"
+                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  tabindex="-1"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="shape-outer-border"
+                      cx="100"
+                      cy="400"
+                      r="94"
+                    />
+                    <circle
+                      class="shape-inner-border"
+                      cx="100"
+                      cy="400"
+                      r="86"
+                    />
+                    <circle
+                      class="shape-dashed-outline"
+                      cx="100"
+                      cy="400"
+                      r="94"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                    lang="ro"
+                  >
+                     gap 2. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
+                  </text>
+                </g>
+                
+                <g
+                  class="associable-hotspot"
+                  data-droparea-area=""
+                  data-droparea-key="c"
+                  key="c"
+                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  tabindex="-1"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <ellipse
+                      class="shape-outer-border"
+                      cx="400"
+                      cy="400"
+                      rx="94"
+                      ry="44"
+                    />
+                    <ellipse
+                      class="shape-inner-border"
+                      cx="400"
+                      cy="400"
+                      rx="86"
+                      ry="36"
+                    />
+                    <ellipse
+                      class="shape-dashed-outline"
+                      cx="400"
+                      cy="400"
+                      rx="94"
+                      ry="44"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                    lang="ro"
+                  >
+                    a spot gap 3. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
+                  </text>
+                </g>
+                
+                <g
+                  class="associable-hotspot"
+                  data-droparea-area=""
+                  data-droparea-key="d"
+                  key="d"
+                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  tabindex="-1"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <polygon
+                      class="shape-outer-border"
+                      points="406,6 585.5147186257615,6.000000000000001 406,185.51471862576142"
+                    />
+                    <polygon
+                      class="shape-inner-border"
+                      points="414,13.999999999999998 566.2010101267767,14 414,166.20101012677665"
+                    />
+                    <polygon
+                      class="shape-dashed-outline"
+                      points="406,6 585.5147186257615,6.000000000000001 406,185.51471862576142"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                    lang="ro"
+                  >
+                     gap 4. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
+                  </text>
+                </g>
+                
+              </g>
+            </g>
+          </svg>
+          
+           
+           
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-blockInteraction qti-graphicGapMatchInteraction"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      />
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+      />
+       
+      <div
+        class="qti-flow-container position-left horizontal"
+        style="--bay-width: 249px; --bay-height: 614px; --bay-scroll-height: 344px;"
+      >
+        
+        <div
+          class="scroll-shadows"
+        >
+          <div
+            class="shadow left hidden"
+          />
+          <div
+            class="shadow right hidden"
+          />
+          <div
+            class="shadow top hidden"
+          />
+          <div
+            class="shadow bottom hidden"
+          />
+           
+          <div
+            class="choice-area"
+            tabindex="-1"
+          >
+            <div
+              aria-labelledby="tao-bay-label-123"
+              class="bay-content"
+              data-droparea-area=""
+              data-droparea-key="tao-gapmatch-123"
+              role="application"
+            >
+              <span
+                class="hidden"
+                id="tao-bay-label-123"
+              >
+                Available options, 2 items
+              </span>
+               
+              
+              <div
+                class="choice"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="da_choice_tao-gapmatch-123_B"
+                data-droparea-area=""
+                data-droparea-key="B"
+                style="--draw-x: 24px;--draw-y: 24px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+              >
+                <div
+                  aria-grabbed="false"
+                  aria-label=" option 1, Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys."
+                  class="drag-anchor draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="choice__tao-gapmatch-123__B"
+                  role="button"
+                  tabindex="0"
+                >
+                  <div
+                    class="drag-anchor-content"
+                  >
+                    <div
+                      class="outline-container"
+                    >
+                      <img
+                        alt=" option 1"
+                        aria-hidden="true"
+                        class="image"
+                        src="bb.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                 
+              </div>
+              
+              <div
+                class="choice last"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="da_choice_tao-gapmatch-123_D"
+                data-droparea-area=""
+                data-droparea-key="D"
+                style="--draw-x: 24px;--draw-y: 192px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+              >
+                <div
+                  aria-grabbed="false"
+                  aria-label=" option 2, Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys."
+                  class="drag-anchor draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="choice__tao-gapmatch-123__D"
+                  role="button"
+                  tabindex="-1"
+                >
+                  <div
+                    class="drag-anchor-content"
+                  >
+                    <div
+                      class="outline-container"
+                    >
+                      <img
+                        alt=" option 2"
+                        aria-hidden="true"
+                        class="image"
+                        src="dd.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+           
+        </div>
+        
+        
+        <div
+          aria-label="Answer area"
+          class="answer-area"
+          role="application"
+        >
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="600"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 800 600"
+            width="800"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(0, 0)"
+            >
+              <image
+                class="svg-image"
+                height="600"
+                href="background.jpg"
+                preserveAspectRatio="none"
+                width="800"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+              >
+                
+                <g
+                  class="associable-hotspot"
+                  data-droparea-area=""
+                  data-droparea-key="a"
+                  key="a"
+                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  tabindex="-1"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <rect
+                      class="shape-outer-border"
+                      height="68"
+                      width="88"
+                      x="6"
+                      y="-9"
+                    />
+                    <rect
+                      class="shape-inner-border"
+                      height="52"
+                      width="72"
+                      x="14"
+                      y="-1"
+                    />
+                    <rect
+                      class="shape-dashed-outline"
+                      height="68"
+                      width="88"
+                      x="6"
+                      y="-9"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    a spot gap 1. Partially filled. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
+                  </text>
+                </g>
+                
+                <g
+                  class="associable-hotspot"
+                  data-droparea-area=""
+                  data-droparea-key="b"
+                  key="b"
+                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  tabindex="-1"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="shape-outer-border"
+                      cx="100"
+                      cy="400"
+                      r="94"
+                    />
+                    <circle
+                      class="shape-inner-border"
+                      cx="100"
+                      cy="400"
+                      r="86"
+                    />
+                    <circle
+                      class="shape-dashed-outline"
+                      cx="100"
+                      cy="400"
+                      r="94"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                     gap 2. Partially filled. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
+                  </text>
+                </g>
+                
+                <g
+                  class="associable-hotspot"
+                  data-droparea-area=""
+                  data-droparea-key="c"
+                  key="c"
+                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  tabindex="-1"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <ellipse
+                      class="shape-outer-border"
+                      cx="400"
+                      cy="400"
+                      rx="94"
+                      ry="44"
+                    />
+                    <ellipse
+                      class="shape-inner-border"
+                      cx="400"
+                      cy="400"
+                      rx="86"
+                      ry="36"
+                    />
+                    <ellipse
+                      class="shape-dashed-outline"
+                      cx="400"
+                      cy="400"
+                      rx="94"
+                      ry="44"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    a spot gap 3. Partially filled. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
+                  </text>
+                </g>
+                
+                <g
+                  class="associable-hotspot"
+                  data-droparea-area=""
+                  data-droparea-key="d"
+                  key="d"
+                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  tabindex="-1"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <polygon
+                      class="shape-outer-border"
+                      points="406,6 585.5147186257615,6.000000000000001 406,185.51471862576142"
+                    />
+                    <polygon
+                      class="shape-inner-border"
+                      points="414,13.999999999999998 566.2010101267767,14 414,166.20101012677665"
+                    />
+                    <polygon
+                      class="shape-dashed-outline"
+                      points="406,6 585.5147186257615,6.000000000000001 406,185.51471862576142"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                     gap 4. Partially filled. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
+                  </text>
+                </g>
+                
+              </g>
+            </g>
+          </svg>
+          
+           
+          
+          <div
+            class="choice placed last"
+            data-drag-drop-disabled="false"
+            data-drag-drop-key="da_d_tao-gapmatch-123_D"
+            data-droparea-area="d"
+            data-droparea-key="D"
+            style="--draw-x: 378.0068063522457px;--draw-y: -69.40986031442091px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+          >
+            <div
+              aria-grabbed="false"
+              aria-label=" gap 4, filled with , Press enter or space to grab. To move to next available answer, use the arrow keys."
+              class="drag-anchor draggable-source"
+              data-drag-drop-disabled="false"
+              data-drag-drop-key="d__tao-gapmatch-123__D"
+              role="button"
+              tabindex="-1"
+            >
+              <div
+                class="drag-anchor-content"
+              >
+                <div
+                  class="outline-container"
+                >
+                  <img
+                    alt=" gap 4, filled with "
+                    aria-hidden="true"
+                    class="image"
+                    src="dd.png"
+                  />
+                </div>
+              </div>
+            </div>
+             
+            <button
+              aria-label="Return  to the available options"
+              class="remover"
+              tabindex="-1"
+            >
+              <div
+                class="icon-wrapper"
+              />
+               
+              <svg
+                aria-hidden="false"
+                class="icon small"
+                viewBox="0 0 12 12"
+              >
+                <title>
+                  Remove icon
+                </title>
+                <path
+                  d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
+                />
+              </svg>
+            </button>
+          </div>
+          
+          <div
+            class="choice placed last"
+            data-drag-drop-disabled="false"
+            data-drag-drop-key="da_b_tao-gapmatch-123_B"
+            data-droparea-area="b"
+            data-droparea-key="B"
+            style="--draw-x: 1.5px;--draw-y: -62.5px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+          >
+            <div
+              aria-grabbed="false"
+              aria-label=" gap 2, filled with , Press enter or space to grab. To move to next available answer, use the arrow keys."
+              class="drag-anchor draggable-source"
+              data-drag-drop-disabled="false"
+              data-drag-drop-key="b__tao-gapmatch-123__B"
+              role="button"
+              tabindex="-1"
+            >
+              <div
+                class="drag-anchor-content"
+              >
+                <div
+                  class="outline-container"
+                >
+                  <img
+                    alt=" gap 2, filled with "
+                    aria-hidden="true"
+                    class="image"
+                    src="bb.png"
+                  />
+                </div>
+              </div>
+            </div>
+             
+            <button
+              aria-label="Return  to the available options"
+              class="remover"
+              tabindex="-1"
+            >
+              <div
+                class="icon-wrapper"
+              />
+               
+              <svg
+                aria-hidden="false"
+                class="icon small"
+                viewBox="0 0 12 12"
+              >
+                <title>
+                  Remove icon
+                </title>
+                <path
+                  d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
+                />
+              </svg>
+            </button>
+          </div>
+          
+          <div
+            class="choice placed last"
+            data-drag-drop-disabled="false"
+            data-drag-drop-key="da_a_tao-gapmatch-123_A"
+            data-droparea-area="a"
+            data-droparea-key="A"
+            style="--draw-x: -79.08333333333334px;--draw-y: -62.5px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+          >
+            <div
+              aria-grabbed="false"
+              aria-label="a spot gap 1, filled with letter A, Press enter or space to grab. To move to next available answer, use the arrow keys."
+              class="drag-anchor draggable-source"
+              data-drag-drop-disabled="false"
+              data-drag-drop-key="a__tao-gapmatch-123__A"
+              role="button"
+              tabindex="0"
+            >
+              <div
+                class="drag-anchor-content"
+              >
+                <div
+                  class="outline-container"
+                >
+                  <img
+                    alt="a spot gap 1, filled with letter A"
+                    aria-hidden="true"
+                    class="image"
+                    src="aa.png"
+                  />
+                </div>
+              </div>
+            </div>
+             
+            <button
+              aria-label="Return letter A to the available options"
+              class="remover"
+              tabindex="-1"
+            >
+              <div
+                class="icon-wrapper"
+              />
+               
+              <svg
+                aria-hidden="false"
+                class="icon small"
+                viewBox="0 0 12 12"
+              >
+                <title>
+                  Remove icon
+                </title>
+                <path
+                  d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
+                />
+              </svg>
+            </button>
+          </div>
+          
+          <div
+            class="choice placed last"
+            data-drag-drop-disabled="false"
+            data-drag-drop-key="da_c_tao-gapmatch-123_C"
+            data-droparea-area="c"
+            data-droparea-key="C"
+            style="--draw-x: -79.08333333333334px;--draw-y: -62.5px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+          >
+            <div
+              aria-grabbed="false"
+              aria-label="a spot gap 3, filled with letter C, Press enter or space to grab. To move to next available answer, use the arrow keys."
+              class="drag-anchor draggable-source"
+              data-drag-drop-disabled="false"
+              data-drag-drop-key="c__tao-gapmatch-123__C"
+              role="button"
+              tabindex="-1"
+            >
+              <div
+                class="drag-anchor-content"
+              >
+                <div
+                  class="outline-container"
+                >
+                  <img
+                    alt="a spot gap 3, filled with letter C"
+                    aria-hidden="true"
+                    class="image"
+                    src="cc.png"
+                  />
+                </div>
+              </div>
+            </div>
+             
+            <button
+              aria-label="Return letter C to the available options"
+              class="remover"
+              tabindex="-1"
+            >
+              <div
+                class="icon-wrapper"
+              />
+               
+              <svg
+                aria-hidden="false"
+                class="icon small"
+                viewBox="0 0 12 12"
+              >
+                <title>
+                  Remove icon
+                </title>
+                <path
+                  d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
+                />
+              </svg>
+            </button>
+          </div>
+           
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`GraphicGapMatchInteraction > rendering > renders with default props 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-blockInteraction qti-graphicGapMatchInteraction"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      />
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+      />
+       
+      <div
+        class="qti-flow-container position-left horizontal"
+        style="--bay-width: undefinedpx; --bay-height: undefinedpx; --bay-scroll-height: undefinedpx;"
+      >
+        
+        <div
+          class="scroll-shadows"
+        >
+          <div
+            class="shadow left hidden"
+          />
+          <div
+            class="shadow right hidden"
+          />
+          <div
+            class="shadow top hidden"
+          />
+          <div
+            class="shadow bottom hidden"
+          />
+           
+          <div
+            class="choice-area"
+            tabindex="-1"
+          >
+            <div
+              aria-labelledby="tao-bay-label-123"
+              class="bay-content"
+              data-droparea-area=""
+              data-droparea-key="tao-gapmatch-123"
+              role="application"
+            >
+              <span
+                class="hidden"
+                id="tao-bay-label-123"
+              >
+                Available options, 0 items
+              </span>
+               
+            </div>
+          </div>
+           
+        </div>
+        
+        
+        <div
+          aria-label="Answer area"
+          class="answer-area"
+          role="application"
+        >
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="10"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 10 10"
+            width="10"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(0, 0)"
+            >
+              <image
+                class="svg-image"
+                height="10"
+                href="background.jpg"
+                preserveAspectRatio="none"
+                width="10"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+              />
+            </g>
+          </svg>
+          
+           
+           
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;

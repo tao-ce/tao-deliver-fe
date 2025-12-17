@@ -1,0 +1,301 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i65367a67cb6c7148478c54adc1d3766",
+            "serial": "i65367afe820f7",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i65367a67cb6c7148478c54adc1d3766",
+                "title": "OK ExtendedText maxchars",
+                "label": "OK ExtendedText maxchars",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "2023.10",
+                "class": ""
+            },
+            "body": {
+                "serial": "i65367afe82085",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-6\">\n        {{i65367afe829ec}}\n      </div>\n          <div class=\"col-6\">\n        {{i65367afe82e7e}}\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-6\">\n        {{i65367afe82fed}}\n      </div>\n        <div class=\"col-6\">\n        {{i65367afe8316d}}\n  </div>\n     </div>\n <div class=\"grid-row\">\n      <div class=\"col-6\">\n        {{i44367afe82e7e}}\n      </div>\n   <div class=\"col-6\">\n        {{i88367afe82e7e}}\n      </div>\n  </div>\n  ",
+                "elements": {
+                    "i65367afe829ec": {
+                        "serial": "i65367afe829ec",
+                        "qtiClass": "extendedTextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "base": 10,
+                            "patternMask": "^[\\s\\S]{0,10}$",
+                            "minStrings": 0,
+                            "format": "plain"
+                        },
+                        "choices": {},
+                        "prompt": {
+                            "serial": "i65367afe82b97",
+                            "body": "maxlength 10",
+                            "elements": {},
+                            "attributes": []
+                        }
+                    },
+                    "i65367afe82e7e": {
+                        "serial": "i65367afe82e7e",
+                        "qtiClass": "extendedTextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_1",
+                            "base": 10,
+                            "expectedLength": 200,
+                            "patternMask": "^[\\s\\S]{0,200}$",
+                            "minStrings": 0,
+                            "format": "plain"
+                        },
+                        "choices": {},
+                        "prompt": {
+                            "serial": "i65367afe82ec6",
+                            "body": "maxlength 200 &amp; recommended 200",
+                            "elements": {},
+                            "attributes": []
+                        }
+                    },
+                    "i65367afe82fed": {
+                        "serial": "i65367afe82fed",
+                        "qtiClass": "extendedTextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_2",
+                            "base": 10,
+                            "expectedLength": 10,
+                            "minStrings": 0,
+                            "format": "plain"
+                        },
+                        "choices": {},
+                        "prompt": {
+                            "serial": "i65367afe83029",
+                            "body": "recommended 10",
+                            "elements": {},
+                            "attributes": []
+                        }
+                    },
+                    "i65367afe8316d": {
+                        "serial": "i65367afe8316d",
+                        "qtiClass": "extendedTextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_3",
+                            "base": 10,
+                            "minStrings": 0,
+                            "expectedLines": 5,
+                            "format": "plain"
+                        },
+                        "choices": {},
+                        "prompt": {
+                            "serial": "i65367afe8319f",
+                            "body": "lines 5",
+                            "elements": {},
+                            "attributes": []
+                        }
+                    },
+                    "i44367afe82e7e": {
+                        "serial": "i44367afe82e7e",
+                        "qtiClass": "extendedTextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_4",
+                            "base": 10,
+                            "data-character-count": true,
+                            "minStrings": 0,
+                            "format": "plain"
+                        },
+                        "choices": {},
+                        "prompt": {
+                            "serial": "i44367afe82ec6",
+                            "body": "data-character-count",
+                            "elements": {},
+                            "attributes": []
+                        }
+                    },
+                    "i88367afe82e7e": {
+                        "serial": "i88367afe82e7e",
+                        "qtiClass": "extendedTextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_5",
+                            "base": 10,
+                            "expectedLength": 10,
+                            "patternMask": "^[\\s\\S]{0,10}$",
+                            "minStrings": 0,
+                            "format": "xhtml"
+                        },
+                        "choices": {},
+                        "prompt": {
+                            "serial": "i88367afe82ec6",
+                            "body": "RichText: maxlength 10 &amp; recommended 10",
+                            "elements": {},
+                            "attributes": []
+                        }
+                    }
+                },
+                "attributes": []
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "i65367afe8260e": {
+                    "identifier": "SCORE",
+                    "serial": "i65367afe8260e",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 0
+                    },
+                    "defaultValue": null
+                },
+                "i65367afe8279d": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i65367afe8279d",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "0"
+                }
+            },
+            "responses": {
+                "i65367afe823e8": {
+                    "identifier": "RESPONSE",
+                    "serial": "i65367afe823e8",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "i65367afe8256f": {
+                    "identifier": "RESPONSE_1",
+                    "serial": "i65367afe8256f",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_1",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "i65367afe8259f": {
+                    "identifier": "RESPONSE_2",
+                    "serial": "i65367afe8259f",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_2",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "i65367afe825c9": {
+                    "identifier": "RESPONSE_3",
+                    "serial": "i65367afe825c9",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_3",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "i44367afe825c9": {
+                    "identifier": "RESPONSE_4",
+                    "serial": "i44367afe825c9",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_4",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "i88367afe825c9": {
+                    "identifier": "RESPONSE_5",
+                    "serial": "i88367afe825c9",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_5",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "i65367afe845d5",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "processingType": "templateDriven",
+                "responseRules": []
+            },
+            "apipAccessibility": ""
+        },
+        "assets": []
+    },
+    "itemState": {},
+    "itemIdentifier": "item-1"
+}

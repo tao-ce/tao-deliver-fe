@@ -1,0 +1,1736 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TestTitle > adds only titles for known part 1`] = `
+<body>
+  <div>
+    <h1>
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      />
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > adds only titles for known part 2`] = `
+<body>
+  <div>
+    <h1>
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Delightful test
+          </span>
+           
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Item without section
+          </span>
+           
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > change order of delivery titles 1`] = `
+NodeList [
+  <span
+    class="label"
+  >
+    Some section title
+  </span>,
+  <span
+    class="label"
+  >
+    Some item title
+  </span>,
+  <span
+    class="label"
+  >
+    Some test title
+  </span>,
+]
+`;
+
+exports[`TestTitle > constant title 1`] = `
+NodeList [
+  <span
+    class="label"
+  >
+    Foo
+  </span>,
+  <span
+    class="label"
+  >
+    Bar
+  </span>,
+  <span
+    class="label"
+  >
+    Baz
+  </span>,
+]
+`;
+
+exports[`TestTitle > empty title 1`] = `NodeList []`;
+
+exports[`TestTitle > invalid type is skipped 1`] = `
+NodeList [
+  <span
+    class="label"
+  >
+    Some section title
+  </span>,
+]
+`;
+
+exports[`TestTitle > override test title 1`] = `
+NodeList [
+  <span
+    class="label"
+  >
+    Some overrided test title
+  </span>,
+]
+`;
+
+exports[`TestTitle > renders correctly with a serviceCallId and interacting status 1`] = `
+<body>
+  <div>
+    <h1>
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      />
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > renders correctly with a serviceCallId and overlay status 1`] = `
+<body>
+  <div>
+    <h1>
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      />
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > same type for multiple part is kept 1`] = `
+NodeList [
+  <span
+    class="label"
+  >
+    Some test title
+  </span>,
+  <span
+    class="label"
+  >
+    Second test title
+  </span>,
+]
+`;
+
+exports[`TestTitle > skip title pieces 1`] = `
+NodeList [
+  <span
+    class="label"
+  >
+    Some item title
+  </span>,
+]
+`;
+
+exports[`TestTitle > skip unavailable pieces 1`] = `
+NodeList [
+  <span
+    class="label"
+  >
+    Test title
+  </span>,
+  <span
+    class="label"
+  >
+    Some item title
+  </span>,
+]
+`;
+
+exports[`TestTitle > timers > does not show test-part title if no test-part timer 1`] = `
+<body>
+  <div>
+    <h1
+      class="with-timers"
+    >
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 1.6rem"
+        >
+          <span
+            class="label"
+          >
+            Delightful test
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              2h
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              2 hours
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 3.2rem"
+        >
+          <span
+            class="label"
+          >
+            Glass section
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              5min
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              5 minutes
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Buckthorn item
+          </span>
+           
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > timers > does not show timer for timed-out levels 1`] = `
+<body>
+  <div>
+    <h1
+      class="with-timers"
+    >
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 1.6rem"
+        >
+          <span
+            class="label"
+          >
+            Delightful test
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              2h
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              2 hours
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Part I
+          </span>
+           
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 3.2rem"
+        >
+          <span
+            class="label"
+          >
+            Glass section
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              5min
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              5 minutes
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Buckthorn item
+          </span>
+           
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > timers > does not show timer for timed-out levels 2`] = `
+<body>
+  <div>
+    <h1>
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Delightful test
+          </span>
+           
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Part I
+          </span>
+           
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Glass section
+          </span>
+           
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Buckthorn item
+          </span>
+           
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > timers > includes extra-time in the label 1`] = `
+<body>
+  <div>
+    <h1
+      class="with-timers"
+    >
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 1.6rem"
+        >
+          <span
+            class="label"
+          >
+            Delightful test
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              2h
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              2 hours
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 6.4rem"
+        >
+          <span
+            class="label"
+          >
+            Part I
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              1h 48min
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              1 hour 48 minutes
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 3.2rem"
+        >
+          <span
+            class="label"
+          >
+            Glass section
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              5min
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              5 minutes
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Buckthorn item
+          </span>
+           
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > timers > includes extra-time in the label 2`] = `
+<body>
+  <div>
+    <h1
+      class="with-timers"
+    >
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 1.6rem"
+        >
+          <span
+            class="label"
+          >
+            Delightful test
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              2h
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              2 hours
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 8rem"
+        >
+          <span
+            class="label"
+          >
+            Part I
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              8s (+ 32s)
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              8 seconds, extra time 32 seconds
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 3.2rem"
+        >
+          <span
+            class="label"
+          >
+            Glass section
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              5min
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              5 minutes
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Buckthorn item
+          </span>
+           
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > timers > includes extra-time in the label 3`] = `
+<body>
+  <div>
+    <h1
+      class="with-timers"
+    >
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 1.6rem"
+        >
+          <span
+            class="label"
+          >
+            Delightful test
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              2h
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              2 hours
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 5.6rem"
+        >
+          <span
+            class="label"
+          >
+            Part I
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              (+ 32s)
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              0 seconds, extra time 32 seconds
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 3.2rem"
+        >
+          <span
+            class="label"
+          >
+            Glass section
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              5min
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              5 minutes
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Buckthorn item
+          </span>
+           
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > timers > on mobile shows level with smallest timer value 1`] = `
+<body>
+  <div>
+    <h1>
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      />
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > timers > on mobile shows level with smallest timer value 2`] = `
+<body>
+  <div>
+    <h1
+      class="with-timers"
+    >
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+          style="--min-width: 4rem"
+        >
+          <span
+            class="label"
+          >
+            Glass section
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              58min
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              58 minutes
+            </span>
+          </span>
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > timers > on mobile shows level with smallest timer value 3`] = `
+<body>
+  <div>
+    <h1
+      class="with-timers"
+    >
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+          style="--min-width: 4rem"
+        >
+          <span
+            class="label"
+          >
+            Part I
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              57min
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              57 minutes
+            </span>
+          </span>
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > timers > on mobile shows level with smallest timer value 4`] = `
+<body>
+  <div>
+    <h1
+      class="with-timers"
+    >
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+          style="--min-width: 4rem"
+        >
+          <span
+            class="label"
+          >
+            Delightful test
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              56min
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              56 minutes
+            </span>
+          </span>
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > timers > renders and updates timer remaining time 1`] = `
+<body>
+  <div>
+    <h1
+      class="with-timers"
+    >
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 1.6rem"
+        >
+          <span
+            class="label"
+          >
+            Delightful test
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              2h
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              2 hours
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 6.4rem"
+        >
+          <span
+            class="label"
+          >
+            Part I
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              1h 48min
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              1 hour 48 minutes
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 3.2rem"
+        >
+          <span
+            class="label"
+          >
+            Glass section
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              5min
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              5 minutes
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Buckthorn item
+          </span>
+           
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > timers > renders and updates timer remaining time 2`] = `
+<body>
+  <div>
+    <h1
+      class="with-timers"
+    >
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 2.4rem"
+        >
+          <span
+            class="label"
+          >
+            Delightful test
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              56s
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              56 seconds
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 5.6rem"
+        >
+          <span
+            class="label"
+          >
+            Part I
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              1h 8min
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              1 hour 8 minutes
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 1.6rem"
+        >
+          <span
+            class="label"
+          >
+            Glass section
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              8s
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              8 seconds
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Buckthorn item
+          </span>
+           
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > timers > title overrides: if level is skipped in the override and this level has a timer, override is ignored 1`] = `
+<body>
+  <div>
+    <h1
+      class="with-timers"
+    >
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            strange
+          </span>
+           
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+          style="--min-width: 6.4rem"
+        >
+          <span
+            class="label"
+          >
+            Part I
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label timer-current"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              1h 48min
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              1 hour 48 minutes
+            </span>
+          </span>
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > timers > title overrides: shows timers for for levels in override order 1`] = `
+<body>
+  <div>
+    <h1
+      class="with-timers"
+    >
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 1.6rem"
+        >
+          <span
+            class="label"
+          >
+            strange
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              2h
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              2 hours
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+          style="--min-width: 3.2rem"
+        >
+          <span
+            class="label"
+          >
+            ordering
+          </span>
+           
+          <span
+            aria-live="off"
+            class="timer-label"
+            role="timer"
+          >
+            <span
+              aria-hidden="true"
+            >
+              5min
+            </span>
+             
+            <span
+              class="visually-hidden"
+            >
+              5 minutes
+            </span>
+          </span>
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Very
+          </span>
+           
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > updates based on the test map content and screen size 1`] = `
+<body>
+  <div>
+    <h1>
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      />
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > updates based on the test map content and screen size 2`] = `
+<body>
+  <div>
+    <h1>
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Awesome test
+          </span>
+           
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Awesome section
+          </span>
+           
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Delightful item
+          </span>
+           
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > updates based on the test map content and screen size 3`] = `
+<body>
+  <div>
+    <h1>
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      >
+         
+        <span
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Awesome test
+          </span>
+           
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Beautiful section
+          </span>
+           
+           
+        </span>
+        <span
+          aria-hidden="true"
+          class="separator"
+        >
+          /
+        </span>
+         
+        <span
+          aria-current="location"
+          class="content"
+          role="listitem"
+        >
+          <span
+            class="label"
+          >
+            Charming item
+          </span>
+           
+           
+        </span>
+      </span>
+    </h1>
+    
+  </div>
+</body>
+`;
+
+exports[`TestTitle > updates based on the test map content and screen size 4`] = `
+<body>
+  <div>
+    <h1>
+      <span
+        aria-label="breadcrumb"
+        class="breadcrumb"
+        role="list"
+      />
+    </h1>
+    
+  </div>
+</body>
+`;

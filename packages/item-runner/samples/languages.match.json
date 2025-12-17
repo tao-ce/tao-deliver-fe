@@ -1,0 +1,556 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "match_languages_countries",
+            "serial": "item_5f5d43cd0299e236937611",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "match_languages_countries",
+                "title": "Match countries and languages (Match Interaction)",
+                "label": "Match countries and languages (Match Interaction)",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint135",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5f5d43cd02992349930446",
+                "body": "<div class=\"grid-row\">\n <div class=\"col-12\">\n <h1>Match Interaction</h1>\n <h2>Match countries and languages</h2>\n </div>\n </div>\n <div class=\"grid-row\">\n <div class=\"col-12\">\n <p>The people working on the TAO platform come from a multitude of countries and you get to hear a number of languages in the office every day.</p>\n <p>Can you match the cities below with the language most likely to be spoken there?</p>\n </div>\n </div>\n <div class=\"grid-row\">\n <div class=\"col-12\">\n {{interaction_matchinteraction_5f5d43cd02cbb779413781}}\n </div>\n </div>\n <div class=\"grid-row\">\n <div class=\"col-4\">{{img_5f5d43cd03224242403239}}\n Lithuania, Trakai Island Castle, picture by <a href=\"https://commons.wikimedia.org/wiki/File:Trakai-Troki.jpg\" target=\"_blank\">Julo</a>, released under <a href=\"https://creativecommons.org/licenses/by-sa/3.0/deed.en\" target=\"_blank\">CC BY-SA 3.0</a>.</div>\n </div>\n </div>",
+                "elements": {
+                    "interaction_matchinteraction_5f5d43cd02cbb779413781": {
+                        "serial": "interaction_matchinteraction_5f5d43cd02cbb779413781",
+                        "qtiClass": "matchInteraction",
+                        "attributes": {
+                            "responseIdentifier": "match_languages_countries",
+                            "shuffle": false,
+                            "maxAssociations": 10,
+                            "minAssociations": 0,
+                            "class": "qti-choices-top qti-match-non-tabular"
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_5f5d43cd02d30842275384",
+                            "body": "",
+                            "elements": {},
+                            "debug": {
+                                "relatedItem": "item_5f5d43cd0299e236937611"
+                            }
+                        },
+                        "choices": [
+                            {
+                                "choice_simpleassociablechoice_5f5d43cd02db6201436146": {
+                                    "identifier": "french",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd02db6201436146",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "french",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 0,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd02df7410032582",
+                                        "body": "French",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_5f5d43cd02e51483881096": {
+                                    "identifier": "hungarian",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd02e51483881096",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "hungarian",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 0,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd02e66285312847",
+                                        "body": "Hungarian",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_5f5d43cd02eb4433379186": {
+                                    "identifier": "polish",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd02eb4433379186",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "polish",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 0,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd02ec8555203328",
+                                        "body": "Polish",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_5f5d43cd02f10433156706": {
+                                    "identifier": "dutch",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd02f10433156706",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "dutch",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 0,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd02f23602562058",
+                                        "body": "Dutch",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_5f5d43cd02f69081035515": {
+                                    "identifier": "lithuanian",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd02f69081035515",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "lithuanian",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 0,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd02f7c669480726",
+                                        "body": "Lithuanian",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_5f5543cd02db6201436146": {
+                                    "identifier": "arabic",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd02db6201436146",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "arabic",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 0,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd02df7410032582",
+                                        "body": "Alergian Saharan Arabic",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_5f5543cd02e51483881096": {
+                                    "identifier": "lux",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd02e51483881096",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "lux",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 0,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd02e66285312847",
+                                        "body": "Luxembourgish",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_5f5d43cd05eb4433379186": {
+                                    "identifier": "mon",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd02eb4433379186",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "mon",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 0,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd02ec8555203328",
+                                        "body": "Mon-Khmer",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_5f5d45cd02f10433156706": {
+                                    "identifier": "newzeland",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd02f10433156706",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "newzeland",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 0,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd02f23602562058",
+                                        "body": "New Zealand Sign Language",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_5f5d53cd02f69081035515": {
+                                    "identifier": "masrandjupiter",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd02f69081035515",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "masrandjupiter",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 0,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd02f7c669480726",
+                                        "body": "Classic language of Marsians and United Сraters of Jupiter",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                }
+                            },
+                            {
+                                "choice_simpleassociablechoice_5f5d43cd02fc9904156431": {
+                                    "identifier": "budapest",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd02fc9904156431",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "budapest",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 4,
+                                        "matchMin": 1
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd02fdb573160143",
+                                        "body": "Budapest",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_5f5d43cd03020609819612": {
+                                    "identifier": "vilnius",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd03020609819612",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "vilnius",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 3,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd03032019447729",
+                                        "body": "Vilnius",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_5f5d43cd03077549041628": {
+                                    "identifier": "paris",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd03077549041628",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "paris",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 0,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd03088116697478",
+                                        "body": "Paris",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_5f5d43cd030cb796685290": {
+                                    "identifier": "amsterdam",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd030cb796685290",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "amsterdam",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 0,
+                                        "matchMin": 1
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd030dd537820781",
+                                        "body": "Amsterdam",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_5f5d43cd0311f532357366": {
+                                    "identifier": "warsaw",
+                                    "serial": "choice_simpleassociablechoice_5f5d43cd0311f532357366",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "warsaw",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 2,
+                                        "matchMin": 1
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f5d43cd03131532199001",
+                                        "body": "Warsaw",
+                                        "elements": {},
+                                        "debug": {
+                                            "relatedItem": "item_5f5d43cd0299e236937611"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5f5d43cd0299e236937611"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "img_5f5d43cd03224242403239": {
+                        "serial": "img_5f5d43cd03224242403239",
+                        "qtiClass": "img",
+                        "attributes": {
+                            "src": "laketrakai.jpg",
+                            "alt": "Lithuania, Trakai Island Castle",
+                            "width": "100%",
+                            "type": "image/jpeg"
+                        },
+                        "debug": {
+                            "relatedItem": "item_5f5d43cd0299e236937611"
+                        }
+                    }
+                },
+                "debug": {
+                    "relatedItem": "item_5f5d43cd0299e236937611"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_5f5d43cd0299e236937611"
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_5f5d43cd02b4e750530165": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5f5d43cd02b4e750530165",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "debug": {
+                        "relatedItem": "item_5f5d43cd0299e236937611"
+                    },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_5f5d43cd02bb5257606625": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_5f5d43cd02bb5257606625",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_5f5d43cd0299e236937611"
+                    },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "responsedeclaration_5f5d43cd02a98718342343": {
+                    "identifier": "match_languages_countries",
+                    "serial": "responsedeclaration_5f5d43cd02a98718342343",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "match_languages_countries",
+                        "cardinality": "multiple",
+                        "baseType": "directedPair"
+                    },
+                    "debug": {
+                        "relatedItem": "item_5f5d43cd0299e236937611"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [
+                        "hungarian budapest",
+                        "french paris",
+                        "dutch amsterdam",
+                        "polish warsaw",
+                        "lithuanian vilnius"
+                    ],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_5f5d43cd033fe543394668",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "debug": {
+                    "relatedItem": "item_5f5d43cd0299e236937611"
+                },
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "match_languages_countries"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "match_languages_countries"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "laketrakai.jpg": "laketrakai.jpg"
+            }
+        }
+    },
+    "itemState": {},
+    "itemIdentifier": "item-9"
+}

@@ -1,0 +1,293 @@
+# SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
+#
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+
+#: ../../node_modules/@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:141
+msgid "<strong>%d</strong> characters"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:144
+msgid "<strong>%d</strong>"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/panel/menu/MenuPanelContent.svelte:11
+msgid "About"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:159
+#: ../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:102
+msgid "Answer required"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/stepProgressHelper.js:96
+msgid "Bookmarked Question %d."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/panel/Panel.svelte:141
+msgid "Close Panel"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/overview/TestOverviewBottomBar.svelte:67
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/overview/TestOverviewBottomBar.svelte:68
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/overview/TestOverviewTopBar.svelte:37
+msgid "Close overview"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/stepProgressHelper.js:102
+msgid "Completed."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/loading/Loading.svelte:86
+msgid "Content is loading"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/content/title/HiddenContentTitle.svelte:31
+msgid "Current question %d of %d"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/TestNavigator.svelte:195
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/TestNavigator.svelte:196
+msgid "Finish the test"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/TestNavigator.svelte:219
+msgid "Go to next question"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/TestNavigator.svelte:178
+msgid "Go to previous question"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/stepProgressHelper.js:87
+msgid "Informational Item."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-elements/label/Label.svelte:7
+msgid "Input"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:149
+msgid "Invalid format, please refer to the instructions"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:154
+#: ../../node_modules/@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/textEntry/TextEntryInteraction.svelte:92
+msgid "Invalid value, please refer to the instructions"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-elements/input/inputValidation.js:39
+msgid "Invalid value."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/jumpMenu/JumpMenu.svelte:94
+msgid "Jump Menu"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/jumpMenu/JumpMenu.svelte:97
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/jumpMenu/JumpMenu.svelte:98
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/jumpMenu/JumpMenu.svelte:100
+msgid "Jump to"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/content/title/HiddenContentTitle.svelte:32
+msgid "Located in question group %d of %d."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/TestLayout.svelte:109
+msgid "Main menu"
+msgstr ""
+#: ../service/runner/createError.js:52
+msgid "No connection to the service."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/stepProgressHelper.js:104
+msgid "Not completed."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/stepProgressHelper.js:92
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/stepProgressHelper.js:106
+msgid "Not seen."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/progress/OverviewButton.svelte:56
+msgid "Open overview of all %d questions"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/progress/OverviewButton.svelte:53
+msgid "Open overview. Currently question %s of %d."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/progress/OverviewButton.svelte:55
+msgid "Overview (%d)"
+msgstr ""
+#: ../service/runner/createError.js:53
+#: ../service/runner/createError.js:78
+msgid "Please contact your test administrator."
+msgstr ""
+#: ../service/runner/createError.js:37
+msgid "Please launch your test again or contact your administrator."
+msgstr ""
+#: ../service/runner/createError.js:61
+msgid "Please launch your test again or contact your test administrator."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/TestLayout.svelte:132
+msgid "Please wait a little longer while your content loads"
+msgstr ""
+#: ../service/runner/createError.js:70
+msgid "Please wait for a few minutes and try again."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/panel/menu/MenuPanelContent.svelte:8
+msgid "Privacy Policy"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/jumpMenu/JumpMenu.svelte:28
+msgid "Question %d"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/stepProgressHelper.js:98
+msgid "Question %d."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/scoringInput/ScoringInput.svelte:41
+msgid "Rejected."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/scoringInput/ScoringInput.svelte:251
+msgid "Scoring input"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/stepProgressHelper.js:90
+msgid "Seen."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/dataTable/TableHead.svelte:41
+msgid "Select All"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/dateTimePicker/DateTimePicker.svelte:22
+msgid "Select a date"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/dataTable/CheckCell.svelte:8
+msgid "Select row"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/scoringInput/ScoringInput.svelte:36
+msgid "Selected by another scorer."
+msgstr ""
+#: ../service/runner/createError.js:67
+msgid "Service busy."
+msgstr ""
+#: ../controller/error.js:24
+#: ../controller/runner.js:166
+#: ../core/userError.js:37
+#: ../service/runner/createError.js:78
+msgid "Sorry, an unexpected error happened during the test."
+msgstr ""
+#: ../service/runner/createError.js:36
+#: ../service/runner/createError.js:60
+msgid "Sorry, we cannot start your test."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/TestNavigator.svelte:207
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/TestNavigator.svelte:208
+msgid "Submit test part"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/overview/TestOverviewBottomBar.svelte:77
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/overview/TestOverviewBottomBar.svelte:78
+msgid "Submit this part"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/TestLayout.svelte:112
+msgid "TAO Logo"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/TestLayout.svelte:141
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/jumpMenu/JumpMenu.svelte:98
+msgid "Test Navigation"
+msgstr ""
+#: ../service/runner/createError.js:34
+#: ../service/runner/createError.js:58
+msgid "Test not available."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/content/title/HiddenContentTitle.svelte:47
+msgid "Test overview"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-elements/textarea/Textarea.svelte:29
+msgid "Textarea"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-elements/input/inputValidation.js:38
+msgid "The format must match the pattern."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-elements/input/inputValidation.js:36
+msgid "The maximum length is %d."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-elements/input/inputValidation.js:37
+msgid "The minimum length is %d."
+msgstr ""
+#: ../service/runner/createError.js:69
+msgid "The service is temporarily unavailable due to high traffic load."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-elements/input/inputValidation.js:35
+msgid "This is a required field."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/jumpMenu/JumpMenu.svelte:100
+msgid "Toolbox & Configuration"
+msgstr ""
+#: ../controller/error.js:23
+msgid "Unexpected error"
+msgstr ""
+#: ../service/runner/createError.js:77
+msgid "Unexpected error."
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/choice/choiceFeedbackHelper.js:51
+msgid "You can select a maximum of %d choices - currently %d"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/choice/choiceFeedbackHelper.js:50
+msgid "You can select a maximum of 1 choice"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/choice/choiceFeedbackHelper.js:59
+msgid "You must select at least %d choices - currently %d"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/choice/choiceFeedbackHelper.js:58
+msgid "You must select at least 1 choice"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/choice/choiceFeedbackHelper.js:43
+msgid "You must select exactly %d choices"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/choice/choiceFeedbackHelper.js:42
+msgid "You must select exactly 1 choice"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/overview/TestOverviewContent.svelte:138
+msgid "all questions"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/content/title/HiddenContentTitle.svelte:33
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/jumpMenu/JumpMenu.svelte:14
+msgid "answered"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/overview/TestOverviewContent.svelte:139
+msgid "bookmarked (%d)"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/breadcrumb/Breadcrumb.svelte:6
+msgid "breadcrumb"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-elements/button/Button.svelte:27
+msgid "button"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/dialog/presets/dialogButtons.js:26
+msgid "cancel"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/stepProgress/StepProgress.svelte:25
+msgid "completed"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:570
+msgid "dropdown list"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:546
+msgid "dropdown"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoices.svelte:675
+msgid "eliminate choice number %d"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoices.svelte:665
+msgid "eliminated"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-elements/iconBarButton/IconBarButton.svelte:17
+msgid "icon bar button"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/overview/TestOverviewContent.svelte:140
+msgid "incomplete (%d)"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/navigator/progress/OverviewButton.svelte:52
+msgid "informational item"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-elements/feedback/InlineFeedback.svelte:86
+msgid "invalid:"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:18
+msgid "leave blank"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/TestLayout.svelte:132
+msgid "loading"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/dialog/presets/dialogButtons.js:32
+msgid "ok"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:142
+msgid "recommended: %d"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoices.svelte:675
+msgid "restore choice number %d"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/content/title/HiddenContentTitle.svelte:33
+#: ../../node_modules/@oat-sa-private/tao-test-runner-qtinui/src/runner/plugins/navigation/jumpMenu/JumpMenu.svelte:15
+msgid "unanswered"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-elements/feedback/InlineFeedback.svelte:86
+msgid "valid:"
+msgstr ""
+#: ../../node_modules/@oat-sa-private/ui-components/stepProgress/StepProgress.svelte:24
+msgid "visited"
+msgstr ""

@@ -1,0 +1,924 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Steps component > Has to fail rendering with no serviceCallId with error 1`] = `[TypeError: A "serviceCallId" is required to get the state store of the test session]`;
+
+exports[`Steps component > Has to render 3 steps given enough container width 1`] = `
+<body>
+  <div>
+    <div
+      class="width-tracker"
+    >
+      <div
+        class="steps-container"
+      >
+        <div
+          class="more"
+        />
+         
+        <div>
+          <ol
+            class="space-medium"
+          >
+            <li>
+              <button
+                aria-current="location"
+                aria-label="Question 1. Completed."
+                class="step completed current"
+                tabindex="0"
+              >
+                <span
+                  aria-hidden="true"
+                  class="indicator"
+                >
+                  <svg
+                    aria-hidden="false"
+                    class="icon small"
+                    viewBox="0 0 12 12"
+                  >
+                    <title>
+                      Current item indicator
+                    </title>
+                    <path
+                      d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  1
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 2. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  2
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 3. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  3
+                </span>
+              </button>
+               
+            </li>
+          </ol>
+          
+        </div>
+         
+        <div
+          class="more"
+        />
+      </div>
+       
+      <span
+        class="overview-container"
+      >
+        <button
+          aria-label="Open overview of all 3 questions"
+          class="actionable secondary pill small"
+          name="overview"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Chevron up icon
+            </title>
+            <path
+              d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+            />
+          </svg>
+           
+           
+          Overview (3)
+        </button>
+      </span>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Steps component > Has to render clickable more button if space is not enough 1`] = `
+<body>
+  <div>
+    <div
+      class="width-tracker"
+    >
+      <div
+        class="steps-container"
+      >
+        <div
+          class="more"
+        >
+          <button
+            aria-hidden="true"
+            class="ellipsis-container"
+            tabindex="-1"
+          >
+            <span />
+             
+            <span />
+             
+            <span />
+          </button>
+        </div>
+         
+        <div>
+          <ol
+            class="space-medium connected connector-start connector-end"
+          >
+            <li>
+              <button
+                aria-label="Question 2. Not completed."
+                class="step visited"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  2
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-current="location"
+                aria-label="Question 3. Not seen."
+                class="step default current"
+                tabindex="0"
+              >
+                <span
+                  aria-hidden="true"
+                  class="indicator"
+                >
+                  <svg
+                    aria-hidden="false"
+                    class="icon small"
+                    viewBox="0 0 12 12"
+                  >
+                    <title>
+                      Current item indicator
+                    </title>
+                    <path
+                      d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  3
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Bookmarked Question 4. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <svg
+                  aria-hidden="true"
+                  class="icon small"
+                  viewBox="0 0 12 12"
+                >
+                  <title>
+                    Bookmark active icon
+                  </title>
+                  <path
+                    d="M9 0H3a1 1 0 00-1 1v10a1 1 0 00.67.94A1 1 0 003 12a1 1 0 00.78-.38L6 8l2.22 3.62A1 1 0 009 12a1 1 0 00.33-.06A1 1 0 0010 11V1a1 1 0 00-1-1"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+            </li>
+          </ol>
+          
+        </div>
+         
+        <div
+          class="more"
+        >
+          <button
+            aria-hidden="true"
+            class="ellipsis-container"
+            tabindex="-1"
+          >
+            <span />
+             
+            <span />
+             
+            <span />
+          </button>
+        </div>
+      </div>
+       
+      <span
+        class="overview-container"
+      >
+        <button
+          aria-label="Open overview of all 20 questions"
+          class="actionable secondary pill small"
+          name="overview"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Chevron up icon
+            </title>
+            <path
+              d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+            />
+          </svg>
+           
+           
+          Overview (20)
+        </button>
+      </span>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Steps component > Has to render no steps given too small container width 1`] = `
+<body>
+  <div>
+    <div
+      class="width-tracker"
+    >
+      <div
+        class="steps-container"
+      >
+        <div
+          class="more"
+        >
+          <button
+            aria-hidden="true"
+            class="ellipsis-container"
+            tabindex="-1"
+          >
+            <span />
+             
+            <span />
+             
+            <span />
+          </button>
+        </div>
+         
+         
+        <div
+          class="more"
+        >
+          <button
+            aria-hidden="true"
+            class="ellipsis-container"
+            tabindex="-1"
+          >
+            <span />
+             
+            <span />
+             
+            <span />
+          </button>
+        </div>
+      </div>
+       
+      <span
+        class="overview-container"
+      >
+        <button
+          aria-label="Open overview of all 3 questions"
+          class="actionable secondary pill small"
+          name="overview"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Chevron up icon
+            </title>
+            <path
+              d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+            />
+          </svg>
+           
+           
+          Overview (3)
+        </button>
+      </span>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Steps component > Has to render one ordered list for each section with no more buttons if space is enough 1`] = `
+<body>
+  <div>
+    <div
+      class="width-tracker"
+    >
+      <div
+        class="steps-container"
+      >
+        <div
+          class="more"
+        />
+         
+        <div>
+          <ol
+            class="space-medium connected"
+          >
+            <li>
+              <button
+                aria-label="Question 1. Completed."
+                class="step completed"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  1
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 2. Not completed."
+                class="step visited"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  2
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-current="location"
+                aria-label="Question 3. Not seen."
+                class="step default current"
+                tabindex="0"
+              >
+                <span
+                  aria-hidden="true"
+                  class="indicator"
+                >
+                  <svg
+                    aria-hidden="false"
+                    class="icon small"
+                    viewBox="0 0 12 12"
+                  >
+                    <title>
+                      Current item indicator
+                    </title>
+                    <path
+                      d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  3
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Bookmarked Question 4. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <svg
+                  aria-hidden="true"
+                  class="icon small"
+                  viewBox="0 0 12 12"
+                >
+                  <title>
+                    Bookmark active icon
+                  </title>
+                  <path
+                    d="M9 0H3a1 1 0 00-1 1v10a1 1 0 00.67.94A1 1 0 003 12a1 1 0 00.78-.38L6 8l2.22 3.62A1 1 0 009 12a1 1 0 00.33-.06A1 1 0 0010 11V1a1 1 0 00-1-1"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 5. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  5
+                </span>
+              </button>
+               
+            </li>
+          </ol>
+          <ol
+            class="space-medium connected"
+          >
+            <li>
+              <button
+                aria-label="Question 6. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  6
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 7. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  7
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 8. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  8
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 9. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  9
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 10. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  10
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 11. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  11
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 12. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  12
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 13. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  13
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 14. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  14
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 15. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  15
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 16. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  16
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 17. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  17
+                </span>
+              </button>
+               
+            </li>
+          </ol>
+          <ol
+            class="space-medium connected"
+          >
+            <li>
+              <button
+                aria-label="Question 18. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  18
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="Question 19. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  19
+                </span>
+              </button>
+               
+            </li>
+          </ol>
+          <ol
+            class="space-medium connected"
+          >
+            <li>
+              <button
+                aria-label="Question 20. Not seen."
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  20
+                </span>
+              </button>
+               
+            </li>
+          </ol>
+          
+        </div>
+         
+        <div
+          class="more"
+        />
+      </div>
+       
+      <span
+        class="overview-container"
+      >
+        <button
+          aria-label="Open overview of all 20 questions"
+          class="actionable secondary pill small"
+          name="overview"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Chevron up icon
+            </title>
+            <path
+              d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+            />
+          </svg>
+           
+           
+          Overview (20)
+        </button>
+      </span>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Steps component > uses provider stepCreator to create steps 1`] = `
+<body>
+  <div>
+    <div
+      class="width-tracker"
+    >
+      <div
+        class="steps-container"
+      >
+        <div
+          class="more"
+        />
+         
+        <div>
+          <ol
+            class="space-medium"
+          >
+            <li>
+              <button
+                aria-current="location"
+                aria-label="aria-label-1"
+                class="step default current"
+                tabindex="0"
+              >
+                <span
+                  aria-hidden="true"
+                  class="indicator"
+                >
+                  <svg
+                    aria-hidden="false"
+                    class="icon small"
+                    viewBox="0 0 12 12"
+                  >
+                    <title>
+                      Current item indicator
+                    </title>
+                    <path
+                      d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </span>
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  3
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="aria-label-2"
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  6
+                </span>
+              </button>
+               
+            </li>
+            <li>
+              <button
+                aria-label="aria-label-3"
+                class="step default"
+                tabindex="-1"
+              >
+                 
+                 
+                <span
+                  aria-hidden="true"
+                  class="step-label"
+                >
+                  9
+                </span>
+              </button>
+               
+            </li>
+          </ol>
+          
+        </div>
+         
+        <div
+          class="more"
+        />
+      </div>
+       
+      <span
+        class="overview-container"
+      >
+        <button
+          aria-label="Open overview of all 3 questions"
+          class="actionable secondary pill small"
+          name="overview"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Chevron up icon
+            </title>
+            <path
+              d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+            />
+          </svg>
+           
+           
+          Overview (3)
+        </button>
+      </span>
+    </div>
+  </div>
+</body>
+`;

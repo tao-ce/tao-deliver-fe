@@ -1,0 +1,87 @@
+{
+    "baseUrl": "./assets/media/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i60950f9f80d58303a7634d928b632bd6",
+            "serial": "item_6095102ba9fce664538891",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i60950f9f80d58303a7634d928b632bd6",
+                "title": "Static media",
+                "label": "Static media",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint152",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_6095102ba9fc3071777747",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\"><p>Static (responseless) audio element:</p><p> </p><p> </p>{{qtiobject_6095102baa3e0805088691}}\n\n \n\n<p>Static (responseless) video element:</p>\n\n<p> </p>\n\n    {{qtiobject_6095102baa435739086090}}\n</div>\n    </div>\n  ",
+                "elements": {
+                    "qtiobject_6095102baa3e0805088691": {
+                        "serial": "qtiobject_6095102baa3e0805088691",
+                        "qtiClass": "object",
+                        "attributes": {
+                            "data": "shortaudio.mp3",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "qtiobject_6095102baa435739086090": {
+                        "serial": "qtiobject_6095102baa435739086090",
+                        "qtiClass": "object",
+                        "attributes": {
+                            "data": "shortvideo.mp4",
+                            "type": "video/mp4",
+                            "width": "100%"
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_6095102baa23b596174437": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_6095102baa23b596174437",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "0"
+                }
+            },
+            "responses": {},
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_6095102baa5ab335058229",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "processingType": "templateDriven",
+                "responseRules": []
+            },
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "audio": {
+                "shortaudio.mp3": "shortaudio.mp3"
+            },
+            "video": {
+                "shortvideo.mp4": "shortvideo.mp4"
+            }
+        }
+    },
+    "itemState": null,
+    "itemIdentifier": "item-4"
+}

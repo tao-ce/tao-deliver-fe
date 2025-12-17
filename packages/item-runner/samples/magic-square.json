@@ -1,0 +1,545 @@
+{
+  "baseUrl": "/assets/magicSquare/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "i5f55ddbd69c2a743a0cf098c11adee27",
+      "serial": "i5f55dfe2b78a7",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "i5f55ddbd69c2a743a0cf098c11adee27",
+        "title": "magic square",
+        "label": "magic square",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint136",
+        "class": ""
+      },
+      "body": {
+        "serial": "i5f55dfe2b78a2",
+        "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i5f55dfe2b8703}}\n        <p>\u00a0<\/p>\n      <\/div>\n    <\/div>\n    <div class=\"grid-row\">\n      <div class=\"col-6\">\n        {{i5f55dfe2b7d19}}\n        <p>\u00a0<\/p>\n      <\/div>\n      <div class=\"col-6\">\n        {{i5f55dfe2b817c}}\n        <p>..<\/p>\n      <\/div>\n    <\/div>\n  ",
+        "elements": {
+          "i5f55dfe2b7d19": {
+            "serial": "i5f55dfe2b7d19",
+            "qtiClass": "table",
+            "attributes": {},
+            "body": {
+              "serial": "i5f55dfe2b7d37",
+              "body": "\n          <caption class=\"\"><strong>Level 1</strong><br>(+ images)<\/caption>\n          <tbody>\n            <tr>\n              <td class=\"\">2<\/td>\n              <td class=\"\">16<\/td>\n              <td class=\"\">13<\/td>\n              <td class=\"\">\u00a0{{i5f55dfe2b7f21}}<\/td>\n            <\/tr>\n            <tr>\n              <td class=\"\">11<\/td>\n              <td class=\"\">{{img_65018d7009bc9676081635}}<\/td>\n              <td class=\"\">8<\/td>\n              <td class=\"\">10<\/td>\n            <\/tr>\n            <tr>\n              <td class=\"\">{{img_65018d7009bc9676081637}}<\/td>\n              <td class=\"\">\u00a0{{i5f55dfe2b7fe2}}\u00a0<\/td>\n              <td class=\"\">12<\/td>\n              <td class=\"\">6<\/td>\n            <\/tr>\n            <tr>\n              <td class=\"\">14<\/td>\n              <td class=\"\">{{img_65018d7009bc9676081634}}<\/td>\n              <td class=\"\">1<\/td>\n              <td class=\"\">\u00a0{{i5f55dfe2b800e}}\u00a0<\/td>\n            <\/tr>\n          <\/tbody>\n        ",
+              "elements": {
+                "i5f55dfe2b7f21": {
+                  "serial": "i5f55dfe2b7f21",
+                  "qtiClass": "textEntryInteraction",
+                  "attributes": {
+                    "responseIdentifier": "RESPONSE_2",
+                    "base": 10,
+                    "expectedLength": 2,
+                    "patternMask": "^[\\s\\S]{0,3}$",
+                    "placeholderText": ""
+                  },
+                  "choices": {}
+                },
+                "i5f55dfe2b7fe2": {
+                  "serial": "i5f55dfe2b7fe2",
+                  "qtiClass": "textEntryInteraction",
+                  "attributes": {
+                    "responseIdentifier": "RESPONSE_1",
+                    "base": 10,
+                    "expectedLength": 2,
+                    "patternMask": "^[\\s\\S]{0,3}$",
+                    "placeholderText": ""
+                  },
+                  "choices": {}
+                },
+                "i5f55dfe2b800e": {
+                  "serial": "i5f55dfe2b800e",
+                  "qtiClass": "textEntryInteraction",
+                  "attributes": {
+                    "responseIdentifier": "RESPONSE",
+                    "base": 10,
+                    "expectedLength": 2,
+                    "patternMask": "^[\\s\\S]{0,3}$",
+                    "placeholderText": ""
+                  },
+                  "choices": {}
+                },
+                "img_65018d7009bc9676081634": {
+                  "serial": "img_65018d7009bc9676081634",
+                  "qtiClass": "img",
+                  "attributes": {
+                    "classes": "wrap-right",
+                    "src": "4.png",
+                    "alt": "4",
+                    "width": "50px",
+                    "type": "image/png;UTF-8"
+                  }
+                },
+                "img_65018d7009bc9676081635": {
+                  "serial": "img_65018d7009bc9676081635",
+                  "qtiClass": "img",
+                  "attributes": {
+                    "classes": "wrap-left",
+                    "src": "5.png",
+                    "alt": "5",
+                    "width": "35%",
+                    "type": "image/png;UTF-8"
+                  }
+                },
+                "img_65018d7009bc9676081637": {
+                  "serial": "img_65018d7009bc9676081637",
+                  "qtiClass": "img",
+                  "attributes": {
+                    "classes": "tao-centered",
+                    "src": "7.png",
+                    "alt": "7",
+                    "width": "60%",
+                    "type": "image/png;UTF-8"
+                  }
+                }
+              }
+            }
+          },
+          "i5f55dfe2b817c": {
+            "serial": "i5f55dfe2b817c",
+            "qtiClass": "table",
+            "attributes": {},
+            "body": {
+              "serial": "i5f55dfe2b8182",
+              "body": "\n          <caption><strong>Level 2</strong><br>(+ figures)<\/caption>\n          <tbody>\n            <tr>\n              <td>16<\/td>\n              <td>14<\/td>\n              <td>{{figure_6e787172a58cf3633947327}}<\/td>\n              <td>30<\/td>\n              <td>23<\/td>\n            <\/tr>\n            <tr>\n              <td>24<\/td>\n              <td>17<\/td>\n              <td>10<\/td>\n              <td>8<\/td>\n              <td>31<\/td>\n            <\/tr>\n            <tr>\n              <td>32<\/td>\n              <td>25<\/td>\n              <td>18<\/td>\n              <td>11<\/td>\n              <td>{{figure_6e787172a58cf3633947324}}<\/td>\n            <\/tr>\n            <tr>\n              <td>{{figure_6e787172a58cf3633947325}}<\/td>\n              <td>28<\/td>\n              <td>26<\/td>\n              <td>19<\/td>\n              <td>12<\/td>\n            <\/tr>\n            <tr>\n              <td>13<\/td>\n              <td>6<\/td>\n              <td>\u00a0\u00a0{{inline_choice_5f55dfe2b8375}}\u00a0<\/td>\n              <td>22<\/td>\n              <td>20<\/td>\n            <\/tr>\n          <\/tbody>\n        ",
+              "elements": {
+                "inline_choice_5f55dfe2b8375": {
+                  "serial": "inline_choice_5f55dfe2b8375",
+                  "qtiClass": "inlineChoiceInteraction",
+                  "attributes": {
+                    "responseIdentifier": "RESPONSE_3",
+                    "shuffle": false,
+                    "required": false
+                  },
+                  "choices": {
+                    "i5f55dfe2b83e8": {
+                      "identifier": "choice_1",
+                      "serial": "i5f55dfe2b83e8",
+                      "qtiClass": "inlineChoice",
+                      "attributes": {
+                        "identifier": "choice_1",
+                        "fixed": false,
+                        "showHide": "show"
+                      },
+                      "text": "27"
+                    },
+                    "i5f55dfe2b8437": {
+                      "identifier": "choice_2",
+                      "serial": "i5f55dfe2b8437",
+                      "qtiClass": "inlineChoice",
+                      "attributes": {
+                        "identifier": "choice_2",
+                        "fixed": false,
+                        "showHide": "show"
+                      },
+                      "text": "29"
+                    },
+                    "i5f55dfe2b844f": {
+                      "identifier": "choice_3",
+                      "serial": "i5f55dfe2b844f",
+                      "qtiClass": "inlineChoice",
+                      "attributes": {
+                        "identifier": "choice_3",
+                        "fixed": false,
+                        "showHide": "show"
+                      },
+                      "text": "37"
+                    }
+                  }
+                },
+                "figure_6e787172a58cf3633947324": {
+                  "serial": "figure_6e787172a58cf3633947324",
+                  "qtiClass": "figure",
+                  "attributes": {
+                    "classes": "wrap-right"
+                  },
+                  "body": {
+                    "serial": "container_5e984c2192c05035338996",
+                    "body": "\n{{img_65018d7009bc9676081634}}\n<figcaption>Four @ 40%</figcaption>\n",
+                    "elements": {
+                      "img_65018d7009bc9676081634": {
+                        "serial": "img_65018d7009bc9676081634",
+                        "qtiClass": "img",
+                        "attributes": {
+                          "src": "4.png",
+                          "alt": "4",
+                          "width": "40%",
+                          "type": "image/png;UTF-8"
+                        }
+                      }
+                    }
+                  }
+                },
+                "figure_6e787172a58cf3633947325": {
+                  "serial": "figure_6e787172a58cf3633947325",
+                  "qtiClass": "figure",
+                  "attributes": {
+                    "classes": "wrap-left"
+                  },
+                  "body": {
+                    "serial": "container_5e984c2192c05035338995",
+                    "body": "\n{{img_65018d7009bc9676081635}}\n<figcaption>Five @ 25%</figcaption>\n",
+                    "elements": {
+                      "img_65018d7009bc9676081635": {
+                        "serial": "img_65018d7009bc9676081635",
+                        "qtiClass": "img",
+                        "attributes": {
+                          "src": "5.png",
+                          "alt": "5",
+                          "width": "25%",
+                          "type": "image/png;UTF-8"
+                        }
+                      }
+                    }
+                  }
+                },
+                "figure_6e787172a58cf3633947327": {
+                  "serial": "figure_6e787172a58cf3633947327",
+                  "qtiClass": "figure",
+                  "attributes": {
+                    "classes": "tao-centered"
+                  },
+                  "body": {
+                    "serial": "container_5e984c2192c05035338996",
+                    "body": "\n{{img_65018d7009bc9676081638}}\n<figcaption>Seven @ 60px</figcaption>\n",
+                    "elements": {
+                      "img_65018d7009bc9676081638": {
+                        "serial": "img_65018d7009bc9676081638",
+                        "qtiClass": "img",
+                        "attributes": {
+                          "src": "7.png",
+                          "alt": "7",
+                          "width": "60px",
+                          "type": "image/png;UTF-8"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i5f55dfe2b8703": {
+            "serial": "i5f55dfe2b8703",
+            "qtiClass": "table",
+            "attributes": {},
+            "body": {
+              "serial": "i5f55dfe2b8709",
+              "body": "\n          <caption>Sample<\/caption>\n          <thead>\n            <tr>\n              <th scope=\"row\">\u00a0<\/th>\n              <th scope=\"col\">15<\/th>\n              <th scope=\"col\">15<\/th>\n              <th scope=\"col\">15<\/th>\n            <\/tr>\n          <\/thead>\n          <tbody>\n            <tr>\n              <th scope=\"row\">15<\/th>\n              <td>4<\/td>\n              <td>9<\/td>\n              <td>2<\/td>\n            <\/tr>\n            <tr>\n              <th scope=\"row\">15<\/th>\n              <td>3<\/td>\n              <td>5<\/td>\n              <td>7<\/td>\n            <\/tr>\n            <tr>\n              <th scope=\"row\">15<\/th>\n              <td>8<\/td>\n              <td>1<\/td>\n              <td>6<\/td>\n            <\/tr>\n          <\/tbody>\n        ",
+              "elements": {}
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+        "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+        "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+      },
+      "stylesheets": {
+        "stylesheet_60e5938c95dad539106147": {
+            "serial": "stylesheet_60e5938c95dad539106147",
+            "qtiClass": "stylesheet",
+            "attributes": {
+                "href": "styles.css",
+                "type": "text/css",
+                "media": "all",
+                "title": ""
+            }
+        }
+    },
+      "outcomes": {
+        "i5f55dfe2b7b8c": {
+          "identifier": "SCORE",
+          "serial": "i5f55dfe2b7b8c",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float",
+            "normalMaximum": 4
+          },
+          "defaultValue": null
+        },
+        "i5f55dfe2b7c12": {
+          "identifier": "MAXSCORE",
+          "serial": "i5f55dfe2b7c12",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "MAXSCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "4"
+        }
+      },
+      "responses": {
+        "i5f55dfe2b7a62": {
+          "identifier": "RESPONSE",
+          "serial": "i5f55dfe2b7a62",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "single",
+            "baseType": "integer"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["15"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        },
+        "i5f55dfe2b7af2": {
+          "identifier": "RESPONSE_1",
+          "serial": "i5f55dfe2b7af2",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_1",
+            "cardinality": "single",
+            "baseType": "integer"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["9"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        },
+        "i5f55dfe2b7b24": {
+          "identifier": "RESPONSE_2",
+          "serial": "i5f55dfe2b7b24",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_2",
+            "cardinality": "single",
+            "baseType": "integer"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["3"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        },
+        "i5f55dfe2b7b50": {
+          "identifier": "RESPONSE_3",
+          "serial": "i5f55dfe2b7b50",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_3",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["choice_2"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        }
+      },
+      "feedbacks": {},
+      "responseProcessing": {
+        "serial": "i5f55dfe2b8a82",
+        "qtiClass": "responseProcessing",
+        "attributes": {},
+        "processingType": "templateDriven",
+        "responseRules": [{
+          "qtiClass": "responseCondition",
+          "responseIf": {
+            "qtiClass": "responseIf",
+            "expression": {
+              "qtiClass": "match",
+              "expressions": [{
+                "qtiClass": "variable",
+                "attributes": {
+                  "identifier": "RESPONSE_2"
+                }
+              }, {
+                "qtiClass": "correct",
+                "attributes": {
+                  "identifier": "RESPONSE_2"
+                }
+              }]
+            },
+            "responseRules": [{
+              "qtiClass": "setOutcomeValue",
+              "attributes": {
+                "identifier": "SCORE"
+              },
+              "expression": {
+                "qtiClass": "sum",
+                "expressions": [{
+                  "qtiClass": "variable",
+                  "attributes": {
+                    "identifier": "SCORE"
+                  }
+                }, {
+                  "qtiClass": "baseValue",
+                  "attributes": {
+                    "baseType": "integer"
+                  },
+                  "value": "1"
+                }]
+              }
+            }]
+          }
+        }, {
+          "qtiClass": "responseCondition",
+          "responseIf": {
+            "qtiClass": "responseIf",
+            "expression": {
+              "qtiClass": "match",
+              "expressions": [{
+                "qtiClass": "variable",
+                "attributes": {
+                  "identifier": "RESPONSE_1"
+                }
+              }, {
+                "qtiClass": "correct",
+                "attributes": {
+                  "identifier": "RESPONSE_1"
+                }
+              }]
+            },
+            "responseRules": [{
+              "qtiClass": "setOutcomeValue",
+              "attributes": {
+                "identifier": "SCORE"
+              },
+              "expression": {
+                "qtiClass": "sum",
+                "expressions": [{
+                  "qtiClass": "variable",
+                  "attributes": {
+                    "identifier": "SCORE"
+                  }
+                }, {
+                  "qtiClass": "baseValue",
+                  "attributes": {
+                    "baseType": "integer"
+                  },
+                  "value": "1"
+                }]
+              }
+            }]
+          }
+        }, {
+          "qtiClass": "responseCondition",
+          "responseIf": {
+            "qtiClass": "responseIf",
+            "expression": {
+              "qtiClass": "match",
+              "expressions": [{
+                "qtiClass": "variable",
+                "attributes": {
+                  "identifier": "RESPONSE"
+                }
+              }, {
+                "qtiClass": "correct",
+                "attributes": {
+                  "identifier": "RESPONSE"
+                }
+              }]
+            },
+            "responseRules": [{
+              "qtiClass": "setOutcomeValue",
+              "attributes": {
+                "identifier": "SCORE"
+              },
+              "expression": {
+                "qtiClass": "sum",
+                "expressions": [{
+                  "qtiClass": "variable",
+                  "attributes": {
+                    "identifier": "SCORE"
+                  }
+                }, {
+                  "qtiClass": "baseValue",
+                  "attributes": {
+                    "baseType": "integer"
+                  },
+                  "value": "1"
+                }]
+              }
+            }]
+          }
+        }, {
+          "qtiClass": "responseCondition",
+          "responseIf": {
+            "qtiClass": "responseIf",
+            "expression": {
+              "qtiClass": "match",
+              "expressions": [{
+                "qtiClass": "variable",
+                "attributes": {
+                  "identifier": "RESPONSE_3"
+                }
+              }, {
+                "qtiClass": "correct",
+                "attributes": {
+                  "identifier": "RESPONSE_3"
+                }
+              }]
+            },
+            "responseRules": [{
+              "qtiClass": "setOutcomeValue",
+              "attributes": {
+                "identifier": "SCORE"
+              },
+              "expression": {
+                "qtiClass": "sum",
+                "expressions": [{
+                  "qtiClass": "variable",
+                  "attributes": {
+                    "identifier": "SCORE"
+                  }
+                }, {
+                  "qtiClass": "baseValue",
+                  "attributes": {
+                    "baseType": "integer"
+                  },
+                  "value": "1"
+                }]
+              }
+            }]
+          }
+        }]
+      },
+      "apipAccessibility": ""
+    },
+    "assets": {
+      "img": {
+        "4.png": "4.png",
+        "5.png": "5.png",
+        "7.png": "7.png"
+      },
+      "css": {
+        "styles.css": "styles.css"
+      }
+    }
+  },
+  "itemIdentifier": "magicSquare"
+}

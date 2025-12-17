@@ -1,0 +1,599 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`inlineComments plugin > edit mode: create/edit/delete comment 1`] = `
+<body>
+  <div>
+    
+    
+    <div
+      class="qti-item-container"
+    >
+      
+        
+      <div
+        class="qti-item"
+      >
+        
+            
+        <div
+          class="qti-extendedTextInteraction"
+          data-response-id="respA"
+        >
+          
+                
+          <div
+            class="text-container tao-comment-mode"
+          >
+            <p>
+              Lorem ipsum dolor amet
+            </p>
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+      <div
+        class="comment-highlight-button-flyout"
+      >
+        <div
+          class="flyout"
+        >
+          <button
+            class="actionable secondary pill small"
+            type="button"
+          >
+            <svg
+              aria-hidden="false"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Comment icon
+              </title>
+              <path
+                d="M14 0H2a2 2 0 00-2 2v8a2 2 0 002 2h2v4l4-4h6a2 2 0 002-2V2a2 2 0 00-2-2zm1 10a1 1 0 01-1 1H7.59L5 13.59V11H2a1 1 0 01-1-1V2a1 1 0 011-1h12a1 1 0 011 1z"
+              />
+            </svg>
+             
+             
+            Write feedback
+          </button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`inlineComments plugin > edit mode: create/edit/delete comment 2`] = `
+<body>
+  <div>
+    
+    
+    <div
+      class="qti-item-container"
+    >
+      
+        
+      <div
+        class="qti-item"
+      >
+        
+            
+        <div
+          class="qti-extendedTextInteraction"
+          data-response-id="respA"
+        >
+          
+                
+          <div
+            class="text-container tao-comment-mode"
+          >
+            <p>
+              <span
+                aria-describedby="tao-description-for-cmt-A"
+                class="tao-comment-txt"
+                data-after-was-split="true"
+                data-before-was-split="true"
+                data-color="cmt-A"
+                data-hl-group="1"
+                tabindex="0"
+              >
+                Lorem
+              </span>
+               ipsum dolor amet
+            </p>
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+      <div
+        class="comment-highlight-button-flyout"
+      >
+        
+      </div>
+      <div
+        class="comment-highlight-editor-flyout"
+      >
+        <div
+          aria-labelledby="tao-draggable-modal-title-123"
+          class="draggable-modal"
+          id="tao-draggable-modal-123"
+          style="
+            min-width: 640px;
+            min-height: 277px;
+            width: 422px;
+            height: unset;
+            left: 16px;
+            top: 16px; --action-container-size: 5.5rem;"
+        >
+          <div
+            class="zoom-tracker visually-hidden"
+          />
+           
+          <div
+            class="contents"
+          >
+            <header
+              class="header inverted"
+            >
+              <div
+                class="action-container-start"
+              >
+                <button
+                  aria-label="Close Panel"
+                  class="icon-bar-btn actionable base-16 draggable-modal-action"
+                  id="tao-draggable-modal-close-button-123"
+                  title="Close Panel"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="icon medium"
+                    viewBox="0 0 16 16"
+                  >
+                    <title>
+                      Minus icon
+                    </title>
+                    <path
+                      d="M0 7h16v2H0z"
+                    />
+                  </svg>
+                   
+                   
+                </button>
+              </div>
+               
+              <div
+                class="title-container"
+                id="tao-draggable-modal-title-123"
+              >
+                Edit feedback
+              </div>
+               
+              <div
+                class="action-container-end"
+              >
+                 
+              </div>
+            </header>
+             
+            <div
+              class="content"
+            >
+              <form
+                class="comment-editor"
+              >
+                 
+                <label
+                  class="fullwidth"
+                >
+                  <div
+                    class="label-text visually-hidden"
+                  >
+                    Textarea
+                     
+                  </div>
+                   
+                  <div
+                    class="positioning-wrapper"
+                  >
+                    <textarea
+                      class="resize-none"
+                      cols="25"
+                      maxlength="10000"
+                      rows="3"
+                    />
+                  </div>
+                </label>
+                 
+                <div
+                  class="comment-editor-actions"
+                >
+                  <button
+                    class="actionable secondary pill small"
+                    name="cancel-comment"
+                    type="button"
+                  >
+                     
+                     
+                    Cancel
+                  </button>
+                   
+                  <button
+                    aria-disabled="true"
+                    class="actionable primary pill small"
+                    disabled=""
+                    name="save-comment"
+                    type="submit"
+                  >
+                     
+                     
+                    Save
+                  </button>
+                   
+                </div>
+              </form>
+            </div>
+             
+            <div
+              class="resize-hitbox hitbox-top-left"
+              data-direction="nw"
+            />
+             
+            <div
+              class="resize-hitbox hitbox-top"
+              data-direction="n"
+            />
+             
+            <div
+              class="resize-hitbox hitbox-top-right"
+              data-direction="ne"
+            />
+             
+            <div
+              class="resize-hitbox hitbox-right"
+              data-direction="e"
+            />
+             
+            <div
+              class="resize-hitbox hitbox-bottom-right"
+              data-direction="se"
+            />
+             
+            <div
+              class="resize-hitbox hitbox-bottom"
+              data-direction="s"
+            />
+             
+            <div
+              class="resize-hitbox hitbox-bottom-left"
+              data-direction="sw"
+            />
+             
+            <div
+              class="resize-hitbox hitbox-left"
+              data-direction="w"
+            />
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`inlineComments plugin > edit mode: create/edit/delete comment 3`] = `
+{
+  "responses": {
+    "respA": {
+      "comments": {
+        "cmt-A": "here it is",
+      },
+      "highlights": [
+        {
+          "c": "cmt-A",
+          "groupId": "1",
+          "offsetBefore": 0,
+          "path2": [
+            0,
+            -1,
+          ],
+          "textLength": 5,
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`inlineComments plugin > edit mode: create/edit/delete comment 4`] = `
+{
+  "responses": {
+    "respA": {
+      "comments": {
+        "cmt-A": "there it was",
+      },
+      "highlights": [
+        {
+          "c": "cmt-A",
+          "groupId": "1",
+          "offsetBefore": 0,
+          "path2": [
+            0,
+            -1,
+          ],
+          "textLength": 5,
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`inlineComments plugin > edit mode: delete/update cancellation 1`] = `
+{
+  "responses": {
+    "respA": {
+      "comments": {
+        "5678": "spring autumn",
+      },
+      "highlights": [
+        {
+          "c": "5678",
+          "groupId": "2",
+          "offsetBefore": 6,
+          "path2": [
+            0,
+            -1,
+          ],
+          "textLength": 5,
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`inlineComments plugin > edit mode: delete/update cancellation 2`] = `
+{
+  "responses": {
+    "respA": {
+      "comments": {
+        "1234": "summer winter",
+        "5678": "here it is",
+      },
+      "highlights": [
+        {
+          "afterWasSplit": "true",
+          "beforeWasSplit": "true",
+          "c": "1234",
+          "groupId": "1",
+          "offsetBefore": 0,
+          "path2": [
+            0,
+            -1,
+          ],
+          "textLength": 5,
+        },
+        {
+          "afterWasSplit": "true",
+          "beforeWasSplit": "true",
+          "c": "5678",
+          "groupId": "2",
+          "offsetBefore": 6,
+          "path2": [
+            0,
+            -1,
+          ],
+          "textLength": 5,
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`inlineComments plugin > edit mode: shows comments, can click on comment to read it 1`] = `
+<body>
+  <div>
+    
+    
+    <div
+      class="qti-item-container"
+    >
+      
+        
+      <div
+        class="qti-item"
+      >
+        
+            
+        <div
+          class="qti-extendedTextInteraction"
+          data-response-id="respA"
+        >
+          
+                
+          <div
+            class="text-container tao-comment-mode"
+          >
+            <p>
+              <span
+                aria-describedby="tao-description-for-1234"
+                class="tao-comment-txt"
+                data-after-was-split="true"
+                data-before-was-split="true"
+                data-color="1234"
+                data-hl-group="1"
+                tabindex="0"
+              >
+                Lorem
+              </span>
+               
+              <span
+                aria-describedby="tao-description-for-5678"
+                class="tao-comment-txt"
+                data-after-was-split="true"
+                data-before-was-split="true"
+                data-color="5678"
+                data-hl-group="2"
+                tabindex="0"
+              >
+                ipsum
+              </span>
+               dolor amet
+            </p>
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+  </div>
+</body>
+`;
+
+exports[`inlineComments plugin > renders and destroys without error 1`] = `
+<body>
+  <div>
+    
+    
+    <div
+      class="qti-item-container"
+    >
+      
+        
+      <div
+        class="qti-item"
+      >
+        
+            
+        <div
+          class="qti-extendedTextInteraction"
+          data-response-id="respA"
+        >
+          
+                
+          <div
+            class="text-container"
+          >
+            <p>
+              Lorem ipsum dolor amet
+            </p>
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+    </div>
+  </div>
+</body>
+`;
+
+exports[`inlineComments plugin > view mode: shows comments, can click on comment to read it 1`] = `
+<body>
+  <div>
+    
+    
+    <div
+      class="qti-item-container"
+    >
+      
+        
+      <div
+        class="qti-item"
+      >
+        
+            
+        <div
+          class="qti-extendedTextInteraction"
+          data-response-id="respA"
+        >
+          
+                
+          <div
+            class="text-container"
+          >
+            <p>
+              <span
+                aria-describedby="tao-description-for-1234"
+                class="tao-comment-txt"
+                data-after-was-split="true"
+                data-before-was-split="true"
+                data-color="1234"
+                data-hl-group="1"
+                tabindex="0"
+              >
+                Lorem
+              </span>
+               
+              <span
+                aria-describedby="tao-description-for-5678"
+                class="tao-comment-txt"
+                data-after-was-split="true"
+                data-before-was-split="true"
+                data-color="5678"
+                data-hl-group="2"
+                tabindex="0"
+              >
+                ipsum
+              </span>
+               dolor amet
+            </p>
+          </div>
+          
+            
+        </div>
+        
+        
+      </div>
+      
+    
+      <div
+        class="comment-highlight-viewer-flyout"
+      >
+        <div
+          class="flyout"
+          position="bottom-start"
+        >
+          <div
+            class="comment-viewer"
+            id="tao-description-for-5678"
+            role="tooltip"
+          >
+            <p
+              class="visually-hidden"
+            >
+              Grader's comment:
+            </p>
+             
+            <pre>
+              spring autumn
+            </pre>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</body>
+`;

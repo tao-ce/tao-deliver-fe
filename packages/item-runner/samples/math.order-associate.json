@@ -1,0 +1,358 @@
+{
+    "baseUrl": "",
+    "itemIdentifier": "item-5",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5f8ebbbd1bec686911028fe53c268bb2",
+            "serial": "i5f8ec631ebca5",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5f8ebbbd1bec686911028fe53c268bb2",
+                "title": "ND associate 32",
+                "label": "ND associate: math, special chars, images",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "NextGen",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5f8ec631ebc9b",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i5f8ec631ec7a0}}\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i5f8ec631ecf63}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "i5f8ec631ec7a0": {
+                        "serial": "i5f8ec631ec7a0",
+                        "qtiClass": "associateInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_1",
+                            "shuffle": false,
+                            "maxAssociations": 0,
+                            "minAssociations": 0
+                        },
+                        "choices": {
+                            "i5f8ec631ec895": {
+                                "identifier": "choice_3",
+                                "serial": "i5f8ec631ec895",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f8ec631ec8ab",
+                                    "body": "\n            {{i5f8ec631ec998}}\n          ",
+                                    "elements": {
+                                        "i5f8ec631ec998": {
+                                            "serial": "i5f8ec631ec998",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <mrow class=\"MJX-TeXAtom-ORD\">\n                      <mi mathvariant=\"normal\">e</mi>\n                    </mrow>\n                    <mi mathvariant=\"normal\">\u221e</mi>\n                    <mo stretchy=\"false\">[</mo>\n                    <mo stretchy=\"false\">]</mo>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\mathrm{e}\\infty[]"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f8ec631eca87": {
+                                "identifier": "choice_4",
+                                "serial": "i5f8ec631eca87",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": {
+                                    "identifier": "choice_4",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "matchMax": 0,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f8ec631ecaa2",
+                                    "body": "\n            {{i5f8ec631ecb68}}\n          ",
+                                    "elements": {
+                                        "i5f8ec631ecb68": {
+                                            "serial": "i5f8ec631ecb68",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <msqrt>\n                      <mn>12</mn>\n                      <mo>\u2265</mo>\n                      <mn>32132</mn>\n                    </msqrt>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\sqrt{12\\ge32132}"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f8ec631ecc3a": {
+                                "identifier": "choice_8",
+                                "serial": "i5f8ec631ecc3a",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": {
+                                    "identifier": "choice_8",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "matchMax": 0,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f8ec631ecc51",
+                                    "body": "\n            {{i5f8ec631ecd0d}}\n          ",
+                                    "elements": {
+                                        "i5f8ec631ecd0d": {
+                                            "serial": "i5f8ec631ecd0d",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <mi>log</mi>\n                    <mo>\u2061</mo>\n                    <mn>232</mn>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\log232"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f8ec631ecdcd": {
+                                "identifier": "choice_9",
+                                "serial": "i5f8ec631ecdcd",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": {
+                                    "identifier": "choice_9",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f8ec631ecde8",
+                                    "body": "\n            {{i5f8ec631eceb7}}\n          ",
+                                    "elements": {
+                                        "i5f8ec631eceb7": {
+                                            "serial": "i5f8ec631eceb7",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <mi>cos</mi>\n                    <mo>\u2061</mo>\n                    <mi>sin</mi>\n                    <mo>\u2061</mo>\n                    <mi>\u03c0</mi>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\cos\\sin\\pi"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f8ec631ec7c9",
+                            "body": "Associate: math choices",
+                            "elements": []
+                        }
+                    },
+                    "i5f8ec631ecf63": {
+                        "serial": "i5f8ec631ecf63",
+                        "qtiClass": "orderInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_2",
+                            "shuffle": false,
+                            "minChoices": 3,
+                            "orientation": "horizontal"
+                        },
+                        "choices": {
+                            "i5f8ee95637e63": {
+                                "identifier": "choice_1",
+                                "serial": "i5f8ee95637e63",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i5f8ee95637e79",
+                                    "body": "\n            {{i5f8ee956380ca}}\n          ",
+                                    "elements": {
+                                        "i5f8ee956380ca": {
+                                            "serial": "i5f8ee956380ca",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <msqrt>\n                      <mfrac>\n                        <msup>\n                          <mi/>\n                          <mrow class=\"MJX-TeXAtom-ORD\">\n                            <mo>\u2265</mo>\n                            <mi mathvariant=\"normal\">\u221e</mi>\n                            <mi>sin</mi>\n                            <mo>\u2061</mo>\n                            <mi>cos</mi>\n                            <mo>\u2061</mo>\n                            <mi>\u03c0</mi>\n                          </mrow>\n                        </msup>\n                        <mrow>\n                          <mi>ln</mi>\n                          <mo>\u2061</mo>\n                          <mrow class=\"MJX-TeXAtom-ORD\">\n                            <mi mathvariant=\"normal\">e</mi>\n                          </mrow>\n                          <mi mathvariant=\"normal\">\u221e</mi>\n                          <msqrt/>\n                        </mrow>\n                      </mfrac>\n                    </msqrt>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\sqrt{\\frac{^{\\ge\\infty\\sin\\cos\\pi}}{\\ln\\mathrm{e}\\infty\\sqrt{ }}}"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f8ee95638197": {
+                                "identifier": "choice_2",
+                                "serial": "i5f8ee95638197",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i5f8ee956381ab",
+                                    "body": "\n            {{i5f8ee95638234}}\n          ",
+                                    "elements": {
+                                        "i5f8ee95638234": {
+                                            "serial": "i5f8ee95638234",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <mi>cos</mi>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\cos"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f8ee956382da": {
+                                "identifier": "choice_3",
+                                "serial": "i5f8ee956382da",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i5f8ee956382e8",
+                                    "body": "\n            {{i5f8ee9563837a}}\n          ",
+                                    "elements": {
+                                        "i5f8ee9563837a": {
+                                            "serial": "i5f8ee9563837a",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <mi>\u03c0</mi>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\pi"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f8ee95638419": {
+                                "identifier": "choice_4",
+                                "serial": "i5f8ee95638419",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_4",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i5f8ee95638428",
+                                    "body": "\n            {{i5f8ee956384cf}}\n          ",
+                                    "elements": {
+                                        "i5f8ee956384cf": {
+                                            "serial": "i5f8ee956384cf",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <mi>cos</mi>\n                    <mo>\u2061</mo>\n                    <mi>sin</mi>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\cos\\sin"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f8ee95638557": {
+                                "identifier": "choice_5",
+                                "serial": "i5f8ee95638557",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_5",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i5f8ee95638563",
+                                    "body": "\n            {{i5f8ee956385fb}}\n          ",
+                                    "elements": {
+                                        "i5f8ee956385fb": {
+                                            "serial": "i5f8ee956385fb",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <mi mathvariant=\"normal\">\u221e</mi>\n                    <msqrt/>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\infty\\sqrt{ }"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f8ee95637d46",
+                            "body": "Order: math choices",
+                            "elements": []
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": {
+                "i5f8ec631ebe03": {
+                    "identifier": "SCORE",
+                    "serial": "i5f8ec631ebe03",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 0
+                    },
+                    "defaultValue": null
+                },
+                "i5f8ec631ebe2b": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i5f8ec631ebe2b",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "0"
+                }
+            },
+            "responses": {
+                "i5f8ec631ebd6e": {
+                    "identifier": "RESPONSE_1",
+                    "serial": "i5f8ec631ebd6e",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_1",
+                        "cardinality": "multiple",
+                        "baseType": "pair"
+                    },
+                    "defaultValue": []
+                },
+                "i5f8ec631ebd9e": {
+                    "identifier": "RESPONSE_2",
+                    "serial": "i5f8ec631ebd9e",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_2",
+                        "cardinality": "multiple",
+                        "baseType": "pair"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {}
+    },
+    "itemState": ""
+}

@@ -1,0 +1,78 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`title plugin > renders and destroys 1`] = `
+<section>
+  
+    
+  <header
+    tabindex="-1"
+  />
+  
+    
+  <main>
+    
+        
+    <h2
+      id="a11y-main"
+      tabindex="-1"
+    />
+    
+    
+  </main>
+  
+ 
+</section>
+`;
+
+exports[`title plugin > renders and destroys 2`] = `
+<section>
+  
+    
+  <header
+    tabindex="-1"
+  >
+    
+    
+  </header>
+  
+    
+  <main>
+    
+        
+    <h2
+      id="a11y-main"
+      tabindex="-1"
+    >
+      
+    </h2>
+    
+    
+  </main>
+  
+ 
+</section>
+`;
+
+exports[`title plugin > renders and destroys 3`] = `
+<section>
+  
+    
+  <header
+    tabindex="-1"
+  />
+  
+    
+  <main>
+    
+        
+    <h2
+      id="a11y-main"
+      tabindex="-1"
+    />
+    
+    
+  </main>
+  
+ 
+</section>
+`;

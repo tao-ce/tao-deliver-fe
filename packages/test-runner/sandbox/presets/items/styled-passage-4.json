@@ -1,0 +1,203 @@
+{
+    "baseUrl": "./presets/items/assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i630e06e37da331693ffdacd0b70cf26",
+            "serial": "i630e1722b8fa8",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i630e06e37da331693ffdacd0b70cf26",
+                "title": "Item 4",
+                "label": "Item 4",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "NextGen",
+                "class": ""
+            },
+            "body": {
+                "serial": "i630e1722b8fa4",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <p>I promise, this is the last time. But I cannot resist...<\/p>\n      <\/div>\n    <\/div>\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i630e1722b9110}}\n      <\/div>\n    <\/div>\n  ",
+                "elements": {
+                    "i630e1722b9110": {
+                        "serial": "i630e1722b9110",
+                        "qtiClass": "choiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "shuffle": false,
+                            "maxChoices": 1,
+                            "minChoices": 0,
+                            "orientation": "vertical"
+                        },
+                        "choices": {
+                            "i630e1722b91c4": {
+                                "identifier": "choice_1",
+                                "serial": "i630e1722b91c4",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i630e1722b91d8",
+                                    "body": "0",
+                                    "elements": {}
+                                }
+                            },
+                            "i630e1722b9220": {
+                                "identifier": "choice_2",
+                                "serial": "i630e1722b9220",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i630e1722b9232",
+                                    "body": "8",
+                                    "elements": {}
+                                }
+                            },
+                            "i630e1722b9276": {
+                                "identifier": "choice_3",
+                                "serial": "i630e1722b9276",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i630e1722b9288",
+                                    "body": "Nice belt!",
+                                    "elements": {}
+                                }
+                            },
+                            "i630e1722b92ca": {
+                                "identifier": "choice_4",
+                                "serial": "i630e1722b92ca",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_4",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i630e1722b92db",
+                                    "body": "42",
+                                    "elements": {}
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i630e1722b9149",
+                            "body": "\n            {{i630e1722b918c}}\n          ",
+                            "elements": {
+                                "i630e1722b918c": {
+                                    "serial": "i630e1722b918c",
+                                    "qtiClass": "include",
+                                    "attributes": {
+                                        "href": "passage-3.xml",
+                                        "class": "tao-upg7c6xws"
+                                    },
+                                    "stylesheets": {
+                                        "i630e1722b8ff6": "styles/passageStyles.css"
+                                    },
+                                    "body": {
+                                        "serial": "i630e1722b9192",
+                                        "body": "\n    \n        <div class=\"grid-row\"><div class=\"col-12\"><div class=\"colrow\"><div class=\"custom-text-box tao-t771xc9bw\">\n<p>What did the 0 say to the 8?<\/p>\n<\/div><\/div><div class=\"colrow\"><div class=\"custom-text-box tao-cyepi2lx8\">\n<p><em>\u201cNice belt!\u201d<\/em><\/p>\n<\/div><\/div><\/div><\/div>\n    \n",
+                                        "elements": {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+                "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+                "xi": "http:\/\/www.w3.org\/2001\/XInclude",
+                "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {
+                "i630e1722b8ff6": {
+                    "serial": "i630e1722b8ff6",
+                    "qtiClass": "stylesheet",
+                    "attributes": {
+                        "href": "styles/passageStyles.css",
+                        "includeHref": "passage-3.xml",
+                        "includeSerial": "i630e1722b918c",
+                        "type": "text\/css",
+                        "media": "screen",
+                        "title": ""
+                    }
+                }
+            },
+            "outcomes": {
+                "i630e1722b9065": {
+                    "identifier": "SCORE",
+                    "serial": "i630e1722b9065",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "defaultValue": null
+                },
+                "i630e1722b9089": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i630e1722b9089",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "i630e1722b9026": {
+                    "identifier": "RESPONSE",
+                    "serial": "i630e1722b9026",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "single",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": {},
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "xinclude": {
+                "passage-3.xml": "passage-3.xml"
+            },
+            "css": {
+                "styles/passageStyles.css": "styles/passageStyles.css"
+            }
+        }
+    },
+    "itemState": {},
+    "itemIdentifier": "item-4",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    },
+    "success": true,
+    "messages": []
+}
+

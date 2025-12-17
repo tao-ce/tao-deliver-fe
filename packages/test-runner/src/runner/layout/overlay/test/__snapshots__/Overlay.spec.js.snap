@@ -1,0 +1,82 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Overlay component > Renders all named slots 1`] = `
+<body>
+  <div>
+    <div
+      aria-hidden="true"
+      class="overlay"
+    >
+      <header
+        role="none"
+      >
+        <p
+          slot="header"
+        >
+          Heading
+        </p>
+      </header>
+       
+      <div
+        aria-labelledby="a11y-overlay"
+        class="overlay-content"
+        role="main"
+      >
+        <div
+          class="scroll-first-child"
+        />
+         
+        <article
+          slot="content"
+        >
+          Content
+        </article>
+         
+        <div
+          class="scroll-last-child"
+        />
+      </div>
+       
+      <footer>
+        <nav
+          slot="footer"
+        >
+          1 2 3
+        </nav>
+      </footer>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Overlay component > Renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      aria-hidden="false"
+      class="overlay"
+    >
+      <header
+        role="none"
+      />
+       
+      <div
+        aria-labelledby="a11y-overlay"
+        class="overlay-content"
+        role="main"
+      >
+        <div
+          class="scroll-first-child"
+        />
+         
+         
+        <div
+          class="scroll-last-child"
+        />
+      </div>
+       
+      <footer />
+    </div>
+  </div>
+</body>
+`;

@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`JumpMenu > renders correctly with a serviceCallId 1`] = `
+<body>
+  <div>
+    <div
+      aria-labelledby="a11y-jump-menu"
+      class="jump-menu"
+      role="region"
+    >
+      <h2
+        class="visually-hidden"
+        id="a11y-jump-menu"
+      >
+        Jump Menu
+      </h2>
+       
+      <ul />
+    </div>
+  </div>
+</body>
+`;

@@ -1,0 +1,257 @@
+{
+  "testContext": {
+    "state": 1,
+    "navigationMode": 1,
+    "submissionMode": 0,
+    "remainingAttempts": 0,
+    "isAdaptive": false,
+    "isLinear": false,
+    "isTimeout": false,
+    "itemIdentifier": "item-1",
+    "attempt": 1,
+    "itemSessionState": 1,
+    "isCatAdaptive": false,
+    "needMapUpdate": false,
+    "isLast": false,
+    "itemPosition": 6,
+    "itemFlagged": false,
+    "itemAnswered": false,
+    "timeConstraints": [],
+    "testPartId": "testPart-2",
+    "sectionId": "assessmentSection-3",
+    "sectionTitle": "Optics",
+    "numberItems": 9,
+    "numberCompleted": 3,
+    "numberPresented": 7,
+    "considerProgress": true,
+    "isDeepestSectionVisible": true,
+    "canMoveBackward": true,
+    "numberRubrics": 0,
+    "enableAllowSkipping": true,
+    "allowSkipping": true,
+    "enableValidateResponses": true,
+    "validateResponses": false,
+    "hasFeedbacks": false,
+    "options": {
+      "allowComment": false,
+      "allowSkipping": true,
+      "exitButton": false,
+      "logoutButton": true,
+      "validateResponses": false,
+      "sectionPause": false
+    }
+  },
+  "testMap": {
+    "scope": "test",
+    "parts": {
+      "testPart-1": {
+        "id": "testPart-1",
+        "label": "testPart-1",
+        "position": 0,
+        "isLinear": true,
+        "timeConstraint": null,
+        "sections": {
+          "assessmentSection-1": {
+            "id": "assessmentSection-1",
+            "label": "Section 1",
+            "isCatAdaptive": false,
+            "position": 0,
+            "timeConstraint": null,
+            "items": {
+              "item-24": {
+                "id": "item-24",
+                "label": "Associate Things",
+                "position": 0,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": false
+              }
+            },
+            "stats": {
+              "questions": 1,
+              "answered": 0,
+              "flagged": 0,
+              "viewed": 1,
+              "total": 1,
+              "questionsViewed": 1
+            }
+          }
+        },
+        "stats": {
+          "questions": 1,
+          "answered": 0,
+          "flagged": 0,
+          "viewed": 1,
+          "total": 1,
+          "questionsViewed": 1
+        }
+      },
+      "testPart-2": {
+        "id": "testPart-2",
+        "label": "testPart-2",
+        "position": 1,
+        "isLinear": false,
+        "timeConstraint": null,
+        "sections": {
+          "section-1": {
+            "id": "section-1",
+            "label": "Physics of elemetary particles: bosons, mesons, quarks and whatever is supposed to exist in this world",
+            "isCatAdaptive": false,
+            "position": 1,
+            "timeConstraint": null,
+            "items": {
+              "item-19": {
+                "id": "item-19",
+                "label": "Planets and moons",
+                "position": 1,
+                "occurrence": 0,
+                "remainingAttempts": 0,
+                "answered": true,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": false,
+                "timeConstraint": null
+              },
+              "item-20": {
+                "id": "item-20",
+                "label": "Elections in the United States, 2004",
+                "position": 2,
+                "occurrence": 0,
+                "remainingAttempts": 0,
+                "answered": false,
+                "flagged": true,
+                "viewed": true,
+                "categories": [],
+                "informational": false
+              },
+              "item-21": {
+                "id": "item-21",
+                "label": "Periods of History",
+                "position": 3,
+                "occurrence": 0,
+                "remainingAttempts": 0,
+                "answered": true,
+                "flagged": true,
+                "viewed": true,
+                "categories": [],
+                "informational": false
+              },
+              "item-3": {
+                "id": "item-3",
+                "label": "Item 28",
+                "position": 4,
+                "occurrence": 0,
+                "remainingAttempts": 0,
+                "answered": false,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": true
+              },
+              "item-5": {
+                "id": "item-5",
+                "label": "Item 28",
+                "position": 5,
+                "occurrence": 0,
+                "remainingAttempts": 0,
+                "answered": false,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": true
+              }
+            },
+            "stats": {
+              "questions": 3,
+              "answered": 2,
+              "flagged": 2,
+              "viewed": 5,
+              "total": 5,
+              "questionsViewed": 3
+            }
+          },
+          "assessmentSection-3": {
+            "id": "assessmentSection-3",
+            "label": "Optics",
+            "isCatAdaptive": false,
+            "position": 6,
+            "timeConstraint": null,
+            "items": {
+              "item-1": {
+                "id": "item-1",
+                "label": "Item 12",
+                "position": 6,
+                "occurrence": 0,
+                "remainingAttempts": 0,
+                "answered": false,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": false
+              },
+              "item-2": {
+                "id": "item-2",
+                "label": "x simple text",
+                "position": 7,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "informational": false
+              },
+              "item-4": {
+                "id": "item-4",
+                "label": "Item 28",
+                "position": 8,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "informational": true
+              }
+            },
+            "stats": {
+              "questions": 2,
+              "answered": 0,
+              "flagged": 0,
+              "viewed": 1,
+              "total": 3,
+              "questionsViewed": 1
+            }
+          }
+        },
+        "stats": {
+          "questions": 5,
+          "answered": 2,
+          "flagged": 2,
+          "viewed": 6,
+          "total": 8,
+          "questionsViewed": 4
+        }
+      }
+    },
+    "title": "Test 2",
+    "identifier": "Test-2",
+    "className": "assessmentTest",
+    "toolName": "tao",
+    "exclusivelyLinear": false,
+    "hasTimeLimits": true,
+    "stats": {
+      "questions": 6,
+      "answered": 2,
+      "flagged": 2,
+      "viewed": 7,
+      "total": 9,
+      "questionsViewed": 5
+    }
+  }
+}

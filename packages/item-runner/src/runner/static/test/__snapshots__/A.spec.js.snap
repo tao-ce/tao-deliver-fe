@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`A > appends target="_blank" 1`] = `
+<body>
+  <div>
+    <a
+      href="www.hello.org"
+      rel="noopener noreferrer"
+      target="_blank"
+    />
+  </div>
+</body>
+`;
+
+exports[`A > does not append target="_blank" if # href 1`] = `
+<body>
+  <div>
+    <a
+      href="#element123"
+    />
+  </div>
+</body>
+`;
+
+exports[`A > renders with no props 1`] = `
+<body>
+  <div>
+    <a />
+  </div>
+</body>
+`;

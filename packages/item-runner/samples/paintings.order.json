@@ -1,0 +1,275 @@
+{
+  "baseUrl": "/assets/paintings/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "i5f85cd48379d31117af9cf04028df01",
+      "serial": "item_5f85d25cddff3590621812",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "i5f85cd48379d31117af9cf04028df01",
+        "title": "Pictures Order",
+        "label": "Pictures Order",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint139",
+        "class": ""
+      },
+      "body": {
+        "serial": "container_containeritembody_5f85d25cddfe7359071088",
+        "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{interaction_orderinteraction_5f85d25cde357519188631}}\n      <\/div>\n    <\/div>\n  ",
+        "elements": {
+          "interaction_orderinteraction_5f85d25cde357519188631": {
+            "serial": "interaction_orderinteraction_5f85d25cde357519188631",
+            "qtiClass": "orderInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "shuffle": false,
+              "maxChoices": 4,
+              "minChoices": 2,
+              "orientation": "vertical"
+            },
+            "choices": {
+              "choice_simplechoice_5f85d25cde472253112676": {
+                "identifier": "choice_1",
+                "serial": "choice_simplechoice_5f85d25cde472253112676",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_1",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5f85d25cde4a8986791971",
+                  "body": "<div>\u00a0<\/div>{{img_5f85d25cde4e7740100570}}\u00a0\n\n<div>Jean Renoir - The Umbrellas<\/div>",
+                  "elements": {
+                    "img_5f85d25cde4e7740100570": {
+                      "serial": "img_5f85d25cde4e7740100570",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "renoir-umbrellas-1886.jpg",
+                        "alt": "Renoir's Umbrellas",
+                        "width": "62%",
+                        "type": "image\/jpeg"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5f85d25cde592758910246": {
+                "identifier": "choice_2",
+                "serial": "choice_simplechoice_5f85d25cde592758910246",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_2",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5f85d25cde5a2974569727",
+                  "body": "{{img_5f85d25cde5ce451258526}}\u00a0\n<div>Andy Warhol - Marilyn Monroe<\/div>",
+                  "elements": {
+                    "img_5f85d25cde5ce451258526": {
+                      "serial": "img_5f85d25cde5ce451258526",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "warhol-marilyn-1967.jpg",
+                        "alt": "Warhol's Marilyn",
+                        "width": "62%",
+                        "type": "image\/jpeg"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5f85d25cde622163896513": {
+                "identifier": "choice_3",
+                "serial": "choice_simplechoice_5f85d25cde622163896513",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_3",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5f85d25cde631763397980",
+                  "body": "{{img_5f85d25cde659105040347}}\u00a0\n<div>Gustav Klimt - The Golden Eye<\/div>",
+                  "elements": {
+                    "img_5f85d25cde659105040347": {
+                      "serial": "img_5f85d25cde659105040347",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "klimt-goldeneye-1907.jpg",
+                        "alt": "Klimt's Golden Eye",
+                        "width": "63%",
+                        "type": "image\/jpeg"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5f85d25cde6c7608386708": {
+                "identifier": "choice_4",
+                "serial": "choice_simplechoice_5f85d25cde6c7608386708",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_4",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5f85d25cde6d6855144891",
+                  "body": "{{img_5f85d25cde6fe658674130}}\u00a0\n<div>Vincent Van Gogh - Sunflowers<\/div>",
+                  "elements": {
+                    "img_5f85d25cde6fe658674130": {
+                      "serial": "img_5f85d25cde6fe658674130",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "vangogh-sunflowers-1889.jpg",
+                        "alt": "Van Gogh's Sunflowers",
+                        "width": "48%",
+                        "type": "image\/jpeg"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "prompt": {
+              "serial": "container_containerstatic_5f85d25cde3ec628387619",
+              "body": "Place the artworks in chronological order from oldest to most recent",
+              "elements": {}
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+        "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+        "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+      },
+      "stylesheets": {},
+      "outcomes": {
+        "outcomedeclaration_5f85d25cde211182717417": {
+          "identifier": "MAXSCORE",
+          "serial": "outcomedeclaration_5f85d25cde211182717417",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "MAXSCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "1"
+        },
+        "outcomedeclaration_5f85d25cde284550787934": {
+          "identifier": "SCORE",
+          "serial": "outcomedeclaration_5f85d25cde284550787934",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float",
+            "normalMaximum": 1
+          },
+          "defaultValue": null
+        }
+      },
+      "responses": {
+        "responsedeclaration_5f85d25cde170558237081": {
+          "identifier": "RESPONSE",
+          "serial": "responsedeclaration_5f85d25cde170558237081",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "ordered",
+            "baseType": "identifier"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["choice_1", "choice_4", "choice_3", "choice_2"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        }
+      },
+      "feedbacks": {},
+      "responseProcessing": {
+        "serial": "response_templatesdriven_5f85d25cde800989312523",
+        "qtiClass": "responseProcessing",
+        "attributes": {},
+        "processingType": "templateDriven",
+        "responseRules": [{
+          "qtiClass": "responseCondition",
+          "responseIf": {
+            "qtiClass": "responseIf",
+            "expression": {
+              "qtiClass": "match",
+              "expressions": [{
+                "qtiClass": "variable",
+                "attributes": {
+                  "identifier": "RESPONSE"
+                }
+              }, {
+                "qtiClass": "correct",
+                "attributes": {
+                  "identifier": "RESPONSE"
+                }
+              }]
+            },
+            "responseRules": [{
+              "qtiClass": "setOutcomeValue",
+              "attributes": {
+                "identifier": "SCORE"
+              },
+              "expression": {
+                "qtiClass": "baseValue",
+                "attributes": {
+                  "baseType": "float"
+                },
+                "value": "1"
+              }
+            }]
+          },
+          "responseElse": {
+            "qtiClass": "responseElse",
+            "responseRules": [{
+              "qtiClass": "setOutcomeValue",
+              "attributes": {
+                "identifier": "SCORE"
+              },
+              "expression": {
+                "qtiClass": "baseValue",
+                "attributes": {
+                  "baseType": "float"
+                },
+                "value": "0"
+              }
+            }]
+          }
+        }]
+      },
+      "apipAccessibility": ""
+    },
+    "assets": {
+      "img": {
+        "renoir-umbrellas-1886.jpg": "renoir-umbrellas-1886.jpg",
+        "warhol-marilyn-1967.jpg": "warhol-marilyn-1967.jpg",
+        "klimt-goldeneye-1907.jpg": "klimt-goldeneye-1907.jpg",
+        "vangogh-sunflowers-1889.jpg": "vangogh-sunflowers-1889.jpg"
+      },
+      "css": {
+        "tao-user-styles.css": "tao-user-styles.css"
+      }
+    }
+  },
+  "itemIdentifier": "item-2",
+  "success": true
+}

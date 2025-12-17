@@ -1,0 +1,152 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ResponsePanel > it renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="response-panel inverted"
+    >
+      <div
+        class="responses-container"
+      >
+        <ul>
+          <li>
+            <div
+              class="response-entry"
+            >
+              <div
+                class="response-label"
+              >
+                RESPONSE1
+                :
+              </div>
+               
+              <div>
+                (directedPair) [[choice_2, gap_1]]
+              </div>
+            </div>
+             
+            <div
+              class="response-entry"
+            >
+              <div
+                class="response-label"
+              >
+                Item score: 
+              </div>
+               
+              <div
+                class="score"
+              >
+                1
+                /
+                1
+              </div>
+            </div>
+             
+          </li>
+          <li>
+            <div
+              class="response-entry"
+            >
+              <div
+                class="response-label"
+              >
+                RESPONSE1
+                :
+              </div>
+               
+              <div>
+                (identifier) Discovery
+              </div>
+            </div>
+             
+            <div
+              class="response-entry"
+            >
+              <div
+                class="response-label"
+              >
+                Item score: 
+              </div>
+               
+              <div
+                class="score"
+              >
+                0
+                /
+                1
+              </div>
+            </div>
+             
+          </li>
+          <li>
+            <div
+              class="response-entry"
+            >
+              <div
+                class="response-label"
+              >
+                RESPONSE1
+                :
+              </div>
+               
+              <div>
+                (identifier) Discovery
+              </div>
+            </div>
+            <div
+              class="response-entry"
+            >
+              <div
+                class="response-label"
+              >
+                RESPONSE1
+                :
+              </div>
+               
+              <div>
+                (string) "1982"
+              </div>
+            </div>
+             
+            <div
+              class="response-entry"
+            >
+              <div
+                class="response-label"
+              >
+                Item score: 
+              </div>
+               
+              <div
+                class="score"
+              >
+                2
+                /
+                3
+              </div>
+            </div>
+             
+          </li>
+        </ul>
+      </div>
+       
+      <div
+        class="submit-response-container"
+      >
+        <button
+          class="actionable primary pill small inverted"
+          data-test-id="submit-response"
+          name="SUBMIT RESPONSE"
+          type="button"
+        >
+           
+           
+          SUBMIT RESPONSE
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+`;

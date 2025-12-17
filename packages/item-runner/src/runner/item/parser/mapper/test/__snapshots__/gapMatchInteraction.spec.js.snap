@@ -1,0 +1,24 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Gap match interaction choice properties mapper > adds gaps found in elements 1`] = `
+{
+  "cardinality": "multiple",
+  "foo": "bar",
+  "gaps": [
+    {
+      "fixed": false,
+      "identifier": "gap_1",
+      "required": false,
+    },
+    {
+      "fixed": false,
+      "identifier": "gap_2",
+      "required": true,
+    },
+  ],
+}
+`;
+
+exports[`Gap match interaction choice properties mapper > replaces MathML expressions placeholders 1`] = `"<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true" scriptlevel…RD"><mi>π</mi></mrow></mrow></mstyle></semantics></math>"`;
+
+exports[`Gap match interaction choice properties mapper > replaces multiple math expressions placeholders within content 1`] = `"<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true" scriptlevel…RD"><mi>π</mi></mrow></mrow></mstyle></semantics></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true" scriptlevel…RD"><mi>π</mi></mrow></mrow></mstyle></semantics></math>"`;

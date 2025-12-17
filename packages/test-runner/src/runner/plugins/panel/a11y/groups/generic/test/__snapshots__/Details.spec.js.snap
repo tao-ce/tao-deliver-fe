@@ -1,0 +1,75 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Details > renders with slot content - collapsible 1`] = `
+<body>
+  <div>
+    <details
+      class="a11y-group"
+      open=""
+    >
+      <summary>
+        <p
+          slot="summary"
+        >
+          The title
+        </p>
+         
+        <svg
+          aria-hidden="true"
+          class="icon small"
+          fill="none"
+          viewBox="0 0 12 12"
+        >
+          <title>
+            Chevron up icon
+          </title>
+          <path
+            d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
+            fill="currentColor"
+          />
+        </svg>
+      </summary>
+       
+      <div>
+        <p>
+          The remainder
+        </p>
+         
+        <p>
+          of the content
+        </p>
+      </div>
+    </details>
+    
+  </div>
+</body>
+`;
+
+exports[`Details > renders with slot content - non-collapsible 1`] = `
+<body>
+  <div>
+    <div
+      class="a11y-group"
+    >
+      <div
+        class="summary"
+      >
+        <p
+          slot="summary"
+        >
+          The title
+        </p>
+      </div>
+       
+      <p>
+        The remainder
+      </p>
+       
+      <p>
+        of the content
+      </p>
+    </div>
+    
+  </div>
+</body>
+`;

@@ -1,0 +1,230 @@
+{
+    "baseUrl": "./assets/media/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "media_interaction",
+            "serial": "i5ec7d8d84b9356",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "media_interaction",
+                "title": "Audio Sequence",
+                "label": "Audio Sequence",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint117",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5ec7d8d84b925d",
+                "body": "<div class=\"grid-row\"><div class=\"col-12\">    <h1>Sequential Audios 1</h1>\n  {{i5ec7d8d84baab}}   </div></div>  <div class=\"grid-row\"><div class=\"col-12\">   {{i5ec7d8d84baac}}    </div></div>     <div class=\"grid-row\"><div class=\"col-12\">    {{i5ec7d8d84bbbd}}    </div></div>   <div class=\"grid-row\"><div class=\"col-12\">    {{i5e99c830471d1}}    </div></div>",
+                "elements": {
+                    "i5ec7d8d84baab": {
+                        "serial": "i5ec7d8d84baab",
+                        "qtiClass": "mediaInteraction",
+                        "attributes": {
+                            "responseIdentifier": "media_interaction1",
+                            "autostart": true,
+                            "loop": false,
+                            "minPlays": 0,
+                            "maxPlays": 0,
+                            "class": "hide-player sequential"
+                        },
+                        "object": {
+                            "serial": "i5ec7d8d84baa5",
+                            "attributes": {
+                                "data": "Neil_Armstrong_1_small_step.ogg",
+                                "type": "audio/ogg"
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_546cb89e0420f262955533",
+                            "body": "Listen to the first audio (7 seconds)",
+                            "elements": []
+                        }
+                    },
+                    "i5ec7d8d84baac": {
+                        "serial": "i5ec7d8d84baac",
+                        "qtiClass": "mediaInteraction",
+                        "attributes": {
+                            "responseIdentifier": "media_interaction2",
+                            "autostart": true,
+                            "loop": false,
+                            "minPlays": 0,
+                            "maxPlays": 0,
+                            "class": "hide-player sequential",
+                            "data-autostart-delay-ms": 2000
+                        },
+                        "object": {
+                            "serial": "i5ec7d8d84baa6",
+                            "attributes": {
+                                "data": "Apollo13-wehaveaproblem.ogg",
+                                "type": "audio/ogg"
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_546cb89e0420f262955533",
+                            "body": "Then listen to the second audio (2 sec delay, 17 seconds)",
+                            "elements": []
+                        }
+                    },
+                    "i5ec7d8d84bbbd": {
+                        "serial": "i5ec7d8d84bbbd",
+                        "qtiClass": "mediaInteraction",
+                        "attributes": {
+                            "responseIdentifier": "media_interaction3",
+                            "autostart": true,
+                            "loop": false,
+                            "minPlays": 0,
+                            "maxPlays": 0,
+                            "class": "hide-player sequential",
+                            "data-autostart-delay-ms": "3000",
+                            "data-sequence-repeats": "3",
+                            "data-sequence-delay-between-ms": "2000",
+                            "data-sequence-delay-after-ms": "5000"
+
+                        },
+                        "object": {
+                            "serial": "i5ec7d8d84bbb7",
+                            "attributes": {
+                                "data": "bullfinch_4sec.mp3",
+                                "type": "audio/mp3"
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_546cb89e0420f262955644",
+                            "body": "Then to the bullfinch (3 repeats, 3 sec before, 2 sec between, 5 sec after, 4 sec length)",
+                            "elements": []
+                        }
+                    },
+                    "i5e99c830471d1": {
+                        "serial": "i5e99c830471d1",
+                        "qtiClass": "choiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "choice_interaction",
+                            "shuffle": false,
+                            "maxChoices": 1,
+                            "minChoices": 0
+                        },
+                        "choices": {
+                            "i5e99c830472e7": {
+                                "identifier": "first",
+                                "serial": "i5e99c830472e7",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "first",
+                                    "fixed": false
+                                },
+                                "body": {
+                                    "serial": "i5e99c83047309",
+                                    "body": "First",
+                                    "elements": []
+                                }
+                            },
+                            "i5e99c8304738f": {
+                                "identifier": "second",
+                                "serial": "i5e99c8304738f",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "second",
+                                    "fixed": false
+                                },
+                                "body": {
+                                    "serial": "i5e99c830473a4",
+                                    "body": "Second",
+                                    "elements": []
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5e99c83047251",
+                            "body": "Which of the first two audio recordings came from the mission that reached the moon?",
+                            "elements": []
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "stylesheets": [],
+            "outcomes": [],
+            "responses": {
+                "i5ec7d8d84b9b98": {
+                    "identifier": "media_interaction1",
+                    "serial": "i5ec7d8d84b9b98",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "media_interaction1",
+                        "cardinality": "single",
+                        "baseType": "integer"
+                    },
+                    "defaultValue": []
+                },
+                "i5ec7d8d84b9b99": {
+                    "identifier": "media_interaction2",
+                    "serial": "i5ec7d8d84b9b99",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "media_interaction2",
+                        "cardinality": "single",
+                        "baseType": "integer"
+                    },
+                    "defaultValue": []
+                },"i5ec7d8d84b9c00": {
+                    "identifier": "media_interaction3",
+                    "serial": "i5ec7d8d84b9c00",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "media_interaction3",
+                        "cardinality": "single",
+                        "baseType": "integer"
+                    },
+                    "defaultValue": []
+                },
+
+                "i5e99c830470aa": {
+                    "identifier": "choice_interaction",
+                    "serial": "i5e99c830470aa",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "choice_interaction",
+                        "cardinality": "single",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "audio": {
+                "Apollo13-wehaveaproblem.ogg": "Apollo13-wehaveaproblem.ogg",
+                "Neil_Armstrong_1_small_step.ogg": "Neil_Armstrong_1_small_step.ogg"
+            }
+        }
+    },
+    "itemIdentifier": "item7",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    },
+    "messages": [],
+    "itemState": {
+        "media_interaction1": { "response": { "base": null }, "validity": true },
+        "media_interaction2": { "response": { "base": null }, "validity": true },
+        "choice_interaction": { "response": { "base": { "identifier": "first" } }, "validity": true }
+    },
+    "itemResponse": {
+        "media_interaction1": { "base": null },
+        "media_interaction2": { "base": null },
+        "choice_interaction": { "base": { "identifier": "first" } }
+    },
+    "correctResponse": {
+        "choice_interaction": { "base": { "identifier": "second" } }
+    }
+}

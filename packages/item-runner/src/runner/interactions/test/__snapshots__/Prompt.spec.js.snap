@@ -1,0 +1,83 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Prompt > renders correctly with a complex tree 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-prompt cf"
+    >
+      <section>
+        <article>
+          Hello tree
+          
+          
+           
+        </article>
+        
+        
+        
+         
+      </section>
+      
+      
+      
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Prompt > renders correctly with basic text 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-prompt cf"
+    >
+      Question 1
+      
+      
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Prompt > renders correctly with html 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-prompt cf"
+    >
+      <strong>
+        Question 1
+      </strong>
+      
+      
+      
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Prompt > renders correctly with id prop 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-prompt cf"
+      id="someId"
+    >
+      
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Prompt > renders correctly with no props 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-prompt cf"
+    >
+      
+    </div>
+  </div>
+</body>
+`;

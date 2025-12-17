@@ -1,0 +1,86 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i15801387382910421",
+            "serial": "item_5ed4ca7395551781411599",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i15801387382910421",
+                "title": "Passages 2",
+                "label": "Passages 2",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint128",
+                "class": "separator-between-columns"
+            },
+            "body": {
+                "serial": "container_containeritembody_5ed4ca739554c292044072",
+                "body": "<div class=\"grid-row\">  <div class=\"col-6\"><div class=\"custom-text-box\" data-scrolling=\"false\"><p>Metamorphosis (German: Die Verwandlung) is an allegorical novella written by Franz Kafka which was first published in 1915. One of Kafka's best-known works, Metamorphosis tells the story of salesman Gregor Samsa, who wakes one morning to find himself inexplicably transformed into a huge insect (ungeheures Ungeziefer, lit. \"monstrous vermin\") and subsequently struggles to adjust to this new condition. The novella has been widely discussed among literary critics, with differing interpretations being offered. In popular culture and adaptations of the novella, the insect is commonly depicted as a cockroach.</p></div></div>  <div class=\"col-6\"><div class=\"custom-text-box\" data-scrolling=\"false\"><p>Read the following passage:</p><div class=\"custom-include-box key-navigation-focusable tao-overflow-y tao-half-height\" data-scrolling=\"true\" data-scrolling-height=\"50\">{{xinclude_5ed4ca7395879552200822}}</div></div></div>  </div>",
+                "elements": {
+                    "xinclude_5ed4ca7395879552200822": {
+                      "serial": "xinclude_5ed4ca7395879552200822",
+                      "qtiClass": "include",
+                      "attributes": {
+                          "href": "taomedia://2.xml"
+                      },
+                      "body": {
+                          "serial": "container_containerstatic_5ed4ca739587f142127486",
+                          "body": "<div><header><h1>Passage 2</h1>\n<h2>Metamorphosis</h2></header>\n<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p><p>“What’s happened to me?” he thought. It wasn’t a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table—Samsa was a travelling salesman—and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p><p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. “How about if I sleep a little bit longer and forget all this nonsense”, he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn’t get into that position. However hard he threw himself onto his right, he always rolled back to where he was. He must have tried it a hundred times, shut his eyes so that he wouldn’t have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before.</p></div>",
+                          "elements": []
+                      }
+                  }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xi": "http://www.w3.org/2001/XInclude",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": {
+                "outcomedeclaration_5ed4ca73955dd228246025": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5ed4ca73955dd228246025",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_5ed4ca73955f6210217132": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_5ed4ca73955f6210217132",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+          "xinclude": {
+            "taomedia://2.xml": "https://cdn-dev.gcp-eu.taocloud.org/tr-oat-demo/assets/aed413e53a46/item-1/2.xml"
+          }
+        }
+    },
+    "itemState": {},
+    "itemIdentifier": "item3"
+}

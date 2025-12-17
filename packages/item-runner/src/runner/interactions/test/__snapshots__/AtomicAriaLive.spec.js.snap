@@ -1,0 +1,103 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AtomicAriaLive > reacts to props change 1`] = `
+<body>
+  <div>
+    <div
+      aria-atomic="true"
+      aria-live="assertive"
+      class="visually-hidden"
+      id="live-id-123"
+    >
+      The new 
+      <span
+        aria-labelledby="content-id-A"
+        role="text"
+      />
+        has appeared
+    </div>
+  </div>
+</body>
+`;
+
+exports[`AtomicAriaLive > reacts to props change 2`] = `
+<body>
+  <div>
+    <div
+      aria-atomic="true"
+      aria-live="assertive"
+      class="visually-hidden"
+      id="live-id-123"
+    >
+      Cancelled
+    </div>
+  </div>
+</body>
+`;
+
+exports[`AtomicAriaLive > renders announcement in a given lang 1`] = `
+<body>
+  <div>
+    <div
+      aria-atomic="true"
+      aria-live="assertive"
+      class="visually-hidden"
+      id="live-id-123"
+      lang="fr-FR"
+    >
+      Veuillez compléter ce formulaire
+    </div>
+  </div>
+</body>
+`;
+
+exports[`AtomicAriaLive > renders announcement linking to html content 1`] = `
+<body>
+  <div>
+    <div
+      aria-atomic="true"
+      aria-live="assertive"
+      class="visually-hidden"
+      id="live-id-123"
+    >
+      <span
+        aria-labelledby="content-id-A"
+        role="text"
+      />
+        has replaced 
+      <span
+        aria-labelledby="content-id-B"
+        role="text"
+      />
+       
+    </div>
+  </div>
+</body>
+`;
+
+exports[`AtomicAriaLive > renders string announcement 1`] = `
+<body>
+  <div>
+    <div
+      aria-atomic="true"
+      aria-live="polite"
+      class="visually-hidden"
+      id="live-id-123"
+    >
+      Rejoice!
+    </div>
+  </div>
+</body>
+`;
+
+exports[`AtomicAriaLive > renders with default props 1`] = `
+<body>
+  <div>
+    <div
+      aria-atomic="true"
+      aria-live="assertive"
+      class="visually-hidden"
+    />
+  </div>
+</body>
+`;

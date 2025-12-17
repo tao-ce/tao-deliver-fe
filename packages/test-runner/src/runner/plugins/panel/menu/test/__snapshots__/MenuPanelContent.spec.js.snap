@@ -1,0 +1,303 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MenuPanelContent > add a logout link with an exitUrl 1`] = `
+<body>
+  <div>
+    <div>
+      <ul
+        class="panel-menu"
+      >
+        <li>
+          <a
+            href="https://www.taotesting.com/privacy/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.taotesting.com/about-us/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            About
+          </a>
+        </li>
+      </ul>
+       
+      <ul
+        class="panel-actions"
+      >
+        <li>
+          <a
+            href="/logout"
+          >
+            Logout
+          </a>
+        </li>
+      </ul>
+       
+      <footer>
+        <img
+          alt="TAO logo"
+          src="logo.svg"
+        />
+         
+        <p>
+          © TAO 2025
+           
+          <br />
+          
+          <a
+            href="https://taotesting.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Open Assessment Technologies S.A.
+          </a>
+           
+          <br />
+          
+          All rights reserved
+           
+          
+        </p>
+      </footer>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MenuPanelContent > renders correctly without any property 1`] = `
+<body>
+  <div>
+    <div>
+      <ul
+        class="panel-menu"
+      >
+        <li>
+          <a
+            href="https://www.taotesting.com/privacy/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.taotesting.com/about-us/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            About
+          </a>
+        </li>
+      </ul>
+       
+      <ul
+        class="panel-actions"
+      />
+       
+      <footer>
+        <img
+          alt="TAO logo"
+          src="logo.svg"
+        />
+         
+        <p>
+          © TAO 2025
+           
+          <br />
+          
+          <a
+            href="https://taotesting.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Open Assessment Technologies S.A.
+          </a>
+           
+          <br />
+          
+          All rights reserved
+           
+          
+        </p>
+      </footer>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MenuPanelContent > update the footer with a logo and some content 1`] = `
+<body>
+  <div>
+    <div>
+      <ul
+        class="panel-menu"
+      >
+        <li>
+          <a
+            href="https://www.taotesting.com/privacy/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.taotesting.com/about-us/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            About
+          </a>
+        </li>
+      </ul>
+       
+      <ul
+        class="panel-actions"
+      />
+       
+      <footer>
+        <img
+          src="foo.png"
+        />
+         
+        <p>
+          made with love by us
+           
+          <br />
+          
+          <a
+            href="https://foo.bar"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            foo bar
+          </a>
+           
+          
+        </p>
+      </footer>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MenuPanelContent > update the footer with only a logo 1`] = `
+<body>
+  <div>
+    <div>
+      <ul
+        class="panel-menu"
+      >
+        <li>
+          <a
+            href="https://www.taotesting.com/privacy/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.taotesting.com/about-us/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            About
+          </a>
+        </li>
+      </ul>
+       
+      <ul
+        class="panel-actions"
+      />
+       
+      <footer>
+        <img
+          src="foo.png"
+        />
+         
+      </footer>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MenuPanelContent > update the links list 1`] = `
+<body>
+  <div>
+    <div>
+      <ul
+        class="panel-menu"
+      >
+        <li>
+          <a
+            href="/foo"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Foo
+          </a>
+        </li>
+        <li>
+          <a
+            href="//bar"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Bar Baz
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://noz.nox/foo"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            noz & nox
+          </a>
+        </li>
+      </ul>
+       
+      <ul
+        class="panel-actions"
+      />
+       
+      <footer>
+        <img
+          alt="TAO logo"
+          src="logo.svg"
+        />
+         
+        <p>
+          © TAO 2025
+           
+          <br />
+          
+          <a
+            href="https://taotesting.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Open Assessment Technologies S.A.
+          </a>
+           
+          <br />
+          
+          All rights reserved
+           
+          
+        </p>
+      </footer>
+    </div>
+  </div>
+</body>
+`;

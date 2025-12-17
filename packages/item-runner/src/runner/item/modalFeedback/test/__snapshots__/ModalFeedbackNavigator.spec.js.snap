@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ModalFeedbackNavigator > renders and sends event on "continue" button click 1`] = `
+<body>
+  <div>
+    <div
+      class="modalfeedback-nav"
+    >
+      <button
+        class="actionable primary pill small"
+        type="button"
+      >
+         
+         
+        Continue
+      </button>
+    </div>
+  </div>
+</body>
+`;

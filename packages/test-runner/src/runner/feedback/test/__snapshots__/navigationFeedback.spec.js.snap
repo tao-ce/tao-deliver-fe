@@ -1,0 +1,185 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`getNavigationFeedbackConfig > returns config of specified type: alertInvalid 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "invalidanswer",
+      "key": "cancel",
+      "label": "Ok",
+      "skin": "primary",
+    },
+  ],
+  "heading": "Your answer is not valid.",
+  "message": "Please provide a valid answer.",
+}
+`;
+
+exports[`getNavigationFeedbackConfig > returns config of specified type: alertRequired 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "answerrequired",
+      "key": "cancel",
+      "label": "Ok",
+      "skin": "primary",
+    },
+  ],
+  "heading": "An answer is required before leaving this question.",
+  "message": "You will be able to navigate away once you answer the question.",
+}
+`;
+
+exports[`getNavigationFeedbackConfig > returns config of specified type: confirmSkip 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "keepattempting",
+      "key": "cancel",
+      "label": "Keep attempting",
+      "skin": "secondary",
+    },
+    {
+      "dataTestId": "skipquestion",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Skip the question",
+      "skin": "primary",
+    },
+  ],
+  "heading": "Are you sure you want to skip this question?",
+  "message": "You still have -1 attempts left. You won't be able to change your answer later if you skip this question.",
+}
+`;
+
+exports[`getNavigationFeedbackConfig > returns config of specified type: confirmSubmit 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "submitpart",
+      "key": "proceed",
+      "label": "Submit the Test",
+      "skin": "secondary",
+    },
+    {
+      "dataTestId": "cancel",
+      "initialFocus": true,
+      "key": "cancel",
+      "label": "Keep answering",
+      "skin": "primary",
+    },
+  ],
+  "heading": "You have reached the end of the test. Are you sure you want to submit the test for scoring?",
+  "message": "You still have 2 incomplete questions. If you submit the test you won't be able to go back to complete unanswered questions or change your answers.",
+}
+`;
+
+exports[`getNavigationFeedbackConfig > returns config of specified type: confirmTimerTimeout 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "timeout-submit-part",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Submit this part",
+      "skin": "primary",
+    },
+  ],
+  "heading": "The time limit for this item has been reached.",
+  "message": undefined,
+  "type": "timeout",
+}
+`;
+
+exports[`getNavigationFeedbackConfig > returns config of specified type: confirmUnsavedAttempt 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "cancel",
+      "key": "cancel",
+      "label": "Stay",
+      "skin": "secondary",
+    },
+    {
+      "dataTestId": "moveaway",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "Move away",
+      "skin": "primary",
+    },
+  ],
+  "heading": "You have changed your answer since your last attempt.",
+  "message": "If you move away your last answer will be lost when you come back.",
+}
+`;
+
+exports[`getNavigationFeedbackConfig > returns config of specified type: isPausedByProctor 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "proctor-paused",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "OK",
+      "skin": "primary",
+    },
+  ],
+  "heading": "Test paused",
+  "message": "Your test has been paused by the proctor.",
+}
+`;
+
+exports[`getNavigationFeedbackConfig > returns config of specified type: isTerminatedByProctor 1`] = `
+{
+  "buttons": [
+    {
+      "dataTestId": "proctor-terminated",
+      "initialFocus": true,
+      "key": "proceed",
+      "label": "I understand",
+      "skin": "primary",
+    },
+  ],
+  "heading": "Test terminated",
+  "message": "Your test has been terminated by the proctor and your answers have been submitted.",
+}
+`;
+
+exports[`showNavigationFeedback > resolves with {"cancelled":true} for action:flowCancelled 1`] = `
+{
+  "buttons": [
+    {
+      "key": "flowCancelled",
+      "label": "my-button",
+    },
+  ],
+  "header": "my-header",
+  "message": "my-message",
+}
+`;
+
+exports[`showNavigationFeedback > resolves with {"proceed":false} for action:cancel 1`] = `
+{
+  "buttons": [
+    {
+      "key": "cancel",
+      "label": "my-button",
+    },
+  ],
+  "header": "my-header",
+  "message": "my-message",
+}
+`;
+
+exports[`showNavigationFeedback > resolves with {"proceed":true} for action:proceed 1`] = `
+{
+  "buttons": [
+    {
+      "key": "proceed",
+      "label": "my-button",
+    },
+  ],
+  "header": "my-header",
+  "message": "my-message",
+}
+`;

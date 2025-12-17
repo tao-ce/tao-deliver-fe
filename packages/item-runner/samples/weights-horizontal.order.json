@@ -1,0 +1,419 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5f171e6b7d540132e2a152edea394dbd",
+            "serial": "i5f171f4ddf3c5",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5f171e6b7d540132e2a152edea394dbd",
+                "title": "Item 4",
+                "label": "Item 4",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint133",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5f171f4ddf3bf",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i5f171f4ddf7b2_left}}\n        {{i5f171f4ddf7b2_right}}\n        {{i5f171f4ddf7b2_top}}\n        {{i5f171f4ddf7b2_bottom}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "i5f171f4ddf7b2_left": {
+                        "serial": "i5f171f4ddf7b2_left",
+                        "qtiClass": "orderInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_1",
+                            "shuffle": false,
+                            "orientation": "horizontal",
+                            "class": "qti-choices-left",
+                            "minChoices": 1,
+                            "maxChoices": 5
+                        },
+                        "choices": {
+                            "i5f171f4ddf8f7_left": {
+                                "identifier": "choice_1",
+                                "serial": "i5f171f4ddf8f7_left",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_1", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf939_left", "body": "1 kilogram", "elements": {} }
+                            },
+                            "i5f171f4ddf984_left": {
+                                "identifier": "choice_2",
+                                "serial": "i5f171f4ddf984_left",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_2", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf991_left", "body": "2 pounds", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb_left": {
+                                "identifier": "choice_3",
+                                "serial": "i5f171f4ddf9cb_left",
+                                "qtiClass": "simpleChoice_left",
+                                "attributes": { "identifier": "choice_3", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d6_left", "body": "3 ounces", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb4_left": {
+                                "identifier": "choice_4",
+                                "serial": "i5f171f4ddf9cb4_left",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_4", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d64_left", "body": "4 milligrams", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb5_left": {
+                                "identifier": "choice_5",
+                                "serial": "i5f171f4ddf9cb5_left",
+                                "qtiClass": "simpleChoice_left",
+                                "attributes": { "identifier": "choice_5", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d65_left", "body": "5 grams", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb6_left": {
+                                "identifier": "choice_6",
+                                "serial": "i5f171f4ddf9cb6_left",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_6", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d66_left", "body": "6 tonnes", "elements": {} }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f171f4ddf861_left",
+                            "body": "<h3>Horizontal - Left</h3><br/>Put these weight values in ascending order",
+                            "elements": {}
+                        }
+                    },
+                    "i5f171f4ddf7b2_right": {
+                        "serial": "i5f171f4ddf7b2_right",
+                        "qtiClass": "orderInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_2",
+                            "shuffle": false,
+                            "orientation": "horizontal",
+                            "class": "qti-choices-right",
+                            "minChoices": 1,
+                            "maxChoices": 5
+                        },
+                        "choices": {
+                            "i5f171f4ddf8f7_right": {
+                                "identifier": "choice_1",
+                                "serial": "i5f171f4ddf8f7_right",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_1", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf939_right", "body": "1 kilogram", "elements": {} }
+                            },
+                            "i5f171f4ddf984_right": {
+                                "identifier": "choice_2",
+                                "serial": "i5f171f4ddf984_right",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_2", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf991_right", "body": "2 pounds", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb_right": {
+                                "identifier": "choice_3",
+                                "serial": "i5f171f4ddf9cb_right",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_3", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d6_right", "body": "3 ounces", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb4_right": {
+                                "identifier": "choice_4",
+                                "serial": "i5f171f4ddf9cb4_right",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_4", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d64_right", "body": "4 milligrams", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb5_right": {
+                                "identifier": "choice_5",
+                                "serial": "i5f171f4ddf9cb5_right",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_5", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d65_right", "body": "5 grams", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb6_right": {
+                                "identifier": "choice_6",
+                                "serial": "i5f171f4ddf9cb6_right",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_6", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d66_right", "body": "6 tonnes", "elements": {} }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f171f4ddf861_right",
+                            "body": "<h3>Horizontal - Right</h3><br/>Put these weight values in ascending order",
+                            "elements": {}
+                        }
+                    },
+                    "i5f171f4ddf7b2_top": {
+                        "serial": "i5f171f4ddf7b2_top",
+                        "qtiClass": "orderInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_3",
+                            "shuffle": false,
+                            "orientation": "horizontal",
+                            "class": "qti-choices-top",
+                            "minChoices": 1,
+                            "maxChoices": 5
+                        },
+                        "choices": {
+                            "i5f171f4ddf8f7_top": {
+                                "identifier": "choice_1",
+                                "serial": "i5f171f4ddf8f7_top",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_1", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf939_top", "body": "1 kilogram", "elements": {} }
+                            },
+                            "i5f171f4ddf984_top": {
+                                "identifier": "choice_2",
+                                "serial": "i5f171f4ddf984_top",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_2", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf991_top", "body": "2 pounds", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb_top": {
+                                "identifier": "choice_3",
+                                "serial": "i5f171f4ddf9cb_top",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_3", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d6_top", "body": "3 ounces", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb4_top": {
+                                "identifier": "choice_4",
+                                "serial": "i5f171f4ddf9cb4_top",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_4", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d64_top", "body": "4 milligrams", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb5_top": {
+                                "identifier": "choice_5",
+                                "serial": "i5f171f4ddf9cb5_top",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_5", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d65_top", "body": "5 grams", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb6_top": {
+                                "identifier": "choice_6",
+                                "serial": "i5f171f4ddf9cb6_top",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_6", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d66_top", "body": "6 tonnes", "elements": {} }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f171f4ddf861_top",
+                            "body": "<h3>Horizontal - Top</h3><br/>Put these weight values in ascending order",
+                            "elements": {}
+                        }
+                    },
+                    "i5f171f4ddf7b2_bottom": {
+                        "serial": "i5f171f4ddf7b2_bottom",
+                        "qtiClass": "orderInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_4",
+                            "shuffle": false,
+                            "orientation": "horizontal",
+                            "class": "qti-choices-bottom",
+                            "minChoices": 1,
+                            "maxChoices": 5
+                        },
+                        "choices": {
+                            "i5f171f4ddf8f7_bottom": {
+                                "identifier": "choice_1",
+                                "serial": "i5f171f4ddf8f7_bottom",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_1", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf939_bottom", "body": "1 kilogram", "elements": {} }
+                            },
+                            "i5f171f4ddf984_bottom": {
+                                "identifier": "choice_2",
+                                "serial": "i5f171f4ddf984_bottom",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_2", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf991_bottom", "body": "2 pounds", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb_bottom": {
+                                "identifier": "choice_3",
+                                "serial": "i5f171f4ddf9cb_bottom",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_3", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d6_bottom", "body": "3 ounces", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb4_bottom": {
+                                "identifier": "choice_4",
+                                "serial": "i5f171f4ddf9cb4_bottom",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_4", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d64_bottom", "body": "4 milligrams", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb5_bottom": {
+                                "identifier": "choice_5",
+                                "serial": "i5f171f4ddf9cb5_bottom",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_5", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d65_bottom", "body": "5 grams", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb6_bottom": {
+                                "identifier": "choice_6",
+                                "serial": "i5f171f4ddf9cb6_bottom",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_6", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d66_bottom", "body": "6 tonnes", "elements": {} }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f171f4ddf861_bottom",
+                            "body": "<h3>Horizontal - Bottom</h3><br/>Put these weight values in ascending order",
+                            "elements": {}
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {
+                "i5f171f4ddf4f3": {
+                    "serial": "i5f171f4ddf4f3",
+                    "qtiClass": "stylesheet",
+                    "attributes": {
+                        "href": "style/custom/tao-user-styles.css",
+                        "type": "text/css",
+                        "media": "all",
+                        "title": ""
+                    }
+                }
+            },
+            "outcomes": {
+                "i5f171f4ddf65d": {
+                    "identifier": "SCORE",
+                    "serial": "i5f171f4ddf65d",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "defaultValue": null
+                },
+                "i5f171f4ddf6f1": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i5f171f4ddf6f1",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": { "identifier": "MAXSCORE", "cardinality": "single", "baseType": "float" },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "i5f171f4ddf58e_left": {
+                    "identifier": "RESPONSE_1",
+                    "serial": "i5f171f4ddf58e_left",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE_1", "cardinality": "ordered", "baseType": "identifier" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": ["choice_3", "choice_2", "choice_1"],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                },
+                "i5f171f4ddf58e_right": {
+                    "identifier": "RESPONSE_2",
+                    "serial": "i5f171f4ddf58e_right",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE_2", "cardinality": "ordered", "baseType": "identifier" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": ["choice_3", "choice_2", "choice_1"],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                },
+                "i5f171f4ddf58e_top": {
+                    "identifier": "RESPONSE_3",
+                    "serial": "i5f171f4ddf58e_top",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE_3", "cardinality": "ordered", "baseType": "identifier" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": ["choice_3", "choice_2", "choice_1"],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                },
+                "i5f171f4ddf58e_bottom": {
+                    "identifier": "RESPONSE_4",
+                    "serial": "i5f171f4ddf58e_bottom",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE_4", "cardinality": "ordered", "baseType": "identifier" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": ["choice_3", "choice_2", "choice_1"],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "i5f171f4ddfae2",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    { "qtiClass": "variable", "attributes": { "identifier": "RESPONSE" } },
+                                    { "qtiClass": "correct", "attributes": { "identifier": "RESPONSE" } }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": { "baseType": "float" },
+                                        "value": "1"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseElse": {
+                            "qtiClass": "responseElse",
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": { "baseType": "float" },
+                                        "value": "0"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": { "css": { "tao-user-styles.css": "tao-user-styles.css" } }
+    },
+    "success": true,
+    "itemState": {},
+    "itemIdentifier": "foo"
+}

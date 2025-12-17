@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
+
+SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+-->
+
+<assessmentItem xmlns="http://www.imsglobal.org/xsd/imsqti_v2p2"
+    xmlns:m="http://www.w3.org/1998/Math/MathML"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:html5="html5"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsqti_v2p2 http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+    identifier="navigationHelperItem" title="navigationHelperItem" label="navigationHelperItem"
+    xml:lang="en-US"
+    adaptive="false" timeDependent="false" toolName="ItemConverter">
+    <responseDeclaration identifier="RESPONSE" cardinality="single" baseType="integer" />
+    <outcomeDeclaration identifier="SCORE" cardinality="single" baseType="integer">
+        <defaultValue>
+            <value>0</value>
+        </defaultValue>
+    </outcomeDeclaration>
+    <itemBody>
+        <div class="grid-row">
+            <div class="col-12">
+                <customInteraction responseIdentifier="RESPONSE">
+                    <portableCustomInteraction
+                        xmlns="http://www.imsglobal.org/xsd/portableCustomInteraction_v1"
+                        customInteractionTypeIdentifier="navigationHelperTestPCI"
+                        data-version="0.1.0">
+                        <resources></resources>
+                        <properties>
+
+                        </properties>
+                        <modules>
+                            <module id="navigationHelperTestPCI"
+                                primaryPath="navigationHelperTestPCI.js" />
+                        </modules>
+                        <markup xmlns="http://www.w3.org/1999/xhtml">
+                            <div></div>
+                        </markup>
+                    </portableCustomInteraction>
+                </customInteraction>
+            </div>
+        </div>
+    </itemBody>
+</assessmentItem>

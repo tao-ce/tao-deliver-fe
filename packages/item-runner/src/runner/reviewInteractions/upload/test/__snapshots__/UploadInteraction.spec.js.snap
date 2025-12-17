@@ -1,0 +1,247 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`UploadInteraction > renders a plagiarism report 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-reviewInteraction qti-blockInteraction qti-uploadInteraction"
+    >
+       
+      <p
+        class="plagiarism-message suspicious"
+      >
+        <svg
+          aria-hidden="false"
+          class="icon medium"
+          viewBox="0 0 16 16"
+        >
+          <title>
+            Warning icon
+          </title>
+          <path
+            d="M8 1a7 7 0 11-7 7 7 7 0 017-7m0-1a8 8 0 108 8 8 8 0 00-8-8z"
+          />
+          <path
+            d="M7 3h2v6H7zm0 8h2v2H7z"
+          />
+        </svg>
+         
+        Suspicion of plagiarism:
+         
+        <a
+          href="http://example.com"
+          target="_blank"
+        >
+          view report
+        </a>
+      </p>
+      
+      
+      
+       
+      <div
+        class="selected-file-container empty"
+      >
+        <p
+          tabindex="-1"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Remove icon
+            </title>
+            <path
+              d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+            />
+          </svg>
+           
+          <span>
+            No answer file selected
+          </span>
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`UploadInteraction > renders props into markup 1`] = `
+<body>
+  <div>
+    <div
+      aria-bar="baz"
+      aria-foo="12"
+      class="qti-interaction qti-reviewInteraction qti-blockInteraction qti-uploadInteraction foo bar baz"
+      data-baz="24"
+      data-foo="bar"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+    >
+      <div
+        class="qti-prompt cf"
+      >
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+       
+       
+      <div
+        class="selected-file-container empty"
+      >
+        <p
+          tabindex="-1"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Remove icon
+            </title>
+            <path
+              d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+            />
+          </svg>
+           
+          <span>
+            No answer file selected
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`UploadInteraction > shows download link of uploaded file 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-reviewInteraction qti-blockInteraction qti-uploadInteraction"
+    >
+       
+       
+      <div
+        class="selected-file-container"
+      >
+        <p
+          tabindex="-1"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Check mark icon
+            </title>
+            <path
+              d="M14.73 1.91L16 3.18 5.09 14.09 0 9l1.27-1.27 3.82 3.82z"
+            />
+          </svg>
+           
+          <span>
+            Answer file selected:
+          </span>
+           
+          <a
+            download="foo.png"
+            href="http://example.com/download-asset?id=oaeuaoeu"
+            rel="noreferrer"
+            target="_blank"
+          >
+            foo.png
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`UploadInteraction > updates link if store changes 1`] = `
+<div
+  class="selected-file-container"
+>
+  <p
+    tabindex="-1"
+  >
+    <svg
+      aria-hidden="false"
+      class="icon medium"
+      viewBox="0 0 16 16"
+    >
+      <title>
+        Check mark icon
+      </title>
+      <path
+        d="M14.73 1.91L16 3.18 5.09 14.09 0 9l1.27-1.27 3.82 3.82z"
+      />
+    </svg>
+     
+    <span>
+      Answer file selected:
+    </span>
+     
+    <a
+      download="bar.png"
+      href="http://example.com/download-asset?id=12312aa"
+      rel="noreferrer"
+      target="_blank"
+    >
+      bar.png
+    </a>
+  </p>
+</div>
+`;
+
+exports[`UploadInteraction > updates link if store changes 2`] = `
+<div
+  class="selected-file-container empty"
+>
+  <p
+    tabindex="-1"
+  >
+    <svg
+      aria-hidden="false"
+      class="icon medium"
+      viewBox="0 0 16 16"
+    >
+      <title>
+        Remove icon
+      </title>
+      <path
+        d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+      />
+    </svg>
+     
+    <span>
+      No answer file selected
+    </span>
+  </p>
+</div>
+`;

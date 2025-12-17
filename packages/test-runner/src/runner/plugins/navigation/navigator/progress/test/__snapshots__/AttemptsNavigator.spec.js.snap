@@ -1,0 +1,100 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AttemptsNavigator rendering > renders numeric counter and no overview in linear attempts mode 1`] = `
+<body>
+  <div>
+    <div
+      class="button-container end"
+    >
+       
+      <button
+        aria-label="Attempt. You have 1 attempts left for this question."
+        class="actionable primary pill small"
+        name="attempt"
+        type="button"
+      >
+         
+         
+        Attempt (1 left)
+      </button>
+       
+    </div>
+     
+    <div
+      class="button-container start"
+    >
+      <div
+        class="counter"
+      >
+        1
+         / 
+        3
+      </div>
+      
+    </div>
+     
+    <div
+      class="button-container center"
+    />
+    
+  </div>
+</body>
+`;
+
+exports[`AttemptsNavigator rendering > renders overview and no numeric counter in non-linear attempts mode 1`] = `
+<body>
+  <div>
+    <div
+      class="button-container end"
+    >
+       
+      <button
+        aria-label="Attempt. You have 1 attempts left for this question."
+        class="actionable primary pill small"
+        name="attempt"
+        type="button"
+      >
+         
+         
+        Attempt (1 left)
+      </button>
+       
+    </div>
+     
+    <div
+      class="button-container start"
+    />
+     
+    <div
+      class="button-container center"
+    >
+       
+      <button
+        aria-label="Open overview of all 3 questions"
+        class="actionable secondary pill small"
+        name="overview"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="icon medium"
+          viewBox="0 0 16 16"
+        >
+          <title>
+            Chevron up icon
+          </title>
+          <path
+            d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+          />
+        </svg>
+         
+         
+        Overview (3)
+      </button>
+       
+      
+    </div>
+    
+  </div>
+</body>
+`;

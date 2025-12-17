@@ -1,0 +1,210 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i169269057336260157",
+            "serial": "item_169269057336260157",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i169269057336260157",
+                "title": "tategaki 1",
+                "label": "tategaki 1",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "2024.12",
+                "class": "writing-mode-vertical-rl"
+            },
+            "body": {
+                "serial": "container_containeritembody_169269057336260157",
+                "body": "{{interaction_choiceinteraction_1}}",
+                "elements": {
+                    "interaction_choiceinteraction_1": {
+                        "serial": "interaction_choiceinteraction_1",
+                        "qtiClass": "choiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "shuffle": false,
+                            "maxChoices": 0,
+                            "minChoices": 0,
+                            "orientation": "vertical",
+                            "class": "list-style-upper-alpha"
+                        },
+                        "choices": {
+                            "choice_1": {
+                                "identifier": "choice_1",
+                                "serial": "choice_simplechoice_1",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_1",
+                                    "body": "俳句",
+                                    "elements": []
+                                }
+                            },
+                            "choice_2": {
+                                "identifier": "choice_2",
+                                "serial": "choice_simplechoice_2",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_2",
+                                    "body": "和歌",
+                                    "elements": []
+                                }
+                            },
+                            "choice_3": {
+                                "identifier": "choice_3",
+                                "serial": "choice_simplechoice_3",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_3",
+                                    "body": "狂歌",
+                                    "elements": []
+                                }
+                            },
+                            "choice_8": {
+                                "identifier": "choice_8",
+                                "serial": "choice_simplechoice_8",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_8",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_8",
+                                    "body": "川柳",
+                                    "elements": []
+                                }
+                            },
+                            "choice_9": {
+                                "identifier": "choice_9",
+                                "serial": "choice_simplechoice_9",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_9",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_9",
+                                    "body": "都都逸",
+                                    "elements": []
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_prompt_1",
+                            "body": "季語を必要とするのは、つぎの五つのどれか。選べ。",
+                            "elements": []
+                        }
+                    }
+                }
+            },
+            "outcomes": {
+                "outcomedeclaration_score": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_score",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "0"
+                }
+            },
+            "responses": {
+                "responsedeclaration_1": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_1",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "multiple",
+                        "baseType": "identifier"
+                    }
+                }
+            },
+            "responseProcessing": {
+                "serial": "response_templatesdriven_1",
+                "qtiClass": "responseProcessing",
+                "attributes": [],
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "assets": []
+    },
+    "itemState": {},
+    "itemIdentifier": "item-tategaki-1",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    }
+}

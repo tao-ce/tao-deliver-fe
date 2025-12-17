@@ -1,0 +1,260 @@
+{
+  "baseUrl": "assets/graphic/order/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "i5fe32399bcbbb1835411699827c6a45",
+      "serial": "i5fec8b5c277a7",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "i5fe32399bcbbb1835411699827c6a45",
+        "title": "Kanji stroke order",
+        "label": "Kanji stroke order",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint144",
+        "class": ""
+      },
+      "body": {
+        "serial": "i5fec8b5c2779f",
+        "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i5fec8b5c27e6a}}\n      <\/div>\n    <\/div>\n  ",
+        "elements": {
+          "i5fec8b5c27e6a": {
+            "serial": "i5fec8b5c27e6a",
+            "qtiClass": "graphicOrderInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "class": "responsive qti-unselected-hidden"
+            },
+            "choices": {
+              "i5fec8b5c28107": {
+                "identifier": "hotspot_1",
+                "serial": "i5fec8b5c28107",
+                "qtiClass": "hotspotChoice",
+                "attributes": {
+                  "identifier": "hotspot_1",
+                  "fixed": false,
+                  "shape": "poly",
+                  "coords": "232,31,255,27,290,44,282,90,255,93,251,54"
+                }
+              },
+              "i5fec8b5c28187": {
+                "identifier": "hotspot_2",
+                "serial": "i5fec8b5c28187",
+                "qtiClass": "hotspotChoice",
+                "attributes": {
+                  "identifier": "hotspot_2",
+                  "fixed": false,
+                  "shape": "poly",
+                  "coords": "108,89,129,119,105,199,91,193,79,163,105,127"
+                }
+              },
+              "i5fec8b5c281ac": {
+                "identifier": "hotspot_3",
+                "serial": "i5fec8b5c281ac",
+                "qtiClass": "hotspotChoice",
+                "attributes": {
+                  "identifier": "hotspot_3",
+                  "fixed": false,
+                  "shape": "poly",
+                  "coords": "131,116,436,69,490,113,392,156,422,94,130,133"
+                }
+              },
+              "i5fec8b5c281cc": {
+                "identifier": "hotspot_4",
+                "serial": "i5fec8b5c281cc",
+                "qtiClass": "hotspotChoice",
+                "attributes": {
+                  "identifier": "hotspot_4",
+                  "fixed": false,
+                  "shape": "poly",
+                  "coords": "200,131,243,159,207,232,139,277,181,220,203,158"
+                }
+              },
+              "i5fec8b5c281eb": {
+                "identifier": "hotspot_5",
+                "serial": "i5fec8b5c281eb",
+                "qtiClass": "hotspotChoice",
+                "attributes": {
+                  "identifier": "hotspot_5",
+                  "fixed": false,
+                  "shape": "poly",
+                  "coords": "277,117,280,152,281,222,301,242,348,246,410,241,420,232,398,208,308,220,312,138"
+                }
+              },
+              "i5fec8b5c28208": {
+                "identifier": "hotspot_6",
+                "serial": "i5fec8b5c28208",
+                "qtiClass": "hotspotChoice",
+                "attributes": {
+                  "identifier": "hotspot_6",
+                  "fixed": false,
+                  "shape": "poly",
+                  "coords": "177,311,331,274,375,295,342,305,193,326"
+                }
+              },
+              "i5fec8b5c28224": {
+                "identifier": "hotspot_7",
+                "serial": "i5fec8b5c28224",
+                "qtiClass": "hotspotChoice",
+                "attributes": {
+                  "identifier": "hotspot_7",
+                  "fixed": false,
+                  "shape": "poly",
+                  "coords": "253,318,253,412,282,410,284,315"
+                }
+              },
+              "i5fec8b5c2823f": {
+                "identifier": "hotspot_8",
+                "serial": "i5fec8b5c2823f",
+                "qtiClass": "hotspotChoice",
+                "attributes": {
+                  "identifier": "hotspot_8",
+                  "fixed": false,
+                  "shape": "poly",
+                  "coords": "79,441,427,389,478,414,468,436,293,430,103,460"
+                }
+              }
+            },
+            "prompt": {
+              "serial": "i5fec8b5c27f69",
+              "body": "The Japanese Kanji symbol '<em>kuu<\/em>' can mean 'sky, vast, wide'. Click the brushstrokes of the character below to indicate the correct stroke order for writing this character (numbers 1-8 must all be used).",
+              "elements": {}
+            },
+            "object": {
+              "serial": "i5fec8b5c28270",
+              "qtiClass": "object",
+              "attributes": {
+                "data": "kuu-559x487.png",
+                "type": "image\/png",
+                "width": 559,
+                "height": 487
+              }
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+        "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+        "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+      },
+      "stylesheets": {},
+      "outcomes": {
+        "i5fec8b5c27bb0": {
+          "identifier": "SCORE",
+          "serial": "i5fec8b5c27bb0",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float",
+            "normalMaximum": 1
+          },
+          "defaultValue": null
+        },
+        "i5fec8b5c27ca2": {
+          "identifier": "MAXSCORE",
+          "serial": "i5fec8b5c27ca2",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "MAXSCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "1"
+        }
+      },
+      "responses": {
+        "i5fec8b5c27a4f": {
+          "identifier": "RESPONSE",
+          "serial": "i5fec8b5c27a4f",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "ordered",
+            "baseType": "identifier"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["hotspot_1", "hotspot_2", "hotspot_3", "hotspot_4", "hotspot_5", "hotspot_6", "hotspot_7", "hotspot_8"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        }
+      },
+      "feedbacks": {},
+      "responseProcessing": {
+        "serial": "i5fec8b5c28419",
+        "qtiClass": "responseProcessing",
+        "attributes": {},
+        "processingType": "templateDriven",
+        "responseRules": [{
+          "qtiClass": "responseCondition",
+          "responseIf": {
+            "qtiClass": "responseIf",
+            "expression": {
+              "qtiClass": "match",
+              "expressions": [{
+                "qtiClass": "variable",
+                "attributes": {
+                  "identifier": "RESPONSE"
+                }
+              }, {
+                "qtiClass": "correct",
+                "attributes": {
+                  "identifier": "RESPONSE"
+                }
+              }]
+            },
+            "responseRules": [{
+              "qtiClass": "setOutcomeValue",
+              "attributes": {
+                "identifier": "SCORE"
+              },
+              "expression": {
+                "qtiClass": "baseValue",
+                "attributes": {
+                  "baseType": "float"
+                },
+                "value": "1"
+              }
+            }]
+          },
+          "responseElse": {
+            "qtiClass": "responseElse",
+            "responseRules": [{
+              "qtiClass": "setOutcomeValue",
+              "attributes": {
+                "identifier": "SCORE"
+              },
+              "expression": {
+                "qtiClass": "baseValue",
+                "attributes": {
+                  "baseType": "float"
+                },
+                "value": "0"
+              }
+            }]
+          }
+        }]
+      },
+      "apipAccessibility": ""
+    },
+    "assets": {
+      "img": {
+        "kuu-559x487.png": "kuu-559x487.png"
+      }
+    }
+  },
+  "itemIdentifier": "item-2",
+  "success": true
+}

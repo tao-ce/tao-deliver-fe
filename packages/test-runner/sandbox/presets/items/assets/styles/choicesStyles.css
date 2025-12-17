@@ -1,0 +1,16 @@
+/*
+ * SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+ */
+
+.qti-interaction {
+    box-shadow: 5px 5px 20px 0 #5ac8fa;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.qti-interaction label:hover .caption-container, .qti-interaction label:hover .container {
+    background-color: rgb(255, 45, 85) !important;
+    border-color: rgb(255, 45, 85) !important;
+}

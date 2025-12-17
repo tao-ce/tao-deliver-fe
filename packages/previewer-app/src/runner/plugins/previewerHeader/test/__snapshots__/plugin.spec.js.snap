@@ -1,0 +1,57 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`previewerHeader plugin > mounts PreviewHeader component 1`] = `
+<body>
+  <div>
+    <div
+      class="top-bar"
+    >
+      <header
+        class="unit-preview-header"
+      >
+        <span>
+          Something
+        </span>
+         
+        <span>
+          /
+        </span>
+         
+        <span>
+          
+        </span>
+         
+        <span>
+          /
+        </span>
+         
+        <span>
+          ab-CD
+        </span>
+         
+        <ul>
+          <li>
+            <a
+              href="http://yy-YY/smth"
+              target="_blank"
+            >
+              View yy-YY
+            </a>
+             
+          </li>
+        </ul>
+      </header>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`previewerHeader plugin > mounts PreviewHeader component 2`] = `
+<body>
+  <div>
+    <div
+      class="top-bar"
+    />
+  </div>
+</body>
+`;

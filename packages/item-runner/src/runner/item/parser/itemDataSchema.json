@@ -1,0 +1,80 @@
+{
+    "type": "object",
+    "required": ["baseUrl", "itemData", "itemIdentifier"],
+    "properties": {
+        "baseUrl": { "type": "string" },
+        "itemData": { "$ref": "#/definitions/itemData" },
+        "itemIdentifier": { "type": "string" }
+    },
+    "definitions": {
+        "itemData": {
+            "type": "object",
+            "required": ["type", "data", "assets"],
+            "properties": {
+                "type": { "type": "string" },
+                "data": {
+                    "type": "object",
+                    "required": ["identifier", "qtiClass", "attributes", "body", "responses"],
+                    "properties": {
+                        "identifier": { "type": "string" },
+                        "qtiClass": { "type": "string" },
+                        "attributes": {
+                            "type": "object",
+                            "properties": {
+                                "identifier": { "type": "string" },
+                                "title": { "type": "string" },
+                                "xml:lang": { "type": "string" }
+                            }
+                        },
+                        "body": {
+                            "type": "object",
+                            "required": ["body", "elements"],
+                            "properties": {
+                                "body": { "type": "string" },
+                                "elements": {
+                                    "type": ["object", "array"],
+                                    "maxItems": 0,
+                                    "patternProperties": { ".*": { "$ref": "#/definitions/element" } }
+                                }
+                            }
+                        },
+                        "responses": {
+                            "type": ["object", "array"],
+                            "maxItems": 0,
+                            "patternProperties": { ".*": { "$ref": "#/definitions/response" } }
+                        }
+                    }
+                },
+                "assets": { "type": ["object", "array"] }
+            }
+        },
+        "response": {
+            "type": "object",
+            "required": ["identifier", "qtiClass", "attributes"],
+            "properties": {
+                "identifier": { "type": "string" },
+                "qtiClass": { "type": "string" },
+                "attributes": {
+                    "type": "object",
+                    "properties": {
+                        "identifier": { "type": "string" },
+                        "cardinality": { "type": "string" },
+                        "baseType": { "type": "string" }
+                    }
+                }
+            }
+        },
+        "element": {
+            "type": "object",
+            "required": ["qtiClass", "attributes"],
+            "properties": {
+                "qtiClass": { "type": "string" },
+                "attributes": {
+                    "type": ["object", "array"],
+                    "maxItems": 0,
+                    "properties": { "responseIdentifier": { "type": "string" } }
+                }
+            }
+        }
+    }
+}

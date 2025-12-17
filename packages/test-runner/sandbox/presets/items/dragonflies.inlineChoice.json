@@ -1,0 +1,3927 @@
+{
+  "baseUrl": "",
+  "itemIdentifier": "item-1",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "i60f543b928ce711f5b67b767bc8b1df",
+      "serial": "i60f55b2297347",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "i60f543b928ce711f5b67b767bc8b1df",
+        "title": "ND QA Inline choice TRN-377 1",
+        "label": "ND QA Inline choice TRN-377 1",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "NextGen",
+        "class": ""
+      },
+      "body": {
+        "serial": "i60f55b229733b",
+        "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-6\">\n        <h2 class=\"\">Dragonfly {{i60f55b229e864}} </h2>\n        <p class=\"\">A  {{i60f55b229ecc3}}is an insect belonging to the order Odonata, infraorder  {{i60f55b229ed88}}Anisoptera (from Greek ἄνισος anisos, \"unequal\" and πτερόν pteron, \"wing\", because the hindwing is broader than the forewing).{{i60f55b229eee7}} dragonflies {{i60f55b229ef9b}} are characterized by {{i60f55b229f0c0}}large, multifaceted {{i60f55b229f22a}}eyes, two pairs of strong, transparent wings, sometimes with coloured patches, and an elongated body. Dragonflies can be mistaken for the related group, damselflies (Zygoptera), which are similar in structure, though usually lighter in build; however, the wings of most dragonflies are held flat and away from the body, while  {{i60f55b229f27c}}damselflies{{i60f55b229f3a4}} hold their wings{{i60f55b229f4a4}}  folded at rest, along or above the abdomen. {{i60f55b229f68b}}Dragonflies are agile fliers, while damselflies have a weaker, fluttery flight. Many dragonflies have brilliant iridescent or  {{i60f55b229f73a}}metallic colours produced by structural colouration, making them conspicuous in flight. An adult dragonfly's compound eyes have nearly 24,000 ommatidia each.</p>\n        <p class=\"\">Fossils of very large dragonfly ancestors in the Protodonata are found from 325 million {{i60f55b229f8c8}}  years{{i60f55b229fa21}} ago (Mya) in Upper Carboniferous rocks; these had wingspans up to about 750 mm (30 in). About 3,000 extant species are known. Most are tropical, with fewer species in temperate regions. Loss of wetland habitat threatens dragonfly populations around the world.</p>\n        <p class=\"\">Dragonflies{{i60f55b229fb3e}}  are predators, both in their aquatic larval stage, when they are known as {{i60f55b229fe34}}nymphs or naiads, and as adults. In some species, the nymphal stage lasts for up to five years, and the adult stage may be as long as ten weeks, but most species have an adult lifespan in the order of five weeks or less, and some survive for only a few days.[2] They are fast, agile{{i60f55b229fead}}  fliers, sometimes migrating across oceans, and often live near water. They have a uniquely complex mode of reproduction involving indirect insemination, delayed fertilization, and sperm competition. During mating, the male grasps the female at the  {{i60f55b22b5de5}}back of the head, and the female curls her abdomen under her body to pick up sperm from the male's secondary genitalia at the front of his abdomen, forming the \"heart\" or \"wheel\" posture.</p>\n        <p class=\"\">Dragonflies are represented in human culture on artefacts such as pottery, rock {{i60f55b22b5f0e}}paintings, statues and Art Nouveau jewellery.{{i60f55b22b604e}}  They are used in traditional medicine in Japan and China, and caught for food in Indonesia. They are symbols of courage, strength, and happiness in Japan, but seen as sinister in European folklore. Their bright colours and agile flight are{{i60f55b22b6149}}  admired in the poetry of Lord{{i60f55b22b6274}}  Tennyson and the prose of H. E. Bates.</p>\n      </div>\n      <div class=\"col-6\">\n        <p class=\"\">A dragonfly is an  {{i60f55b22b6649}}belonging{{i60f55b22b6739}}  to the order Odonata, infraorder Anisoptera (from Greek ἄνισος anisos, \"unequal\" and πτερόν pteron, \"wing\", because the hindwing is broader than the forewing). Adult dragonflies are characterized by large, multifaceted eyes, two pairs of strong, transparent wings, sometimes with coloured patches, and an elongated body. Dragonflies can be mistaken for the related group, damselflies (Zygoptera), which are similar in structure, though usually lighter in build; however, the wings of most dragonflies are held flat and away from the body, while damselflies hold their wings folded at rest, along or above the abdomen. Dragonflies are agile fliers, while damselflies have a weaker, fluttery flight. Many dragonflies have brilliant iridescent or metallic colours produced by structural colouration, making them conspicuous in flight. An adult dragonfly's compound eyes have nearly 24,000 ommatidia each.</p>\n        <p class=\"\">Fossils of  {{i60f55b22b67c6}}very large dragonfly ancestors in the Protodonata are found from 325 million years ago (Mya) in Upper Carboniferous rocks; these had wingspans up to about 750 mm (30 in). About 3,000 extant species are known. Most are tropical, with fewer species in temperate regions. Loss of wetland habitat threatens dragonfly populations around the world.</p>\n        <p class=\"\">Dragonflies are predators, both in their aquatic larval stage, when they are known as nymphs or naiads, and as adults. In some species, the nymphal stage lasts for up to five years, and the adult stage may be as long as ten weeks, but most species have an {{i60f55b22b68ea}}adult lifespan in the order of five weeks or less, and some survive for only a few days.[2] They are fast, agile fliers, sometimes migrating across oceans, and often live near water. They have a uniquely complex mode of reproduction involving indirect insemination, delayed fertilization, and sperm competition. During mating, the male grasps the female at the back of the head, and the female curls her abdomen under her body to pick up sperm from the male's secondary genitalia at the front of his abdomen, forming the \"heart\" or \"wheel\" posture.</p>\n        <p class=\"\">Dragonflies are represented in human culture on artefacts such as pottery, rock paintings, statues and Art Nouveau jewellery. They are used in traditional medicine in Japan and China,  {{i60f55b22b695e}}and caught for food in Indonesia. They are symbols of courage, strength, and happiness in Japan, but seen as sinister in European folklore. Their bright colours and agile flight are admired in the poetry{{i60f55b22b6aff}}  of Lord Tennyson and the prose of H. E. Bates.{{i60f55b22b6ce8}} </p>\n      </div>\n    </div>\n  ",
+        "elements": {
+          "i60f55b229e864": {
+            "serial": "i60f55b229e864",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "shuffle": false,
+              "required": true
+            },
+            "choices": {
+              "i60f55b229e948": {
+                "identifier": "choice_1",
+                "serial": "i60f55b229e948",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_1",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b229e98c": {
+                "identifier": "choice_2",
+                "serial": "i60f55b229e98c",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_2",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b229e9ba": {
+                "identifier": "choice_3",
+                "serial": "i60f55b229e9ba",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_3",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b229e9e0": {
+                "identifier": "choice_4",
+                "serial": "i60f55b229e9e0",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_4",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b229ea08": {
+                "identifier": "choice_5",
+                "serial": "i60f55b229ea08",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_5",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b229ea2a": {
+                "identifier": "choice_6",
+                "serial": "i60f55b229ea2a",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_6",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b229ea44": {
+                "identifier": "choice_7",
+                "serial": "i60f55b229ea44",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_7",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b229ea60": {
+                "identifier": "choice_8",
+                "serial": "i60f55b229ea60",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_8",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b229ea7c": {
+                "identifier": "choice_9",
+                "serial": "i60f55b229ea7c",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_9",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b229ea99": {
+                "identifier": "choice_10",
+                "serial": "i60f55b229ea99",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_10",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #10"
+              },
+              "i60f55b229eabf": {
+                "identifier": "choice_11",
+                "serial": "i60f55b229eabf",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_11",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #11"
+              },
+              "i60f55b229eadd": {
+                "identifier": "choice_12",
+                "serial": "i60f55b229eadd",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_12",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #12"
+              },
+              "i60f55b229eafc": {
+                "identifier": "choice_13",
+                "serial": "i60f55b229eafc",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_13",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #13"
+              },
+              "i60f55b229eb1a": {
+                "identifier": "choice_14",
+                "serial": "i60f55b229eb1a",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_14",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #14"
+              },
+              "i60f55b229eb39": {
+                "identifier": "choice_15",
+                "serial": "i60f55b229eb39",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_15",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #15"
+              },
+              "i60f55b229eb64": {
+                "identifier": "choice_16",
+                "serial": "i60f55b229eb64",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_16",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #16"
+              },
+              "i60f55b229eb83": {
+                "identifier": "choice_17",
+                "serial": "i60f55b229eb83",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_17",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #17"
+              },
+              "i60f55b229eba1": {
+                "identifier": "choice_18",
+                "serial": "i60f55b229eba1",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_18",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #18"
+              },
+              "i60f55b229ebc0": {
+                "identifier": "choice_19",
+                "serial": "i60f55b229ebc0",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_19",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #19"
+              },
+              "i60f55b229ebde": {
+                "identifier": "choice_20",
+                "serial": "i60f55b229ebde",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_20",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #20"
+              },
+              "i60f55b229ebfb": {
+                "identifier": "choice_21",
+                "serial": "i60f55b229ebfb",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_21",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #21"
+              },
+              "i60f55b229ec1d": {
+                "identifier": "choice_22",
+                "serial": "i60f55b229ec1d",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_22",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #22"
+              },
+              "i60f55b229ec3d": {
+                "identifier": "choice_23",
+                "serial": "i60f55b229ec3d",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_23",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #23"
+              },
+              "i60f55b229ec5f": {
+                "identifier": "choice_24",
+                "serial": "i60f55b229ec5f",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_24",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #24"
+              }
+            }
+          },
+          "i60f55b229ecc3": {
+            "serial": "i60f55b229ecc3",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_2",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b229ed2a": {
+                "identifier": "choice_31",
+                "serial": "i60f55b229ed2a",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_31",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "dragonfly"
+              },
+              "i60f55b229ed55": {
+                "identifier": "choice_32",
+                "serial": "i60f55b229ed55",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_32",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "fly"
+              }
+            }
+          },
+          "i60f55b229ed88": {
+            "serial": "i60f55b229ed88",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_5",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b229edf7": {
+                "identifier": "choice_38",
+                "serial": "i60f55b229edf7",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_38",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "hello "
+              },
+              "i60f55b229ee1e": {
+                "identifier": "choice_39",
+                "serial": "i60f55b229ee1e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_39",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "hello hello hello hello"
+              },
+              "i60f55b229ee3e": {
+                "identifier": "choice_40",
+                "serial": "i60f55b229ee3e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_40",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "papapapa papapapa"
+              },
+              "i60f55b229ee5e": {
+                "identifier": "choice_41",
+                "serial": "i60f55b229ee5e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_41",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "&lt;bold&gt;"
+              },
+              "i60f55b229ee7e": {
+                "identifier": "choice_42",
+                "serial": "i60f55b229ee7e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_42",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "1 &gt; x"
+              },
+              "i60f55b229ee9e": {
+                "identifier": "choice_43",
+                "serial": "i60f55b229ee9e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_43",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "x &lt; 2"
+              },
+              "i60f55b229eebc": {
+                "identifier": "choice_44",
+                "serial": "i60f55b229eebc",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_44",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "y = 8"
+              }
+            }
+          },
+          "i60f55b229eee7": {
+            "serial": "i60f55b229eee7",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_4",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b229ef35": {
+                "identifier": "choice_35",
+                "serial": "i60f55b229ef35",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_35",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "Adult"
+              },
+              "i60f55b229ef56": {
+                "identifier": "choice_36",
+                "serial": "i60f55b229ef56",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_36",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "Infant"
+              },
+              "i60f55b229ef72": {
+                "identifier": "choice_37",
+                "serial": "i60f55b229ef72",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_37",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "Mature"
+              }
+            }
+          },
+          "i60f55b229ef9b": {
+            "serial": "i60f55b229ef9b",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_6",
+              "shuffle": false,
+              "required": true
+            },
+            "choices": {
+              "i60f55b229eff1": {
+                "identifier": "choice_45",
+                "serial": "i60f55b229eff1",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_45",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b229f016": {
+                "identifier": "choice_46",
+                "serial": "i60f55b229f016",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_46",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b229f038": {
+                "identifier": "choice_47",
+                "serial": "i60f55b229f038",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_47",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b229f058": {
+                "identifier": "choice_48",
+                "serial": "i60f55b229f058",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_48",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b229f096": {
+                "identifier": "choice_49",
+                "serial": "i60f55b229f096",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_49",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              }
+            }
+          },
+          "i60f55b229f0c0": {
+            "serial": "i60f55b229f0c0",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_7",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b229f11c": {
+                "identifier": "choice_50",
+                "serial": "i60f55b229f11c",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_50",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b229f140": {
+                "identifier": "choice_51",
+                "serial": "i60f55b229f140",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_51",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b229f160": {
+                "identifier": "choice_52",
+                "serial": "i60f55b229f160",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_52",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b229f185": {
+                "identifier": "choice_53",
+                "serial": "i60f55b229f185",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_53",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b229f19a": {
+                "identifier": "choice_54",
+                "serial": "i60f55b229f19a",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_54",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b229f1ac": {
+                "identifier": "choice_55",
+                "serial": "i60f55b229f1ac",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_55",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b229f1c5": {
+                "identifier": "choice_56",
+                "serial": "i60f55b229f1c5",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_56",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b229f1d7": {
+                "identifier": "choice_57",
+                "serial": "i60f55b229f1d7",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_57",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b229f1e9": {
+                "identifier": "choice_58",
+                "serial": "i60f55b229f1e9",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_58",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b229f1fc": {
+                "identifier": "choice_59",
+                "serial": "i60f55b229f1fc",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_59",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #10"
+              },
+              "i60f55b229f20e": {
+                "identifier": "choice_60",
+                "serial": "i60f55b229f20e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_60",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #11"
+              }
+            }
+          },
+          "i60f55b229f22a": {
+            "serial": "i60f55b229f22a",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_8",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b229f25f": {
+                "identifier": "choice_61",
+                "serial": "i60f55b229f25f",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_61",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              }
+            }
+          },
+          "i60f55b229f27c": {
+            "serial": "i60f55b229f27c",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_11",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b229f2b4": {
+                "identifier": "choice_81",
+                "serial": "i60f55b229f2b4",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_81",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b229f2cf": {
+                "identifier": "choice_82",
+                "serial": "i60f55b229f2cf",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_82",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b229f2e3": {
+                "identifier": "choice_83",
+                "serial": "i60f55b229f2e3",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_83",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b229f2f5": {
+                "identifier": "choice_84",
+                "serial": "i60f55b229f2f5",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_84",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b229f30e": {
+                "identifier": "choice_85",
+                "serial": "i60f55b229f30e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_85",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b229f32a": {
+                "identifier": "choice_86",
+                "serial": "i60f55b229f32a",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_86",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b229f346": {
+                "identifier": "choice_87",
+                "serial": "i60f55b229f346",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_87",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b229f35d": {
+                "identifier": "choice_88",
+                "serial": "i60f55b229f35d",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_88",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b229f374": {
+                "identifier": "choice_89",
+                "serial": "i60f55b229f374",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_89",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b229f386": {
+                "identifier": "choice_90",
+                "serial": "i60f55b229f386",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_90",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #10"
+              }
+            }
+          },
+          "i60f55b229f3a4": {
+            "serial": "i60f55b229f3a4",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_12",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b229f3dc": {
+                "identifier": "choice_91",
+                "serial": "i60f55b229f3dc",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_91",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b229f3f1": {
+                "identifier": "choice_92",
+                "serial": "i60f55b229f3f1",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_92",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b229f406": {
+                "identifier": "choice_93",
+                "serial": "i60f55b229f406",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_93",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b229f419": {
+                "identifier": "choice_94",
+                "serial": "i60f55b229f419",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_94",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b229f42b": {
+                "identifier": "choice_95",
+                "serial": "i60f55b229f42b",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_95",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b229f43d": {
+                "identifier": "choice_96",
+                "serial": "i60f55b229f43d",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_96",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b229f46b": {
+                "identifier": "choice_97",
+                "serial": "i60f55b229f46b",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_97",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b229f489": {
+                "identifier": "choice_98",
+                "serial": "i60f55b229f489",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_98",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              }
+            }
+          },
+          "i60f55b229f4a4": {
+            "serial": "i60f55b229f4a4",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_13",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b229f504": {
+                "identifier": "choice_99",
+                "serial": "i60f55b229f504",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_99",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b229f525": {
+                "identifier": "choice_100",
+                "serial": "i60f55b229f525",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_100",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b229f544": {
+                "identifier": "choice_101",
+                "serial": "i60f55b229f544",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_101",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b229f559": {
+                "identifier": "choice_102",
+                "serial": "i60f55b229f559",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_102",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b229f576": {
+                "identifier": "choice_103",
+                "serial": "i60f55b229f576",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_103",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b229f58a": {
+                "identifier": "choice_104",
+                "serial": "i60f55b229f58a",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_104",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b229f59c": {
+                "identifier": "choice_105",
+                "serial": "i60f55b229f59c",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_105",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b229f5bf": {
+                "identifier": "choice_106",
+                "serial": "i60f55b229f5bf",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_106",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b229f5d3": {
+                "identifier": "choice_107",
+                "serial": "i60f55b229f5d3",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_107",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b229f5e5": {
+                "identifier": "choice_108",
+                "serial": "i60f55b229f5e5",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_108",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #10"
+              },
+              "i60f55b229f5f7": {
+                "identifier": "choice_109",
+                "serial": "i60f55b229f5f7",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_109",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #11"
+              },
+              "i60f55b229f609": {
+                "identifier": "choice_110",
+                "serial": "i60f55b229f609",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_110",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #12"
+              },
+              "i60f55b229f61b": {
+                "identifier": "choice_111",
+                "serial": "i60f55b229f61b",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_111",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #13"
+              },
+              "i60f55b229f62d": {
+                "identifier": "choice_112",
+                "serial": "i60f55b229f62d",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_112",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #14"
+              },
+              "i60f55b229f63f": {
+                "identifier": "choice_113",
+                "serial": "i60f55b229f63f",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_113",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #15"
+              },
+              "i60f55b229f656": {
+                "identifier": "choice_114",
+                "serial": "i60f55b229f656",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_114",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #16"
+              },
+              "i60f55b229f66f": {
+                "identifier": "choice_115",
+                "serial": "i60f55b229f66f",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_115",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #17"
+              }
+            }
+          },
+          "i60f55b229f68b": {
+            "serial": "i60f55b229f68b",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_14",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b229f6c1": {
+                "identifier": "choice_122",
+                "serial": "i60f55b229f6c1",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_122",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b229f6d6": {
+                "identifier": "choice_123",
+                "serial": "i60f55b229f6d6",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_123",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b229f6fc": {
+                "identifier": "choice_124",
+                "serial": "i60f55b229f6fc",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_124",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b229f70f": {
+                "identifier": "choice_125",
+                "serial": "i60f55b229f70f",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_125",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b229f721": {
+                "identifier": "choice_126",
+                "serial": "i60f55b229f721",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_126",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              }
+            }
+          },
+          "i60f55b229f73a": {
+            "serial": "i60f55b229f73a",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_15",
+              "shuffle": false,
+              "required": true
+            },
+            "choices": {
+              "i60f55b229f78b": {
+                "identifier": "choice_127",
+                "serial": "i60f55b229f78b",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_127",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b229f7ab": {
+                "identifier": "choice_128",
+                "serial": "i60f55b229f7ab",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_128",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b229f7c9": {
+                "identifier": "choice_129",
+                "serial": "i60f55b229f7c9",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_129",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b229f7e4": {
+                "identifier": "choice_130",
+                "serial": "i60f55b229f7e4",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_130",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b229f7f8": {
+                "identifier": "choice_131",
+                "serial": "i60f55b229f7f8",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_131",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b229f80a": {
+                "identifier": "choice_132",
+                "serial": "i60f55b229f80a",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_132",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b229f81c": {
+                "identifier": "choice_133",
+                "serial": "i60f55b229f81c",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_133",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b229f868": {
+                "identifier": "choice_134",
+                "serial": "i60f55b229f868",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_134",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b229f884": {
+                "identifier": "choice_135",
+                "serial": "i60f55b229f884",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_135",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b229f897": {
+                "identifier": "choice_136",
+                "serial": "i60f55b229f897",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_136",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #10"
+              },
+              "i60f55b229f8a9": {
+                "identifier": "choice_137",
+                "serial": "i60f55b229f8a9",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_137",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #11"
+              }
+            }
+          },
+          "i60f55b229f8c8": {
+            "serial": "i60f55b229f8c8",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_16",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b229f90e": {
+                "identifier": "choice_138",
+                "serial": "i60f55b229f90e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_138",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "billion"
+              },
+              "i60f55b229f925": {
+                "identifier": "choice_139",
+                "serial": "i60f55b229f925",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_139",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "million"
+              },
+              "i60f55b229f939": {
+                "identifier": "choice_140",
+                "serial": "i60f55b229f939",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_140",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "thousand"
+              },
+              "i60f55b229f95e": {
+                "identifier": "choice_141",
+                "serial": "i60f55b229f95e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_141",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b229f97a": {
+                "identifier": "choice_142",
+                "serial": "i60f55b229f97a",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_142",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b229f997": {
+                "identifier": "choice_143",
+                "serial": "i60f55b229f997",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_143",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b229f9b7": {
+                "identifier": "choice_144",
+                "serial": "i60f55b229f9b7",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_144",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b229f9ef": {
+                "identifier": "choice_145",
+                "serial": "i60f55b229f9ef",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_145",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b229fa05": {
+                "identifier": "choice_146",
+                "serial": "i60f55b229fa05",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_146",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              }
+            }
+          },
+          "i60f55b229fa21": {
+            "serial": "i60f55b229fa21",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_17",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b229fa66": {
+                "identifier": "choice_147",
+                "serial": "i60f55b229fa66",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_147",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "ΑΒΓΔΕΖΗ ΘΙΚ ΛΜΝΞΟ ΠΡΣΤ ΥΦΧΨ Ω αβ γδεζη θικλ"
+              },
+              "i60f55b229fa7d": {
+                "identifier": "choice_148",
+                "serial": "i60f55b229fa7d",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_148",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b229fa91": {
+                "identifier": "choice_149",
+                "serial": "i60f55b229fa91",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_149",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b229faa5": {
+                "identifier": "choice_150",
+                "serial": "i60f55b229faa5",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_150",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b229faba": {
+                "identifier": "choice_151",
+                "serial": "i60f55b229faba",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_151",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b229facc": {
+                "identifier": "choice_152",
+                "serial": "i60f55b229facc",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_152",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b229fade": {
+                "identifier": "choice_153",
+                "serial": "i60f55b229fade",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_153",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b229faef": {
+                "identifier": "choice_154",
+                "serial": "i60f55b229faef",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_154",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b229fb01": {
+                "identifier": "choice_155",
+                "serial": "i60f55b229fb01",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_155",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b229fb13": {
+                "identifier": "choice_156",
+                "serial": "i60f55b229fb13",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_156",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #10"
+              },
+              "i60f55b229fb25": {
+                "identifier": "choice_157",
+                "serial": "i60f55b229fb25",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_157",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #11"
+              }
+            }
+          },
+          "i60f55b229fb3e": {
+            "serial": "i60f55b229fb3e",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_18",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b229fba7": {
+                "identifier": "choice_158",
+                "serial": "i60f55b229fba7",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_158",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b229fbbe": {
+                "identifier": "choice_159",
+                "serial": "i60f55b229fbbe",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_159",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b229fbd2": {
+                "identifier": "choice_160",
+                "serial": "i60f55b229fbd2",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_160",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b229fbe4": {
+                "identifier": "choice_161",
+                "serial": "i60f55b229fbe4",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_161",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b229fbf7": {
+                "identifier": "choice_162",
+                "serial": "i60f55b229fbf7",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_162",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b229fc09": {
+                "identifier": "choice_163",
+                "serial": "i60f55b229fc09",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_163",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b229fc36": {
+                "identifier": "choice_164",
+                "serial": "i60f55b229fc36",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_164",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b229fc51": {
+                "identifier": "choice_165",
+                "serial": "i60f55b229fc51",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_165",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b229fc64": {
+                "identifier": "choice_166",
+                "serial": "i60f55b229fc64",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_166",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b229fc79": {
+                "identifier": "choice_167",
+                "serial": "i60f55b229fc79",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_167",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #10"
+              },
+              "i60f55b229fc8b": {
+                "identifier": "choice_168",
+                "serial": "i60f55b229fc8b",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_168",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #11"
+              },
+              "i60f55b229fc9d": {
+                "identifier": "choice_169",
+                "serial": "i60f55b229fc9d",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_169",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #12"
+              },
+              "i60f55b229fcaf": {
+                "identifier": "choice_170",
+                "serial": "i60f55b229fcaf",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_170",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #13"
+              },
+              "i60f55b229fcc5": {
+                "identifier": "choice_171",
+                "serial": "i60f55b229fcc5",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_171",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #14"
+              },
+              "i60f55b229fcd7": {
+                "identifier": "choice_172",
+                "serial": "i60f55b229fcd7",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_172",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #15"
+              },
+              "i60f55b229fce9": {
+                "identifier": "choice_173",
+                "serial": "i60f55b229fce9",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_173",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #16"
+              },
+              "i60f55b229fcfd": {
+                "identifier": "choice_174",
+                "serial": "i60f55b229fcfd",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_174",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #17"
+              },
+              "i60f55b229fd10": {
+                "identifier": "choice_175",
+                "serial": "i60f55b229fd10",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_175",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #18"
+              },
+              "i60f55b229fd22": {
+                "identifier": "choice_176",
+                "serial": "i60f55b229fd22",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_176",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #19"
+              },
+              "i60f55b229fd33": {
+                "identifier": "choice_177",
+                "serial": "i60f55b229fd33",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_177",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #20"
+              },
+              "i60f55b229fd4a": {
+                "identifier": "choice_178",
+                "serial": "i60f55b229fd4a",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_178",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #21"
+              },
+              "i60f55b229fd5c": {
+                "identifier": "choice_179",
+                "serial": "i60f55b229fd5c",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_179",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #22"
+              },
+              "i60f55b229fd6d": {
+                "identifier": "choice_180",
+                "serial": "i60f55b229fd6d",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_180",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #23"
+              },
+              "i60f55b229fd7f": {
+                "identifier": "choice_181",
+                "serial": "i60f55b229fd7f",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_181",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #24"
+              },
+              "i60f55b229fd91": {
+                "identifier": "choice_182",
+                "serial": "i60f55b229fd91",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_182",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #25"
+              },
+              "i60f55b229fda5": {
+                "identifier": "choice_183",
+                "serial": "i60f55b229fda5",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_183",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #26"
+              },
+              "i60f55b229fdbc": {
+                "identifier": "choice_184",
+                "serial": "i60f55b229fdbc",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_184",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #27"
+              },
+              "i60f55b229fdce": {
+                "identifier": "choice_185",
+                "serial": "i60f55b229fdce",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_185",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #28"
+              },
+              "i60f55b229fde4": {
+                "identifier": "choice_186",
+                "serial": "i60f55b229fde4",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_186",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #29"
+              },
+              "i60f55b229fdf6": {
+                "identifier": "choice_187",
+                "serial": "i60f55b229fdf6",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_187",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #30"
+              },
+              "i60f55b229fe07": {
+                "identifier": "choice_188",
+                "serial": "i60f55b229fe07",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_188",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #31"
+              },
+              "i60f55b229fe18": {
+                "identifier": "choice_189",
+                "serial": "i60f55b229fe18",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_189",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #32"
+              }
+            }
+          },
+          "i60f55b229fe34": {
+            "serial": "i60f55b229fe34",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_19",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b229fe67": {
+                "identifier": "choice_190",
+                "serial": "i60f55b229fe67",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_190",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b229fe7e": {
+                "identifier": "choice_191",
+                "serial": "i60f55b229fe7e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_191",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b229fe92": {
+                "identifier": "choice_192",
+                "serial": "i60f55b229fe92",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_192",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              }
+            }
+          },
+          "i60f55b229fead": {
+            "serial": "i60f55b229fead",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_20",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b229feee": {
+                "identifier": "choice_193",
+                "serial": "i60f55b229feee",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_193",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b229ff04": {
+                "identifier": "choice_194",
+                "serial": "i60f55b229ff04",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_194",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b229ff18": {
+                "identifier": "choice_195",
+                "serial": "i60f55b229ff18",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_195",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b229ff2b": {
+                "identifier": "choice_196",
+                "serial": "i60f55b229ff2b",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_196",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b229ff3d": {
+                "identifier": "choice_197",
+                "serial": "i60f55b229ff3d",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_197",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b229ff56": {
+                "identifier": "choice_198",
+                "serial": "i60f55b229ff56",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_198",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b229ff68": {
+                "identifier": "choice_199",
+                "serial": "i60f55b229ff68",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_199",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b229ff7d": {
+                "identifier": "choice_200",
+                "serial": "i60f55b229ff7d",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_200",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b229ff96": {
+                "identifier": "choice_201",
+                "serial": "i60f55b229ff96",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_201",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b229ffb4": {
+                "identifier": "choice_202",
+                "serial": "i60f55b229ffb4",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_202",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #10"
+              },
+              "i60f55b229ffcf": {
+                "identifier": "choice_203",
+                "serial": "i60f55b229ffcf",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_203",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #11"
+              },
+              "i60f55b229ffe1": {
+                "identifier": "choice_204",
+                "serial": "i60f55b229ffe1",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_204",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #12"
+              },
+              "i60f55b229fff3": {
+                "identifier": "choice_205",
+                "serial": "i60f55b229fff3",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_205",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #13"
+              },
+              "i60f55b22b5d9d": {
+                "identifier": "choice_206",
+                "serial": "i60f55b22b5d9d",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_206",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #14"
+              }
+            }
+          },
+          "i60f55b22b5de5": {
+            "serial": "i60f55b22b5de5",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_21",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b22b5e57": {
+                "identifier": "choice_207",
+                "serial": "i60f55b22b5e57",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_207",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b22b5e74": {
+                "identifier": "choice_208",
+                "serial": "i60f55b22b5e74",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_208",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b22b5e8d": {
+                "identifier": "choice_209",
+                "serial": "i60f55b22b5e8d",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_209",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b22b5ea3": {
+                "identifier": "choice_210",
+                "serial": "i60f55b22b5ea3",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_210",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b22b5eb6": {
+                "identifier": "choice_211",
+                "serial": "i60f55b22b5eb6",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_211",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b22b5ee9": {
+                "identifier": "choice_212",
+                "serial": "i60f55b22b5ee9",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_212",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              }
+            }
+          },
+          "i60f55b22b5f0e": {
+            "serial": "i60f55b22b5f0e",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_23",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b22b5f57": {
+                "identifier": "choice_221",
+                "serial": "i60f55b22b5f57",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_221",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "ΑΒΓΔ ΕΖΗΘΙΚ ΛΜΝΞ ΟΠΡΣΤ ΥΦΧΨ Ω αβγδεζ ηθικλ"
+              },
+              "i60f55b22b5f6f": {
+                "identifier": "choice_222",
+                "serial": "i60f55b22b5f6f",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_222",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b22b5f84": {
+                "identifier": "choice_223",
+                "serial": "i60f55b22b5f84",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_223",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b22b5fbc": {
+                "identifier": "choice_224",
+                "serial": "i60f55b22b5fbc",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_224",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b22b5fd2": {
+                "identifier": "choice_225",
+                "serial": "i60f55b22b5fd2",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_225",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b22b5fe6": {
+                "identifier": "choice_226",
+                "serial": "i60f55b22b5fe6",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_226",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b22b5ff9": {
+                "identifier": "choice_227",
+                "serial": "i60f55b22b5ff9",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_227",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b22b600b": {
+                "identifier": "choice_228",
+                "serial": "i60f55b22b600b",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_228",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b22b601e": {
+                "identifier": "choice_229",
+                "serial": "i60f55b22b601e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_229",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b22b6031": {
+                "identifier": "choice_230",
+                "serial": "i60f55b22b6031",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_230",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ αβγδεζηθικλ"
+              }
+            }
+          },
+          "i60f55b22b604e": {
+            "serial": "i60f55b22b604e",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_22",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b22b6098": {
+                "identifier": "choice_213",
+                "serial": "i60f55b22b6098",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_213",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b22b60b1": {
+                "identifier": "choice_214",
+                "serial": "i60f55b22b60b1",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_214",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b22b60c5": {
+                "identifier": "choice_215",
+                "serial": "i60f55b22b60c5",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_215",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b22b60d9": {
+                "identifier": "choice_216",
+                "serial": "i60f55b22b60d9",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_216",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b22b60ef": {
+                "identifier": "choice_217",
+                "serial": "i60f55b22b60ef",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_217",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b22b6101": {
+                "identifier": "choice_218",
+                "serial": "i60f55b22b6101",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_218",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b22b6114": {
+                "identifier": "choice_219",
+                "serial": "i60f55b22b6114",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_219",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b22b6126": {
+                "identifier": "choice_220",
+                "serial": "i60f55b22b6126",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_220",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              }
+            }
+          },
+          "i60f55b22b6149": {
+            "serial": "i60f55b22b6149",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_10",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b22b6189": {
+                "identifier": "choice_75",
+                "serial": "i60f55b22b6189",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_75",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "Dragonfly Dragonfly Dragonfly Dragonfly "
+              },
+              "i60f55b22b61a0": {
+                "identifier": "choice_76",
+                "serial": "i60f55b22b61a0",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_76",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "Dragonfly "
+              },
+              "i60f55b22b61b3": {
+                "identifier": "choice_77",
+                "serial": "i60f55b22b61b3",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_77",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "æøå"
+              },
+              "i60f55b22b61c6": {
+                "identifier": "choice_78",
+                "serial": "i60f55b22b61c6",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_78",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "ÝÞß àáâ ãäå æçèéêëìí îïðñò óôõöø ùúû üýþÿ| ÇĞIİÖŞÜ"
+              },
+              "i60f55b22b61d9": {
+                "identifier": "choice_79",
+                "serial": "i60f55b22b61d9",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_79",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "jAvAscript:alert(1)"
+              },
+              "i60f55b22b61eb": {
+                "identifier": "choice_80",
+                "serial": "i60f55b22b61eb",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_80",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "^@ DEL"
+              },
+              "i60f55b22b61ff": {
+                "identifier": "choice_116",
+                "serial": "i60f55b22b61ff",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_116",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b22b6211": {
+                "identifier": "choice_117",
+                "serial": "i60f55b22b6211",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_117",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b22b6223": {
+                "identifier": "choice_118",
+                "serial": "i60f55b22b6223",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_118",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b22b6235": {
+                "identifier": "choice_119",
+                "serial": "i60f55b22b6235",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_119",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #10"
+              },
+              "i60f55b22b6247": {
+                "identifier": "choice_120",
+                "serial": "i60f55b22b6247",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_120",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #11"
+              },
+              "i60f55b22b625b": {
+                "identifier": "choice_121",
+                "serial": "i60f55b22b625b",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_121",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #12"
+              }
+            }
+          },
+          "i60f55b22b6274": {
+            "serial": "i60f55b22b6274",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_9",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b22b62b9": {
+                "identifier": "choice_62",
+                "serial": "i60f55b22b62b9",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_62",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b22b62ce": {
+                "identifier": "choice_63",
+                "serial": "i60f55b22b62ce",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_63",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b22b62e2": {
+                "identifier": "choice_64",
+                "serial": "i60f55b22b62e2",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_64",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b22b62f6": {
+                "identifier": "choice_65",
+                "serial": "i60f55b22b62f6",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_65",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b22b6308": {
+                "identifier": "choice_66",
+                "serial": "i60f55b22b6308",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_66",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b22b631a": {
+                "identifier": "choice_67",
+                "serial": "i60f55b22b631a",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_67",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b22b632c": {
+                "identifier": "choice_68",
+                "serial": "i60f55b22b632c",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_68",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b22b633e": {
+                "identifier": "choice_69",
+                "serial": "i60f55b22b633e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_69",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b22b6350": {
+                "identifier": "choice_70",
+                "serial": "i60f55b22b6350",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_70",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b22b6362": {
+                "identifier": "choice_71",
+                "serial": "i60f55b22b6362",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_71",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #10"
+              },
+              "i60f55b22b656b": {
+                "identifier": "choice_72",
+                "serial": "i60f55b22b656b",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_72",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #11"
+              },
+              "i60f55b22b65ea": {
+                "identifier": "choice_73",
+                "serial": "i60f55b22b65ea",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_73",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #12"
+              },
+              "i60f55b22b6613": {
+                "identifier": "choice_74",
+                "serial": "i60f55b22b6613",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_74",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #13"
+              }
+            }
+          },
+          "i60f55b22b6649": {
+            "serial": "i60f55b22b6649",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_1",
+              "shuffle": false,
+              "required": true
+            },
+            "choices": {
+              "i60f55b22b66b2": {
+                "identifier": "choice_25",
+                "serial": "i60f55b22b66b2",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_25",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "insect"
+              },
+              "i60f55b22b66cc": {
+                "identifier": "choice_26",
+                "serial": "i60f55b22b66cc",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_26",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b22b66e1": {
+                "identifier": "choice_27",
+                "serial": "i60f55b22b66e1",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_27",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b22b66f6": {
+                "identifier": "choice_28",
+                "serial": "i60f55b22b66f6",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_28",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b22b670b": {
+                "identifier": "choice_29",
+                "serial": "i60f55b22b670b",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_29",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b22b671e": {
+                "identifier": "choice_30",
+                "serial": "i60f55b22b671e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_30",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              }
+            }
+          },
+          "i60f55b22b6739": {
+            "serial": "i60f55b22b6739",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_3",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b22b678e": {
+                "identifier": "choice_33",
+                "serial": "i60f55b22b678e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_33",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b22b67aa": {
+                "identifier": "choice_34",
+                "serial": "i60f55b22b67aa",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_34",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              }
+            }
+          },
+          "i60f55b22b67c6": {
+            "serial": "i60f55b22b67c6",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_27",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b22b6807": {
+                "identifier": "choice_278",
+                "serial": "i60f55b22b6807",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_278",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b22b681e": {
+                "identifier": "choice_279",
+                "serial": "i60f55b22b681e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_279",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b22b6832": {
+                "identifier": "choice_280",
+                "serial": "i60f55b22b6832",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_280",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b22b6845": {
+                "identifier": "choice_281",
+                "serial": "i60f55b22b6845",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_281",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b22b6858": {
+                "identifier": "choice_282",
+                "serial": "i60f55b22b6858",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_282",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b22b686b": {
+                "identifier": "choice_283",
+                "serial": "i60f55b22b686b",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_283",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b22b6880": {
+                "identifier": "choice_284",
+                "serial": "i60f55b22b6880",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_284",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b22b6892": {
+                "identifier": "choice_285",
+                "serial": "i60f55b22b6892",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_285",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b22b68a5": {
+                "identifier": "choice_286",
+                "serial": "i60f55b22b68a5",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_286",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b22b68b9": {
+                "identifier": "choice_287",
+                "serial": "i60f55b22b68b9",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_287",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #10"
+              },
+              "i60f55b22b68ce": {
+                "identifier": "choice_288",
+                "serial": "i60f55b22b68ce",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_288",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #11"
+              }
+            }
+          },
+          "i60f55b22b68ea": {
+            "serial": "i60f55b22b68ea",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_28",
+              "shuffle": false,
+              "required": true
+            },
+            "choices": {
+              "i60f55b22b691c": {
+                "identifier": "choice_289",
+                "serial": "i60f55b22b691c",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_289",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b22b6931": {
+                "identifier": "choice_290",
+                "serial": "i60f55b22b6931",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_290",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b22b6945": {
+                "identifier": "choice_291",
+                "serial": "i60f55b22b6945",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_291",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              }
+            }
+          },
+          "i60f55b22b695e": {
+            "serial": "i60f55b22b695e",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_24",
+              "shuffle": false,
+              "required": true
+            },
+            "choices": {
+              "i60f55b22b699a": {
+                "identifier": "choice_231",
+                "serial": "i60f55b22b699a",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_231",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b22b69b0": {
+                "identifier": "choice_232",
+                "serial": "i60f55b22b69b0",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_232",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b22b69c4": {
+                "identifier": "choice_233",
+                "serial": "i60f55b22b69c4",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_233",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b22b69d9": {
+                "identifier": "choice_234",
+                "serial": "i60f55b22b69d9",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_234",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b22b69f4": {
+                "identifier": "choice_235",
+                "serial": "i60f55b22b69f4",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_235",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b22b6a0e": {
+                "identifier": "choice_236",
+                "serial": "i60f55b22b6a0e",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_236",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b22b6a2a": {
+                "identifier": "choice_237",
+                "serial": "i60f55b22b6a2a",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_237",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b22b6a46": {
+                "identifier": "choice_238",
+                "serial": "i60f55b22b6a46",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_238",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b22b6a62": {
+                "identifier": "choice_239",
+                "serial": "i60f55b22b6a62",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_239",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b22b6a87": {
+                "identifier": "choice_240",
+                "serial": "i60f55b22b6a87",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_240",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #10"
+              },
+              "i60f55b22b6aa5": {
+                "identifier": "choice_241",
+                "serial": "i60f55b22b6aa5",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_241",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #11"
+              },
+              "i60f55b22b6ac2": {
+                "identifier": "choice_242",
+                "serial": "i60f55b22b6ac2",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_242",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #12"
+              },
+              "i60f55b22b6ada": {
+                "identifier": "choice_243",
+                "serial": "i60f55b22b6ada",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_243",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #13"
+              }
+            }
+          },
+          "i60f55b22b6aff": {
+            "serial": "i60f55b22b6aff",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_25",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b22b6b95": {
+                "identifier": "choice_244",
+                "serial": "i60f55b22b6b95",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_244",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b22b6bbe": {
+                "identifier": "choice_245",
+                "serial": "i60f55b22b6bbe",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_245",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b22b6bd4": {
+                "identifier": "choice_246",
+                "serial": "i60f55b22b6bd4",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_246",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b22b6be7": {
+                "identifier": "choice_247",
+                "serial": "i60f55b22b6be7",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_247",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b22b6bfb": {
+                "identifier": "choice_248",
+                "serial": "i60f55b22b6bfb",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_248",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b22b6c0d": {
+                "identifier": "choice_249",
+                "serial": "i60f55b22b6c0d",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_249",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b22b6c20": {
+                "identifier": "choice_250",
+                "serial": "i60f55b22b6c20",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_250",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b22b6c34": {
+                "identifier": "choice_251",
+                "serial": "i60f55b22b6c34",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_251",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b22b6c47": {
+                "identifier": "choice_252",
+                "serial": "i60f55b22b6c47",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_252",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b22b6c5a": {
+                "identifier": "choice_253",
+                "serial": "i60f55b22b6c5a",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_253",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #10"
+              },
+              "i60f55b22b6c6d": {
+                "identifier": "choice_254",
+                "serial": "i60f55b22b6c6d",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_254",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #11"
+              },
+              "i60f55b22b6c80": {
+                "identifier": "choice_255",
+                "serial": "i60f55b22b6c80",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_255",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #12"
+              },
+              "i60f55b22b6c92": {
+                "identifier": "choice_256",
+                "serial": "i60f55b22b6c92",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_256",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #13"
+              },
+              "i60f55b22b6ca4": {
+                "identifier": "choice_257",
+                "serial": "i60f55b22b6ca4",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_257",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #14"
+              },
+              "i60f55b22b6cb9": {
+                "identifier": "choice_258",
+                "serial": "i60f55b22b6cb9",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_258",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #15"
+              },
+              "i60f55b22b6ccb": {
+                "identifier": "choice_259",
+                "serial": "i60f55b22b6ccb",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_259",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #16"
+              }
+            }
+          },
+          "i60f55b22b6ce8": {
+            "serial": "i60f55b22b6ce8",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_26",
+              "shuffle": false,
+              "required": false
+            },
+            "choices": {
+              "i60f55b22b6d3b": {
+                "identifier": "choice_260",
+                "serial": "i60f55b22b6d3b",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_260",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #1"
+              },
+              "i60f55b22b6d51": {
+                "identifier": "choice_261",
+                "serial": "i60f55b22b6d51",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_261",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #2"
+              },
+              "i60f55b22b6d65": {
+                "identifier": "choice_262",
+                "serial": "i60f55b22b6d65",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_262",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #3"
+              },
+              "i60f55b22b6d78": {
+                "identifier": "choice_263",
+                "serial": "i60f55b22b6d78",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_263",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #4"
+              },
+              "i60f55b22b6d8a": {
+                "identifier": "choice_264",
+                "serial": "i60f55b22b6d8a",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_264",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #5"
+              },
+              "i60f55b22b6d9c": {
+                "identifier": "choice_265",
+                "serial": "i60f55b22b6d9c",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_265",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #6"
+              },
+              "i60f55b22b6daf": {
+                "identifier": "choice_266",
+                "serial": "i60f55b22b6daf",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_266",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #7"
+              },
+              "i60f55b22b6dc1": {
+                "identifier": "choice_267",
+                "serial": "i60f55b22b6dc1",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_267",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #8"
+              },
+              "i60f55b22b6dd3": {
+                "identifier": "choice_268",
+                "serial": "i60f55b22b6dd3",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_268",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #9"
+              },
+              "i60f55b22b6de5": {
+                "identifier": "choice_269",
+                "serial": "i60f55b22b6de5",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_269",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #10"
+              },
+              "i60f55b22b6df7": {
+                "identifier": "choice_270",
+                "serial": "i60f55b22b6df7",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_270",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #11"
+              },
+              "i60f55b22b6e09": {
+                "identifier": "choice_271",
+                "serial": "i60f55b22b6e09",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_271",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #12"
+              },
+              "i60f55b22b6e20": {
+                "identifier": "choice_272",
+                "serial": "i60f55b22b6e20",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_272",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #13"
+              },
+              "i60f55b22b6e32": {
+                "identifier": "choice_273",
+                "serial": "i60f55b22b6e32",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_273",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #14"
+              },
+              "i60f55b22b6e45": {
+                "identifier": "choice_274",
+                "serial": "i60f55b22b6e45",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_274",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #15"
+              },
+              "i60f55b22b6e57": {
+                "identifier": "choice_275",
+                "serial": "i60f55b22b6e57",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_275",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #16"
+              },
+              "i60f55b22b6e72": {
+                "identifier": "choice_276",
+                "serial": "i60f55b22b6e72",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_276",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #17"
+              },
+              "i60f55b22b6e85": {
+                "identifier": "choice_277",
+                "serial": "i60f55b22b6e85",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_277",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "choice #18"
+              }
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+        "m": "http://www.w3.org/1998/Math/MathML",
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+      },
+      "stylesheets": {
+        "i60f55b2297441": {
+          "serial": "i60f55b2297441",
+          "qtiClass": "stylesheet",
+          "attributes": {
+            "href": "tao-user-styles.css",
+            "type": "text/css",
+            "media": "all",
+            "title": ""
+          }
+        }
+      },
+      "outcomes": {
+        "i60f55b229d960": {
+          "identifier": "SCORE",
+          "serial": "i60f55b229d960",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float",
+            "normalMaximum": 0
+          },
+          "defaultValue": null
+        },
+        "i60f55b229d9b6": {
+          "identifier": "MAXSCORE",
+          "serial": "i60f55b229d9b6",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "MAXSCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "0"
+        }
+      },
+      "responses": {
+        "i60f55b22974aa": {
+          "identifier": "RESPONSE",
+          "serial": "i60f55b22974aa",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b229750d": {
+          "identifier": "RESPONSE_1",
+          "serial": "i60f55b229750d",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_1",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b229754b": {
+          "identifier": "RESPONSE_2",
+          "serial": "i60f55b229754b",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_2",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b2297583": {
+          "identifier": "RESPONSE_3",
+          "serial": "i60f55b2297583",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_3",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b22975ba": {
+          "identifier": "RESPONSE_4",
+          "serial": "i60f55b22975ba",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_4",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b22975ef": {
+          "identifier": "RESPONSE_5",
+          "serial": "i60f55b22975ef",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_5",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b229763a": {
+          "identifier": "RESPONSE_6",
+          "serial": "i60f55b229763a",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_6",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b229768d": {
+          "identifier": "RESPONSE_7",
+          "serial": "i60f55b229768d",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_7",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b22976db": {
+          "identifier": "RESPONSE_8",
+          "serial": "i60f55b22976db",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_8",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b2297714": {
+          "identifier": "RESPONSE_9",
+          "serial": "i60f55b2297714",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_9",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b229775a": {
+          "identifier": "RESPONSE_10",
+          "serial": "i60f55b229775a",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_10",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b2297791": {
+          "identifier": "RESPONSE_11",
+          "serial": "i60f55b2297791",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_11",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b22977c7": {
+          "identifier": "RESPONSE_12",
+          "serial": "i60f55b22977c7",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_12",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b229780a": {
+          "identifier": "RESPONSE_13",
+          "serial": "i60f55b229780a",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_13",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b229785b": {
+          "identifier": "RESPONSE_14",
+          "serial": "i60f55b229785b",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_14",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b22978b7": {
+          "identifier": "RESPONSE_15",
+          "serial": "i60f55b22978b7",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_15",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b229790c": {
+          "identifier": "RESPONSE_16",
+          "serial": "i60f55b229790c",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_16",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b2297948": {
+          "identifier": "RESPONSE_17",
+          "serial": "i60f55b2297948",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_17",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b2297980": {
+          "identifier": "RESPONSE_18",
+          "serial": "i60f55b2297980",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_18",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b22979c8": {
+          "identifier": "RESPONSE_19",
+          "serial": "i60f55b22979c8",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_19",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b2297a10": {
+          "identifier": "RESPONSE_20",
+          "serial": "i60f55b2297a10",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_20",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b2297a48": {
+          "identifier": "RESPONSE_21",
+          "serial": "i60f55b2297a48",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_21",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b2297a81": {
+          "identifier": "RESPONSE_22",
+          "serial": "i60f55b2297a81",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_22",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b2297aba": {
+          "identifier": "RESPONSE_23",
+          "serial": "i60f55b2297aba",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_23",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b2297af2": {
+          "identifier": "RESPONSE_24",
+          "serial": "i60f55b2297af2",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_24",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b229d698": {
+          "identifier": "RESPONSE_25",
+          "serial": "i60f55b229d698",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_25",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b229d7b5": {
+          "identifier": "RESPONSE_26",
+          "serial": "i60f55b229d7b5",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_26",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b229d838": {
+          "identifier": "RESPONSE_27",
+          "serial": "i60f55b229d838",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_27",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i60f55b229d8a1": {
+          "identifier": "RESPONSE_28",
+          "serial": "i60f55b229d8a1",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_28",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        }
+      },
+      "feedbacks": [],
+      "apipAccessibility": ""
+    },
+    "assets": {
+      "css": {
+        "tao-user-styles.css": "https://cdn-dev.gcp-eu.taocloud.org/tr-oat-demo/assets/7d3bbb82de4a/item-1/tao-user-styles.css?Expires=1627554742&KeyName=cdn-455089b4&Signature=qXO6XQ0dH9vI2hnjfE9vFdHGSWc="
+      }
+    }
+  },
+  "itemState": null,
+  "portableElements": {
+    "pci": [],
+    "pic": []
+  }
+}

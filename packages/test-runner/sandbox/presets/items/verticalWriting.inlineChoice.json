@@ -1,0 +1,618 @@
+{
+    "baseUrl": "./presets/items/assets/=",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i66cffecb60334202408291353316ffc85c1",
+            "serial": "item_67489bbfd285f963825393",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i66cffecb60334202408291353316ffc85c1",
+                "title": "cssitem_browser_20240829-02",
+                "label": "cssitem_browser_20240829-02",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "2024.11 LTS",
+                "class": "writing-mode-vertical-rl"
+            },
+            "body": {
+                "serial": "container_containeritembody_67489bbfd2851559379213",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <div class=\"custom-text-box tategaki\">\n          <p>「<span class=\"txt-underline\"><ruby><rb>文字</rb><rt>もじ </rt></ruby></span>ブロックインタラクション選択肢問題 。」ブロックインタラクション選択肢問題   {{interaction_inlinechoiceinteraction_67489bbfd53f4592587226}} です。</p>\n          <p>12345</p>\n          <p>１２３４５</p>\n          <p>abcde</p>\n          <p>ABCDE</p>\n          <p>！＄％＆（）</p>\n          <p>!$%&amp;()</p>\n        </div>\n      </div>\n    </div>\n     <div class=\"grid-row\">\n      <div class=\"col-12\">\n   <p>守も嫌がる盆から先にゃ雪もちらつくし、子も泣くし盆が来たとて何嬉しかろ帷子は無し帯は無し、この子よう泣く守をばいじる守も一日痩せるやら。早よも行きたやこの在所越えて向こうに見えるは、親の家。</p> <p>春高楼の花の宴、めぐる盃かげさして千代の松が枝わけいでしむかしの光いまいずこ。秋陣営の霜の色、鳴きゆく雁の数見せて植うるつるぎに照りそいしむかしの光いまいずこ。いま荒城のよわの月、替わらぬ光たがためぞ垣に残るはただかづら松に歌うはただあらし。天上影は替わらねど、栄枯は移る世の姿、写さんとてか今もなお。嗚呼荒城のよわの月。</p>      <p>   かあさんが<ruby><rb>夜</rb><rt>よ</rt></ruby>なべをして<ruby><rb>手袋</rb><rt>てぶくろ</rt></ruby>あんでくれた。<ruby                ><rb>木枯</rb><rt>こが</rt></ruby            >らし<ruby><rb>吹</rb><rt>ふ</rt></ruby>いちゃ<ruby><rb>冷</rb><rt>つめ</rt></ruby            >たかろうて、せっせとあんだだよ。ふるさとの<ruby><rb>便</rb><rt>たよ</rt></ruby            >りはとどく、いろりのにおいがした。かあさんが<ruby><rb>麻糸</rb><rt>あさいと</rt></ruby>つむぐ、<ruby                ><rb>一日</rb><rt>いちにち</rt></ruby            >つむぐ。おとうは<ruby><rb>土間</rb><rt>どま</rt></ruby>でわら<ruby><rb>打</rb><rt>う</rt></ruby>ち<ruby                ><rb>仕事</rb><rt>しごと</rt></ruby            >、お<ruby><rb>前</rb><rt>まえ</rt></ruby>も がんばれよ。ふるさとの<ruby><rb>冬</rb><rt>ふゆ</rt></ruby            >はさみしい、せめてラジオ<ruby><rb>聞</rb><rt>き</rt></ruby>かせたい。かあさんのあかぎれ<ruby                ><rb>痛</rb><rt>いた</rt></ruby            >い<ruby><rb>生</rb><rt>なま</rt></ruby>みそを すりこむ。<ruby><rb>根雪</rb><rt>ねゆき</rt></ruby            >もとけりゃもうすぐ<ruby><rb>春</rb><rt>はる</rt></ruby>だで<ruby><rb>、畑</rb><rt>はたけ</rt></ruby>が<ruby                ><rb>待</rb><rt>ま</rt></ruby            >ってるよ。{{interaction_inlinechoiceinteraction_67489bbfd53f4592587227}} <ruby><rb>小川</rb><rt>おがわ</rt></ruby            >のせせらぎが<ruby><rb>聞</rb><rt>き</rt></ruby>こえる、なつかしさがしみとおるなつかしさがしみとおる。 </p> <p>守も嫌がる盆から先にゃ雪もちらつくし、子も泣くし盆が来たとて何嬉しかろ帷子は無し帯は無し、この子よう泣く守をばいじる守も一日痩せるやら。早よも行きたやこの在所越えて向こうに見えるは、親の家。</p> <p>春高楼の花の宴、めぐる盃かげさして千代の松が枝わけいでしむかしの光いまいずこ。秋陣営の霜の色、鳴きゆく雁の数見せて植うるつるぎに照りそいしむかしの光いまいずこ。いま荒城のよわの月、替わらぬ光たがためぞ垣に残るはただかづら松に歌うはただあらし。天上影は替わらねど、栄枯は移る世の姿、写さんとてか今もなお。嗚呼荒城のよわの月。</p>  </div>\n    </div>\n  ",
+                "elements": {
+                    "interaction_inlinechoiceinteraction_67489bbfd53f4592587226": {
+                        "serial": "interaction_inlinechoiceinteraction_67489bbfd53f4592587226",
+                        "qtiClass": "inlineChoiceInteraction",
+                        "attributes": { "responseIdentifier": "RESPONSE_1", "shuffle": false, "required": false },
+                        "debug": { "relatedItem": "item_67489bbfd285f963825393" },
+                            "choices": {
+                                "choice_inlinechoice_67489bbfd54b0944522873": {
+                                    "identifier": "choice_10",
+                                    "serial": "choice_inlinechoice_67489bbfd54b0944522873",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": { "identifier": "choice_10", "fixed": false, "showHide": "show" },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd550a769039056",
+                                        "body": "1１aA<ruby><rb>文字</rb><rt>もじ </rt></ruby>！。",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": { "relatedItem": "item_67489bbfd285f963825393" }
+                                    },
+                                    "debug": { "relatedItem": "item_67489bbfd285f963825393" }
+                                },
+                                "choice_inlinechoice_67489bbfd57e4689903491": {
+                                    "identifier": "choice_11",
+                                    "serial": "choice_inlinechoice_67489bbfd57e4689903491",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": { "identifier": "choice_11", "fixed": false, "showHide": "show" },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd5828342861791",
+                                        "body": "choice #2",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": { "relatedItem": "item_67489bbfd285f963825393" }
+                                    },
+                                    "debug": { "relatedItem": "item_67489bbfd285f963825393" }
+                                },
+                                "choice_inlinechoice_67489bbfd5955012314654": {
+                                    "identifier": "choice_12",
+                                    "serial": "choice_inlinechoice_67489bbfd5955012314654",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": { "identifier": "choice_12", "fixed": false, "showHide": "show" },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b026827977",
+                                        "body": "choice #3",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": { "relatedItem": "item_67489bbfd285f963825393" }
+                                    },
+                                    "debug": { "relatedItem": "item_67489bbfd285f963825393" }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146544": {
+                                    "identifier": "choice_124",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146544",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_124",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279774",
+                                        "body": "choice #34",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146545": {
+                                    "identifier": "choice_125",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146545",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_125",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279775",
+                                        "body": "choice #35",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146546": {
+                                    "identifier": "choice_126",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146546",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_126",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279776",
+                                        "body": "choice #36",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146547": {
+                                    "identifier": "choice_127",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146547",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_127",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279777",
+                                        "body": "choice #37",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146548": {
+                                    "identifier": "choice_128",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146548",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_128",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279778",
+                                        "body": "choice #38",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146549": {
+                                    "identifier": "choice_129",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146549",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_129",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279779",
+                                        "body": "choice #39",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146550": {
+                                    "identifier": "choice_130",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146550",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_130",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279780",
+                                        "body": "choice #40",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146551": {
+                                    "identifier": "choice_131",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146551",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_131",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279781",
+                                        "body": "choice #41",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146552": {
+                                    "identifier": "choice_132",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146552",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_132",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279782",
+                                        "body": "choice #42",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146553": {
+                                    "identifier": "choice_133",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146553",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_133",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279783",
+                                        "body": "choice #43",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146554": {
+                                    "identifier": "choice_134",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146554",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_134",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279784",
+                                        "body": "choice #44",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146555": {
+                                    "identifier": "choice_135",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146555",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_135",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279785",
+                                        "body": "choice #45",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146556": {
+                                    "identifier": "choice_136",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146556",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_136",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279786",
+                                        "body": "choice #46",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146557": {
+                                    "identifier": "choice_137",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146557",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_137",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279787",
+                                        "body": "choice #47",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146558": {
+                                    "identifier": "choice_138",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146558",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_138",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279788",
+                                        "body": "choice #48",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                },
+                                "choice_inlinechoice_67489bbfd59550123146559": {
+                                    "identifier": "choice_139",
+                                    "serial": "choice_inlinechoice_67489bbfd59550123146559",
+                                    "qtiClass": "inlineChoice",
+                                    "attributes": {
+                                        "identifier": "choice_139",
+                                        "fixed": false,
+                                        "showHide": "show"
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_67489bbfd597b0268279789",
+                                        "body": "choice #49",
+                                        "elements": {},
+                                        "attributes": []
+                                    }
+                                }
+                            }
+                    },
+                    "interaction_inlinechoiceinteraction_67489bbfd53f4592587227": {
+                        "serial": "interaction_inlinechoiceinteraction_67489bbfd53f4592587227",
+                        "qtiClass": "inlineChoiceInteraction",
+                        "attributes": { "responseIdentifier": "RESPONSE_2", "shuffle": false, "required": false },
+                        "debug": { "relatedItem": "item_67489bbfd285f963825393" },
+                        "choices": {
+                            "choice_inlinechoice_67489bbfd54b0944522874": {
+                                "identifier": "choice_1",
+                                "serial": "choice_inlinechoice_67489bbfd54b0944522874",
+                                "qtiClass": "inlineChoice",
+                                "attributes": { "identifier": "choice_1", "fixed": false, "showHide": "show" },
+                                "body": {
+                                    "serial": "container_containerstatic_67489bbfd550a769039856",
+                                    "body": "かあさんが<ruby><rb>夜</rb><rt>よ</rt></ruby>なべをして",
+                                    "elements": {},
+                                    "attributes": [],
+                                    "debug": { "relatedItem": "item_67489bbfd285f963825393" }
+                                },
+                                "debug": { "relatedItem": "item_67489bbfd285f963825393" }
+                            },
+                            "choice_inlinechoice_67489bbfd57e4689903492": {
+                                "identifier": "choice_2",
+                                "serial": "choice_inlinechoice_67489bbfd57e46899034912",
+                                "qtiClass": "inlineChoice",
+                                "attributes": { "identifier": "choice_2", "fixed": false, "showHide": "show" },
+                                "body": {
+                                    "serial": "container_containerstatic_67489bbfd5828342861891",
+                                    "body": "<ruby><rb>手袋</rb><rt>てぶくろ</rt></ruby>あんでくれた",
+                                    "elements": {},
+                                    "attributes": [],
+                                    "debug": { "relatedItem": "item_67489bbfd285f963825393" }
+                                },
+                                "debug": { "relatedItem": "item_67489bbfd285f963825393" }
+                            },
+                            "choice_inlinechoice_67489bbfd5955012314655": {
+                                "identifier": "choice_3",
+                                "serial": "choice_inlinechoice_67489bbfd5955012314655",
+                                "qtiClass": "inlineChoice",
+                                "attributes": { "identifier": "choice_3", "fixed": false, "showHide": "show" },
+                                "body": {
+                                    "serial": "container_containerstatic_67489bbfd597b026827987",
+                                    "body": "<ruby><rb>木枯</rb><rt>こが</rt></ruby>らし<ruby><rb>吹</rb><rt>ふ</rt></ruby>いちゃ<ruby><rb>冷</rb><rt>つめ</rt></ruby>たかろうて",
+                                    "elements": {},
+                                    "attributes": [],
+                                    "debug": { "relatedItem": "item_67489bbfd285f963825393" }
+                                },
+                                "debug": { "relatedItem": "item_67489bbfd285f963825393" }
+                            },
+                            "choice_inlinechoice_67489bbfd59550123146555": {
+                                "identifier": "choice_4",
+                                "serial": "choice_inlinechoice_67489bbfd59550123146555",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_4",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_67489bbfd597b0268279784",
+                                    "body": "せっせとあんだだよ",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "choice_inlinechoice_77489bbfd59550123146545": {
+                                "identifier": "choice_5",
+                                "serial": "choice_inlinechoice_77489bbfd59550123146545",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_5",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_77489bbfd597b0268279775",
+                                    "body": "かあさんが<ruby><rb>麻糸</rb><rt>あさいと</rt></ruby>つむぐ",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "choice_inlinechoice_77489bbfd59550123146546": {
+                                "identifier": "choice_6",
+                                "serial": "choice_inlinechoice_77489bbfd59550123146546",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_6",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_77489bbfd597b0268279776",
+                                    "body": "<ruby><rb>一日</rb><rt>いちにち</rt></ruby>つむぐ",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "choice_inlinechoice_77489bbfd59550123146547": {
+                                "identifier": "choice_7",
+                                "serial": "choice_inlinechoice_77489bbfd59550123146547",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_7",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_77489bbfd597b0268279777",
+                                    "body": "おとうは<ruby><rb>土間</rb><rt>どま</rt></ruby>でわら<ruby><rb>打</rb><rt>う</rt></ruby>ち<ruby><rb>仕事</rb><rt>しごと</rt></ruby>",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "choice_inlinechoice_77489bbfd59550123146548": {
+                                "identifier": "choice_8",
+                                "serial": "choice_inlinechoice_77489bbfd59550123146548",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_8",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_77489bbfd597b0268279778",
+                                    "body": "お<ruby><rb>前</rb><rt>まえ</rt></ruby>も がんばれよ",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "choice_inlinechoice_77489bbfd59550123146549": {
+                                "identifier": "choice_9",
+                                "serial": "choice_inlinechoice_77489bbfd59550123146549",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_9",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_77489bbfd597b0268279779",
+                                    "body": "<ruby><rb>根雪</rb><rt>ねゆき</rt></ruby>もとけりゃ",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "choice_inlinechoice_77489bbfd59550123146550": {
+                                "identifier": "choice_10",
+                                "serial": "choice_inlinechoice_77489bbfd59550123146550",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_10",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_77489bbfd597b0268279780",
+                                    "body": "もうすぐ<ruby><rb>春</rb><rt>はる</rt></ruby>だで<ruby><rb>",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "choice_inlinechoice_77489bbfd59550123146551": {
+                                "identifier": "choice_11",
+                                "serial": "choice_inlinechoice_77489bbfd59550123146551",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_11",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_77489bbfd597b0268279781",
+                                    "body": "畑</rb><rt>はたけ</rt></ruby>が<ruby><rb>待</rb><rt>ま</rt></ruby>ってるよ",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "choice_inlinechoice_77489bbfd59550123146552": {
+                                "identifier": "choice_12",
+                                "serial": "choice_inlinechoice_77489bbfd59550123146552",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_12",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_77489bbfd597b0268279782",
+                                    "body": "<ruby><rb>小川</rb><rt>おがわ</rt></ruby>のせせらぎが<ruby><rb>聞</rb><rt>き</rt></ruby>こえる",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "choice_inlinechoice_77489bbfd59550123146553": {
+                                "identifier": "choice_13",
+                                "serial": "choice_inlinechoice_77489bbfd59550123146553",
+                                "qtiClass": "inlineChoice",
+                                "attributes": {
+                                    "identifier": "choice_13",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_77489bbfd597b0268279783",
+                                    "body": "なつかしさがしみとおるなつかしさがしみとおる",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            }
+                        }
+                    }
+                },
+                "attributes": [],
+                "debug": { "relatedItem": "item_67489bbfd285f963825393" }
+            },
+            "debug": { "relatedItem": "item_67489bbfd285f963825393" },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "qh5": "http://www.imsglobal.org/xsd/imsqtiv2p2_html5_v1p0",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_67489bbfd2e70292594566": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_67489bbfd2e70292594566",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 6,
+                        "normalMinimum": 0
+                    },
+                    "debug": { "relatedItem": "item_67489bbfd285f963825393" },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_67489bbfd2f22343328298": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_67489bbfd2f22343328298",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": { "identifier": "MAXSCORE", "cardinality": "single", "baseType": "float" },
+                    "debug": { "relatedItem": "item_67489bbfd285f963825393" },
+                    "defaultValue": "6"
+                }
+            },
+            "responses": {
+                "responsedeclaration_67489bbfd2df8024941405": {
+                    "identifier": "RESPONSE_1",
+                    "serial": "responsedeclaration_67489bbfd2df8024941405",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE_1", "cardinality": "single", "baseType": "identifier" },
+                    "debug": { "relatedItem": "item_67489bbfd285f963825393" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": ["choice_10"],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_67489bbfd2df8024941407": {
+                    "identifier": "RESPONSE_2",
+                    "serial": "responsedeclaration_67489bbfd2df8024941407",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE_2", "cardinality": "single", "baseType": "identifier" },
+                    "debug": { "relatedItem": "item_67489bbfd285f963825393" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": ["choice_10"],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {},
+            "apipAccessibility": ""
+        },
+        "assets": { "css": {} }
+    },
+    "itemState": {},
+    "itemIdentifier": "item-1",
+    "success": true
+}

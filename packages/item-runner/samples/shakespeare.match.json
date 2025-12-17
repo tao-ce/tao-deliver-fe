@@ -1,0 +1,226 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "match-multiple-cardinality",
+            "serial": "item_5f3e5bf703ea4172585870",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "match-multiple-cardinality",
+                "title": "Characters and Plays",
+                "label": "Characters and Plays",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint130",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5f3e5bf703df8525417627",
+                "body": "\n    {{interaction_matchinteraction_5f3e5bf717ae8464753399}}\n  ",
+                "elements": {
+                    "interaction_matchinteraction_5f3e5bf717ae8464753399": {
+                        "serial": "interaction_matchinteraction_5f3e5bf717ae8464753399",
+                        "qtiClass": "matchInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "shuffle": true,
+                            "maxAssociations": 4,
+                            "minAssociations": 2,
+                            "class": "qti-match-tabular"
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_5f3e5bf71c391345416526",
+                            "body": "Match the following characters to the Shakespeare play they appeared in:",
+                            "elements": {},
+                            "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                        },
+                        "choices": [
+                            {
+                                "choice_simpleassociablechoice_5f3e5bf71dc5a810435830": {
+                                    "identifier": "C",
+                                    "serial": "choice_simpleassociablechoice_5f3e5bf71dc5a810435830",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": { "identifier": "C", "fixed": false, "matchMax": 2, "matchMin": 0 },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f3e5bf72096b070282558",
+                                        "body": "Capulet",
+                                        "elements": {},
+                                        "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                                    },
+                                    "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                                },
+                                "choice_simpleassociablechoice_5f3e5bf720e95897586790": {
+                                    "identifier": "D",
+                                    "serial": "choice_simpleassociablechoice_5f3e5bf720e95897586790",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": { "identifier": "D", "fixed": false, "matchMax": 2, "matchMin": 0 },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f3e5bf7212d1337723786",
+                                        "body": "Demetrius",
+                                        "elements": {},
+                                        "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                                    },
+                                    "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                                },
+                                "choice_simpleassociablechoice_5f3e5bf721858395823860": {
+                                    "identifier": "L",
+                                    "serial": "choice_simpleassociablechoice_5f3e5bf721858395823860",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": { "identifier": "L", "fixed": false, "matchMax": 2, "matchMin": 0 },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f3e5bf721c85181862141",
+                                        "body": "Lysander",
+                                        "elements": {},
+                                        "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                                    },
+                                    "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                                },
+                                "choice_simpleassociablechoice_5f3e5bf72216c022462866": {
+                                    "identifier": "P",
+                                    "serial": "choice_simpleassociablechoice_5f3e5bf72216c022462866",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": { "identifier": "P", "fixed": false, "matchMax": 2, "matchMin": 0 },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f3e5bf722580157138196",
+                                        "body": "Prospero",
+                                        "elements": {},
+                                        "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                                    },
+                                    "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                                }
+                            },
+                            {
+                                "choice_simpleassociablechoice_5f3e5bf722a86400281853": {
+                                    "identifier": "M",
+                                    "serial": "choice_simpleassociablechoice_5f3e5bf722a86400281853",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": { "identifier": "M", "fixed": false, "matchMax": 4, "matchMin": 0 },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f3e5bf722e9e806863860",
+                                        "body": "A Midsummer-Night's Dream",
+                                        "elements": {},
+                                        "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                                    },
+                                    "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                                },
+                                "choice_simpleassociablechoice_5f3e5bf7233b3956881003": {
+                                    "identifier": "R",
+                                    "serial": "choice_simpleassociablechoice_5f3e5bf7233b3956881003",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": { "identifier": "R", "fixed": false, "matchMax": 4, "matchMin": 0 },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f3e5bf7237c8062874390",
+                                        "body": "Romeo and Juliet",
+                                        "elements": {},
+                                        "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                                    },
+                                    "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                                },
+                                "choice_simpleassociablechoice_5f3e5bf723ca5099047570": {
+                                    "identifier": "T",
+                                    "serial": "choice_simpleassociablechoice_5f3e5bf723ca5099047570",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": { "identifier": "T", "fixed": false, "matchMax": 4, "matchMin": 0 },
+                                    "body": {
+                                        "serial": "container_containerstatic_5f3e5bf7240b9857683580",
+                                        "body": "The Tempest",
+                                        "elements": {},
+                                        "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                                    },
+                                    "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" }
+            },
+            "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p1",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p1": "http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_5f3e5bf71118b371310858": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5f3e5bf71118b371310858",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": { "identifier": "SCORE", "cardinality": "single", "baseType": "float" },
+                    "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" },
+                    "defaultValue": null
+                }
+            },
+            "responses": {
+                "responsedeclaration_5f3e5bf70bd2a765298490": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_5f3e5bf70bd2a765298490",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE", "cardinality": "multiple", "baseType": "directedPair" },
+                    "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" },
+                    "defaultValue": [],
+                    "mapping": { "C R": "1", "D M": "0.5", "L M": "0.5", "P T": "1" },
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/map_response",
+                    "correctResponses": ["C R", "D M", "L M", "P T"],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_5f3e5bf726b34831248266",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "debug": { "relatedItem": "item_5f3e5bf703ea4172585870" },
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "isNull",
+                                "expressions": [{ "qtiClass": "variable", "attributes": { "identifier": "RESPONSE" } }]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": { "baseType": "float" },
+                                        "value": "0.0"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseElse": {
+                            "qtiClass": "responseElse",
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "mapResponse",
+                                        "attributes": { "identifier": "RESPONSE" }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": []
+    },
+    "itemState": {},
+    "itemIdentifier": "item-1"
+}

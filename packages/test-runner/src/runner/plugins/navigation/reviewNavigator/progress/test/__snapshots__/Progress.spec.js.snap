@@ -1,0 +1,231 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Progress component > Has to fail rendering with no serviceCallId 1`] = `[TypeError: A "serviceCallId" is required to get the state store of the test session]`;
+
+exports[`Progress component > Has to render no component for linear mode on mobile screen size 1`] = `
+<body>
+  <div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render steps for linear mode on over-tablet-portrait screen size 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container"
+    >
+      <div
+        class="width-tracker"
+      >
+        <div
+          class="steps-container"
+        >
+          <div
+            class="more"
+          />
+           
+           
+          <div
+            class="more"
+          />
+        </div>
+         
+        <span
+          class="overview-container"
+        >
+          <button
+            aria-label="Open overview of all 3 questions"
+            class="actionable secondary pill small"
+            name="overview"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Chevron up icon
+              </title>
+              <path
+                d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+              />
+            </svg>
+             
+             
+            Overview (3)
+          </button>
+        </span>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render steps for linear mode on tablet-portrait screen size 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container"
+    >
+      <div
+        class="width-tracker"
+      >
+        <div
+          class="steps-container"
+        >
+          <div
+            class="more"
+          />
+           
+           
+          <div
+            class="more"
+          />
+        </div>
+         
+        <span
+          class="overview-container"
+        >
+          <button
+            aria-label="Open overview of all 3 questions"
+            class="actionable secondary pill small"
+            name="overview"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Chevron up icon
+              </title>
+              <path
+                d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+              />
+            </svg>
+             
+             
+            Overview (3)
+          </button>
+        </span>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render steps for non linear mode on over-tablet-portrait screen size 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container"
+    >
+      <div
+        class="width-tracker"
+      >
+        <div
+          class="steps-container"
+        >
+          <div
+            class="more"
+          />
+           
+           
+          <div
+            class="more"
+          />
+        </div>
+         
+        <span
+          class="overview-container"
+        >
+          <button
+            aria-label="Open overview of all 20 questions"
+            class="actionable secondary pill small"
+            name="overview"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Chevron up icon
+              </title>
+              <path
+                d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+              />
+            </svg>
+             
+             
+            Overview (20)
+          </button>
+        </span>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > renders with empty store 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container"
+    >
+      <div
+        class="width-tracker"
+      >
+        <div
+          class="steps-container"
+        >
+          <div
+            class="more"
+          />
+           
+           
+          <div
+            class="more"
+          />
+        </div>
+         
+        <span
+          class="overview-container"
+        >
+          <button
+            aria-label="Open overview of all items"
+            class="actionable secondary pill small"
+            name="overview"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Chevron up icon
+              </title>
+              <path
+                d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+              />
+            </svg>
+             
+             
+            Overview
+          </button>
+        </span>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;

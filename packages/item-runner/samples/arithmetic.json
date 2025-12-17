@@ -1,0 +1,426 @@
+{
+  "baseUrl": "./assets/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "i5e81f1bb5cea2415682b766e795370520e",
+      "serial": "item_5e81f5a55ec4c686919371",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "i5e81f1bb5cea2415682b766e795370520e",
+        "title": "Arithmetic",
+        "label": "Arithmetic",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint125",
+        "class": ""
+      },
+      "body": {
+        "serial": "container_containeritembody_5e81f5a55ec25702794958",
+        "body": "<div class=\"grid-row\"><div class=\"col-6\"><p><strong>Math<\/strong><\/p><p>7 + 12 =\u00a0\u00a0{{interaction_textentryinteraction_5e81f5a563d50749591392}}\u00a0[integer]<\/p><p>15 - 4\u00a0=\u00a0{{interaction_textentryinteraction_5e81f5a564b46703944872}}\u00a0[integer]<\/p><p>5 \u00d7 2.5 =\u00a0{{interaction_textentryinteraction_5e81f5a564be5797567934}}\u00a0[float]<\/p><p>16\u00a0\u00f7 4\u00a0=\u00a0{{interaction_textentryinteraction_5e81f5a564c71755935564}}\u00a0[float]<\/p><p>20 ÷3\u00a0<\/sup>=\u00a0\u00a0{{interaction_textentryinteraction_5e81f5a564cf8013919457}}\u00a0[float]<\/p><p>\u00a0<\/p><\/div><div class=\"col-6\"><p><strong>Poetry contest<\/strong><\/p><p>I imagine this midnight moment's\u00a0{{interaction_textentryinteraction_5e81f5a564d7d967216145}}\u00a0<\/p><p>Something\u00a0{{interaction_textentryinteraction_5e81f5a564e01937139488}}\u00a0is alive<\/p><p>Beside the \u00a0{{interaction_textentryinteraction_5e81f5a564e84573506107}}\u00a0's loneliness<\/p><p>And this blank page where my fingers {{interaction_textentryinteraction_5e81f5a564f88781140909}}. [max length constraint: 4 chars]<\/p><p>\u00a0<\/p><\/div><\/div><div class=\"grid-row\"><div class=\"col-7\"><p><strong>Binary guessing<\/strong><\/p><p>How many candies are in the jar? (Write your guess in binary)<\/p><p>\u00a0{{interaction_textentryinteraction_5e81f5a56500f554203127}}\u00a0<\/p><p>[integer, base 2, pattern constraint: [01]+]<\/p><\/div><div class=\"col-5\"><p>{{img_5e723a6de7284750521600}}<\/p><\/div><\/div><div class=\"grid-row\"><div class=\"col-12\"><p>\u00a0<\/p><p><strong>Colour theory<\/strong><\/p><p>Express the decimal value 201 as a hexadecimal string<\/p><p>\u00a0{{interaction_textentryinteraction_5e81f5a56500f554200000}}\u00a0[integer, base 16]<\/p><\/div><\/div>",
+        "elements": {
+          "interaction_textentryinteraction_5e81f5a563d50749591392": {
+            "serial": "interaction_textentryinteraction_5e81f5a563d50749591392",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "base": 10,
+              "expectedLength": 1,
+              "placeholderText": "?"
+
+            },
+            "choices": {}
+          },
+          "interaction_textentryinteraction_5e81f5a564b46703944872": {
+            "serial": "interaction_textentryinteraction_5e81f5a564b46703944872",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_1",
+              "base": 10,
+              "expectedLength": 2,
+              "placeholderText": "?"
+            },
+            "choices": {}
+          },
+          "interaction_textentryinteraction_5e81f5a564be5797567934": {
+            "serial": "interaction_textentryinteraction_5e81f5a564be5797567934",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_2",
+              "base": 10,
+              "expectedLength": 3,
+              "placeholderText": "?"
+            },
+            "choices": {}
+          },
+          "interaction_textentryinteraction_5e81f5a564c71755935564": {
+            "serial": "interaction_textentryinteraction_5e81f5a564c71755935564",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_3",
+              "base": 10,
+              "expectedLength": 4,
+              "placeholderText": "?"
+            },
+            "choices": {}
+          },
+          "interaction_textentryinteraction_5e81f5a564cf8013919457": {
+            "serial": "interaction_textentryinteraction_5e81f5a564cf8013919457",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_4",
+              "base": 10,
+              "expectedLength": 20,
+              "placeholderText": "validated by regexp",
+              "data-patternmask-message": "Only format allowed [0-9]+\\.[0-9]+",
+              "patternMask": "^[0-9]+\\.[0-9]+$",
+              "class": "qti-input-width-20"
+            },
+            "choices": {}
+          },
+          "interaction_textentryinteraction_5e81f5a564d7d967216145": {
+            "serial": "interaction_textentryinteraction_5e81f5a564d7d967216145",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_8",
+              "base": 10,
+              "expectedLength": 10,
+              "placeholderText": "f..."
+            },
+            "choices": {}
+          },
+          "interaction_textentryinteraction_5e81f5a564e01937139488": {
+            "serial": "interaction_textentryinteraction_5e81f5a564e01937139488",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_9",
+              "base": 10,
+              "expectedLength": 6,
+              "placeholderText": "e..."
+            },
+            "choices": {}
+          },
+          "interaction_textentryinteraction_5e81f5a564e84573506107": {
+            "serial": "interaction_textentryinteraction_5e81f5a564e84573506107",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_7",
+              "base": 10,
+              "expectedLength": 10,
+              "placeholderText": "c..."
+            },
+            "choices": {}
+          },
+          "interaction_textentryinteraction_5e81f5a564f88781140909": {
+            "serial": "interaction_textentryinteraction_5e81f5a564f88781140909",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_5",
+              "base": 10,
+              "expectedLength": 6,
+              "patternMask": "^[\\s\\S]{0,4}$",
+              "placeholderText": "m...",
+              "data-patternmask-message": "Can't be longer than 4 characters"
+
+            },
+            "choices": {}
+          },
+          "interaction_textentryinteraction_5e81f5a56500f554203127": {
+            "serial": "interaction_textentryinteraction_5e81f5a56500f554203127",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_10",
+              "base": 2,
+              "expectedLength": 72,
+              "patternMask": "[01]+",
+              "placeholderText": "Binary guess",
+              "data-patternmask-message": "Must be a valid binary number!"
+            },
+            "choices": {}
+          },
+          "interaction_textentryinteraction_5e81f5a56500f554200000": {
+            "serial": "interaction_textentryinteraction_5e81f5a56500f554200000",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_11",
+              "base": 16,
+              "expectedLength": 2,
+              "placeholderText": "xx"
+            },
+            "choices": {}
+          },
+          "img_5e723a6de7284750521600": {
+            "serial": "img_5e723a6de7284750521600",
+            "qtiClass": "img",
+            "attributes": {
+              "src": "arithmetic/candies.jpg",
+              "alt": "Jar of candies",
+              "width": 320,
+              "height": 321,
+              "type": "image\/jpg"
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+        "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+        "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+      },
+      "stylesheets": {},
+      "outcomes": {
+        "outcomedeclaration_5e81f5a56210a552036948": {
+          "identifier": "SCORE",
+          "serial": "outcomedeclaration_5e81f5a56210a552036948",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float",
+            "normalMaximum": 5
+          },
+          "defaultValue": null
+        },
+        "outcomedeclaration_5e81f5a563141309573087": {
+          "identifier": "MAXSCORE",
+          "serial": "outcomedeclaration_5e81f5a563141309573087",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "MAXSCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "5"
+        }
+      },
+      "responses": {
+        "responsedeclaration_5e81f5a560d6d094591049": {
+          "identifier": "RESPONSE",
+          "serial": "responsedeclaration_5e81f5a560d6d094591049",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "single",
+            "baseType": "integer"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["19"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        },
+        "responsedeclaration_5e81f5a561991536376090": {
+          "identifier": "RESPONSE_1",
+          "serial": "responsedeclaration_5e81f5a561991536376090",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_1",
+            "cardinality": "single",
+            "baseType": "integer"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["11"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        },
+        "responsedeclaration_5e81f5a561a3b865184565": {
+          "identifier": "RESPONSE_2",
+          "serial": "responsedeclaration_5e81f5a561a3b865184565",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_2",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["12.5"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        },
+        "responsedeclaration_5e81f5a561aca480468919": {
+          "identifier": "RESPONSE_3",
+          "serial": "responsedeclaration_5e81f5a561aca480468919",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_3",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["4"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        },
+        "responsedeclaration_5e81f5a561b56556794313": {
+          "identifier": "RESPONSE_4",
+          "serial": "responsedeclaration_5e81f5a561b56556794313",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_4",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["27"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        },
+        "responsedeclaration_5e81f5a561c45212062112": {
+          "identifier": "RESPONSE_7",
+          "serial": "responsedeclaration_5e81f5a561c45212062112",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_7",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["clock"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        },
+        "responsedeclaration_5e81f5a561cab940498886": {
+          "identifier": "RESPONSE_8",
+          "serial": "responsedeclaration_5e81f5a561cab940498886",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_8",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["forest"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        },
+        "responsedeclaration_5e81f5a561d10756374953": {
+          "identifier": "RESPONSE_9",
+          "serial": "responsedeclaration_5e81f5a561d10756374953",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_9",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["else"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        },
+        "responsedeclaration_5e81f5a561d79959552298": {
+          "identifier": "RESPONSE_5",
+          "serial": "responsedeclaration_5e81f5a561d79959552298",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_5",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["move"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        },
+        "responsedeclaration_5e81f5a561de1032782047": {
+          "identifier": "RESPONSE_10",
+          "serial": "responsedeclaration_5e81f5a561de1032782047",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_10",
+            "cardinality": "single",
+            "baseType": "integer"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["42"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        },
+        "responsedeclaration_5e81f5a561de1032780000": {
+          "identifier": "RESPONSE_11",
+          "serial": "responsedeclaration_5e81f5a561de1032780000",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_11",
+            "cardinality": "single",
+            "baseType": "integer"
+          },
+          "defaultValue": [],
+          "mapping": [],
+          "areaMapping": [],
+          "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+          "correctResponses": ["201"],
+          "mappingAttributes": {
+            "defaultValue": 0
+          },
+          "feedbackRules": {}
+        }      },
+      "feedbacks": {},
+      "apipAccessibility": ""
+    },
+    "assets": {
+      "img": {
+        "candies.png": "candies.png"
+      }
+    }
+  },
+  "itemState": {},
+  "itemIdentifier": "arithmetic-and-poetry",
+  "portableElements": {
+    "pci": [],
+    "pic": []
+  }
+}

@@ -1,0 +1,143 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Table > renders the provided table from blockTree 1`] = `
+<body>
+  <div>
+    <div
+      class="table-wrapper"
+    >
+      <div
+        class="shadows"
+        style="height: auto; width: auto;"
+      >
+        <div
+          class="shadow left hidden"
+        />
+        <div
+          class="shadow right hidden"
+        />
+        <div
+          class="shadow top hidden"
+        />
+        <div
+          class="shadow bottom hidden"
+        />
+         
+        <div
+          class="scrollable-wrapper"
+          style="height: auto; width: auto;"
+          tabindex="0"
+        >
+          <table>
+            <caption>
+              Sample
+            </caption>
+            
+            
+            <thead>
+              <tr>
+                <th>
+                  Col 1
+                </th>
+                <th>
+                  Col 2
+                </th>
+              </tr>
+            </thead>
+            
+            
+            <tbody>
+              <tr>
+                <td>
+                  Col 1
+                </td>
+                <td>
+                  Col 2
+                </td>
+              </tr>
+            </tbody>
+            
+            
+            
+             
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Table > renders without a blockTree by using its slot 1`] = `
+<body>
+  <div>
+    <div
+      class="table-wrapper"
+    >
+      <div
+        class="shadows"
+        style="height: auto; width: auto;"
+      >
+        <div
+          class="shadow left hidden"
+        />
+        <div
+          class="shadow right hidden"
+        />
+        <div
+          class="shadow top hidden"
+        />
+        <div
+          class="shadow bottom hidden"
+        />
+         
+        <div
+          class="scrollable-wrapper"
+          style="height: auto; width: auto;"
+          tabindex="0"
+        >
+          <table
+            class="funky-monkey"
+          >
+             
+            <caption>
+              My table
+            </caption>
+             
+            <thead>
+              <tr>
+                <th>
+                  TH1
+                </th>
+                <th>
+                  TH2
+                </th>
+              </tr>
+            </thead>
+             
+            <tbody>
+              <tr>
+                <td>
+                  TD1
+                </td>
+                <td>
+                  TD2
+                </td>
+              </tr>
+               
+              <tr>
+                <td>
+                  TD3
+                </td>
+                <td>
+                  TD4
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

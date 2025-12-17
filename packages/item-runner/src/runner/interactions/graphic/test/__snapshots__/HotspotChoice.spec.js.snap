@@ -1,0 +1,405 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HotspotChoice component > rendering > renders hotspot with custom classes 1`] = `
+<body>
+  <div>
+    <g
+      class="hotspot-choice inactive"
+      data-choice-key="key"
+    >
+      <g
+        aria-disabled="false"
+        aria-label="ariaLabel"
+        class="shape"
+        tabindex="-1"
+      >
+        <circle
+          class="shape-outer-border"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <circle
+          class="shape-inner-border"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <circle
+          class="shape-dashed-outline"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <text
+          class="shape-checkmark"
+          x="-0.5"
+          y="-1.5"
+        >
+          <tspan
+            dy="0"
+            x="-0.5"
+          >
+            label
+          </tspan>
+        </text>
+      </g>
+      
+    </g>
+  </div>
+</body>
+`;
+
+exports[`HotspotChoice component > rendering > renders in activated state 1`] = `
+<body>
+  <div>
+    <g
+      class="hotspot-choice activated"
+      data-choice-key="key"
+    >
+      <g
+        aria-disabled="false"
+        aria-label="ariaLabel"
+        class="shape"
+        tabindex="-1"
+      >
+        <circle
+          class="shape-outer-border"
+          cx="1"
+          cy="0"
+          r="0"
+          transform="matrix(1.25,0,0,1.25,-0.375,-0.375)"
+        />
+        <circle
+          class="shape-inner-border"
+          cx="1"
+          cy="0"
+          r="0"
+          transform="matrix(1.25,0,0,1.25,-0.375,-0.375)"
+        />
+        <circle
+          class="shape-dashed-outline"
+          cx="1"
+          cy="0"
+          r="0"
+          transform="matrix(1.25,0,0,1.25,-0.375,-0.375)"
+        />
+        <text
+          class="shape-checkmark"
+          transform="matrix(1.25,0,0,1.25,-0.375,-0.375)"
+          x="-0.5"
+          y="-1.5"
+        >
+          <tspan
+            dy="0"
+            x="-0.5"
+          >
+            label
+          </tspan>
+        </text>
+      </g>
+      
+    </g>
+  </div>
+</body>
+`;
+
+exports[`HotspotChoice component > rendering > renders in target state 1`] = `
+<body>
+  <div>
+    <g
+      class="hotspot-choice targeted"
+      data-choice-key="key"
+    >
+      <g
+        aria-disabled="false"
+        aria-label="ariaLabel"
+        class="shape"
+        tabindex="-1"
+      >
+        <circle
+          class="shape-outer-border"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <circle
+          class="shape-inner-border"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <circle
+          class="shape-dashed-outline"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <text
+          class="shape-checkmark"
+          x="-0.5"
+          y="-1.5"
+        >
+          <tspan
+            dy="0"
+            x="-0.5"
+          >
+            label
+          </tspan>
+        </text>
+      </g>
+      
+    </g>
+  </div>
+</body>
+`;
+
+exports[`HotspotChoice component > rendering > renders in targetable state 1`] = `
+<body>
+  <div>
+    <g
+      class="hotspot-choice targetable"
+      data-choice-key="key"
+    >
+      <g
+        aria-disabled="false"
+        aria-label="ariaLabel"
+        class="shape"
+        tabindex="-1"
+      >
+        <circle
+          class="shape-outer-border"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <circle
+          class="shape-inner-border"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <circle
+          class="shape-dashed-outline"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <text
+          class="shape-checkmark"
+          x="-0.5"
+          y="-1.5"
+        >
+          <tspan
+            dy="0"
+            x="-0.5"
+          >
+            label
+          </tspan>
+        </text>
+      </g>
+      
+    </g>
+  </div>
+</body>
+`;
+
+exports[`HotspotChoice component > rendering > renders scaled hotspot in hoverable state 1`] = `
+<body>
+  <div>
+    <g
+      class="hotspot-choice"
+      data-choice-key="key"
+    >
+      <g
+        aria-disabled="false"
+        aria-label="ariaLabel"
+        class="shape"
+        tabindex="-1"
+      >
+        <circle
+          class="shape-outer-border"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <circle
+          class="shape-inner-border"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <circle
+          class="shape-dashed-outline"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <text
+          class="shape-checkmark"
+          x="-0.5"
+          y="-1.5"
+        >
+          <tspan
+            dy="0"
+            x="-0.5"
+          >
+            label
+          </tspan>
+        </text>
+      </g>
+      
+    </g>
+  </div>
+</body>
+`;
+
+exports[`HotspotChoice component > rendering > renders with basic props 1`] = `
+<body>
+  <div>
+    <g
+      class="hotspot-choice"
+      data-choice-key="key"
+    >
+      <g
+        aria-disabled="false"
+        aria-label="ariaLabel"
+        class="shape"
+        tabindex="-1"
+      >
+        <circle
+          class="shape-outer-border"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <circle
+          class="shape-inner-border"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <circle
+          class="shape-dashed-outline"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <text
+          class="shape-checkmark"
+          x="-0.5"
+          y="-1.5"
+        >
+          <tspan
+            dy="0"
+            x="-0.5"
+          >
+            label
+          </tspan>
+        </text>
+      </g>
+      
+    </g>
+  </div>
+</body>
+`;
+
+exports[`HotspotChoice component > rendering > renders with disabled true 1`] = `
+<body>
+  <div>
+    <g
+      class="hotspot-choice disabled"
+      data-choice-key="key"
+    >
+      <g
+        aria-disabled="true"
+        aria-label="ariaLabel"
+        class="shape"
+        tabindex="-1"
+      >
+        <circle
+          class="shape-outer-border"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <circle
+          class="shape-inner-border"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <circle
+          class="shape-dashed-outline"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <text
+          class="shape-checkmark"
+          x="-0.5"
+          y="-1.5"
+        >
+          <tspan
+            dy="0"
+            x="-0.5"
+          >
+            label
+          </tspan>
+        </text>
+      </g>
+      
+    </g>
+  </div>
+</body>
+`;
+
+exports[`HotspotChoice component > rendering > renders with selected true 1`] = `
+<body>
+  <div>
+    <g
+      class="hotspot-choice"
+      data-choice-key="key"
+    >
+      <g
+        aria-disabled="false"
+        aria-label="ariaLabel"
+        class="shape selected"
+        tabindex="-1"
+      >
+        <circle
+          class="shape-outer-border"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <circle
+          class="shape-inner-border"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <circle
+          class="shape-dashed-outline"
+          cx="1"
+          cy="0"
+          r="0"
+        />
+        <text
+          class="shape-checkmark"
+          x="-0.5"
+          y="-1.5"
+        >
+          <tspan
+            dy="0"
+            x="-0.5"
+          >
+            label
+          </tspan>
+        </text>
+      </g>
+      
+    </g>
+  </div>
+</body>
+`;

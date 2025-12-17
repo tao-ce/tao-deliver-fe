@@ -1,0 +1,554 @@
+{
+  "baseUrl": "./assets/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "i5e723045de9c695d3ca3fa0e5feffc",
+      "serial": "item_5e723a6de7062390678629",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "i5e723045de9c695d3ca3fa0e5feffc",
+        "title": "Schengen area flags",
+        "label": "Schengen area flags",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint124",
+        "class": ""
+      },
+      "body": {
+        "serial": "container_containeritembody_5e723a6de705b486534886",
+        "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{interaction_choiceinteraction_5e723a6de721c301451346}}\n      <\/div>\n    <\/div>\n  ",
+        "elements": {
+          "interaction_choiceinteraction_5e723a6de721c301451346": {
+            "serial": "interaction_choiceinteraction_5e723a6de721c301451346",
+            "qtiClass": "choiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "shuffle": true,
+              "maxChoices": 12,
+              "minChoices": 12,
+              "orientation": "horizontal",
+              "base" : "./schengen/"
+            },
+            "choices": {
+              "choice_simplechoice_5e723a6de72fe775675966": {
+                "identifier": "be",
+                "serial": "choice_simplechoice_5e723a6de72fe775675966",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "be",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de7310278992553",
+                  "body": "\n            {{img_5e723a6de732b238243536}}\n          ",
+                  "elements": {
+                    "img_5e723a6de732b238243536": {
+                      "serial": "img_5e723a6de732b238243536",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "be.png",
+                        "alt": "Belgium",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5e723a6de737e620879317": {
+                "identifier": "de",
+                "serial": "choice_simplechoice_5e723a6de737e620879317",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "de",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de738c295039338",
+                  "body": "\n            {{img_5e723a6de73a7983846607}}\n          ",
+                  "elements": {
+                    "img_5e723a6de73a7983846607": {
+                      "serial": "img_5e723a6de73a7983846607",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "de.png",
+                        "alt": "Germany",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5e723a6de73f4244884420": {
+                "identifier": "fr",
+                "serial": "choice_simplechoice_5e723a6de73f4244884420",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "fr",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de7401431298364",
+                  "body": "\n            {{img_5e723a6de741c603932400}}\n          ",
+                  "elements": {
+                    "img_5e723a6de741c603932400": {
+                      "serial": "img_5e723a6de741c603932400",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "fr.png",
+                        "alt": "France",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5e723a6de7467170980756": {
+                "identifier": "it",
+                "serial": "choice_simplechoice_5e723a6de7467170980756",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "it",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de7474073239411",
+                  "body": "\n            {{img_5e723a6de748d136713164}}\n          ",
+                  "elements": {
+                    "img_5e723a6de748d136713164": {
+                      "serial": "img_5e723a6de748d136713164",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "it.png",
+                        "alt": "Italia",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5e723a6de74ec077373059": {
+                "identifier": "pt",
+                "serial": "choice_simplechoice_5e723a6de74ec077373059",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "pt",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de74f8740444410",
+                  "body": "\n            {{img_5e723a6de7513348725141}}\n          ",
+                  "elements": {
+                    "img_5e723a6de7513348725141": {
+                      "serial": "img_5e723a6de7513348725141",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "pt.png",
+                        "alt": "pt",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5e723a6de755d065965056": {
+                "identifier": "lu",
+                "serial": "choice_simplechoice_5e723a6de755d065965056",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "lu",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de7569619428781",
+                  "body": "\n            {{img_5e723a6de7582630173912}}\n          ",
+                  "elements": {
+                    "img_5e723a6de7582630173912": {
+                      "serial": "img_5e723a6de7582630173912",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "lu.png",
+                        "alt": "Luxembourg",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5e723a6de75ca395784931": {
+                "identifier": "choice_1",
+                "serial": "choice_simplechoice_5e723a6de75ca395784931",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_1",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de75d7481810778",
+                  "body": "\n            {{img_5e723a6de75f0035578158}}\n          ",
+                  "elements": {
+                    "img_5e723a6de75f0035578158": {
+                      "serial": "img_5e723a6de75f0035578158",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "no.png",
+                        "alt": "Norway",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5e723a6de7639760588132": {
+                "identifier": "nl",
+                "serial": "choice_simplechoice_5e723a6de7639760588132",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "nl",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de7646312819867",
+                  "body": "\n            {{img_5e723a6de765e055422627}}\n          ",
+                  "elements": {
+                    "img_5e723a6de765e055422627": {
+                      "serial": "img_5e723a6de765e055422627",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "nl.png",
+                        "alt": "Netherland",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5e723a6de76a6698577221": {
+                "identifier": "es",
+                "serial": "choice_simplechoice_5e723a6de76a6698577221",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "es",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de76b2972184268",
+                  "body": "\n            {{img_5e723a6de76ca199598650}}\n          ",
+                  "elements": {
+                    "img_5e723a6de76ca199598650": {
+                      "serial": "img_5e723a6de76ca199598650",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "es.png",
+                        "alt": "Spain",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5e723a6de7711952496844": {
+                "identifier": "fi",
+                "serial": "choice_simplechoice_5e723a6de7711952496844",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "fi",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de771d706179083",
+                  "body": "\n            {{img_5e723a6de7735983077918}}\n          ",
+                  "elements": {
+                    "img_5e723a6de7735983077918": {
+                      "serial": "img_5e723a6de7735983077918",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "fi.png",
+                        "alt": "Finland",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5e723a6de777f197748889": {
+                "identifier": "hu",
+                "serial": "choice_simplechoice_5e723a6de777f197748889",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "hu",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de778b746261095",
+                  "body": "\n            {{img_5e723a6de77a3154800426}}\n          ",
+                  "elements": {
+                    "img_5e723a6de77a3154800426": {
+                      "serial": "img_5e723a6de77a3154800426",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "hu.png",
+                        "alt": "Hungary",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5e723a6de77e9632001257": {
+                "identifier": "gb",
+                "serial": "choice_simplechoice_5e723a6de77e9632001257",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "gb",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de77f5183681659",
+                  "body": "\n            {{img_5e723a6de780d413913736}}\n          ",
+                  "elements": {
+                    "img_5e723a6de780d413913736": {
+                      "serial": "img_5e723a6de780d413913736",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "gb.png",
+                        "alt": "Great Britain",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5e723a6de7852241729651": {
+                "identifier": "ch",
+                "serial": "choice_simplechoice_5e723a6de7852241729651",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "ch",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de785e395472530",
+                  "body": "\n            {{img_5e723a6de7876946945913}}\n          ",
+                  "elements": {
+                    "img_5e723a6de7876946945913": {
+                      "serial": "img_5e723a6de7876946945913",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "ch.png",
+                        "alt": "Switzerland",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5e723a6de78b9139341741": {
+                "identifier": "ro",
+                "serial": "choice_simplechoice_5e723a6de78b9139341741",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "ro",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de78c5576458122",
+                  "body": "\n            {{img_5e723a6de78de181682237}}\n          ",
+                  "elements": {
+                    "img_5e723a6de78de181682237": {
+                      "serial": "img_5e723a6de78de181682237",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "ro.png",
+                        "alt": "Romania",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              },
+              "choice_simplechoice_5e723a6de7921424220840": {
+                "identifier": "ir",
+                "serial": "choice_simplechoice_5e723a6de7921424220840",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "ir",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e723a6de792d984122782",
+                  "body": "\n            {{img_5e723a6de7945127412346}}\n          ",
+                  "elements": {
+                    "img_5e723a6de7945127412346": {
+                      "serial": "img_5e723a6de7945127412346",
+                      "qtiClass": "img",
+                      "attributes": {
+                        "src": "ie.png",
+                        "alt": "Irland",
+                        "width": 32,
+                        "height": 32,
+                        "type": "image\/png"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "prompt": {
+              "serial": "container_containerstatic_5e723a6de7250942326351",
+              "body": "\n            <div>\n              {{img_5e723a6de7284750521605}}\n              <strong>\u00a0Please select the flags of the European Unnion countries\u00a0 belonging to the Schengen Area : <\/strong>\n            <\/div>\n            <div>\u00a0<\/div>\n          ",
+              "elements": {
+                "img_5e723a6de7284750521605": {
+                  "serial": "img_5e723a6de7284750521605",
+                  "qtiClass": "img",
+                  "attributes": {
+                    "src": "data:image/png;base64,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",
+                    "alt": "European Union",
+                    "width": 32,
+                    "height": 32,
+                    "type": "image\/png"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+        "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+        "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+      },
+      "stylesheets": {
+        "stylesheet_5e723a6de70b7665733702": {
+          "serial": "stylesheet_5e723a6de70b7665733702",
+          "qtiClass": "stylesheet",
+          "attributes": {
+            "href": "tao-user-styles.css",
+            "type": "text\/css",
+            "media": "all",
+            "title": ""
+          }
+        }
+      },
+      "outcomes": {
+        "outcomedeclaration_5e723a6de7154330906181": {
+          "identifier": "SCORE",
+          "serial": "outcomedeclaration_5e723a6de7154330906181",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float",
+            "normalMaximum": 1
+          },
+          "defaultValue": null
+        },
+        "outcomedeclaration_5e723a6de7172278005330": {
+          "identifier": "MAXSCORE",
+          "serial": "outcomedeclaration_5e723a6de7172278005330",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "MAXSCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "1"
+        }
+      },
+      "responses": {
+        "responsedeclaration_5e723a6de70e4758370270": {
+          "identifier": "RESPONSE",
+          "serial": "responsedeclaration_5e723a6de70e4758370270",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "multiple",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        }
+      },
+      "feedbacks": [],
+      "apipAccessibility": ""
+    },
+    "assets": {
+      "img": {
+        "be.png": "be.png",
+        "de.png": "de.png",
+        "fr.png": "fr.png",
+        "it.png": "it.png",
+        "pt.png": "pt.png",
+        "lu.png": "lu.png",
+        "no.png": "no.png",
+        "nl.png": "nl.png",
+        "es.png": "es.png",
+        "fi.png": "fi.png",
+        "hu.png": "hu.png",
+        "gb.png": "gb.png",
+        "ch.png": "ch.png",
+        "ro.png": "ro.png",
+        "ie.png": "ie.png"
+      },
+      "css": {
+        "tao-user-styles.css": "tao-user-styles.css"
+      }
+    }
+  },
+  "itemState": {},
+  "itemIdentifier": "item-1",
+  "portableElements": {
+    "pci": [],
+    "pic": []
+  },
+  "success": true,
+  "messages": []
+}

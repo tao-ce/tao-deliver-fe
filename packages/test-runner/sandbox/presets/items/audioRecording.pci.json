@@ -1,0 +1,319 @@
+{
+    "baseUrl": "./assets/",
+    "itemIdentifier": "item8",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i64414495772d71639d165f648f3a967",
+            "serial": "i647cdfbc9408c",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i64414495772d71639d165f648f3a967",
+                "title": "Audio Rec PCI",
+                "label": "Audio Rec PCI",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "2023.06",
+                "class": ""
+            },
+            "body": {
+                "serial": "i647cdfbc9407d",
+                "body": "<div class=\"grid-row\"><div class=\"col-12\">  {{i5ec7d8d84baab}}  </div></div> <div class=\"grid-row\"><div class=\"col-12\">  {{i647cdfbc9443b}}  </div></div>  <div class=\"grid-row\"><div class=\"col-12\">  {{i5ec7d8d84baac}}  </div></div> <div class=\"grid-row\"><div class=\"col-12\">  {{i647cdfbc9443c}}  </div></div>",
+                "elements": {
+                    "i5ec7d8d84baab": {
+                        "serial": "i5ec7d8d84baab",
+                        "qtiClass": "mediaInteraction",
+                        "attributes": {
+                            "responseIdentifier": "media_interaction1",
+                            "autostart": true,
+                            "loop": false,
+                            "minPlays": 0,
+                            "maxPlays": 1,
+                            "class": "hide-player sequential"
+                        },
+                        "object": {
+                            "serial": "i5ec7d8d84baa5",
+                            "attributes": {
+                                "data": "media/Neil_Armstrong_1_small_step.ogg",
+                                "type": "audio/ogg"
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_546cb89e0420f262955533",
+                            "body": "Listen to the first audio (no delay, 7 seconds duration, max 1 play). Then record your own version of it (3 seconds delay, 5 seconds recording, max 1 record, playback on).",
+                            "elements": []
+                        }
+                    },
+                    "i647cdfbc9443b": {
+                        "serial": "i647cdfbc9443b",
+                        "qtiClass": "customInteraction",
+                        "attributes": {
+                            "responseIdentifier": "audio_rec_pci1",
+                            "class": "sequential"
+                        },
+                        "choices": {},
+                        "typeIdentifier": "audioRecordingInteraction",
+                        "markup": "\n              <div class=\"audioRecordingInteraction\">\n                <div class=\"audio-rec\">\n                  <div class=\"input-meter\">\n                    <div class=\"countdown-pie-chart\"> </div>\n                    <div class=\"leds\"> </div>\n                    <div class=\"mic\"> </div>\n                  </div>\n                  <div class=\"progress\"> </div>\n                  <div class=\"controls\"> </div>\n                </div>\n              </div>\n            ",
+                        "version": "1.3.1",
+                        "properties": {
+                            "isReviewMode": "",
+                            "allowPlayback": "false",
+                            "autoStart": "true",
+                            "autoPlayback": "true",
+                            "hideStopButton": "true",
+                            "hideRecordButton": "true",
+                            "playSound": "true",
+                            "delayMinutes": "0",
+                            "delaySeconds": "3",
+                            "maxRecords": "1",
+                            "maxRecordingTime": "5",
+                            "isCompressed": "true",
+                            "audioBitrate": "20000",
+                            "isStereo": "",
+                            "media": "{\"autostart\":true,\"replayTimeout\":5,\"maxPlays\":2,\"loop\":false,\"pause\":false,\"uri\":null,\"type\":null,\"height\":270,\"width\":480}",
+                            "displayDownloadLink": "",
+                            "updateResponsePartially": "false",
+                            "partialUpdateInterval": "1000"
+                        },
+                        "config": [],
+                        "modules": {},
+                        "xmlns": "http://www.imsglobal.org/xsd/portableCustomInteraction_v1"
+                    },
+                    "i5ec7d8d84baac": {
+                        "serial": "i5ec7d8d84baac",
+                        "qtiClass": "mediaInteraction",
+                        "attributes": {
+                            "responseIdentifier": "media_interaction2",
+                            "autostart": true,
+                            "loop": false,
+                            "minPlays": 0,
+                            "maxPlays": 0,
+                            "class": "hide-player sequential",
+                            "data-autostart-delay-ms": 3000
+                        },
+                        "object": {
+                            "serial": "i5ec7d8d84baa6",
+                            "attributes": {
+                                "data": "media/Apollo13-wehaveaproblem.ogg",
+                                "type": "audio/ogg"
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_546cb89e0420f262955533",
+                            "body": "Then listen to the second audio (3 sec delay, 17 seconds playback, unlimited plays). Then record your own version of it (no delay, 5 sec recording, unlimited records).",
+                            "elements": []
+                        }
+                    },
+                    "i647cdfbc9443c": {
+                        "serial": "i647cdfbc9443c",
+                        "qtiClass": "customInteraction",
+                        "attributes": {
+                            "responseIdentifier": "audio_rec_pci2",
+                            "class": "sequential"
+                        },
+                        "choices": {},
+                        "typeIdentifier": "audioRecordingInteraction",
+                        "markup": "\n              <div class=\"audioRecordingInteraction\">\n                <div class=\"audio-rec\">\n                  <div class=\"input-meter\">\n                    <div class=\"countdown-pie-chart\"> </div>\n                    <div class=\"leds\"> </div>\n                    <div class=\"mic\"> </div>\n                  </div>\n                  <div class=\"progress\"> </div>\n                  <div class=\"controls\"> </div>\n                </div>\n              </div>\n            ",
+                        "version": "1.3.1",
+                        "properties": {
+                            "isReviewMode": "",
+                            "allowPlayback": "false",
+                            "autoStart": "true",
+                            "autoPlayback": "false",
+                            "hideStopButton": "true",
+                            "hideRecordButton": "true",
+                            "playSound": "true",
+                            "delayMinutes": "0",
+                            "delaySeconds": "0",
+                            "maxRecords": "0",
+                            "maxRecordingTime": "5",
+                            "isCompressed": "true",
+                            "audioBitrate": "20000",
+                            "isStereo": "",
+                            "media": "{\"autostart\":true,\"replayTimeout\":5,\"maxPlays\":2,\"loop\":false,\"pause\":false,\"uri\":null,\"type\":null,\"height\":270,\"width\":480}",
+                            "displayDownloadLink": "",
+                            "updateResponsePartially": "true",
+                            "partialUpdateInterval": "1000"
+                        },
+                        "config": [],
+                        "modules": {},
+                        "xmlns": "http://www.imsglobal.org/xsd/portableCustomInteraction_v1"
+                    }
+                },
+                "attributes": []
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "i647cdfbc94246": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i647cdfbc94246",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "0"
+                },
+                "i647cdfbc942ba": {
+                    "identifier": "SCORE",
+                    "serial": "i647cdfbc942ba",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 0
+                    },
+                    "defaultValue": null
+                }
+            },
+            "responses": {
+                "i5ec7d8d84b9b98": {
+                    "identifier": "media_interaction1",
+                    "serial": "i5ec7d8d84b9b98",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "media_interaction1",
+                        "cardinality": "single",
+                        "baseType": "integer"
+                    },
+                    "defaultValue": []
+                },
+                "i647cdfbc941dc": {
+                    "identifier": "audio_rec_pci1",
+                    "serial": "i647cdfbc941dc",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "audio_rec_pci1",
+                        "cardinality": "single",
+                        "baseType": "file"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                },
+                "i5ec7d8d84b9b99": {
+                    "identifier": "media_interaction2",
+                    "serial": "i5ec7d8d84b9b99",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "media_interaction2",
+                        "cardinality": "single",
+                        "baseType": "integer"
+                    },
+                    "defaultValue": []
+                },
+                "i647cdfbc941dd": {
+                    "identifier": "audio_rec_pci2",
+                    "serial": "i647cdfbc941dd",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "audio_rec_pci2",
+                        "cardinality": "single",
+                        "baseType": "file"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "i647cdfbc945a0",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "processingType": "templateDriven",
+                "responseRules": []
+            },
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "audio": {
+                "media/Apollo13-wehaveaproblem.ogg": "media/Apollo13-wehaveaproblem.ogg",
+                "media/Neil_Armstrong_1_small_step.ogg": "media/Neil_Armstrong_1_small_step.ogg"
+            }
+        }
+    },
+    "portableElements": {
+        "pci": {
+            "audioRecordingInteraction": [
+                {
+                    "response": {
+                        "baseType": "integer",
+                        "cardinality": "single"
+                    },
+                    "typeIdentifier": "audioRecordingInteraction",
+                    "label": "audioRecordingInteraction PCI",
+                    "short": "audioRecordingInteraction PCI",
+                    "description": "audioRecordingInteraction PCI implementation",
+                    "version": "0.0.0",
+                    "runtime": {
+                        "hook": "./pci/audioRecordingInteraction/runtime/audioRecordingInteraction.min.js"
+                    },
+                    "xmlns": "http://www.imsglobal.org/xsd/portableCustomInteraction",
+                    "baseUrl": "./assets/"
+                }
+            ]
+        },
+        "pic": []
+    },
+    "itemState": {
+        "media_interaction1": {
+            "response": {
+                "base": null
+            },
+            "time": 0,
+            "validity": true
+        },
+        "media_interaction2": {
+            "response": {
+                "base": null
+            },
+            "time": 0,
+            "validity": true
+        },
+        "audio_rec_pci1": {
+            "response": {
+                "base": {
+                    "file": {
+                        "mime": "audio/ogg;codecs=opus",
+                        "name": "audioRecording_1695742739186.webm",
+                        "data": "T2dnUwACAAAAAAAAAAAyzN3NAAAAAGFf2X8BM39GTEFDAQAAAWZMYUMAAAAiEgASAAAAAAAkFQrEQPAAAAAAAAAAAAAAAAAAAAAAAAAAAE9nZ1MAAAAAAAAAAAAAMszdzQEAAAD5LKCSATeEAAAzDQAAAExhdmY1NS40OC4xMDABAAAAGgAAAGVuY29kZXI9TGF2YzU1LjY5LjEwMCBmbGFjT2dnUwAEARIAAAAAAAAyzN3NAgAAAKWVljkCDAD/+GkIAAAdAAABICI="
+                    }
+                }
+            },
+            "validity": true
+        },
+        "audio_rec_pci2": {
+            "response": {
+                "base": null
+            },
+            "validity": true
+        }
+    },
+    "itemResponse": {},
+    "correctResponse": {}
+}

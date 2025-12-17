@@ -1,0 +1,116 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`InlineChoiceInteraction > renders props correctly into markup 1`] = `
+<div
+  class="inline-interaction-container"
+>
+  <span
+    ariabar="baz"
+    ariafoo="12"
+    class="qti-interaction qti-inlineInteraction qti-inlineChoiceInteraction foo bar baz"
+    data-baz="24"
+    data-foo="bar"
+    dir="rtl"
+    id="interactionId"
+    lang="hu"
+    role="someUniqueRole"
+  >
+    <span
+      class="select height-small valid"
+      style="--visible-options: 999; --space-above: 0px;"
+    >
+      <button
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        aria-label=""
+        aria-roledescription="Dropdown"
+        disabled=""
+        title=""
+        type="button"
+      >
+        <span
+          class="dropdown-placeholder"
+        />
+         
+        <svg
+          aria-hidden="true"
+          class="icon medium"
+          viewBox="0 0 16 16"
+        >
+          <title>
+            Down arrow icon
+          </title>
+          <path
+            d="M15.46 4.29A.51.51 0 0015 4H1a.5.5 0 00-.38.83l7 8a.51.51 0 00.76 0l7-8a.51.51 0 00.08-.54z"
+          />
+        </svg>
+      </button>
+       
+      <span
+        aria-hidden="true"
+        class="listbox-wrapper visually-hidden"
+      >
+        <span
+          aria-activedescendant="tao-option-123"
+          aria-roledescription="dropdown list"
+          class="listbox"
+          role="listbox"
+          tabindex="-1"
+        >
+          <span
+            class="scroll-child"
+          />
+           
+          <span
+            aria-selected="true"
+            class="option selected blank"
+            id="tao-option-123"
+            role="option"
+          >
+            leave blank
+          </span>
+          <span
+            aria-selected="false"
+            class="option"
+            id="tao-option-123"
+            role="option"
+          >
+            Choice 1
+          </span>
+          <span
+            aria-selected="false"
+            class="option"
+            id="tao-option-123"
+            role="option"
+          >
+            Choice 2
+          </span>
+          <span
+            aria-selected="false"
+            class="option"
+            id="tao-option-123"
+            role="option"
+          >
+            Choice 3
+          </span>
+           
+          <span
+            class="scroll-child"
+          />
+        </span>
+      </span>
+       
+      <input
+        aria-hidden="true"
+        class="hidden-input"
+        data-type="select"
+        name=""
+        tabindex="-1"
+        type="text"
+      />
+       
+       
+    </span>
+  </span>
+</div>
+`;

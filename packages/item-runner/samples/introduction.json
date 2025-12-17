@@ -1,0 +1,73 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i14077454786823397",
+            "serial": "item_5e8efe836f35f889107934",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i14077454786823397",
+                "title": "Example_0_Introduction",
+                "label": "Example_0_Introduction",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint125",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5e8efe836f347817867014",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <p>You can search for answers on <a href=\"http://www.google.com\">google</a> and if you are stuck relax a little on <a href=\"https://www.youtube.com\">youtube</a></p>\n       </div>\n    </div>\n      <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{img_5e8efe836f606459755560}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "img_5e8efe836f606459755560": {
+                        "serial": "img_5e8efe836f606459755560",
+                        "qtiClass": "img",
+                        "attributes": { "src": "introduction/intro.png", "alt": "intro", "width": 816, "height": 613 },
+                        "debug": { "relatedItem": "item_5e8efe836f35f889107934" }
+                    }
+                },
+                "debug": { "relatedItem": "item_5e8efe836f35f889107934" }
+            },
+            "debug": { "relatedItem": "item_5e8efe836f35f889107934" },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p1",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p1": "http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd"
+            },
+            "stylesheets": {
+                "stylesheet_5e8efe836f45a635043657": {
+                    "serial": "stylesheet_5e8efe836f45a635043657",
+                    "qtiClass": "stylesheet",
+                    "attributes": { "href": "tao-user-styles.css", "type": "text/css", "media": "all", "title": "" },
+                    "debug": { "relatedItem": "item_5e8efe836f35f889107934" }
+                }
+            },
+            "outcomes": {
+                "outcomedeclaration_5e8efe836f4d1691277941": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5e8efe836f4d1691277941",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": { "identifier": "SCORE", "cardinality": "single", "baseType": "float" },
+                    "debug": { "relatedItem": "item_5e8efe836f35f889107934" },
+                    "defaultValue": null
+                }
+            },
+            "responses": [],
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": { "intro.png": "introduction/intro.png" },
+            "css": { "tao-user-styles.css": "tao-user-styles.css" }
+        }
+    },
+    "itemState": {},
+    "itemIdentifier": "item-1",
+    "portableElements": { "pci": [], "pic": [] },
+    "success": true,
+    "messages": []
+}

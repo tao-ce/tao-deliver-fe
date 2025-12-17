@@ -1,0 +1,246 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ItemPreviewer > it renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="item-previewer-wrapper"
+    >
+      <div
+        class="item-preview-header inverted"
+      >
+        <div
+          class="previewer-header-bar"
+        >
+          <div
+            class="bar-section bar-main-section"
+          >
+            <button
+              aria-label="close item preview"
+              class="icon-bar-btn actionable base-16 default"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Remove icon
+                </title>
+                <path
+                  d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+                />
+              </svg>
+               
+               
+            </button>
+             
+            <div
+              class="item-name"
+            >
+              undefined
+            </div>
+          </div>
+           
+          <div
+            class="bar-section bar-reverse-direction"
+          >
+            <div
+              class="toggle-response-panel"
+            >
+              <button
+                aria-label="show response panel"
+                class="actionable primary pill small inverted icon-right"
+                data-test-id="toggle-response-panel"
+                type="button"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  fill="none"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  width="16"
+                >
+                  <title>
+                    List icon
+                  </title>
+                  <path
+                    d="M0 0H12V1H0z"
+                    fill="currentColor"
+                    transform="translate(2 3)"
+                  />
+                  <path
+                    d="M0 0H12V1H0z"
+                    fill="currentColor"
+                    transform="translate(2 6)"
+                  />
+                  <path
+                    d="M0 0H12V1H0z"
+                    fill="currentColor"
+                    transform="translate(2 9)"
+                  />
+                  <path
+                    d="M0 0H12V1H0z"
+                    fill="currentColor"
+                    transform="translate(2 12)"
+                  />
+                </svg>
+                 
+                 
+                RESPONSE PANEL
+              </button>
+            </div>
+             
+            <div
+              class="mobile-toggle-response-panel"
+            >
+              <button
+                aria-label="show response panel"
+                class="icon-bar-btn actionable base-16 default"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  fill="none"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  width="16"
+                >
+                  <title>
+                    List icon
+                  </title>
+                  <path
+                    d="M0 0H12V1H0z"
+                    fill="currentColor"
+                    transform="translate(2 3)"
+                  />
+                  <path
+                    d="M0 0H12V1H0z"
+                    fill="currentColor"
+                    transform="translate(2 6)"
+                  />
+                  <path
+                    d="M0 0H12V1H0z"
+                    fill="currentColor"
+                    transform="translate(2 9)"
+                  />
+                  <path
+                    d="M0 0H12V1H0z"
+                    fill="currentColor"
+                    transform="translate(2 12)"
+                  />
+                </svg>
+                 
+                 
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+      <div
+        class="item-preview-body"
+      >
+        <div
+          class="response-panel-container hidden"
+        >
+          <div
+            class="response-panel inverted"
+          >
+            <div
+              class="responses-container"
+            >
+              <ul />
+            </div>
+             
+            <div
+              class="submit-response-container"
+            >
+              <button
+                class="actionable primary pill small inverted"
+                data-test-id="submit-response"
+                name="SUBMIT RESPONSE"
+                type="button"
+              >
+                 
+                 
+                SUBMIT RESPONSE
+              </button>
+            </div>
+          </div>
+        </div>
+         
+        <div
+          class="item-preview-container"
+        >
+          <div
+            class="item-mock"
+          >
+            <button
+              data-test-id="dispatchReady"
+            />
+             
+            <button
+              data-test-id="dispatchError"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ItemPreviewer > submits the response to the url provided, updates response panel 1`] = `
+<div
+  class="response-panel-container"
+>
+  <div
+    class="response-panel inverted"
+  >
+    <div
+      class="responses-container"
+    >
+      <ul>
+        <li>
+           
+          <div
+            class="response-entry"
+          >
+            <div
+              class="response-label"
+            >
+              Item score: 
+            </div>
+             
+            <div
+              class="score"
+            >
+              0
+              /
+              1
+            </div>
+          </div>
+           
+        </li>
+      </ul>
+    </div>
+     
+    <div
+      class="submit-response-container"
+    >
+      <button
+        class="actionable primary pill small inverted"
+        data-test-id="submit-response"
+        name="SUBMIT RESPONSE"
+        type="button"
+      >
+         
+         
+        SUBMIT RESPONSE
+      </button>
+    </div>
+  </div>
+</div>
+`;

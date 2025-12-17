@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MiniPins component > rendering > renders a pin 1`] = `
+<ul
+  class="mini-pins"
+>
+  <li
+    class="dimmed"
+  >
+    <svg
+      height="58"
+      version="1.1"
+      width="36"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        class="outer-line"
+        d="M18 0C8.06 0 0 8.058 0 18c0 2.784.633 5.425 1.763 7.777C1.826 25.91 18 57.6 18 57.6l16.042-31.43A17.912 17.912 0 0036 18c0-9.942-8.058-18-18-18"
+        fill="var(--color-brand-hover)"
+      />
+      <path
+        d="M18 4C10.269 4 4 10.267 4 18c0 2.166.492 4.22 1.371 6.048C5.421 24.152 18 48.8 18 48.8l12.477-24.445A13.932 13.932 0 0032 18c0-7.733-6.267-14-14-14"
+        fill="var(--color-gs-light)"
+      />
+      <circle
+        class="small-circle"
+        cx="18"
+        cy="18"
+        fill="var(--color-brand)"
+        r="3"
+      />
+      <circle
+        class="large-circle"
+        cx="18"
+        cy="18"
+        fill="var(--color-brand-hover-invert)"
+        r="5"
+      />
+    </svg>
+     
+  </li>
+</ul>
+`;

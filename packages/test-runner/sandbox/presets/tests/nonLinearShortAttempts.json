@@ -1,0 +1,114 @@
+{
+  "testContext": {
+    "state": 1,
+    "remainingAttempts": 2,
+    "isTimeout": 0,
+    "itemIdentifier": "item-french",
+    "attempt": 1,
+    "itemSessionState": 1,
+    "needMapUpdate": false,
+    "itemPosition": 0,
+    "timeConstraints": [],
+    "testPartId": "testPart-1",
+    "sectionId": "assessmentSection-1",
+    "canMoveBackward": false,
+    "rubrics": "",
+    "submissionMode": 0,
+    "allowSkipping": true,
+    "validateResponses": false
+  },
+  "testMap": {
+    "scope": "test",
+    "parts": {
+      "testPart-1": {
+        "id": "testPart-1",
+        "label": "Part 1",
+        "position": 0,
+        "isLinear": false,
+        "timeConstraint": null,
+        "sections": {
+          "assessmentSection-1": {
+            "id": "assessmentSection-1",
+            "label": "Section 1",
+            "isCatAdaptive": false,
+            "position": 0,
+            "timeConstraint": null,
+            "items": {
+              "item-french": {
+                "id": "item-french",
+                "label": "French Words",
+                "position": 0,
+                "occurrence": 0,
+                "remainingAttempts": 2,
+                "answered": false,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false,
+                "allowSkipping": true
+              },
+              "item-math": {
+                "id": "item-math",
+                "label": "Math Entry",
+                "position": 1,
+                "occurrence": 0,
+                "remainingAttempts": 2,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false,
+                "allowSkipping": true
+              },
+              "item-space": {
+                "id": "item-space",
+                "label": "The Space Shuttle, 30 years of adventure",
+                "position": 2,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false,
+                "allowSkipping": true
+              }
+            },
+            "stats": {
+              "questions": 3,
+              "answered": 0,
+              "flagged": 0,
+              "viewed": 1,
+              "total": 3,
+              "questionsViewed": 1
+            }
+          }
+        },
+        "stats": {
+          "questions": 3,
+          "answered": 0,
+          "flagged": 0,
+          "viewed": 1,
+          "total": 3,
+          "questionsViewed": 1
+        }
+      }
+    },
+    "title": "nonLinearShortAttempts",
+    "identifier": "nonLinearShortAttempts",
+    "stats": {
+      "questions": 3,
+      "answered": 0,
+      "flagged": 0,
+      "viewed": 1,
+      "total": 3,
+      "questionsViewed": 1
+    }
+  }
+}

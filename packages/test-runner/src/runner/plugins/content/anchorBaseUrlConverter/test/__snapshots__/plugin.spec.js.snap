@@ -1,0 +1,126 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`anchor base url converter plugin > converts an anchor 1`] = `
+<section>
+  
+    
+  <header
+    tabindex="-1"
+  />
+  
+    
+  <main>
+    
+        
+    <a
+      href="https://www.testurl.com/#location"
+    >
+      a link
+    </a>
+    
+        
+    <a
+      href="https://www.testurl.com/#anchor-1"
+    >
+      first choice
+    </a>
+    
+        
+    <a
+      href="https://www.testurl.com/#anchor-2"
+    >
+      second choice
+    </a>
+    
+        
+    <a
+      href="https://www.anonanchorlink.com"
+    >
+      a link
+    </a>
+    
+        
+    <div
+      id="location"
+    />
+    
+        
+    <ul>
+      
+            
+      <li>
+        
+                
+        <span
+          class="hidden"
+        >
+          <span>
+            Choice 1
+          </span>
+        </span>
+        
+                
+        <span
+          id="anchor-1"
+        >
+          Choice 1
+        </span>
+        
+            
+      </li>
+      
+            
+      <li>
+        
+                
+        <span
+          class="hidden"
+        >
+          <span>
+            Choice 2
+          </span>
+        </span>
+        
+                
+        <span
+          id="anchor-2"
+        >
+          Choice 2
+        </span>
+        
+            
+      </li>
+      
+            
+      <li>
+        
+                
+        <span
+          class="hidden"
+        >
+          <span
+            id="anchor-3"
+          >
+            Choice 3
+          </span>
+        </span>
+        
+                
+        <span
+          id="anchor-3"
+        >
+          Choice 3
+        </span>
+        
+            
+      </li>
+      
+        
+    </ul>
+    
+    
+  </main>
+  
+ 
+</section>
+`;

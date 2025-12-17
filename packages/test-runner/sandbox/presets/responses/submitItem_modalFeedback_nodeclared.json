@@ -1,0 +1,184 @@
+{
+    "success": true,
+    "errorCode": null,
+    "errorMessage": null,
+    "responses": [
+        [
+            {
+                "success": true,
+                "name": "submitItem",
+                "id": "submitItem_1695729682224",
+                "errorCode": null,
+                "errorMessage": null,
+                "values": {
+                    "displayFeedbacks": true,
+                    "itemSession": {
+                        "numAttempts": {
+                            "base": {
+                                "integer": 3
+                            }
+                        },
+                        "duration": {
+                            "base": {
+                                "duration": "PT18S"
+                            }
+                        },
+                        "completionStatus": {
+                            "base": {
+                                "identifier": "unknown"
+                            }
+                        },
+                        "SCORE": {
+                            "base": {
+                                "float": 0
+                            }
+                        },
+                        "MAXSCORE": {
+                            "base": {
+                                "float": 0
+                            }
+                        },
+                        "RESPONSE": {
+                            "list": {
+                                "identifier": ["choice_1"]
+                            }
+                        },
+                        "RESPONSE_1": {
+                            "list": {
+                                "identifier": []
+                            }
+                        },
+                        "itemAnswered": true
+                    },
+                    "feedbacks": {
+                        "i64dd0b4e1906e": {
+                            "mapping": [],
+                            "areaMapping": [],
+                            "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                            "correctResponses": [],
+                            "defaultValue": [],
+                            "mappingAttributes": {
+                                "defaultValue": 0
+                            },
+                            "feedbackRules": []
+                        },
+                        "i64dd0b4e1913b": {
+                            "mapping": [],
+                            "areaMapping": [],
+                            "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                            "correctResponses": [],
+                            "defaultValue": [],
+                            "mappingAttributes": {
+                                "defaultValue": 0
+                            },
+                            "feedbackRules": []
+                        },
+                        "i64dd0b4e19f9f": {
+                            "processingType": "templateDriven",
+                            "responseRules": [
+                                {
+                                    "qtiClass": "responseCondition",
+                                    "responseIf": {
+                                        "qtiClass": "responseIf",
+                                        "expression": {
+                                            "qtiClass": "match",
+                                            "expressions": [
+                                                {
+                                                    "qtiClass": "variable",
+                                                    "attributes": {
+                                                        "identifier": "RESPONSE"
+                                                    }
+                                                },
+                                                {
+                                                    "qtiClass": "correct",
+                                                    "attributes": {
+                                                        "identifier": "RESPONSE"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "responseRules": [
+                                            {
+                                                "qtiClass": "setOutcomeValue",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                },
+                                                "expression": {
+                                                    "qtiClass": "sum",
+                                                    "expressions": [
+                                                        {
+                                                            "qtiClass": "variable",
+                                                            "attributes": {
+                                                                "identifier": "SCORE"
+                                                            }
+                                                        },
+                                                        {
+                                                            "qtiClass": "baseValue",
+                                                            "attributes": {
+                                                                "baseType": "integer"
+                                                            },
+                                                            "value": "1"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "qtiClass": "responseCondition",
+                                    "responseIf": {
+                                        "qtiClass": "responseIf",
+                                        "expression": {
+                                            "qtiClass": "match",
+                                            "expressions": [
+                                                {
+                                                    "qtiClass": "variable",
+                                                    "attributes": {
+                                                        "identifier": "RESPONSE_1"
+                                                    }
+                                                },
+                                                {
+                                                    "qtiClass": "correct",
+                                                    "attributes": {
+                                                        "identifier": "RESPONSE_1"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "responseRules": [
+                                            {
+                                                "qtiClass": "setOutcomeValue",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                },
+                                                "expression": {
+                                                    "qtiClass": "sum",
+                                                    "expressions": [
+                                                        {
+                                                            "qtiClass": "variable",
+                                                            "attributes": {
+                                                                "identifier": "SCORE"
+                                                            }
+                                                        },
+                                                        {
+                                                            "qtiClass": "baseValue",
+                                                            "attributes": {
+                                                                "baseType": "integer"
+                                                            },
+                                                            "value": "1"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    ]
+}

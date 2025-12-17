@@ -1,0 +1,746 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`UploadInteraction > listens store modifications 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-blockInteraction qti-uploadInteraction"
+    >
+       
+      <div
+        class="wrap"
+      >
+         
+        <div
+          class="uploading hidden"
+        />
+         
+        <div>
+          <input
+            aria-hidden="true"
+            tabindex="-1"
+            type="file"
+          />
+           
+           
+          <span
+            class="label"
+          >
+            Browse your computer
+          </span>
+           
+          <div
+            class="browse-container"
+          >
+            <button
+              class="actionable primary pill medium"
+              type="button"
+            >
+               
+               
+              Select a file
+            </button>
+          </div>
+           
+           
+          <p
+            class="expected-formats"
+          >
+            maximum file size: 1 MB
+          </p>
+           
+          <div
+            aria-hidden="true"
+            class="drop-container"
+          >
+            <div
+              class="drop-area"
+              role="region"
+            >
+              <span>
+                ..or drop your file here
+              </span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+        id="tao-live-123"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`UploadInteraction > listens store modifications 2`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-blockInteraction qti-uploadInteraction"
+    >
+       
+      <div
+        class="wrap"
+      >
+         
+        <div
+          class="uploading"
+        />
+         
+        <div>
+          <input
+            aria-hidden="true"
+            tabindex="-1"
+            type="file"
+          />
+           
+          <div
+            class="selected-file-container"
+          >
+            <p
+              tabindex="-1"
+            >
+              <span
+                aria-label="File selected successfully"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Check mark icon
+                  </title>
+                  <path
+                    d="M14.73 1.91L16 3.18 5.09 14.09 0 9l1.27-1.27 3.82 3.82z"
+                  />
+                </svg>
+              </span>
+               
+              <span>
+                Answer file selected:
+              </span>
+               
+              <a
+                download="test.png"
+                href="object-url"
+                rel="noreferrer"
+                target="_blank"
+              >
+                test.png
+              </a>
+              
+            </p>
+             
+            <button
+              class="actionable secondary pill medium"
+              type="button"
+            >
+               
+               
+              Select different file
+            </button>
+             
+            <button
+              class="actionable secondary pill medium"
+              type="button"
+            >
+               
+               
+              Clear file
+            </button>
+          </div>
+           
+        </div>
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+        id="tao-live-123"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`UploadInteraction > listens store modifications 3`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-blockInteraction qti-uploadInteraction"
+    >
+       
+      <div
+        class="wrap"
+      >
+         
+        <div
+          class="uploading"
+        />
+         
+        <div>
+          <input
+            aria-hidden="true"
+            tabindex="-1"
+            type="file"
+          />
+           
+          <div
+            class="selected-file-container"
+          >
+            <p
+              tabindex="-1"
+            >
+              <span
+                aria-label="File selected successfully"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Check mark icon
+                  </title>
+                  <path
+                    d="M14.73 1.91L16 3.18 5.09 14.09 0 9l1.27-1.27 3.82 3.82z"
+                  />
+                </svg>
+              </span>
+               
+              <span>
+                Answer file selected:
+              </span>
+               
+              <a
+                download="test.png"
+                href="object-url"
+                rel="noreferrer"
+                target="_blank"
+              >
+                test.png
+              </a>
+              
+            </p>
+             
+            <button
+              class="actionable secondary pill medium"
+              type="button"
+            >
+               
+               
+              Select different file
+            </button>
+             
+            <button
+              class="actionable secondary pill medium"
+              type="button"
+            >
+               
+               
+              Clear file
+            </button>
+          </div>
+           
+        </div>
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+        id="tao-live-123"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`UploadInteraction > renders props into markup 1`] = `
+<body>
+  <div>
+    <div
+      aria-bar="baz"
+      aria-foo="12"
+      class="qti-interaction qti-blockInteraction qti-uploadInteraction foo bar baz"
+      data-baz="24"
+      data-foo="bar"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+    >
+      <div
+        class="qti-prompt cf"
+      >
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+       
+      <div
+        class="wrap"
+      >
+         
+        <div
+          class="uploading hidden"
+        />
+         
+        <div
+          class="disabled"
+        >
+          <input
+            accept="image/png"
+            aria-hidden="true"
+            disabled=""
+            tabindex="-1"
+            type="file"
+          />
+           
+           
+          <span
+            class="label"
+          >
+            Browse your computer
+          </span>
+           
+          <div
+            class="browse-container"
+          >
+            <button
+              aria-disabled="true"
+              class="actionable primary pill medium"
+              disabled=""
+              type="button"
+            >
+               
+               
+              Select a file
+            </button>
+          </div>
+           
+          <p
+            class="expected-formats"
+          >
+            expected formats: .png
+          </p>
+           
+          <p
+            class="expected-formats"
+          >
+            maximum file size: 1 MB
+          </p>
+           
+          <div
+            aria-hidden="true"
+            class="drop-container"
+          >
+            <div
+              class="drop-area"
+              role="region"
+            >
+              <span>
+                ..or drop your file here
+              </span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+        id="tao-live-123"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`UploadInteraction > restore states with a local file in a fileHash baseType 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-blockInteraction qti-uploadInteraction"
+    >
+       
+      <div
+        class="wrap"
+      >
+         
+        <div
+          class="uploading"
+        />
+         
+        <div>
+          <input
+            aria-hidden="true"
+            tabindex="-1"
+            type="file"
+          />
+           
+          <div
+            class="selected-file-container"
+          >
+            <p
+              tabindex="-1"
+            >
+              <span
+                aria-label="File selected successfully"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Check mark icon
+                  </title>
+                  <path
+                    d="M14.73 1.91L16 3.18 5.09 14.09 0 9l1.27-1.27 3.82 3.82z"
+                  />
+                </svg>
+              </span>
+               
+              <span>
+                Answer file selected:
+              </span>
+               
+              <a
+                download="test.png"
+                href="object-url"
+                rel="noreferrer"
+                target="_blank"
+              >
+                test.png
+              </a>
+              
+            </p>
+             
+            <button
+              class="actionable secondary pill medium"
+              type="button"
+            >
+               
+               
+              Select different file
+            </button>
+             
+            <button
+              class="actionable secondary pill medium"
+              type="button"
+            >
+               
+               
+              Clear file
+            </button>
+          </div>
+           
+        </div>
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+        id="tao-live-123"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`UploadInteraction > restore states with fileHash baseType 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-blockInteraction qti-uploadInteraction"
+    >
+       
+      <div
+        class="wrap"
+      >
+         
+        <div
+          class="uploading"
+        />
+         
+        <div>
+          <input
+            aria-hidden="true"
+            tabindex="-1"
+            type="file"
+          />
+           
+          <div
+            class="selected-file-container"
+          >
+            <p
+              tabindex="-1"
+            >
+              <span
+                aria-label="File selected successfully"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Check mark icon
+                  </title>
+                  <path
+                    d="M14.73 1.91L16 3.18 5.09 14.09 0 9l1.27-1.27 3.82 3.82z"
+                  />
+                </svg>
+              </span>
+               
+              <span>
+                Answer file selected:
+              </span>
+               
+              <a
+                download="foo.wav"
+                href="http://link.to/foo.wav"
+                rel="noreferrer"
+                target="_blank"
+              >
+                foo.wav
+              </a>
+              
+            </p>
+             
+            <button
+              class="actionable secondary pill medium"
+              type="button"
+            >
+               
+               
+              Select different file
+            </button>
+             
+            <button
+              class="actionable secondary pill medium"
+              type="button"
+            >
+               
+               
+              Clear file
+            </button>
+          </div>
+           
+        </div>
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+        id="tao-live-123"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`UploadInteraction > sets instruction language from context 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-blockInteraction qti-uploadInteraction"
+    >
+       
+      <div
+        class="wrap"
+      >
+         
+        <div
+          class="uploading hidden"
+        />
+         
+        <div
+          dir="ltr"
+          lang="nb-NO"
+        >
+          <input
+            aria-hidden="true"
+            tabindex="-1"
+            type="file"
+          />
+           
+           
+          <span
+            class="label"
+          >
+            Browse your computer
+          </span>
+           
+          <div
+            class="browse-container"
+          >
+            <button
+              class="actionable primary pill medium"
+              type="button"
+            >
+               
+               
+              Select a file
+            </button>
+          </div>
+           
+           
+          <p
+            class="expected-formats"
+          >
+            maximum file size: 1 MB
+          </p>
+           
+          <div
+            aria-hidden="true"
+            class="drop-container"
+          >
+            <div
+              class="drop-area"
+              role="region"
+            >
+              <span>
+                ..or drop your file here
+              </span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+        id="tao-live-123"
+        lang="nb-NO"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`UploadInteraction > sets store value correctly when invalid file is selected 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-blockInteraction qti-uploadInteraction"
+    >
+       
+      <div
+        class="wrap"
+      >
+         
+        <div
+          class="uploading"
+        />
+         
+        <div>
+          <input
+            accept="image/png"
+            aria-hidden="true"
+            tabindex="-1"
+            type="file"
+          />
+           
+          <div
+            class="selected-file-container select-again invalid"
+          >
+            <p
+              tabindex="-1"
+            >
+              The .txt file format is not accepted, expected formats are: .png
+            </p>
+             
+             
+          </div>
+           
+          <span
+            class="label"
+          >
+            Browse your computer
+          </span>
+           
+          <div
+            class="browse-container"
+          >
+            <button
+              class="actionable primary pill medium"
+              type="button"
+            >
+               
+               
+              Select a file
+            </button>
+          </div>
+           
+          <p
+            class="expected-formats"
+          >
+            expected formats: .png
+          </p>
+           
+          <p
+            class="expected-formats"
+          >
+            maximum file size: 1 MB
+          </p>
+           
+          <div
+            aria-hidden="true"
+            class="drop-container"
+          >
+            <div
+              class="drop-area"
+              role="region"
+            >
+              <span>
+                ..or drop your file here
+              </span>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+        id="tao-live-123"
+      >
+         Response file cleared.
+      </div>
+    </div>
+  </div>
+</body>
+`;

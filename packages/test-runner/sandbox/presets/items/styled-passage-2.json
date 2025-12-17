@@ -1,0 +1,273 @@
+{
+    "baseUrl": "./presets/items/assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i630e05d049e558b1da36462fcba738",
+            "serial": "i630e1722b3e79",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i630e05d049e558b1da36462fcba738",
+                "title": "Item 2",
+                "label": "Item 2",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "NextGen",
+                "class": ""
+            },
+            "body": {
+                "serial": "i630e1722b3e75",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <p>This is an introduction to the item below. Nothing more to say. Enjoy!</p>\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i630e1722b3fdd}}\n      </div>\n    </div>\n   <div class=\"grid-row\">\n      <div class=\"col-12\">\n  {{i5f171f4ddf7b2}}  </div>\n    </div>\n ",
+                "elements": {
+                    "i630e1722b3fdd": {
+                        "serial": "i630e1722b3fdd",
+                        "qtiClass": "choiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "shuffle": false,
+                            "maxChoices": 1,
+                            "minChoices": 1,
+                            "orientation": "vertical"
+                        },
+                        "choices": {
+                            "i630e1722b408b": {
+                                "identifier": "choice_1",
+                                "serial": "i630e1722b408b",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i630e1722b409e",
+                                    "body": "Nothing to say",
+                                    "elements": {}
+                                }
+                            },
+                            "i630e1722b40e5": {
+                                "identifier": "choice_2",
+                                "serial": "i630e1722b40e5",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i630e1722b40f8",
+                                    "body": "Say it aniway",
+                                    "elements": {}
+                                }
+                            },
+                            "i630e1722b413c": {
+                                "identifier": "choice_3",
+                                "serial": "i630e1722b413c",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i630e1722b414e",
+                                    "body": "Obiwan Kenobi",
+                                    "elements": {}
+                                }
+                            },
+                            "i630e1722b418f": {
+                                "identifier": "choice_4",
+                                "serial": "i630e1722b418f",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_4",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i630e1722b41a0",
+                                    "body": "42",
+                                    "elements": {}
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i630e1722b4016",
+                            "body": "\n            {{i630e1722b405d}}\n          ",
+                            "elements": {
+                                "i630e1722b405d": {
+                                    "serial": "i630e1722b405d",
+                                    "qtiClass": "include",
+                                    "attributes": {
+                                        "href": "passage-1.xml",
+                                        "class": "tao-3iakxvaag"
+                                    },
+                                    "stylesheets": {
+                                        "i630e1722b3eca": "styles/passageStyles.css"
+                                    },
+                                    "body": {
+                                        "serial": "i630e1722b4063",
+                                        "body": "\n    \n        <div class=\"grid-row\"><div class=\"col-12\"><div class=\"colrow\"><div class=\"custom-text-box tao-nten6ifr2\">\n<p>I have nothing to say, but I say it anyway.</p>\n</div></div><div class=\"colrow\"><div class=\"custom-text-box tao-dyqim287b\">\n<p>Don't you think this user interface looks pretty?</p>\n</div></div></div></div>\n    \n",
+                                        "elements": {}
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "i5f171f4ddf7b2": {
+                        "serial": "i5f171f4ddf7b2",
+                        "qtiClass": "orderInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_1",
+                            "shuffle": false,
+                            "orientation": "vertical",
+                            "class": "qti-choices-left",
+                            "minChoices": 1,
+                            "maxChoices": 5
+                        },
+                        "choices": {
+                            "i5f171f4ddf8f7": {
+                                "identifier": "choice_1",
+                                "serial": "i5f171f4ddf8f7",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_1", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf939", "body": "1 kilogram", "elements": {} }
+                            },
+                            "i5f171f4ddf984": {
+                                "identifier": "choice_2",
+                                "serial": "i5f171f4ddf984",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_2", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf991", "body": "2 pounds", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb": {
+                                "identifier": "choice_3",
+                                "serial": "i5f171f4ddf9cb",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_3", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d6", "body": "3 ounces", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb4": {
+                                "identifier": "choice_4",
+                                "serial": "i5f171f4ddf9cb4",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_4", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d64", "body": "4 milligrams", "elements": {} }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f171f4ddf861",
+                            "body": "Put these weight values in ascending order",
+                            "elements": {}
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xi": "http://www.w3.org/2001/XInclude",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {
+                "i684be1e766b34": {
+                    "serial": "i684be1e766b34",
+                    "qtiClass": "stylesheet",
+                    "attributes": {
+                        "href": "styles/styleEditorTheme.css",
+                        "type": "text/css",
+                        "media": "all",
+                        "title": ""
+                    }
+                },
+                "i630e1722b3eca": {
+                    "serial": "i630e1722b3eca",
+                    "qtiClass": "stylesheet",
+                    "attributes": {
+                        "href": "styles/passageStyles.css",
+                        "includeHref": "passage-1.xml",
+                        "includeSerial": "i630e1722b405d",
+                        "type": "text/css",
+                        "media": "screen",
+                        "title": ""
+                    }
+                }
+            },
+            "outcomes": {
+                "i630e1722b3f2c": {
+                    "identifier": "SCORE",
+                    "serial": "i630e1722b3f2c",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "defaultValue": null
+                },
+                "i630e1722b3f4e": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i630e1722b3f4e",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "i630e1722b3ef3": {
+                    "identifier": "RESPONSE",
+                    "serial": "i630e1722b3ef3",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "single",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                },
+                "i5f171f4ddf58e": {
+                    "identifier": "RESPONSE_1",
+                    "serial": "i5f171f4ddf58e",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE_1", "cardinality": "ordered", "baseType": "identifier" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": ["choice_3", "choice_2", "choice_1"],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "xinclude": {
+                "passage-1.xml": "passage-1.xml"
+            },
+            "css": {
+                "styles/styleEditorTheme.css": "styles/styleEditorTheme.css",
+                "styles/passageStyles.css": "styles/passageStyles.css"
+            }
+        }
+    },
+    "itemState": {},
+    "itemIdentifier": "item-2",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    },
+    "success": true,
+    "messages": []
+}

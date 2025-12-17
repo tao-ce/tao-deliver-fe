@@ -1,0 +1,176 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ReRank > does not rerank from h3 1`] = `
+<body>
+  <div>
+    <h3>
+      3
+    </h3>
+    <h4>
+      4
+    </h4>
+    <h5>
+      5
+    </h5>
+    <h6>
+      6
+    </h6>
+  </div>
+</body>
+`;
+
+exports[`ReRank > does not rerank from h3 if configured 1`] = `
+<body>
+  <div>
+    <h4>
+      4
+    </h4>
+    <h5>
+      5
+    </h5>
+    <h6>
+      6
+    </h6>
+  </div>
+</body>
+`;
+
+exports[`ReRank > rerank from h1 1`] = `
+<body>
+  <div>
+    <h1
+      aria-level="2"
+    >
+      1
+    </h1>
+    <h2
+      aria-level="3"
+    >
+      2
+    </h2>
+    <h3
+      aria-level="4"
+    >
+      3
+    </h3>
+    <h4
+      aria-level="5"
+    >
+      4
+    </h4>
+    <h5
+      aria-level="6"
+    >
+      5
+    </h5>
+    <h6
+      aria-level="7"
+    >
+      6
+    </h6>
+  </div>
+</body>
+`;
+
+exports[`ReRank > rerank from h2 1`] = `
+<body>
+  <div>
+    <h2
+      aria-level="3"
+    >
+      2
+    </h2>
+    <h3
+      aria-level="4"
+    >
+      3
+    </h3>
+    <h4
+      aria-level="5"
+    >
+      4
+    </h4>
+    <h5
+      aria-level="6"
+    >
+      5
+    </h5>
+    <h6
+      aria-level="7"
+    >
+      6
+    </h6>
+  </div>
+</body>
+`;
+
+exports[`ReRank > rerank from h3 if configured 1`] = `
+<body>
+  <div>
+    <h3
+      aria-level="4"
+    >
+      3
+    </h3>
+    <h4
+      aria-level="5"
+    >
+      4
+    </h4>
+    <h5
+      aria-level="6"
+    >
+      5
+    </h5>
+    <h6
+      aria-level="7"
+    >
+      6
+    </h6>
+  </div>
+</body>
+`;
+
+exports[`ReRank > rerank with missing intermediary level 1`] = `
+<body>
+  <div>
+    <h2
+      aria-level="3"
+    >
+      2
+    </h2>
+    <h3
+      aria-level="4"
+    >
+      3
+    </h3>
+    <h5>
+      5
+    </h5>
+    <h6>
+      6
+    </h6>
+  </div>
+</body>
+`;
+
+exports[`ReRank > rerank with missing level 1`] = `
+<body>
+  <div>
+    <h1
+      aria-level="2"
+    >
+      1
+    </h1>
+    <h4>
+      4
+    </h4>
+    <h5>
+      5
+    </h5>
+    <h6>
+      6
+    </h6>
+  </div>
+</body>
+`;

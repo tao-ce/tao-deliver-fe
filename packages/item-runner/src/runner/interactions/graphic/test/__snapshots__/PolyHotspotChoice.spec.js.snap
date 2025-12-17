@@ -1,0 +1,78 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`poly hotspot choice > rendering > renders poly elements with given coords 1`] = `
+<body>
+  <div>
+    <g
+      class="shape"
+      tabindex="-1"
+    >
+      <polygon
+        class="shape-outer-border"
+        points="97.71367698898867,107.85136543800505 391.91156871116345,598.181184974963 104.49968419948415,789.7891079827492 6.5952918923424395,153.41055798632814"
+      />
+      <polygon
+        class="shape-inner-border"
+        points="94.66524630764022,118.31985268867842 381.1269936593814,595.7560982749138 110.49926313212968,776.1745852930816 15.389014415465692,157.95796863476568"
+      />
+      <polygon
+        class="shape-dashed-outline"
+        points="97.71367698898867,107.85136543800505 391.91156871116345,598.181184974963 104.49968419948415,789.7891079827492 6.5952918923424395,153.41055798632814"
+      />
+      <circle
+        class="shape-checkmark"
+        cx="206.82998792595282"
+        cy="555.4910310036714"
+        r="10"
+      />
+    </g>
+  </div>
+</body>
+`;
+
+exports[`poly hotspot choice > rendering > renders text label as a checkmark if label is set  1`] = `
+<body>
+  <div>
+    <g
+      class="shape selected"
+      tabindex="-1"
+    >
+      <polygon
+        class="shape-outer-border"
+        points="97.71367698898867,107.85136543800505 391.91156871116345,598.181184974963 104.49968419948415,789.7891079827492 6.5952918923424395,153.41055798632814"
+      />
+      <polygon
+        class="shape-inner-border"
+        points="94.66524630764022,118.31985268867842 381.1269936593814,595.7560982749138 110.49926313212968,776.1745852930816 15.389014415465692,157.95796863476568"
+      />
+      <polygon
+        class="shape-dashed-outline"
+        points="97.71367698898867,107.85136543800505 391.91156871116345,598.181184974963 104.49968419948415,789.7891079827492 6.5952918923424395,153.41055798632814"
+      />
+      <text
+        class="shape-checkmark"
+        x="205.32998792595282"
+        y="553.9910310036714"
+      >
+        <tspan
+          dy="0"
+          x="205.32998792595282"
+        >
+          1
+        </tspan>
+      </text>
+    </g>
+  </div>
+</body>
+`;
+
+exports[`poly hotspot choice > rendering > renders with no props 1`] = `
+<body>
+  <div>
+    <g
+      class="shape"
+      tabindex="-1"
+    />
+  </div>
+</body>
+`;

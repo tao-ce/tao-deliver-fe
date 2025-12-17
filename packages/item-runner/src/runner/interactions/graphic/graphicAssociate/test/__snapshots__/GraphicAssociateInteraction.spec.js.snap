@@ -1,0 +1,1884 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Graphic associate interaction > association flow by keyboard > draw line between two nearest hotspots 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-graphicAssociateInteraction"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must make a maximum of 1 association - Currently 1
+          </p>
+        </div>
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+      >
+        Association between option 4 and a spot created.
+      </div>
+       
+      <div
+        class="qti-flow-container"
+        tabindex="0"
+      >
+        <div
+          class="qti-block"
+          tabindex="-1"
+        >
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="614.4000000000001"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 819.2000000000002 614.4000000000001"
+            width="819.2000000000002"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(0, 0)"
+            >
+              <image
+                class="svg-image"
+                height="614.4000000000001"
+                href="background.jpg"
+                preserveAspectRatio="none"
+                width="819.2000000000002"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+              >
+                
+                
+                <g
+                  class="hotspot-choice disabled"
+                  data-choice-key="b"
+                >
+                  <g
+                    aria-disabled="true"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="shape-outer-border"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="96.40000000000002"
+                    />
+                    <circle
+                      class="shape-inner-border"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="88.40000000000002"
+                    />
+                    <circle
+                      class="shape-dashed-outline"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="96.40000000000002"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    option 2. No association. Button. Disabled. To move to next available option, use the arrow keys.
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice disabled"
+                  data-choice-key="c"
+                >
+                  <g
+                    aria-disabled="true"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <ellipse
+                      class="shape-outer-border"
+                      cx="409.6000000000001"
+                      cy="409.6000000000001"
+                      rx="96.40000000000002"
+                      ry="45.20000000000001"
+                    />
+                    <ellipse
+                      class="shape-inner-border"
+                      cx="409.6000000000001"
+                      cy="409.6000000000001"
+                      rx="88.40000000000002"
+                      ry="37.20000000000001"
+                    />
+                    <ellipse
+                      class="shape-dashed-outline"
+                      cx="409.6000000000001"
+                      cy="409.6000000000001"
+                      rx="96.40000000000002"
+                      ry="45.20000000000001"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    a spot. No association. Button. Disabled. To move to next available option, use the arrow keys.
+                  </text>
+                </g>
+                
+                
+                
+                <g
+                  class="association-line"
+                >
+                  <line
+                    class="shape-outer-line"
+                    x1="469.5963896855792"
+                    x2="51.20000000000001"
+                    y1="59.99638968557908"
+                    y2="25.600000000000005"
+                  />
+                  <line
+                    class="shape-line"
+                    x1="469.5963896855792"
+                    x2="51.20000000000001"
+                    y1="59.99638968557908"
+                    y2="25.600000000000005"
+                  />
+                  <line
+                    class="shape-line-hover"
+                    x1="469.5963896855792"
+                    x2="51.20000000000001"
+                    y1="59.99638968557908"
+                    y2="25.600000000000005"
+                  />
+                  <g
+                    aria-disabled="false"
+                    aria-label="Delete association between option 4 and a spot. Button."
+                    class="button-container"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="remove-button-dashed-outline"
+                      cx="260.3981948427896"
+                      cy="42.79819484278954"
+                      r="34"
+                    />
+                    <circle
+                      class="remove-button"
+                      cx="260.3981948427896"
+                      cy="42.79819484278954"
+                      r="26"
+                    />
+                    <svg
+                      height="12"
+                      version="1.1"
+                      viewBox="0 0 12 12"
+                      width="12"
+                      x="254.39819484278962"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      y="36.79819484278954"
+                    >
+                      <path
+                        d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
+                      />
+                    </svg>
+                    <rect
+                      class="remove-button-hitbox"
+                      height="80"
+                      width="80"
+                      x="220.39819484278962"
+                      y="2.798194842789542"
+                    />
+                  </g>
+                </g>
+                
+                
+                <g
+                  class="hotspot-choice inactive"
+                  data-choice-key="a"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape selected"
+                    tabindex="-1"
+                  >
+                    <rect
+                      class="shape-outer-border"
+                      height="68"
+                      width="90.40000000000002"
+                      x="6"
+                      y="-8.399999999999995"
+                    />
+                    <rect
+                      class="shape-inner-border"
+                      height="52"
+                      width="74.40000000000002"
+                      x="14"
+                      y="-0.399999999999995"
+                    />
+                    <rect
+                      class="shape-dashed-outline"
+                      height="68"
+                      width="90.40000000000002"
+                      x="6"
+                      y="-8.399999999999995"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="51.20000000000001"
+                      cy="25.600000000000005"
+                      r="10"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    a spot. Associated with option 4. Button. Inactive. To move to next available option, use the arrow keys.
+                  </text>
+                </g>
+                <g
+                  class="hotspot-choice inactive"
+                  data-choice-key="d"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape selected"
+                    tabindex="-1"
+                  >
+                    <polygon
+                      class="shape-outer-border"
+                      points="415.6000000000001,6 599.9147186257616,6 415.6000000000001,190.31471862576146"
+                    />
+                    <polygon
+                      class="shape-inner-border"
+                      points="423.6000000000001,13.999999999999998 580.6010101267767,14.000000000000002 423.6000000000001,171.0010101267767"
+                    />
+                    <polygon
+                      class="shape-dashed-outline"
+                      points="415.6000000000001,6 599.9147186257616,6 415.6000000000001,190.31471862576146"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="469.5963896855792"
+                      cy="59.99638968557908"
+                      r="10"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    option 4. Associated with a spot. Button. Inactive. To move to next available option, use the arrow keys.
+                  </text>
+                </g>
+              </g>
+            </g>
+          </svg>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Graphic associate interaction > association flow by keyboard > remove line 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-graphicAssociateInteraction"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      />
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+      >
+        Association between option  and a spot created.
+      </div>
+       
+      <div
+        class="qti-flow-container"
+        tabindex="0"
+      >
+        <div
+          class="qti-block"
+          tabindex="-1"
+        >
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="614.4000000000001"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 819.2000000000002 614.4000000000001"
+            width="819.2000000000002"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(0, 0)"
+            >
+              <image
+                class="svg-image"
+                height="614.4000000000001"
+                href="background.jpg"
+                preserveAspectRatio="none"
+                width="819.2000000000002"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+              >
+                
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="b"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape selected"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="shape-outer-border"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="96.40000000000002"
+                    />
+                    <circle
+                      class="shape-inner-border"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="88.40000000000002"
+                    />
+                    <circle
+                      class="shape-dashed-outline"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="96.40000000000002"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="10"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    option 2. Associated with a spot. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="c"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <ellipse
+                      class="shape-outer-border"
+                      cx="409.6000000000001"
+                      cy="409.6000000000001"
+                      rx="96.40000000000002"
+                      ry="45.20000000000001"
+                    />
+                    <ellipse
+                      class="shape-inner-border"
+                      cx="409.6000000000001"
+                      cy="409.6000000000001"
+                      rx="88.40000000000002"
+                      ry="37.20000000000001"
+                    />
+                    <ellipse
+                      class="shape-dashed-outline"
+                      cx="409.6000000000001"
+                      cy="409.6000000000001"
+                      rx="96.40000000000002"
+                      ry="45.20000000000001"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    a spot. No association. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="d"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <polygon
+                      class="shape-outer-border"
+                      points="415.6000000000001,6 599.9147186257616,6 415.6000000000001,190.31471862576146"
+                    />
+                    <polygon
+                      class="shape-inner-border"
+                      points="423.6000000000001,13.999999999999998 580.6010101267767,14.000000000000002 423.6000000000001,171.0010101267767"
+                    />
+                    <polygon
+                      class="shape-dashed-outline"
+                      points="415.6000000000001,6 599.9147186257616,6 415.6000000000001,190.31471862576146"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    option 4. No association. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                
+                <g
+                  class="association-line"
+                >
+                  <line
+                    class="shape-outer-line"
+                    x1="102.40000000000002"
+                    x2="51.20000000000001"
+                    y1="409.6000000000001"
+                    y2="25.600000000000005"
+                  />
+                  <line
+                    class="shape-line"
+                    x1="102.40000000000002"
+                    x2="51.20000000000001"
+                    y1="409.6000000000001"
+                    y2="25.600000000000005"
+                  />
+                  <line
+                    class="shape-line-hover"
+                    x1="102.40000000000002"
+                    x2="51.20000000000001"
+                    y1="409.6000000000001"
+                    y2="25.600000000000005"
+                  />
+                  <g
+                    aria-disabled="false"
+                    aria-label="Delete association between option  and a spot. Button."
+                    class="button-container"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="remove-button-dashed-outline"
+                      cx="76.80000000000001"
+                      cy="217.60000000000002"
+                      r="34"
+                    />
+                    <circle
+                      class="remove-button"
+                      cx="76.80000000000001"
+                      cy="217.60000000000002"
+                      r="26"
+                    />
+                    <svg
+                      height="12"
+                      version="1.1"
+                      viewBox="0 0 12 12"
+                      width="12"
+                      x="70.80000000000001"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      y="211.60000000000002"
+                    >
+                      <path
+                        d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
+                      />
+                    </svg>
+                    <rect
+                      class="remove-button-hitbox"
+                      height="80"
+                      width="80"
+                      x="36.80000000000001"
+                      y="177.60000000000002"
+                    />
+                  </g>
+                </g>
+                
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="a"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape selected"
+                    tabindex="-1"
+                  >
+                    <rect
+                      class="shape-outer-border"
+                      height="68"
+                      width="90.40000000000002"
+                      x="6"
+                      y="-8.399999999999995"
+                    />
+                    <rect
+                      class="shape-inner-border"
+                      height="52"
+                      width="74.40000000000002"
+                      x="14"
+                      y="-0.399999999999995"
+                    />
+                    <rect
+                      class="shape-dashed-outline"
+                      height="68"
+                      width="90.40000000000002"
+                      x="6"
+                      y="-8.399999999999995"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="51.20000000000001"
+                      cy="25.600000000000005"
+                      r="10"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    a spot. Associated with option 2. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                <rect
+                  class="glass-layer"
+                  height="614.4000000000001"
+                  width="819.2000000000002"
+                  x="0"
+                  y="0"
+                />
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="b"
+                >
+                  <g
+                    aria-disabled="false"
+                    class="shape selected"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="shape-outer-border"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="96.40000000000002"
+                    />
+                    <circle
+                      class="shape-inner-border"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="88.40000000000002"
+                    />
+                    <circle
+                      class="shape-dashed-outline"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="96.40000000000002"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="10"
+                    />
+                  </g>
+                  
+                </g>
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="a"
+                >
+                  <g
+                    aria-disabled="false"
+                    class="shape selected"
+                    tabindex="-1"
+                  >
+                    <rect
+                      class="shape-outer-border"
+                      height="68"
+                      width="90.40000000000002"
+                      x="6"
+                      y="-8.399999999999995"
+                    />
+                    <rect
+                      class="shape-inner-border"
+                      height="52"
+                      width="74.40000000000002"
+                      x="14"
+                      y="-0.399999999999995"
+                    />
+                    <rect
+                      class="shape-dashed-outline"
+                      height="68"
+                      width="90.40000000000002"
+                      x="6"
+                      y="-8.399999999999995"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="51.20000000000001"
+                      cy="25.600000000000005"
+                      r="10"
+                    />
+                  </g>
+                  
+                </g>
+                
+                <g
+                  class="association-line selected"
+                >
+                  <line
+                    class="shape-outer-line"
+                    x1="102.40000000000002"
+                    x2="51.20000000000001"
+                    y1="409.6000000000001"
+                    y2="25.600000000000005"
+                  />
+                  <line
+                    class="shape-line"
+                    x1="102.40000000000002"
+                    x2="51.20000000000001"
+                    y1="409.6000000000001"
+                    y2="25.600000000000005"
+                  />
+                  <line
+                    class="shape-line-hover"
+                    x1="102.40000000000002"
+                    x2="51.20000000000001"
+                    y1="409.6000000000001"
+                    y2="25.600000000000005"
+                  />
+                  <g
+                    aria-disabled="false"
+                    aria-label="Delete association between option 2 and a spot. Button."
+                    class="button-container"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="remove-button-dashed-outline"
+                      cx="76.80000000000001"
+                      cy="217.60000000000002"
+                      r="34"
+                    />
+                    <circle
+                      class="remove-button"
+                      cx="76.80000000000001"
+                      cy="217.60000000000002"
+                      r="26"
+                    />
+                    <svg
+                      height="12"
+                      version="1.1"
+                      viewBox="0 0 12 12"
+                      width="12"
+                      x="70.80000000000001"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      y="211.60000000000002"
+                    >
+                      <path
+                        d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
+                      />
+                    </svg>
+                    <rect
+                      class="remove-button-hitbox"
+                      height="80"
+                      width="80"
+                      x="36.80000000000001"
+                      y="177.60000000000002"
+                    />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Graphic associate interaction > association flow by mouse > remove line 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-graphicAssociateInteraction"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      />
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+      >
+        Association between option  and a spot created.
+      </div>
+       
+      <div
+        class="qti-flow-container"
+        tabindex="-1"
+      >
+        <div
+          class="qti-block"
+          tabindex="0"
+        >
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="614.4000000000001"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 819.2000000000002 614.4000000000001"
+            width="819.2000000000002"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(0, 0)"
+            >
+              <image
+                class="svg-image"
+                height="614.4000000000001"
+                href="background.jpg"
+                preserveAspectRatio="none"
+                width="819.2000000000002"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+              >
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="a"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape selected"
+                    tabindex="-1"
+                  >
+                    <rect
+                      class="shape-outer-border"
+                      height="68"
+                      width="90.40000000000002"
+                      x="6"
+                      y="-8.399999999999995"
+                    />
+                    <rect
+                      class="shape-inner-border"
+                      height="52"
+                      width="74.40000000000002"
+                      x="14"
+                      y="-0.399999999999995"
+                    />
+                    <rect
+                      class="shape-dashed-outline"
+                      height="68"
+                      width="90.40000000000002"
+                      x="6"
+                      y="-8.399999999999995"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="51.20000000000001"
+                      cy="25.600000000000005"
+                      r="10"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    a spot. Associated with option . Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="b"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape selected"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="shape-outer-border"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="96.40000000000002"
+                    />
+                    <circle
+                      class="shape-inner-border"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="88.40000000000002"
+                    />
+                    <circle
+                      class="shape-dashed-outline"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="96.40000000000002"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="10"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    option . Associated with a spot. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="c"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <ellipse
+                      class="shape-outer-border"
+                      cx="409.6000000000001"
+                      cy="409.6000000000001"
+                      rx="96.40000000000002"
+                      ry="45.20000000000001"
+                    />
+                    <ellipse
+                      class="shape-inner-border"
+                      cx="409.6000000000001"
+                      cy="409.6000000000001"
+                      rx="88.40000000000002"
+                      ry="37.20000000000001"
+                    />
+                    <ellipse
+                      class="shape-dashed-outline"
+                      cx="409.6000000000001"
+                      cy="409.6000000000001"
+                      rx="96.40000000000002"
+                      ry="45.20000000000001"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    a spot. No association. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="d"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <polygon
+                      class="shape-outer-border"
+                      points="415.6000000000001,6 599.9147186257616,6 415.6000000000001,190.31471862576146"
+                    />
+                    <polygon
+                      class="shape-inner-border"
+                      points="423.6000000000001,13.999999999999998 580.6010101267767,14.000000000000002 423.6000000000001,171.0010101267767"
+                    />
+                    <polygon
+                      class="shape-dashed-outline"
+                      points="415.6000000000001,6 599.9147186257616,6 415.6000000000001,190.31471862576146"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    option . No association. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                
+                <g
+                  class="association-line"
+                >
+                  <line
+                    class="shape-outer-line"
+                    x1="102.40000000000002"
+                    x2="51.20000000000001"
+                    y1="409.6000000000001"
+                    y2="25.600000000000005"
+                  />
+                  <line
+                    class="shape-line"
+                    x1="102.40000000000002"
+                    x2="51.20000000000001"
+                    y1="409.6000000000001"
+                    y2="25.600000000000005"
+                  />
+                  <line
+                    class="shape-line-hover"
+                    x1="102.40000000000002"
+                    x2="51.20000000000001"
+                    y1="409.6000000000001"
+                    y2="25.600000000000005"
+                  />
+                  <g
+                    aria-disabled="false"
+                    aria-label="Delete association between option  and a spot. Button."
+                    class="button-container"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="remove-button-dashed-outline"
+                      cx="76.80000000000001"
+                      cy="217.60000000000002"
+                      r="34"
+                    />
+                    <circle
+                      class="remove-button"
+                      cx="76.80000000000001"
+                      cy="217.60000000000002"
+                      r="26"
+                    />
+                    <svg
+                      height="12"
+                      version="1.1"
+                      viewBox="0 0 12 12"
+                      width="12"
+                      x="70.80000000000001"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      y="211.60000000000002"
+                    >
+                      <path
+                        d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
+                      />
+                    </svg>
+                    <rect
+                      class="remove-button-hitbox"
+                      height="80"
+                      width="80"
+                      x="36.80000000000001"
+                      y="177.60000000000002"
+                    />
+                  </g>
+                </g>
+                
+                
+                <rect
+                  class="glass-layer"
+                  height="614.4000000000001"
+                  width="819.2000000000002"
+                  x="0"
+                  y="0"
+                />
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="b"
+                >
+                  <g
+                    aria-disabled="false"
+                    class="shape selected"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="shape-outer-border"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="96.40000000000002"
+                    />
+                    <circle
+                      class="shape-inner-border"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="88.40000000000002"
+                    />
+                    <circle
+                      class="shape-dashed-outline"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="96.40000000000002"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="10"
+                    />
+                  </g>
+                  
+                </g>
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="a"
+                >
+                  <g
+                    aria-disabled="false"
+                    class="shape selected"
+                    tabindex="-1"
+                  >
+                    <rect
+                      class="shape-outer-border"
+                      height="68"
+                      width="90.40000000000002"
+                      x="6"
+                      y="-8.399999999999995"
+                    />
+                    <rect
+                      class="shape-inner-border"
+                      height="52"
+                      width="74.40000000000002"
+                      x="14"
+                      y="-0.399999999999995"
+                    />
+                    <rect
+                      class="shape-dashed-outline"
+                      height="68"
+                      width="90.40000000000002"
+                      x="6"
+                      y="-8.399999999999995"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="51.20000000000001"
+                      cy="25.600000000000005"
+                      r="10"
+                    />
+                  </g>
+                  
+                </g>
+                
+                <g
+                  class="association-line selected"
+                >
+                  <line
+                    class="shape-outer-line"
+                    x1="102.40000000000002"
+                    x2="51.20000000000001"
+                    y1="409.6000000000001"
+                    y2="25.600000000000005"
+                  />
+                  <line
+                    class="shape-line"
+                    x1="102.40000000000002"
+                    x2="51.20000000000001"
+                    y1="409.6000000000001"
+                    y2="25.600000000000005"
+                  />
+                  <line
+                    class="shape-line-hover"
+                    x1="102.40000000000002"
+                    x2="51.20000000000001"
+                    y1="409.6000000000001"
+                    y2="25.600000000000005"
+                  />
+                  <g
+                    aria-disabled="false"
+                    aria-label="Delete association between option  and a spot. Button."
+                    class="button-container"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="remove-button-dashed-outline"
+                      cx="76.80000000000001"
+                      cy="217.60000000000002"
+                      r="34"
+                    />
+                    <circle
+                      class="remove-button"
+                      cx="76.80000000000001"
+                      cy="217.60000000000002"
+                      r="26"
+                    />
+                    <svg
+                      height="12"
+                      version="1.1"
+                      viewBox="0 0 12 12"
+                      width="12"
+                      x="70.80000000000001"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:svgjs="http://svgjs.com/svgjs"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      y="211.60000000000002"
+                    >
+                      <path
+                        d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
+                      />
+                    </svg>
+                    <rect
+                      class="remove-button-hitbox"
+                      height="80"
+                      width="80"
+                      x="36.80000000000001"
+                      y="177.60000000000002"
+                    />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Graphic associate interaction > render > renders props correctly into markup 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      ariabar="baz"
+      ariafoo="12"
+      class="qti-interaction qti-blockInteraction qti-graphicAssociateInteraction foo bar baz"
+      data-baz="24"
+      data-foo="bar"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+    >
+      <div
+        class="qti-prompt cf"
+      >
+        Question 1
+        
+        
+      </div>
+       
+      <div
+        class="qti-instruction-container"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must make a maximum of 1 association
+          </p>
+        </div>
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+      />
+       
+      <div
+        class="qti-flow-container"
+        tabindex="-1"
+      >
+        <div
+          class="qti-block"
+          tabindex="0"
+        >
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="614.4000000000001"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 819.2000000000002 614.4000000000001"
+            width="819.2000000000002"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(0, 0)"
+            >
+              <image
+                class="svg-image"
+                height="614.4000000000001"
+                href="background.jpg"
+                preserveAspectRatio="none"
+                width="819.2000000000002"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+              >
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="a"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <rect
+                      class="shape-outer-border"
+                      height="68"
+                      width="90.40000000000002"
+                      x="6"
+                      y="-8.399999999999995"
+                    />
+                    <rect
+                      class="shape-inner-border"
+                      height="52"
+                      width="74.40000000000002"
+                      x="14"
+                      y="-0.399999999999995"
+                    />
+                    <rect
+                      class="shape-dashed-outline"
+                      height="68"
+                      width="90.40000000000002"
+                      x="6"
+                      y="-8.399999999999995"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    a spot. No association. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="b"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="shape-outer-border"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="96.40000000000002"
+                    />
+                    <circle
+                      class="shape-inner-border"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="88.40000000000002"
+                    />
+                    <circle
+                      class="shape-dashed-outline"
+                      cx="102.40000000000002"
+                      cy="409.6000000000001"
+                      r="96.40000000000002"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    option . No association. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="c"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <ellipse
+                      class="shape-outer-border"
+                      cx="409.6000000000001"
+                      cy="409.6000000000001"
+                      rx="96.40000000000002"
+                      ry="45.20000000000001"
+                    />
+                    <ellipse
+                      class="shape-inner-border"
+                      cx="409.6000000000001"
+                      cy="409.6000000000001"
+                      rx="88.40000000000002"
+                      ry="37.20000000000001"
+                    />
+                    <ellipse
+                      class="shape-dashed-outline"
+                      cx="409.6000000000001"
+                      cy="409.6000000000001"
+                      rx="96.40000000000002"
+                      ry="45.20000000000001"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    a spot. No association. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="d"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <polygon
+                      class="shape-outer-border"
+                      points="415.6000000000001,6 599.9147186257616,6 415.6000000000001,190.31471862576146"
+                    />
+                    <polygon
+                      class="shape-inner-border"
+                      points="423.6000000000001,13.999999999999998 580.6010101267767,14.000000000000002 423.6000000000001,171.0010101267767"
+                    />
+                    <polygon
+                      class="shape-dashed-outline"
+                      points="415.6000000000001,6 599.9147186257616,6 415.6000000000001,190.31471862576146"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    option . No association. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                
+                
+              </g>
+            </g>
+          </svg>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Graphic associate interaction > render > renders the instruction lang 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-graphicAssociateInteraction"
+    >
+       
+      <div
+        class="qti-instruction-container"
+        dir="ltr"
+        lang="it-IT"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must make at least 1 association and a maximum of 3
+          </p>
+        </div>
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+        lang="it-IT"
+      />
+       
+      <div
+        class="qti-flow-container"
+        tabindex="-1"
+      >
+        <div
+          class="qti-block"
+          tabindex="0"
+        >
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="600"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 800 600"
+            width="800"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(0, 0)"
+            >
+              <image
+                class="svg-image"
+                height="600"
+                href="background.jpg"
+                preserveAspectRatio="none"
+                width="800"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+              >
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="a"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <rect
+                      class="shape-outer-border"
+                      height="68"
+                      width="88"
+                      x="6"
+                      y="-9"
+                    />
+                    <rect
+                      class="shape-inner-border"
+                      height="52"
+                      width="72"
+                      x="14"
+                      y="-1"
+                    />
+                    <rect
+                      class="shape-dashed-outline"
+                      height="68"
+                      width="88"
+                      x="6"
+                      y="-9"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                    lang="it-IT"
+                  >
+                    a spot. No association. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="b"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="shape-outer-border"
+                      cx="100"
+                      cy="400"
+                      r="94"
+                    />
+                    <circle
+                      class="shape-inner-border"
+                      cx="100"
+                      cy="400"
+                      r="86"
+                    />
+                    <circle
+                      class="shape-dashed-outline"
+                      cx="100"
+                      cy="400"
+                      r="94"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                    lang="it-IT"
+                  >
+                    option . No association. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="c"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <ellipse
+                      class="shape-outer-border"
+                      cx="400"
+                      cy="400"
+                      rx="94"
+                      ry="44"
+                    />
+                    <ellipse
+                      class="shape-inner-border"
+                      cx="400"
+                      cy="400"
+                      rx="86"
+                      ry="36"
+                    />
+                    <ellipse
+                      class="shape-dashed-outline"
+                      cx="400"
+                      cy="400"
+                      rx="94"
+                      ry="44"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                    lang="it-IT"
+                  >
+                    a spot. No association. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="d"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <polygon
+                      class="shape-outer-border"
+                      points="406,6 585.5147186257615,6.000000000000001 406,185.51471862576142"
+                    />
+                    <polygon
+                      class="shape-inner-border"
+                      points="414,13.999999999999998 566.2010101267767,14 414,166.20101012677665"
+                    />
+                    <polygon
+                      class="shape-dashed-outline"
+                      points="406,6 585.5147186257615,6.000000000000001 406,185.51471862576142"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                    lang="it-IT"
+                  >
+                    option . No association. Button. Press enter or space to select and form an association. To move to the next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                
+                
+              </g>
+            </g>
+          </svg>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Graphic associate interaction > render > renders with default props 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-graphicAssociateInteraction"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must make a maximum of 1 association
+          </p>
+        </div>
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+      />
+       
+      <div
+        class="qti-flow-container"
+        tabindex="-1"
+      >
+        <div
+          class="qti-block"
+          tabindex="0"
+        >
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="614.4000000000001"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 819.2000000000002 614.4000000000001"
+            width="819.2000000000002"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(0, 0)"
+            >
+              <image
+                class="svg-image"
+                height="614.4000000000001"
+                href="background.jpg"
+                preserveAspectRatio="none"
+                width="819.2000000000002"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+              >
+                
+                
+                
+              </g>
+            </g>
+          </svg>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;

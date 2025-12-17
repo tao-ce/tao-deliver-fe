@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MoreButton > renders button if active is set to true 1`] = `
+<body>
+  <div>
+    <div
+      class="more"
+    >
+      <button
+        aria-hidden="true"
+        class="ellipsis-container"
+        tabindex="-1"
+      >
+        <span />
+         
+        <span />
+         
+        <span />
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MoreButton > renders without props 1`] = `
+<body>
+  <div>
+    <div
+      class="more"
+    />
+  </div>
+</body>
+`;

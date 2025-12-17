@@ -1,0 +1,157 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`calculator plugin > closes on leaving item with bodmas calculator 1`] = `
+{
+  "decimals": 5,
+  "height": 1152,
+  "left": 192,
+  "open": true,
+  "top": -192,
+  "type": "bodmas",
+  "visible": true,
+  "width": 640,
+}
+`;
+
+exports[`calculator plugin > closes on leaving item with bodmas calculator 2`] = `
+{
+  "decimals": 5,
+  "height": 1152,
+  "left": 192,
+  "open": false,
+  "top": -192,
+  "type": "bodmas",
+  "visible": true,
+  "width": 640,
+}
+`;
+
+exports[`calculator plugin > closes on leaving item with scientific calculator 1`] = `
+{
+  "decimals": 5,
+  "height": 1152,
+  "left": 192,
+  "open": true,
+  "top": -192,
+  "type": "scientific",
+  "visible": true,
+  "width": 640,
+}
+`;
+
+exports[`calculator plugin > closes on leaving item with scientific calculator 2`] = `
+{
+  "decimals": 5,
+  "height": 1152,
+  "left": 192,
+  "open": false,
+  "top": -192,
+  "type": "scientific",
+  "visible": true,
+  "width": 640,
+}
+`;
+
+exports[`calculator plugin > closes on leaving item with scientific calculator 3`] = `
+{
+  "decimals": 5,
+  "height": 1152,
+  "left": 192,
+  "open": true,
+  "top": -192,
+  "type": "scientific",
+  "visible": true,
+  "width": 640,
+}
+`;
+
+exports[`calculator plugin > closes on leaving item with scientific calculator 4`] = `
+{
+  "decimals": 5,
+  "height": 1152,
+  "left": 192,
+  "open": false,
+  "top": -192,
+  "type": "scientific",
+  "visible": true,
+  "width": 640,
+}
+`;
+
+exports[`calculator plugin > opens and closes on headerbar action: bodmas calculator if x-tao-option-calculatorBodmas category 1`] = `
+{
+  "decimals": 5,
+  "height": 1152,
+  "left": 192,
+  "open": true,
+  "top": -192,
+  "type": "bodmas",
+  "visible": true,
+  "width": 640,
+}
+`;
+
+exports[`calculator plugin > opens and closes on headerbar action: bodmas calculator if x-tao-option-calculatorBodmas category 2`] = `
+{
+  "decimals": 5,
+  "height": 1152,
+  "left": 192,
+  "open": false,
+  "top": -192,
+  "type": "bodmas",
+  "visible": true,
+  "width": 640,
+}
+`;
+
+exports[`calculator plugin > opens and closes on headerbar action: scientific calculator if x-tao-option-calculator-scientific category 1`] = `
+{
+  "decimals": 5,
+  "height": 1152,
+  "left": 192,
+  "open": true,
+  "top": -192,
+  "type": "scientific",
+  "visible": true,
+  "width": 640,
+}
+`;
+
+exports[`calculator plugin > opens and closes on headerbar action: scientific calculator if x-tao-option-calculator-scientific category 2`] = `
+{
+  "decimals": 5,
+  "height": 1152,
+  "left": 192,
+  "open": false,
+  "top": -192,
+  "type": "scientific",
+  "visible": true,
+  "width": 640,
+}
+`;
+
+exports[`calculator plugin > opens and closes on headerbar action: scientific calculator if x-tao-option-calculatorBodmas and x-tao-option-calculator-scientific category 1`] = `
+{
+  "decimals": 5,
+  "height": 1152,
+  "left": 192,
+  "open": true,
+  "top": -192,
+  "type": "scientific",
+  "visible": true,
+  "width": 640,
+}
+`;
+
+exports[`calculator plugin > opens and closes on headerbar action: scientific calculator if x-tao-option-calculatorBodmas and x-tao-option-calculator-scientific category 2`] = `
+{
+  "decimals": 5,
+  "height": 1152,
+  "left": 192,
+  "open": false,
+  "top": -192,
+  "type": "scientific",
+  "visible": true,
+  "width": 640,
+}
+`;

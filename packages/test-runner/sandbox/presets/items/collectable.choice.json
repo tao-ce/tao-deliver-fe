@@ -1,0 +1,127 @@
+  {
+    "baseUrl": "./presets/items/assets/",
+    "itemIdentifier": "item1",
+    "itemData": {
+      "type": "qti",
+      "data": {
+        "identifier": "Q02",
+        "serial": "i5e99c83046ff1",
+        "qtiClass": "assessmentItem",
+        "attributes": {
+          "identifier": "Q02",
+          "title": "What are his favourite collectables?",
+          "label": "What are his favourite collectables?",
+          "xml:lang": "en-US",
+          "adaptive": false,
+          "timeDependent": false,
+          "toolName": "TAO",
+          "toolVersion": "NextGen",
+          "class": ""
+        },
+        "body": {
+          "serial": "i5e99c83046fe9",
+          "body": "\n    {{i5e99c830471d1}}\n  ",
+          "elements": {
+            "i5e99c830471d1": {
+              "serial": "i5e99c830471d1",
+              "qtiClass": "choiceInteraction",
+              "attributes": {
+                "responseIdentifier": "RESPONSE",
+                "shuffle": false,
+                "maxChoices": 1,
+                "minChoices": 0,
+                "id": "interaction"
+              },
+              "choices": {
+                "i5e99c830472e7": {
+                  "identifier": "lego",
+                  "serial": "i5e99c830472e7",
+                  "qtiClass": "simpleChoice",
+                  "attributes": {
+                    "identifier": "lego",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5e99c83047309",
+                    "body": "A building-block game we are not allowed to say the name",
+                    "elements": []
+                  }
+                },
+                "i5e99c8304738f": {
+                  "identifier": "cards",
+                  "serial": "i5e99c8304738f",
+                  "qtiClass": "simpleChoice",
+                  "attributes": {
+                    "identifier": "cards",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5e99c830473a4",
+                    "body": "Basket-Ball cards",
+                    "elements": []
+                  }
+                },
+                "i5e99c83047410": {
+                  "identifier": "socks",
+                  "serial": "i5e99c83047410",
+                  "qtiClass": "simpleChoice",
+                  "attributes": {
+                    "identifier": "socks",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5e99c83047423",
+                    "body": "Last century rainbow-stripped socks",
+                    "elements": []
+                  }
+                }
+              },
+              "prompt": {
+                "serial": "i5e99c83047251",
+                "body": "What are the favourite collectables of J\u00e9r\u00f4me",
+                "elements": []
+              }
+            }
+          }
+        },
+        "namespaces": {
+          "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+          "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+        },
+        "schemaLocations": {
+          "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+        },
+        "stylesheets": [],
+        "outcomes": {
+          "i5e99c8304711a": {
+            "identifier": "SCORE",
+            "serial": "i5e99c8304711a",
+            "qtiClass": "outcomeDeclaration",
+            "attributes": {
+              "identifier": "SCORE",
+              "cardinality": "single",
+              "baseType": "float"
+            },
+            "defaultValue": "0"
+          }
+        },
+        "responses": {
+          "i5e99c830470aa": {
+            "identifier": "RESPONSE",
+            "serial": "i5e99c830470aa",
+            "qtiClass": "responseDeclaration",
+            "attributes": {
+              "identifier": "RESPONSE",
+              "cardinality": "single",
+              "baseType": "identifier"
+            },
+            "defaultValue": []
+          }
+        },
+        "feedbacks": [],
+        "apipAccessibility": ""
+      },
+      "assets": []
+    },
+    "itemState": {}
+  }

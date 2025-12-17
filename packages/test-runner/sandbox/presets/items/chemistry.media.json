@@ -1,0 +1,139 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "media_interaction",
+            "serial": "i5ec7d8d84b9356",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "media_interaction",
+                "title": "Chemistry (Media Interaction)",
+                "label": "Chemistry (Media Interaction)",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint117",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5ec7d8d84b925d",
+                "body": "<div class=\"grid-row\"><div class=\"col-12\">    <h1>Chemistry (Media Interaction)</h1>\n  {{i5ec7d8d84baab}}   </div></div>  <div class=\"grid-row\"><div class=\"col-12\">    {{i5e99c830471d1}}    </div></div>",
+                "elements": {
+                    "i5ec7d8d84baab": {
+                        "serial": "i5ec7d8d84baab",
+                        "qtiClass": "mediaInteraction",
+                        "attributes": {
+                            "responseIdentifier": "media_interaction",
+                            "autostart": false,
+                            "loop": false,
+                            "minPlays": 0,
+                            "maxPlays": 3,
+                            "class": "pause"
+                        },
+                        "object": {
+                            "serial": "i5ec7d8d84baa5",
+                            "attributes": {
+                                "width": 800,
+                                "chem_data": "https://www.youtube.com/watch?v=ewE1wh7sTUE",
+                                "data": "https://www.youtube.com/watch?v=UVCP4bKy9Iw",
+                                "type": "video/youtube"
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_546cb89e0420f262955533",
+                            "body": "Watch the video before answering.",
+                            "elements": []
+                        }
+                    },
+                    "i5e99c830471d1": {
+                        "serial": "i5e99c830471d1",
+                        "qtiClass": "choiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "choice_interaction",
+                            "shuffle": false,
+                            "maxChoices": 1,
+                            "minChoices": 0
+                        },
+                        "choices": {
+                            "i5e99c830472e7": {
+                                "identifier": "yes",
+                                "serial": "i5e99c830472e7",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "yes",
+                                    "fixed": false
+                                },
+                                "body": {
+                                    "serial": "i5e99c83047309",
+                                    "body": "Yes",
+                                    "elements": []
+                                }
+                            },
+                            "i5e99c8304738f": {
+                                "identifier": "no",
+                                "serial": "i5e99c8304738f",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "no",
+                                    "fixed": false
+                                },
+                                "body": {
+                                    "serial": "i5e99c830473a4",
+                                    "body": "No",
+                                    "elements": []
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5e99c83047251",
+                            "body": "Does the above video say that computer programs can predict new molecular structures?",
+                            "elements": []
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "stylesheets": [],
+            "outcomes": [],
+            "responses": {
+                "i5ec7d8d84b9b98": {
+                    "identifier": "media_interaction",
+                    "serial": "i5ec7d8d84b9b98",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "media_interaction",
+                        "cardinality": "single",
+                        "baseType": "integer"
+                    },
+                    "defaultValue": []
+                },
+                "i5e99c830470aa": {
+                    "identifier": "choice_interaction",
+                    "serial": "i5e99c830470aa",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "choice_interaction",
+                        "cardinality": "single",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {}
+    },
+    "itemState": null,
+    "itemIdentifier": "item-8",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    },
+    "messages": []
+}

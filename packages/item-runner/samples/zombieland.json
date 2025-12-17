@@ -1,0 +1,191 @@
+{
+  "baseUrl": "./assets/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "i1511861144253418665",
+      "serial": "item_5e5e7a7135967975728067",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "i1511861144253418665",
+        "title": "zombieland",
+        "label": "zombieland",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint123",
+        "class": ""
+      },
+      "body": {
+        "serial": "container_containeritembody_5e5e7a7135960167732998",
+        "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-6\">\n        <p>\n          {{img_5e5e7a7135cae729163811}}\n        </p>\n      </div>\n      <div class=\"col-6\">\n        {{interaction_choiceinteraction_5e5e7a7135a95277399130}}\n      </div>\n    </div>\n  ",
+        "elements": {
+          "interaction_choiceinteraction_5e5e7a7135a95277399130": {
+            "serial": "interaction_choiceinteraction_5e5e7a7135a95277399130",
+            "qtiClass": "choiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "shuffle": false,
+              "maxChoices": 1,
+              "minChoices": 0,
+              "orientation": "horizontal",
+              "class" : "qti-orientation-horizontal qti-choices-stacking-2 qti-labels-decimal qti-label-suffix-period"
+            },
+            "choices": {
+              "choice_simplechoice_5e5e7a7135b2c788898668": {
+                "identifier": "choice_1",
+                "serial": "choice_simplechoice_5e5e7a7135b2c788898668",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_1",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e5e7a7135b3e464953514",
+                  "body": "John Travolta",
+                  "elements": []
+                }
+              },
+              "choice_simplechoice_5e5e7a7135b77095974943": {
+                "identifier": "choice_2",
+                "serial": "choice_simplechoice_5e5e7a7135b77095974943",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_2",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e5e7a7135b84411673312",
+                  "body": "Bill Murray",
+                  "elements": []
+                }
+              },
+              "choice_simplechoice_5e5e7a7135bb9774115784": {
+                "identifier": "choice_3",
+                "serial": "choice_simplechoice_5e5e7a7135bb9774115784",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_3",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e5e7a7135bc6038920562",
+                  "body": "Jack Nicholson",
+                  "elements": []
+                }
+              },
+              "choice_simplechoice_5e5e7a7135bf6990949045": {
+                "identifier": "choice_4",
+                "serial": "choice_simplechoice_5e5e7a7135bf6990949045",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_4",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e5e7a7135c02514755770",
+                  "body": "Bruce Wiliis",
+                  "elements": []
+                }
+              },
+              "choice_simplechoice_5e5e7a7135c31428397710": {
+                "identifier": "choice_5",
+                "serial": "choice_simplechoice_5e5e7a7135c31428397710",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_5",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e5e7a7135c3d962890101",
+                  "body": "Morgan Freeman",
+                  "elements": []
+                }
+              }
+            },
+            "prompt": {
+              "serial": "container_containerstatic_5e5e7a7135ae0886722992",
+              "body": "In the movie \"Zombieland\" which famous actor plays it's own role ?",
+              "elements": []
+            }
+          },
+          "img_5e5e7a7135cae729163811": {
+            "serial": "img_5e5e7a7135cae729163811",
+            "qtiClass": "img",
+            "attributes": {
+              "src": "zombieland.jpg",
+              "alt": "zombieland",
+              "width": "100%"
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+        "m": "http://www.w3.org/1998/Math/MathML",
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+      },
+      "stylesheets": [],
+      "outcomes": {
+        "outcomedeclaration_5e5e7a7135a01370420955": {
+          "identifier": "SCORE",
+          "serial": "outcomedeclaration_5e5e7a7135a01370420955",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float",
+            "normalMaximum": 1
+          },
+          "defaultValue": null
+        },
+        "outcomedeclaration_5e5e7a7135a1f355027846": {
+          "identifier": "MAXSCORE",
+          "serial": "outcomedeclaration_5e5e7a7135a1f355027846",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "MAXSCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "1"
+        }
+      },
+      "responses": {
+        "responsedeclaration_5e5e7a71359c7014823860": {
+          "identifier": "RESPONSE",
+          "serial": "responsedeclaration_5e5e7a71359c7014823860",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        }
+      },
+      "feedbacks": [],
+      "apipAccessibility": ""
+    },
+    "assets": {
+      "img": {
+        "zombieland.jpg": "zombieland.jpg"
+      }
+    }
+  },
+  "itemState": {},
+  "itemIdentifier": "item-3",
+  "portableElements": {
+    "pci": [],
+    "pic": []
+  }
+}

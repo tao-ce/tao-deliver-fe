@@ -1,0 +1,38 @@
+/*
+ * SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+ */
+
+body {
+    background-color: purple;
+}
+
+h2,
+p {
+    font-size: 3rem;
+    color: red;
+}
+
+em {
+    font-size: 4rem;
+    color: blue;
+}
+
+@media print {
+    em {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    h2,
+    p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .colrow > div > * {
+        background-color: orange;
+        box-shadow: -16px -11px 8px 9px green;
+    }
+}

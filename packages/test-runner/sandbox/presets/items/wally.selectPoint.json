@@ -1,0 +1,154 @@
+{
+    "baseUrl": "./presets/items/assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5f9fedadebf27104c65268a833f4509",
+            "serial": "item_5f9ff2bd4ec8e294733796",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5f9fedadebf27104c65268a833f4509",
+                "title": "SelectPoint",
+                "label": "SelectPoint",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint140",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5f9ff2bd4ec83203311439",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{interaction_selectpointinteraction_5f9ff2bd4eff1257217918}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "interaction_selectpointinteraction_5f9ff2bd4eff1257217918": {
+                        "serial": "interaction_selectpointinteraction_5f9ff2bd4eff1257217918",
+                        "qtiClass": "selectPointInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "maxChoices": 2,
+                            "minChoices": 0,
+                            "class": "responsive"
+                        },
+                        "choices": {},
+                        "prompt": {
+                            "serial": "container_containerstatic_5f9ff2bd4f068749337265",
+                            "body": "Where's Wally? - Point to Wally and Wenda",
+                            "elements": {}
+                        },
+                        "object": {
+                            "serial": "qtiobject_5f9ff2bd4f0fb324597584",
+                            "qtiClass": "object",
+                            "attributes": {
+                                "data": "graphic/wally.jpg",
+                                "type": "image/jpeg",
+                                "width": 1024,
+                                "height": 768
+                            }
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_5f9ff2bd4eebd176154151": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5f9ff2bd4eebd176154151",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 3
+                    },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_5f9ff2bd4ef34552083252": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_5f9ff2bd4ef34552083252",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": { "identifier": "MAXSCORE", "cardinality": "single", "baseType": "float" },
+                    "defaultValue": "3"
+                }
+            },
+            "responses": {
+                "responsedeclaration_5f9ff2bd4ee27866255311": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_5f9ff2bd4ee27866255311",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE", "cardinality": "multiple", "baseType": "point" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [
+                        { "shape": "circle", "coords": "511,288,33", "mappedValue": "1" },
+                        { "shape": "circle", "coords": "611,591,28", "mappedValue": "1" },
+                        { "shape": "circle", "coords": "814,306,25", "mappedValue": "1" }
+                    ],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/map_response_point",
+                    "correctResponses": [],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_5f9ff2bd4f1d0175956173",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "isNull",
+                                "expressions": [{ "qtiClass": "variable", "attributes": { "identifier": "RESPONSE" } }]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": { "baseType": "float" },
+                                        "value": "0"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseElse": {
+                            "qtiClass": "responseElse",
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "mapResponsePoint",
+                                        "attributes": { "identifier": "RESPONSE" }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "http_2_test-sprint140_0_playground_0_kitchen_0_it_0_taocloud_0_org_1_tao_0_rdf_3_i5f9ff0a5d022910e6971c1fd8c75fe9": "f6bfae1d5f9ff0a5cfa58.jpg"
+            }
+        }
+    },
+    "success": true,
+    "itemIdentifier": "SelectPoint-wally"
+}

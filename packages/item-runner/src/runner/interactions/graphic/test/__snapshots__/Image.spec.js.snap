@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Image > rendering > renders default props to markup 1`] = `
+<body>
+  <div>
+    <image
+      class="svg-image"
+      height="480"
+      preserveAspectRatio="none"
+      width="600"
+      x="0"
+      y="0"
+    />
+  </div>
+</body>
+`;
+
+exports[`Image > rendering > renders given props to markup 1`] = `
+<body>
+  <div>
+    <image
+      class="svg-image"
+      height="567"
+      href="./assets/fake.file.png"
+      preserveAspectRatio="none"
+      width="1234"
+      x="98"
+      y="76"
+    />
+  </div>
+</body>
+`;

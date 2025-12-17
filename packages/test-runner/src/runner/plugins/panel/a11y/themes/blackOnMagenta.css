@@ -1,0 +1,166 @@
+/*
+ * SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+ */
+
+[data-theme="blackOnMagenta"] {
+    /*
+     * This accessibility theme overrides the color variables set in
+     * @oat-sa-private/ui-identity/css/abstracts/_colors.css
+     * Care should be taken to keep it in sync with changes introduced in that file.
+     */
+
+    /* --------------------------------------------------------------------------  */
+    /* Color palette */
+
+    --color-gs-light: hsl(292, 67%, 91%); /* #f3d9f7 */
+    --color-gs-light-alternative-bg: hsl(292, 67%, 86%); /* #edc3f3 */
+    --color-gs-light-hover-bg: hsl(292, 67%, 81%); /* #e6aeef */
+    --color-gs-light-secondary: hsl(292, 67%, 66%); /* #d36ee2 */
+    --color-gs-dark-secondary: hsl(0, 0%, 31%); /* #4f4f4f */
+    --color-gs-dark-hover-bg: hsl(0, 0%, 23%); /* #3b3b3b */
+    --color-gs-dark-alternative-bg: hsl(0, 0%, 15%); /* #262626 */
+    --color-gs-dark: hsl(0, 0%, 7%); /* #121212 */
+
+    --color-gs-graphical: hsl(0, 0%, 46%);/* #757575 */
+    --color-gs-disabled: hsl(0, 0%, 35%); /* #595959 */
+    --color-gs-graphical-invert: hsl(292, 67%, 50%); /* #be2ad5 */
+    --color-gs-disabled-invert: hsl(292, 67%, 65%); /* #d26ae2 */
+
+    --color-brand: hsl(212, 80%, 37%); /* #1359ab */
+    --color-brand-hover: hsl(212, 80%, 27%); /* #0e417c */
+    --color-brand-light: hsl(212, 80%, 95%); /* #e8f2fc */
+    --color-brand-hover-invert: hsl(212, 80%, 70%); /* #75aef0 */
+
+    --color-success-alternative-bg: hsl(120, 39%, 95%); /* #edf7ed */
+    --color-success: hsl(120, 39%, 28%); /* #2c632c */
+    --color-success-hover: hsl(120, 39%, 18%); /* #1c401c */
+    --color-success-invert: hsl(120, 39%, 45%); /* #46a046 */
+    --color-success-hover-invert: hsl(120, 39%, 55%); /* #5fb95f */
+
+    --color-partial-alternative-bg: hsl(30, 100%, 96%); /* #fff5eb */
+    --color-partial: hsl(30, 100%, 27%); /* #8a4500 */
+    --color-partial-hover: hsl(30, 100%, 17%); /* #572b00 */
+    --color-partial-invert: hsl(30, 100%, 55%); /* #ff8c1a */
+    --color-partial-hover-invert: hsl(30, 100%, 65%); /* #ffa64d */
+
+    --color-alert-alternative-bg: hsl(0, 100%, 96%); /* #ffebeb */
+    --color-alert: hsl(0, 100%, 36%); /* #b80000 */
+    --color-alert-hover: hsl(0, 100%, 26%); /* #850000 */
+    --color-alert-invert: hsl(0, 100%, 65%); /* #ff4d4d */
+    --color-alert-hover-invert: hsl(0, 100%, 75%); /* #ff8080 */
+
+    /* Highlighters */
+    --hl-bg-yellow: hsl(52, 100%, 67%); /* #ffe957 */
+    --hl-border-yellow: hsl(52, 100%, 16%); /* #524700 */
+    --hl-bg-blue: hsl(206, 100%, 82%); /* #a3d7ff */
+    --hl-border-blue: hsl(206, 100%, 25%); /* #004880 */
+    --hl-bg-pink: hsl(309, 100%, 87%); /* #ffbdf5 */
+    --hl-border-pink: hsl(309, 100%, 25%); /* #80006c */
+    --hl-txt-color: var(--color-gs-dark);
+
+    /* --------------------------------------------------------------------------
+     * Context specific uses (designed for themeability of app):
+     * Every property assigned below can and should be used in components, in the appropriate context
+     * Feel free to extend this list when needed
+     */
+
+    /* Default state */
+    --color-text-default: var(--color-gs-dark);
+    --color-text-success: var(--color-success);
+    --color-text-warning: var(--color-alert);
+    --color-bg-default: var(--color-gs-light);
+    --color-bg-default-trans: rgba(255, 255, 255, 0);
+    --color-border-default: var(--color-gs-dark);
+
+    /* Default links */
+    --color-text-link: var(--color-brand);
+    --color-text-link-hover: var(--color-brand-hover);
+    --color-text-link-secondary: var(--color-gs-light);
+    --color-text-link-secondary-hover: var(--color-gs-light-secondary);
+
+    /* Inverted color scheme */
+    --color-text-inverted: var(--color-gs-light);
+    --color-text-inverted-alternative: var(--color-gs-light-secondary);
+    --color-text-inverted-link-hover: var(--color-brand-hover-invert);
+    --color-bg-inverted-alternative: var(--color-gs-dark);
+    --color-bg-inverted: var(--color-gs-dark);
+    --color-bg-inverted-secondary: var(--color-gs-dark-alternative-bg);
+    --color-bg-inverted-secondary-hover: var(--color-gs-dark-hover-bg);
+    --color-border-inverted: var(--color-gs-light);
+
+    /* Actionable state scheme */
+    --color-text-actionable: var(--color-gs-light);
+    --color-text-actionable-alternative-inverted: var(--color-gs-light-secondary);
+    --color-bg-actionable: var(--color-brand);
+    --color-bg-actionable-hover: var(--color-brand-hover);
+    --color-bg-actionable-subtle-hover: var(--color-gs-light-alternative-bg);
+    --color-bg-actionable-secondary: var(--color-bg-default);
+    --color-bg-actionable-secondary-hover: var(--color-gs-light-hover-bg);
+    --color-bg-actionable-secondary-hover-inverted: var(--color-gs-dark-secondary);
+    --color-bg-actionable-alternative-inverted: var(--color-gs-dark);
+    --color-border-actionable: var(--color-brand);
+    --color-border-actionable-hover: var(--color-brand-hover);
+    --color-border-actionable-hover-inverted: var(--color-brand);
+
+    /* Active state  (example: interaction choice mid-selection or mid-drag) */
+    --color-text-active: var(--color-gs-light);
+    --color-bg-active: var(--color-brand-hover);
+    --color-border-active: var(--color-brand-hover);
+
+    /* Selected state (example: interaction choice selected) */
+    --color-text-selected: var(--color-gs-light);
+    --color-bg-selected: var(--color-brand);
+    --color-border-selected: var(--color-brand);
+
+    /* Disabled state */
+    --color-text-disabled: var(--color-gs-disabled);
+    --color-text-disabled-inverted: var(--color-gs-disabled-invert);
+    --color-bg-disabled: var(--color-bg-default);
+    --color-bg-disabled-subtle: var(--color-gs-light-alternative-bg);
+    --color-bg-disabled-inverted: var(--color-bg-inverted);
+    --color-border-disabled: var(--color-gs-disabled);
+    --color-border-disabled-inverted: var(--color-gs-disabled-invert);
+
+    /* Custom inputs */
+    --color-bg-input-default: var(--color-bg-default);
+    --color-bg-input-hover: var(--color-gs-light-alternative-bg);
+    --color-bg-input-control: var(--color-gs-light-hover-bg);
+    --color-border-input-default: var(--color-border-default);
+
+    /* Info (example: test settings info blocks) */
+    --color-text-info: var(--color-gs-dark);
+    --color-bg-info: var(--color-gs-light-alternative-bg);
+    --color-border-info: var(--color-gs-dark-secondary);
+
+    /* Success / Warning */
+    --color-bg-success: var(--color-success);
+    --color-bg-warning: var(--color-alert);
+    --color-bg-warning-hover: var(--color-alert-hover);
+    --color-border-warning: var(--color-alert);
+
+    /* Inline input validation feedbacks */
+    --color-text-feedback: var(--color-gs-dark-secondary);
+    --color-bg-feedback: var(--color-brand-hover);
+
+    /* Focus outlines (for mixins) */
+    --color-border-focus: var(--color-brand-hover);
+    --color-border-focus-inverted: var(--color-gs-light);
+
+    /* Selection */
+    --color-bg-selection: var(--color-brand-light);
+
+    /* Shadow */
+    --color-shadow-default: hsla(0, 0%, 7%, 0.5);
+
+    /* Panel */
+    --color-overlay: hsla(0, 0%, 12%, 0.7);
+    --color-overlay-inverted: hsla(0, 0%, 82%, 0.7);
+    --color-overlay-highlight: hsla(208, 100%, 40%, 0.2);
+
+    /* Button Links */
+    --color-link-primary: var(--color-gs-dark);
+    --color-link-info: var(--color-brand-hover);
+    --color-link-grey: var(--color-gs-disabled);
+}

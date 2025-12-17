@@ -1,0 +1,223 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TheEnd component > Renders correctly with a title and info 1`] = `
+<body>
+  <div>
+    <div
+      class="the-end"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="icon-container"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Lightning bolt icon
+            </title>
+            <path
+              d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
+            />
+          </svg>
+        </div>
+         
+        <div
+          class="info"
+        >
+          <h1
+            class="ui-heading-xl"
+            tabindex="-1"
+          >
+            Error
+          </h1>
+           
+          <p>
+            Your test has been submitted.
+          </p>
+           
+           
+           
+           
+          <div
+            class="visually-hidden"
+          >
+            Error
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`TheEnd component > Renders correctly with only a title 1`] = `
+<body>
+  <div>
+    <div
+      class="the-end"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="icon-container"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Lightning bolt icon
+            </title>
+            <path
+              d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
+            />
+          </svg>
+        </div>
+         
+        <div
+          class="info"
+        >
+          <h1
+            class="ui-heading-xl"
+            tabindex="-1"
+          >
+            Error
+          </h1>
+           
+           
+           
+           
+           
+          <div
+            class="visually-hidden"
+          >
+            Error
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`TheEnd component > Renders correctly with only a title and a cause 1`] = `
+<body>
+  <div>
+    <div
+      class="the-end"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="icon-container"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Lightning bolt icon
+            </title>
+            <path
+              d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
+            />
+          </svg>
+        </div>
+         
+        <div
+          class="info"
+        >
+          <h1
+            class="ui-heading-xl"
+            tabindex="-1"
+          >
+            Error
+          </h1>
+           
+           
+          <p>
+            Something went wrong
+          </p>
+           
+           
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`TheEnd component > Renders the retry button 1`] = `
+<body>
+  <div>
+    <div
+      class="the-end"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="icon-container"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Lightning bolt icon
+            </title>
+            <path
+              d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
+            />
+          </svg>
+        </div>
+         
+        <div
+          class="info"
+        >
+          <h1
+            class="ui-heading-xl"
+            tabindex="-1"
+          >
+            Error
+          </h1>
+           
+           
+          <p>
+            Something went wrong
+          </p>
+           
+          <p>
+            Please reload the page
+          </p>
+           
+          <div
+            class="button-container"
+          >
+            <button
+              class="actionable secondary pill small"
+              type="button"
+            >
+               
+               
+              Reload the page
+            </button>
+          </div>
+           
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

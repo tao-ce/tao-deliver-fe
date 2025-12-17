@@ -1,0 +1,62 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "Q01",
+            "serial": "item_5e5e7a713decb010227232",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "Q01",
+                "title": "Complex Math examples",
+                "label": "Complex Math examples",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint123",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5e5e7a713dec5563355926",
+                "body": "\n Simple: {{math_5e5e7a713e1cf077548786}} Complex:  {{math_5e5e7a713e1cf077548788}}  \n  ",
+                "elements": {
+                    "math_5e5e7a713e1cf077548786": {
+                        "serial": "math_5e5e7a713e1cf077548786",
+                        "qtiClass": "math",
+                        "attributes": [],
+                        "mathML": "<mrow><mi>E</mi></mrow><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup>",
+                        "annotations": []
+                    },
+                    "math_5e5e7a713e1cf077548788": {
+                        "serial": "math_5e5e7a713e1cf077548788",
+                        "qtiClass": "math",
+                        "attributes": {},
+                        "mathML": "<mrow>    <mover>      <mi mathvariant=\"normal\">&#x2207;</mi>      <mo stretchy=\"false\">&#x2192;</mo>    </mover>  </mrow>  <mo>&#xD7;</mo>  <mrow>    <mover>      <mi>F</mi>      <mo stretchy=\"false\">&#x2192;</mo>    </mover>  </mrow>  <mo>=</mo>  <mrow data-mjx-texclass=\"INNER\">    <mo data-mjx-texclass=\"OPEN\">(</mo>    <mfrac>      <mrow>        <mi mathvariant=\"normal\">&#x2202;</mi>        <msub>          <mi>F</mi>          <mi>z</mi>        </msub>      </mrow>      <mrow>        <mi mathvariant=\"normal\">&#x2202;</mi>        <mi>y</mi>      </mrow>    </mfrac>    <mo>&#x2212;</mo>    <mfrac>      <mrow>        <mi mathvariant=\"normal\">&#x2202;</mi>        <msub>          <mi>F</mi>          <mi>y</mi>        </msub>      </mrow>      <mrow>        <mi mathvariant=\"normal\">&#x2202;</mi>        <mi>z</mi>      </mrow>    </mfrac>    <mo data-mjx-texclass=\"CLOSE\">)</mo>  </mrow>  <mrow>    <mi mathvariant=\"bold\">i</mi>  </mrow>  <mo>+</mo>  <mrow data-mjx-texclass=\"INNER\">    <mo data-mjx-texclass=\"OPEN\">(</mo>    <mfrac>      <mrow>        <mi mathvariant=\"normal\">&#x2202;</mi>        <msub>          <mi>F</mi>          <mi>x</mi>        </msub>      </mrow>      <mrow>        <mi mathvariant=\"normal\">&#x2202;</mi>        <mi>z</mi>      </mrow>    </mfrac>    <mo>&#x2212;</mo>    <mfrac>      <mrow>        <mi mathvariant=\"normal\">&#x2202;</mi>        <msub>          <mi>F</mi>          <mi>z</mi>        </msub>      </mrow>      <mrow>        <mi mathvariant=\"normal\">&#x2202;</mi>        <mi>x</mi>      </mrow>    </mfrac>    <mo data-mjx-texclass=\"CLOSE\">)</mo>  </mrow>  <mrow>    <mi mathvariant=\"bold\">j</mi>  </mrow>  <mo>+</mo>  <mrow data-mjx-texclass=\"INNER\">    <mo data-mjx-texclass=\"OPEN\">(</mo>    <mfrac>      <mrow>        <mi mathvariant=\"normal\">&#x2202;</mi>        <msub>          <mi>F</mi>          <mi>y</mi>        </msub>      </mrow>      <mrow>        <mi mathvariant=\"normal\">&#x2202;</mi>        <mi>x</mi>      </mrow>    </mfrac>    <mo>&#x2212;</mo>    <mfrac>      <mrow>        <mi mathvariant=\"normal\">&#x2202;</mi>        <msub>          <mi>F</mi>          <mi>x</mi>        </msub>      </mrow>      <mrow>        <mi mathvariant=\"normal\">&#x2202;</mi>        <mi>y</mi>      </mrow>    </mfrac>    <mo data-mjx-texclass=\"CLOSE\">)</mo>  </mrow>  <mrow>    <mi mathvariant=\"bold\">k</mi>  </mrow>",
+                        "annotations": []
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p1",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p1": "imsqti_v2p1.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": {},
+            "responses": {},
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": []
+    },
+    "itemState": {},
+    "itemIdentifier": "item-6",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    }
+}

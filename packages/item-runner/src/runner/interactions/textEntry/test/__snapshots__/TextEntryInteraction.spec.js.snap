@@ -1,0 +1,404 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TextEntryInteraction > behavior > maxlength pattern > recognizes maxlength pattern (baseType=float), and shows default message if no custom 1`] = `
+<span
+  aria-live="assertive"
+  aria-relevant="all"
+  class="feedback-inline"
+>
+  <span
+    aria-hidden="true"
+    class="valid hide-valid hide-invalid"
+  >
+    <span>
+      The format must match the pattern.
+    </span>
+     
+  </span>
+   
+  
+  <span
+    aria-hidden="true"
+    class="valid"
+  >
+    <span>
+      The maximum length is 3.
+    </span>
+     
+  </span>
+   
+  
+  
+</span>
+`;
+
+exports[`TextEntryInteraction > behavior > maxlength pattern > recognizes maxlength pattern (baseType=integer), and shows default message if no custom 1`] = `
+<span
+  aria-live="assertive"
+  aria-relevant="all"
+  class="feedback-inline"
+>
+  <span
+    aria-hidden="true"
+    class="valid hide-valid hide-invalid"
+  >
+    <span>
+      The format must match the pattern.
+    </span>
+     
+  </span>
+   
+  
+  <span
+    aria-hidden="true"
+    class="valid"
+  >
+    <span>
+      The maximum length is 3.
+    </span>
+     
+  </span>
+   
+  
+  
+</span>
+`;
+
+exports[`TextEntryInteraction > behavior > maxlength pattern > recognizes maxlength pattern (baseType=string), and shows default message if no custom 1`] = `
+<span
+  aria-live="assertive"
+  aria-relevant="all"
+  class="feedback-inline"
+>
+  <span
+    aria-hidden="true"
+    class="valid hide-valid hide-invalid"
+  >
+    <span>
+      The format must match the pattern.
+    </span>
+     
+  </span>
+   
+  
+  <span
+    aria-hidden="true"
+    class="valid"
+  >
+    <span>
+      The maximum length is 3.
+    </span>
+     
+  </span>
+   
+  
+  
+</span>
+`;
+
+exports[`TextEntryInteraction > behavior > maxlength pattern > recognizes maxlength pattern, and shows custom message 1`] = `
+<span
+  aria-live="assertive"
+  aria-relevant="all"
+  class="feedback-inline"
+>
+  <span
+    aria-hidden="true"
+    class="valid"
+  >
+    <span>
+      You wont be able to type more symbols than needed
+    </span>
+     
+  </span>
+   
+  
+  <span
+    aria-hidden="true"
+    class="valid hide-valid hide-invalid"
+  >
+    <span>
+      The maximum length is 3.
+    </span>
+     
+  </span>
+   
+  
+  
+</span>
+`;
+
+exports[`TextEntryInteraction > behavior > string with pattern > shows valid feedback on first try 1`] = `
+<span
+  aria-live="assertive"
+  aria-relevant="all"
+  class="feedback-inline"
+  dir="ltr"
+  lang="nb-NO"
+>
+  <span
+    aria-hidden="true"
+    class="valid"
+  >
+    <span>
+      Regexp test
+    </span>
+     
+  </span>
+   
+  
+  <span
+    aria-hidden="true"
+    class="valid hide-valid hide-invalid"
+  >
+    <span>
+      The maximum length is 1000.
+    </span>
+     
+  </span>
+   
+  
+  
+</span>
+`;
+
+exports[`TextEntryInteraction > rendering > extracts and applies qti classes 1`] = `
+<div
+  class="textentry-interaction-container"
+>
+  <span
+    class="qti-interaction qti-inlineInteraction qti-textEntryInteraction qti-input-width-20"
+  >
+    <span
+      class="positioning-wrapper height-x-small"
+      style="
+        --suffix-width: 0px;
+        --prefix-width: 0px;
+        --fixed-size-letters: 20;
+    "
+    >
+       
+      <input
+        aria-invalid="false"
+        aria-readonly="false"
+        class="height-x-small valid empty"
+        inputmode="text"
+        maxlength="1000"
+        placeholder=""
+        type="text"
+      />
+       
+       
+    </span>
+    
+  </span>
+</div>
+`;
+
+exports[`TextEntryInteraction > rendering > extracts and applies qti data attrs 1`] = `
+<div
+  class="textentry-interaction-container"
+>
+  <span
+    class="qti-interaction qti-inlineInteraction qti-textEntryInteraction"
+    qti-patternmask-message="Use alphanumeric characters and spaces"
+  >
+    <span
+      class="positioning-wrapper height-x-small"
+      style="
+        --suffix-width: 0px;
+        --prefix-width: 0px;
+        --fixed-size-letters: 16;
+    "
+    >
+       
+      <input
+        aria-invalid="false"
+        aria-readonly="false"
+        class="height-x-small valid empty"
+        inputmode="text"
+        maxlength="1000"
+        placeholder=""
+        type="text"
+      />
+       
+       
+    </span>
+    
+  </span>
+</div>
+`;
+
+exports[`TextEntryInteraction > rendering > renders with baseType is float 1`] = `
+<div
+  class="textentry-interaction-container"
+>
+  <span
+    class="qti-interaction qti-inlineInteraction qti-textEntryInteraction"
+  >
+    <span
+      class="positioning-wrapper height-x-small"
+      style="
+        --suffix-width: 0px;
+        --prefix-width: 0px;
+        --fixed-size-letters: 16;
+    "
+    >
+       
+      <input
+        aria-invalid="false"
+        aria-readonly="false"
+        class="height-x-small valid empty"
+        inputmode="text"
+        maxlength="1000"
+        placeholder=""
+        type="text"
+      />
+       
+       
+    </span>
+    
+  </span>
+</div>
+`;
+
+exports[`TextEntryInteraction > rendering > renders with baseType is integer 1`] = `
+<div
+  class="textentry-interaction-container"
+>
+  <span
+    class="qti-interaction qti-inlineInteraction qti-textEntryInteraction"
+  >
+    <span
+      class="positioning-wrapper height-x-small"
+      style="
+        --suffix-width: 0px;
+        --prefix-width: 0px;
+        --fixed-size-letters: 16;
+    "
+    >
+       
+      <input
+        aria-invalid="false"
+        aria-readonly="false"
+        class="height-x-small valid empty"
+        inputmode="numeric"
+        maxlength="1000"
+        placeholder=""
+        type="text"
+      />
+       
+       
+    </span>
+    
+  </span>
+</div>
+`;
+
+exports[`TextEntryInteraction > rendering > renders with baseType is string 1`] = `
+<div
+  class="textentry-interaction-container"
+>
+  <span
+    class="qti-interaction qti-inlineInteraction qti-textEntryInteraction"
+  >
+    <span
+      class="positioning-wrapper height-x-small"
+      style="
+        --suffix-width: 0px;
+        --prefix-width: 0px;
+        --fixed-size-letters: 16;
+    "
+    >
+       
+      <input
+        aria-invalid="false"
+        aria-readonly="false"
+        class="height-x-small valid empty"
+        inputmode="text"
+        maxlength="1000"
+        placeholder=""
+        type="text"
+      />
+       
+       
+    </span>
+    
+  </span>
+</div>
+`;
+
+exports[`TextEntryInteraction > rendering > renders with basic props 1`] = `
+<div
+  class="textentry-interaction-container"
+>
+  <span
+    class="qti-interaction qti-inlineInteraction qti-textEntryInteraction"
+  >
+    <span
+      class="positioning-wrapper height-x-small"
+      style="
+        --suffix-width: 0px;
+        --prefix-width: 0px;
+        --fixed-size-letters: 17;
+    "
+    >
+       
+      <input
+        aria-invalid="false"
+        aria-readonly="false"
+        class="height-x-small valid empty"
+        inputmode="text"
+        maxlength="1000"
+        placeholder="input placeholder"
+        type="text"
+      />
+       
+       
+    </span>
+    
+  </span>
+</div>
+`;
+
+exports[`TextEntryInteraction > rendering > renders with full props 1`] = `
+<div
+  class="textentry-interaction-container"
+>
+  <span
+    aria-hidden="false"
+    aria-labelledby="someid"
+    class="qti-interaction qti-inlineInteraction qti-textEntryInteraction"
+    data-baz="24"
+    data-foo="bar"
+    dir="ltr"
+    id="interactionId"
+    lang="lb"
+    role="someUniqueRole"
+  >
+    <span
+      class="positioning-wrapper height-x-small"
+      style="
+        --suffix-width: 0px;
+        --prefix-width: 0px;
+        --fixed-size-letters: 16;
+    "
+    >
+       
+      <input
+        aria-invalid="false"
+        aria-readonly="false"
+        class="height-x-small valid empty"
+        disabled=""
+        inputmode="text"
+        maxlength="1000"
+        placeholder="input placeholder"
+        type="text"
+      />
+       
+       
+    </span>
+    
+  </span>
+</div>
+`;

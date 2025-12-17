@@ -1,0 +1,354 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`provider > Modal feedback > renderFeedbacks renders multiple feedbacks in sequence, and calls \`onBeforeRenderFeedbacks\` and \`done\` callbacks 1`] = `
+<section
+  class="qti-item modalFeedback notranslate"
+  data-item-id="item-2"
+  data-renderer="common"
+  dir="ltr"
+  lang="en-US"
+  style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px); animation: __svelte_665066525_0 300ms linear 0ms 1 both;"
+  translate="no"
+>
+  <div
+    class="qti-modalFeedback"
+  >
+    <div
+      class="content"
+    >
+      <h2
+        class="ui-heading-l"
+        tabindex="-1"
+      >
+         
+        <span>
+          111
+        </span>
+      </h2>
+       
+      1 Modal feedback content 1
+      
+      
+    </div>
+  </div>
+  
+  
+  
+   
+</section>
+`;
+
+exports[`provider > Modal feedback > renderFeedbacks renders multiple feedbacks in sequence, and calls \`onBeforeRenderFeedbacks\` and \`done\` callbacks 2`] = `
+<body>
+  <div>
+    <div
+      class="modalfeedback-nav"
+    >
+      <button
+        class="actionable primary pill small"
+        type="button"
+      >
+         
+         
+        Continue
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`provider > Modal feedback > renderFeedbacks renders multiple feedbacks in sequence, and calls \`onBeforeRenderFeedbacks\` and \`done\` callbacks 3`] = `
+<section
+  class="qti-item modalFeedback notranslate"
+  data-item-id="item-2"
+  data-renderer="common"
+  dir="ltr"
+  lang="en-US"
+  style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px); animation: __svelte_665066525_0 300ms linear 0ms 1 both;"
+  translate="no"
+>
+  <div
+    class="qti-modalFeedback"
+  >
+    <div
+      class="content"
+    >
+      <h2
+        class="ui-heading-l"
+        tabindex="-1"
+      >
+         
+        <span>
+          222
+        </span>
+      </h2>
+       
+      2 Modal feedback content 2
+      
+      
+    </div>
+  </div>
+  
+  
+  
+   
+</section>
+`;
+
+exports[`provider > Modal feedback > renderFeedbacks renders multiple feedbacks in sequence, and calls \`onBeforeRenderFeedbacks\` and \`done\` callbacks 4`] = `
+<body>
+  <div>
+    <div
+      class="modalfeedback-nav"
+    >
+      <button
+        class="actionable primary pill small"
+        type="button"
+      >
+         
+         
+        Continue
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`provider > Render and clear > renders item to the given container 1`] = `
+<body>
+  <div>
+    <span>
+      Some other content
+    </span>
+     
+    <section
+      class="qti-item initial notranslate"
+      data-item-id="item-2"
+      data-layouts="inlineInteractionsLayout"
+      data-renderer="common"
+      dir="ltr"
+      lang="en-US"
+      style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px); animation: __svelte_665066525_0 300ms linear 0ms 1 both;"
+      translate="no"
+    >
+      <div
+        class="grid-row"
+      >
+        
+      
+        
+        <div
+          class="col-12"
+        >
+          
+        
+          
+          <h4>
+            
+          
+            <strong>
+              In which year was the American contienent discovered by Christophe Colomb ?
+            </strong>
+            
+        
+          </h4>
+          
+          
+          
+        
+          
+          <p>
+            
+          
+            <em>
+              Please enter your answer in the field below :
+            </em>
+            
+        
+          </p>
+          
+          
+          
+        
+          
+          <p
+            class="textentry-interaction-container"
+          >
+             In year 
+            
+            <span
+              class="qti-interaction qti-inlineInteraction qti-textEntryInteraction"
+              data-qti-class="textEntryInteraction"
+              data-response-id="RESPONSE"
+            >
+              <span
+                class="positioning-wrapper height-x-small"
+                style="
+        --suffix-width: 0px;
+        --prefix-width: 0px;
+        --fixed-size-letters: 4;
+    "
+              >
+                 
+                <input
+                  aria-invalid="false"
+                  aria-readonly="false"
+                  class="height-x-small valid empty"
+                  inputmode="text"
+                  maxlength="1000"
+                  pattern="^[0-9]{4}$"
+                  placeholder="YYYY"
+                  type="text"
+                />
+                 
+                 
+              </span>
+              
+            </span>
+            
+            
+            .
+            
+            
+             
+          </p>
+          
+          
+          
+      
+          
+          
+           
+        </div>
+        
+        
+        
+    
+        
+        
+         
+      </div>
+      
+      
+      
+  
+      
+      
+       
+    </section>
+     
+     
+    
+    
+  </div>
+</body>
+`;
+
+exports[`provider > Render and clear > renders item to the given container 2`] = `
+<body>
+  <div>
+    <span>
+      Some other content
+    </span>
+  </div>
+</body>
+`;
+
+exports[`provider > Render and clear > renders with provided renderer 1`] = `
+<body>
+  <div>
+     
+    <section
+      class="qti-item initial notranslate"
+      data-item-id="item-1"
+      data-renderer="review"
+      dir="ltr"
+      lang="en-US"
+      style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px); animation: __svelte_665066525_0 300ms linear 0ms 1 both;"
+      translate="no"
+    >
+      <div
+        class="grid-row"
+      >
+        
+      
+        
+        <div
+          class="col-12"
+        >
+          
+        
+          
+          <div
+            class="qti-interaction qti-reviewInteraction qti-blockInteraction qti-uploadInteraction"
+            data-qti-class="uploadInteraction"
+            data-response-id="RESPONSE"
+          >
+            <div
+              class="qti-prompt cf"
+            >
+              <strong>
+                Please select your photo
+              </strong>
+              
+              
+              
+            </div>
+             
+             
+            <div
+              class="selected-file-container empty"
+            >
+              <p
+                tabindex="-1"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Remove icon
+                  </title>
+                  <path
+                    d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+                  />
+                </svg>
+                 
+                <span>
+                  No answer file selected
+                </span>
+              </p>
+            </div>
+          </div>
+          
+          
+          
+      
+          
+          
+           
+        </div>
+        
+        
+        
+    
+        
+        
+         
+      </div>
+      
+      
+      
+  
+      
+      
+       
+    </section>
+     
+     
+    
+    
+  </div>
+</body>
+`;

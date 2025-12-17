@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<!--
+SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
+
+SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+-->
+
+<manifest xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/qti/qtiv2p2/qtiv2p2_imscpv1p2_v1p0.xsd
+                        http://ltsc.ieee.org/xsd/LOM http://www.imsglobal.org/xsd/imsmd_loose_v1p3p2.xsd"
+    identifier="MANIFEST-tao642141e01fd7b3-34940140" xmlns:imsmd="http://ltsc.ieee.org/xsd/LOM">
+    <metadata>
+        <schema>QTIv2.2 Package</schema>
+        <schemaversion>1.0.0</schemaversion>
+    </metadata>
+    <organizations />
+    <resources>
+        <resource identifier="i64117abf4c29112536372fc2ea1c62441" type="imsqti_item_xmlv2p2"
+            href="navigationHelperItem.xml">
+            <metadata>
+                <imsmd:lom>
+                    <imsmd:classification>
+                        <imsmd:taxonPath>
+                            <imsmd:source>
+                                <imsmd:string xml:lang="en-US">
+                                    http://www.tao.lu/Ontologies/TAO.rdf#WorkflowState</imsmd:string>
+                            </imsmd:source>
+                            <imsmd:taxon>
+                                <imsmd:entry>
+                                    <imsmd:string xml:lang="en-US">
+                                        https://development.eu.premium.lab.taocloud.org/#i627103589d8dd3140e9c6f6d0d5e2d5df</imsmd:string>
+                                </imsmd:entry>
+                            </imsmd:taxon>
+                        </imsmd:taxonPath>
+                        <imsmd:taxonPath>
+                            <imsmd:source>
+                                <imsmd:string xml:lang="en-US">
+                                    http://www.w3.org/2000/01/rdf-schema#label</imsmd:string>
+                            </imsmd:source>
+                            <imsmd:taxon>
+                                <imsmd:entry>
+                                    <imsmd:string xml:lang="en-US">navigationHelperItem</imsmd:string>
+                                </imsmd:entry>
+                            </imsmd:taxon>
+                        </imsmd:taxonPath>
+                    </imsmd:classification>
+                </imsmd:lom>
+            </metadata>
+            <file href="navigationHelperItem.xml" />
+            <file href="navigationHelperTestPCI.js" />
+        </resource>
+    </resources>
+</manifest>

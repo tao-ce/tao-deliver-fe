@@ -1,0 +1,157 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`menu panel plugin > renders a custom theme 1`] = `
+<body>
+  <div>
+    
+    
+    <aside />
+    
+ 
+  </div>
+</body>
+`;
+
+exports[`menu panel plugin > renders a custom theme 2`] = `
+<body>
+  <div>
+    
+    
+    <aside>
+      <div>
+        <ul
+          class="panel-menu"
+        >
+          <li>
+            <a
+              href="https://www.foo.bar"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Foo
+            </a>
+          </li>
+        </ul>
+         
+        <ul
+          class="panel-actions"
+        />
+         
+        <footer>
+          <img
+            alt="my logo"
+            src="http://192.168.1.12:8080/logo.png"
+          />
+           
+        </footer>
+      </div>
+    </aside>
+    
+ 
+  </div>
+</body>
+`;
+
+exports[`menu panel plugin > renders a custom theme 3`] = `
+<body>
+  <div>
+    
+    
+    <aside />
+    
+ 
+  </div>
+</body>
+`;
+
+exports[`menu panel plugin > renders and destroys 1`] = `
+<body>
+  <div>
+    
+    
+    <aside />
+    
+ 
+  </div>
+</body>
+`;
+
+exports[`menu panel plugin > renders and destroys 2`] = `
+<body>
+  <div>
+    
+    
+    <aside>
+      <div>
+        <ul
+          class="panel-menu"
+        >
+          <li>
+            <a
+              href="https://www.taotesting.com/privacy/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.taotesting.com/about-us/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              About
+            </a>
+          </li>
+        </ul>
+         
+        <ul
+          class="panel-actions"
+        />
+         
+        <footer>
+          <img
+            alt="TAO logo"
+            src="logo.svg"
+          />
+           
+          <p>
+            © TAO 2025
+             
+            <br />
+            
+            <a
+              href="https://taotesting.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Open Assessment Technologies S.A.
+            </a>
+             
+            <br />
+            
+            All rights reserved
+             
+            
+          </p>
+        </footer>
+      </div>
+    </aside>
+    
+ 
+  </div>
+</body>
+`;
+
+exports[`menu panel plugin > renders and destroys 3`] = `
+<body>
+  <div>
+    
+    
+    <aside />
+    
+ 
+  </div>
+</body>
+`;

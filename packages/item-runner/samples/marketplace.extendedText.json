@@ -1,0 +1,103 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "extended_text_saarbruecken",
+            "serial": "i5ec7d8d84b935",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "extended_text_saarbruecken",
+                "title": "Market square in Germany (Extended Text Interaction)",
+                "label": "Market square in Germany (Extended Text Interaction)",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint117",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5ec7d8d84b92d",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <h1>Extended Text Interaction</h1>\n        <h2>Describe the view!</h2>\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <p>The picture below shows the St. Johanner Markt in Saarbr\u00fccken, Germany.</p>\n        <p>Describe what you see on this picture, the description is limited to 5 words!</p>\n        {{i5ec7d8d84bbba}}\n        <p>Photo by <a href=\"https://commons.wikimedia.org/wiki/File:Saarbr%C3%BCcken_St_JohannerMarkt_pano.jpg\" target=\"_blank\">LoKiLeCh</a>, released under <a href=\"https://creativecommons.org/licenses/by-sa/3.0/deed.en\" target=\"_blank\">CC BY-SA 3.0</a>.</p>\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i5ec7d8d84baa2}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "i5ec7d8d84baa2": {
+                        "serial": "i5ec7d8d84baa2",
+                        "qtiClass": "extendedTextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "extended_text_saarbruecken",
+                            "base": 10,
+                            "_patternMask": "^(?:(?:[^\\s\\:\\!\\?\\;\\\u2026\\\u20ac]+)[\\s\\:\\!\\?\\;\\\u2026\\\u20ac]*){0,5}$",
+                            "patternMask": "^[A-Z].*$",
+                            "data-patternmask-message": "You must begin with a capital letter",
+                            "data-math-entry": "",
+                            "data-image-upload": true,
+                            "required": true,
+                            "expectedLength": 20,
+                            "placeholderText": "Your description...",
+                            "minStrings": 0,
+                            "format": "xhtml",
+                            "class": "qti-counter-up"
+                        },
+                        "choices": [],
+                        "prompt": {
+                            "serial": "i5ec7d8d84baf8",
+                            "body": "",
+                            "elements": []
+                        }
+                    },
+                    "i5ec7d8d84bbba": {
+                        "serial": "i5ec7d8d84bbba",
+                        "qtiClass": "img",
+                        "attributes": {
+                            "src": "1024px-Saarbruecken_St_JohannerMarkt_pano.jpg",
+                            "alt": "Saarbruecken St. JohannerMarkt",
+                            "width": "100%",
+                            "type": "image/jpeg"
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": [],
+            "responses": {
+                "i5ec7d8d84b9b9": {
+                    "identifier": "extended_text_saarbruecken",
+                    "serial": "i5ec7d8d84b9b9",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "extended_text_saarbruecken",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "1024px-Saarbruecken_St_JohannerMarkt_pano.jpg": "1024px-Saarbruecken_St_JohannerMarkt_pano.jpg"
+            }
+        }
+    },
+    "itemState": {
+        "fooName": "barMarket"
+    },
+    "itemIdentifier": "item-8",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    },
+    "success": true,
+    "messages": []
+}

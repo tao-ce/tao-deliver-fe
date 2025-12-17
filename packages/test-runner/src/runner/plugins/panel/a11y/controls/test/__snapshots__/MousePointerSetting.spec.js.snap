@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MousePointerSetting > applies initial state value to document on load 1`] = `
+<section
+  class="test-container"
+  data-cursor="svgCursor"
+  style="cursor: none;"
+>
+  <div
+    style="position: fixed; pointer-events: none; z-index: 10000; width: 22px; height: 32px; left: -2px; top: -5px; transform: translate(80px, 50px);"
+  >
+    <svg
+      fill="none"
+      height="32"
+      viewBox="0 0 94 128"
+      width="22"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M72.4674 77.665L10.51 17.7073V103.896L29.285 83.286L47.7241 120.089C47.9096 120.459 48.3607 120.609 48.7316 120.424L58.6532 115.474C59.0242 115.289 59.1745 114.838 58.989 114.468L40.5499 77.665H72.4674Z"
+        fill="lime"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M91 85.1597H52.7013L65.7062 111.116C67.7466 115.189 66.0925 120.141 62.0118 122.177L58.6532 115.474C59.0242 115.289 59.1745 114.838 58.989 114.468L40.5499 77.665H72.4674L10.51 17.7073V103.896L29.285 83.286L47.7241 120.089C47.9096 120.459 48.3607 120.609 48.7316 120.424L58.6532 115.474L62.0118 122.177L52.0902 127.128C48.0095 129.164 43.0473 127.513 41.0069 123.441L27.4693 96.4208L3 123.282V0L91 85.1597Z"
+        fill="black"
+        fill-rule="evenodd"
+      />
+    </svg>
+    
+  </div>
+</section>
+`;

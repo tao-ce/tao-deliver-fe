@@ -1,0 +1,498 @@
+{
+    "baseUrl": "./presets/items/assets/graphic/vegetarian/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "graphic_match_vegetarian",
+            "serial": "item_5fa923864ccad877904101",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "graphic_match_vegetarian",
+                "title": "Jessica is a vegetarian (Graphic Gap Match Interaction)",
+                "label": "Jessica is a vegetarian (Graphic Gap Match Interaction)",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.3.0-RC02",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5fa923864cc9c252046674",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <h1>Graphic Gap Match Interaction</h1>\n        <h2>Select food for a vegetarian</h2>\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <p>Jessica is a vegetarian. She neither eats eggs nor dairy products. Can you help her to select food items from the selection\u00a0below?</p>\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-10\">\n        {{interaction_graphicgapmatchinteraction_5fa923864d279300380050}}\n      </div>\n      <div class=\"col-2\"></div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <h3>License Attribution</h3>\n        <ul>\n          <li>Table setting: <a href=\"https://www.flickr.com/photos/dinnerseries/11342694025/\" target=\"_blank\">Didriks</a>, <a href=\"https://creativecommons.org/licenses/by/2.0/\" target=\"_blank\">CC BY 2.0</a></li>\n          <li>Broccoli: <a href=\"https://commons.wikimedia.org/wiki/File:Choux_01.jpg\" target=\"_blank\">Coyau</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\">CC BY-SA 3.0</a></li>\n          <li>Tomatoes: <a href=\"https://commons.wikimedia.org/wiki/File:Fruit_or_vegetable%3F_(32257730023).jpg\" target=\"_blank\">Sheila Sund</a>, <a href=\"https://creativecommons.org/licenses/by/2.0/\" target=\"_blank\">CC BY 2.0</a></li>\n          <li>Lamb Chops: <a href=\"https://www.flickr.com/photos/32296854@N00/25411689\" target=\"_blank\">Tim P</a>, <a href=\"https://creativecommons.org/licenses/by/2.0/\" target=\"_blank\">CC BY 2.0</a></li>\n          <li>Corn: <a href=\"https://commons.wikimedia.org/wiki/File:Grilled_Corn_(Unsplash).jpg\" target=\"_blank\">Marius Dragne</a>, <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.en\" target=\"_blank\">CC0 1.0</a></li>\n          <li>Cake: <a href=\"https://unsplash.com/photos/6iqpLKqeaE0\" target=\"_blank\">Anthony Espinosa</a>, <a href=\"https://unsplash.com/license\" target=\"_blank\">Unsplash License</a></li>\n          <li>Cheese: <a href=\"https://commons.wikimedia.org/wiki/File:Cantal_03.jpg\" target=\"_blank\">Coyau</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\">CC BY-SA 3.0</a></li>\n          <li>Sushi: <a href=\"https://commons.wikimedia.org/wiki/File:Salmon_Sushi.jpg\" target=\"_blank\">Switchercat</a>, Public Domain</li>\n          <li>Salad: <a href=\"https://unsplash.com/photos/IGfIGP5ONV0\" target=\"_blank\">Anna Pelzer</a>, <a href=\"https://unsplash.com/license\" target=\"_blank\">Unsplash License</a></li>\n          <li>Peppers: <a href=\"https://commons.wikimedia.org/wiki/File:Capsicum_annuum_fruits_IMGP0122.jpg\" target=\"_blank\">Nikodem Nijaki</a>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\">CC BY-SA 3.0</a></li>\n          <li>Chicken Legs: <a href=\"https://commons.wikimedia.org/wiki/File:6_cooked_chicken_legs.jpg\" target=\"_blank\">Mousa Alhaddad</a>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0\" target=\"_blank\">CC BY-SA 4.0</a></li>\n        </ul>\n        <p>All pictures have been cropped</p>\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "interaction_graphicgapmatchinteraction_5fa923864d279300380050": {
+                        "serial": "interaction_graphicgapmatchinteraction_5fa923864d279300380050",
+                        "qtiClass": "graphicGapMatchInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "class": "responsive"
+                        },
+                        "debug": {
+                            "relatedItem": "item_5fa923864ccad877904101"
+                        },
+                        "choices": {
+                            "choice_associablehotspot_5fa923864dc71871453138": {
+                                "identifier": "spot_1",
+                                "serial": "choice_associablehotspot_5fa923864dc71871453138",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "spot_1",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0,
+                                    "shape": "circle",
+                                    "coords": "406,210,70"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                }
+                            },
+                            "choice_associablehotspot_5fa923864dcec852412729": {
+                                "identifier": "spot_2",
+                                "serial": "choice_associablehotspot_5fa923864dcec852412729",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "spot_2",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0,
+                                    "shape": "circle",
+                                    "coords": "529,119,70"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                }
+                            },
+                            "choice_associablehotspot_5fa923864dd5a140249727": {
+                                "identifier": "spot_3",
+                                "serial": "choice_associablehotspot_5fa923864dd5a140249727",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "spot_3",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0,
+                                    "shape": "circle",
+                                    "coords": "609,361,70"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                }
+                            },
+                            "choice_associablehotspot_5fa923864ddc7814616313": {
+                                "identifier": "spot_4",
+                                "serial": "choice_associablehotspot_5fa923864ddc7814616313",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "spot_4",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0,
+                                    "shape": "circle",
+                                    "coords": "454,357,70"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                }
+                            },
+                            "choice_associablehotspot_5fa923864de34245170386": {
+                                "identifier": "spot_5",
+                                "serial": "choice_associablehotspot_5fa923864de34245170386",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "spot_5",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0,
+                                    "shape": "circle",
+                                    "coords": "648,214,70"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_5fa923864d2e1506291760",
+                            "body": "",
+                            "elements": [],
+                            "debug": {
+                                "relatedItem": "item_5fa923864ccad877904101"
+                            }
+                        },
+                        "object": {
+                            "serial": "qtiobject_5fa923864deaa766816317",
+                            "qtiClass": "object",
+                            "attributes": {
+                                "data": "_11342694025_91f14d38b0_b.jpg",
+                                "type": "image/jpeg",
+                                "width": 1020,
+                                "height": 529
+                            },
+                            "debug": {
+                                "relatedItem": ""
+                            }
+                        },
+                        "gapImgs": {
+                            "choice_gapimg_5fa923864d357218354949": {
+                                "identifier": "broccoli",
+                                "serial": "choice_gapimg_5fa923864d357218354949",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "broccoli",
+                                    "fixed": false,
+                                    "matchMax": "1",
+                                    "matchMin": "0"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d3c6340847709",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "320px-Choux_01.png",
+                                        "type": "image/png",
+                                        "width": 94,
+                                        "height": 94
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864d43b007089710": {
+                                "identifier": "tomato",
+                                "serial": "choice_gapimg_5fa923864d43b007089710",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "tomato",
+                                    "fixed": false,
+                                    "matchMax": "1",
+                                    "matchMin": "0"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d4a3615799408",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "320px-Fruit_or_vegetable-_(32257730023).png",
+                                        "type": "image/png",
+                                        "width": 94,
+                                        "height": 94
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864d510917685294": {
+                                "identifier": "lamb_chops",
+                                "serial": "choice_gapimg_5fa923864d510917685294",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "lamb_chops",
+                                    "fixed": false,
+                                    "matchMax": "1",
+                                    "matchMin": "0"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d574995301911",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "25411689_dbda4cd8c0_q.jpg",
+                                        "type": "image/jpeg",
+                                        "width": 94,
+                                        "height": 94
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864d5e1090451230": {
+                                "identifier": "cob_corn",
+                                "serial": "choice_gapimg_5fa923864d5e1090451230",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "cob_corn",
+                                    "fixed": false,
+                                    "matchMax": "1",
+                                    "matchMin": "0"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d643504691621",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "377px-Grilled_Corn_(Unsplash).png",
+                                        "type": "image/png",
+                                        "width": 94,
+                                        "height": 94
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864d6b0087712722": {
+                                "identifier": "cake",
+                                "serial": "choice_gapimg_5fa923864d6b0087712722",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "cake",
+                                    "fixed": false,
+                                    "matchMax": "1",
+                                    "matchMin": "0"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d755517155019",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "anthony-espinosa-6iqpLKqeaE0-unsplash.jpg",
+                                        "type": "image/jpeg",
+                                        "width": 94,
+                                        "height": 94
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864d7c7416763794": {
+                                "identifier": "cheese",
+                                "serial": "choice_gapimg_5fa923864d7c7416763794",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "cheese",
+                                    "fixed": false,
+                                    "matchMax": "1",
+                                    "matchMin": "0"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d83b346144996",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "320px-Cantal_03.png",
+                                        "type": "image/png",
+                                        "width": 94,
+                                        "height": 94
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864d8af096817709": {
+                                "identifier": "salmon",
+                                "serial": "choice_gapimg_5fa923864d8af096817709",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "salmon",
+                                    "fixed": false,
+                                    "matchMax": "1",
+                                    "matchMin": "0"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d914749953730",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "Salmon_Sushi.png",
+                                        "type": "image/png",
+                                        "width": 94,
+                                        "height": 94
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864d981447942649": {
+                                "identifier": "salad",
+                                "serial": "choice_gapimg_5fa923864d981447942649",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "salad",
+                                    "fixed": false,
+                                    "matchMax": "1",
+                                    "matchMin": "0"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d9e4518049103",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "anna-pelzer-IGfIGP5ONV0-unsplash.jpg",
+                                        "type": "image/jpeg",
+                                        "width": 94,
+                                        "height": 94
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864da6b767296800": {
+                                "identifier": "peppers",
+                                "serial": "choice_gapimg_5fa923864da6b767296800",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "peppers",
+                                    "fixed": false,
+                                    "matchMax": "1",
+                                    "matchMin": "0"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864dace952069921",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "300px-Capsicum_annuum_fruits_IMGP0122.png",
+                                        "type": "image/png",
+                                        "width": 94,
+                                        "height": 94
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864db6b632213906": {
+                                "identifier": "chicken_legs",
+                                "serial": "choice_gapimg_5fa923864db6b632213906",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "chicken_legs",
+                                    "fixed": false,
+                                    "matchMax": "2",
+                                    "matchMin": "0"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864dbda066416445",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "6_cooked_chicken_legs.jpg",
+                                        "type": "image/jpeg",
+                                        "width": 94,
+                                        "height": 94
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "debug": {
+                    "relatedItem": "item_5fa923864ccad877904101"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_5fa923864ccad877904101"
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_5fa923864d0b1797911804": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5fa923864d0b1797911804",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 5
+                    },
+                    "debug": {
+                        "relatedItem": "item_5fa923864ccad877904101"
+                    },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_5fa923864d10f272863426": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_5fa923864d10f272863426",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_5fa923864ccad877904101"
+                    },
+                    "defaultValue": "5"
+                }
+            },
+            "responses": {
+                "responsedeclaration_5fa923864cde6680102994": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_5fa923864cde6680102994",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "multiple",
+                        "baseType": "directedPair"
+                    },
+                    "debug": {
+                        "relatedItem": "item_5fa923864ccad877904101"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "320px-Choux_01.png": "320px-Choux_01.png",
+                "320px-Fruit_or_vegetable-_(32257730023).png": "320px-Fruit_or_vegetable-_(32257730023).png",
+                "25411689_dbda4cd8c0_q.jpg": "25411689_dbda4cd8c0_q.jpg",
+                "377px-Grilled_Corn_(Unsplash).png": "377px-Grilled_Corn_(Unsplash).png",
+                "anthony-espinosa-6iqpLKqeaE0-unsplash.jpg": "anthony-espinosa-6iqpLKqeaE0-unsplash.jpg",
+                "320px-Cantal_03.png": "320px-Cantal_03.png",
+                "Salmon_Sushi.png": "Salmon_Sushi.png",
+                "anna-pelzer-IGfIGP5ONV0-unsplash.jpg": "anna-pelzer-IGfIGP5ONV0-unsplash.jpg",
+                "300px-Capsicum_annuum_fruits_IMGP0122.png": "300px-Capsicum_annuum_fruits_IMGP0122.png",
+                "6_cooked_chicken_legs.jpg": "6_cooked_chicken_legs.jpg",
+                "_11342694025_91f14d38b0_b.jpg": "_11342694025_91f14d38b0_b.jpg"
+            },
+            "css": {
+                "style.css": "style.css"
+            }
+        }
+    },
+    "itemIdentifier": "item-1",
+    "success": true
+}

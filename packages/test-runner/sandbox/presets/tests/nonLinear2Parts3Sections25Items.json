@@ -1,0 +1,466 @@
+{
+  "testContext": {
+    "state": 1,
+    "navigationMode": 1,
+    "submissionMode": 0,
+    "remainingAttempts": -1,
+    "isAdaptive": false,
+    "isLinear": false,
+    "isTimeout": false,
+    "itemIdentifier": "item4",
+    "attempt": 1,
+    "itemSessionState": 1,
+    "isCatAdaptive": false,
+    "needMapUpdate": false,
+    "isLast": false,
+    "itemPosition": 10,
+    "itemFlagged": false,
+    "itemAnswered": false,
+    "timeConstraints": [],
+    "testPartId": "testPart-2",
+    "sectionId": "assessmentSection-3",
+    "sectionTitle": "Optics",
+    "numberItems": 25,
+    "numberCompleted": 6,
+    "numberPresented": 11,
+    "considerProgress": true,
+    "isDeepestSectionVisible": true,
+    "canMoveBackward": true,
+    "numberRubrics": 0,
+    "enableAllowSkipping": true,
+    "allowSkipping": true,
+    "enableValidateResponses": true,
+    "validateResponses": false,
+    "hasFeedbacks": false,
+    "options": {
+      "allowComment": false,
+      "allowSkipping": true,
+      "exitButton": false,
+      "logoutButton": true,
+      "validateResponses": false,
+      "sectionPause": false
+    }
+  },
+  "testMap": {
+    "scope": "test",
+    "parts": {
+      "testPart-1": {
+        "id": "testPart-1",
+        "label": "testPart-1",
+        "position": 0,
+        "isLinear": true,
+        "timeConstraint": null,
+        "sections": {
+          "assessmentSection-1": {
+            "id": "assessmentSection-1",
+            "label": "Section 1",
+            "isCatAdaptive": false,
+            "position": 0,
+            "timeConstraint": null,
+            "items": {
+              "item24": {
+                "id": "item24",
+                "label": "Associate Things",
+                "position": 0,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": true,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": false
+              },
+              "item17": {
+                "id": "item17",
+                "label": "Characters and Plays",
+                "position": 1,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": false
+              }
+            },
+            "stats": {
+              "questions": 2,
+              "answered": 1,
+              "flagged": 0,
+              "viewed": 2,
+              "total": 2,
+              "questionsViewed": 2
+            }
+          }
+        },
+        "stats": {
+          "questions": 2,
+          "answered": 1,
+          "flagged": 0,
+          "viewed": 2,
+          "total": 2,
+          "questionsViewed": 2
+        }
+      },
+      "testPart-2": {
+        "id": "testPart-2",
+        "label": "testPart-2",
+        "position": 2,
+        "isLinear": false,
+        "timeConstraint": null,
+        "sections": {
+          "section-1": {
+            "id": "section-1",
+            "label": "Physics of elemetary particles: bosons, mesons, quarks and whatever is supposed to exist in this world",
+            "isCatAdaptive": false,
+            "position": 2,
+            "timeConstraint": null,
+            "items": {
+              "item19": {
+                "id": "item19",
+                "label": "Planets and moons",
+                "position": 2,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": true,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": false,
+                "timeConstraint": null
+              },
+              "item20": {
+                "id": "item20",
+                "label": "Elections in the United States, 2004",
+                "position": 3,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": true,
+                "flagged": true,
+                "viewed": true,
+                "categories": [],
+                "informational": false
+              },
+              "item21": {
+                "id": "item21",
+                "label": "Periods of History",
+                "position": 4,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": true,
+                "viewed": true,
+                "categories": [],
+                "informational": false
+              },
+              "item22": {
+                "id": "item22",
+                "label": "The Space Shuttle, 30 years of adventure",
+                "position": 5,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": false
+              },
+              "item23": {
+                "id": "item23",
+                "label": "Chocolate Factory",
+                "position": 6,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": false
+              }
+            },
+            "stats": {
+              "questions": 5,
+              "answered": 2,
+              "flagged": 2,
+              "viewed": 5,
+              "total": 5,
+              "questionsViewed": 5
+            }
+          },
+          "assessmentSection-3": {
+            "id": "assessmentSection-3",
+            "label": "Optics",
+            "isCatAdaptive": false,
+            "position": 7,
+            "timeConstraint": null,
+            "items": {
+              "item1": {
+                "id": "item1",
+                "label": "Item 12",
+                "position": 7,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": true,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": false
+              },
+              "item2": {
+                "id": "item2",
+                "label": "x simple text",
+                "position": 8,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": true,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": false
+              },
+              "item3": {
+                "id": "item3",
+                "label": "x simple text",
+                "position": 9,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": true,
+                "viewed": true,
+                "categories": [],
+                "informational": false
+              },
+              "item4": {
+                "id": "item4",
+                "label": "x simple text",
+                "position": 10,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": false
+              },
+              "item5": {
+                "id": "item5",
+                "label": "x simple text",
+                "position": 11,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": true,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": true
+              },
+              "item6": {
+                "id": "item6",
+                "label": "x simple text",
+                "position": 12,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "informational": true
+              },
+              "item7": {
+                "id": "item7",
+                "label": "x simple text",
+                "position": 13,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "informational": true
+              },
+              "item8": {
+                "id": "item8",
+                "label": "x simple text",
+                "position": 14,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "informational": false
+              },
+              "item9": {
+                "id": "item9",
+                "label": "x simple text",
+                "position": 15,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "informational": false
+              },
+              "item10": {
+                "id": "item10",
+                "label": "x simple text",
+                "position": 16,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "informational": false
+              },
+              "item11": {
+                "id": "item11",
+                "label": "x simple text",
+                "position": 17,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "informational": false
+              },
+              "item12": {
+                "id": "item12",
+                "label": "x simple text",
+                "position": 18,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "informational": false
+              },
+              "item13": {
+                "id": "item13",
+                "label": "x simple text",
+                "position": 19,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "informational": false
+              },
+              "item14": {
+                "id": "item14",
+                "label": "x simple text",
+                "position": 20,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "informational": false
+              },
+              "item15": {
+                "id": "item15",
+                "label": "x simple text",
+                "position": 21,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "informational": false
+              },
+              "item16": {
+                "id": "item16",
+                "label": "x simple text",
+                "position": 22,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "informational": false
+              }
+            },
+            "stats": {
+              "questions": 16,
+              "answered": 2,
+              "flagged": 1,
+              "viewed": 4,
+              "total": 16,
+              "questionsViewed": 4
+            }
+          },
+          "assessmentSection-4": {
+            "id": "assessmentSection-4",
+            "label": "Mechanics and thermodynamics",
+            "isCatAdaptive": false,
+            "position": 23,
+            "timeConstraint": null,
+            "items": {
+              "item18": {
+                "id": "item18",
+                "label": "Modal Feedback",
+                "position": 23,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "informational": false
+              },
+              "item25": {
+                "id": "item25",
+                "label": "UK Airports (Take 1)",
+                "position": 24,
+                "occurrence": 0,
+                "remainingAttempts": 1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "informational": false
+              }
+            },
+            "stats": {
+              "questions": 2,
+              "answered": 0,
+              "flagged": 0,
+              "viewed": 0,
+              "total": 2,
+              "questionsViewed": 0
+            }
+          }
+        },
+        "stats": {
+          "questions": 23,
+          "answered": 4,
+          "flagged": 3,
+          "viewed": 9,
+          "total": 23,
+          "questionsViewed": 9
+        }
+      }
+    },
+    "title": "Test 2",
+    "identifier": "Test-2",
+    "className": "assessmentTest",
+    "toolName": "tao",
+    "exclusivelyLinear": false,
+    "hasTimeLimits": true,
+    "stats": {
+      "questions": 25,
+      "answered": 5,
+      "flagged": 3,
+      "viewed": 11,
+      "total": 25,
+      "questionsViewed": 11
+    }
+  }
+}

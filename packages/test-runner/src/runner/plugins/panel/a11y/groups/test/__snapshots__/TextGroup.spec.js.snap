@@ -1,0 +1,312 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TextGroup > renders details with setting components, passes config & initialState & areaBroker to them 1`] = `
+<body>
+  <div>
+    <details
+      class="a11y-group"
+      open=""
+    >
+      <summary
+        aria-label="collapse text settings"
+        title="collapse text settings"
+      >
+        <h3
+          class="ui-heading"
+          slot="summary"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            fill="none"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Text tool icon
+            </title>
+            <path
+              clip-rule="evenodd"
+              d="M7.26857 10.5867L8.33829 13H9.47657L5.22518 3H4.25146L0 13H1.152L2.22171 10.5867H7.26857ZM6.87086 9.68H2.61943L4.74518 4.26667L6.87086 9.68ZM15.354 6.38609C14.9426 5.95943 14.3117 5.74609 13.4614 5.74609C13.0043 5.74609 12.5289 5.82165 12.0352 5.97276C11.5506 6.11498 11.1346 6.30609 10.7872 6.54609L11.1574 7.33276C11.9163 6.87054 12.6797 6.63943 13.4477 6.63943C13.9597 6.63943 14.33 6.76387 14.5586 7.01276C14.7872 7.25276 14.8571 8.14981 14.8571 8.69203V9.13203H14.5997C13.5574 9.13203 12.7437 9.19425 12.1585 9.3187C11.5734 9.43425 11.1528 9.62981 10.8968 9.90536C10.6408 10.172 10.5128 10.5498 10.5128 11.0387C10.5128 11.4031 10.618 11.7365 10.8282 12.0387C11.0385 12.3409 11.322 12.5765 11.6785 12.7454C12.0442 12.9143 12.442 12.9987 12.8717 12.9987C13.338 12.9987 13.7494 12.8965 14.106 12.692C14.4625 12.4787 14.6834 12.1809 14.8571 11.7987V12.9987H16V8.81203C16 7.94981 15.7746 6.80387 15.354 6.38609ZM14.3665 11.612C14.0191 11.9676 13.5711 12.1454 13.0225 12.1454C12.6294 12.1454 12.3002 12.0343 12.0351 11.812C11.7791 11.5809 11.6511 11.292 11.6511 10.9454C11.6511 10.6431 11.738 10.4165 11.9117 10.2654C12.0945 10.1054 12.3962 9.99425 12.8168 9.93203C13.2374 9.86092 13.85 9.82536 14.6545 9.82536H14.8571V10.212C14.8571 10.7809 14.7231 11.2476 14.3665 11.612Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+          </svg>
+           
+          Text
+           
+        </h3>
+         
+        <svg
+          aria-hidden="true"
+          class="icon small"
+          fill="none"
+          viewBox="0 0 12 12"
+        >
+          <title>
+            Chevron up icon
+          </title>
+          <path
+            d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
+            fill="currentColor"
+          />
+        </svg>
+      </summary>
+       
+      <div>
+        <ul>
+          <li>
+            <div
+              class="fontFamily"
+              data-areabroker="{"somewhere":123}"
+              data-config="{"enabled":true,"someFontFamily":"a"}"
+              data-initialstate="{"mockSettingKey":"fontFamily","someValue":1}"
+            >
+              fontFamily
+            </div>
+          </li>
+           
+          <li>
+            <div
+              class="fontSize"
+              data-areabroker="{"somewhere":123}"
+              data-initialstate="{"mockSettingKey":"fontSize","someValue":2}"
+            >
+              fontSize
+            </div>
+          </li>
+           
+          <li>
+            <div
+              class="lineHeight"
+              data-areabroker="{"somewhere":123}"
+              data-initialstate="{"mockSettingKey":"lineHeight","someValue":3}"
+            >
+              lineHeight
+            </div>
+          </li>
+           
+          <li>
+            <div
+              class="letterSpacing"
+              data-areabroker="{"somewhere":123}"
+              data-initialstate="{"mockSettingKey":"letterSpacing","someValue":4}"
+            >
+              letterSpacing
+            </div>
+          </li>
+           
+          <li>
+            <div
+              class="wordSpacing"
+              data-areabroker="{"somewhere":123}"
+              data-initialstate="{"mockSettingKey":"wordSpacing","someValue":5}"
+            >
+              wordSpacing
+            </div>
+          </li>
+           
+          <li>
+            <div
+              class="letterAndWordSpacing"
+              data-areabroker="{"somewhere":123}"
+              data-initialstate="{"mockSettingKey":"letterAndWordSpacing","someValue":6}"
+            >
+              letterAndWordSpacing
+            </div>
+          </li>
+        </ul>
+      </div>
+    </details>
+    
+  </div>
+</body>
+`;
+
+exports[`TextGroup > renders details, initial state can be empty 1`] = `
+<body>
+  <div>
+    <details
+      class="a11y-group"
+      open=""
+    >
+      <summary
+        aria-label="collapse text settings"
+        title="collapse text settings"
+      >
+        <h3
+          class="ui-heading"
+          slot="summary"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            fill="none"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Text tool icon
+            </title>
+            <path
+              clip-rule="evenodd"
+              d="M7.26857 10.5867L8.33829 13H9.47657L5.22518 3H4.25146L0 13H1.152L2.22171 10.5867H7.26857ZM6.87086 9.68H2.61943L4.74518 4.26667L6.87086 9.68ZM15.354 6.38609C14.9426 5.95943 14.3117 5.74609 13.4614 5.74609C13.0043 5.74609 12.5289 5.82165 12.0352 5.97276C11.5506 6.11498 11.1346 6.30609 10.7872 6.54609L11.1574 7.33276C11.9163 6.87054 12.6797 6.63943 13.4477 6.63943C13.9597 6.63943 14.33 6.76387 14.5586 7.01276C14.7872 7.25276 14.8571 8.14981 14.8571 8.69203V9.13203H14.5997C13.5574 9.13203 12.7437 9.19425 12.1585 9.3187C11.5734 9.43425 11.1528 9.62981 10.8968 9.90536C10.6408 10.172 10.5128 10.5498 10.5128 11.0387C10.5128 11.4031 10.618 11.7365 10.8282 12.0387C11.0385 12.3409 11.322 12.5765 11.6785 12.7454C12.0442 12.9143 12.442 12.9987 12.8717 12.9987C13.338 12.9987 13.7494 12.8965 14.106 12.692C14.4625 12.4787 14.6834 12.1809 14.8571 11.7987V12.9987H16V8.81203C16 7.94981 15.7746 6.80387 15.354 6.38609ZM14.3665 11.612C14.0191 11.9676 13.5711 12.1454 13.0225 12.1454C12.6294 12.1454 12.3002 12.0343 12.0351 11.812C11.7791 11.5809 11.6511 11.292 11.6511 10.9454C11.6511 10.6431 11.738 10.4165 11.9117 10.2654C12.0945 10.1054 12.3962 9.99425 12.8168 9.93203C13.2374 9.86092 13.85 9.82536 14.6545 9.82536H14.8571V10.212C14.8571 10.7809 14.7231 11.2476 14.3665 11.612Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+          </svg>
+           
+          Text
+           
+        </h3>
+         
+        <svg
+          aria-hidden="true"
+          class="icon small"
+          fill="none"
+          viewBox="0 0 12 12"
+        >
+          <title>
+            Chevron up icon
+          </title>
+          <path
+            d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
+            fill="currentColor"
+          />
+        </svg>
+      </summary>
+       
+      <div>
+        <ul>
+          <li>
+            <div
+              class="mock-setting"
+              data-areabroker="{}"
+              data-config="{"enabled":true,"families":["default","courier","arial","verdana","cmuserif","luciole"]}"
+              data-initialstate="{}"
+            >
+              mock-setting
+            </div>
+          </li>
+           
+          <li>
+            <div
+              class="mock-setting"
+              data-areabroker="{}"
+              data-initialstate="{}"
+            >
+              mock-setting
+            </div>
+          </li>
+           
+          <li>
+            <div
+              class="mock-setting"
+              data-areabroker="{}"
+              data-initialstate="{}"
+            >
+              mock-setting
+            </div>
+          </li>
+           
+           
+           
+          <li>
+            <div
+              class="mock-setting"
+              data-areabroker="{}"
+              data-initialstate="{}"
+            >
+              mock-setting
+            </div>
+          </li>
+        </ul>
+      </div>
+    </details>
+    
+  </div>
+</body>
+`;
+
+exports[`TextGroup > renders only enabled settings 1`] = `
+<body>
+  <div>
+    <details
+      class="a11y-group"
+      open=""
+    >
+      <summary
+        aria-label="collapse text settings"
+        title="collapse text settings"
+      >
+        <h3
+          class="ui-heading"
+          slot="summary"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            fill="none"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Text tool icon
+            </title>
+            <path
+              clip-rule="evenodd"
+              d="M7.26857 10.5867L8.33829 13H9.47657L5.22518 3H4.25146L0 13H1.152L2.22171 10.5867H7.26857ZM6.87086 9.68H2.61943L4.74518 4.26667L6.87086 9.68ZM15.354 6.38609C14.9426 5.95943 14.3117 5.74609 13.4614 5.74609C13.0043 5.74609 12.5289 5.82165 12.0352 5.97276C11.5506 6.11498 11.1346 6.30609 10.7872 6.54609L11.1574 7.33276C11.9163 6.87054 12.6797 6.63943 13.4477 6.63943C13.9597 6.63943 14.33 6.76387 14.5586 7.01276C14.7872 7.25276 14.8571 8.14981 14.8571 8.69203V9.13203H14.5997C13.5574 9.13203 12.7437 9.19425 12.1585 9.3187C11.5734 9.43425 11.1528 9.62981 10.8968 9.90536C10.6408 10.172 10.5128 10.5498 10.5128 11.0387C10.5128 11.4031 10.618 11.7365 10.8282 12.0387C11.0385 12.3409 11.322 12.5765 11.6785 12.7454C12.0442 12.9143 12.442 12.9987 12.8717 12.9987C13.338 12.9987 13.7494 12.8965 14.106 12.692C14.4625 12.4787 14.6834 12.1809 14.8571 11.7987V12.9987H16V8.81203C16 7.94981 15.7746 6.80387 15.354 6.38609ZM14.3665 11.612C14.0191 11.9676 13.5711 12.1454 13.0225 12.1454C12.6294 12.1454 12.3002 12.0343 12.0351 11.812C11.7791 11.5809 11.6511 11.292 11.6511 10.9454C11.6511 10.6431 11.738 10.4165 11.9117 10.2654C12.0945 10.1054 12.3962 9.99425 12.8168 9.93203C13.2374 9.86092 13.85 9.82536 14.6545 9.82536H14.8571V10.212C14.8571 10.7809 14.7231 11.2476 14.3665 11.612Z"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+          </svg>
+           
+          Text
+           
+        </h3>
+         
+        <svg
+          aria-hidden="true"
+          class="icon small"
+          fill="none"
+          viewBox="0 0 12 12"
+        >
+          <title>
+            Chevron up icon
+          </title>
+          <path
+            d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
+            fill="currentColor"
+          />
+        </svg>
+      </summary>
+       
+      <div>
+        <ul>
+           
+          <li>
+            <div
+              class="fontSize"
+              data-areabroker="{}"
+              data-initialstate="{"mockSettingKey":"fontSize","someValue":2}"
+            >
+              fontSize
+            </div>
+          </li>
+           
+           
+          <li>
+            <div
+              class="letterSpacing"
+              data-areabroker="{}"
+              data-initialstate="{"mockSettingKey":"letterSpacing","someValue":4}"
+            >
+              letterSpacing
+            </div>
+          </li>
+           
+           
+        </ul>
+      </div>
+    </details>
+    
+  </div>
+</body>
+`;

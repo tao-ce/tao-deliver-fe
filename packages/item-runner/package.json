@@ -1,0 +1,53 @@
+{
+  "name": "@oat-sa-private/tao-item-runner-qtinui",
+  "version": "8.65.0",
+  "displayName": "TAO QTI Item Runner",
+  "description": "TAO QTI Item Runner new user interface",
+  "homepage": "https://github.com/oat-sa/tao-deliver-fe#readme",
+  "files": [
+    "dist",
+    "src",
+    "samples",
+    "locale",
+    "!**/test/"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "npm run generate:locale && cross-env NODE_ENV=production rollup --config ./rollup.config.js",
+    "build:report": "BUILDREPORT=true npm run build",
+    "build:sandbox": "rollup --config ./sandbox/rollup.config.js",
+    "watch:sandbox": "rollup --config ./sandbox/rollup.config.js --watch",
+    "serve:sandbox": "serve sandbox -l 5400 --no-request-logging",
+    "dev:sandbox": "npm run generate:locale && run-p watch:sandbox serve:sandbox",
+    "generate:locale": "node ../../scripts/rollup-locale.js",
+    "test": "vitest --config=../../vitest.config.js",
+    "test:ui": "npm test -- --watch --ui",
+    "test:watch": "npm test -- --watch",
+    "test:update": "vitest --config=../../vitest.config.js --run -u",
+    "test:cov": "npm test -- --coverage",
+    "test:cov:ci": "npm test -- --coverage --silent=passed-only --bail=1 --retry=1",
+    "prepublishOnly": "npm run build"
+  },
+  "license": "AGPL-3.0-only OR LicenseRef-TAO-Commercial-License",
+  "devDependencies": {
+    "jquery": "^2.2.4"
+  },
+  "dependencies": {
+    "@oat-sa/tao-core-sdk": "^3.6.0",
+    "@oat-sa/tao-item-runner": "^1.0.0",
+    "@svgdotjs/svg.draggable.js": "3.0.2",
+    "@svgdotjs/svg.filter.js": "3.0.7",
+    "@svgdotjs/svg.js": "3.0.16",
+    "construct-style-sheets-polyfill": "^3.1.0",
+    "lodash": "^4.17.21",
+    "mathjax": "3.1.2",
+    "polylabel": "^1.1.0",
+    "systemjs": "6.8.3"
+  },
+  "author": {
+    "name": "Open Assessment Technologies S.A.",
+    "url": "https://www.taotesting.com"
+  }
+}

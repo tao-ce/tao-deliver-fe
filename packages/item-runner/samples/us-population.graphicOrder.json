@@ -1,0 +1,236 @@
+{
+    "baseUrl": "assets/graphic/order/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i15637986855928142",
+            "serial": "i5fe1dbaa44feb",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i15637986855928142",
+                "title": "American states by population (Graphic Order Interaction)",
+                "label": "American states by population (Graphic Order Interaction)",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint144",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5fe1dbaa44fe6",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <h1>Graphic Order Interaction</h1>\n        <h2>Most populated states in the United States</h2>\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-10\">\n        {{i5fe1dbaa45400}}\n        <p>Map based on the work of <a href=\"https://commons.wikimedia.org/wiki/File:At-will_employment_-_public_policy_exceptions.svg\" target=\"_blank\">cburnett</a>, published under <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\" target=\"_blank\">CC BY-SA 3.0</a>. We changed the colors and converted the format.</p>\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "i5fe1dbaa45400": {
+                        "serial": "i5fe1dbaa45400",
+                        "qtiClass": "graphicOrderInteraction",
+                        "attributes": {
+                            "responseIdentifier": "gr_order_us_population",
+                            "maxChoices": 0,
+                            "minChoices": 0,
+                            "class": "responsive"
+                        },
+                        "choices": {
+                            "i5fe1dbaa455c0": {
+                                "identifier": "california",
+                                "serial": "i5fe1dbaa455c0",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "california",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "87,287,18",
+                                    "hotspotLabel": "California"
+                                }
+                            },
+                            "i5fe1dbaa45610": {
+                                "identifier": "texas",
+                                "serial": "i5fe1dbaa45610",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "texas",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "343,408,18",
+                                    "hotspotLabel": "Texas"
+                                }
+                            },
+                            "i5fe1dbaa45627": {
+                                "identifier": "florida",
+                                "serial": "i5fe1dbaa45627",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "florida",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "601,399,18",
+                                    "hotspotLabel": "Florida"
+                                }
+                            },
+                            "i5fe1dbaa4563a": {
+                                "identifier": "newyork",
+                                "serial": "i5fe1dbaa4563a",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "newyork",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "650,124,18",
+                                    "hotspotLabel": "New York"
+                                }
+                            },
+                            "i5fe1dbaa4564a": {
+                                "identifier": "pennsylvania",
+                                "serial": "i5fe1dbaa4564a",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "pennsylvania",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "618,188,18",
+                                    "hotspotLabel": "Pennsylvania"
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5fe1dbaa4549a",
+                            "body": "\n            <p>The data in this question are based on the population estimate from July 1, 2018</p>\n            <p>The circles on the map below indicate the highest populated states in the US.</p>\n            <p>Can you bring them in the right order <em>(1: highest, 5: lowest population)</em>?</p>\n          ",
+                            "elements": {}
+                        },
+                        "object": {
+                            "serial": "i5fe1dbaa45664",
+                            "qtiClass": "object",
+                            "attributes": {
+                                "data": "map-us.png",
+                                "type": "image/png",
+                                "width": 795,
+                                "height": 492
+                            }
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "i5fe1dbaa45253": {
+                    "identifier": "SCORE",
+                    "serial": "i5fe1dbaa45253",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "defaultValue": null
+                },
+                "i5fe1dbaa452db": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i5fe1dbaa452db",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "i5fe1dbaa451a0": {
+                    "identifier": "gr_order_us_population",
+                    "serial": "i5fe1dbaa451a0",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "gr_order_us_population",
+                        "cardinality": "ordered",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": ["california", "texas", "florida", "newyork", "pennsylvania"],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "i5fe1dbaa45882",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "gr_order_us_population"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "gr_order_us_population"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "map-us.png": "map-us.png"
+            }
+        }
+    },
+    "itemIdentifier": "item-2",
+    "success": true
+}

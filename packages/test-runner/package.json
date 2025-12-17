@@ -1,0 +1,67 @@
+{
+  "name": "@oat-sa-private/tao-test-runner-qtinui",
+  "version": "7.51.0",
+  "displayName": "TAO QTI Test Runner",
+  "description": "TAO QTI Test Runner new user interface",
+  "homepage": "https://github.com/oat-sa/tao-deliver-fe#readme",
+  "files": [
+    "dist",
+    "src",
+    "locale",
+    "!**/test/"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "npm run generate:locale && npm run build:esm && npm run build:amd",
+    "build:report": "BUILDREPORT=true npm run build",
+    "build:esm": "cross-env NODE_ENV=production rollup --config ./rollup.config.js --configDebug",
+    "build:amd": "cross-env NODE_ENV=production AMDBUILD=true rollup --config ./rollup.amd.config.js --configDebug",
+    "build:amd-debug": "cross-env NODE_ENV=debug AMDBUILD=true rollup --config ./rollup.amd.config.js --configDebug",
+    "build:sandbox": "rollup --config ./sandbox/rollup.config.js",
+    "watch:sandbox": "rollup --config ./sandbox/rollup.config.js --watch",
+    "serve:sandbox": "serve sandbox -l 5500 --no-request-logging",
+    "dev:sandbox": "npx msw init && npm run generate:locale && run-p watch:sandbox serve:sandbox",
+    "generate:locale": "node ../../scripts/rollup-locale.js",
+    "test": "vitest --config=../../vitest.config.js",
+    "test:ui": "npm test -- --watch --ui",
+    "test:watch": "npm test -- --watch",
+    "test:update": "vitest --config=../../vitest.config.js --run -u",
+    "test:cov": "npm test -- --coverage",
+    "test:cov:ci": "npm test -- --coverage --silent=passed-only --bail=1 --retry=1",
+    "prepublishOnly": "npm run build"
+  },
+  "license": "AGPL-3.0-only OR LicenseRef-TAO-Commercial-License",
+  "devDependencies": {
+    "@mswjs/socket.io-binding": "^0.1.1",
+    "msw": "^2.7.5",
+    "socket.io": "^4.5.4"
+  },
+  "dependencies": {
+    "@extra-number/to-roman": "^2.0.26",
+    "@oat-sa-private/read-aloud-client": "^0.10.0",
+    "@oat-sa-private/tao-item-runner-qtinui": "^8.65.0",
+    "@oat-sa/tao-core-sdk": "^3.6.0",
+    "@oat-sa/tao-item-runner": "^1.0.0",
+    "@oat-sa/tao-test-runner": "^1.0.0",
+    "async": "0.2.10",
+    "html-docx-js-typescript": "^0.1.5",
+    "jquery": "^2.0.0",
+    "lodash": "^4.17.21",
+    "page-lifecycle": "^0.1.2",
+    "resize-observer-polyfill": "^1.5.1",
+    "socket.io-client": "^4.5.4",
+    "ua-parser-js": "^1.0.37",
+    "xpath-dom": "^0.2.2"
+  },
+  "msw": {
+    "workerDirectory": [
+      "sandbox"
+    ]
+  },
+  "author": {
+    "name": "Open Assessment Technologies S.A.",
+    "url": "https://www.taotesting.com"
+  }
+}

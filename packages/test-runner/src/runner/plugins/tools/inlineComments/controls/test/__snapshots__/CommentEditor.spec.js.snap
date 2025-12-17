@@ -1,0 +1,257 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CommentEditor > renders all props 1`] = `
+<body>
+  <div
+    id="fixture"
+  >
+    
+            Commented
+            
+    <span
+      aria-describedby="tao-description-for-tao--foo123"
+      class="tao-comment-txt"
+      data-color="tao--foo123"
+    >
+      text
+    </span>
+    
+            here
+        
+  </div>
+  <div>
+    <div
+      class="comment-highlight-editor-flyout"
+    >
+      <div
+        aria-labelledby="tao-draggable-modal-title-123"
+        class="draggable-modal"
+        id="tao-draggable-modal-123"
+        style="
+            min-width: 640px;
+            min-height: 277px;
+            width: 422px;
+            height: unset;
+            left: 301px;
+            top: 245px; --action-container-size: 5.5rem;"
+      >
+        <div
+          class="zoom-tracker visually-hidden"
+        />
+         
+        <div
+          class="contents"
+        >
+          <header
+            class="header inverted"
+          >
+            <div
+              class="action-container-start"
+            >
+              <button
+                aria-label="Close Panel"
+                class="icon-bar-btn actionable base-16 draggable-modal-action"
+                id="tao-draggable-modal-close-button-123"
+                title="Close Panel"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Minus icon
+                  </title>
+                  <path
+                    d="M0 7h16v2H0z"
+                  />
+                </svg>
+                 
+                 
+              </button>
+            </div>
+             
+            <div
+              class="title-container"
+              id="tao-draggable-modal-title-123"
+            >
+              Edit feedback
+            </div>
+             
+            <div
+              class="action-container-end"
+            >
+               
+            </div>
+          </header>
+           
+          <div
+            class="content"
+          >
+            <form
+              class="comment-editor"
+            >
+              <div
+                class="notification-wrapper button-fill alert"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Lightning bolt icon
+                  </title>
+                  <path
+                    d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
+                  />
+                </svg>
+                 
+                <div
+                  aria-live="assertive"
+                  class="notification-content"
+                >
+                  <div
+                    class="notification-text"
+                  >
+                    <span
+                      class="notification-heading ui-heading"
+                    >
+                      Saving failed
+                    </span>
+                     
+                    <span
+                      class="notification-body"
+                    >
+                      Please try again
+                    </span>
+                    
+                  </div>
+                   
+                </div>
+                 
+              </div>
+               
+              <label
+                class="fullwidth"
+              >
+                <div
+                  class="label-text visually-hidden"
+                >
+                  Textarea
+                   
+                </div>
+                 
+                <div
+                  class="positioning-wrapper"
+                >
+                  <textarea
+                    class="resize-none"
+                    cols="25"
+                    maxlength="10000"
+                    readonly=""
+                    rows="3"
+                  />
+                </div>
+              </label>
+               
+              <div
+                class="comment-editor-actions"
+              >
+                <button
+                  aria-disabled="true"
+                  class="actionable secondary pill small"
+                  disabled=""
+                  name="cancel-comment"
+                  type="button"
+                >
+                   
+                   
+                  Cancel
+                </button>
+                 
+                <button
+                  aria-disabled="true"
+                  class="actionable primary pill small"
+                  disabled=""
+                  name="save-comment"
+                  type="submit"
+                >
+                   
+                   
+                  Save
+                </button>
+                 
+                <span
+                  class="saving"
+                >
+                  <div
+                    aria-live="assertive"
+                    class="loading-wrapper smallest"
+                    role="status"
+                  >
+                    <div
+                      class="loading"
+                    />
+                     
+                    <div
+                      class="content"
+                    >
+                      <p
+                        class="text"
+                      >
+                        Saving...
+                      </p>
+                    </div>
+                  </div>
+                </span>
+              </div>
+            </form>
+          </div>
+           
+          <div
+            class="resize-hitbox hitbox-top-left"
+            data-direction="nw"
+          />
+           
+          <div
+            class="resize-hitbox hitbox-top"
+            data-direction="n"
+          />
+           
+          <div
+            class="resize-hitbox hitbox-top-right"
+            data-direction="ne"
+          />
+           
+          <div
+            class="resize-hitbox hitbox-right"
+            data-direction="e"
+          />
+           
+          <div
+            class="resize-hitbox hitbox-bottom-right"
+            data-direction="se"
+          />
+           
+          <div
+            class="resize-hitbox hitbox-bottom"
+            data-direction="s"
+          />
+           
+          <div
+            class="resize-hitbox hitbox-bottom-left"
+            data-direction="sw"
+          />
+           
+          <div
+            class="resize-hitbox hitbox-left"
+            data-direction="w"
+          />
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+`;

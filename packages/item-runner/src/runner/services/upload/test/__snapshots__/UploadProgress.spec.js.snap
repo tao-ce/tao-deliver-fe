@@ -1,0 +1,42 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`UploadProgress component > renders in full after enough progress events to estimate duration 1`] = `
+<body>
+  <div>
+    <div
+      class="upload-progress"
+      style="animation: __svelte_907596006_0 150ms linear 0ms 1 both;"
+    >
+      <div
+        aria-valuemax="100"
+        aria-valuemin="0"
+        aria-valuenow="50"
+        aria-valuetext="50%"
+        class="tertiary label-left"
+        role="progressbar"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="track"
+            style="--progress-value-width: 50%;"
+          />
+           
+        </div>
+         
+        <span
+          class="label"
+        >
+          50%
+        </span>
+      </div>
+       
+      <button>
+        Cancel
+      </button>
+    </div>
+    
+  </div>
+</body>
+`;

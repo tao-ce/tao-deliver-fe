@@ -1,0 +1,96 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`rect hotspot choice > rendering > renders rect elements with given coords 1`] = `
+<body>
+  <div>
+    <g
+      class="shape"
+      tabindex="-1"
+    >
+      <rect
+        class="shape-outer-border"
+        height="188"
+        width="88"
+        x="106"
+        y="106"
+      />
+      <rect
+        class="shape-inner-border"
+        height="172"
+        width="72"
+        x="114"
+        y="114"
+      />
+      <rect
+        class="shape-dashed-outline"
+        height="188"
+        width="88"
+        x="106"
+        y="106"
+      />
+      <circle
+        class="shape-checkmark"
+        cx="150"
+        cy="200"
+        r="10"
+      />
+    </g>
+  </div>
+</body>
+`;
+
+exports[`rect hotspot choice > rendering > renders text label as a checkmark if label is set  1`] = `
+<body>
+  <div>
+    <g
+      class="shape selected"
+      tabindex="-1"
+    >
+      <rect
+        class="shape-outer-border"
+        height="188"
+        width="88"
+        x="106"
+        y="106"
+      />
+      <rect
+        class="shape-inner-border"
+        height="172"
+        width="72"
+        x="114"
+        y="114"
+      />
+      <rect
+        class="shape-dashed-outline"
+        height="188"
+        width="88"
+        x="106"
+        y="106"
+      />
+      <text
+        class="shape-checkmark"
+        x="148.5"
+        y="198.5"
+      >
+        <tspan
+          dy="0"
+          x="148.5"
+        >
+          1
+        </tspan>
+      </text>
+    </g>
+  </div>
+</body>
+`;
+
+exports[`rect hotspot choice > rendering > renders with no props 1`] = `
+<body>
+  <div>
+    <g
+      class="shape"
+      tabindex="-1"
+    />
+  </div>
+</body>
+`;

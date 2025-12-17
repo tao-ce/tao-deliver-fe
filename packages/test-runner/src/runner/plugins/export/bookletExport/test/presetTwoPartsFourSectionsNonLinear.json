@@ -1,0 +1,199 @@
+{
+    "testContext": {
+        "state": 1,
+        "navigationMode": 1,
+        "submissionMode": 0,
+        "remainingAttempts": -1,
+        "isAdaptive": false,
+        "isLinear": false,
+        "isTimeout": false,
+        "itemIdentifier": "item2",
+        "attempt": 1,
+        "itemSessionState": 1,
+        "isCatAdaptive": false,
+        "needMapUpdate": false,
+        "isLast": false,
+        "itemPosition": 1,
+        "itemFlagged": false,
+        "itemAnswered": false,
+        "timeConstraints": [],
+        "testPartId": "testPart-1",
+        "sectionId": "section-1",
+        "sectionTitle": "Section 1",
+        "numberItems": 10,
+        "numberCompleted": 0,
+        "numberPresented": 1,
+        "considerProgress": true,
+        "isDeepestSectionVisible": true,
+        "canMoveBackward": false,
+        "numberRubrics": 0,
+        "enableAllowSkipping": true,
+        "allowSkipping": true,
+        "enableValidateResponses": true,
+        "validateResponses": false,
+        "hasFeedbacks": false,
+        "options": {
+            "allowComment": false,
+            "allowSkipping": true,
+            "exitButton": false,
+            "logoutButton": true,
+            "validateResponses": false,
+            "sectionPause": false
+        }
+    },
+    "testMap": {
+        "scope": "test",
+        "parts": {
+            "testPart-1": {
+                "id": "testPart-1",
+                "label": "testPart-1",
+                "position": 0,
+                "isLinear": false,
+                "timeConstraint": null,
+                "sections": {
+                    "section-1": {
+                        "id": "section-1",
+                        "label": "Section 1",
+                        "isCatAdaptive": false,
+                        "position": 0,
+                        "items": {
+                            "item1": {
+                                "id": "item1",
+                                "label": "Order",
+                                "position": 0,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item2": {
+                                "id": "item2",
+                                "label": "Slider",
+                                "position": 1,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": true,
+                                "flagged": true,
+                                "viewed": true,
+                                "categories": [],
+                                "informational": false
+                            }
+                        },
+                        "stats": {
+                            "questions": 2,
+                            "answered": 0,
+                            "flagged": 0,
+                            "viewed": 1,
+                            "total": 2,
+                            "questionsViewed": 1
+                        }
+                    },
+                    "section-2": {
+                        "id": "section-2",
+                        "label": "Section 2",
+                        "isCatAdaptive": false,
+                        "position": 2,
+                        "items": {
+                            "item3": {
+                                "id": "item3",
+                                "label": "Modal Feedback",
+                                "position": 2,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            }
+                        },
+                        "stats": {
+                            "questions": 1,
+                            "answered": 0,
+                            "flagged": 0,
+                            "viewed": 0,
+                            "total": 1,
+                            "questionsViewed": 0
+                        }
+                    }
+                },
+                "stats": {
+                    "questions": 3,
+                    "answered": 0,
+                    "flagged": 0,
+                    "viewed": 1,
+                    "total": 3,
+                    "questionsViewed": 1
+                }
+            },
+            "testPart-2": {
+                "id": "testPart-2",
+                "label": "testPart-2",
+                "position": 3,
+                "isLinear": false,
+                "timeConstraint": null,
+                "sections": {
+                    "section-3": {
+                        "id": "section-3",
+                        "label": "Section 3",
+                        "isCatAdaptive": false,
+                        "position": 3,
+                        "items": {
+                            "item4": {
+                                "id": "item4",
+                                "label": "UK Airports (Take 1)",
+                                "position": 3,
+                                "occurrence": 0,
+                                "remainingAttempts": 1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item5": {
+                                "id": "item5",
+                                "label": "Identifying Sentence Errors",
+                                "position": 4,
+                                "occurrence": 0,
+                                "remainingAttempts": 1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            }
+                        },
+                        "stats": {
+                            "questions": 2,
+                            "answered": 0,
+                            "flagged": 0,
+                            "viewed": 0,
+                            "total": 2,
+                            "questionsViewed": 0
+                        }
+                    }
+                },
+                "stats": {
+                    "questions": 2,
+                    "answered": 0,
+                    "flagged": 0,
+                    "viewed": 0,
+                    "total": 2,
+                    "questionsViewed": 0
+                }
+            }
+        },
+        "stats": {
+            "questions": 5,
+            "answered": 0,
+            "flagged": 0,
+            "viewed": 1,
+            "total": 5,
+            "questionsViewed": 1
+        }
+    }
+}

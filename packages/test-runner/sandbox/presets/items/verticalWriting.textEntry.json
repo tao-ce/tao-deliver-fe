@@ -1,0 +1,183 @@
+{
+    "baseUrl": "./presets/items/assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i63be05a916f17368301b32bb1d407cf8b",
+            "serial": "item_67489b2e803cf563856367",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i63be05a916f17368301b32bb1d407cf8b",
+                "title": "横作成④_漢字の読み【縦書き準備】",
+                "label": "横作成④_漢字の読み【縦書き準備】",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "2024.11 LTS",
+                "class": "writing-mode-vertical-rl"
+            },
+            "body": {
+                "serial": "container_containeritembody_67489b2e803c3539087371",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <p>つぎの<span class=\"txt-underline\">　　</span>線の<strong>漢字</strong>の<strong>読みがな</strong>をこたえましょう。</p>\n        <p> </p>\n        <p>野原の松の林の<span class=\"txt-underline\">蔭</span>の。</p>\n        <p> {{interaction_textentryinteraction_67489b2e80942279212854}} <br/>\n </p>\n        <p>小さな萱ぶきの<span class=\"txt-underline\">小屋に</span>いて。</p>\n        <p> {{interaction_textentryinteraction_67489b2e80b00081179164}} </p>\n        <p> </p>\n   </div>\n    </div>\n  ",
+                "elements": {
+                    "interaction_textentryinteraction_67489b2e80942279212854": {
+                        "serial": "interaction_textentryinteraction_67489b2e80942279212854",
+                        "qtiClass": "textEntryInteraction",
+                        "attributes": { "responseIdentifier": "RESPONSE", "base": 10, "placeholderText": "" },
+                        "debug": { "relatedItem": "item_67489b2e803cf563856367" },
+                        "choices": {}
+                    },
+                    "interaction_textentryinteraction_67489b2e80b00081179164": {
+                        "serial": "interaction_textentryinteraction_67489b2e80b00081179164",
+                        "qtiClass": "textEntryInteraction",
+                        "attributes": { "responseIdentifier": "RESPONSE_1", "base": 10, "placeholderText": "" },
+                        "debug": { "relatedItem": "item_67489b2e803cf563856367" },
+                        "choices": {}
+                    }
+                },
+                "attributes": [],
+                "debug": { "relatedItem": "item_67489b2e803cf563856367" }
+            },
+            "debug": { "relatedItem": "item_67489b2e803cf563856367" },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "qh5": "http://www.imsglobal.org/xsd/imsqtiv2p2_html5_v1p0",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": {
+                "outcomedeclaration_67489b2e8068f235326821": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_67489b2e8068f235326821",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 2
+                    },
+                    "debug": { "relatedItem": "item_67489b2e803cf563856367" },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_67489b2e807d6918363468": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_67489b2e807d6918363468",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": { "identifier": "MAXSCORE", "cardinality": "single", "baseType": "float" },
+                    "debug": { "relatedItem": "item_67489b2e803cf563856367" },
+                    "defaultValue": "2"
+                }
+            },
+            "responses": {
+                "responsedeclaration_67489b2e805a4283262332": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_67489b2e805a4283262332",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE", "cardinality": "single", "baseType": "string" },
+                    "debug": { "relatedItem": "item_67489b2e803cf563856367" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": ["の"],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                },
+                "responsedeclaration_67489b2e80641272132424": {
+                    "identifier": "RESPONSE_1",
+                    "serial": "responsedeclaration_67489b2e80641272132424",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE_1", "cardinality": "single", "baseType": "string" },
+                    "debug": { "relatedItem": "item_67489b2e803cf563856367" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": ["ごとうぶん"],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_67489b2e80f5c894937824",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "debug": { "relatedItem": "item_67489b2e803cf563856367" },
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    { "qtiClass": "variable", "attributes": { "identifier": "RESPONSE" } },
+                                    { "qtiClass": "correct", "attributes": { "identifier": "RESPONSE" } }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            { "qtiClass": "variable", "attributes": { "identifier": "SCORE" } },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": { "baseType": "integer" },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    { "qtiClass": "variable", "attributes": { "identifier": "RESPONSE_1" } },
+                                    { "qtiClass": "correct", "attributes": { "identifier": "RESPONSE_1" } }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            { "qtiClass": "variable", "attributes": { "identifier": "SCORE" } },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": { "baseType": "integer" },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": { "css": {} }
+    },
+    "itemState": {},
+    "itemIdentifier": "item-1",
+    "success": true
+}

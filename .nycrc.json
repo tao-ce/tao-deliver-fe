@@ -1,0 +1,6 @@
+{
+    "extension": [".svelte"],
+    "temp-dir": ".coverage/@oat-sa-private/",
+    "report-dir": ".coverage",
+    "reporter": "lcov"
+}

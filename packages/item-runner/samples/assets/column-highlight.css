@@ -1,0 +1,13 @@
+/*
+ * SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
+ *
+ * SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+ */
+
+[class^='col-'],
+[class*=' col-'],
+[class^='qti-layout-col'],
+[class*=' qti-layout-col'] {
+    background: lavender;
+    outline: 1px solid lightskyblue;
+}

@@ -1,0 +1,222 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i15801387382910421",
+            "serial": "item_5ed4ca7395551781411599",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i15801387382910421",
+                "title": "Passages All",
+                "label": "Passages All",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint128",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5ed4ca739554c292044072",
+                "body": "<div class=\"grid-row\">  <div class=\"col-6\"><div class=\"custom-text-box\" data-scrolling=\"false\"><p>Read the following passage:</p><div class=\"custom-include-box key-navigation-focusable tao-overflow-y tao-half-height\" data-scrolling=\"true\" data-scrolling-height=\"50\">{{xinclude_5ed4ca7395879552200821}}</div></div></div>  <div class=\"col-6\"><div class=\"custom-text-box\" data-scrolling=\"false\"><p>Read the following passage:</p><div class=\"custom-include-box key-navigation-focusable tao-overflow-y tao-half-height\" data-scrolling=\"true\" data-scrolling-height=\"50\">{{xinclude_5ed4ca7395879552200822}}</div></div></div>  </div> <div class=\"grid-row\"><div class=\"col-12\"><p>Literary criticism (or literary studies) is the study, evaluation, and interpretation of literature. Modern literary criticism is often influenced by literary theory, which is the philosophical discussion of literature's goals and methods. Though the two activities are closely related, literary critics are not always, and have not always been, theorists.</p></div></div> <div class=\"grid-row\">  <div class=\"col-8\">{{interaction_choiceinteraction_5ed4ca7395689041975837}}</div>  <div class=\"col-4\"><p>Later in the exam you will be prompted for a deeper analysis of these texts.</p></div>  </div>",
+                "elements": {
+                    "interaction_choiceinteraction_5ed4ca7395689041975837": {
+                        "serial": "interaction_choiceinteraction_5ed4ca7395689041975837",
+                        "qtiClass": "choiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "shuffle": false,
+                            "maxChoices": 3,
+                            "minChoices": 0,
+                            "orientation": "vertical"
+                        },
+                        "choices": {
+                            "choice_simplechoice_5ed4ca73956f1584298257": {
+                                "identifier": "choice_1",
+                                "serial": "choice_simplechoice_5ed4ca73956f1584298257",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_5ed4ca73956ff376551459",
+                                    "body": "life and death",
+                                    "elements": []
+                                }
+                            },
+                            "choice_simplechoice_5ed4ca7395729916863135": {
+                                "identifier": "choice_2",
+                                "serial": "choice_simplechoice_5ed4ca7395729916863135",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_5ed4ca7395735113030522",
+                                    "body": "beauty",
+                                    "elements": []
+                                }
+                            },
+                            "choice_simplechoice_5ed4ca739575d112659646": {
+                                "identifier": "choice_3",
+                                "serial": "choice_simplechoice_5ed4ca739575d112659646",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_5ed4ca7395768594688888",
+                                    "body": "sensibility",
+                                    "elements": []
+                                }
+                            },
+                            "choice_simplechoice_5ed4ca7395792405750708": {
+                                "identifier": "choice_4",
+                                "serial": "choice_simplechoice_5ed4ca7395792405750708",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_4",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_5ed4ca739579d846286826",
+                                    "body": "prejudice",
+                                    "elements": []
+                                }
+                            },
+                            "choice_simplechoice_5ed4ca73957c1418039996": {
+                                "identifier": "choice_5",
+                                "serial": "choice_simplechoice_5ed4ca73957c1418039996",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_5",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_5ed4ca73957cb187282675",
+                                    "body": "insects",
+                                    "elements": []
+                                }
+                            },
+                            "choice_simplechoice_5ed4ca73957ef943871059": {
+                                "identifier": "choice_6",
+                                "serial": "choice_simplechoice_5ed4ca73957ef943871059",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_6",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_5ed4ca73957f9195287150",
+                                    "body": "aristocracy",
+                                    "elements": []
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_5ed4ca73956b2766108022",
+                            "body": "What are the common themes of these excerpts?",
+                            "elements": []
+                        }
+                    },
+                    "xinclude_5ed4ca7395879552200821": {
+                        "serial": "xinclude_5ed4ca7395879552200821",
+                        "qtiClass": "include",
+                        "attributes": {
+                            "href": "taomedia://1.xml"
+                        },
+                        "body": {
+                            "serial": "container_containerstatic_5ed4ca739587f142127485",
+                            "body": "<div><header><h1>Passage 1</h1>\n<h2>Sense and Sensibility</h2></header>\n<p>It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.</p>\n<p>However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered as the rightful property of some one or other of their daughters.</p>\n<p>“My dear Mr. Bennet,” said his lady to him one day, “have you heard that Netherfield Park is let at last?”</p>\n<p>Mr. Bennet replied that he had not.</p>\n<p>“But it is,” returned\nshe; “for Mrs. Long has just been here, and she told me all about it.”</p>\n<p>Mr. Bennet made no answer.</p></div>",
+                            "elements": []
+                        }
+                    },
+                    "xinclude_5ed4ca7395879552200822": {
+                      "serial": "xinclude_5ed4ca7395879552200822",
+                      "qtiClass": "include",
+                      "attributes": {
+                          "href": "taomedia://2.xml"
+                      },
+                      "body": {
+                          "serial": "container_containerstatic_5ed4ca739587f142127486",
+                          "body": "<div><header><h1>Passage 2</h1>\n<h2>Metamorphosis</h2></header>\n<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p><p>“What’s happened to me?” he thought. It wasn’t a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table—Samsa was a travelling salesman—and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer.</p><p>Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. “How about if I sleep a little bit longer and forget all this nonsense”, he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn’t get into that position. However hard he threw himself onto his right, he always rolled back to where he was. He must have tried it a hundred times, shut his eyes so that he wouldn’t have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before.</p></div>",
+                          "elements": []
+                      }
+                  }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xi": "http://www.w3.org/2001/XInclude",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": {
+                "outcomedeclaration_5ed4ca73955dd228246025": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5ed4ca73955dd228246025",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_5ed4ca73955f6210217132": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_5ed4ca73955f6210217132",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "responsedeclaration_5ed4ca739559f642453544": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_5ed4ca739559f642453544",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "multiple",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+          "xinclude": {
+            "taomedia://1.xml": "https://cdn-dev.gcp-eu.taocloud.org/tr-oat-demo/assets/aed413e53a46/item-1/1.xml",
+            "taomedia://2.xml": "https://cdn-dev.gcp-eu.taocloud.org/tr-oat-demo/assets/aed413e53a46/item-1/2.xml"
+          }
+        }
+    },
+    "itemState": {},
+    "itemIdentifier": "item1",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    }
+}

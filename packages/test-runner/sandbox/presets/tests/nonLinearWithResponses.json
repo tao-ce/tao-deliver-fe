@@ -1,0 +1,174 @@
+{
+  "testContext": {
+    "state": 1,
+    "remainingAttempts": -1,
+    "isTimeout": 0,
+    "itemIdentifier": "item1",
+    "attempt": 1,
+    "itemSessionState": 1,
+    "needMapUpdate": false,
+    "itemPosition": 0,
+    "timeConstraints": [],
+    "testPartId": "TP01",
+    "sectionId": "S01",
+    "canMoveBackward": false,
+    "rubrics": "",
+    "allowSkipping": true,
+    "validateResponses": false
+  },
+  "testMap": {
+    "scope": "test",
+    "stats": {
+      "questionsViewed": 2,
+      "questions": 2,
+      "answered": 2,
+      "flagged": 0,
+      "viewed": 2,
+      "total": 2
+    },
+    "parts": {
+      "TP01": {
+          "id": "TP01",
+          "label": "Test Part 01",
+          "position": 0,
+          "isLinear": false,
+          "timeConstraint": {
+              "allowLateSubmission": true,
+              "label": "TP01",
+              "maxTime": false,
+              "maxTimeRemaining": false,
+              "minTime": false,
+              "minTimeRemaining": false,
+              "qtiClassName": "testPart",
+              "source": "TP01",
+              "extraTime": {
+                  "total": 0,
+                  "consumed": 0,
+                  "remaining": 0
+              }
+          },
+          "stats": {
+              "questionsViewed": 2,
+              "questions": 2,
+              "answered": 2,
+              "flagged": 0,
+              "viewed": 2,
+              "total": 2
+          },
+          "sections": {
+              "S01": {
+                  "id": "S01",
+                  "label": "Section 01",
+                  "isCatAdaptive": false,
+                  "position": 0,
+                  "timeConstraint": {
+                      "allowLateSubmission": true,
+                      "label": "Section 01",
+                      "maxTime": false,
+                      "maxTimeRemaining": false,
+                      "minTime": false,
+                      "minTimeRemaining": false,
+                      "qtiClassName": "assessmentSection",
+                      "source": "S01",
+                      "extraTime": {
+                          "total": 0,
+                          "consumed": 0,
+                          "remaining": 0
+                      }
+                  },
+                  "stats": {
+                      "questionsViewed": 2,
+                      "questions": 2,
+                      "answered": 2,
+                      "flagged": 0,
+                      "viewed": 2,
+                      "total": 2
+                  },
+                  "items": {
+                      "item1": {
+                          "id": "item1",
+                          "label": "Market square in Germany (Extended Text Interaction)",
+                          "position": 0,
+                          "occurrence": 0,
+                          "remainingAttempts": -1,
+                          "answered": true,
+                          "flagged": false,
+                          "viewed": true,
+                          "score": null,
+                          "maxScore": 10,
+                          "externalScored": true,
+                          "categories": [],
+                          "hasFeedbacks": false,
+                          "allowComment": false,
+                          "timeConstraint": {
+                              "allowLateSubmission": true,
+                              "label": "Market square in Germany (Extended Text Interaction)",
+                              "maxTime": false,
+                              "maxTimeRemaining": false,
+                              "minTime": false,
+                              "minTimeRemaining": false,
+                              "qtiClassName": "assessmentItemRef",
+                              "source": "item1",
+                              "extraTime": {
+                                  "total": 0,
+                                  "consumed": 0,
+                                  "remaining": 0
+                              }
+                          }
+                      },
+                      "item2": {
+                          "id": "item2",
+                          "label": "Photo",
+                          "position": 1,
+                          "occurrence": 0,
+                          "remainingAttempts": -1,
+                          "answered": false,
+                          "flagged": false,
+                          "viewed": true,
+                          "score": null,
+                          "maxScore": 2,
+                          "externalScored": true,
+                          "categories": [],
+                          "hasFeedbacks": false,
+                          "allowComment": false,
+                          "timeConstraint": {
+                              "allowLateSubmission": true,
+                              "label": "Photo",
+                              "maxTime": false,
+                              "maxTimeRemaining": false,
+                              "minTime": false,
+                              "minTimeRemaining": false,
+                              "qtiClassName": "assessmentItemRef",
+                              "source": "item2",
+                              "extraTime": {
+                                  "total": 0,
+                                  "consumed": 0,
+                                  "remaining": 0
+                              }
+                          }
+                      },
+                      "item3": {
+                          "id": "item3",
+                          "label": "Planets",
+                          "position": 2,
+                          "occurrence": 0,
+                          "remainingAttempts": -1,
+                          "answered": true,
+                          "flagged": false,
+                          "viewed": true,
+                          "score": 1,
+                          "maxScore": 3,
+                          "categories": [],
+                          "hasFeedbacks": true,
+                          "allowComment": false,
+                          "timeConstraint": null
+                      }
+                  }
+              }
+          }
+      }
+    },
+    "title": "nonLinearWithResponses",
+    "identifier": "T01"
+  }
+}

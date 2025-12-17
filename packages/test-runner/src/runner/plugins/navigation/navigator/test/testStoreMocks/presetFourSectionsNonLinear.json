@@ -1,0 +1,432 @@
+{
+    "testContext": {
+        "state": 1,
+        "navigationMode": 1,
+        "submissionMode": 0,
+        "remainingAttempts": -1,
+        "isAdaptive": false,
+        "isLinear": false,
+        "isTimeout": false,
+        "itemIdentifier": "item1",
+        "attempt": 1,
+        "itemSessionState": 1,
+        "isCatAdaptive": false,
+        "needMapUpdate": false,
+        "isLast": false,
+        "itemPosition": 2,
+        "itemFlagged": false,
+        "itemAnswered": false,
+        "timeConstraints": [],
+        "testPartId": "testPart-1",
+        "sectionId": "assessmentSection-1",
+        "sectionTitle": "Section 1",
+        "numberItems": 65,
+        "numberCompleted": 0,
+        "numberPresented": 1,
+        "considerProgress": true,
+        "isDeepestSectionVisible": true,
+        "canMoveBackward": true,
+        "numberRubrics": 0,
+        "enableAllowSkipping": true,
+        "allowSkipping": true,
+        "enableValidateResponses": true,
+        "validateResponses": false,
+        "hasFeedbacks": false,
+        "options": {
+            "allowComment": false,
+            "allowSkipping": true,
+            "exitButton": false,
+            "logoutButton": true,
+            "validateResponses": false,
+            "sectionPause": false
+        },
+        "securePauseStateRequired": false
+    },
+    "testMap": {
+        "scope": "test",
+        "parts": {
+            "testPart-1": {
+                "id": "testPart-1",
+                "label": "testPart-1",
+                "position": 0,
+                "isLinear": false,
+                "timeConstraint": null,
+                "sections": {
+                    "assessmentSection-1": {
+                        "id": "assessmentSection-1",
+                        "label": "Section 1",
+                        "isCatAdaptive": false,
+                        "position": 0,
+                        "timeConstraint": null,
+                        "items": {
+                            "item1": {
+                                "id": "item1",
+                                "label": "Test item",
+                                "position": 0,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": true,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item2": {
+                                "id": "item2",
+                                "label": "andrey 1",
+                                "position": 1,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item3": {
+                                "id": "item3",
+                                "label": "andrey 1",
+                                "position": 2,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item4": {
+                                "id": "item4",
+                                "label": "andrey 1",
+                                "position": 3,
+                                "occurrence": 0,
+                                "remainingAttempts": 1,
+                                "answered": false,
+                                "flagged": true,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item5": {
+                                "id": "item5",
+                                "label": "andrey 1",
+                                "position": 4,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            }
+                        },
+                        "stats": {
+                            "questions": 5,
+                            "answered": 0,
+                            "flagged": 0,
+                            "viewed": 1,
+                            "total": 5,
+                            "questionsViewed": 1
+                        }
+                    },
+                    "assessmentSection-2": {
+                        "id": "assessmentSection-2",
+                        "label": "Section 2",
+                        "isCatAdaptive": false,
+                        "position": 5,
+                        "items": {
+                            "item6": {
+                                "id": "item6",
+                                "label": "andrey 1",
+                                "position": 5,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item7": {
+                                "id": "item7",
+                                "label": "andrey 1",
+                                "position": 6,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item8": {
+                                "id": "item8",
+                                "label": "andrey 1",
+                                "position": 7,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item9": {
+                                "id": "item9",
+                                "label": "andrey 1",
+                                "position": 8,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item10": {
+                                "id": "item10",
+                                "label": "andrey 1",
+                                "position": 9,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item11": {
+                                "id": "item11",
+                                "label": "andrey 1",
+                                "position": 10,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item12": {
+                                "id": "item12",
+                                "label": "andrey 1",
+                                "position": 11,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item13": {
+                                "id": "item13",
+                                "label": "andrey 1",
+                                "position": 12,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item14": {
+                                "id": "item14",
+                                "label": "andrey 1",
+                                "position": 13,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item15": {
+                                "id": "item15",
+                                "label": "andrey 1",
+                                "position": 14,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item16": {
+                                "id": "item16",
+                                "label": "andrey 1",
+                                "position": 15,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item17": {
+                                "id": "item17",
+                                "label": "andrey 1",
+                                "position": 16,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            }
+                        },
+                        "stats": {
+                            "questions": 12,
+                            "answered": 0,
+                            "flagged": 0,
+                            "viewed": 0,
+                            "total": 12,
+                            "questionsViewed": 0
+                        }
+                    },
+                    "assessmentSection-3": {
+                        "id": "assessmentSection-3",
+                        "label": "Section 3",
+                        "isCatAdaptive": false,
+                        "position": 17,
+                        "items": {
+                            "item18": {
+                                "id": "item18",
+                                "label": "andrey 1",
+                                "position": 17,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            },
+                            "item19": {
+                                "id": "item19",
+                                "label": "andrey 1",
+                                "position": 18,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            }
+                        },
+                        "stats": {
+                            "questions": 2,
+                            "answered": 0,
+                            "flagged": 0,
+                            "viewed": 0,
+                            "total": 2,
+                            "questionsViewed": 0
+                        }
+                    },
+                    "assessmentSection-4": {
+                        "id": "assessmentSection-4",
+                        "label": "Section 4",
+                        "isCatAdaptive": false,
+                        "position": 19,
+                        "items": {
+                            "item20": {
+                                "id": "item20",
+                                "label": "andrey 1",
+                                "position": 19,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "informational": false
+                            }
+                        },
+                        "stats": {
+                            "questions": 1,
+                            "answered": 0,
+                            "flagged": 0,
+                            "viewed": 0,
+                            "total": 1,
+                            "questionsViewed": 0
+                        }
+                    }
+                },
+                "stats": {
+                    "questions": 20,
+                    "answered": 0,
+                    "flagged": 0,
+                    "viewed": 1,
+                    "total": 20,
+                    "questionsViewed": 1
+                }
+            },
+            "testPart-2": {
+                "id": "testPart-2",
+                "label": "testPart-2",
+                "position": 20,
+                "isLinear": false,
+                "timeConstraint": null,
+                "sections": {
+                    "assessmentSection-5": {
+                        "id": "assessmentSection-5",
+                        "label": "Section 5",
+                        "isCatAdaptive": false,
+                        "position": 20,
+                        "timeConstraint": null,
+                        "items": {
+                            "item21": {
+                                "id": "item21",
+                                "label": "Test item",
+                                "position": 20,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": true,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [],
+                                "informational": false
+                            }
+                        },
+                        "stats": {
+                            "questions": 1,
+                            "answered": 0,
+                            "flagged": 0,
+                            "viewed": 0,
+                            "total": 1,
+                            "questionsViewed": 0
+                        }
+                    }
+                },
+                "stats": {
+                    "questions": 1,
+                    "answered": 0,
+                    "flagged": 0,
+                    "viewed": 0,
+                    "total": 1,
+                    "questionsViewed": 0
+                }
+            }
+        },
+        "title": "Test 1",
+        "identifier": "Test-1",
+        "className": "assessmentTest",
+        "toolName": "tao",
+        "exclusivelyLinear": false,
+        "hasTimeLimits": false,
+        "stats": {
+            "questions": 21,
+            "answered": 0,
+            "flagged": 0,
+            "viewed": 1,
+            "total": 21,
+            "questionsViewed": 1
+        }
+    }
+}

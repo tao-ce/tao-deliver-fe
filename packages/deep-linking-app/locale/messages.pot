@@ -1,0 +1,44 @@
+# SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
+#
+# SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-06-27 09:14\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: tao-i18n-tools\n"
+
+#: ../src/config.js:53
+msgid "Batteries"
+msgstr ""
+#: ../src/config.js:60
+msgid "ID"
+msgstr ""
+#: ../src/config.js:67
+msgid "Published delivery ID"
+msgstr ""
+#: ../src/component/DeepLinks.svelte:107
+msgid "Select content and link to course"
+msgstr ""
+#: ../src/component/DeepLinks.svelte:114
+msgid "Search"
+msgstr ""
+#: ../src/component/DeepLinks.svelte:115
+msgid "Link selected"
+msgstr ""
+#: ../src/config.js:54
+#: ../src/config.js:61
+msgid "Deliveries"
+msgstr ""
+#: ../src/config.js:59
+#: ../src/config.js:66
+msgid "Name"
+msgstr ""

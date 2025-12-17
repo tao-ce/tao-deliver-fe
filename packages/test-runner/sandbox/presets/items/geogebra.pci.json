@@ -1,0 +1,123 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i65ba5afd06c9c243568d3e31a2cc141",
+            "serial": "i65ba625368f1c",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i65ba5afd06c9c243568d3e31a2cc141",
+                "adaptive": false,
+                "label": "geogebra with response",
+                "xml:lang": "en-US",
+                "timeDependent": false,
+                "title": "geogebra with response",
+                "toolName": "TAO",
+                "toolVersion": "NextGen",
+                "class": ""
+            },
+            "body": {
+                "serial": "i65ba625368f0f",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i65ba625369da6}}\n      </div>\n    </div>\n   ",
+                "elements": {
+                    "i65ba625369da6": {
+                        "serial": "i683ef17f6c619",
+                        "qtiClass": "customInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE"
+                        },
+                        "choices": [],
+                        "typeIdentifier": "GGBPCI",
+                        "version": "1.2.5",
+                        "entryPoint": "",
+                        "libraries": [],
+                        "stylesheets": [],
+                        "mediaFiles": [],
+                        "markup": "\n              <div class=\"GGBPCI\">\n                <!-- <div class=\"prompt\"><\/div> -->\n                <div class=\"toolbar\"><\/div>\n                <div id=\"appid\" class=\"app\"><\/div>\n                <div class=\"B64\"><\/div>\n              <\/div>\n            ",
+                        "properties": {
+                            "ggbfile": "",
+                            "state": "init",
+                            "param": "{\"jptest\":\"Bunker\",\"filename\":\"\",\"detachKeyboard\":false,\"appName\":\"classic\",\"width\":900,\"height\":600,\"enableShiftDragZoom\":true,\"showZoomButtons\":true,\"showFullscreenButton\":true,\"language\":\"en\",\"country\":\"Austria\",\"showMenuBar\":true,\"showToolBar\":true,\"allowStyleBar\":false,\"enableRightClick\":true,\"enableUndoRedo\":true,\"RProcessing\":\"None\"}",
+                            "resp": "{\"answerSet\":true,\"data\":true}"
+                        },
+                        "config": [],
+                        "modules": {
+                            "geogebra/GGBInteraction.min": [
+                                "../../GGBInteraction.min.js"
+                            ]
+                        },
+                        "xmlns": "http:\/\/www.imsglobal.org\/xsd\/portableCustomInteraction_v1"
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": {
+                "i65ba6253692c5": {
+                    "identifier": "SCORE",
+                    "serial": "i65ba6253692c5",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 0
+                    },
+                    "defaultValue": null
+                },
+                "i65ba6253693b2": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i65ba6253693b2",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "0"
+                }
+            },
+            "responses": {
+                "i65ba62536919c": {
+                    "identifier": "RESPONSE",
+                    "serial": "i683ef17f6c531",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "record"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "apipAccessibility": ""
+        },
+        "assets": []
+    },
+    "itemState": {},
+    "itemIdentifier": "item-6",
+    "portableElements": {
+        "pci": {
+            "GGBPCI": [
+                {
+                    "version": "1.2.5",
+                    "typeIdentifier": "GGBPCI",
+                    "xmlns": "http:\/\/www.imsglobal.org\/xsd\/portableCustomInteraction_v1",
+                    "runtime": {
+                        "hook": "./pci/geogebra/GGBInteraction.min.js"
+                    },
+                    "baseUrl": "./assets/"
+                }
+            ]
+        }
+    },
+    "success": true,
+    "messages": []
+}

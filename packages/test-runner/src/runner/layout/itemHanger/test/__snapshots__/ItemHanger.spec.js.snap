@@ -1,0 +1,136 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ItemHanger > renders at bottom depending on tools state 1`] = `
+<body>
+  <div>
+    <div
+      class="item-hanger bottom"
+    >
+      <p
+        class="inverted"
+      >
+        <span
+          role="alert"
+        >
+          Hello world!
+        </span>
+         
+         
+      </p>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ItemHanger > renders if no messages 1`] = `
+<body>
+  <div>
+    <div
+      class="item-hanger"
+    >
+      <p
+        class="inverted"
+      >
+         
+         
+      </p>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ItemHanger > renders multiple messages 1`] = `
+<body>
+  <div>
+    <div
+      class="item-hanger colored"
+    >
+      <p
+        class="inverted"
+      >
+        <span
+          role="alert"
+        >
+          Tea - Coffee
+        </span>
+         
+        <span>
+           - 
+        </span>
+         
+        <span
+          aria-live="off"
+          role="timer"
+        >
+          <span
+            aria-hidden="true"
+          >
+            1h
+          </span>
+           
+          <span
+            class="visually-hidden"
+          >
+            1 hour
+          </span>
+        </span>
+      </p>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ItemHanger > renders text message 1`] = `
+<body>
+  <div>
+    <div
+      class="item-hanger"
+    >
+      <p
+        class="inverted"
+      >
+        <span
+          role="alert"
+        >
+          Hello world!
+        </span>
+         
+         
+      </p>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ItemHanger > renders timer message 1`] = `
+<body>
+  <div>
+    <div
+      class="item-hanger colored"
+    >
+      <p
+        class="inverted"
+      >
+         
+         
+        <span
+          aria-live="off"
+          role="timer"
+        >
+          <span
+            aria-hidden="true"
+          >
+            1h
+          </span>
+           
+          <span
+            class="visually-hidden"
+          >
+            1 hour
+          </span>
+        </span>
+      </p>
+    </div>
+  </div>
+</body>
+`;

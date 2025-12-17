@@ -1,0 +1,1083 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i15952536129220158",
+            "serial": "i5f15a99f2f37d",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i15952536129220158",
+                "title": "French Words",
+                "label": "French Words",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.3.0-sprint73",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5f15a99f2f32c",
+                "body": "<div class=\"grid-row\">\n<div class=\"col-12\">\n {{i5f15a99f2fc7b_french}}\n </div>\n</div>\n\n <div class=\"grid-row\">\n<div class=\"col-12\">\n {{i5f2c6d0b52f5d_philo}}\n </div>\n</div>\n\n <div class=\"grid-row\">\n<div class=\"col-12\">\n {{i5f15a99c0ffee_turtle}}\n </div>\n</div>\n\n <div class=\"grid-row\">\n<div class=\"col-12\">\n {{i5f15a9bc3de4f_hebrew}}\n </div>\n</div>\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{interaction_hottextinteraction_624eb14a3404e648677496}}\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{interaction_hottextinteraction_624eb14a34324481711746}}\n      </div>\n    </div>\n  <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{interaction_hottextinteraction_123eb14a34324481711746}}\n      </div>\n    </div>\n",
+                "elements": {
+                    "i5f15a99f2fc7b_french": {
+                        "serial": "i5f15a99f2fc7b_french",
+                        "qtiClass": "hottextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "maxChoices": 6,
+                            "minChoices": 4,
+                            "classes": "tao-control-input-default",
+                            "base": "./schengen/"
+                        },
+                        "body": {
+                            "serial": "i5f15a99f2fe02",
+                            "body": "<div><p>As he was {{i5f15a99f2ff08}} a creative {{i5f15a99f30052}} around December, Richard had an epiphany. <strong>To avoid being {{i5f15a99f3019c}} he needed to {{i5f15a99f302cb}} of a new {{i5f15a99f303f4}} approach to his creations.</strong> <em>This {{i5f15a99f3051b}} feeling had a taste of {{i5f15a99f30645}}.</em></p></div>",
+                            "elements": {
+                                "i5f15a99f2ff08": {
+                                    "identifier": "hottext_1",
+                                    "serial": "i5f15a99f2ff08",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_1",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15a99f2ff85",
+                                        "body": "reaching",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f15a99f30052": {
+                                    "identifier": "hottext_2",
+                                    "serial": "i5f15a99f30052",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_2",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15a99f300ba",
+                                        "body": "cul-de-sac",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f15a99f3019c": {
+                                    "identifier": "hottext_3",
+                                    "serial": "i5f15a99f3019c",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_3",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15a99f30206",
+                                        "body": "clich\u00e9",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f15a99f302cb": {
+                                    "identifier": "hottext_4",
+                                    "serial": "i5f15a99f302cb",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_4",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15a99f30332",
+                                        "body": "think",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f15a99f303f4": {
+                                    "identifier": "hottext_5",
+                                    "serial": "i5f15a99f303f4",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_5",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15a99f3045a",
+                                        "body": "avant-garde",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f15a99f3051b": {
+                                    "identifier": "hottext_6",
+                                    "serial": "i5f15a99f3051b",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_6",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15a99f30582",
+                                        "body": "overwhelming",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f15a99f30645": {
+                                    "identifier": "hottext_7",
+                                    "serial": "i5f15a99f30645",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_7",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15a99f306ab",
+                                        "body": "d\u00e9j\u00e0-vu",
+                                        "elements": []
+                                    }
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f15a99f2fd9c",
+                            "body": "Select all the words that originate from the French language",
+                            "elements": []
+                        }
+                    },
+                    "i5f2c6d0b52f5d_philo": {
+                        "serial": "i5f2c6d0b52f5d_philo",
+                        "qtiClass": "hottextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_1",
+                            "maxChoices": 4,
+                            "minChoices": 0,
+                            "classes": "qti-control-input-hidden",
+                            "base": "./schengen/"
+                        },
+                        "body": {
+                            "serial": "i5f2c6d0b530b7",
+                            "body": "<p>{{i5f2c6d0b531ae}} was a real piss-ant who was very rarely stable.<br/>\n{{i5f2c6d0b532e5}}, Heidegger was a boozy beggar who could think you under the table.<br/>\n{{i5f2c6d0b53410}} could out-consume {{i5f2c6d0b53545}}.<br/>\nAnd {{i5f2c6d0b53665}} was a beery swine who was just as sloshed as {{i5f2c6d0b5377f}}.</p>",
+                            "elements": {
+                                "i5f2c6d0b531ae": {
+                                    "identifier": "hottext_16",
+                                    "serial": "i5f2c6d0b531ae",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_16",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f2c6d0b53219",
+                                        "body": "Immanuel Kant",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f2c6d0b532e5": {
+                                    "identifier": "hottext_15",
+                                    "serial": "i5f2c6d0b532e5",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_15",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f2c6d0b5334b",
+                                        "body": "Heidegger",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f2c6d0b53410": {
+                                    "identifier": "hottext_13",
+                                    "serial": "i5f2c6d0b53410",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_13",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f2c6d0b53480",
+                                        "body": "David Hume",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f2c6d0b53545": {
+                                    "identifier": "hottext_14",
+                                    "serial": "i5f2c6d0b53545",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_14",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f2c6d0b535a8",
+                                        "body": "Wilhelm Friedrich Hegel",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f2c6d0b53665": {
+                                    "identifier": "hottext_12",
+                                    "serial": "i5f2c6d0b53665",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_12",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f2c6d0b536c5",
+                                        "body": "Wittgenstein",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f2c6d0b5377f": {
+                                    "identifier": "hottext_11",
+                                    "serial": "i5f2c6d0b5377f",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_11",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f2c6d0b537de",
+                                        "body": "Schlegel",
+                                        "elements": []
+                                    }
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f2c6d0b5305c",
+                            "body": "Highlight all the German philosophers in the following comedic song",
+                            "elements": []
+                        }
+                    },
+                    "i5f15a99c0ffee_turtle": {
+                        "serial": "i5f15a99c0ffee_turtle",
+                        "qtiClass": "hottextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_2",
+                            "maxChoices": -1,
+                            "minChoices": 1,
+                            "classes": "tao-control-styling-hidden",
+                            "base": "./schengen/"
+                        },
+                        "body": {
+                            "serial": "i5f15a99f2fe03",
+                            "body": "<div><p>{{i5f15a99f2f101}} {{i5f15a99f30102}} {{i5f15a99f30103}} {{i5f15a99f30104}} {{i5f15a99f30105}} {{i5f15a99f30106}}</p></div>",
+                            "elements": {
+                                "i5f15a99f2f101": {
+                                    "identifier": "hottext_21",
+                                    "serial": "i5f15a99f2f101",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_21",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15a99f2ff86",
+                                        "body": "The tortoise, too, ",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f15a99f30102": {
+                                    "identifier": "hottext_22",
+                                    "serial": "i5f15a99f30102",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_22",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15a99f300bb",
+                                        "body": "is an animal that is equally amphibious with the beaver, ",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f15a99f30103": {
+                                    "identifier": "hottext_23",
+                                    "serial": "i5f15a99f30103",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_23",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15a99f30207",
+                                        "body": "and possessed of medicinal properties as strongly developed; ",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f15a99f30104": {
+                                    "identifier": "hottext_24",
+                                    "serial": "i5f15a99f30104",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_24",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15a99f30333",
+                                        "body": "in addition to which, ",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f15a99f30105": {
+                                    "identifier": "hottext_25",
+                                    "serial": "i5f15a99f30105",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_25",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15a99f3045b",
+                                        "body": "it claims an equal degree of notice for the high price which luxury sets upon its shell, ",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f15a99f30106": {
+                                    "identifier": "hottext_26",
+                                    "serial": "i5f15a99f30106",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_26",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15a99f30583",
+                                        "body": "and the singularity of its conformation.",
+                                        "elements": []
+                                    }
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f15a99f2fd9d",
+                            "body": "Identify all the relative clauses in the following sentence",
+                            "elements": []
+                        }
+                    },
+                    "i5f15a9bc3de4f_hebrew": {
+                        "serial": "i5f15a9bc3de4f_hebrew",
+                        "qtiClass": "hottextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_3",
+                            "maxChoices": 1,
+                            "minChoices": 0,
+                            "dir": "rtl",
+                            "classes": "tao-control-styling-hidden",
+                            "base": "./schengen/"
+                        },
+                        "body": {
+                            "serial": "i5f15b99f2fe03",
+                            "body": "<p>{{i5f15b99f2f111}} {{i5f15b99f30112}} {{i5f15b99f30113}}</p>",
+                            "elements": {
+                                "i5f15b99f2f111": {
+                                    "identifier": "hottext_31",
+                                    "serial": "i5f15b99f2f111",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_31",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15a99f2ff8d",
+                                        "_body": "test",
+                                        "body": "\u05d0\u05d9\u05e0\u05d8\u05e8\u05d0\u05e7\u05e6\u05d9\u05d4 \u05d6\u05d5",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f15b99f30112": {
+                                    "identifier": "hottext_32",
+                                    "serial": "i5f15b99f30112",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_32",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15b99f300bd",
+                                        "_body": "my",
+                                        "body": "\u05e2\u05d5\u05d1\u05d3\u05ea \u05e2\u05dd \u05ea\u05e1\u05e8\u05d9\u05d8",
+                                        "elements": []
+                                    }
+                                },
+                                "i5f15b99f30113": {
+                                    "identifier": "hottext_33",
+                                    "serial": "i5f15b99f30113",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_33",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "i5f15b99f3020d",
+                                        "_body": "thing",
+                                        "body": "\u05de\u05d9\u05de\u05d9\u05df \u05dc\u05e9\u05de\u05d0\u05dc\u002e",
+                                        "elements": []
+                                    }
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f15b99f2fd9d",
+                            "body": "Pick out the beginning Hebrew token (RTL mode)",
+                            "elements": []
+                        }
+                    },
+                    "interaction_hottextinteraction_624eb14a3404e648677496": {
+                        "serial": "interaction_hottextinteraction_624eb14a3404e648677496",
+                        "qtiClass": "hottextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_4",
+                            "maxChoices": 1,
+                            "minChoices": 1,
+                            "classes": "tao-control-input-default"
+                        },
+                        "body": {
+                            "serial": "container_containerhottext_624eb14a340d1502956187",
+                            "body": "\n          \n          <p>\"I'll tell thee {{choice_hottext_624eb14a3414e681912777}} I can; there's little to relate. I saw an {{choice_hottext_624eb14a341c6670835744}}, a-sitting on a {{choice_hottext_624eb14a34204640238326}}. \"Who are you, aged man?\" I said, \"and how is it you live?\" And {{choice_hottext_624eb14a3423d079931821}} trickled through my head like {{choice_hottext_624eb14a34273450384157}} through a sieve.</p>\n        ",
+                            "elements": {
+                                "choice_hottext_624eb14a3414e681912777": {
+                                    "identifier": "hottext_8",
+                                    "serial": "choice_hottext_624eb14a3414e681912777",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_8",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_624eb14a34186147858266",
+                                        "body": "everything",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_624eb14a341c6670835744": {
+                                    "identifier": "hottext_9",
+                                    "serial": "choice_hottext_624eb14a341c6670835744",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_9",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_624eb14a341d2069315547",
+                                        "body": "aged aged man",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_624eb14a34204640238326": {
+                                    "identifier": "hottext_10",
+                                    "serial": "choice_hottext_624eb14a34204640238326",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_10",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_624eb14a3420e620654169",
+                                        "body": "gate",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_624eb14a3423d079931821": {
+                                    "identifier": "hottext_11",
+                                    "serial": "choice_hottext_624eb14a3423d079931821",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_11",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_624eb14a34246948473466",
+                                        "body": "his answer",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_624eb14a34273450384157": {
+                                    "identifier": "hottext_12",
+                                    "serial": "choice_hottext_624eb14a34273450384157",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_12",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_624eb14a3427c921601471",
+                                        "body": "water",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                }
+                            },
+                            "attributes": [],
+                            "debug": {
+                                "relatedItem": "item_624eb14a33da6593731926"
+                            }
+                        },
+                        "debug": {
+                            "relatedItem": "item_624eb14a33da6593731926"
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_624eb14a340c3204473841",
+                            "body": "Find the main subject of this text",
+                            "elements": {},
+                            "attributes": [],
+                            "debug": {
+                                "relatedItem": "item_624eb14a33da6593731926"
+                            }
+                        }
+                    },
+                    "interaction_hottextinteraction_624eb14a34324481711746": {
+                        "serial": "interaction_hottextinteraction_624eb14a34324481711746",
+                        "qtiClass": "hottextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_5",
+                            "maxChoices": 1,
+                            "minChoices": 0,
+                            "classes": "qti-control-input-hidden"
+                        },
+                        "body": {
+                            "serial": "container_containerhottext_624eb14a34348544374957",
+                            "body": "\n          \n          <p>He said \"I <a href='#'>look</a> for {{choice_hottext_624eb14a34389331860359}} that sleep among the {{choice_hottext_624eb14a343c2394084500}}: I make them into {{choice_hottext_624eb14a343f7212314674}}, and sell them in the {{choice_hottext_624eb14a3442a743035045}}. I sell them {{choice_hottext_624eb14a3445a814382277}} men,\" he said, \"who <a href='#'>sail</a> on {{choice_hottext_624eb14a3448a948454711}} seas;\u00a0 and that\u2019s the way I get my {{choice_hottext_624eb14a344b9271830339}} \u2014 a <a href='#'>trifle</a>, if you please.\"</p>\n        ",
+                            "elements": {
+                                "choice_hottext_624eb14a34389331860359": {
+                                    "identifier": "hottext_1",
+                                    "serial": "choice_hottext_624eb14a34389331860359",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_1",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_624eb14a34395309599216",
+                                        "body": "butterflies",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_624eb14a343c2394084500": {
+                                    "identifier": "hottext_2",
+                                    "serial": "choice_hottext_624eb14a343c2394084500",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_2",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_624eb14a343cd160759341",
+                                        "body": "wheat",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_624eb14a343f7212314674": {
+                                    "identifier": "hottext_4",
+                                    "serial": "choice_hottext_624eb14a343f7212314674",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_4",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_624eb14a34400037384757",
+                                        "body": "mutton-pies",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_624eb14a3442a743035045": {
+                                    "identifier": "hottext_3",
+                                    "serial": "choice_hottext_624eb14a3442a743035045",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_3",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_624eb14a34432414600678",
+                                        "body": "street",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_624eb14a3445a814382277": {
+                                    "identifier": "hottext_7",
+                                    "serial": "choice_hottext_624eb14a3445a814382277",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_7",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_624eb14a34463015661349",
+                                        "body": "unto",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_624eb14a3448a948454711": {
+                                    "identifier": "hottext_5",
+                                    "serial": "choice_hottext_624eb14a3448a948454711",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_5",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_624eb14a34493728090624",
+                                        "body": "stormy",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_624eb14a344b9271830339": {
+                                    "identifier": "hottext_6",
+                                    "serial": "choice_hottext_624eb14a344b9271830339",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_6",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_624eb14a344c2556022446",
+                                        "body": "bread",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                }
+                            },
+                            "attributes": [],
+                            "debug": {
+                                "relatedItem": "item_624eb14a33da6593731926"
+                            }
+                        },
+                        "debug": {
+                            "relatedItem": "item_624eb14a33da6593731926"
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_624eb14a34344360883307",
+                            "body": "Find a word which is spelled incorrectly",
+                            "elements": {},
+                            "attributes": [],
+                            "debug": {
+                                "relatedItem": "item_624eb14a33da6593731926"
+                            }
+                        }
+                    },
+                    "interaction_hottextinteraction_123eb14a34324481711746": {
+                        "serial": "interaction_hottextinteraction_123eb14a34324481711746",
+                        "qtiClass": "hottextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_6",
+                            "maxChoices": 1,
+                            "minChoices": 0
+                        },
+                        "body": {
+                            "serial": "container_containerhottext_123eb14a34348544374957",
+                            "body": "\n          \n          <p>{{choice_hottext_123eb14a34389331860359}}しい<ruby><rb>記事</rb><rt>きじ</rt></ruby>を<ruby><rb>書</rb><rt>か</rt></ruby>こうという{{choice_hottext_123eb14a343c2394084500}}ちになるまで<ruby><rb>長</rb><rt>なが</rt></ruby>{{choice_hottext_123eb14a344b9271830389}}<ruby><rb>時間</rb><rt>じかん</rt></ruby>がかかった。<ruby><rb>書</rb><rt>か</rt></ruby>きたいことはたくさんあったけれど、<ruby><rb>息子</rb><rt>むすこ</rt></ruby>を<ruby><rb>産</rb><rt>う</rt></ruby>んだ<ruby><rb>後</rb><rt>あと</rt></ruby>は<ruby><rb>書</rb><rt>か</rt></ruby>く<ruby><rb>時間</rb><rt>じかん</rt></ruby>があまりなかった。</br>It took me a {{choice_hottext_123eb14a343f7212314674}} time to find {{choice_hottext_123eb14a3442a743035045}}. There were {{choice_hottext_123eb14a3445a814382277}} things I {{choice_hottext_123eb14a3448a948454711}} to write about but I didn’t have {{choice_hottext_123eb14a344b9271830339}} it after having given birth to my son.</p>\n        ",
+                            "elements": {
+                                "choice_hottext_123eb14a34389331860359": {
+                                    "identifier": "hottext_1",
+                                    "serial": "choice_hottext_123eb14a34389331860359",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_1",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_123eb14a34395309599216",
+                                        "body": "<ruby><rb>新</rb><rt>あたら</rt></ruby>",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_123eb14a343c2394084500": {
+                                    "identifier": "hottext_2",
+                                    "serial": "choice_hottext_123eb14a343c2394084500",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_2",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_123eb14a343cd160759341",
+                                        "body": "<ruby><rb>気持</rb><rt>きも</rt></ruby>",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_123eb14a343f7212314674": {
+                                    "identifier": "hottext_4",
+                                    "serial": "choice_hottext_123eb14a343f7212314674",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_4",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_123eb14a34400037384757",
+                                        "body": "<b>long</b>",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_123eb14a3442a743035045": {
+                                    "identifier": "hottext_3",
+                                    "serial": "choice_hottext_123eb14a3442a743035045",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_3",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_123eb14a34432414600678",
+                                        "body": "<i>the motivation</i> to write <u>a new article</u>",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_123eb14a3445a814382277": {
+                                    "identifier": "hottext_7",
+                                    "serial": "choice_hottext_123eb14a3445a814382277",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_7",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_123eb14a34463015661349",
+                                        "body": "<em>many</em>",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_123eb14a3448a948454711": {
+                                    "identifier": "hottext_5",
+                                    "serial": "choice_hottext_123eb14a3448a948454711",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_5",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_123eb14a34493728090624",
+                                        "body": "<strong>wanted</strong>",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_123eb14a344b9271830339": {
+                                    "identifier": "hottext_6",
+                                    "serial": "choice_hottext_123eb14a344b9271830339",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_6",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_123eb14a344c2556022446",
+                                        "body": "<sub>much</sub> time <sup>for</sup>",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                },
+                                "choice_hottext_123eb14a344b9271830389": {
+                                    "identifier": "hottext_7",
+                                    "serial": "choice_hottext_123eb14a344b9271830389",
+                                    "qtiClass": "hottext",
+                                    "attributes": {
+                                        "identifier": "hottext_7",
+                                        "fixed": false
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_123eb14a344c2556022446",
+                                        "body": "い",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_624eb14a33da6593731926"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_624eb14a33da6593731926"
+                                    }
+                                }
+                            },
+                            "attributes": [],
+                            "debug": {
+                                "relatedItem": "item_624eb14a33da6593731926"
+                            }
+                        },
+                        "debug": {
+                            "relatedItem": "item_624eb14a33da6593731926"
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_123eb14a34344360883307",
+                            "body": "HTML and FURIGANA",
+                            "elements": {},
+                            "attributes": [],
+                            "debug": {
+                                "relatedItem": "item_624eb14a33da6593731926"
+                            }
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "html5": "html5",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {
+                "i5f15a99f2f4df": {
+                    "serial": "i5f15a99f2f4df",
+                    "qtiClass": "stylesheet",
+                    "attributes": {
+                        "href": "tao-user-styles.css",
+                        "type": "text/css",
+                        "media": "all",
+                        "title": ""
+                    }
+                }
+            },
+            "outcomes": {
+                "i5f15a99f2f69e": {
+                    "identifier": "SCORE",
+                    "serial": "i5f15a99f2f69e",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 0
+                    },
+                    "defaultValue": null
+                },
+                "i5f15a99f2f74f": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i5f15a99f2f74f",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "0"
+                }
+            },
+            "responses": {
+                "i5f15a99f2f5c6_french": {
+                    "identifier": "RESPONSE",
+                    "serial": "i5f15a99f2f5c6_french",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "multiple",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                },
+                "i5f2c6d0b52c0e_philo": {
+                    "identifier": "RESPONSE_1",
+                    "serial": "i5f2c6d0b52c0e_philo",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_1",
+                        "cardinality": "multiple",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                },
+                "i5f15a99f2f5c7_turtle": {
+                    "identifier": "RESPONSE_2",
+                    "serial": "i5f15a99f2f5c7_turtle",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_2",
+                        "cardinality": "multiple",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                },
+                "i5f15a9bc3de4f_hebrew": {
+                    "identifier": "RESPONSE_3",
+                    "serial": "i5f15a9bc3de4f_hebrew",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_3",
+                        "cardinality": "multiple",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                },
+                "responsedeclaration_624eb14a33ed4961941870": {
+                    "identifier": "RESPONSE_4",
+                    "serial": "responsedeclaration_624eb14a33ed4961941870",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_4",
+                        "cardinality": "single",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                },
+                "responsedeclaration_624eb14a33e84603538163": {
+                    "identifier": "RESPONSE_5",
+                    "serial": "responsedeclaration_624eb14a33e84603538163",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_5",
+                        "cardinality": "single",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                },
+                "responsedeclaration_624eb14a33e84603538164": {
+                    "identifier": "RESPONSE_6",
+                    "serial": "responsedeclaration_624eb14a33e84603538164",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_6",
+                        "cardinality": "single",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "css": {
+                "tao-user-styles.css": "tao-user-styles.css"
+            }
+        }
+    },
+    "itemState": {},
+    "itemIdentifier": "item-1",
+    "portableElements": {
+        "pci": [],
+        "pic": {}
+    },
+    "success": true,
+    "messages": []
+}

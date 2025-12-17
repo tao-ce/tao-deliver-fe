@@ -1,0 +1,629 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SliderInteraction > context > renders correctly with different instructions lang 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-sliderInteraction"
+    >
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+        lang="en-AU"
+      />
+       
+      <div
+        class="hidden"
+        lang="en-AU"
+      >
+        <div
+          id="tao-plus-label-123"
+        >
+          Plus. Default, min NaN max NaN
+        </div>
+         
+        <div
+          id="tao-minus-label-123"
+        >
+          Minus. Default, min NaN max NaN
+        </div>
+         
+        <div
+          id="tao-input-123"
+        >
+          To enter the slider value in this field, type.
+        </div>
+         
+        <div
+          id="tao-minus-123"
+        >
+          Use to decrease the slider value by 1
+        </div>
+         
+        <div
+          id="tao-plus-123"
+        >
+          Use to increase the slider value by 1
+        </div>
+         
+        <div
+          id="tao-slider-123"
+        >
+          Use the arrow keys to increase or decrease the value by 1
+        </div>
+      </div>
+       
+      <div
+        class="content-container"
+      >
+        <div
+          class="input-container"
+        >
+          <label>
+            <span
+              class="visually-hidden"
+            >
+              Default, min NaN max NaN
+            </span>
+             
+            <span
+              class="positioning-wrapper height-medium"
+              style="
+        --suffix-width: 0px;
+        --prefix-width: 0px;
+        --fixed-size-letters: 3;
+    "
+            >
+               
+              <input
+                aria-describedby="tao-input-123"
+                aria-invalid="false"
+                aria-readonly="false"
+                class="height-medium valid empty"
+                inputmode="numeric"
+                placeholder="-"
+                type="text"
+              />
+               
+               
+            </span>
+          </label>
+        </div>
+         
+        <button
+          aria-describedby="tao-minus-123"
+          aria-labelledby="tao-minus-label-123"
+          class="actionable secondary circular medium"
+          data-test-id="slider-minus"
+          type="button"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Minus icon
+            </title>
+            <path
+              d="M0 7h16v2H0z"
+            />
+          </svg>
+           
+           
+        </button>
+         
+        <button
+          aria-describedby="tao-plus-123"
+          aria-labelledby="tao-plus-label-123"
+          class="actionable secondary circular medium"
+          data-test-id="slider-plus"
+          type="button"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Plus icon
+            </title>
+            <path
+              d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+            />
+          </svg>
+           
+           
+        </button>
+         
+        <div
+          class="slider-container"
+        >
+          <div
+            class="slider"
+          >
+            <div
+              aria-hidden="true"
+              class="minmax-labels"
+            >
+              <div>
+                NaN
+              </div>
+               
+              <div>
+                NaN
+              </div>
+            </div>
+             
+            <div
+              class="slider-body"
+              style="--handle-offset: 50%;"
+            >
+              <div
+                class="track"
+              />
+               
+              <div
+                aria-hidden="true"
+                class="value-label"
+              >
+                
+              </div>
+               
+              <div
+                class="handle-track"
+              >
+                <div
+                  aria-describedby="tao-slider-123"
+                  aria-labelledby="tao-slider-label-123"
+                  aria-orientation="horizontal"
+                  aria-valuemax="NaN"
+                  aria-valuemin="NaN"
+                  aria-valuenow="NaN"
+                  aria-valuetext="default"
+                  class="handle"
+                  role="slider"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+          </div>
+           
+          <span
+            class="hidden"
+            id="tao-slider-label-123"
+            lang="en-AU"
+          >
+            Default, min NaN max NaN
+          </span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`SliderInteraction > rendering > renders props correctly into markup 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      ariabar="baz"
+      ariafoo="12"
+      class="qti-interaction qti-blockInteraction qti-sliderInteraction foo bar baz"
+      data-baz="24"
+      data-foo="bar"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+    >
+      <div
+        class="qti-prompt cf"
+      >
+        Question 1
+        
+        
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+      />
+       
+      <div
+        class="hidden"
+      >
+        <div
+          id="tao-plus-label-123"
+        >
+          Plus. Default, min 256 max 1024
+        </div>
+         
+        <div
+          id="tao-minus-label-123"
+        >
+          Minus. Default, min 256 max 1024
+        </div>
+         
+        <div
+          id="tao-input-123"
+        >
+          To enter the slider value in this field, type.
+        </div>
+         
+        <div
+          id="tao-minus-123"
+        >
+          Use to decrease the slider value by 16
+        </div>
+         
+        <div
+          id="tao-plus-123"
+        >
+          Use to increase the slider value by 16
+        </div>
+         
+        <div
+          id="tao-slider-123"
+        >
+          Use the arrow keys to increase or decrease the value by 16
+        </div>
+      </div>
+       
+      <div
+        class="content-container vertical"
+      >
+        <div
+          class="input-container"
+        >
+          <label>
+            <span
+              class="visually-hidden"
+            >
+              Default, min 256 max 1024
+            </span>
+             
+            <span
+              class="positioning-wrapper height-medium"
+              style="
+        --suffix-width: 0px;
+        --prefix-width: 0px;
+        --fixed-size-letters: 4;
+    "
+            >
+               
+              <input
+                aria-describedby="tao-input-123"
+                aria-invalid="false"
+                aria-readonly="false"
+                class="height-medium valid empty"
+                inputmode="numeric"
+                placeholder="-"
+                type="text"
+              />
+               
+               
+            </span>
+          </label>
+        </div>
+         
+        <button
+          aria-describedby="tao-minus-123"
+          aria-labelledby="tao-minus-label-123"
+          class="actionable secondary circular medium"
+          data-test-id="slider-minus"
+          type="button"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Minus icon
+            </title>
+            <path
+              d="M0 7h16v2H0z"
+            />
+          </svg>
+           
+           
+        </button>
+         
+        <button
+          aria-describedby="tao-plus-123"
+          aria-labelledby="tao-plus-label-123"
+          class="actionable secondary circular medium"
+          data-test-id="slider-plus"
+          type="button"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Plus icon
+            </title>
+            <path
+              d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+            />
+          </svg>
+           
+           
+        </button>
+         
+        <div
+          class="slider-container"
+        >
+          <div
+            class="slider vertical"
+          >
+            <div
+              aria-hidden="true"
+              class="minmax-labels"
+            >
+              <div>
+                256
+              </div>
+               
+              <div>
+                1024
+              </div>
+            </div>
+             
+            <div
+              class="slider-body"
+              style="--handle-offset: 50%;"
+            >
+              <div
+                class="track"
+              />
+               
+              <div
+                aria-hidden="true"
+                class="value-label"
+              >
+                
+              </div>
+               
+              <div
+                class="handle-track"
+              >
+                <div
+                  aria-describedby="tao-slider-123"
+                  aria-labelledby="tao-slider-label-123"
+                  aria-orientation="vertical"
+                  aria-valuemax="1024"
+                  aria-valuemin="256"
+                  aria-valuenow="256"
+                  aria-valuetext="default"
+                  class="handle"
+                  role="slider"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+          </div>
+           
+          <span
+            class="hidden"
+            id="tao-slider-label-123"
+          >
+            Default, min 256 max 1024
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`SliderInteraction > rendering > renders with default props 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-sliderInteraction"
+    >
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+      />
+       
+      <div
+        class="hidden"
+      >
+        <div
+          id="tao-plus-label-123"
+        >
+          Plus. Default, min 0 max 100
+        </div>
+         
+        <div
+          id="tao-minus-label-123"
+        >
+          Minus. Default, min 0 max 100
+        </div>
+         
+        <div
+          id="tao-input-123"
+        >
+          To enter the slider value in this field, type.
+        </div>
+         
+        <div
+          id="tao-minus-123"
+        >
+          Use to decrease the slider value by 1
+        </div>
+         
+        <div
+          id="tao-plus-123"
+        >
+          Use to increase the slider value by 1
+        </div>
+         
+        <div
+          id="tao-slider-123"
+        >
+          Use the arrow keys to increase or decrease the value by 1
+        </div>
+      </div>
+       
+      <div
+        class="content-container"
+      >
+        <div
+          class="input-container"
+        >
+          <label>
+            <span
+              class="visually-hidden"
+            >
+              Default, min 0 max 100
+            </span>
+             
+            <span
+              class="positioning-wrapper height-medium"
+              style="
+        --suffix-width: 0px;
+        --prefix-width: 0px;
+        --fixed-size-letters: 3;
+    "
+            >
+               
+              <input
+                aria-describedby="tao-input-123"
+                aria-invalid="false"
+                aria-readonly="false"
+                class="height-medium valid empty"
+                inputmode="numeric"
+                placeholder="-"
+                type="text"
+              />
+               
+               
+            </span>
+          </label>
+        </div>
+         
+        <button
+          aria-describedby="tao-minus-123"
+          aria-labelledby="tao-minus-label-123"
+          class="actionable secondary circular medium"
+          data-test-id="slider-minus"
+          type="button"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Minus icon
+            </title>
+            <path
+              d="M0 7h16v2H0z"
+            />
+          </svg>
+           
+           
+        </button>
+         
+        <button
+          aria-describedby="tao-plus-123"
+          aria-labelledby="tao-plus-label-123"
+          class="actionable secondary circular medium"
+          data-test-id="slider-plus"
+          type="button"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Plus icon
+            </title>
+            <path
+              d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+            />
+          </svg>
+           
+           
+        </button>
+         
+        <div
+          class="slider-container"
+        >
+          <div
+            class="slider"
+          >
+            <div
+              aria-hidden="true"
+              class="minmax-labels"
+            >
+              <div>
+                0
+              </div>
+               
+              <div>
+                100
+              </div>
+            </div>
+             
+            <div
+              class="slider-body"
+              style="--handle-offset: 50%;"
+            >
+              <div
+                class="track"
+              />
+               
+              <div
+                aria-hidden="true"
+                class="value-label"
+              >
+                
+              </div>
+               
+              <div
+                class="handle-track"
+              >
+                <div
+                  aria-describedby="tao-slider-123"
+                  aria-labelledby="tao-slider-label-123"
+                  aria-orientation="horizontal"
+                  aria-valuemax="100"
+                  aria-valuemin="0"
+                  aria-valuenow="0"
+                  aria-valuetext="default"
+                  class="handle"
+                  role="slider"
+                  tabindex="0"
+                />
+              </div>
+            </div>
+          </div>
+           
+          <span
+            class="hidden"
+            id="tao-slider-label-123"
+          >
+            Default, min 0 max 100
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

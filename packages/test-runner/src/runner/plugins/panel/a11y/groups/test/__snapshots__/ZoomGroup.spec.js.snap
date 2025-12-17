@@ -1,0 +1,191 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ZoomGroup > applies initial state, passes config and initial state to page-zoom-setting 1`] = `
+<body>
+  <div>
+    <div
+      class="a11y-group outlined"
+    >
+      <div
+        class="summary"
+      >
+        <h3
+          class="ui-heading flex"
+          slot="summary"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Search icon
+              </title>
+              <path
+                d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
+              />
+            </svg>
+             
+            Zoom
+             
+            <span
+              class="checkmark non-default"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon small"
+                viewBox="0 0 12 12"
+              >
+                <title>
+                  Check mark icon
+                </title>
+                <path
+                  clip-rule="evenodd"
+                  d="M12 2.7L4.7 10.5L0 5.8L1.3 4.6L4.6 7.9L10.7 1.5L12 2.7Z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </span>
+          </span>
+           
+          <span
+            class="stepper changed-control"
+          >
+            <button
+              aria-disabled="true"
+              aria-label="zoom in"
+              class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+              title="zoom in"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Plus icon
+                </title>
+                <path
+                  d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                />
+              </svg>
+               
+               
+            </button>
+             
+            <button
+              aria-label="zoom out"
+              class="icon-bar-btn actionable base-12 secondary circular"
+              title="zoom out"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Minus icon
+                </title>
+                <path
+                  d="M0 7h16v2H0z"
+                />
+              </svg>
+               
+               
+            </button>
+          </span>
+        </h3>
+      </div>
+       
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`ZoomGroup > renders details with header and page-zoom-setting 1`] = `
+<body>
+  <div>
+    <div
+      class="a11y-group"
+    >
+      <div
+        class="summary"
+      >
+        <h3
+          class="ui-heading flex"
+          slot="summary"
+        >
+          <span>
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Search icon
+              </title>
+              <path
+                d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
+              />
+            </svg>
+             
+            Zoom
+             
+          </span>
+           
+          <span
+            class="stepper"
+          >
+            <button
+              aria-label="zoom in"
+              class="icon-bar-btn actionable base-12 secondary circular"
+              title="zoom in"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Plus icon
+                </title>
+                <path
+                  d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                />
+              </svg>
+               
+               
+            </button>
+             
+            <button
+              aria-disabled="true"
+              aria-label="zoom out"
+              class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+              title="zoom out"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Minus icon
+                </title>
+                <path
+                  d="M0 7h16v2H0z"
+                />
+              </svg>
+               
+               
+            </button>
+          </span>
+        </h3>
+      </div>
+       
+    </div>
+    
+  </div>
+</body>
+`;

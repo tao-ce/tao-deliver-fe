@@ -1,0 +1,190 @@
+{
+    "testContext": {
+        "state": 1,
+        "remainingAttempts": -1,
+        "isTimeout": 0,
+        "itemIdentifier": "item2",
+        "attempt": 1,
+        "itemSessionState": 1,
+        "needMapUpdate": false,
+        "itemPosition": 1,
+        "timeConstraints": [],
+        "testPartId": "TP01",
+        "sectionId": "S01",
+        "canMoveBackward": false,
+        "rubrics": "",
+        "allowSkipping": true,
+        "validateResponses": false
+    },
+    "testMap": {
+        "scope": "test",
+        "stats": {
+            "questionsViewed": 2,
+            "questions": 4,
+            "answered": 1,
+            "flagged": 0,
+            "viewed": 2,
+            "total": 4
+        },
+        "parts": {
+            "TP01": {
+                "id": "TP01",
+                "label": "Test Part 01",
+                "position": 0,
+                "isLinear": false,
+                "timeConstraint": {
+                    "allowLateSubmission": true,
+                    "label": "TP01",
+                    "maxTime": false,
+                    "maxTimeRemaining": false,
+                    "minTime": false,
+                    "minTimeRemaining": false,
+                    "qtiClassName": "testPart",
+                    "source": "TP01",
+                    "extraTime": {
+                        "total": 0,
+                        "consumed": 0,
+                        "remaining": 0
+                    }
+                },
+                "stats": {
+                    "questionsViewed": 2,
+                    "questions": 4,
+                    "answered": 1,
+                    "flagged": 0,
+                    "viewed": 2,
+                    "total": 4
+                },
+                "sections": {
+                    "S01": {
+                        "id": "S01",
+                        "label": "Section 01",
+                        "isCatAdaptive": false,
+                        "position": 0,
+                        "timeConstraint": {
+                            "allowLateSubmission": true,
+                            "label": "Section 01",
+                            "maxTime": false,
+                            "maxTimeRemaining": false,
+                            "minTime": false,
+                            "minTimeRemaining": false,
+                            "qtiClassName": "assessmentSection",
+                            "source": "S01",
+                            "extraTime": {
+                                "total": 0,
+                                "consumed": 0,
+                                "remaining": 0
+                            }
+                        },
+                        "stats": {
+                            "questionsViewed": 2,
+                            "questions": 4,
+                            "answered": 1,
+                            "flagged": 0,
+                            "viewed": 2,
+                            "total": 4
+                        },
+                        "items": {
+                            "item1": {
+                                "id": "item1",
+                                "label": "Market square in Germany (Extended Text Interaction)",
+                                "position": 0,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [
+                                    "x-tao-option-tts",
+                                    "x-tao-option-scratchpad",
+                                    "x-tao-option-highlighter",
+                                    "x-tao-option-lineReader"
+                                ],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "timeConstraint": {
+                                    "allowLateSubmission": true,
+                                    "maxTime": false,
+                                    "maxTimeRemaining": false,
+                                    "minTime": false,
+                                    "minTimeRemaining": false,
+                                    "qtiClassName": "assessmentItemRef"
+                                }
+                            },
+                            "item2": {
+                                "id": "item2",
+                                "label": "Market square in Germany (Extended Text Interaction) - Submitted",
+                                "position": 1,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": true,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": ["x-tao-option-highlighter"],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "timeConstraint": {
+                                    "allowLateSubmission": true,
+                                    "maxTime": false,
+                                    "maxTimeRemaining": false,
+                                    "minTime": false,
+                                    "minTimeRemaining": false,
+                                    "qtiClassName": "assessmentItemRef"
+                                }
+                            },
+                            "item3": {
+                                "id": "item3",
+                                "label": "ExtendedText with Math Entry ",
+                                "position": 2,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "timeConstraint": {
+                                    "allowLateSubmission": true,
+                                    "maxTime": false,
+                                    "maxTimeRemaining": false,
+                                    "minTime": false,
+                                    "minTimeRemaining": false,
+                                    "qtiClassName": "assessmentItemRef"
+                                }
+                            },
+                            "item4": {
+                                "id": "item4",
+                                "label": "3 Editors, attempts",
+                                "position": 3,
+                                "occurrence": 0,
+                                "remainingAttempts": 5,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [
+                                    "x-tao-option-tts",
+                                    "x-tao-option-scratchpad",
+                                    "x-tao-option-highlighter",
+                                    "x-tao-option-lineReader"
+                                ],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "timeConstraint": {
+                                    "allowLateSubmission": true,
+                                    "maxTime": false,
+                                    "maxTimeRemaining": false,
+                                    "minTime": false,
+                                    "minTimeRemaining": false,
+                                    "qtiClassName": "assessmentItemRef"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "title": "allExtendedTexts",
+        "identifier": "T01"
+    }
+}

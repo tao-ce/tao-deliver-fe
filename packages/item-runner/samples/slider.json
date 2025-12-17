@@ -1,0 +1,257 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "slider_percentag",
+            "serial": "item_6008579e2c7fc084663872",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "slider_percentag",
+                "title": "Calculate a percentage (Slider Interaction)",
+                "label": "Calculate a percentage (Slider Interaction)",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.3.0-RC02",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_6008579e2c7ec222401907",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <h1>Slider Interaction</h1>\n        <h2>Calculate a percentage</h2>\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-6\">\n        {{interaction_sliderinteraction_6008579e2ca1c954252809}}\n      </div>\n      <div class=\"col-1\"></div>\n      <div class=\"col-5\">{{img_6008579e2cba9030290348}}\n        Boston Skyline, photo by <a href=\"https://www.flickr.com/photos/64655144@N08/19062934099/\" target=\"_blank\">Stephan Zech</a>\n      </div>\n    </div>\n  <div class=\"grid-row\"><div class=\"col-12\">{{interaction_sliderinteraction_6008579e2ca1c9542528092}}</div></div> <div class=\"grid-row\"><div class=\"col-12\">{{interaction_sliderinteraction_6008579e2ca1c9542528093}}</div></div> <div class=\"grid-row\"><div class=\"col-12\">{{interaction_sliderinteraction_6008579e2ca1c9542528094}}</div></div> <div class=\"grid-row\"><div class=\"col-12\">{{interaction_sliderinteraction_6008579e2ca1c9542528095}}</div></div>",
+                "elements": {
+                    "interaction_sliderinteraction_6008579e2ca1c954252809": {
+                        "serial": "interaction_sliderinteraction_6008579e2ca1c954252809",
+                        "qtiClass": "sliderInteraction",
+                        "attributes": {
+                            "responseIdentifier": "slider_percentage",
+                            "lowerBound": 0,
+                            "upperBound": 100,
+                            "step": 1,
+                            "stepLabel": false,
+                            "orientation": "horizontal",
+                            "reverse": false
+                        },
+                        "debug": {
+                            "relatedItem": "item_6008579e2c7fc084663872"
+                        },
+                        "choices": [],
+                        "prompt": {
+                            "serial": "container_containerstatic_6008579e2ca99086977448",
+                            "body": "\n            <p>The TAO team members reside all over the world with offices in Boston, Luxembourg and Minsk.</p>\n            <p>Dan, who works in Boston wants to visit the Luxembourg office and then a few days later go to Minsk.</p>\n            <p>The distances between these cities are:</p>\n            <ul>\n              <li>Boston to Luxembourg: <strong>3,572 miles</strong></li>\n              <li>Luxembourg to Minsk: <strong>973 miles</strong></li>\n            </ul>\n            <p>Once he arrives in Luxembourg, how much of the way has he done (in %, rounded up to a full integer)?</p>\n            <p>\u00a0</p>\n          ",
+                            "elements": [],
+                            "debug": {
+                                "relatedItem": "item_6008579e2c7fc084663872"
+                            }
+                        }
+                    },
+                    "interaction_sliderinteraction_6008579e2ca1c9542528092": {
+                        "serial": "interaction_sliderinteraction_6008579e2ca1c9542528092",
+                        "qtiClass": "sliderInteraction",
+                        "attributes": {
+                            "responseIdentifier": "slider_2",
+                            "lowerBound": 1000000,
+                            "upperBound": 2000000,
+                            "step": 1000,
+                            "stepLabel": false,
+                            "orientation": "horizontal",
+                            "reverse": false
+                        },
+                        "choices": [],
+                        "prompt": {
+                            "serial": "container_containerstatic_6008579e2ca990869774482",
+                            "body": "\n  <p>Horizontal; big labels </p>\n          ",
+                            "elements": []
+                        }
+                    },
+                    "interaction_sliderinteraction_6008579e2ca1c9542528093": {
+                        "serial": "interaction_sliderinteraction_6008579e2ca1c9542528093",
+                        "qtiClass": "sliderInteraction",
+                        "attributes": {
+                            "responseIdentifier": "slider_3",
+                            "lowerBound": 1000000,
+                            "upperBound": 2000000,
+                            "step": 1000,
+                            "stepLabel": false,
+                            "orientation": "vertical",
+                            "reverse": false
+                        },
+                        "choices": [],
+                        "prompt": {
+                            "serial": "container_containerstatic_6008579e2ca990869774483",
+                            "body": "\n  <p>Vertical; big labels </p>\n          ",
+                            "elements": []
+                        }
+                    },
+                    "interaction_sliderinteraction_6008579e2ca1c9542528094": {
+                        "serial": "interaction_sliderinteraction_6008579e2ca1c9542528094",
+                        "qtiClass": "sliderInteraction",
+                        "attributes": {
+                            "responseIdentifier": "slider_4",
+                            "lowerBound": 2,
+                            "upperBound": 8,
+                            "step": 2,
+                            "stepLabel": false,
+                            "orientation": "horizontal",
+                            "reverse": true
+                        },
+                        "choices": [],
+                        "prompt": {
+                            "serial": "container_containerstatic_6008579e2ca990869774484",
+                            "body": "\n  <p>Horizontal; 3 steps; reverse </p>\n          ",
+                            "elements": []
+                        }
+                    },
+                    "interaction_sliderinteraction_6008579e2ca1c9542528095": {
+                        "serial": "interaction_sliderinteraction_6008579e2ca1c9542528095",
+                        "qtiClass": "sliderInteraction",
+                        "attributes": {
+                            "responseIdentifier": "slider_5",
+                            "lowerBound": 2,
+                            "upperBound": 8,
+                            "step": 2,
+                            "stepLabel": false,
+                            "orientation": "vertical",
+                            "reverse": true
+                        },
+                        "choices": [],
+                        "prompt": {
+                            "serial": "container_containerstatic_6008579e2ca990869774485",
+                            "body": "\n  <p>Vertical; 3 steps; reverse </p>\n          ",
+                            "elements": []
+                        }
+                    },
+                    "img_6008579e2cba9030290348": {
+                        "serial": "img_6008579e2cba9030290348",
+                        "qtiClass": "img",
+                        "attributes": {
+                            "src": "boston-skyline-metropolis.jpg",
+                            "alt": "Boston Skyline",
+                            "width": "100%",
+                            "type": "image/jpeg"
+                        },
+                        "debug": {
+                            "relatedItem": "item_6008579e2c7fc084663872"
+                        }
+                    }
+                },
+                "debug": {
+                    "relatedItem": "item_6008579e2c7fc084663872"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_6008579e2c7fc084663872"
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": {
+                "outcomedeclaration_6008579e2c915010590046": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_6008579e2c915010590046",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "debug": {
+                        "relatedItem": "item_6008579e2c7fc084663872"
+                    },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_6008579e2c954966656566": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_6008579e2c954966656566",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_6008579e2c7fc084663872"
+                    },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "responsedeclaration_6008579e2c8b2260623037": {
+                    "identifier": "slider_percentage",
+                    "serial": "responsedeclaration_6008579e2c8b2260623037",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "slider_percentage",
+                        "cardinality": "single",
+                        "baseType": "integer"
+                    },
+                    "debug": {
+                        "relatedItem": "item_6008579e2c7fc084663872"
+                    },
+                    "defaultValue": []
+                },
+                "responsedeclaration_6008579e2c8b22606230372": {
+                    "identifier": "slider_2",
+                    "serial": "responsedeclaration_6008579e2c8b22606230372",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "slider_2",
+                        "cardinality": "single",
+                        "baseType": "integer"
+                    },
+                    "defaultValue": []
+                },
+                "responsedeclaration_6008579e2c8b22606230373": {
+                    "identifier": "slider_3",
+                    "serial": "responsedeclaration_6008579e2c8b22606230373",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "slider_3",
+                        "cardinality": "single",
+                        "baseType": "integer"
+                    },
+                    "defaultValue": []
+                },
+                "responsedeclaration_6008579e2c8b22606230374": {
+                    "identifier": "slider_4",
+                    "serial": "responsedeclaration_6008579e2c8b22606230374",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "slider_4",
+                        "cardinality": "single",
+                        "baseType": "integer"
+                    },
+                    "defaultValue": []
+                },
+                "responsedeclaration_6008579e2c8b22606230375": {
+                    "identifier": "slider_5",
+                    "serial": "responsedeclaration_6008579e2c8b22606230375",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "slider_5",
+                        "cardinality": "single",
+                        "baseType": "integer"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "boston-skyline-metropolis.jpg": "boston-skyline-metropolis.jpg"
+            }
+        }
+    },
+    "itemState": {},
+    "itemIdentifier": "item-1"
+}

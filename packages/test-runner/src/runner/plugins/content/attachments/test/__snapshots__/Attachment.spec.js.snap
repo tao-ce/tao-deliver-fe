@@ -1,0 +1,295 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Attachment > renders with PDF attachment 1`] = `
+<body>
+  <div>
+    <div
+      class="attachment-box"
+    >
+      <div
+        aria-label="Attachment: Attachment 1"
+        aria-modal="false"
+        class="overlay-box"
+        role="none"
+        tabindex="-1"
+      >
+        <div
+          class="overlay-box-header"
+          style="--action-items: 1;"
+        >
+          <ol
+            class="actions start"
+          >
+            <li>
+              <button
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="More attachments"
+                class="icon-bar-btn actionable base-16 default"
+                title="More attachments"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Unordered list icon
+                  </title>
+                  <path
+                    d="M1 2a1 1 0 100 2 1 1 0 100-2zm0 5a1 1 0 100 2 1 1 0 100-2zm0 5a1 1 0 100 2 1 1 0 100-2zM15 2H5a1 1 0 000 2h10a1 1 0 000-2zm0 5H5a1 1 0 000 2h10a1 1 0 000-2zm0 5H5a1 1 0 000 2h10a1 1 0 000-2z"
+                  />
+                </svg>
+                 
+                 
+              </button>
+               
+            </li>
+          </ol>
+           
+          <div
+            class="heading-container"
+          >
+            <h3>
+              Attachment 1
+            </h3>
+            
+          </div>
+           
+          <ol
+            class="actions end"
+          >
+            <li>
+              <button
+                aria-label="Close attachment"
+                class="icon-bar-btn actionable base-16 default"
+                title="Close attachment"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Remove icon
+                  </title>
+                  <path
+                    d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+                  />
+                </svg>
+                 
+                 
+              </button>
+               
+            </li>
+          </ol>
+        </div>
+         
+        <div
+          class="overlay-box-content"
+        >
+          <div
+            class="pdf-attachment"
+          >
+            <div
+              aria-label="Attachment 1"
+              class="document-viewer inverted"
+              id="1"
+              name="Attachment 1"
+              role="document"
+              style="width: 100%; height: auto;"
+              type="application/pdf"
+              url="//api/v1/attachment1.pdf"
+            >
+              <div
+                aria-controls="tao-doc-123"
+                aria-label="Document toolbar"
+                role="toolbar"
+              >
+                <div>
+                  <button
+                    aria-label="Zoom in"
+                    class="icon-bar-btn actionable base-16 default"
+                    data-test-id="doc-zoom-in"
+                    disabled=""
+                    title="Zoom in"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        Zoom in icon
+                      </title>
+                      <path
+                        d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
+                      />
+                      <path
+                        d="M10 6H7V3H6v3H3v1h3v3h1V7h3V6z"
+                      />
+                    </svg>
+                     
+                     
+                  </button>
+                   
+                  <button
+                    aria-label="Zoom out"
+                    class="icon-bar-btn actionable base-16 default"
+                    data-test-id="doc-zoom-out"
+                    disabled=""
+                    title="Zoom out"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        Zoom out icon
+                      </title>
+                      <path
+                        d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
+                      />
+                      <path
+                        d="M3 6h7v1H3z"
+                      />
+                    </svg>
+                     
+                     
+                  </button>
+                </div>
+                 
+                <div
+                  class="pagination"
+                />
+                 
+                <div>
+                   
+                </div>
+              </div>
+               
+              <div
+                class="document-wrapper"
+                id="tao-doc-123"
+                role="document"
+                tabindex="0"
+              >
+                <canvas />
+                 
+                <div
+                  class="text-layer"
+                />
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Attachment > renders with image attachment 1`] = `
+<body>
+  <div>
+    <div
+      class="attachment-box"
+    >
+      <div
+        aria-label="Attachment: Attachment 2"
+        aria-modal="false"
+        class="overlay-box"
+        role="none"
+        tabindex="-1"
+      >
+        <div
+          class="overlay-box-header"
+          style="--action-items: 1;"
+        >
+          <ol
+            class="actions start"
+          >
+            <li>
+              <button
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="More attachments"
+                class="icon-bar-btn actionable base-16 default"
+                title="More attachments"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Unordered list icon
+                  </title>
+                  <path
+                    d="M1 2a1 1 0 100 2 1 1 0 100-2zm0 5a1 1 0 100 2 1 1 0 100-2zm0 5a1 1 0 100 2 1 1 0 100-2zM15 2H5a1 1 0 000 2h10a1 1 0 000-2zm0 5H5a1 1 0 000 2h10a1 1 0 000-2zm0 5H5a1 1 0 000 2h10a1 1 0 000-2z"
+                  />
+                </svg>
+                 
+                 
+              </button>
+               
+            </li>
+          </ol>
+           
+          <div
+            class="heading-container"
+          >
+            <h3>
+              Attachment 2
+            </h3>
+            
+          </div>
+           
+          <ol
+            class="actions end"
+          >
+            <li>
+              <button
+                aria-label="Close attachment"
+                class="icon-bar-btn actionable base-16 default"
+                title="Close attachment"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Remove icon
+                  </title>
+                  <path
+                    d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+                  />
+                </svg>
+                 
+                 
+              </button>
+               
+            </li>
+          </ol>
+        </div>
+         
+        <div
+          class="overlay-box-content"
+        >
+          <img
+            alt="Attachment 2"
+            class="image-attachment"
+            src="//api/v1/attachment2.png"
+          />
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

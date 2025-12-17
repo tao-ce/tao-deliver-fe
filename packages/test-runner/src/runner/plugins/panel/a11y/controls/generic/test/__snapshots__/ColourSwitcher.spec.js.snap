@@ -1,0 +1,133 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ColourSwitcher > renders passed options 1`] = `
+<body>
+  <div>
+    <div
+      class="colour-switcher"
+      role="radiogroup"
+    >
+      <div
+        class="border-wrapper"
+      >
+        <input
+          class="option"
+          id="default"
+          name="colour-switcher"
+          style="background-color: var(--default);"
+          title="default"
+          type="radio"
+          value="default"
+        />
+         
+      </div>
+      
+      <div
+        class="border-wrapper"
+      >
+        <input
+          class="option"
+          id="whiteOnBlack"
+          name="colour-switcher"
+          style="background-color: var(--theme-white-on-black);"
+          title="whiteOnBlack"
+          type="radio"
+          value="whiteOnBlack"
+        />
+         
+      </div>
+      
+      <div
+        class="border-wrapper"
+      >
+        <input
+          class="option"
+          id="blackOnCream"
+          name="colour-switcher"
+          style="background-color: var(--theme-black-on-cream);"
+          title="blackOnCream"
+          type="radio"
+          value="blackOnCream"
+        />
+         
+      </div>
+      
+      <div
+        class="border-wrapper"
+      >
+        <input
+          class="option"
+          id="yellowOnBlack"
+          name="colour-switcher"
+          style="background-color: var(--theme-yellow-on-black);"
+          title="yellowOnBlack"
+          type="radio"
+          value="yellowOnBlack"
+        />
+         
+      </div>
+      
+      <div
+        class="border-wrapper"
+      >
+        <input
+          class="option"
+          id="yellowOnBlue"
+          name="colour-switcher"
+          style="background-color: var(--theme-yellow-on-blue);"
+          title="yellowOnBlue"
+          type="radio"
+          value="yellowOnBlue"
+        />
+         
+      </div>
+      
+      <div
+        class="border-wrapper"
+      >
+        <input
+          class="option"
+          id="blackOnMagenta"
+          name="colour-switcher"
+          style="background-color: var(--theme-black-on-magenta);"
+          title="blackOnMagenta"
+          type="radio"
+          value="blackOnMagenta"
+        />
+         
+      </div>
+      
+      <div
+        class="border-wrapper"
+      >
+        <input
+          class="option"
+          id="greyOnGreen"
+          name="colour-switcher"
+          style="background-color: var(--theme-grey-on-green);"
+          title="greyOnGreen"
+          type="radio"
+          value="greyOnGreen"
+        />
+         
+      </div>
+      
+      <div
+        class="border-wrapper"
+      >
+        <input
+          class="option"
+          id="blackOnBlue"
+          name="colour-switcher"
+          style="background-color: var(--theme-black-on-blue);"
+          title="blackOnBlue"
+          type="radio"
+          value="blackOnBlue"
+        />
+         
+      </div>
+      
+    </div>
+  </div>
+</body>
+`;

@@ -1,0 +1,36 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Match interaction choice properties mapper > replaces MathML expressions placeholders 1`] = `"<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true" scriptlevel…RD"><mi>π</mi></mrow></mrow></mstyle></semantics></math>"`;
+
+exports[`Match interaction choice properties mapper > replaces multiple math expressions placeholders within content 1`] = `"<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true" scriptlevel…RD"><mi>π</mi></mrow></mrow></mstyle></semantics></math> and <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mstyle displaystyle="true" scriptlevel…RD"><mi>π</mi></mrow></mrow></mstyle></semantics></math>"`;
+
+exports[`Match interaction properties mapper > the position property is added to each choice in each set 1`] = `
+{
+  "choices": [
+    [
+      {
+        "identifier": "x1",
+        "position": 1,
+      },
+      {
+        "identifier": "x2",
+        "position": 2,
+      },
+    ],
+    [
+      {
+        "identifier": "y1",
+        "position": 1,
+      },
+      {
+        "identifier": "y2",
+        "position": 2,
+      },
+      {
+        "identifier": "y3",
+        "position": 3,
+      },
+    ],
+  ],
+}
+`;

@@ -1,0 +1,321 @@
+{
+  "baseUrl": "./presets/items/assets/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "i5e81f1bb5cea2415682b766e795370520e",
+      "serial": "item_5e984c2827155112039743",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "i5e81f1bb5cea2415682b766e795370520e",
+        "title": "Arithmetic",
+        "label": "Arithmetic",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint125",
+        "class": ""
+      },
+      "body": {
+        "serial": "container_containeritembody_5e984c282713d692602240",
+        "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\"><p><strong>Math<\/strong><\/p><p>7 + 12 =\u00a0\u00a0{{interaction_textentryinteraction_5e984c2827d45454493339}}\u00a0<\/p><p>15 - 4\u00a0=\u00a0{{interaction_textentryinteraction_5e984c2827e09340022892}}\u00a0<\/p><p>5 \u00d7 8 =\u00a0{{interaction_textentryinteraction_5e984c2827eb2267912084}}\u00a0<\/p><p>16\u00a0\u00f7 4\u00a0=\u00a0{{interaction_textentryinteraction_5e984c2827f56343602670}}\u00a0\u00a0<\/p><p>3<sup>3\u00a0<\/sup>=\u00a0\u00a0{{interaction_textentryinteraction_5e984c2827ff8356630428}}\u00a0<\/p><p>\u00a0<\/p><p><strong>Poetry contest<\/strong><\/p>\nThere once was a student from\u00a0{{interaction_textentryinteraction_5e984c2828098482072271}}\u00a0\u00a0\n\n<p>Who spent his free time playing\u00a0{{interaction_textentryinteraction_5e984c2828136288725391}}\u00a0\u00a0<\/p>\n\n<p>He \u00a0{{interaction_textentryinteraction_5e984c28281dd903956088}}\u00a0his grades<\/p>\n\n<p>For a \u00a0{{interaction_textentryinteraction_5e984c282827c618877817}}\u00a0of spades<\/p>\n\n<p>And his exam results were totally {{interaction_textentryinteraction_5e984c282831b509153124}}!<\/p>\n\n<p>\u00a0<\/p>\n\n<p><strong>Binary guessing<\/strong><\/p>\n\n<p>How many candies are in the jar? (Write your guess in binary)<\/p>\n\n<p>\u00a0{{interaction_textentryinteraction_5e984c28283c0494652893}}\u00a0<\/p><\/div>\n    <\/div>\n  ",
+        "elements": {
+          "interaction_textentryinteraction_5e984c2827d45454493339": {
+            "serial": "interaction_textentryinteraction_5e984c2827d45454493339",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "base": 10,
+              "expectedLength": 1,
+              "placeholderText": ""
+            },
+            "choices": []
+          },
+          "interaction_textentryinteraction_5e984c2827e09340022892": {
+            "serial": "interaction_textentryinteraction_5e984c2827e09340022892",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_1",
+              "base": 10,
+              "expectedLength": 2,
+              "placeholderText": ""
+            },
+            "choices": []
+          },
+          "interaction_textentryinteraction_5e984c2827eb2267912084": {
+            "serial": "interaction_textentryinteraction_5e984c2827eb2267912084",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_2",
+              "base": 10,
+              "expectedLength": 3,
+              "placeholderText": ""
+            },
+            "choices": []
+          },
+          "interaction_textentryinteraction_5e984c2827f56343602670": {
+            "serial": "interaction_textentryinteraction_5e984c2827f56343602670",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_3",
+              "base": 10,
+              "expectedLength": 4,
+              "placeholderText": ""
+            },
+            "choices": []
+          },
+          "interaction_textentryinteraction_5e984c2827ff8356630428": {
+            "serial": "interaction_textentryinteraction_5e984c2827ff8356630428",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_4",
+              "base": 10,
+              "expectedLength": 6,
+              "placeholderText": ""
+            },
+            "choices": []
+          },
+          "interaction_textentryinteraction_5e984c2828098482072271": {
+            "serial": "interaction_textentryinteraction_5e984c2828098482072271",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_8",
+              "base": 10,
+              "expectedLength": 15,
+              "placeholderText": ""
+            },
+            "choices": []
+          },
+          "interaction_textentryinteraction_5e984c2828136288725391": {
+            "serial": "interaction_textentryinteraction_5e984c2828136288725391",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_9",
+              "base": 10,
+              "expectedLength": 15,
+              "placeholderText": ""
+            },
+            "choices": []
+          },
+          "interaction_textentryinteraction_5e984c28281dd903956088": {
+            "serial": "interaction_textentryinteraction_5e984c28281dd903956088",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_7",
+              "base": 10,
+              "expectedLength": 10,
+              "placeholderText": ""
+            },
+            "choices": []
+          },
+          "interaction_textentryinteraction_5e984c282827c618877817": {
+            "serial": "interaction_textentryinteraction_5e984c282827c618877817",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_6",
+              "base": 10,
+              "expectedLength": 10,
+              "placeholderText": ""
+            },
+            "choices": []
+          },
+          "interaction_textentryinteraction_5e984c282831b509153124": {
+            "serial": "interaction_textentryinteraction_5e984c282831b509153124",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_5",
+              "base": 10,
+              "expectedLength": 20,
+              "patternMask": "^[\\s\\S]{0,15}$",
+              "placeholderText": ""
+            },
+            "choices": []
+          },
+          "interaction_textentryinteraction_5e984c28283c0494652893": {
+            "serial": "interaction_textentryinteraction_5e984c28283c0494652893",
+            "qtiClass": "textEntryInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_10",
+              "base": 2,
+              "expectedLength": 72,
+              "patternMask": "[01]*",
+              "placeholderText": "Binary guess"
+            },
+            "choices": []
+          }
+        }
+      },
+      "namespaces": {
+        "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+        "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+        "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+      },
+      "stylesheets": [],
+      "outcomes": {
+        "outcomedeclaration_5e984c2827a2c663880996": {
+          "identifier": "SCORE",
+          "serial": "outcomedeclaration_5e984c2827a2c663880996",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float",
+            "normalMaximum": 5
+          },
+          "defaultValue": null
+        },
+        "outcomedeclaration_5e984c2827aa6034254821": {
+          "identifier": "MAXSCORE",
+          "serial": "outcomedeclaration_5e984c2827aa6034254821",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "MAXSCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "5"
+        }
+      },
+      "responses": {
+        "responsedeclaration_5e984c28272f0040148405": {
+          "identifier": "RESPONSE",
+          "serial": "responsedeclaration_5e984c28272f0040148405",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": []
+        },
+        "responsedeclaration_5e984c28273f1010105838": {
+          "identifier": "RESPONSE_1",
+          "serial": "responsedeclaration_5e984c28273f1010105838",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_1",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": []
+        },
+        "responsedeclaration_5e984c28274ce450524345": {
+          "identifier": "RESPONSE_2",
+          "serial": "responsedeclaration_5e984c28274ce450524345",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_2",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": []
+        },
+        "responsedeclaration_5e984c282759d210587959": {
+          "identifier": "RESPONSE_3",
+          "serial": "responsedeclaration_5e984c282759d210587959",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_3",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": []
+        },
+        "responsedeclaration_5e984c2827675138169454": {
+          "identifier": "RESPONSE_4",
+          "serial": "responsedeclaration_5e984c2827675138169454",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_4",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": []
+        },
+        "responsedeclaration_5e984c282771f694130378": {
+          "identifier": "RESPONSE_6",
+          "serial": "responsedeclaration_5e984c282771f694130378",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_6",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": []
+        },
+        "responsedeclaration_5e984c282779d493311375": {
+          "identifier": "RESPONSE_7",
+          "serial": "responsedeclaration_5e984c282779d493311375",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_7",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": []
+        },
+        "responsedeclaration_5e984c282781c571255027": {
+          "identifier": "RESPONSE_8",
+          "serial": "responsedeclaration_5e984c282781c571255027",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_8",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": []
+        },
+        "responsedeclaration_5e984c282789b487123118": {
+          "identifier": "RESPONSE_9",
+          "serial": "responsedeclaration_5e984c282789b487123118",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_9",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": []
+        },
+        "responsedeclaration_5e984c282791a193142728": {
+          "identifier": "RESPONSE_5",
+          "serial": "responsedeclaration_5e984c282791a193142728",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_5",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": []
+        },
+        "responsedeclaration_5e984c282799b994123045": {
+          "identifier": "RESPONSE_10",
+          "serial": "responsedeclaration_5e984c282799b994123045",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_10",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": []
+        }
+      },
+      "feedbacks": [],
+      "apipAccessibility": ""
+    },
+    "assets": []
+  },
+  "itemState": {
+    "fooName": "barArithmetic"
+  },
+  "itemIdentifier": "item-2",
+  "portableElements": {
+    "pci": [],
+    "pic": []
+  },
+  "success": true,
+  "messages": []
+}

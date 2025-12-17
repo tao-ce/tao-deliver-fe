@@ -1,0 +1,270 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`buildStats > updates stats, and returns mutated testMap 1`] = `
+{
+  "parts": {
+    "part1": {
+      "id": "part1",
+      "sections": {
+        "section1": {
+          "id": "section1",
+          "items": {
+            "item1": {
+              "answered": false,
+              "flagged": false,
+              "id": "item-1",
+              "informational": true,
+              "label": "Item 1",
+              "viewed": true,
+            },
+            "item2": {
+              "answered": true,
+              "flagged": true,
+              "id": "item-2",
+              "informational": false,
+              "label": "Item 2",
+              "viewed": true,
+            },
+          },
+          "stats": {
+            "answered": 1,
+            "flagged": 1,
+            "questions": 1,
+            "questionsViewed": 1,
+            "total": 2,
+            "viewed": 2,
+          },
+        },
+        "section2": {
+          "id": "section2",
+          "items": {
+            "item3": {
+              "answered": true,
+              "flagged": false,
+              "id": "item-3",
+              "informational": false,
+              "label": "Item 3",
+              "viewed": true,
+            },
+            "item4": {
+              "answered": true,
+              "flagged": true,
+              "id": "item-4",
+              "informational": false,
+              "label": "Item 4",
+              "viewed": true,
+            },
+          },
+          "stats": {
+            "answered": 2,
+            "flagged": 1,
+            "questions": 2,
+            "questionsViewed": 2,
+            "total": 2,
+            "viewed": 2,
+          },
+        },
+      },
+      "stats": {
+        "answered": 3,
+        "flagged": 2,
+        "questions": 3,
+        "questionsViewed": 3,
+        "total": 4,
+        "viewed": 4,
+      },
+    },
+    "part2": {
+      "id": "part2",
+      "sections": {
+        "section1": {
+          "id": "section3",
+          "items": {
+            "item5": {
+              "answered": false,
+              "flagged": false,
+              "id": "item-5",
+              "informational": true,
+              "label": "Item 5",
+              "viewed": true,
+            },
+            "item6": {
+              "answered": false,
+              "flagged": false,
+              "id": "item-6",
+              "informational": false,
+              "label": "Item 6",
+              "viewed": false,
+            },
+          },
+          "stats": {
+            "answered": 0,
+            "flagged": 0,
+            "questions": 1,
+            "questionsViewed": 0,
+            "total": 2,
+            "viewed": 1,
+          },
+        },
+        "section4": {
+          "id": "section4",
+          "items": {
+            "item7": {
+              "answered": false,
+              "flagged": false,
+              "id": "item-7",
+              "informational": false,
+              "label": "Item 7",
+              "viewed": false,
+            },
+            "item8": {
+              "answered": false,
+              "flagged": false,
+              "id": "item-8",
+              "informational": false,
+              "label": "Item 8",
+              "viewed": false,
+            },
+          },
+          "stats": {
+            "answered": 0,
+            "flagged": 0,
+            "questions": 2,
+            "questionsViewed": 0,
+            "total": 2,
+            "viewed": 0,
+          },
+        },
+      },
+      "stats": {
+        "answered": 0,
+        "flagged": 0,
+        "questions": 3,
+        "questionsViewed": 0,
+        "total": 4,
+        "viewed": 1,
+      },
+    },
+  },
+  "stats": {
+    "answered": 3,
+    "flagged": 2,
+    "questions": 6,
+    "questionsViewed": 3,
+    "total": 8,
+    "viewed": 5,
+  },
+}
+`;
+
+exports[`updateAttempt > does not update testMap stats if answered was already false 1`] = `
+{
+  "parts": {
+    "p1": {
+      "sections": {
+        "s1": {
+          "items": {
+            "item-1": {
+              "answered": false,
+              "id": "item-1",
+            },
+          },
+          "stats": {
+            "answered": 0,
+          },
+        },
+      },
+      "stats": {
+        "answered": 0,
+      },
+    },
+  },
+  "stats": {
+    "answered": 0,
+  },
+}
+`;
+
+exports[`updateAttempt > does not update testMap stats if answered was already true 1`] = `
+{
+  "parts": {
+    "p1": {
+      "sections": {
+        "s1": {
+          "items": {
+            "item-1": {
+              "answered": true,
+              "id": "item-1",
+            },
+          },
+          "stats": {
+            "answered": 1,
+          },
+        },
+      },
+      "stats": {
+        "answered": 1,
+      },
+    },
+  },
+  "stats": {
+    "answered": 0,
+  },
+}
+`;
+
+exports[`updateAttempt > updates all testMap stats if answered false 1`] = `
+{
+  "parts": {
+    "p1": {
+      "sections": {
+        "s1": {
+          "items": {
+            "item-1": {
+              "answered": false,
+              "id": "item-1",
+            },
+          },
+          "stats": {
+            "answered": 0,
+          },
+        },
+      },
+      "stats": {
+        "answered": 0,
+      },
+    },
+  },
+  "stats": {
+    "answered": -1,
+  },
+}
+`;
+
+exports[`updateAttempt > updates all testMap stats if answered true 1`] = `
+{
+  "parts": {
+    "p1": {
+      "sections": {
+        "s1": {
+          "items": {
+            "item-1": {
+              "answered": true,
+              "id": "item-1",
+            },
+          },
+          "stats": {
+            "answered": 1,
+          },
+        },
+      },
+      "stats": {
+        "answered": 1,
+      },
+    },
+  },
+  "stats": {
+    "answered": 1,
+  },
+}
+`;

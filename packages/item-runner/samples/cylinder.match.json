@@ -1,0 +1,241 @@
+{
+    "baseUrl": "./assets/",
+    "itemIdentifier": "item-3",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5ea939170d77b30790eae249ac6a12ef13",
+            "serial": "i5f50a5ada87e3",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5ea939170d77b30790eae249ac6a12ef13",
+                "title": "Cylinder Variables",
+                "label": "Cylinder Variables",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "NextGen",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5f50a5ada87d9",
+                "body": "<div class=\"grid-row\">\n <div class=\"col-12\">\n {{i5f50a5ada9003}}\n <\/div>\n <\/div>",
+                "elements": {
+                    "i5f50a5ada9003": {
+                        "serial": "i5f50a5ada9003",
+                        "qtiClass": "matchInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_1",
+                            "shuffle": true,
+                            "maxAssociations": 2,
+                            "minAssociations": 0,
+                            "classes": "qti-match-non-tabular qti-choices-left"
+                        },
+                        "prompt": {
+                            "serial": "i5f50a5ada902f",
+                            "body": "<strong>b)<\/strong>\u00a0\u00a0<strong>Select the expressions for the volume and circumference of a cylinder.<\/strong>",
+                            "elements": []
+                        },
+                        "choices": [{
+                            "i5f50a5ada90df": {
+                                "identifier": "choice_7",
+                                "serial": "i5f50a5ada90df",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": {
+                                    "identifier": "choice_7",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f50a5ada90f5",
+                                    "body": "\n              {{i5f50a5ada918c}}\n              <em>d<\/em>\n            ",
+                                    "elements": {
+                                        "i5f50a5ada918c": {
+                                            "serial": "i5f50a5ada918c",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n                <semantics>\n                  <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                    <mrow class=\"MJX-TeXAtom-ORD\">\n                      <mi>\u03c0<\/mi>\n                    <\/mrow>\n                  <\/mstyle>\n                  \n                <\/semantics>\n              ",
+                                            "annotations": {
+                                                "latex": "\\pi"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f50a5ada9225": {
+                                "identifier": "choice_8",
+                                "serial": "i5f50a5ada9225",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": {
+                                    "identifier": "choice_8",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f50a5ada9239",
+                                    "body": "\n              {{i5f50a5ada92e3}}\n              <i>r<\/i>\n              <sup>2<\/sup>\n              <i>h<\/i>\n            ",
+                                    "elements": {
+                                        "i5f50a5ada92e3": {
+                                            "serial": "i5f50a5ada92e3",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n                <semantics>\n                  <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                    <mrow class=\"MJX-TeXAtom-ORD\">\n                      <mi>\u03c0<\/mi>\n                    <\/mrow>\n                  <\/mstyle>\n                  \n                <\/semantics>\n              ",
+                                            "annotations": {
+                                                "latex": "\\pi"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f50a5ada937d": {
+                                "identifier": "choice_11",
+                                "serial": "i5f50a5ada937d",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": {
+                                    "identifier": "choice_11",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f50a5ada9391",
+                                    "body": "2{{i5f50a5ada944b}} <em>r<\/em><sup> 3<\/sup>",
+                                    "elements": {
+                                        "i5f50a5ada944b": {
+                                            "serial": "i5f50a5ada944b",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "<semantics><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow class=\"MJX-TeXAtom-ORD\"><mi>\u03c0<\/mi><\/mrow><\/mstyle><\/semantics>",
+                                            "annotations": {
+                                                "latex": "\\pi"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f50a5ada94c6": {
+                                "identifier": "choice_12",
+                                "serial": "i5f50a5ada94c6",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": {
+                                    "identifier": "choice_12",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f50a5ada94da",
+                                    "body": "4{{i5f50a5ada9585}}<em>r<\/em><sup>3<\/sup>",
+                                    "elements": {
+                                        "i5f50a5ada9585": {
+                                            "serial": "i5f50a5ada9585",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "<semantics><mstyle displaystyle=\"true\" scriptlevel=\"0\"><mrow class=\"MJX-TeXAtom-ORD\"><mi>\u03c0<\/mi><\/mrow><\/mstyle><\/semantics>",
+                                            "annotations": {
+                                                "latex": "\\pi"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }, {
+                            "i5f50a5ada960d": {
+                                "identifier": "choice_9",
+                                "serial": "i5f50a5ada960d",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": {
+                                    "identifier": "choice_9",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f50a5ada9621",
+                                    "body": "Volume",
+                                    "elements": []
+                                }
+                            },
+                            "i5f50a5ada968c": {
+                                "identifier": "choice_10",
+                                "serial": "i5f50a5ada968c",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": {
+                                    "identifier": "choice_10",
+                                    "fixed": false,
+                                    "showHide": "show",
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f50a5ada969d",
+                                    "body": "Circumference",
+                                    "elements": []
+                                }
+                            }
+                        }]
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+                "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+                "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "i5f50a5ada8927": {
+                    "identifier": "SCORE",
+                    "serial": "i5f50a5ada8927",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 2
+                    },
+                    "defaultValue": null
+                },
+                "i5f50a5ada894a": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i5f50a5ada894a",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "2"
+                }
+            },
+            "responses": {
+                "i5f50a5ada88ed": {
+                    "identifier": "RESPONSE_1",
+                    "serial": "i5f50a5ada88ed",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_1",
+                        "cardinality": "multiple",
+                        "baseType": "directedPair"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {}
+    },
+    "itemState": ""
+}

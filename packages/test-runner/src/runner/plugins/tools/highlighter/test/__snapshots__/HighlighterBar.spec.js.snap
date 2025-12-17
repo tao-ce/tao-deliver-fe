@@ -1,0 +1,291 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsContent > renders count of highlights inside color buttons 1`] = `
+<body>
+  <div>
+    <div
+      class="highlighter-bar"
+    >
+      <div
+        aria-label="Highlighter"
+        class="floating-bar inverted"
+        role="toolbar"
+      >
+        <div
+          class="floating-bar-main"
+        >
+          <header>
+            Highlighter
+          </header>
+           
+          <div
+            class="floating-bar-actions"
+          >
+            <button
+              class="color-btn color-btn-yellow"
+            >
+              <span>
+                0
+              </span>
+            </button>
+            <button
+              class="color-btn color-btn-blue"
+            >
+              <span>
+                0
+              </span>
+            </button>
+            <button
+              class="color-btn color-btn-pink"
+            >
+              <span>
+                0
+              </span>
+            </button>
+             
+            <button
+              class="eraser-btn"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Eraser icon
+                </title>
+                <path
+                  d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
+                />
+              </svg>
+            </button>
+             
+            <button
+              class="clear-btn"
+            >
+              <span>
+                clear all
+              </span>
+            </button>
+          </div>
+        </div>
+         
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`SettingsContent > renders specified button in active state 1`] = `
+<body>
+  <div>
+    <div
+      class="highlighter-bar"
+    >
+      <div
+        aria-label="Highlighter"
+        class="floating-bar inverted"
+        role="toolbar"
+      >
+        <div
+          class="floating-bar-main"
+        >
+          <header>
+            Highlighter
+          </header>
+           
+          <div
+            class="floating-bar-actions"
+          >
+            <button
+              class="color-btn color-btn-yellow"
+            >
+              <span>
+                0
+              </span>
+            </button>
+            <button
+              class="color-btn color-btn-blue"
+            >
+              <span>
+                0
+              </span>
+            </button>
+            <button
+              class="color-btn color-btn-pink"
+            >
+              <span>
+                0
+              </span>
+            </button>
+             
+            <button
+              class="eraser-btn active"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Eraser icon
+                </title>
+                <path
+                  d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
+                />
+              </svg>
+            </button>
+             
+            <button
+              class="clear-btn"
+            >
+              <span>
+                clear all
+              </span>
+            </button>
+          </div>
+        </div>
+         
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`SettingsContent > renders with default props 1`] = `
+<body>
+  <div>
+    <div
+      class="highlighter-bar"
+    >
+      <div
+        aria-label="Highlighter"
+        class="floating-bar inverted"
+        role="toolbar"
+      >
+        <div
+          class="floating-bar-main"
+        >
+          <header>
+            Highlighter
+          </header>
+           
+          <div
+            class="floating-bar-actions"
+          >
+            <button
+              class="color-btn color-btn-yellow"
+            >
+              <span>
+                0
+              </span>
+            </button>
+             
+            <button
+              class="eraser-btn"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Eraser icon
+                </title>
+                <path
+                  d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
+                />
+              </svg>
+            </button>
+             
+            <button
+              class="clear-btn"
+            >
+              <span>
+                clear all
+              </span>
+            </button>
+          </div>
+        </div>
+         
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`SettingsContent > renders with the provided colors in props 1`] = `
+<body>
+  <div>
+    <div
+      class="highlighter-bar"
+    >
+      <div
+        aria-label="Highlighter"
+        class="floating-bar inverted"
+        role="toolbar"
+      >
+        <div
+          class="floating-bar-main"
+        >
+          <header>
+            Highlighter
+          </header>
+           
+          <div
+            class="floating-bar-actions"
+          >
+            <button
+              class="color-btn color-btn-yellow"
+            >
+              <span>
+                0
+              </span>
+            </button>
+            <button
+              class="color-btn color-btn-blue"
+            >
+              <span>
+                0
+              </span>
+            </button>
+            <button
+              class="color-btn color-btn-pink"
+            >
+              <span>
+                0
+              </span>
+            </button>
+             
+            <button
+              class="eraser-btn"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Eraser icon
+                </title>
+                <path
+                  d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
+                />
+              </svg>
+            </button>
+             
+            <button
+              class="clear-btn"
+            >
+              <span>
+                clear all
+              </span>
+            </button>
+          </div>
+        </div>
+         
+      </div>
+    </div>
+  </div>
+</body>
+`;

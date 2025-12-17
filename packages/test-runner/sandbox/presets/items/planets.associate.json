@@ -1,0 +1,256 @@
+{
+    "baseUrl": "./presets/items/assets/planets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "astronomy",
+            "serial": "item_5f2928898a9b5145973047",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "astronomy",
+                "title": "Planets and moons",
+                "label": "Planets and moons",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint130",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5f2928898a922789775022",
+                "body": "\n    <div>\n    {{img_5f292889b42a7529127493}}  {{interaction_associateinteraction_5f292889a3e4e018264013}}\n    </div>\n  ",
+                "elements": {
+                    "interaction_associateinteraction_5f292889a3e4e018264013": {
+                        "serial": "interaction_associateinteraction_5f292889a3e4e018264013",
+                        "qtiClass": "associateInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "shuffle": true,
+                            "maxAssociations": 3,
+                            "minAssociations": 0
+                        },
+                        "debug": { "relatedItem": "item_5f2928898a9b5145973047" },
+                        "choices": {
+                            "choice_simpleassociablechoice_5f292889ab0dc859014197": {
+                                "identifier": "Ea",
+                                "serial": "choice_simpleassociablechoice_5f292889ab0dc859014197",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": { "identifier": "Ea", "fixed": false, "matchMax": 1, "matchMin": 0 },
+                                "body": {
+                                    "serial": "container_containerstatic_5f292889ae6bd386059969",
+                                    "body": "{{img_5f292889af2ad822683405}}<br/>Earth\n                ",
+                                    "elements": {
+                                        "img_5f292889af2ad822683405": {
+                                            "serial": "img_5f292889af2ad822683405",
+                                            "qtiClass": "img",
+                                            "attributes": { "src": "earth.png", "alt": "Earth" },
+                                            "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                                        }
+                                    },
+                                    "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                                },
+                                "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                            },
+                            "choice_simpleassociablechoice_5f292889b2122518461261": {
+                                "identifier": "Mo",
+                                "serial": "choice_simpleassociablechoice_5f292889b2122518461261",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": { "identifier": "Mo", "fixed": false, "matchMax": 1, "matchMin": 0 },
+                                "body": {
+                                    "serial": "container_containerstatic_5f292889b2587690952220",
+                                    "body": "{{img_5f292889b26e9643708118}}<br/>Moon\n                ",
+                                    "elements": {
+                                        "img_5f292889b26e9643708118": {
+                                            "serial": "img_5f292889b26e9643708118",
+                                            "qtiClass": "img",
+                                            "attributes": { "src": "moon.png", "alt": "Moon" },
+                                            "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                                        }
+                                    },
+                                    "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                                },
+                                "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                            },
+                            "choice_simpleassociablechoice_5f292889b2f4a561833393": {
+                                "identifier": "Ju",
+                                "serial": "choice_simpleassociablechoice_5f292889b2f4a561833393",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": { "identifier": "Ju", "fixed": false, "matchMax": 1, "matchMin": 0 },
+                                "body": {
+                                    "serial": "container_containerstatic_5f292889b33ad648671084",
+                                    "body": "{{img_5f292889b3514048815415}}<br/>Jupiter\n                ",
+                                    "elements": {
+                                        "img_5f292889b3514048815415": {
+                                            "serial": "img_5f292889b3514048815415",
+                                            "qtiClass": "img",
+                                            "attributes": { "src": "jupiter.png", "alt": "Jupiter" },
+                                            "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                                        }
+                                    },
+                                    "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                                },
+                                "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                            },
+                            "choice_simpleassociablechoice_5f292889b3d2e935114913": {
+                                "identifier": "Ga",
+                                "serial": "choice_simpleassociablechoice_5f292889b3d2e935114913",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": { "identifier": "Ga", "fixed": false, "matchMax": 1, "matchMin": 0 },
+                                "body": {
+                                    "serial": "container_containerstatic_5f292889b4166417604835",
+                                    "body": "{{img_5f292889b42a7529127493}}<br/>Ganymede\n\t\t        ",
+                                    "elements": {
+                                        "img_5f292889b42a7529127493": {
+                                            "serial": "img_5f292889b42a7529127493",
+                                            "qtiClass": "img",
+                                            "attributes": { "src": "ganymede.png", "alt": "Ganymede" },
+                                            "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                                        }
+                                    },
+                                    "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                                },
+                                "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                            },
+                            "choice_simpleassociablechoice_5f292889b4b46755172814": {
+                                "identifier": "Ne",
+                                "serial": "choice_simpleassociablechoice_5f292889b4b46755172814",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": { "identifier": "Ne", "fixed": false, "matchMax": 1, "matchMin": 0 },
+                                "body": {
+                                    "serial": "container_containerstatic_5f292889b51b1315196385",
+                                    "body": "{{img_5f292889b535e714773307}}<br/>Neptune\n\t\t        ",
+                                    "elements": {
+                                        "img_5f292889b535e714773307": {
+                                            "serial": "img_5f292889b535e714773307",
+                                            "qtiClass": "img",
+                                            "attributes": { "src": "neptune.png", "alt": "Neptune" },
+                                            "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                                        }
+                                    },
+                                    "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                                },
+                                "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                            },
+                            "choice_simpleassociablechoice_5f292889b5b76295559542": {
+                                "identifier": "Tr",
+                                "serial": "choice_simpleassociablechoice_5f292889b5b76295559542",
+                                "qtiClass": "simpleAssociableChoice",
+                                "attributes": { "identifier": "Tr", "fixed": false, "matchMax": 1, "matchMin": 0 },
+                                "body": {
+                                    "serial": "container_containerstatic_5f292889b5f92822174219",
+                                    "body": "{{img_5f292889b60ce621350477}}<br/>Triton\n                ",
+                                    "elements": {
+                                        "img_5f292889b60ce621350477": {
+                                            "serial": "img_5f292889b60ce621350477",
+                                            "qtiClass": "img",
+                                            "attributes": { "src": "triton.png", "alt": "triton" },
+                                            "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                                        }
+                                    },
+                                    "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                                },
+                                "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_5f292889a978e968081236",
+                            "body": "<b>Make pairs.</b><br/>Each pair is composed of a planet of the Solar System and one of it's moon.<br/><br/>",
+                            "elements": {},
+                            "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                        }
+                    }
+                },
+                "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+            },
+            "debug": { "relatedItem": "item_5f2928898a9b5145973047" },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p1",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": { "http://www.imsglobal.org/xsd/imsqti_v2p1": "imsqti_v2p1.xsd" },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_5f2928899a3ac918121077": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5f2928899a3ac918121077",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": { "identifier": "SCORE", "cardinality": "single", "baseType": "float" },
+                    "debug": { "relatedItem": "item_5f2928898a9b5145973047" },
+                    "defaultValue": null
+                }
+            },
+            "responses": {
+                "responsedeclaration_5f292889947c6119742661": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_5f292889947c6119742661",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE", "cardinality": "multiple", "baseType": "pair" },
+                    "debug": { "relatedItem": "item_5f2928898a9b5145973047" },
+                    "defaultValue": [],
+                    "mapping": { "Ea Mo": "2", "Ju Ga": "1", "Ne Tr": "1" },
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/map_response",
+                    "correctResponses": ["Ea Mo", "Ju Ga", "Ne Tr"],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_5f292889b962b586603066",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "debug": { "relatedItem": "item_5f2928898a9b5145973047" },
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "isNull",
+                                "expressions": [{ "qtiClass": "variable", "attributes": { "identifier": "RESPONSE" } }]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": { "baseType": "float" },
+                                        "value": "0.0"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseElse": {
+                            "qtiClass": "responseElse",
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "mapResponse",
+                                        "attributes": { "identifier": "RESPONSE" }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "earth.png": "earth.png",
+                "moon.png": "moon.png",
+                "jupiter.png": "jupiter.png",
+                "ganymede.png": "ganymede.png",
+                "neptune.png": "neptune.png",
+                "triton.png": "triton.png"
+            }
+        }
+    }
+}

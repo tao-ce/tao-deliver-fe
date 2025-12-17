@@ -1,0 +1,362 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5f203912289fb132e5c268240f42c626",
+            "serial": "i5f20483a2fb72",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5f203912289fb132e5c268240f42c626",
+                "title": "Animals",
+                "label": "Animals",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint133",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5f20483a2fb6f",
+                "body": "<div class=\"grid-row\">    <div class=\"col-2\"> col-2 </div>  <div class=\"col-4\">  <p>Please listen to the following col-4</p>{{i5f20483a2fe9c}}</div>  <div class=\"col-2\"> col-2 </div>  <div class=\"col-2\"> col-2 </div>  <div class=\"col-2\"> col-2 <p> In what year did man land on the moon? </p> {{interaction_textentryinteraction_5e5e7a7132dd8915047479}} </div>    </div>        <div class=\"grid-row\">    <div class=\"col-5\"> col-5 </div>  <div class=\"col-2\"> col-2 <br> {{img_5f4f84bf770fc839656595}} </div>  <div class=\"col-5\"> <div class=\"grid-row\">    <div class=\"col-5\"> Nested col-5: my proportions are ok but I won't align to root column grid </div>  <div class=\"col-2\"> Nested col-2 </div>  <div class=\"col-5\"> Nested col-5 </div>    </div> </div>    </div>        <div class=\"grid-row\">    <div class=\"col-9\"> col-9 </div>  <div class=\"col-3\"> col-3 with constrained 1000px wide player {{i5f20483a2fe9d}} </div>    </div>        <div class=\"grid-row\">    <div class=\"col-7\"> col-7 {{i5f15a99f2fc7b_french}} </div>  <div class=\"col-5\"> col-5 <br> {{img_5f4f84bf770fc839656595}} </div>    </div>        <div class=\"grid-row\">    <div class=\"col-6\"> lone col-6 <br> {{i5f20483a2fcb8}} </div>    </div>        <div class=\"grid-row\">    <div class=\"col-1\"> col-1 (don't use it for content) </div>  <div class=\"col-10\"> col-10 </div>  <div class=\"col-1\"> col-1 (really don't use it!) </div>    </div>",
+                "elements": {
+                    "i5f20483a2fcb8": {
+                        "serial": "i5f20483a2fcb8",
+                        "qtiClass": "choiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "shuffle": false,
+                            "maxChoices": 2,
+                            "minChoices": 0,
+                            "orientation": "vertical"
+                        },
+                        "choices": {
+                            "i5f20483a2fd2e": {
+                                "identifier": "choice_1",
+                                "serial": "i5f20483a2fd2e",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i5f20483a2fd3b",
+                                    "body": "a hyen",
+                                    "elements": []
+                                }
+                            },
+                            "i5f20483a2fd77": {
+                                "identifier": "choice_2",
+                                "serial": "i5f20483a2fd77",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i5f20483a2fd83",
+                                    "body": "a coyote",
+                                    "elements": []
+                                }
+                            },
+                            "i5f20483a2fdcd": {
+                                "identifier": "choice_3",
+                                "serial": "i5f20483a2fdcd",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i5f20483a2fdd8",
+                                    "body": "a racoon",
+                                    "elements": []
+                                }
+                            },
+                            "i5f20483a2fe10": {
+                                "identifier": "choice_4",
+                                "serial": "i5f20483a2fe10",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_4",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i5f20483a2fe1a",
+                                    "body": "a fox",
+                                    "elements": []
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f20483a2fce2",
+                            "body": "Which animals is it",
+                            "elements": []
+                        }
+                    },
+                    "i5f20483a2fe9c": {
+                        "serial": "i5f20483a2fe9c",
+                        "qtiClass": "object",
+                        "attributes": {
+                            "data": "animals/mc.mp3",
+                            "type": "audio/mpeg"
+                        }
+                    },
+                    "i5f20483a2fe9d": {
+                        "serial": "i5f20483a2fe9d",
+                        "qtiClass": "object",
+                        "attributes": {
+                            "data": "animals/mc.mp3",
+                            "type": "audio/mpeg",
+                            "width": "1000px"
+                        }
+                    },
+                    "interaction_textentryinteraction_5e5e7a7132dd8915047479": {
+                      "serial": "interaction_textentryinteraction_5e5e7a7132dd8915047479",
+                      "qtiClass": "textEntryInteraction",
+                      "attributes": {
+                        "responseIdentifier": "RESPONSE_1",
+                        "base": 10,
+                        "expectedLength": 4,
+                        "patternMask": "[0-9]{4}",
+                        "placeholderText": "YYYY"
+                      },
+                      "choices": []
+                    },
+                    "i5f15a99f2fc7b_french": {
+                      "serial": "i5f15a99f2fc7b_french",
+                      "qtiClass": "hottextInteraction",
+                      "attributes": {
+                        "responseIdentifier": "RESPONSE_2",
+                        "maxChoices": 6,
+                        "minChoices": 4,
+                        "classes": "tao-control-input-default",
+                        "base" : "./schengen/"
+                      },
+                      "body": {
+                        "serial": "i5f15a99f2fe02",
+                        "body": "<div><p>As he was {{i5f15a99f2ff08}} a creative {{i5f15a99f30052}} around December, Richard had an epiphany. <strong>To avoid being {{i5f15a99f3019c}} he needed to {{i5f15a99f302cb}} of a new {{i5f15a99f303f4}} approach to his creations.<\/strong> <em>This {{i5f15a99f3051b}} feeling had a taste of {{i5f15a99f30645}}.<\/em><\/p><\/div>",
+                        "elements": {
+                          "i5f15a99f2ff08": {
+                            "identifier": "hottext_1",
+                            "serial": "i5f15a99f2ff08",
+                            "qtiClass": "hottext",
+                            "attributes": {
+                              "identifier": "hottext_1",
+                              "fixed": false
+                            },
+                            "body": {
+                              "serial": "i5f15a99f2ff85",
+                              "body": "reaching",
+                              "elements": []
+                            }
+                          },
+                          "i5f15a99f30052": {
+                            "identifier": "hottext_2",
+                            "serial": "i5f15a99f30052",
+                            "qtiClass": "hottext",
+                            "attributes": {
+                              "identifier": "hottext_2",
+                              "fixed": false
+                            },
+                            "body": {
+                              "serial": "i5f15a99f300ba",
+                              "body": "cul-de-sac",
+                              "elements": []
+                            }
+                          },
+                          "i5f15a99f3019c": {
+                            "identifier": "hottext_3",
+                            "serial": "i5f15a99f3019c",
+                            "qtiClass": "hottext",
+                            "attributes": {
+                              "identifier": "hottext_3",
+                              "fixed": false
+                            },
+                            "body": {
+                              "serial": "i5f15a99f30206",
+                              "body": "clich\u00e9",
+                              "elements": []
+                            }
+                          },
+                          "i5f15a99f302cb": {
+                            "identifier": "hottext_4",
+                            "serial": "i5f15a99f302cb",
+                            "qtiClass": "hottext",
+                            "attributes": {
+                              "identifier": "hottext_4",
+                              "fixed": false
+                            },
+                            "body": {
+                              "serial": "i5f15a99f30332",
+                              "body": "think",
+                              "elements": []
+                            }
+                          },
+                          "i5f15a99f303f4": {
+                            "identifier": "hottext_5",
+                            "serial": "i5f15a99f303f4",
+                            "qtiClass": "hottext",
+                            "attributes": {
+                              "identifier": "hottext_5",
+                              "fixed": false
+                            },
+                            "body": {
+                              "serial": "i5f15a99f3045a",
+                              "body": "avant-garde",
+                              "elements": []
+                            }
+                          },
+                          "i5f15a99f3051b": {
+                            "identifier": "hottext_6",
+                            "serial": "i5f15a99f3051b",
+                            "qtiClass": "hottext",
+                            "attributes": {
+                              "identifier": "hottext_6",
+                              "fixed": false
+                            },
+                            "body": {
+                              "serial": "i5f15a99f30582",
+                              "body": "overwhelming",
+                              "elements": []
+                            }
+                          },
+                          "i5f15a99f30645": {
+                            "identifier": "hottext_7",
+                            "serial": "i5f15a99f30645",
+                            "qtiClass": "hottext",
+                            "attributes": {
+                              "identifier": "hottext_7",
+                              "fixed": false
+                            },
+                            "body": {
+                              "serial": "i5f15a99f306ab",
+                              "body": "d\u00e9j\u00e0-vu",
+                              "elements": []
+                            }
+                          }
+                        }
+                      },
+                      "prompt": {
+                        "serial": "i5f15a99f2fd9c",
+                        "body": "Select all the words that originate from the French language",
+                        "elements": []
+                      }
+                    },
+                    "img_5f4f84bf770fc839656595": {
+                      "serial": "img_5f4f84bf770fc839656595",
+                      "qtiClass": "img",
+                      "attributes": {
+                          "src": "graphic/Versailles.jpg",
+                          "alt": "Palace of Versailles by Anthony Choren",
+                          "width": "100%",
+                          "type": "image/jpeg"
+                      }
+                  }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {
+              "stylesheet_5e5e7a7132cd6164420419": {
+                "serial": "stylesheet_5e5e7a7132cd6164420419",
+                "qtiClass": "stylesheet",
+                "attributes": {
+                  "href": "column-highlight.css",
+                  "type": "text/css",
+                  "media": "all",
+                  "title": ""
+                }
+              }
+            },
+            "outcomes": {
+                "i5f20483a2fc1f": {
+                    "identifier": "SCORE",
+                    "serial": "i5f20483a2fc1f",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "defaultValue": null
+                },
+                "i5f20483a2fc3b": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i5f20483a2fc3b",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "i5f20483a2fbe7": {
+                    "identifier": "RESPONSE",
+                    "serial": "i5f20483a2fbe7",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "multiple",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                },
+                "responsedeclaration_5e5e7a7132d05800972957": {
+                  "identifier": "RESPONSE_1",
+                  "serial": "responsedeclaration_5e5e7a7132d05800972957",
+                  "qtiClass": "responseDeclaration",
+                  "attributes": {
+                    "identifier": "RESPONSE_1",
+                    "cardinality": "single",
+                    "baseType": "string"
+                  },
+                  "defaultValue": []
+                },
+                "i5f15a99f2f5c6_french": {
+                  "identifier": "RESPONSE_2",
+                  "serial": "i5f15a99f2f5c6_french",
+                  "qtiClass": "responseDeclaration",
+                  "attributes": {
+                    "identifier": "RESPONSE_2",
+                    "cardinality": "multiple",
+                    "baseType": "identifier"
+                  },
+                  "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+          "css": {
+            "column-highlight.css": "column-highlight.css"
+          },
+          "img": {
+            "Versailles.jpg": "Versailles.jpg",
+            "map-france.png": "map-france.png"
+          }
+        }
+    },
+    "itemState": {},
+    "itemIdentifier": "item-1",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    }
+}

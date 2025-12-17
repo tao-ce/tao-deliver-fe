@@ -1,0 +1,276 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5fa3d54fdc496314b9524dbd037e20fb",
+            "serial": "i5fa430880cb09",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5fa3d54fdc496314b9524dbd037e20fb",
+                "title": "hotspot 1",
+                "label": "hotspot 1",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint140",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5fa430880cb03",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-7\">\n        <p>An organ is a group of tissues with similar functions. Plant life and animal life rely on many organs that coexist in organ systems.<\/p>\n        <p>A given organ's tissues can be broadly categorized as parenchyma, the tissue peculiar to (or at least archetypal of) the organ and that does the organ's specialized job, and stroma, the tissues with supportive, structural, connective, or ancillary functions. For example, in a gland, the tissue that makes the hormones is the parenchyma, whereas the stroma includes the nerves that innervate the parenchyma, the blood vessels that oxygenate and nourish it and carry away its metabolic wastes, and the connective tissues that provide a suitable place for it to be situated and anchored. The main tissues that make up an organ tend to have common embryologic origins, such as arising from the same germ layer. Functionally related organs often cooperate to form whole organ systems. Organs exist in most multicellular organisms. In single-celled organisms such as bacteria, the functional analogue of an organ is known as an organelle. In plants, there are three main organs. A hollow organ is an internal organ that forms a hollow tube, or pouch such as the stomach, intestine, or bladder.<\/p>\n        <p>In the study of anatomy, the term viscus refers to an internal organ. Viscera is the plural form.<\/p>\n        <p>The number of organs in any organism depends on which precise definition of the term one uses. By one widely used definition, 79 organs have been identified in the human body.<\/p>\n      <\/div>\n      <div class=\"col-5\">\n        {{i5fa430880cf60}}\n      <\/div>\n    <\/div>\n  ",
+                "elements": {
+                    "i5fa430880cf60": {
+                        "serial": "i5fa430880cf60",
+                        "qtiClass": "hotspotInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "maxChoices": 0,
+                            "minChoices": 0,
+                            "class": "responsive"
+                        },
+                        "choices": {
+                            "i5fa430880d138": {
+                                "identifier": "hotspot_1",
+                                "serial": "i5fa430880d138",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_1",
+                                    "fixed": false,
+                                    "shape": "ellipse",
+                                    "coords": "603,953,122,52"
+                                }
+                            },
+                            "i5fa430880d18d": {
+                                "identifier": "hotspot_2",
+                                "serial": "i5fa430880d18d",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_2",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "518,869,32"
+                                }
+                            },
+                            "i5fa430880d1a3": {
+                                "identifier": "hotspot_3",
+                                "serial": "i5fa430880d1a3",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_3",
+                                    "fixed": false,
+                                    "shape": "ellipse",
+                                    "coords": "622,824,64,34"
+                                }
+                            },
+                            "i5fa430880d1b8": {
+                                "identifier": "hotspot_4",
+                                "serial": "i5fa430880d1b8",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_4",
+                                    "fixed": false,
+                                    "shape": "ellipse",
+                                    "coords": "611,404,25,134"
+                                }
+                            },
+                            "i5fa430880d1c8": {
+                                "identifier": "hotspot_5",
+                                "serial": "i5fa430880d1c8",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_5",
+                                    "fixed": false,
+                                    "shape": "ellipse",
+                                    "coords": "518,597,46,109"
+                                }
+                            },
+                            "i5fa430880d1d8": {
+                                "identifier": "hotspot_7",
+                                "serial": "i5fa430880d1d8",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_7",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "597,171,53"
+                                }
+                            },
+                            "i5fa430880d1e7": {
+                                "identifier": "hotspot_6",
+                                "serial": "i5fa430880d1e7",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_6",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "619,636,33"
+                                }
+                            },
+                            "i5fa430880d1f6": {
+                                "identifier": "hotspot_8",
+                                "serial": "i5fa430880d1f6",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_8",
+                                    "fixed": false,
+                                    "shape": "circle",
+                                    "coords": "712,833,35"
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5fa430880d01a",
+                            "body": "\n            <span class=\"txt-underline\">Please select organs of the digestive system<\/span>\n          ",
+                            "elements": {}
+                        },
+                        "object": {
+                            "serial": "i5fa430880d211",
+                            "qtiClass": "object",
+                            "attributes": {
+                                "data": "Internal_organs.png",
+                                "type": "image\/png",
+                                "width": 1280,
+                                "height": 1138
+                            }
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+                "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+                "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {
+                "i5fa430880cc3f": {
+                    "serial": "i5fa430880cc3f",
+                    "qtiClass": "stylesheet",
+                    "attributes": {
+                        "href": "style\/custom\/tao-user-styles.css",
+                        "type": "text\/css",
+                        "media": "all",
+                        "title": ""
+                    }
+                }
+            },
+            "outcomes": {
+                "i5fa430880cda6": {
+                    "identifier": "SCORE",
+                    "serial": "i5fa430880cda6",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "defaultValue": null
+                },
+                "i5fa430880ce3b": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i5fa430880ce3b",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "i5fa430880cce8": {
+                    "identifier": "RESPONSE",
+                    "serial": "i5fa430880cce8",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "multiple",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+                    "correctResponses": ["hotspot_1", "hotspot_2", "hotspot_3", "hotspot_4", "hotspot_8"],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "i5fa430880d388",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "processingType": "templateDriven",
+                "responseRules": [{
+                    "qtiClass": "responseCondition",
+                    "responseIf": {
+                        "qtiClass": "responseIf",
+                        "expression": {
+                            "qtiClass": "match",
+                            "expressions": [{
+                                "qtiClass": "variable",
+                                "attributes": {
+                                    "identifier": "RESPONSE"
+                                }
+                            }, {
+                                "qtiClass": "correct",
+                                "attributes": {
+                                    "identifier": "RESPONSE"
+                                }
+                            }]
+                        },
+                        "responseRules": [{
+                            "qtiClass": "setOutcomeValue",
+                            "attributes": {
+                                "identifier": "SCORE"
+                            },
+                            "expression": {
+                                "qtiClass": "baseValue",
+                                "attributes": {
+                                    "baseType": "float"
+                                },
+                                "value": "1"
+                            }
+                        }]
+                    },
+                    "responseElse": {
+                        "qtiClass": "responseElse",
+                        "responseRules": [{
+                            "qtiClass": "setOutcomeValue",
+                            "attributes": {
+                                "identifier": "SCORE"
+                            },
+                            "expression": {
+                                "qtiClass": "baseValue",
+                                "attributes": {
+                                    "baseType": "float"
+                                },
+                                "value": "0"
+                            }
+                        }]
+                    }
+                }]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "Internal_organs.png": "Internal_organs.png"
+            },
+            "css": {
+                "tao-user-styles.css": "tao-user-styles.css"
+            }
+        }
+    },
+    "success": true,
+    "itemIdentifier": "item-1"
+}

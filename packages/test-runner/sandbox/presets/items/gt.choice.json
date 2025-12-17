@@ -1,0 +1,127 @@
+{
+  "baseUrl": "./presets/items/assets/",
+  "itemIdentifier": "item2",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "Q03",
+      "serial": "i5e99c830a79ea",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "Q03",
+        "title": "What does mean GT?",
+        "label": "What does mean GT?",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "NextGen",
+        "class": ""
+      },
+      "body": {
+        "serial": "i5e99c830a79e2",
+        "body": "\n    {{i5e99c830a7ba8}}\n  ",
+        "elements": {
+          "i5e99c830a7ba8": {
+            "serial": "i5e99c830a7ba8",
+            "qtiClass": "choiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "shuffle": false,
+              "maxChoices": 1,
+              "minChoices": 0,
+              "id": "interaction"
+            },
+            "choices": {
+              "i5e99c830a7c8a": {
+                "identifier": "turbo",
+                "serial": "i5e99c830a7c8a",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "turbo",
+                  "fixed": false
+                },
+                "body": {
+                  "serial": "i5e99c830a7ca4",
+                  "body": "Great Turbo",
+                  "elements": []
+                }
+              },
+              "i5e99c830a7d34": {
+                "identifier": "turbine",
+                "serial": "i5e99c830a7d34",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "turbine",
+                  "fixed": false
+                },
+                "body": {
+                  "serial": "i5e99c830a7d49",
+                  "body": "Gear Turbine",
+                  "elements": []
+                }
+              },
+              "i5e99c830a7db9": {
+                "identifier": "turismo",
+                "serial": "i5e99c830a7db9",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "turismo",
+                  "fixed": false
+                },
+                "body": {
+                  "serial": "i5e99c830a7dcc",
+                  "body": "Gran Turismo",
+                  "elements": []
+                }
+              }
+            },
+            "prompt": {
+              "serial": "i5e99c830a7bfb",
+              "body": "What does mean GT within the concept of racing cars?",
+              "elements": []
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+        "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+      },
+      "stylesheets": [],
+      "outcomes": {
+        "i5e99c830a7af5": {
+          "identifier": "SCORE",
+          "serial": "i5e99c830a7af5",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "0"
+        }
+      },
+      "responses": {
+        "i5e99c830a7a8b": {
+          "identifier": "RESPONSE",
+          "serial": "i5e99c830a7a8b",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        }
+      },
+      "feedbacks": [],
+      "apipAccessibility": ""
+    },
+    "assets": []
+  },
+  "itemState": {}
+}

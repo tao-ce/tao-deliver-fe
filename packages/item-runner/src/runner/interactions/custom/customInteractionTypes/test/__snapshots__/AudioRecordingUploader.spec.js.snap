@@ -1,0 +1,30 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AudioRecordingUploader > renders props into markup 1`] = `
+<body>
+  <div>
+    <div
+      class="audio-recording-uploader upload-initial"
+    >
+      <div
+        class="uploading hidden"
+      />
+       
+      <div
+        class="mock-audio-interaction"
+      >
+        {"role":"someUniqueRole","ariaAttrs":{"ariaFoo":12,"ariaBar":"baz"},"dataAttrs":{"data-foo":"bar","data-baz":24},"language":"hu","id":"interactionId","classes":"foo bar baz","dir":"rtl","markup":"&lt;div class=\\"markup\\"&gt;&lt;/div&gt;","itemIdentifier":"item-123","responseIdentifier":"foo123","properties":{"autoStart":false,"allowPlayback":true,"maxRecordingTime":7},"isInitialMount":false,"doNotPlayMedia":false}
+      </div>
+       
+      <div
+        aria-atomic="true"
+        aria-live="assertive"
+        class="visually-hidden"
+        id="tao-live-123"
+        lang="en-US"
+      />
+    </div>
+    
+  </div>
+</body>
+`;

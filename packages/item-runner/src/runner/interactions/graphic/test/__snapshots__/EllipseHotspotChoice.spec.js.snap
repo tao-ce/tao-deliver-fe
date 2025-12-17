@@ -1,0 +1,96 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ellipse hotspot choice > rendering > renders ellipse elements with given coords 1`] = `
+<body>
+  <div>
+    <g
+      class="shape"
+      tabindex="-1"
+    >
+      <ellipse
+        class="shape-outer-border"
+        cx="100"
+        cy="100"
+        rx="44"
+        ry="54"
+      />
+      <ellipse
+        class="shape-inner-border"
+        cx="100"
+        cy="100"
+        rx="36"
+        ry="46"
+      />
+      <ellipse
+        class="shape-dashed-outline"
+        cx="100"
+        cy="100"
+        rx="44"
+        ry="54"
+      />
+      <circle
+        class="shape-checkmark"
+        cx="100"
+        cy="100"
+        r="10"
+      />
+    </g>
+  </div>
+</body>
+`;
+
+exports[`ellipse hotspot choice > rendering > renders text label as a checkmark if label is set  1`] = `
+<body>
+  <div>
+    <g
+      class="shape selected"
+      tabindex="-1"
+    >
+      <ellipse
+        class="shape-outer-border"
+        cx="100"
+        cy="100"
+        rx="44"
+        ry="54"
+      />
+      <ellipse
+        class="shape-inner-border"
+        cx="100"
+        cy="100"
+        rx="36"
+        ry="46"
+      />
+      <ellipse
+        class="shape-dashed-outline"
+        cx="100"
+        cy="100"
+        rx="44"
+        ry="54"
+      />
+      <text
+        class="shape-checkmark"
+        x="98.5"
+        y="98.5"
+      >
+        <tspan
+          dy="0"
+          x="98.5"
+        >
+          1
+        </tspan>
+      </text>
+    </g>
+  </div>
+</body>
+`;
+
+exports[`ellipse hotspot choice > rendering > renders with no props 1`] = `
+<body>
+  <div>
+    <g
+      class="shape"
+      tabindex="-1"
+    />
+  </div>
+</body>
+`;

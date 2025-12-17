@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HiddentContentTitle > updates based on the store content 1`] = `
+<body>
+  <div>
+    
+  </div>
+</body>
+`;
+
+exports[`HiddentContentTitle > updates based on the store content 2`] = `
+<body>
+  <div>
+    <span>
+      Current question 2 of 2
+       - 
+      unanswered
+      . 
+      Located in question group 1 of 1.
+    </span>
+    
+  </div>
+</body>
+`;
+
+exports[`HiddentContentTitle > updates based on the store content 3`] = `
+<body>
+  <div>
+    <span>
+      Current question 5 of 4
+       - 
+      unanswered
+      . 
+      Located in question group 2 of 2.
+    </span>
+    
+  </div>
+</body>
+`;

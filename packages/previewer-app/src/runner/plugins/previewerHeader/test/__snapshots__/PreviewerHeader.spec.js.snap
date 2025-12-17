@@ -1,0 +1,102 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PreviewerHeader > renders unit label and item label and current locale and links to other locales 1`] = `
+<body>
+  <div>
+    <header
+      class="unit-preview-header"
+    >
+      <span>
+        SomeTest
+      </span>
+       
+      <span>
+        /
+      </span>
+       
+      <span>
+        SomeItem
+      </span>
+       
+      <span>
+        /
+      </span>
+       
+      <span>
+        ab-CD
+      </span>
+       
+      <ul>
+        <li>
+          <a
+            href="http://yy-YY/smth"
+            target="_blank"
+          >
+            View yy-YY
+          </a>
+           
+        </li>
+        <li>
+          <a
+            href="http://kk-KK/smth"
+            target="_blank"
+          >
+            View kk-KK
+          </a>
+           
+        </li>
+      </ul>
+    </header>
+  </div>
+</body>
+`;
+
+exports[`PreviewerHeader > renders unit label and item label and current locale if no other locales 1`] = `
+<body>
+  <div>
+    <header
+      class="unit-preview-header"
+    >
+      <span>
+        SomeTest
+      </span>
+       
+      <span>
+        /
+      </span>
+       
+      <span>
+        SomeItem
+      </span>
+       
+      <span>
+        /
+      </span>
+       
+      <span>
+        ab-CD
+      </span>
+       
+      <ul />
+    </header>
+  </div>
+</body>
+`;
+
+exports[`PreviewerHeader > renders without error if testStateStore is empty 1`] = `
+<body>
+  <div>
+    <header
+      class="unit-preview-header"
+    >
+      <span>
+        
+      </span>
+       
+       
+       
+      <ul />
+    </header>
+  </div>
+</body>
+`;

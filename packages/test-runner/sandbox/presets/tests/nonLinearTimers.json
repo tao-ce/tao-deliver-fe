@@ -1,0 +1,236 @@
+{
+    "testContext": {
+        "state": 1,
+        "status": "interacting",
+        "remainingAttempts": -1,
+        "isTimeout": 0,
+        "itemIdentifier": "item1",
+        "attempt": 1,
+        "itemSessionState": 1,
+        "needMapUpdate": false,
+        "itemPosition": 0,
+        "timeConstraints": [],
+        "testPartId": "testPart-1",
+        "sectionId": "assessmentSection-1",
+        "canMoveBackward": true,
+        "rubrics": "",
+        "allowSkipping": true,
+        "validateResponses": false,
+        "isProctored": true
+    },
+    "testMap": {
+        "scope": "test",
+        "parts": {
+            "testPart-1": {
+                "id": "testPart-1",
+                "label": "testPart-1",
+                "position": 0,
+                "isLinear": false,
+                "timeConstraint": null,
+                "sections": {
+                    "assessmentSection-1": {
+                        "id": "assessmentSection-1",
+                        "label": "Section 1",
+                        "isCatAdaptive": false,
+                        "position": 0,
+                        "items": {
+                            "item1": {
+                                "id": "item1",
+                                "label": "The Space Shuttle, 30 years of adventure",
+                                "position": 0,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false,
+                                "allowSkipping": true
+                            },
+                            "item2": {
+                                "id": "item2",
+                                "label": "Planets",
+                                "position": 1,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false
+                            },
+                            "item3": {
+                                "id": "item3",
+                                "label": "French words",
+                                "position": 2,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false
+                            },
+                            "item4": {
+                                "id": "item4",
+                                "label": "Weights",
+                                "position": 3,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false,
+                                "allowSkipping": false
+                            },
+                            "item5": {
+                                "id": "item5",
+                                "label": "Photo",
+                                "position": 4,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false
+                            }
+                        },
+                        "stats": {
+                            "questions": 5,
+                            "answered": 0,
+                            "flagged": 0,
+                            "viewed": 1,
+                            "total": 5,
+                            "questionsViewed": 1
+                        }
+                    },
+                    "assessmentSection-2": {
+                        "id": "assessmentSection-2",
+                        "label": "Section 2",
+                        "isCatAdaptive": false,
+                        "position": 5,
+                        "items": {
+                            "item6": {
+                                "id": "item6",
+                                "label": "Richard III (Take 2)",
+                                "position": 5,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false
+                            },
+                            "item7": {
+                                "id": "item7",
+                                "label": "Netherlands",
+                                "position": 6,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false
+                            },
+                            "item8": {
+                                "id": "item8",
+                                "label": "example_2_Math",
+                                "position": 7,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false
+                            }
+                        },
+                        "stats": {
+                            "questions": 3,
+                            "answered": 0,
+                            "flagged": 0,
+                            "viewed": 1,
+                            "total": 3,
+                            "questionsViewed": 1
+                        }
+                    }
+                },
+                "stats": {
+                    "questions": 8,
+                    "answered": 0,
+                    "flagged": 0,
+                    "viewed": 1,
+                    "total": 8,
+                    "questionsViewed": 1
+                }
+            }
+        },
+        "title": "nonLinearTimers",
+        "identifier": "nonLinearTimers",
+        "stats": {
+            "questions": 8,
+            "answered": 0,
+            "flagged": 0,
+            "viewed": 1,
+            "total": 8,
+            "questionsViewed": 1
+        }
+    },
+    "timer": {
+        "extra": {
+            "maxTime": 60000,
+            "maxTimeRemaining": 60000
+        },
+        "test": {
+            "id": "test",
+            "maxTime": 600000,
+            "maxTimeRemaining": 450000
+        },
+        "testParts": [
+            {
+                "id": "testPart-1",
+                "maxTime": 500000,
+                "maxTimeRemaining": 350000
+            }
+        ],
+        "sections": [
+            {
+                "id": "assessmentSection-1",
+                "maxTime": 4000000,
+                "maxTimeRemaining": 300000
+            },
+            {
+                "id": "assessmentSection-2",
+                "maxTime": 400000,
+                "maxTimeRemaining": 250000
+            }
+        ],
+        "items": [
+            {
+                "id": "item1",
+                "maxTime": 300000,
+                "maxTimeRemaining": 150000
+            }
+        ]
+    }
+}

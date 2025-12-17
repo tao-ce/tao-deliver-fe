@@ -1,0 +1,2678 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configured, panel can be closed by click 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-item-container"
+    />
+    <nav />
+    <div
+      class="a11y-area"
+    >
+      <div
+        class="a11y-menu-panel"
+      >
+        <div
+          aria-labelledby="tao-a11y-panel-header-123"
+          class="panel open"
+          role="toolbar"
+        >
+          <div
+            class="drawer end"
+          >
+            <div
+              class="header"
+            >
+              <div
+                class="icon-wrapper"
+              >
+                <button
+                  aria-label="Close Panel"
+                  class="icon-bar-btn actionable base-16 default"
+                  title="Close Panel"
+                >
+                  <svg
+                    aria-hidden="false"
+                    class="icon medium"
+                    viewBox="0 0 16 16"
+                  >
+                    <title>
+                      Remove icon
+                    </title>
+                    <path
+                      d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+                    />
+                  </svg>
+                   
+                   
+                </button>
+              </div>
+               
+              <div
+                class="a11y-menu-panel-header"
+                slot="header"
+              >
+                <h2
+                  class="ui-heading-l"
+                  id="tao-a11y-panel-header-123"
+                >
+                  Accessibility tools
+                </h2>
+              </div>
+            </div>
+             
+            <div
+              class="drawer-content"
+            >
+              <section
+                class="a11y-menu-panel-content"
+              >
+                <div
+                  class="a11y-group"
+                >
+                  <div
+                    class="summary"
+                  >
+                    <h3
+                      class="ui-heading flex"
+                      slot="summary"
+                    >
+                      <span>
+                        <svg
+                          aria-hidden="true"
+                          class="icon medium"
+                          viewBox="0 0 16 16"
+                        >
+                          <title>
+                            Search icon
+                          </title>
+                          <path
+                            d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
+                          />
+                        </svg>
+                         
+                        Zoom
+                         
+                      </span>
+                       
+                      <span
+                        class="stepper"
+                      >
+                        <button
+                          aria-label="zoom in"
+                          class="icon-bar-btn actionable base-12 secondary circular"
+                          title="zoom in"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="icon medium"
+                            viewBox="0 0 16 16"
+                          >
+                            <title>
+                              Plus icon
+                            </title>
+                            <path
+                              d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                            />
+                          </svg>
+                           
+                           
+                        </button>
+                         
+                        <button
+                          aria-disabled="true"
+                          aria-label="zoom out"
+                          class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+                          title="zoom out"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="icon medium"
+                            viewBox="0 0 16 16"
+                          >
+                            <title>
+                              Minus icon
+                            </title>
+                            <path
+                              d="M0 7h16v2H0z"
+                            />
+                          </svg>
+                           
+                           
+                        </button>
+                      </span>
+                    </h3>
+                  </div>
+                   
+                </div>
+                
+                
+                <details
+                  class="a11y-group"
+                  open=""
+                >
+                  <summary
+                    aria-label="collapse contrast settings"
+                    title="collapse contrast settings"
+                  >
+                    <h3
+                      class="ui-heading"
+                      slot="summary"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        fill="none"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Contrast tool icon
+                        </title>
+                        <path
+                          clip-rule="evenodd"
+                          d="M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2V14Z"
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                       
+                      Contrast
+                       
+                    </h3>
+                     
+                    <svg
+                      aria-hidden="true"
+                      class="icon small"
+                      fill="none"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Chevron up icon
+                      </title>
+                      <path
+                        d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </summary>
+                   
+                  <div>
+                    <ul>
+                      <li>
+                        <div
+                          class="contrast-theme-setting changed-control"
+                        >
+                          <div
+                            class="colour-switcher"
+                            role="radiogroup"
+                          >
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="whiteOnBlack"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-white-on-black);"
+                                title="White On Black"
+                                type="radio"
+                                value="whiteOnBlack"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="yellowOnBlue"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-yellow-on-blue);"
+                                title="Yellow On Blue"
+                                type="radio"
+                                value="yellowOnBlue"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="blackOnCream"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-black-on-cream);"
+                                title="Black On Cream"
+                                type="radio"
+                                value="blackOnCream"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="blackOnBlue"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-black-on-blue);"
+                                title="Black On Blue"
+                                type="radio"
+                                value="blackOnBlue"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="blackOnMagenta"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-black-on-magenta);"
+                                title="Black On Magenta"
+                                type="radio"
+                                value="blackOnMagenta"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="greyOnGreen"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-grey-on-green);"
+                                title="Grey On Green"
+                                type="radio"
+                                value="greyOnGreen"
+                              />
+                               
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </details>
+                
+                
+                <details
+                  class="a11y-group"
+                  open=""
+                >
+                  <summary
+                    aria-label="collapse pointer settings"
+                    title="collapse pointer settings"
+                  >
+                    <h3
+                      class="ui-heading"
+                      slot="summary"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        fill="none"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Pointer tool icon
+                        </title>
+                        <path
+                          clip-rule="evenodd"
+                          d="M0.114723 1.44217C-0.274881 0.598025 0.597595 -0.274455 1.44174 0.115151L12.1224 5.04469C12.9288 5.41686 12.886 6.57714 12.0545 6.88898L9.9026 7.69593L13.6035 11.3969C14.213 12.0063 14.213 12.9945 13.6035 13.604C12.9941 14.2134 12.0059 14.2134 11.3964 13.604L7.6955 9.90303L6.88855 12.0549C6.57671 12.8865 5.41643 12.9292 5.04426 12.1228L0.114723 1.44217ZM11.7033 5.95265L1.02268 1.02311L5.95222 11.7038L7.30446 8.09778L12.1035 12.8969C12.3225 13.1158 12.6775 13.1158 12.8964 12.8969C13.1154 12.6779 13.1154 12.3229 12.8964 12.104L8.09736 7.30489L11.7033 5.95265Z"
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                       
+                      Cursor
+                       
+                    </h3>
+                     
+                    <svg
+                      aria-hidden="true"
+                      class="icon small"
+                      fill="none"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Chevron up icon
+                      </title>
+                      <path
+                        d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </summary>
+                   
+                  <div>
+                    <ul>
+                      <li>
+                        <div
+                          class="mouse-pointer-setting"
+                        >
+                          <div
+                            class="colour-switcher"
+                            role="radiogroup"
+                          >
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="white"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-white);"
+                                title="White"
+                                type="radio"
+                                value="white"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="black"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-black);"
+                                title="Black"
+                                type="radio"
+                                value="black"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="yellow"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-yellow);"
+                                title="Yellow"
+                                type="radio"
+                                value="yellow"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="green"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-green);"
+                                title="Green"
+                                type="radio"
+                                value="green"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="red"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-red);"
+                                title="Red"
+                                type="radio"
+                                value="red"
+                              />
+                               
+                            </div>
+                            
+                          </div>
+                           
+                          <span
+                            class="control-row"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="icon medium"
+                              fill="none"
+                              viewBox="0 0 16 16"
+                            >
+                              <title>
+                                Pointer size tool icon
+                              </title>
+                              <path
+                                clip-rule="evenodd"
+                                d="M15 3H14V13H15L13.5 15L12 13H13V3H12L13.5 1L15 3ZM2.26889 2.96866C1.45257 2.64213 0.642497 3.45221 0.969021 4.26852L4.12222 12.1515C4.44267 12.9526 5.55924 12.9991 5.94512 12.2273L6.63695 10.8437L8.39642 12.6032C9.00589 13.2126 9.99405 13.2126 10.6035 12.6032C11.213 11.9937 11.213 11.0055 10.6035 10.3961L8.84405 8.63658L10.2277 7.94476C10.9995 7.55888 10.953 6.44231 10.1519 6.12185L2.26889 2.96866ZM1.8975 3.89713L9.78049 7.05033L7.15589 8.36263L9.89642 11.1032C10.1154 11.3221 10.1154 11.6771 9.89642 11.8961C9.67747 12.115 9.32248 12.115 9.10352 11.8961L6.36299 9.15552L5.05069 11.7801L1.8975 3.89713Z"
+                                fill="currentColor"
+                                fill-rule="evenodd"
+                                id="Vector"
+                              />
+                            </svg>
+                             
+                            <label>
+                              Size
+                               
+                            </label>
+                             
+                            <span
+                              class="stepper"
+                            >
+                              <button
+                                aria-label="increase pointer size"
+                                class="icon-bar-btn actionable base-12 secondary circular"
+                                title="increase pointer size"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  class="icon medium"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <title>
+                                    Plus icon
+                                  </title>
+                                  <path
+                                    d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                                  />
+                                </svg>
+                                 
+                                 
+                              </button>
+                               
+                              <button
+                                aria-disabled="true"
+                                aria-label="decrease pointer size"
+                                class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+                                title="decrease pointer size"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  class="icon medium"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <title>
+                                    Minus icon
+                                  </title>
+                                  <path
+                                    d="M0 7h16v2H0z"
+                                  />
+                                </svg>
+                                 
+                                 
+                              </button>
+                            </span>
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </details>
+                
+                
+                <details
+                  class="a11y-group"
+                  open=""
+                >
+                  <summary
+                    aria-label="collapse text settings"
+                    title="collapse text settings"
+                  >
+                    <h3
+                      class="ui-heading"
+                      slot="summary"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        fill="none"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Text tool icon
+                        </title>
+                        <path
+                          clip-rule="evenodd"
+                          d="M7.26857 10.5867L8.33829 13H9.47657L5.22518 3H4.25146L0 13H1.152L2.22171 10.5867H7.26857ZM6.87086 9.68H2.61943L4.74518 4.26667L6.87086 9.68ZM15.354 6.38609C14.9426 5.95943 14.3117 5.74609 13.4614 5.74609C13.0043 5.74609 12.5289 5.82165 12.0352 5.97276C11.5506 6.11498 11.1346 6.30609 10.7872 6.54609L11.1574 7.33276C11.9163 6.87054 12.6797 6.63943 13.4477 6.63943C13.9597 6.63943 14.33 6.76387 14.5586 7.01276C14.7872 7.25276 14.8571 8.14981 14.8571 8.69203V9.13203H14.5997C13.5574 9.13203 12.7437 9.19425 12.1585 9.3187C11.5734 9.43425 11.1528 9.62981 10.8968 9.90536C10.6408 10.172 10.5128 10.5498 10.5128 11.0387C10.5128 11.4031 10.618 11.7365 10.8282 12.0387C11.0385 12.3409 11.322 12.5765 11.6785 12.7454C12.0442 12.9143 12.442 12.9987 12.8717 12.9987C13.338 12.9987 13.7494 12.8965 14.106 12.692C14.4625 12.4787 14.6834 12.1809 14.8571 11.7987V12.9987H16V8.81203C16 7.94981 15.7746 6.80387 15.354 6.38609ZM14.3665 11.612C14.0191 11.9676 13.5711 12.1454 13.0225 12.1454C12.6294 12.1454 12.3002 12.0343 12.0351 11.812C11.7791 11.5809 11.6511 11.292 11.6511 10.9454C11.6511 10.6431 11.738 10.4165 11.9117 10.2654C12.0945 10.1054 12.3962 9.99425 12.8168 9.93203C13.2374 9.86092 13.85 9.82536 14.6545 9.82536H14.8571V10.212C14.8571 10.7809 14.7231 11.2476 14.3665 11.612Z"
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                       
+                      Text
+                       
+                    </h3>
+                     
+                    <svg
+                      aria-hidden="true"
+                      class="icon small"
+                      fill="none"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Chevron up icon
+                      </title>
+                      <path
+                        d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </summary>
+                   
+                  <div>
+                    <ul>
+                      <li>
+                        <div
+                          class="font-family-setting"
+                        >
+                          <span
+                            class="select height-small fullwidth lite valid"
+                            style="--visible-options: 999; --space-above: 0px;"
+                          >
+                            <button
+                              aria-expanded="false"
+                              aria-haspopup="listbox"
+                              aria-label="Default font"
+                              aria-roledescription="Dropdown"
+                              title="Default font"
+                              type="button"
+                            >
+                              <span>
+                                <span
+                                  style="font-family: 'Nunito Sans', 'Source Sans Pro', Arial, sans-serif"
+                                >
+                                  Default font
+                                </span>
+                              </span>
+                               
+                              <svg
+                                aria-hidden="true"
+                                class="icon small"
+                                viewBox="0 0 12 12"
+                              >
+                                <title>
+                                  Down arrow icon
+                                </title>
+                                <path
+                                  d="M11.45 3.29A.49.49 0 0011 3H1a.49.49 0 00-.45.29.47.47 0 00.07.53l5 6a.49.49 0 00.76 0l5-6a.47.47 0 00.07-.53z"
+                                />
+                              </svg>
+                            </button>
+                             
+                            <span
+                              aria-hidden="true"
+                              class="listbox-wrapper visually-hidden"
+                            >
+                              <span
+                                aria-activedescendant="tao-option-123"
+                                aria-roledescription="dropdown list"
+                                class="listbox"
+                                role="listbox"
+                                tabindex="-1"
+                              >
+                                <span
+                                  class="scroll-child"
+                                />
+                                 
+                                <span
+                                  aria-selected="true"
+                                  class="option selected"
+                                  id="tao-option-123"
+                                  role="option"
+                                >
+                                  <span
+                                    style="font-family: 'Nunito Sans', 'Source Sans Pro', Arial, sans-serif"
+                                  >
+                                    Default font
+                                  </span>
+                                </span>
+                                <span
+                                  aria-selected="false"
+                                  class="option"
+                                  id="tao-option-123"
+                                  role="option"
+                                >
+                                  <span
+                                    style="font-family: Courier New, monospace"
+                                  >
+                                    Courier
+                                  </span>
+                                </span>
+                                <span
+                                  aria-selected="false"
+                                  class="option"
+                                  id="tao-option-123"
+                                  role="option"
+                                >
+                                  <span
+                                    style="font-family: Arial, sans-serif"
+                                  >
+                                    Arial
+                                  </span>
+                                </span>
+                                <span
+                                  aria-selected="false"
+                                  class="option"
+                                  id="tao-option-123"
+                                  role="option"
+                                >
+                                  <span
+                                    style="font-family: Verdana, sans-serif"
+                                  >
+                                    Verdana
+                                  </span>
+                                </span>
+                                <span
+                                  aria-selected="false"
+                                  class="option"
+                                  id="tao-option-123"
+                                  role="option"
+                                >
+                                  <span
+                                    style="font-family: 'CMU Serif Roman', serif"
+                                  >
+                                    CMU Serif
+                                  </span>
+                                </span>
+                                <span
+                                  aria-selected="false"
+                                  class="option"
+                                  id="tao-option-123"
+                                  role="option"
+                                >
+                                  <span
+                                    style="font-family: Luciole, Helvetica, Arial, sans-serif"
+                                  >
+                                    Luciole
+                                  </span>
+                                </span>
+                                 
+                                <span
+                                  class="scroll-child"
+                                />
+                              </span>
+                            </span>
+                             
+                            <input
+                              aria-hidden="true"
+                              class="hidden-input"
+                              data-type="select"
+                              name=""
+                              tabindex="-1"
+                              type="text"
+                            />
+                             
+                             
+                          </span>
+                        </div>
+                      </li>
+                       
+                      <li>
+                        <span
+                          class="control-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="icon medium"
+                            fill="none"
+                            viewBox="0 0 16 16"
+                          >
+                            <title>
+                              Font size tool icon
+                            </title>
+                            <path
+                              clip-rule="evenodd"
+                              d="M15 3H14V13H15L13.5 15L12 13H13V3H12L13.5 1L15 3ZM7.90304 10.5867L8.91896 13H10L5.96241 3H5.03766L1 13H2.09407L3.10999 10.5867H7.90304ZM7.52533 9.68H3.4877L5.50654 4.26667L7.52533 9.68Z"
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                            />
+                          </svg>
+                           
+                          <label>
+                            Size
+                             
+                          </label>
+                           
+                          <span
+                            class="stepper"
+                          >
+                            <button
+                              aria-label="increase font size"
+                              class="icon-bar-btn actionable base-12 secondary circular"
+                              title="increase font size"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Plus icon
+                                </title>
+                                <path
+                                  d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                                />
+                              </svg>
+                               
+                               
+                            </button>
+                             
+                            <button
+                              aria-disabled="true"
+                              aria-label="decrease font size"
+                              class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+                              title="decrease font size"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Minus icon
+                                </title>
+                                <path
+                                  d="M0 7h16v2H0z"
+                                />
+                              </svg>
+                               
+                               
+                            </button>
+                          </span>
+                        </span>
+                      </li>
+                       
+                      <li>
+                        <span
+                          class="control-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="icon medium"
+                            fill="none"
+                            viewBox="0 0 16 16"
+                          >
+                            <title>
+                              Line height tool icon
+                            </title>
+                            <path
+                              clip-rule="evenodd"
+                              d="M14 3H15L13.5 1L12 3H13V13H12L13.5 15L15 13H14V3ZM1 6.5C1 6.22386 1.22386 6 1.5 6H10.5C10.7761 6 11 6.22386 11 6.5C11 6.77614 10.7761 7 10.5 7H1.5C1.22386 7 1 6.77614 1 6.5ZM1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H10.5C10.7761 4 11 3.77614 11 3.5C11 3.22386 10.7761 3 10.5 3H1.5ZM1 9.5C1 9.22386 1.22386 9 1.5 9H10.5C10.7761 9 11 9.22386 11 9.5C11 9.77614 10.7761 10 10.5 10H1.5C1.22386 10 1 9.77614 1 9.5ZM1.5 12C1.22386 12 1 12.2239 1 12.5C1 12.7761 1.22386 13 1.5 13H10.5C10.7761 13 11 12.7761 11 12.5C11 12.2239 10.7761 12 10.5 12H1.5Z"
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              id="Vector"
+                            />
+                          </svg>
+                           
+                          <label>
+                            Line height
+                             
+                          </label>
+                           
+                          <span
+                            class="stepper"
+                          >
+                            <button
+                              aria-label="increase line height"
+                              class="icon-bar-btn actionable base-12 secondary circular"
+                              title="increase line height"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Plus icon
+                                </title>
+                                <path
+                                  d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                                />
+                              </svg>
+                               
+                               
+                            </button>
+                             
+                            <button
+                              aria-disabled="true"
+                              aria-label="decrease line height"
+                              class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+                              title="decrease line height"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Minus icon
+                                </title>
+                                <path
+                                  d="M0 7h16v2H0z"
+                                />
+                              </svg>
+                               
+                               
+                            </button>
+                          </span>
+                        </span>
+                      </li>
+                       
+                       
+                       
+                      <li>
+                        <span
+                          class="control-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="icon medium"
+                            fill="none"
+                            viewBox="0 0 16 16"
+                          >
+                            <title>
+                              Font spacing tool icon
+                            </title>
+                            <path
+                              clip-rule="evenodd"
+                              d="M3 1L3 2L13 2V1L15 2.5L13 4V3L3 3V4L1 2.5L3 1ZM8.296 15L7.36 12.828H2.944L2.008 15H1L4.72003 6H5.57203L9.292 15H8.296ZM3.292 12.012H7.012L5.15203 7.14L3.292 12.012ZM12.7788 8.47149C13.5228 8.47149 14.0748 8.66349 14.4348 9.04749C14.8028 9.42348 15 10.4548 15 11.2308V14.9988H14V13.9188C13.848 14.2628 13.6547 14.5308 13.3427 14.7228C13.0307 14.9068 12.6707 14.9988 12.2627 14.9988C11.8867 14.9988 11.5387 14.9228 11.2187 14.7708C10.9067 14.6188 10.6587 14.4068 10.4747 14.1348C10.2907 13.8628 10.1987 13.5628 10.1987 13.2348C10.1987 12.7948 10.3107 12.4548 10.5347 12.2148C10.7587 11.9668 11.1267 11.7908 11.6387 11.6868C12.1507 11.5748 12.8627 11.5188 13.7747 11.5188H14V11.1228C14 10.6348 13.9388 9.82749 13.7388 9.61149C13.5388 9.38749 13.2148 9.27549 12.7668 9.27549C12.0948 9.27549 11.4268 9.48349 10.7628 9.89949L10.4388 9.19149C10.7428 8.97549 11.1068 8.80349 11.5308 8.67549C11.9628 8.53949 12.3788 8.47149 12.7788 8.47149ZM12.3947 14.2308C12.8747 14.2308 13.2667 14.0708 13.5707 13.7508C13.8827 13.4228 14 13.0028 14 12.4908V12.1428H13.8227C13.1187 12.1428 12.5827 12.1748 12.2147 12.2388C11.8467 12.2948 11.5827 12.3948 11.4227 12.5388C11.2707 12.6748 11.1947 12.8788 11.1947 13.1508C11.1947 13.4628 11.3067 13.7228 11.5307 13.9308C11.7627 14.1308 12.0507 14.2308 12.3947 14.2308Z"
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              id="Union"
+                            />
+                          </svg>
+                           
+                          <label>
+                            Spacing
+                             
+                          </label>
+                           
+                          <span
+                            class="stepper"
+                          >
+                            <button
+                              aria-label="increase letter and word spacing"
+                              class="icon-bar-btn actionable base-12 secondary circular"
+                              title="increase letter and word spacing"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Plus icon
+                                </title>
+                                <path
+                                  d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                                />
+                              </svg>
+                               
+                               
+                            </button>
+                             
+                            <button
+                              aria-disabled="true"
+                              aria-label="decrease letter and word spacing"
+                              class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+                              title="decrease letter and word spacing"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Minus icon
+                                </title>
+                                <path
+                                  d="M0 7h16v2H0z"
+                                />
+                              </svg>
+                               
+                               
+                            </button>
+                          </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+                
+                
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`a11yMenuPanel plugin > logs with "ui-log": value changes & panel open/close 1`] = `
+{
+  "events": [
+    {
+      "domEventType": "custom",
+      "itemIdentifier": "item2",
+      "metadata": {
+        "component": "plugin-a11yMenuPanel",
+        "timeStamp": 1703752809000,
+        "type": "panel-open",
+      },
+    },
+    {
+      "domEventType": "change",
+      "itemIdentifier": "item2",
+      "metadata": {
+        "component": "plugin-a11yMenuPanel",
+        "timeStamp": 1703752809004,
+        "toolKey": "fontSize",
+        "toolState": {
+          "fontSizeBody": "2.5rem",
+          "fontSizeDescriptor": "large",
+          "nonDefault": true,
+          "value": 1,
+        },
+      },
+    },
+    {
+      "domEventType": "custom",
+      "itemIdentifier": "item2",
+      "metadata": {
+        "component": "plugin-a11yMenuPanel",
+        "timeStamp": 1703752809006,
+        "type": "panel-close",
+      },
+    },
+  ],
+}
+`;
+
+exports[`a11yMenuPanel plugin > panel content rendering depends on configuration 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-item-container"
+    />
+    <nav />
+    <div
+      class="a11y-area"
+    >
+      <div
+        class="a11y-menu-panel"
+      >
+        <div
+          aria-labelledby="tao-a11y-panel-header-123"
+          class="panel open"
+          role="toolbar"
+        >
+          <div
+            class="drawer end"
+          >
+            <div
+              class="header"
+            >
+              <div
+                class="icon-wrapper"
+              >
+                <button
+                  aria-label="Close Panel"
+                  class="icon-bar-btn actionable base-16 default"
+                  title="Close Panel"
+                >
+                  <svg
+                    aria-hidden="false"
+                    class="icon medium"
+                    viewBox="0 0 16 16"
+                  >
+                    <title>
+                      Remove icon
+                    </title>
+                    <path
+                      d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+                    />
+                  </svg>
+                   
+                   
+                </button>
+              </div>
+               
+              <div
+                class="a11y-menu-panel-header"
+                slot="header"
+              >
+                <h2
+                  class="ui-heading-l"
+                  id="tao-a11y-panel-header-123"
+                >
+                  Accessibility tools
+                </h2>
+              </div>
+            </div>
+             
+            <div
+              class="drawer-content"
+            >
+              <section
+                class="a11y-menu-panel-content"
+              >
+                <div
+                  class="a11y-group"
+                >
+                  <div
+                    class="summary"
+                  >
+                    <h3
+                      class="ui-heading"
+                      slot="summary"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        fill="none"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Text tool icon
+                        </title>
+                        <path
+                          clip-rule="evenodd"
+                          d="M7.26857 10.5867L8.33829 13H9.47657L5.22518 3H4.25146L0 13H1.152L2.22171 10.5867H7.26857ZM6.87086 9.68H2.61943L4.74518 4.26667L6.87086 9.68ZM15.354 6.38609C14.9426 5.95943 14.3117 5.74609 13.4614 5.74609C13.0043 5.74609 12.5289 5.82165 12.0352 5.97276C11.5506 6.11498 11.1346 6.30609 10.7872 6.54609L11.1574 7.33276C11.9163 6.87054 12.6797 6.63943 13.4477 6.63943C13.9597 6.63943 14.33 6.76387 14.5586 7.01276C14.7872 7.25276 14.8571 8.14981 14.8571 8.69203V9.13203H14.5997C13.5574 9.13203 12.7437 9.19425 12.1585 9.3187C11.5734 9.43425 11.1528 9.62981 10.8968 9.90536C10.6408 10.172 10.5128 10.5498 10.5128 11.0387C10.5128 11.4031 10.618 11.7365 10.8282 12.0387C11.0385 12.3409 11.322 12.5765 11.6785 12.7454C12.0442 12.9143 12.442 12.9987 12.8717 12.9987C13.338 12.9987 13.7494 12.8965 14.106 12.692C14.4625 12.4787 14.6834 12.1809 14.8571 11.7987V12.9987H16V8.81203C16 7.94981 15.7746 6.80387 15.354 6.38609ZM14.3665 11.612C14.0191 11.9676 13.5711 12.1454 13.0225 12.1454C12.6294 12.1454 12.3002 12.0343 12.0351 11.812C11.7791 11.5809 11.6511 11.292 11.6511 10.9454C11.6511 10.6431 11.738 10.4165 11.9117 10.2654C12.0945 10.1054 12.3962 9.99425 12.8168 9.93203C13.2374 9.86092 13.85 9.82536 14.6545 9.82536H14.8571V10.212C14.8571 10.7809 14.7231 11.2476 14.3665 11.612Z"
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                       
+                      Text
+                       
+                    </h3>
+                  </div>
+                   
+                  <ul>
+                    <li>
+                      <div
+                        class="font-family-setting"
+                      >
+                        <span
+                          class="select height-small fullwidth lite valid"
+                          style="--visible-options: 999; --space-above: 0px;"
+                        >
+                          <button
+                            aria-expanded="false"
+                            aria-haspopup="listbox"
+                            aria-label="Default font"
+                            aria-roledescription="Dropdown"
+                            title="Default font"
+                            type="button"
+                          >
+                            <span>
+                              <span
+                                style="font-family: 'Nunito Sans', 'Source Sans Pro', Arial, sans-serif"
+                              >
+                                Default font
+                              </span>
+                            </span>
+                             
+                            <svg
+                              aria-hidden="true"
+                              class="icon small"
+                              viewBox="0 0 12 12"
+                            >
+                              <title>
+                                Down arrow icon
+                              </title>
+                              <path
+                                d="M11.45 3.29A.49.49 0 0011 3H1a.49.49 0 00-.45.29.47.47 0 00.07.53l5 6a.49.49 0 00.76 0l5-6a.47.47 0 00.07-.53z"
+                              />
+                            </svg>
+                          </button>
+                           
+                          <span
+                            aria-hidden="true"
+                            class="listbox-wrapper visually-hidden"
+                          >
+                            <span
+                              aria-activedescendant="tao-option-123"
+                              aria-roledescription="dropdown list"
+                              class="listbox"
+                              role="listbox"
+                              tabindex="-1"
+                            >
+                              <span
+                                class="scroll-child"
+                              />
+                               
+                              <span
+                                aria-selected="true"
+                                class="option selected"
+                                id="tao-option-123"
+                                role="option"
+                              >
+                                <span
+                                  style="font-family: 'Nunito Sans', 'Source Sans Pro', Arial, sans-serif"
+                                >
+                                  Default font
+                                </span>
+                              </span>
+                              <span
+                                aria-selected="false"
+                                class="option"
+                                id="tao-option-123"
+                                role="option"
+                              >
+                                <span
+                                  style="font-family: Courier New, monospace"
+                                >
+                                  Courier
+                                </span>
+                              </span>
+                               
+                              <span
+                                class="scroll-child"
+                              />
+                            </span>
+                          </span>
+                           
+                          <input
+                            aria-hidden="true"
+                            class="hidden-input"
+                            data-type="select"
+                            name=""
+                            tabindex="-1"
+                            type="text"
+                          />
+                           
+                           
+                        </span>
+                      </div>
+                    </li>
+                     
+                    <li>
+                      <span
+                        class="control-row"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="icon medium"
+                          fill="none"
+                          viewBox="0 0 16 16"
+                        >
+                          <title>
+                            Font size tool icon
+                          </title>
+                          <path
+                            clip-rule="evenodd"
+                            d="M15 3H14V13H15L13.5 15L12 13H13V3H12L13.5 1L15 3ZM7.90304 10.5867L8.91896 13H10L5.96241 3H5.03766L1 13H2.09407L3.10999 10.5867H7.90304ZM7.52533 9.68H3.4877L5.50654 4.26667L7.52533 9.68Z"
+                            fill="currentColor"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                         
+                        <label>
+                          Size
+                           
+                        </label>
+                         
+                        <span
+                          class="stepper"
+                        >
+                          <button
+                            aria-label="increase font size"
+                            class="icon-bar-btn actionable base-12 secondary circular"
+                            title="increase font size"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="icon medium"
+                              viewBox="0 0 16 16"
+                            >
+                              <title>
+                                Plus icon
+                              </title>
+                              <path
+                                d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                              />
+                            </svg>
+                             
+                             
+                          </button>
+                           
+                          <button
+                            aria-disabled="true"
+                            aria-label="decrease font size"
+                            class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+                            title="decrease font size"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="icon medium"
+                              viewBox="0 0 16 16"
+                            >
+                              <title>
+                                Minus icon
+                              </title>
+                              <path
+                                d="M0 7h16v2H0z"
+                              />
+                            </svg>
+                             
+                             
+                          </button>
+                        </span>
+                      </span>
+                    </li>
+                     
+                     
+                     
+                     
+                  </ul>
+                </div>
+                
+                
+                <details
+                  class="a11y-group"
+                >
+                  <summary
+                    aria-label="expand contrast settings"
+                    title="expand contrast settings"
+                  >
+                    <h3
+                      class="ui-heading"
+                      slot="summary"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        fill="none"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Contrast tool icon
+                        </title>
+                        <path
+                          clip-rule="evenodd"
+                          d="M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2V14Z"
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                       
+                      Contrast
+                       
+                    </h3>
+                     
+                    <svg
+                      aria-hidden="true"
+                      class="icon small"
+                      fill="none"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Chevron down icon
+                      </title>
+                      <path
+                        d="M6 8L0 2L2 0L6 4L10 0L12 2L6 8Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </summary>
+                   
+                  <div
+                    class="hidden"
+                  >
+                    <ul>
+                      <li>
+                        <div
+                          class="contrast-theme-setting changed-control"
+                        >
+                          <div
+                            class="colour-switcher"
+                            role="radiogroup"
+                          >
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="whiteOnBlack"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-white-on-black);"
+                                title="White On Black"
+                                type="radio"
+                                value="whiteOnBlack"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="yellowOnBlue"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-yellow-on-blue);"
+                                title="Yellow On Blue"
+                                type="radio"
+                                value="yellowOnBlue"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="blackOnCream"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-black-on-cream);"
+                                title="Black On Cream"
+                                type="radio"
+                                value="blackOnCream"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="blackOnBlue"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-black-on-blue);"
+                                title="Black On Blue"
+                                type="radio"
+                                value="blackOnBlue"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="blackOnMagenta"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-black-on-magenta);"
+                                title="Black On Magenta"
+                                type="radio"
+                                value="blackOnMagenta"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="greyOnGreen"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-grey-on-green);"
+                                title="Grey On Green"
+                                type="radio"
+                                value="greyOnGreen"
+                              />
+                               
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </details>
+                
+                
+                <details
+                  class="a11y-group"
+                  open=""
+                >
+                  <summary
+                    aria-label="collapse pointer settings"
+                    title="collapse pointer settings"
+                  >
+                    <h3
+                      class="ui-heading"
+                      slot="summary"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        fill="none"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Pointer tool icon
+                        </title>
+                        <path
+                          clip-rule="evenodd"
+                          d="M0.114723 1.44217C-0.274881 0.598025 0.597595 -0.274455 1.44174 0.115151L12.1224 5.04469C12.9288 5.41686 12.886 6.57714 12.0545 6.88898L9.9026 7.69593L13.6035 11.3969C14.213 12.0063 14.213 12.9945 13.6035 13.604C12.9941 14.2134 12.0059 14.2134 11.3964 13.604L7.6955 9.90303L6.88855 12.0549C6.57671 12.8865 5.41643 12.9292 5.04426 12.1228L0.114723 1.44217ZM11.7033 5.95265L1.02268 1.02311L5.95222 11.7038L7.30446 8.09778L12.1035 12.8969C12.3225 13.1158 12.6775 13.1158 12.8964 12.8969C13.1154 12.6779 13.1154 12.3229 12.8964 12.104L8.09736 7.30489L11.7033 5.95265Z"
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                       
+                      Cursor
+                       
+                    </h3>
+                     
+                    <svg
+                      aria-hidden="true"
+                      class="icon small"
+                      fill="none"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Chevron up icon
+                      </title>
+                      <path
+                        d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </summary>
+                   
+                  <div>
+                    <ul>
+                      <li>
+                        <div
+                          class="mouse-pointer-setting"
+                        >
+                          <div
+                            class="colour-switcher"
+                            role="radiogroup"
+                          >
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="white"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-white);"
+                                title="White"
+                                type="radio"
+                                value="white"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="black"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-black);"
+                                title="Black"
+                                type="radio"
+                                value="black"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="yellow"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-yellow);"
+                                title="Yellow"
+                                type="radio"
+                                value="yellow"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="green"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-green);"
+                                title="Green"
+                                type="radio"
+                                value="green"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="red"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-red);"
+                                title="Red"
+                                type="radio"
+                                value="red"
+                              />
+                               
+                            </div>
+                            
+                          </div>
+                           
+                          <span
+                            class="control-row"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="icon medium"
+                              fill="none"
+                              viewBox="0 0 16 16"
+                            >
+                              <title>
+                                Pointer size tool icon
+                              </title>
+                              <path
+                                clip-rule="evenodd"
+                                d="M15 3H14V13H15L13.5 15L12 13H13V3H12L13.5 1L15 3ZM2.26889 2.96866C1.45257 2.64213 0.642497 3.45221 0.969021 4.26852L4.12222 12.1515C4.44267 12.9526 5.55924 12.9991 5.94512 12.2273L6.63695 10.8437L8.39642 12.6032C9.00589 13.2126 9.99405 13.2126 10.6035 12.6032C11.213 11.9937 11.213 11.0055 10.6035 10.3961L8.84405 8.63658L10.2277 7.94476C10.9995 7.55888 10.953 6.44231 10.1519 6.12185L2.26889 2.96866ZM1.8975 3.89713L9.78049 7.05033L7.15589 8.36263L9.89642 11.1032C10.1154 11.3221 10.1154 11.6771 9.89642 11.8961C9.67747 12.115 9.32248 12.115 9.10352 11.8961L6.36299 9.15552L5.05069 11.7801L1.8975 3.89713Z"
+                                fill="currentColor"
+                                fill-rule="evenodd"
+                                id="Vector"
+                              />
+                            </svg>
+                             
+                            <label>
+                              Size
+                               
+                            </label>
+                             
+                            <span
+                              class="stepper"
+                            >
+                              <button
+                                aria-label="increase pointer size"
+                                class="icon-bar-btn actionable base-12 secondary circular"
+                                title="increase pointer size"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  class="icon medium"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <title>
+                                    Plus icon
+                                  </title>
+                                  <path
+                                    d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                                  />
+                                </svg>
+                                 
+                                 
+                              </button>
+                               
+                              <button
+                                aria-disabled="true"
+                                aria-label="decrease pointer size"
+                                class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+                                title="decrease pointer size"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  class="icon medium"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <title>
+                                    Minus icon
+                                  </title>
+                                  <path
+                                    d="M0 7h16v2H0z"
+                                  />
+                                </svg>
+                                 
+                                 
+                              </button>
+                            </span>
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </details>
+                
+                
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`a11yMenuPanel plugin > restores state of setting values & group header collapsed state 1`] = `
+<body>
+  <div
+    style="--fontsize-body-xs: 1.875rem; --fontsize-body-s: 2.1875rem; --fontsize-body: 2.5rem; --fontsize-heading: 2.5rem; --fontsize-heading-l: 3.125rem; --fontsize-heading-xl: 4.6875rem; --fontsize-heading-xxl: 6.25rem;"
+  >
+    <div
+      class="qti-item-container"
+    />
+    <nav />
+    <div
+      class="a11y-area"
+    >
+      <div
+        class="a11y-menu-panel"
+      >
+        <div
+          aria-labelledby="tao-a11y-panel-header-123"
+          class="panel open"
+          role="toolbar"
+        >
+          <div
+            class="drawer end"
+          >
+            <div
+              class="header"
+            >
+              <div
+                class="icon-wrapper"
+              >
+                <button
+                  aria-label="Close Panel"
+                  class="icon-bar-btn actionable base-16 default"
+                  title="Close Panel"
+                >
+                  <svg
+                    aria-hidden="false"
+                    class="icon medium"
+                    viewBox="0 0 16 16"
+                  >
+                    <title>
+                      Remove icon
+                    </title>
+                    <path
+                      d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+                    />
+                  </svg>
+                   
+                   
+                </button>
+              </div>
+               
+              <div
+                class="a11y-menu-panel-header"
+                slot="header"
+              >
+                <h2
+                  class="ui-heading-l"
+                  id="tao-a11y-panel-header-123"
+                >
+                  Accessibility tools
+                </h2>
+              </div>
+            </div>
+             
+            <div
+              class="drawer-content"
+            >
+              <section
+                class="a11y-menu-panel-content"
+              >
+                <div
+                  class="a11y-group"
+                >
+                  <div
+                    class="summary"
+                  >
+                    <h3
+                      class="ui-heading flex"
+                      slot="summary"
+                    >
+                      <span>
+                        <svg
+                          aria-hidden="true"
+                          class="icon medium"
+                          viewBox="0 0 16 16"
+                        >
+                          <title>
+                            Search icon
+                          </title>
+                          <path
+                            d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
+                          />
+                        </svg>
+                         
+                        Zoom
+                         
+                      </span>
+                       
+                      <span
+                        class="stepper"
+                      >
+                        <button
+                          aria-label="zoom in"
+                          class="icon-bar-btn actionable base-12 secondary circular"
+                          title="zoom in"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="icon medium"
+                            viewBox="0 0 16 16"
+                          >
+                            <title>
+                              Plus icon
+                            </title>
+                            <path
+                              d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                            />
+                          </svg>
+                           
+                           
+                        </button>
+                         
+                        <button
+                          aria-disabled="true"
+                          aria-label="zoom out"
+                          class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+                          title="zoom out"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="icon medium"
+                            viewBox="0 0 16 16"
+                          >
+                            <title>
+                              Minus icon
+                            </title>
+                            <path
+                              d="M0 7h16v2H0z"
+                            />
+                          </svg>
+                           
+                           
+                        </button>
+                      </span>
+                    </h3>
+                  </div>
+                   
+                </div>
+                
+                
+                <details
+                  class="a11y-group"
+                  open=""
+                >
+                  <summary
+                    aria-label="collapse contrast settings"
+                    title="collapse contrast settings"
+                  >
+                    <h3
+                      class="ui-heading"
+                      slot="summary"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        fill="none"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Contrast tool icon
+                        </title>
+                        <path
+                          clip-rule="evenodd"
+                          d="M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8ZM16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2V14Z"
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                       
+                      Contrast
+                       
+                    </h3>
+                     
+                    <svg
+                      aria-hidden="true"
+                      class="icon small"
+                      fill="none"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Chevron up icon
+                      </title>
+                      <path
+                        d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </summary>
+                   
+                  <div>
+                    <ul>
+                      <li>
+                        <div
+                          class="contrast-theme-setting changed-control"
+                        >
+                          <div
+                            class="colour-switcher"
+                            role="radiogroup"
+                          >
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="whiteOnBlack"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-white-on-black);"
+                                title="White On Black"
+                                type="radio"
+                                value="whiteOnBlack"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="yellowOnBlue"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-yellow-on-blue);"
+                                title="Yellow On Blue"
+                                type="radio"
+                                value="yellowOnBlue"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="blackOnCream"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-black-on-cream);"
+                                title="Black On Cream"
+                                type="radio"
+                                value="blackOnCream"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="blackOnBlue"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-black-on-blue);"
+                                title="Black On Blue"
+                                type="radio"
+                                value="blackOnBlue"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="blackOnMagenta"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-black-on-magenta);"
+                                title="Black On Magenta"
+                                type="radio"
+                                value="blackOnMagenta"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="greyOnGreen"
+                                name="contrast-theme-picker"
+                                style="background-color: var(--theme-grey-on-green);"
+                                title="Grey On Green"
+                                type="radio"
+                                value="greyOnGreen"
+                              />
+                               
+                            </div>
+                            
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </details>
+                
+                
+                <details
+                  class="a11y-group"
+                  open=""
+                >
+                  <summary
+                    aria-label="collapse pointer settings"
+                    title="collapse pointer settings"
+                  >
+                    <h3
+                      class="ui-heading"
+                      slot="summary"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        fill="none"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Pointer tool icon
+                        </title>
+                        <path
+                          clip-rule="evenodd"
+                          d="M0.114723 1.44217C-0.274881 0.598025 0.597595 -0.274455 1.44174 0.115151L12.1224 5.04469C12.9288 5.41686 12.886 6.57714 12.0545 6.88898L9.9026 7.69593L13.6035 11.3969C14.213 12.0063 14.213 12.9945 13.6035 13.604C12.9941 14.2134 12.0059 14.2134 11.3964 13.604L7.6955 9.90303L6.88855 12.0549C6.57671 12.8865 5.41643 12.9292 5.04426 12.1228L0.114723 1.44217ZM11.7033 5.95265L1.02268 1.02311L5.95222 11.7038L7.30446 8.09778L12.1035 12.8969C12.3225 13.1158 12.6775 13.1158 12.8964 12.8969C13.1154 12.6779 13.1154 12.3229 12.8964 12.104L8.09736 7.30489L11.7033 5.95265Z"
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                       
+                      Cursor
+                       
+                    </h3>
+                     
+                    <svg
+                      aria-hidden="true"
+                      class="icon small"
+                      fill="none"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Chevron up icon
+                      </title>
+                      <path
+                        d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </summary>
+                   
+                  <div>
+                    <ul>
+                      <li>
+                        <div
+                          class="mouse-pointer-setting"
+                        >
+                          <div
+                            class="colour-switcher"
+                            role="radiogroup"
+                          >
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="white"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-white);"
+                                title="White"
+                                type="radio"
+                                value="white"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="black"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-black);"
+                                title="Black"
+                                type="radio"
+                                value="black"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="yellow"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-yellow);"
+                                title="Yellow"
+                                type="radio"
+                                value="yellow"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="green"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-green);"
+                                title="Green"
+                                type="radio"
+                                value="green"
+                              />
+                               
+                            </div>
+                            
+                            <div
+                              class="border-wrapper"
+                            >
+                              <input
+                                class="option"
+                                id="red"
+                                name="contrast-pointer-picker"
+                                style="background-color: var(--cursor-color-red);"
+                                title="Red"
+                                type="radio"
+                                value="red"
+                              />
+                               
+                            </div>
+                            
+                          </div>
+                           
+                          <span
+                            class="control-row"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              class="icon medium"
+                              fill="none"
+                              viewBox="0 0 16 16"
+                            >
+                              <title>
+                                Pointer size tool icon
+                              </title>
+                              <path
+                                clip-rule="evenodd"
+                                d="M15 3H14V13H15L13.5 15L12 13H13V3H12L13.5 1L15 3ZM2.26889 2.96866C1.45257 2.64213 0.642497 3.45221 0.969021 4.26852L4.12222 12.1515C4.44267 12.9526 5.55924 12.9991 5.94512 12.2273L6.63695 10.8437L8.39642 12.6032C9.00589 13.2126 9.99405 13.2126 10.6035 12.6032C11.213 11.9937 11.213 11.0055 10.6035 10.3961L8.84405 8.63658L10.2277 7.94476C10.9995 7.55888 10.953 6.44231 10.1519 6.12185L2.26889 2.96866ZM1.8975 3.89713L9.78049 7.05033L7.15589 8.36263L9.89642 11.1032C10.1154 11.3221 10.1154 11.6771 9.89642 11.8961C9.67747 12.115 9.32248 12.115 9.10352 11.8961L6.36299 9.15552L5.05069 11.7801L1.8975 3.89713Z"
+                                fill="currentColor"
+                                fill-rule="evenodd"
+                                id="Vector"
+                              />
+                            </svg>
+                             
+                            <label>
+                              Size
+                               
+                            </label>
+                             
+                            <span
+                              class="stepper"
+                            >
+                              <button
+                                aria-label="increase pointer size"
+                                class="icon-bar-btn actionable base-12 secondary circular"
+                                title="increase pointer size"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  class="icon medium"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <title>
+                                    Plus icon
+                                  </title>
+                                  <path
+                                    d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                                  />
+                                </svg>
+                                 
+                                 
+                              </button>
+                               
+                              <button
+                                aria-disabled="true"
+                                aria-label="decrease pointer size"
+                                class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+                                title="decrease pointer size"
+                              >
+                                <svg
+                                  aria-hidden="true"
+                                  class="icon medium"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <title>
+                                    Minus icon
+                                  </title>
+                                  <path
+                                    d="M0 7h16v2H0z"
+                                  />
+                                </svg>
+                                 
+                                 
+                              </button>
+                            </span>
+                          </span>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </details>
+                
+                
+                <details
+                  class="a11y-group outlined"
+                >
+                  <summary
+                    aria-label="expand text settings"
+                    title="expand text settings"
+                  >
+                    <h3
+                      class="ui-heading"
+                      slot="summary"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        fill="none"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Text tool icon
+                        </title>
+                        <path
+                          clip-rule="evenodd"
+                          d="M7.26857 10.5867L8.33829 13H9.47657L5.22518 3H4.25146L0 13H1.152L2.22171 10.5867H7.26857ZM6.87086 9.68H2.61943L4.74518 4.26667L6.87086 9.68ZM15.354 6.38609C14.9426 5.95943 14.3117 5.74609 13.4614 5.74609C13.0043 5.74609 12.5289 5.82165 12.0352 5.97276C11.5506 6.11498 11.1346 6.30609 10.7872 6.54609L11.1574 7.33276C11.9163 6.87054 12.6797 6.63943 13.4477 6.63943C13.9597 6.63943 14.33 6.76387 14.5586 7.01276C14.7872 7.25276 14.8571 8.14981 14.8571 8.69203V9.13203H14.5997C13.5574 9.13203 12.7437 9.19425 12.1585 9.3187C11.5734 9.43425 11.1528 9.62981 10.8968 9.90536C10.6408 10.172 10.5128 10.5498 10.5128 11.0387C10.5128 11.4031 10.618 11.7365 10.8282 12.0387C11.0385 12.3409 11.322 12.5765 11.6785 12.7454C12.0442 12.9143 12.442 12.9987 12.8717 12.9987C13.338 12.9987 13.7494 12.8965 14.106 12.692C14.4625 12.4787 14.6834 12.1809 14.8571 11.7987V12.9987H16V8.81203C16 7.94981 15.7746 6.80387 15.354 6.38609ZM14.3665 11.612C14.0191 11.9676 13.5711 12.1454 13.0225 12.1454C12.6294 12.1454 12.3002 12.0343 12.0351 11.812C11.7791 11.5809 11.6511 11.292 11.6511 10.9454C11.6511 10.6431 11.738 10.4165 11.9117 10.2654C12.0945 10.1054 12.3962 9.99425 12.8168 9.93203C13.2374 9.86092 13.85 9.82536 14.6545 9.82536H14.8571V10.212C14.8571 10.7809 14.7231 11.2476 14.3665 11.612Z"
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                       
+                      Text
+                       
+                      <span
+                        class="checkmark non-default"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="icon small"
+                          viewBox="0 0 12 12"
+                        >
+                          <title>
+                            Check mark icon
+                          </title>
+                          <path
+                            clip-rule="evenodd"
+                            d="M12 2.7L4.7 10.5L0 5.8L1.3 4.6L4.6 7.9L10.7 1.5L12 2.7Z"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                    </h3>
+                     
+                    <svg
+                      aria-hidden="true"
+                      class="icon small"
+                      fill="none"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Chevron down icon
+                      </title>
+                      <path
+                        d="M6 8L0 2L2 0L6 4L10 0L12 2L6 8Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </summary>
+                   
+                  <div
+                    class="hidden"
+                  >
+                    <ul>
+                      <li>
+                        <div
+                          class="font-family-setting"
+                        >
+                          <span
+                            class="select height-small fullwidth lite valid"
+                            style="--visible-options: 999; --space-above: 0px;"
+                          >
+                            <button
+                              aria-expanded="false"
+                              aria-haspopup="listbox"
+                              aria-label="Default font"
+                              aria-roledescription="Dropdown"
+                              title="Default font"
+                              type="button"
+                            >
+                              <span>
+                                <span
+                                  style="font-family: 'Nunito Sans', 'Source Sans Pro', Arial, sans-serif"
+                                >
+                                  Default font
+                                </span>
+                              </span>
+                               
+                              <svg
+                                aria-hidden="true"
+                                class="icon small"
+                                viewBox="0 0 12 12"
+                              >
+                                <title>
+                                  Down arrow icon
+                                </title>
+                                <path
+                                  d="M11.45 3.29A.49.49 0 0011 3H1a.49.49 0 00-.45.29.47.47 0 00.07.53l5 6a.49.49 0 00.76 0l5-6a.47.47 0 00.07-.53z"
+                                />
+                              </svg>
+                            </button>
+                             
+                            <span
+                              aria-hidden="true"
+                              class="listbox-wrapper visually-hidden"
+                            >
+                              <span
+                                aria-activedescendant="tao-option-123"
+                                aria-roledescription="dropdown list"
+                                class="listbox"
+                                role="listbox"
+                                tabindex="-1"
+                              >
+                                <span
+                                  class="scroll-child"
+                                />
+                                 
+                                <span
+                                  aria-selected="true"
+                                  class="option selected"
+                                  id="tao-option-123"
+                                  role="option"
+                                >
+                                  <span
+                                    style="font-family: 'Nunito Sans', 'Source Sans Pro', Arial, sans-serif"
+                                  >
+                                    Default font
+                                  </span>
+                                </span>
+                                <span
+                                  aria-selected="false"
+                                  class="option"
+                                  id="tao-option-123"
+                                  role="option"
+                                >
+                                  <span
+                                    style="font-family: Courier New, monospace"
+                                  >
+                                    Courier
+                                  </span>
+                                </span>
+                                <span
+                                  aria-selected="false"
+                                  class="option"
+                                  id="tao-option-123"
+                                  role="option"
+                                >
+                                  <span
+                                    style="font-family: Arial, sans-serif"
+                                  >
+                                    Arial
+                                  </span>
+                                </span>
+                                <span
+                                  aria-selected="false"
+                                  class="option"
+                                  id="tao-option-123"
+                                  role="option"
+                                >
+                                  <span
+                                    style="font-family: Verdana, sans-serif"
+                                  >
+                                    Verdana
+                                  </span>
+                                </span>
+                                <span
+                                  aria-selected="false"
+                                  class="option"
+                                  id="tao-option-123"
+                                  role="option"
+                                >
+                                  <span
+                                    style="font-family: 'CMU Serif Roman', serif"
+                                  >
+                                    CMU Serif
+                                  </span>
+                                </span>
+                                <span
+                                  aria-selected="false"
+                                  class="option"
+                                  id="tao-option-123"
+                                  role="option"
+                                >
+                                  <span
+                                    style="font-family: Luciole, Helvetica, Arial, sans-serif"
+                                  >
+                                    Luciole
+                                  </span>
+                                </span>
+                                 
+                                <span
+                                  class="scroll-child"
+                                />
+                              </span>
+                            </span>
+                             
+                            <input
+                              aria-hidden="true"
+                              class="hidden-input"
+                              data-type="select"
+                              name=""
+                              tabindex="-1"
+                              type="text"
+                            />
+                             
+                             
+                          </span>
+                        </div>
+                      </li>
+                       
+                      <li>
+                        <span
+                          class="control-row non-default"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="icon medium"
+                            fill="none"
+                            viewBox="0 0 16 16"
+                          >
+                            <title>
+                              Font size tool icon
+                            </title>
+                            <path
+                              clip-rule="evenodd"
+                              d="M15 3H14V13H15L13.5 15L12 13H13V3H12L13.5 1L15 3ZM7.90304 10.5867L8.91896 13H10L5.96241 3H5.03766L1 13H2.09407L3.10999 10.5867H7.90304ZM7.52533 9.68H3.4877L5.50654 4.26667L7.52533 9.68Z"
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                            />
+                          </svg>
+                           
+                          <label>
+                            Size
+                             
+                            <span
+                              class="checkmark non-default"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon small"
+                                viewBox="0 0 12 12"
+                              >
+                                <title>
+                                  Check mark icon
+                                </title>
+                                <path
+                                  clip-rule="evenodd"
+                                  d="M12 2.7L4.7 10.5L0 5.8L1.3 4.6L4.6 7.9L10.7 1.5L12 2.7Z"
+                                  fill-rule="evenodd"
+                                />
+                              </svg>
+                            </span>
+                          </label>
+                           
+                          <span
+                            class="stepper changed-control"
+                          >
+                            <button
+                              aria-label="increase font size"
+                              class="icon-bar-btn actionable base-12 secondary circular"
+                              title="increase font size"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Plus icon
+                                </title>
+                                <path
+                                  d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                                />
+                              </svg>
+                               
+                               
+                            </button>
+                             
+                            <button
+                              aria-label="decrease font size"
+                              class="icon-bar-btn actionable base-12 secondary circular"
+                              title="decrease font size"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Minus icon
+                                </title>
+                                <path
+                                  d="M0 7h16v2H0z"
+                                />
+                              </svg>
+                               
+                               
+                            </button>
+                          </span>
+                        </span>
+                      </li>
+                       
+                      <li>
+                        <span
+                          class="control-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="icon medium"
+                            fill="none"
+                            viewBox="0 0 16 16"
+                          >
+                            <title>
+                              Line height tool icon
+                            </title>
+                            <path
+                              clip-rule="evenodd"
+                              d="M14 3H15L13.5 1L12 3H13V13H12L13.5 15L15 13H14V3ZM1 6.5C1 6.22386 1.22386 6 1.5 6H10.5C10.7761 6 11 6.22386 11 6.5C11 6.77614 10.7761 7 10.5 7H1.5C1.22386 7 1 6.77614 1 6.5ZM1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H10.5C10.7761 4 11 3.77614 11 3.5C11 3.22386 10.7761 3 10.5 3H1.5ZM1 9.5C1 9.22386 1.22386 9 1.5 9H10.5C10.7761 9 11 9.22386 11 9.5C11 9.77614 10.7761 10 10.5 10H1.5C1.22386 10 1 9.77614 1 9.5ZM1.5 12C1.22386 12 1 12.2239 1 12.5C1 12.7761 1.22386 13 1.5 13H10.5C10.7761 13 11 12.7761 11 12.5C11 12.2239 10.7761 12 10.5 12H1.5Z"
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              id="Vector"
+                            />
+                          </svg>
+                           
+                          <label>
+                            Line height
+                             
+                          </label>
+                           
+                          <span
+                            class="stepper"
+                          >
+                            <button
+                              aria-label="increase line height"
+                              class="icon-bar-btn actionable base-12 secondary circular"
+                              title="increase line height"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Plus icon
+                                </title>
+                                <path
+                                  d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                                />
+                              </svg>
+                               
+                               
+                            </button>
+                             
+                            <button
+                              aria-disabled="true"
+                              aria-label="decrease line height"
+                              class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+                              title="decrease line height"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Minus icon
+                                </title>
+                                <path
+                                  d="M0 7h16v2H0z"
+                                />
+                              </svg>
+                               
+                               
+                            </button>
+                          </span>
+                        </span>
+                      </li>
+                       
+                       
+                       
+                      <li>
+                        <span
+                          class="control-row"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="icon medium"
+                            fill="none"
+                            viewBox="0 0 16 16"
+                          >
+                            <title>
+                              Font spacing tool icon
+                            </title>
+                            <path
+                              clip-rule="evenodd"
+                              d="M3 1L3 2L13 2V1L15 2.5L13 4V3L3 3V4L1 2.5L3 1ZM8.296 15L7.36 12.828H2.944L2.008 15H1L4.72003 6H5.57203L9.292 15H8.296ZM3.292 12.012H7.012L5.15203 7.14L3.292 12.012ZM12.7788 8.47149C13.5228 8.47149 14.0748 8.66349 14.4348 9.04749C14.8028 9.42348 15 10.4548 15 11.2308V14.9988H14V13.9188C13.848 14.2628 13.6547 14.5308 13.3427 14.7228C13.0307 14.9068 12.6707 14.9988 12.2627 14.9988C11.8867 14.9988 11.5387 14.9228 11.2187 14.7708C10.9067 14.6188 10.6587 14.4068 10.4747 14.1348C10.2907 13.8628 10.1987 13.5628 10.1987 13.2348C10.1987 12.7948 10.3107 12.4548 10.5347 12.2148C10.7587 11.9668 11.1267 11.7908 11.6387 11.6868C12.1507 11.5748 12.8627 11.5188 13.7747 11.5188H14V11.1228C14 10.6348 13.9388 9.82749 13.7388 9.61149C13.5388 9.38749 13.2148 9.27549 12.7668 9.27549C12.0948 9.27549 11.4268 9.48349 10.7628 9.89949L10.4388 9.19149C10.7428 8.97549 11.1068 8.80349 11.5308 8.67549C11.9628 8.53949 12.3788 8.47149 12.7788 8.47149ZM12.3947 14.2308C12.8747 14.2308 13.2667 14.0708 13.5707 13.7508C13.8827 13.4228 14 13.0028 14 12.4908V12.1428H13.8227C13.1187 12.1428 12.5827 12.1748 12.2147 12.2388C11.8467 12.2948 11.5827 12.3948 11.4227 12.5388C11.2707 12.6748 11.1947 12.8788 11.1947 13.1508C11.1947 13.4628 11.3067 13.7228 11.5307 13.9308C11.7627 14.1308 12.0507 14.2308 12.3947 14.2308Z"
+                              fill="currentColor"
+                              fill-rule="evenodd"
+                              id="Union"
+                            />
+                          </svg>
+                           
+                          <label>
+                            Spacing
+                             
+                          </label>
+                           
+                          <span
+                            class="stepper"
+                          >
+                            <button
+                              aria-label="increase letter and word spacing"
+                              class="icon-bar-btn actionable base-12 secondary circular"
+                              title="increase letter and word spacing"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Plus icon
+                                </title>
+                                <path
+                                  d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                                />
+                              </svg>
+                               
+                               
+                            </button>
+                             
+                            <button
+                              aria-disabled="true"
+                              aria-label="decrease letter and word spacing"
+                              class="icon-bar-btn actionable base-12 secondary circular visually-disabled"
+                              title="decrease letter and word spacing"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Minus icon
+                                </title>
+                                <path
+                                  d="M0 7h16v2H0z"
+                                />
+                              </svg>
+                               
+                               
+                            </button>
+                          </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </details>
+                
+                
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

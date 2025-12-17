@@ -1,0 +1,132 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TableContainer component > should filter rows by search term 1`] = `
+<body>
+  <div>
+    <table
+      class="fullwidth"
+    >
+      <thead>
+        <tr>
+          
+          <th
+            scope="col"
+          >
+            <div
+              class="cell-wrapper"
+            >
+               
+               
+            </div>
+             
+          </th>
+          
+          
+          <th
+            scope="col"
+          >
+            <div
+              class="cell-wrapper"
+            >
+               
+              <div>
+                <div>
+                  Name
+                </div>
+                 
+                 
+              </div>
+               
+            </div>
+             
+          </th>
+          
+          
+          <th
+            scope="col"
+          >
+            <div
+              class="cell-wrapper"
+            >
+               
+              <div>
+                <div>
+                  ID
+                </div>
+                 
+                 
+              </div>
+               
+            </div>
+             
+          </th>
+          
+        </tr>
+      </thead>
+       
+      <tbody>
+        <tr>
+          <td>
+            <div
+              class="radio-wrapper"
+            >
+              <div
+                class="radio"
+              >
+                <label
+                  class="radio-label"
+                >
+                  <input
+                    name="radioButton"
+                    type="radio"
+                    value="undefined"
+                  />
+                   
+                  <svg
+                    class="radio-button"
+                    viewBox="0 0 16 16"
+                  >
+                    <title>
+                      Radio button
+                    </title>
+                    <circle
+                      class="border"
+                      cx="8"
+                      cy="8"
+                      fill="none"
+                      r="7"
+                      stroke="black"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </label>
+              </div>
+            </div>
+            
+          </td>
+          <td>
+            Battery number two
+            
+            
+          </td>
+          <td>
+            id2
+            
+            
+          </td>
+           
+        </tr>
+      </tbody>
+    </table>
+     
+    <div
+      aria-live="polite"
+      class="visually-hidden"
+    >
+      
+    </div>
+     
+    
+  </div>
+</body>
+`;

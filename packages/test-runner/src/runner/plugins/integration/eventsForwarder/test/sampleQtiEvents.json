@@ -1,0 +1,8 @@
+[
+    {
+        "domEventType": "click",
+        "qtiChoiceIdentifier": "choice_1",
+        "position": "330,306,399,503",
+        "newResponse": ["choice_1"]
+    }
+]

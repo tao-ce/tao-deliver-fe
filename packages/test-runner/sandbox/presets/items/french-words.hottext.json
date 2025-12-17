@@ -1,0 +1,535 @@
+{
+  "baseUrl": "./assets/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "i15952536129220158",
+      "serial": "i5f15a99f2f37d",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "i15952536129220158",
+        "title": "French Words",
+        "label": "French Words",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.3.0-sprint73",
+        "class": ""
+      },
+      "body": {
+        "serial": "i5f15a99f2f32c",
+        "body": "<div class=\"grid-row\">\n<div class=\"col-12\">\n {{i5f15a99f2fc7b_french}}\n <\/div>\n<\/div>\n\n <div class=\"grid-row\">\n<div class=\"col-12\">\n {{i5f2c6d0b52f5d_philo}}\n <\/div>\n<\/div>\n\n <div class=\"grid-row\">\n<div class=\"col-12\">\n {{i5f15a99c0ffee_turtle}}\n <\/div>\n<\/div>\n\n <div class=\"grid-row\">\n<div class=\"col-12\">\n {{i5f15a9bc3de4f_hebrew}}\n <\/div>\n<\/div>",
+        "elements": {
+          "i5f15a99f2fc7b_french": {
+            "serial": "i5f15a99f2fc7b_french",
+            "qtiClass": "hottextInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "maxChoices": 6,
+              "minChoices": 4,
+              "classes": "tao-control-input-default",
+              "base" : "./schengen/"
+            },
+            "body": {
+              "serial": "i5f15a99f2fe02",
+              "body": "<div><p>As he was {{i5f15a99f2ff08}} a creative {{i5f15a99f30052}} around December, Richard had an epiphany. <strong>To avoid being {{i5f15a99f3019c}} he needed to {{i5f15a99f302cb}} of a new {{i5f15a99f303f4}} approach to his creations.<\/strong> <em>This {{i5f15a99f3051b}} feeling had a taste of {{i5f15a99f30645}}.<\/em><\/p><\/div>",
+              "elements": {
+                "i5f15a99f2ff08": {
+                  "identifier": "hottext_1",
+                  "serial": "i5f15a99f2ff08",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_1",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15a99f2ff85",
+                    "body": "reaching",
+                    "elements": []
+                  }
+                },
+                "i5f15a99f30052": {
+                  "identifier": "hottext_2",
+                  "serial": "i5f15a99f30052",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_2",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15a99f300ba",
+                    "body": "cul-de-sac",
+                    "elements": []
+                  }
+                },
+                "i5f15a99f3019c": {
+                  "identifier": "hottext_3",
+                  "serial": "i5f15a99f3019c",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_3",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15a99f30206",
+                    "body": "clich\u00e9",
+                    "elements": []
+                  }
+                },
+                "i5f15a99f302cb": {
+                  "identifier": "hottext_4",
+                  "serial": "i5f15a99f302cb",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_4",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15a99f30332",
+                    "body": "think",
+                    "elements": []
+                  }
+                },
+                "i5f15a99f303f4": {
+                  "identifier": "hottext_5",
+                  "serial": "i5f15a99f303f4",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_5",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15a99f3045a",
+                    "body": "avant-garde",
+                    "elements": []
+                  }
+                },
+                "i5f15a99f3051b": {
+                  "identifier": "hottext_6",
+                  "serial": "i5f15a99f3051b",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_6",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15a99f30582",
+                    "body": "overwhelming",
+                    "elements": []
+                  }
+                },
+                "i5f15a99f30645": {
+                  "identifier": "hottext_7",
+                  "serial": "i5f15a99f30645",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_7",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15a99f306ab",
+                    "body": "d\u00e9j\u00e0-vu",
+                    "elements": []
+                  }
+                }
+              }
+            },
+            "prompt": {
+              "serial": "i5f15a99f2fd9c",
+              "body": "Select all the words that originate from the French language",
+              "elements": []
+            }
+          },
+          "i5f2c6d0b52f5d_philo": {
+            "serial": "i5f2c6d0b52f5d_philo",
+            "qtiClass": "hottextInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_1",
+              "maxChoices": 4,
+              "minChoices": 0,
+              "classes": "qti-control-input-hidden",
+              "base" : "./schengen/"
+            },
+            "body": {
+              "serial": "i5f2c6d0b530b7",
+              "body": "<p>{{i5f2c6d0b531ae}} was a real piss-ant who was very rarely stable.<br\/>\n{{i5f2c6d0b532e5}}, Heidegger was a boozy beggar who could think you under the table.<br\/>\n{{i5f2c6d0b53410}} could out-consume {{i5f2c6d0b53545}}.<br\/>\nAnd {{i5f2c6d0b53665}} was a beery swine who was just as sloshed as {{i5f2c6d0b5377f}}.<\/p>",
+              "elements": {
+                "i5f2c6d0b531ae": {
+                  "identifier": "hottext_16",
+                  "serial": "i5f2c6d0b531ae",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_16",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f2c6d0b53219",
+                    "body": "Immanuel Kant",
+                    "elements": []
+                  }
+                },
+                "i5f2c6d0b532e5": {
+                  "identifier": "hottext_15",
+                  "serial": "i5f2c6d0b532e5",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_15",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f2c6d0b5334b",
+                    "body": "Heidegger",
+                    "elements": []
+                  }
+                },
+                "i5f2c6d0b53410": {
+                  "identifier": "hottext_13",
+                  "serial": "i5f2c6d0b53410",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_13",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f2c6d0b53480",
+                    "body": "David Hume",
+                    "elements": []
+                  }
+                },
+                "i5f2c6d0b53545": {
+                  "identifier": "hottext_14",
+                  "serial": "i5f2c6d0b53545",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_14",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f2c6d0b535a8",
+                    "body": "Wilhelm Friedrich Hegel",
+                    "elements": []
+                  }
+                },
+                "i5f2c6d0b53665": {
+                  "identifier": "hottext_12",
+                  "serial": "i5f2c6d0b53665",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_12",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f2c6d0b536c5",
+                    "body": "Wittgenstein",
+                    "elements": []
+                  }
+                },
+                "i5f2c6d0b5377f": {
+                  "identifier": "hottext_11",
+                  "serial": "i5f2c6d0b5377f",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_11",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f2c6d0b537de",
+                    "body": "Schlegel",
+                    "elements": []
+                  }
+                }
+              }
+            },
+            "prompt": {
+              "serial": "i5f2c6d0b5305c",
+              "body": "Highlight all the German philosophers in the following comedic song",
+              "elements": []
+            }
+          },
+          "i5f15a99c0ffee_turtle": {
+            "serial": "i5f15a99c0ffee_turtle",
+            "qtiClass": "hottextInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_2",
+              "maxChoices": -1,
+              "minChoices": 1,
+              "classes": "tao-control-styling-hidden",
+              "base" : "./schengen/"
+            },
+            "body": {
+              "serial": "i5f15a99f2fe03",
+              "body": "<div><p>{{i5f15a99f2f101}} {{i5f15a99f30102}} {{i5f15a99f30103}} {{i5f15a99f30104}} {{i5f15a99f30105}} {{i5f15a99f30106}}<\/p><\/div>",
+              "elements": {
+                "i5f15a99f2f101": {
+                  "identifier": "hottext_21",
+                  "serial": "i5f15a99f2f101",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_21",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15a99f2ff86",
+                    "body": "The tortoise, too, ",
+                    "elements": []
+                  }
+                },
+                "i5f15a99f30102": {
+                  "identifier": "hottext_22",
+                  "serial": "i5f15a99f30102",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_22",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15a99f300bb",
+                    "body": "is an animal that is equally amphibious with the beaver, ",
+                    "elements": []
+                  }
+                },
+                "i5f15a99f30103": {
+                  "identifier": "hottext_23",
+                  "serial": "i5f15a99f30103",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_23",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15a99f30207",
+                    "body": "and possessed of medicinal properties as strongly developed; ",
+                    "elements": []
+                  }
+                },
+                "i5f15a99f30104": {
+                  "identifier": "hottext_24",
+                  "serial": "i5f15a99f30104",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_24",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15a99f30333",
+                    "body": "in addition to which, ",
+                    "elements": []
+                  }
+                },
+                "i5f15a99f30105": {
+                  "identifier": "hottext_25",
+                  "serial": "i5f15a99f30105",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_25",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15a99f3045b",
+                    "body": "it claims an equal degree of notice for the high price which luxury sets upon its shell, ",
+                    "elements": []
+                  }
+                },
+                "i5f15a99f30106": {
+                  "identifier": "hottext_26",
+                  "serial": "i5f15a99f30106",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_26",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15a99f30583",
+                    "body": "and the singularity of its conformation.",
+                    "elements": []
+                  }
+                }
+              }
+            },
+            "prompt": {
+              "serial": "i5f15a99f2fd9d",
+              "body": "Identify all the relative clauses in the following sentence",
+              "elements": []
+            }
+          },
+          "i5f15a9bc3de4f_hebrew": {
+            "serial": "i5f15a9bc3de4f_hebrew",
+            "qtiClass": "hottextInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_3",
+              "maxChoices": -1,
+              "minChoices": 0,
+              "dir": "rtl",
+              "classes": "tao-control-styling-hidden",
+              "base" : "./schengen/"
+            },
+            "body": {
+              "serial": "i5f15b99f2fe03",
+              "body": "<p>{{i5f15b99f2f111}} {{i5f15b99f30112}} {{i5f15b99f30113}}<\/p>",
+              "elements": {
+                "i5f15b99f2f111": {
+                  "identifier": "hottext_31",
+                  "serial": "i5f15b99f2f111",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_31",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15a99f2ff8d",
+                    "_body": "test",
+                    "body": "\u05d0\u05d9\u05e0\u05d8\u05e8\u05d0\u05e7\u05e6\u05d9\u05d4 \u05d6\u05d5",
+                    "elements": []
+                  }
+                },
+                "i5f15b99f30112": {
+                  "identifier": "hottext_32",
+                  "serial": "i5f15b99f30112",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_32",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15b99f300bd",
+                    "_body": "my",
+                    "body": "\u05e2\u05d5\u05d1\u05d3\u05ea \u05e2\u05dd \u05ea\u05e1\u05e8\u05d9\u05d8",
+                    "elements": []
+                  }
+                },
+                "i5f15b99f30113": {
+                  "identifier": "hottext_33",
+                  "serial": "i5f15b99f30113",
+                  "qtiClass": "hottext",
+                  "attributes": {
+                    "identifier": "hottext_33",
+                    "fixed": false
+                  },
+                  "body": {
+                    "serial": "i5f15b99f3020d",
+                    "_body": "thing",
+                    "body": "\u05de\u05d9\u05de\u05d9\u05df \u05dc\u05e9\u05de\u05d0\u05dc\u002e",
+                    "elements": []
+                  }
+                }
+              }
+            },
+            "prompt": {
+              "serial": "i5f15b99f2fd9d",
+              "body": "Pick out the beginning Hebrew token (RTL mode)",
+              "elements": []
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+        "html5": "html5",
+        "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+        "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+      },
+      "stylesheets": {
+        "i5f15a99f2f4df": {
+          "serial": "i5f15a99f2f4df",
+          "qtiClass": "stylesheet",
+          "attributes": {
+            "href": "tao-user-styles.css",
+            "type": "text\/css",
+            "media": "all",
+            "title": ""
+          }
+        }
+      },
+      "outcomes": {
+        "i5f15a99f2f69e": {
+          "identifier": "SCORE",
+          "serial": "i5f15a99f2f69e",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float",
+            "normalMaximum": 0
+          },
+          "defaultValue": null
+        },
+        "i5f15a99f2f74f": {
+          "identifier": "MAXSCORE",
+          "serial": "i5f15a99f2f74f",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "MAXSCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "0"
+        }
+      },
+      "responses": {
+        "i5f15a99f2f5c6_french": {
+          "identifier": "RESPONSE",
+          "serial": "i5f15a99f2f5c6_french",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "multiple",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i5f2c6d0b52c0e_philo": {
+          "identifier": "RESPONSE_1",
+          "serial": "i5f2c6d0b52c0e_philo",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_1",
+            "cardinality": "multiple",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i5f15a99f2f5c7_turtle": {
+          "identifier": "RESPONSE_2",
+          "serial": "i5f15a99f2f5c7_turtle",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_2",
+            "cardinality": "multiple",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "i5f15a9bc3de4f_hebrew": {
+          "identifier": "RESPONSE_3",
+          "serial": "i5f15a9bc3de4f_hebrew",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_3",
+            "cardinality": "multiple",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        }
+      },
+      "feedbacks": [],
+      "apipAccessibility": ""
+    },
+    "assets": {
+      "css": {
+        "tao-user-styles.css": "tao-user-styles.css"
+      }
+    }
+  },
+  "itemState": {},
+  "itemIdentifier": "item-1",
+  "portableElements": {
+    "pci": [],
+    "pic": {}
+  },
+  "success": true,
+  "messages": []
+}

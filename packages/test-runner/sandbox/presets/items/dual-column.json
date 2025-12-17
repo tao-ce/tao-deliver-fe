@@ -1,0 +1,220 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i6790fd23db79020250122151355db55",
+            "serial": "i67b7005edc934",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i6790fd23db79020250122151355db55",
+                "adaptive": false,
+                "label": "Dual column",
+                "xml:lang": "en-US",
+                "timeDependent": false,
+                "title": "Dual column",
+                "toolName": "TAO",
+                "toolVersion": "NextGen",
+                "class": "separator-between-columns"
+            },
+            "body": {
+                "serial": "i67b7005edc92b",
+                "body": "\n    <div class=\"grid-row dual-column-layout\">\n      <div class=\"col-8\">\n        <p></p>\n        {{i67b7005edce86}}\n      </div>\n      <div class=\"col-4\">\n        {{i67b7005edcb3a}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "i67b7005edcb3a": {
+                        "serial": "i67b7005edcb3a",
+                        "qtiClass": "choiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "shuffle": true,
+                            "maxChoices": 1,
+                            "minChoices": 0,
+                            "orientation": "vertical"
+                        },
+                        "choices": {
+                            "i67b7005edcd0c": {
+                                "identifier": "choice_1",
+                                "serial": "i67b7005edcd0c",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i67b7005edcd20",
+                                    "body": "mesospheric",
+                                    "elements": []
+                                }
+                            },
+                            "i67b7005edcd57": {
+                                "identifier": "choice_2",
+                                "serial": "i67b7005edcd57",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i67b7005edcd5e",
+                                    "body": "stratospheric",
+                                    "elements": []
+                                }
+                            },
+                            "i67b7005edcd8b": {
+                                "identifier": "choice_3",
+                                "serial": "i67b7005edcd8b",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i67b7005edcd92",
+                                    "body": "tropospheric",
+                                    "elements": []
+                                }
+                            },
+                            "i67b7005edcdc8": {
+                                "identifier": "choice_4",
+                                "serial": "i67b7005edcdc8",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_4",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i67b7005edcdcf",
+                                    "body": "some other layer",
+                                    "elements": []
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i67b7005edcc7c",
+                            "body": "\n       To which atmospheric layer do     <strong>nacreous (mother of pearl)</strong> clouds belong?\n          ",
+                            "elements": []
+                        }
+                    },
+                    "i67b7005edce86": {
+                        "serial": "i67b7005edce86",
+                        "qtiClass": "include",
+                        "attributes": {
+                            "href": "bed13c18f58b9792cbde1ba7d977de9192ad1326-passage NEW 2.xml",
+                            "class": "tao-rhr4ufnsx"
+                        },
+                        "body": {
+                            "serial": "i67b7005edce8f",
+                            "body": "\n    \n        \n    \n        \n    \n        \n    \n        \n    \n        \n    \n        \n    \n        \n    \n        \n<div xmlns:qh5=\"http://www.imsglobal.org/xsd/imsqtiv2p2_html5_v1p0\" class=\"grid-row\"><div xmlns:qh5=\"http://www.imsglobal.org/xsd/imsqtiv2p2_html5_v1p0\" class=\"col-12\"><div class=\"colrow\"><div class=\"custom-text-box tao-y7fgz9k92\">\n<h1 class=\"txt-ctr\">Cloud identification and classification</h1>\n\n<h2 class=\"txt-ctr\">List of cloud types</h2>\n</div>\n</div><div xmlns:qh5=\"http://www.imsglobal.org/xsd/imsqtiv2p2_html5_v1p0\" class=\"colrow\"><div xmlns:qh5=\"http://www.imsglobal.org/xsd/imsqtiv2p2_html5_v1p0\" class=\"custom-text-box tao-lzlvz9nju\">\n<p> </p>\n\n\n{{figure_i67b7005ee8da2}}\n\n\n<h3>Mesospheric cloud identification and classification</h3>\n\n<p>Clouds that form in the mesosphere come in a variety of forms such as veils, bands, and billows, but are not given Latin names based on these characteristics. These clouds are the highest in the atmosphere and are given the Latin-derived name noctilucent which refers to their illumination during deep twilight rather than their physical forms. They are sub-classified alpha-numerically and with common terms according to specific details of their physical structures. </p>\n\n<h3>Stratospheric cloud identification and classification</h3>\n\n<p>Polar stratospheric clouds form at very high altitudes in polar regions of the stratosphere. Those that show mother-of-pearl colors are given the name nacreous. Very high-level stratiform: Nitric acid and water polar stratospheric: Sometimes known as type 1, a thin sheet-like cloud resembling cirrostratus or haze. Contains supercooled nitric acid and water droplets; sometimes also contains supercooled sulfuric acid in ternary solution. Very high-level cirriform and stratocumuliform: Nacreous polar stratospheric cloud (mother of pearl): Sometimes known as type 2, a thin usually cirriform or lenticular (stratocumuliform) looking cloud based from about 18 to 30 kilometres (59,000–98,000 ft) and seen most often between sunset and sunrise.[8] Consists of ice crystals only.</p>\n\n<h3>Troposphere cloud identification and classification</h3>\n\n<p>Tropospheric clouds are divided into physical forms defined by structure, and levels defined by altitude range. These divisions are cross-classified to produce ten basic genus-types. They have Latin names as authorized by the World Meteorological Organization (WMO) that indicate physical structure, altitude or étage, and process of formation. High clouds form in the highest and coldest region of the troposphere from about 5 to 12 km (16,500 to 40,000 ft) in temperate latitudes.[9][10] At this altitude water almost always freezes so high clouds are generally composed of ice crystals or supercooled water droplets. Cirriform clouds tend to be wispy and are mostly transparent or translucent. Isolated cirrus do not bring rain; however, large amounts of cirrus can indicate an approaching storm system eventually followed by fair weather. High-level stratocumuliform clouds of the genus cirrocumulus form when moist air at high tropospheric altitude reaches saturation, creating ice crystals or supercooled water droplets. Limited convective instability at the cloud level gives the cloud a rolled or rippled appearance. Despite the lack of a strato- prefix, layered cirrocumulus is physically a high stratocumuliform genus. \n\n{{figure_i67b7005ee8f95}}\n\n Clouds of the genus cirrostratus consist of mostly continuous, wide sheets of cloud that covers a large area of the sky. It is formed when convectively stable moist air cools to saturation at high altitude, forming ice crystals.[16] Frontal cirrostratus is a precursor to rain or snow if it thickens into mid-level altostratus and eventually nimbostratus, as the weather front moves closer to the observer. </p>\n</div>\n</div></div></div>\n    \n\n    \n\n    \n\n    \n\n    \n\n    \n\n    \n\n    \n",
+                            "elements": {
+                                "figure_i67b7005ee8da2": {
+                                    "serial": "figure_i67b7005ee8da2",
+                                    "qtiClass": "figure",
+                                    "attributes": {
+                                        "class": "wrap-right"
+                                    },
+                                    "body": {
+                                        "serial": "i67b7005ee8db1",
+                                        "body": "{{i67b7005ee8ddb}}",
+                                        "elements": {
+                                            "i67b7005ee8ddb": {
+                                                "serial": "i67b7005ee8ddb",
+                                                "qtiClass": "img",
+                                                "attributes": {
+                                                    "src": "numbers-sand.jpg",
+                                                    "alt": "cloud1.jpg",
+                                                    "width": "20%"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "figure_i67b7005ee8f95": {
+                                    "serial": "figure_i67b7005ee8f95",
+                                    "qtiClass": "figure",
+                                    "attributes": {
+                                        "class": "wrap-left"
+                                    },
+                                    "body": {
+                                        "serial": "i67b7005ee8fa3",
+                                        "body": "{{i67b7005ee8fde}}",
+                                        "elements": {
+                                            "i67b7005ee8fde": {
+                                                "serial": "i67b7005ee8fde",
+                                                "qtiClass": "img",
+                                                "attributes": {
+                                                    "src": "456-sand.jpg",
+                                                    "alt": "cloud4.jpg",
+                                                    "width": "20%"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "qh5": "http://www.imsglobal.org/xsd/imsqtiv2p2_html5_v1p0",
+                "xi": "http://www.w3.org/2001/XInclude",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": {
+                "i67b7005edca7d": {
+                    "identifier": "SCORE",
+                    "serial": "i67b7005edca7d",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1,
+                        "normalMinimum": 0
+                    },
+                    "defaultValue": null
+                },
+                "i67b7005edcaa4": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i67b7005edcaa4",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "i67b7005edc9fd": {
+                    "identifier": "RESPONSE",
+                    "serial": "i67b7005edc9fd",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "single",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {}
+    },
+    "success": true,
+    "itemState": {},
+    "itemIdentifier": "foo"
+}

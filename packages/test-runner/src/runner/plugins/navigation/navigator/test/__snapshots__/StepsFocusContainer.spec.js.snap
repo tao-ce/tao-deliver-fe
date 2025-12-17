@@ -1,0 +1,110 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`StepsFocusContainer > renders with StepProgress 1`] = `
+<body>
+  <div>
+    <div
+      class="withslot"
+    >
+      <div>
+        <ol
+          class="space-medium"
+        >
+          <li>
+            <button
+              aria-label="1 "
+              class="step default"
+              tabindex="-1"
+            >
+               
+               
+              <span
+                aria-hidden="true"
+                class="step-label"
+              >
+                1
+              </span>
+            </button>
+             
+          </li>
+          <li>
+            <button
+              aria-current="location"
+              aria-label="2 "
+              class="step default current"
+              tabindex="-1"
+            >
+              <span
+                aria-hidden="true"
+                class="indicator"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon small"
+                  viewBox="0 0 12 12"
+                >
+                  <title>
+                    Current item indicator
+                  </title>
+                  <path
+                    d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </span>
+               
+               
+              <span
+                aria-hidden="true"
+                class="step-label"
+              >
+                2
+              </span>
+            </button>
+             
+          </li>
+          <li>
+            <button
+              aria-label="3 "
+              class="step default"
+              tabindex="0"
+            >
+               
+               
+              <span
+                aria-hidden="true"
+                class="step-label"
+              >
+                3
+              </span>
+            </button>
+             
+          </li>
+        </ol>
+         
+        <ol
+          class="space-medium"
+        >
+          <li>
+            <button
+              aria-label="1 "
+              class="step default"
+              tabindex="-1"
+            >
+               
+               
+              <span
+                aria-hidden="true"
+                class="step-label"
+              >
+                1
+              </span>
+            </button>
+             
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</body>
+`;

@@ -1,0 +1,331 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`commentHighlighter > creates highlights in container and attaches listeners 1`] = `
+<body>
+  
+        
+  <div
+    class="qti-item"
+  >
+    
+          
+    <div
+      class="qti-extendedTextInteraction"
+      data-response-id="respA"
+    >
+      
+            
+      <div
+        class="text-container"
+      >
+        
+                
+        <p>
+          Old king 
+          <span>
+            Cole
+          </span>
+        </p>
+        
+            
+      </div>
+      
+          
+    </div>
+    
+          
+    <div
+      class="qti-extendedTextInteraction"
+      data-response-id="respB"
+    >
+      
+            
+      <div
+        class="text-container"
+      >
+        
+                
+        <p>
+          <span
+            aria-describedby="tao-description-for-5678"
+            class="tao-comment-txt"
+            data-after-was-split="true"
+            data-before-was-split="true"
+            data-color="5678"
+            data-hl-group="1"
+            tabindex="0"
+          >
+            And he called for his 
+          </span>
+          <span>
+            <span
+              aria-describedby="tao-description-for-5678"
+              class="tao-comment-txt"
+              data-after-was-split="true"
+              data-before-was-split="true"
+              data-color="5678"
+              data-hl-group="1"
+              tabindex="0"
+            >
+              pipe
+            </span>
+          </span>
+        </p>
+        
+                
+        <p>
+          <span
+            aria-describedby="tao-description-for-1234"
+            class="tao-comment-txt"
+            data-after-was-split="true"
+            data-before-was-split="true"
+            data-color="1234"
+            data-hl-group="2"
+            tabindex="0"
+          >
+            was a merry old 
+          </span>
+          <span>
+            <span
+              aria-describedby="tao-description-for-1234"
+              class="tao-comment-txt"
+              data-after-was-split="true"
+              data-before-was-split="true"
+              data-color="1234"
+              data-hl-group="2"
+              tabindex="0"
+            >
+              soul
+            </span>
+          </span>
+        </p>
+        
+            
+      </div>
+      
+          
+    </div>
+    
+        
+  </div>
+</body>
+`;
+
+exports[`commentHighlighter > creates highlights in container and attaches listeners 2`] = `
+<body>
+  
+        
+  <div
+    class="qti-item"
+  >
+    
+          
+    <div
+      class="qti-extendedTextInteraction"
+      data-response-id="respA"
+    >
+      
+            
+      <div
+        class="text-container"
+      >
+        
+                
+        <p>
+          Old king 
+          <span>
+            Cole
+          </span>
+        </p>
+        
+            
+      </div>
+      
+          
+    </div>
+    
+          
+    <div
+      class="qti-extendedTextInteraction"
+      data-response-id="respB"
+    >
+      
+            
+      <div
+        class="text-container"
+      >
+        
+                
+        <p>
+          <span
+            aria-describedby="tao-description-for-5678"
+            class="tao-comment-txt"
+            data-after-was-split="true"
+            data-before-was-split="true"
+            data-color="5678"
+            data-hl-group="1"
+            tabindex="0"
+          >
+            And he called for his 
+          </span>
+          <span>
+            <span
+              aria-describedby="tao-description-for-5678"
+              class="tao-comment-txt"
+              data-after-was-split="true"
+              data-before-was-split="true"
+              data-color="5678"
+              data-hl-group="1"
+              tabindex="0"
+            >
+              pipe
+            </span>
+          </span>
+        </p>
+        
+                
+        <p>
+          was a merry old 
+          <span>
+            soul
+          </span>
+        </p>
+        
+            
+      </div>
+      
+          
+    </div>
+    
+        
+  </div>
+</body>
+`;
+
+exports[`commentHighlighter > getCommentsOnlyDataModel 1`] = `
+<p>
+  And 
+  <span
+    class="highlighter-txt"
+    data-color="pink"
+  >
+    he
+  </span>
+   called 
+  <span
+    aria-describedby="tao-description-for-1234"
+    class="tao-comment-txt"
+    data-after-was-split="true"
+    data-before-was-split="true"
+    data-color="1234"
+    data-hl-group="1"
+    tabindex="0"
+  >
+    for 
+  </span>
+  <span
+    class="highlighter-txt"
+    data-color="blue"
+  >
+    his
+  </span>
+  <span
+    aria-describedby="tao-description-for-5678"
+    class="tao-comment-txt"
+    data-after-was-split="true"
+    data-before-was-split="true"
+    data-color="5678"
+    data-hl-group="2"
+    tabindex="0"
+  >
+     pi
+  </span>
+  pe
+</p>
+`;
+
+exports[`commentHighlighter > getCommentsOnlyDataModel 2`] = `
+[
+  {
+    "c": "1234",
+    "groupId": "1",
+    "offsetBefore": 14,
+    "path2": [
+      0,
+      -1,
+    ],
+    "textLength": 4,
+  },
+]
+`;
+
+exports[`commentHighlighter > getCommentsOnlyDataModel 3`] = `
+[
+  {
+    "c": "1234",
+    "groupId": "1",
+    "offsetBefore": 14,
+    "path2": [
+      0,
+      -1,
+    ],
+    "textLength": 4,
+  },
+  {
+    "c": "5678",
+    "groupId": "2",
+    "offsetBefore": 21,
+    "path2": [
+      0,
+      -1,
+    ],
+    "textLength": 3,
+  },
+]
+`;
+
+exports[`commentHighlighter > getCommentsOnlyDataModel 4`] = `
+<div
+  class="text-container"
+>
+  
+                
+  <p>
+    And he called 
+    <span
+      aria-describedby="tao-description-for-1234"
+      class="tao-comment-txt"
+      data-after-was-split="true"
+      data-before-was-split="true"
+      data-color="1234"
+      data-hl-group="1"
+      tabindex="0"
+    >
+      for 
+    </span>
+    his
+    <span
+      aria-describedby="tao-description-for-5678"
+      class="tao-comment-txt"
+      data-after-was-split="true"
+      data-before-was-split="true"
+      data-color="5678"
+      data-hl-group="2"
+      tabindex="0"
+    >
+       pi
+    </span>
+    pe
+  </p>
+  
+                
+  <p>
+    was a merry old 
+    <span>
+      soul
+    </span>
+  </p>
+  
+            
+</div>
+`;

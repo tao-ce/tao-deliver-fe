@@ -1,0 +1,163 @@
+{
+  "baseUrl": "./presets/items/assets/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "space-shuttle-30-years-of-adventure",
+      "serial": "item_5e984c281b2a8203580911",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "space-shuttle-30-years-of-adventure",
+        "title": "The Space Shuttle, 30 years of adventure",
+        "label": "The Space Shuttle, 30 years of adventure",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint125",
+        "class": ""
+      },
+      "body": {
+        "serial": "container_containeritembody_5e984c281b295809535850",
+        "body": "\n    <p id=\"stimulus\">\n            During more than 30 years, the American Space Shuttle transported 355 astronauts in space over 135\n            orbital launchings from Cap Canaveral, Florida. This 2046-ton Behemoth traveled 870 million kilometers\n            around the Earth from 12th of April 1981 to 21st of July 2011. The National Aeronautics and Space\n            Administration (NASA) built 5 Space Shuttles: Columbia, Challenger, Discovery, Atlantis and Endeavour.\n\t\t<\/p>\n    {{interaction_choiceinteraction_5e984c281b582126934134}}\n  ",
+        "elements": {
+          "interaction_choiceinteraction_5e984c281b582126934134": {
+            "serial": "interaction_choiceinteraction_5e984c281b582126934134",
+            "qtiClass": "choiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "shuffle": false,
+              "maxChoices": 1,
+              "minChoices": 0,
+              "id": "interaction"
+            },
+            "choices": {
+              "choice_simplechoice_5e984c281b6e4027523587": {
+                "identifier": "Discovery",
+                "serial": "choice_simplechoice_5e984c281b6e4027523587",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "Discovery",
+                  "fixed": false
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e984c281b711894623827",
+                  "body": "Discovery",
+                  "elements": []
+                }
+              },
+              "choice_simplechoice_5e984c281b7c6161614320": {
+                "identifier": "Challenger",
+                "serial": "choice_simplechoice_5e984c281b7c6161614320",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "Challenger",
+                  "fixed": false
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e984c281b7ed669380934",
+                  "body": "Challenger",
+                  "elements": []
+                }
+              },
+              "choice_simplechoice_5e984c281b89c302162437": {
+                "identifier": "Pathfinder",
+                "serial": "choice_simplechoice_5e984c281b89c302162437",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "Pathfinder",
+                  "fixed": false
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e984c281b8c2754440421",
+                  "body": "Pathfinder",
+                  "elements": []
+                }
+              },
+              "choice_simplechoice_5e984c281b96e751676749": {
+                "identifier": "Atlantis",
+                "serial": "choice_simplechoice_5e984c281b96e751676749",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "Atlantis",
+                  "fixed": false
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e984c281b993572685292",
+                  "body": "Atlantis",
+                  "elements": []
+                }
+              },
+              "choice_simplechoice_5e984c281ba4b007303844": {
+                "identifier": "Endeavour",
+                "serial": "choice_simplechoice_5e984c281ba4b007303844",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "Endeavour",
+                  "fixed": false
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e984c281ba71135469139",
+                  "body": "Endeavour",
+                  "elements": []
+                }
+              }
+            },
+            "prompt": {
+              "serial": "container_containerstatic_5e984c281b60e689467874",
+              "body": "Which was the last Space Shuttle going into space during the STS-135 mission in July 2011?",
+              "elements": []
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p1",
+        "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p1": "imsqti_v2p1.xsd"
+      },
+      "stylesheets": [],
+      "outcomes": {
+        "outcomedeclaration_5e984c281b440943446907": {
+          "identifier": "SCORE",
+          "serial": "outcomedeclaration_5e984c281b440943446907",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "0"
+        }
+      },
+      "responses": {
+        "responsedeclaration_5e984c281b39e572657631": {
+          "identifier": "RESPONSE",
+          "serial": "responsedeclaration_5e984c281b39e572657631",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        }
+      },
+      "feedbacks": [],
+      "apipAccessibility": ""
+    },
+    "assets": []
+  },
+  "itemState": {
+    "fooName": "barShuttle"
+  },
+  "itemIdentifier": "item-1",
+  "portableElements": {
+    "pci": [],
+    "pic": []
+  },
+  "success": true,
+  "messages": []
+}

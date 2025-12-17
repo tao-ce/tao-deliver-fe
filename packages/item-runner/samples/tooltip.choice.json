@@ -1,0 +1,456 @@
+{
+    "baseUrl": "./presets/items/assets/",
+    "itemIdentifier": "item1",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i66acf83bba98420240802171611882c",
+            "serial": "item_66acfa2dd2054216108762",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i66acf83bba98420240802171611882c",
+                "title": "Item 2",
+                "label": "Item 2",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "2024.07",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_66acfa2dd204d793097789",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{interaction_choiceinteraction_66acfa2dd232a256470578}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "interaction_choiceinteraction_66acfa2dd232a256470578": {
+                        "serial": "interaction_choiceinteraction_66acfa2dd232a256470578",
+                        "qtiClass": "choiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "shuffle": false,
+                            "maxChoices": 0,
+                            "minChoices": 0,
+                            "orientation": "vertical"
+                        },
+                        "debug": {
+                            "relatedItem": "item_66acfa2dd2054216108762"
+                        },
+                        "choices": {
+                            "choice_simplechoice_66acfa2dd29d4954054669": {
+                                "identifier": "choice_1",
+                                "serial": "choice_simplechoice_66acfa2dd29d4954054669",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_66acfa2dd2a04486631347",
+                                    "body": "I am familiar with {{_tooltip_66acfa2dd2a45000608581}}",
+                                    "elements": {
+                                        "_tooltip_66acfa2dd2a45000608581": {
+                                            "serial": "_tooltip_66acfa2dd2a45000608581",
+                                            "qtiClass": "_tooltip",
+                                            "attributes": {
+                                                "data-role": "tooltip-target",
+                                                "aria-describedby": "_tooltip-te8exqyibrwhudemowip7a"
+                                            },
+                                            "body": {
+                                                "serial": "container_containertooltip_66acfa2dd2a4d911979303",
+                                                "body": "CSS",
+                                                "elements": {},
+                                                "attributes": [],
+                                                "debug": {
+                                                    "relatedItem": "item_66acfa2dd2054216108762"
+                                                }
+                                            },
+                                            "debug": {
+                                                "relatedItem": "item_66acfa2dd2054216108762"
+                                            },
+                                            "content": "Cascade style Sheets"
+                                        }
+                                    },
+                                    "attributes": [],
+                                    "debug": {
+                                        "relatedItem": "item_66acfa2dd2054216108762"
+                                    }
+                                },
+                                "debug": {
+                                    "relatedItem": "item_66acfa2dd2054216108762"
+                                }
+                            },
+                            "choice_simplechoice_66acfa2dd2ae2938487409": {
+                                "identifier": "choice_2",
+                                "serial": "choice_simplechoice_66acfa2dd2ae2938487409",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_66acfa2dd2af0672332611",
+                                    "body": "I am familiar with {{_tooltip_66acfa2dd2b24616784623}}",
+                                    "elements": {
+                                        "_tooltip_66acfa2dd2b24616784623": {
+                                            "serial": "_tooltip_66acfa2dd2b24616784623",
+                                            "qtiClass": "_tooltip",
+                                            "attributes": {
+                                                "data-role": "tooltip-target",
+                                                "aria-describedby": "_tooltip-qfqc27aqjapqh4nq2kasi6"
+                                            },
+                                            "body": {
+                                                "serial": "container_containertooltip_66acfa2dd2b2b761895985",
+                                                "body": "HTML",
+                                                "elements": {},
+                                                "attributes": [],
+                                                "debug": {
+                                                    "relatedItem": "item_66acfa2dd2054216108762"
+                                                }
+                                            },
+                                            "debug": {
+                                                "relatedItem": "item_66acfa2dd2054216108762"
+                                            },
+                                            "content": "Hyper Text Markup Language"
+                                        }
+                                    },
+                                    "attributes": [],
+                                    "debug": {
+                                        "relatedItem": "item_66acfa2dd2054216108762"
+                                    }
+                                },
+                                "debug": {
+                                    "relatedItem": "item_66acfa2dd2054216108762"
+                                }
+                            },
+                            "choice_simplechoice_66acfa2dd2bad395456584": {
+                                "identifier": "choice_3",
+                                "serial": "choice_simplechoice_66acfa2dd2bad395456584",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_66acfa2dd2bba952834665",
+                                    "body": "I am familiar with {{_tooltip_66acfa2dd2bea079935952}}",
+                                    "elements": {
+                                        "_tooltip_66acfa2dd2bea079935952": {
+                                            "serial": "_tooltip_66acfa2dd2bea079935952",
+                                            "qtiClass": "_tooltip",
+                                            "attributes": {
+                                                "data-role": "tooltip-target",
+                                                "aria-describedby": "_tooltip-xr8sa13zmovlyj060o8ezq"
+                                            },
+                                            "body": {
+                                                "serial": "container_containertooltip_66acfa2dd2bf1558647221",
+                                                "body": "JavaScript",
+                                                "elements": {},
+                                                "attributes": [],
+                                                "debug": {
+                                                    "relatedItem": "item_66acfa2dd2054216108762"
+                                                }
+                                            },
+                                            "debug": {
+                                                "relatedItem": "item_66acfa2dd2054216108762"
+                                            },
+                                            "content": "Programming language"
+                                        }
+                                    },
+                                    "attributes": [],
+                                    "debug": {
+                                        "relatedItem": "item_66acfa2dd2054216108762"
+                                    }
+                                },
+                                "debug": {
+                                    "relatedItem": "item_66acfa2dd2054216108762"
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_66acfa2dd23a0785769325",
+                            "body": "\n            <p>{{_tooltip_66acfa2dd24b9505409620}} is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>\n            <p>CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, the development of {{_tooltip_66acfa2dd2594749524633}}of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now just \"CSS\" with individual CSS modules having version numbers.</p>\n            <p>{{_tooltip_66acfa2dd265a279665688}} state of the CSS specification and individual modules progress. CSS modules now have version numbers, or levels, such as CSS Color Module Level 5<br/>\n<br/>\nKey resources</p>\n            <p>CSS Introduction</p>\n            <p>If you're new to web development, be sure to read our CSS basics article to learn what CSS is and how to use it.</p>\n            <p>CSS Tutorials</p>\n            <p>Our CSS learning area contains a wealth of tutorials to take you from beginner level to proficiency, covering all the fundamentals.</p>\n            <p>CSS Reference</p>\n            <p>Our CSS reference describes every property and concept of CSS.</p>\n            <p>Tutorials</p>\n            <p>Our CSS Learning Area features multiple modules that teach CSS from the ground up \u2014 no previous knowledge required.</p>\n            <p>\n              {{_tooltip_66acfa2dd2701348789881}}\n              \n            </p>\n            <p>CSS (Cascading Style Sheets) is used to style and layout web pages \u2014 for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.</p>\n            <p>CSS building blocks</p>\n            <p>\n              {{_tooltip_66acfa2dd279e488007183}}\n              \n            </p>\n            <p>The aim here is to provide you with a toolkit for writing competent CSS and help you understand all the essential theory, before moving on to more specific disciplines like text styling and CSS layout.</p>\n            <p>CSS styling text</p>\n            <p>With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling text \u2014 one of the most common things you'll do with CSS. Here we look at text styling fundamentals, including setting font, boldness, italics, line and letter spacing, drop shadows, and other text features. We round off the module by looking at applying custom fonts to your page, and styling lists and links.</p>\n            <p>CSS layout</p>\n            <p>At this point we've already looked at CSS fundamentals, how to style text, and how to style and manipulate the boxes that your content sits inside. Now it's time to look at how to place your boxes in the right place in relation to the viewport, and to each other. We have covered the necessary prerequisites so we can now dive deep into CSS layout, looking at different display settings, modern layout tools like flexbox, CSS grid, and positioning, and some of the legacy techniques you might still want to know about.</p>\n            <p>Use CSS to solve common problems</p>\n            <p>This module provides links to sections of content explaining how to use CSS to solve common problems when creating a {{_tooltip_66acfa2dd2832192981226}}.</p>\n          ",
+                            "elements": {
+                                "_tooltip_66acfa2dd24b9505409620": {
+                                    "serial": "_tooltip_66acfa2dd24b9505409620",
+                                    "qtiClass": "_tooltip",
+                                    "attributes": {
+                                        "data-role": "tooltip-target",
+                                        "aria-describedby": "_tooltip-dce6qw1wswvity5w1dt2y1"
+                                    },
+                                    "body": {
+                                        "serial": "container_containertooltip_66acfa2dd24d6468153271",
+                                        "body": "Cascading Style Sheets (CSS)",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_66acfa2dd2054216108762"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_66acfa2dd2054216108762"
+                                    },
+                                    "content": "CSS"
+                                },
+                                "_tooltip_66acfa2dd2594749524633": {
+                                    "serial": "_tooltip_66acfa2dd2594749524633",
+                                    "qtiClass": "_tooltip",
+                                    "attributes": {
+                                        "data-role": "tooltip-target",
+                                        "aria-describedby": "_tooltip-g1oniph5mx2lvdkq28yx15"
+                                    },
+                                    "body": {
+                                        "serial": "container_containertooltip_66acfa2dd259b772701389",
+                                        "body": "various parts",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_66acfa2dd2054216108762"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_66acfa2dd2054216108762"
+                                    },
+                                    "content": "CSS Specification consists of several parts"
+                                },
+                                "_tooltip_66acfa2dd265a279665688": {
+                                    "serial": "_tooltip_66acfa2dd265a279665688",
+                                    "qtiClass": "_tooltip",
+                                    "attributes": {
+                                        "data-role": "tooltip-target",
+                                        "aria-describedby": "_tooltip-m8jqj1obin7k74lhvgo2uy"
+                                    },
+                                    "body": {
+                                        "serial": "container_containertooltip_66acfa2dd2660918546750",
+                                        "body": "After CSS 2.1, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to develop and release recommendations separately per module. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of the latest stable",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_66acfa2dd2054216108762"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_66acfa2dd2054216108762"
+                                    },
+                                    "content": "I am tooltip representing several lines of text"
+                                },
+                                "_tooltip_66acfa2dd2701348789881": {
+                                    "serial": "_tooltip_66acfa2dd2701348789881",
+                                    "qtiClass": "_tooltip",
+                                    "attributes": {
+                                        "data-role": "tooltip-target",
+                                        "aria-describedby": "_tooltip-ml39aittlvl8ognc3z67q5"
+                                    },
+                                    "body": {
+                                        "serial": "container_containertooltip_66acfa2dd2706384290730",
+                                        "body": "CSS first steps",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_66acfa2dd2054216108762"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_66acfa2dd2054216108762"
+                                    },
+                                    "content": "First steps of CSS"
+                                },
+                                "_tooltip_66acfa2dd279e488007183": {
+                                    "serial": "_tooltip_66acfa2dd279e488007183",
+                                    "qtiClass": "_tooltip",
+                                    "attributes": {
+                                        "data-role": "tooltip-target",
+                                        "aria-describedby": "_tooltip-u5xwr6fnuerszt37ds9rds"
+                                    },
+                                    "body": {
+                                        "serial": "container_containertooltip_66acfa2dd27a4743035149",
+                                        "body": "This module carries on where CSS first steps left off \u2014 now you've gained familiarity with the language and its syntax, and got some basic experience with using it, it's time to dive a bit deeper. This module looks at the cascade and inheritance, all the selector types we have available, units, sizing, styling backgrounds and borders, debugging, and lots more.",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_66acfa2dd2054216108762"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_66acfa2dd2054216108762"
+                                    },
+                                    "content": "Tooltip for large portion of text"
+                                },
+                                "_tooltip_66acfa2dd2832192981226": {
+                                    "serial": "_tooltip_66acfa2dd2832192981226",
+                                    "qtiClass": "_tooltip",
+                                    "attributes": {
+                                        "data-role": "tooltip-target",
+                                        "aria-describedby": "_tooltip-2s9ovos1rkagff2i7uct3z"
+                                    },
+                                    "body": {
+                                        "serial": "container_containertooltip_66acfa2dd2837768621927",
+                                        "body": "web page",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_66acfa2dd2054216108762"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_66acfa2dd2054216108762"
+                                    },
+                                    "content": "web page is page displayed in browser"
+                                }
+                            },
+                            "attributes": [],
+                            "debug": {
+                                "relatedItem": "item_66acfa2dd2054216108762"
+                            }
+                        }
+                    }
+                },
+                "attributes": [],
+                "debug": {
+                    "relatedItem": "item_66acfa2dd2054216108762"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_66acfa2dd2054216108762"
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_66acfa2dd2194027350322": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_66acfa2dd2194027350322",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 0,
+                        "normalMinimum": 0
+                    },
+                    "debug": {
+                        "relatedItem": "item_66acfa2dd2054216108762"
+                    },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_66acfa2dd2202746214644": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_66acfa2dd2202746214644",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_66acfa2dd2054216108762"
+                    },
+                    "defaultValue": "0"
+                }
+            },
+            "responses": {
+                "responsedeclaration_66acfa2dd2138385387276": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_66acfa2dd2138385387276",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "multiple",
+                        "baseType": "identifier"
+                    },
+                    "debug": {
+                        "relatedItem": "item_66acfa2dd2054216108762"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_66acfa2dd2d16232023640",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "debug": {
+                    "relatedItem": "item_66acfa2dd2054216108762"
+                },
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "RESPONSE"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "RESPONSE"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": {
+                                            "baseType": "float"
+                                        },
+                                        "value": "1"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseElse": {
+                            "qtiClass": "responseElse",
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": {
+                                            "baseType": "float"
+                                        },
+                                        "value": "0"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": []
+    },
+    "itemState": {}
+}

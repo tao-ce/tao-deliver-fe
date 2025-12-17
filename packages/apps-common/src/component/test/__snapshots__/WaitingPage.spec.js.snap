@@ -1,0 +1,84 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WaitingPage component > renders correctly with all properties 1`] = `
+<body>
+  <div>
+    <div
+      class="layout-centered"
+    >
+      <div
+        class="wrapper"
+      >
+        <header>
+          <img
+            alt="full logo "
+            src="logo_full.svg"
+          />
+           
+          <button
+            class="actionable secondary small"
+            type="button"
+          >
+             
+             
+            Logout
+          </button>
+        </header>
+         
+        <section>
+          <h2>
+            Hello
+            , John Doe
+            !
+          </h2>
+           
+          <article
+            class="welcome"
+          >
+            <h3>
+              Great! You are ready, but the exam hasn't started yet.
+            </h3>
+             
+            <p>
+              You are enrolled in Math exam, January 01 from 12:00 PM to 01:00 PM. 
+                    If you have extra time, it is not shown here.
+            </p>
+             
+            <p>
+              You are registered with American English as your main language. Contact a proctor if this is not correct.
+            </p>
+          </article>
+           
+          <article
+            class="countdown"
+          >
+            <p>
+              In 0 minutes and 10 seconds the exam will start. Good luck!
+            </p>
+          </article>
+        </section>
+         
+        <section
+          class="image-container"
+        >
+          <img
+            alt="waiting"
+            src="waiting.svg"
+          />
+        </section>
+         
+        <div
+          class="link-container"
+        >
+          <a
+            href="http://example.com"
+            target="about:blank"
+          >
+            Declaration of availability
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

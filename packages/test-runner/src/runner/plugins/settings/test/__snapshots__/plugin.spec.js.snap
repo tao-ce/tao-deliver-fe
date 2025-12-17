@@ -1,0 +1,301 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`settings plugin > creates settings content when opened 1`] = `
+<body>
+  <div>
+    <div>
+      
+        
+      <div
+        class="overlay"
+      >
+        
+            
+        <div
+          id="overlay-header"
+        >
+          <div
+            class="inverted"
+          >
+            <h2
+              class="ui-heading"
+              id="a11y-overlay"
+              tabindex="-1"
+            >
+              Test Configuration
+            </h2>
+             
+            <span
+              class="start"
+            >
+              <button
+                aria-label="Close overlay"
+                class="icon-bar-btn actionable base-24 default"
+                data-test-id="closeoverlay"
+                title="Close overlay"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon large"
+                  viewBox="0 0 24 24"
+                >
+                  <title>
+                    Remove icon
+                  </title>
+                  <path
+                    d="M1 0l11 11L23 0l1 1-11 11 11 11-1 1-11-11L1 24l-1-1 11-11L0 1z"
+                  />
+                </svg>
+                 
+                 
+              </button>
+            </span>
+             
+            <span
+              class="end"
+            />
+          </div>
+        </div>
+        
+            
+        <div
+          id="overlay-content"
+        >
+          <div
+            class="content"
+          >
+            <section
+              class="group"
+            >
+              <header>
+                My settings
+              </header>
+               
+              <section
+                class="panel"
+              >
+                <header>
+                  Answer elimination
+                </header>
+                 
+                <div>
+                  <label>
+                    <input
+                      aria-checked="false"
+                      aria-labelledby="tao-caption-choiceElimination-123"
+                      role="switch"
+                      type="checkbox"
+                    />
+                     
+                    <span
+                      class="selection"
+                    />
+                     
+                    <span
+                      class="slider"
+                    />
+                     
+                    <span
+                      aria-hidden="true"
+                      class="label"
+                    >
+                      Off
+                    </span>
+                  </label>
+                   
+                  <p
+                    class="caption"
+                    id="tao-caption-choiceElimination-123"
+                  >
+                    Answer elimination lets you exclude answer options that you are sure are incorrect.
+                  </p>
+                </div>
+              </section>
+               
+              <section
+                class="panel"
+              >
+                <header>
+                  Answer masking
+                </header>
+                 
+                <div>
+                  <label>
+                    <input
+                      aria-checked="false"
+                      aria-labelledby="tao-caption-choiceAnswerMasking-123"
+                      role="switch"
+                      type="checkbox"
+                    />
+                     
+                    <span
+                      class="selection"
+                    />
+                     
+                    <span
+                      class="slider"
+                    />
+                     
+                    <span
+                      aria-hidden="true"
+                      class="label"
+                    >
+                      Off
+                    </span>
+                  </label>
+                   
+                  <p
+                    class="caption"
+                    id="tao-caption-choiceAnswerMasking-123"
+                  >
+                    Answer masking lets you hide answer options that you are sure are incorrect.
+                  </p>
+                </div>
+              </section>
+            </section>
+          </div>
+        </div>
+        
+            
+        <div
+          id="overlay-footer"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+  </div>
+</body>
+`;
+
+exports[`settings plugin > removes settings content when closed 1`] = `
+<body>
+  <div>
+    <div>
+      
+        
+      <div
+        class="overlay"
+      >
+        
+            
+        <div
+          id="overlay-header"
+        >
+          <div
+            class="inverted"
+          >
+            <h2
+              class="ui-heading"
+              id="a11y-overlay"
+              tabindex="-1"
+            >
+              Test Configuration
+            </h2>
+             
+            <span
+              class="start"
+            >
+              <button
+                aria-label="Close overlay"
+                class="icon-bar-btn actionable base-24 default"
+                data-test-id="closeoverlay"
+                title="Close overlay"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon large"
+                  viewBox="0 0 24 24"
+                >
+                  <title>
+                    Remove icon
+                  </title>
+                  <path
+                    d="M1 0l11 11L23 0l1 1-11 11 11 11-1 1-11-11L1 24l-1-1 11-11L0 1z"
+                  />
+                </svg>
+                 
+                 
+              </button>
+            </span>
+             
+            <span
+              class="end"
+            />
+          </div>
+        </div>
+        
+            
+        <div
+          id="overlay-content"
+        >
+          <div
+            class="content"
+          >
+            <section
+              class="group"
+            >
+              <header>
+                My settings
+              </header>
+               
+              <section
+                class="panel"
+              >
+                <header>
+                  Answer elimination
+                </header>
+                 
+                <div>
+                  <label>
+                    <input
+                      aria-checked="false"
+                      aria-labelledby="tao-caption-choiceElimination-123"
+                      role="switch"
+                      type="checkbox"
+                    />
+                     
+                    <span
+                      class="selection"
+                    />
+                     
+                    <span
+                      class="slider"
+                    />
+                     
+                    <span
+                      aria-hidden="true"
+                      class="label"
+                    >
+                      Off
+                    </span>
+                  </label>
+                   
+                  <p
+                    class="caption"
+                    id="tao-caption-choiceElimination-123"
+                  >
+                    Answer elimination lets you exclude answer options that you are sure are incorrect.
+                  </p>
+                </div>
+              </section>
+               
+            </section>
+          </div>
+        </div>
+        
+            
+        <div
+          id="overlay-footer"
+        />
+        
+        
+      </div>
+      
+    
+    </div>
+  </div>
+</body>
+`;

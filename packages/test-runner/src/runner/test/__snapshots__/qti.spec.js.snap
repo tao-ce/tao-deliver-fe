@@ -1,0 +1,523 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`QTI NUI test runner behavior > cannot initialize misconfigured 1`] = `[Error: The test session is launched without a unique identifier "serviceCallId"]`;
+
+exports[`QTI NUI test runner behavior > renders the test layout during initialization 1`] = `<section />`;
+
+exports[`QTI NUI test runner behavior > renders the test layout during initialization 2`] = `
+<section
+  dir="ltr"
+>
+  <div
+    class="test-runner use-a11y-text-styles loading"
+    style="--window-height: 767px; --floating-tools-height: 0px;"
+  >
+    <div />
+     
+    <div
+      class="top-bar not-printable"
+      id="test-top-bar"
+    >
+      <div>
+        <div
+          class="headerbar"
+        >
+          <header>
+            <ol
+              class="start"
+            >
+              <li>
+                <button
+                  aria-controls="tao-panel-123"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  aria-label="Main menu"
+                  class="icon-bar-btn actionable base-24 default"
+                  data-test-id="mainmenu"
+                  title="Main menu"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="icon large"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>
+                      Menu icon
+                    </title>
+                    <path
+                      d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
+                    />
+                  </svg>
+                   
+                   
+                </button>
+                 
+              </li>
+            </ol>
+             
+            <div
+              class="logo"
+            >
+              <img
+                alt="TAO Logo"
+                src="logo.svg"
+              />
+            </div>
+             
+            <div
+              class="content"
+            >
+              <div
+                class="header-bar-content"
+              />
+            </div>
+          </header>
+           
+          <aside>
+            <ol
+              class="end"
+            >
+               
+            </ol>
+             
+            <div
+              slot="aside-after"
+            />
+          </aside>
+        </div>
+      </div>
+       
+      <div
+        class="floating-toolbars-wrapper"
+      >
+        <div
+          class="floating-toolbars"
+        >
+          
+           
+          <div
+            class="flex-break"
+          />
+          
+          
+           
+          <div
+            class="flex-break"
+          />
+          
+          
+           
+          
+        </div>
+      </div>
+    </div>
+     
+    <div
+      class="notification-container-wrapper not-printable"
+    >
+      <div
+        aria-label="Notifications"
+        class="notification-container"
+        role="log"
+      />
+    </div>
+     
+    <main
+      aria-labelledby="a11y-main"
+      class="collapsed"
+      id="test-main"
+      role="main"
+      tabindex="0"
+    >
+      <div
+        class="scroll-first-child"
+      />
+       
+      <h2
+        class="visually-hidden"
+        id="a11y-main"
+        tabindex="-1"
+      />
+       
+      <div
+        class="test-content-columns"
+      >
+        <aside
+          class="not-displayed"
+          id="test-content-aside-start"
+          role="aside"
+        />
+         
+        <div
+          aria-hidden="true"
+          class="qti-item-container hidden-item-container"
+        />
+         
+        <aside
+          class="not-displayed"
+          id="test-content-aside-end"
+          role="aside"
+        />
+      </div>
+       
+      <div
+        class="scroll-last-child"
+      />
+    </main>
+     
+    <div
+      class="transition-wrapper"
+    >
+      <div
+        class="transition"
+      >
+        <div
+          aria-live="assertive"
+          class="loading-wrapper small"
+          role="alert"
+        >
+          <div
+            class="loading"
+          />
+           
+          <div
+            class="content"
+          >
+            <p
+              class="text"
+            >
+              loading
+            </p>
+          </div>
+        </div>
+         
+        <p
+          style="animation: __svelte_2884083938_0 500ms linear 4500ms 1 both;"
+        >
+          Please wait a little longer while your content loads
+        </p>
+      </div>
+    </div>
+     
+    <nav
+      aria-hidden="true"
+      class="bottom-bar do-not-read not-printable"
+      id="test-navigation"
+    >
+      <h2
+        class="visually-hidden"
+      >
+        Test Navigation
+      </h2>
+    </nav>
+     
+    <nav
+      class="item-modalfeedback-nav hidden"
+      style="--nav-height: var(--testrunner-footer-height);"
+    />
+     
+    <div
+      class="item-hanger-wrapper not-printable"
+    />
+     
+    <div
+      aria-hidden="true"
+      class="overlay"
+    >
+      <header
+        role="none"
+      >
+        <div
+          slot="header"
+        />
+      </header>
+       
+      <div
+        aria-labelledby="a11y-overlay"
+        class="overlay-content"
+        role="main"
+      >
+        <div
+          class="scroll-first-child"
+        />
+         
+        <div
+          slot="content"
+        />
+         
+        <div
+          class="scroll-last-child"
+        />
+      </div>
+       
+      <footer>
+        <div
+          slot="footer"
+        />
+      </footer>
+    </div>
+  </div>
+   
+  <div
+    class="panel close-initial inverted-color"
+    id="tao-panel-123"
+  >
+    <div
+      class="drawer start inverted"
+    >
+      <div
+        class="header"
+      >
+        <div
+          class="icon-wrapper"
+        >
+          <button
+            aria-label="Close Panel"
+            class="icon-bar-btn actionable base-16 inverted"
+            title="Close Panel"
+          >
+            <svg
+              aria-hidden="false"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Remove icon
+              </title>
+              <path
+                d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+              />
+            </svg>
+             
+             
+          </button>
+        </div>
+         
+      </div>
+       
+      <div
+        class="drawer-content"
+      >
+        <div
+          class="panel-content use-a11y-text-styles"
+        />
+      </div>
+    </div>
+  </div>
+   
+  <div
+    class="panel-wrapper use-a11y-text-styles"
+    id="tao-panel-123"
+  />
+   
+  <div
+    class="feedback-dialogs-wrapper use-a11y-text-styles"
+  >
+    
+  </div>
+</section>
+`;
+
+exports[`QTI NUI test runner behavior > renders the test top bar with some plugins 1`] = `
+<div
+  class="top-bar not-printable"
+  id="test-top-bar"
+>
+  <div>
+    <div
+      class="headerbar"
+    >
+      <header>
+        <ol
+          class="start"
+        >
+          <li>
+            <button
+              aria-controls="tao-panel-123"
+              aria-expanded="false"
+              aria-haspopup="true"
+              aria-label="Main menu"
+              class="icon-bar-btn actionable base-24 default"
+              data-test-id="mainmenu"
+              title="Main menu"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon large"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Menu icon
+                </title>
+                <path
+                  d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
+                />
+              </svg>
+               
+               
+            </button>
+             
+          </li>
+        </ol>
+         
+        <div
+          class="logo"
+        >
+          <img
+            alt="TAO Logo"
+            src="logo.svg"
+          />
+        </div>
+         
+        <div
+          class="content"
+        >
+          <div
+            class="header-bar-content"
+          />
+        </div>
+      </header>
+       
+      <aside>
+        <ol
+          class="end"
+        >
+          <li>
+            <button
+              aria-label="Scratchpad"
+              class="icon-bar-btn actionable base-24 default"
+              data-test-id="scratchpad"
+              title="Scratchpad"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon large"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Notepad icon
+                </title>
+                <path
+                  d="M6 9h12v1H6zm0 4h12v1H6zm0 4h6v1H6z"
+                />
+                <path
+                  d="M19 2h-2V0h-1v2H8V0H7v2H5a2 2 0 00-2 2v18a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2zm1 20a1 1 0 01-1 1H5a1 1 0 01-1-1V4a1 1 0 011-1h2v2h1V3h8v2h1V3h2a1 1 0 011 1z"
+                />
+              </svg>
+               
+               
+            </button>
+          </li>
+          <li>
+            <button
+              aria-label="Highlighter"
+              class="icon-bar-btn actionable base-24 default"
+              data-test-id="highlighter"
+              title="Highlighter"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon large"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Highlighter tool icon
+                </title>
+                <path
+                  d="M23.5 23H6l.63-1.36 4.56-3.07a1 1 0 00.39-.44.49.49 0 000-.09L17 4.11a2 2 0 00-1-2.65L13.33.19a2 2 0 00-2.66 1L3.49 14.22a.93.93 0 00-.15.63l.57 5.53-1.31 2.8a.74.74 0 00-.1.32.5.5 0 00.5.5h20.5a.5.5 0 000-1zM11.58 1.58a1 1 0 011.32-.49l2.72 1.27a1 1 0 01.49 1.33L11 16.77l-6.23-2.9zm-.91 16.13L5.84 21l-.9-.42-.61-5.8zm-6.16 3.74l.91.43L4.9 23H3.79z"
+                />
+              </svg>
+               
+               
+            </button>
+          </li>
+          <li>
+            <button
+              aria-label="Read aloud tool. To open, press enter or space"
+              class="icon-bar-btn actionable base-24 default"
+              data-test-id="readAloud"
+              title="Read Aloud"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon large"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Speaker icon
+                </title>
+                <path
+                  d="M13 2v20l-8-8H1v-4h4l8-8m0-1a1 1 0 00-.71.29L4.59 9H1a1 1 0 00-1 1v4a1 1 0 001 1h3.59l7.7 7.71A1 1 0 0013 23a.84.84 0 00.38-.08A1 1 0 0014 22V2a1 1 0 00-.62-.92A.84.84 0 0013 1zm4.5 14c-.28 0-.5-.17-.5-.38V9.38c0-.21.22-.38.5-.38s.5.17.5.38v5.24c0 .21-.22.38-.5.38zm3 3a.5.5 0 01-.5-.5v-11a.5.5 0 011 0v11a.5.5 0 01-.5.5zm3 3a.5.5 0 01-.5-.5v-17a.5.5 0 011 0v17a.5.5 0 01-.5.5z"
+                />
+              </svg>
+               
+               
+            </button>
+          </li>
+          <li>
+            <button
+              aria-label="Settings"
+              class="icon-bar-btn actionable base-24 default"
+              data-test-id="settings"
+              title="Settings"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon large"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Cogwheel icon
+                </title>
+                <path
+                  d="M13 1v3l.78.18a7.74 7.74 0 012.47 1l.68.43.56-.57 1.58-1.58 1.42 1.42-1.58 1.63-.57.56.43.68a7.74 7.74 0 011 2.47L20 11h3v2h-3l-.18.78a7.74 7.74 0 01-1 2.47l-.43.68.57.56 1.58 1.58-1.42 1.42-1.58-1.58-.56-.57-.68.43a7.74 7.74 0 01-2.47 1L13 20v3h-2v-3l-.78-.18a7.74 7.74 0 01-2.47-1l-.68-.43-.56.57-1.58 1.53-1.42-1.42 1.58-1.58.57-.56-.43-.68a7.74 7.74 0 01-1-2.47L4 13H1v-2h3l.18-.78a7.74 7.74 0 011-2.47l.43-.68-.57-.56-1.53-1.58 1.42-1.42 1.58 1.58.56.57.68-.43a7.74 7.74 0 012.47-1L11 4V1h2m0-1h-2a1 1 0 00-1 1v2.23a8.76 8.76 0 00-2.78 1.16L5.64 2.81a1 1 0 00-.71-.3 1 1 0 00-.71.3L2.81 4.22a1 1 0 000 1.42l1.58 1.58A8.76 8.76 0 003.23 10H1a1 1 0 00-1 1v2a1 1 0 001 1h2.23a8.76 8.76 0 001.16 2.78l-1.58 1.58a1 1 0 000 1.42l1.41 1.41a1 1 0 00.71.3 1 1 0 00.71-.3l1.58-1.58A8.76 8.76 0 0010 20.77V23a1 1 0 001 1h2a1 1 0 001-1v-2.23a8.76 8.76 0 002.78-1.16l1.58 1.58a1 1 0 00.71.3 1 1 0 00.71-.3l1.41-1.41a1 1 0 000-1.42l-1.58-1.58A8.76 8.76 0 0020.77 14H23a1 1 0 001-1v-2a1 1 0 00-1-1h-2.23a8.76 8.76 0 00-1.16-2.78l1.58-1.58a1 1 0 000-1.42l-1.41-1.41a1 1 0 00-.71-.3 1 1 0 00-.71.3l-1.58 1.58A8.76 8.76 0 0014 3.23V1a1 1 0 00-1-1z"
+                />
+                <path
+                  d="M12 8a4 4 0 11-4 4 4 4 0 014-4m0-1a5 5 0 105 5 5 5 0 00-5-5z"
+                />
+              </svg>
+               
+               
+            </button>
+          </li>
+           
+        </ol>
+         
+        <div
+          slot="aside-after"
+        />
+      </aside>
+    </div>
+  </div>
+   
+  <div
+    class="floating-toolbars-wrapper"
+  >
+    <div
+      class="floating-toolbars"
+    >
+      <div
+        class="toolbar-readAloud"
+      />
+      
+       
+      <div
+        class="flex-break"
+      />
+      
+      <div
+        class="toolbar-highlighter"
+      />
+      
+       
+      <div
+        class="flex-break"
+      />
+      
+      
+       
+      
+    </div>
+  </div>
+</div>
+`;

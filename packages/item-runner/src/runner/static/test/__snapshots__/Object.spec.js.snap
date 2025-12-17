@@ -1,0 +1,114 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Object > loads the item context 1`] = `
+<body>
+  <div>
+    <div
+      class="mock-document-viewer"
+      data-props="{"src":"assets/sheet.pdf","width":"340px","height":"500px","options":{"workerSrc":"pdf.worker.min.js"}}"
+    />
+    
+    
+  </div>
+</body>
+`;
+
+exports[`Object > renders a video player for video/* type 1`] = `
+<body>
+  <div>
+    <div
+      aria-hidden="true"
+      class="qti-video-container not-printable"
+      id="scene-video"
+    >
+       
+      <div
+        aria-labelledby="tao-feedback-123"
+        class="player mode-video"
+        dir="ltr"
+        style="width: 100%; height: auto; --play-pause-button-display: none; --volume-slider-width: auto; --volume-input-display: none;"
+      >
+        <video
+          controls=""
+          crossorigin="anonymous"
+          id="tao-player-123"
+        />
+      </div>
+       
+      <span
+        class="visually-hidden"
+        id="tao-feedback-123"
+      >
+        media player
+      </span>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Object > renders an audio player for audio/* type 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-audio-container not-printable"
+    >
+       
+      <div
+        aria-labelledby="tao-feedback-123"
+        class="player mode-audio"
+        dir="ltr"
+        style="width: 100%; height: auto; --play-pause-button-display: none; --volume-slider-width: auto; --volume-input-display: none;"
+      >
+        <audio
+          controls=""
+          crossorigin="anonymous"
+          id="tao-player-123"
+        />
+      </div>
+       
+      <span
+        class="visually-hidden"
+        id="tao-feedback-123"
+      >
+        media player
+      </span>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Object > renders correctly with HTML attributes 1`] = `
+<body>
+  <div>
+    <div
+      class="mock-document-viewer"
+      data-props="{"src":"assets/sheet.pdf","width":"340px","height":"500px","options":{"workerSrc":"pdf.worker.min.js"},"aria-label":"explanation sheet","data-foo":"bar"}"
+    />
+    
+    
+  </div>
+</body>
+`;
+
+exports[`Object > renders correctly with no props 1`] = `
+<body>
+  <div>
+    <object />
+    
+  </div>
+</body>
+`;
+
+exports[`Object > resolves data through the asset manager 1`] = `
+<body>
+  <div>
+    <object
+      data="http://localhost/assets/pig.png"
+    />
+    
+    
+  </div>
+</body>
+`;

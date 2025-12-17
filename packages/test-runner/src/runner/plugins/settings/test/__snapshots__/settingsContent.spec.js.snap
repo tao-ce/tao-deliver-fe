@@ -1,0 +1,101 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SettingsContent > Renders itself correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="content"
+    >
+      <section
+        class="group"
+      >
+        <header>
+          My settings
+        </header>
+         
+        <section
+          class="panel"
+        >
+          <header>
+            Answer elimination
+          </header>
+           
+          <div>
+            <label>
+              <input
+                aria-checked="false"
+                aria-labelledby="tao-caption-choiceElimination-123"
+                role="switch"
+                type="checkbox"
+              />
+               
+              <span
+                class="selection"
+              />
+               
+              <span
+                class="slider"
+              />
+               
+              <span
+                aria-hidden="true"
+                class="label"
+              >
+                Off
+              </span>
+            </label>
+             
+            <p
+              class="caption"
+              id="tao-caption-choiceElimination-123"
+            >
+              Answer elimination lets you exclude answer options that you are sure are incorrect.
+            </p>
+          </div>
+        </section>
+         
+        <section
+          class="panel"
+        >
+          <header>
+            Answer masking
+          </header>
+           
+          <div>
+            <label>
+              <input
+                aria-checked="false"
+                aria-labelledby="tao-caption-choiceAnswerMasking-123"
+                role="switch"
+                type="checkbox"
+              />
+               
+              <span
+                class="selection"
+              />
+               
+              <span
+                class="slider"
+              />
+               
+              <span
+                aria-hidden="true"
+                class="label"
+              >
+                Off
+              </span>
+            </label>
+             
+            <p
+              class="caption"
+              id="tao-caption-choiceAnswerMasking-123"
+            >
+              Answer masking lets you hide answer options that you are sure are incorrect.
+            </p>
+          </div>
+        </section>
+      </section>
+    </div>
+  </div>
+</body>
+`;

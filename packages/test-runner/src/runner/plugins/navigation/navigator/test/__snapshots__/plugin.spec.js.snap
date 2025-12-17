@@ -1,0 +1,908 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`navigator plugin > opens and closes overview on events from own components 1`] = `
+<body>
+  <div>
+    
+        
+    <nav
+      aria-hidden="true"
+    >
+      
+    </nav>
+    
+        
+    <div
+      class="overlay"
+    >
+      
+            
+      <div
+        id="overlay-header"
+      >
+        <div
+          class="inverted"
+        >
+          <h2
+            class="ui-heading"
+            id="a11y-overlay"
+            tabindex="-1"
+          >
+            OVERVIEW - Part I: Section 1
+          </h2>
+           
+          <span
+            class="start"
+          >
+            <button
+              aria-label="Close overlay"
+              class="icon-bar-btn actionable base-24 default"
+              data-test-id="closeoverlay"
+              title="Close overlay"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon large"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Remove icon
+                </title>
+                <path
+                  d="M1 0l11 11L23 0l1 1-11 11 11 11-1 1-11-11L1 24l-1-1 11-11L0 1z"
+                />
+              </svg>
+               
+               
+            </button>
+          </span>
+           
+          <span
+            class="end"
+          />
+        </div>
+      </div>
+      
+            
+      <div
+        id="overlay-content"
+      >
+        <div
+          class="overview"
+        >
+          <div
+            class="tabs"
+          >
+            <div
+              class="tabgroup"
+            >
+               
+              <div
+                class="scrollbox"
+              >
+                <ul
+                  role="tablist"
+                >
+                  <li
+                    role="presentation"
+                  >
+                    <button
+                      aria-current="true"
+                      aria-selected="true"
+                      role="tab"
+                    >
+                       
+                      all questions
+                       
+                    </button>
+                     
+                  </li>
+                  <li
+                    role="presentation"
+                  >
+                    <button
+                      aria-current="false"
+                      aria-selected="false"
+                      role="tab"
+                    >
+                       
+                      bookmarked (0)
+                       
+                    </button>
+                     
+                  </li>
+                  <li
+                    role="presentation"
+                  >
+                    <button
+                      aria-current="false"
+                      aria-selected="false"
+                      role="tab"
+                    >
+                       
+                      incomplete (2)
+                       
+                    </button>
+                     
+                  </li>
+                </ul>
+                <iframe
+                  aria-hidden="true"
+                  src="about:blank"
+                  style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
+                  tabindex="-1"
+                />
+              </div>
+               
+            </div>
+          </div>
+           
+          <div>
+            <div
+              class="tabpanel"
+              role="tabpanel"
+            >
+              <div>
+                
+                 
+                <ol
+                  class="space-large wrapped"
+                >
+                  <li>
+                    <button
+                      aria-label="Question 1. Completed."
+                      class="step completed"
+                      tabindex="0"
+                    >
+                       
+                       
+                      <span
+                        aria-hidden="true"
+                        class="step-label"
+                      >
+                        1
+                      </span>
+                    </button>
+                     
+                  </li>
+                  <li>
+                    <button
+                      aria-current="location"
+                      aria-label="Question 2. Not completed."
+                      class="step visited current"
+                      tabindex="-1"
+                    >
+                      <span
+                        aria-hidden="true"
+                        class="indicator"
+                      >
+                        <svg
+                          aria-hidden="false"
+                          class="icon small"
+                          viewBox="0 0 12 12"
+                        >
+                          <title>
+                            Current item indicator
+                          </title>
+                          <path
+                            d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                       
+                       
+                      <span
+                        aria-hidden="true"
+                        class="step-label"
+                      >
+                        2
+                      </span>
+                    </button>
+                     
+                  </li>
+                  <li>
+                    <button
+                      aria-label="Question 3. Not seen."
+                      class="step default"
+                      tabindex="-1"
+                    >
+                       
+                       
+                      <span
+                        aria-hidden="true"
+                        class="step-label"
+                      >
+                        3
+                      </span>
+                    </button>
+                     
+                  </li>
+                </ol>
+                
+              </div>
+               
+            </div>
+            <div
+              class="tabpanel hidden"
+              role="tabpanel"
+            >
+              <div>
+                
+              </div>
+               
+            </div>
+            <div
+              class="tabpanel hidden"
+              role="tabpanel"
+            >
+              <div>
+                
+                 
+                <ol
+                  class="space-large wrapped"
+                >
+                  <li>
+                    <button
+                      aria-current="location"
+                      aria-label="Question 2. Not completed."
+                      class="step visited current"
+                      tabindex="0"
+                    >
+                      <span
+                        aria-hidden="true"
+                        class="indicator"
+                      >
+                        <svg
+                          aria-hidden="false"
+                          class="icon small"
+                          viewBox="0 0 12 12"
+                        >
+                          <title>
+                            Current item indicator
+                          </title>
+                          <path
+                            d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                       
+                       
+                      <span
+                        aria-hidden="true"
+                        class="step-label"
+                      >
+                        2
+                      </span>
+                    </button>
+                     
+                  </li>
+                  <li>
+                    <button
+                      aria-label="Question 3. Not seen."
+                      class="step default"
+                      tabindex="-1"
+                    >
+                       
+                       
+                      <span
+                        aria-hidden="true"
+                        class="step-label"
+                      >
+                        3
+                      </span>
+                    </button>
+                     
+                  </li>
+                </ol>
+                
+              </div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      
+            
+      <div
+        id="overlay-footer"
+      >
+        <div
+          class="overview-bottom-bar"
+        >
+          <span
+            class="back-button"
+          >
+            <button
+              aria-label="Go back to the question"
+              class="actionable secondary pill medium"
+              name="overview-close"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Revert icon
+                </title>
+                <path
+                  d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
+                />
+              </svg>
+               
+               
+              Go back to the question
+            </button>
+          </span>
+           
+          <button
+            aria-label="Submit this part"
+            class="actionable secondary pill medium icon-right"
+            name="overview-submit"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Submit icon
+              </title>
+              <path
+                d="M14 8.71l-11.2 5.6a.8.8 0 01-1.08-1L3.59 9a.87.87 0 00.07-.17h5.51a.8.8 0 100-1.6H3.66A1.34 1.34 0 003.59 7L1.68 2.73a.81.81 0 01.18-.9.79.79 0 01.9-.14L14 7.29a.78.78 0 01.43.71.79.79 0 01-.43.71zm.71-2.86L3.47.25A2.4 2.4 0 00.21 3.37l1.92 4.3a.84.84 0 010 .66L.21 12.62A2.41 2.41 0 002.4 16a2.56 2.56 0 001.08-.26l11.2-5.6a2.4 2.4 0 000-4.29z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+            Submit this part
+          </button>
+        </div>
+      </div>
+      
+        
+    </div>
+  </div>
+</body>
+`;
+
+exports[`navigator plugin > opens overview on event from host 1`] = `
+<body>
+  <div>
+    
+        
+    <nav
+      aria-hidden="true"
+    >
+      
+    </nav>
+    
+        
+    <div
+      class="overlay"
+    >
+      
+            
+      <div
+        id="overlay-header"
+      >
+        <div
+          class="inverted"
+        >
+          <h2
+            class="ui-heading"
+            id="a11y-overlay"
+            tabindex="-1"
+          >
+            OVERVIEW - Part I: Section 1
+          </h2>
+           
+          <span
+            class="start"
+          >
+            <button
+              aria-label="Close overlay"
+              class="icon-bar-btn actionable base-24 default"
+              data-test-id="closeoverlay"
+              title="Close overlay"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon large"
+                viewBox="0 0 24 24"
+              >
+                <title>
+                  Remove icon
+                </title>
+                <path
+                  d="M1 0l11 11L23 0l1 1-11 11 11 11-1 1-11-11L1 24l-1-1 11-11L0 1z"
+                />
+              </svg>
+               
+               
+            </button>
+          </span>
+           
+          <span
+            class="end"
+          />
+        </div>
+      </div>
+      
+            
+      <div
+        id="overlay-content"
+      >
+        <div
+          class="overview"
+        >
+          <div
+            class="tabs"
+          >
+            <div
+              class="tabgroup"
+            >
+               
+              <div
+                class="scrollbox"
+              >
+                <ul
+                  role="tablist"
+                >
+                  <li
+                    role="presentation"
+                  >
+                    <button
+                      aria-current="true"
+                      aria-selected="true"
+                      role="tab"
+                    >
+                       
+                      all questions
+                       
+                    </button>
+                     
+                  </li>
+                  <li
+                    role="presentation"
+                  >
+                    <button
+                      aria-current="false"
+                      aria-selected="false"
+                      role="tab"
+                    >
+                       
+                      bookmarked (0)
+                       
+                    </button>
+                     
+                  </li>
+                  <li
+                    role="presentation"
+                  >
+                    <button
+                      aria-current="false"
+                      aria-selected="false"
+                      role="tab"
+                    >
+                       
+                      incomplete (2)
+                       
+                    </button>
+                     
+                  </li>
+                </ul>
+                <iframe
+                  aria-hidden="true"
+                  src="about:blank"
+                  style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
+                  tabindex="-1"
+                />
+              </div>
+               
+            </div>
+          </div>
+           
+          <div>
+            <div
+              class="tabpanel"
+              role="tabpanel"
+            >
+              <div>
+                
+                 
+                <ol
+                  class="space-large wrapped"
+                >
+                  <li>
+                    <button
+                      aria-label="Question 1. Completed."
+                      class="step completed"
+                      tabindex="0"
+                    >
+                       
+                       
+                      <span
+                        aria-hidden="true"
+                        class="step-label"
+                      >
+                        1
+                      </span>
+                    </button>
+                     
+                  </li>
+                  <li>
+                    <button
+                      aria-current="location"
+                      aria-label="Question 2. Not completed."
+                      class="step visited current"
+                      tabindex="-1"
+                    >
+                      <span
+                        aria-hidden="true"
+                        class="indicator"
+                      >
+                        <svg
+                          aria-hidden="false"
+                          class="icon small"
+                          viewBox="0 0 12 12"
+                        >
+                          <title>
+                            Current item indicator
+                          </title>
+                          <path
+                            d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                       
+                       
+                      <span
+                        aria-hidden="true"
+                        class="step-label"
+                      >
+                        2
+                      </span>
+                    </button>
+                     
+                  </li>
+                  <li>
+                    <button
+                      aria-label="Question 3. Not seen."
+                      class="step default"
+                      tabindex="-1"
+                    >
+                       
+                       
+                      <span
+                        aria-hidden="true"
+                        class="step-label"
+                      >
+                        3
+                      </span>
+                    </button>
+                     
+                  </li>
+                </ol>
+                
+              </div>
+               
+            </div>
+            <div
+              class="tabpanel hidden"
+              role="tabpanel"
+            >
+              <div>
+                
+              </div>
+               
+            </div>
+            <div
+              class="tabpanel hidden"
+              role="tabpanel"
+            >
+              <div>
+                
+                 
+                <ol
+                  class="space-large wrapped"
+                >
+                  <li>
+                    <button
+                      aria-current="location"
+                      aria-label="Question 2. Not completed."
+                      class="step visited current"
+                      tabindex="0"
+                    >
+                      <span
+                        aria-hidden="true"
+                        class="indicator"
+                      >
+                        <svg
+                          aria-hidden="false"
+                          class="icon small"
+                          viewBox="0 0 12 12"
+                        >
+                          <title>
+                            Current item indicator
+                          </title>
+                          <path
+                            d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                            fill-rule="evenodd"
+                          />
+                        </svg>
+                      </span>
+                       
+                       
+                      <span
+                        aria-hidden="true"
+                        class="step-label"
+                      >
+                        2
+                      </span>
+                    </button>
+                     
+                  </li>
+                  <li>
+                    <button
+                      aria-label="Question 3. Not seen."
+                      class="step default"
+                      tabindex="-1"
+                    >
+                       
+                       
+                      <span
+                        aria-hidden="true"
+                        class="step-label"
+                      >
+                        3
+                      </span>
+                    </button>
+                     
+                  </li>
+                </ol>
+                
+              </div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+      
+            
+      <div
+        id="overlay-footer"
+      >
+        <div
+          class="overview-bottom-bar"
+        >
+          <span
+            class="back-button"
+          >
+            <button
+              aria-label="Go back to the question"
+              class="actionable secondary pill medium"
+              name="overview-close"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Revert icon
+                </title>
+                <path
+                  d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
+                />
+              </svg>
+               
+               
+              Go back to the question
+            </button>
+          </span>
+           
+          <button
+            aria-label="Submit this part"
+            class="actionable secondary pill medium icon-right"
+            name="overview-submit"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Submit icon
+              </title>
+              <path
+                d="M14 8.71l-11.2 5.6a.8.8 0 01-1.08-1L3.59 9a.87.87 0 00.07-.17h5.51a.8.8 0 100-1.6H3.66A1.34 1.34 0 003.59 7L1.68 2.73a.81.81 0 01.18-.9.79.79 0 01.9-.14L14 7.29a.78.78 0 01.43.71.79.79 0 01-.43.71zm.71-2.86L3.47.25A2.4 2.4 0 00.21 3.37l1.92 4.3a.84.84 0 010 .66L.21 12.62A2.41 2.41 0 002.4 16a2.56 2.56 0 001.08-.26l11.2-5.6a2.4 2.4 0 000-4.29z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+            Submit this part
+          </button>
+        </div>
+      </div>
+      
+        
+    </div>
+  </div>
+</body>
+`;
+
+exports[`navigator plugin > renders and destroys without error 1`] = `
+<body>
+  <div>
+    
+        
+    <nav>
+      <div
+        class="navigator"
+      >
+        <button
+          aria-disabled="true"
+          aria-label="Bookmark this question"
+          class="actionable secondary circular medium"
+          disabled=""
+          name="bookmark"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Bookmark inactive icon
+            </title>
+            <path
+              d="M12 0H4a2.15 2.15 0 00-2 2v13a1 1 0 00.67.94A1 1 0 003 16a1 1 0 00.78-.38L8 10.6l4.22 5a1 1 0 00.78.4 1 1 0 00.33-.06A1 1 0 0014 15V2a2.15 2.15 0 00-2-2zm0 13L8 8l-4 5V2h8z"
+            />
+          </svg>
+           
+           
+        </button>
+         
+        <div
+          class="button-container end"
+        >
+           
+          <button
+            aria-disabled="true"
+            aria-label="Attempt. You have 5 attempts left for this question."
+            class="actionable primary pill medium"
+            disabled=""
+            name="attempt"
+            type="button"
+          >
+             
+             
+            Attempt (5 left)
+          </button>
+           
+        </div>
+         
+        <div
+          class="button-container start"
+        />
+         
+        <div
+          class="button-container center"
+        >
+          <button
+            aria-disabled="true"
+            aria-label="Go to previous question"
+            class="actionable secondary circular small"
+            disabled=""
+            name="prev"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium rtl-flip"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Arrow left icon
+              </title>
+              <path
+                d="M7.7-.13l2 2-4.5 4.5h10.5v3H5.2l4.5 4.5-2 2-8-8 8-8z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+          </button>
+           
+          <button
+            aria-disabled="true"
+            aria-label="Open overview of all 3 questions"
+            class="actionable secondary pill small"
+            disabled=""
+            name="overview"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Chevron up icon
+              </title>
+              <path
+                d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+              />
+            </svg>
+             
+             
+            Overview (3)
+          </button>
+           
+          <button
+            aria-disabled="true"
+            aria-label="Skip question"
+            class="actionable secondary circular small"
+            disabled=""
+            name="skip"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium rtl-flip"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Arrow right icon
+              </title>
+              <path
+                d="M8 16l-2-2 4.5-4.5H0v-3h10.5L6 2l2-2 8 8-8 8z"
+                fill-rule="evenodd"
+              />
+            </svg>
+             
+             
+          </button>
+          
+          
+        </div>
+        
+      </div>
+      
+    </nav>
+    
+        
+    <div
+      class="overlay"
+    >
+      
+            
+      <div
+        id="overlay-header"
+      />
+      
+            
+      <div
+        id="overlay-content"
+      />
+      
+            
+      <div
+        id="overlay-footer"
+      />
+      
+        
+    </div>
+  </div>
+</body>
+`;

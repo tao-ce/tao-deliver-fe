@@ -1,0 +1,104 @@
+{
+  "baseUrl": "./assets/pci/entryCodeInteraction/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "i5f96f663310f5872725de2d3a34c66",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "i5f96f663310f5872725de2d3a34c66",
+        "title": "pci",
+        "label": "pci",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "class": ""
+      },
+      "body": {
+        "serial": "container_containeritembody_5f99646cd0ac7112324748",
+        "body": "{{interaction_portablecustominteraction_5f99646cd34ce142518154}}",
+        "elements": {
+          "interaction_portablecustominteraction_5f99646cd34ce142518154": {
+            "serial": "interaction_portablecustominteraction_5f99646cd34ce142518154",
+            "qtiClass": "customInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE"
+            },
+            "choices": [],
+            "typeIdentifier": "entryCodeInteraction",
+            "markup": "<div class=\"entry-code markup\"><div role=\"heading\" class=\"prompt\">Entry code is 1234</div><div class=\"inner\"></div></div>",
+            "version": "1.1.0",
+            "properties": {
+              "algoVersion": "v1",
+              "code": "d404559f602eab6fd602ac7680dacbfaadd13630335e951f097af3900e9de176b6db28512f2e000b9d04fba5133e8b1c6e8df59db3a8ab9d60be4b97cc9e81db",
+              "locale": null
+            },
+            "xmlns": "http://www.imsglobal.org/xsd/portableCustomInteraction"
+          }
+        }
+      },
+      "namespaces": {
+        "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+        "html5": "html5",
+        "m": "http://www.w3.org/1998/Math/MathML",
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+      },
+      "outcomes": {
+        "outcomedeclaration_5f99646cd2503907539846": {
+          "identifier": "SCORE",
+          "serial": "outcomedeclaration_5f99646cd2503907539846",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": null
+        }
+      },
+      "responses": {
+        "responsedeclaration_5f99646cd180c007573054": {
+          "identifier": "RESPONSE",
+          "serial": "responsedeclaration_5f99646cd180c007573054",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "single",
+            "baseType": "string"
+          },
+          "defaultValue": []
+        }
+      },
+      "feedbacks": [],
+      "apipentryibility": ""
+    },
+    "assets": {}
+  },
+  "itemState": {},
+  "itemIdentifier": "item-1",
+  "portableElements": {
+    "pci": {
+      "entryCodeInteraction": [
+        {
+          "response": {
+            "baseType": "string",
+            "cardinality": "single"
+          },
+          "typeIdentifier": "entryCodeInteraction",
+          "label": "Entry Code",
+          "short": "Entry Code",
+          "description": "",
+          "version": "0.0.1",
+          "runtime": {
+            "hook": "runtime/entryCodeInteraction.min.js"
+          },
+          "xmlns": "http://www.imsglobal.org/xsd/portableCustomInteraction",
+          "baseUrl": ""
+        }
+      ]
+    },
+    "pic": []
+  }
+}

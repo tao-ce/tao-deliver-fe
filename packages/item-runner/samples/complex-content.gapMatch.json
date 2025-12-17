@@ -1,0 +1,545 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i14075046665841385",
+            "serial": "item_5e984c21927a7073190951",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i14075046665841385",
+                "title": "Example_3_Baudelaire",
+                "label": "Example_3_Baudelaire",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint125",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5e984c2192795920593594",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-6\">\n        <h2>Do you know the french poet Charles Baudelaire ?</h2>\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{interaction_gapmatchinteraction_5e984c2192b87409213442}}\n      </div>\n      <div class=\"col-6\">\n        {{img_5e984c21937b8625378458}}\n      </div>\n    </div>\n  <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i5f7700242d194}}\n      </div>\n    </div>\n  <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i5f7700242d1942}}\n      </div>\n    </div>\n",
+                "elements": {
+                    "interaction_gapmatchinteraction_5e984c2192b87409213442": {
+                        "serial": "interaction_gapmatchinteraction_5e984c2192b87409213442",
+                        "qtiClass": "gapMatchInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "shuffle": true,
+                            "maxAssociations": 3,
+                            "minAssociations": 0
+                        },
+                        "body": {
+                            "serial": "container_containergap_5e984c2192c05035338996",
+                            "body": "\n          \n          \n          \n          \n          \n          \n          <p>\u00a0 Au pays parfum\u00e9 que le soleil caresse,<br/>\n\u00a0 J\u2019ai connu, sous un dais d\u2019arbres tout empourpr\u00e9s<br/>\n\u00a0 Et de palmiers d\u2019o\u00f9 pleut sur les yeux la \n\n{{choice_gap_5e984c21932ab856655512}}\n\n\u00a0,<br/>\n\u00a0 Une dame cr\u00e9ole aux charmes ignor\u00e9s.</p>\n          <p>\u00a0 Son teint est p\u00e2le et chaud; la brune enchanteresse<br/>\n\u00a0 A dans le cou des airs noblement mani\u00e9r\u00e9s;<br/>\n\u00a0 Grande et svelte en marchant comme une \n\n{{choice_gap_5e984c21932fb466793291}}\n\n,<br/>\n\u00a0 Son sourire est tranquille et ses yeux assur\u00e9s.</p>\n          <p>\u00a0 Si vous alliez, Madame, au vrai pays de \n\n{{choice_gap_5e984c219333a889276225}}\n\n,<br/>\n\u00a0 Sur les bords de la Seine ou de la verte \n\n{{choice_gap_5e984c2193373133618139}}\n\n,<br/>\n\u00a0 Belle digne d\u2019orner les antiques manoirs,</p>\n          <p>\u00a0 Vous feriez, \u00e0 l\u2019abri des ombreuses retraites<br/>\n\u00a0 Germer mille \n\n{{choice_gap_5e984c21933ad260298564}}\n\n dans le coeur des po\u00e8tes,<br/>\n\u00a0 Que vos grands yeux rendraient plus soumis que vos noirs.</p>\n        ",
+                            "elements": {
+                                "choice_gap_5e984c21932ab856655512": {
+                                    "identifier": "gap_1",
+                                    "serial": "choice_gap_5e984c21932ab856655512",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_1",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "choice_gap_5e984c21932fb466793291": {
+                                    "identifier": "gap_2",
+                                    "serial": "choice_gap_5e984c21932fb466793291",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_2",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "choice_gap_5e984c219333a889276225": {
+                                    "identifier": "gap_5",
+                                    "serial": "choice_gap_5e984c219333a889276225",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_5",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "choice_gap_5e984c2193373133618139": {
+                                    "identifier": "gap_3",
+                                    "serial": "choice_gap_5e984c2193373133618139",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_3",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                },
+                                "choice_gap_5e984c21933ad260298564": {
+                                    "identifier": "gap_4",
+                                    "serial": "choice_gap_5e984c21933ad260298564",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_4",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                }
+                            }
+                        },
+                        "choices": {
+                            "choice_gaptext_5e984c2192cfe015047120": {
+                                "identifier": "choice_2",
+                                "serial": "choice_gaptext_5e984c2192cfe015047120",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_2",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f50a5ada9239",
+                                    "body": "\n              {{i5f50a5ada92e3}}\n              <i>r</i>\n              <sup>2</sup>\n              <i>h</i>\n            ",
+                                    "elements": {
+                                        "i5f50a5ada92e3": {
+                                            "serial": "i5f50a5ada92e3",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "<mrow><mi>E</mi></mrow><mo>=</mo><mi>m</mi><msup><mi>c</mi><mn>2</mn></msup>",
+                                            "annotations": {
+                                                "latex": "\\pi"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "choice_gaptext_5e984c2192e23365231365": {
+                                "identifier": "choice_1",
+                                "serial": "choice_gaptext_5e984c2192e23365231365",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_1",
+                                    "fixed": false,
+                                    "matchMax": 2,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_5e984c2192e65643725912",
+                                    "body": "chasseresse",
+                                    "elements": []
+                                }
+                            },
+                            "choice_gaptext_5e984c2192f3a336355822": {
+                                "identifier": "choice_3",
+                                "serial": "choice_gaptext_5e984c2192f3a336355822",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_5f292889ae6bd386059969",
+                                    "body": "{{img_5f292889af2ad822683405}}<br/>Come with me.\n",
+                                    "elements": {
+                                        "img_5f292889af2ad822683405": {
+                                            "serial": "img_5f292889af2ad822683405",
+                                            "qtiClass": "img",
+                                            "attributes": { "src": "zombieland.jpg", "alt": "Zombieland" },
+                                            "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                                        }
+                                    },
+                                    "debug": { "relatedItem": "item_5f2928898a9b5145973047" }
+                                }
+                            },
+                            "choice_gaptext_5e984c2193052690765421": {
+                                "identifier": "choice_4",
+                                "serial": "choice_gaptext_5e984c2193052690765421",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_4",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_5e984c2193093175764340",
+                                    "body": "sonnets",
+                                    "elements": []
+                                }
+                            },
+                            "choice_gaptext_5e984c2193174523941877": {
+                                "identifier": "choice_5",
+                                "serial": "choice_gaptext_5e984c2193174523941877",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_5",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "container_containerstatic_5e984c21931b5889682793",
+                                    "body": "gloire",
+                                    "elements": []
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_5e984c2192bef087190617",
+                            "body": "\u00a0QTI Gap Match is very useful for language proficiency or for memory test",
+                            "elements": []
+                        }
+                    },
+                    "i5f7700242d194": {
+                        "serial": "i5f7700242d194",
+                        "qtiClass": "gapMatchInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_1",
+                            "shuffle": false
+                        },
+                        "body": {
+                            "serial": "i5f7700242d1b6",
+                            "body": "\n          \n          \n          \n          \n          \n          <p>Lorem {{i5f7700242d6a9}} dolor sit amet, consectetur adipisicing ...</p>\n        ",
+                            "elements": {
+                                "i5f7700242d6a9": {
+                                    "identifier": "gap_1",
+                                    "serial": "i5f7700242d6a9",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_1",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                }
+                            }
+                        },
+                        "choices": {
+                            "i5f7700242d1d0": {
+                                "identifier": "choice_1",
+                                "serial": "i5f7700242d1d0",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_1",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f7700242d1e4",
+                                    "body": "\n            {{i5f7700242d274}}\n          ",
+                                    "elements": {
+                                        "i5f7700242d274": {
+                                            "serial": "i5f7700242d274",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <mi mathvariant=\"normal\">\u221e</mi>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\infty"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f7700242d2e0": {
+                                "identifier": "choice_2",
+                                "serial": "i5f7700242d2e0",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_2",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f7700242d2f2",
+                                    "body": "\n            {{i5f7700242d386}}\n          ",
+                                    "elements": {
+                                        "i5f7700242d386": {
+                                            "serial": "i5f7700242d386",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <mfrac>\n                      <mn>1</mn>\n                      <mn>10</mn>\n                    </mfrac>\n                    <mfrac>\n                      <mn>3</mn>\n                      <mn>4</mn>\n                    </mfrac>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\frac{1}{10}\\frac{3}{4}"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f7700242d3e3": {
+                                "identifier": "choice_3",
+                                "serial": "i5f7700242d3e3",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f7700242d3f7",
+                                    "body": "\n            {{i5f7700242d4bc}}\n          ",
+                                    "elements": {
+                                        "i5f7700242d4bc": {
+                                            "serial": "i5f7700242d4bc",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <mi>cos</mi>\n                    <mo>\u00d7</mo>\n                    <mi>sin</mi>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\cos\\times\\sin"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f7700242d514": {
+                                "identifier": "choice_4",
+                                "serial": "i5f7700242d514",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_4",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f7700242d526",
+                                    "body": "\n            {{i5f7700242d603}}\n          ",
+                                    "elements": {
+                                        "i5f7700242d603": {
+                                            "serial": "i5f7700242d603",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <mfrac>\n                      <mn>1</mn>\n                      <mn>2</mn>\n                    </mfrac>\n                    <mo>\u00b1</mo>\n                    <mn>1</mn>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\frac{1}{2}\\pm1"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f7700242d650": {
+                                "identifier": "choice_5",
+                                "serial": "i5f7700242d650",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_5",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f7700242d662",
+                                    "body": "ipsum",
+                                    "elements": []
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f7700242d1b2",
+                            "body": "Which of these is not a Math expression?",
+                            "elements": []
+                        }
+                    },
+                    "i5f7700242d1942": {
+                        "serial": "i5f7700242d1942",
+                        "qtiClass": "gapMatchInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_2",
+                            "shuffle": false
+                        },
+                        "body": {
+                            "serial": "i5f7700242d1b62",
+                            "body": "\n          \n          \n          \n          \n          \n          <p>Lorem {{i5f7700242d6a92}} dolor sit amet, consectetur adipisicing ...</p>\n        ",
+                            "elements": {
+                                "i5f7700242d6a92": {
+                                    "identifier": "gap_12",
+                                    "serial": "i5f7700242d6a92",
+                                    "qtiClass": "gap",
+                                    "attributes": {
+                                        "identifier": "gap_12",
+                                        "fixed": false,
+                                        "required": false
+                                    }
+                                }
+                            }
+                        },
+                        "choices": {
+                            "i5f7700242d1d02": {
+                                "identifier": "choice_12",
+                                "serial": "i5f7700242d1d02",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_12",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f7700242d1e42",
+                                    "body": "\n            {{i5f7700242d2742}}\n          ",
+                                    "elements": {
+                                        "i5f7700242d2742": {
+                                            "serial": "i5f7700242d2742",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <mi mathvariant=\"normal\">\u221e</mi>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\infty"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f7700242d3e32": {
+                                "identifier": "choice_32",
+                                "serial": "i5f7700242d3e32",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_32",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f7700242d3f72",
+                                    "body": "\n            {{i5f7700242d4bc2}}\n          ",
+                                    "elements": {
+                                        "i5f7700242d4bc2": {
+                                            "serial": "i5f7700242d4bc2",
+                                            "qtiClass": "math",
+                                            "attributes": [],
+                                            "mathML": "\n              <semantics>\n                <mstyle displaystyle=\"true\" scriptlevel=\"0\">\n                  <mrow class=\"MJX-TeXAtom-ORD\">\n                    <mi>cos</mi>\n                    <mo>\u00d7</mo>\n                    <mi>sin</mi>\n                  </mrow>\n                </mstyle>\n                \n              </semantics>\n            ",
+                                            "annotations": {
+                                                "latex": "\\cos\\times\\sin"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "i5f7700242d6502": {
+                                "identifier": "choice_52",
+                                "serial": "i5f7700242d6502",
+                                "qtiClass": "gapText",
+                                "attributes": {
+                                    "identifier": "choice_52",
+                                    "fixed": false,
+                                    "matchMax": 1,
+                                    "matchMin": 0
+                                },
+                                "body": {
+                                    "serial": "i5f7700242d6622",
+                                    "body": "ipsum",
+                                    "elements": []
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f7700242d1b22",
+                            "body": "Which of these is not a Math expression?",
+                            "elements": []
+                        }
+                    },
+                    "img_5e984c21937b8625378458": {
+                        "serial": "img_5e984c21937b8625378458",
+                        "qtiClass": "img",
+                        "attributes": {
+                            "src": "1024px-Gustave_Courbet_033.jpg",
+                            "alt": "1024px Gustave_Courbet_033",
+                            "width": 360,
+                            "height": 300
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p1",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p1": "http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_v2p1.xsd"
+            },
+            "stylesheets": {
+                "stylesheet_5e984c2192878101844139": {
+                    "serial": "stylesheet_5e984c2192878101844139",
+                    "qtiClass": "stylesheet",
+                    "attributes": {
+                        "href": "tao-user-styles.css",
+                        "type": "text/css",
+                        "media": "all",
+                        "title": ""
+                    }
+                }
+            },
+            "outcomes": {
+                "outcomedeclaration_5e984c219296f343368815": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5e984c219296f343368815",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": null
+                }
+            },
+            "responses": {
+                "responsedeclaration_5e984c21928fc340217826": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_5e984c21928fc340217826",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "multiple",
+                        "baseType": "directedPair"
+                    },
+                    "defaultValue": []
+                },
+                "i5f7700242cff7": {
+                    "identifier": "RESPONSE_1",
+                    "serial": "i5f7700242cff7",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "single",
+                        "baseType": "directedPair"
+                    },
+                    "defaultValue": []
+                },
+                "i5f7700242cff72": {
+                    "identifier": "RESPONSE_2",
+                    "serial": "i5f7700242cff72",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "single",
+                        "baseType": "directedPair"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "1024px-Gustave_Courbet_033.jpg": "1024px-Gustave_Courbet_033.jpg",
+                "zombieland.jpg": "zombieland.jpg"
+            },
+            "css": {
+                "tao-user-styles.css": "tao-user-styles.css"
+            }
+        }
+    },
+    "itemState": {},
+    "itemIdentifier": "item-5",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    },
+    "success": true,
+    "messages": []
+}

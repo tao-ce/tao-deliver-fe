@@ -1,0 +1,167 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i1511861144253418665",
+            "serial": "item_5e5e7a7135967975728067",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i1511861144253418665",
+                "title": "zombieland",
+                "label": "zombieland",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint123",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5e5e7a7135960167732998",
+                "body": "{{feedback_modalfeedback_65018d7009a46890982902}}",
+                "elements": {
+                    "feedback_modalfeedback_65018d7009a46890982902": {
+                        "identifier": "feedbackModal_1",
+                        "serial": "feedback_modalfeedback_65018d7009a46890982902",
+                        "qtiClass": "modalFeedback",
+                        "attributes": {
+                            "identifier": "feedbackModal_1",
+                            "outcomeIdentifier": "FEEDBACK_1",
+                            "showHide": "show",
+                            "title": "Some title, yes"
+                        },
+                        "body": {
+                            "serial": "container_containerstatic_65018d7009a6e758184578",
+                            "body": "\n    <div class=\"x-tao-wrapper x-tao-modalFeedback-negative x-tao-relatedOutcome-RESPONSE\"><em>Some</em><strong>text</strong>, yes, </div>\n    <div class=\"x-tao-wrapper x-tao-relatedOutcome-RESPONSE\">then table</div>\n    <div class=\"x-tao-wrapper x-tao-relatedOutcome-RESPONSE\">\n      {{table_65018d7009aed081494088}}\n      <p>then stimulus</p>\n      <p> </p>\n      <div class=\"tao-xjl5dyodm\">\n    \n        <div class=\"grid-row\"><div class=\"col-12\"><div class=\"colrow\"><p>\n{{img_65018d7009bc9676081630}}\n\n\n\n <span> </span></p></div></div></div><div class=\"grid-row\"><div class=\"col-12\"><div class=\"custom-text-box tao-a15ppo59w\">\n<p>Recent evidence suggests that the more time young people spend on social media, the more likely they are to be depressed. Researchers from the University of Pittsburgh asked 1,787 Americans aged between 19 and 32 to track the time they spent on social media. Participants were also assessed for depression using a questionnaire. The results showed that participants who used social media very frequently were more than twice as likely to be depressed as those who used it less often.</p>\n</div></div></div>\n    \n</div>\n    </div>\n    <div class=\"x-tao-wrapper x-tao-relatedOutcome-RESPONSE\"> then image {{img_65018d7009be2280003150}} then media</div>\n    <div class=\"x-tao-wrapper x-tao-relatedOutcome-RESPONSE\">\n      {{qtiobject_65018d7009b9e935104115}}\n    </div>\n    <div class=\"x-tao-wrapper x-tao-relatedOutcome-RESPONSE\"> </div>\n  ",
+                            "elements": {
+                                "table_65018d7009aed081494088": {
+                                    "serial": "table_65018d7009aed081494088",
+                                    "qtiClass": "table",
+                                    "attributes": [],
+                                    "body": {
+                                        "serial": "container_containertable_65018d7009af5883403085",
+                                        "body": "\n        <tbody>\n          <tr>\n            <td>aa</td>\n            <td>dd</td>\n          </tr>\n          <tr>\n            <td>bb</td>\n            <td>ee</td>\n          </tr>\n          <tr>\n            <td>cc</td>\n            <td>ff</td>\n          </tr>\n        </tbody>\n      ",
+                                        "elements": [],
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_65018d7009869445189127"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_65018d7009869445189127"
+                                    }
+                                },
+                                "qtiobject_65018d7009b9e935104115": {
+                                    "serial": "qtiobject_65018d7009b9e935104115",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "View_From_A_Blue_Moon_Trailer-576p.mp4",
+                                        "type": "video/mp4",
+                                        "width": "100%"
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_65018d7009869445189127"
+                                    }
+                                },
+                                "img_65018d7009bc9676081630": {
+                                    "serial": "img_65018d7009bc9676081630",
+                                    "qtiClass": "img",
+                                    "attributes": {
+                                        "src": "laketrakai.jpg",
+                                        "alt": "Screenshot 2023-08-08 at 08.32.38.jpg",
+                                        "width": "100%",
+                                        "type": "image/jpg;UTF-8"
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_65018d7009869445189127"
+                                    }
+                                },
+                                "img_65018d7009be2280003150": {
+                                    "serial": "img_65018d7009be2280003150",
+                                    "qtiClass": "img",
+                                    "attributes": {
+                                        "src": "laketrakai.jpg",
+                                        "alt": "Screenshot 2023-08-08 at 08.32.38.jpg",
+                                        "width": "100%",
+                                        "type": "image/jpg"
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_65018d7009869445189127"
+                                    }
+                                }
+                            },
+                            "attributes": [],
+                            "debug": {
+                                "relatedItem": "item_65018d7009869445189127"
+                            }
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": {
+                "outcomedeclaration_5e5e7a7135a01370420955": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5e5e7a7135a01370420955",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_5e5e7a7135a1f355027846": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_5e5e7a7135a1f355027846",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "responsedeclaration_5e5e7a71359c7014823860": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_5e5e7a71359c7014823860",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "single",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "laketrakai.jpg": "laketrakai.jpg"
+            },
+            "video": {
+                "View_From_A_Blue_Moon_Trailer-576p.mp4": "View_From_A_Blue_Moon_Trailer-576p.mp4"
+            }
+        }
+    },
+    "itemState": {},
+    "itemIdentifier": "item-3",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    }
+}

@@ -1,0 +1,111 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i630e06a233dbe16dbcbdb320b3a1ffd",
+            "serial": "i630e1722b63ec",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i630e06a233dbe16dbcbdb320b3a1ffd",
+                "title": "Item 3",
+                "label": "Item 3",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "NextGen",
+                "class": ""
+            },
+            "body": {
+                "serial": "i630e1722b63e8",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <p>Hey, can I tell you a <em>joke</em>?</p>\n        {{i630e1722b64d8}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "i630e1722b64d8": {
+                        "serial": "i630e1722b64d8",
+                        "qtiClass": "include",
+                        "attributes": {
+                            "href": "passage.xml",
+                            "class": "tao-s2kdeshy2"
+                        },
+                        "stylesheets": {
+                            "i630e1722b6438": "style/passageStyles.css"
+                        },
+                        "body": {
+                            "serial": "i630e1722b64de",
+                            "body": "\n    \n        <div class=\"grid-row\"><div class=\"col-12\"><div class=\"colrow\"><div class=\"custom-text-box tao-3vc64z9mn\">\n<p><em>Helvetica</em> and <em>Times New Roman</em> walk into a bar.</p>\n</div></div><div class=\"colrow\"><div class=\"custom-text-box tao-eaw2255kk\">\n<p><em>\u201cGet out of here!\u201d</em> shouts the bartender. <em>\u201cWe don\u2019t serve your type.\u201d</em></p>\n</div></div></div></div>\n    \n",
+                            "elements": {}
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xi": "http://www.w3.org/2001/XInclude",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {
+                "i630e1722b6438": {
+                    "serial": "i630e1722b6438",
+                    "qtiClass": "stylesheet",
+                    "attributes": {
+                        "href": "style/passageStyles.css",
+                        "includeHref": "passage.xml",
+                        "includeSerial": "i630e1722b64d8",
+                        "type": "text/css",
+                        "media": "screen",
+                        "title": ""
+                    }
+                },
+                "i730e1722b6999": {
+                    "serial": "i730e1722b6999",
+                    "qtiClass": "stylesheet",
+                    "attributes": {
+                        "href": "style/modalFeedbackPassageStyles.css",
+                        "includeHref": "modalFeedbackPassage.xml",
+                        "includeSerial": "i730e1722b6ddd",
+                        "type": "text/css",
+                        "media": "screen",
+                        "title": ""
+                    }
+                },
+                "i830e1722b6777": {
+                    "serial": "i830e1722b6777",
+                    "qtiClass": "stylesheet",
+                    "attributes": {
+                        "href": "style/itemStyles.css",
+                        "type": "text/css",
+                        "media": "screen",
+                        "title": ""
+                    }
+                }
+            },
+            "outcomes": {},
+            "responses": {},
+            "feedbacks": {},
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "xinclude": {
+                "passage.xml": "passage.xml"
+            },
+            "css": {
+                "style/passageStyles.css": "style/passageStyles.css",
+                "style/modalFeedbackPassageStyles.css": "style/modalFeedbackPassageStyles.css",
+                "style/itemStyles.css": "style/itemStyles.css"
+            }
+        }
+    },
+    "itemState": {},
+    "itemIdentifier": "item-3",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    },
+    "success": true,
+    "messages": []
+}

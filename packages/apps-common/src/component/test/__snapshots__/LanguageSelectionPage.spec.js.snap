@@ -1,0 +1,352 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LanguageSelectionPage component > Renders correctly with no props 1`] = `
+<body>
+  <div>
+    <div
+      class="layout-centered"
+    >
+      <main
+        class="main"
+      >
+        <div
+          class="container"
+        >
+          <h3>
+            Please select a language
+          </h3>
+           
+           
+          <div
+            class="form-container"
+          >
+            <span
+              class="select height-medium required valid"
+              style="--visible-options: 4; --space-above: 0px;"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-label=""
+                aria-roledescription="Dropdown"
+                title=""
+                type="button"
+              >
+                <span
+                  class="dropdown-placeholder"
+                />
+                 
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Down arrow icon
+                  </title>
+                  <path
+                    d="M15.46 4.29A.51.51 0 0015 4H1a.5.5 0 00-.38.83l7 8a.51.51 0 00.76 0l7-8a.51.51 0 00.08-.54z"
+                  />
+                </svg>
+              </button>
+               
+              <span
+                aria-hidden="true"
+                class="listbox-wrapper visually-hidden"
+              >
+                <span
+                  aria-activedescendant=""
+                  aria-roledescription="dropdown list"
+                  class="listbox"
+                  role="listbox"
+                  tabindex="-1"
+                >
+                  <span
+                    class="scroll-child"
+                  />
+                   
+                   
+                  <span
+                    class="scroll-child"
+                  />
+                </span>
+              </span>
+               
+              <input
+                aria-hidden="true"
+                class="hidden-input"
+                data-type="select"
+                name=""
+                required=""
+                tabindex="-1"
+                type="text"
+              />
+               
+               
+            </span>
+             
+            <button
+              class="actionable primary pill small"
+              type="button"
+            >
+               
+               
+              Select
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`LanguageSelectionPage component > Renders correctly with props set 1`] = `
+<body>
+  <div>
+    <div
+      class="layout-centered"
+    >
+      <main
+        class="main"
+      >
+        <div
+          class="container"
+        >
+          <h3>
+            Please select a language
+          </h3>
+           
+           
+          <div
+            class="form-container"
+          >
+            <span
+              class="select height-medium required valid"
+              style="--visible-options: 4; --space-above: 0px;"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-label="Русский (Россия)"
+                aria-roledescription="Dropdown"
+                title="Русский (Россия)"
+                type="button"
+              >
+                <span>
+                  Русский (Россия)
+                </span>
+                 
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Down arrow icon
+                  </title>
+                  <path
+                    d="M15.46 4.29A.51.51 0 0015 4H1a.5.5 0 00-.38.83l7 8a.51.51 0 00.76 0l7-8a.51.51 0 00.08-.54z"
+                  />
+                </svg>
+              </button>
+               
+              <span
+                aria-hidden="true"
+                class="listbox-wrapper visually-hidden"
+              >
+                <span
+                  aria-activedescendant="tao-option-123"
+                  aria-roledescription="dropdown list"
+                  class="listbox"
+                  role="listbox"
+                  tabindex="-1"
+                >
+                  <span
+                    class="scroll-child"
+                  />
+                   
+                  <span
+                    aria-selected="false"
+                    class="option"
+                    id="tao-option-123"
+                    role="option"
+                  >
+                    English (United Kingdom)
+                  </span>
+                  <span
+                    aria-selected="true"
+                    class="option selected"
+                    id="tao-option-123"
+                    role="option"
+                  >
+                    Русский (Россия)
+                  </span>
+                  <span
+                    aria-selected="false"
+                    class="option"
+                    id="tao-option-123"
+                    role="option"
+                  >
+                    Français (France)
+                  </span>
+                   
+                  <span
+                    class="scroll-child"
+                  />
+                </span>
+              </span>
+               
+              <input
+                aria-hidden="true"
+                class="hidden-input"
+                data-type="select"
+                name=""
+                required=""
+                tabindex="-1"
+                type="text"
+              />
+               
+               
+            </span>
+             
+            <button
+              class="actionable primary pill small"
+              type="button"
+            >
+               
+               
+              Select
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`LanguageSelectionPage component > Sets the first locale from a list of supportedLocales if default is not specified 1`] = `
+<body>
+  <div>
+    <div
+      class="layout-centered"
+    >
+      <main
+        class="main"
+      >
+        <div
+          class="container"
+        >
+          <h3>
+            Please select a language
+          </h3>
+           
+           
+          <div
+            class="form-container"
+          >
+            <span
+              class="select height-medium required valid"
+              style="--visible-options: 4; --space-above: 0px;"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-label="English (United Kingdom)"
+                aria-roledescription="Dropdown"
+                title="English (United Kingdom)"
+                type="button"
+              >
+                <span>
+                  English (United Kingdom)
+                </span>
+                 
+                <svg
+                  aria-hidden="true"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Down arrow icon
+                  </title>
+                  <path
+                    d="M15.46 4.29A.51.51 0 0015 4H1a.5.5 0 00-.38.83l7 8a.51.51 0 00.76 0l7-8a.51.51 0 00.08-.54z"
+                  />
+                </svg>
+              </button>
+               
+              <span
+                aria-hidden="true"
+                class="listbox-wrapper visually-hidden"
+              >
+                <span
+                  aria-activedescendant="tao-option-123"
+                  aria-roledescription="dropdown list"
+                  class="listbox"
+                  role="listbox"
+                  tabindex="-1"
+                >
+                  <span
+                    class="scroll-child"
+                  />
+                   
+                  <span
+                    aria-selected="true"
+                    class="option selected"
+                    id="tao-option-123"
+                    role="option"
+                  >
+                    English (United Kingdom)
+                  </span>
+                  <span
+                    aria-selected="false"
+                    class="option"
+                    id="tao-option-123"
+                    role="option"
+                  >
+                    Русский (Россия)
+                  </span>
+                  <span
+                    aria-selected="false"
+                    class="option"
+                    id="tao-option-123"
+                    role="option"
+                  >
+                    Français (France)
+                  </span>
+                   
+                  <span
+                    class="scroll-child"
+                  />
+                </span>
+              </span>
+               
+              <input
+                aria-hidden="true"
+                class="hidden-input"
+                data-type="select"
+                name=""
+                required=""
+                tabindex="-1"
+                type="text"
+              />
+               
+               
+            </span>
+             
+            <button
+              class="actionable primary pill small"
+              type="button"
+            >
+               
+               
+              Select
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+`;

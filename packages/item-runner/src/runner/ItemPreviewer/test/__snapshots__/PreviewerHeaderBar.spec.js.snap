@@ -1,0 +1,136 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PreviewerHeaderBar > it renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="previewer-header-bar"
+    >
+      <div
+        class="bar-section bar-main-section"
+      >
+        <button
+          aria-label="close item preview"
+          class="icon-bar-btn actionable base-16 default"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Remove icon
+            </title>
+            <path
+              d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
+            />
+          </svg>
+           
+           
+        </button>
+         
+        <div
+          class="item-name"
+        >
+          test item
+        </div>
+      </div>
+       
+      <div
+        class="bar-section bar-reverse-direction"
+      >
+        <div
+          class="toggle-response-panel"
+        >
+          <button
+            aria-label="show response panel"
+            class="actionable primary pill small inverted icon-right"
+            data-test-id="toggle-response-panel"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              fill="none"
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <title>
+                List icon
+              </title>
+              <path
+                d="M0 0H12V1H0z"
+                fill="currentColor"
+                transform="translate(2 3)"
+              />
+              <path
+                d="M0 0H12V1H0z"
+                fill="currentColor"
+                transform="translate(2 6)"
+              />
+              <path
+                d="M0 0H12V1H0z"
+                fill="currentColor"
+                transform="translate(2 9)"
+              />
+              <path
+                d="M0 0H12V1H0z"
+                fill="currentColor"
+                transform="translate(2 12)"
+              />
+            </svg>
+             
+             
+            RESPONSE PANEL
+          </button>
+        </div>
+         
+        <div
+          class="mobile-toggle-response-panel"
+        >
+          <button
+            aria-label="show response panel"
+            class="icon-bar-btn actionable base-16 default"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              fill="none"
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <title>
+                List icon
+              </title>
+              <path
+                d="M0 0H12V1H0z"
+                fill="currentColor"
+                transform="translate(2 3)"
+              />
+              <path
+                d="M0 0H12V1H0z"
+                fill="currentColor"
+                transform="translate(2 6)"
+              />
+              <path
+                d="M0 0H12V1H0z"
+                fill="currentColor"
+                transform="translate(2 9)"
+              />
+              <path
+                d="M0 0H12V1H0z"
+                fill="currentColor"
+                transform="translate(2 12)"
+              />
+            </svg>
+             
+             
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

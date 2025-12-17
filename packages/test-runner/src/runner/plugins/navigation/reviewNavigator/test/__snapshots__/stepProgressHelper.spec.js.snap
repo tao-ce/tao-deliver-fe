@@ -1,0 +1,211 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"answered":false,"flagged":false,"viewed":false,"informational":false} 1`] = `
+{
+  "ariaLabel": "Question 5. Not completed.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": undefined,
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"answered":false,"flagged":false,"viewed":false,"informational":true} 1`] = `
+{
+  "ariaLabel": "Informational Item.",
+  "icon": "info-bare-16",
+  "key": 8,
+  "label": null,
+  "state": undefined,
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"answered":false,"flagged":false,"viewed":true,"informational":false} 1`] = `
+{
+  "ariaLabel": "Question 5. Not completed.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": "visited",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"answered":false,"flagged":false,"viewed":true,"informational":true} 1`] = `
+{
+  "ariaLabel": "Informational Item.",
+  "icon": "info-bare-16",
+  "key": 8,
+  "label": null,
+  "state": "visited",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"answered":false,"flagged":true,"viewed":true,"informational":false} 1`] = `
+{
+  "ariaLabel": "Question 5. Not completed.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": "visited",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"answered":false,"flagged":true,"viewed":true,"informational":true} 1`] = `
+{
+  "ariaLabel": "Informational Item.",
+  "icon": "info-bare-16",
+  "key": 8,
+  "label": null,
+  "state": "visited",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"answered":true,"flagged":false,"viewed":false,"informational":false} 1`] = `
+{
+  "ariaLabel": "Question 5. Completed.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": "completed",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"answered":true,"flagged":false,"viewed":true,"informational":false} 1`] = `
+{
+  "ariaLabel": "Question 5. Completed.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": "completed",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"answered":true,"flagged":false,"viewed":true,"informational":true} 1`] = `
+{
+  "ariaLabel": "Informational Item.",
+  "icon": "info-bare-16",
+  "key": 8,
+  "label": null,
+  "state": "completed",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"answered":true,"flagged":true,"viewed":true,"informational":false} 1`] = `
+{
+  "ariaLabel": "Question 5. Completed.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": "completed",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"answered":true,"flagged":true,"viewed":true,"informational":true} 1`] = `
+{
+  "ariaLabel": "Informational Item.",
+  "icon": "info-bare-16",
+  "key": 8,
+  "label": null,
+  "state": "completed",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"externalScored":true,"maxScore":0,"score":null,"answered":true,"viewed":true} 1`] = `
+{
+  "ariaLabel": "Question 5. Completed.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": "completed",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"externalScored":true,"maxScore":2,"score":2,"answered":true,"viewed":true} 1`] = `
+{
+  "ariaLabel": "Question 5. Correct.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": "correct",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"externalScored":true,"maxScore":2,"score":null,"answered":false,"viewed":true} 1`] = `
+{
+  "ariaLabel": "Question 5. Awaiting manual scoring.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": "visitedWaiting",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"externalScored":true,"maxScore":2,"score":null,"answered":true,"viewed":true} 1`] = `
+{
+  "ariaLabel": "Question 5. Awaiting manual scoring.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": "completedWaiting",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"maxScore":0,"score":0,"answered":true,"viewed":true} 1`] = `
+{
+  "ariaLabel": "Question 5. Completed.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": "completed",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"maxScore":1,"score":0,"answered":true,"viewed":true} 1`] = `
+{
+  "ariaLabel": "Question 5. Incorrect.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": "incorrect",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"maxScore":2,"score":1,"answered":true,"viewed":true} 1`] = `
+{
+  "ariaLabel": "Question 5. Partial.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": "partial",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"maxScore":12,"score":12,"answered":false,"viewed":false} 1`] = `
+{
+  "ariaLabel": "Question 5. Not completed.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": undefined,
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"maxScore":12,"score":12,"answered":false,"viewed":true} 1`] = `
+{
+  "ariaLabel": "Question 5. Not completed.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": "visited",
+}
+`;
+
+exports[`stepProgressHelper helper > returns step if showScore=true {"maxScore":12,"score":12,"answered":true,"viewed":true} 1`] = `
+{
+  "ariaLabel": "Question 5. Correct.",
+  "icon": null,
+  "key": 8,
+  "label": 5,
+  "state": "correct",
+}
+`;

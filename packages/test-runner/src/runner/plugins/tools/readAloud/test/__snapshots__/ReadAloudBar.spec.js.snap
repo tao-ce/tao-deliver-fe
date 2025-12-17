@@ -1,0 +1,765 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ReadAloudBar > renders playOnClick footer 1`] = `
+<body>
+  <div>
+    <div
+      class="readAloud-bar has-footer"
+    >
+      <div
+        aria-label="read aloud"
+        class="floating-bar inverted"
+        role="toolbar"
+      >
+        <div
+          class="floating-bar-main"
+        >
+          <header>
+            read aloud
+          </header>
+           
+          <div
+            class="floating-bar-actions"
+          >
+            <div
+              class="actions do-not-read"
+            >
+              <button
+                aria-describedby="tao-ra-play-123"
+                aria-label="Continuous reading"
+                aria-pressed="false"
+                class="icon-bar-btn actionable base-16 default circular"
+                data-test-id="readaloud-play"
+                title="Continuous reading"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  fill="none"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  width="16"
+                >
+                  <title>
+                    Play icon
+                  </title>
+                  <path
+                    d="M1 0V16L15 8L1 0Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                 
+                 
+              </button>
+               
+              <button
+                aria-describedby="tao-ra-sel-123"
+                aria-label="Click to read"
+                aria-pressed="true"
+                class="icon-bar-btn actionable base-16 default circular toggled"
+                data-test-id="readaloud-play-on-click"
+                title="Click to read"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  fill="none"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  width="16"
+                >
+                  <title>
+                    Play on click icon
+                  </title>
+                  <path
+                    d="M6 1C8.38411 1 10.3785 2.66862 10.879 4.90172L11.9429 5.169C11.5383 2.24858 9.03174 0 6 0C2.68629 0 0 2.68629 0 6C0 9.03188 2.24878 11.5385 5.16939 11.943L4.90212 10.8791C2.66882 10.3787 1 8.38425 1 6C1 3.23858 3.23858 1 6 1Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    clip-rule="evenodd"
+                    d="M5.44217 4.11472C4.59802 3.72512 3.72555 4.5976 4.11515 5.44174L7.04469 14.1224C7.41686 14.9288 8.57714 14.886 8.88898 14.0545L9.69592 11.9026L12.3969 14.6035C13.0063 15.213 13.9945 15.213 14.604 14.6035C15.2134 13.9941 15.2134 13.0059 14.604 12.3964L11.903 9.6955L14.0549 8.88855C14.8865 8.57671 14.9292 7.41643 14.1228 7.04426L5.44217 4.11472ZM5.02311 5.02268L13.7038 7.95222L10.0978 9.30446L13.8969 13.1035C14.1158 13.3225 14.1158 13.6775 13.8969 13.8964C13.6779 14.1154 13.3229 14.1154 13.104 13.8964L9.30489 10.0974L7.95265 13.7033L5.02311 5.02268Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                 
+                 
+              </button>
+               
+              <button
+                aria-label="ReadAloud settings"
+                class="icon-bar-btn actionable base-16 default circular"
+                data-test-id="readaloud-settings"
+                title="ReadAloud settings"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Cogwheel icon
+                  </title>
+                  <path
+                    d="M9 1v2.06l.67.23a5.09 5.09 0 011.58.91l.53.46.62-.35 1.16-.68 1 1.74L13.4 6l-.62.35.13.7a4.65 4.65 0 010 1.82l-.13.7.62.35 1.16.67-1 1.74-1.16-.68-.62-.35-.53.46a5.09 5.09 0 01-1.58.91l-.67.27V15H7v-2.06l-.67-.23a5.09 5.09 0 01-1.58-.91l-.53-.46-.62.35-1.16.68-1-1.74L2.6 10l.62-.35-.13-.7a4.65 4.65 0 010-1.82l.13-.7L2.6 6l-1.16-.63 1-1.74 1.16.68.62.35.53-.46a5.09 5.09 0 011.58-.91L7 3.06V1h2m0-1H7a1 1 0 00-1 1v1.35a6.19 6.19 0 00-1.9 1.09l-1.16-.67a1 1 0 00-.5-.14 1 1 0 00-.87.5l-1 1.74a1 1 0 00.37 1.36l1.16.68A6.5 6.5 0 002 8a6.5 6.5 0 00.1 1.09l-1.16.68a1 1 0 00-.37 1.36l1 1.74a1 1 0 00.87.5 1 1 0 00.5-.14l1.16-.67A6.19 6.19 0 006 13.65V15a1 1 0 001 1h2a1 1 0 001-1v-1.35a6.19 6.19 0 001.9-1.09l1.16.67a1 1 0 00.5.14 1 1 0 00.87-.5l1-1.74a1 1 0 00-.37-1.36l-1.16-.68A6.5 6.5 0 0014 8a6.5 6.5 0 00-.1-1.09l1.16-.68a1 1 0 00.37-1.36l-1-1.74a1 1 0 00-.87-.5 1 1 0 00-.5.14l-1.16.67A6.19 6.19 0 0010 2.35V1a1 1 0 00-1-1z"
+                  />
+                  <path
+                    d="M8 6a2 2 0 11-2 2 2 2 0 012-2m0-1a3 3 0 103 3 3 3 0 00-3-3z"
+                  />
+                </svg>
+                 
+                 
+              </button>
+            </div>
+          </div>
+        </div>
+         
+        <footer>
+          <div
+            class="footer"
+            slot="footer"
+          >
+             
+            <p
+              class="instruction"
+            >
+              Click on any text to read aloud
+            </p>
+             
+          </div>
+        </footer>
+      </div>
+       
+      <div
+        class="hidden"
+        id="tao-ra-sel-123"
+      >
+        Press enter or space to activate select and read. To move the next available action, use the arrow keys. To close press escape.
+      </div>
+       
+      <div
+        class="hidden"
+        id="tao-ra-play-123"
+      >
+        Press enter or space to activate continuous reading. If activated press enter or space to stop the reading.
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ReadAloudBar > renders playSelection footer 1`] = `
+<body>
+  <div>
+    <div
+      class="readAloud-bar has-footer"
+    >
+      <div
+        aria-label="read aloud"
+        class="floating-bar inverted"
+        role="toolbar"
+      >
+        <div
+          class="floating-bar-main"
+        >
+          <header>
+            read aloud
+          </header>
+           
+          <div
+            class="floating-bar-actions"
+          >
+            <div
+              class="actions do-not-read"
+            >
+              <button
+                aria-describedby="tao-ra-play-123"
+                aria-label="Continuous reading"
+                aria-pressed="false"
+                class="icon-bar-btn actionable base-16 default circular"
+                data-test-id="readaloud-play"
+                title="Continuous reading"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  fill="none"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  width="16"
+                >
+                  <title>
+                    Play icon
+                  </title>
+                  <path
+                    d="M1 0V16L15 8L1 0Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                 
+                 
+              </button>
+               
+              <button
+                aria-describedby="tao-ra-sel-123"
+                aria-label="Select and read"
+                aria-pressed="true"
+                class="icon-bar-btn actionable base-16 default circular toggled"
+                data-test-id="readaloud-play-selection"
+                title="Select and read"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Play from icon
+                  </title>
+                  <path
+                    d="M15 12H1a1 1 0 000 2h14a1 1 0 000-2zm0-5H9a1 1 0 000 2h6a1 1 0 000-2zm0-5H9a1 1 0 000 2h6a1 1 0 000-2zM0 2v7l5.83-3.5L0 2z"
+                  />
+                </svg>
+                 
+                 
+              </button>
+               
+              <button
+                aria-label="ReadAloud settings"
+                class="icon-bar-btn actionable base-16 default circular"
+                data-test-id="readaloud-settings"
+                title="ReadAloud settings"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Cogwheel icon
+                  </title>
+                  <path
+                    d="M9 1v2.06l.67.23a5.09 5.09 0 011.58.91l.53.46.62-.35 1.16-.68 1 1.74L13.4 6l-.62.35.13.7a4.65 4.65 0 010 1.82l-.13.7.62.35 1.16.67-1 1.74-1.16-.68-.62-.35-.53.46a5.09 5.09 0 01-1.58.91l-.67.27V15H7v-2.06l-.67-.23a5.09 5.09 0 01-1.58-.91l-.53-.46-.62.35-1.16.68-1-1.74L2.6 10l.62-.35-.13-.7a4.65 4.65 0 010-1.82l.13-.7L2.6 6l-1.16-.63 1-1.74 1.16.68.62.35.53-.46a5.09 5.09 0 011.58-.91L7 3.06V1h2m0-1H7a1 1 0 00-1 1v1.35a6.19 6.19 0 00-1.9 1.09l-1.16-.67a1 1 0 00-.5-.14 1 1 0 00-.87.5l-1 1.74a1 1 0 00.37 1.36l1.16.68A6.5 6.5 0 002 8a6.5 6.5 0 00.1 1.09l-1.16.68a1 1 0 00-.37 1.36l1 1.74a1 1 0 00.87.5 1 1 0 00.5-.14l1.16-.67A6.19 6.19 0 006 13.65V15a1 1 0 001 1h2a1 1 0 001-1v-1.35a6.19 6.19 0 001.9-1.09l1.16.67a1 1 0 00.5.14 1 1 0 00.87-.5l1-1.74a1 1 0 00-.37-1.36l-1.16-.68A6.5 6.5 0 0014 8a6.5 6.5 0 00-.1-1.09l1.16-.68a1 1 0 00.37-1.36l-1-1.74a1 1 0 00-.87-.5 1 1 0 00-.5.14l-1.16.67A6.19 6.19 0 0010 2.35V1a1 1 0 00-1-1z"
+                  />
+                  <path
+                    d="M8 6a2 2 0 11-2 2 2 2 0 012-2m0-1a3 3 0 103 3 3 3 0 00-3-3z"
+                  />
+                </svg>
+                 
+                 
+              </button>
+            </div>
+          </div>
+        </div>
+         
+        <footer>
+          <div
+            class="footer"
+            slot="footer"
+          >
+            <p
+              class="instruction"
+            >
+              Select text to read aloud
+            </p>
+             
+             
+          </div>
+        </footer>
+      </div>
+       
+      <div
+        class="hidden"
+        id="tao-ra-sel-123"
+      >
+        Press enter or space to activate select and read. To move the next available action, use the arrow keys. To close press escape.
+      </div>
+       
+      <div
+        class="hidden"
+        id="tao-ra-play-123"
+      >
+        Press enter or space to activate continuous reading. If activated press enter or space to stop the reading.
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ReadAloudBar > renders settings footer 1`] = `
+<body>
+  <div>
+    <div
+      class="readAloud-bar has-footer"
+    >
+      <div
+        aria-label="read aloud"
+        class="floating-bar inverted"
+        role="toolbar"
+      >
+        <div
+          class="floating-bar-main"
+        >
+          <header>
+            read aloud
+          </header>
+           
+          <div
+            class="floating-bar-actions"
+          >
+            <div
+              class="actions do-not-read"
+            >
+              <button
+                aria-describedby="tao-ra-play-123"
+                aria-label="Continuous reading"
+                aria-pressed="false"
+                class="icon-bar-btn actionable base-16 default circular"
+                data-test-id="readaloud-play"
+                title="Continuous reading"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  fill="none"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  width="16"
+                >
+                  <title>
+                    Play icon
+                  </title>
+                  <path
+                    d="M1 0V16L15 8L1 0Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                 
+                 
+              </button>
+               
+              <button
+                aria-describedby="tao-ra-sel-123"
+                aria-label="Select and read"
+                aria-pressed="false"
+                class="icon-bar-btn actionable base-16 default circular"
+                data-test-id="readaloud-play-selection"
+                title="Select and read"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Play from icon
+                  </title>
+                  <path
+                    d="M15 12H1a1 1 0 000 2h14a1 1 0 000-2zm0-5H9a1 1 0 000 2h6a1 1 0 000-2zm0-5H9a1 1 0 000 2h6a1 1 0 000-2zM0 2v7l5.83-3.5L0 2z"
+                  />
+                </svg>
+                 
+                 
+              </button>
+               
+              <button
+                aria-label="ReadAloud settings"
+                aria-pressed="true"
+                class="icon-bar-btn actionable base-16 default circular toggled"
+                data-test-id="readaloud-settings"
+                title="ReadAloud settings"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Cogwheel icon
+                  </title>
+                  <path
+                    d="M9 1v2.06l.67.23a5.09 5.09 0 011.58.91l.53.46.62-.35 1.16-.68 1 1.74L13.4 6l-.62.35.13.7a4.65 4.65 0 010 1.82l-.13.7.62.35 1.16.67-1 1.74-1.16-.68-.62-.35-.53.46a5.09 5.09 0 01-1.58.91l-.67.27V15H7v-2.06l-.67-.23a5.09 5.09 0 01-1.58-.91l-.53-.46-.62.35-1.16.68-1-1.74L2.6 10l.62-.35-.13-.7a4.65 4.65 0 010-1.82l.13-.7L2.6 6l-1.16-.63 1-1.74 1.16.68.62.35.53-.46a5.09 5.09 0 011.58-.91L7 3.06V1h2m0-1H7a1 1 0 00-1 1v1.35a6.19 6.19 0 00-1.9 1.09l-1.16-.67a1 1 0 00-.5-.14 1 1 0 00-.87.5l-1 1.74a1 1 0 00.37 1.36l1.16.68A6.5 6.5 0 002 8a6.5 6.5 0 00.1 1.09l-1.16.68a1 1 0 00-.37 1.36l1 1.74a1 1 0 00.87.5 1 1 0 00.5-.14l1.16-.67A6.19 6.19 0 006 13.65V15a1 1 0 001 1h2a1 1 0 001-1v-1.35a6.19 6.19 0 001.9-1.09l1.16.67a1 1 0 00.5.14 1 1 0 00.87-.5l1-1.74a1 1 0 00-.37-1.36l-1.16-.68A6.5 6.5 0 0014 8a6.5 6.5 0 00-.1-1.09l1.16-.68a1 1 0 00.37-1.36l-1-1.74a1 1 0 00-.87-.5 1 1 0 00-.5.14l-1.16.67A6.19 6.19 0 0010 2.35V1a1 1 0 00-1-1z"
+                  />
+                  <path
+                    d="M8 6a2 2 0 11-2 2 2 2 0 012-2m0-1a3 3 0 103 3 3 3 0 00-3-3z"
+                  />
+                </svg>
+                 
+                 
+              </button>
+            </div>
+          </div>
+        </div>
+         
+        <footer>
+          <div
+            class="footer"
+            slot="footer"
+          >
+             
+             
+            <div
+              class="read-aloud-settings-drawer"
+            >
+              <div
+                class="control-row"
+              >
+                <label
+                  for="voice"
+                >
+                  Voice
+                </label>
+                 
+                <div
+                  class="radio-group grid"
+                  style="--rowNum: 1; --colNum: 2;"
+                >
+                  <div
+                    class="radio"
+                  >
+                    <input
+                      id="tao-option-123"
+                      name="voice"
+                      type="radio"
+                      value="male"
+                    />
+                     
+                    <label
+                      class="radio-label"
+                      for="tao-option-123"
+                    >
+                      <svg
+                        class="radio-button"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Radio button
+                        </title>
+                        <circle
+                          class="radio-border"
+                          cx="8"
+                          cy="8"
+                          fill="none"
+                          r="7"
+                          stroke-width="2"
+                        />
+                      </svg>
+                       
+                      <span
+                        class="radio-label-text"
+                      >
+                        Male
+                      </span>
+                    </label>
+                     
+                  </div>
+                  <div
+                    class="radio"
+                  >
+                    <input
+                      id="tao-option-123"
+                      name="voice"
+                      type="radio"
+                      value="female"
+                    />
+                     
+                    <label
+                      class="radio-label"
+                      for="tao-option-123"
+                    >
+                      <svg
+                        class="radio-button"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Radio button
+                        </title>
+                        <circle
+                          class="radio-check"
+                          cx="8"
+                          cy="8"
+                          r="4"
+                        />
+                        <circle
+                          class="radio-border"
+                          cx="8"
+                          cy="8"
+                          fill="none"
+                          r="7"
+                          stroke-width="2"
+                        />
+                      </svg>
+                       
+                      <span
+                        class="radio-label-text"
+                      >
+                        Female
+                      </span>
+                    </label>
+                     
+                  </div>
+                </div>
+              </div>
+               
+              <div
+                class="control-row"
+              >
+                <label>
+                  Speed
+                </label>
+                 
+                <span
+                  class="stepper changed-control"
+                >
+                  <button
+                    aria-label="increase reading speed"
+                    class="icon-bar-btn actionable base-12 secondary circular"
+                    title="increase reading speed"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        Plus icon
+                      </title>
+                      <path
+                        d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                      />
+                    </svg>
+                     
+                     
+                  </button>
+                   
+                  <button
+                    aria-label="decrease reading speed"
+                    class="icon-bar-btn actionable base-12 secondary circular"
+                    title="decrease reading speed"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        Minus icon
+                      </title>
+                      <path
+                        d="M0 7h16v2H0z"
+                      />
+                    </svg>
+                     
+                     
+                  </button>
+                </span>
+              </div>
+               
+              <div
+                class="control-row"
+              >
+                <label>
+                  Pitch
+                </label>
+                 
+                <span
+                  class="stepper changed-control"
+                >
+                  <button
+                    aria-label="increase reading pitch"
+                    class="icon-bar-btn actionable base-12 secondary circular"
+                    title="increase reading pitch"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        Plus icon
+                      </title>
+                      <path
+                        d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
+                      />
+                    </svg>
+                     
+                     
+                  </button>
+                   
+                  <button
+                    aria-label="decrease reading pitch"
+                    class="icon-bar-btn actionable base-12 secondary circular"
+                    title="decrease reading pitch"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="icon medium"
+                      viewBox="0 0 16 16"
+                    >
+                      <title>
+                        Minus icon
+                      </title>
+                      <path
+                        d="M0 7h16v2H0z"
+                      />
+                    </svg>
+                     
+                     
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+       
+      <div
+        class="hidden"
+        id="tao-ra-sel-123"
+      >
+        Press enter or space to activate select and read. To move the next available action, use the arrow keys. To close press escape.
+      </div>
+       
+      <div
+        class="hidden"
+        id="tao-ra-play-123"
+      >
+        Press enter or space to activate continuous reading. If activated press enter or space to stop the reading.
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ReadAloudBar > renders with default props 1`] = `
+<body>
+  <div>
+    <div
+      class="readAloud-bar"
+    >
+      <div
+        aria-label="read aloud"
+        class="floating-bar inverted"
+        role="toolbar"
+      >
+        <div
+          class="floating-bar-main"
+        >
+          <header>
+            read aloud
+          </header>
+           
+          <div
+            class="floating-bar-actions"
+          >
+            <div
+              class="actions do-not-read"
+            >
+              <button
+                aria-describedby="tao-ra-play-123"
+                aria-label="Continuous reading"
+                aria-pressed="false"
+                class="icon-bar-btn actionable base-16 default circular"
+                data-test-id="readaloud-play"
+                title="Continuous reading"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  fill="none"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  width="16"
+                >
+                  <title>
+                    Play icon
+                  </title>
+                  <path
+                    d="M1 0V16L15 8L1 0Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                 
+                 
+              </button>
+               
+              <button
+                aria-describedby="tao-ra-sel-123"
+                aria-label="Select and read"
+                aria-pressed="false"
+                class="icon-bar-btn actionable base-16 default circular"
+                data-test-id="readaloud-play-selection"
+                title="Select and read"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Play from icon
+                  </title>
+                  <path
+                    d="M15 12H1a1 1 0 000 2h14a1 1 0 000-2zm0-5H9a1 1 0 000 2h6a1 1 0 000-2zm0-5H9a1 1 0 000 2h6a1 1 0 000-2zM0 2v7l5.83-3.5L0 2z"
+                  />
+                </svg>
+                 
+                 
+              </button>
+               
+              <button
+                aria-label="ReadAloud settings"
+                class="icon-bar-btn actionable base-16 default circular"
+                data-test-id="readaloud-settings"
+                title="ReadAloud settings"
+              >
+                <svg
+                  aria-hidden="false"
+                  class="icon medium"
+                  viewBox="0 0 16 16"
+                >
+                  <title>
+                    Cogwheel icon
+                  </title>
+                  <path
+                    d="M9 1v2.06l.67.23a5.09 5.09 0 011.58.91l.53.46.62-.35 1.16-.68 1 1.74L13.4 6l-.62.35.13.7a4.65 4.65 0 010 1.82l-.13.7.62.35 1.16.67-1 1.74-1.16-.68-.62-.35-.53.46a5.09 5.09 0 01-1.58.91l-.67.27V15H7v-2.06l-.67-.23a5.09 5.09 0 01-1.58-.91l-.53-.46-.62.35-1.16.68-1-1.74L2.6 10l.62-.35-.13-.7a4.65 4.65 0 010-1.82l.13-.7L2.6 6l-1.16-.63 1-1.74 1.16.68.62.35.53-.46a5.09 5.09 0 011.58-.91L7 3.06V1h2m0-1H7a1 1 0 00-1 1v1.35a6.19 6.19 0 00-1.9 1.09l-1.16-.67a1 1 0 00-.5-.14 1 1 0 00-.87.5l-1 1.74a1 1 0 00.37 1.36l1.16.68A6.5 6.5 0 002 8a6.5 6.5 0 00.1 1.09l-1.16.68a1 1 0 00-.37 1.36l1 1.74a1 1 0 00.87.5 1 1 0 00.5-.14l1.16-.67A6.19 6.19 0 006 13.65V15a1 1 0 001 1h2a1 1 0 001-1v-1.35a6.19 6.19 0 001.9-1.09l1.16.67a1 1 0 00.5.14 1 1 0 00.87-.5l1-1.74a1 1 0 00-.37-1.36l-1.16-.68A6.5 6.5 0 0014 8a6.5 6.5 0 00-.1-1.09l1.16-.68a1 1 0 00.37-1.36l-1-1.74a1 1 0 00-.87-.5 1 1 0 00-.5.14l-1.16.67A6.19 6.19 0 0010 2.35V1a1 1 0 00-1-1z"
+                  />
+                  <path
+                    d="M8 6a2 2 0 11-2 2 2 2 0 012-2m0-1a3 3 0 103 3 3 3 0 00-3-3z"
+                  />
+                </svg>
+                 
+                 
+              </button>
+            </div>
+          </div>
+        </div>
+         
+        <footer>
+          <div
+            class="footer"
+            slot="footer"
+          >
+             
+             
+          </div>
+        </footer>
+      </div>
+       
+      <div
+        class="hidden"
+        id="tao-ra-sel-123"
+      >
+        Press enter or space to activate select and read. To move the next available action, use the arrow keys. To close press escape.
+      </div>
+       
+      <div
+        class="hidden"
+        id="tao-ra-play-123"
+      >
+        Press enter or space to activate continuous reading. If activated press enter or space to stop the reading.
+      </div>
+    </div>
+  </div>
+</body>
+`;

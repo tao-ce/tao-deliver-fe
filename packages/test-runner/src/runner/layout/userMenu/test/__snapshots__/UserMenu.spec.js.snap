@@ -1,0 +1,119 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`UserMenu > renders user avatar, on click opens flyout with name & id 1`] = `
+<body>
+  <div>
+    <div
+      class="user-menu"
+    >
+      <button
+        aria-controls="tao-menu-123"
+        aria-expanded="false"
+        aria-haspopup="true"
+        aria-label="User: John Doe"
+        class="icon-bar-btn actionable base-24 default"
+        title="User: John Doe"
+      >
+         
+         
+        <span
+          aria-label="John Doe"
+          class="avatar"
+          role="img"
+          style="
+        --size: 4rem;
+        --bg-color: #8405D8;
+    "
+        >
+          <span
+            class="initials"
+          >
+            JD
+          </span>
+        </span>
+      </button>
+       
+      
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`UserMenu > renders user avatar, on click opens flyout with name & id 2`] = `
+<body>
+  <div>
+    <div
+      class="user-menu"
+    >
+      <button
+        aria-controls="tao-menu-123"
+        aria-expanded="true"
+        aria-haspopup="true"
+        aria-label="User: John Doe"
+        class="icon-bar-btn actionable base-24 default"
+        title="User: John Doe"
+      >
+         
+         
+        <span
+          aria-label="John Doe"
+          class="avatar"
+          role="img"
+          style="
+        --size: 4rem;
+        --bg-color: #8405D8;
+    "
+        >
+          <span
+            class="initials"
+          >
+            JD
+          </span>
+        </span>
+      </button>
+       
+      <div
+        class="flyout"
+      >
+        <div
+          id="tao-menu-123"
+          role="menu"
+        >
+          <span
+            aria-label="John Doe"
+            class="avatar"
+            role="img"
+            style="
+        --size: 4rem;
+        --bg-color: #8405D8;
+    "
+          >
+            <span
+              class="initials"
+            >
+              JD
+            </span>
+          </span>
+           
+          <div>
+            <div
+              class="ui-heading"
+            >
+              John Doe
+            </div>
+             
+            <div
+              class="username"
+            >
+              user-123
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</body>
+`;

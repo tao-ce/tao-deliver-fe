@@ -1,0 +1,541 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`bookletHtmlBuilder > appends several items 1`] = `"<html><head>  <meta charset="UTF-8">  <style>    body {font-family: Arial; font-size:11pt;}    td,th {border: 1px solid black; border-collapse: collapse;}  </style></head><body><div>First item</div><p>&nbsp;</p><div>Second item</div><p>&nbsp;</p><div>Third item</div></body></html>"`;
+
+exports[`bookletHtmlBuilder > inlines iframes 1`] = `
+"<html><head>  <meta charset="UTF-8">  <style>    body {font-family: Arial; font-size:11pt;}    td,th {border: 1px solid black; border-collapse: collapse;}  </style></head><body><div>
+<div>
+      <div>
+        <div> <div>
+              <div>
+                <div><div>
+        <div>
+          <p style="font-weight: bold;">Is this bold?</p>
+          <div><div><div><em style="font-style: italic;">Hello</em><br>Question <span>1</span> / <span>5</span></div><div>Refer to “text” on the right. Click on a choice.</div><div><p>When was it recognized?</p><table><tbody><tr><td style="width: 40px;">A</td><td>In the past.</td></tr><tr><td>B</td><td>In the future.</td></tr><tr><td>C</td><td>Today.</td></tr><tr><td>D</td><td>Never.</td></tr></tbody></table></div></div></div>
+          <div><div><div><h1 style="font-weight: bold;">Whatever</h1><div><p>Throughout history, "more commonly known"<img src="data:image/png;base64,content-of-mysrc1.jpg" width="200" height="100"></p><h2 style="font-weight: bold;">as someting</h2></div></div>
+</div></div>
+          <div><div></div></div>
+          
+        </div>
+
+</div></div>
+              </div>
+            </div></div>
+       </div>
+     </div>
+</div></body></html>"
+`;
+
+exports[`bookletHtmlBuilder > inlines images 1`] = `
+"<html><head>  <meta charset="UTF-8">  <style>    body {font-family: Arial; font-size:11pt;}    td,th {border: 1px solid black; border-collapse: collapse;}  </style></head><body><div>
+<img src="data:image/png;base64,content-of-mysrc.jpg" width="200" height="100">
+<div>
+    
+    <span>
+        <span>
+            Background-1
+            <img src="data:image/png;base64,content-of-othersrc.png" width="200" height="100">
+        </span><div><div><img src="data:image/png;base64,content-of-mybackground2.jpg" width="200" height="100"></div><div><img src="data:image/png;base64,content-of-mybackground3.jpg" width="200" height="100"></div></div>
+        <p>Background-2</p>
+    </span><div><div><img src="data:image/png;base64,content-of-mybackground1.jpg" width="200" height="100"></div></div>
+    <p>Background-3</p>
+</div>
+<div>
+    <div><div><img src="data:image/png;base64,content-of-mysvg.jpg" width="200" height="100"></div></div>
+    <p>Svg-1</p>
+</div>
+<img src="data:image/png;base64,abcd" width="200" height="100">
+<img>
+
+<figure>
+    <img src="data:image/png;base64,content-of-wrap-left_mock-getComputedStyle-size.png" align="left" hspace="16" width="88" height="55">
+</figure>
+<figure>
+    <img src="data:image/png;base64,content-of-wrap-right.png" align="right" hspace="16" width="200" height="100">
+</figure>
+<figure>
+    <img src="data:image/png;base64,content-of-mock-getComputedStyle-size.png" width="88" height="55">
+</figure>
+</div></body></html>"
+`;
+
+exports[`bookletHtmlBuilder > keeps supported styles 1`] = `
+"<html><head>  <meta charset="UTF-8">  <style>    body {font-family: Arial; font-size:11pt;}    td,th {border: 1px solid black; border-collapse: collapse;}  </style></head><body><div>
+<img src="data:image/png;base64,abcd" width="200" height="100">
+
+<p style="font-style: italic;">Italic self</p>
+<p style="font-weight: bold;">Bold self</p>
+<p style="text-decoration: underline;">Underline self (in jest, text-decoration shorthand doesn't get split into parts)</p>
+<p style="text-align: center;">Centered self</p>
+<p style="font-weight: bold; text-align: right;">Right-align, bold</p>
+<p style="text-decoration: line-through; text-align: justify;">Justified, line-through</p>
+<p style="font-family: &quot;Times New Roman&quot;;">Font self</p>
+<p>Ignored</p>
+<div>
+    In Jest, inherited styles are not inherited. Check that in real browser.
+    <div>
+        ignored-level-1
+        <div style="font-weight: bold;">bold-level-2</div>
+        <div>ignored-level-2</div>
+    </div>
+    <div style="font-style: italic;">
+        italic-level-1
+        <div style="font-style: normal; font-weight: bold;">
+            bold-level-2
+            <div>bold-level-3</div>
+        </div>
+        <div style="font-style: normal;">normal-level-2</div>
+        <div>
+            italic-level-2
+            <div style="font-style: normal;">
+                inherit-level-3
+                <div>
+                    normal-level-4
+                    <div>
+                        normal-level-5
+                        <div style="font-style: italic;">italic-level-6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; font-family: Impact;">
+        font1-level-1
+        <div style="text-decoration: underline; text-align: left;">
+            underline-level-2
+            <div style="text-decoration: underline;">underline-level-3</div>
+            <div style="font-family: &quot;Times New Roman&quot;;">
+                font2-level-3
+                <div style="font-family: Impact;">font1-level-4</div>
+            </div>
+        </div>
+        <div style="text-align: left; font-family: &quot;Times New Roman&quot;;">
+            font2-level-2
+            <div style="font-family: Impact;">font1-level-3</div>
+        </div>
+    </div>
+</div>
+
+ </div></body></html>"
+`;
+
+exports[`bookletHtmlBuilder > removes unneeded elements 1`] = `
+"<html><head>  <meta charset="UTF-8">  <style>    body {font-family: Arial; font-size:11pt;}    td,th {border: 1px solid black; border-collapse: collapse;}  </style></head><body><div>
+Non-content elements
+
+
+
+
+Svg not supported
+
+
+Media elements
+
+
+<div>
+    <div>
+        <div>
+            <div>
+                <p>Media interaction</p>
+                <p></p>
+            </div>
+            
+            <p></p>
+        </div>
+    </div>
+</div>
+
+Attributes
+<a>Bookmark-link</a>
+<a>Hashtag-link</a>
+<a>Blob-link</a>
+<a href="http://localhost:8020/7112c716-af6d-478d-9799-de5e2a731b25">Http-link</a>
+<a href="">Empty-attr-link</a>
+<a>No-attr-link</a>
+<div>Attributes div</div>
+<p>Attributes p</p>
+
+Hidden content
+<div>
+    
+    <div>
+        <div>
+            Some QTI interaction
+            
+            
+            <p>Visually-hidden paragraph</p>
+            <p>Aria-hidden paragraph</p>
+        </div>
+        <div>
+            Static block
+            <p>Hidden paragraph 1</p>
+            <p>Hidden paragraph 2</p>
+            <p>Visually-hidden paragraph</p>
+            <p>Aria-hidden paragraph</p>
+        </div>
+        <div>
+            Some PCI
+            <p>Hidden paragraph 1</p>
+            <p>Hidden paragraph 2</p>
+            <p>Visually-hidden paragraph</p>
+            <p>Aria-hidden paragraph</p>
+        </div>
+    </div>
+</div>
+ </div></body></html>"
+`;
+
+exports[`bookletHtmlBuilder > reorders shared stimuluses (pci) 1`] = `
+"<html><head>  <meta charset="UTF-8">  <style>    body {font-family: Arial; font-size:11pt;}    td,th {border: 1px solid black; border-collapse: collapse;}  </style></head><body><div>
+<div>
+      <div>
+        <div> <div>
+              <div>
+                <div><div>
+  <h1 style="font-weight: bold;">Stimulus A</h1>
+  <div>
+    <p style="line-height: 150%;">
+      <a>The following question appeared:&nbsp;</a>
+      <span>....................</span>
+    </p>
+  </div>
+  <img src="data:image/png;base64,content-of-mysrc2.jpg" width="200" height="100"> &nbsp;
+</div></div><div><div>
+First interaction for Stimulus A
+</div></div>
+                
+              </div>
+            </div></div>
+       </div>
+     </div>
+</div><p>&nbsp;</p><div>
+<div>
+      <div>
+        <div> <div>
+              <div>
+                <div><div>
+Second interaction for Stimulus A
+</div></div>
+                
+              </div>
+            </div></div>
+       </div>
+     </div>
+</div><p>&nbsp;</p><div>
+<div>
+      <div>
+        <div> <div>
+              <div>
+                <div><div>
+  <h1 style="font-weight: bold;">Stimulus B</h1>
+  <div>
+    <p style="line-height: 150%;">
+      <a>The following question appeared:&nbsp;</a>
+      <span>....................</span>
+    </p>
+  </div>
+  <img src="data:image/png;base64,content-of-mysrc2.jpg" width="200" height="100"> &nbsp;
+</div></div><div><div>
+First interaction for Stimulus B
+</div></div>
+                
+              </div>
+            </div></div>
+       </div>
+     </div>
+</div><p>&nbsp;</p><div>
+<div>
+      <div>
+        <div> <div>
+              <div>
+                <div><div>
+Not a stumulus
+</div></div>
+                <div><div>
+  <h1 style="font-weight: bold;">Stimulus A</h1>
+  <div>
+    <p style="line-height: 150%;">
+      <a>The following question appeared:&nbsp;</a>
+      <span>....................</span>
+    </p>
+  </div>
+  <img src="data:image/png;base64,content-of-mysrc2.jpg" width="200" height="100"> &nbsp;
+</div></div>
+              </div>
+            </div></div>
+       </div>
+     </div>
+</div></body></html>"
+`;
+
+exports[`bookletHtmlBuilder > reorders shared stimuluses (qti) 1`] = `
+"<html><head>  <meta charset="UTF-8">  <style>    body {font-family: Arial; font-size:11pt;}    td,th {border: 1px solid black; border-collapse: collapse;}  </style></head><body><div>
+<div>
+  <div>
+    <article>
+      <div>
+        <div>
+          <div>
+            <h1 style="font-weight: bold;">Stimulus A</h1>
+            <div>
+              <p style="line-height: 150%;">
+                <em style="font-style: italic;">The following question appeared:&nbsp;</em>
+				<span>....................</span>
+              </p>
+            </div>
+            <img src="data:image/png;base64,content-of-mysrc2.jpg" width="200" height="100"> &nbsp;
+          </div>
+        </div>
+      </div>
+    </article>
+  </div><div>
+    First interaction for Stimulus A
+  </div>
+  
+</div>
+</div><p>&nbsp;</p><div>
+<div>
+  <div>
+    Second interaction for Stimulus A
+  </div>
+  <div>
+    
+  </div>
+</div>
+ </div><p>&nbsp;</p><div>
+<div>
+  <div>
+    <article>
+      <div>
+        <div>
+          <div>
+            <h1 style="font-weight: bold;">Stimulus B</h1>
+            <div>
+              <p style="line-height: 150%;">
+                <em style="font-style: italic;">The following question appeared:&nbsp;</em>
+				<span>....................</span>
+              </p>
+            </div>
+            <img src="data:image/png;base64,content-of-mysrc2.jpg" width="200" height="100"> &nbsp;
+          </div>
+        </div>
+      </div>
+    </article>
+  </div><div>
+    First interaction for Stimulus B
+  </div>
+  
+</div>
+ </div><p>&nbsp;</p><div>
+<div>
+  <div>
+    <article>
+      <div>
+        <div>
+          <div>
+            <h1 style="font-weight: bold;">Stimulus A</h1>
+            <div>
+              <p style="line-height: 150%;">
+                <em style="font-style: italic;">The following question appeared:&nbsp;</em>
+				<span>....................</span>
+              </p>
+            </div>
+            <img src="data:image/png;base64,content-of-mysrc2.jpg" width="200" height="100"> &nbsp;
+          </div>
+        </div>
+      </div>
+    </article>
+  </div><div>
+    Third interaction for Stimulus A
+  </div>
+  
+</div>
+ </div><p>&nbsp;</p><div>
+<div>
+  <div>
+    No stimulus
+  </div>
+  <div>
+    <article>
+      <div>
+        <div>
+          <div>
+            <h1 style="font-weight: bold;">Stimulus A</h1>
+            <div>
+              <p style="line-height: 150%;">
+                <em style="font-style: italic;">The following question appeared:&nbsp;</em>
+				<span>....................</span>
+              </p>
+            </div>
+            <img src="data:image/png;base64,content-of-mysrc2.jpg" width="200" height="100"> &nbsp;
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+</div><p>&nbsp;</p><div>
+<div>
+  <div>
+    Not dual column, with Stimulus A
+  </div>
+</div>
+<div>
+  <div>
+    <article>
+      <div>
+        <div>
+          <div>
+            <h1 style="font-weight: bold;">Stimulus A</h1>
+            <div>
+              <p style="line-height: 150%;">
+                <em style="font-style: italic;">The following question appeared:&nbsp;</em>
+				<span>....................</span>
+              </p>
+            </div>
+            <img src="data:image/png;base64,content-of-mysrc2.jpg" width="200" height="100"> &nbsp;
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+</div></body></html>"
+`;
+
+exports[`bookletHtmlBuilder > transforms interactive elements 1`] = `
+"<html><head>  <meta charset="UTF-8">  <style>    body {font-family: Arial; font-size:11pt;}    td,th {border: 1px solid black; border-collapse: collapse;}  </style></head><body><div>
+<div>
+  <div>
+    <p>One of the guitar players, <table><tbody><tr><td style="width: 40px;">A</td><td>John Lennon</td></tr><tr><td>B</td><td>Paul McCartney</td></tr><tr><td>C</td><td>George Harrison</td></tr><tr><td>D</td><td>Ringo Starr</td></tr></tbody></table> was a founding member and also one of the two main composers. He wrote most of the Beatles' hits together with <table><tbody><tr><td style="width: 40px;">A</td><td>John Lennon</td></tr><tr><td>B</td><td>Paul McCartney</td></tr><tr><td>C</td><td>George Harrison</td></tr><tr><td>D</td><td>Ringo Starr</td></tr></tbody></table>, the bass player.&nbsp; </p>
+</div>
+</div>
+
+Dropdown PCI (select)
+
+<div><table><tbody><tr><td style="width: 40px;">A</td><td>Select</td></tr><tr><td>B</td><td>Sample A</td></tr><tr><td>C</td><td>Sample B</td></tr><tr><td>D</td><td>Sample C</td></tr><tr><td>E</td><td>Sample D</td></tr></tbody></table></div>
+
+Choice Radio QTI
+
+<div role="group">
+  <div>
+    <p>He wants to reply to the question.</p>
+    <p>What advice should he post?</p>
+  </div>
+  <div lang="en" dir="ltr"></div>
+  <div role="group">
+    <table><tbody><tr><td style="width: 40px;">A</td><td>
+                Place the pot in water.
+              </td></tr><tr><td>B</td><td>Place water in the pot. </td></tr><tr><td>C</td><td>Pour pot in the water. </td></tr><tr><td>D</td><td>Pour water in the pot. </td></tr></tbody></table>
+  </div>
+</div>
+
+Choice Radio PCI (input type radio)
+
+<div><p>Which one of the following geometric figures could be the one Paul built?</p><div><div></div><div></div><div></div><div><table><tbody><tr><td style="width: 40px;">A</td><td><img src="data:image/png;base64,iVB=" width="200" height="100"></td></tr><tr><td>B</td><td><img src="data:image/png;base64,iVBO" width="200" height="100"></td></tr><tr><td>C</td><td><img src="data:image/png;base64,iVBOR=" width="200" height="100"></td></tr><tr><td>D</td><td><img src="data:image/png;base64,iVBORw" width="200" height="100"></td></tr></tbody></table></div></div></div>
+
+<table><tbody><tr><th style="font-weight: bold;">Does the statement describe a way?</th><th style="font-weight: bold;">Yes</th><th style="font-weight: bold;">No</th></tr><tr><td>Both mention ways.</td><td><span>&nbsp;◯&nbsp;</span></td><td><span>&nbsp;◯&nbsp;</span></td></tr><tr><td>Both show how.</td><td><span>&nbsp;◯&nbsp;</span></td><td><span>&nbsp;◯&nbsp;</span></td></tr><tr><td>Both advertise.</td><td><span>&nbsp;◯&nbsp;</span></td><td><span>&nbsp;◯&nbsp;</span></td></tr></tbody></table>
+
+Choice Checkbox QTI
+
+
+
+<div role="group">
+  <div>
+    <div>
+      <img src="data:image/png;base64,iVB=" alt="European Union" width="200" height="100">
+      <strong style="font-weight: bold;">&nbsp;Please select the flags of the European Unnion countries&nbsp; belonging to the Schengen Area : </strong>
+    </div>
+    <div>&nbsp;</div>
+  </div>
+  <div lang="en" dir="ltr">
+    <div role="status">
+      <p>You need to select 12 choices</p>
+    </div>
+  </div>
+  <div role="group">
+    <table><tbody><tr><td style="width: 40px;">A</td><td>
+              <img src="data:image/png;base64,content-of-mysrc1.jpg" alt="Belgium" width="200" height="100">
+            </td></tr><tr><td>B</td><td>
+              <img src="data:image/png;base64,content-of-mysrc2.jpg" alt="Germany" width="200" height="100">
+            </td></tr><tr><td>C</td><td>
+              <img src="data:image/png;base64,content-of-mysrc3.jpg" alt="France" width="200" height="100">
+            </td></tr></tbody></table>
+  </div>
+</div>
+
+<div role="group">
+  <div>Which was the last Space Shuttle going into space during the STS-135 mission in July 2011?</div>
+  <div></div>
+  <div role="group">
+    <table><tbody><tr><td style="width: 40px;">A</td><td>
+                <div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div>
+                    <table>
+                      <caption>Sample</caption>
+                      <thead>
+                        <tr>
+                          <th style="font-weight: bold;">&nbsp;</th>
+                          <th style="font-weight: bold;">15</th>
+                          <th style="font-weight: bold;">15</th>
+                          <th style="font-weight: bold;">15</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th style="font-weight: bold;">15</th>
+                          <td>4</td>
+                          <td>9</td>
+                          <td>2</td>
+                        </tr>
+                        <tr>
+                          <th style="font-weight: bold;">15</th>
+                          <td>3</td>
+                          <td>5</td>
+                          <td>7</td>
+                        </tr>
+                        <tr>
+                          <th style="font-weight: bold;">15</th>
+                          <td>8</td>
+                          <td>1</td>
+                          <td>6</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </td></tr><tr><td>B</td><td>
+                <i style="font-style: italic;">Challenger <i>
+                    <b style="font-style: normal; font-weight: bold;">here</b>
+                  </i>
+                </i>
+              </td></tr></tbody></table>
+  </div>
+</div>
+
+Choice Checkbox PCI (input type checkbox)
+
+<div><p>✔ Remember to select <b style="font-weight: bold;">one or more</b></p><div><span>&nbsp;▢&nbsp;</span><label for="aM102Q01CHX_0">5 stars</label></div><div><span>&nbsp;▢&nbsp;</span><label for="aM102Q01CHX_1">4 stars</label></div><div><span>&nbsp;▢&nbsp;</span><label for="aM102Q01CHX_2">3 stars</label></div></div>
+
+<div><p>✔ Remember to select <b style="font-weight: bold;">one or more</b></p><table><tbody><tr><td style="width: 40px;">A</td><td>5 stars</td></tr><tr><td>B</td><td>4 stars</td></tr><tr><td>C</td><td>3 stars</td></tr></tbody></table></div>
+
+<div><p>✔ Remember to select <b style="font-weight: bold;">one or more</b></p><div><span>&nbsp;▢&nbsp;</span><label for="cM102Q01CHX_0">5 stars</label></div><p>Stray content got here</p><div><span>&nbsp;▢&nbsp;</span><label for="cM102Q01CHX_1">4 stars</label></div><div><span>&nbsp;▢&nbsp;</span><label for="cM102Q01CHX_2">3 stars</label></div></div>
+
+MathEntry PCI
+
+<div>
+  <div>
+    <div>
+      <div>
+        <strong style="font-weight: bold;">Please enter some math:</strong>
+      </div>
+      <div><p>......................................................................</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+    </div>
+  </div>
+</div>
+</div></body></html>"
+`;

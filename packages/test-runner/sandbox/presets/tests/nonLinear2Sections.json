@@ -1,0 +1,197 @@
+{
+  "testContext": {
+    "state": 1,
+    "remainingAttempts": -1,
+    "isTimeout": 0,
+    "itemIdentifier": "item2",
+    "attempt": 1,
+    "itemSessionState": 1,
+    "needMapUpdate": false,
+    "itemPosition": 1,
+    "timeConstraints": [],
+    "testPartId": "testPart-1",
+    "sectionId": "assessmentSection-1",
+    "canMoveBackward": true,
+    "rubrics": "",
+    "allowSkipping": true,
+    "validateResponses": false
+  },
+  "testMap": {
+    "scope": "test",
+    "parts": {
+      "testPart-1": {
+        "id": "testPart-1",
+        "label": "testPart-1",
+        "position": 0,
+        "isLinear": false,
+        "timeConstraint": null,
+        "sections": {
+          "assessmentSection-1": {
+            "id": "assessmentSection-1",
+            "label": "Section 1",
+            "isCatAdaptive": false,
+            "position": 0,
+            "timeConstraint": null,
+            "items": {
+              "item1": {
+                "id": "item1",
+                "label": "Example_3_Baudelaire",
+                "position": 0,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": true,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false,
+                "timeConstraint": null
+              },
+              "item2": {
+                "id": "item2",
+                "label": "example_2_Math",
+                "position": 1,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false
+              },
+              "item3": {
+                "id": "item3",
+                "label": "Arithmetic",
+                "position": 2,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false
+              },
+              "item4": {
+                "id": "item4",
+                "label": "Clarimonde",
+                "position": 3,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false
+              }
+            },
+            "stats": {
+              "questions": 4,
+              "answered": 0,
+              "flagged": 0,
+              "viewed": 1,
+              "total": 4,
+              "questionsViewed": 1
+            }
+          },
+          "assessmentSection-2": {
+            "id": "assessmentSection-2",
+            "label": "Section 2",
+            "isCatAdaptive": false,
+            "position": 4,
+            "items": {
+              "item5": {
+                "id": "item5",
+                "label": "Example_3_Baudelaire",
+                "position": 4,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false
+              },
+              "item6": {
+                "id": "item6",
+                "label": "example_2_Math",
+                "position": 5,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false
+              },
+              "item8": {
+                "id": "item8",
+                "label": "Arithmetic",
+                "position": 6,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false
+              },
+              "item7": {
+                "id": "item7",
+                "label": "Richard III (Take 2)",
+                "position": 7,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false
+              }
+            },
+            "stats": {
+              "questions": 4,
+              "answered": 0,
+              "flagged": 0,
+              "viewed": 0,
+              "total": 4,
+              "questionsViewed": 0
+            }
+          }
+        },
+        "stats": {
+          "questions": 8,
+          "answered": 0,
+          "flagged": 0,
+          "viewed": 1,
+          "total": 8,
+          "questionsViewed": 1
+        }
+      }
+    },
+    "title": "nonLinear2Sections",
+    "identifier": "nonLinear2Sections",
+    "stats": {
+      "questions": 8,
+      "answered": 0,
+      "flagged": 0,
+      "viewed": 1,
+      "total": 8,
+      "questionsViewed": 1
+    }
+  }
+}

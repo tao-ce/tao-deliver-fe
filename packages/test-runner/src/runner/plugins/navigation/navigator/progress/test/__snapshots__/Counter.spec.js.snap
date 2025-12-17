@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Counter component > Has to render with stats object as prop 1`] = `
+<body>
+  <div>
+    <div
+      class="counter"
+    >
+      1
+       / 
+      3
+    </div>
+    
+  </div>
+</body>
+`;

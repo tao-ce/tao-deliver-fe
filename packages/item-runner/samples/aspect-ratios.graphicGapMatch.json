@@ -1,0 +1,454 @@
+{
+    "baseUrl": "./assets/graphic/gapMatch-choice/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "graphic_match_vegetarian",
+            "serial": "item_5fa923864ccad877904101",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "graphic_match_aspectratios",
+                "title": "Aspect ratios",
+                "label": "Aspect ratios",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.3.0-RC02",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5fa923864cc9c252046674",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n  {{interaction_graphicgapmatchinteraction_5fa923864d279300380050}}\n  </div>\n    </div>\n  ",
+                "elements": {
+                    "interaction_graphicgapmatchinteraction_5fa923864d279300380050": {
+                        "serial": "interaction_graphicgapmatchinteraction_5fa923864d279300380050",
+                        "qtiClass": "graphicGapMatchInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "class": "responsive qti-choices-left"
+                        },
+                        "debug": {
+                            "relatedItem": "item_5fa923864ccad877904101"
+                        },
+                        "choices": {
+                            "choice_associablehotspot_5fa923864ddc7814616313": {
+                                "identifier": "associablehotspot_4",
+                                "serial": "choice_associablehotspot_5fa923864ddc7814616313",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "associablehotspot_4",
+                                    "fixed": false,
+                                    "matchMax": 0,
+                                    "matchMin": 0,
+                                    "hotspotLabel": "right-bottom-rect",
+                                    "shape": "rect",
+                                    "coords": "280,280,500,560"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                }
+                            },
+                            "choice_associablehotspot_5fa923864de34245170386": {
+                                "identifier": "associablehotspot_22",
+                                "serial": "choice_associablehotspot_5fa923864de34245170386",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "associablehotspot_22",
+                                    "fixed": false,
+                                    "matchMax": 0,
+                                    "matchMin": 0,
+                                    "hotspotLabel": "right-top-circle",
+                                    "shape": "circle",
+                                    "coords": "420,140,140"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                }
+                            },
+                            "choice_associablehotspot_25fa923864de34245170386": {
+                                "identifier": "associablehotspot_33",
+                                "serial": "choice_associablehotspot_5fa923864de34245170386",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "associablehotspot_33",
+                                    "fixed": false,
+                                    "matchMax": 0,
+                                    "matchMin": 0,
+                                    "hotspotLabel": "left-bottom-ellipse",
+                                    "shape": "ellipse",
+                                    "coords": "140,420,140,100"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                }
+                            },
+                            "choice_associablehotspot_35fa923864de34245170386": {
+                                "identifier": "associablehotspot_44",
+                                "serial": "choice_associablehotspot_5fa923864de34245170386",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "associablehotspot_44",
+                                    "fixed": false,
+                                    "matchMax": 0,
+                                    "matchMin": 0,
+                                    "hotspotLabel": "top-left-triangle",
+                                    "shape": "poly",
+                                    "coords": "280,280,0,280,0,0"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_5fa923864d2e1506291760",
+                            "body": "",
+                            "elements": [],
+                            "debug": {
+                                "relatedItem": "item_5fa923864ccad877904101"
+                            }
+                        },
+                        "object": {
+                            "serial": "qtiobject_5fa923864deaa766816317",
+                            "qtiClass": "object",
+                            "attributes": {
+                                "data": "bgr.jpg",
+                                "type": "image/jpeg",
+                                "width": 560,
+                                "height": 560
+                            },
+                            "debug": {
+                                "relatedItem": ""
+                            }
+                        },
+                        "gapImgs": {
+                            "choice_gapimg_5fa923864d357218354949": {
+                                "identifier": "ch-bl-mimoze-0",
+                                "serial": "choice_gapimg_5fa923864d357218354949",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "ch-bl-mimoze-0",
+                                    "fixed": false,
+                                    "matchMax": "0",
+                                    "matchMin": "0",
+                                    "objectLabel": "mimoze"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d3c6340847709",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "big-long.jpg",
+                                        "type": "image/png",
+                                        "width": 680,
+                                        "height": 310
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864d43b007089710": {
+                                "identifier": "ch-bt-owl-1",
+                                "serial": "choice_gapimg_5fa923864d43b007089710",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "ch-bt-owl-1",
+                                    "fixed": false,
+                                    "matchMax": "0",
+                                    "matchMin": "0",
+                                    "objectLabel": "owl"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d4a3615799408",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "big-tall.jpg",
+                                        "type": "image/png",
+                                        "width": 400,
+                                        "height": 600
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864d510917685294": {
+                                "identifier": "ch-bs-hill-2",
+                                "serial": "choice_gapimg_5fa923864d510917685294",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "ch-bs-hill-2",
+                                    "fixed": false,
+                                    "matchMax": "0",
+                                    "matchMin": "0",
+                                    "objectLabel": "hill"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d574995301911",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "big-square.jpg",
+                                        "type": "image/jpeg",
+                                        "width": 600,
+                                        "height": 600
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864d5e1090451230": {
+                                "identifier": "ch-sl-tree-3",
+                                "serial": "choice_gapimg_5fa923864d5e1090451230",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "ch-sl-tree-3",
+                                    "fixed": false,
+                                    "matchMax": "0",
+                                    "matchMin": "0",
+                                    "objectLabel": "tree"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d643504691621",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "small-long.jpg",
+                                        "type": "image/png",
+                                        "width": 100,
+                                        "height": 69
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864d6b0087712722": {
+                                "identifier": "ch-st-newyear-4",
+                                "serial": "choice_gapimg_5fa923864d6b0087712722",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "ch-st-newyear-4",
+                                    "fixed": false,
+                                    "matchMax": "0",
+                                    "matchMin": "0",
+                                    "objectLabel": "new year"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d755517155019",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "small-tall.jpg",
+                                        "type": "image/jpeg",
+                                        "width": 67,
+                                        "height": 100
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864d7c7416763794": {
+                                "identifier": "ch-ss-pinkmimoze-5",
+                                "serial": "choice_gapimg_5fa923864d7c7416763794",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "ch-ss-pinkmimoze-5",
+                                    "fixed": false,
+                                    "matchMax": "0",
+                                    "matchMin": "0",
+                                    "objectLabel": "pink mimoze"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d83b346144996",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "big-long-2.jpg",
+                                        "type": "image/png",
+                                        "width": 680,
+                                        "height": 310
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864d8af096817709": {
+                                "identifier": "ch-vl-greentree-6",
+                                "serial": "choice_gapimg_5fa923864d8af096817709",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "ch-vl-greentree-6",
+                                    "fixed": false,
+                                    "matchMax": "0",
+                                    "matchMin": "0",
+                                    "objectLabel": "green tree"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d914749953730",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "small-long-2.jpg",
+                                        "type": "image/png",
+                                        "width": 100,
+                                        "height": 69
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864d981447942649": {
+                                "identifier": "ch-vt-birch-7",
+                                "serial": "choice_gapimg_5fa923864d981447942649",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "ch-vt-birch-7",
+                                    "fixed": false,
+                                    "matchMax": "0",
+                                    "matchMin": "0",
+                                    "objectLabel": "birch"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864d9e4518049103",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "small-square.jpg",
+                                        "type": "image/jpeg",
+                                        "width": 100,
+                                        "height": 100
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            },
+                            "choice_gapimg_5fa923864da6b767296800": {
+                                "identifier": "ch-st-yellownewyear-8",
+                                "serial": "choice_gapimg_5fa923864da6b767296800",
+                                "qtiClass": "gapImg",
+                                "attributes": {
+                                    "identifier": "ch-st-yellownewyear-8",
+                                    "fixed": false,
+                                    "matchMax": "0",
+                                    "matchMin": "0",
+                                    "objectLabel": "yellow new year"
+                                },
+                                "debug": {
+                                    "relatedItem": "item_5fa923864ccad877904101"
+                                },
+                                "object": {
+                                    "serial": "qtiobject_5fa923864dace952069921",
+                                    "qtiClass": "object",
+                                    "attributes": {
+                                        "data": "small-tall-2.jpg",
+                                        "type": "image/png",
+                                        "width": 67,
+                                        "height": 100
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_5fa923864ccad877904101"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "debug": {
+                    "relatedItem": "item_5fa923864ccad877904101"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_5fa923864ccad877904101"
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_5fa923864d0b1797911804": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5fa923864d0b1797911804",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 5
+                    },
+                    "debug": {
+                        "relatedItem": "item_5fa923864ccad877904101"
+                    },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_5fa923864d10f272863426": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_5fa923864d10f272863426",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_5fa923864ccad877904101"
+                    },
+                    "defaultValue": "5"
+                }
+            },
+            "responses": {
+                "responsedeclaration_5fa923864cde6680102994": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_5fa923864cde6680102994",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "multiple",
+                        "baseType": "directedPair"
+                    },
+                    "debug": {
+                        "relatedItem": "item_5fa923864ccad877904101"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {},
+            "css": {}
+        }
+    },
+    "itemIdentifier": "item-1",
+    "success": true
+}

@@ -1,0 +1,185 @@
+{
+    "baseUrl": "./presets/items/assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i63be15b521a143713189f2d4d4158c622",
+            "serial": "item_67489986393fd346969748",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i63be15b521a143713189f2d4d4158c622",
+                "title": "①【縦書き】問い横書き",
+                "label": "①【縦書き】問い横書き",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "2024.11 LTS",
+                "class": "writing-mode-vertical-rl"
+            },
+            "body": {
+                "serial": "container_containeritembody_67489986393ec761835618",
+                "body": "<div class=\"grid-row\">\n      <div class=\"col-12 \">\n        <div class=\"\">\n <p>　守も嫌がる（盆から先にゃ）雪もちらつくし、子も泣くし（盆が来たとて）何嬉しかろ（帷子は無し）帯は無し、この子よう泣く（守をばいじる）守も一日痩せるやら。早よも行きたや（この在所越えて）向こうに見えるは、親の家。守も嫌がる（盆から先にゃ）雪もちらつくし、子も泣くし（盆が来たとて）何嬉しかろ（帷子は無し）帯は無し、この子よう泣く（守をばいじる）守も一日痩せるやら。早よも行きたや（この在所越えて）向こうに見えるは、親の家。次（つぎ）の<strong>【竹田（たけだ）さんのスピーチ】</strong>と<strong>【二人（ふたり）の会話（かいわ）の一部（いちぶ）】</strong>を読（よ）んで、あとの問（と）いに答（こた）えなさい。</p><p> </p><p><strong>【竹田さんのスピーチ】①</strong><br/>\n　春高楼の花の宴、めぐる盃かげさして千代の松が枝わけいでしむかしの光いまいずこ。秋陣営の霜の色、鳴きゆく雁の数見せて植うるつるぎに照りそいしむかしの光いまいずこ。いま荒城のよわの月、替わらぬ光たがためぞ垣に残るはただかづら松に歌うはただあらし。天上影は替わらねど、栄枯は移る世の姿、写さんとてか今もなお。嗚呼荒城のよわの月。春高楼の花の宴、めぐる盃かげさして。</p><p>ーーーーーーーーーー</p><p>動画を止める</p><p>ーーーーーーーーーー</p><p><strong>【二人の会話の一部】①</strong></p>{{figure_674899863ae53147189264}}<span> </span><span> </span>石川　ここで動画を止めてもらえますか。「守も嫌がる、盆から先にゃ雪もちらつくし、子も泣くし。」という部分は、盆が来たとて何嬉しかろ、①<span class=\"txt-underline\">帷子は無し帯は無しこの子よう泣く守をばいじる守も一日痩せるやら</span>。「早よも行きたや、この在所」越えて、向こうに見えるは親の家。早よも行きたや、この在所」越えて、向こうに見えるは親の家。\n\n<p>竹田　ありがとうございます。</p>\n\n<p> </p>\n\n<p><strong>【竹田さんのスピーチ】②</strong></p>\n\n<p>　春高楼の花の宴、めぐる盃かげさして千代の松が枝わけいでしむかしの光いまいずこ。秋陣営の霜の色、鳴きゆく雁の数見せて植うるつるぎに照りそいしむかしの光いまいずこ。いま荒城のよわの月、替わらぬ光たがためぞ垣に残るはただかづら松に歌うはただあらし。天上影は替わらねど、栄枯は移る世の姿、写さんとてか今もなお、「嗚呼荒城のよわの月、春高楼の花の宴めぐる盃かげさして。」と話してくれました。</p>\n\n<p>ーーーーーーーーーー</p>\n\n<p>動画を止める</p>\n\n<p>ーーーーーーーーーー</p>\n\n<p><strong>【二人の会話の一部】②</strong></p>\n\n<p>石川　守も嫌がる、盆から先にゃ雪もちらつくしどうでしょうか。<br/>\n竹田　子も泣くし盆が来たとて何嬉しかろ。②<span class=\"txt-underline\">帷子は無し帯は無しこの子よう泣く守をばいじる</span>と思います。</p>\n\n<p> </p>\n\n<p>【竹田さんのスピーチ】③</p>\n\n<p>　この言葉を聞いてそれでも何もわからなかった。窓の外で雨が静かに降っている。明日まで上がるのかな。秋の終わる頃冷たい風が来る、海の向こうから。それでも何もわからなかった。窓の外で雨が静かに降っている。明日まで上がるのかな。秋の終わる頃冷たい風が来る、海の向こうから。</p>\n\n<p>ーーーーーーーーーー</p>\n\n<p>動画を止める</p>\n\n<p>ーーーーーーーーーー</p>\n\n<p><strong>【二人の会話の一部】③</strong></p>\n\n<p>竹田　江戸子守唄えどこもりうたは日本の伝統的な子守唄で、江戸から始まって各地に伝えられて、日本の子守唄のルーツになったといわれている。この曲は日本の伝統的な子守唄で、「江戸時代の文化文政時代のころからの記録があり」江戸から始まって各地に伝えられて（一説では厚木市）、日本の子守唄のルーツになったといわれている。民謡なのでいろいろな歌詞があるが、大きく分けて、広く歌われる歌の歌詞は。<br/>\n石川　なるほど。③<span class=\"txt-underline\">これ、意味のある話しだったでしょうか。</span></p>\n</div>\n      </div>\n    </div>\n    <div class=\"grid-row\">\n   <div class=\"col-12 \">\n        {{interaction_extendedtextinteraction_674899863a4f5032076828}}\n      </div>\n    </div>\n   ",
+                "elements": {
+                    "interaction_extendedtextinteraction_674899863a4f5032076828": {
+                        "serial": "interaction_extendedtextinteraction_674899863a4f5032076828",
+                        "qtiClass": "extendedTextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "base": 10,
+                            "minStrings": 0,
+                            "format": "plain",
+                            "data-character-count": true
+                        },
+                        "debug": { "relatedItem": "item_67489986393fd346969748" },
+                        "choices": {},
+                        "prompt": {
+                            "body": "  <div>問い　竹田さんは、【二人の会話の一部】の　　線部①「一日に玄米四合と味噌と少しの野菜をたべてみてどうでしょうか」慾はなく決して瞋らず、「雨にもまけず、風にもまけず、雪にも、夏の暑さにもまけぬ、丈夫なからだをもち。」いつもしずかにわらっている。野原の松の林の蔭の小さな萱ぶきの小屋にいて。ほめられもせずくにもされず。</div><div> </div>\n解答欄（かいとうらん） "
+                        }
+                    },
+                    "figure_674899863ae53147189264": {
+                        "serial": "figure_674899863ae53147189264",
+                        "qtiClass": "figure",
+                        "attributes": { "class": "wrap-right", "showFigure": "true" },
+                        "body": {
+                            "serial": "container_containerfigure_674899863aeab909664759",
+                            "__body": "{{img_674899863aef7394136503}}<figcaption>人達が何かの問題について話している</figcaption>",
+                            "body": "{{img_674899863aef7394136503}}",
+                            "elements": {
+                                "img_674899863aef7394136503": {
+                                    "serial": "img_674899863aef7394136503",
+                                    "qtiClass": "img",
+                                    "attributes": {
+                                        "src": "verticalWriting.png",
+                                        "alt": "vertical writing",
+                                        "width": 135,
+                                        "height": 119,
+                                        "type": "image/png"
+                                    },
+                                    "debug": { "relatedItem": "item_67489986393fd346969748" }
+                                }
+                            },
+                            "attributes": [],
+                            "debug": { "relatedItem": "item_67489986393fd346969748" }
+                        },
+                        "debug": { "relatedItem": "item_67489986393fd346969748" }
+                    }
+                },
+                "attributes": [],
+                "debug": { "relatedItem": "item_67489986393fd346969748" }
+            },
+            "debug": { "relatedItem": "item_67489986393fd346969748" },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "qh5": "http://www.imsglobal.org/xsd/imsqtiv2p2_html5_v1p0",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_674899863a0f6132515556": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_674899863a0f6132515556",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 0
+                    },
+                    "debug": { "relatedItem": "item_67489986393fd346969748" },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_674899863a285040618053": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_674899863a285040618053",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": { "identifier": "MAXSCORE", "cardinality": "single", "baseType": "float" },
+                    "debug": { "relatedItem": "item_67489986393fd346969748" },
+                    "defaultValue": "0"
+                }
+            },
+            "responses": {
+                "responsedeclaration_6748998639f95745647824": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_6748998639f95745647824",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE", "cardinality": "single", "baseType": "string" },
+                    "debug": { "relatedItem": "item_67489986393fd346969748" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_674899863b2d2067132406",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "debug": { "relatedItem": "item_67489986393fd346969748" },
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    { "qtiClass": "variable", "attributes": { "identifier": "RESPONSE" } },
+                                    { "qtiClass": "correct", "attributes": { "identifier": "RESPONSE" } }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": { "baseType": "float" },
+                                        "value": "1"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseElse": {
+                            "qtiClass": "responseElse",
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": { "baseType": "float" },
+                                        "value": "0"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": { "img": { "verticalWriting.png": "verticalWriting.png" } }
+    },
+    "itemState": {
+        "RESPONSE": {
+            "response": {
+                "base": {
+                    "string": "かあさんが夜なべをして手袋あんでくれた。木枯らし吹いちゃ冷たかろうて、せっせとあんだだよ。ふるさとの便りはとどく、いろりのにおいがした。かあさんが麻糸つむぐ、一日つむぐ。おとうは土間でわら打ち仕事、お前も がんばれよ。ふるさとの冬はさみしい、せめてラジオ聞かせたい。かあさんのあかぎれ痛い生みそを すりこむ。根雪もとけりゃもうすぐ春だで、畑が待まってるよ。小川のせせらぎが聞こえる、なつかしさがしみとおる。かあさんが夜なべをして手袋あんでくれた。木枯らし吹いちゃ冷たかろうて、せっせとあんだだよ。ふるさとの便りはとどく、いろりのにおいがした。かあさんが麻糸つむぐ、一日つむぐ。おとうは土間でわら打ち仕事、お前も がんばれよ。ふるさとの冬はさみしい、せめてラジオ聞かせたい。かあさんのあかぎれ痛い生みそを すりこむ。根雪もとけりゃもうすぐ春だで、畑が待まってるよ。小川のせせらぎが聞こえる、なつかしさがしみとおる。かあさんが夜なべをして手袋あんでくれた。木枯らし吹いちゃ冷たかろうて、せっせとあんだだよ。ふるさとの便りはとどく、いろりのにおいがした。かあさんが麻糸つむぐ、一日つむぐ。おとうは土間でわら打ち仕事、お前も がんばれよ。ふるさとの冬はさみしい、せめてラジオ聞かせたい。かあさんのあかぎれ痛い生みそを すりこむ。根雪もとけりゃもうすぐ春だで、畑が待まってるよ。小川のせせらぎが聞こえる、なつかしさがしみとおる。かあさんが夜なべをして手袋あんでくれた。木枯らし吹いちゃ冷たかろうて、せっせとあんだだよ。ふるさとの便りはとどく、いろりのにおいがした。かあさんが麻糸つむぐ、一日つむぐ。おとうは土間でわら打ち仕事、お前も がんばれよ。ふるさとの冬はさみしい、せめてラジオ聞かせたい。かあさんのあかぎれ痛い生みそを すりこむ。根雪もとけりゃもうすぐ春だで、畑が待まってるよ。小川のせせらぎが聞こえる、なつかしさがしみとおる。かあさんが夜なべをして手袋あんでくれた。木枯らし吹いちゃ冷たかろうて、せっせとあんだだよ。ふるさとの便りはとどく、いろりのにおいがした。かあさんが麻糸つむぐ、一日つむぐ。おとうは土間でわら打ち仕事、お前も がんばれよ。ふるさとの冬はさみしい、せめてラジオ聞かせたい。かあさんのあかぎれ痛い生みそを すりこむ。根雪もとけりゃもうすぐ春だで、畑が待まってるよ。小川のせせらぎが聞こえる、なつかしさがしみとおる。かあさんが夜なべをして手袋あんでくれた。木枯らし吹いちゃ冷たかろうて、せっせとあんだだよ。ふるさとの便りはとどく、いろりのにおいがした。かあさんが麻糸つむぐ、一日つむぐ。おとうは土間でわら打ち仕事、お前も がんばれよ。ふるさとの冬はさみしい、せめてラジオ聞かせたい。かあさんのあかぎれ痛い生みそを すりこむ。根雪もとけりゃもうすぐ春だで、畑が待まってるよ。小川のせせらぎが聞こえる、なつかしさがしみとおる。かあさんが夜なべをして手袋あんでくれた。木枯らし吹いちゃ冷たかろうて、せっせとあんだだよ。ふるさとの便りはとどく、いろりのにおいがした。かあさんが麻糸つむぐ、一日つむぐ。おとうは土間でわら打ち仕事、お前も がんばれよ。ふるさとの冬はさみしい、せめてラジオ聞かせたい。かあさんのあかぎれ痛い生みそを すりこむ。根雪もとけりゃもうすぐ春だで、畑が待まってるよ。小川のせせらぎが聞こえる、なつかしさがしみとおる。かあさんが夜なべをして手袋あんでくれた。木枯らし吹いちゃ冷たかろうて、せっせとあんだだよ。ふるさとの便りはとどく、いろりのにおいがした。かあさんが麻糸つむぐ、一日つむぐ。おとうは土間でわら打ち仕事、お前も がんばれよ。ふるさとの冬はさみしい、せめてラジオ聞かせたい。かあさんのあかぎれ痛い生みそを すりこむ。根雪もとけりゃもうすぐ春だで、畑が待まってるよ。小川のせせらぎが聞こえる、なつかしさがしみとおる。かあさんが夜なべをして手袋あんでくれた。木枯らし吹いちゃ冷たかろうて、せっせとあんだだよ。ふるさとの便りはとどく、いろりのにおいがした。かあさんが麻糸つむぐ、一日つむぐ。おとうは土間でわら打ち仕事、お前も がんばれよ。ふるさとの冬はさみしい、せめてラジオ聞かせたい。かあさんのあかぎれ痛い生みそを すりこむ。根雪もとけりゃもうすぐ春だで、畑が待まってるよ。小川のせせらぎが聞こえる、なつかしさがしみとおる。かあさんが夜なべをして手袋あんでくれた。木枯らし吹いちゃ冷たかろうて、せっせとあんだだよ。ふるさとの便りはとどく、いろりのにおいがした。かあさんが麻糸つむぐ、一日つむぐ。おとうは土間でわら打ち仕事、お前も がんばれよ。ふるさとの冬はさみしい、せめてラジオ聞かせたい。かあさんのあかぎれ痛い生みそを すりこむ。根雪もとけりゃもうすぐ春だで、畑が待まってるよ。小川のせせらぎが聞こえる、なつかしさがしみとおる。かあさんが夜なべをして手袋あんでくれた。木枯らし吹いちゃ冷たかろうて、せっせとあんだだよ。ふるさとの便りはとどく、いろりのにおいがした。かあさんが麻糸つむぐ、一日つむぐ。おとうは土間でわら打ち仕事、お前も がんばれよ。ふるさとの冬はさみしい、せめてラジオ聞かせたい。かあさんのあかぎれ痛い生みそを すりこむ。根雪もとけりゃもうすぐ春だで、畑が待まってるよ。小川のせせらぎが聞こえる、なつかしさがしみとおる。"
+                }
+            },
+            "validity": true
+        }
+    },
+    "itemIdentifier": "item-1",
+    "success": true
+}

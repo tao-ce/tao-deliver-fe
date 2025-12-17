@@ -1,0 +1,399 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HotTextInteraction > renders a blockTree with checkboxes if maxChoices=0 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-hottextInteraction tao-control-input-default"
+      name="tao-hottext-interaction-123"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      />
+       
+      <div
+        class="qti-flow-container"
+      >
+        <div
+          class="qti-block"
+          tabindex="0"
+        >
+          <p>
+            <label
+              class="qti-hottext"
+            >
+              <input
+                type="checkbox"
+                value="hottext_moo"
+              />
+               
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Checkbox checked icon
+                </title>
+                <path
+                  d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
+                />
+              </svg>
+               
+              moo
+            </label>
+            
+            
+             TEXT 
+            
+            <label
+              class="qti-hottext"
+            >
+              <input
+                type="checkbox"
+                value="hottext_oink"
+              />
+               
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Checkbox checked icon
+                </title>
+                <path
+                  d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
+                />
+              </svg>
+               
+              oink
+            </label>
+            
+            
+             TEXT 
+            
+            <label
+              class="qti-hottext"
+            >
+              <input
+                type="checkbox"
+                value="hottext_roar"
+              />
+               
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Checkbox checked icon
+                </title>
+                <path
+                  d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
+                />
+              </svg>
+               
+              roar
+            </label>
+            
+            
+            
+             
+          </p>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`HotTextInteraction > renders a blockTree with radios if maxChoices=1 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-hottextInteraction tao-control-input-default"
+      name="tao-hottext-interaction-123"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must pick a maximum of 1 choice
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="qti-flow-container"
+      >
+        <div
+          class="qti-block"
+          tabindex="0"
+        >
+          <p>
+            <label
+              class="qti-hottext radio"
+            >
+              <input
+                tabindex="0"
+                type="radio"
+                value="hottext_moo"
+              />
+               
+              <span />
+               
+              moo
+            </label>
+            
+            
+             TEXT 
+            
+            <label
+              class="qti-hottext radio"
+            >
+              <input
+                tabindex="0"
+                type="radio"
+                value="hottext_oink"
+              />
+               
+              <span />
+               
+              oink
+            </label>
+            
+            
+             TEXT 
+            
+            <label
+              class="qti-hottext radio"
+            >
+              <input
+                tabindex="0"
+                type="radio"
+                value="hottext_roar"
+              />
+               
+              <span />
+               
+              roar
+            </label>
+            
+            
+            
+             
+          </p>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`HotTextInteraction > renders correct feedbacks 1`] = `
+<div
+  class="qti-instruction-container"
+>
+  <div
+    aria-atomic="true"
+    class="feedback info fullwidth"
+    role="status"
+  >
+     
+    <p>
+      You must pick at least 1 choice and a maximum of 3 - Currently 2
+    </p>
+  </div>
+</div>
+`;
+
+exports[`HotTextInteraction > renders props into markup 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="true"
+      ariabar="baz"
+      ariafoo="12"
+      class="qti-interaction qti-blockInteraction qti-hottextInteraction foo bar baz tao-control-input-default"
+      data-baz="24"
+      data-foo="bar"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      name="tao-hottext-interaction-123"
+      role="someUniqueRole"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must pick a maximum of 1 choice
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="qti-flow-container"
+      >
+        <div
+          class="qti-block"
+          tabindex="0"
+        >
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`HotTextInteraction > renders the instruction lang on the feedback block 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-hottextInteraction tao-control-input-default"
+      name="tao-hottext-interaction-123"
+    >
+       
+      <div
+        class="qti-instruction-container"
+        dir="ltr"
+        lang="de_LU"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must pick a maximum of 2 choices
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="qti-flow-container"
+      >
+        <div
+          class="qti-block"
+          tabindex="0"
+        >
+          <p>
+            <label
+              class="qti-hottext"
+            >
+              <input
+                type="checkbox"
+                value="hottext_moo"
+              />
+               
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Checkbox checked icon
+                </title>
+                <path
+                  d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
+                />
+              </svg>
+               
+              moo
+            </label>
+            
+            
+             TEXT 
+            
+            <label
+              class="qti-hottext"
+            >
+              <input
+                type="checkbox"
+                value="hottext_oink"
+              />
+               
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Checkbox checked icon
+                </title>
+                <path
+                  d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
+                />
+              </svg>
+               
+              oink
+            </label>
+            
+            
+             TEXT 
+            
+            <label
+              class="qti-hottext"
+            >
+              <input
+                type="checkbox"
+                value="hottext_roar"
+              />
+               
+              <svg
+                aria-hidden="true"
+                class="icon medium"
+                viewBox="0 0 16 16"
+              >
+                <title>
+                  Checkbox checked icon
+                </title>
+                <path
+                  d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
+                />
+              </svg>
+               
+              roar
+            </label>
+            
+            
+            
+             
+          </p>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;

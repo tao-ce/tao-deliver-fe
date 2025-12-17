@@ -1,0 +1,220 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MatchInteraction > renders feedback 1`] = `
+<div
+  class="qti-instruction-container"
+>
+  <div
+    aria-atomic="true"
+    class="feedback info fullwidth"
+    role="status"
+  >
+     
+    <p>
+      You must make at least 1 association and a maximum of 2
+    </p>
+  </div>
+</div>
+`;
+
+exports[`MatchInteraction > renders feedback with custom message 1`] = `
+<div
+  class="qti-instruction-container"
+>
+  <div
+    aria-atomic="true"
+    class="feedback info fullwidth"
+    role="status"
+  >
+     
+    <p>
+      Custom min selection message Custom max selection message
+    </p>
+  </div>
+</div>
+`;
+
+exports[`MatchInteraction > renders prompt 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-matchInteraction"
+    >
+      <div
+        class="qti-prompt cf"
+      >
+        Question 1
+        
+        
+      </div>
+       
+      <div
+        class="qti-instruction-container"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must make a maximum of 1 association
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="match-tabular radio radio-x radio-y"
+      >
+        <fieldset>
+          <legend
+            class="visually-hidden"
+          >
+            Question 1
+            
+            
+          </legend>
+           
+          <table>
+            <thead>
+              <tr>
+                <th
+                  class="borderless match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  
+                </th>
+                 
+              </tr>
+            </thead>
+             
+            <tbody />
+          </table>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MatchInteraction > renders props into markup 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      ariabar="baz"
+      ariafoo="12"
+      class="qti-interaction qti-blockInteraction qti-matchInteraction foo bar baz"
+      data-baz="24"
+      data-foo="bar"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must make a maximum of 1 association
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="match-tabular radio radio-x radio-y"
+      >
+        <fieldset>
+          <legend
+            class="visually-hidden"
+          >
+            
+          </legend>
+           
+          <table>
+            <thead>
+              <tr>
+                <th
+                  class="borderless match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  
+                </th>
+                 
+              </tr>
+            </thead>
+             
+            <tbody />
+          </table>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MatchInteraction > renders the instruction lang on the feedback block 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-matchInteraction"
+    >
+       
+      <div
+        class="qti-instruction-container"
+        dir="ltr"
+        lang="ru"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must make at least 1 association and a maximum of 2
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="match-tabular radio radio-x radio-y"
+      >
+        <fieldset>
+          <legend
+            class="visually-hidden"
+          >
+            
+          </legend>
+           
+          <table>
+            <thead>
+              <tr>
+                <th
+                  class="borderless match-tabular-header-cell font-weight-normal"
+                  scope="col"
+                >
+                  
+                </th>
+                 
+              </tr>
+            </thead>
+             
+            <tbody />
+          </table>
+        </fieldset>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;

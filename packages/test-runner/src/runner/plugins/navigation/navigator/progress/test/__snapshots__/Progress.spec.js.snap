@@ -1,0 +1,498 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Progress component > Has to fail rendering with no serviceCallId 1`] = `[TypeError: A "serviceCallId" is required to get the state store of the test session]`;
+
+exports[`Progress component > Has to render counter for linear non-lite mode on mobile screen size 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container counter"
+    >
+      <div
+        class="counter"
+      >
+        1
+         / 
+        3
+      </div>
+      
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render counter for linear non-lite mode on over-tablet-portrait screen size 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container counter"
+    >
+      <div
+        class="counter"
+      >
+        1
+         / 
+        3
+      </div>
+      
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render counter for linear non-lite mode on tablet-portrait screen size 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container counter"
+    >
+      <div
+        class="counter"
+      >
+        1
+         / 
+        3
+      </div>
+      
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render dots for liteMode in linear on over-tablet-portrait screen size if items count <= 18 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container dots"
+    >
+      <div>
+        <span
+          class="visually-hidden"
+        >
+          Question 1 of 16
+        </span>
+         
+        <ol
+          class="dots"
+        >
+          <li
+            class="viewed"
+          />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+        </ol>
+      </div>
+      
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render dots for liteMode on over-tablet-portrait screen size if items count <= 18 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container dots"
+    >
+      <div>
+        <span
+          class="visually-hidden"
+        >
+          Question 3 of 18
+        </span>
+         
+        <ol
+          class="dots"
+        >
+          <li
+            class="viewed"
+          />
+          <li
+            class="viewed"
+          />
+          <li
+            class="viewed"
+          />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+        </ol>
+      </div>
+      
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render dots for liteMode on tablet-portrait screen size if items count <= 12 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container dots"
+    >
+      <div>
+        <span
+          class="visually-hidden"
+        >
+          Question 3 of 12
+        </span>
+         
+        <ol
+          class="dots"
+        >
+          <li
+            class="viewed"
+          />
+          <li
+            class="viewed"
+          />
+          <li
+            class="viewed"
+          />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+        </ol>
+      </div>
+      
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render no component for non-linear non-lite mode on mobile screen size 1`] = `
+<body>
+  <div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render progressbar for linear test liteMode on over-tablet-portrait screen size if items count > 18 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container progressbar"
+    >
+      <div
+        aria-valuemax="20"
+        aria-valuemin="0"
+        aria-valuenow="1"
+        aria-valuetext="5%"
+        class="secondary"
+        role="progressbar"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="track"
+            style="--progress-value-width: 5%;"
+          />
+           
+        </div>
+         
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render progressbar for liteMode on mobile screen size for linear test 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container progressbar"
+    >
+      <div
+        aria-valuemax="3"
+        aria-valuemin="0"
+        aria-valuenow="1"
+        aria-valuetext="34%"
+        class="secondary"
+        role="progressbar"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="track"
+            style="--progress-value-width: 34%;"
+          />
+           
+        </div>
+         
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render progressbar for liteMode on mobile screen size for non-linear test 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container progressbar"
+    >
+      <div
+        aria-valuemax="20"
+        aria-valuemin="0"
+        aria-valuenow="3"
+        aria-valuetext="15%"
+        class="secondary"
+        role="progressbar"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="track"
+            style="--progress-value-width: 15%;"
+          />
+           
+        </div>
+         
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render progressbar for liteMode on over-tablet-portrait screen size if items count > 18 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container progressbar"
+    >
+      <div
+        aria-valuemax="20"
+        aria-valuemin="0"
+        aria-valuenow="3"
+        aria-valuetext="15%"
+        class="secondary"
+        role="progressbar"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="track"
+            style="--progress-value-width: 15%;"
+          />
+           
+        </div>
+         
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render progressbar for liteMode on tablet-portrait screen size if items count > 12 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container progressbar"
+    >
+      <div
+        aria-valuemax="20"
+        aria-valuemin="0"
+        aria-valuenow="3"
+        aria-valuetext="15%"
+        class="secondary"
+        role="progressbar"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="track"
+            style="--progress-value-width: 15%;"
+          />
+           
+        </div>
+         
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render question number for linear adaptive test 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container number"
+    >
+      <div
+        class="number"
+      >
+        Question
+         
+        1
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render steps for non-linear non-lite mode on over-tablet-portrait screen size 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container steps"
+    >
+      <div
+        class="width-tracker"
+      >
+        <div
+          class="steps-container"
+        >
+          <div
+            class="more"
+          />
+           
+           
+          <div
+            class="more"
+          />
+        </div>
+         
+        <span
+          class="overview-container"
+        >
+          <button
+            aria-label="Open overview of all 20 questions"
+            class="actionable secondary pill small"
+            name="overview"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Chevron up icon
+              </title>
+              <path
+                d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+              />
+            </svg>
+             
+             
+            Overview (20)
+          </button>
+        </span>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > Has to render steps for non-linear non-lite mode on tablet-portrait screen size 1`] = `
+<body>
+  <div>
+    <div
+      class="progress-container steps"
+    >
+      <div
+        class="width-tracker"
+      >
+        <div
+          class="steps-container"
+        >
+          <div
+            class="more"
+          />
+           
+           
+          <div
+            class="more"
+          />
+        </div>
+         
+        <span
+          class="overview-container"
+        >
+          <button
+            aria-label="Open overview of all 20 questions"
+            class="actionable secondary pill small"
+            name="overview"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Chevron up icon
+              </title>
+              <path
+                d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
+              />
+            </svg>
+             
+             
+            Overview (20)
+          </button>
+        </span>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Progress component > renders with empty store 1`] = `
+<body>
+  <div>
+    
+  </div>
+</body>
+`;

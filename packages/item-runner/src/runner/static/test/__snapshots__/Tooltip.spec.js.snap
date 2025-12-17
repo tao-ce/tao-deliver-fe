@@ -1,0 +1,60 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Tooltip > renders tooltip on anchor focus 1`] = `
+<body>
+  <div>
+    <span
+      aria-describedby="tao-tooltip-123"
+      class="tooltip-target"
+      tabindex="0"
+    >
+      content
+    </span>
+     
+    <div
+      class="flyout tooltip-flyout"
+    >
+      <div
+        class="tooltip-content"
+        id="tao-tooltip-123"
+        role="tooltip"
+      >
+        text
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`Tooltip > renders with attributes 1`] = `
+<body>
+  <div>
+    <span
+      aria-describedby="tao-tooltip-123"
+      class="tooltip-target"
+      tabindex="0"
+    >
+      content
+    </span>
+     
+    
+  </div>
+</body>
+`;
+
+exports[`Tooltip > renders with no attributes 1`] = `
+<body>
+  <div>
+    <span
+      aria-describedby="tao-tooltip-123"
+      class="tooltip-target"
+      tabindex="0"
+    >
+      
+    </span>
+     
+    
+  </div>
+</body>
+`;

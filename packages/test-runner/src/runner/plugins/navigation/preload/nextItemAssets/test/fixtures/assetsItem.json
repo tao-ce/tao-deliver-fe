@@ -1,0 +1,46 @@
+{
+  "baseUrl": "./my/base/url/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "inlineChoice",
+      "serial": "item_5e984c282e72a146979009",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "inlineChoice",
+        "title": "Richard III (Take 2)",
+        "label": "Richard III (Take 2)",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint125",
+        "class": ""
+      },
+      "stylesheets": {
+        "1":{"attributes":{"href":"styles/myStyles.css","media":"all","type":"text/css"}},
+        "2":{"attributes":{"href":"styles/yourStyles.css","media":"all","type":"text/css"}}
+      }
+    },
+    "assets": {
+      "css": {
+        "styles/myStyles.css": "styles/myStyles.css",
+        "styles/yourStyles.css": "styles/yourStyles.css"
+      },
+      "img": {
+        "image1.jpg": "image1.jpg",
+        "image2.jpg": "image2.png"
+      },
+      "audio": {
+        "audio1.mp3": "audio1.mp3",
+        "audio2.wav": "audio2.wav"
+      },
+      "video": {
+        "video1.mp4": "video1.mp4",
+        "video2.mov": "video2.mov"
+      }
+    }
+  },
+  "itemState": {},
+  "itemIdentifier": "item-3"
+}

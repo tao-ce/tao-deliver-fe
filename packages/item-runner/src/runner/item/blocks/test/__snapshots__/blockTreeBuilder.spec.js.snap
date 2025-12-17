@@ -1,0 +1,821 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`The blockTreeBuilder > adds "target=_blank" to link, if link is a root html block 1`] = `
+[
+  {
+    "content": "<a href="there.com" target="_blank" rel="noopener noreferer"><span>here</span>and<b>there</b></a>",
+    "type": "html",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > adds "target=_blank" to link, if link is inside html block 1`] = `
+[
+  {
+    "content": "<div><p><a href="there.com" target="_blank" rel="noopener noreferer">there</a></p><div><p><a href="here.com" target="_blank" rel="noopener noreferer"><b>here</b></a></p></div></div>",
+    "type": "html",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > creates a block from a placeholder with props 1`] = `
+[
+  {
+    "children": [
+      {
+        "children": [],
+        "content": "foo_123_456",
+        "props": {},
+        "type": "element",
+      },
+    ],
+    "content": "div",
+    "props": {
+      "attributes": {
+        "class": "container feedback",
+        "data-foo": "bar",
+        "id": "best-foo",
+        "role": "foo",
+      },
+    },
+    "type": "container",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > creates a block from a placeholder with text siblings 1`] = `
+[
+  {
+    "children": [
+      {
+        "content": "Lorem ",
+        "type": "text",
+      },
+      {
+        "children": [
+          {
+            "content": "Ipsum ",
+            "type": "text",
+          },
+          {
+            "children": [
+              {
+                "children": [],
+                "content": "foo_123_456",
+                "props": {},
+                "type": "element",
+              },
+            ],
+            "content": "span",
+            "props": {
+              "attributes": {},
+            },
+            "type": "container",
+          },
+          {
+            "content": " dolor sit.",
+            "type": "text",
+          },
+        ],
+        "content": "p",
+        "props": {
+          "attributes": {},
+        },
+        "type": "container",
+      },
+    ],
+    "content": "div",
+    "props": {
+      "attributes": {},
+    },
+    "type": "container",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > creates a block with a placeholder 1`] = `
+[
+  {
+    "children": [
+      {
+        "children": [],
+        "content": "foo_123_456",
+        "props": {},
+        "type": "element",
+      },
+    ],
+    "content": "div",
+    "props": {
+      "attributes": {},
+    },
+    "type": "container",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > creates a block with seamless placeholders 1`] = `
+[
+  {
+    "children": [
+      {
+        "children": [],
+        "content": "i5f60657dd24f6",
+        "props": {},
+        "type": "element",
+      },
+      {
+        "children": [],
+        "content": "i5f60657dd2580",
+        "props": {},
+        "type": "element",
+      },
+      {
+        "children": [],
+        "content": "i5f60657dd260c",
+        "props": {},
+        "type": "element",
+      },
+      {
+        "children": [],
+        "content": "i5f60657dd2691",
+        "props": {},
+        "type": "element",
+      },
+      {
+        "children": [],
+        "content": "i5f60657dd2715",
+        "props": {},
+        "type": "element",
+      },
+      {
+        "content": "<br>",
+        "type": "html",
+      },
+      {
+        "children": [],
+        "content": "i5f60657dd2797",
+        "props": {},
+        "type": "element",
+      },
+    ],
+    "content": "p",
+    "props": {
+      "attributes": {},
+    },
+    "type": "container",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > creates a child nodes 1`] = `
+[
+  {
+    "content": "<div><span>foo</span></div>",
+    "type": "html",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > creates a container block from table, if table is root element 1`] = `
+[
+  {
+    "children": [
+      {
+        "content": "<tbody><tr><td>foo</td><td>bar</td></tr></tbody>",
+        "type": "html",
+      },
+    ],
+    "content": "table",
+    "props": {
+      "attributes": {},
+    },
+    "type": "container",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > creates a single node tree 1`] = `
+[
+  {
+    "content": "<div>foo</div>",
+    "type": "html",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > creates blocks from choice and image item data 1`] = `
+[
+  {
+    "children": [
+      {
+        "content": "
+      ",
+        "type": "text",
+      },
+      {
+        "children": [
+          {
+            "content": "
+        ",
+            "type": "text",
+          },
+          {
+            "children": [
+              {
+                "content": "
+          ",
+                "type": "text",
+              },
+              {
+                "children": [],
+                "content": "img_5e5e7a7135cae729163811",
+                "props": {},
+                "type": "element",
+              },
+              {
+                "content": "
+        ",
+                "type": "text",
+              },
+            ],
+            "content": "p",
+            "props": {
+              "attributes": {},
+            },
+            "type": "container",
+          },
+          {
+            "content": "
+      ",
+            "type": "text",
+          },
+        ],
+        "content": "div",
+        "props": {
+          "attributes": {
+            "class": "col-6",
+          },
+        },
+        "type": "container",
+      },
+      {
+        "content": "
+      ",
+        "type": "text",
+      },
+      {
+        "children": [
+          {
+            "content": "
+        ",
+            "type": "text",
+          },
+          {
+            "children": [],
+            "content": "interaction_choiceinteraction_5e5e7a7135a95277399130",
+            "props": {},
+            "type": "element",
+          },
+          {
+            "content": "
+      ",
+            "type": "text",
+          },
+        ],
+        "content": "div",
+        "props": {
+          "attributes": {
+            "class": "col-6",
+          },
+        },
+        "type": "container",
+      },
+      {
+        "content": "
+    ",
+        "type": "text",
+      },
+    ],
+    "content": "div",
+    "props": {
+      "attributes": {
+        "class": "grid-row",
+      },
+    },
+    "type": "container",
+  },
+  {
+    "content": "
+  ",
+    "type": "text",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > creates blocks from choice item data 1`] = `
+[
+  {
+    "content": "<p id="stimulus">
+			During more than 30 years, the American Space Shuttle transported 355 astronauts in space over 135
+			orbital launchings from Cap Canaveral, Florida. This 2046-ton Behemoth traveled 870 million kilometers
+			around the Earth from 12th of April 1981 to 21st of July 2011. The National Aeronautics and Space
+			Administration (NASA) built 5 Space Shuttles: Columbia, Challenger, Discovery, Atlantis and Endeavour.
+		</p>",
+    "type": "html",
+  },
+  {
+    "content": "
+    ",
+    "type": "text",
+  },
+  {
+    "children": [],
+    "content": "interaction_choiceinteraction_546cb89e04090230494786",
+    "props": {},
+    "type": "element",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > creates blocks from extendedText item data 1`] = `
+[
+  {
+    "children": [
+      {
+        "content": "
+      ",
+        "type": "text",
+      },
+      {
+        "children": [
+          {
+            "content": "
+        ",
+            "type": "text",
+          },
+          {
+            "content": "<h1 class="txt-ctr">
+          <strong>Dagon</strong>
+        </h1>",
+            "type": "html",
+          },
+          {
+            "content": "
+        ",
+            "type": "text",
+          },
+          {
+            "content": "<p class="txt-ctr">
+          <strong>By H. P. Lovecraft</strong>
+        </p>",
+            "type": "html",
+          },
+          {
+            "content": "
+        ",
+            "type": "text",
+          },
+          {
+            "content": "<p class="txt-ctr">~~~~</p>",
+            "type": "html",
+          },
+          {
+            "content": "
+        ",
+            "type": "text",
+          },
+          {
+            "content": "<p>I am writing this under an appreciable mental strain, since by tonight I shall be no more. Penniless, and at the end of my supply of the drug which alone makes life endurable, I can bear the torture no longer; and shall cast myself from this garret window into the squalid street below. Do not think from my slavery to morphine that I am a weakling or a degenerate. When you have read these hastily scrawled pages you may guess, though never fully realise, why it is that I must have forgetfulness or death.</p>",
+            "type": "html",
+          },
+          {
+            "content": "
+        ",
+            "type": "text",
+          },
+          {
+            "children": [
+              {
+                "children": [],
+                "content": "img_5e787172a58cf363394732",
+                "props": {},
+                "type": "element",
+              },
+              {
+                "content": "It was in one of the most open and least frequented parts of the broad Pacific that the packet of which I was supercargo fell a victim to the German sea-raider. The great war was then at its very beginning, and the ocean forces of the Hun had not completely sunk to their later degradation; so that our vessel was made a legitimate prize, whilst we of her crew were treated with all the fairness and consideration due us as naval prisoners. So liberal, indeed, was the discipline of our captors, that five days after we were taken I managed to escape alone in a small boat with water and provisions for a good length of time.",
+                "type": "text",
+              },
+              {
+                "children": [],
+                "content": "figure_6e787172a58cf363394732f",
+                "props": {},
+                "type": "element",
+              },
+              {
+                "content": " When I finally found myself adrift and free, I had but little idea of my surroundings. Never a competent navigator, I could only guess vaguely by the sun and stars that I was somewhat south of the equator. Of the longitude I knew nothing, and no island or coast-line was in sight. The weather kept fair, and for uncounted days I drifted aimlessly beneath the scorching sun; waiting either for some passing ship, or to be cast on the shores of some habitable land. But neither ship nor land appeared, and I began to despair in my solitude upon the heaving vastnesses of unbroken blue. ",
+                "type": "text",
+              },
+              {
+                "children": [],
+                "content": "figure_7e787172a58cf363394732f",
+                "props": {},
+                "type": "element",
+              },
+              {
+                "content": " The change happened whilst I slept. Its details I shall never know; for my slumber, though troubled and dream-infested, was continuous. When at last I awaked, it was to discover myself half sucked into a slimy expanse of hellish black mire which extended about me in monotonous undulations as far as I could see, and in which my boat lay grounded some distance away.",
+                "type": "text",
+              },
+              {
+                "content": "<br>",
+                "type": "html",
+              },
+              {
+                "content": "
+Though one might well imagine that my first sensation would be of wonder at so prodigious and unexpected a transformation of scenery, I was in reality more horrified than astonished; for there was in the air and in the rotting soil a sinister quality which chilled me to the very core. ",
+                "type": "text",
+              },
+              {
+                "children": [],
+                "content": "figure_8e787172a58cf363394732f",
+                "props": {},
+                "type": "element",
+              },
+              {
+                "content": " The region was putrid with the carcasses of decaying fish, and of other less describable things which I saw protruding from the nasty mud of the unending plain. Perhaps I should not hope to convey in mere words the unutterable hideousness that can dwell in absolute silence and barren immensity. There was nothing within hearing, and nothing in sight save a vast reach of black slime; yet the very completeness of the stillness and the homogeneity of the landscape oppressed me with a nauseating fear.",
+                "type": "text",
+              },
+              {
+                "content": "<br>",
+                "type": "html",
+              },
+              {
+                "content": "
+The sun was blazing down from a sky which seemed to me almost black in its cloudless cruelty; as though reflecting the inky marsh beneath my feet. As I crawled into the stranded boat I realised that only one theory could explain my position. Through some unprecedented volcanic upheaval, a portion of the ocean floor must have been thrown to the surface, exposing regions which for innumerable millions of years had lain hidden under unfathomable watery depths. So great was the extent of the new land which had risen beneath me, that I could not detect the faintest noise of the surging ocean, strain my ears as I might. Nor were there any sea-fowl to prey upon the dead things.",
+                "type": "text",
+              },
+              {
+                "content": "<br>",
+                "type": "html",
+              },
+              {
+                "content": "
+For several hours I sat thinking or brooding in the boat, which lay upon its side and afforded a slight shade as the sun moved across the heavens. As the day progressed, the ground lost some of its stickiness, and seemed likely to dry sufficiently for travelling purposes in a short time. That night I slept but little, and the next day I made for myself a pack containing food and water, preparatory to an overland journey in search of the vanished sea and possible rescue.",
+                "type": "text",
+              },
+            ],
+            "content": "div",
+            "props": {
+              "attributes": {},
+            },
+            "type": "container",
+          },
+          {
+            "content": "
+        ",
+            "type": "text",
+          },
+          {
+            "content": "<p>&nbsp;</p>",
+            "type": "html",
+          },
+          {
+            "content": "
+      ",
+            "type": "text",
+          },
+        ],
+        "content": "div",
+        "props": {
+          "attributes": {
+            "class": "col-6",
+          },
+        },
+        "type": "container",
+      },
+      {
+        "content": "
+      ",
+        "type": "text",
+      },
+      {
+        "children": [
+          {
+            "content": "
+        ",
+            "type": "text",
+          },
+          {
+            "children": [],
+            "content": "interaction_extendedtextinteraction_5e787172a5784044551075",
+            "props": {},
+            "type": "element",
+          },
+          {
+            "content": "
+      ",
+            "type": "text",
+          },
+        ],
+        "content": "div",
+        "props": {
+          "attributes": {
+            "class": "col-6",
+          },
+        },
+        "type": "container",
+      },
+      {
+        "content": "
+    ",
+        "type": "text",
+      },
+    ],
+    "content": "div",
+    "props": {
+      "attributes": {
+        "class": "grid-row",
+      },
+    },
+    "type": "container",
+  },
+  {
+    "content": "
+  ",
+    "type": "text",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > creates blocks from inlineText item data 1`] = `
+[
+  {
+    "children": [
+      {
+        "content": "
+      ",
+        "type": "text",
+      },
+      {
+        "children": [
+          {
+            "content": "
+        ",
+            "type": "text",
+          },
+          {
+            "content": "<h4>
+          <strong>In which year was the American contienent discovered by Christophe Colomb ?</strong>
+        </h4>",
+            "type": "html",
+          },
+          {
+            "content": "
+        ",
+            "type": "text",
+          },
+          {
+            "content": "<p>
+          <em>Please enter your answer in the field below :</em>
+        </p>",
+            "type": "html",
+          },
+          {
+            "content": "
+        ",
+            "type": "text",
+          },
+          {
+            "children": [
+              {
+                "content": " In year ",
+                "type": "text",
+              },
+              {
+                "children": [],
+                "content": "interaction_textentryinteraction_5e5e7a7132dd8915047479",
+                "props": {},
+                "type": "element",
+              },
+              {
+                "content": ".",
+                "type": "text",
+              },
+            ],
+            "content": "p",
+            "props": {
+              "attributes": {},
+            },
+            "type": "container",
+          },
+          {
+            "content": "
+      ",
+            "type": "text",
+          },
+        ],
+        "content": "div",
+        "props": {
+          "attributes": {
+            "class": "col-12",
+          },
+        },
+        "type": "container",
+      },
+      {
+        "content": "
+    ",
+        "type": "text",
+      },
+    ],
+    "content": "div",
+    "props": {
+      "attributes": {
+        "class": "grid-row",
+      },
+    },
+    "type": "container",
+  },
+  {
+    "content": "
+  ",
+    "type": "text",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > creates blocks from math item data 1`] = `
+[
+  {
+    "children": [],
+    "content": "math_5e5e7a713e1cf077548787",
+    "props": {},
+    "type": "element",
+  },
+  {
+    "content": "
+    ",
+    "type": "text",
+  },
+  {
+    "children": [],
+    "content": "interaction_choiceinteraction_5e5e7a713dfd8019171718",
+    "props": {},
+    "type": "element",
+  },
+  {
+    "content": "
+  ",
+    "type": "text",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > creates blocks from two roots 1`] = `
+[
+  {
+    "content": "<div>This is a <em>static leaf</em>.</div>",
+    "type": "html",
+  },
+  {
+    "content": "
+            ",
+    "type": "text",
+  },
+  {
+    "children": [
+      {
+        "content": "This is a branch ",
+        "type": "text",
+      },
+      {
+        "children": [
+          {
+            "content": "With an ",
+            "type": "text",
+          },
+          {
+            "children": [],
+            "content": "element_a765",
+            "props": {},
+            "type": "element",
+          },
+          {
+            "content": " of ",
+            "type": "text",
+          },
+          {
+            "content": "<i>unit</i>",
+            "type": "html",
+          },
+          {
+            "content": ".",
+            "type": "text",
+          },
+        ],
+        "content": "section",
+        "props": {
+          "attributes": {},
+        },
+        "type": "container",
+      },
+    ],
+    "content": "div",
+    "props": {
+      "attributes": {
+        "class": "container",
+      },
+    },
+    "type": "container",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > creates blocks with  placeholder and text 1`] = `
+[
+  {
+    "children": [
+      {
+        "content": "<div>foo</div>",
+        "type": "html",
+      },
+      {
+        "children": [
+          {
+            "content": "Before text",
+            "type": "text",
+          },
+          {
+            "children": [],
+            "content": "foo_123_456",
+            "props": {},
+            "type": "element",
+          },
+          {
+            "content": "After text",
+            "type": "text",
+          },
+        ],
+        "content": "p",
+        "props": {
+          "attributes": {},
+        },
+        "type": "container",
+      },
+    ],
+    "content": "div",
+    "props": {
+      "attributes": {},
+    },
+    "type": "container",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > does not add "target=_blank" to link, if link points to element on page 1`] = `
+[
+  {
+    "content": "<div><p><a href="#chapter1">chapter 1</a></p><div><p><a href="#"><b>top</b></a></p></div></div>",
+    "type": "html",
+  },
+]
+`;
+
+exports[`The blockTreeBuilder > does not need to add "target=_blank" to link, if link is a container block 1`] = `
+[
+  {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "children": [],
+                "content": "element_123",
+                "props": {},
+                "type": "element",
+              },
+            ],
+            "content": "a",
+            "props": {
+              "attributes": {
+                "href": "there.com",
+              },
+            },
+            "type": "container",
+          },
+        ],
+        "content": "p",
+        "props": {
+          "attributes": {},
+        },
+        "type": "container",
+      },
+    ],
+    "content": "div",
+    "props": {
+      "attributes": {},
+    },
+    "type": "container",
+  },
+]
+`;

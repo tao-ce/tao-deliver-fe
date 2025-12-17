@@ -1,0 +1,628 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HotspotInteraction > Rendering > renders correct feedbacks 1`] = `
+<div
+  class="qti-instruction-container"
+>
+  <div
+    aria-atomic="true"
+    class="feedback info fullwidth"
+    role="status"
+  >
+     
+    <p>
+      You need to select from 1 to 3 choices
+    </p>
+  </div>
+</div>
+`;
+
+exports[`HotspotInteraction > Rendering > renders image & choices 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-hotspotInteraction"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      />
+       
+      <div
+        class="qti-flow-container"
+        tabindex="-1"
+      >
+        <div
+          class="qti-block"
+          tabindex="0"
+        >
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="860"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 1213 860"
+            width="1213"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(0, 0)"
+            >
+              <image
+                class="svg-image"
+                height="860"
+                href="graphic/map-of-the-europe.jpg"
+                preserveAspectRatio="none"
+                width="1213"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+                tabindex="-1"
+              >
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="hotspot_1"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <rect
+                      class="shape-outer-border"
+                      height="68"
+                      width="68"
+                      x="314"
+                      y="346"
+                    />
+                    <rect
+                      class="shape-inner-border"
+                      height="52"
+                      width="52"
+                      x="322"
+                      y="354"
+                    />
+                    <rect
+                      class="shape-dashed-outline"
+                      height="68"
+                      width="68"
+                      x="314"
+                      y="346"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="348"
+                      cy="380"
+                      r="10"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    , unselected toggle button, press enter or space to select, to move to next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="hotspot_4"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <polygon
+                      class="shape-outer-border"
+                      points="112.80926878769378,491.79977931896707 189.15496433181391,482.9906606023378 192.07237784041715,550.0911713002118 106.98148126187783,548.135058735188"
+                    />
+                    <polygon
+                      class="shape-inner-border"
+                      points="120.10598000766774,499.0109294571562 181.5357637212195,491.9228774902079 183.7085423352651,541.8967856132559 115.83093331617843,540.3363808082195"
+                    />
+                    <polygon
+                      class="shape-dashed-outline"
+                      points="112.80926878769378,491.79977931896707 189.15496433181391,482.9906606023378 192.07237784041715,550.0911713002118 106.98148126187783,548.135058735188"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="159.1676817666341"
+                      cy="518.081095023366"
+                      r="10"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    , unselected toggle button, press enter or space to select, to move to next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="hotspot_5"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <ellipse
+                      class="shape-outer-border"
+                      cx="153"
+                      cy="41"
+                      rx="45"
+                      ry="34"
+                    />
+                    <ellipse
+                      class="shape-inner-border"
+                      cx="153"
+                      cy="41"
+                      rx="37"
+                      ry="26"
+                    />
+                    <ellipse
+                      class="shape-dashed-outline"
+                      cx="153"
+                      cy="41"
+                      rx="45"
+                      ry="34"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="153"
+                      cy="41"
+                      r="10"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    , unselected toggle button, press enter or space to select, to move to next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="hotspot_6"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="shape-outer-border"
+                      cx="50"
+                      cy="50"
+                      r="44"
+                    />
+                    <circle
+                      class="shape-inner-border"
+                      cx="50"
+                      cy="50"
+                      r="36"
+                    />
+                    <circle
+                      class="shape-dashed-outline"
+                      cx="50"
+                      cy="50"
+                      r="44"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="50"
+                      cy="50"
+                      r="10"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                  >
+                    , unselected toggle button, press enter or space to select, to move to next available option, use the arrow keys
+                  </text>
+                </g>
+              </g>
+            </g>
+          </svg>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`HotspotInteraction > Rendering > renders simple props into markup 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="true"
+      ariabar="baz"
+      ariafoo="12"
+      class="qti-interaction qti-blockInteraction qti-hotspotInteraction foo bar baz"
+      data-baz="24"
+      data-foo="bar"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+    >
+       
+      <div
+        class="qti-instruction-container"
+      />
+       
+      <div
+        class="qti-flow-container"
+        tabindex="-1"
+      >
+        <div
+          class="qti-block"
+          tabindex="0"
+        >
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="860"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 1213 860"
+            width="1213"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(0, 0)"
+            >
+              <image
+                class="svg-image"
+                height="860"
+                href="graphic/map-of-the-europe.jpg"
+                preserveAspectRatio="none"
+                width="1213"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+                tabindex="-1"
+              />
+            </g>
+          </svg>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`HotspotInteraction > Rendering > renders the instruction lang 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-hotspotInteraction"
+    >
+       
+      <div
+        class="qti-instruction-container"
+        dir="ltr"
+        lang="pt-br"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You need to select from 1 to 3 choices
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="qti-flow-container"
+        tabindex="-1"
+      >
+        <div
+          class="qti-block"
+          tabindex="0"
+        >
+          <svg
+            aria-labelledby="tao-desc-123"
+            height="860"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            version="1.1"
+            viewBox="0 0 1213 860"
+            width="1213"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <desc
+              id="tao-desc-123"
+            >
+              graphic interaction
+            </desc>
+            <defs>
+              <filter
+                filterUnits="userSpaceOnUse"
+                id="tao-svg-123-filter-shadow"
+              >
+                <fedropshadow
+                  dx="0"
+                  dy="0"
+                  flood-color="black"
+                  stdDeviation="1.5"
+                />
+              </filter>
+            </defs>
+            <g
+              class="image"
+              transform="translate(0, 0)"
+            >
+              <image
+                class="svg-image"
+                height="860"
+                href="graphic/map-of-the-europe.jpg"
+                preserveAspectRatio="none"
+                width="1213"
+                x="0"
+                y="0"
+              />
+              <g
+                slot="content"
+                tabindex="-1"
+              >
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="hotspot_1"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <rect
+                      class="shape-outer-border"
+                      height="68"
+                      width="68"
+                      x="314"
+                      y="346"
+                    />
+                    <rect
+                      class="shape-inner-border"
+                      height="52"
+                      width="52"
+                      x="322"
+                      y="354"
+                    />
+                    <rect
+                      class="shape-dashed-outline"
+                      height="68"
+                      width="68"
+                      x="314"
+                      y="346"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="348"
+                      cy="380"
+                      r="10"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                    lang="pt-br"
+                  >
+                    , unselected toggle button, press enter or space to select, to move to next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="hotspot_4"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <polygon
+                      class="shape-outer-border"
+                      points="112.80926878769378,491.79977931896707 189.15496433181391,482.9906606023378 192.07237784041715,550.0911713002118 106.98148126187783,548.135058735188"
+                    />
+                    <polygon
+                      class="shape-inner-border"
+                      points="120.10598000766774,499.0109294571562 181.5357637212195,491.9228774902079 183.7085423352651,541.8967856132559 115.83093331617843,540.3363808082195"
+                    />
+                    <polygon
+                      class="shape-dashed-outline"
+                      points="112.80926878769378,491.79977931896707 189.15496433181391,482.9906606023378 192.07237784041715,550.0911713002118 106.98148126187783,548.135058735188"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="159.1676817666341"
+                      cy="518.081095023366"
+                      r="10"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                    lang="pt-br"
+                  >
+                    , unselected toggle button, press enter or space to select, to move to next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="hotspot_5"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <ellipse
+                      class="shape-outer-border"
+                      cx="153"
+                      cy="41"
+                      rx="45"
+                      ry="34"
+                    />
+                    <ellipse
+                      class="shape-inner-border"
+                      cx="153"
+                      cy="41"
+                      rx="37"
+                      ry="26"
+                    />
+                    <ellipse
+                      class="shape-dashed-outline"
+                      cx="153"
+                      cy="41"
+                      rx="45"
+                      ry="34"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="153"
+                      cy="41"
+                      r="10"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                    lang="pt-br"
+                  >
+                    , unselected toggle button, press enter or space to select, to move to next available option, use the arrow keys
+                  </text>
+                </g>
+                
+                <g
+                  class="hotspot-choice"
+                  data-choice-key="hotspot_6"
+                >
+                  <g
+                    aria-disabled="false"
+                    aria-labelledby="tao-hotspot-choice-label-123"
+                    class="shape"
+                    tabindex="-1"
+                  >
+                    <circle
+                      class="shape-outer-border"
+                      cx="50"
+                      cy="50"
+                      r="44"
+                    />
+                    <circle
+                      class="shape-inner-border"
+                      cx="50"
+                      cy="50"
+                      r="36"
+                    />
+                    <circle
+                      class="shape-dashed-outline"
+                      cx="50"
+                      cy="50"
+                      r="44"
+                    />
+                    <circle
+                      class="shape-checkmark"
+                      cx="50"
+                      cy="50"
+                      r="10"
+                    />
+                  </g>
+                  
+                  <text
+                    class="hidden"
+                    id="tao-hotspot-choice-label-123"
+                    lang="pt-br"
+                  >
+                    , unselected toggle button, press enter or space to select, to move to next available option, use the arrow keys
+                  </text>
+                </g>
+              </g>
+            </g>
+          </svg>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;

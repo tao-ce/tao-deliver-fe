@@ -1,0 +1,128 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Text > rendering > should render component in non-editable state 1`] = `
+<body>
+  <div>
+    <foreignobject
+      class="shape foreign"
+      height="44"
+      width="116"
+      x="-6"
+      y="-6"
+    >
+      <div
+        class="editable-wrapper"
+        style="margin-left: 0px; margin-top: 0px; --rem: 16px;"
+      >
+        <span
+          contenteditable="false"
+          tabindex="-1"
+          xmlns="http://www.w3.org/1999/xhtml"
+        >
+          abc
+        </span>
+         
+        <div
+          class="resize-anchor"
+        />
+      </div>
+    </foreignobject>
+  </div>
+</body>
+`;
+
+exports[`Text > rendering > should render component in selected state 1`] = `
+<body>
+  <div>
+    <foreignobject
+      class="shape foreign selected"
+      height="100%"
+      width="100%"
+      x="-16"
+      y="-16"
+    >
+      <div
+        class="editable-wrapper"
+        style="margin-left: 10px; margin-top: 10px; --rem: 16px;"
+      >
+        <span
+          class="editable"
+          contenteditable="true"
+          tabindex="-1"
+          xmlns="http://www.w3.org/1999/xhtml"
+        >
+          abc
+        </span>
+         
+        <div
+          class="resize-anchor"
+        />
+      </div>
+    </foreignobject>
+  </div>
+</body>
+`;
+
+exports[`Text > rendering > should render the foreignObject with the given drawingGeometry 1`] = `
+<body>
+  <div>
+    <foreignobject
+      class="shape foreign selected"
+      height="100%"
+      width="100%"
+      x="-16"
+      y="-16"
+    >
+      <div
+        class="editable-wrapper"
+        style="margin-left: 10px; margin-top: 10px; --rem: 16px;"
+      >
+        <span
+          class="editable"
+          contenteditable="true"
+          tabindex="-1"
+          xmlns="http://www.w3.org/1999/xhtml"
+        >
+          
+        </span>
+         
+        <div
+          class="resize-anchor"
+        />
+      </div>
+    </foreignobject>
+  </div>
+</body>
+`;
+
+exports[`Text > rendering > should render the foreignObject with the given geometry 1`] = `
+<body>
+  <div>
+    <foreignobject
+      class="shape foreign"
+      height="44"
+      width="116"
+      x="-6"
+      y="-6"
+    >
+      <div
+        class="editable-wrapper"
+        style="margin-left: 0px; margin-top: 0px; --rem: 16px;"
+      >
+        <span
+          class="editable"
+          contenteditable="false"
+          tabindex="-1"
+          xmlns="http://www.w3.org/1999/xhtml"
+        >
+          abc
+        </span>
+         
+        <div
+          class="resize-anchor"
+        />
+      </div>
+    </foreignobject>
+  </div>
+</body>
+`;

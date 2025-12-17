@@ -1,0 +1,48 @@
+{
+    "baseUrl": "./presets/items/assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5e81f1bb5cea2415682b766e795370520e",
+            "serial": "item_5e984c2827155112039743",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5e81f1bb5cea2415682b766e795370520e",
+                "title": "Multi-language",
+                "label": "Multi-language",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint125",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5e984c282713d692602240",
+                "body": "<div class=\"grid-row\"> <div class=\"col-4\" lang=\"lt-LT\"> <p> <span class=\"do-not-read\">🇱🇹</span> <strong>997</strong> − Baltų žemėse nužudytas pirmasis krikščionių misionierius Adalbertas Prahiškis.</p> <p><strong>1992</strong> − Kaune sužaistos pirmosios oficialios krepšinio rungtynės tarp Fizinio lavinimo sąjungos ir Kauno miesto rinktinės. Vienu geriausiu varžybų žaidėju pripažintas lakūnas Steponas Darius. </p> </div> <div class=\"col-4\" lang=\"es-ES\"> <p> <span class=\"do-not-read\">🇪🇸</span> El término hipermedia sirve para designar al conjunto de métodos o procedimientos para escribir, diseñar o componer contenidos que integren soportes tales como: texto, imagen, video, audio, mapas y otros soportes de información emergentes, de tal modo que el resultado obtenido, además, tenga la posibilidad de interactuar con los usuarios.</p> </div> <div class=\"col-4\" lang=\"nb-NO\"> <p><span class=\"do-not-read\">🇳🇴</span> Et ledemotiv (tysk: Leitmotiv) er en «kort, tilbakevendende musikalsk frase» assosiert med en bestemt person, et sted eller en idé.</p> <p>Spesielt bør et slikt motiv være «tydelig identifisert for å beholde sin identitet hvis det modifiseres ved påfølgende opptredener», enten slik modifikasjon er i form av rytme, harmoni, orkestrering eller akkompagnement. Det kan også være «kombinert med andre ledemotiver for å antyde en ny dramatisk tilstand» eller utvikling. Teknikken er assosiert med Wagner og operasyklusen <em>Nibelungenringen</em>. </p> </div> </div>  <div class=\"grid-row\"> <div class=\"col-4\" lang=\"it-IT\"> <p><span class=\"do-not-read\">🇮🇹</span> Il Mar Mediterraneo (detto brevemente Mediterraneo) è situato tra Europa, Nordafrica e Asia occidentale. È un mare interno dell'Oceano Atlantico, da cui è dipendente e a cui è connesso a ovest tramite lo stretto di Gibilterra; lo stretto del Bosforo lo collega a nord-est al Mar Nero mentre il canale di Suez, artificiale, lo collega a sud-est al Mar Rosso e quindi all'Oceano Indiano. Da questo mare prende il nome la categoria dei mari mediterranei.</p> <p>La sua superficie approssimativa è di 2,51 milioni di km<sup>2</sup>, con uno sviluppo massimo lungo i paralleli di circa 3700 km, la lunghezza totale delle sue coste è di 46000 km.</p> </div> <div class=\"col-4\" lang=\"pt-BR\"> <p><span class=\"do-not-read\">🇧🇷</span> <strong><em>I Know Why the Caged Bird Sings</em></strong> é uma autobiografia que descreve a juventude e os primeiros anos da escritora e poetisa americana Maya Angelou. Lançado em 1969, este é o primeiro de uma série de sete volumes, no qual conta a história de amadurecimento em relação a força de caráter e o amor pela literatura, assim como, isso contribuiu para superar o racismo e o trauma psicológico. O livro começa quando Maya, de três anos, e seu irmão mais velho são transferidos para Stamps, no Arkansas, para morar com a avó e termina quando Maya se torna mãe aos 16 anos.</p> </div> <div class=\"col-4\" lang=\"ja-JP\"> <p><span class=\"do-not-read\">🇯🇵</span> 昭和28年6月26日9:00の地上実況天気図 昭和28年西日本水害とは、1953年（昭和28年）6月25日から6月29日にかけて九州地方北部（福岡県・佐賀県・熊本県・大分県）を中心に発生した、梅雨前線を原因とする集中豪雨による水害である。</p><p>阿蘇山・英彦山を中心に総降水量が1,000ミリを超える記録的な豪雨により、九州最大の河川である筑後川を始め白川など九州北部を流れる河川がほぼ全て氾濫、流域に戦後最悪となる水害をひき起こし死者・行方不明者1,001名、浸水家屋45万棟、被災者数約100万人という大災害となった。</p> </div> </div>",
+                "elements": {}
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": {},
+            "responses": {},
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": []
+    },
+    "itemState": {},
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    },
+    "success": true,
+    "messages": []
+}

@@ -1,0 +1,507 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ExtendedTextInteraction > math is rendered 1`] = `
+<div
+  class="text-container resizable responsive-height"
+>
+  <div
+    class="math-entry"
+  >
+    [I am the rendered form of \\frac{1337}{412} math expression]
+  </div>
+  
+</div>
+`;
+
+exports[`ExtendedTextInteraction > renders a plagiarism report 1`] = `
+<body>
+  <div>
+    <div
+      class="qti-interaction qti-reviewInteraction qti-blockInteraction qti-extendedTextInteraction"
+      style="--rows: null; --additionalSpace: 0px;"
+    >
+       
+      <p
+        class="plagiarism-message suspicious"
+      >
+        <svg
+          aria-hidden="false"
+          class="icon medium"
+          viewBox="0 0 16 16"
+        >
+          <title>
+            Warning icon
+          </title>
+          <path
+            d="M8 1a7 7 0 11-7 7 7 7 0 017-7m0-1a8 8 0 108 8 8 8 0 00-8-8z"
+          />
+          <path
+            d="M7 3h2v6H7zm0 8h2v2H7z"
+          />
+        </svg>
+         
+        Suspicion of plagiarism:
+         
+        <a
+          href="http://example.com"
+          target="_blank"
+        >
+          view report
+        </a>
+      </p>
+      
+      
+      
+       
+      <div
+        class="text-container resizable responsive-height"
+      >
+        
+      </div>
+       
+      <ul
+        aria-live="polite"
+        class="feedbacks"
+      >
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`ExtendedTextInteraction > renders props correctly into markup 1`] = `
+<body>
+  <div>
+    <div
+      ariabar="baz"
+      ariafoo="12"
+      class="qti-interaction qti-reviewInteraction qti-blockInteraction qti-extendedTextInteraction foo bar baz"
+      data-baz="24"
+      data-foo="bar"
+      dir="rtl"
+      id="interactionId"
+      lang="hu"
+      role="someUniqueRole"
+      style="--rows: null; --additionalSpace: 10rem;"
+    >
+      <div
+        class="qti-prompt cf"
+      >
+        Question 1
+        
+        
+      </div>
+       
+       
+      <div
+        class="text-container resizable responsive-height"
+      >
+        
+      </div>
+       
+      <ul
+        aria-live="polite"
+        class="feedbacks"
+        lang="hu"
+      >
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ExtendedTextInteraction > word & character count > Character counter: fallback, plain, maxLength 1`] = `
+<ul
+  aria-live="polite"
+  class="feedbacks"
+>
+  
+  
+  
+  
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        9
+      </strong>
+       / 5 character(s) typed
+    </span>
+     
+  </li>
+  
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > word & character count > Character counter: fallback, xhtml, expectedLength 1`] = `
+<ul
+  aria-live="polite"
+  class="feedbacks"
+>
+  
+  
+  
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        9
+      </strong>
+       character(s) typed (recommended: 5).
+    </span>
+     
+  </li>
+  
+  
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > word & character count > Character counter: load state, plain, data-character-count 1`] = `
+<ul
+  aria-live="polite"
+  class="feedbacks"
+>
+  
+  
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        21
+      </strong>
+       character(s) typed
+    </span>
+     
+  </li>
+  
+  
+  
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > word & character count > Character counter: load state, xhtml, data-character-count 1`] = `
+<ul
+  aria-live="polite"
+  class="feedbacks"
+>
+  
+  
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        20
+      </strong>
+       character(s) typed
+    </span>
+     
+  </li>
+  
+  
+  
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > word & character count > Hidden word counter when data-word-count disabled 1`] = `
+<ul
+  aria-live="polite"
+  class="feedbacks"
+>
+  
+  
+  
+  
+  
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > word & character count > Show word counter when data-word-count enabled 1`] = `
+<ul
+  aria-live="polite"
+  class="feedbacks"
+>
+  
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        3
+      </strong>
+       word(s) typed
+    </span>
+     
+  </li>
+  
+  
+  
+  
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > word & character count > Show word counter with maxWords patternMask (plain text) 1`] = `
+<ul
+  aria-live="polite"
+  class="feedbacks"
+>
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        3
+      </strong>
+       / 4 word(s) typed
+    </span>
+     
+  </li>
+  
+  
+  
+  
+  
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > word & character count > Word counter with { countState: { chars: 21 }, inputFormat: 'plain', text: 'text.text' } 1`] = `
+<ul
+  aria-live="polite"
+  class="feedbacks"
+>
+  
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        2
+      </strong>
+       word(s) typed
+    </span>
+     
+  </li>
+  
+  
+  
+  
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > word & character count > Word counter with { countState: { chars: 21 }, inputFormat: 'xhtml', text: 'text.text' } 1`] = `
+<ul
+  aria-live="polite"
+  class="feedbacks"
+>
+  
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        1
+      </strong>
+       word(s) typed
+    </span>
+     
+  </li>
+  
+  
+  
+  
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > word & character count > Word counter with { countState: { words: 10, chars: 20 }, inputFormat: 'xhtml', text: 'text.text' } 1`] = `
+<ul
+  aria-live="polite"
+  class="feedbacks"
+>
+  
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        10
+      </strong>
+       word(s) typed
+    </span>
+     
+  </li>
+  
+  
+  
+  
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > word & character count > Word counter with { countState: { words: 11, chars: 21 }, inputFormat: 'plain', text: 'text.text' } 1`] = `
+<ul
+  aria-live="polite"
+  class="feedbacks"
+>
+  
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        11
+      </strong>
+       word(s) typed
+    </span>
+     
+  </li>
+  
+  
+  
+  
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > word & character count > Word counter with { countState: null, inputFormat: 'plain', text: 'text.text' } 1`] = `
+<ul
+  aria-live="polite"
+  class="feedbacks"
+>
+  
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        2
+      </strong>
+       word(s) typed
+    </span>
+     
+  </li>
+  
+  
+  
+  
+</ul>
+`;
+
+exports[`ExtendedTextInteraction > word & character count > Word counter with { countState: null, inputFormat: 'xhtml', text: 'text.text' } 1`] = `
+<ul
+  aria-live="polite"
+  class="feedbacks"
+>
+  
+  <li
+    class="feedback"
+  >
+    <span
+      aria-hidden="true"
+      class="bullet"
+    >
+      •
+    </span>
+     
+    <span>
+      <strong>
+        1
+      </strong>
+       word(s) typed
+    </span>
+     
+  </li>
+  
+  
+  
+  
+</ul>
+`;

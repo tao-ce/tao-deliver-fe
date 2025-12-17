@@ -1,0 +1,36 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Message component > renders modal window with props 1`] = `
+<body>
+  <div>
+    <div
+      aria-describedby="tao-description-123"
+      class="message-modal"
+      role="dialog"
+      tabindex="-1"
+    >
+      <p
+        class="ui-heading-l"
+        id="tao-description-123"
+      >
+        Message
+      </p>
+       
+       
+      <div
+        class="actions"
+      >
+        <button
+          class="actionable primary pill medium"
+          data-test-id="ok"
+          type="button"
+        >
+           
+           
+          ok
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+`;

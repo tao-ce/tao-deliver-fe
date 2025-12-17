@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AllItemsFooter component > Renders correctly 1`] = `
+<body>
+  <div>
+    <footer
+      class="all-items-footer"
+    >
+      <p>
+        End of test
+      </p>
+    </footer>
+  </div>
+</body>
+`;

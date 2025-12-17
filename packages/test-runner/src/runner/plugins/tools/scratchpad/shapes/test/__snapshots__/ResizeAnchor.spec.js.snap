@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ResizeAnchor > rendering > renders with props 1`] = `
+<body>
+  <div>
+    <g
+      class="resize-hitbox-container"
+    >
+      <rect
+        class="resize-square"
+        height="10"
+        width="10"
+        x="95"
+        y="95"
+      />
+      <rect
+        class="resize-hitbox"
+        height="88"
+        width="88"
+        x="56"
+        y="56"
+      />
+    </g>
+  </div>
+</body>
+`;

@@ -1,0 +1,37 @@
+{
+  "name": "@oat-sa-private/tao-deep-linking-app",
+  "private": true,
+  "version": "0.15.0",
+  "displayName": "TAO Deep Linking",
+  "description": "TAO Deep Linking frontend application",
+  "homepage": "https://github.com/oat-sa/tao-deliver-fe#readme",
+  "license": "AGPL-3.0-only OR LicenseRef-TAO-Commercial-License",
+  "scripts": {
+    "extract:translationKeys": "cross-env EXTRACT_TRANSLATION_KEYS=true rollup -c ./rollup.config.js",
+    "build": "npm run generate:locale && run-p build:static build:bootstrap",
+    "build:report": "BUILDREPORT=true npm run build",
+    "generate:locale": "node ../../scripts/rollup-locale.js",
+    "build:static": "cross-env NODE_ENV=production rollup -c ./rollup.config.js",
+    "build:bootstrap": "node ./build/bootstrap.js",
+    "watch:static": "rollup -c ./rollup.config.js --watch",
+    "serve:static": "cross-env PORT=8031 node build/webserver.js dist",
+    "serve:bootstrap": "cross-env PORT=8030 DOTENV_CONFIG_PATH=../../.env node -r dotenv/config server.js",
+    "dev:bootstrap": "run-s generate:locale build:bootstrap serve:bootstrap",
+    "dev:static": "run-p watch:static serve:static",
+    "dev": "run-p dev:*",
+    "test": "vitest --config=../../vitest.config.js",
+    "test:ui": "npm test -- --watch --ui",
+    "test:cov": "npm test -- --coverage",
+    "test:cov:ci": "npm test -- --coverage --silent=passed-only --bail=1 --retry=1",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@oat-sa-private/tao-deliver-apps-common": "^1.19.0",
+    "@oat-sa/tao-core-sdk": "^3.6.0",
+    "lodash": "^4.17.21"
+  },
+  "author": {
+    "name": "Open Assessment Technologies S.A.",
+    "url": "https://www.taotesting.com"
+  }
+}

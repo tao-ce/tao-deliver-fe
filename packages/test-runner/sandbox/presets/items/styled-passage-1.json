@@ -1,0 +1,112 @@
+{
+    "baseUrl": "./presets/items/assets/",
+    "itemData": {
+    "type": "qti",
+    "data": {
+        "identifier": "i630e04b03e9ce92e28e042b031f27e",
+        "serial": "i630e1722ac1c4",
+        "qtiClass": "assessmentItem",
+        "attributes": {
+            "identifier": "i630e04b03e9ce92e28e042b031f27e",
+            "title": "Item 1",
+            "label": "Item 1",
+            "xml:lang": "en-US",
+            "adaptive": false,
+            "timeDependent": false,
+            "toolName": "TAO",
+            "toolVersion": "NextGen",
+            "class": ""
+        },
+        "body": {
+            "serial": "i630e1722ac1c0",
+            "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\"><p>This the original text of the item, and here comes a passage:<\/p>{{i630e1722ac341}}\n\u00a0\n\n<p>Back to the original content. Here is a nice picture...<\/p>\n\n<p>\u00a0<\/p>\n\n{{figure_i630e1722ac2d9}}\n<span>\u00a0<\/span><\/div>\n    <\/div>\n  ",
+            "elements": {
+                "figure_i630e1722ac2d9": {
+                    "serial": "figure_i630e1722ac2d9",
+                    "qtiClass": "figure",
+                    "attributes": {},
+                    "body": {
+                        "serial": "i630e1722ac2e0",
+                        "body": "{{i630e1722ac2fa}}",
+                        "elements": {
+                            "i630e1722ac2fa": {
+                                "serial": "i630e1722ac2fa",
+                                "qtiClass": "img",
+                                "attributes": {
+                                    "src": "sAdZ63y.jpg",
+                                    "alt": "sAdZ63y.jpg",
+                                    "width": "65%",
+                                    "type": "image\/jpeg"
+                                }
+                            }
+                        }
+                    }
+                },
+                "i630e1722ac341": {
+                    "serial": "i630e1722ac341",
+                    "qtiClass": "include",
+                    "attributes": {
+                        "href": "passage-1.xml",
+                        "class": "tao-3iakxvaag"
+                    },
+                    "stylesheets": {
+                        "i630e1722ac219": "styles/passageStyles.css"
+                    },
+                    "body": {
+                        "serial": "i630e1722ac347",
+                        "body": "\n    \n        <div class=\"grid-row\"><div class=\"col-12\"><div class=\"colrow\"><div class=\"custom-text-box tao-nten6ifr2\">\n<p>I have nothing to say, but I say it anyway.<\/p>\n<\/div><\/div><div class=\"colrow\"><div class=\"custom-text-box tao-dyqim287b\">\n<p>Don't you think this user interface looks pretty?<\/p>\n<\/div><\/div><\/div><\/div>\n    \n",
+                        "elements": {}
+                    }
+                }
+            }
+        },
+        "namespaces": {
+            "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+            "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+            "qh5": "http:\/\/www.imsglobal.org\/xsd\/imsqtiv2p2_html5_v1p0",
+            "xi": "http:\/\/www.w3.org\/2001\/XInclude",
+            "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+        },
+        "schemaLocations": {
+            "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+        },
+        "stylesheets": {
+            "i630e1722ac219": {
+                "serial": "i630e1722ac219",
+                "qtiClass": "stylesheet",
+                "attributes": {
+                    "href": "styles/passageStyles.css",
+                    "includeHref": "passage-1.xml",
+                    "includeSerial": "i630e1722ac341",
+                    "type": "text\/css",
+                    "media": "screen",
+                    "title": ""
+                }
+            }
+        },
+        "outcomes": {},
+        "responses": {},
+        "feedbacks": {},
+        "apipAccessibility": ""
+    },
+    "assets": {
+        "xinclude": {
+            "passage-1.xml": "passage-1.xml"
+        },
+        "img": {
+            "sAdZ63y.jpg": "sAdZ63y.jpg"
+        },
+        "css": {
+            "styles/passageStyles.css": "styles/passageStyles.css"
+        }
+    }
+},
+    "itemState": {},
+    "itemIdentifier": "item-1",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    },
+    "success": true,
+    "messages": []
+}

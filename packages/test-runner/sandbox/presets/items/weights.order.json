@@ -1,0 +1,175 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5f171e6b7d540132e2a152edea394dbd",
+            "serial": "i5f171f4ddf3c5",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5f171e6b7d540132e2a152edea394dbd",
+                "title": "Item 4",
+                "label": "Item 4",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint133",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5f171f4ddf3bf",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i5f171f4ddf7b2}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "i5f171f4ddf7b2": {
+                        "serial": "i5f171f4ddf7b2",
+                        "qtiClass": "orderInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "shuffle": false,
+                            "orientation": "vertical",
+                            "minChoices": 1,
+                            "maxChoices": 2
+                        },
+                        "choices": {
+                            "i5f171f4ddf8f7": {
+                                "identifier": "choice_1",
+                                "serial": "i5f171f4ddf8f7",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_1", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf939", "body": "1 kilogram", "elements": {} }
+                            },
+                            "i5f171f4ddf984": {
+                                "identifier": "choice_2",
+                                "serial": "i5f171f4ddf984",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_2", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf991", "body": "1 pound", "elements": {} }
+                            },
+                            "i5f171f4ddf9cb": {
+                                "identifier": "choice_3",
+                                "serial": "i5f171f4ddf9cb",
+                                "qtiClass": "simpleChoice",
+                                "attributes": { "identifier": "choice_3", "fixed": false, "showHide": "show" },
+                                "body": { "serial": "i5f171f4ddf9d6", "body": "1 ounce", "elements": {} }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f171f4ddf861",
+                            "body": "Put these weight values in ascending order",
+                            "elements": {}
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {
+                "i5f171f4ddf4f3": {
+                    "serial": "i5f171f4ddf4f3",
+                    "qtiClass": "stylesheet",
+                    "attributes": {
+                        "href": "tao-user-styles.css",
+                        "type": "text/css",
+                        "media": "all",
+                        "title": ""
+                    }
+                }
+            },
+            "outcomes": {
+                "i5f171f4ddf65d": {
+                    "identifier": "SCORE",
+                    "serial": "i5f171f4ddf65d",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "defaultValue": null
+                },
+                "i5f171f4ddf6f1": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i5f171f4ddf6f1",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": { "identifier": "MAXSCORE", "cardinality": "single", "baseType": "float" },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "i5f171f4ddf58e": {
+                    "identifier": "RESPONSE",
+                    "serial": "i5f171f4ddf58e",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": { "identifier": "RESPONSE", "cardinality": "ordered", "baseType": "identifier" },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": ["choice_3", "choice_2", "choice_1"],
+                    "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "i5f171f4ddfae2",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    { "qtiClass": "variable", "attributes": { "identifier": "RESPONSE" } },
+                                    { "qtiClass": "correct", "attributes": { "identifier": "RESPONSE" } }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": { "baseType": "float" },
+                                        "value": "1"
+                                    }
+                                }
+                            ]
+                        },
+                        "responseElse": {
+                            "qtiClass": "responseElse",
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": { "identifier": "SCORE" },
+                                    "expression": {
+                                        "qtiClass": "baseValue",
+                                        "attributes": { "baseType": "float" },
+                                        "value": "0"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": { "css": { "tao-user-styles.css": "tao-user-styles.css" } }
+    },
+    "success": true,
+    "itemState": {},
+    "itemIdentifier": "foo"
+}

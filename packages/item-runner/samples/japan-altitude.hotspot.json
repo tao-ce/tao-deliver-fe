@@ -1,0 +1,262 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5f970a80046bc9456887c35c352f07",
+            "serial": "item_5f97106389f02382097819",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5f970a80046bc9456887c35c352f07",
+                "title": "Regions of Japan",
+                "label": "Hotspot",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint140",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_5f97106389ef1948784708",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{interaction_hotspotinteraction_5f9710638a514075147813}}\n      <\/div>\n    <\/div>\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <p>Hint:\u00a0<a href=\"https:\/\/en.wikipedia.org\/wiki\/List_of_mountains_and_hills_of_Japan_by_height\">https:\/\/en.wikipedia.org\/wiki\/List_of_mountains_and_hills_of_Japan_by_height<\/a><\/p>\n      <\/div>\n    <\/div>\n  ",
+                "elements": {
+                    "interaction_hotspotinteraction_5f9710638a514075147813": {
+                        "serial": "interaction_hotspotinteraction_5f9710638a514075147813",
+                        "qtiClass": "hotspotInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "maxChoices": 5,
+                            "minChoices": 1,
+                            "class": "responsive qti-unselected-hidden"
+                        },
+                        "choices": {
+                            "choice_hotspotchoice_5f9710638a7ca880529592": {
+                                "identifier": "hotspot_1",
+                                "serial": "choice_hotspotchoice_5f9710638a7ca880529592",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_1",
+                                    "fixed": false,
+                                    "shape": "poly",
+                                    "coords": "326,17,373,55,389,57,405,43,400,57,408,74,415,74,368,107,367,123,328,107,304,113,322,131,302,147,289,111,302,86,322,90,321,28"
+                                }
+                            },
+                            "choice_hotspotchoice_5f9710638a85a078735009": {
+                                "identifier": "hotspot_2",
+                                "serial": "choice_hotspotchoice_5f9710638a85a078735009",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_2",
+                                    "fixed": false,
+                                    "shape": "poly",
+                                    "coords": "330,147,334,167,356,198,337,245,344,283,328,286,319,279,303,288,295,275,304,214,297,173,306,153"
+                                }
+                            },
+                            "choice_hotspotchoice_5f9710638a886857312673": {
+                                "identifier": "hotspot_3",
+                                "serial": "choice_hotspotchoice_5f9710638a886857312673",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_3",
+                                    "fixed": false,
+                                    "shape": "poly",
+                                    "coords": "318,281,338,285,343,317,325,346,304,340,283,302,297,287"
+                                }
+                            },
+                            "choice_hotspotchoice_5f9710638a8aa332019512": {
+                                "identifier": "hotspot_4",
+                                "serial": "choice_hotspotchoice_5f9710638a8aa332019512",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_4",
+                                    "fixed": false,
+                                    "shape": "poly",
+                                    "coords": "281,300,308,351,299,358,294,346,284,360,255,366,223,328,236,287,249,275,249,300,296,256,297,287"
+                                }
+                            },
+                            "choice_hotspotchoice_5f9710638a8cb618567483": {
+                                "identifier": "hotspot_5",
+                                "serial": "choice_hotspotchoice_5f9710638a8cb618567483",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_5",
+                                    "fixed": false,
+                                    "shape": "poly",
+                                    "coords": "230,340,253,373,224,405,206,389,212,369,184,366,186,339"
+                                }
+                            },
+                            "choice_hotspotchoice_5f9710638a8e8936980543": {
+                                "identifier": "hotspot_6",
+                                "serial": "choice_hotspotchoice_5f9710638a8e8936980543",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_6",
+                                    "fixed": false,
+                                    "shape": "poly",
+                                    "coords": "183,340,184,368,171,378,134,385,131,400,100,393,101,383,151,344"
+                                }
+                            },
+                            "choice_hotspotchoice_5f9710638a906516845174": {
+                                "identifier": "hotspot_7",
+                                "serial": "choice_hotspotchoice_5f9710638a906516845174",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_7",
+                                    "fixed": false,
+                                    "shape": "poly",
+                                    "coords": "178,379,198,392,183,412,168,405,151,432,135,411,151,390,163,393"
+                                }
+                            },
+                            "choice_hotspotchoice_5f9710638a925821885345": {
+                                "identifier": "hotspot_8",
+                                "serial": "choice_hotspotchoice_5f9710638a925821885345",
+                                "qtiClass": "hotspotChoice",
+                                "attributes": {
+                                    "identifier": "hotspot_8",
+                                    "fixed": false,
+                                    "shape": "poly",
+                                    "coords": "103,398,131,425,117,475,103,484,86,478,94,432,87,423,87,439,74,438,67,417"
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_5f9710638a60c397332542",
+                            "body": "Select all the regions of Japan which have a peak of at least 3000m altitude",
+                            "elements": {}
+                        },
+                        "object": {
+                            "serial": "qtiobject_5f9710638a959875683035",
+                            "qtiClass": "object",
+                            "attributes": {
+                                "data": "japan.png",
+                                "alt": "Map of Japan divided into 8 regions",
+                                "type": "image\/png",
+                                "width": 465,
+                                "height": 496
+                            }
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+                "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+                "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_5f9710638a283749912207": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_5f9710638a283749912207",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 0
+                    },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_5f9710638a35f637255422": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_5f9710638a35f637255422",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "0"
+                }
+            },
+            "responses": {
+                "responsedeclaration_5f9710638a1c3676687455": {
+                    "identifier": "RESPONSE",
+                    "serial": "responsedeclaration_5f9710638a1c3676687455",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "multiple",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_5f9710638ab66477767991",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "processingType": "templateDriven",
+                "responseRules": [{
+                    "qtiClass": "responseCondition",
+                    "responseIf": {
+                        "qtiClass": "responseIf",
+                        "expression": {
+                            "qtiClass": "match",
+                            "expressions": [{
+                                "qtiClass": "variable",
+                                "attributes": {
+                                    "identifier": "RESPONSE"
+                                }
+                            }, {
+                                "qtiClass": "correct",
+                                "attributes": {
+                                    "identifier": "RESPONSE"
+                                }
+                            }]
+                        },
+                        "responseRules": [{
+                            "qtiClass": "setOutcomeValue",
+                            "attributes": {
+                                "identifier": "SCORE"
+                            },
+                            "expression": {
+                                "qtiClass": "baseValue",
+                                "attributes": {
+                                    "baseType": "float"
+                                },
+                                "value": "1"
+                            }
+                        }]
+                    },
+                    "responseElse": {
+                        "qtiClass": "responseElse",
+                        "responseRules": [{
+                            "qtiClass": "setOutcomeValue",
+                            "attributes": {
+                                "identifier": "SCORE"
+                            },
+                            "expression": {
+                                "qtiClass": "baseValue",
+                                "attributes": {
+                                    "baseType": "float"
+                                },
+                                "value": "0"
+                            }
+                        }]
+                    }
+                }]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "japan.png": "japan.png"
+            }
+        }
+    },
+    "itemIdentifier": "item-1"
+}

@@ -1,0 +1,471 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Steps for PreviewerNavigator  > fails rendering with no serviceCallId 1`] = `[TypeError: A "serviceCallId" is required to get the state store of the test session]`;
+
+exports[`Steps for PreviewerNavigator  > renders all steps if there is enough space 1`] = `
+<body>
+  <div>
+    <div
+      class="more"
+    />
+     
+    <div>
+      <ol
+        class="space-medium"
+      >
+        <li>
+          <button
+            aria-label="Question 1."
+            class="step completed"
+            tabindex="-1"
+          >
+             
+             
+            <span
+              aria-hidden="true"
+              class="step-label"
+            >
+              1
+            </span>
+          </button>
+           
+        </li>
+        <li>
+          <button
+            aria-current="location"
+            aria-label="Question 2."
+            class="step completed current"
+            tabindex="0"
+          >
+            <span
+              aria-hidden="true"
+              class="indicator"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon small"
+                viewBox="0 0 12 12"
+              >
+                <title>
+                  Current item indicator
+                </title>
+                <path
+                  d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </span>
+             
+             
+            <span
+              aria-hidden="true"
+              class="step-label"
+            >
+              2
+            </span>
+          </button>
+           
+        </li>
+        <li>
+          <button
+            aria-label="Question 3."
+            class="step completed"
+            tabindex="-1"
+          >
+             
+             
+            <span
+              aria-hidden="true"
+              class="step-label"
+            >
+              3
+            </span>
+          </button>
+           
+        </li>
+        <li>
+          <button
+            aria-label="Question 4."
+            class="step completed"
+            tabindex="-1"
+          >
+             
+             
+            <span
+              aria-hidden="true"
+              class="step-label"
+            >
+              4
+            </span>
+          </button>
+           
+        </li>
+        <li>
+          <button
+            aria-label="Question 5."
+            class="step completed"
+            tabindex="-1"
+          >
+             
+             
+            <span
+              aria-hidden="true"
+              class="step-label"
+            >
+              5
+            </span>
+          </button>
+           
+        </li>
+      </ol>
+      
+    </div>
+     
+    <div
+      class="more"
+    />
+  </div>
+</body>
+`;
+
+exports[`Steps for PreviewerNavigator  > renders empty if testStateStore is empty 1`] = `
+<body>
+  <div>
+    <div
+      class="more"
+    />
+     
+    <div>
+      
+    </div>
+     
+    <div
+      class="more"
+    />
+  </div>
+</body>
+`;
+
+exports[`Steps for PreviewerNavigator  > renders with more button on the left 1`] = `
+<body>
+  <div>
+    <div
+      class="more"
+    >
+      <button
+        aria-hidden="true"
+        class="ellipsis-container"
+        tabindex="-1"
+      >
+        <span />
+         
+        <span />
+         
+        <span />
+      </button>
+    </div>
+     
+    <div>
+      <ol
+        class="space-medium"
+      >
+        <li>
+          <button
+            aria-label="Question 3."
+            class="step completed"
+            tabindex="-1"
+          >
+             
+             
+            <span
+              aria-hidden="true"
+              class="step-label"
+            >
+              3
+            </span>
+          </button>
+           
+        </li>
+        <li>
+          <button
+            aria-label="Question 4."
+            class="step completed"
+            tabindex="-1"
+          >
+             
+             
+            <span
+              aria-hidden="true"
+              class="step-label"
+            >
+              4
+            </span>
+          </button>
+           
+        </li>
+        <li>
+          <button
+            aria-current="location"
+            aria-label="Question 5."
+            class="step completed current"
+            tabindex="0"
+          >
+            <span
+              aria-hidden="true"
+              class="indicator"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon small"
+                viewBox="0 0 12 12"
+              >
+                <title>
+                  Current item indicator
+                </title>
+                <path
+                  d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </span>
+             
+             
+            <span
+              aria-hidden="true"
+              class="step-label"
+            >
+              5
+            </span>
+          </button>
+           
+        </li>
+      </ol>
+      
+    </div>
+     
+    <div
+      class="more"
+    />
+  </div>
+</body>
+`;
+
+exports[`Steps for PreviewerNavigator  > renders with more button on the right 1`] = `
+<body>
+  <div>
+    <div
+      class="more"
+    />
+     
+    <div>
+      <ol
+        class="space-medium"
+      >
+        <li>
+          <button
+            aria-label="Question 1."
+            class="step completed"
+            tabindex="-1"
+          >
+             
+             
+            <span
+              aria-hidden="true"
+              class="step-label"
+            >
+              1
+            </span>
+          </button>
+           
+        </li>
+        <li>
+          <button
+            aria-current="location"
+            aria-label="Question 2."
+            class="step completed current"
+            tabindex="0"
+          >
+            <span
+              aria-hidden="true"
+              class="indicator"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon small"
+                viewBox="0 0 12 12"
+              >
+                <title>
+                  Current item indicator
+                </title>
+                <path
+                  d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </span>
+             
+             
+            <span
+              aria-hidden="true"
+              class="step-label"
+            >
+              2
+            </span>
+          </button>
+           
+        </li>
+        <li>
+          <button
+            aria-label="Question 3."
+            class="step completed"
+            tabindex="-1"
+          >
+             
+             
+            <span
+              aria-hidden="true"
+              class="step-label"
+            >
+              3
+            </span>
+          </button>
+           
+        </li>
+      </ol>
+      
+    </div>
+     
+    <div
+      class="more"
+    >
+      <button
+        aria-hidden="true"
+        class="ellipsis-container"
+        tabindex="-1"
+      >
+        <span />
+         
+        <span />
+         
+        <span />
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Steps for PreviewerNavigator  > renders with more buttons on both sides 1`] = `
+<body>
+  <div>
+    <div
+      class="more"
+    >
+      <button
+        aria-hidden="true"
+        class="ellipsis-container"
+        tabindex="-1"
+      >
+        <span />
+         
+        <span />
+         
+        <span />
+      </button>
+    </div>
+     
+    <div>
+      <ol
+        class="space-medium"
+      >
+        <li>
+          <button
+            aria-label="Question 2."
+            class="step completed"
+            tabindex="-1"
+          >
+             
+             
+            <span
+              aria-hidden="true"
+              class="step-label"
+            >
+              2
+            </span>
+          </button>
+           
+        </li>
+        <li>
+          <button
+            aria-current="location"
+            aria-label="Question 3."
+            class="step completed current"
+            tabindex="0"
+          >
+            <span
+              aria-hidden="true"
+              class="indicator"
+            >
+              <svg
+                aria-hidden="false"
+                class="icon small"
+                viewBox="0 0 12 12"
+              >
+                <title>
+                  Current item indicator
+                </title>
+                <path
+                  d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </span>
+             
+             
+            <span
+              aria-hidden="true"
+              class="step-label"
+            >
+              3
+            </span>
+          </button>
+           
+        </li>
+        <li>
+          <button
+            aria-label="Question 4."
+            class="step completed"
+            tabindex="-1"
+          >
+             
+             
+            <span
+              aria-hidden="true"
+              class="step-label"
+            >
+              4
+            </span>
+          </button>
+           
+        </li>
+      </ol>
+      
+    </div>
+     
+    <div
+      class="more"
+    >
+      <button
+        aria-hidden="true"
+        class="ellipsis-container"
+        tabindex="-1"
+      >
+        <span />
+         
+        <span />
+         
+        <span />
+      </button>
+    </div>
+  </div>
+</body>
+`;

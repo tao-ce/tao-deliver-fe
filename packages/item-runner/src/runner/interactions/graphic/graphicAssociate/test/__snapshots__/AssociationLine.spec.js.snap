@@ -1,0 +1,146 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Association line > renders line 1`] = `
+<body>
+  <div>
+    <g
+      class="association-line"
+    >
+      <line
+        class="shape-outer-line"
+        x1="0"
+        x2="10"
+        y1="0"
+        y2="10"
+      />
+      <line
+        class="shape-line"
+        x1="0"
+        x2="10"
+        y1="0"
+        y2="10"
+      />
+      <line
+        class="shape-line-hover"
+        x1="0"
+        x2="10"
+        y1="0"
+        y2="10"
+      />
+      <g
+        aria-disabled="false"
+        class="button-container"
+        tabindex="-1"
+      >
+        <circle
+          class="remove-button-dashed-outline"
+          cx="5"
+          cy="5"
+          r="34"
+        />
+        <circle
+          class="remove-button"
+          cx="5"
+          cy="5"
+          r="26"
+        />
+        <svg
+          height="12"
+          version="1.1"
+          viewBox="0 0 12 12"
+          width="12"
+          x="-1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:svgjs="http://svgjs.com/svgjs"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          y="-1"
+        >
+          <path
+            d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
+          />
+        </svg>
+        <rect
+          class="remove-button-hitbox"
+          height="80"
+          width="80"
+          x="-35"
+          y="-35"
+        />
+      </g>
+    </g>
+  </div>
+</body>
+`;
+
+exports[`Association line > renders line with remove button 1`] = `
+<body>
+  <div>
+    <g
+      class="association-line"
+    >
+      <line
+        class="shape-outer-line"
+        x1="0"
+        x2="10"
+        y1="0"
+        y2="10"
+      />
+      <line
+        class="shape-line"
+        x1="0"
+        x2="10"
+        y1="0"
+        y2="10"
+      />
+      <line
+        class="shape-line-hover"
+        x1="0"
+        x2="10"
+        y1="0"
+        y2="10"
+      />
+      <g
+        aria-disabled="false"
+        aria-label="rmbt"
+        class="button-container"
+        tabindex="-1"
+      >
+        <circle
+          class="remove-button-dashed-outline"
+          cx="5"
+          cy="5"
+          r="34"
+        />
+        <circle
+          class="remove-button"
+          cx="5"
+          cy="5"
+          r="26"
+        />
+        <svg
+          height="12"
+          version="1.1"
+          viewBox="0 0 12 12"
+          width="12"
+          x="-1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:svgjs="http://svgjs.com/svgjs"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          y="-1"
+        >
+          <path
+            d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
+          />
+        </svg>
+        <rect
+          class="remove-button-hitbox"
+          height="80"
+          width="80"
+          x="-35"
+          y="-35"
+        />
+      </g>
+    </g>
+  </div>
+</body>
+`;

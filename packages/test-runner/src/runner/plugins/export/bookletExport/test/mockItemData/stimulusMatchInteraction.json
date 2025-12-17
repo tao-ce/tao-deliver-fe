@@ -1,0 +1,354 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i63588079c014f150940a4a872e9e1f1074",
+            "serial": "item_64ac0ab61c5b1166550178",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i63588079c014f150940a4a872e9e1f1074",
+                "title": "CCZES002Q06",
+                "label": "CCZES002Q06",
+                "xml:lang": "en-GB",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "2023.05",
+                "class": ""
+            },
+            "body": {
+                "serial": "container_containeritembody_64ac0ab61c595244463900",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-6\">\n        {{interaction_matchinteraction_64ac0ab63dd51885340273}}\n      </div>\n      <div class=\"col-6\">\n        {{xinclude_64ac0ab64f330647126764}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "interaction_matchinteraction_64ac0ab63dd51885340273": {
+                        "serial": "interaction_matchinteraction_64ac0ab63dd51885340273",
+                        "qtiClass": "matchInteraction",
+                        "attributes": {
+                            "responseIdentifier": "CCZES002Q06",
+                            "shuffle": false,
+                            "maxAssociations": 6,
+                            "minAssociations": 0
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_64ac0ab645bb2589824479",
+                            "body": "\n            <p>They are sometimes made of a material.\u00a0</p>",
+                            "elements": {},
+                            "attributes": [],
+                            "debug": {
+                                "relatedItem": "item_64ac0ab61c5b1166550178"
+                            }
+                        },
+                        "choices": [
+                            {
+                                "choice_simpleassociablechoice_64ac0ab648d74459182772": {
+                                    "identifier": "Y",
+                                    "serial": "choice_simpleassociablechoice_64ac0ab648d74459182772",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "Y",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 0,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_64ac0ab64e0f0725516617",
+                                        "body": "\n              <strong>Yes</strong>\n            ",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_64ac0ab61c5b1166550178"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_64ac0ab61c5b1166550178"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_64ac0ab64e1b9256981511": {
+                                    "identifier": "N",
+                                    "serial": "choice_simpleassociablechoice_64ac0ab64e1b9256981511",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "N",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 0,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_64ac0ab64e1e5576255773",
+                                        "body": "\n              <strong>No</strong>\n            ",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_64ac0ab61c5b1166550178"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_64ac0ab61c5b1166550178"
+                                    }
+                                }
+                            },
+                            {
+                                "choice_simpleassociablechoice_64ac0ab64e24a432301464": {
+                                    "identifier": "Row1",
+                                    "serial": "choice_simpleassociablechoice_64ac0ab64e24a432301464",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "Row1",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 1,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_64ac0ab64e26d966449361",
+                                        "body": "north",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_64ac0ab61c5b1166550178"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_64ac0ab61c5b1166550178"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_64ac0ab64e2bc499543354": {
+                                    "identifier": "Row2",
+                                    "serial": "choice_simpleassociablechoice_64ac0ab64e2bc499543354",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "Row2",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 1,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_64ac0ab64e2df016717435",
+                                        "body": "west",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_64ac0ab61c5b1166550178"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_64ac0ab61c5b1166550178"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_64ac0ab64e32a294385920": {
+                                    "identifier": "Row3",
+                                    "serial": "choice_simpleassociablechoice_64ac0ab64e32a294385920",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "Row3",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 1,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_64ac0ab64e34d818262574",
+                                        "body": "south",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_64ac0ab61c5b1166550178"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_64ac0ab61c5b1166550178"
+                                    }
+                                },
+                                "choice_simpleassociablechoice_64ac0ab64e398326283141": {
+                                    "identifier": "Row4",
+                                    "serial": "choice_simpleassociablechoice_64ac0ab64e398326283141",
+                                    "qtiClass": "simpleAssociableChoice",
+                                    "attributes": {
+                                        "identifier": "Row4",
+                                        "fixed": false,
+                                        "showHide": "show",
+                                        "matchMax": 1,
+                                        "matchMin": 0
+                                    },
+                                    "body": {
+                                        "serial": "container_containerstatic_64ac0ab64e3b9777554299",
+                                        "body": "east",
+                                        "elements": {},
+                                        "attributes": [],
+                                        "debug": {
+                                            "relatedItem": "item_64ac0ab61c5b1166550178"
+                                        }
+                                    },
+                                    "debug": {
+                                        "relatedItem": "item_64ac0ab61c5b1166550178"
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "xinclude_64ac0ab64f330647126764": {
+                        "serial": "xinclude_64ac0ab64f330647126764",
+                        "qtiClass": "include",
+                        "attributes": {
+                            "href": "assets/1242ffd8641d798f0c0fd/passage NEW 2.xml",
+                            "class": "tao-54nwiutyp"
+                        },
+                        "body": {
+                            "serial": "container_containerstatic_64ac0ab650de4859905313",
+                            "body": "        \n<div class=\"grid-row\"><div class=\"col-12\"><div class=\"custom-text-box tao-bri2hka0l\">\n<h1>Pots</h1>\n\n<p>Different materials are used.</p></div>\n</div></div>\n    ",
+                            "elements": {},
+                            "attributes": [],
+                            "debug": {
+                                "relatedItem": "item_64ac0ab61c5b1166550178"
+                            }
+                        },
+                        "debug": {
+                            "relatedItem": "item_64ac0ab61c5b1166550178"
+                        }
+                    }
+                },
+                "attributes": [],
+                "debug": {
+                    "relatedItem": "item_64ac0ab61c5b1166550178"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_64ac0ab61c5b1166550178"
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xi": "http://www.w3.org/2001/XInclude",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {
+                "outcomedeclaration_64ac0ab631c48199456641": {
+                    "identifier": "SCORE",
+                    "serial": "outcomedeclaration_64ac0ab631c48199456641",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "debug": {
+                        "relatedItem": "item_64ac0ab61c5b1166550178"
+                    },
+                    "defaultValue": null
+                },
+                "outcomedeclaration_64ac0ab63afb5611983523": {
+                    "identifier": "MAXSCORE",
+                    "serial": "outcomedeclaration_64ac0ab63afb5611983523",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "debug": {
+                        "relatedItem": "item_64ac0ab61c5b1166550178"
+                    },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "responsedeclaration_64ac0ab62b5ac633943370": {
+                    "identifier": "CCZES002Q06",
+                    "serial": "responsedeclaration_64ac0ab62b5ac633943370",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "CCZES002Q06",
+                        "cardinality": "multiple",
+                        "baseType": "directedPair"
+                    },
+                    "debug": {
+                        "relatedItem": "item_64ac0ab61c5b1166550178"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
+                    "correctResponses": ["Y Row1", "N Row2", "Y Row3", "Y Row4", "N Row5", "N Row6"],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
+                    "feedbackRules": {}
+                }
+            },
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_64ac0ab65712d470442400",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "debug": {
+                    "relatedItem": "item_64ac0ab61c5b1166550178"
+                },
+                "processingType": "templateDriven",
+                "responseRules": [
+                    {
+                        "qtiClass": "responseCondition",
+                        "responseIf": {
+                            "qtiClass": "responseIf",
+                            "expression": {
+                                "qtiClass": "match",
+                                "expressions": [
+                                    {
+                                        "qtiClass": "variable",
+                                        "attributes": {
+                                            "identifier": "CCZES002Q06"
+                                        }
+                                    },
+                                    {
+                                        "qtiClass": "correct",
+                                        "attributes": {
+                                            "identifier": "CCZES002Q06"
+                                        }
+                                    }
+                                ]
+                            },
+                            "responseRules": [
+                                {
+                                    "qtiClass": "setOutcomeValue",
+                                    "attributes": {
+                                        "identifier": "SCORE"
+                                    },
+                                    "expression": {
+                                        "qtiClass": "sum",
+                                        "expressions": [
+                                            {
+                                                "qtiClass": "variable",
+                                                "attributes": {
+                                                    "identifier": "SCORE"
+                                                }
+                                            },
+                                            {
+                                                "qtiClass": "baseValue",
+                                                "attributes": {
+                                                    "baseType": "integer"
+                                                },
+                                                "value": "1"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "apipAccessibility": ""
+        },
+        "assets": []
+    },
+    "itemState": {},
+    "itemIdentifier": "item-2"
+}

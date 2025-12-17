@@ -1,0 +1,137 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LineReaderMask rendering > renders correctly 1`] = `
+<body>
+  <div>
+    <div
+      class="line-reader not-printable"
+    >
+      <div
+        class="line-reader-gap"
+        style="
+            height: 160px;
+            transform: translateY(0px);
+        "
+      >
+        <div
+          class="gap-overlay top"
+        />
+         
+        <div
+          class="gap-overlay bottom"
+        />
+         
+        <div
+          class="line-reader-controls"
+        >
+          <div
+            aria-label="Vertical resize cursor icon"
+            class="line-reader-control resize"
+            tabindex="0"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Vertical resize cursor icon
+              </title>
+              <path
+                d="M9 10V3h2L8 0 5 3h2v10H5l3 3 3-3H9v-3z"
+              />
+            </svg>
+          </div>
+           
+          <div
+            aria-label="Draggable element handle icon"
+            class="line-reader-control move"
+            tabindex="0"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Draggable element handle icon
+              </title>
+              <path
+                d="M0 4h16v1H0zM0 7h16v1H0zM0 10h16v1H0z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`LineReaderMask rendering > renders correctly with provided properties 1`] = `
+<body>
+  <div>
+    <div
+      class="line-reader not-printable"
+    >
+      <div
+        class="line-reader-gap"
+        style="
+            height: 85px;
+            transform: translateY(100px);
+        "
+      >
+        <div
+          class="gap-overlay top"
+        />
+         
+        <div
+          class="gap-overlay bottom"
+        />
+         
+        <div
+          class="line-reader-controls"
+        >
+          <div
+            aria-label="Vertical resize cursor icon"
+            class="line-reader-control resize"
+            tabindex="0"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Vertical resize cursor icon
+              </title>
+              <path
+                d="M9 10V3h2L8 0 5 3h2v10H5l3 3 3-3H9v-3z"
+              />
+            </svg>
+          </div>
+           
+          <div
+            aria-label="Draggable element handle icon"
+            class="line-reader-control move"
+            tabindex="0"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon medium"
+              viewBox="0 0 16 16"
+            >
+              <title>
+                Draggable element handle icon
+              </title>
+              <path
+                d="M0 4h16v1H0zM0 7h16v1H0zM0 10h16v1H0z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

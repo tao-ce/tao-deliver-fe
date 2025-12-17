@@ -1,0 +1,79 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`makeHighlightNodesAccessible > adds accessibility attributes to expected nodes 1`] = `
+<body>
+  
+
+  <div
+    id="fixture"
+  >
+    
+    
+    <p>
+      This is
+        
+      <span
+        aria-describedby="tao-description-for-tao--foo123"
+        class="tao-comment-txt"
+        data-color="tao--foo123"
+        tabindex="0"
+      >
+        some
+      </span>
+      
+        text.
+    
+    </p>
+    
+    
+    <p>
+      This is
+        
+      <span
+        cclass="tao-comment-txt"
+        data-color="tao--bar456"
+      >
+        some
+      </span>
+       
+      <span
+        aria-describedby="tao-description-for-tao--bar456"
+        class="tao-comment-txt"
+        data-color="tao--bar456"
+        tabindex="0"
+      >
+        more-
+      </span>
+      <span
+        aria-describedby="tao-description-for-tao--bar456"
+        class="tao-comment-txt"
+        data-color="tao--bar456"
+        tabindex="0"
+      >
+        great
+      </span>
+      
+        text.
+    
+    </p>
+    
+
+  </div>
+  
+
+  <div
+    id="ignore"
+  >
+    
+    
+    <span
+      class="tao-comment-txt"
+      data-color="tao--qux789"
+    >
+      Ignore this text.
+    </span>
+    
+
+  </div>
+</body>
+`;

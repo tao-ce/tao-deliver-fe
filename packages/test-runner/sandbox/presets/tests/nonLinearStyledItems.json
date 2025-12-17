@@ -1,0 +1,123 @@
+{
+  "testContext": {
+    "state": 1,
+    "remainingAttempts": -1,
+    "isTimeout": 0,
+    "itemIdentifier": "item1",
+    "attempt": 1,
+    "itemSessionState": 1,
+    "needMapUpdate": false,
+    "itemPosition": 0,
+    "timeConstraints": [],
+    "testPartId": "testPart-1",
+    "sectionId": "assessmentSection-1",
+    "canMoveBackward": true,
+    "rubrics": "",
+    "allowSkipping": true,
+    "validateResponses": false
+  },
+  "testMap": {
+    "scope": "test",
+    "parts": {
+      "testPart-1": {
+        "id": "testPart-1",
+        "label": "testPart-1",
+        "position": 0,
+        "isLinear": false,
+        "timeConstraint": null,
+        "sections": {
+          "assessmentSection-1": {
+            "id": "assessmentSection-1",
+            "label": "Section 1",
+            "isCatAdaptive": false,
+            "position": 0,
+            "items": {
+              "item1": {
+                "id": "item1",
+                "label": "The Space Shuttle, 30 years of adventure (styled item)",
+                "position": 0,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": true,
+                "categories": ["x-tao-option-tts"],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false
+              },
+              "item2": {
+                "id": "item2",
+                "label": "Arithmetic (styled item)",
+                "position": 1,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false
+              },
+              "item3": {
+                "id": "item3",
+                "label": "Richard III (styled item)",
+                "position": 2,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false
+              },
+              "item4": {
+                "id": "item4",
+                "label": "Tools and Materials",
+                "position": 3,
+                "occurrence": 0,
+                "remainingAttempts": -1,
+                "answered": false,
+                "flagged": false,
+                "viewed": false,
+                "categories": [],
+                "hasFeedbacks": false,
+                "allowComment": false,
+                "informational": false
+              }
+            },
+            "stats": {
+              "questions": 4,
+              "answered": 0,
+              "flagged": 0,
+              "viewed": 1,
+              "total": 4,
+              "questionsViewed": 1
+            }
+          }
+        },
+        "stats": {
+          "questions": 4,
+          "answered": 0,
+          "flagged": 0,
+          "viewed": 1,
+          "total": 4,
+          "questionsViewed": 1
+        }
+      }
+    },
+    "title": "nonLinearStyledItems",
+    "identifier": "nonLinearStyledItems",
+    "stats": {
+      "questions": 4,
+      "answered": 0,
+      "flagged": 0,
+      "viewed": 1,
+      "total": 4,
+      "questionsViewed": 1
+    }
+  }
+}

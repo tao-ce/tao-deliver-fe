@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FloatingToolbarAreas component > Renders all divs for plugins, and only for plugins in template 1`] = `
+<body>
+  <div>
+    <div
+      class="floating-toolbars"
+    >
+      <div
+        class="toolbar-readAloud"
+      />
+      
+       
+      <div
+        class="flex-break"
+      />
+      
+      <div
+        class="toolbar-highlighter"
+      />
+      
+       
+      <div
+        class="flex-break"
+      />
+      
+      
+       
+      
+    </div>
+  </div>
+</body>
+`;

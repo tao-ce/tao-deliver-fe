@@ -1,0 +1,167 @@
+{
+  "baseUrl": "./assets/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "i6694bf5ce14582024071508190895f7",
+      "serial": "i6694c40b40028",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "i6694bf5ce14582024071508190895f7",
+        "adaptive": false,
+        "label": "max choice",
+        "xml:lang": "en-US",
+        "timeDependent": false,
+        "title": "max choice",
+        "toolName": "TAO",
+        "toolVersion": "NextGen",
+        "class": ""
+      },
+      "body": {
+        "serial": "i6694c40b40024",
+        "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i6694c40b40142}}\n      <\/div>\n    <\/div>\n  ",
+        "elements": {
+          "i6694c40b40142": {
+            "serial": "i6694c40b40142",
+            "qtiClass": "choiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "shuffle": false,
+              "maxChoices": 3,
+              "minChoices": 2,
+              "orientation": "vertical"
+            },
+            "choices": {
+              "i6694c40b401be": {
+                "identifier": "choice_1",
+                "serial": "i6694c40b401be",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_1",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "i6694c40b401d8",
+                  "body": "choice #1",
+                  "elements": []
+                }
+              },
+              "i6694c40b4021a": {
+                "identifier": "choice_2",
+                "serial": "i6694c40b4021a",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_2",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "i6694c40b4022d",
+                  "body": "choice #2",
+                  "elements": []
+                }
+              },
+              "i6694c40b4026e": {
+                "identifier": "choice_3",
+                "serial": "i6694c40b4026e",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_3",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "i6694c40b40282",
+                  "body": "choice #3",
+                  "elements": []
+                }
+              },
+              "i6694c40b402c6": {
+                "identifier": "choice_4",
+                "serial": "i6694c40b402c6",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "choice_4",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "body": {
+                  "serial": "i6694c40b402db",
+                  "body": "choice #4",
+                  "elements": []
+                }
+              }
+            },
+            "prompt": {
+              "serial": "i6694c40b4017d",
+              "body": "Correct is 1 &amp; 2 - Max (2-3)",
+              "elements": []
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+        "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+        "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+      },
+      "stylesheets": [],
+      "outcomes": {
+        "i6694c40b400bd": {
+          "identifier": "SCORE",
+          "serial": "i6694c40b400bd",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float",
+            "normalMaximum": 1,
+            "normalMinimum": 0
+          },
+          "defaultValue": null
+        },
+        "i6694c40b400e2": {
+          "identifier": "MAXSCORE",
+          "serial": "i6694c40b400e2",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "MAXSCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "1"
+        }
+      },
+      "responses": {
+        "i6694c40b4007e": {
+          "identifier": "RESPONSE",
+          "serial": "i6694c40b4007e",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "multiple",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        }
+      },
+      "apipAccessibility": ""
+    },
+    "assets": [],
+    "enricherExtraData": {
+      "dataResponseType": 1
+    }
+  },
+  "itemState": {},
+  "itemIdentifier": "item-1",
+  "portableElements": {
+    "pci": [],
+    "pic": []
+  },
+  "success": true,
+  "messages": []
+}

@@ -1,0 +1,172 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "i5f203912289fb132e5c268240f42c626",
+            "serial": "i5f20483a2fb72",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "i5f203912289fb132e5c268240f42c626",
+                "title": "Animals",
+                "label": "Animals",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint133",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5f20483a2fb6f",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-6\">\n        <p>Please listen to the following sample</p>\n        {{i5f20483a2fe9c}}\n      </div>\n      <div class=\"col-6\">\n        {{i5f20483a2fcb8}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "i5f20483a2fcb8": {
+                        "serial": "i5f20483a2fcb8",
+                        "qtiClass": "choiceInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE",
+                            "shuffle": false,
+                            "maxChoices": 2,
+                            "minChoices": 0,
+                            "orientation": "vertical"
+                        },
+                        "choices": {
+                            "i5f20483a2fd2e": {
+                                "identifier": "choice_1",
+                                "serial": "i5f20483a2fd2e",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i5f20483a2fd3b",
+                                    "body": "a hyen",
+                                    "elements": []
+                                }
+                            },
+                            "i5f20483a2fd77": {
+                                "identifier": "choice_2",
+                                "serial": "i5f20483a2fd77",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i5f20483a2fd83",
+                                    "body": "a coyote",
+                                    "elements": []
+                                }
+                            },
+                            "i5f20483a2fdcd": {
+                                "identifier": "choice_3",
+                                "serial": "i5f20483a2fdcd",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i5f20483a2fdd8",
+                                    "body": "a racoon",
+                                    "elements": []
+                                }
+                            },
+                            "i5f20483a2fe10": {
+                                "identifier": "choice_4",
+                                "serial": "i5f20483a2fe10",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_4",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i5f20483a2fe1a",
+                                    "body": "a fox",
+                                    "elements": []
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i5f20483a2fce2",
+                            "body": "Which animals is it",
+                            "elements": []
+                        }
+                    },
+                    "i5f20483a2fe9c": {
+                        "serial": "i5f20483a2fe9c",
+                        "qtiClass": "object",
+                        "attributes": {
+                            "data": "animals/mc.mp3",
+                            "type": "audio/mpeg"
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": {
+            },
+            "outcomes": {
+                "i5f20483a2fc1f": {
+                    "identifier": "SCORE",
+                    "serial": "i5f20483a2fc1f",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 1
+                    },
+                    "defaultValue": null
+                },
+                "i5f20483a2fc3b": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i5f20483a2fc3b",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "1"
+                }
+            },
+            "responses": {
+                "i5f20483a2fbe7": {
+                    "identifier": "RESPONSE",
+                    "serial": "i5f20483a2fbe7",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE",
+                        "cardinality": "multiple",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+        }
+    },
+    "itemState": {},
+    "itemIdentifier": "item-1",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    }
+}

@@ -1,0 +1,35 @@
+// SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
+//
+// SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+
+export default `/* Do not edit */
+.qti-item {
+    --styleeditor-bg-color: #7578f3;
+    --styleeditor-text-color: #e7ef66;
+    --styleeditor-border-color: #d89df6;
+    --styleeditor-table-heading-bg-color: #5bbdad;
+    --styleeditor-font-family: 'Avant Garde',Avantgarde,'Century Gothic',CenturyGothic,'AppleGothic',sans-serif;
+    --styleeditor-font-size: 24px;
+}
+
+body div.qti-item, body div.qti-item .qti-associateInteraction .result-area > li > .target {
+    background-color: var(--styleeditor-bg-color);
+}
+
+body div.qti-item {
+    color: var(--styleeditor-text-color);
+    font-family: var(--styleeditor-font-family);
+    font-size: var(--styleeditor-font-size);
+}
+
+body div.qti-item .solid,body div.qti-item .matrix, body div.qti-item table.matrix th, body div.qti-item table.matrix td {
+    border-color: var(--styleeditor-border-color);
+}
+
+body div.qti-item .matrix th {
+    background-color: var(--styleeditor-table-heading-bg-color);
+}
+
+body div.qti-item figure figcaption {
+    font-size: 22px;
+}`;

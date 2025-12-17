@@ -1,0 +1,231 @@
+{
+    "testContext": {
+        "state": 1,
+        "remainingAttempts": -1,
+        "isTimeout": 0,
+        "itemIdentifier": "item-1",
+        "attempt": 2,
+        "itemSessionState": 1,
+        "needMapUpdate": false,
+        "itemPosition": 0,
+        "timeConstraints": [],
+        "testPartId": "testPart-1",
+        "sectionId": "assessmentSection-1",
+        "canMoveBackward": false,
+        "rubrics": "",
+        "allowSkipping": true,
+        "validateResponses": false
+    },
+    "testMap": {
+        "scope": "test",
+        "stats": {
+            "questionsViewed": 2,
+            "questions": 2,
+            "answered": 0,
+            "flagged": 0,
+            "viewed": 4,
+            "total": 4
+        },
+        "parts": {
+            "testPart-1": {
+                "id": "testPart-1",
+                "label": "testPart-1",
+                "position": 0,
+                "isLinear": false,
+                "isIndividual": true,
+                "timeConstraint": {
+                    "allowLateSubmission": true,
+                    "label": "testPart-1",
+                    "maxTime": false,
+                    "maxTimeRemaining": false,
+                    "minTime": false,
+                    "minTimeRemaining": false,
+                    "qtiClassName": "testPart",
+                    "source": "testPart-1",
+                    "extraTime": {
+                        "total": 0,
+                        "consumed": 0,
+                        "remaining": 0
+                    }
+                },
+                "stats": {
+                    "questionsViewed": 2,
+                    "questions": 0,
+                    "answered": 0,
+                    "flagged": 0,
+                    "viewed": 4,
+                    "total": 4
+                },
+                "sections": {
+                    "assessmentSection-1": {
+                        "id": "assessmentSection-1",
+                        "label": "Section",
+                        "isCatAdaptive": false,
+                        "position": 0,
+                        "timeConstraint": {
+                            "allowLateSubmission": true,
+                            "label": "Section",
+                            "maxTime": false,
+                            "maxTimeRemaining": false,
+                            "minTime": false,
+                            "minTimeRemaining": false,
+                            "qtiClassName": "assessmentSection",
+                            "source": "assessmentSection-1",
+                            "extraTime": {
+                                "total": 0,
+                                "consumed": 0,
+                                "remaining": 0
+                            }
+                        },
+                        "stats": {
+                            "questionsViewed": 2,
+                            "questions": 2,
+                            "answered": 0,
+                            "flagged": 0,
+                            "viewed": 4,
+                            "total": 4
+                        },
+                        "items": {
+                            "item-1": {
+                                "id": "item-1",
+                                "label": "Item 1",
+                                "position": 0,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": true,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "timeConstraint": {
+                                    "allowLateSubmission": true,
+                                    "label": "Item 1",
+                                    "maxTime": false,
+                                    "maxTimeRemaining": false,
+                                    "minTime": false,
+                                    "minTimeRemaining": false,
+                                    "qtiClassName": "assessmentItemRef",
+                                    "source": "item-1",
+                                    "extraTime": {
+                                        "total": 0,
+                                        "consumed": 0,
+                                        "remaining": 0
+                                    }
+                                },
+                                "informational": true,
+                                "allowSkipping": true,
+                                "validateResponses": false,
+                                "maxAttempts": 0
+                            },
+                            "item-2": {
+                                "id": "item-2",
+                                "label": "Item 2",
+                                "position": 1,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "timeConstraint": {
+                                    "allowLateSubmission": true,
+                                    "label": "Item 2",
+                                    "maxTime": false,
+                                    "maxTimeRemaining": false,
+                                    "minTime": false,
+                                    "minTimeRemaining": false,
+                                    "qtiClassName": "assessmentItemRef",
+                                    "source": "item-2",
+                                    "extraTime": {
+                                        "total": 0,
+                                        "consumed": 0,
+                                        "remaining": 0
+                                    }
+                                },
+                                "informational": false,
+                                "allowSkipping": true,
+                                "validateResponses": false,
+                                "maxAttempts": 0
+                            },
+                            "item-3": {
+                                "id": "item-3",
+                                "label": "Item 3",
+                                "position": 2,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": true,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "timeConstraint": {
+                                    "allowLateSubmission": true,
+                                    "label": "Item 3",
+                                    "maxTime": false,
+                                    "maxTimeRemaining": false,
+                                    "minTime": false,
+                                    "minTimeRemaining": false,
+                                    "qtiClassName": "assessmentItemRef",
+                                    "source": "item-3",
+                                    "extraTime": {
+                                        "total": 0,
+                                        "consumed": 0,
+                                        "remaining": 0
+                                    }
+                                },
+                                "informational": true,
+                                "allowSkipping": true,
+                                "validateResponses": false,
+                                "maxAttempts": 0
+                            },
+                            "item-4": {
+                                "id": "item-4",
+                                "label": "Item 4",
+                                "position": 3,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "timeConstraint": {
+                                    "allowLateSubmission": true,
+                                    "label": "Item 4",
+                                    "maxTime": false,
+                                    "maxTimeRemaining": false,
+                                    "minTime": false,
+                                    "minTimeRemaining": false,
+                                    "qtiClassName": "assessmentItemRef",
+                                    "source": "item-4",
+                                    "extraTime": {
+                                        "total": 0,
+                                        "consumed": 0,
+                                        "remaining": 0
+                                    }
+                                },
+                                "informational": false,
+                                "allowSkipping": true,
+                                "validateResponses": false,
+                                "maxAttempts": 0
+                            }
+                        },
+                        "allowSkipping": true,
+                        "validateResponses": false,
+                        "maxAttempts": 0
+                    }
+                },
+                "allowSkipping": true,
+                "validateResponses": false,
+                "maxAttempts": 0
+            }
+        },
+        "identifier": "KUJEVSLX",
+        "title": "Items with styled passages"
+    }
+}

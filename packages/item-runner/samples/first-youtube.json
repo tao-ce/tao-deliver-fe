@@ -1,0 +1,82 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "media_interaction",
+            "serial": "i5ec7d8d84b9356",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "media_interaction",
+                "title": "Media Interaction",
+                "label": "Media Interaction",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint117",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5ec7d8d84b925d",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <h1>First youtube video (Media Interaction)</h1>\n  <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i5ec7d8d84bbba}}\n        </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i5ec7d8d84baa3}}\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "i5ec7d8d84baa3": {
+                        "serial": "i5ec7d8d84baa3",
+                        "qtiClass": "mediaInteraction",
+                        "attributes": {
+                            "responseIdentifier": "media_interaction",
+                            "autostart": false,
+                            "loop": false,
+                            "minPlays": 0,
+                            "maxPlays": 0,
+                            "class": "pause"
+                        },
+                        "object": {
+                            "serial": "i5ec7d8d84baa5",
+                            "attributes": {
+                                "width": 450,
+                                "data": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+                                "type": "video/youtube"
+                            }
+                        },
+                        "prompt": {
+                            "serial": "container_containerstatic_546cb89e0420f262955533",
+                            "body": "Watch the very first youtube video",
+                            "elements": []
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "stylesheets": [],
+            "outcomes": [],
+            "responses": {
+                "i5ec7d8d84b9b98": {
+                    "identifier": "media_interaction",
+                    "serial": "i5ec7d8d84b9b98",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "media_interaction",
+                        "cardinality": "single",
+                        "baseType": "integer"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {}
+    },
+    "itemState": {},
+    "itemIdentifier": "item-8",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    },
+    "messages": []
+}

@@ -1,0 +1,172 @@
+{
+    "testContext": {
+        "state": 1,
+        "remainingAttempts": -1,
+        "isTimeout": 0,
+        "itemIdentifier": "item1",
+        "attempt": 1,
+        "itemSessionState": 1,
+        "needMapUpdate": false,
+        "itemPosition": 0,
+        "timeConstraints": [],
+        "testPartId": "testPart-1",
+        "sectionId": "assessmentSection-1",
+        "canMoveBackward": true,
+        "rubrics": "",
+        "allowSkipping": true,
+        "validateResponses": false
+    },
+    "testMap": {
+        "scope": "test",
+        "parts": {
+            "testPart-1": {
+                "id": "testPart-1",
+                "label": "testPart-1",
+                "position": 0,
+                "isLinear": false,
+                "timeConstraint": null,
+                "sections": {
+                    "assessmentSection-1": {
+                        "id": "assessmentSection-1",
+                        "label": "Section 1",
+                        "isCatAdaptive": false,
+                        "position": 0,
+                        "items": {
+                            "item1": {
+                                "id": "item1",
+                                "label": "The Space Shuttle, 30 years of adventure",
+                                "position": 0,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": true,
+                                "categories": ["sandboxPresetProxy-submitItem_modalFeedback_assets"],
+                                "hasFeedbacks": true,
+                                "allowComment": false,
+                                "informational": false
+                            },
+                            "item2": {
+                                "id": "item2",
+                                "label": "Planets",
+                                "position": 1,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [
+                                    "sandboxPresetProxy-submitItem_modalFeedback_two",
+                                    "x-tao-option-tts",
+                                    "x-tao-option-scratchpad",
+                                    "x-tao-option-eliminator",
+                                    "x-tao-option-highlighter",
+                                    "x-tao-option-lineReader",
+                                    "x-tao-option-calculator-scientific"
+                                ],
+                                "hasFeedbacks": true,
+                                "allowComment": false,
+                                "informational": false
+                            },
+                            "item3": {
+                                "id": "item3",
+                                "label": "French words",
+                                "position": 2,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [
+                                    "sandboxPresetProxy-submitItem_modalFeedback_nomatching",
+                                    "x-tao-option-tts",
+                                    "x-tao-option-scratchpad",
+                                    "x-tao-option-eliminator",
+                                    "x-tao-option-highlighter",
+                                    "x-tao-option-lineReader",
+                                    "x-tao-option-calculator-scientific"
+                                ],
+                                "hasFeedbacks": true,
+                                "allowComment": false,
+                                "informational": false
+                            },
+                            "item4": {
+                                "id": "item4",
+                                "label": "Photo",
+                                "position": 3,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": ["sandboxPresetProxy-submitItem_modalFeedback_nodeclared"],
+                                "hasFeedbacks": true,
+                                "allowComment": false,
+                                "informational": false,
+                                "allowSkipping": false,
+                                "validateResponses": true
+                            },
+                            "item5": {
+                                "id": "item5",
+                                "label": "Weights",
+                                "position": 4,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "informational": false
+                            },
+
+                            "item6": {
+                                "id": "item6",
+                                "label": "Richard III (Take 2)",
+                                "position": 5,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": ["sandboxPresetProxy-submitItem_modalFeedback_assets"],
+                                "hasFeedbacks": true,
+                                "allowComment": false,
+                                "informational": false,
+                                "allowSkipping": false,
+                                "validateResponses": true
+                            }
+                        },
+                        "stats": {
+                            "questions": 8,
+                            "answered": 0,
+                            "flagged": 0,
+                            "viewed": 1,
+                            "total": 8,
+                            "questionsViewed": 1
+                        }
+                    }
+                },
+                "stats": {
+                    "questions": 6,
+                    "answered": 0,
+                    "flagged": 0,
+                    "viewed": 1,
+                    "total": 6,
+                    "questionsViewed": 1
+                }
+            }
+        },
+        "title": "nonLinearModalFeedbacks",
+        "identifier": "nonLinearModalFeedbacks",
+        "stats": {
+            "questions": 6,
+            "answered": 0,
+            "flagged": 0,
+            "viewed": 1,
+            "total": 6,
+            "questionsViewed": 1
+        }
+    }
+}

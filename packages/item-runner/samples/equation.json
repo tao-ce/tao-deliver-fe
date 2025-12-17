@@ -1,0 +1,156 @@
+{
+  "baseUrl": "./assets/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "Q01",
+      "serial": "item_5e5e7a713decb010227232",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "Q01",
+        "title": "Discriminant of a Quadratic Equation - Question 01",
+        "label": "Discriminant of a Quadratic Equation - Question 01",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint123",
+        "class": ""
+      },
+      "body": {
+        "serial": "container_containeritembody_5e5e7a713dec5563355926",
+        "body": "\n    {{math_5e5e7a713e1cf077548787}}\n    {{interaction_choiceinteraction_5e5e7a713dfd8019171718}}\n  ",
+        "elements": {
+          "interaction_choiceinteraction_5e5e7a713dfd8019171718": {
+            "serial": "interaction_choiceinteraction_5e5e7a713dfd8019171718",
+            "qtiClass": "choiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "shuffle": true,
+              "maxChoices": 1,
+              "minChoices": 0,
+              "id": "interaction",
+              "class": ["qti-choices-stacking-2", "qti-orientation-horizontal"]
+            },
+            "choices": {
+              "choice_simplechoice_5e5e7a713e04d679114091": {
+                "identifier": "discr1",
+                "serial": "choice_simplechoice_5e5e7a713e04d679114091",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "discr1",
+                  "fixed": false
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e5e7a713e05c219160621",
+                  "body": "-34",
+                  "elements": []
+                }
+              },
+              "choice_simplechoice_5e5e7a713e093341877712": {
+                "identifier": "discr2",
+                "serial": "choice_simplechoice_5e5e7a713e093341877712",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "discr2",
+                  "fixed": false
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e5e7a713e09f366702693",
+                  "body": "-44",
+                  "elements": []
+                }
+              },
+              "choice_simplechoice_5e5e7a713e0d1989081417": {
+                "identifier": "discr3",
+                "serial": "choice_simplechoice_5e5e7a713e0d1989081417",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "discr3",
+                  "fixed": false
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e5e7a713e0dc300994892",
+                  "body": "12",
+                  "elements": []
+                }
+              },
+              "choice_simplechoice_5e5e7a713e10c070186605": {
+                "identifier": "discr4",
+                "serial": "choice_simplechoice_5e5e7a713e10c070186605",
+                "qtiClass": "simpleChoice",
+                "attributes": {
+                  "identifier": "discr4",
+                  "fixed": false
+                },
+                "body": {
+                  "serial": "container_containerstatic_5e5e7a713e116653757166",
+                  "body": "44",
+                  "elements": []
+                }
+              }
+            },
+            "prompt": {
+              "serial": "container_containerstatic_5e5e7a713e008616588707",
+              "body": "What is the discriminant of the above quadratic equation?",
+              "elements": []
+            }
+          },
+          "math_5e5e7a713e1cf077548787": {
+            "serial": "math_5e5e7a713e1cf077548787",
+            "qtiClass": "math",
+            "attributes": {
+              "display": "block"
+            },
+            "mathML": "\n      <mrow>\n        <mrow>\n          <!-- a -->\n          <mn>3</mn>\n          <msup>\n            <mi>x</mi>\n            <mn>2</mn>\n          </msup>\n        </mrow>\n        <mo>+</mo>\n        <mrow>\n          <!-- b -->\n          <mn>2</mn>\n          <mi>x</mi>\n        </mrow>\n        <mo>+</mo>\n        <mrow>\n          <!-- c -->\n          <mn>4</mn>\n        </mrow>\n        <mi>=</mi>\n        <mn>0</mn>\n      </mrow>\n    ",
+            "annotations": []
+          }
+        }
+      },
+      "namespaces": {
+        "": "http://www.imsglobal.org/xsd/imsqti_v2p1",
+        "m": "http://www.w3.org/1998/Math/MathML",
+        "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http://www.imsglobal.org/xsd/imsqti_v2p1": "imsqti_v2p1.xsd"
+      },
+      "stylesheets": [],
+      "outcomes": {
+        "outcomedeclaration_5e5e7a713df53757750252": {
+          "identifier": "SCORE",
+          "serial": "outcomedeclaration_5e5e7a713df53757750252",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "0"
+        }
+      },
+      "responses": {
+        "responsedeclaration_5e5e7a713df1f476574516": {
+          "identifier": "RESPONSE",
+          "serial": "responsedeclaration_5e5e7a713df1f476574516",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        }
+      },
+      "feedbacks": [],
+      "apipAccessibility": ""
+    },
+    "assets": []
+  },
+  "itemState": {},
+  "itemIdentifier": "item-6",
+  "portableElements": {
+    "pci": [],
+    "pic": []
+  }
+}

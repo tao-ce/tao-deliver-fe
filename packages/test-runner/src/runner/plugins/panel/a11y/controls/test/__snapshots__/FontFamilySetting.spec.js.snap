@@ -1,0 +1,151 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FontFamilySetting > renders with all font families but no more 1`] = `
+<body>
+  <div>
+    <div
+      class="font-family-setting"
+    >
+      <span
+        class="select height-small fullwidth lite valid"
+        style="--visible-options: 999; --space-above: 0px;"
+      >
+        <button
+          aria-expanded="false"
+          aria-haspopup="listbox"
+          aria-label="Default font"
+          aria-roledescription="Dropdown"
+          title="Default font"
+          type="button"
+        >
+          <span>
+            <span
+              style="font-family: 'Nunito Sans', 'Source Sans Pro', Arial, sans-serif"
+            >
+              Default font
+            </span>
+          </span>
+           
+          <svg
+            aria-hidden="true"
+            class="icon small"
+            viewBox="0 0 12 12"
+          >
+            <title>
+              Down arrow icon
+            </title>
+            <path
+              d="M11.45 3.29A.49.49 0 0011 3H1a.49.49 0 00-.45.29.47.47 0 00.07.53l5 6a.49.49 0 00.76 0l5-6a.47.47 0 00.07-.53z"
+            />
+          </svg>
+        </button>
+         
+        <span
+          aria-hidden="true"
+          class="listbox-wrapper visually-hidden"
+        >
+          <span
+            aria-activedescendant="tao-option-123"
+            aria-roledescription="dropdown list"
+            class="listbox"
+            role="listbox"
+            tabindex="-1"
+          >
+            <span
+              class="scroll-child"
+            />
+             
+            <span
+              aria-selected="true"
+              class="option selected"
+              id="tao-option-123"
+              role="option"
+            >
+              <span
+                style="font-family: 'Nunito Sans', 'Source Sans Pro', Arial, sans-serif"
+              >
+                Default font
+              </span>
+            </span>
+            <span
+              aria-selected="false"
+              class="option"
+              id="tao-option-123"
+              role="option"
+            >
+              <span
+                style="font-family: Courier New, monospace"
+              >
+                Courier
+              </span>
+            </span>
+            <span
+              aria-selected="false"
+              class="option"
+              id="tao-option-123"
+              role="option"
+            >
+              <span
+                style="font-family: Arial, sans-serif"
+              >
+                Arial
+              </span>
+            </span>
+            <span
+              aria-selected="false"
+              class="option"
+              id="tao-option-123"
+              role="option"
+            >
+              <span
+                style="font-family: Verdana, sans-serif"
+              >
+                Verdana
+              </span>
+            </span>
+            <span
+              aria-selected="false"
+              class="option"
+              id="tao-option-123"
+              role="option"
+            >
+              <span
+                style="font-family: 'CMU Serif Roman', serif"
+              >
+                CMU Serif
+              </span>
+            </span>
+            <span
+              aria-selected="false"
+              class="option"
+              id="tao-option-123"
+              role="option"
+            >
+              <span
+                style="font-family: Luciole, Helvetica, Arial, sans-serif"
+              >
+                Luciole
+              </span>
+            </span>
+             
+            <span
+              class="scroll-child"
+            />
+          </span>
+        </span>
+         
+        <input
+          aria-hidden="true"
+          class="hidden-input"
+          data-type="select"
+          name=""
+          tabindex="-1"
+          type="text"
+        />
+         
+         
+      </span>
+    </div>
+  </div>
+</body>
+`;

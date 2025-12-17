@@ -1,0 +1,357 @@
+{
+  "baseUrl": "./assets/",
+  "itemData": {
+    "type": "qti",
+    "data": {
+      "identifier": "i5e8f1f164320e9ac5bd4f5f2b397eb",
+      "serial": "item_5e8f2273c62d5760995901",
+      "qtiClass": "assessmentItem",
+      "attributes": {
+        "identifier": "i5e8f1f164320e9ac5bd4f5f2b397eb",
+        "title": "Breaking Water",
+        "label": "Breaking Water",
+        "xml:lang": "en-US",
+        "adaptive": false,
+        "timeDependent": false,
+        "toolName": "TAO",
+        "toolVersion": "3.4.0-sprint125",
+        "class": ""
+      },
+      "body": {
+        "serial": "container_containeritembody_5e8f2273c62cf915240544",
+        "body": "<div class=\"qti-layout-row\"><div class=\"qti-layout-col6\"><p>Using the periodic table of the elements</p><p>{{img_5e8f2273c66bf987923521}}</p></div><div class=\"qti-layout-col6\"><p><strong>Which element are composing water, according to the description below :</strong><blockquote>Water is a simple triatomic bent molecule with C2v molecular symmetry and bond angle of 104.5\u00b0 between the central oxygen atom and the hydrogen atoms. Despite being one of the simplest triatomic molecules, its chemical bonding scheme is nonetheless complex as many of its bonding properties such as bond angle, ionization energy, and electronic state energy cannot be explained by one unified bonding model. Instead, several traditional and advanced bonding models such as simple Lewis and VESPR structure, valence bond theory, molecular orbital theory, isovalent hybridization, and Bent's rule are discussed below to provide a comprehensive bonding model for H<br/>\n2O, explaining and rationalizing the various electronic and physical properties and features manifested by its peculiar bonding arrangements.</blockquote><p><strong>Water is composed of</strong>\u00a0{{interaction_inlinechoiceinteraction_5e8f2273c647f722109744}}\u00a0{{interaction_inlinechoiceinteraction_5e8f2273c6531811368415}}\u00a0{{interaction_inlinechoiceinteraction_5e8f2273c65c5352615307}}</p></div></div>",
+        "elements": {
+          "interaction_inlinechoiceinteraction_5e8f2273c647f722109744": {
+            "serial": "interaction_inlinechoiceinteraction_5e8f2273c647f722109744",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE",
+              "shuffle": false,
+              "required": true,
+              "data-prompt" : "Atom 1",
+              "class": "qti-input-width-8"
+            },
+            "choices": {
+              "choice_inlinechoice_5e8f2273c64a7476826739": {
+                "identifier": "choice_1",
+                "serial": "choice_inlinechoice_5e8f2273c64a7476826739",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_1",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "C (6)"
+              },
+              "choice_inlinechoice_5e8f2273c64cc021231137": {
+                "identifier": "choice_2",
+                "serial": "choice_inlinechoice_5e8f2273c64cc021231137",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_2",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "O (8)"
+              },
+              "choice_inlinechoice_5e8f2273c64e2366624742": {
+                "identifier": "choice_3",
+                "serial": "choice_inlinechoice_5e8f2273c64e2366624742",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_3",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "He (2)"
+              },
+              "choice_inlinechoice_5e8f2273c64f5456260283": {
+                "identifier": "choice_4",
+                "serial": "choice_inlinechoice_5e8f2273c64f5456260283",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_4",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "H (1)"
+              },
+              "choice_inlinechoice_5e8f2273c6506691927316": {
+                "identifier": "choice_5",
+                "serial": "choice_inlinechoice_5e8f2273c6506691927316",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_5",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "N (7)"
+              },
+              "choice_inlinechoice_5e8f2273c6518880434003": {
+                "identifier": "choice_6",
+                "serial": "choice_inlinechoice_5e8f2273c6518880434003",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_6",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "Ca(20)"
+              }
+            }
+          },
+          "interaction_inlinechoiceinteraction_5e8f2273c6531811368415": {
+            "serial": "interaction_inlinechoiceinteraction_5e8f2273c6531811368415",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_1",
+              "shuffle": false,
+              "required": true,
+              "data-prompt" : "Atom 2",
+              "class": "qti-input-width-8"
+            },
+            "choices": {
+              "choice_inlinechoice_5e8f2273c6555617679374": {
+                "identifier": "choice_7",
+                "serial": "choice_inlinechoice_5e8f2273c6555617679374",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_7",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "C (6)"
+              },
+              "choice_inlinechoice_5e8f2273c656a377631278": {
+                "identifier": "choice_8",
+                "serial": "choice_inlinechoice_5e8f2273c656a377631278",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_8",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "O (8)"
+              },
+              "choice_inlinechoice_5e8f2273c657b494843727": {
+                "identifier": "choice_9",
+                "serial": "choice_inlinechoice_5e8f2273c657b494843727",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_9",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "He (2)"
+              },
+              "choice_inlinechoice_5e8f2273c658c620933966": {
+                "identifier": "choice_10",
+                "serial": "choice_inlinechoice_5e8f2273c658c620933966",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_10",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "H (1)"
+              },
+              "choice_inlinechoice_5e8f2273c659c042529073": {
+                "identifier": "choice_11",
+                "serial": "choice_inlinechoice_5e8f2273c659c042529073",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_11",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "N (7)"
+              },
+              "choice_inlinechoice_5e8f2273c65ad701554126": {
+                "identifier": "choice_12",
+                "serial": "choice_inlinechoice_5e8f2273c65ad701554126",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_12",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "Ca(20)"
+              }
+            }
+          },
+          "interaction_inlinechoiceinteraction_5e8f2273c65c5352615307": {
+            "serial": "interaction_inlinechoiceinteraction_5e8f2273c65c5352615307",
+            "qtiClass": "inlineChoiceInteraction",
+            "attributes": {
+              "responseIdentifier": "RESPONSE_2",
+              "shuffle": false,
+              "required": true,
+              "data-prompt" : "Atom 3",
+              "class": "qti-input-width-8"
+            },
+            "choices": {
+              "choice_inlinechoice_5e8f2273c65e4048381432": {
+                "identifier": "choice_13",
+                "serial": "choice_inlinechoice_5e8f2273c65e4048381432",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_13",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "C (6)"
+              },
+              "choice_inlinechoice_5e8f2273c65f8950840600": {
+                "identifier": "choice_14",
+                "serial": "choice_inlinechoice_5e8f2273c65f8950840600",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_14",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "O (8)"
+              },
+              "choice_inlinechoice_5e8f2273c6609001014411": {
+                "identifier": "choice_15",
+                "serial": "choice_inlinechoice_5e8f2273c6609001014411",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_15",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "He (2)"
+              },
+              "choice_inlinechoice_5e8f2273c661a617416076": {
+                "identifier": "choice_16",
+                "serial": "choice_inlinechoice_5e8f2273c661a617416076",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_16",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "H (1)"
+              },
+              "choice_inlinechoice_5e8f2273c662b849139619": {
+                "identifier": "choice_17",
+                "serial": "choice_inlinechoice_5e8f2273c662b849139619",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_17",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": "N (7)"
+              },
+              "choice_inlinechoice_5e8f2273c663c835714003": {
+                "identifier": "choice_18",
+                "serial": "choice_inlinechoice_5e8f2273c663c835714003",
+                "qtiClass": "inlineChoice",
+                "attributes": {
+                  "identifier": "choice_18",
+                  "fixed": false,
+                  "showHide": "show"
+                },
+                "text": ""
+              }
+            }
+          },
+          "img_5e8f2273c66bf987923521": {
+            "serial": "img_5e8f2273c66bf987923521",
+            "qtiClass": "img",
+            "attributes": {
+              "src": "Periodic_Table.png",
+              "alt": "Periodic_Table",
+              "width": "100%",
+              "type": "image\/png"
+            }
+          }
+        }
+      },
+      "namespaces": {
+        "": "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2",
+        "m": "http:\/\/www.w3.org\/1998\/Math\/MathML",
+        "xsi": "http:\/\/www.w3.org\/2001\/XMLSchema-instance"
+      },
+      "schemaLocations": {
+        "http:\/\/www.imsglobal.org\/xsd\/imsqti_v2p2": "http:\/\/www.imsglobal.org\/xsd\/qti\/qtiv2p2\/imsqti_v2p2.xsd"
+      },
+      "stylesheets": { },
+      "outcomes": {
+        "outcomedeclaration_5e8f2273c63c7663272393": {
+          "identifier": "SCORE",
+          "serial": "outcomedeclaration_5e8f2273c63c7663272393",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "SCORE",
+            "cardinality": "single",
+            "baseType": "float",
+            "normalMaximum": 3
+          },
+          "defaultValue": null
+        },
+        "outcomedeclaration_5e8f2273c63e0127794378": {
+          "identifier": "MAXSCORE",
+          "serial": "outcomedeclaration_5e8f2273c63e0127794378",
+          "qtiClass": "outcomeDeclaration",
+          "attributes": {
+            "identifier": "MAXSCORE",
+            "cardinality": "single",
+            "baseType": "float"
+          },
+          "defaultValue": "3"
+        }
+      },
+      "responses": {
+        "responsedeclaration_5e8f2273c6340118650952": {
+          "identifier": "RESPONSE",
+          "serial": "responsedeclaration_5e8f2273c6340118650952",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "responsedeclaration_5e8f2273c6373703389722": {
+          "identifier": "RESPONSE_1",
+          "serial": "responsedeclaration_5e8f2273c6373703389722",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_1",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        },
+        "responsedeclaration_5e8f2273c639f647073640": {
+          "identifier": "RESPONSE_2",
+          "serial": "responsedeclaration_5e8f2273c639f647073640",
+          "qtiClass": "responseDeclaration",
+          "attributes": {
+            "identifier": "RESPONSE_2",
+            "cardinality": "single",
+            "baseType": "identifier"
+          },
+          "defaultValue": []
+        }
+      },
+      "feedbacks": [],
+      "apipAccessibility": ""
+    },
+    "assets": {
+      "img": {
+        "Periodic_Table.png": "Periodic_Table.png"
+      }
+    }
+  },
+  "itemState": {},
+  "itemIdentifier": "item-3",
+  "portableElements": {
+    "pci": [],
+    "pic": []
+  }
+}

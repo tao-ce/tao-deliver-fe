@@ -1,0 +1,2215 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular component 1`] = `
+<body>
+  <div>
+    <div
+      aria-disabled="false"
+      class="qti-interaction qti-blockInteraction qti-matchInteraction qti-match-non-tabular"
+    >
+       
+      <div
+        class="qti-instruction-container"
+        dir="ltr"
+        lang="nb-NO"
+      >
+        <div
+          aria-atomic="true"
+          class="feedback info fullwidth"
+          role="status"
+        >
+           
+          <p>
+            You must make a maximum of 1 association
+          </p>
+        </div>
+      </div>
+       
+      <div
+        class="match-non-tabular"
+      >
+        <p
+          class="aria-live-container visually-hidden"
+          lang="nb-NO"
+        >
+          <span
+            aria-live="assertive"
+          />
+           
+          <span
+            aria-live="polite"
+          />
+        </p>
+         
+        <div
+          class="layout-container choices-left"
+          style="--buckets:2;--remove-button-width:6.25rem;--rows:2;"
+          tabindex="-1"
+        >
+          
+          <div
+            class="choices"
+          >
+            <div
+              class="height-keeper grid vertical"
+            >
+              <div
+                class="drop-area"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="choices"
+              >
+                <ul
+                  aria-labelledby="tao-list-label-123"
+                  class="draggable-list"
+                  role="application"
+                  style="--grid-size:2"
+                  tabindex="-1"
+                >
+                  
+                  <li
+                    class="draggable-list-item last"
+                  >
+                    <div>
+                      <span
+                        class="hidden"
+                        id="tao-choice-label-123"
+                      >
+                        <div>
+                          A
+                          
+                          
+                           
+                          <span
+                            class="visually-hidden"
+                            lang="nb-NO"
+                          >
+                            option 1 of 2. Button draggable. available 1 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
+                          </span>
+                        </div>
+                         
+                      </span>
+                       
+                      <div
+                        class="item-btn-container last"
+                      >
+                        <div
+                          class="draggable-container draggable-source"
+                          data-drag-drop-disabled="false"
+                          data-drag-drop-key="A"
+                        >
+                           
+                          <div
+                            aria-grabbed="false"
+                            aria-labelledby="tao-choice-label-123"
+                            class="item-btn"
+                            role="button"
+                            tabindex="0"
+                          >
+                            <div
+                              class="icon-container"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Drag handle icon
+                                </title>
+                                <path
+                                  d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                                  fill-rule="evenodd"
+                                />
+                              </svg>
+                            </div>
+                             
+                            <div
+                              class="label-container"
+                            >
+                              <div>
+                                A
+                                
+                                
+                                 
+                                <span
+                                  class="visually-hidden"
+                                  lang="nb-NO"
+                                >
+                                  option 1 of 2. Button draggable. available 1 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
+                                </span>
+                              </div>
+                               
+                            </div>
+                             
+                             
+                          </div>
+                           
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </li>
+                  
+                  <li
+                    class="draggable-list-item"
+                  >
+                    <div>
+                      <span
+                        class="hidden"
+                        id="tao-choice-label-123"
+                      >
+                        <div>
+                          B
+                          
+                          
+                           
+                          <span
+                            class="visually-hidden"
+                            lang="nb-NO"
+                          >
+                            option 2 of 2. Button draggable.  List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
+                          </span>
+                        </div>
+                         
+                      </span>
+                       
+                      <div
+                        class="item-btn-container"
+                      >
+                        <div
+                          class="draggable-container draggable-source"
+                          data-drag-drop-disabled="false"
+                          data-drag-drop-key="B"
+                        >
+                          <div
+                            class="stacking"
+                          >
+                             
+                          </div>
+                           
+                          <div
+                            aria-grabbed="false"
+                            aria-labelledby="tao-choice-label-123"
+                            class="item-btn"
+                            role="button"
+                            tabindex="-1"
+                          >
+                            <div
+                              class="icon-container"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Drag handle icon
+                                </title>
+                                <path
+                                  d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                                  fill-rule="evenodd"
+                                />
+                              </svg>
+                            </div>
+                             
+                            <div
+                              class="label-container"
+                            >
+                              <div>
+                                B
+                                
+                                
+                                 
+                                <span
+                                  class="visually-hidden"
+                                  lang="nb-NO"
+                                >
+                                  option 2 of 2. Button draggable.  List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
+                                </span>
+                              </div>
+                               
+                            </div>
+                             
+                             
+                            <span
+                              class="visually-hidden"
+                            >
+                              You can use this option multiple times.
+                            </span>
+                          </div>
+                           
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </li>
+                  
+                </ul>
+              </div>
+               
+              <span
+                class="hidden"
+                id="tao-list-label-123"
+              >
+                List available options., 2 items
+              </span>
+            </div>
+             
+          </div>
+          
+          
+          <div
+            class="buckets"
+          >
+            <header
+              class="bucket-heading"
+            >
+              <h6>
+                C
+                
+                
+              </h6>
+               
+              <div
+                class="constraints"
+                dir="ltr"
+                lang="nb-NO"
+              >
+                 
+                 
+              </div>
+            </header>
+             
+            <div
+              class="height-keeper grid vertical"
+            >
+              <div
+                class="drop-area"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="bucket_C"
+              >
+                <ul
+                  aria-labelledby="tao-list-label-123"
+                  class="draggable-list"
+                  role="application"
+                  style="--grid-size:1"
+                  tabindex="-1"
+                >
+                   
+                  
+                  <li
+                    aria-hidden="true"
+                    class="draggable-list-item removed last"
+                  >
+                    <div>
+                      <span
+                        class="hidden"
+                        id="tao-choice-label-123"
+                      />
+                       
+                      <div
+                        class="item-btn-container placed last"
+                      >
+                        <div
+                          class="draggable-container draggable-source"
+                          data-drag-drop-disabled="false"
+                          data-drag-drop-key="A"
+                        >
+                           
+                          <div
+                            aria-grabbed="false"
+                            aria-labelledby="tao-choice-label-123"
+                            class="item-btn"
+                            role="button"
+                          >
+                            <div
+                              class="icon-container"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Drag handle icon
+                                </title>
+                                <path
+                                  d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                                  fill-rule="evenodd"
+                                />
+                              </svg>
+                            </div>
+                             
+                            <div
+                              class="label-container"
+                            />
+                             
+                             
+                          </div>
+                           
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </li>
+                  
+                  <li
+                    aria-hidden="true"
+                    class="draggable-list-item removed last"
+                  >
+                    <div>
+                      <span
+                        class="hidden"
+                        id="tao-choice-label-123"
+                      />
+                       
+                      <div
+                        class="item-btn-container placed last"
+                      >
+                        <div
+                          class="draggable-container draggable-source"
+                          data-drag-drop-disabled="false"
+                          data-drag-drop-key="B"
+                        >
+                           
+                          <div
+                            aria-grabbed="false"
+                            aria-labelledby="tao-choice-label-123"
+                            class="item-btn"
+                            role="button"
+                          >
+                            <div
+                              class="icon-container"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Drag handle icon
+                                </title>
+                                <path
+                                  d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                                  fill-rule="evenodd"
+                                />
+                              </svg>
+                            </div>
+                             
+                            <div
+                              class="label-container"
+                            />
+                             
+                             
+                          </div>
+                           
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </li>
+                  
+                </ul>
+              </div>
+               
+              <span
+                class="hidden"
+                id="tao-list-label-123"
+              >
+                List, 0 items
+              </span>
+            </div>
+            <header
+              class="bucket-heading"
+            >
+              <h6>
+                D
+                
+                
+              </h6>
+               
+              <div
+                class="constraints"
+                dir="ltr"
+                lang="nb-NO"
+              >
+                 
+                 
+              </div>
+            </header>
+             
+            <div
+              class="height-keeper grid vertical"
+            >
+              <div
+                class="drop-area"
+                data-drag-drop-disabled="false"
+                data-drag-drop-key="bucket_D"
+              >
+                <ul
+                  aria-labelledby="tao-list-label-123"
+                  class="draggable-list"
+                  role="application"
+                  style="--grid-size:1"
+                  tabindex="-1"
+                >
+                   
+                  
+                  <li
+                    aria-hidden="true"
+                    class="draggable-list-item removed last"
+                  >
+                    <div>
+                      <span
+                        class="hidden"
+                        id="tao-choice-label-123"
+                      />
+                       
+                      <div
+                        class="item-btn-container placed last"
+                      >
+                        <div
+                          class="draggable-container draggable-source"
+                          data-drag-drop-disabled="false"
+                          data-drag-drop-key="A"
+                        >
+                           
+                          <div
+                            aria-grabbed="false"
+                            aria-labelledby="tao-choice-label-123"
+                            class="item-btn"
+                            role="button"
+                          >
+                            <div
+                              class="icon-container"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Drag handle icon
+                                </title>
+                                <path
+                                  d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                                  fill-rule="evenodd"
+                                />
+                              </svg>
+                            </div>
+                             
+                            <div
+                              class="label-container"
+                            />
+                             
+                             
+                          </div>
+                           
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </li>
+                  
+                  <li
+                    aria-hidden="true"
+                    class="draggable-list-item removed last"
+                  >
+                    <div>
+                      <span
+                        class="hidden"
+                        id="tao-choice-label-123"
+                      />
+                       
+                      <div
+                        class="item-btn-container placed last"
+                      >
+                        <div
+                          class="draggable-container draggable-source"
+                          data-drag-drop-disabled="false"
+                          data-drag-drop-key="B"
+                        >
+                           
+                          <div
+                            aria-grabbed="false"
+                            aria-labelledby="tao-choice-label-123"
+                            class="item-btn"
+                            role="button"
+                          >
+                            <div
+                              class="icon-container"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="icon medium"
+                                viewBox="0 0 16 16"
+                              >
+                                <title>
+                                  Drag handle icon
+                                </title>
+                                <path
+                                  d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                                  fill-rule="evenodd"
+                                />
+                              </svg>
+                            </div>
+                             
+                            <div
+                              class="label-container"
+                            />
+                             
+                             
+                          </div>
+                           
+                          
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </li>
+                  
+                </ul>
+              </div>
+               
+              <span
+                class="hidden"
+                id="tao-list-label-123"
+              >
+                List, 0 items
+              </span>
+            </div>
+             
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</body>
+`;
+
+exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular component with complex X & Y headers 1`] = `
+<div
+  class="layout-container choices-left"
+  style="--buckets:1;--remove-button-width:6.25rem;--rows:2;"
+  tabindex="-1"
+>
+  
+  <div
+    class="choices"
+  >
+    <div
+      class="height-keeper grid vertical"
+    >
+      <div
+        class="drop-area"
+        data-drag-drop-disabled="false"
+        data-drag-drop-key="choices"
+      >
+        <ul
+          aria-labelledby="tao-list-label-123"
+          class="draggable-list"
+          role="application"
+          style="--grid-size:1"
+          tabindex="-1"
+        >
+          
+          <li
+            class="draggable-list-item"
+          >
+            <div>
+              <span
+                class="hidden"
+                id="tao-choice-label-123"
+              >
+                <div>
+                  <span
+                    tabindex="0"
+                  >
+                    <mjx-container
+                      class="MathJax"
+                      jax="SVG"
+                      role="presentation"
+                      style="position: relative;"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        height="1ex"
+                        role="img"
+                        style="vertical-align: -0.025ex;"
+                        viewBox="0 -431 570 442"
+                        width="1.29ex"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <defs>
+                          <path
+                            d="M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"
+                            id="MJX-1-TEX-I-1D70B"
+                          />
+                        </defs>
+                        <g
+                          fill="currentColor"
+                          stroke="currentColor"
+                          stroke-width="0"
+                          transform="matrix(1 0 0 -1 0 0)"
+                        >
+                          <g
+                            data-mml-node="math"
+                          >
+                            <g
+                              data-mml-node="semantics"
+                            >
+                              <g
+                                data-mml-node="mstyle"
+                              >
+                                <g
+                                  data-mjx-texclass="ORD"
+                                  data-mml-node="TeXAtom"
+                                >
+                                  <g
+                                    data-mml-node="mi"
+                                  >
+                                    <use
+                                      xlink:href="#MJX-1-TEX-I-1D70B"
+                                    />
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <mjx-assistive-mml
+                        display="block"
+                        role="presentation"
+                        unselectable="on"
+                      >
+                        <math
+                          xmlns="http://www.w3.org/1998/Math/MathML"
+                        >
+                          <semantics>
+                            <mstyle
+                              displaystyle="true"
+                              scriptlevel="0"
+                            >
+                              <mrow
+                                data-mjx-texclass="ORD"
+                              >
+                                <mi>
+                                  π
+                                </mi>
+                              </mrow>
+                            </mstyle>
+                          </semantics>
+                        </math>
+                      </mjx-assistive-mml>
+                    </mjx-container>
+                  </span>
+                  
+                  
+                  
+                  <i>
+                    r
+                  </i>
+                  
+                  
+                  <sup>
+                    2
+                  </sup>
+                  
+                  
+                  <i>
+                    h
+                  </i>
+                  
+                  
+                  
+                   
+                  <span
+                    class="visually-hidden"
+                  >
+                    option 1 of 1. Button draggable. available 2 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
+                  </span>
+                </div>
+                 
+              </span>
+               
+              <div
+                class="item-btn-container last-dragging"
+              >
+                <div
+                  class="draggable-container draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="A"
+                >
+                  <div
+                    class="stacking"
+                  >
+                    <span
+                      class="amount"
+                    >
+                      2
+                    </span>
+                     
+                  </div>
+                   
+                  <div
+                    aria-grabbed="false"
+                    aria-labelledby="tao-choice-label-123"
+                    class="item-btn"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="icon-container"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Drag handle icon
+                        </title>
+                        <path
+                          d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                     
+                    <div
+                      class="label-container"
+                    >
+                      <div>
+                        <span
+                          tabindex="0"
+                        >
+                          <mjx-container
+                            class="MathJax"
+                            jax="SVG"
+                            role="presentation"
+                            style="position: relative;"
+                          >
+                            <svg
+                              aria-hidden="true"
+                              focusable="false"
+                              height="1ex"
+                              role="img"
+                              style="vertical-align: -0.025ex;"
+                              viewBox="0 -431 570 442"
+                              width="1.29ex"
+                              xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                              <defs>
+                                <path
+                                  d="M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"
+                                  id="MJX-2-TEX-I-1D70B"
+                                />
+                              </defs>
+                              <g
+                                fill="currentColor"
+                                stroke="currentColor"
+                                stroke-width="0"
+                                transform="matrix(1 0 0 -1 0 0)"
+                              >
+                                <g
+                                  data-mml-node="math"
+                                >
+                                  <g
+                                    data-mml-node="semantics"
+                                  >
+                                    <g
+                                      data-mml-node="mstyle"
+                                    >
+                                      <g
+                                        data-mjx-texclass="ORD"
+                                        data-mml-node="TeXAtom"
+                                      >
+                                        <g
+                                          data-mml-node="mi"
+                                        >
+                                          <use
+                                            xlink:href="#MJX-2-TEX-I-1D70B"
+                                          />
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                            <mjx-assistive-mml
+                              display="block"
+                              role="presentation"
+                              unselectable="on"
+                            >
+                              <math
+                                xmlns="http://www.w3.org/1998/Math/MathML"
+                              >
+                                <semantics>
+                                  <mstyle
+                                    displaystyle="true"
+                                    scriptlevel="0"
+                                  >
+                                    <mrow
+                                      data-mjx-texclass="ORD"
+                                    >
+                                      <mi>
+                                        π
+                                      </mi>
+                                    </mrow>
+                                  </mstyle>
+                                </semantics>
+                              </math>
+                            </mjx-assistive-mml>
+                          </mjx-container>
+                        </span>
+                        
+                        
+                        
+                        <i>
+                          r
+                        </i>
+                        
+                        
+                        <sup>
+                          2
+                        </sup>
+                        
+                        
+                        <i>
+                          h
+                        </i>
+                        
+                        
+                        
+                         
+                        <span
+                          class="visually-hidden"
+                        >
+                          option 1 of 1. Button draggable. available 2 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
+                        </span>
+                      </div>
+                       
+                    </div>
+                     
+                    <span
+                      class="visually-hidden"
+                    >
+                      You can use this option 2 times.
+                    </span>
+                     
+                  </div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          
+        </ul>
+      </div>
+       
+      <span
+        class="hidden"
+        id="tao-list-label-123"
+      >
+        List available options., 1 items
+      </span>
+    </div>
+     
+  </div>
+  
+  
+  <div
+    class="buckets"
+  >
+    <header
+      class="bucket-heading"
+    >
+      <h6>
+        <span
+          tabindex="0"
+        >
+          <mjx-container
+            class="MathJax"
+            jax="SVG"
+            role="presentation"
+            style="position: relative;"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              height="1ex"
+              role="img"
+              style="vertical-align: -0.025ex;"
+              viewBox="0 -431 570 442"
+              width="1.29ex"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs>
+                <path
+                  d="M132 -11Q98 -11 98 22V33L111 61Q186 219 220 334L228 358H196Q158 358 142 355T103 336Q92 329 81 318T62 297T53 285Q51 284 38 284Q19 284 19 294Q19 300 38 329T93 391T164 429Q171 431 389 431Q549 431 553 430Q573 423 573 402Q573 371 541 360Q535 358 472 358H408L405 341Q393 269 393 222Q393 170 402 129T421 65T431 37Q431 20 417 5T381 -10Q370 -10 363 -7T347 17T331 77Q330 86 330 121Q330 170 339 226T357 318T367 358H269L268 354Q268 351 249 275T206 114T175 17Q164 -11 132 -11Z"
+                  id="MJX-3-TEX-I-1D70B"
+                />
+              </defs>
+              <g
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-width="0"
+                transform="matrix(1 0 0 -1 0 0)"
+              >
+                <g
+                  data-mml-node="math"
+                >
+                  <g
+                    data-mml-node="semantics"
+                  >
+                    <g
+                      data-mml-node="mstyle"
+                    >
+                      <g
+                        data-mjx-texclass="ORD"
+                        data-mml-node="TeXAtom"
+                      >
+                        <g
+                          data-mml-node="mi"
+                        >
+                          <use
+                            xlink:href="#MJX-3-TEX-I-1D70B"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <mjx-assistive-mml
+              display="block"
+              role="presentation"
+              unselectable="on"
+            >
+              <math
+                xmlns="http://www.w3.org/1998/Math/MathML"
+              >
+                <semantics>
+                  <mstyle
+                    displaystyle="true"
+                    scriptlevel="0"
+                  >
+                    <mrow
+                      data-mjx-texclass="ORD"
+                    >
+                      <mi>
+                        π
+                      </mi>
+                    </mrow>
+                  </mstyle>
+                </semantics>
+              </math>
+            </mjx-assistive-mml>
+          </mjx-container>
+        </span>
+        
+        
+        
+        <em>
+          d
+        </em>
+        
+        
+        
+      </h6>
+       
+      <div
+        class="constraints"
+      >
+         
+         
+      </div>
+    </header>
+     
+    <div
+      class="height-keeper grid vertical"
+    >
+      <div
+        class="drop-area"
+        data-drag-drop-disabled="false"
+        data-drag-drop-key="bucket_C"
+      >
+        <ul
+          aria-labelledby="tao-list-label-123"
+          class="draggable-list"
+          role="application"
+          style="--grid-size:1"
+          tabindex="-1"
+        >
+           
+          
+          <li
+            aria-hidden="true"
+            class="draggable-list-item removed last"
+          >
+            <div>
+              <span
+                class="hidden"
+                id="tao-choice-label-123"
+              />
+               
+              <div
+                class="item-btn-container placed last"
+              >
+                <div
+                  class="draggable-container draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="A"
+                >
+                   
+                  <div
+                    aria-grabbed="false"
+                    aria-labelledby="tao-choice-label-123"
+                    class="item-btn"
+                    role="button"
+                  >
+                    <div
+                      class="icon-container"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Drag handle icon
+                        </title>
+                        <path
+                          d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                     
+                    <div
+                      class="label-container"
+                    />
+                     
+                     
+                  </div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          
+        </ul>
+      </div>
+       
+      <span
+        class="hidden"
+        id="tao-list-label-123"
+      >
+        List, 0 items
+      </span>
+    </div>
+     
+  </div>
+  
+</div>
+`;
+
+exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular component with stored response (multiple cardinality) 1`] = `
+<div
+  class="layout-container choices-left"
+  style="--buckets:2;--remove-button-width:6.25rem;--rows:2;"
+  tabindex="-1"
+>
+  
+  <div
+    class="choices"
+  >
+    <div
+      class="height-keeper grid vertical"
+    >
+      <div
+        class="drop-area"
+        data-drag-drop-disabled="false"
+        data-drag-drop-key="choices"
+      >
+        <ul
+          aria-labelledby="tao-list-label-123"
+          class="draggable-list"
+          role="application"
+          style="--grid-size:2"
+          tabindex="-1"
+        >
+          
+          <li
+            class="draggable-list-item last"
+          >
+            <div>
+              <span
+                class="hidden"
+                id="tao-choice-label-123"
+              >
+                <div>
+                  A
+                  
+                  
+                   
+                  <span
+                    class="visually-hidden"
+                  >
+                    option 1 of 2. Button draggable. available 1 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
+                  </span>
+                </div>
+                 
+              </span>
+               
+              <div
+                class="item-btn-container last"
+              >
+                <div
+                  class="draggable-container draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="A"
+                >
+                   
+                  <div
+                    aria-grabbed="false"
+                    aria-labelledby="tao-choice-label-123"
+                    class="item-btn"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="icon-container"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Drag handle icon
+                        </title>
+                        <path
+                          d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                     
+                    <div
+                      class="label-container"
+                    >
+                      <div>
+                        A
+                        
+                        
+                         
+                        <span
+                          class="visually-hidden"
+                        >
+                          option 1 of 2. Button draggable. available 1 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
+                        </span>
+                      </div>
+                       
+                    </div>
+                     
+                     
+                  </div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          
+          <li
+            class="draggable-list-item"
+          >
+            <div>
+              <span
+                class="hidden"
+                id="tao-choice-label-123"
+              >
+                <div>
+                  B
+                  
+                  
+                   
+                  <span
+                    class="visually-hidden"
+                  >
+                    option 2 of 2. Button draggable.  List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
+                  </span>
+                </div>
+                 
+              </span>
+               
+              <div
+                class="item-btn-container"
+              >
+                <div
+                  class="draggable-container draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="B"
+                >
+                  <div
+                    class="stacking"
+                  >
+                     
+                  </div>
+                   
+                  <div
+                    aria-grabbed="false"
+                    aria-labelledby="tao-choice-label-123"
+                    class="item-btn"
+                    role="button"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="icon-container"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Drag handle icon
+                        </title>
+                        <path
+                          d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                     
+                    <div
+                      class="label-container"
+                    >
+                      <div>
+                        B
+                        
+                        
+                         
+                        <span
+                          class="visually-hidden"
+                        >
+                          option 2 of 2. Button draggable.  List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
+                        </span>
+                      </div>
+                       
+                    </div>
+                     
+                     
+                    <span
+                      class="visually-hidden"
+                    >
+                      You can use this option multiple times.
+                    </span>
+                  </div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          
+        </ul>
+      </div>
+       
+      <span
+        class="hidden"
+        id="tao-list-label-123"
+      >
+        List available options., 2 items
+      </span>
+    </div>
+     
+  </div>
+  
+  
+  <div
+    class="buckets"
+  >
+    <header
+      class="bucket-heading"
+    >
+      <h6>
+        C
+        
+        
+      </h6>
+       
+      <div
+        class="constraints"
+      >
+         
+         
+      </div>
+    </header>
+     
+    <div
+      class="height-keeper grid vertical"
+    >
+      <div
+        class="drop-area"
+        data-drag-drop-disabled="false"
+        data-drag-drop-key="bucket_C"
+      >
+        <ul
+          aria-labelledby="tao-list-label-123"
+          class="draggable-list"
+          role="application"
+          style="--grid-size:1"
+          tabindex="-1"
+        >
+           
+          
+          <li
+            aria-hidden="true"
+            class="draggable-list-item removed last"
+          >
+            <div>
+              <span
+                class="hidden"
+                id="tao-choice-label-123"
+              />
+               
+              <div
+                class="item-btn-container placed last"
+              >
+                <div
+                  class="draggable-container draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="A"
+                >
+                   
+                  <div
+                    aria-grabbed="false"
+                    aria-labelledby="tao-choice-label-123"
+                    class="item-btn"
+                    role="button"
+                  >
+                    <div
+                      class="icon-container"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Drag handle icon
+                        </title>
+                        <path
+                          d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                     
+                    <div
+                      class="label-container"
+                    />
+                     
+                     
+                  </div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          
+          <li
+            aria-hidden="true"
+            class="draggable-list-item removed last"
+          >
+            <div>
+              <span
+                class="hidden"
+                id="tao-choice-label-123"
+              />
+               
+              <div
+                class="item-btn-container placed last"
+              >
+                <div
+                  class="draggable-container draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="B"
+                >
+                   
+                  <div
+                    aria-grabbed="false"
+                    aria-labelledby="tao-choice-label-123"
+                    class="item-btn"
+                    role="button"
+                  >
+                    <div
+                      class="icon-container"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Drag handle icon
+                        </title>
+                        <path
+                          d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                     
+                    <div
+                      class="label-container"
+                    />
+                     
+                     
+                  </div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          
+        </ul>
+      </div>
+       
+      <span
+        class="hidden"
+        id="tao-list-label-123"
+      >
+        List, 0 items
+      </span>
+    </div>
+    <header
+      class="bucket-heading"
+    >
+      <h6>
+        D
+        
+        
+      </h6>
+       
+      <div
+        class="constraints"
+      >
+         
+         
+      </div>
+    </header>
+     
+    <div
+      class="height-keeper grid vertical"
+    >
+      <div
+        class="drop-area"
+        data-drag-drop-disabled="false"
+        data-drag-drop-key="bucket_D"
+      >
+        <ul
+          aria-labelledby="tao-list-label-123"
+          class="draggable-list"
+          role="application"
+          style="--grid-size:1"
+          tabindex="-1"
+        >
+           
+          
+          <li
+            aria-hidden="true"
+            class="draggable-list-item removed last"
+          >
+            <div>
+              <span
+                class="hidden"
+                id="tao-choice-label-123"
+              />
+               
+              <div
+                class="item-btn-container placed last"
+              >
+                <div
+                  class="draggable-container draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="A"
+                >
+                   
+                  <div
+                    aria-grabbed="false"
+                    aria-labelledby="tao-choice-label-123"
+                    class="item-btn"
+                    role="button"
+                  >
+                    <div
+                      class="icon-container"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Drag handle icon
+                        </title>
+                        <path
+                          d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                     
+                    <div
+                      class="label-container"
+                    />
+                     
+                     
+                  </div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          
+          <li
+            aria-hidden="true"
+            class="draggable-list-item removed last"
+          >
+            <div>
+              <span
+                class="hidden"
+                id="tao-choice-label-123"
+              />
+               
+              <div
+                class="item-btn-container placed last"
+              >
+                <div
+                  class="draggable-container draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="B"
+                >
+                   
+                  <div
+                    aria-grabbed="false"
+                    aria-labelledby="tao-choice-label-123"
+                    class="item-btn"
+                    role="button"
+                  >
+                    <div
+                      class="icon-container"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Drag handle icon
+                        </title>
+                        <path
+                          d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                     
+                    <div
+                      class="label-container"
+                    />
+                     
+                     
+                  </div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          
+        </ul>
+      </div>
+       
+      <span
+        class="hidden"
+        id="tao-list-label-123"
+      >
+        List, 0 items
+      </span>
+    </div>
+     
+  </div>
+  
+</div>
+`;
+
+exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular component with stored response (single cardinality) 1`] = `
+<div
+  class="layout-container choices-left"
+  style="--buckets:2;--remove-button-width:6.25rem;--rows:2;"
+  tabindex="-1"
+>
+  
+  <div
+    class="choices"
+  >
+    <div
+      class="height-keeper grid vertical"
+    >
+      <div
+        class="drop-area"
+        data-drag-drop-disabled="false"
+        data-drag-drop-key="choices"
+      >
+        <ul
+          aria-labelledby="tao-list-label-123"
+          class="draggable-list"
+          role="application"
+          style="--grid-size:2"
+          tabindex="-1"
+        >
+          
+          <li
+            class="draggable-list-item last"
+          >
+            <div>
+              <span
+                class="hidden"
+                id="tao-choice-label-123"
+              >
+                <div>
+                  A
+                  
+                  
+                   
+                  <span
+                    class="visually-hidden"
+                  >
+                    option 1 of 2. Button draggable. available 1 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
+                  </span>
+                </div>
+                 
+              </span>
+               
+              <div
+                class="item-btn-container last"
+              >
+                <div
+                  class="draggable-container draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="A"
+                >
+                   
+                  <div
+                    aria-grabbed="false"
+                    aria-labelledby="tao-choice-label-123"
+                    class="item-btn"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="icon-container"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Drag handle icon
+                        </title>
+                        <path
+                          d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                     
+                    <div
+                      class="label-container"
+                    >
+                      <div>
+                        A
+                        
+                        
+                         
+                        <span
+                          class="visually-hidden"
+                        >
+                          option 1 of 2. Button draggable. available 1 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
+                        </span>
+                      </div>
+                       
+                    </div>
+                     
+                     
+                  </div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          
+          <li
+            class="draggable-list-item"
+          >
+            <div>
+              <span
+                class="hidden"
+                id="tao-choice-label-123"
+              >
+                <div>
+                  B
+                  
+                  
+                   
+                  <span
+                    class="visually-hidden"
+                  >
+                    option 2 of 2. Button draggable.  List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
+                  </span>
+                </div>
+                 
+              </span>
+               
+              <div
+                class="item-btn-container"
+              >
+                <div
+                  class="draggable-container draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="B"
+                >
+                  <div
+                    class="stacking"
+                  >
+                     
+                  </div>
+                   
+                  <div
+                    aria-grabbed="false"
+                    aria-labelledby="tao-choice-label-123"
+                    class="item-btn"
+                    role="button"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="icon-container"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Drag handle icon
+                        </title>
+                        <path
+                          d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                     
+                    <div
+                      class="label-container"
+                    >
+                      <div>
+                        B
+                        
+                        
+                         
+                        <span
+                          class="visually-hidden"
+                        >
+                          option 2 of 2. Button draggable.  List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
+                        </span>
+                      </div>
+                       
+                    </div>
+                     
+                     
+                    <span
+                      class="visually-hidden"
+                    >
+                      You can use this option multiple times.
+                    </span>
+                  </div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          
+        </ul>
+      </div>
+       
+      <span
+        class="hidden"
+        id="tao-list-label-123"
+      >
+        List available options., 2 items
+      </span>
+    </div>
+     
+  </div>
+  
+  
+  <div
+    class="buckets"
+  >
+    <header
+      class="bucket-heading"
+    >
+      <h6>
+        C
+        
+        
+      </h6>
+       
+      <div
+        class="constraints"
+      >
+         
+         
+      </div>
+    </header>
+     
+    <div
+      class="height-keeper grid vertical"
+    >
+      <div
+        class="drop-area"
+        data-drag-drop-disabled="false"
+        data-drag-drop-key="bucket_C"
+      >
+        <ul
+          aria-labelledby="tao-list-label-123"
+          class="draggable-list"
+          role="application"
+          style="--grid-size:1"
+          tabindex="-1"
+        >
+           
+          
+          <li
+            aria-hidden="true"
+            class="draggable-list-item removed last"
+          >
+            <div>
+              <span
+                class="hidden"
+                id="tao-choice-label-123"
+              />
+               
+              <div
+                class="item-btn-container placed last"
+              >
+                <div
+                  class="draggable-container draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="A"
+                >
+                   
+                  <div
+                    aria-grabbed="false"
+                    aria-labelledby="tao-choice-label-123"
+                    class="item-btn"
+                    role="button"
+                  >
+                    <div
+                      class="icon-container"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Drag handle icon
+                        </title>
+                        <path
+                          d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                     
+                    <div
+                      class="label-container"
+                    />
+                     
+                     
+                  </div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          
+          <li
+            aria-hidden="true"
+            class="draggable-list-item removed last"
+          >
+            <div>
+              <span
+                class="hidden"
+                id="tao-choice-label-123"
+              />
+               
+              <div
+                class="item-btn-container placed last"
+              >
+                <div
+                  class="draggable-container draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="B"
+                >
+                   
+                  <div
+                    aria-grabbed="false"
+                    aria-labelledby="tao-choice-label-123"
+                    class="item-btn"
+                    role="button"
+                  >
+                    <div
+                      class="icon-container"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Drag handle icon
+                        </title>
+                        <path
+                          d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                     
+                    <div
+                      class="label-container"
+                    />
+                     
+                     
+                  </div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          
+        </ul>
+      </div>
+       
+      <span
+        class="hidden"
+        id="tao-list-label-123"
+      >
+        List, 0 items
+      </span>
+    </div>
+    <header
+      class="bucket-heading"
+    >
+      <h6>
+        D
+        
+        
+      </h6>
+       
+      <div
+        class="constraints"
+      >
+         
+         
+      </div>
+    </header>
+     
+    <div
+      class="height-keeper grid vertical"
+    >
+      <div
+        class="drop-area"
+        data-drag-drop-disabled="false"
+        data-drag-drop-key="bucket_D"
+      >
+        <ul
+          aria-labelledby="tao-list-label-123"
+          class="draggable-list"
+          role="application"
+          style="--grid-size:1"
+          tabindex="-1"
+        >
+           
+          
+          <li
+            aria-hidden="true"
+            class="draggable-list-item removed last"
+          >
+            <div>
+              <span
+                class="hidden"
+                id="tao-choice-label-123"
+              />
+               
+              <div
+                class="item-btn-container placed last"
+              >
+                <div
+                  class="draggable-container draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="A"
+                >
+                   
+                  <div
+                    aria-grabbed="false"
+                    aria-labelledby="tao-choice-label-123"
+                    class="item-btn"
+                    role="button"
+                  >
+                    <div
+                      class="icon-container"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Drag handle icon
+                        </title>
+                        <path
+                          d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                     
+                    <div
+                      class="label-container"
+                    />
+                     
+                     
+                  </div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          
+          <li
+            aria-hidden="true"
+            class="draggable-list-item removed last"
+          >
+            <div>
+              <span
+                class="hidden"
+                id="tao-choice-label-123"
+              />
+               
+              <div
+                class="item-btn-container placed last"
+              >
+                <div
+                  class="draggable-container draggable-source"
+                  data-drag-drop-disabled="false"
+                  data-drag-drop-key="B"
+                >
+                   
+                  <div
+                    aria-grabbed="false"
+                    aria-labelledby="tao-choice-label-123"
+                    class="item-btn"
+                    role="button"
+                  >
+                    <div
+                      class="icon-container"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Drag handle icon
+                        </title>
+                        <path
+                          d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                     
+                    <div
+                      class="label-container"
+                    />
+                     
+                     
+                  </div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+            
+          </li>
+          
+        </ul>
+      </div>
+       
+      <span
+        class="hidden"
+        id="tao-list-label-123"
+      >
+        List, 0 items
+      </span>
+    </div>
+     
+  </div>
+  
+</div>
+`;

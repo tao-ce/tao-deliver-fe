@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`editorConfigFactory > returns default configuration 1`] = `
+{
+  "extraPlugins": [],
+  "language": {
+    "content": "en",
+    "ui": "en",
+  },
+  "mathBox": {
+    "virtualKeyboards": "simple roman",
+  },
+  "removePlugins": [
+    "MathBox",
+    "UploadAdapterPlugin",
+    "Image",
+    "ImageToolbar",
+    "ImageStyle",
+    "ImageResize",
+    "ImageUpload",
+    "WProofreader",
+  ],
+  "toolbar": {
+    "removeItems": [
+      "mathBox",
+      "uploadImage",
+      "wproofreader",
+    ],
+  },
+  "uploadAdapterPlugin": {
+    "identifierAttribute": "data-img-id",
+    "inlineAlignImageStyles": true,
+  },
+}
+`;
