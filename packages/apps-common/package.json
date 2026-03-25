@@ -1,5 +1,8 @@
 {
-  "name": "@oat-sa-private/tao-deliver-apps-common",
+  "name": "@tao-ce/tao-deliver-apps-common",
+  "repository": {
+    "url": "https://github.com/tao-ce/tao-deliver-fe"
+  },
   "version": "1.19.0",
   "displayName": "TAO Deliver Apps Common",
   "description": "Common modules for TAO Deliver frontend apps",

@@ -4,10 +4,10 @@
   "description": "Deliver frontend monorepo",
   "scripts": {
     "build": "lerna exec --stream -- npm run build",
-    "build:app": "lerna exec --stream --no-prefix --scope @oat-sa-private/tao-deliver-app -- npm run build",
+    "build:app": "lerna exec --stream --no-prefix --scope @tao-ce/tao-deliver-app -- npm run build",
     "watch:app": "lerna exec --stream --no-prefix --scope @oat-sa-private/tao-deliver-app -- npm run watch:static",
-    "build:item-runner": "lerna exec --stream --no-prefix --scope @oat-sa-private/tao-item-runner-qtinui -- npm run build",
-    "build:test-runner": "lerna exec --stream --no-prefix --scope @oat-sa-private/tao-test-runner-qtinui -- npm run build",
+    "build:item-runner": "lerna exec --stream --no-prefix --scope @tao-ce/tao-item-runner-qtinui -- npm run build",
+    "build:test-runner": "lerna exec --stream --no-prefix --scope @tao-ce/tao-test-runner-qtinui -- npm run build",
     "build:previewer": "lerna exec --stream --no-prefix --scope @oat-sa-private/tao-previewer-app -- npm run build",
     "build:deep-linking": "lerna exec --stream --no-prefix --scope @oat-sa-private/tao-deep-linking-app -- npm run build",
     "build:report": "lerna exec --stream -- cross-env BUILDREPORT=true npm run build",
@@ -17,7 +17,6 @@
     "dev:sandboxes": "lerna exec --no-prefix --parallel --scope '@oat-sa-private/tao-*-runner-qtinui' -- npm run dev:sandbox",
     "dev:sandbox:item-runner": "lerna exec --no-prefix --scope @oat-sa-private/tao-item-runner-qtinui -- npm run dev:sandbox",
     "dev:sandbox:test-runner": "lerna exec --no-prefix --scope @oat-sa-private/tao-test-runner-qtinui -- npm run dev:sandbox",
-    "postinstall": "lerna bootstrap",
     "cy:open": "node node_modules/cypress/bin/cypress open",
     "cy:run": "node node_modules/cypress/bin/cypress run",
     "test": "lerna run test --stream",
@@ -134,10 +133,10 @@
     "vitest": "^3.2.4"
   },
   "dependencies": {
-    "@oat-sa-private/ui-components": "^17.13.0",
-    "@oat-sa-private/ui-core": "^1.3.3",
-    "@oat-sa-private/ui-elements": "^12.2.4",
-    "@oat-sa-private/ui-identity": "^6.5.0"
+    "@oat-sa-private/ui-components": "npm:@tao-ce/ui-components@^17.16.0",
+    "@oat-sa-private/ui-core": "npm:@tao-ce/ui-core@^1.4.0",
+    "@oat-sa-private/ui-elements": "npm:@tao-ce/ui-elements@^12.3.6",
+    "@oat-sa-private/ui-identity": "npm:@tao-ce/ui-identity@^6.9.1"
   },
   "browserslist": [
     "extends @oat-sa/browserslist-config-tao"

@@ -37,7 +37,7 @@ let plugins = [
     alias({
         resolve: ['.js', '.json', '.css', '.svelte'],
         entries: {
-            async: path.join(localeModulesDir, '@oat-sa-private', 'tao-test-runner-qtinui', 'node_modules', 'async'),
+            async: path.join(localeModulesDir, 'async'),
             'core/moduleLoader': path.join(appsCommonSrcDir, 'core', 'moduleLoader.js'),
             core: path.join(localeModulesDir, '@oat-sa', 'tao-core-sdk', 'src', 'core'),
             util: path.join(localeModulesDir, '@oat-sa', 'tao-core-sdk', 'src', 'util'),

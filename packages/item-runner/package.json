@@ -1,6 +1,9 @@
 {
-  "name": "@oat-sa-private/tao-item-runner-qtinui",
+  "name": "@tao-ce/tao-item-runner-qtinui",
   "version": "8.65.0",
+  "repository": {
+    "url": "https://github.com/tao-ce/tao-deliver-fe"
+  },
   "displayName": "TAO QTI Item Runner",
   "description": "TAO QTI Item Runner new user interface",
   "homepage": "https://github.com/oat-sa/tao-deliver-fe#readme",

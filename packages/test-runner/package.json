@@ -1,6 +1,9 @@
 {
-  "name": "@oat-sa-private/tao-test-runner-qtinui",
+  "name": "@tao-ce/tao-test-runner-qtinui",
   "version": "7.51.0",
+  "repository": {
+    "url": "https://github.com/tao-ce/tao-deliver-fe"
+  },
   "displayName": "TAO QTI Test Runner",
   "description": "TAO QTI Test Runner new user interface",
   "homepage": "https://github.com/oat-sa/tao-deliver-fe#readme",
@@ -40,8 +43,8 @@
   },
   "dependencies": {
     "@extra-number/to-roman": "^2.0.26",
-    "@oat-sa-private/read-aloud-client": "^0.10.0",
-    "@oat-sa-private/tao-item-runner-qtinui": "^8.65.0",
+    "@oat-sa-private/read-aloud-client": "npm:@tao-ce/read-aloud-client@^0.10.0",
+    "@oat-sa-private/tao-item-runner-qtinui": "npm:@tao-ce/tao-item-runner-qtinui@^8.65.0",
     "@oat-sa/tao-core-sdk": "^3.6.0",
     "@oat-sa/tao-item-runner": "^1.0.0",
     "@oat-sa/tao-test-runner": "^1.0.0",

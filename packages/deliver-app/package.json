@@ -1,14 +1,16 @@
 {
-  "name": "@oat-sa-private/tao-deliver-app",
-  "private": true,
+  "name": "@tao-ce/tao-deliver-app",
   "version": "12.28.0",
   "displayName": "TAO Deliver NUI PWA",
   "description": "Next generation TAO Deliver progressive NUI web application for any devices",
   "homepage": "https://github.com/oat-sa/tao-deliver-fe#readme",
   "files": [
     "dist",
-    "src"
+    "server.js"
   ],
+  "repository": {
+    "url": "https://github.com/tao-ce/tao-deliver-fe"
+  },
   "directories": {
     "test": "test"
   },
@@ -34,12 +36,10 @@
     "test:cov:ci": "npm test -- --coverage --silent=passed-only --bail=1 --retry=1"
   },
   "devDependencies": {
-    "lodash": "^4.17.21"
-  },
-  "dependencies": {
-    "@oat-sa-private/tao-deliver-apps-common": "^1.19.0",
-    "@oat-sa-private/tao-item-runner-qtinui": "^8.65.0",
-    "@oat-sa-private/tao-test-runner-qtinui": "^7.51.0",
+    "lodash": "^4.17.21",
+    "@oat-sa-private/tao-deliver-apps-common": "npm:@tao-ce/tao-deliver-apps-common@^1.19.0",
+    "@oat-sa-private/tao-item-runner-qtinui": "npm:@tao-ce/tao-item-runner-qtinui@^8.65.0",
+    "@oat-sa-private/tao-test-runner-qtinui": "npm:@tao-ce/tao-test-runner-qtinui@^7.51.0",
     "@oat-sa/tao-core-sdk": "^3.6.0",
     "@oat-sa/tao-item-runner": "^1.0.0",
     "@oat-sa/tao-test-runner": "^1.0.0",

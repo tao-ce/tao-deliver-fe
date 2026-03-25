@@ -1,6 +1,8 @@
 {
-  "name": "@oat-sa-private/tao-previewer-app",
-  "private": true,
+  "name": "@tao-ce/tao-previewer-app",
+  "repository": {
+    "url": "https://github.com/tao-ce/tao-deliver-fe"
+  },
   "version": "0.24.0",
   "displayName": "TAO Deliver Previewer NUI PWA",
   "description": "TAO Deliver progressive web application for previewing test & item content",
@@ -33,9 +35,9 @@
     "lodash": "^4.17.21"
   },
   "dependencies": {
-    "@oat-sa-private/tao-deliver-apps-common": "^1.19.0",
-    "@oat-sa-private/tao-item-runner-qtinui": "^8.65.0",
-    "@oat-sa-private/tao-test-runner-qtinui": "^7.51.0",
+    "@oat-sa-private/tao-deliver-apps-common": "npm:@tao-ce/tao-deliver-apps-common@^1.19.0",
+    "@oat-sa-private/tao-item-runner-qtinui": "npm:@tao-ce/tao-item-runner-qtinui@^8.65.0",
+    "@oat-sa-private/tao-test-runner-qtinui": "npm:@tao-ce/tao-test-runner-qtinui@^7.51.0",
     "@oat-sa/tao-core-sdk": "^3.6.0",
     "@oat-sa/tao-item-runner": "^1.0.0",
     "@oat-sa/tao-test-runner": "^1.0.0",
