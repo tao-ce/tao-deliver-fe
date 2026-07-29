@@ -230,7 +230,6 @@ describe('Preload Proxy', () => {
                 ]
             ];
         }
-        // console.log('initItemsRequest responses[0][0]', responses[0][0]);
         return Promise.resolve(JSON.stringify({ responses, success: true }));
     };
 

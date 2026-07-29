@@ -14,6 +14,7 @@ vi.mock('../../forceFullscreen/fullscreenApi', () => Object.assign({ __esModule:
 
 import { tick } from 'svelte';
 import pluginFactory from '../plugin.js';
+import basePluginFactory from 'taoTests/runner/plugin';
 import testRunnerFactory from 'taoTests/runner/runner.js';
 import proxyFactory from 'taoTests/runner/proxy.js';
 import { getTestStateStore, getTestSessionStatusStore } from '../../../../testsStateStore.js';
@@ -21,6 +22,7 @@ import { showNavigationFeedback } from '../../../../feedback';
 import { DeferredPromise } from '@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/util/promise.js';
 import lifecycle from 'page-lifecycle';
 import fullscreenApiFactory from '../../forceFullscreen/fullscreenApi.js';
+import fullScreenKeyboardInputObserver from '../../common/fullscreenInputObserver.js';
 
 vi.mock('page-lifecycle', () => {
     const listeners = {};
@@ -52,9 +54,12 @@ describe('pauseOnBlur plugin', () => {
     let testProviderApi;
     let fullscreenApi;
     const serviceCallId = 'test-session-jfm';
+    let originalWebkitFullScreenKeyboardInputAllowed;
 
-    function createTestRunner() {
-        const runner = testRunnerFactory('foo', [pluginFactory], {
+    function createTestRunner(otherPlugins = []) {
+        const plugins = [pluginFactory, ...otherPlugins];
+
+        const runner = testRunnerFactory('foo', plugins, {
             renderTo: container,
             serviceCallId
         });
@@ -65,11 +70,25 @@ describe('pauseOnBlur plugin', () => {
     }
 
     function createFullscreenApiMock() {
+        let changeListeners = [];
         let isFullscreenResult = false;
         const fullscreenApiMock = {
             isFullscreen: vi.fn().mockImplementation(() => isFullscreenResult),
             enterFullscreen: vi.fn().mockImplementation(() => {
                 isFullscreenResult = true;
+                document.fullscreenElement = document.body;
+                changeListeners[0]?.();
+            }),
+            exitFullscreen: vi.fn().mockImplementation(() => {
+                isFullscreenResult = false;
+                document.fullscreenElement = null;
+                changeListeners[0]?.();
+            }),
+            addChangeListener: vi.fn(handler => {
+                changeListeners = [handler];
+            }),
+            removeChangeListener: vi.fn(() => {
+                changeListeners = [];
             })
         };
         return fullscreenApiMock;
@@ -79,6 +98,7 @@ describe('pauseOnBlur plugin', () => {
 
     beforeEach(() => {
         proxyCallTestActionSpy.mockClear();
+        originalWebkitFullScreenKeyboardInputAllowed = document.webkitFullScreenKeyboardInputAllowed;
 
         container = document.createElement('div');
         document.body.appendChild(container);
@@ -107,6 +127,12 @@ describe('pauseOnBlur plugin', () => {
     });
 
     afterEach(() => {
+        fullScreenKeyboardInputObserver().unsubscribe();
+        Object.defineProperty(document, 'webkitFullScreenKeyboardInputAllowed', {
+            value: originalWebkitFullScreenKeyboardInputAllowed,
+            configurable: true
+        });
+        vi.useRealTimers();
         testRunnerFactory.clearProviders();
         showNavigationFeedback.mockClear();
         fullscreenApiFactory.mockClear();
@@ -157,7 +183,7 @@ describe('pauseOnBlur plugin', () => {
     it('show Navigation feedback onBlur event and go to fullscreen mode', () =>
         new Promise((done, fail) => {
             let feedbackDeferred = new DeferredPromise();
-            const runner = createTestRunner();
+            const runner = createTestRunner([basePluginFactory({ name: 'forceFullscreen', init() {} })]);
 
             runner
                 .on('error', fail)
@@ -178,6 +204,39 @@ describe('pauseOnBlur plugin', () => {
                         tick().then(() => {
                             // on onDone the screen should be in fullscreen mode
                             expect(fullscreenApi.isFullscreen()).toBe(true);
+                            runner.destroy();
+                        });
+                    });
+                })
+                .on('destroy', () => {
+                    done();
+                })
+                .init();
+        }));
+
+    it('show Navigation feedback onBlur event, do not go to fullscreen mode if no forceFullscreen', () =>
+        new Promise((done, fail) => {
+            let feedbackDeferred = new DeferredPromise();
+            const runner = createTestRunner();
+
+            runner
+                .on('error', fail)
+                .on('render', () => {
+                    showNavigationFeedback.mockImplementation(() => feedbackDeferred.promise);
+
+                    // Trigger onblur event
+                    const stateChangeEvent = new Event('statechange');
+                    stateChangeEvent.newState = 'passive';
+                    lifecycle.dispatchEvent(stateChangeEvent);
+                    expect(showNavigationFeedback).not.toHaveBeenCalled();
+
+                    vi.waitFor(() => {
+                        expect(showNavigationFeedback).toHaveBeenCalled();
+                        expect(showNavigationFeedback.mock.calls[0][0]).toMatchObject({ isSecurity: true });
+
+                        feedbackDeferred.resolve({});
+                        tick().then(() => {
+                            expect(fullscreenApi.isFullscreen()).toBe(false);
                             runner.destroy();
                         });
                     });
@@ -294,6 +353,237 @@ describe('pauseOnBlur plugin', () => {
                 .init();
         }));
 
+    it('does not show navigation feedback for recent fullscreen keyboard input transition on hidden state', () =>
+        new Promise((done, fail) => {
+            Object.defineProperty(document, 'webkitFullScreenKeyboardInputAllowed', {
+                value: false,
+                configurable: true
+            });
+
+            const inputElement = document.createElement('input');
+            inputElement.type = 'text';
+            document.body.appendChild(inputElement);
+
+            const keyboardInputObserver = fullScreenKeyboardInputObserver();
+            keyboardInputObserver.observeFullScreenKeyboardInput(fullscreenApi);
+
+            const runner = createTestRunner();
+
+            runner
+                .on('error', fail)
+                .on('render', () => {
+                    inputElement.dispatchEvent(new Event('pointerdown'));
+
+                    const stateChangeEvent = new Event('statechange');
+                    stateChangeEvent.newState = 'hidden';
+                    lifecycle.dispatchEvent(stateChangeEvent);
+
+                    vi.waitFor(() => {
+                        expect(showNavigationFeedback).not.toHaveBeenCalled();
+                        runner.destroy();
+                    });
+                })
+                .on('destroy', () => {
+                    done();
+                })
+                .init();
+        }));
+
+    it('does not show navigation feedback for extended text interaction when fullscreen keyboard allowance changes after render', () =>
+        new Promise((done, fail) => {
+            vi.useFakeTimers();
+
+            Object.defineProperty(document, 'webkitFullScreenKeyboardInputAllowed', {
+                value: true,
+                configurable: true
+            });
+
+            const interactionElement = document.createElement('div');
+            const editorElement = document.createElement('div');
+
+            interactionElement.className = 'qti-extendedTextInteraction';
+            interactionElement.appendChild(editorElement);
+            document.body.appendChild(interactionElement);
+
+            const runner = createTestRunner();
+
+            runner
+                .on('error', fail)
+                .on('render', async () => {
+                    runner.trigger('renderitem');
+
+                    Object.defineProperty(document, 'webkitFullScreenKeyboardInputAllowed', {
+                        value: false,
+                        configurable: true
+                    });
+
+                    editorElement.dispatchEvent(new Event('pointerdown'));
+
+                    const stateChangeEvent = new Event('statechange');
+                    stateChangeEvent.newState = 'passive';
+                    lifecycle.dispatchEvent(stateChangeEvent);
+
+                    vi.advanceTimersByTime(20);
+                    await Promise.resolve();
+
+                    expect(showNavigationFeedback).not.toHaveBeenCalled();
+                    runner.destroy();
+                })
+                .on('destroy', () => {
+                    done();
+                })
+                .init();
+        }));
+
+    it('does not show navigation feedback when fullscreen is restored during delayed iPad recheck', () =>
+        new Promise((done, fail) => {
+            vi.useFakeTimers();
+
+            Object.defineProperty(document, 'webkitFullScreenKeyboardInputAllowed', {
+                value: false,
+                configurable: true
+            });
+
+            const runner = createTestRunner([basePluginFactory({ name: 'forceFullscreen', init() {} })]);
+
+            runner
+                .on('error', fail)
+                .on('render', async () => {
+                    const stateChangeEvent = new Event('statechange');
+                    stateChangeEvent.newState = 'hidden';
+                    lifecycle.dispatchEvent(stateChangeEvent);
+
+                    vi.advanceTimersByTime(20);
+                    expect(showNavigationFeedback).not.toHaveBeenCalled();
+
+                    fullscreenApi.enterFullscreen();
+
+                    vi.advanceTimersByTime(500);
+                    await Promise.resolve();
+
+                    expect(showNavigationFeedback).not.toHaveBeenCalled();
+                    runner.destroy();
+                })
+                .on('destroy', () => {
+                    done();
+                })
+                .init();
+        }));
+
+    it('shows navigation feedback after delayed iPad recheck if fullscreen is not restored', () =>
+        new Promise((done, fail) => {
+            vi.useFakeTimers();
+
+            Object.defineProperty(document, 'webkitFullScreenKeyboardInputAllowed', {
+                value: false,
+                configurable: true
+            });
+
+            const runner = createTestRunner([basePluginFactory({ name: 'forceFullscreen', init() {} })]);
+
+            runner
+                .on('error', fail)
+                .on('render', async () => {
+                    const stateChangeEvent = new Event('statechange');
+                    stateChangeEvent.newState = 'hidden';
+                    lifecycle.dispatchEvent(stateChangeEvent);
+
+                    vi.advanceTimersByTime(20);
+                    expect(showNavigationFeedback).not.toHaveBeenCalled();
+
+                    vi.advanceTimersByTime(500);
+                    await Promise.resolve();
+
+                    expect(showNavigationFeedback).toHaveBeenCalledTimes(1);
+                    runner.destroy();
+                })
+                .on('destroy', () => {
+                    done();
+                })
+                .init();
+        }));
+
+    it('clears delayed iPad recheck when moving to another item', () =>
+        new Promise((done, fail) => {
+            vi.useFakeTimers();
+
+            Object.defineProperty(document, 'webkitFullScreenKeyboardInputAllowed', {
+                value: false,
+                configurable: true
+            });
+
+            const runner = createTestRunner([basePluginFactory({ name: 'forceFullscreen', init() {} })]);
+
+            runner
+                .on('error', fail)
+                .on('render', async () => {
+                    const stateChangeEvent = new Event('statechange');
+                    stateChangeEvent.newState = 'hidden';
+                    lifecycle.dispatchEvent(stateChangeEvent);
+
+                    vi.advanceTimersByTime(20);
+                    expect(showNavigationFeedback).not.toHaveBeenCalled();
+
+                    runner.trigger('move');
+
+                    vi.advanceTimersByTime(500);
+                    await Promise.resolve();
+
+                    expect(showNavigationFeedback).not.toHaveBeenCalled();
+                    runner.destroy();
+                })
+                .on('destroy', () => {
+                    done();
+                })
+                .init();
+        }));
+
+    it('re-arms keyboard input observer after unloading and rendering the next item', () =>
+        new Promise((done, fail) => {
+            Object.defineProperty(document, 'webkitFullScreenKeyboardInputAllowed', {
+                value: false,
+                configurable: true
+            });
+
+            const firstInput = document.createElement('input');
+            firstInput.type = 'text';
+            document.body.appendChild(firstInput);
+
+            const secondInput = document.createElement('input');
+            secondInput.type = 'text';
+
+            const runner = createTestRunner();
+
+            runner
+                .on('error', fail)
+                .on('render', () => {
+                    runner.trigger('renderitem');
+                    tick()
+                        .then(() => {
+                            firstInput.dispatchEvent(new Event('pointerdown'));
+                            expect(fullScreenKeyboardInputObserver().isFullScreenAllowed()).toBe(false);
+
+                            runner.trigger('unloaditem');
+                            expect(fullScreenKeyboardInputObserver().isFullScreenAllowed()).toBe(true);
+
+                            firstInput.remove();
+                            document.body.appendChild(secondInput);
+                            runner.trigger('renderitem');
+                            return tick();
+                        })
+                        .then(() => {
+                            secondInput.dispatchEvent(new Event('pointerdown'));
+                            expect(fullScreenKeyboardInputObserver().isFullScreenAllowed()).toBe(false);
+                            runner.destroy();
+                        })
+                        .catch(fail);
+                })
+                .on('destroy', () => {
+                    done();
+                })
+                .init();
+        }));
+
     it('on print, adds special style to hide item', () =>
         new Promise((done, fail) => {
             expect.assertions(2);
@@ -387,6 +677,68 @@ describe('pauseOnBlur plugin', () => {
                     expect(disablenavSpy).not.toHaveBeenCalled();
                     expect(enablenavSpy).toHaveBeenCalledWith({ reason: 'securityOverlay' });
 
+                    done();
+                })
+                .init();
+        }));
+
+    it('tabstops include 2 focus sentinels when not in fullscreen', () =>
+        new Promise((done, fail) => {
+            expect.assertions(7);
+
+            fullscreenApi.enterFullscreen();
+
+            const statusStore = getTestSessionStatusStore(serviceCallId);
+
+            const runner = createTestRunner();
+
+            runner
+                .on('error', fail)
+                .on('render', () => {
+                    statusStore.set('interacting');
+
+                    expect(document.querySelectorAll('.focus-sentinel').length).toBe(0);
+
+                    fullscreenApi.exitFullscreen();
+
+                    let sentinels;
+
+                    tick()
+                        .then(() => {
+                            sentinels = document.querySelectorAll('.focus-sentinel');
+                            expect(sentinels.length).toBe(2);
+                            expect([...sentinels].map(elt => elt.textContent)).toEqual(['', '']);
+
+                            sentinels[0].focus();
+                            return tick();
+                        })
+                        .then(() => {
+                            expect(sentinels[0].textContent).toContain('You are about to leave');
+
+                            sentinels[0].blur();
+                            sentinels[1].focus();
+                            return tick();
+                        })
+                        .then(() => {
+                            expect(sentinels[1].textContent).toContain('You are about to leave');
+
+                            sentinels[1].blur();
+                            document.body.focus();
+                            return tick();
+                        })
+                        .then(() => {
+                            expect([...sentinels].map(elt => elt.textContent)).toEqual(['', '']);
+
+                            fullscreenApi.enterFullscreen();
+
+                            return tick();
+                        })
+                        .then(() => {
+                            expect(document.querySelectorAll('.focus-sentinel').length).toBe(0);
+                            runner.destroy();
+                        });
+                })
+                .on('destroy', () => {
                     done();
                 })
                 .init();

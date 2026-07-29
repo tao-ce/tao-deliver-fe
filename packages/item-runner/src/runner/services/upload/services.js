@@ -7,8 +7,13 @@ import * as base64UploadService from './base64.js';
 import * as cloudStorageUploadService from './cloudStorage.js';
 
 /**
+ * @typedef {Object} UploadService
+ * @property {Function} default
+ * @property {Function} cancelAllUploads
+ */
+/**
  * List of upload services implementations
- * @type {Object.<string, Object{default: Function, cancelAllUploads: Function}>}
+ * @type {Object<string, UploadService>}
  */
 export default Object.freeze({
     base64: base64UploadService,

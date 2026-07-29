@@ -13,7 +13,6 @@ import ActionError from 'taoDeliverAppsCommon/core/error/ActionError';
 import router from 'taoDeliverAppsCommon/core/router.js';
 
 export default () =>
-    // eslint-disable-next-line implicit-arrow-linebreak
     pageController({
         name: 'previewerRunner',
         runnerComponent: null,

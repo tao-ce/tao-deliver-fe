@@ -6,11 +6,13 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 <script>
     // Licensed under Gnu Public Licence version 2
-    // Copyright (c) 2023 (original work) Open Assessment Technologies SA ;
+    // Copyright (c) 2023-2026 (original work) Open Assessment Technologies SA ;
 
     import { createEventDispatcher } from 'svelte';
     import { Button } from '@oat-sa-private/ui-elements';
     import { __ } from '@oat-sa-private/ui-core';
+
+    export let key;
 
     const dispatch = createEventDispatcher();
 </script>
@@ -23,5 +25,5 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 </style>
 
 <div class="modalfeedback-nav">
-    <Button shape="pill" size="small" label={__('Continue')} on:click={() => dispatch('modalFeedbackContinue')} />
+    <Button shape="pill" size="small" label={__('Continue')} on:click={() => dispatch('modalFeedbackContinue', { key })} />
 </div>

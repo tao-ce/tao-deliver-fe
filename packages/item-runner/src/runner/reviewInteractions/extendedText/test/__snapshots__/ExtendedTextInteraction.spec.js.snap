@@ -2,13 +2,15 @@
 
 exports[`ExtendedTextInteraction > math is rendered 1`] = `
 <div
-  class="text-container resizable responsive-height"
+  class="text-container resizable auto-size"
 >
+  
   <div
     class="math-entry"
   >
     [I am the rendered form of \\frac{1337}{412} math expression]
   </div>
+  
   
 </div>
 `;
@@ -16,11 +18,16 @@ exports[`ExtendedTextInteraction > math is rendered 1`] = `
 exports[`ExtendedTextInteraction > renders a plagiarism report 1`] = `
 <body>
   <div>
+    
     <div
       class="qti-interaction qti-reviewInteraction qti-blockInteraction qti-extendedTextInteraction"
       style="--rows: null; --additionalSpace: 0px;"
     >
+      
        
+      
+      
+      
       <p
         class="plagiarism-message suspicious"
       >
@@ -38,24 +45,27 @@ exports[`ExtendedTextInteraction > renders a plagiarism report 1`] = `
           <path
             d="M7 3h2v6H7zm0 8h2v2H7z"
           />
+          
         </svg>
-         
-        Suspicion of plagiarism:
-         
+        
+         Suspicion of plagiarism: 
         <a
           href="http://example.com"
           target="_blank"
         >
           view report
         </a>
+        
       </p>
+      
       
       
       
        
       <div
-        class="text-container resizable responsive-height"
+        class="text-container resizable auto-size"
       >
+        
         
       </div>
        
@@ -68,8 +78,16 @@ exports[`ExtendedTextInteraction > renders a plagiarism report 1`] = `
         
         
         
+        
+        
+        
+        
+        
+        
       </ul>
     </div>
+    
+    
     
   </div>
 </body>
@@ -93,15 +111,21 @@ exports[`ExtendedTextInteraction > renders props correctly into markup 1`] = `
       <div
         class="qti-prompt cf"
       >
+        
+        
         Question 1
         
         
+        
       </div>
+      
        
+      
        
       <div
-        class="text-container resizable responsive-height"
+        class="text-container resizable auto-size"
       >
+        
         
       </div>
        
@@ -115,8 +139,16 @@ exports[`ExtendedTextInteraction > renders props correctly into markup 1`] = `
         
         
         
+        
+        
+        
+        
+        
+        
       </ul>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -126,6 +158,11 @@ exports[`ExtendedTextInteraction > word & character count > Character counter: f
   aria-live="polite"
   class="feedbacks"
 >
+  
+  
+  
+  
+  
   
   
   
@@ -145,9 +182,10 @@ exports[`ExtendedTextInteraction > word & character count > Character counter: f
         9
       </strong>
        / 5 character(s) typed
+      
     </span>
-     
   </li>
+  
   
 </ul>
 `;
@@ -157,6 +195,10 @@ exports[`ExtendedTextInteraction > word & character count > Character counter: f
   aria-live="polite"
   class="feedbacks"
 >
+  
+  
+  
+  
   
   
   
@@ -175,9 +217,11 @@ exports[`ExtendedTextInteraction > word & character count > Character counter: f
         9
       </strong>
        character(s) typed (recommended: 5).
+      
     </span>
-     
   </li>
+  
+  
   
   
 </ul>
@@ -188,6 +232,9 @@ exports[`ExtendedTextInteraction > word & character count > Character counter: l
   aria-live="polite"
   class="feedbacks"
 >
+  
+  
+  
   
   
   <li
@@ -205,9 +252,12 @@ exports[`ExtendedTextInteraction > word & character count > Character counter: l
         21
       </strong>
        character(s) typed
+      
     </span>
-     
   </li>
+  
+  
+  
   
   
   
@@ -219,6 +269,9 @@ exports[`ExtendedTextInteraction > word & character count > Character counter: l
   aria-live="polite"
   class="feedbacks"
 >
+  
+  
+  
   
   
   <li
@@ -236,9 +289,12 @@ exports[`ExtendedTextInteraction > word & character count > Character counter: l
         20
       </strong>
        character(s) typed
+      
     </span>
-     
   </li>
+  
+  
+  
   
   
   
@@ -255,6 +311,12 @@ exports[`ExtendedTextInteraction > word & character count > Hidden word counter 
   
   
   
+  
+  
+  
+  
+  
+  
 </ul>
 `;
 
@@ -263,6 +325,8 @@ exports[`ExtendedTextInteraction > word & character count > Show word counter wh
   aria-live="polite"
   class="feedbacks"
 >
+  
+  
   
   <li
     class="feedback"
@@ -279,9 +343,13 @@ exports[`ExtendedTextInteraction > word & character count > Show word counter wh
         3
       </strong>
        word(s) typed
+      
     </span>
-     
   </li>
+  
+  
+  
+  
   
   
   
@@ -294,6 +362,7 @@ exports[`ExtendedTextInteraction > word & character count > Show word counter wi
   aria-live="polite"
   class="feedbacks"
 >
+  
   <li
     class="feedback"
   >
@@ -309,9 +378,14 @@ exports[`ExtendedTextInteraction > word & character count > Show word counter wi
         3
       </strong>
        / 4 word(s) typed
+      
     </span>
-     
   </li>
+  
+  
+  
+  
+  
   
   
   
@@ -325,6 +399,8 @@ exports[`ExtendedTextInteraction > word & character count > Word counter with { 
   aria-live="polite"
   class="feedbacks"
 >
+  
+  
   
   <li
     class="feedback"
@@ -341,9 +417,13 @@ exports[`ExtendedTextInteraction > word & character count > Word counter with { 
         2
       </strong>
        word(s) typed
+      
     </span>
-     
   </li>
+  
+  
+  
+  
   
   
   
@@ -356,6 +436,8 @@ exports[`ExtendedTextInteraction > word & character count > Word counter with { 
   aria-live="polite"
   class="feedbacks"
 >
+  
+  
   
   <li
     class="feedback"
@@ -372,9 +454,13 @@ exports[`ExtendedTextInteraction > word & character count > Word counter with { 
         1
       </strong>
        word(s) typed
+      
     </span>
-     
   </li>
+  
+  
+  
+  
   
   
   
@@ -387,6 +473,8 @@ exports[`ExtendedTextInteraction > word & character count > Word counter with { 
   aria-live="polite"
   class="feedbacks"
 >
+  
+  
   
   <li
     class="feedback"
@@ -403,9 +491,13 @@ exports[`ExtendedTextInteraction > word & character count > Word counter with { 
         10
       </strong>
        word(s) typed
+      
     </span>
-     
   </li>
+  
+  
+  
+  
   
   
   
@@ -418,6 +510,8 @@ exports[`ExtendedTextInteraction > word & character count > Word counter with { 
   aria-live="polite"
   class="feedbacks"
 >
+  
+  
   
   <li
     class="feedback"
@@ -434,9 +528,13 @@ exports[`ExtendedTextInteraction > word & character count > Word counter with { 
         11
       </strong>
        word(s) typed
+      
     </span>
-     
   </li>
+  
+  
+  
+  
   
   
   
@@ -449,6 +547,8 @@ exports[`ExtendedTextInteraction > word & character count > Word counter with { 
   aria-live="polite"
   class="feedbacks"
 >
+  
+  
   
   <li
     class="feedback"
@@ -465,9 +565,13 @@ exports[`ExtendedTextInteraction > word & character count > Word counter with { 
         2
       </strong>
        word(s) typed
+      
     </span>
-     
   </li>
+  
+  
+  
+  
   
   
   
@@ -480,6 +584,8 @@ exports[`ExtendedTextInteraction > word & character count > Word counter with { 
   aria-live="polite"
   class="feedbacks"
 >
+  
+  
   
   <li
     class="feedback"
@@ -496,9 +602,13 @@ exports[`ExtendedTextInteraction > word & character count > Word counter with { 
         1
       </strong>
        word(s) typed
+      
     </span>
-     
   </li>
+  
+  
+  
+  
   
   
   

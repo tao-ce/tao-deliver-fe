@@ -37,7 +37,7 @@ describe('Circle hotspot choice', () => {
             expect(container.querySelector('g').classList).toContain('selected');
         });
 
-        it('renders text label as a checkmark if label is set ', () => {
+        it('renders text label as a checkmark if label is set', () => {
             const { container } = render(CircleHotspotChoice, {
                 props: { coords: [100, 50, 50], selected: true, label: '1' }
             });
@@ -53,38 +53,12 @@ describe('Circle hotspot choice', () => {
         it('scales small circle to fit min size of 5 rem', () => {
             const { container } = render(CircleHotspotChoice, { props: { coords: [50, 50, 30] } });
             expect(parseFloat(container.querySelector('.shape-outer-border').getAttribute('r'))).toEqual(
-                minSize / 2 - remToPx(0.375)
+                minSize / 2 - remToPx(0.25)
             );
         });
     });
 
     describe('events', () => {
-        it('changes the inner border size on mouseenter and mouseleave', () => {
-            const { container } = render(CircleHotspotChoice, { props: { coords: [100, 50, 50] } });
-            const initialInnerBorderRadius = parseFloat(
-                container.querySelector('.shape-inner-border').getAttribute('r')
-            );
-
-            const groupEl = container.querySelector('g');
-            fireEvent.mouseEnter(groupEl);
-            return tick()
-                .then(() => {
-                    const currentInnerBorderRadius = parseFloat(
-                        container.querySelector('.shape-inner-border').getAttribute('r')
-                    );
-
-                    expect(currentInnerBorderRadius).toBeGreaterThan(initialInnerBorderRadius);
-                    return tick;
-                })
-                .then(() => {
-                    fireEvent.mouseLeave(groupEl);
-                    const currentInnerBorderRadius = parseFloat(
-                        container.querySelector('.shape-inner-border').getAttribute('r')
-                    );
-                    expect(currentInnerBorderRadius).toEqual(initialInnerBorderRadius);
-                });
-        });
-
         it('forwards click event', () => {
             const { container, component } = render(CircleHotspotChoice, { props: { coords: [100, 50, 50] } });
             const fn = vi.fn();

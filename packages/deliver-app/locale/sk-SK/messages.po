@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tao-ignite\n"
-"POT-Creation-Date: 2025-09-10 13:17\n"
-"PO-Revision-Date: 2025-09-11 02:38\n"
+"POT-Creation-Date: 2026-05-12 13:56\n"
+"PO-Revision-Date: 2026-05-13 01:53\n"
 "Last-Translator: \n"
 "Language-Team: Slovak\n"
 "Language: sk\n"
@@ -34,11 +34,11 @@ msgstr[3] "%d viac položiek"
 msgid "breadcrumb"
 msgstr "navigačný reťazec"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:64
+#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:66
 msgid "the result is"
 msgstr "výsledok je"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:65
+#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:67
 msgid "Input area"
 msgstr "Vstupná oblasť"
 
@@ -479,6 +479,14 @@ msgstr "náhodná hodnota"
 msgid "Remove"
 msgstr "Odstrániť"
 
+#: ../../../node_modules/@oat-sa-private/ui-components/colorPicker/ColorPicker.svelte:16
+msgid "Please provide a valid CSS color value (e.g. #RRGGBB, rgb(...), rgba(...))."
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/colorPicker/ColorPicker.svelte:35
+msgid "This field is required."
+msgstr ""
+
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:248
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:41
 msgid "Manage Preferences"
@@ -491,6 +499,10 @@ msgstr "Prispôsobte si nastavenia súborov cookie. Môžete si vybrať, ktoré 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:262
 msgid "Always Active"
 msgstr "Vždy aktívny"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:279
+msgid "Confirm Choices"
+msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:29
 msgid "Cookie Policy"
@@ -705,55 +717,70 @@ msgstr "zrušiť"
 msgid "ok"
 msgstr "ok"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:409
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:197
 msgid "Document toolbar"
 msgstr "Panel s nástrojmi dokumentu"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:412
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:202
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:283
+msgid "Search"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:214
 msgid "Zoom in"
 msgstr "Priblížiť"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:418
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:220
 msgid "Zoom out"
 msgstr "Oddialiť"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:427
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:229
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:296
 msgid "Previous"
 msgstr "Predchádzajúce"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:445
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:246
 msgid "of %d"
 msgstr "z %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:449
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:249
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:305
 msgid "Next"
 msgstr "Ďalej"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:461
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:261
 msgid "Download"
 msgstr "Stiahnuť"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:469
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:269
 msgid "Open in new tab"
 msgstr ""
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:491
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:291
+msgid "%d of %d matches"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:292
+msgid "No matches found"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:295
 msgid "Open in new tab: %s"
 msgstr ""
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:83
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:91
 msgid "Missing PDF file %s"
 msgstr "Chýbajúci PDF súbor %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:85
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:93
 msgid "Invalid or corrupted PDF file."
 msgstr "Neplatný alebo poškodený PDF súbor."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:87
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:95
 msgid "An error occurred while loading the PDF."
 msgstr "Počas načítavania PDF súboru došlo k chybe."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:199
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:139
 msgid "Missing PDF file."
 msgstr "Chýbajúci PDF súbor."
 
@@ -765,11 +792,11 @@ msgstr "%s, %d položiek"
 msgid "draggable list"
 msgstr "presúvateľný zoznam"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:434
+#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:435
 msgid "You can use this option %d times."
 msgstr "Túto možnosť môžete použiť %d-krát."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:439
+#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:440
 msgid "You can use this option multiple times."
 msgstr "Túto možnosť môžete použiť viackrát."
 
@@ -777,73 +804,113 @@ msgstr "Túto možnosť môžete použiť viackrát."
 msgid "Close Panel"
 msgstr "Zatvoriť panel"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:413
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:107
+msgid "... or drop your file here"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:112
+msgid "Accepted: %s"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:114
+msgid "Up to %s files"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:116
+msgid "Max size: %s"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:152
 msgid "File selected successfully"
 msgstr "Súbor bol úspešne vybraný"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:417
-msgid "Answer file selected:"
-msgstr "Vybraný odpovedný súbor:"
-
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:422
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:165
 msgid "This file is not accepted"
 msgstr "Tento súbor nie je akceptovaný"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:426
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:176
+msgid "Remove file %s"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:30
+msgid "File selected:"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:412
 msgid "Select different file"
 msgstr "Vybrať iný súbor"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:435
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:421
 msgid "Clear file"
 msgstr "Vymazať súbor"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:445
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:431
 msgid "Browse your computer"
 msgstr "Prehľadať váš počítač"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:447
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:433
 msgid "Select a file"
 msgstr "Vyberte súbor"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:450
-msgid "expected formats: %s"
-msgstr "očakávané formáty: %s"
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:441
+msgid "Maximum file size: %s"
+msgstr ""
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:453
-msgid "maximum file size: %s"
-msgstr "maximálna veľkosť súboru: %s"
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:50
+msgid "Answer file selected:"
+msgstr "Vybraný odpovedný súbor:"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:467
-msgid "..or drop your file here"
-msgstr "..alebo presuňte váš súbor sem"
-
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:144
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:150
 msgid "Folders are not accepted, expected formats are: %s"
 msgstr "Priečinky nie sú akceptované, očakávané formáty sú: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:146
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:152
 msgid "files"
 msgstr "súbory"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:148
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:154
 msgid "Empty files are not accepted, please try again."
 msgstr "Prázdne súbory nie sú akceptované, skúste to prosím znova."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:150
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:156
 msgid "The size of the selected file is %s that is more than the accepted %s"
 msgstr "Veľkosť vybraného súboru je %s, čo je viac ako akceptovaných %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:157
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:163
 msgid "The %s file format is not accepted, expected formats are: %s"
 msgstr "Formát súboru %s nie je akceptovaný, očakávané formáty sú: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:163
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:169
 msgid "The unknown file format is not accepted, expected formats are: %s"
 msgstr "Neznámy formát súboru nie je akceptovaný, očakávané formáty sú: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:165
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:171
 msgid "Multiple files are not accepted. Please try again."
 msgstr "Viac súborov nie je akceptovaných. Skúste to prosím znova."
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:222
+msgid "%d of %d"
+msgstr "%d z %d"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:228
+msgid "Add file"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:236
+msgid "Remove all"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:253
+msgid "Select files"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:268
+msgid "Maximum file size: %s. "
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:269
+msgid "Up to %d files"
+msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/mimetype.js:31
 msgid "all images"
@@ -856,6 +923,10 @@ msgstr "všetky videá"
 #: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/mimetype.js:33
 msgid "all audios"
 msgstr "všetky zvuky"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/validation.js:80
+msgid "No file selected."
+msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-components/languageSelector/LanguageSelector.svelte:99
 msgid "Select language"
@@ -901,7 +972,7 @@ msgstr "Zbaliť ponuku"
 msgid "Expand Menu"
 msgstr "Rozbaliť ponuku"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/notificationContainer/NotificationContainer.svelte:202
+#: ../../../node_modules/@oat-sa-private/ui-components/notificationContainer/NotificationContainer.svelte:203
 msgid "Notifications"
 msgstr "Oznámenia"
 
@@ -937,103 +1008,103 @@ msgstr "Zobraziť heslo"
 msgid "Hide password"
 msgstr "Skryť heslo"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1280
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1288
 msgid "Media error detected"
 msgstr "Zistená chyba médií"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1281
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1289
 msgid "Please reload the media to try again"
 msgstr "Skúste znova načítať médiá"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1322
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1330
 msgid "media player"
 msgstr "prehrávač médií"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:186
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:194
 msgid "start playing"
 msgstr "začať prehrávať"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:188
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:196
 msgid "play again"
 msgstr "prehrať znova"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:192
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:200
 msgid "resume playing"
 msgstr "pokračovať v prehrávaní"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:254
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:262
 msgid "Play"
 msgstr "Prehrať"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:255
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:263
 msgid "Play: %d of %d"
 msgstr "Prehrať: %d z %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:267
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:275
 msgid "delete"
 msgstr "vymazať"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:471
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:479
 msgid "%s of %s"
 msgstr "%s z %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:809
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:817
 msgid "play"
 msgstr "prehrať"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:810
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:818
 msgid "pause"
 msgstr "pozastaviť"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:811
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:819
 msgid "mute"
 msgstr "stlmiť"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:812
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:820
 msgid "unmute"
 msgstr "znovu zapnúť zvuk"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:813
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:821
 msgid "enter fullscreen"
 msgstr "prepnúť na celú obrazovku"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:814
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:822
 msgid "exit fullscreen"
 msgstr "opustiť režim celej obrazovky"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:815
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:823
 msgid "volume"
 msgstr "hlasitost"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:816
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:824
 msgid "seek"
 msgstr "vyhľadať"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:818
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:826
 msgid "buffered"
 msgstr "vyrovnávacia pamäť"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:819
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:827
 msgid "Player for {title}"
 msgstr "Prehrávač pre {title}"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:820
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:828
 msgid "Captions"
 msgstr "Titulky"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:821
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:829
 msgid "Settings"
 msgstr "Nastavenia"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:822
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:830
 msgid "Go back to previous menu"
 msgstr "Vrátiť sa do predchádzajúceho menu"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:823
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:831
 msgid "Disabled"
 msgstr "Zakázané"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:824
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:832
 msgid "Enabled"
 msgstr "Povolené"
 
@@ -1061,23 +1132,23 @@ msgstr "Vybrané iným hodnotiteľom."
 msgid "Rejected."
 msgstr "Odmietnuté."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:68
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:70
 msgid "Select option"
 msgstr "Vybrať možnosť"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:82
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:84
 msgid "List is empty"
 msgstr "Zoznam je prázdny"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:83
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:85
 msgid "No results found."
 msgstr "Neboli nájdené žiadne výsledky."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:768
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:771
 msgid "This is a required field."
 msgstr "Toto je povinné pole."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:775
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:778
 msgid "Invalid value."
 msgstr "Neplatná hodnota."
 
@@ -1089,27 +1160,27 @@ msgstr "VŠETKO"
 msgid "SELECTED"
 msgstr "VYBRANÉ"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:796
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:808
 msgid "eliminated"
 msgstr "vyradené"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:798
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:810
 msgid "masked"
 msgstr "skryté"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:809
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:821
 msgid "restore choice number %d"
 msgstr "obnoviť výber číslo %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:810
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:822
 msgid "eliminate choice number %d"
 msgstr "vyradiť výber číslo %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:821
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:833
 msgid "unmask choice number %d"
 msgstr "odkryť výber číslo %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:822
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:834
 msgid "mask choice number %d"
 msgstr "skryť výber číslo %d"
 
@@ -1137,6 +1208,10 @@ msgstr "čiastočné"
 #: ../../../node_modules/@oat-sa-private/ui-components/stepProgress/StepProgress.svelte:38
 msgid "waiting"
 msgstr "čakajúce"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/tabGroup/TabGroup.svelte:223
+msgid "%s moved to position %d of %d"
+msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-components/tree/ExpandButton.svelte:102
 msgid "Collapse"
@@ -1863,7 +1938,7 @@ msgstr "%ds"
 msgid "button"
 msgstr "tlačidlo"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:963
+#: ../../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:962
 msgid "Dropdown"
 msgstr "Rozbaľovací zoznam"
 
@@ -1911,43 +1986,43 @@ msgstr "odkaz"
 msgid "Radio button"
 msgstr "Tlačidlo voľby"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:35
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:40
 msgid "Text editor"
 msgstr "Textový editor"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:50
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:56
 msgid "Sorry, this action is not supported in the text editor."
 msgstr "Prepáčte, táto akcia nie je podporovaná v textovom editore."
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:175
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:188
 msgid "Editor toolbar"
 msgstr "Panel nástrojov editora"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:223
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:222
 msgid "Paragraph"
 msgstr "Odsek"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:224
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:223
 msgid "Heading 1"
 msgstr "Nadpis 1"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:225
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:224
 msgid "Heading 2"
 msgstr "Nadpis 2"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:253
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:252
 msgid "Tiny"
 msgstr "Veľmi malý"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:257
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:256
 msgid "Small"
 msgstr "Malý"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:262
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:261
 msgid "Big"
 msgstr "Veľký"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:266
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:265
 msgid "Huge"
 msgstr "Obrovský"
 
@@ -3316,10 +3391,6 @@ msgstr "Editor formátovaného textu"
 msgid "Edit block"
 msgstr "Upraviť blok"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:355
-msgid "%d of %d"
-msgstr "%d z %d"
-
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:357
 msgid "Dropdown toolbar"
 msgstr "Rozbaľovací panel nástrojov"
@@ -3876,7 +3947,71 @@ msgstr "Otvorte dialógové okno pomocníka pre zjednodušenie prístupu"
 msgid "(may require <kbd>Fn</kbd>)"
 msgstr "(môže vyžadovať <kbd>Fn</kbd>)"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/slider/Slider.svelte:390
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:530
+msgid "Arrows"
+msgstr "Šípky"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:531
+msgid "Currency"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:532
+msgid "Mathematical"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:533
+msgid "Latin"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:534
+msgid "Text"
+msgstr "Text"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:536
+msgid "Basic Latin"
+msgstr "Základná latinčina"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:537
+msgid "Currency Symbols"
+msgstr "Symboly mien"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:538
+msgid "General Punctuation"
+msgstr "Všeobecná interpunkcia"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:539
+msgid "Latin-1 Supplement"
+msgstr "Doplnok Latin-1"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:540
+msgid "Latin Extended-A"
+msgstr "Latin Extended-A"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:541
+msgid "Letterlike Symbols"
+msgstr "Symboly podobné písmenám"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:542
+msgid "Geometric Shapes"
+msgstr "Geometrické tvary"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:543
+msgid "Miscellaneous Symbols"
+msgstr "Rôzne symboly"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:544
+msgid "Mathematical Operators"
+msgstr "Matematické operátory"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:545
+msgid "Greek and Coptic"
+msgstr "Grécke a koptské"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:547
+msgid "Latin common"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/slider/Slider.svelte:392
 msgid "default"
 msgstr "predvolené"
 
@@ -4185,227 +4320,262 @@ msgstr "Binárny formát Microsoft Excel"
 msgid "Microsoft Powerpoint slideshow"
 msgstr "Microsoft PowerPoint prezentácia"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:104
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:106
 msgid "Please select a language"
 msgstr "Vyberte jazyk"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:122
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:124
 msgid "Select"
 msgstr "Vybrať"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:54
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:56
 msgid "Something went wrong."
 msgstr "Niečo sa pokazilo."
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:55
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:57
 msgid "Please try again."
 msgstr "Skúste to znova."
 
-#: ../../apps-common/src/component/PasswordPage.svelte:131
+#: ../../apps-common/src/component/PasswordPage.svelte:134
 msgid "Please wait until you are given the password to begin"
 msgstr "Počkajte, kým dostanete heslo na začatie"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:142
+#: ../../apps-common/src/component/PasswordPage.svelte:145
 msgid "Password"
 msgstr "Heslo"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:146
+#: ../../apps-common/src/component/PasswordPage.svelte:149
 msgid "Type here"
 msgstr "Napíšte sem"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:152
+#: ../../apps-common/src/component/PasswordPage.svelte:155
 msgid "Start"
 msgstr "Začať"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:45
+#: ../../apps-common/src/component/PasswordPage.svelte:48
 msgid "Wrong Password."
 msgstr "Nesprávne heslo."
 
-#: ../../apps-common/src/component/TheEnd.svelte:128
+#: ../../apps-common/src/component/TheEnd.svelte:179
+msgid "Exit browser"
+msgstr ""
+
+#: ../../apps-common/src/component/TheEnd.svelte:179
 msgid "Reload the page"
 msgstr "Znova načítať stránku"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:160
+#: ../../apps-common/src/component/WaitingPage.svelte:164
 msgid "Logout"
 msgstr "Odhlásiť sa"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:164
+#: ../../apps-common/src/component/WaitingPage.svelte:168
 msgid "Hello"
-msgstr "Ahoj"
+msgstr "Vitajte"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:166
+#: ../../apps-common/src/component/WaitingPage.svelte:170
 msgid "Great! You are ready, but the exam hasn't started yet."
-msgstr "Skvelé! Ste pripravený, ale skúška ešte nezačala."
+msgstr "Vaša skúška sa ešte nezačala."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:169
+#: ../../apps-common/src/component/WaitingPage.svelte:173
 msgid "If you have extra time, it is not shown here."
-msgstr "Ak máte dodatočný čas, tu sa nezobrazuje."
+msgstr " "
 
-#: ../../apps-common/src/component/WaitingPage.svelte:172
+#: ../../apps-common/src/component/WaitingPage.svelte:176
 msgid "You are registered with %s as your main language. Contact a proctor if this is not correct."
-msgstr "Ste registrovaný s %s ako svojím hlavným jazykom. Ak to nie je správne, kontaktujte proktora."
+msgstr "Vaša registrácia je v slovenskom jazyku ako Vašom hlavnom jazyku. Ak to nie je správne, kontaktujte administrátora testu."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:180
+#: ../../apps-common/src/component/WaitingPage.svelte:184
 msgid "In %d minutes and %d seconds the exam will start. Good luck!"
-msgstr "Za %d minút a %d sekúnd skúška začne. Veľa šťastia!"
+msgstr "Vaša skúška sa začne o %d min. a %d s.\n\n"
+"Veľa šťastia!"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:191
+#: ../../apps-common/src/component/WaitingPage.svelte:195
 msgid "Declaration of availability"
 msgstr "Vyhlásenie o dostupnosti"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:20
+#: ../../apps-common/src/component/WaitingPage.svelte:26
 msgid "TAO Logo"
 msgstr "Logo TAO"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:71
+#: ../../apps-common/src/component/WaitingPage.svelte:75
 msgid "You are enrolled in %s, %s from %s."
 msgstr "Ste zapísaný v %s, %s od %s."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:79
+#: ../../apps-common/src/component/WaitingPage.svelte:83
 msgid "You are enrolled in %s, %s from %s to %s."
 msgstr "Ste zapísaný v %s, %s od %s do %s."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:82
+#: ../../apps-common/src/component/WaitingPage.svelte:86
 msgid "You are enrolled in %s, from %s to %s."
 msgstr "Ste zapísaný v %s, od %s do %s."
 
-#: ../../apps-common/src/controller/runner.js:108
+#: ../../apps-common/src/controller/runner.js:136
 msgid "Test is finished"
 msgstr "Test je ukončený"
 
-#: ../../apps-common/src/controller/thankyou.js:32
+#: ../../apps-common/src/controller/thankyou.js:34
+msgid "Proceed"
+msgstr ""
+
+#: ../../apps-common/src/controller/thankyou.js:51
 msgid "Thank you"
 msgstr "Ďakujeme"
 
-#: ../../apps-common/src/controller/thankyou.js:33
+#: ../../apps-common/src/controller/thankyou.js:52
 msgid "Your test has been submitted."
 msgstr "Váš test bol odoslaný."
 
-#: ../../apps-common/src/core/error/messages.js:36
+#: ../../apps-common/src/core/error/messages.js:38
 msgid "Timeout"
 msgstr "Časový limit vypršal"
 
-#: ../../apps-common/src/core/error/messages.js:39
+#: ../../apps-common/src/core/error/messages.js:41
 msgid "This page cannot be reached."
 msgstr "Táto stránka nie je dostupná."
 
-#: ../../apps-common/src/core/error/messages.js:42
+#: ../../apps-common/src/core/error/messages.js:44
 msgid "Please reload the page or contact your administrator."
 msgstr "Obnovte stránku alebo kontaktujte svojho administrátora."
 
-#: ../../apps-common/src/core/error/messages.js:48
+#: ../../apps-common/src/core/error/messages.js:50
 msgid "No connection to the service."
 msgstr "Žiadne pripojenie k službe."
 
-#: ../../apps-common/src/core/error/messages.js:51
-#: ../../apps-common/src/core/error/messages.js:122
+#: ../../apps-common/src/core/error/messages.js:53
+#: ../../apps-common/src/core/error/messages.js:124
 msgid "Please contact your test administrator."
 msgstr "Kontaktujte správcu testu."
 
-#: ../../apps-common/src/core/error/messages.js:57
+#: ../../apps-common/src/core/error/messages.js:59
 msgid "No internet connection."
 msgstr "Žiadne internetové pripojenie."
 
-#: ../../apps-common/src/core/error/messages.js:60
+#: ../../apps-common/src/core/error/messages.js:62
 msgid "Please check your internet connection or contact your test administrator."
 msgstr "Skontrolujte svoje internetové pripojenie alebo kontaktujte správcu testu."
 
-#: ../../apps-common/src/core/error/messages.js:66
+#: ../../apps-common/src/core/error/messages.js:68
 msgid "Test not available."
 msgstr "Test nie je dostupný."
 
-#: ../../apps-common/src/core/error/messages.js:69
+#: ../../apps-common/src/core/error/messages.js:71
 msgid "Sorry, we cannot start your test."
 msgstr "Ospravedlňujeme sa, váš test sa nedá spustiť."
 
-#: ../../apps-common/src/core/error/messages.js:72
-#: ../../apps-common/src/core/error/messages.js:181
+#: ../../apps-common/src/core/error/messages.js:74
+#: ../../apps-common/src/core/error/messages.js:192
 msgid "Please launch your test again or contact your administrator."
 msgstr "Spustite svoj test znova alebo kontaktujte administrátora."
 
-#: ../../apps-common/src/core/error/messages.js:78
+#: ../../apps-common/src/core/error/messages.js:80
 msgid "Service busy."
 msgstr "Služba je obsadená."
 
-#: ../../apps-common/src/core/error/messages.js:81
+#: ../../apps-common/src/core/error/messages.js:83
 msgid "The service is temporarily unavailable due to high traffic load."
 msgstr "Služba je dočasne nedostupná z dôvodu vysokého zaťaženia."
 
-#: ../../apps-common/src/core/error/messages.js:84
+#: ../../apps-common/src/core/error/messages.js:86
 msgid "Please wait for a few minutes and try again."
 msgstr "Počkajte niekoľko minút a skúste to znova."
 
-#: ../../apps-common/src/core/error/messages.js:90
-#: ../../apps-common/src/core/error/messages.js:102
-#: ../../apps-common/src/core/error/messages.js:116
-#: ../../apps-common/src/core/error/messages.js:128
+#: ../../apps-common/src/core/error/messages.js:92
+#: ../../apps-common/src/core/error/messages.js:104
+#: ../../apps-common/src/core/error/messages.js:118
+#: ../../apps-common/src/core/error/messages.js:130
 msgid "Unexpected error."
 msgstr "Neočakávaná chyba."
 
-#: ../../apps-common/src/core/error/messages.js:93
-#: ../../apps-common/src/core/error/messages.js:119
+#: ../../apps-common/src/core/error/messages.js:95
+#: ../../apps-common/src/core/error/messages.js:121
 msgid "Sorry, an unexpected error happened during the test."
 msgstr "Ospravedlňujeme sa, počas testu sa vyskytla neočakávaná chyba."
 
-#: ../../apps-common/src/core/error/messages.js:96
+#: ../../apps-common/src/core/error/messages.js:98
 msgid "Please reload the page or contact your test administrator."
 msgstr "Znova načítajte stránku alebo kontaktujte administrátora testu."
 
-#: ../../apps-common/src/core/error/messages.js:105
+#: ../../apps-common/src/core/error/messages.js:107
 msgid "Certain third-party tools are not supported in TAO Advance. For example, \"Read aloud\" provided by Edge browser."
 msgstr "Niektoré nástroje tretích strán nie sú podporované v TAO Advance. Napríklad „Čítať nahlas“, ktoré poskytuje prehliadač Edge."
 
-#: ../../apps-common/src/core/error/messages.js:110
+#: ../../apps-common/src/core/error/messages.js:112
 msgid "Please disable them and reload the page, or contact your test administrator for more details."
 msgstr "Zakážte ich a znova načítajte stránku alebo kontaktujte administrátora testu, ktorý vám poskytne ďalšie podrobnosti."
 
-#: ../../apps-common/src/core/error/messages.js:131
+#: ../../apps-common/src/core/error/messages.js:133
 msgid "The system identified multiple active sessions."
 msgstr "Systém identifikoval viacero aktívnych relácií."
 
-#: ../../apps-common/src/core/error/messages.js:134
+#: ../../apps-common/src/core/error/messages.js:136
 msgid "In order to continue, please click on the Reload button."
 msgstr "Ak chcete pokračovať, kliknite na tlačidlo Obnoviť."
 
-#: ../../apps-common/src/core/error/messages.js:140
+#: ../../apps-common/src/core/error/messages.js:142
+msgid "Session ended"
+msgstr ""
+
+#: ../../apps-common/src/core/error/messages.js:145
+msgid "You have been logged out due to a new login."
+msgstr ""
+
+#: ../../apps-common/src/core/error/messages.js:151
 msgid "Test terminated"
 msgstr "Test bol ukončený"
 
-#: ../../apps-common/src/core/error/messages.js:143
+#: ../../apps-common/src/core/error/messages.js:154
 msgid "Your test has been terminated by the proctor."
 msgstr "Váš test bol ukončený proktorom."
 
-#: ../../apps-common/src/core/error/messages.js:149
+#: ../../apps-common/src/core/error/messages.js:160
 msgid "Test paused"
 msgstr "Test bol pozastavený"
 
-#: ../../apps-common/src/core/error/messages.js:152
+#: ../../apps-common/src/core/error/messages.js:163
 msgid "Your test has been paused by the proctor."
 msgstr "Váš test bol pozastavený proktorom."
 
-#: ../../apps-common/src/core/error/messages.js:156
+#: ../../apps-common/src/core/error/messages.js:167
 msgid "Please click on the Reload button."
 msgstr "Kliknite na tlačidlo Obnoviť."
 
-#: ../../apps-common/src/core/error/messages.js:162
+#: ../../apps-common/src/core/error/messages.js:173
 msgid "Test was reset"
 msgstr "Test bol resetovaný"
 
-#: ../../apps-common/src/core/error/messages.js:165
+#: ../../apps-common/src/core/error/messages.js:176
 msgid "The administrator reset your test, you need to start again."
 msgstr "Administrátor resetoval váš test, musíte začať odznova."
 
-#: ../../apps-common/src/core/error/messages.js:169
+#: ../../apps-common/src/core/error/messages.js:180
 msgid "Please click on the Reload button to restart."
 msgstr "Pre reštart kliknite na tlačidlo Obnoviť."
 
-#: ../../apps-common/src/core/error/messages.js:175
+#: ../../apps-common/src/core/error/messages.js:186
 msgid "The test cannot be continued."
 msgstr "Test nemožno pokračovať."
 
-#: ../../apps-common/src/core/error/messages.js:178
+#: ../../apps-common/src/core/error/messages.js:189
 msgid "Sorry, a problem occurred due to long inactivity."
 msgstr "Ospravedlňujeme sa, vyskytol sa problém kvôli dlhej nečinnosti."
+
+#: ../../apps-common/src/core/error/messages.js:198
+#: ../../apps-common/src/core/error/messages.js:220
+msgid "Can't start secure session"
+msgstr ""
+
+#: ../../apps-common/src/core/error/messages.js:201
+#: ../../apps-common/src/core/error/messages.js:212
+msgid "To continue, you must close the apps listed below. Click \"Exit browser\", then close the apps, and relaunch TAO Secure Browser."
+msgstr ""
+
+#: ../../apps-common/src/core/error/messages.js:209
+msgid "Can't continue secure session"
+msgstr ""
+
+#: ../../apps-common/src/core/error/messages.js:223
+msgid "To start this secure session, install or update TAO Secure Browser."
+msgstr ""
 
 #: ../../item-runner/src/runner/ItemPreviewer/PreviewerHeaderBar.svelte:78
 msgid "close item preview"
@@ -4432,51 +4602,51 @@ msgstr "Skóre položky: "
 msgid "SUBMIT RESPONSE"
 msgstr "ODOSLAŤ ODPOVEĎ"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1628
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1627
 msgid "Press enter or space to grab and browse the answer area. To move to the next available option, use the arrow keys."
 msgstr "Stlačte Enter alebo medzerník na uchopenie a prehliadanie oblasti odpovede. Na prechod na ďalšiu dostupnú možnosť použite šípky."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1633
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1632
 msgid "Press enter or space to grab. To move to next available answer, use the arrow keys."
 msgstr "Stlačte Enter alebo medzerník na uchopenie. Na prechod na ďalšiu dostupnú odpoveď použite šípky."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1636
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1635
 msgid "Press enter or space to replace. To browse other drop zones use the arrow keys. Press escape to cancel."
 msgstr "Stlačte Enter alebo medzerník na výmenu. Na prehliadanie ďalších oblastí použite šípky. Stlačte Escape na zrušenie."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1639
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1638
 msgid "Press enter or space to place down. To browse other drop zones use the arrow keys. Press escape to cancel."
 msgstr "Stlačte Enter alebo medzerník na umiestnenie. Na prehliadanie ďalších oblastí použite šípky. Stlačte Escape na zrušenie."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1649
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1648
 msgid "unassociated options"
 msgstr "nepriradené možnosti"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1751
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1752
 msgid "Drop zone occupied by "
 msgstr "Zóna pre odpoveď obsadená "
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1761
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1765
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1762
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1766
 msgid "Return %s to unassociated options."
 msgstr "Vrátiť %s do nepriradených možností."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1792
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1793
 msgid "Empty dropzone."
 msgstr "Prázdna zóna pre odpoveď."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1823
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1828
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1833
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1824
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1829
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1834
 msgid "Return the association %s and %s to unassociated options."
 msgstr "Vrátiť asociáciu %s a %s do nepriradených možností."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1843
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1844
 msgid "answer area, %d items"
 msgstr "oblasť odpovedí, %d položiek"
 
 #: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:76
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:437
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:435
 msgid "%lb has been placed down."
 msgstr "%lb bol umiestnený."
 
@@ -4496,7 +4666,7 @@ msgstr "%lb a %lb boli vrátené do nepriradených možností."
 msgid "cancelled"
 msgstr "zrušené"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1375
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1373
 msgid "Option %d"
 msgstr "Možnosť %d"
 
@@ -4528,74 +4698,212 @@ msgstr "Nahrávanie zrušené."
 msgid "Response file cleared."
 msgstr "Súbor odpovedí bol vymazaný."
 
-#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:279
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:294
 msgid "Unable to restore the uploaded audio file. Please reload the page to try again."
 msgstr "Nahraný zvukový súbor sa nepodarilo obnoviť. Ak chcete skúsiť znova, znova načítajte stránku."
 
-#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:285
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:300
 msgid "Reload"
 msgstr "Obnoviť"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:82
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:709
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:267
+msgid "Playback is disabled for this recording by item configuration."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:716
+msgid "No uploaded video is available for review."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:718
+msgid "Record a response to play it back locally. Sandbox/manual mode can also keep a local saved response for this session."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:734
+msgid "Recording"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:736
+msgid "Preparing camera"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:738
+msgid "Finalizing local recording"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:740
+msgid "Preparing saved response"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:742
+msgid "Uploading saved response"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:744
+msgid "Saved response ready"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:746
+msgid "Local playback ready"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:748
+msgid "Ready"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:761
+msgid "Stop"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:768
+msgid "Reset"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:60
+msgid "Preparing saved response."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:61
+msgid "Saved response ready."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:62
+msgid "Saved response unavailable."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:175
+msgid "Recording starts in {{seconds}} seconds."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:188
+msgid "Container / MIME"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:188
+msgid "Unavailable"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:189
+msgid "Duration"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:189
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:190
+msgid "Not recorded"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:190
+msgid "File size"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:192
+msgid "Average bitrate"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:193
+msgid "Not available"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:196
+msgid "Save mode"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:197
+msgid "Not saved yet"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:259
+msgid "Maximum recording attempts reached."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:263
+msgid "Recording is in progress and will stop automatically when the time limit is reached."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:271
+msgid "Recording is in progress. Use Stop to finish or wait for the time limit."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:275
+msgid "Use the video controls to play back the current recording. Use Reset to clear it."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:278
+msgid "Use Start recording to begin. Use Stop to finish. Use Reset to clear the current response."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:433
+msgid "No supported recording MIME type was found for this browser."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:518
+msgid "Unable to start video recording. Check browser permissions and try again."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/upload.js:41
+msgid "Unable to upload this recording. You can still play it back locally in this session, but it will stay unanswered until the upload succeeds."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/upload.js:45
+msgid "Local playback is still available in this session. Retry the recording or upload before you submit."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:87
 msgid "Your answer"
 msgstr "Vaša odpoveď"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:245
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:305
 msgid "Your image file is too big. Please insert an image no larger than %s"
 msgstr "Váš obrazový súbor je príliš veľký. Vložte prosím obrázok, ktorý nie je väčší ako %s"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:250
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:310
 msgid "Your image failed to upload, please try again"
 msgstr "Vašu snímku sa nepodarilo nahrať, skúste to znova"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:301
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:361
 msgid "Maximum characters reached (maximum: %d)"
 msgstr "Dosiahnutý maximálny počet znakov (maximum: %d)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:307
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:367
 msgid "Maximum words reached (maximum: %d)"
 msgstr "Dosiahnutý maximálny počet slov (maximum: %d)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:314
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:374
 msgid "<strong>%d</strong> / %d word(s) typed"
 msgstr "<strong>%d</strong> / %d slovo/slová zadané"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:319
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:379
 msgid "<strong>%d</strong> word(s) typed"
 msgstr "<strong>%d</strong> slovo/slová zadané"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:324
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:332
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:384
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:391
 msgid "<strong>%d</strong> character(s) typed"
 msgstr "<strong>%d</strong> znak(y) zadané"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:332
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:391
 msgid "recommended: %d"
 msgstr "odporúčané: %d"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:336
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:395
 msgid "<strong>%d</strong> characters left."
 msgstr "<strong>%d</strong> znakov zostáva."
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:342
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:400
 msgid "%d out of %d characters typed"
 msgstr "Zadané %d z %d znakov"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:342
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:400
 msgid "<strong>%d</strong> / %d character(s) typed"
 msgstr "<strong>%d</strong> / %d znakov zadaných"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:351
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:409
 msgid "Invalid format, please refer to the instructions."
 msgstr "Neplatný formát, prosím pozrite si inštrukcie."
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:357
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:415
 msgid "Answer required."
 msgstr "Vyžaduje sa odpoveď."
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:22
-msgid "Basic Latin"
-msgstr "Základná latinčina"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:23
 msgid "EXCLAMATION MARK"
@@ -4966,16 +5274,8 @@ msgid "TILDE"
 msgstr "Tilda"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:118
-msgid "Currency Symbols"
-msgstr "Symboly mien"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:118
 msgid "EURO SIGN"
 msgstr "Symbol eura"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:119
-msgid "General Punctuation"
-msgstr "Všeobecná interpunkcia"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:120
 msgid "LEFT SINGLE QUOTATION MARK"
@@ -5020,10 +5320,6 @@ msgstr "Horizontálna elipsa"
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:130
 msgid "BULLET"
 msgstr "Odrážka"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:132
-msgid "Latin-1 Supplement"
-msgstr "Doplnok Latin-1"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:133
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:282
@@ -5453,10 +5749,6 @@ msgstr "Latinské malé písmeno THORN"
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:277
 msgid "LATIN SMALL LETTER Y WITH DIAERESIS"
 msgstr "Latinské malé písmeno Y s dierézou"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:284
-msgid "Latin Extended-A"
-msgstr "Latin Extended-A"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:285
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:359
@@ -5899,24 +6191,12 @@ msgid "LATIN SMALL LETTER Z WITH CARON"
 msgstr "Latinské malé písmeno Z s caronom"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:401
-msgid "Letterlike Symbols"
-msgstr "Symboly podobné písmenám"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:401
 msgid "TRADE MARK SIGN"
 msgstr "Symbol ochranná známka"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:404
-msgid "Geometric Shapes"
-msgstr "Geometrické tvary"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:404
 msgid "BLACK RIGHT-POINTING POINTER"
 msgstr "Čierny ukazovateľ smerujúci doprava"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:405
-msgid "Arrows"
-msgstr "Šípky"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:406
 msgid "RIGHTWARDS ARROW"
@@ -5931,24 +6211,12 @@ msgid "LEFT RIGHT DOUBLE ARROW"
 msgstr "Dvojitá šípka smerujúca doľava a doprava"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:412
-msgid "Miscellaneous Symbols"
-msgstr "Rôzne symboly"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:412
 msgid "BLACK DIAMOND SUIT"
 msgstr "Čierna farba kára"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:415
-msgid "Mathematical Operators"
-msgstr "Matematické operátory"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:415
 msgid "ALMOST EQUAL TO"
 msgstr "Takmer rovná sa"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:418
-msgid "Greek and Coptic"
-msgstr "Grécke a koptské"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:418
 msgid "GREEK CAPITAL LETTER OMEGA"
@@ -6064,12 +6332,12 @@ msgstr "Musíte vytvoriť presne 1 asociáciu"
 msgid "Currently %d"
 msgstr "Aktuálne %d"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:242
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:244
 msgid "Option %d."
 msgstr "Možnosť %d."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:272
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:276
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:274
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:279
 msgid "Return %s to the available options."
 msgstr "Vrátiť %s k dostupným možnostiam."
 
@@ -6081,65 +6349,65 @@ msgstr "Oblasť odpovedí je plná. Pre presun do oblasti odpovedí stlačte Tab
 msgid "%s has been returned to available options."
 msgstr "%s bolo vrátené k dostupným možnostiam."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:431
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:433
 msgid "Gap %d %s %s"
 msgstr "Medzera %d %s %s"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:434
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:46
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:296
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:436
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:47
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:297
 msgid "empty"
 msgstr "prázdne"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:55
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:56
 msgid "required"
 msgstr "požadované"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:257
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:258
 msgid "%s has been placed in Gap %d."
 msgstr "%s bolo umiestnené do medzery %d."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:748
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:746
 msgid "Press enter or space to grab and browse the answer area."
 msgstr "Stlačte Enter alebo medzerník na uchopenie a prehliadanie oblasti odpovedí."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:749
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:747
 msgid "To move to next available option, use the arrow keys."
 msgstr "Na presun k ďalšej dostupnej možnosti použite šípky."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:752
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:750
 msgid "Press enter or space to place down."
 msgstr "Stlačte Enter alebo medzerník na umiestnenie."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:753
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:751
 msgid "To browse other gaps use the arrow keys."
 msgstr "Na prehliadanie ďalších medzier použite šípky."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:754
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:752
 msgid "Press escape to cancel."
 msgstr "Stlačte Esc na zrušenie."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:757
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:755
 msgid "Press enter or space to grab."
 msgstr "Stlačte Enter alebo medzerník na uchopenie."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:758
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:756
 msgid "To move to next available answer, use the arrow keys."
 msgstr "Na presun k ďalšej dostupnej odpovedi použite šípky."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:759
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:757
 msgid "Double press shift+tab to return to choices."
 msgstr "Dvakrát stlačte Shift+Tab na návrat k možnostiam."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:797
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:795
 msgid "Available options"
 msgstr "Dostupné možnosti"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:832
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:830
 msgid "Text Passage. To read use the arrow keys."
 msgstr "Textový úsek. Na čítanie použite šípky."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:506
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:504
 msgid "%s has not been placed."
 msgstr "%s nebolo umiestnené."
 
@@ -6195,11 +6463,11 @@ msgstr "Asociácia medzi %s a %s vytvorená."
 msgid "The association between %s and %s has been deleted."
 msgstr "Asociácia medzi %s a %s bola odstránená."
 
-#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1281
+#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1282
 msgid "Available options, %d items"
 msgstr "Dostupné možnosti, %d položiek"
 
-#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1332
+#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1333
 msgid "Answer area"
 msgstr "Oblasť odpovedí"
 
@@ -6356,19 +6624,19 @@ msgstr "minimum %d"
 msgid "max %d"
 msgstr "maximum %d"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:871
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:872
 msgid "List"
 msgstr "Zoznam"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:325
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:326
 msgid "deselected"
 msgstr "zrušený výber"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:336
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:337
 msgid "selected %s"
 msgstr "vybrané %s"
 
-#: ../../item-runner/src/runner/interactions/match/TabularMatch.svelte:458
+#: ../../item-runner/src/runner/interactions/match/TabularMatch.svelte:457
 msgid "%s matches %s"
 msgstr "%s zodpovedá %s"
 
@@ -6416,7 +6684,7 @@ msgstr "dostupné %d-krát."
 msgid "grouped in %s."
 msgstr "zoskupené v %s."
 
-#: ../../item-runner/src/runner/interactions/media/MediaInteractionImpl.svelte:523
+#: ../../item-runner/src/runner/interactions/media/MediaInteractionImpl.svelte:533
 msgid "Click to listen"
 msgstr "Kliknite na počúvanie"
 
@@ -6428,11 +6696,11 @@ msgstr "Musíte prehrať tento obsah aspoň %d-krát"
 msgid "You have played this media maximum times"
 msgstr "Prehrali ste tento obsah maximálny početkrát"
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:617
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:629
 msgid "Press enter or space to grab and place in the answer area. To move to next available option, use the arrow keys."
 msgstr "Stlačte Enter alebo medzerník na uchopenie a umiestnenie do odpoveďovej oblasti. Na presun na ďalšiu dostupnú možnosť použite šípky."
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:637
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:650
 msgid "Unordered options"
 msgstr "Neusporiadané možnosti"
 
@@ -6440,21 +6708,21 @@ msgstr "Neusporiadané možnosti"
 msgid "Answer area is full. To move to the answer area, press Tab."
 msgstr "Odpoveďová oblasť je plná. Na presun do odpoveďovej oblasti stlačte Tab."
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:491
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:494
 msgid "%lb has been placed down"
 msgstr "%lb bol umiestnený"
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:500
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:503
 msgid "%lb moved to position %d"
 msgstr "%lb presunutý na pozíciu %d"
 
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:931
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:938
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:942
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:949
 msgid "Position %d"
 msgstr "Pozícia %d"
 
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:934
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:939
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:945
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:950
 msgid "Return %s to the unordered options"
 msgstr "Vrátiť %s medzi neusporiadané možnosti"
 
@@ -6470,27 +6738,27 @@ msgstr "Stlačte Enter alebo medzerník na uchopenie. Na presun na ďalšiu dost
 msgid "Press enter or space to place down. To reorder use the arrow keys. Press escape to cancel"
 msgstr "Stlačte Enter alebo medzerník na umiestnenie. Na zoradenie použite šípky. Stlačte Escape na zrušenie"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:390
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:394
 msgid "Plus. %s"
 msgstr "Plus. %s"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:391
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:395
 msgid "Minus. %s"
 msgstr "Mínus. %s"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:392
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:396
 msgid "To enter the slider value in this field, type."
 msgstr "Ak chcete zadať hodnotu posúvača do tohto poľa, napíšte ju."
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:393
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:397
 msgid "Use to decrease the slider value by %d"
 msgstr "Použite na zníženie hodnoty posúvača o %d"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:394
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:398
 msgid "Use to increase the slider value by %d"
 msgstr "Použite na zvýšenie hodnoty posúvača o %d"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:395
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:399
 msgid "Use the arrow keys to increase or decrease the value by %d"
 msgstr "Použite šípky na zvýšenie alebo zníženie hodnoty o %d"
 
@@ -6510,31 +6778,31 @@ msgstr "Aktuálna hodnota %d"
 msgid "%s, min %d max %d"
 msgstr "%s, min %d max %d"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:164
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:169
 msgid "(dot)"
 msgstr "(bodka)"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:165
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:170
 msgid "(comma)"
 msgstr "(čiarka)"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:174
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:178
 msgid "Invalid value, use %s %s for decimal point separator"
 msgstr "Neplatná hodnota, použite %s %s ako desatinný oddeľovač"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:179
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:183
 msgid "Invalid value, please refer to the instructions"
 msgstr "Neplatná hodnota, pozrite si pokyny"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:188
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:191
 msgid "Number is out of range"
 msgstr "Číslo je mimo rozsah"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:200
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:203
 msgid "Max length has been reached"
 msgstr "Bola dosiahnutá maximálna dĺžka"
 
-#: ../../item-runner/src/runner/interactions/upload/UploadInteraction.svelte:368
+#: ../../item-runner/src/runner/interactions/upload/UploadInteraction.svelte:373
 msgid "Loading"
 msgstr "\n"
 "Načítavam"
@@ -6547,7 +6815,7 @@ msgstr "Nie je možné získať prístup k nahranému súboru"
 msgid "Unable to upload the selected file. Please try again or refresh the page."
 msgstr "Nie je možné nahrať vybraný súbor. Skúste to znova alebo obnovte stránku."
 
-#: ../../item-runner/src/runner/item/modalFeedback/ModalFeedbackNavigator.svelte:20
+#: ../../item-runner/src/runner/item/modalFeedback/ModalFeedbackNavigator.svelte:22
 msgid "Continue"
 msgstr "Pokračovať"
 
@@ -6555,7 +6823,7 @@ msgstr "Pokračovať"
 msgid "No answer file selected"
 msgstr "Nie je vybraný žiadny súbor s odpoveďou"
 
-#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:72
+#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:71
 msgid "view report"
 msgstr "zobraziť správu"
 
@@ -6574,6 +6842,10 @@ msgstr "Podozrenie na plagiátorstvo:"
 #: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:27
 msgid "No suspicion of plagiarism."
 msgstr "Žiadne podozrenie na plagiátorstvo."
+
+#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/HblMessage.svelte:65
+msgid "Failed to load the plagiarism report. Please try again."
+msgstr ""
 
 #: ../../item-runner/src/runner/static/ModalFeedback.svelte:64
 msgid "Response feedback"
@@ -6603,48 +6875,48 @@ msgstr "Prejsť na predchádzajúcu otázku"
 msgid "Question %d."
 msgstr "Otázka %d."
 
-#: ../../test-runner/src/runner/TestLayout.svelte:581
+#: ../../test-runner/src/runner/TestLayout.svelte:588
 msgid "Test Navigation"
 msgstr "Navigácia v teste"
 
+#: ../../test-runner/src/runner/TestLayout.svelte:70
 #: ../../test-runner/src/runner/TestLayout.svelte:71
-#: ../../test-runner/src/runner/TestLayout.svelte:72
 msgid "Main menu"
 msgstr "Hlavné menu"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:385
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:408
 msgid "Review"
 msgstr "Recenzia"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:428
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:457
 msgid "Overall feedback"
 msgstr "Celková spätná väzba"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:439
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:468
 msgid "Awaiting manual scoring"
 msgstr "Čaká na manuálne hodnotenie"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:440
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:469
 msgid "All or part of this question needs to be manually scored. Please check back later to view the score."
 msgstr "Celá otázka alebo jej časť musí byť hodnotená manuálne. Skontrolujte neskôr, aby ste videli skóre."
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:125
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:130
 msgid "Questions"
 msgstr "Otázky"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:125
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:130
 msgid "Question"
 msgstr "Otázka"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:133
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:138
 msgid "Correct"
 msgstr "Správne"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:142
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:147
 msgid "Answers"
 msgstr "Odpovede"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:142
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:147
 msgid "Answer"
 msgstr "Odpoveď"
 
@@ -6669,7 +6941,7 @@ msgid "You still have %d incomplete questions. If you submit this part you won't
 msgstr "Počet neúplných otázok je: %d. Ak odošlete túto časť, nebudete sa môcť vrátiť späť na zodpovedanie nezodpovedaných otázok alebo zmeniť svoje odpovede."
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:89
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:347
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:345
 msgid "Review my answers"
 msgstr "Revidovať moje odpovede"
 
@@ -6731,103 +7003,103 @@ msgstr "Vaša odpoveď alebo jej časti nie sú platné."
 msgid "Your answer is not valid."
 msgstr "Vaša odpoveď nie je platná."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:200
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:199
 msgid "You have %d invalid answers out of %d. Please provide valid answers before proceeding."
 msgstr "Máte %d neplatných odpovedí z %d. Poskytnite platné odpovede pred pokračovaním."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:205
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:204
 msgid "Please provide a valid answer."
 msgstr "Poskytnite platnú odpoveď."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:212
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:233
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:210
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:231
 msgid "Ok"
 msgstr "OK"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:225
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:223
 msgid "An answer is required before leaving this question."
 msgstr "Pred odchodom z tejto otázky je potrebná odpoveď."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:227
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:225
 msgid "You will be able to navigate away once you answer the question."
 msgstr "Budete môcť prejsť ďalej, keď odpoviete na otázku."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:247
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:245
 msgid "Your test has been terminated by the proctor and your answers have been submitted."
 msgstr "Váš test bol ukončený skúšajúcim a vaše odpovede boli odoslané."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:252
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:250
 msgid "I understand"
 msgstr "Rozumiem"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:266
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:264
 msgid "You need to restart the test"
 msgstr "Musíte reštartovať test"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:272
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:270
 msgid "Restart now"
 msgstr "Reštartujte teraz"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:289
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:287
 msgid "Your test and its timer have been paused by proctor."
 msgstr "Váš test a jeho časovač boli skúšajúcim pozastavené."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:295
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:293
 msgid "OK"
 msgstr "OK"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:333
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:331
 msgid "Finish the test"
 msgstr "Ukončiť test"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:340
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:338
 msgid "Submit this part"
 msgstr "Odoslať túto časť"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:360
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:370
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:378
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:400
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:427
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:444
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:471
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:358
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:368
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:376
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:398
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:425
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:442
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:469
 msgid "The time limit for the test has been reached."
 msgstr "Časový limit pre test bol dosiahnutý."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:373
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:384
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:371
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:382
 msgid "The time limit for this part has been reached."
 msgstr "Časový limit pre túto časť bol dosiahnutý."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:379
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:413
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:457
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:377
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:411
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:455
 msgid "You are at the end of the test. You can either finish the test or keep reviewing your answers."
 msgstr "Ste na konci testu. Môžete buď dokončiť test, alebo pokračovať v prezeraní svojich odpovedí."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:385
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:418
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:462
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:383
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:416
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:460
 msgid "You are at the end of this part. You can either submit this part or keep reviewing your answers."
 msgstr "Ste na konci tejto časti. Môžete buď odoslať túto časť, alebo pokračovať v prezeraní svojich odpovedí."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:392
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:403
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:430
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:390
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:401
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:428
 msgid "The time limit for this section has been reached."
 msgstr "Časový limit pre túto sekciu bol dosiahnutý."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:436
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:447
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:474
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:434
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:445
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:472
 msgid "The time limit for this item has been reached."
 msgstr "Časový limit pre túto položku bol dosiahnutý."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:498
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:496
 msgid "This test needs to be taken in full screen mode"
 msgstr "Tento test sa musí vykonávať v režime celej obrazovky"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:499
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:497
 msgid "Leaving the test window is not allowed"
 msgstr "Opustenie okna testu nie je povolené"
 
@@ -6843,51 +7115,56 @@ msgstr "Prekrytie"
 msgid "End of test"
 msgstr "Koniec testu"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:62
+#: ../../test-runner/src/runner/layout/toolbarItems.js:61
+#: ../../test-runner/src/runner/layout/toolbarItems.js:64
+msgid "Reload this page"
+msgstr ""
+
+#: ../../test-runner/src/runner/layout/toolbarItems.js:73
 msgid "Attachments"
 msgstr ""
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:72
+#: ../../test-runner/src/runner/layout/toolbarItems.js:83
 msgid "Scratchpad"
 msgstr "Poznámkový blok"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:81
+#: ../../test-runner/src/runner/layout/toolbarItems.js:92
 msgid "Highlighter"
 msgstr "Zvýrazňovač"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:90
+#: ../../test-runner/src/runner/layout/toolbarItems.js:111
 msgid "Calculator"
 msgstr "Kalkulačka"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:99
+#: ../../test-runner/src/runner/layout/toolbarItems.js:120
 msgid "Read Aloud"
 msgstr "Čítanie nahlas"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:103
+#: ../../test-runner/src/runner/layout/toolbarItems.js:124
 msgid "Read aloud tool. To close, press enter or space"
 msgstr "Nástroj na čítanie nahlas. Na zatvorenie stlačte Enter alebo medzerník"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:104
+#: ../../test-runner/src/runner/layout/toolbarItems.js:125
 msgid "Read aloud tool. To open, press enter or space"
 msgstr "Nástroj na čítanie nahlas. Na otvorenie stlačte Enter alebo medzerník"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:113
+#: ../../test-runner/src/runner/layout/toolbarItems.js:134
 msgid "Line Reader"
 msgstr "Riadkový čítač"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:124
+#: ../../test-runner/src/runner/layout/toolbarItems.js:145
 msgid "Exit full screen"
 msgstr "Ukončiť režim celej obrazovky"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:124
+#: ../../test-runner/src/runner/layout/toolbarItems.js:145
 msgid "Full screen"
 msgstr "Režim celej obrazovky"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:142
+#: ../../test-runner/src/runner/layout/toolbarItems.js:163
 msgid "Open accessibility panel"
 msgstr "Otvoriť panel prístupnosti"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:152
+#: ../../test-runner/src/runner/layout/toolbarItems.js:173
 msgid "Print"
 msgstr "Tlačiť"
 
@@ -6895,7 +7172,7 @@ msgstr "Tlačiť"
 msgid "User: %s"
 msgstr "Používateľ: %s"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:117
+#: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:121
 msgid "Attachment: %s"
 msgstr ""
 
@@ -6909,15 +7186,15 @@ msgstr ""
 msgid "Close attachment"
 msgstr ""
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:96
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:97
 msgid "Open attachment %s"
 msgstr ""
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:103
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:104
 msgid "Open attachment %s in a new tab"
 msgstr ""
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsOverlayBox.svelte:74
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsOverlayBox.svelte:75
 msgid "Attachments (%s)"
 msgstr ""
 
@@ -6997,33 +7274,33 @@ msgstr "Skokové menu"
 msgid "Jump to"
 msgstr "Preskočiť na"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:64
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:65
 msgid "Toolbox & Configuration"
 msgstr "Nástroje a konfigurácia"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:80
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:88
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:81
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:89
 msgid "Item attachment"
 msgstr ""
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:119
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:120
 msgid "the overview of all %d questions"
 msgstr "prehľad všetkých %d otázok"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:165
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:166
 msgid "Question %d"
 msgstr "Otázka %d"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:305
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:314
 msgid "Remove bookmark from this question"
 msgstr "Odstrániť záložku z tejto otázky"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:306
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:315
 msgid "Bookmark this question"
 msgstr "Označiť túto otázku záložkou"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:345
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:346
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:354
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:355
 msgid "Submit test part"
 msgstr "Odoslať časť testu"
 
@@ -7052,7 +7329,7 @@ msgstr "označené záložkou (%d)"
 msgid "incomplete (%d)"
 msgstr "neúplné (%d)"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/plugin.js:86
+#: ../../test-runner/src/runner/plugins/navigation/navigator/plugin.js:139
 msgid "Overview"
 msgstr "Prehľad"
 
@@ -7143,15 +7420,15 @@ msgstr "Opustiť prehľad testu"
 msgid "Continue to next test"
 msgstr "Pokračovať k ďalšiemu testu"
 
-#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:254
+#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:262
 msgid "There are still questions waiting to be scored"
 msgstr "Stále sú otázky, ktoré čakajú na ohodnotenie"
 
-#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:255
+#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:263
 msgid "Your total score cannot be calculated until all of the questions have been scored. Please come back later to see your total score."
 msgstr "Váš celkový počet bodov nemôže byť vypočítaný, kým nebudú všetky otázky ohodnotené. Vráťte sa neskôr, aby ste videli svoj celkový počet bodov."
 
-#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:263
+#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:271
 msgid "Total score"
 msgstr "Celkový počet bodov"
 
@@ -7183,15 +7460,15 @@ msgstr "Nástroje zjednodušenia prístupu"
 msgid "Default font"
 msgstr "Predvolený font"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:83
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:96
 msgid "Size"
 msgstr "Veľkosť"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:89
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:102
 msgid "decrease font size"
 msgstr "zmenšiť veľkosť písma"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:90
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:103
 msgid "increase font size"
 msgstr "zväčšiť veľkosť písma"
 
@@ -7327,10 +7604,6 @@ msgstr "zbalenie nastavení textu"
 msgid "expand text settings"
 msgstr "rozbalenie nastavení textu"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/groups/TextGroup.svelte:72
-msgid "Text"
-msgstr "Text"
-
 #: ../../test-runner/src/runner/plugins/panel/a11y/groups/ZoomGroup.svelte:41
 msgid "collapse zoom settings"
 msgstr "zbalenie nastavení priblíženia"
@@ -7343,19 +7616,19 @@ msgstr "rozbalenie nastavení priblíženia"
 msgid "Zoom"
 msgstr "Priblíženie"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:20
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:25
 msgid "Privacy Policy"
 msgstr "Zásady ochrany osobných údajov"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:24
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:29
 msgid "About"
 msgstr "O aplikácii"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:32
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:37
 msgid "TAO logo"
 msgstr "Logo TAO"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:40
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:45
 msgid "All rights reserved"
 msgstr "Všetky práva vyhradené"
 
@@ -7375,17 +7648,29 @@ msgstr "Váš test je pozastavený"
 msgid "Please wait for the proctor to resume your test."
 msgstr "Počkajte, prosím, kým správca spustí váš test."
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:419
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:430
 msgid "Extra time has been removed"
 msgstr "Dodatočný čas bol odstránený"
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:421
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:432
 msgid "Extra time limit adjusted to %s"
 msgstr "Dodatočný čas upravený na %s"
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:423
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:434
 msgid "%s of extra time granted"
 msgstr "%s dodatočného času bolo poskytnuté"
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:56
+msgid "You are about to leave the document and the test will be paused."
+msgstr ""
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:58
+msgid "Press Tab to keep focus within the document and resume the test."
+msgstr ""
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:60
+msgid "Press Shift+Tab to keep focus within the document and resume the test."
+msgstr ""
 
 #: ../../test-runner/src/runner/plugins/settings/SettingsContent.svelte:119
 msgid "My settings"
@@ -7417,11 +7702,11 @@ msgstr "Maskovanie odpovedí"
 msgid "Answer masking lets you hide answer options that you are sure are incorrect."
 msgstr "Maskovanie odpovedí umožňuje skryť možnosti odpovedí, o ktorých ste si istí, že sú nesprávne."
 
-#: ../../test-runner/src/runner/plugins/settings/plugin.js:264
+#: ../../test-runner/src/runner/plugins/settings/plugin.js:265
 msgid "Test Configuration"
 msgstr "Konfigurácia testu"
 
-#: ../../test-runner/src/runner/plugins/tools/highlighter/HighlighterBar.svelte:283
+#: ../../test-runner/src/runner/plugins/tools/highlighter/HighlighterBar.svelte:286
 msgid "clear all"
 msgstr "vymazať všetko"
 
@@ -7445,11 +7730,11 @@ msgstr "Odstrániť spätnú väzbu"
 msgid "Grader's comment:"
 msgstr "Komentár hodnotiteľa:"
 
-#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:298
+#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:300
 msgid "Saving failed"
 msgstr "Ukladanie zlyhalo"
 
-#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:342
+#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:345
 msgid "Deletion failed"
 msgstr "Odstránenie zlyhalo"
 
@@ -7461,6 +7746,10 @@ msgstr "Ikona vertikálneho prispôsobenia kurzora"
 msgid "Draggable element handle icon"
 msgstr "Ikona úchopu pre presun"
 
+#: ../../test-runner/src/runner/plugins/tools/markingSymbols/MarkingSymbolsBar.svelte:282
+msgid "Marking symbols"
+msgstr ""
+
 #: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:103
 msgid "read aloud"
 msgstr "čítať nahlas"
@@ -7469,31 +7758,31 @@ msgstr "čítať nahlas"
 msgid "Continuous reading"
 msgstr "Nepretržité čítanie"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:119
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:118
 msgid "Click to read"
 msgstr "Kliknite na čítanie"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:131
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:129
 msgid "Select and read"
 msgstr "Vybrať a čítať"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:143
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:140
 msgid "ReadAloud settings"
 msgstr "Nastavenia čítania nahlas"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:156
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:152
 msgid "Select text to read aloud"
 msgstr "Vyberte text na čítanie nahlas"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:159
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:155
 msgid "Click on any text to read aloud"
 msgstr "Kliknite na akýkoľvek text na čítanie nahlas"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:168
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:164
 msgid "Press enter or space to activate select and read. To move the next available action, use the arrow keys. To close press escape."
 msgstr "Stlačte Enter alebo medzerník na aktiváciu možnosti vybrať a čítať. Na presun na ďalšiu dostupnú akciu použite šípky. Na zatvorenie stlačte Escape."
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:173
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:169
 msgid "Press enter or space to activate continuous reading. If activated press enter or space to stop the reading."
 msgstr "Stlačte Enter alebo medzerník na aktiváciu nepretržitého čítania. Ak je aktivované, stlačte Enter alebo medzerník na zastavenie čítania."
 
@@ -7561,21 +7850,21 @@ msgstr "stredný"
 msgid "high"
 msgstr "vysoký"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:181
+#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:182
 msgid "Look at the formula."
 msgstr "Pozrite sa na vzorec."
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:740
+#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:741
 msgid "Read aloud not available"
 msgstr "Čítanie nahlas nie je k dispozícii"
 
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:504
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:505
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:507
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:508
 msgid "undo"
 msgstr "vrátiť späť"
 
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:509
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:509
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:512
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:512
 msgid "redo"
 msgstr "znovu vykonať"
 
@@ -7612,20 +7901,24 @@ msgstr "Čiara"
 msgid "Eraser"
 msgstr "Guma"
 
-#: ../../test-runner/src/runner/qti.js:540
+#: ../../test-runner/src/runner/qti.js:319
+msgid "Please wait while the answer is saved..."
+msgstr ""
+
+#: ../../test-runner/src/runner/qti.js:594
 msgid "All attempts have been used for this question"
 msgstr "Všetky pokusy na túto otázku boli vyčerpané"
 
-#: ../../test-runner/src/runner/qti.js:542
-#: ../../test-runner/src/runner/qti.js:546
+#: ../../test-runner/src/runner/qti.js:596
+#: ../../test-runner/src/runner/qti.js:600
 msgid "You have %d attempts left for this question"
 msgstr "Zostáva vám %d pokusov na túto otázku"
 
-#: ../../test-runner/src/runner/qti.js:563
+#: ../../test-runner/src/runner/qti.js:617
 msgid "Time has run out for this question"
 msgstr "Čas na túto otázku vypršal"
 
-#: ../../test-runner/src/runner/qti.js:565
+#: ../../test-runner/src/runner/qti.js:619
 msgid "Time has run out for this question's section"
 msgstr "Čas na túto sekciu otázok vypršal"
 
@@ -7633,11 +7926,44 @@ msgstr "Čas na túto sekciu otázok vypršal"
 msgid "%s, extra time %s"
 msgstr "%s, dodatočný čas %s"
 
-#: ../../test-runner/src/runner/util/testPart.js:187
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:65
 msgid "Part"
 msgstr "Časť"
 
-#: ../src/config.js:136
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:68
+msgid "You have %s left to finish this part"
+msgstr "Na dokončenie tejto časti vám zostáva %s"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:72
+msgid "You have %s left to finish %s"
+msgstr "Zostáva vám %s na dokončenie %s"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:75
+msgid "You have %s left to finish %s part"
+msgstr "Zostáva vám %s na dokončenie časti %s"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:94
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:110
+msgid "You have %s left to finish the test"
+msgstr "Na dokončenie testu vám zostáva %s"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:101
+msgid "You have %s left to finish %s section"
+msgstr "Zostáva vám %s na dokončenie sekcie %s"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:102
+msgid "You have %s left to finish this section"
+msgstr "Na dokončenie tejto sekcie vám zostáva %s"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:106
+msgid "You have %s left to finish %s item"
+msgstr "Zostáva vám %s na dokončenie položky %s"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:107
+msgid "You have %s left to finish this item"
+msgstr "Na dokončenie tejto položky vám zostáva %s"
+
+#: ../src/config.js:142
 msgid "TAO: test session"
 msgstr "TAO: testovacia relácia"
 

@@ -57,17 +57,3 @@ function recurseDefaultsDeepNoArrayMerge(result, source) {
         }
     }
 }
-
-/**
- * Opens given url in a new tab/window
- * @param {String} href
- */
-export function openInNewTab(href) {
-    const a = document.createElement('a');
-    a.style.display = 'none';
-    a.href = href;
-    a.target = '_blank';
-    a.rel = 'noopener';
-
-    a.click();
-}

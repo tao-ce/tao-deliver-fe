@@ -7,6 +7,7 @@ import { tick } from 'svelte';
 import ExtendedTextInteraction from '../ExtendedTextInteraction.svelte';
 import itemsStateStore, { getInteractionStateStore } from '../../../itemsStateStore';
 import ContextWrapper from '../../../static/test/ContextWrapper.svelte';
+import { decommentify } from '@/test-utils/helpers.js';
 
 vi.mock('@oat-sa-private/ui-elements/richTextEditor/plugins/mathbox/mathlive.js', () => ({
     __esModule: true,
@@ -66,7 +67,7 @@ describe('ExtendedTextInteraction', () => {
         interactionStateStore.setResponse({ base: { string } });
 
         return tick().then(() => {
-            expect(container.querySelector('.text-container').innerHTML).toBe(string);
+            expect(decommentify(container.querySelector('.text-container').innerHTML)).toBe(string);
         });
     });
 
@@ -92,7 +93,7 @@ describe('ExtendedTextInteraction', () => {
             }
         });
 
-        expect(container.querySelector('.text-container').innerHTML).toBe(expectedValue);
+        expect(decommentify(container.querySelector('.text-container').innerHTML)).toBe(expectedValue);
     });
 
     test.each([

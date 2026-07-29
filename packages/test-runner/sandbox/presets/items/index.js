@@ -17,6 +17,7 @@ export { default as marketplace } from './marketplace.extendedText.json';
 export { default as marketplaceWithResponse } from './marketplace.extendedText.withResponse.json';
 export { default as mathEntry } from './mathentry.extendedText.json';
 export { default as extended } from './three-type-editors.extendedText.json';
+export { default as documentEditor } from './documentEditor.extendedText.json';
 export { default as beatles } from './beatles.inlineChoice.json';
 export { default as netherlands } from './netherlands.textEntry.json';
 export { default as photo } from './photo.fileUpload.json';

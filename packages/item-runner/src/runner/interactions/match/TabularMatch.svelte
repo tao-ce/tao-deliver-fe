@@ -168,7 +168,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             pairs = convertMatchMatrixToPairs(matches);
         }
 
-        /* eslint-disable indent */
         dispatch('change', {
             type: e.type,
             target: e.target,
@@ -184,7 +183,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                       }
                     : void 0
         });
-        /* eslint-enable indent */
     }
 
     /**
@@ -245,6 +243,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
             &.header-y {
                 text-align: start;
+                hyphens: auto;
             }
 
             &.borderless {
@@ -450,7 +449,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                                         on:keyup|preventDefault
                                         {disabled} />
                                 {/if}
-                                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                                <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
                                 <label for={`${elementId}_${x}_${y}`} on:click|preventDefault>
                                     <div class="control">
                                         {#if !isRadio}
@@ -466,6 +465,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                                         }}
                                         let:content={localizedContent}
                                         lang={instructionsLang}>
+                                        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
                                         {@html localizedContent}
                                     </Localize>
                                 </span>

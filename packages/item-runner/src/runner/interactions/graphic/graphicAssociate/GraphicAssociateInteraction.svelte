@@ -6,7 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 <script>
     // Licensed under Gnu Public Licence version 2
-    // Copyright (c) 2021-2024 (original work) Open Assessment Technologies SA ;
+    // Copyright (c) 2021-2026 (original work) Open Assessment Technologies SA ;
     import { getActualKey, getPointerEventCoords } from '@oat-sa-private/ui-core';
     import Prompt from '../../Prompt.svelte';
     import Svg from '../Svg.svelte';
@@ -55,7 +55,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     // response format
     export let cardinality = maxAssociations === 1 ? 'single' : 'multiple';
-    const baseType = 'pair';
 
     /**
      * @typedef HotspotChoice - mapped from QTI HotspotChoice
@@ -86,18 +85,73 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     const qtiMinAssociationsMessage = dataAttrs['data-min-associations-message'];
     const qtiMaxAssociationsMessage = dataAttrs['data-max-associations-message'];
+    const useArrow = dataAttrs['data-interaction-subtype'] === 'arrow';
+    const baseType = useArrow ? 'directedPair' : 'pair';
+    // shape center - start or end points of line
+    const shapeCenter = choices.reduce(function (result, item) {
+        result[item.key] = [];
+        return result;
+    }, {});
+
+    function isTruthyDataAttr(value) {
+        return value === true || value === 'true' || value === 1 || value === '1';
+    }
+
+    function isArrowStartChoice(choiceKey) {
+        if (!useArrow) {
+            return true;
+        }
+        const choice = getChoiceById(choiceKey);
+        return Boolean(choice && isTruthyDataAttr(choice['data-start']));
+    }
+
+    function isArrowEndChoice(choiceKey) {
+        if (!useArrow) {
+            return true;
+        }
+        const choice = getChoiceById(choiceKey);
+        return Boolean(choice && isTruthyDataAttr(choice['data-end']));
+    }
+
+    function getArrowDirection(pair) {
+        const [firstKey, secondKey] = pair;
+        if (isArrowStartChoice(firstKey) && isArrowEndChoice(secondKey)) {
+            return { startKey: firstKey, endKey: secondKey };
+        }
+        if (isArrowStartChoice(secondKey) && isArrowEndChoice(firstKey)) {
+            return { startKey: secondKey, endKey: firstKey };
+        }
+        return { startKey: firstKey, endKey: secondKey };
+    }
+
+    function getArrowPoints(pair) {
+        if (!useArrow) {
+            return null;
+        }
+        const { startKey, endKey } = getArrowDirection(pair);
+        const startPoint = shapeCenter[startKey];
+        const endPoint = shapeCenter[endKey];
+        if (!startPoint || !endPoint || !startPoint.length || !endPoint.length) {
+            return null;
+        }
+        return { startPoint, endPoint };
+    }
+
+    function getArrowStartPoint(pair) {
+        const points = getArrowPoints(pair);
+        return points ? points.startPoint : null;
+    }
+
+    function getArrowEndPoint(pair) {
+        const points = getArrowPoints(pair);
+        return points ? points.endPoint : null;
+    }
 
     /**
      * Collect hotspots pair associated by line in selected state
      * @type {String[]}
      */
     let selectedPair = null;
-
-    //shape center - start or end points of line
-    const shapeCenter = choices.reduce(function (result, item) {
-        result[item.key] = [];
-        return result;
-    }, {});
 
     let pairs = [];
 
@@ -351,18 +405,24 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     /**
      * Gets aria label for a choice depending on cardinality
      * @param {Object} choice
+     * @param {String[]} [orderedChoiceKeys=orderedChoicesKeys] Ordered choice keys used to build positional aria labels.
+     * @param {Object|null} [currentSelectedChoice=selectedChoice] Currently selected choice used to compute selection-specific hints.
      * @returns {String}
      */
-    function getChoiceAriaLabel(choice) {
-        return cardinality === 'single' ? getChoiceSingleAriaLabel(choice) : getChoiceMultiAriaLabel(choice);
+    function getChoiceAriaLabel(choice, orderedChoiceKeys = orderedChoicesKeys, currentSelectedChoice = selectedChoice) {
+        return cardinality === 'single'
+            ? getChoiceSingleAriaLabel(choice, orderedChoiceKeys)
+            : getChoiceMultiAriaLabel(choice, orderedChoiceKeys, currentSelectedChoice);
     }
 
     /**
      * Gets from a helper the full aria label for a choice with cardinality 'multiple'
      * @param {Object} choice
+     * @param {String[]} [orderedChoiceKeys=orderedChoicesKeys] Ordered choice keys used to build positional aria labels.
+     * @param {Object|null} [currentSelectedChoice=selectedChoice] Currently selected choice used to compute association-creation hints.
      * @returns {String}
      */
-    function getChoiceMultiAriaLabel(choice) {
+    function getChoiceMultiAriaLabel(choice, orderedChoiceKeys = orderedChoicesKeys, currentSelectedChoice = selectedChoice) {
         let label = '';
         let pairedKeys = [];
         pairs.forEach(pair => {
@@ -375,22 +435,22 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         });
         if (choiceValidByMatchMax(choice)) {
             let describedBy = ariaHelper.getChoiceDescribedBy();
-            if (selectedChoice && selectedChoice.key === choice.key) {
+            if (currentSelectedChoice && currentSelectedChoice.key === choice.key) {
                 describedBy = ariaHelper.getSelectedChoiceDescribedBy();
             }
-            if (selectedChoice && selectedChoice.key !== choice.key) {
+            if (currentSelectedChoice && currentSelectedChoice.key !== choice.key) {
                 describedBy = ariaHelper.getAssociationCreationDescribedBy();
             }
             if (isChoiceDisabled(choice)) {
                 describedBy = ariaHelper.getDisabledChoiceDescribedBy();
             }
-            label = [ariaHelper.getChoiceAriaLabel(choice, pairedKeys, orderedChoicesKeys), describedBy].join(' ');
+            label = [ariaHelper.getChoiceAriaLabel(choice, pairedKeys, orderedChoiceKeys), describedBy].join(' ');
         } else {
             let describedBy = ariaHelper.getFulfilledChoiceDescribedBy();
             if (isChoiceInactive(choice)) {
                 describedBy = ariaHelper.getInactiveChoiceDescribedBy();
             }
-            label = [ariaHelper.getChoiceMaxAssociationLabel(choice, pairedKeys, orderedChoicesKeys), describedBy].join(
+            label = [ariaHelper.getChoiceMaxAssociationLabel(choice, pairedKeys, orderedChoiceKeys), describedBy].join(
                 ' '
             );
         }
@@ -401,9 +461,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     /**
      * Gets from a helper the full aria label for a choice with cardinality 'single'
      * @param {Object} choice
+     * @param {String[]} [orderedChoiceKeys=orderedChoicesKeys] Ordered choice keys used to build positional aria labels.
      * @returns {String}
      */
-    function getChoiceSingleAriaLabel(choice) {
+    function getChoiceSingleAriaLabel(choice, orderedChoiceKeys = orderedChoicesKeys) {
         let pairedKeys = [];
         let describedBy = ariaHelper.getChoiceDescribedBy();
         pairs.forEach(pair => {
@@ -421,7 +482,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             describedBy = ariaHelper.getInactiveChoiceDescribedBy();
         }
 
-        return [ariaHelper.getChoiceAriaLabel(choice, pairedKeys, orderedChoicesKeys), describedBy].join(' ');
+        return [ariaHelper.getChoiceAriaLabel(choice, pairedKeys, orderedChoiceKeys), describedBy].join(' ');
     }
 
     /**
@@ -585,6 +646,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             isPermitted = choiceValidByMatchMax(getChoiceById(choiceKey));
         }
 
+        if (isPermitted && (selectedChoice || targeted)) {
+            isPermitted = isArrowEndChoice(choiceKey);
+        }
+
         return !theSameChoice && !isStartPoint && !isChoicePairedWithSelected && isPermitted;
     }
 
@@ -657,6 +722,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             return;
         }
         if (!selectedChoice) {
+            if (!isArrowStartChoice(choiceKey)) {
+                return;
+            }
             setSelectedChoice(choiceKey);
             //allow focus only non-paired choices
             if (Array.isArray(orderedElementsKeys)) {
@@ -673,9 +741,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             if (
                 !isPairExists(selectedChoice.key, choiceKey) &&
                 choiceKey !== selectedChoice.key &&
-                choiceValidByMatchMax(selectedChoice)
+                choiceValidByMatchMax(selectedChoice) &&
+                isArrowEndChoice(choiceKey)
             ) {
-                addPair(choiceKey, selectedChoice.key);
+                const firstKey = useArrow ? selectedChoice.key : choiceKey;
+                const secondKey = useArrow ? choiceKey : selectedChoice.key;
+                addPair(firstKey, secondKey);
             }
             clearSelectedChoice();
             updateOrderedKeysList();
@@ -725,6 +796,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @param {String} key - choice key where drawing started
      */
     function startDrawingLine(key) {
+        if (!isArrowStartChoice(key)) {
+            targeted = null;
+            return;
+        }
         targeted = getChoiceById(key); //it will be reset on 'finishDrawingLine' or 'handleTouchEnd'
         if (isChoiceInactive(targeted) || isChoiceDisabled(key)) {
             clearState();
@@ -802,6 +877,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      */
     function handleTouchEnd(e) {
         e.preventDefault();
+        if (!targeted) {
+            return;
+        }
         const { x: mouseX, y: mouseY } = getPointerEventCoords(e);
         let key = targeted.key;
         const target = document.elementFromPoint(mouseX, mouseY);
@@ -898,13 +976,17 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      */
     function handleSetFocus(e) {
         hasFocus = e.detail;
-        if (!isInteractionFocused) {
-            isInteractionFocused = true;
-        }
         // Cleanup state if focus jump out of interaction
         if (!hasFocus) {
             selectedPair = null;
         }
+    }
+
+    /**
+     * Flag that focus jumps inside interaction
+     */
+    function handleInteractionFocusIn() {
+        isInteractionFocused = true;
     }
 </script>
 
@@ -939,6 +1021,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     class="qti-interaction qti-blockInteraction {qtiClass} {classes}"
     lang={language}
     bind:this={interactionElement}
+    on:focusin|once={handleInteractionFocusIn}
     use:resizeObserve={handleInteractionResized}
     {id}
     {dir}
@@ -1001,78 +1084,96 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                     use:preventSpaceScroll
                     on:setHasFocus
                     on:setLastFocusedChoiceKey>
-                    {#each choices as choice (choice.key)}
-                        <HotspotChoice
-                            key={choice.key}
-                            shape={choice.shape}
-                            classes={isChoiceInactive(choice, pairs) ? 'inactive' : ''}
-                            coords={getScaledCoords(choice.coords, scalingFactor)}
-                            selected={choiceInPair(choice.key)}
-                            activated={selectedChoice && selectedChoice.key === choice.key}
-                            disabled={disabled || disabledBySession || isChoiceDisabled(choice.key, pairs)}
-                            checkmark={pairs && choiceInPair(choice.key)}
-                            targeted={choiceIsStartPointOfDrawingLine(choice.key, targeted)}
-                            targetable={!(disabled || disabledBySession) &&
-                                !isChoiceInactive(choice, pairs) &&
-                                (selectedChoice || targeted) &&
-                                associationAllowed(choice.key)}
-                            hoverable={false}
-                            instructions={getChoiceAriaLabel(choice, orderedChoicesKeys, selectedChoice)}
-                            {instructionsLang}
-                            on:center={handleCenter}
-                            on:mousedown={handler(() => startDrawingLine(choice.key))}
-                            on:touchstart={handler(() => startDrawingLine(choice.key))}
-                            on:mouseup={handler(() => finishDrawingLine(choice.key))}
-                            on:touchend={handler(handleTouchEnd)}
-                            on:mount|once={event => (choice.svg = event.detail.svgGroup)}
-                            on:change={handleChoiceChange} />
-                    {/each}
-                    {#each pairs as pair (getPairKey(pair))}
-                        <AssociationLine
-                            disabled={disabled || disabledBySession}
-                            activeLineStart={shapeCenter[pair[0]]}
-                            activeLineEnd={shapeCenter[pair[1]]}
-                            selected={false}
-                            ariaLabel={getRemoveButtonAriaLabel(pair)}
-                            on:draw|once={e => handleAssociationDraw(e, pair)}
-                            on:lineClick={() => handleLineClick(pair[0], pair[1])}
-                            on:keyup={handler(e => handleRemoveAssociationByKey(e, pair))}
-                            on:remove={e => handleRemoveAssociation(e, pair)} />
-                    {/each}
-                    {#if !disabled && isLineDrawing && dragging && start && end}
-                        <AssociationLine activeLineStart={start} activeLineEnd={end} disablePointerEvents />
-                    {/if}
-                    {#if selectedPair !== null}
-                        <!-- svelte-ignore a11y-click-events-have-key-events -->
-                        <rect
-                            class="glass-layer"
-                            x="0"
-                            y="0"
-                            height={imgHeight}
-                            width={imgWidth}
-                            on:click={handleLineClick} />
-                        {#each getSelectedChoices(selectedPair) as choice}
+                    <g class="hotspots-layer">
+                        {#each choices as choice (choice.key)}
                             <HotspotChoice
                                 key={choice.key}
                                 shape={choice.shape}
                                 classes={isChoiceInactive(choice, pairs) ? 'inactive' : ''}
                                 coords={getScaledCoords(choice.coords, scalingFactor)}
-                                selected
+                                selected={choiceInPair(choice.key)}
+                                activated={selectedChoice && selectedChoice.key === choice.key}
                                 disabled={disabled || disabledBySession || isChoiceDisabled(choice.key, pairs)}
                                 checkmark={pairs && choiceInPair(choice.key)}
+                                targeted={choiceIsStartPointOfDrawingLine(choice.key, targeted)}
+                                targetable={!(disabled || disabledBySession) &&
+                                    !isChoiceInactive(choice, pairs) &&
+                                    (selectedChoice || targeted) &&
+                                    associationAllowed(choice.key)}
                                 hoverable={false}
-                                on:change={handleLineClick} />
+                                instructions={getChoiceAriaLabel(choice, orderedChoicesKeys, selectedChoice)}
+                                {instructionsLang}
+                                on:center={handleCenter}
+                                on:mousedown={handler(() => startDrawingLine(choice.key))}
+                                on:touchstart={handler(() => startDrawingLine(choice.key))}
+                                on:mouseup={handler(() => finishDrawingLine(choice.key))}
+                                on:touchend={handler(handleTouchEnd)}
+                                on:mount|once={event => (choice.svg = event.detail.svgGroup)}
+                                on:change={handleChoiceChange} />
                         {/each}
-                        <AssociationLine
-                            disabled={disabled || disabledBySession}
-                            activeLineStart={shapeCenter[selectedPair[0]]}
-                            activeLineEnd={shapeCenter[selectedPair[1]]}
-                            selected
-                            ariaLabel={getRemoveButtonAriaLabel(selectedPair)}
-                            on:draw={handleDrawShadowLine}
-                            on:lineClick={() => handleLineClick(selectedPair[0], selectedPair[1])}
-                            on:keyup={handler(e => handleRemoveAssociationByKey(e, selectedPair))}
-                            on:remove={e => handleRemoveAssociation(e, selectedPair)} />
+                    </g>
+                    <g class="lines-layer">
+                        {#each pairs as pair (getPairKey(pair))}
+                            <AssociationLine
+                                disabled={disabled || disabledBySession}
+                                activeLineStart={shapeCenter[pair[0]]}
+                                activeLineEnd={shapeCenter[pair[1]]}
+                                isArrow={useArrow}
+                                arrowStart={getArrowStartPoint(pair)}
+                                arrowEnd={getArrowEndPoint(pair)}
+                                selected={false}
+                                ariaLabel={getRemoveButtonAriaLabel(pair)}
+                                on:draw|once={e => handleAssociationDraw(e, pair)}
+                                on:lineClick={() => handleLineClick(pair[0], pair[1])}
+                                on:keyup={handler(e => handleRemoveAssociationByKey(e, pair))}
+                                on:remove={e => handleRemoveAssociation(e, pair)} />
+                        {/each}
+                        {#if !disabled && isLineDrawing && dragging && start && end}
+                            <AssociationLine
+                                activeLineStart={start}
+                                activeLineEnd={end}
+                                isArrow={useArrow}
+                                arrowStart={start}
+                                arrowEnd={end}
+                                disablePointerEvents />
+                        {/if}
+                    </g>
+                    {#if selectedPair !== null}
+                        <g class="selection-layer">
+                            <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
+                            <rect
+                                class="glass-layer"
+                                x="0"
+                                y="0"
+                                height={imgHeight}
+                                width={imgWidth}
+                                on:click={handleLineClick} />
+                            {#each getSelectedChoices(selectedPair) as choice}
+                                <HotspotChoice
+                                    key={choice.key}
+                                    shape={choice.shape}
+                                    classes={isChoiceInactive(choice, pairs) ? 'inactive' : ''}
+                                    coords={getScaledCoords(choice.coords, scalingFactor)}
+                                    selected
+                                    disabled={disabled || disabledBySession || isChoiceDisabled(choice.key, pairs)}
+                                    checkmark={pairs && choiceInPair(choice.key)}
+                                    hoverable={false}
+                                    on:change={handleLineClick} />
+                            {/each}
+                            <AssociationLine
+                                disabled={disabled || disabledBySession}
+                                activeLineStart={shapeCenter[selectedPair[0]]}
+                                activeLineEnd={shapeCenter[selectedPair[1]]}
+                                isArrow={useArrow}
+                                arrowStart={getArrowStartPoint(selectedPair)}
+                                arrowEnd={getArrowEndPoint(selectedPair)}
+                                selected
+                                ariaLabel={getRemoveButtonAriaLabel(selectedPair)}
+                                on:draw={handleDrawShadowLine}
+                                on:lineClick={() => handleLineClick(selectedPair[0], selectedPair[1])}
+                                on:keyup={handler(e => handleRemoveAssociationByKey(e, selectedPair))}
+                                on:remove={e => handleRemoveAssociation(e, selectedPair)} />
+                        </g>
                     {/if}
                 </g>
             </Svg>

@@ -24,6 +24,7 @@ exports[`FontFamilySetting > renders with all font families but no more 1`] = `
             >
               Default font
             </span>
+            
           </span>
            
           <svg
@@ -37,7 +38,9 @@ exports[`FontFamilySetting > renders with all font families but no more 1`] = `
             <path
               d="M11.45 3.29A.49.49 0 0011 3H1a.49.49 0 00-.45.29.47.47 0 00.07.53l5 6a.49.49 0 00.76 0l5-6a.47.47 0 00.07-.53z"
             />
+            
           </svg>
+          
         </button>
          
         <span
@@ -66,6 +69,7 @@ exports[`FontFamilySetting > renders with all font families but no more 1`] = `
               >
                 Default font
               </span>
+              
             </span>
             <span
               aria-selected="false"
@@ -78,6 +82,7 @@ exports[`FontFamilySetting > renders with all font families but no more 1`] = `
               >
                 Courier
               </span>
+              
             </span>
             <span
               aria-selected="false"
@@ -90,6 +95,7 @@ exports[`FontFamilySetting > renders with all font families but no more 1`] = `
               >
                 Arial
               </span>
+              
             </span>
             <span
               aria-selected="false"
@@ -102,6 +108,7 @@ exports[`FontFamilySetting > renders with all font families but no more 1`] = `
               >
                 Verdana
               </span>
+              
             </span>
             <span
               aria-selected="false"
@@ -114,6 +121,7 @@ exports[`FontFamilySetting > renders with all font families but no more 1`] = `
               >
                 CMU Serif
               </span>
+              
             </span>
             <span
               aria-selected="false"
@@ -126,7 +134,9 @@ exports[`FontFamilySetting > renders with all font families but no more 1`] = `
               >
                 Luciole
               </span>
+              
             </span>
+            
              
             <span
               class="scroll-child"
@@ -143,9 +153,14 @@ exports[`FontFamilySetting > renders with all font families but no more 1`] = `
           type="text"
         />
          
+        
          
+        
       </span>
+      
     </div>
+    
+    
   </div>
 </body>
 `;

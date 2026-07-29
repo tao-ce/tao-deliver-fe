@@ -131,14 +131,27 @@ function nodesToBlocks(node, layouts = []) {
 }
 
 /**
+ * Transform QTI HTML5 namespaced elements to standard HTML elements.
+ * QTI uses qh5: prefix for HTML5 elements (like ruby annotations) that aren't part of XHTML.
+ * @param {string} html - the HTML string to transform
+ * @returns {string} the transformed HTML string
+ */
+function transformNamespacedElements(html) {
+    return html.includes('qh5:')
+        ? html.replace(/<(\/?)qh5:([a-z]+)/gi, '<$1$2')
+        : html;
+}
+
+/**
  * Convert html presented as string to DOM nodes
  * @param {string} htmlString
  * @returns {*}
  */
 export function convertToDOM(htmlString = '') {
+    const transformedHtml = transformNamespacedElements(htmlString);
     //use a DOM parser to walk through the html string
     const domParser = new DOMParser();
-    return domParser.parseFromString(htmlString, 'text/html');
+    return domParser.parseFromString(transformedHtml, 'text/html');
 }
 
 /**

@@ -29,7 +29,7 @@ describe('TextReaderInteraction', () => {
             props
         });
         expect(container.querySelector('.qti-customInteraction').classList.contains(props.classes)).toBe(true);
-        expect(container.querySelector('.exposed-pci-properties').innerHTML).toBe(JSON.stringify(props.properties));
+        expect(container.querySelector('.exposed-pci-properties').innerHTML).toBe(JSON.stringify({ ...props.properties, hideTooltips: false }));
     });
 
     it('forwards hideTooltips config property', () => {

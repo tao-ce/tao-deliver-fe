@@ -3,10 +3,13 @@
 exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular component 1`] = `
 <body>
   <div>
+    
     <div
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-matchInteraction qti-match-non-tabular"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
@@ -18,12 +21,15 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You must make a maximum of 1 association
           </p>
         </div>
+        
       </div>
+      
        
       <div
         class="match-non-tabular"
@@ -43,7 +49,7 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
          
         <div
           class="layout-container choices-left"
-          style="--buckets:2;--remove-button-width:6.25rem;--rows:2;"
+          style="--buckets: 2; --remove-button-width: 6.25rem; --rows: 2;"
           tabindex="-1"
         >
           
@@ -62,20 +68,25 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   aria-labelledby="tao-list-label-123"
                   class="draggable-list"
                   role="application"
-                  style="--grid-size:2"
+                  style="--grid-size: 2;"
                   tabindex="-1"
                 >
                   
                   <li
                     class="draggable-list-item last"
                   >
+                    
                     <div>
                       <span
                         class="hidden"
                         id="tao-choice-label-123"
                       >
+                        
                         <div>
+                          
+                          
                           A
+                          
                           
                           
                            
@@ -86,7 +97,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                             option 1 of 2. Button draggable. available 1 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
                           </span>
                         </div>
-                         
+                        
+                        
                       </span>
                        
                       <div
@@ -97,6 +109,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           data-drag-drop-disabled="false"
                           data-drag-drop-key="A"
                         >
+                          
+                          
                            
                           <div
                             aria-grabbed="false"
@@ -120,14 +134,20 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                                   d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                                   fill-rule="evenodd"
                                 />
+                                
                               </svg>
+                              
                             </div>
                              
                             <div
                               class="label-container"
                             >
+                              
                               <div>
+                                
+                                
                                 A
+                                
                                 
                                 
                                  
@@ -138,29 +158,40 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                                   option 1 of 2. Button draggable. available 1 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
                                 </span>
                               </div>
-                               
+                              
+                              
                             </div>
                              
+                            
                              
+                            
                           </div>
                            
                           
+                          
                         </div>
+                        
                       </div>
+                      
                     </div>
                     
+                    
                   </li>
-                  
                   <li
                     class="draggable-list-item"
                   >
+                    
                     <div>
                       <span
                         class="hidden"
                         id="tao-choice-label-123"
                       >
+                        
                         <div>
+                          
+                          
                           B
+                          
                           
                           
                            
@@ -171,7 +202,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                             option 2 of 2. Button draggable.  List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
                           </span>
                         </div>
-                         
+                        
+                        
                       </span>
                        
                       <div
@@ -182,11 +214,15 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           data-drag-drop-disabled="false"
                           data-drag-drop-key="B"
                         >
+                          
                           <div
                             class="stacking"
                           >
+                            
                              
+                            
                           </div>
+                          
                            
                           <div
                             aria-grabbed="false"
@@ -210,14 +246,20 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                                   d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                                   fill-rule="evenodd"
                                 />
+                                
                               </svg>
+                              
                             </div>
                              
                             <div
                               class="label-container"
                             >
+                              
                               <div>
+                                
+                                
                                 B
+                                
                                 
                                 
                                  
@@ -228,26 +270,36 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                                   option 2 of 2. Button draggable.  List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
                                 </span>
                               </div>
-                               
+                              
+                              
                             </div>
                              
+                            
                              
                             <span
                               class="visually-hidden"
                             >
                               You can use this option multiple times.
                             </span>
+                            
                           </div>
                            
                           
+                          
                         </div>
+                        
                       </div>
+                      
                     </div>
+                    
                     
                   </li>
                   
+                  
                 </ul>
+                
               </div>
+              
                
               <span
                 class="hidden"
@@ -256,7 +308,7 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                 List available options., 2 items
               </span>
             </div>
-             
+            
           </div>
           
           
@@ -267,7 +319,10 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
               class="bucket-heading"
             >
               <h6>
+                
+                
                 C
+                
                 
                 
               </h6>
@@ -277,9 +332,13 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                 dir="ltr"
                 lang="nb-NO"
               >
+                
                  
+                
                  
+                
               </div>
+              
             </header>
              
             <div
@@ -294,20 +353,26 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   aria-labelledby="tao-list-label-123"
                   class="draggable-list"
                   role="application"
-                  style="--grid-size:1"
+                  style="--grid-size: 1;"
                   tabindex="-1"
                 >
-                   
                   
+                  
+                   
                   <li
                     aria-hidden="true"
                     class="draggable-list-item removed last"
                   >
+                    
                     <div>
                       <span
                         class="hidden"
                         id="tao-choice-label-123"
-                      />
+                      >
+                        
+                        
+                        
+                      </span>
                        
                       <div
                         class="item-btn-container placed last"
@@ -317,6 +382,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           data-drag-drop-disabled="false"
                           data-drag-drop-key="A"
                         >
+                          
+                          
                            
                           <div
                             aria-grabbed="false"
@@ -339,32 +406,48 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                                   d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                                   fill-rule="evenodd"
                                 />
+                                
                               </svg>
+                              
                             </div>
                              
                             <div
                               class="label-container"
-                            />
+                            >
+                              
+                              
+                              
+                            </div>
                              
+                            
                              
+                            
                           </div>
                            
                           
+                          
                         </div>
+                        
                       </div>
+                      
                     </div>
                     
+                    
                   </li>
-                  
                   <li
                     aria-hidden="true"
                     class="draggable-list-item removed last"
                   >
+                    
                     <div>
                       <span
                         class="hidden"
                         id="tao-choice-label-123"
-                      />
+                      >
+                        
+                        
+                        
+                      </span>
                        
                       <div
                         class="item-btn-container placed last"
@@ -374,6 +457,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           data-drag-drop-disabled="false"
                           data-drag-drop-key="B"
                         >
+                          
+                          
                            
                           <div
                             aria-grabbed="false"
@@ -396,25 +481,40 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                                   d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                                   fill-rule="evenodd"
                                 />
+                                
                               </svg>
+                              
                             </div>
                              
                             <div
                               class="label-container"
-                            />
+                            >
+                              
+                              
+                              
+                            </div>
                              
+                            
                              
+                            
                           </div>
                            
                           
+                          
                         </div>
+                        
                       </div>
+                      
                     </div>
+                    
                     
                   </li>
                   
+                  
                 </ul>
+                
               </div>
+              
                
               <span
                 class="hidden"
@@ -423,11 +523,15 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                 List, 0 items
               </span>
             </div>
+            
             <header
               class="bucket-heading"
             >
               <h6>
+                
+                
                 D
+                
                 
                 
               </h6>
@@ -437,9 +541,13 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                 dir="ltr"
                 lang="nb-NO"
               >
+                
                  
+                
                  
+                
               </div>
+              
             </header>
              
             <div
@@ -454,20 +562,26 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   aria-labelledby="tao-list-label-123"
                   class="draggable-list"
                   role="application"
-                  style="--grid-size:1"
+                  style="--grid-size: 1;"
                   tabindex="-1"
                 >
-                   
                   
+                  
+                   
                   <li
                     aria-hidden="true"
                     class="draggable-list-item removed last"
                   >
+                    
                     <div>
                       <span
                         class="hidden"
                         id="tao-choice-label-123"
-                      />
+                      >
+                        
+                        
+                        
+                      </span>
                        
                       <div
                         class="item-btn-container placed last"
@@ -477,6 +591,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           data-drag-drop-disabled="false"
                           data-drag-drop-key="A"
                         >
+                          
+                          
                            
                           <div
                             aria-grabbed="false"
@@ -499,32 +615,48 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                                   d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                                   fill-rule="evenodd"
                                 />
+                                
                               </svg>
+                              
                             </div>
                              
                             <div
                               class="label-container"
-                            />
+                            >
+                              
+                              
+                              
+                            </div>
                              
+                            
                              
+                            
                           </div>
                            
                           
+                          
                         </div>
+                        
                       </div>
+                      
                     </div>
                     
+                    
                   </li>
-                  
                   <li
                     aria-hidden="true"
                     class="draggable-list-item removed last"
                   >
+                    
                     <div>
                       <span
                         class="hidden"
                         id="tao-choice-label-123"
-                      />
+                      >
+                        
+                        
+                        
+                      </span>
                        
                       <div
                         class="item-btn-container placed last"
@@ -534,6 +666,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           data-drag-drop-disabled="false"
                           data-drag-drop-key="B"
                         >
+                          
+                          
                            
                           <div
                             aria-grabbed="false"
@@ -556,25 +690,40 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                                   d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                                   fill-rule="evenodd"
                                 />
+                                
                               </svg>
+                              
                             </div>
                              
                             <div
                               class="label-container"
-                            />
+                            >
+                              
+                              
+                              
+                            </div>
                              
+                            
                              
+                            
                           </div>
                            
                           
+                          
                         </div>
+                        
                       </div>
+                      
                     </div>
+                    
                     
                   </li>
                   
+                  
                 </ul>
+                
               </div>
+              
                
               <span
                 class="hidden"
@@ -583,12 +732,17 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                 List, 0 items
               </span>
             </div>
-             
+            
+            
           </div>
+          
           
         </div>
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -597,7 +751,7 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
 exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular component with complex X & Y headers 1`] = `
 <div
   class="layout-container choices-left"
-  style="--buckets:1;--remove-button-width:6.25rem;--rows:2;"
+  style="--buckets: 1; --remove-button-width: 6.25rem; --rows: 2;"
   tabindex="-1"
 >
   
@@ -616,19 +770,25 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
           aria-labelledby="tao-list-label-123"
           class="draggable-list"
           role="application"
-          style="--grid-size:1"
+          style="--grid-size: 1;"
           tabindex="-1"
         >
           
           <li
             class="draggable-list-item"
           >
+            
             <div>
               <span
                 class="hidden"
                 id="tao-choice-label-123"
               >
+                
                 <div>
+                  
+                  
+                  
+                  
                   <span
                     tabindex="0"
                   >
@@ -712,7 +872,10 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                         </math>
                       </mjx-assistive-mml>
                     </mjx-container>
+                    
                   </span>
+                  
+                  
                   
                   
                   
@@ -721,14 +884,19 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   </i>
                   
                   
+                  
+                  
                   <sup>
                     2
                   </sup>
                   
                   
+                  
+                  
                   <i>
                     h
                   </i>
+                  
                   
                   
                   
@@ -739,7 +907,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                     option 1 of 1. Button draggable. available 2 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
                   </span>
                 </div>
-                 
+                
+                
               </span>
                
               <div
@@ -750,6 +919,7 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   data-drag-drop-disabled="false"
                   data-drag-drop-key="A"
                 >
+                  
                   <div
                     class="stacking"
                   >
@@ -758,8 +928,11 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                     >
                       2
                     </span>
+                    
                      
+                    
                   </div>
+                  
                    
                   <div
                     aria-grabbed="false"
@@ -783,13 +956,20 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
+                      
                     </div>
                      
                     <div
                       class="label-container"
                     >
+                      
                       <div>
+                        
+                        
+                        
+                        
                         <span
                           tabindex="0"
                         >
@@ -873,7 +1053,10 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                               </math>
                             </mjx-assistive-mml>
                           </mjx-container>
+                          
                         </span>
+                        
+                        
                         
                         
                         
@@ -882,14 +1065,19 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                         </i>
                         
                         
+                        
+                        
                         <sup>
                           2
                         </sup>
                         
                         
+                        
+                        
                         <i>
                           h
                         </i>
+                        
                         
                         
                         
@@ -900,7 +1088,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           option 1 of 1. Button draggable. available 2 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
                         </span>
                       </div>
-                       
+                      
+                      
                     </div>
                      
                     <span
@@ -908,18 +1097,27 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                     >
                       You can use this option 2 times.
                     </span>
+                    
                      
+                    
                   </div>
                    
                   
+                  
                 </div>
+                
               </div>
+              
             </div>
+            
             
           </li>
           
+          
         </ul>
+        
       </div>
+      
        
       <span
         class="hidden"
@@ -928,7 +1126,7 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
         List available options., 1 items
       </span>
     </div>
-     
+    
   </div>
   
   
@@ -939,6 +1137,10 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
       class="bucket-heading"
     >
       <h6>
+        
+        
+        
+        
         <span
           tabindex="0"
         >
@@ -1022,7 +1224,10 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
               </math>
             </mjx-assistive-mml>
           </mjx-container>
+          
         </span>
+        
+        
         
         
         
@@ -1032,14 +1237,20 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
         
         
         
+        
       </h6>
        
       <div
         class="constraints"
+        dir=""
       >
+        
          
+        
          
+        
       </div>
+      
     </header>
      
     <div
@@ -1054,20 +1265,26 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
           aria-labelledby="tao-list-label-123"
           class="draggable-list"
           role="application"
-          style="--grid-size:1"
+          style="--grid-size: 1;"
           tabindex="-1"
         >
-           
           
+          
+           
           <li
             aria-hidden="true"
             class="draggable-list-item removed last"
           >
+            
             <div>
               <span
                 class="hidden"
                 id="tao-choice-label-123"
-              />
+              >
+                
+                
+                
+              </span>
                
               <div
                 class="item-btn-container placed last"
@@ -1077,6 +1294,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   data-drag-drop-disabled="false"
                   data-drag-drop-key="A"
                 >
+                  
+                  
                    
                   <div
                     aria-grabbed="false"
@@ -1099,25 +1318,40 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
+                      
                     </div>
                      
                     <div
                       class="label-container"
-                    />
+                    >
+                      
+                      
+                      
+                    </div>
                      
+                    
                      
+                    
                   </div>
                    
                   
+                  
                 </div>
+                
               </div>
+              
             </div>
+            
             
           </li>
           
+          
         </ul>
+        
       </div>
+      
        
       <span
         class="hidden"
@@ -1126,8 +1360,10 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
         List, 0 items
       </span>
     </div>
-     
+    
+    
   </div>
+  
   
 </div>
 `;
@@ -1135,7 +1371,7 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
 exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular component with stored response (multiple cardinality) 1`] = `
 <div
   class="layout-container choices-left"
-  style="--buckets:2;--remove-button-width:6.25rem;--rows:2;"
+  style="--buckets: 2; --remove-button-width: 6.25rem; --rows: 2;"
   tabindex="-1"
 >
   
@@ -1154,20 +1390,25 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
           aria-labelledby="tao-list-label-123"
           class="draggable-list"
           role="application"
-          style="--grid-size:2"
+          style="--grid-size: 2;"
           tabindex="-1"
         >
           
           <li
             class="draggable-list-item last"
           >
+            
             <div>
               <span
                 class="hidden"
                 id="tao-choice-label-123"
               >
+                
                 <div>
+                  
+                  
                   A
+                  
                   
                   
                    
@@ -1177,7 +1418,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                     option 1 of 2. Button draggable. available 1 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
                   </span>
                 </div>
-                 
+                
+                
               </span>
                
               <div
@@ -1188,6 +1430,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   data-drag-drop-disabled="false"
                   data-drag-drop-key="A"
                 >
+                  
+                  
                    
                   <div
                     aria-grabbed="false"
@@ -1211,14 +1455,20 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
+                      
                     </div>
                      
                     <div
                       class="label-container"
                     >
+                      
                       <div>
+                        
+                        
                         A
+                        
                         
                         
                          
@@ -1228,29 +1478,40 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           option 1 of 2. Button draggable. available 1 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
                         </span>
                       </div>
-                       
+                      
+                      
                     </div>
                      
+                    
                      
+                    
                   </div>
                    
                   
+                  
                 </div>
+                
               </div>
+              
             </div>
             
+            
           </li>
-          
           <li
             class="draggable-list-item"
           >
+            
             <div>
               <span
                 class="hidden"
                 id="tao-choice-label-123"
               >
+                
                 <div>
+                  
+                  
                   B
+                  
                   
                   
                    
@@ -1260,7 +1521,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                     option 2 of 2. Button draggable.  List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
                   </span>
                 </div>
-                 
+                
+                
               </span>
                
               <div
@@ -1271,11 +1533,15 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   data-drag-drop-disabled="false"
                   data-drag-drop-key="B"
                 >
+                  
                   <div
                     class="stacking"
                   >
+                    
                      
+                    
                   </div>
+                  
                    
                   <div
                     aria-grabbed="false"
@@ -1299,14 +1565,20 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
+                      
                     </div>
                      
                     <div
                       class="label-container"
                     >
+                      
                       <div>
+                        
+                        
                         B
+                        
                         
                         
                          
@@ -1316,26 +1588,36 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           option 2 of 2. Button draggable.  List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
                         </span>
                       </div>
-                       
+                      
+                      
                     </div>
                      
+                    
                      
                     <span
                       class="visually-hidden"
                     >
                       You can use this option multiple times.
                     </span>
+                    
                   </div>
                    
                   
+                  
                 </div>
+                
               </div>
+              
             </div>
+            
             
           </li>
           
+          
         </ul>
+        
       </div>
+      
        
       <span
         class="hidden"
@@ -1344,7 +1626,7 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
         List available options., 2 items
       </span>
     </div>
-     
+    
   </div>
   
   
@@ -1355,17 +1637,25 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
       class="bucket-heading"
     >
       <h6>
+        
+        
         C
+        
         
         
       </h6>
        
       <div
         class="constraints"
+        dir=""
       >
+        
          
+        
          
+        
       </div>
+      
     </header>
      
     <div
@@ -1380,20 +1670,26 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
           aria-labelledby="tao-list-label-123"
           class="draggable-list"
           role="application"
-          style="--grid-size:1"
+          style="--grid-size: 1;"
           tabindex="-1"
         >
-           
           
+          
+           
           <li
             aria-hidden="true"
             class="draggable-list-item removed last"
           >
+            
             <div>
               <span
                 class="hidden"
                 id="tao-choice-label-123"
-              />
+              >
+                
+                
+                
+              </span>
                
               <div
                 class="item-btn-container placed last"
@@ -1403,6 +1699,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   data-drag-drop-disabled="false"
                   data-drag-drop-key="A"
                 >
+                  
+                  
                    
                   <div
                     aria-grabbed="false"
@@ -1425,32 +1723,48 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
+                      
                     </div>
                      
                     <div
                       class="label-container"
-                    />
+                    >
+                      
+                      
+                      
+                    </div>
                      
+                    
                      
+                    
                   </div>
                    
                   
+                  
                 </div>
+                
               </div>
+              
             </div>
             
+            
           </li>
-          
           <li
             aria-hidden="true"
             class="draggable-list-item removed last"
           >
+            
             <div>
               <span
                 class="hidden"
                 id="tao-choice-label-123"
-              />
+              >
+                
+                
+                
+              </span>
                
               <div
                 class="item-btn-container placed last"
@@ -1460,6 +1774,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   data-drag-drop-disabled="false"
                   data-drag-drop-key="B"
                 >
+                  
+                  
                    
                   <div
                     aria-grabbed="false"
@@ -1482,25 +1798,40 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
+                      
                     </div>
                      
                     <div
                       class="label-container"
-                    />
+                    >
+                      
+                      
+                      
+                    </div>
                      
+                    
                      
+                    
                   </div>
                    
                   
+                  
                 </div>
+                
               </div>
+              
             </div>
+            
             
           </li>
           
+          
         </ul>
+        
       </div>
+      
        
       <span
         class="hidden"
@@ -1509,21 +1840,30 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
         List, 0 items
       </span>
     </div>
+    
     <header
       class="bucket-heading"
     >
       <h6>
+        
+        
         D
+        
         
         
       </h6>
        
       <div
         class="constraints"
+        dir=""
       >
+        
          
+        
          
+        
       </div>
+      
     </header>
      
     <div
@@ -1538,20 +1878,26 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
           aria-labelledby="tao-list-label-123"
           class="draggable-list"
           role="application"
-          style="--grid-size:1"
+          style="--grid-size: 1;"
           tabindex="-1"
         >
-           
           
+          
+           
           <li
             aria-hidden="true"
             class="draggable-list-item removed last"
           >
+            
             <div>
               <span
                 class="hidden"
                 id="tao-choice-label-123"
-              />
+              >
+                
+                
+                
+              </span>
                
               <div
                 class="item-btn-container placed last"
@@ -1561,6 +1907,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   data-drag-drop-disabled="false"
                   data-drag-drop-key="A"
                 >
+                  
+                  
                    
                   <div
                     aria-grabbed="false"
@@ -1583,32 +1931,48 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
+                      
                     </div>
                      
                     <div
                       class="label-container"
-                    />
+                    >
+                      
+                      
+                      
+                    </div>
                      
+                    
                      
+                    
                   </div>
                    
                   
+                  
                 </div>
+                
               </div>
+              
             </div>
             
+            
           </li>
-          
           <li
             aria-hidden="true"
             class="draggable-list-item removed last"
           >
+            
             <div>
               <span
                 class="hidden"
                 id="tao-choice-label-123"
-              />
+              >
+                
+                
+                
+              </span>
                
               <div
                 class="item-btn-container placed last"
@@ -1618,6 +1982,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   data-drag-drop-disabled="false"
                   data-drag-drop-key="B"
                 >
+                  
+                  
                    
                   <div
                     aria-grabbed="false"
@@ -1640,25 +2006,40 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
+                      
                     </div>
                      
                     <div
                       class="label-container"
-                    />
+                    >
+                      
+                      
+                      
+                    </div>
                      
+                    
                      
+                    
                   </div>
                    
                   
+                  
                 </div>
+                
               </div>
+              
             </div>
+            
             
           </li>
           
+          
         </ul>
+        
       </div>
+      
        
       <span
         class="hidden"
@@ -1667,8 +2048,10 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
         List, 0 items
       </span>
     </div>
-     
+    
+    
   </div>
+  
   
 </div>
 `;
@@ -1676,7 +2059,7 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
 exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular component with stored response (single cardinality) 1`] = `
 <div
   class="layout-container choices-left"
-  style="--buckets:2;--remove-button-width:6.25rem;--rows:2;"
+  style="--buckets: 2; --remove-button-width: 6.25rem; --rows: 2;"
   tabindex="-1"
 >
   
@@ -1695,20 +2078,25 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
           aria-labelledby="tao-list-label-123"
           class="draggable-list"
           role="application"
-          style="--grid-size:2"
+          style="--grid-size: 2;"
           tabindex="-1"
         >
           
           <li
             class="draggable-list-item last"
           >
+            
             <div>
               <span
                 class="hidden"
                 id="tao-choice-label-123"
               >
+                
                 <div>
+                  
+                  
                   A
+                  
                   
                   
                    
@@ -1718,7 +2106,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                     option 1 of 2. Button draggable. available 1 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
                   </span>
                 </div>
-                 
+                
+                
               </span>
                
               <div
@@ -1729,6 +2118,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   data-drag-drop-disabled="false"
                   data-drag-drop-key="A"
                 >
+                  
+                  
                    
                   <div
                     aria-grabbed="false"
@@ -1752,14 +2143,20 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
+                      
                     </div>
                      
                     <div
                       class="label-container"
                     >
+                      
                       <div>
+                        
+                        
                         A
+                        
                         
                         
                          
@@ -1769,29 +2166,40 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           option 1 of 2. Button draggable. available 1 times. List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
                         </span>
                       </div>
-                       
+                      
+                      
                     </div>
                      
+                    
                      
+                    
                   </div>
                    
                   
+                  
                 </div>
+                
               </div>
+              
             </div>
             
+            
           </li>
-          
           <li
             class="draggable-list-item"
           >
+            
             <div>
               <span
                 class="hidden"
                 id="tao-choice-label-123"
               >
+                
                 <div>
+                  
+                  
                   B
+                  
                   
                   
                    
@@ -1801,7 +2209,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                     option 2 of 2. Button draggable.  List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
                   </span>
                 </div>
-                 
+                
+                
               </span>
                
               <div
@@ -1812,11 +2221,15 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   data-drag-drop-disabled="false"
                   data-drag-drop-key="B"
                 >
+                  
                   <div
                     class="stacking"
                   >
+                    
                      
+                    
                   </div>
+                  
                    
                   <div
                     aria-grabbed="false"
@@ -1840,14 +2253,20 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
+                      
                     </div>
                      
                     <div
                       class="label-container"
                     >
+                      
                       <div>
+                        
+                        
                         B
+                        
                         
                         
                          
@@ -1857,26 +2276,36 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           option 2 of 2. Button draggable.  List available options. Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys.
                         </span>
                       </div>
-                       
+                      
+                      
                     </div>
                      
+                    
                      
                     <span
                       class="visually-hidden"
                     >
                       You can use this option multiple times.
                     </span>
+                    
                   </div>
                    
                   
+                  
                 </div>
+                
               </div>
+              
             </div>
+            
             
           </li>
           
+          
         </ul>
+        
       </div>
+      
        
       <span
         class="hidden"
@@ -1885,7 +2314,7 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
         List available options., 2 items
       </span>
     </div>
-     
+    
   </div>
   
   
@@ -1896,17 +2325,25 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
       class="bucket-heading"
     >
       <h6>
+        
+        
         C
+        
         
         
       </h6>
        
       <div
         class="constraints"
+        dir=""
       >
+        
          
+        
          
+        
       </div>
+      
     </header>
      
     <div
@@ -1921,20 +2358,26 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
           aria-labelledby="tao-list-label-123"
           class="draggable-list"
           role="application"
-          style="--grid-size:1"
+          style="--grid-size: 1;"
           tabindex="-1"
         >
-           
           
+          
+           
           <li
             aria-hidden="true"
             class="draggable-list-item removed last"
           >
+            
             <div>
               <span
                 class="hidden"
                 id="tao-choice-label-123"
-              />
+              >
+                
+                
+                
+              </span>
                
               <div
                 class="item-btn-container placed last"
@@ -1944,6 +2387,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   data-drag-drop-disabled="false"
                   data-drag-drop-key="A"
                 >
+                  
+                  
                    
                   <div
                     aria-grabbed="false"
@@ -1966,32 +2411,48 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
+                      
                     </div>
                      
                     <div
                       class="label-container"
-                    />
+                    >
+                      
+                      
+                      
+                    </div>
                      
+                    
                      
+                    
                   </div>
                    
                   
+                  
                 </div>
+                
               </div>
+              
             </div>
             
+            
           </li>
-          
           <li
             aria-hidden="true"
             class="draggable-list-item removed last"
           >
+            
             <div>
               <span
                 class="hidden"
                 id="tao-choice-label-123"
-              />
+              >
+                
+                
+                
+              </span>
                
               <div
                 class="item-btn-container placed last"
@@ -2001,6 +2462,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   data-drag-drop-disabled="false"
                   data-drag-drop-key="B"
                 >
+                  
+                  
                    
                   <div
                     aria-grabbed="false"
@@ -2023,25 +2486,40 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
+                      
                     </div>
                      
                     <div
                       class="label-container"
-                    />
+                    >
+                      
+                      
+                      
+                    </div>
                      
+                    
                      
+                    
                   </div>
                    
                   
+                  
                 </div>
+                
               </div>
+              
             </div>
+            
             
           </li>
           
+          
         </ul>
+        
       </div>
+      
        
       <span
         class="hidden"
@@ -2050,21 +2528,30 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
         List, 0 items
       </span>
     </div>
+    
     <header
       class="bucket-heading"
     >
       <h6>
+        
+        
         D
+        
         
         
       </h6>
        
       <div
         class="constraints"
+        dir=""
       >
+        
          
+        
          
+        
       </div>
+      
     </header>
      
     <div
@@ -2079,20 +2566,26 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
           aria-labelledby="tao-list-label-123"
           class="draggable-list"
           role="application"
-          style="--grid-size:1"
+          style="--grid-size: 1;"
           tabindex="-1"
         >
-           
           
+          
+           
           <li
             aria-hidden="true"
             class="draggable-list-item removed last"
           >
+            
             <div>
               <span
                 class="hidden"
                 id="tao-choice-label-123"
-              />
+              >
+                
+                
+                
+              </span>
                
               <div
                 class="item-btn-container placed last"
@@ -2102,6 +2595,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   data-drag-drop-disabled="false"
                   data-drag-drop-key="A"
                 >
+                  
+                  
                    
                   <div
                     aria-grabbed="false"
@@ -2124,32 +2619,48 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
+                      
                     </div>
                      
                     <div
                       class="label-container"
-                    />
+                    >
+                      
+                      
+                      
+                    </div>
                      
+                    
                      
+                    
                   </div>
                    
                   
+                  
                 </div>
+                
               </div>
+              
             </div>
             
+            
           </li>
-          
           <li
             aria-hidden="true"
             class="draggable-list-item removed last"
           >
+            
             <div>
               <span
                 class="hidden"
                 id="tao-choice-label-123"
-              />
+              >
+                
+                
+                
+              </span>
                
               <div
                 class="item-btn-container placed last"
@@ -2159,6 +2670,8 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                   data-drag-drop-disabled="false"
                   data-drag-drop-key="B"
                 >
+                  
+                  
                    
                   <div
                     aria-grabbed="false"
@@ -2181,25 +2694,40 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
                           d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
+                      
                     </div>
                      
                     <div
                       class="label-container"
-                    />
+                    >
+                      
+                      
+                      
+                    </div>
                      
+                    
                      
+                    
                   </div>
                    
                   
+                  
                 </div>
+                
               </div>
+              
             </div>
+            
             
           </li>
           
+          
         </ul>
+        
       </div>
+      
        
       <span
         class="hidden"
@@ -2208,8 +2736,10 @@ exports[`MatchInteraction Non-Tabular > Rendering > renders non-tabular componen
         List, 0 items
       </span>
     </div>
-     
+    
+    
   </div>
+  
   
 </div>
 `;

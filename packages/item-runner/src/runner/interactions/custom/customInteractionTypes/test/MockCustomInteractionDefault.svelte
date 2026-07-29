@@ -43,6 +43,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     <div class="prompt">{prompt}</div>
     <div class="exposed-pci-properties">{JSON.stringify(properties)}</div>
     <div class="container" bind:this={container}>
+        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
         {@html markup}
     </div>
 </div>

@@ -16,7 +16,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     export let areaBroker;
 </script>
 
-<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
 <div
     class={initialState?.mockSettingKey || 'mock-setting'}
     on:click={() =>

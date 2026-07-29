@@ -13,7 +13,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     import { getItemSettingsStore } from '../../../itemsSettingsStore.js';
     import { getItemSequentialInteractionsStore } from '../../../itemsSequentialInteractionsStore.js';
     import { hasClass } from '../../util/attributes.js';
-    import { semverCompare } from '../../util/semver.js';
+    import { semverCompare } from 'taoDeliverAppsCommon/util/semver.js';
 
     export let itemIdentifier;
     export let properties;
@@ -60,18 +60,19 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 </style>
 
 <div class="audio-recording-wrapper">
-    {#key doNotPlayMedia && !isInitialMount}
-        {#if !doNotPlayMedia || isInitialMount}
-            {#if (useUploader || isReviewMode) && supportsUploader}
-                <AudioRecordingUploader
-                    {...$$restProps}
-                    {itemIdentifier}
-                    {responseIdentifier}
-                    {properties}
-                    {classes}
-                    {isInitialMount}
-                    doNotPlayMedia={doNotPlayMedia && isInitialMount} />
-            {:else}
+    {#if (useUploader || isReviewMode) && supportsUploader}
+        <!-- uploader part should stay mounted, even if doNotPlayMedia becomes set -->
+        <AudioRecordingUploader
+            {...$$restProps}
+            {itemIdentifier}
+            {responseIdentifier}
+            {properties}
+            {classes}
+            {isInitialMount}
+            {doNotPlayMedia} />
+    {:else}
+        {#key doNotPlayMedia && !isInitialMount}
+            {#if !doNotPlayMedia || isInitialMount}
                 <AudioRecordingInteractionImpl
                     {...$$restProps}
                     {itemIdentifier}
@@ -79,8 +80,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                     {properties}
                     {classes}
                     {isInitialMount}
-                    doNotPlayMedia={doNotPlayMedia && isInitialMount} />
+                    {doNotPlayMedia} />
             {/if}
-        {/if}
-    {/key}
+        {/key}
+    {/if}
 </div>

@@ -3,6 +3,7 @@
 exports[`TextGroup > renders details with setting components, passes config & initialState & areaBroker to them 1`] = `
 <body>
   <div>
+    
     <details
       class="a11y-group"
       open=""
@@ -30,11 +31,13 @@ exports[`TextGroup > renders details with setting components, passes config & in
               fill="currentColor"
               fill-rule="evenodd"
             />
+            
           </svg>
-           
-          Text
-           
+          
+           Text 
+          
         </h3>
+        
          
         <svg
           aria-hidden="true"
@@ -49,7 +52,9 @@ exports[`TextGroup > renders details with setting components, passes config & in
             d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
             fill="currentColor"
           />
+          
         </svg>
+        
       </summary>
        
       <div>
@@ -63,7 +68,9 @@ exports[`TextGroup > renders details with setting components, passes config & in
             >
               fontFamily
             </div>
+            
           </li>
+          
            
           <li>
             <div
@@ -73,7 +80,9 @@ exports[`TextGroup > renders details with setting components, passes config & in
             >
               fontSize
             </div>
+            
           </li>
+          
            
           <li>
             <div
@@ -83,7 +92,9 @@ exports[`TextGroup > renders details with setting components, passes config & in
             >
               lineHeight
             </div>
+            
           </li>
+          
            
           <li>
             <div
@@ -93,7 +104,9 @@ exports[`TextGroup > renders details with setting components, passes config & in
             >
               letterSpacing
             </div>
+            
           </li>
+          
            
           <li>
             <div
@@ -103,7 +116,9 @@ exports[`TextGroup > renders details with setting components, passes config & in
             >
               wordSpacing
             </div>
+            
           </li>
+          
            
           <li>
             <div
@@ -113,10 +128,15 @@ exports[`TextGroup > renders details with setting components, passes config & in
             >
               letterAndWordSpacing
             </div>
+            
           </li>
+          
         </ul>
+        
       </div>
     </details>
+    
+    
     
   </div>
 </body>
@@ -125,6 +145,7 @@ exports[`TextGroup > renders details with setting components, passes config & in
 exports[`TextGroup > renders details, initial state can be empty 1`] = `
 <body>
   <div>
+    
     <details
       class="a11y-group"
       open=""
@@ -152,11 +173,13 @@ exports[`TextGroup > renders details, initial state can be empty 1`] = `
               fill="currentColor"
               fill-rule="evenodd"
             />
+            
           </svg>
-           
-          Text
-           
+          
+           Text 
+          
         </h3>
+        
          
         <svg
           aria-hidden="true"
@@ -171,7 +194,9 @@ exports[`TextGroup > renders details, initial state can be empty 1`] = `
             d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
             fill="currentColor"
           />
+          
         </svg>
+        
       </summary>
        
       <div>
@@ -185,7 +210,9 @@ exports[`TextGroup > renders details, initial state can be empty 1`] = `
             >
               mock-setting
             </div>
+            
           </li>
+          
            
           <li>
             <div
@@ -195,7 +222,9 @@ exports[`TextGroup > renders details, initial state can be empty 1`] = `
             >
               mock-setting
             </div>
+            
           </li>
+          
            
           <li>
             <div
@@ -205,9 +234,13 @@ exports[`TextGroup > renders details, initial state can be empty 1`] = `
             >
               mock-setting
             </div>
+            
           </li>
+          
            
+          
            
+          
            
           <li>
             <div
@@ -217,10 +250,15 @@ exports[`TextGroup > renders details, initial state can be empty 1`] = `
             >
               mock-setting
             </div>
+            
           </li>
+          
         </ul>
+        
       </div>
     </details>
+    
+    
     
   </div>
 </body>
@@ -229,6 +267,7 @@ exports[`TextGroup > renders details, initial state can be empty 1`] = `
 exports[`TextGroup > renders only enabled settings 1`] = `
 <body>
   <div>
+    
     <details
       class="a11y-group"
       open=""
@@ -256,11 +295,13 @@ exports[`TextGroup > renders only enabled settings 1`] = `
               fill="currentColor"
               fill-rule="evenodd"
             />
+            
           </svg>
-           
-          Text
-           
+          
+           Text 
+          
         </h3>
+        
          
         <svg
           aria-hidden="true"
@@ -275,11 +316,14 @@ exports[`TextGroup > renders only enabled settings 1`] = `
             d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
             fill="currentColor"
           />
+          
         </svg>
+        
       </summary>
        
       <div>
         <ul>
+          
            
           <li>
             <div
@@ -289,8 +333,11 @@ exports[`TextGroup > renders only enabled settings 1`] = `
             >
               fontSize
             </div>
+            
           </li>
+          
            
+          
            
           <li>
             <div
@@ -300,12 +347,19 @@ exports[`TextGroup > renders only enabled settings 1`] = `
             >
               letterSpacing
             </div>
+            
           </li>
+          
            
+          
            
+          
         </ul>
+        
       </div>
     </details>
+    
+    
     
   </div>
 </body>

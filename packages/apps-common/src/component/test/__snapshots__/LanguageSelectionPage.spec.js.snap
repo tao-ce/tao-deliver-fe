@@ -16,6 +16,7 @@ exports[`LanguageSelectionPage component > Renders correctly with no props 1`] =
             Please select a language
           </h3>
            
+          
            
           <div
             class="form-container"
@@ -34,7 +35,9 @@ exports[`LanguageSelectionPage component > Renders correctly with no props 1`] =
               >
                 <span
                   class="dropdown-placeholder"
-                />
+                >
+                  
+                </span>
                  
                 <svg
                   aria-hidden="true"
@@ -47,7 +50,9 @@ exports[`LanguageSelectionPage component > Renders correctly with no props 1`] =
                   <path
                     d="M15.46 4.29A.51.51 0 0015 4H1a.5.5 0 00-.38.83l7 8a.51.51 0 00.76 0l7-8a.51.51 0 00.08-.54z"
                   />
+                  
                 </svg>
+                
               </button>
                
               <span
@@ -65,6 +70,7 @@ exports[`LanguageSelectionPage component > Renders correctly with no props 1`] =
                     class="scroll-child"
                   />
                    
+                  
                    
                   <span
                     class="scroll-child"
@@ -82,21 +88,30 @@ exports[`LanguageSelectionPage component > Renders correctly with no props 1`] =
                 type="text"
               />
                
+              
                
+              
             </span>
+            
              
             <button
               class="actionable primary pill small"
               type="button"
             >
+              
                
+              
                
               Select
+              
             </button>
+            
           </div>
         </div>
       </main>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -117,6 +132,7 @@ exports[`LanguageSelectionPage component > Renders correctly with props set 1`] 
             Please select a language
           </h3>
            
+          
            
           <div
             class="form-container"
@@ -135,6 +151,7 @@ exports[`LanguageSelectionPage component > Renders correctly with props set 1`] 
               >
                 <span>
                   Русский (Россия)
+                  
                 </span>
                  
                 <svg
@@ -148,7 +165,9 @@ exports[`LanguageSelectionPage component > Renders correctly with props set 1`] 
                   <path
                     d="M15.46 4.29A.51.51 0 0015 4H1a.5.5 0 00-.38.83l7 8a.51.51 0 00.76 0l7-8a.51.51 0 00.08-.54z"
                   />
+                  
                 </svg>
+                
               </button>
                
               <span
@@ -173,6 +192,7 @@ exports[`LanguageSelectionPage component > Renders correctly with props set 1`] 
                     role="option"
                   >
                     English (United Kingdom)
+                    
                   </span>
                   <span
                     aria-selected="true"
@@ -181,6 +201,7 @@ exports[`LanguageSelectionPage component > Renders correctly with props set 1`] 
                     role="option"
                   >
                     Русский (Россия)
+                    
                   </span>
                   <span
                     aria-selected="false"
@@ -189,7 +210,9 @@ exports[`LanguageSelectionPage component > Renders correctly with props set 1`] 
                     role="option"
                   >
                     Français (France)
+                    
                   </span>
+                  
                    
                   <span
                     class="scroll-child"
@@ -207,21 +230,30 @@ exports[`LanguageSelectionPage component > Renders correctly with props set 1`] 
                 type="text"
               />
                
+              
                
+              
             </span>
+            
              
             <button
               class="actionable primary pill small"
               type="button"
             >
+              
                
+              
                
               Select
+              
             </button>
+            
           </div>
         </div>
       </main>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -242,6 +274,7 @@ exports[`LanguageSelectionPage component > Sets the first locale from a list of 
             Please select a language
           </h3>
            
+          
            
           <div
             class="form-container"
@@ -260,6 +293,7 @@ exports[`LanguageSelectionPage component > Sets the first locale from a list of 
               >
                 <span>
                   English (United Kingdom)
+                  
                 </span>
                  
                 <svg
@@ -273,7 +307,9 @@ exports[`LanguageSelectionPage component > Sets the first locale from a list of 
                   <path
                     d="M15.46 4.29A.51.51 0 0015 4H1a.5.5 0 00-.38.83l7 8a.51.51 0 00.76 0l7-8a.51.51 0 00.08-.54z"
                   />
+                  
                 </svg>
+                
               </button>
                
               <span
@@ -298,6 +334,7 @@ exports[`LanguageSelectionPage component > Sets the first locale from a list of 
                     role="option"
                   >
                     English (United Kingdom)
+                    
                   </span>
                   <span
                     aria-selected="false"
@@ -306,6 +343,7 @@ exports[`LanguageSelectionPage component > Sets the first locale from a list of 
                     role="option"
                   >
                     Русский (Россия)
+                    
                   </span>
                   <span
                     aria-selected="false"
@@ -314,7 +352,9 @@ exports[`LanguageSelectionPage component > Sets the first locale from a list of 
                     role="option"
                   >
                     Français (France)
+                    
                   </span>
+                  
                    
                   <span
                     class="scroll-child"
@@ -332,21 +372,30 @@ exports[`LanguageSelectionPage component > Sets the first locale from a list of 
                 type="text"
               />
                
+              
                
+              
             </span>
+            
              
             <button
               class="actionable primary pill small"
               type="button"
             >
+              
                
+              
                
               Select
+              
             </button>
+            
           </div>
         </div>
       </main>
     </div>
+    
+    
   </div>
 </body>
 `;

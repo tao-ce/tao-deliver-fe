@@ -2,6 +2,7 @@
 // Copyright (C) 2025 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+import { tick } from 'svelte';
 import { render, fireEvent } from '@testing-library/svelte';
 import Attachment from '../Attachment.svelte';
 import { getTestSessionStatusStore } from '../../../../testsStateStore.js';
@@ -47,7 +48,7 @@ describe('Attachment', () => {
         expect(container.querySelector('.attachment-box')).toBeEmptyDOMElement();
     });
 
-    it('renders with PDF attachment', () => {
+    it('renders with PDF attachment', async () => {
         const { container } = render(Attachment, {
             props: {
                 attachment: attachments[0],
@@ -55,6 +56,7 @@ describe('Attachment', () => {
                 serviceCallId
             }
         });
+        await tick();
         expect(container).toMatchSnapshot();
     });
 

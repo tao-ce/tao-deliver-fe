@@ -1,0 +1,58 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`handling errors > renders TheEnd page if no params passed 1`] = `
+<div
+  class="the-end"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="icon-container"
+    >
+      <svg
+        aria-hidden="false"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Lightning bolt icon
+        </title>
+        <path
+          d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
+        />
+        
+      </svg>
+      
+    </div>
+     
+    <div
+      class="info"
+    >
+      <h1
+        class="ui-heading-xl"
+      >
+        Unexpected error.
+      </h1>
+       
+      
+       
+      <p>
+        Sorry, an unexpected error happened during the test.
+      </p>
+      
+       
+      <p>
+        Please contact your test administrator.
+      </p>
+      
+       
+      
+       
+      
+       
+      
+    </div>
+  </div>
+</div>
+`;

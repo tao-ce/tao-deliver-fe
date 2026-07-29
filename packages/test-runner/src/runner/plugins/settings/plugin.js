@@ -12,6 +12,7 @@ import { __ } from '@oat-sa-private/ui-core';
 import settingsKeys from './settingsKeys.js';
 import { getTestSessionUserDataService } from '../../session/testSessionUserDataService.js';
 import { getItemProperty } from '../../util/testMap.js';
+import { mount, unmount } from 'svelte';
 
 // The settingsKeys represented in this plugin's SettingsContent component
 const panelSettingsKeys = {
@@ -142,10 +143,10 @@ export default pluginFactory({
          */
         this.destroyOverlay = () => {
             if (this.overlayHeader) {
-                this.overlayHeader.$destroy();
+                unmount(this.overlayHeader);
             }
             if (this.overlayContent) {
-                this.overlayContent.$destroy();
+                unmount(this.overlayContent);
             }
             this.overlayHeader = null;
             this.overlayContent = null;
@@ -245,13 +246,13 @@ export default pluginFactory({
 
         this.setOverlayStatus(); // opens Overlay
 
-        this.overlayHeader = new OverlayHeaderBar({
+        this.overlayHeader = mount(OverlayHeaderBar, {
             target: headerSlot,
             props: {
                 heading: __('Test Configuration')
             }
         });
-        this.overlayContent = new SettingsContent({
+        this.overlayContent = mount(SettingsContent, {
             target: contentSlot,
             props: {
                 serviceCallId: testConfig.serviceCallId

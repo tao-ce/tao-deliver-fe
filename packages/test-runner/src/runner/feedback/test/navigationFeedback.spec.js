@@ -661,6 +661,47 @@ describe('getNavigationFeedbacksStore', () => {
         });
     });
 
+    it('disableButtons/enableButtons methods', () => {
+        const store1 = getNavigationFeedbacksStore('def');
+        const feedbacksArray = [{ config: { buttons: [{ key: 'A' }, { key: 'B' }] } }];
+        store1.set({
+            feedbacksArray
+        });
+        expect(store1.get()).toEqual({
+            feedbacksArray
+        });
+        store1.disableButtons();
+        expect(feedbacksArray[0].config.buttons[0].disabled).toBe(true);
+        expect(feedbacksArray[0].config.buttons[1].disabled).toBe(true);
+
+        store1.enableButtons();
+        expect(feedbacksArray[0].config.buttons[0].disabled).toBe(false);
+        expect(feedbacksArray[0].config.buttons[1].disabled).toBe(false);
+    });
+
+    it('disableButtons/enableButtons methods with filter', () => {
+        const store1 = getNavigationFeedbacksStore('def');
+        const feedbacksArray = [
+            { config: { buttons: [{ key: 'A' }, { key: 'B' }] }, type: 'feedback' },
+            { config: { buttons: [{ key: 'C' }] }, type: 'timeout' }
+        ];
+        store1.set({
+            feedbacksArray
+        });
+        expect(store1.get()).toEqual({
+            feedbacksArray
+        });
+        store1.disableButtons(fb => fb.type === 'timeout');
+        expect(feedbacksArray[0].config.buttons[0].disabled).toBe(void 0);
+        expect(feedbacksArray[0].config.buttons[1].disabled).toBe(void 0);
+        expect(feedbacksArray[1].config.buttons[0].disabled).toBe(true);
+
+        store1.enableButtons(fb => fb.type === 'timeout');
+        expect(feedbacksArray[0].config.buttons[0].disabled).toBe(void 0);
+        expect(feedbacksArray[0].config.buttons[1].disabled).toBe(void 0);
+        expect(feedbacksArray[1].config.buttons[0].disabled).toBe(false);
+    });
+
     it('isAnyShown method', () => {
         const store1 = getNavigationFeedbacksStore('def');
         expect(store1.isAnyShown()).toBe(false);

@@ -138,7 +138,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 
     if (choices) {
-        formattedChoices = shuffle ? shuffleChoiceOptions(choices, interactionStateStore) : choices;
+        formattedChoices = shuffle ? shuffleChoiceOptions(choices, interactionStateStore) : [...choices];
 
         formattedChoices.forEach(choice => {
             choice.removed = false;
@@ -156,7 +156,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     //update store and choices on value change; also will do initial response definition
     $: if (selected) {
         if (selected && !validateResponse()) {
-            console.error('invalid response detected:', selected); // eslint-disable-line no-console
+            console.error('invalid response detected:', selected);
             selected = selected.map(s => {
                 if (s?.key === 'undefined') {
                     return null;
@@ -346,6 +346,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @param {KeyboardEvent} event
      */
     function handleContainerKeyDown(event) {
+        if (disabled) {
+            return;
+        }
         const key = getActualKey(event);
         switch (key) {
             case 'tab': //= on:focusOutside, but not with mouse click
@@ -569,6 +572,15 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 height: 100%;
             }
         }
+
+        &.orientation-horizontal > :global(ol) {
+            & :global(.label-container) {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
         & > :global(div) {
             flex: 1 0 0;
         }
@@ -631,11 +643,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         </p>
     {/if}
 
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div
         class="lists-container orientation-{qtiOrientation} position-{qtiPosition} order-{order}"
         aria-controls={ariaLiveContainerId}
         bind:this={listsContainer}
-        on:keydown={!disabled && handleContainerKeyDown}>
+        on:keydown={handleContainerKeyDown}>
         {#each areasOrder as area (area)}
             {#if area === areas.choices && !isSingleOrder}
                 <DraggableList
@@ -688,7 +701,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                     {disabled}
                     orientation={qtiOrientation}
                     position={qtiPosition}
-                    data-order={order}
+                    {order}
                     max={sortableListMax}
                     itemLabel={itemLabel ? itemLabel : void 0}
                     {itemLabelSuffix}

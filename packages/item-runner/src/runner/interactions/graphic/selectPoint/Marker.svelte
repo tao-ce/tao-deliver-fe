@@ -7,10 +7,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 <script>
     // Licensed under Gnu Public Licence version 2
     // Copyright (c) 2020-21 (original work) Open Assessment Technologies SA ;
+    /* eslint-disable svelte/valid-compile */ // because of CSS mixin
+
     import { onMount, createEventDispatcher } from 'svelte';
     import { SVG } from '@svgdotjs/svg.js';
-    import '@svgdotjs/svg.draggable.js/src/svg.draggable.js';
-    import '@svgdotjs/svg.filter.js/src/svg.filter.js';
+    import '@svgdotjs/svg.draggable.js';
+    import '@svgdotjs/svg.filter.js';
     import { defaultPin, selectedPin, hitbox } from './resources/pins.js';
 
     /**

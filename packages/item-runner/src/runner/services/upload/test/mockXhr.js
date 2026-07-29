@@ -2,6 +2,7 @@
 // Copyright (C) 2022-2025 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+import { vi } from 'vitest';
 
 /**
  * Factory for mock for window.XMLHttpRequest

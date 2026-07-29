@@ -24,10 +24,8 @@ export function convertPxToRem(cssRules, cssProperties) {
     if (!cssRules) {
         return;
     }
-
     const defaultRemInPx = getDefaultRemSizePx();
     const regex = /([^a-zA-Z0-9._])([0-9.]+)(px)/g;
-    const convertFontSize = !cssProperties || cssProperties.some(c => c === 'font-size');
 
     Object.values(cssRules)
         .flatMap(rule => {
@@ -40,22 +38,19 @@ export function convertPxToRem(cssRules, cssProperties) {
             const style = rule.style;
             for (let i = 0; i < style.length; i++) {
                 const propertyName = style[i];
-                if (!cssProperties || cssProperties.includes(propertyName) || (convertFontSize && propertyName.startsWith('--fontsize-'))) {
+
+                if (shouldConvertPxToRem(cssProperties, propertyName)) {
                     const value = style.getPropertyValue(propertyName);
                     if (value && value.includes('px')) {
                         const paddedValue = ` ${value} `;
                         const newValue = paddedValue
-                            .replaceAll(
-                                regex,
-                                //eslint-disable-next-line no-unused-vars
-                                (match, prevSymbol, pxValueStr, pxUnitStr, index) => {
-                                    if (prevSymbol === '-' && paddedValue[index - 1] === '-') {
-                                        return match; //edge case: `var(--20px)`
-                                    }
-                                    const remValue = parseFloat(pxValueStr) / defaultRemInPx;
-                                    return `${prevSymbol}${remValue}rem`;
+                            .replaceAll(regex, (match, prevSymbol, pxValueStr, pxUnitStr, index) => {
+                                if (prevSymbol === '-' && paddedValue[index - 1] === '-') {
+                                    return match; //edge case: `var(--20px)`
                                 }
-                            )
+                                const remValue = parseFloat(pxValueStr) / defaultRemInPx;
+                                return `${prevSymbol}${remValue}rem`;
+                            })
                             .trim();
                         const priority = style.getPropertyPriority(propertyName);
                         style.setProperty(propertyName, newValue, priority);
@@ -63,6 +58,24 @@ export function convertPxToRem(cssRules, cssProperties) {
                 }
             }
         });
+}
+
+/**
+ * @param {String[]?} cssProperties
+ * @param {String} propertyName
+ * @returns {boolean}
+ */
+function shouldConvertPxToRem(cssProperties, propertyName) {
+    if (!cssProperties) {
+        return true;
+    }
+    if (cssProperties.includes(propertyName)) {
+        return true;
+    }
+    if (cssProperties.some(c => c === 'font-size')) {
+        return propertyName.startsWith('--fontsize-') || propertyName.startsWith('--styleeditor-font-size');
+    }
+    return false;
 }
 
 /**

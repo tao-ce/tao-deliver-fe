@@ -4,9 +4,10 @@ exports[`FeedbackDialogsContainer > renders feedbacks from the store 1`] = `
 <body>
   <div>
     
+    
+    
     <div
       class="modal-wrapper"
-      style="animation: __svelte_4004126939_0 150ms linear 0ms 1 both;"
     >
       <div
         class="modal-background light"
@@ -16,13 +17,16 @@ exports[`FeedbackDialogsContainer > renders feedbacks from the store 1`] = `
         aria-modal="true"
         class="modal-positioning"
       >
+        
         <div
           aria-describedby="tao-description-123"
           class="dialog inverted"
           role="dialog"
           tabindex="-1"
         >
+          
            
+          
            
           <div
             id="tao-description-123"
@@ -30,8 +34,13 @@ exports[`FeedbackDialogsContainer > renders feedbacks from the store 1`] = `
             <p>
               ABC
             </p>
+            
           </div>
+          
            
+          
+          
+          
            
           <div
             class="actions aligned-end"
@@ -40,21 +49,27 @@ exports[`FeedbackDialogsContainer > renders feedbacks from the store 1`] = `
               class="actionable primary pill medium fullwidth"
               type="button"
             >
+              
                
+              
                
               Btn1
+              
             </button>
+            
           </div>
         </div>
         
+        
       </div>
+      
     </div>
+    
     
     
     
     <div
       class="modal-wrapper"
-      style="animation: __svelte_4004126939_0 150ms linear 0ms 1 both;"
     >
       <div
         class="modal-background light"
@@ -64,13 +79,16 @@ exports[`FeedbackDialogsContainer > renders feedbacks from the store 1`] = `
         aria-modal="true"
         class="modal-positioning"
       >
+        
         <div
           aria-describedby="tao-description-123"
           class="dialog inverted"
           role="dialog"
           tabindex="-1"
         >
+          
            
+          
            
           <div
             id="tao-description-123"
@@ -78,8 +96,13 @@ exports[`FeedbackDialogsContainer > renders feedbacks from the store 1`] = `
             <p>
               123
             </p>
+            
           </div>
+          
            
+          
+          
+          
            
           <div
             class="actions aligned-end"
@@ -88,15 +111,23 @@ exports[`FeedbackDialogsContainer > renders feedbacks from the store 1`] = `
               class="actionable primary pill medium fullwidth"
               type="button"
             >
+              
                
+              
                
               Btn2
+              
             </button>
+            
           </div>
         </div>
         
+        
       </div>
+      
     </div>
+    
+    
     
     
     
@@ -107,6 +138,9 @@ exports[`FeedbackDialogsContainer > renders feedbacks from the store 1`] = `
 exports[`FeedbackDialogsContainer > renders nothing if no feedbacks 1`] = `
 <body>
   <div>
+    
+    
+    
     
   </div>
 </body>

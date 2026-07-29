@@ -3,6 +3,7 @@
 exports[`TableContainer component > should filter rows by search term 1`] = `
 <body>
   <div>
+    
     <table
       class="fullwidth"
     >
@@ -15,10 +16,13 @@ exports[`TableContainer component > should filter rows by search term 1`] = `
             <div
               class="cell-wrapper"
             >
+              
                
+              
                
+              
             </div>
-             
+            
           </th>
           
           
@@ -28,17 +32,22 @@ exports[`TableContainer component > should filter rows by search term 1`] = `
             <div
               class="cell-wrapper"
             >
+              
                
               <div>
                 <div>
                   Name
                 </div>
                  
+                
                  
+                
               </div>
+              
                
+              
             </div>
-             
+            
           </th>
           
           
@@ -48,25 +57,32 @@ exports[`TableContainer component > should filter rows by search term 1`] = `
             <div
               class="cell-wrapper"
             >
+              
                
               <div>
                 <div>
                   ID
                 </div>
                  
+                
                  
+                
               </div>
+              
                
+              
             </div>
-             
+            
           </th>
+          
           
         </tr>
       </thead>
-       
+      
       <tbody>
         <tr>
           <td>
+            
             <div
               class="radio-wrapper"
             >
@@ -79,7 +95,6 @@ exports[`TableContainer component > should filter rows by search term 1`] = `
                   <input
                     name="radioButton"
                     type="radio"
-                    value="undefined"
                   />
                    
                   <svg
@@ -89,6 +104,7 @@ exports[`TableContainer component > should filter rows by search term 1`] = `
                     <title>
                       Radio button
                     </title>
+                    
                     <circle
                       class="border"
                       cx="8"
@@ -103,19 +119,27 @@ exports[`TableContainer component > should filter rows by search term 1`] = `
               </div>
             </div>
             
+            
           </td>
           <td>
+            
+            
             Battery number two
             
             
+            
           </td>
           <td>
+            
+            
             id2
             
             
+            
           </td>
-           
+          
         </tr>
+        
       </tbody>
     </table>
      
@@ -125,7 +149,10 @@ exports[`TableContainer component > should filter rows by search term 1`] = `
     >
       
     </div>
+    
      
+    
+    
     
   </div>
 </body>

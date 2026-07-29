@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tao-ignite\n"
-"POT-Creation-Date: 2025-09-10 13:17\n"
-"PO-Revision-Date: 2025-09-11 02:38\n"
+"POT-Creation-Date: 2026-05-12 13:56\n"
+"PO-Revision-Date: 2026-05-13 01:53\n"
 "Last-Translator: \n"
 "Language-Team: Danish\n"
 "Language: da\n"
@@ -32,11 +32,11 @@ msgstr[1] "%d flere varer"
 msgid "breadcrumb"
 msgstr "brødkrumme"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:64
+#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:66
 msgid "the result is"
 msgstr "resultatet er"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:65
+#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:67
 msgid "Input area"
 msgstr "Input area"
 
@@ -477,6 +477,14 @@ msgstr "tilfældig værdi"
 msgid "Remove"
 msgstr "Fjern"
 
+#: ../../../node_modules/@oat-sa-private/ui-components/colorPicker/ColorPicker.svelte:16
+msgid "Please provide a valid CSS color value (e.g. #RRGGBB, rgb(...), rgba(...))."
+msgstr "Angiv en gyldig CSS-farveværdi (f.eks. #RRGGBB, rgb(...), rgba(...))."
+
+#: ../../../node_modules/@oat-sa-private/ui-components/colorPicker/ColorPicker.svelte:35
+msgid "This field is required."
+msgstr "Dette felt er obligatorisk."
+
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:248
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:41
 msgid "Manage Preferences"
@@ -489,6 +497,10 @@ msgstr "Tilpas dine cookie-præferencer. Du kan vælge hvilke typer cookies, du 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:262
 msgid "Always Active"
 msgstr "Altid Aktiv"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:279
+msgid "Confirm Choices"
+msgstr "Bekræft Valg"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:29
 msgid "Cookie Policy"
@@ -703,55 +715,70 @@ msgstr "annuller"
 msgid "ok"
 msgstr "ok"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:409
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:197
 msgid "Document toolbar"
 msgstr "Værktøjslinjen for dokument"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:412
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:202
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:283
+msgid "Search"
+msgstr "Søg"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:214
 msgid "Zoom in"
 msgstr "Zoom ind"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:418
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:220
 msgid "Zoom out"
 msgstr "Zoom ud"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:427
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:229
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:296
 msgid "Previous"
 msgstr "Forrige"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:445
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:246
 msgid "of %d"
 msgstr "af %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:449
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:249
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:305
 msgid "Next"
 msgstr "Næste"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:461
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:261
 msgid "Download"
 msgstr "Hent"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:469
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:269
 msgid "Open in new tab"
 msgstr "Åbn i nyt faneblad"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:491
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:291
+msgid "%d of %d matches"
+msgstr "%d af %d matches"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:292
+msgid "No matches found"
+msgstr "Ingen resultater fundet"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:295
 msgid "Open in new tab: %s"
 msgstr "Åbn i ny fane: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:83
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:91
 msgid "Missing PDF file %s"
 msgstr "Manglende PDF-fil %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:85
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:93
 msgid "Invalid or corrupted PDF file."
 msgstr "Ugyldig eller ødelagt PDF-fil."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:87
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:95
 msgid "An error occurred while loading the PDF."
 msgstr "Der opstod en fejl under indlæsning af PDF."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:199
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:139
 msgid "Missing PDF file."
 msgstr "Mangler PDF-fil."
 
@@ -763,11 +790,11 @@ msgstr "%s, %d varer"
 msgid "draggable list"
 msgstr "trækbar liste"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:434
+#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:435
 msgid "You can use this option %d times."
 msgstr "Du kan bruge denne indstilling %d gange."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:439
+#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:440
 msgid "You can use this option multiple times."
 msgstr "Du kan bruge denne indstilling flere gange."
 
@@ -775,73 +802,113 @@ msgstr "Du kan bruge denne indstilling flere gange."
 msgid "Close Panel"
 msgstr "Luk Panel"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:413
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:107
+msgid "... or drop your file here"
+msgstr "... eller slip din fil her"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:112
+msgid "Accepted: %s"
+msgstr "Accepteret: %s"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:114
+msgid "Up to %s files"
+msgstr "Op til %s filer"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:116
+msgid "Max size: %s"
+msgstr "Maks. størrelse: %s"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:152
 msgid "File selected successfully"
 msgstr "Fil valgt"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:417
-msgid "Answer file selected:"
-msgstr "Svar fil valgt:"
-
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:422
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:165
 msgid "This file is not accepted"
 msgstr "Denne fil er ikke accepteret"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:426
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:176
+msgid "Remove file %s"
+msgstr "Fjern fil %s"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:30
+msgid "File selected:"
+msgstr "Fil valgt:"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:412
 msgid "Select different file"
 msgstr "Vælg anden fil"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:435
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:421
 msgid "Clear file"
 msgstr "Ryd fil"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:445
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:431
 msgid "Browse your computer"
 msgstr "Gennemse din computer"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:447
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:433
 msgid "Select a file"
 msgstr "Vælg en fil"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:450
-msgid "expected formats: %s"
-msgstr "forventede formater: %s"
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:441
+msgid "Maximum file size: %s"
+msgstr "Maksimal filstørrelse: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:453
-msgid "maximum file size: %s"
-msgstr "maksimal filstørrelse: %s"
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:50
+msgid "Answer file selected:"
+msgstr "Svar fil valgt:"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:467
-msgid "..or drop your file here"
-msgstr "..eller slip din fil her"
-
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:144
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:150
 msgid "Folders are not accepted, expected formats are: %s"
 msgstr "Mapper er ikke accepteret, forventede formater er: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:146
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:152
 msgid "files"
 msgstr "filer"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:148
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:154
 msgid "Empty files are not accepted, please try again."
 msgstr "Tomme filer accepteres ikke. Prøv venligst igen."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:150
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:156
 msgid "The size of the selected file is %s that is more than the accepted %s"
 msgstr "Størrelsen af den valgte fil er %s , der er mere end den accepterede %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:157
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:163
 msgid "The %s file format is not accepted, expected formats are: %s"
 msgstr "Filformatet %s er ikke accepteret, forventede formater er: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:163
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:169
 msgid "The unknown file format is not accepted, expected formats are: %s"
 msgstr "Det ukendte filformat er ikke accepteret, forventede formater er: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:165
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:171
 msgid "Multiple files are not accepted. Please try again."
 msgstr "Flere filer accepteres ikke. Prøv venligst igen."
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:222
+msgid "%d of %d"
+msgstr "%d af %d"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:228
+msgid "Add file"
+msgstr "Tilføj fil"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:236
+msgid "Remove all"
+msgstr "Fjern alle"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:253
+msgid "Select files"
+msgstr "Vælg filer"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:268
+msgid "Maximum file size: %s. "
+msgstr "Maksimal filstørrelse: %s. "
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:269
+msgid "Up to %d files"
+msgstr "Op til %d filer"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/mimetype.js:31
 msgid "all images"
@@ -854,6 +921,10 @@ msgstr "alle videoer"
 #: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/mimetype.js:33
 msgid "all audios"
 msgstr "alle lydbånd"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/validation.js:80
+msgid "No file selected."
+msgstr "Ingen fil valgt."
 
 #: ../../../node_modules/@oat-sa-private/ui-components/languageSelector/LanguageSelector.svelte:99
 msgid "Select language"
@@ -899,7 +970,7 @@ msgstr "Skjul Menu"
 msgid "Expand Menu"
 msgstr "Udvid Menuen"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/notificationContainer/NotificationContainer.svelte:202
+#: ../../../node_modules/@oat-sa-private/ui-components/notificationContainer/NotificationContainer.svelte:203
 msgid "Notifications"
 msgstr "Notifikationer"
 
@@ -935,103 +1006,103 @@ msgstr "Vis adgangskode"
 msgid "Hide password"
 msgstr "Skjul adgangskode"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1280
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1288
 msgid "Media error detected"
 msgstr "Mediefejl fundet"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1281
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1289
 msgid "Please reload the media to try again"
 msgstr "Genindlæs mediet for at prøve igen"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1322
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1330
 msgid "media player"
 msgstr "medieafspiller"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:186
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:194
 msgid "start playing"
 msgstr "start afspilning"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:188
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:196
 msgid "play again"
 msgstr "afspil igen"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:192
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:200
 msgid "resume playing"
 msgstr "genoptag afspilning"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:254
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:262
 msgid "Play"
 msgstr "Afspil"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:255
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:263
 msgid "Play: %d of %d"
 msgstr "Spil: %d af %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:267
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:275
 msgid "delete"
 msgstr "slet"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:471
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:479
 msgid "%s of %s"
 msgstr "%s af %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:809
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:817
 msgid "play"
 msgstr "afspil"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:810
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:818
 msgid "pause"
 msgstr "pause"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:811
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:819
 msgid "mute"
 msgstr "lydløs"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:812
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:820
 msgid "unmute"
 msgstr "slå fra"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:813
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:821
 msgid "enter fullscreen"
 msgstr "indtast fuldskærm"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:814
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:822
 msgid "exit fullscreen"
 msgstr "afslut fuldskærm"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:815
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:823
 msgid "volume"
 msgstr "lydstyrke"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:816
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:824
 msgid "seek"
 msgstr "søg"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:818
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:826
 msgid "buffered"
 msgstr "bufferet"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:819
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:827
 msgid "Player for {title}"
 msgstr "Spiller for {title}"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:820
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:828
 msgid "Captions"
 msgstr "Billedtekster"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:821
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:829
 msgid "Settings"
 msgstr "Indstillinger"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:822
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:830
 msgid "Go back to previous menu"
 msgstr "Gå tilbage til forrige menu"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:823
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:831
 msgid "Disabled"
 msgstr "Deaktiveret"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:824
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:832
 msgid "Enabled"
 msgstr "Aktiveret"
 
@@ -1059,23 +1130,23 @@ msgstr "Valgt af en anden scorer."
 msgid "Rejected."
 msgstr "Afvist"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:68
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:70
 msgid "Select option"
 msgstr "Vælg indstilling"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:82
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:84
 msgid "List is empty"
 msgstr "Listen er tom"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:83
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:85
 msgid "No results found."
 msgstr "Ingen resultater fundet."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:768
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:771
 msgid "This is a required field."
 msgstr "Dette er et obligatorisk felt."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:775
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:778
 msgid "Invalid value."
 msgstr "Ugyldig værdi."
 
@@ -1087,27 +1158,27 @@ msgstr "ALLE"
 msgid "SELECTED"
 msgstr "VÆLGET"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:796
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:808
 msgid "eliminated"
 msgstr "elimineret"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:798
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:810
 msgid "masked"
 msgstr "maskeret"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:809
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:821
 msgid "restore choice number %d"
 msgstr "gendan valgnummer %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:810
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:822
 msgid "eliminate choice number %d"
 msgstr "eliminer valgnummer %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:821
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:833
 msgid "unmask choice number %d"
 msgstr "unmask choice number %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:822
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:834
 msgid "mask choice number %d"
 msgstr "maske valg nummer %d"
 
@@ -1135,6 +1206,10 @@ msgstr "delvis"
 #: ../../../node_modules/@oat-sa-private/ui-components/stepProgress/StepProgress.svelte:38
 msgid "waiting"
 msgstr "venter"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/tabGroup/TabGroup.svelte:223
+msgid "%s moved to position %d of %d"
+msgstr "%s flyttet til position %d af %d"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/tree/ExpandButton.svelte:102
 msgid "Collapse"
@@ -1861,7 +1936,7 @@ msgstr "%ds"
 msgid "button"
 msgstr "knap"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:963
+#: ../../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:962
 msgid "Dropdown"
 msgstr "Rulleliste"
 
@@ -1909,43 +1984,43 @@ msgstr "link"
 msgid "Radio button"
 msgstr "Radioknap"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:35
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:40
 msgid "Text editor"
 msgstr "Tekst editor"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:50
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:56
 msgid "Sorry, this action is not supported in the text editor."
 msgstr "Beklager, denne handling understøttes ikke i teksteditoren."
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:175
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:188
 msgid "Editor toolbar"
 msgstr "Editor værktøjslinje"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:223
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:222
 msgid "Paragraph"
 msgstr "Afsnit"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:224
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:223
 msgid "Heading 1"
 msgstr "Overskrift 1"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:225
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:224
 msgid "Heading 2"
 msgstr "Overskrift 2"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:253
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:252
 msgid "Tiny"
 msgstr "Lille"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:257
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:256
 msgid "Small"
 msgstr "Lille"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:262
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:261
 msgid "Big"
 msgstr "Stor"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:266
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:265
 msgid "Huge"
 msgstr "Enorm"
 
@@ -3314,10 +3389,6 @@ msgstr "Rig Teksteditor"
 msgid "Edit block"
 msgstr "Rediger blok"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:355
-msgid "%d of %d"
-msgstr "%d af %d"
-
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:357
 msgid "Dropdown toolbar"
 msgstr "Dropdown værktøjslinje"
@@ -3874,7 +3945,71 @@ msgstr "Åbn dialogen for hjælp til tilgængelighed"
 msgid "(may require <kbd>Fn</kbd>)"
 msgstr "(kan kræve <kbd>Fn</kbd>)"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/slider/Slider.svelte:390
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:530
+msgid "Arrows"
+msgstr "Pile"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:531
+msgid "Currency"
+msgstr "Valuta"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:532
+msgid "Mathematical"
+msgstr "Matematisk"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:533
+msgid "Latin"
+msgstr "Latin"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:534
+msgid "Text"
+msgstr "Tekst"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:536
+msgid "Basic Latin"
+msgstr "Grundlæggende Latin"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:537
+msgid "Currency Symbols"
+msgstr "Valuta Symboler"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:538
+msgid "General Punctuation"
+msgstr "Generel Tegnsætning"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:539
+msgid "Latin-1 Supplement"
+msgstr "Latin-1 Supplement"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:540
+msgid "Latin Extended-A"
+msgstr "Latin Udvidet- A"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:541
+msgid "Letterlike Symbols"
+msgstr "Letterlike Symbols"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:542
+msgid "Geometric Shapes"
+msgstr "Geometriske Former"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:543
+msgid "Miscellaneous Symbols"
+msgstr "Diverse Symboler"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:544
+msgid "Mathematical Operators"
+msgstr "Matematiske Operatører"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:545
+msgid "Greek and Coptic"
+msgstr "Græsk og koptisk"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:547
+msgid "Latin common"
+msgstr "Latin almindelig"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/slider/Slider.svelte:392
 msgid "default"
 msgstr "standard"
 
@@ -4183,227 +4318,261 @@ msgstr "Microsoft Excel binary format"
 msgid "Microsoft Powerpoint slideshow"
 msgstr "Microsoft Powerpoint diasshow"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:104
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:106
 msgid "Please select a language"
 msgstr "Vælg et sprog"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:122
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:124
 msgid "Select"
 msgstr "Vælg"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:54
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:56
 msgid "Something went wrong."
 msgstr "Noget gik galt."
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:55
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:57
 msgid "Please try again."
 msgstr "Prøv venligst igen."
 
-#: ../../apps-common/src/component/PasswordPage.svelte:131
+#: ../../apps-common/src/component/PasswordPage.svelte:134
 msgid "Please wait until you are given the password to begin"
 msgstr "Vent venligst indtil du har fået adgangskoden til at begynde"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:142
+#: ../../apps-common/src/component/PasswordPage.svelte:145
 msgid "Password"
 msgstr "Adgangskode"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:146
+#: ../../apps-common/src/component/PasswordPage.svelte:149
 msgid "Type here"
 msgstr "Skriv her"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:152
+#: ../../apps-common/src/component/PasswordPage.svelte:155
 msgid "Start"
 msgstr "Start"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:45
+#: ../../apps-common/src/component/PasswordPage.svelte:48
 msgid "Wrong Password."
 msgstr "Forkert Adgangskode."
 
-#: ../../apps-common/src/component/TheEnd.svelte:128
+#: ../../apps-common/src/component/TheEnd.svelte:179
+msgid "Exit browser"
+msgstr "Afslut browser"
+
+#: ../../apps-common/src/component/TheEnd.svelte:179
 msgid "Reload the page"
 msgstr "Genindlæs siden"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:160
+#: ../../apps-common/src/component/WaitingPage.svelte:164
 msgid "Logout"
 msgstr "Log Ud"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:164
+#: ../../apps-common/src/component/WaitingPage.svelte:168
 msgid "Hello"
 msgstr "Hej"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:166
+#: ../../apps-common/src/component/WaitingPage.svelte:170
 msgid "Great! You are ready, but the exam hasn't started yet."
 msgstr "Fantastisk! Du er klar, men eksamen er ikke startet endnu."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:169
+#: ../../apps-common/src/component/WaitingPage.svelte:173
 msgid "If you have extra time, it is not shown here."
 msgstr "Hvis du har ekstra tid, vises det ikke her."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:172
+#: ../../apps-common/src/component/WaitingPage.svelte:176
 msgid "You are registered with %s as your main language. Contact a proctor if this is not correct."
 msgstr "Du er registreret hos %s som dit hovedsprog. Kontakt en proctor, hvis dette ikke er korrekt."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:180
+#: ../../apps-common/src/component/WaitingPage.svelte:184
 msgid "In %d minutes and %d seconds the exam will start. Good luck!"
 msgstr "I %d minutter og %d sekunder vil eksamen starte. Held og lykke!"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:191
+#: ../../apps-common/src/component/WaitingPage.svelte:195
 msgid "Declaration of availability"
 msgstr "Erklæring om tilgængelighed"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:20
+#: ../../apps-common/src/component/WaitingPage.svelte:26
 msgid "TAO Logo"
 msgstr "TAO Logo"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:71
+#: ../../apps-common/src/component/WaitingPage.svelte:75
 msgid "You are enrolled in %s, %s from %s."
 msgstr "Du er tilmeldt %s, %s fra %s."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:79
+#: ../../apps-common/src/component/WaitingPage.svelte:83
 msgid "You are enrolled in %s, %s from %s to %s."
 msgstr "Du er tilmeldt %s, %s fra %s til %s."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:82
+#: ../../apps-common/src/component/WaitingPage.svelte:86
 msgid "You are enrolled in %s, from %s to %s."
 msgstr "Du er tilmeldt %s, fra %s til %s."
 
-#: ../../apps-common/src/controller/runner.js:108
+#: ../../apps-common/src/controller/runner.js:136
 msgid "Test is finished"
 msgstr "Testen er færdig"
 
-#: ../../apps-common/src/controller/thankyou.js:32
+#: ../../apps-common/src/controller/thankyou.js:34
+msgid "Proceed"
+msgstr "Fortsæt"
+
+#: ../../apps-common/src/controller/thankyou.js:51
 msgid "Thank you"
 msgstr "Mange tak"
 
-#: ../../apps-common/src/controller/thankyou.js:33
+#: ../../apps-common/src/controller/thankyou.js:52
 msgid "Your test has been submitted."
 msgstr "Din test er blevet indsendt."
 
-#: ../../apps-common/src/core/error/messages.js:36
+#: ../../apps-common/src/core/error/messages.js:38
 msgid "Timeout"
 msgstr "Timeout"
 
-#: ../../apps-common/src/core/error/messages.js:39
+#: ../../apps-common/src/core/error/messages.js:41
 msgid "This page cannot be reached."
 msgstr "Denne side kan ikke nås."
 
-#: ../../apps-common/src/core/error/messages.js:42
+#: ../../apps-common/src/core/error/messages.js:44
 msgid "Please reload the page or contact your administrator."
 msgstr "Genindlæs siden eller kontakt din administrator."
 
-#: ../../apps-common/src/core/error/messages.js:48
+#: ../../apps-common/src/core/error/messages.js:50
 msgid "No connection to the service."
 msgstr "Ingen forbindelse til tjenesten."
 
-#: ../../apps-common/src/core/error/messages.js:51
-#: ../../apps-common/src/core/error/messages.js:122
+#: ../../apps-common/src/core/error/messages.js:53
+#: ../../apps-common/src/core/error/messages.js:124
 msgid "Please contact your test administrator."
 msgstr "Kontakt venligst din testadministrator."
 
-#: ../../apps-common/src/core/error/messages.js:57
+#: ../../apps-common/src/core/error/messages.js:59
 msgid "No internet connection."
 msgstr "Ingen internetforbindelse."
 
-#: ../../apps-common/src/core/error/messages.js:60
+#: ../../apps-common/src/core/error/messages.js:62
 msgid "Please check your internet connection or contact your test administrator."
 msgstr "Tjek venligst din internetforbindelse eller kontakt din testadministrator."
 
-#: ../../apps-common/src/core/error/messages.js:66
+#: ../../apps-common/src/core/error/messages.js:68
 msgid "Test not available."
 msgstr "Test er ikke tilgængelig."
 
-#: ../../apps-common/src/core/error/messages.js:69
+#: ../../apps-common/src/core/error/messages.js:71
 msgid "Sorry, we cannot start your test."
 msgstr "Beklager, vi kan ikke starte din test."
 
-#: ../../apps-common/src/core/error/messages.js:72
-#: ../../apps-common/src/core/error/messages.js:181
+#: ../../apps-common/src/core/error/messages.js:74
+#: ../../apps-common/src/core/error/messages.js:192
 msgid "Please launch your test again or contact your administrator."
 msgstr "Start venligst din test igen eller kontakt din administrator."
 
-#: ../../apps-common/src/core/error/messages.js:78
+#: ../../apps-common/src/core/error/messages.js:80
 msgid "Service busy."
 msgstr "Service optaget."
 
-#: ../../apps-common/src/core/error/messages.js:81
+#: ../../apps-common/src/core/error/messages.js:83
 msgid "The service is temporarily unavailable due to high traffic load."
 msgstr "Tjenesten er midlertidigt utilgængelig på grund af høj trafikbelastning."
 
-#: ../../apps-common/src/core/error/messages.js:84
+#: ../../apps-common/src/core/error/messages.js:86
 msgid "Please wait for a few minutes and try again."
 msgstr "Vent et par minutter og prøv igen."
 
-#: ../../apps-common/src/core/error/messages.js:90
-#: ../../apps-common/src/core/error/messages.js:102
-#: ../../apps-common/src/core/error/messages.js:116
-#: ../../apps-common/src/core/error/messages.js:128
+#: ../../apps-common/src/core/error/messages.js:92
+#: ../../apps-common/src/core/error/messages.js:104
+#: ../../apps-common/src/core/error/messages.js:118
+#: ../../apps-common/src/core/error/messages.js:130
 msgid "Unexpected error."
 msgstr "Uventet fejl."
 
-#: ../../apps-common/src/core/error/messages.js:93
-#: ../../apps-common/src/core/error/messages.js:119
+#: ../../apps-common/src/core/error/messages.js:95
+#: ../../apps-common/src/core/error/messages.js:121
 msgid "Sorry, an unexpected error happened during the test."
 msgstr "Beklager, der opstod en uventet fejl under testen."
 
-#: ../../apps-common/src/core/error/messages.js:96
+#: ../../apps-common/src/core/error/messages.js:98
 msgid "Please reload the page or contact your test administrator."
 msgstr "Genindlæs siden eller kontakt din testadministrator."
 
-#: ../../apps-common/src/core/error/messages.js:105
+#: ../../apps-common/src/core/error/messages.js:107
 msgid "Certain third-party tools are not supported in TAO Advance. For example, \"Read aloud\" provided by Edge browser."
 msgstr "Visse tredjepartsværktøjer understøttes ikke i TAO Advance. For eksempel \"Læs højt\" leveret af Edge browser."
 
-#: ../../apps-common/src/core/error/messages.js:110
+#: ../../apps-common/src/core/error/messages.js:112
 msgid "Please disable them and reload the page, or contact your test administrator for more details."
 msgstr "Deaktivér dem og genindlæs siden, eller kontakt din testadministrator for flere detaljer."
 
-#: ../../apps-common/src/core/error/messages.js:131
+#: ../../apps-common/src/core/error/messages.js:133
 msgid "The system identified multiple active sessions."
 msgstr "Systemet identificerede flere aktive sessioner."
 
-#: ../../apps-common/src/core/error/messages.js:134
+#: ../../apps-common/src/core/error/messages.js:136
 msgid "In order to continue, please click on the Reload button."
 msgstr "For at fortsætte, klik venligst på Genindlæs knappen."
 
-#: ../../apps-common/src/core/error/messages.js:140
+#: ../../apps-common/src/core/error/messages.js:142
+msgid "Session ended"
+msgstr "Session afsluttet"
+
+#: ../../apps-common/src/core/error/messages.js:145
+msgid "You have been logged out due to a new login."
+msgstr "Du er blevet logget ud på grund af et nyt login."
+
+#: ../../apps-common/src/core/error/messages.js:151
 msgid "Test terminated"
 msgstr "Test afsluttet"
 
-#: ../../apps-common/src/core/error/messages.js:143
+#: ../../apps-common/src/core/error/messages.js:154
 msgid "Your test has been terminated by the proctor."
 msgstr "Din test er afsluttet af proctoren."
 
-#: ../../apps-common/src/core/error/messages.js:149
+#: ../../apps-common/src/core/error/messages.js:160
 msgid "Test paused"
 msgstr "Test sat på pause"
 
-#: ../../apps-common/src/core/error/messages.js:152
+#: ../../apps-common/src/core/error/messages.js:163
 msgid "Your test has been paused by the proctor."
 msgstr "Din test er blevet sat på pause af proctoren."
 
-#: ../../apps-common/src/core/error/messages.js:156
+#: ../../apps-common/src/core/error/messages.js:167
 msgid "Please click on the Reload button."
 msgstr "Klik venligst på Genindlæs knappen."
 
-#: ../../apps-common/src/core/error/messages.js:162
+#: ../../apps-common/src/core/error/messages.js:173
 msgid "Test was reset"
 msgstr "Test blev nulstillet"
 
-#: ../../apps-common/src/core/error/messages.js:165
+#: ../../apps-common/src/core/error/messages.js:176
 msgid "The administrator reset your test, you need to start again."
 msgstr "Administratoren nulstiller din test, du skal starte igen."
 
-#: ../../apps-common/src/core/error/messages.js:169
+#: ../../apps-common/src/core/error/messages.js:180
 msgid "Please click on the Reload button to restart."
 msgstr "Klik venligst på Genindlæs knappen for at genstarte."
 
-#: ../../apps-common/src/core/error/messages.js:175
+#: ../../apps-common/src/core/error/messages.js:186
 msgid "The test cannot be continued."
 msgstr "Testen kan ikke fortsættes."
 
-#: ../../apps-common/src/core/error/messages.js:178
+#: ../../apps-common/src/core/error/messages.js:189
 msgid "Sorry, a problem occurred due to long inactivity."
 msgstr "Beklager, et problem opstod på grund af lang inaktivitet."
+
+#: ../../apps-common/src/core/error/messages.js:198
+#: ../../apps-common/src/core/error/messages.js:220
+msgid "Can't start secure session"
+msgstr "Kan ikke starte sikker session"
+
+#: ../../apps-common/src/core/error/messages.js:201
+#: ../../apps-common/src/core/error/messages.js:212
+msgid "To continue, you must close the apps listed below. Click \"Exit browser\", then close the apps, and relaunch TAO Secure Browser."
+msgstr "For at fortsætte, skal du lukke de apps, der er anført nedenfor. Klik på \"Afslut browser\", og derefter lukke apps, og genstarte TAO Secure Browser."
+
+#: ../../apps-common/src/core/error/messages.js:209
+msgid "Can't continue secure session"
+msgstr "Kan ikke fortsætte sikker session"
+
+#: ../../apps-common/src/core/error/messages.js:223
+msgid "To start this secure session, install or update TAO Secure Browser."
+msgstr "For at starte denne sikre session, skal du installere eller opdatere TAO Secure Browser."
 
 #: ../../item-runner/src/runner/ItemPreviewer/PreviewerHeaderBar.svelte:78
 msgid "close item preview"
@@ -4430,51 +4599,51 @@ msgstr "Element score: "
 msgid "SUBMIT RESPONSE"
 msgstr "INDSTILLINGER ANSVAR"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1628
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1627
 msgid "Press enter or space to grab and browse the answer area. To move to the next available option, use the arrow keys."
 msgstr "Tryk på indtast eller plads for at få fat i og gennemse svarområdet. Brug piletasterne for at gå til næste tilvalg."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1633
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1632
 msgid "Press enter or space to grab. To move to next available answer, use the arrow keys."
 msgstr "Tryk på enter eller plads for at gribe. For at gå til næste tilgængelige svar, bruges piletasterne."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1636
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1635
 msgid "Press enter or space to replace. To browse other drop zones use the arrow keys. Press escape to cancel."
 msgstr "Tryk på Enter eller plads for at erstatte. For at gennemse andre dropzoner bruges piletasterne. Tryk på escape for at annullere."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1639
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1638
 msgid "Press enter or space to place down. To browse other drop zones use the arrow keys. Press escape to cancel."
 msgstr "Tryk på Enter eller plads for at placere ned. For at gennemse andre dropzoner bruges piletasterne. Tryk på escape for at annullere."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1649
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1648
 msgid "unassociated options"
 msgstr "ikke-associerede indstillinger"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1751
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1752
 msgid "Drop zone occupied by "
 msgstr "Drop zone optaget af "
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1761
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1765
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1762
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1766
 msgid "Return %s to unassociated options."
 msgstr "Returner %s til ikke-associerede muligheder."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1792
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1793
 msgid "Empty dropzone."
 msgstr "Tom dropzone."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1823
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1828
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1833
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1824
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1829
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1834
 msgid "Return the association %s and %s to unassociated options."
 msgstr "Returner associationen %s og %s til ikke-associerede muligheder."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1843
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1844
 msgid "answer area, %d items"
 msgstr "svarområde, %d elementer"
 
 #: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:76
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:437
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:435
 msgid "%lb has been placed down."
 msgstr "%lb er blevet placeret ned."
 
@@ -4494,7 +4663,7 @@ msgstr "%lb og %lb er blevet returneret til ikke-associerede indstillinger."
 msgid "cancelled"
 msgstr "annulleret"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1375
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1373
 msgid "Option %d"
 msgstr "Mulighed %d"
 
@@ -4526,74 +4695,212 @@ msgstr "Upload annulleret."
 msgid "Response file cleared."
 msgstr "Respons fil ryddet."
 
-#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:279
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:294
 msgid "Unable to restore the uploaded audio file. Please reload the page to try again."
 msgstr "Kan ikke gendanne den uploadede lydfil. Genindlæs siden for at prøve igen."
 
-#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:285
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:300
 msgid "Reload"
 msgstr "Reload"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:82
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:709
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:267
+msgid "Playback is disabled for this recording by item configuration."
+msgstr "Afspilning er deaktiveret for denne optagelse efter element konfiguration."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:716
+msgid "No uploaded video is available for review."
+msgstr "Ingen uploadet video er tilgængelig til gennemgang."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:718
+msgid "Record a response to play it back locally. Sandbox/manual mode can also keep a local saved response for this session."
+msgstr "Optag et svar for at afspille det lokalt. Sandbox / manuel tilstand kan også holde en lokal gemt svar for denne session."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:734
+msgid "Recording"
+msgstr "Optager"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:736
+msgid "Preparing camera"
+msgstr "Forbereder kamera"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:738
+msgid "Finalizing local recording"
+msgstr "Færdiggør lokal optagelse"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:740
+msgid "Preparing saved response"
+msgstr "Forbereder gemt svar"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:742
+msgid "Uploading saved response"
+msgstr "Uploader gemt svar"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:744
+msgid "Saved response ready"
+msgstr "Gemt svar klar"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:746
+msgid "Local playback ready"
+msgstr "Lokal afspilning klar"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:748
+msgid "Ready"
+msgstr "Klar"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:761
+msgid "Stop"
+msgstr "Stop"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:768
+msgid "Reset"
+msgstr "Reset"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:60
+msgid "Preparing saved response."
+msgstr "Forbereder gemt svar."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:61
+msgid "Saved response ready."
+msgstr "Gemt svar klar."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:62
+msgid "Saved response unavailable."
+msgstr "Gemt svar utilgængeligt."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:175
+msgid "Recording starts in {{seconds}} seconds."
+msgstr "Optagelse starter i {{seconds}} sekunder."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:188
+msgid "Container / MIME"
+msgstr "Container / MIME"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:188
+msgid "Unavailable"
+msgstr "Unavailable"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:189
+msgid "Duration"
+msgstr "Varighed"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:189
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:190
+msgid "Not recorded"
+msgstr "Ikke registreret"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:190
+msgid "File size"
+msgstr "Fil størrelse"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:192
+msgid "Average bitrate"
+msgstr "Gennemsnitlig bitrate"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:193
+msgid "Not available"
+msgstr "Ikke tilgængelig"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:196
+msgid "Save mode"
+msgstr "Gem tilstand"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:197
+msgid "Not saved yet"
+msgstr "Ikke gemt endnu"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:259
+msgid "Maximum recording attempts reached."
+msgstr "Maksimal optagelse forsøg nået."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:263
+msgid "Recording is in progress and will stop automatically when the time limit is reached."
+msgstr "Optagelse er i gang og stopper automatisk, når tidsfristen er nået."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:271
+msgid "Recording is in progress. Use Stop to finish or wait for the time limit."
+msgstr "Optagelse er i gang. Brug Stop til at afslutte eller vente på tidsfristen."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:275
+msgid "Use the video controls to play back the current recording. Use Reset to clear it."
+msgstr "Brug videoens kontrolelementer til at afspille den aktuelle optagelse. Brug Nulstil for at rydde den."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:278
+msgid "Use Start recording to begin. Use Stop to finish. Use Reset to clear the current response."
+msgstr "Brug Start optagelse til at begynde. Brug Stop for at afslutte. Brug Nulstil for at rydde det aktuelle svar."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:433
+msgid "No supported recording MIME type was found for this browser."
+msgstr "Ingen understøttet MIME-optagelse blev fundet for denne browser."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:518
+msgid "Unable to start video recording. Check browser permissions and try again."
+msgstr "Kan ikke starte videooptagelse. Tjek browsertilladelser og prøv igen."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/upload.js:41
+msgid "Unable to upload this recording. You can still play it back locally in this session, but it will stay unanswered until the upload succeeds."
+msgstr "Kan ikke uploade denne optagelse. Du kan stadig afspille den lokalt i denne session, men den vil forblive ubesvaret, indtil upload lykkes."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/upload.js:45
+msgid "Local playback is still available in this session. Retry the recording or upload before you submit."
+msgstr "Lokal afspilning er stadig tilgængelig i denne session. Prøv optagelsen eller upload igen, før du indsender."
+
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:87
 msgid "Your answer"
 msgstr "Dit svar"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:245
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:305
 msgid "Your image file is too big. Please insert an image no larger than %s"
 msgstr "Din billedfil er for stor. Indsæt venligst et billede ikke større end %s"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:250
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:310
 msgid "Your image failed to upload, please try again"
 msgstr "Dit billede kunne ikke uploades, prøv igen"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:301
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:361
 msgid "Maximum characters reached (maximum: %d)"
 msgstr "Maksimum tegn nået (maksimum : %d)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:307
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:367
 msgid "Maximum words reached (maximum: %d)"
 msgstr "Maksimale ord nået (maksimum : %d)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:314
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:374
 msgid "<strong>%d</strong> / %d word(s) typed"
 msgstr "<strong>%d</strong> / %d ord indtastet"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:319
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:379
 msgid "<strong>%d</strong> word(s) typed"
 msgstr "<strong>%d</strong> ord indtastet"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:324
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:332
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:384
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:391
 msgid "<strong>%d</strong> character(s) typed"
 msgstr "<strong>%d</strong> tegn indtastet"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:332
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:391
 msgid "recommended: %d"
 msgstr "Anbefalet: %d"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:336
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:395
 msgid "<strong>%d</strong> characters left."
 msgstr "<strong>%d</strong> tegn tilbage."
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:342
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:400
 msgid "%d out of %d characters typed"
 msgstr "%d af %d tegn indtastet"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:342
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:400
 msgid "<strong>%d</strong> / %d character(s) typed"
 msgstr "<strong>%d</strong> / %d tegn indtastet"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:351
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:409
 msgid "Invalid format, please refer to the instructions."
 msgstr "Ugyldigt format, se venligst instruktionerne."
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:357
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:415
 msgid "Answer required."
 msgstr "Svar kræves."
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:22
-msgid "Basic Latin"
-msgstr "Grundlæggende Latin"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:23
 msgid "EXCLAMATION MARK"
@@ -4964,16 +5271,8 @@ msgid "TILDE"
 msgstr "TILDE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:118
-msgid "Currency Symbols"
-msgstr "Valuta Symboler"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:118
 msgid "EURO SIGN"
 msgstr "EURO SIGN"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:119
-msgid "General Punctuation"
-msgstr "Generel Tegnsætning"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:120
 msgid "LEFT SINGLE QUOTATION MARK"
@@ -5018,10 +5317,6 @@ msgstr "HORISONTAL ELLIPSIS"
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:130
 msgid "BULLET"
 msgstr "BULLERT"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:132
-msgid "Latin-1 Supplement"
-msgstr "Latin-1 Supplement"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:133
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:282
@@ -5451,10 +5746,6 @@ msgstr "LATIN SMÅ BREV THORN"
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:277
 msgid "LATIN SMALL LETTER Y WITH DIAERESIS"
 msgstr "LATIN SMÅ BREV Y MED DIAERESIS"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:284
-msgid "Latin Extended-A"
-msgstr "Latin Udvidet- A"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:285
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:359
@@ -5897,24 +6188,12 @@ msgid "LATIN SMALL LETTER Z WITH CARON"
 msgstr "LATIN SMÅ BREV Z MED CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:401
-msgid "Letterlike Symbols"
-msgstr "Letterlike Symbols"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:401
 msgid "TRADE MARK SIGN"
 msgstr "HANDELSMARK SIGN"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:404
-msgid "Geometric Shapes"
-msgstr "Geometriske Former"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:404
 msgid "BLACK RIGHT-POINTING POINTER"
 msgstr "SORT HØJRE PINTER"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:405
-msgid "Arrows"
-msgstr "Pile"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:406
 msgid "RIGHTWARDS ARROW"
@@ -5929,24 +6208,12 @@ msgid "LEFT RIGHT DOUBLE ARROW"
 msgstr "VENSTRE HØJRE DOBBELT ARROW"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:412
-msgid "Miscellaneous Symbols"
-msgstr "Diverse Symboler"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:412
 msgid "BLACK DIAMOND SUIT"
 msgstr "BLACK DIAMOND SUIT"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:415
-msgid "Mathematical Operators"
-msgstr "Matematiske Operatører"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:415
 msgid "ALMOST EQUAL TO"
 msgstr "ALMOST EQUAL TIL"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:418
-msgid "Greek and Coptic"
-msgstr "Græsk og koptisk"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:418
 msgid "GREEK CAPITAL LETTER OMEGA"
@@ -6062,12 +6329,12 @@ msgstr "Du skal lave præcis 1 association"
 msgid "Currently %d"
 msgstr "%d"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:242
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:244
 msgid "Option %d."
 msgstr "Mulighed %d."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:272
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:276
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:274
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:279
 msgid "Return %s to the available options."
 msgstr "Returner %s til de tilgængelige muligheder."
 
@@ -6079,65 +6346,65 @@ msgstr "Svarområdet er fuldt. For at gå til svarområdet trykkes på faneblade
 msgid "%s has been returned to available options."
 msgstr "%s er blevet returneret til tilgængelige muligheder."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:431
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:433
 msgid "Gap %d %s %s"
 msgstr "Gap %d %s %s"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:434
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:46
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:296
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:436
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:47
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:297
 msgid "empty"
 msgstr "tom"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:55
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:56
 msgid "required"
 msgstr "påkrævet"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:257
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:258
 msgid "%s has been placed in Gap %d."
 msgstr "%s er blevet placeret i Gap %d."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:748
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:746
 msgid "Press enter or space to grab and browse the answer area."
 msgstr "Tryk ind eller plads for at få fat i og gennemse svarområdet."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:749
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:747
 msgid "To move to next available option, use the arrow keys."
 msgstr "For at gå til næste tilgængelige indstilling, skal du bruge piletasterne."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:752
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:750
 msgid "Press enter or space to place down."
 msgstr "Tryk på enter eller plads for at placere ned."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:753
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:751
 msgid "To browse other gaps use the arrow keys."
 msgstr "Brug piletasterne til at gennemse andre huller."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:754
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:752
 msgid "Press escape to cancel."
 msgstr "Tryk på flugt for at annullere."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:757
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:755
 msgid "Press enter or space to grab."
 msgstr "Tryk på enter eller plads for at gribe."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:758
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:756
 msgid "To move to next available answer, use the arrow keys."
 msgstr "Brug piletasterne for at gå til næste tilgængelige svar."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:759
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:757
 msgid "Double press shift+tab to return to choices."
 msgstr "Dobbelttryk på shift+tab for at vende tilbage til valg."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:797
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:795
 msgid "Available options"
 msgstr "Tilgængelige indstillinger"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:832
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:830
 msgid "Text Passage. To read use the arrow keys."
 msgstr "Tekst Passage. For at læse skal du bruge piletasterne."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:506
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:504
 msgid "%s has not been placed."
 msgstr "%s er ikke blevet placeret."
 
@@ -6193,11 +6460,11 @@ msgstr "Tilknytning mellem %s og %s oprettet."
 msgid "The association between %s and %s has been deleted."
 msgstr "Associeringen mellem %s og %s er blevet slettet."
 
-#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1281
+#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1282
 msgid "Available options, %d items"
 msgstr "Tilgængelige indstillinger, %d elementer"
 
-#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1332
+#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1333
 msgid "Answer area"
 msgstr "Svar område"
 
@@ -6354,19 +6621,19 @@ msgstr "Min %d"
 msgid "max %d"
 msgstr "maks. %d"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:871
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:872
 msgid "List"
 msgstr "Liste"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:325
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:326
 msgid "deselected"
 msgstr "fravalgt"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:336
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:337
 msgid "selected %s"
 msgstr "valgte %s"
 
-#: ../../item-runner/src/runner/interactions/match/TabularMatch.svelte:458
+#: ../../item-runner/src/runner/interactions/match/TabularMatch.svelte:457
 msgid "%s matches %s"
 msgstr "%s matcher %s"
 
@@ -6414,7 +6681,7 @@ msgstr "tilgængelige %d gange."
 msgid "grouped in %s."
 msgstr "grupperet i %s."
 
-#: ../../item-runner/src/runner/interactions/media/MediaInteractionImpl.svelte:523
+#: ../../item-runner/src/runner/interactions/media/MediaInteractionImpl.svelte:533
 msgid "Click to listen"
 msgstr "Klik for at lytte"
 
@@ -6426,11 +6693,11 @@ msgstr "Du skal afspille dette medie mindst %d gange"
 msgid "You have played this media maximum times"
 msgstr "Du har spillet denne medie maksimum gange"
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:617
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:629
 msgid "Press enter or space to grab and place in the answer area. To move to next available option, use the arrow keys."
 msgstr "Tryk på enter eller plads for at få fat i og placere i svarområdet. Brug piletasterne for at gå til næste valgmulighed."
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:637
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:650
 msgid "Unordered options"
 msgstr "Ubestilte indstillinger"
 
@@ -6438,21 +6705,21 @@ msgstr "Ubestilte indstillinger"
 msgid "Answer area is full. To move to the answer area, press Tab."
 msgstr "Svarområdet er fuldt. For at gå til svarområdet, tryk på fanebladet."
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:491
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:494
 msgid "%lb has been placed down"
 msgstr "%lb er blevet placeret ned"
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:500
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:503
 msgid "%lb moved to position %d"
 msgstr "%lb flyttet til position %d"
 
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:931
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:938
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:942
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:949
 msgid "Position %d"
 msgstr "Position %d"
 
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:934
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:939
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:945
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:950
 msgid "Return %s to the unordered options"
 msgstr "Returner %s til de uordnede muligheder"
 
@@ -6468,27 +6735,27 @@ msgstr "Tryk på enter eller plads for at gribe. For at gå til næste tilgænge
 msgid "Press enter or space to place down. To reorder use the arrow keys. Press escape to cancel"
 msgstr "Tryk på Enter eller mellemrum for at placere ned. For at genbestille brug piletasterne. Tryk på escape for at annullere"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:390
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:394
 msgid "Plus. %s"
 msgstr "Plus. %s"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:391
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:395
 msgid "Minus. %s"
 msgstr "Minus. %s"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:392
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:396
 msgid "To enter the slider value in this field, type."
 msgstr "For at indtaste skyderværdien i dette felt, skriv"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:393
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:397
 msgid "Use to decrease the slider value by %d"
 msgstr "Brug til at reducere skyderværdien med %d"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:394
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:398
 msgid "Use to increase the slider value by %d"
 msgstr "Brug til at øge skyderværdien med %d"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:395
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:399
 msgid "Use the arrow keys to increase or decrease the value by %d"
 msgstr "Brug piletasterne til at øge eller reducere værdien med %d"
 
@@ -6508,31 +6775,31 @@ msgstr "Nuværende værdi %d"
 msgid "%s, min %d max %d"
 msgstr "%s, min %d max %d"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:164
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:169
 msgid "(dot)"
 msgstr "(prik)"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:165
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:170
 msgid "(comma)"
 msgstr "(komma)"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:174
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:178
 msgid "Invalid value, use %s %s for decimal point separator"
 msgstr "Ugyldig værdi, brug %s %s for decimalpunktseparator"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:179
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:183
 msgid "Invalid value, please refer to the instructions"
 msgstr "Ugyldig værdi, se venligst instruktionerne"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:188
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:191
 msgid "Number is out of range"
 msgstr "Antal er uden for rækkevidde"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:200
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:203
 msgid "Max length has been reached"
 msgstr "Maks. længde er nået"
 
-#: ../../item-runner/src/runner/interactions/upload/UploadInteraction.svelte:368
+#: ../../item-runner/src/runner/interactions/upload/UploadInteraction.svelte:373
 msgid "Loading"
 msgstr "Indlæser"
 
@@ -6544,7 +6811,7 @@ msgstr "Kan ikke tilgå den uploadede fil"
 msgid "Unable to upload the selected file. Please try again or refresh the page."
 msgstr "Kan ikke uploade den valgte fil. Prøv igen eller genopfrisk siden."
 
-#: ../../item-runner/src/runner/item/modalFeedback/ModalFeedbackNavigator.svelte:20
+#: ../../item-runner/src/runner/item/modalFeedback/ModalFeedbackNavigator.svelte:22
 msgid "Continue"
 msgstr "Fortsæt"
 
@@ -6552,7 +6819,7 @@ msgstr "Fortsæt"
 msgid "No answer file selected"
 msgstr "Ingen svarfil valgt"
 
-#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:72
+#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:71
 msgid "view report"
 msgstr "se rapport"
 
@@ -6571,6 +6838,10 @@ msgstr "Mistanke om plagiat"
 #: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:27
 msgid "No suspicion of plagiarism."
 msgstr "Ingen mistanke om plagiering."
+
+#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/HblMessage.svelte:65
+msgid "Failed to load the plagiarism report. Please try again."
+msgstr "Kunne ikke indlæse plagieringsrapporten. Prøv venligst igen."
 
 #: ../../item-runner/src/runner/static/ModalFeedback.svelte:64
 msgid "Response feedback"
@@ -6600,48 +6871,48 @@ msgstr "Gå til forrige spørgsmål"
 msgid "Question %d."
 msgstr "Spørgsmål %d."
 
-#: ../../test-runner/src/runner/TestLayout.svelte:581
+#: ../../test-runner/src/runner/TestLayout.svelte:588
 msgid "Test Navigation"
 msgstr "Test Navigation"
 
+#: ../../test-runner/src/runner/TestLayout.svelte:70
 #: ../../test-runner/src/runner/TestLayout.svelte:71
-#: ../../test-runner/src/runner/TestLayout.svelte:72
 msgid "Main menu"
 msgstr "Hovedmenu"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:385
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:408
 msgid "Review"
 msgstr "Revision"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:428
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:457
 msgid "Overall feedback"
 msgstr "Samlet feedback"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:439
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:468
 msgid "Awaiting manual scoring"
 msgstr "Afventer manuel scoring"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:440
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:469
 msgid "All or part of this question needs to be manually scored. Please check back later to view the score."
 msgstr "Alt eller en del af dette spørgsmål skal scores manuelt. Tjek venligst tilbage senere for at se score."
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:125
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:130
 msgid "Questions"
 msgstr "Spørgsmål"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:125
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:130
 msgid "Question"
 msgstr "Spørgsmål"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:133
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:138
 msgid "Correct"
 msgstr "Korrekt"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:142
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:147
 msgid "Answers"
 msgstr "Svar"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:142
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:147
 msgid "Answer"
 msgstr "Svar"
 
@@ -6666,7 +6937,7 @@ msgid "You still have %d incomplete questions. If you submit this part you won't
 msgstr "Du har stadig %d ufuldstændige spørgsmål. Hvis du indsender denne del, vil du ikke være i stand til at gå tilbage til ubesvarede spørgsmål eller ændre dine svar."
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:89
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:347
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:345
 msgid "Review my answers"
 msgstr "Gennemgå mine svar"
 
@@ -6728,103 +6999,103 @@ msgstr "Dit svar eller dele af det er ikke gyldigt."
 msgid "Your answer is not valid."
 msgstr "Dit svar er ikke gyldigt."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:200
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:199
 msgid "You have %d invalid answers out of %d. Please provide valid answers before proceeding."
 msgstr "Du har %d ugyldige svar ud af %d. Giv venligst gyldige svar, før du fortsætter."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:205
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:204
 msgid "Please provide a valid answer."
 msgstr "Angiv venligst et gyldigt svar."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:212
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:233
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:210
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:231
 msgid "Ok"
 msgstr "OK"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:225
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:223
 msgid "An answer is required before leaving this question."
 msgstr "Der kræves et svar, før dette spørgsmål forlades."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:227
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:225
 msgid "You will be able to navigate away once you answer the question."
 msgstr "Du vil være i stand til at navigere væk, når du besvarer spørgsmålet."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:247
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:245
 msgid "Your test has been terminated by the proctor and your answers have been submitted."
 msgstr "Din test er blevet afsluttet af proctoren, og dine svar er blevet indsendt."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:252
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:250
 msgid "I understand"
 msgstr "Jeg forstår"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:266
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:264
 msgid "You need to restart the test"
 msgstr "Du skal genstarte testen"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:272
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:270
 msgid "Restart now"
 msgstr "Genstart nu"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:289
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:287
 msgid "Your test and its timer have been paused by proctor."
 msgstr "Din test og dens timer er blevet sat på pause af proctor."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:295
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:293
 msgid "OK"
 msgstr "Ok"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:333
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:331
 msgid "Finish the test"
 msgstr "Afslut testen"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:340
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:338
 msgid "Submit this part"
 msgstr "Indsend denne del"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:360
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:370
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:378
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:400
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:427
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:444
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:471
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:358
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:368
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:376
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:398
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:425
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:442
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:469
 msgid "The time limit for the test has been reached."
 msgstr "Tidsfristen for testen er nået."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:373
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:384
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:371
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:382
 msgid "The time limit for this part has been reached."
 msgstr "Tidsfristen for denne del er nået."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:379
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:413
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:457
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:377
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:411
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:455
 msgid "You are at the end of the test. You can either finish the test or keep reviewing your answers."
 msgstr "Du er i slutningen af testen. Du kan enten afslutte testen eller fortsætte med at gennemgå dine svar."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:385
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:418
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:462
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:383
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:416
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:460
 msgid "You are at the end of this part. You can either submit this part or keep reviewing your answers."
 msgstr "Du er i slutningen af denne del. Du kan enten indsende denne del eller fortsætte med at gennemgå dine svar."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:392
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:403
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:430
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:390
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:401
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:428
 msgid "The time limit for this section has been reached."
 msgstr "Tidsfristen for dette afsnit er nået."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:436
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:447
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:474
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:434
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:445
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:472
 msgid "The time limit for this item has been reached."
 msgstr "Tidsfristen for dette element er nået."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:498
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:496
 msgid "This test needs to be taken in full screen mode"
 msgstr "Denne test skal tages i fuldskærmstilstand"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:499
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:497
 msgid "Leaving the test window is not allowed"
 msgstr "Forlader prøvevinduet er ikke tilladt"
 
@@ -6840,51 +7111,56 @@ msgstr "Overlay"
 msgid "End of test"
 msgstr "Afslutning af testen"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:62
+#: ../../test-runner/src/runner/layout/toolbarItems.js:61
+#: ../../test-runner/src/runner/layout/toolbarItems.js:64
+msgid "Reload this page"
+msgstr "Genindlæs denne side"
+
+#: ../../test-runner/src/runner/layout/toolbarItems.js:73
 msgid "Attachments"
 msgstr "Vedhæftninger"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:72
+#: ../../test-runner/src/runner/layout/toolbarItems.js:83
 msgid "Scratchpad"
 msgstr "Kladdeblok"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:81
+#: ../../test-runner/src/runner/layout/toolbarItems.js:92
 msgid "Highlighter"
 msgstr "Fremhævning"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:90
+#: ../../test-runner/src/runner/layout/toolbarItems.js:111
 msgid "Calculator"
 msgstr "Lommeregner"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:99
+#: ../../test-runner/src/runner/layout/toolbarItems.js:120
 msgid "Read Aloud"
 msgstr "Læs Aloud"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:103
+#: ../../test-runner/src/runner/layout/toolbarItems.js:124
 msgid "Read aloud tool. To close, press enter or space"
 msgstr "Læs højt værktøj. For at lukke, skal du trykke på enter eller plads"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:104
+#: ../../test-runner/src/runner/layout/toolbarItems.js:125
 msgid "Read aloud tool. To open, press enter or space"
 msgstr "Læs højt værktøj. For at åbne, tryk på enter eller plads"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:113
+#: ../../test-runner/src/runner/layout/toolbarItems.js:134
 msgid "Line Reader"
 msgstr "Linje Læser"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:124
+#: ../../test-runner/src/runner/layout/toolbarItems.js:145
 msgid "Exit full screen"
 msgstr "Afslut fuld skærm"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:124
+#: ../../test-runner/src/runner/layout/toolbarItems.js:145
 msgid "Full screen"
 msgstr "Fuld skærm"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:142
+#: ../../test-runner/src/runner/layout/toolbarItems.js:163
 msgid "Open accessibility panel"
 msgstr "Åbn tilgængelighedspanel"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:152
+#: ../../test-runner/src/runner/layout/toolbarItems.js:173
 msgid "Print"
 msgstr "Udskriv"
 
@@ -6892,7 +7168,7 @@ msgstr "Udskriv"
 msgid "User: %s"
 msgstr "Bruger: %s"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:117
+#: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:121
 msgid "Attachment: %s"
 msgstr "Vedhæftning: %s"
 
@@ -6906,15 +7182,15 @@ msgstr "Flere vedhæftede filer"
 msgid "Close attachment"
 msgstr "Luk vedhæftning"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:96
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:97
 msgid "Open attachment %s"
 msgstr "Åbn vedhæftet fil %s"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:103
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:104
 msgid "Open attachment %s in a new tab"
 msgstr "Åbn vedhæftet fil %s i en ny fane"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsOverlayBox.svelte:74
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsOverlayBox.svelte:75
 msgid "Attachments (%s)"
 msgstr "Vedhæftninger (%s)"
 
@@ -6994,33 +7270,33 @@ msgstr "Hop Menu"
 msgid "Jump to"
 msgstr "Hop til"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:64
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:65
 msgid "Toolbox & Configuration"
 msgstr "Indstilling Af Værktøjskasse"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:80
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:88
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:81
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:89
 msgid "Item attachment"
 msgstr "Vedhæftet fil"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:119
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:120
 msgid "the overview of all %d questions"
 msgstr "oversigten over alle %d spørgsmål"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:165
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:166
 msgid "Question %d"
 msgstr "Spørgsmål %d"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:305
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:314
 msgid "Remove bookmark from this question"
 msgstr "Fjern bogmærke fra dette spørgsmål"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:306
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:315
 msgid "Bookmark this question"
 msgstr "Bogmærk dette spørgsmål"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:345
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:346
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:354
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:355
 msgid "Submit test part"
 msgstr "Indsend testdel"
 
@@ -7049,7 +7325,7 @@ msgstr "bogmærke (%d)"
 msgid "incomplete (%d)"
 msgstr "ufuldstændig (%d)"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/plugin.js:86
+#: ../../test-runner/src/runner/plugins/navigation/navigator/plugin.js:139
 msgid "Overview"
 msgstr "Oversigt"
 
@@ -7140,15 +7416,15 @@ msgstr "Afslut test gennemgang"
 msgid "Continue to next test"
 msgstr "Fortsæt til næste test"
 
-#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:254
+#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:262
 msgid "There are still questions waiting to be scored"
 msgstr "Der er stadig spørgsmål, der venter på at blive scoret"
 
-#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:255
+#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:263
 msgid "Your total score cannot be calculated until all of the questions have been scored. Please come back later to see your total score."
 msgstr "Din samlede score kan ikke beregnes før alle spørgsmål er blevet scoret. Kom tilbage senere for at se din samlede score."
 
-#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:263
+#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:271
 msgid "Total score"
 msgstr "Samlet score"
 
@@ -7180,15 +7456,15 @@ msgstr "Hjælpefunktioner"
 msgid "Default font"
 msgstr "Default font"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:83
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:96
 msgid "Size"
 msgstr "Størrelse"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:89
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:102
 msgid "decrease font size"
 msgstr "reduceret skriftstørrelse"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:90
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:103
 msgid "increase font size"
 msgstr "øg skriftstørrelse"
 
@@ -7324,10 +7600,6 @@ msgstr "sammenfolde tekstindstillinger"
 msgid "expand text settings"
 msgstr "udvid tekstindstillinger"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/groups/TextGroup.svelte:72
-msgid "Text"
-msgstr "Tekst"
-
 #: ../../test-runner/src/runner/plugins/panel/a11y/groups/ZoomGroup.svelte:41
 msgid "collapse zoom settings"
 msgstr "sammenfolde zoom-indstillinger"
@@ -7340,19 +7612,19 @@ msgstr "udvid zoomindstillinger"
 msgid "Zoom"
 msgstr "Zoom"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:20
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:25
 msgid "Privacy Policy"
 msgstr "Privat Politik"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:24
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:29
 msgid "About"
 msgstr "Om"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:32
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:37
 msgid "TAO logo"
 msgstr "TAO logo"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:40
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:45
 msgid "All rights reserved"
 msgstr "Alle rettigheder forbeholdt"
 
@@ -7372,17 +7644,29 @@ msgstr "Din test er sat på pause"
 msgid "Please wait for the proctor to resume your test."
 msgstr "Vent venligst på, at proctoren genoptager testen."
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:419
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:430
 msgid "Extra time has been removed"
 msgstr "Ekstra tid er blevet fjernet"
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:421
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:432
 msgid "Extra time limit adjusted to %s"
 msgstr "Ekstra tidsbegrænsning justeret til %s"
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:423
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:434
 msgid "%s of extra time granted"
 msgstr "%s af ekstra tid givet"
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:56
+msgid "You are about to leave the document and the test will be paused."
+msgstr "Du er ved at forlade dokumentet og testen vil blive sat på pause."
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:58
+msgid "Press Tab to keep focus within the document and resume the test."
+msgstr "Tryk på fanen for at holde fokus i dokumentet og genoptage testen."
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:60
+msgid "Press Shift+Tab to keep focus within the document and resume the test."
+msgstr "Tryk på Shift+Tab for at holde fokus i dokumentet og genoptage testen."
 
 #: ../../test-runner/src/runner/plugins/settings/SettingsContent.svelte:119
 msgid "My settings"
@@ -7414,11 +7698,11 @@ msgstr "Svar på maskering"
 msgid "Answer masking lets you hide answer options that you are sure are incorrect."
 msgstr "Svar maskering kan du skjule svarmuligheder, som du er sikker på er forkert."
 
-#: ../../test-runner/src/runner/plugins/settings/plugin.js:264
+#: ../../test-runner/src/runner/plugins/settings/plugin.js:265
 msgid "Test Configuration"
 msgstr "Test Konfiguration"
 
-#: ../../test-runner/src/runner/plugins/tools/highlighter/HighlighterBar.svelte:283
+#: ../../test-runner/src/runner/plugins/tools/highlighter/HighlighterBar.svelte:286
 msgid "clear all"
 msgstr "ryd alle"
 
@@ -7442,11 +7726,11 @@ msgstr "Slet feedback"
 msgid "Grader's comment:"
 msgstr "Graders kommentar:"
 
-#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:298
+#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:300
 msgid "Saving failed"
 msgstr "Lagring mislykkedes"
 
-#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:342
+#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:345
 msgid "Deletion failed"
 msgstr "Sletning mislykkedes"
 
@@ -7458,6 +7742,10 @@ msgstr "Lodret størrelsesændring af markørens ikon"
 msgid "Draggable element handle icon"
 msgstr "Håndtering af trækbart element ikon"
 
+#: ../../test-runner/src/runner/plugins/tools/markingSymbols/MarkingSymbolsBar.svelte:282
+msgid "Marking symbols"
+msgstr "Mærkning af symboler"
+
 #: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:103
 msgid "read aloud"
 msgstr "læs højt"
@@ -7466,31 +7754,31 @@ msgstr "læs højt"
 msgid "Continuous reading"
 msgstr "Løbende læsning"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:119
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:118
 msgid "Click to read"
 msgstr "Klik for at læse"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:131
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:129
 msgid "Select and read"
 msgstr "Vælg og læs"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:143
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:140
 msgid "ReadAloud settings"
 msgstr "ReadAloud indstillinger"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:156
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:152
 msgid "Select text to read aloud"
 msgstr "Vælg tekst der skal læses højt"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:159
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:155
 msgid "Click on any text to read aloud"
 msgstr "Klik på en tekst for at læse højt"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:168
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:164
 msgid "Press enter or space to activate select and read. To move the next available action, use the arrow keys. To close press escape."
 msgstr "Tryk på enter eller plads for at aktivere vælg og læse. For at flytte den næste tilgængelige handling, bruges piletasterne. For at lukke tryk på escape."
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:173
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:169
 msgid "Press enter or space to activate continuous reading. If activated press enter or space to stop the reading."
 msgstr "Tryk på enter eller plads for at aktivere kontinuerlig læsning. Hvis aktiveret, skal du trykke på enter eller plads for at stoppe læsningen."
 
@@ -7558,21 +7846,21 @@ msgstr "medium"
 msgid "high"
 msgstr "høj"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:181
+#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:182
 msgid "Look at the formula."
 msgstr "Se på formlen."
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:740
+#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:741
 msgid "Read aloud not available"
 msgstr "Læs højt er ikke tilgængeligt"
 
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:504
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:505
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:507
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:508
 msgid "undo"
 msgstr "fortryd"
 
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:509
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:509
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:512
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:512
 msgid "redo"
 msgstr "gentag"
 
@@ -7609,20 +7897,24 @@ msgstr "Linje"
 msgid "Eraser"
 msgstr "Eraser"
 
-#: ../../test-runner/src/runner/qti.js:540
+#: ../../test-runner/src/runner/qti.js:319
+msgid "Please wait while the answer is saved..."
+msgstr "Vent venligst mens svaret er gemt..."
+
+#: ../../test-runner/src/runner/qti.js:594
 msgid "All attempts have been used for this question"
 msgstr "Alle forsøg er blevet brugt til dette spørgsmål"
 
-#: ../../test-runner/src/runner/qti.js:542
-#: ../../test-runner/src/runner/qti.js:546
+#: ../../test-runner/src/runner/qti.js:596
+#: ../../test-runner/src/runner/qti.js:600
 msgid "You have %d attempts left for this question"
 msgstr "Du har %d forsøg tilbage for dette spørgsmål"
 
-#: ../../test-runner/src/runner/qti.js:563
+#: ../../test-runner/src/runner/qti.js:617
 msgid "Time has run out for this question"
 msgstr "Tiden er udløbet til dette spørgsmål"
 
-#: ../../test-runner/src/runner/qti.js:565
+#: ../../test-runner/src/runner/qti.js:619
 msgid "Time has run out for this question's section"
 msgstr "Tiden er løbet tør for dette spørgsmål sektion"
 
@@ -7630,11 +7922,44 @@ msgstr "Tiden er løbet tør for dette spørgsmål sektion"
 msgid "%s, extra time %s"
 msgstr "%s, ekstra tid %s"
 
-#: ../../test-runner/src/runner/util/testPart.js:187
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:65
 msgid "Part"
 msgstr "Del"
 
-#: ../src/config.js:136
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:68
+msgid "You have %s left to finish this part"
+msgstr "Du har %s tilbage for at færdiggøre denne del"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:72
+msgid "You have %s left to finish %s"
+msgstr "Du har %s tilbage for at færdiggøre %s"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:75
+msgid "You have %s left to finish %s part"
+msgstr "Du har %s tilbage for at færdiggøre %s del"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:94
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:110
+msgid "You have %s left to finish the test"
+msgstr "Du har %s tilbage for at afslutte testen"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:101
+msgid "You have %s left to finish %s section"
+msgstr "Du har %s tilbage for at færdiggøre %s sektion"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:102
+msgid "You have %s left to finish this section"
+msgstr "Du har %s tilbage for at afslutte denne sektion"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:106
+msgid "You have %s left to finish %s item"
+msgstr "Du har %s tilbage for at færdiggøre %s element"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:107
+msgid "You have %s left to finish this item"
+msgstr "Du har %s tilbage for at afslutte dette element"
+
+#: ../src/config.js:142
 msgid "TAO: test session"
 msgstr "TAO: testsession"
 

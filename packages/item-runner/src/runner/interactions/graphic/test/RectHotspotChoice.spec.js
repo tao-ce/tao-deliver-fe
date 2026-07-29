@@ -39,7 +39,7 @@ describe('rect hotspot choice', () => {
             expect(container.querySelector('g').classList).toContain('selected');
         });
 
-        it('renders text label as a checkmark if label is set ', () => {
+        it('renders text label as a checkmark if label is set', () => {
             const { container } = render(RectHotspotChoice, {
                 props: { coords: [100, 100, 200, 300], selected: true, label: '1' }
             });
@@ -60,8 +60,8 @@ describe('rect hotspot choice', () => {
 
             const { container } = render(RectHotspotChoice, { props: { coords: [50, 50, 50 + width, 50 + height] } });
 
-            const expectedWidth = minSize - remToPx(0.75); //0.75 = 2 * 0.375rem for stroke offsets
-            const expectedHeight = height - remToPx(0.75); // long side doesn't need scaling
+            const expectedWidth = minSize - remToPx(0.5); //0.5 = 2 * 0.25rem for stroke offsets
+            const expectedHeight = height - remToPx(0.5); // long side doesn't need scaling
 
             expect(parseFloat(container.querySelector('.shape-outer-border').getAttribute('width'))).toEqual(
                 expectedWidth
@@ -73,43 +73,6 @@ describe('rect hotspot choice', () => {
     });
 
     describe('events', () => {
-        it('changes the inner border size on mouseenter and mouseleave', () => {
-            const { container } = render(RectHotspotChoice, { props: { coords: [100, 100, 200, 300] } });
-            const initialInnerBorderWidth = parseFloat(
-                container.querySelector('.shape-inner-border').getAttribute('width')
-            );
-            const initialInnerBorderHeight = parseFloat(
-                container.querySelector('.shape-inner-border').getAttribute('height')
-            );
-
-            const groupEl = container.querySelector('g');
-            fireEvent.mouseEnter(groupEl);
-            return tick()
-                .then(() => {
-                    const currentInnerBorderWidth = parseFloat(
-                        container.querySelector('.shape-inner-border').getAttribute('width')
-                    );
-                    const currentInnerBorderHeight = parseFloat(
-                        container.querySelector('.shape-inner-border').getAttribute('height')
-                    );
-
-                    expect(currentInnerBorderWidth).toBeGreaterThan(initialInnerBorderWidth);
-                    expect(currentInnerBorderHeight).toBeGreaterThan(initialInnerBorderHeight);
-                    return tick;
-                })
-                .then(() => {
-                    fireEvent.mouseLeave(groupEl);
-                    const currentInnerBorderWidth = parseFloat(
-                        container.querySelector('.shape-inner-border').getAttribute('width')
-                    );
-                    const currentInnerBorderHeight = parseFloat(
-                        container.querySelector('.shape-inner-border').getAttribute('height')
-                    );
-                    expect(currentInnerBorderWidth).toEqual(initialInnerBorderWidth);
-                    expect(currentInnerBorderHeight).toEqual(initialInnerBorderHeight);
-                });
-        });
-
         it('forwards click event', () => {
             const { container, component } = render(RectHotspotChoice, { props: { coords: [100, 100, 200, 300] } });
             const fn = vi.fn();

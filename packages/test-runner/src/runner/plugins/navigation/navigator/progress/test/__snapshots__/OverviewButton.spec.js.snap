@@ -1,6 +1,11 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`OverviewButton > fails to render without a serviceCallId 1`] = `[TypeError: A "serviceCallId" is required to get the state store of the test session]`;
+exports[`OverviewButton > fails to render without a serviceCallId 1`] = `
+[TypeError: A "serviceCallId" is required to get the state store of the test session
+
+	in <unknown>
+]
+`;
 
 exports[`OverviewButton > renders disabled button with disabled props 1`] = `
 <body>
@@ -24,11 +29,17 @@ exports[`OverviewButton > renders disabled button with disabled props 1`] = `
         <path
           d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
         />
+        
       </svg>
+      
        
+      
        
       Overview (5)
+      
     </button>
+    
+    
   </div>
 </body>
 `;
@@ -53,11 +64,17 @@ exports[`OverviewButton > renders on mobile screen and indicates informational c
         <path
           d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
         />
+        
       </svg>
+      
        
+      
        
       𝒊 3 / 5
+      
     </button>
+    
+    
   </div>
 </body>
 `;
@@ -82,11 +99,17 @@ exports[`OverviewButton > renders on mobile screen and indicates non-information
         <path
           d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
         />
+        
       </svg>
+      
        
+      
        
       4 / 5
+      
     </button>
+    
+    
   </div>
 </body>
 `;
@@ -111,11 +134,17 @@ exports[`OverviewButton > renders on mobile screen without count if all items in
         <path
           d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
         />
+        
       </svg>
+      
        
+      
        
       𝒊 8
+      
     </button>
+    
+    
   </div>
 </body>
 `;
@@ -140,11 +169,17 @@ exports[`OverviewButton > renders on tablet/desktop screen with count of non-inf
         <path
           d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
         />
+        
       </svg>
+      
        
+      
        
       Overview (5)
+      
     </button>
+    
+    
   </div>
 </body>
 `;
@@ -169,11 +204,17 @@ exports[`OverviewButton > renders on tablet/desktop screen without count if all 
         <path
           d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
         />
+        
       </svg>
+      
        
+      
        
       Overview
+      
     </button>
+    
+    
   </div>
 </body>
 `;
@@ -198,11 +239,17 @@ exports[`OverviewButton > renders with empty store 1`] = `
         <path
           d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
         />
+        
       </svg>
+      
        
+      
        
       button
+      
     </button>
+    
+    
   </div>
 </body>
 `;

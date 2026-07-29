@@ -8,11 +8,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     // Licensed under Gnu Public Licence version 2
     // Copyright (c) 2020 (original work) Open Assessment Technologies SA ;
     import { SVG } from '@svgdotjs/svg.js';
-    import { remToPx } from '@oat-sa-private/ui-core';
     import { createEventDispatcher, onMount, afterUpdate } from 'svelte';
-    import { fixCoordinates, calculateInnerPolygonCoords, offsetToFit } from './util/polygon.js';
+    import { fixCoordinates, getVertexCoords, getIsThin, getInvertedClipPathCoords } from './util/polygon.js';
     import polylabel from 'polylabel';
-    import { minSizePx, checkmarkRadius } from './util/shapeDefaults.js';
+    import { checkmarkRadius } from './util/shapeDefaults.js';
+    import { remToPx } from '@oat-sa-private/ui-core';
 
     const dispatch = createEventDispatcher();
 
@@ -27,7 +27,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @property {boolean} disabled disabled state of hotspot
      * @property {boolean} invisible invisible state of hotspot
      * @property {boolean} checkmark draw or not circle/label in the center of element
-     * @property {boolean} hoverable draw or not hoverable scaling
      * @property {number} scale scale shape
      */
     export let coords;
@@ -38,14 +37,14 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     export let disabled;
     export let invisible;
     export let checkmark = true;
-    export let hoverable = true;
     export let scale = 1;
 
     let groupElement;
     let svgGroup;
-    let hovered;
     let cx = null;
     let cy = null;
+    let isThinPoly = false;
+    let clipPathEl;
 
     $: if (svgGroup && cx !== null && cy !== null) {
         dispatch('center', { cx, cy });
@@ -53,32 +52,40 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     /**
      * Draw (or re-draw) the dynamic elements inside the <g>
-     * @param {DOMElement} groupEl
+     * @param {import('@svgdotjs/svg.js').Element} groupEl
      */
     function draw(groupEl) {
         groupEl.clear();
+        clipPathEl?.remove();
 
         if (coords && coords.length) {
-            coords = offsetToFit(coords, minSizePx);
-            const outerOffset = remToPx(0.375);
-            const innerOffset = hovered && hoverable ? remToPx(0.75) : remToPx(0.875);
+            const polyCoords = getVertexCoords(coords);
+            const strCoords = polyCoords.map(coordinates => coordinates.join(',')).join(' ');
 
-            const innerPolygonCoordsForCenterCalculation = calculateInnerPolygonCoords(coords, remToPx(0.875));
+            clipPathEl = groupEl.root().defs().clip();
+            clipPathEl.polygon(strCoords);
 
-            const outerPolygonCoords = calculateInnerPolygonCoords(coords, outerOffset);
-            const innerPolygonCoords = calculateInnerPolygonCoords(coords, innerOffset);
+            const shadowEl = groupEl.polygon(strCoords).addClass('shape-shadow');
+            const innerBorderEl = groupEl.polygon(strCoords).addClass('shape-inner-border').clipWith(clipPathEl);
+            groupEl.polygon(strCoords).addClass('shape-outer-border').clipWith(clipPathEl);
+            groupEl.polygon(strCoords).addClass('shape-dashed-outline').clipWith(clipPathEl);
+            groupEl.polygon(strCoords).addClass('shape-outline-cover').clipWith(clipPathEl);
 
-            groupEl
-                .polygon(outerPolygonCoords.map(coordinates => coordinates.join(',')).join(' '))
-                .addClass('shape-outer-border');
-            groupEl
-                .polygon(innerPolygonCoords.map(coordinates => coordinates.join(',')).join(' '))
-                .addClass('shape-inner-border');
-            groupEl
-                .polygon(outerPolygonCoords.map(coordinates => coordinates.join(',')).join(' '))
-                .addClass('shape-dashed-outline');
+            [cx, cy] = polylabel([polyCoords]);
 
-            [cx, cy] = polylabel([innerPolygonCoordsForCenterCalculation]);
+            // enough to show black/blue inner border and a little bit of background. If smaller, white outer border will cover them.
+            const thinCheckerSize = remToPx(2 * (0.5 + 0.25) + 0.5);
+            // if "thin", then change styles: let the stroke go outside the borders, invert clip-path to cut inner half of the stroke
+            isThinPoly = getIsThin(groupEl, cx, cy, thinCheckerSize);
+            if (isThinPoly) {
+                innerBorderEl.unclip().forward().forward().forward();
+                shadowEl.remove();
+
+                const invertedClipCoords = getInvertedClipPathCoords(polyCoords, groupEl);
+                const invertedClipStrCoords = invertedClipCoords.map(coordinates => coordinates.join(',')).join(' ');
+
+                clipPathEl.clear().polygon(invertedClipStrCoords);
+            }
 
             if (checkmark) {
                 if (label) {
@@ -110,33 +117,105 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         coords = fixCoordinates(coords);
         draw(svgGroup);
     });
-
-    function handleMouseEnter() {
-        if (!hovered) {
-            hovered = true;
-            draw(svgGroup);
-        }
-    }
-
-    function handleMouseLeave() {
-        if (hovered) {
-            hovered = false;
-            draw(svgGroup);
-        }
-    }
 </script>
+
+<style>
+    g.shape:not(.thin-poly) {
+        & :global(.shape-shadow) {
+            filter: blur(1px);
+            fill: transparent;
+            stroke: rgba(0, 0, 0, 0.4);
+            stroke-width: 2px;
+        }
+        & :global(.shape-inner-border) {
+            stroke-width: 1.5rem;
+        }
+        & :global(.shape-outer-border) {
+            stroke-width: 1rem;
+            filter: none;
+        }
+        & :global(.shape-dashed-outline) {
+            stroke-width: 0.75rem;
+        }
+        & :global(.shape-outline-cover) {
+            stroke: var(--color-gs-light);
+            stroke-width: 0.25rem;
+            fill: transparent;
+        }
+
+        &:hover:not([aria-disabled='true']) {
+            & :global(.shape-outer-border.shape-outer-border) {
+                stroke-width: 0.75rem;
+            }
+            & :global(.shape-inner-border.shape-inner-border) {
+                stroke-width: 1.75rem;
+            }
+        }
+
+        &:focus-visible {
+            & :global(.shape-outer-border.shape-outer-border) {
+                stroke-width: 1rem;
+            }
+            & :global(.shape-inner-border.shape-inner-border) {
+                stroke-width: 1.5rem;
+            }
+        }
+    }
+
+    g.shape.thin-poly {
+        & :global(.shape-inner-border) {
+            stroke-width: 0.25rem;
+        }
+        & :global(.shape-outer-border) {
+            stroke-width: 1.25rem;
+        }
+        & :global(.shape-dashed-outline) {
+            stroke-width: 1rem;
+        }
+        & :global(.shape-outline-cover) {
+            stroke: var(--color-gs-light);
+            stroke-width: 0.5rem;
+            fill: transparent;
+        }
+
+        &.with-label.selected :global(.shape-checkmark) {
+            stroke: var(--color-brand);
+            stroke-width: 4;
+            paint-order: stroke fill;
+        }
+
+        &:hover:not([aria-disabled='true']) {
+            & :global(.shape-outer-border.shape-outer-border) {
+                stroke-width: 1.25rem;
+            }
+            & :global(.shape-inner-border.shape-inner-border) {
+                stroke-width: 0.5rem;
+            }
+        }
+
+        &:focus-visible {
+            & :global(.shape-outer-border.shape-outer-border) {
+                stroke-width: 1.25rem;
+            }
+            & :global(.shape-inner-border.shape-inner-border) {
+                stroke-width: 0.25rem;
+            }
+        }
+    }
+</style>
 
 <g
     tabindex="-1"
+    role="button"
     aria-label={ariaLabel}
     aria-labelledby={ariaLabelledBy}
-    aria-disabled={disabled}
+    aria-disabled={!!disabled}
     bind:this={groupElement}
-    class="shape"
+    class="shape poly"
     class:invisible
     class:selected
+    class:thin-poly={isThinPoly}
+    class:with-label={!!label}
     on:click
     on:keydown
-    on:keyup
-    on:mouseenter={handleMouseEnter}
-    on:mouseleave={handleMouseLeave} />
+    on:keyup />

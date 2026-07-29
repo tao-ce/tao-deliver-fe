@@ -11,11 +11,14 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     import { Button } from '@oat-sa-private/ui-elements';
     import { readable } from 'svelte/store';
     import { onMount, createEventDispatcher } from 'svelte';
+    import { endAssessment } from '../util/endAssessment.js';
 
     export let waitTimeRemaining;
     export let testTitle;
     export let testTakerName;
-    export let logoutUrl;
+    export let exitUrl;
+    export let endAssessmentUrl;
+    export let jwtTokenHandler;
     export let theme;
     export let startsAt;
     export let endsAt;
@@ -63,7 +66,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     $: displayNameLocale = Intl.DisplayNames.supportedLocalesOf(locales)[0] ?? locale;
 
     function logout() {
-        window.location.href = logoutUrl;
+        endAssessment({ jwtTokenHandler, exitUrl, endAssessmentUrl });
     }
 
     function getExamIntervalText() {
@@ -162,7 +165,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     <div class="wrapper">
         <header>
             <img src={logo.src} alt={logo.alt} />
-            {#if logoutUrl}
+            {#if exitUrl}
                 <Button label={__('Logout')} size="small" skin="secondary" on:click={logout} />
             {/if}
         </header>

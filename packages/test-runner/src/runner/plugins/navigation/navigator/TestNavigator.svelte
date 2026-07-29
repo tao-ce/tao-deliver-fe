@@ -14,7 +14,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @property {Boolean} [liteMode=false] - simplified mode of progress display
      * @property {Boolean} [disabled=false] - disable all buttons
      * @property {Boolean} [bookmarkDisabled=false] - disable bookmark button
+     * @property {Boolean} [disableNext=false] - disable next/forward navigation independently
+     * @property {Boolean} [disablePrevious=false] - disable previous/backward navigation independently
      * @property {Number} [linearNavDelayBeforeEnabled=null] - delay in milliseconds before enabling navigation in linear mode
+     * @property {Boolean} [hideBookmarks=false] - if true, hides the bookmark button and bookmarked tab in overview
      * @fires 'move' navigation event
      * @fires 'overview' event (to show progress overview)
      * @fires 'bookmark' event
@@ -39,6 +42,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     export let nonLinearRestricted = false;
     export let linearNavDelayBeforeEnabled = null;
     export let itemSessionStatusStore = null;
+    export let disableNext = false;
+    export let disablePrevious = false;
+    export let hideBookmarks = false;
 
     let item;
     let testPart;
@@ -75,7 +81,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         let remainingAttempts = -1;
 
         const testMap = testStateStore.getTestMap();
-        const testTotal = testMap && testMap.stats.total;
+        const testTotal = testMap && testMap.stats && testMap.stats.total;
 
         item = testStateStore.getCurrentItem();
         testPart = testStateStore.getCurrentTestPart();
@@ -84,7 +90,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             isNextButtonEnabled = false;
             navigationTimeout = setTimeout(() => {
                 isNextButtonEnabled = true;
-
             }, linearNavDelayBeforeEnabled);
         } else {
             isNextButtonEnabled = true;
@@ -139,7 +144,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 remainingAttempts,
                 canNavigateFreely,
                 bookmark: {
-                    shown: !liteMode && !testPart.isLinear && item && !item.informational,
+                    shown: !hideBookmarks && !liteMode && !testPart.isLinear && item && !item.informational,
                     toggled: item && item.flagged
                 }
             };
@@ -210,6 +215,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 
     $: navButtonSize = $screenSize.mobile || $screenSize.tabletPortrait ? 'small' : 'medium';
+    $: overviewDisabled = disabled || disableNext || disablePrevious;
+    $: progressDisabled = disabled || disableNext || disablePrevious;
+    $: forwardActionDisabled = disabled || disableNext;
+    $: nextButtonDisabled = disabled || !isNextButtonEnabled || disableNext;
 
     onDestroy(() => {
         if (navigationTimeout) {
@@ -344,7 +353,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                         icon="finish-16"
                         iconSide="right"
                         on:click={submitTestPart}
-                        disabled={disabled} />
+                        disabled={forwardActionDisabled} />
                 {:else if navigationState && navigationState.allowed.finishTestPart}
                     <Button
                         name="submit"
@@ -356,7 +365,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                         icon="submit-16"
                         iconSide="right"
                         on:click={submitTestPart}
-                        disabled={disabled} />
+                        disabled={forwardActionDisabled} />
                 {:else if navigationState && navigationState.allowed.next}
                     <Button
                         name="next"
@@ -367,7 +376,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                         icon="arrow-right-16"
                         iconRtlFlip={true}
                         on:click={next}
-                        disabled={disabled || !isNextButtonEnabled} />
+                        disabled={nextButtonDisabled} />
                 {/if}
             </div>
 
@@ -383,17 +392,23 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                             icon="arrow-left-16"
                             iconRtlFlip={true}
                             on:click={previous}
-                            {disabled} />
+                            disabled={disabled || disablePrevious} />
                     {/if}
                 </div>
             {/if}
 
             {#if $screenSize.mobile && navigationState && navigationState.allowed.overview}
                 <div class="overview-btn-container">
-                    <OverviewButton on:overview {serviceCallId} {disabled} />
+                    <OverviewButton on:overview {serviceCallId} disabled={overviewDisabled} />
                 </div>
             {/if}
-            <Progress on:move on:overview {serviceCallId} {liteMode} {disabled} {nonLinearRestricted} />
+            <Progress
+                on:move
+                on:overview
+                {serviceCallId}
+                {liteMode}
+                disabled={progressDisabled}
+                {nonLinearRestricted} />
         {/if}
     </div>
 {/if}

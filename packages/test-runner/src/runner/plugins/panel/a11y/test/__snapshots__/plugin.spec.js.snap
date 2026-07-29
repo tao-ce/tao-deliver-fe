@@ -14,6 +14,7 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
         class="a11y-menu-panel"
       >
         <div
+          aria-hidden="false"
           aria-labelledby="tao-a11y-panel-header-123"
           class="panel open"
           role="toolbar"
@@ -43,10 +44,15 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                     <path
                       d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
+                  
                 </button>
+                
               </div>
                
               <div
@@ -60,6 +66,7 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                   Accessibility tools
                 </h2>
               </div>
+              
             </div>
              
             <div
@@ -68,6 +75,8 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
               <section
                 class="a11y-menu-panel-content"
               >
+                
+                
                 <div
                   class="a11y-group"
                 >
@@ -90,10 +99,11 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                           <path
                             d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
                           />
+                          
                         </svg>
-                         
-                        Zoom
-                         
+                        
+                         Zoom 
+                        
                       </span>
                        
                       <span
@@ -115,10 +125,15 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                             <path
                               d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                             />
+                            
                           </svg>
+                          
                            
+                          
                            
+                          
                         </button>
+                        
                          
                         <button
                           aria-disabled="true"
@@ -137,15 +152,25 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                             <path
                               d="M0 7h16v2H0z"
                             />
+                            
                           </svg>
+                          
                            
+                          
                            
+                          
                         </button>
+                        
                       </span>
+                      
                     </h3>
+                    
                   </div>
                    
+                  
                 </div>
+                
+                
                 
                 
                 <details
@@ -175,11 +200,13 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                           fill="currentColor"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
-                       
-                      Contrast
-                       
+                      
+                       Contrast 
+                      
                     </h3>
+                    
                      
                     <svg
                       aria-hidden="true"
@@ -194,10 +221,13 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                         d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
                         fill="currentColor"
                       />
+                      
                     </svg>
+                    
                   </summary>
                    
                   <div>
+                    
                     <ul>
                       <li>
                         <div
@@ -207,6 +237,8 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                             class="colour-switcher"
                             role="radiogroup"
                           >
+                            
+                            
                             
                             <div
                               class="border-wrapper"
@@ -220,8 +252,8 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 type="radio"
                                 value="whiteOnBlack"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -235,8 +267,8 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 type="radio"
                                 value="yellowOnBlue"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -250,8 +282,8 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 type="radio"
                                 value="blackOnCream"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -265,8 +297,8 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 type="radio"
                                 value="blackOnBlue"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -280,8 +312,8 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 type="radio"
                                 value="blackOnMagenta"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -295,16 +327,21 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 type="radio"
                                 value="greyOnGreen"
                               />
-                               
                             </div>
                             
+                            
                           </div>
+                          
                         </div>
+                        
                       </li>
                     </ul>
                     
+                    
                   </div>
                 </details>
+                
+                
                 
                 
                 <details
@@ -334,11 +371,13 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                           fill="currentColor"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
-                       
-                      Cursor
-                       
+                      
+                       Cursor 
+                      
                     </h3>
+                    
                      
                     <svg
                       aria-hidden="true"
@@ -353,10 +392,13 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                         d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
                         fill="currentColor"
                       />
+                      
                     </svg>
+                    
                   </summary>
                    
                   <div>
+                    
                     <ul>
                       <li>
                         <div
@@ -366,6 +408,8 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                             class="colour-switcher"
                             role="radiogroup"
                           >
+                            
+                            
                             
                             <div
                               class="border-wrapper"
@@ -379,8 +423,8 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 type="radio"
                                 value="white"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -394,8 +438,8 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 type="radio"
                                 value="black"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -409,8 +453,8 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 type="radio"
                                 value="yellow"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -424,8 +468,8 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 type="radio"
                                 value="green"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -439,10 +483,11 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 type="radio"
                                 value="red"
                               />
-                               
                             </div>
                             
+                            
                           </div>
+                          
                            
                           <span
                             class="control-row"
@@ -463,11 +508,13 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 fill-rule="evenodd"
                                 id="Vector"
                               />
+                              
                             </svg>
+                            
                              
                             <label>
-                              Size
-                               
+                              Size 
+                              
                             </label>
                              
                             <span
@@ -489,10 +536,15 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                   <path
                                     d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                                   />
+                                  
                                 </svg>
+                                
                                  
+                                
                                  
+                                
                               </button>
+                              
                                
                               <button
                                 aria-disabled="true"
@@ -511,18 +563,29 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                   <path
                                     d="M0 7h16v2H0z"
                                   />
+                                  
                                 </svg>
+                                
                                  
+                                
                                  
+                                
                               </button>
+                              
                             </span>
+                            
                           </span>
+                          
                         </div>
+                        
                       </li>
                     </ul>
                     
+                    
                   </div>
                 </details>
+                
+                
                 
                 
                 <details
@@ -552,11 +615,13 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                           fill="currentColor"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
-                       
-                      Text
-                       
+                      
+                       Text 
+                      
                     </h3>
+                    
                      
                     <svg
                       aria-hidden="true"
@@ -571,7 +636,9 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                         d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
                         fill="currentColor"
                       />
+                      
                     </svg>
+                    
                   </summary>
                    
                   <div>
@@ -598,6 +665,7 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 >
                                   Default font
                                 </span>
+                                
                               </span>
                                
                               <svg
@@ -611,7 +679,9 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 <path
                                   d="M11.45 3.29A.49.49 0 0011 3H1a.49.49 0 00-.45.29.47.47 0 00.07.53l5 6a.49.49 0 00.76 0l5-6a.47.47 0 00.07-.53z"
                                 />
+                                
                               </svg>
+                              
                             </button>
                              
                             <span
@@ -640,6 +710,7 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                   >
                                     Default font
                                   </span>
+                                  
                                 </span>
                                 <span
                                   aria-selected="false"
@@ -652,6 +723,7 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                   >
                                     Courier
                                   </span>
+                                  
                                 </span>
                                 <span
                                   aria-selected="false"
@@ -664,6 +736,7 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                   >
                                     Arial
                                   </span>
+                                  
                                 </span>
                                 <span
                                   aria-selected="false"
@@ -676,6 +749,7 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                   >
                                     Verdana
                                   </span>
+                                  
                                 </span>
                                 <span
                                   aria-selected="false"
@@ -688,6 +762,7 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                   >
                                     CMU Serif
                                   </span>
+                                  
                                 </span>
                                 <span
                                   aria-selected="false"
@@ -700,7 +775,9 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                   >
                                     Luciole
                                   </span>
+                                  
                                 </span>
+                                
                                  
                                 <span
                                   class="scroll-child"
@@ -717,10 +794,15 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                               type="text"
                             />
                              
+                            
                              
+                            
                           </span>
+                          
                         </div>
+                        
                       </li>
+                      
                        
                       <li>
                         <span
@@ -741,11 +823,13 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                               fill="currentColor"
                               fill-rule="evenodd"
                             />
+                            
                           </svg>
+                          
                            
                           <label>
-                            Size
-                             
+                            Size 
+                            
                           </label>
                            
                           <span
@@ -767,10 +851,15 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 <path
                                   d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                                 />
+                                
                               </svg>
+                              
                                
+                              
                                
+                              
                             </button>
+                            
                              
                             <button
                               aria-disabled="true"
@@ -789,13 +878,21 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 <path
                                   d="M0 7h16v2H0z"
                                 />
+                                
                               </svg>
+                              
                                
+                              
                                
+                              
                             </button>
+                            
                           </span>
+                          
                         </span>
+                        
                       </li>
+                      
                        
                       <li>
                         <span
@@ -817,11 +914,13 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                               fill-rule="evenodd"
                               id="Vector"
                             />
+                            
                           </svg>
+                          
                            
                           <label>
-                            Line height
-                             
+                            Line height 
+                            
                           </label>
                            
                           <span
@@ -843,10 +942,15 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 <path
                                   d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                                 />
+                                
                               </svg>
+                              
                                
+                              
                                
+                              
                             </button>
+                            
                              
                             <button
                               aria-disabled="true"
@@ -865,15 +969,25 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 <path
                                   d="M0 7h16v2H0z"
                                 />
+                                
                               </svg>
+                              
                                
+                              
                                
+                              
                             </button>
+                            
                           </span>
+                          
                         </span>
+                        
                       </li>
+                      
                        
+                      
                        
+                      
                        
                       <li>
                         <span
@@ -895,11 +1009,13 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                               fill-rule="evenodd"
                               id="Union"
                             />
+                            
                           </svg>
+                          
                            
                           <label>
-                            Spacing
-                             
+                            Spacing 
+                            
                           </label>
                            
                           <span
@@ -921,10 +1037,15 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 <path
                                   d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                                 />
+                                
                               </svg>
+                              
                                
+                              
                                
+                              
                             </button>
+                            
                              
                             <button
                               aria-disabled="true"
@@ -943,23 +1064,37 @@ exports[`a11yMenuPanel plugin > auto-opens panel on first item load if configure
                                 <path
                                   d="M0 7h16v2H0z"
                                 />
+                                
                               </svg>
+                              
                                
+                              
                                
+                              
                             </button>
+                            
                           </span>
+                          
                         </span>
+                        
                       </li>
+                      
                     </ul>
+                    
                   </div>
                 </details>
                 
                 
+                
               </section>
+              
             </div>
           </div>
         </div>
+        
       </div>
+      
+      
     </div>
   </div>
 </body>
@@ -1019,6 +1154,7 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
         class="a11y-menu-panel"
       >
         <div
+          aria-hidden="false"
           aria-labelledby="tao-a11y-panel-header-123"
           class="panel open"
           role="toolbar"
@@ -1048,10 +1184,15 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                     <path
                       d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
+                  
                 </button>
+                
               </div>
                
               <div
@@ -1065,6 +1206,7 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                   Accessibility tools
                 </h2>
               </div>
+              
             </div>
              
             <div
@@ -1073,6 +1215,8 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
               <section
                 class="a11y-menu-panel-content"
               >
+                
+                
                 <div
                   class="a11y-group"
                 >
@@ -1098,11 +1242,13 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                           fill="currentColor"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
-                       
-                      Text
-                       
+                      
+                       Text 
+                      
                     </h3>
+                    
                   </div>
                    
                   <ul>
@@ -1128,6 +1274,7 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                               >
                                 Default font
                               </span>
+                              
                             </span>
                              
                             <svg
@@ -1141,7 +1288,9 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                               <path
                                 d="M11.45 3.29A.49.49 0 0011 3H1a.49.49 0 00-.45.29.47.47 0 00.07.53l5 6a.49.49 0 00.76 0l5-6a.47.47 0 00.07-.53z"
                               />
+                              
                             </svg>
+                            
                           </button>
                            
                           <span
@@ -1170,6 +1319,7 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                 >
                                   Default font
                                 </span>
+                                
                               </span>
                               <span
                                 aria-selected="false"
@@ -1182,7 +1332,9 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                 >
                                   Courier
                                 </span>
+                                
                               </span>
+                              
                                
                               <span
                                 class="scroll-child"
@@ -1199,10 +1351,15 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                             type="text"
                           />
                            
+                          
                            
+                          
                         </span>
+                        
                       </div>
+                      
                     </li>
+                    
                      
                     <li>
                       <span
@@ -1223,11 +1380,13 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                             fill="currentColor"
                             fill-rule="evenodd"
                           />
+                          
                         </svg>
+                        
                          
                         <label>
-                          Size
-                           
+                          Size 
+                          
                         </label>
                          
                         <span
@@ -1249,10 +1408,15 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                               <path
                                 d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                               />
+                              
                             </svg>
+                            
                              
+                            
                              
+                            
                           </button>
+                          
                            
                           <button
                             aria-disabled="true"
@@ -1271,19 +1435,34 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                               <path
                                 d="M0 7h16v2H0z"
                               />
+                              
                             </svg>
+                            
                              
+                            
                              
+                            
                           </button>
+                          
                         </span>
+                        
                       </span>
+                      
                     </li>
+                    
                      
+                    
                      
+                    
                      
+                    
                      
+                    
                   </ul>
+                  
                 </div>
+                
+                
                 
                 
                 <details
@@ -1312,11 +1491,13 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                           fill="currentColor"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
-                       
-                      Contrast
-                       
+                      
+                       Contrast 
+                      
                     </h3>
+                    
                      
                     <svg
                       aria-hidden="true"
@@ -1331,12 +1512,15 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                         d="M6 8L0 2L2 0L6 4L10 0L12 2L6 8Z"
                         fill="currentColor"
                       />
+                      
                     </svg>
+                    
                   </summary>
                    
                   <div
                     class="hidden"
                   >
+                    
                     <ul>
                       <li>
                         <div
@@ -1346,6 +1530,8 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                             class="colour-switcher"
                             role="radiogroup"
                           >
+                            
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1359,8 +1545,8 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                 type="radio"
                                 value="whiteOnBlack"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1374,8 +1560,8 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                 type="radio"
                                 value="yellowOnBlue"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1389,8 +1575,8 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                 type="radio"
                                 value="blackOnCream"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1404,8 +1590,8 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                 type="radio"
                                 value="blackOnBlue"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1419,8 +1605,8 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                 type="radio"
                                 value="blackOnMagenta"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1434,16 +1620,21 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                 type="radio"
                                 value="greyOnGreen"
                               />
-                               
                             </div>
                             
+                            
                           </div>
+                          
                         </div>
+                        
                       </li>
                     </ul>
                     
+                    
                   </div>
                 </details>
+                
+                
                 
                 
                 <details
@@ -1473,11 +1664,13 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                           fill="currentColor"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
-                       
-                      Cursor
-                       
+                      
+                       Cursor 
+                      
                     </h3>
+                    
                      
                     <svg
                       aria-hidden="true"
@@ -1492,10 +1685,13 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                         d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
                         fill="currentColor"
                       />
+                      
                     </svg>
+                    
                   </summary>
                    
                   <div>
+                    
                     <ul>
                       <li>
                         <div
@@ -1505,6 +1701,8 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                             class="colour-switcher"
                             role="radiogroup"
                           >
+                            
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1518,8 +1716,8 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                 type="radio"
                                 value="white"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1533,8 +1731,8 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                 type="radio"
                                 value="black"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1548,8 +1746,8 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                 type="radio"
                                 value="yellow"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1563,8 +1761,8 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                 type="radio"
                                 value="green"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1578,10 +1776,11 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                 type="radio"
                                 value="red"
                               />
-                               
                             </div>
                             
+                            
                           </div>
+                          
                            
                           <span
                             class="control-row"
@@ -1602,11 +1801,13 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                 fill-rule="evenodd"
                                 id="Vector"
                               />
+                              
                             </svg>
+                            
                              
                             <label>
-                              Size
-                               
+                              Size 
+                              
                             </label>
                              
                             <span
@@ -1628,10 +1829,15 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                   <path
                                     d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                                   />
+                                  
                                 </svg>
+                                
                                  
+                                
                                  
+                                
                               </button>
+                              
                                
                               <button
                                 aria-disabled="true"
@@ -1650,25 +1856,39 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
                                   <path
                                     d="M0 7h16v2H0z"
                                   />
+                                  
                                 </svg>
+                                
                                  
+                                
                                  
+                                
                               </button>
+                              
                             </span>
+                            
                           </span>
+                          
                         </div>
+                        
                       </li>
                     </ul>
+                    
                     
                   </div>
                 </details>
                 
                 
+                
               </section>
+              
             </div>
           </div>
         </div>
+        
       </div>
+      
+      
     </div>
   </div>
 </body>
@@ -1677,7 +1897,8 @@ exports[`a11yMenuPanel plugin > panel content rendering depends on configuration
 exports[`a11yMenuPanel plugin > restores state of setting values & group header collapsed state 1`] = `
 <body>
   <div
-    style="--fontsize-body-xs: 1.875rem; --fontsize-body-s: 2.1875rem; --fontsize-body: 2.5rem; --fontsize-heading: 2.5rem; --fontsize-heading-l: 3.125rem; --fontsize-heading-xl: 4.6875rem; --fontsize-heading-xxl: 6.25rem;"
+    data-a11y-override-font-size="true"
+    style="--fontsize-body-xs: 1.875rem; --fontsize-body-s: 2.1875rem; --fontsize-body: 2.5rem; --fontsize-heading: 2.5rem; --fontsize-heading-l: 3.125rem; --fontsize-heading-xl: 4.6875rem; --fontsize-heading-xxl: 6.25rem; --a11y-fontsize-scale: 1.25;"
   >
     <div
       class="qti-item-container"
@@ -1690,6 +1911,7 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
         class="a11y-menu-panel"
       >
         <div
+          aria-hidden="false"
           aria-labelledby="tao-a11y-panel-header-123"
           class="panel open"
           role="toolbar"
@@ -1719,10 +1941,15 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                     <path
                       d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
+                  
                 </button>
+                
               </div>
                
               <div
@@ -1736,6 +1963,7 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                   Accessibility tools
                 </h2>
               </div>
+              
             </div>
              
             <div
@@ -1744,6 +1972,8 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
               <section
                 class="a11y-menu-panel-content"
               >
+                
+                
                 <div
                   class="a11y-group"
                 >
@@ -1766,10 +1996,11 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                           <path
                             d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
                           />
+                          
                         </svg>
-                         
-                        Zoom
-                         
+                        
+                         Zoom 
+                        
                       </span>
                        
                       <span
@@ -1791,10 +2022,15 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                             <path
                               d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                             />
+                            
                           </svg>
+                          
                            
+                          
                            
+                          
                         </button>
+                        
                          
                         <button
                           aria-disabled="true"
@@ -1813,15 +2049,25 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                             <path
                               d="M0 7h16v2H0z"
                             />
+                            
                           </svg>
+                          
                            
+                          
                            
+                          
                         </button>
+                        
                       </span>
+                      
                     </h3>
+                    
                   </div>
                    
+                  
                 </div>
+                
+                
                 
                 
                 <details
@@ -1851,11 +2097,13 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                           fill="currentColor"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
-                       
-                      Contrast
-                       
+                      
+                       Contrast 
+                      
                     </h3>
+                    
                      
                     <svg
                       aria-hidden="true"
@@ -1870,10 +2118,13 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                         d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
                         fill="currentColor"
                       />
+                      
                     </svg>
+                    
                   </summary>
                    
                   <div>
+                    
                     <ul>
                       <li>
                         <div
@@ -1883,6 +2134,8 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                             class="colour-switcher"
                             role="radiogroup"
                           >
+                            
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1896,8 +2149,8 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 type="radio"
                                 value="whiteOnBlack"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1911,8 +2164,8 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 type="radio"
                                 value="yellowOnBlue"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1926,8 +2179,8 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 type="radio"
                                 value="blackOnCream"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1941,8 +2194,8 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 type="radio"
                                 value="blackOnBlue"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1956,8 +2209,8 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 type="radio"
                                 value="blackOnMagenta"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -1971,16 +2224,21 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 type="radio"
                                 value="greyOnGreen"
                               />
-                               
                             </div>
                             
+                            
                           </div>
+                          
                         </div>
+                        
                       </li>
                     </ul>
                     
+                    
                   </div>
                 </details>
+                
+                
                 
                 
                 <details
@@ -2010,11 +2268,13 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                           fill="currentColor"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
-                       
-                      Cursor
-                       
+                      
+                       Cursor 
+                      
                     </h3>
+                    
                      
                     <svg
                       aria-hidden="true"
@@ -2029,10 +2289,13 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                         d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
                         fill="currentColor"
                       />
+                      
                     </svg>
+                    
                   </summary>
                    
                   <div>
+                    
                     <ul>
                       <li>
                         <div
@@ -2042,6 +2305,8 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                             class="colour-switcher"
                             role="radiogroup"
                           >
+                            
+                            
                             
                             <div
                               class="border-wrapper"
@@ -2055,8 +2320,8 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 type="radio"
                                 value="white"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -2070,8 +2335,8 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 type="radio"
                                 value="black"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -2085,8 +2350,8 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 type="radio"
                                 value="yellow"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -2100,8 +2365,8 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 type="radio"
                                 value="green"
                               />
-                               
                             </div>
+                            
                             
                             <div
                               class="border-wrapper"
@@ -2115,10 +2380,11 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 type="radio"
                                 value="red"
                               />
-                               
                             </div>
                             
+                            
                           </div>
+                          
                            
                           <span
                             class="control-row"
@@ -2139,11 +2405,13 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 fill-rule="evenodd"
                                 id="Vector"
                               />
+                              
                             </svg>
+                            
                              
                             <label>
-                              Size
-                               
+                              Size 
+                              
                             </label>
                              
                             <span
@@ -2165,10 +2433,15 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                   <path
                                     d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                                   />
+                                  
                                 </svg>
+                                
                                  
+                                
                                  
+                                
                               </button>
+                              
                                
                               <button
                                 aria-disabled="true"
@@ -2187,18 +2460,29 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                   <path
                                     d="M0 7h16v2H0z"
                                   />
+                                  
                                 </svg>
+                                
                                  
+                                
                                  
+                                
                               </button>
+                              
                             </span>
+                            
                           </span>
+                          
                         </div>
+                        
                       </li>
                     </ul>
                     
+                    
                   </div>
                 </details>
+                
+                
                 
                 
                 <details
@@ -2227,10 +2511,10 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                           fill="currentColor"
                           fill-rule="evenodd"
                         />
+                        
                       </svg>
-                       
-                      Text
-                       
+                      
+                       Text 
                       <span
                         class="checkmark non-default"
                       >
@@ -2247,9 +2531,13 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                             d="M12 2.7L4.7 10.5L0 5.8L1.3 4.6L4.6 7.9L10.7 1.5L12 2.7Z"
                             fill-rule="evenodd"
                           />
+                          
                         </svg>
+                        
                       </span>
+                      
                     </h3>
+                    
                      
                     <svg
                       aria-hidden="true"
@@ -2264,7 +2552,9 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                         d="M6 8L0 2L2 0L6 4L10 0L12 2L6 8Z"
                         fill="currentColor"
                       />
+                      
                     </svg>
+                    
                   </summary>
                    
                   <div
@@ -2293,6 +2583,7 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 >
                                   Default font
                                 </span>
+                                
                               </span>
                                
                               <svg
@@ -2306,7 +2597,9 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 <path
                                   d="M11.45 3.29A.49.49 0 0011 3H1a.49.49 0 00-.45.29.47.47 0 00.07.53l5 6a.49.49 0 00.76 0l5-6a.47.47 0 00.07-.53z"
                                 />
+                                
                               </svg>
+                              
                             </button>
                              
                             <span
@@ -2335,6 +2628,7 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                   >
                                     Default font
                                   </span>
+                                  
                                 </span>
                                 <span
                                   aria-selected="false"
@@ -2347,6 +2641,7 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                   >
                                     Courier
                                   </span>
+                                  
                                 </span>
                                 <span
                                   aria-selected="false"
@@ -2359,6 +2654,7 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                   >
                                     Arial
                                   </span>
+                                  
                                 </span>
                                 <span
                                   aria-selected="false"
@@ -2371,6 +2667,7 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                   >
                                     Verdana
                                   </span>
+                                  
                                 </span>
                                 <span
                                   aria-selected="false"
@@ -2383,6 +2680,7 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                   >
                                     CMU Serif
                                   </span>
+                                  
                                 </span>
                                 <span
                                   aria-selected="false"
@@ -2395,7 +2693,9 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                   >
                                     Luciole
                                   </span>
+                                  
                                 </span>
+                                
                                  
                                 <span
                                   class="scroll-child"
@@ -2412,10 +2712,15 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                               type="text"
                             />
                              
+                            
                              
+                            
                           </span>
+                          
                         </div>
+                        
                       </li>
+                      
                        
                       <li>
                         <span
@@ -2436,11 +2741,12 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                               fill="currentColor"
                               fill-rule="evenodd"
                             />
+                            
                           </svg>
+                          
                            
                           <label>
-                            Size
-                             
+                            Size 
                             <span
                               class="checkmark non-default"
                             >
@@ -2457,8 +2763,11 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                   d="M12 2.7L4.7 10.5L0 5.8L1.3 4.6L4.6 7.9L10.7 1.5L12 2.7Z"
                                   fill-rule="evenodd"
                                 />
+                                
                               </svg>
+                              
                             </span>
+                            
                           </label>
                            
                           <span
@@ -2480,10 +2789,15 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 <path
                                   d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                                 />
+                                
                               </svg>
+                              
                                
+                              
                                
+                              
                             </button>
+                            
                              
                             <button
                               aria-label="decrease font size"
@@ -2501,13 +2815,21 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 <path
                                   d="M0 7h16v2H0z"
                                 />
+                                
                               </svg>
+                              
                                
+                              
                                
+                              
                             </button>
+                            
                           </span>
+                          
                         </span>
+                        
                       </li>
+                      
                        
                       <li>
                         <span
@@ -2529,11 +2851,13 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                               fill-rule="evenodd"
                               id="Vector"
                             />
+                            
                           </svg>
+                          
                            
                           <label>
-                            Line height
-                             
+                            Line height 
+                            
                           </label>
                            
                           <span
@@ -2555,10 +2879,15 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 <path
                                   d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                                 />
+                                
                               </svg>
+                              
                                
+                              
                                
+                              
                             </button>
+                            
                              
                             <button
                               aria-disabled="true"
@@ -2577,15 +2906,25 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 <path
                                   d="M0 7h16v2H0z"
                                 />
+                                
                               </svg>
+                              
                                
+                              
                                
+                              
                             </button>
+                            
                           </span>
+                          
                         </span>
+                        
                       </li>
+                      
                        
+                      
                        
+                      
                        
                       <li>
                         <span
@@ -2607,11 +2946,13 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                               fill-rule="evenodd"
                               id="Union"
                             />
+                            
                           </svg>
+                          
                            
                           <label>
-                            Spacing
-                             
+                            Spacing 
+                            
                           </label>
                            
                           <span
@@ -2633,10 +2974,15 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 <path
                                   d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                                 />
+                                
                               </svg>
+                              
                                
+                              
                                
+                              
                             </button>
+                            
                              
                             <button
                               aria-disabled="true"
@@ -2655,23 +3001,37 @@ exports[`a11yMenuPanel plugin > restores state of setting values & group header 
                                 <path
                                   d="M0 7h16v2H0z"
                                 />
+                                
                               </svg>
+                              
                                
+                              
                                
+                              
                             </button>
+                            
                           </span>
+                          
                         </span>
+                        
                       </li>
+                      
                     </ul>
+                    
                   </div>
                 </details>
                 
                 
+                
               </section>
+              
             </div>
           </div>
         </div>
+        
       </div>
+      
+      
     </div>
   </div>
 </body>

@@ -23,17 +23,12 @@ exports[`CommentEditor > renders all props 1`] = `
     <div
       class="comment-highlight-editor-flyout"
     >
+      
       <div
         aria-labelledby="tao-draggable-modal-title-123"
         class="draggable-modal"
         id="tao-draggable-modal-123"
-        style="
-            min-width: 640px;
-            min-height: 277px;
-            width: 422px;
-            height: unset;
-            left: 301px;
-            top: 245px; --action-container-size: 5.5rem;"
+        style="min-width: 640px; min-height: 277px; width: 422px; height: unset; left: 301px; top: 245px; --action-container-size: 5.5rem;"
       >
         <div
           class="zoom-tracker visually-hidden"
@@ -65,10 +60,15 @@ exports[`CommentEditor > renders all props 1`] = `
                   <path
                     d="M0 7h16v2H0z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
+              
             </div>
              
             <div
@@ -81,7 +81,9 @@ exports[`CommentEditor > renders all props 1`] = `
             <div
               class="action-container-end"
             >
+              
                
+              
             </div>
           </header>
            
@@ -105,7 +107,9 @@ exports[`CommentEditor > renders all props 1`] = `
                   <path
                     d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
                   />
+                  
                 </svg>
+                
                  
                 <div
                   aria-live="assertive"
@@ -119,18 +123,24 @@ exports[`CommentEditor > renders all props 1`] = `
                     >
                       Saving failed
                     </span>
+                    
                      
+                    
                     <span
                       class="notification-body"
                     >
                       Please try again
                     </span>
                     
+                    
                   </div>
                    
+                  
                 </div>
                  
+                
               </div>
+              
                
               <label
                 class="fullwidth"
@@ -138,8 +148,8 @@ exports[`CommentEditor > renders all props 1`] = `
                 <div
                   class="label-text visually-hidden"
                 >
-                  Textarea
-                   
+                  Textarea 
+                  
                 </div>
                  
                 <div
@@ -154,6 +164,7 @@ exports[`CommentEditor > renders all props 1`] = `
                   />
                 </div>
               </label>
+              
                
               <div
                 class="comment-editor-actions"
@@ -165,10 +176,14 @@ exports[`CommentEditor > renders all props 1`] = `
                   name="cancel-comment"
                   type="button"
                 >
+                  
                    
+                  
                    
                   Cancel
+                  
                 </button>
+                
                  
                 <button
                   aria-disabled="true"
@@ -177,10 +192,14 @@ exports[`CommentEditor > renders all props 1`] = `
                   name="save-comment"
                   type="submit"
                 >
+                  
                    
+                  
                    
                   Save
+                  
                 </button>
+                
                  
                 <span
                   class="saving"
@@ -202,11 +221,15 @@ exports[`CommentEditor > renders all props 1`] = `
                       >
                         Saving...
                       </p>
+                      
                     </div>
                   </div>
+                  
                 </span>
+                
               </div>
             </form>
+            
           </div>
            
           <div
@@ -248,10 +271,14 @@ exports[`CommentEditor > renders all props 1`] = `
             class="resize-hitbox hitbox-left"
             data-direction="w"
           />
+          
         </div>
       </div>
       
+      
     </div>
+    
+    
   </div>
 </body>
 `;

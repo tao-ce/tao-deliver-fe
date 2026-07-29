@@ -9,8 +9,13 @@ import { fireEvent } from '@testing-library/svelte';
 import pluginFactory from '../plugin.js';
 import testRunnerFactory from 'taoTests/runner/runner.js';
 import proxyFactory from 'taoTests/runner/proxy.js';
-import { getTestSessionStatusStore, getTestStateStore } from '../../../../testsStateStore.js';
-import preset from './testStoreMocks/presetOneSectionNonLinear.json';
+import {
+    getTestSessionStatusStore,
+    getTestStateStore,
+    default as testsStateStore
+} from '../../../../testsStateStore.js';
+import presetNonLinear from './testStoreMocks/presetOneSectionNonLinear.json';
+import { cloneDeep } from 'lodash';
 import { testSessionStatus } from '../../../../session/sessionStates';
 vi.mock('resize-observer-polyfill');
 
@@ -32,6 +37,14 @@ function setupStore(testServiceCallId, data) {
     const stateStore = getTestStateStore(testServiceCallId);
     stateStore.setTestMap(data.testMap);
     stateStore.setTestContext(data.testContext);
+}
+
+function loadItem(runner, itemId) {
+    const testContext = runner.getTestContext();
+    testContext.itemIdentifier = itemId;
+    testContext.sectionId = 'assessmentSection-1';
+    testContext.testPartId = 'testPart-1';
+    runner.loadItem(itemId);
 }
 
 function expectNavEnabled(nav) {
@@ -56,19 +69,17 @@ describe('navigator plugin', () => {
     //plugin relies on test-runner to set status
     const enableItemSpy = vi.fn().mockImplementation(() => {
         statusStore.set(testSessionStatus.interacting);
-        Promise.resolve();
+        return Promise.resolve();
     });
     const jumpSpy = vi.fn().mockImplementation(() => {
         statusStore.set(testSessionStatus.loading);
-        Promise.resolve();
+        return Promise.resolve();
     });
     const nextSpy = vi.fn().mockImplementation(() => {
         statusStore.set(testSessionStatus.loading);
-        Promise.resolve();
     });
     const skipSpy = vi.fn().mockImplementation(() => {
         statusStore.set(testSessionStatus.loading);
-        Promise.resolve();
     });
     const disableItemSpy = vi.fn().mockResolvedValue();
 
@@ -115,14 +126,14 @@ describe('navigator plugin', () => {
         };
         testRunnerFactory.registerProvider('foo', testProviderApi);
 
-        setupStore(serviceCallId, Object.assign({}, preset));
+        setupStore(serviceCallId, cloneDeep(presetNonLinear));
         statusStore = getTestSessionStatusStore(serviceCallId);
     });
 
     afterEach(() => {
         testRunnerFactory.clearProviders();
         container.innerHTML = '';
-        statusStore.clear();
+        testsStateStore.clear();
     });
 
     it('renders and destroys without error', () =>
@@ -169,7 +180,7 @@ describe('navigator plugin', () => {
                 })
                 .on('ready', () => {
                     expectNavDisabled(nav);
-                    runner.loadItem('item4');
+                    runner.loadItem('item3');
                 })
                 .on('renderitem', () => {
                     expectNavDisabled(nav);
@@ -256,6 +267,139 @@ describe('navigator plugin', () => {
                             expectNavEnabled(nav);
                             done();
                         });
+                })
+                .init();
+        }));
+
+    /**
+     * New test: partial disable for "next" direction via params.detail.direction
+     *
+     * We don't assert which concrete button is disabled, only that:
+     * - the nav is not fully disabled
+     * - the number of disabled buttons returns to the initial count after enablenav
+     */
+    it('partially disables navigation when disablenav has direction "next"', () =>
+        new Promise(done => {
+            const runner = testRunnerFactory('foo', [pluginFactory], {
+                renderTo: container,
+                serviceCallId
+            });
+
+            runner
+                .on('error', error => {
+                    throw error;
+                })
+                .on('ready', () => {
+                    // Use a non-first, non-last item where navigation is "normal"
+                    runner.loadItem('item2');
+                })
+                .on('renderitem', () => {
+                    runner.off('renderitem');
+
+                    const nav = getNavigationArea();
+
+                    // First bring the nav to its "enabled" baseline
+                    runner.trigger('enablenav');
+                    tick().then(() => {
+                        const initialDisabled = nav.querySelectorAll('button:disabled').length;
+                        const initialEnabled = nav.querySelectorAll('button:not(:disabled)').length;
+
+                        // Sanity: there should be at least one enabled button
+                        expect(initialEnabled).toBeGreaterThan(0);
+
+                        // Now disable only "next" direction
+                        runner.trigger('disablenav', {
+                            reason: 'pciControlsNav',
+                            detail: { direction: 'next' }
+                        });
+
+                        return tick().then(() => {
+                            const disabledAfter = nav.querySelectorAll('button:disabled').length;
+                            const enabledAfter = nav.querySelectorAll('button:not(:disabled)').length;
+
+                            // Nav is not globally dead
+                            expect(enabledAfter).toBeGreaterThan(0);
+
+                            // The disabled count should not shrink (may stay the same or increase)
+                            expect(disabledAfter).toBeGreaterThanOrEqual(initialDisabled);
+
+                            // Re-enable the same directional reason
+                            runner.trigger('enablenav', {
+                                reason: 'pciControlsNav',
+                                detail: { direction: 'next' }
+                            });
+
+                            return tick().then(() => {
+                                const disabledFinal = nav.querySelectorAll('button:disabled').length;
+
+                                // After directional re-enable, disabled count is back to baseline
+                                expect(disabledFinal).toBe(initialDisabled);
+                                done();
+                            });
+                        });
+                    });
+                })
+                .init();
+        }));
+
+    /**
+     * New test: partial disable for "previous" direction via params.detail.direction
+     *
+     * Same pattern as for "next": we check nav is not fully disabled and
+     * that disabled count returns to its initial value after enablenav.
+     */
+    it('partially disables navigation when disablenav has direction "previous"', () =>
+        new Promise(done => {
+            const runner = testRunnerFactory('foo', [pluginFactory], {
+                renderTo: container,
+                serviceCallId
+            });
+
+            runner
+                .on('error', error => {
+                    throw error;
+                })
+                .on('ready', () => {
+                    runner.loadItem('item2');
+                })
+                .on('renderitem', () => {
+                    runner.off('renderitem');
+
+                    const nav = getNavigationArea();
+
+                    // Bring nav to baseline enabled state
+                    runner.trigger('enablenav');
+                    tick().then(() => {
+                        const initialDisabled = nav.querySelectorAll('button:disabled').length;
+                        const initialEnabled = nav.querySelectorAll('button:not(:disabled)').length;
+
+                        expect(initialEnabled).toBeGreaterThan(0);
+
+                        runner.trigger('disablenav', {
+                            reason: 'pciControlsNav',
+                            detail: { direction: 'previous' }
+                        });
+
+                        return tick().then(() => {
+                            const disabledAfter = nav.querySelectorAll('button:disabled').length;
+                            const enabledAfter = nav.querySelectorAll('button:not(:disabled)').length;
+
+                            // Not globally disabled
+                            expect(enabledAfter).toBeGreaterThan(0);
+                            expect(disabledAfter).toBeGreaterThanOrEqual(initialDisabled);
+
+                            runner.trigger('enablenav', {
+                                reason: 'pciControlsNav',
+                                detail: { direction: 'previous' }
+                            });
+
+                            return tick().then(() => {
+                                const disabledFinal = nav.querySelectorAll('button:disabled').length;
+                                expect(disabledFinal).toBe(initialDisabled);
+                                done();
+                            });
+                        });
+                    });
                 })
                 .init();
         }));
@@ -505,8 +649,8 @@ describe('navigator plugin', () => {
 
             const stateStore = getTestStateStore(serviceCallId);
             stateStore.setTestContext({
-                ...preset.testContext,
-                remainingAttempts: 1,
+                ...presetNonLinear.testContext,
+                remainingAttempts: 1
             });
 
             const runner = testRunnerFactory('foo', [pluginFactory], {
@@ -815,7 +959,7 @@ describe('navigator plugin', () => {
         new Promise(done => {
             expect.assertions(3);
 
-            const attemptsPreset = Object.assign({}, preset);
+            const attemptsPreset = cloneDeep(presetNonLinear);
             attemptsPreset.testContext.remainingAttempts = 1;
             setupStore(serviceCallId, attemptsPreset);
 
@@ -865,4 +1009,278 @@ describe('navigator plugin', () => {
                 })
                 .init();
         }));
+
+    describe('hideBookmarks option', () => {
+        it('shows bookmark button when hideBookmarks is not set (default)', () =>
+            new Promise(done => {
+                expect.assertions(1);
+
+                const runner = testRunnerFactory('foo', [pluginFactory], {
+                    renderTo: container,
+                    serviceCallId
+                });
+
+                runner
+                    .on('error', error => {
+                        throw error;
+                    })
+                    .on('ready', () => {
+                        runner.loadItem('item1');
+                    })
+                    .on('renderitem', () => {
+                        runner.off('renderitem');
+                        tick().then(() => {
+                            const bookmarkButton = getNavigationArea().querySelector('button[name="bookmark"]');
+                            expect(bookmarkButton).not.toBeNull();
+                            runner.destroy();
+                            done();
+                        });
+                    })
+                    .init();
+            }));
+
+        it('hides bookmark button when hideBookmarks is set to true', () =>
+            new Promise(done => {
+                expect.assertions(1);
+
+                const runner = testRunnerFactory('foo', [pluginFactory], {
+                    renderTo: container,
+                    serviceCallId,
+                    options: {
+                        hideBookmarks: true
+                    }
+                });
+
+                runner
+                    .on('error', error => {
+                        throw error;
+                    })
+                    .on('ready', () => {
+                        runner.loadItem('item1');
+                    })
+                    .on('renderitem', () => {
+                        runner.off('renderitem');
+                        tick().then(() => {
+                            const bookmarkButton = getNavigationArea().querySelector('button[name="bookmark"]');
+                            expect(bookmarkButton).toBeNull();
+                            runner.destroy();
+                            done();
+                        });
+                    })
+                    .init();
+            }));
+
+        it('shows bookmark button when hideBookmarks is explicitly set to false', () =>
+            new Promise(done => {
+                expect.assertions(1);
+
+                const runner = testRunnerFactory('foo', [pluginFactory], {
+                    renderTo: container,
+                    serviceCallId,
+                    options: {
+                        hideBookmarks: false
+                    }
+                });
+
+                runner
+                    .on('error', error => {
+                        throw error;
+                    })
+                    .on('ready', () => {
+                        runner.loadItem('item1');
+                    })
+                    .on('renderitem', () => {
+                        runner.off('renderitem');
+                        tick().then(() => {
+                            const bookmarkButton = getNavigationArea().querySelector('button[name="bookmark"]');
+                            expect(bookmarkButton).not.toBeNull();
+                            runner.destroy();
+                            done();
+                        });
+                    })
+                    .init();
+            }));
+
+        it('disables bookmark functionality in overview when hideBookmarks is true', () =>
+            new Promise(done => {
+                expect.assertions(1);
+
+                const runner = testRunnerFactory('foo', [pluginFactory], {
+                    renderTo: container,
+                    serviceCallId,
+                    options: {
+                        hideBookmarks: true
+                    }
+                });
+
+                runner
+                    .on('error', error => {
+                        throw error;
+                    })
+                    .on('ready', () => {
+                        runner.loadItem('item2');
+                    })
+                    .on('renderitem', () => {
+                        runner.off('renderitem');
+
+                        const overviewButton = getContainer().querySelector('button[name="overview"]');
+                        fireEvent.click(overviewButton);
+                    })
+                    .after('disableitem.test', () => {
+                        runner.off('disableitem.test');
+
+                        tick().then(() => {
+                            const tabs = getOverlayContentArea().querySelectorAll('[role="tab"]');
+                            // When hideBookmarks is true, a "bookmarked" tab should NOT exist in the overview
+                            const hasBookmarkedTab = Array.from(tabs).some(tab =>
+                                tab.textContent.toLowerCase().includes('bookmark')
+                            );
+                            expect(hasBookmarkedTab).toBe(false);
+                            runner.destroy();
+                            done();
+                        });
+                    })
+                    .init();
+            }));
+
+        it('allows bookmark functionality in overview when hideBookmarks is not set', () =>
+            new Promise(done => {
+                expect.assertions(1);
+
+                const runner = testRunnerFactory('foo', [pluginFactory], {
+                    renderTo: container,
+                    serviceCallId
+                });
+
+                runner
+                    .on('error', error => {
+                        throw error;
+                    })
+                    .on('ready', () => {
+                        runner.loadItem('item2');
+                    })
+                    .on('renderitem', () => {
+                        runner.off('renderitem');
+
+                        const overviewButton = getContainer().querySelector('button[name="overview"]');
+                        fireEvent.click(overviewButton);
+                    })
+                    .after('disableitem.test', () => {
+                        runner.off('disableitem.test');
+
+                        tick().then(() => {
+                            const tabs = getOverlayContentArea().querySelectorAll('[role="tab"]');
+                            // When hideBookmarks is not set, a "bookmarked" tab should exist in the overview
+                            let hasBookmarkedTab = false;
+                            tabs.forEach(tab => {
+                                if (tab.textContent.toLowerCase().includes('bookmark')) {
+                                    hasBookmarkedTab = true;
+                                }
+                            });
+                            expect(hasBookmarkedTab).toBe(true);
+                            runner.destroy();
+                            done();
+                        });
+                    })
+                    .init();
+            }));
+    });
+
+    describe('preventEarlyTestPartSubmission option', () => {
+        it('overview submit is disabled if not last item in part', () =>
+            new Promise(done => {
+                expect.assertions(5);
+
+                const runner = testRunnerFactory('foo', [pluginFactory], {
+                    renderTo: container,
+                    serviceCallId,
+                    options: {
+                        plugins: {
+                            navigator: {
+                                preventEarlyTestPartSubmission: true
+                            }
+                        }
+                    }
+                });
+
+                runner
+                    .on('error', error => {
+                        throw error;
+                    })
+                    .on('ready', () => {
+                        loadItem(runner, 'item2');
+                    })
+                    .on('renderitem', () => {
+                        runner.off('renderitem');
+
+                        expect(statusStore.get()).not.toBe('overlay');
+
+                        runner.trigger('open-overview');
+                    })
+                    .after('disableitem.test', () => {
+                        runner.off('disableitem.test');
+                        expect(disableItemSpy).toBeCalledWith('item2');
+
+                        tick().then(() => {
+                            expect(statusStore.get()).toBe('overlay');
+                            let submitOverviewButton = getContainer().querySelector('button[name="overview-submit"]');
+                            expect(submitOverviewButton).toBeDisabled();
+                            fireEvent.click(submitOverviewButton);
+
+                            expect(nextSpy).not.toHaveBeenCalled();
+
+                            done();
+                        });
+                    })
+                    .init();
+            }));
+
+        it('overview submit is enabled if last item in part', () =>
+            new Promise(done => {
+                expect.assertions(5);
+
+                const runner = testRunnerFactory('foo', [pluginFactory], {
+                    renderTo: container,
+                    serviceCallId,
+                    options: {
+                        plugins: {
+                            navigator: {
+                                preventEarlyTestPartSubmission: true
+                            }
+                        }
+                    }
+                });
+
+                runner
+                    .on('error', error => {
+                        throw error;
+                    })
+                    .on('ready', () => {
+                        loadItem(runner, 'item3');
+                    })
+                    .on('renderitem', () => {
+                        runner.off('renderitem');
+
+                        expect(statusStore.get()).not.toBe('overlay');
+
+                        runner.trigger('open-overview');
+                    })
+                    .after('disableitem.test', () => {
+                        runner.off('disableitem.test');
+                        expect(disableItemSpy).toBeCalledWith('item3');
+
+                        tick().then(() => {
+                            expect(statusStore.get()).toBe('overlay');
+                            let submitOverviewButton = getContainer().querySelector('button[name="overview-submit"]');
+                            expect(submitOverviewButton).not.toBeDisabled();
+                            fireEvent.click(submitOverviewButton);
+
+                            expect(nextSpy).toHaveBeenCalled();
+
+                            done();
+                        });
+                    })
+                    .init();
+            }));
+    });
 });

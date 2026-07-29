@@ -108,6 +108,14 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 
     /**
+     * @param {?Number} score
+     * @returns {?Number} - score, or `–` if score was undefined
+     */
+    function createScoreTitle(score) {
+        return score === null ? '–' : score;
+    }
+
+    /**
      * Load data for Tabs and Sections and Steps from store and map it to component's format
      * @returns {Object} mapped data
      */
@@ -268,7 +276,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             <article class="total-score ui-heading-l">
                 <h1 class="title">{__('Total score')}</h1>
                 <p class="score-details">
-                    <span>{totalScore} / {totalMaxScore}</span>
+                    <span>{createScoreTitle(totalScore)} / {createScoreTitle(totalMaxScore)}</span>
                     {#if (scoreOutcomes.isPassed ?? null) !== null}
                         {#if scoreOutcomes.isPassed}
                             <span class="cut-score-feedback passed"><Icon name="checkbox-check-24" />Pass</span>

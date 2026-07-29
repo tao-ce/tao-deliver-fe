@@ -26,11 +26,16 @@ exports[`TestOverviewBottomBar > renders buttons 1`] = `
             <path
               d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
             />
+            
           </svg>
+          
            
+          
            
           Go back to the question
+          
         </button>
+        
       </span>
        
       <button
@@ -39,11 +44,17 @@ exports[`TestOverviewBottomBar > renders buttons 1`] = `
         name="overview-finish"
         type="button"
       >
+        
          
+        
          
         Exit test review
+        
       </button>
+      
     </div>
+    
+    
   </div>
 </body>
 `;

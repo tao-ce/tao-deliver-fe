@@ -5,8 +5,9 @@
 
 import pageController from './page.js';
 import TheEnd from '../component/TheEnd.svelte';
-import {getErrorDetailsFromError, getErrorMessageFromError, getIsRetriableFromError} from '../core/errorMessages.js';
+import { getErrorDetailsFromError, getErrorMessageFromError, getIsRetriableFromError } from '../core/errorMessages.js';
 import { errorMessages } from 'taoDeliverAppsCommon/core/error/messages.js';
+import { mount, unmount } from 'svelte';
 
 export default () =>
     pageController({
@@ -36,14 +37,14 @@ export default () =>
             if (!retry && exitUrl) {
                 window.location.replace(exitUrl);
             } else if (detailsPromise instanceof Promise) {
-                detailsPromise.then((details) => {
-                    this.theEndComponent = new TheEnd({
+                detailsPromise.then(details => {
+                    this.theEndComponent = mount(TheEnd, {
                         target: container,
                         props: Object.assign({ retry, details }, displayedErrorMessage)
                     });
                 });
             } else {
-                this.theEndComponent = new TheEnd({
+                this.theEndComponent = mount(TheEnd, {
                     target: container,
                     props: Object.assign({ retry }, displayedErrorMessage)
                 });
@@ -52,7 +53,7 @@ export default () =>
 
         stop() {
             if (this.theEndComponent) {
-                this.theEndComponent.$destroy();
+                unmount(this.theEndComponent);
             }
         }
     });

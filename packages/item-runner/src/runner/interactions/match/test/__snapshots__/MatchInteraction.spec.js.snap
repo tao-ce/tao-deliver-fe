@@ -3,34 +3,40 @@
 exports[`MatchInteraction > renders feedback 1`] = `
 <div
   class="qti-instruction-container"
+  dir=""
 >
   <div
     aria-atomic="true"
     class="feedback info fullwidth"
     role="status"
   >
+    
      
     <p>
       You must make at least 1 association and a maximum of 2
     </p>
   </div>
+  
 </div>
 `;
 
 exports[`MatchInteraction > renders feedback with custom message 1`] = `
 <div
   class="qti-instruction-container"
+  dir=""
 >
   <div
     aria-atomic="true"
     class="feedback info fullwidth"
     role="status"
   >
+    
      
     <p>
       Custom min selection message Custom max selection message
     </p>
   </div>
+  
 </div>
 `;
 
@@ -40,29 +46,38 @@ exports[`MatchInteraction > renders prompt 1`] = `
     <div
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-matchInteraction"
+      dir=""
     >
       <div
         class="qti-prompt cf"
       >
+        
+        
         Question 1
         
         
+        
       </div>
+      
        
       <div
         class="qti-instruction-container"
+        dir=""
       >
         <div
           aria-atomic="true"
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You must make a maximum of 1 association
           </p>
         </div>
+        
       </div>
+      
        
       <div
         class="match-tabular radio radio-x radio-y"
@@ -71,7 +86,10 @@ exports[`MatchInteraction > renders prompt 1`] = `
           <legend
             class="visually-hidden"
           >
+            
+            
             Question 1
+            
             
             
           </legend>
@@ -85,15 +103,19 @@ exports[`MatchInteraction > renders prompt 1`] = `
                 >
                   
                 </th>
-                 
+                
               </tr>
             </thead>
-             
-            <tbody />
+            <tbody>
+              
+            </tbody>
           </table>
         </fieldset>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -113,21 +135,26 @@ exports[`MatchInteraction > renders props into markup 1`] = `
       lang="hu"
       role="someUniqueRole"
     >
+      
        
       <div
         class="qti-instruction-container"
+        dir=""
       >
         <div
           aria-atomic="true"
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You must make a maximum of 1 association
           </p>
         </div>
+        
       </div>
+      
        
       <div
         class="match-tabular radio radio-x radio-y"
@@ -136,6 +163,8 @@ exports[`MatchInteraction > renders props into markup 1`] = `
           <legend
             class="visually-hidden"
           >
+            
+            
             
           </legend>
            
@@ -148,15 +177,19 @@ exports[`MatchInteraction > renders props into markup 1`] = `
                 >
                   
                 </th>
-                 
+                
               </tr>
             </thead>
-             
-            <tbody />
+            <tbody>
+              
+            </tbody>
           </table>
         </fieldset>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -164,10 +197,13 @@ exports[`MatchInteraction > renders props into markup 1`] = `
 exports[`MatchInteraction > renders the instruction lang on the feedback block 1`] = `
 <body>
   <div>
+    
     <div
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-matchInteraction"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
@@ -179,12 +215,15 @@ exports[`MatchInteraction > renders the instruction lang on the feedback block 1
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You must make at least 1 association and a maximum of 2
           </p>
         </div>
+        
       </div>
+      
        
       <div
         class="match-tabular radio radio-x radio-y"
@@ -193,6 +232,8 @@ exports[`MatchInteraction > renders the instruction lang on the feedback block 1
           <legend
             class="visually-hidden"
           >
+            
+            
             
           </legend>
            
@@ -205,15 +246,19 @@ exports[`MatchInteraction > renders the instruction lang on the feedback block 1
                 >
                   
                 </th>
-                 
+                
               </tr>
             </thead>
-             
-            <tbody />
+            <tbody>
+              
+            </tbody>
           </table>
         </fieldset>
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>

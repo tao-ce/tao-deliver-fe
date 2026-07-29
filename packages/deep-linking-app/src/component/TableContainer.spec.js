@@ -35,7 +35,7 @@ describe('TableContainer component', () => {
             }
         });
 
-        expect(getByText('Battery number two'));
+        expect(getByText('Battery number two')).toBeInTheDocument();
     });
 
     it('should filter rows by search term', () => {

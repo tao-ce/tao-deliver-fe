@@ -72,7 +72,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     /**
      * Get list of buttons
-     * @returns {Array<HTMLElement}
+     * @returns {Array<HTMLElement>}
      */
     function getFocusableElements() {
         return Array.from(actionsElement.querySelectorAll('.icon-bar-btn'));
@@ -99,13 +99,13 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 </style>
 
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
     class="readAloud-bar"
     class:has-footer={playSelectionToggled || playOnClickToggled || readAloudSettings.open}
     class:hidden={$statusStore === testSessionStatus.overlay}
     on:keydown={handleKeyDown}
-    on:click|stopPropagation
->
+    on:click|stopPropagation>
     <FloatingBar title={__('read aloud')}>
         <!-- first slot -->
         <div class="actions do-not-read" bind:this={actionsElement}>
@@ -118,8 +118,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 ariaDescribedBy={ariaDescribedByIdPlay}
                 dataTestId="readaloud-play"
                 {disabled}
-                on:click={() => handleActionClick(actionKeys.playAll)}
-            />
+                on:click={() => handleActionClick(actionKeys.playAll)} />
             {#if clickToSpeakEnable}
                 <IconBarButton
                     label={__('Click to read')}
@@ -130,8 +129,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                     ariaDescribedBy={ariaDescribedByIdSelection}
                     dataTestId="readaloud-play-on-click"
                     {disabled}
-                    on:click={() => handleActionClick(actionKeys.playOnClick)}
-                />
+                    on:click={() => handleActionClick(actionKeys.playOnClick)} />
             {:else}
                 <IconBarButton
                     label={__('Select and read')}
@@ -142,8 +140,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                     ariaDescribedBy={ariaDescribedByIdSelection}
                     dataTestId="readaloud-play-selection"
                     {disabled}
-                    on:click={() => handleActionClick(actionKeys.playSelection)}
-                />
+                    on:click={() => handleActionClick(actionKeys.playSelection)} />
             {/if}
             <IconBarButton
                 label={__('ReadAloud settings')}
@@ -153,8 +150,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 ariaPressed={readAloudSettings.open}
                 dataTestId="readaloud-settings"
                 {disabled}
-                on:click={() => handleActionClick(actionKeys.settings)}
-            />
+                on:click={() => handleActionClick(actionKeys.settings)} />
         </div>
         <!-- second slot -->
         <div class="footer" slot="footer">

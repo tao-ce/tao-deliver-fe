@@ -18,11 +18,11 @@ export const feedbackTypes = Object.freeze({
 
 /**
  * @typedef FeedbackFactoryOptions
- * @property {String} [options.type] - 'selectChoices' or 'placeAnswers' or 'choices' or 'associations', reflected in returned messages
- * @property {Number} [options.maxChoices]
- * @property {Number} [options.minChoices]
- * @property {String} [options.qtiMaxChoicesMessage] - defined by item author
- * @property {String} [options.qtiMinChoicesMessage] - defined by item author
+ * @property {String} [type] - 'selectChoices' or 'placeAnswers' or 'choices' or 'associations', reflected in returned messages
+ * @property {Number} [maxChoices]
+ * @property {Number} [minChoices]
+ * @property {String} [qtiMaxChoicesMessage] - defined by item author
+ * @property {String} [qtiMinChoicesMessage] - defined by item author
  */
 /**
  * Function to manage length constraints feedback

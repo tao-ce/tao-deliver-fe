@@ -94,6 +94,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 </style>
 
+<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 <ul class="attachments-list" bind:this={ulElt} on:keydown={handleKeyDown}>
     {#each attachments as attachment (attachment.id)}
         <li>

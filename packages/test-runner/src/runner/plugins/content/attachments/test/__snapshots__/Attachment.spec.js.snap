@@ -39,22 +39,31 @@ exports[`Attachment > renders with PDF attachment 1`] = `
                   <path
                     d="M1 2a1 1 0 100 2 1 1 0 100-2zm0 5a1 1 0 100 2 1 1 0 100-2zm0 5a1 1 0 100 2 1 1 0 100-2zM15 2H5a1 1 0 000 2h10a1 1 0 000-2zm0 5H5a1 1 0 000 2h10a1 1 0 000-2zm0 5H5a1 1 0 000 2h10a1 1 0 000-2z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
-               
+              
             </li>
+            
           </ol>
            
           <div
             class="heading-container"
           >
+            
             <h3>
               Attachment 1
+              
             </h3>
             
+            
           </div>
+          
            
           <ol
             class="actions end"
@@ -76,18 +85,26 @@ exports[`Attachment > renders with PDF attachment 1`] = `
                   <path
                     d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
-               
+              
             </li>
+            
           </ol>
         </div>
+        
          
         <div
           class="overlay-box-content"
         >
+          
+          
           <div
             class="pdf-attachment"
           >
@@ -97,7 +114,7 @@ exports[`Attachment > renders with PDF attachment 1`] = `
               id="1"
               name="Attachment 1"
               role="document"
-              style="width: 100%; height: auto;"
+              style=""
               type="application/pdf"
               url="//api/v1/attachment1.pdf"
             >
@@ -106,88 +123,202 @@ exports[`Attachment > renders with PDF attachment 1`] = `
                 aria-label="Document toolbar"
                 role="toolbar"
               >
-                <div>
-                  <button
-                    aria-label="Zoom in"
-                    class="icon-bar-btn actionable base-16 default"
-                    data-test-id="doc-zoom-in"
-                    disabled=""
-                    title="Zoom in"
-                  >
-                    <svg
-                      aria-hidden="false"
-                      class="icon medium"
-                      viewBox="0 0 16 16"
+                <div
+                  class="doc-nav-bar"
+                >
+                  <div>
+                    <span
+                      class="search-toggle"
                     >
-                      <title>
-                        Zoom in icon
-                      </title>
-                      <path
-                        d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
-                      />
-                      <path
-                        d="M10 6H7V3H6v3H3v1h3v3h1V7h3V6z"
-                      />
-                    </svg>
+                      <button
+                        aria-controls="tao-search-123"
+                        aria-expanded="false"
+                        aria-label="Search"
+                        class="icon-bar-btn actionable base-16 default circular"
+                        data-test-id="doc-search-toggle"
+                        disabled=""
+                        title="Search"
+                      >
+                        <svg
+                          aria-hidden="false"
+                          class="icon medium"
+                          viewBox="0 0 16 16"
+                        >
+                          <title>
+                            Search icon
+                          </title>
+                          <path
+                            d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
+                          />
+                          
+                        </svg>
+                        
+                         
+                        
+                         
+                        
+                      </button>
+                      
+                    </span>
                      
+                    <button
+                      aria-label="Zoom in"
+                      class="icon-bar-btn actionable base-16 default"
+                      data-test-id="doc-zoom-in"
+                      disabled=""
+                      title="Zoom in"
+                    >
+                      <svg
+                        aria-hidden="false"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Zoom in icon
+                        </title>
+                        <path
+                          d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
+                        />
+                        <path
+                          d="M10 6H7V3H6v3H3v1h3v3h1V7h3V6z"
+                        />
+                        
+                      </svg>
+                      
+                       
+                      
+                       
+                      
+                    </button>
+                    
                      
-                  </button>
+                    <button
+                      aria-label="Zoom out"
+                      class="icon-bar-btn actionable base-16 default"
+                      data-test-id="doc-zoom-out"
+                      disabled=""
+                      title="Zoom out"
+                    >
+                      <svg
+                        aria-hidden="false"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Zoom out icon
+                        </title>
+                        <path
+                          d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
+                        />
+                        <path
+                          d="M3 6h7v1H3z"
+                        />
+                        
+                      </svg>
+                      
+                       
+                      
+                       
+                      
+                    </button>
+                    
+                  </div>
                    
-                  <button
-                    aria-label="Zoom out"
-                    class="icon-bar-btn actionable base-16 default"
-                    data-test-id="doc-zoom-out"
-                    disabled=""
-                    title="Zoom out"
+                  <div
+                    class="pagination"
                   >
-                    <svg
-                      aria-hidden="false"
-                      class="icon medium"
-                      viewBox="0 0 16 16"
-                    >
-                      <title>
-                        Zoom out icon
-                      </title>
-                      <path
-                        d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
-                      />
-                      <path
-                        d="M3 6h7v1H3z"
-                      />
-                    </svg>
+                    
+                  </div>
+                   
+                  <div>
+                    
                      
-                     
-                  </button>
+                    
+                  </div>
                 </div>
                  
                 <div
-                  class="pagination"
-                />
-                 
-                <div>
+                  class="doc-search-bar hidden"
+                  id="tao-search-123"
+                >
+                  <label
+                    class="inverted"
+                    style="--input-width: 100%;"
+                  >
+                    <div
+                      class="search-icon"
+                    >
+                      <svg
+                        aria-hidden="false"
+                        class="icon medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <title>
+                          Search icon
+                        </title>
+                        <path
+                          d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
+                        />
+                        
+                      </svg>
+                      
+                    </div>
+                     
+                    <input
+                      aria-label="Search"
+                      name="doc-search"
+                    />
+                     
+                    
+                  </label>
+                  
                    
+                  <div
+                    aria-live="polite"
+                    class="search-matches hidden"
+                  >
+                    No matches found
+                  </div>
+                   
+                  
                 </div>
               </div>
+              
                
               <div
-                class="document-wrapper"
+                class="document-wrapper tao-document-wrapper"
                 id="tao-doc-123"
                 role="document"
-                tabindex="0"
               >
-                <canvas />
+                
                  
                 <div
-                  class="text-layer"
+                  class="viewerContainer"
+                  tabindex="0"
+                >
+                  <div
+                    class="pdfViewer"
+                  >
+                    {"workerSrc":"pdf.worker.min.js","src":"//api/v1/attachment1.pdf","page":1,"zoom":1,"search":""}
+                  </div>
+                </div>
+                 
+                <div
+                  class="focus-outline-anchor"
                 />
               </div>
             </div>
+            
           </div>
+          
           
           
         </div>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -231,22 +362,31 @@ exports[`Attachment > renders with image attachment 1`] = `
                   <path
                     d="M1 2a1 1 0 100 2 1 1 0 100-2zm0 5a1 1 0 100 2 1 1 0 100-2zm0 5a1 1 0 100 2 1 1 0 100-2zM15 2H5a1 1 0 000 2h10a1 1 0 000-2zm0 5H5a1 1 0 000 2h10a1 1 0 000-2zm0 5H5a1 1 0 000 2h10a1 1 0 000-2z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
-               
+              
             </li>
+            
           </ol>
            
           <div
             class="heading-container"
           >
+            
             <h3>
               Attachment 2
+              
             </h3>
             
+            
           </div>
+          
            
           <ol
             class="actions end"
@@ -268,18 +408,26 @@ exports[`Attachment > renders with image attachment 1`] = `
                   <path
                     d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
-               
+              
             </li>
+            
           </ol>
         </div>
+        
          
         <div
           class="overlay-box-content"
         >
+          
+          
           <img
             alt="Attachment 2"
             class="image-attachment"
@@ -287,9 +435,13 @@ exports[`Attachment > renders with image attachment 1`] = `
           />
           
           
+          
         </div>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;

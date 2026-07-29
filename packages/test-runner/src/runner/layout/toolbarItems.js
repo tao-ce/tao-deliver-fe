@@ -5,7 +5,7 @@
 import { __ } from '@oat-sa-private/ui-core';
 
 /**
- * @typedef {ButtonDefinition} - static props for IconBarButton
+ * @typedef {Object} ButtonDefinition - static props for IconBarButton
  * @property {String} key
  * @property {String} [icon] - mandatory unless `getIcon`is specified
  * @property {Function} [getIcon] - {(toggled: Boolean) => String} - when `icon` depends on `toggled` state;
@@ -21,7 +21,7 @@ import { __ } from '@oat-sa-private/ui-core';
  * @property {Boolean} [ariaHasPopup=false]
  */
 /**
- * @typedef {ButtonProps} - dynamic props for IconBarButton, including temporary state
+ * @typedef {Object} ButtonProps - dynamic props for IconBarButton, including temporary state
  * @extends {ButtonDefinition}
  * @property {Boolean} [toggled=false]
  * @property {Boolean} [ariaPressed=false]
@@ -41,6 +41,17 @@ import { __ } from '@oat-sa-private/ui-core';
  * and call getToolbarActions() again to receive the updated buttons.
  */
 const allToolbarButtons = Object.freeze([
+    {
+        key: 'refresh',
+        icon: 'reload',
+        get label() {
+            return __('Reload this page');
+        },
+        get ariaLabel() {
+            return __('Reload this page');
+        },
+        dataTestId: 'refresh'
+    },
     {
         id: 'attachments-toolbar-btn',
         key: 'attachments',
@@ -70,6 +81,16 @@ const allToolbarButtons = Object.freeze([
         dataTestId: 'highlighter',
         canToggle: true
     },
+    // To test the marking symbols tool locally, uncomment the button below.
+    // {
+    //     key: 'markingSymbols',
+    //     icon: 'marker',
+    //     get label() {
+    //         return __('Marking symbols');
+    //     },
+    //     dataTestId: 'markingSymbols',
+    //     canToggle: true
+    // },
     {
         key: 'calculator',
         icon: 'calculator',
@@ -149,10 +170,10 @@ const allToolbarButtons = Object.freeze([
  */
 const mutuallyExclusiveTools = [
     ['calculator', 'readAloud'],
-    ['calculator', 'scratchpad'],
     ['calculator', 'highlighter'],
     ['readAloud', 'scratchpad'],
     ['readAloud', 'highlighter']
+    // ['markingSymbols', 'highlighter']
 ];
 
 /**

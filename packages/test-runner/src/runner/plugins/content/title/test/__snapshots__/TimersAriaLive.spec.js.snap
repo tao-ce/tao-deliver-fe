@@ -4,6 +4,9 @@ exports[`TimersAriaLive > renders empty if no timers 1`] = `
 <body>
   <div>
     
+    
+    
+    
   </div>
 </body>
 `;
@@ -11,12 +14,16 @@ exports[`TimersAriaLive > renders empty if no timers 1`] = `
 exports[`TimersAriaLive > renders remaining time for smallest timer: item 1`] = `
 <body>
   <div>
+    
+    
     <div
       class="timer-aria-live visually-hidden"
       role="alert"
     >
       Remaining time for this item - 59 minutes
     </div>
+    
+    
     
     
   </div>
@@ -26,12 +33,16 @@ exports[`TimersAriaLive > renders remaining time for smallest timer: item 1`] = 
 exports[`TimersAriaLive > renders remaining time for smallest timer: section 1`] = `
 <body>
   <div>
+    
+    
     <div
       class="timer-aria-live visually-hidden"
       role="alert"
     >
       Remaining time for this section - 58 minutes
     </div>
+    
+    
     
     
   </div>
@@ -41,12 +52,16 @@ exports[`TimersAriaLive > renders remaining time for smallest timer: section 1`]
 exports[`TimersAriaLive > renders remaining time for smallest timer: test 1`] = `
 <body>
   <div>
+    
+    
     <div
       class="timer-aria-live visually-hidden"
       role="alert"
     >
       Remaining time for this test - 56 minutes
     </div>
+    
+    
     
     
   </div>
@@ -56,12 +71,16 @@ exports[`TimersAriaLive > renders remaining time for smallest timer: test 1`] = 
 exports[`TimersAriaLive > renders remaining time for smallest timer: testPart 1`] = `
 <body>
   <div>
+    
+    
     <div
       class="timer-aria-live visually-hidden"
       role="alert"
     >
       Remaining time for this part - 57 minutes
     </div>
+    
+    
     
     
   </div>

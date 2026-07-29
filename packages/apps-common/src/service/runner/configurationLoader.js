@@ -45,6 +45,7 @@ export default function configurationLoader(deliveryExecutionId = '', defaultCon
     if (options.rootUrl !== '') {
         try {
             new URL(options.rootUrl);
+            // eslint-disable-next-line no-unused-vars
         } catch (err) {
             return rejectConfigValue('options.rootUrl', options.rootUrl);
         }
@@ -99,6 +100,10 @@ export default function configurationLoader(deliveryExecutionId = '', defaultCon
                 saveScoringInlineCommentsUrl: urlBuilder.urlFromResourceConfig(
                     deliveryExecutionId,
                     defaultConfiguration.endpoints.saveScoringInlineComments
+                ),
+                saveScoringAnnotationCommentUrl: urlBuilder.urlFromResourceConfig(
+                    deliveryExecutionId,
+                    defaultConfiguration.endpoints.saveScoringAnnotationComment
                 )
             },
             defaultConfiguration.runnerConfiguration,

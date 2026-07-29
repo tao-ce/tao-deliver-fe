@@ -1,22 +1,30 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Progress component > Has to fail rendering with no serviceCallId 1`] = `[TypeError: A "serviceCallId" is required to get the state store of the test session]`;
+exports[`Progress component > Has to fail rendering with no serviceCallId 1`] = `
+[TypeError: A "serviceCallId" is required to get the state store of the test session
+
+	in <unknown>
+]
+`;
 
 exports[`Progress component > Has to render counter for linear non-lite mode on mobile screen size 1`] = `
 <body>
   <div>
+    
     <div
       class="progress-container counter"
     >
+      
       <div
         class="counter"
       >
-        1
-         / 
-        3
+        1 / 3
       </div>
       
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -25,18 +33,21 @@ exports[`Progress component > Has to render counter for linear non-lite mode on 
 exports[`Progress component > Has to render counter for linear non-lite mode on over-tablet-portrait screen size 1`] = `
 <body>
   <div>
+    
     <div
       class="progress-container counter"
     >
+      
       <div
         class="counter"
       >
-        1
-         / 
-        3
+        1 / 3
       </div>
       
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -45,18 +56,21 @@ exports[`Progress component > Has to render counter for linear non-lite mode on 
 exports[`Progress component > Has to render counter for linear non-lite mode on tablet-portrait screen size 1`] = `
 <body>
   <div>
+    
     <div
       class="progress-container counter"
     >
+      
       <div
         class="counter"
       >
-        1
-         / 
-        3
+        1 / 3
       </div>
       
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -65,9 +79,11 @@ exports[`Progress component > Has to render counter for linear non-lite mode on 
 exports[`Progress component > Has to render dots for liteMode in linear on over-tablet-portrait screen size if items count <= 18 1`] = `
 <body>
   <div>
+    
     <div
       class="progress-container dots"
     >
+      
       <div>
         <span
           class="visually-hidden"
@@ -96,10 +112,14 @@ exports[`Progress component > Has to render dots for liteMode in linear on over-
           <li />
           <li />
           <li />
+          
         </ol>
       </div>
       
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -108,9 +128,11 @@ exports[`Progress component > Has to render dots for liteMode in linear on over-
 exports[`Progress component > Has to render dots for liteMode on over-tablet-portrait screen size if items count <= 18 1`] = `
 <body>
   <div>
+    
     <div
       class="progress-container dots"
     >
+      
       <div>
         <span
           class="visually-hidden"
@@ -145,10 +167,14 @@ exports[`Progress component > Has to render dots for liteMode on over-tablet-por
           <li />
           <li />
           <li />
+          
         </ol>
       </div>
       
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -157,9 +183,11 @@ exports[`Progress component > Has to render dots for liteMode on over-tablet-por
 exports[`Progress component > Has to render dots for liteMode on tablet-portrait screen size if items count <= 12 1`] = `
 <body>
   <div>
+    
     <div
       class="progress-container dots"
     >
+      
       <div>
         <span
           class="visually-hidden"
@@ -188,10 +216,14 @@ exports[`Progress component > Has to render dots for liteMode on tablet-portrait
           <li />
           <li />
           <li />
+          
         </ol>
       </div>
       
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -201,6 +233,9 @@ exports[`Progress component > Has to render no component for non-linear non-lite
 <body>
   <div>
     
+    
+    
+    
   </div>
 </body>
 `;
@@ -208,6 +243,7 @@ exports[`Progress component > Has to render no component for non-linear non-lite
 exports[`Progress component > Has to render progressbar for linear test liteMode on over-tablet-portrait screen size if items count > 18 1`] = `
 <body>
   <div>
+    
     <div
       class="progress-container progressbar"
     >
@@ -227,10 +263,15 @@ exports[`Progress component > Has to render progressbar for linear test liteMode
             style="--progress-value-width: 5%;"
           />
            
+          
         </div>
          
+        
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -239,6 +280,7 @@ exports[`Progress component > Has to render progressbar for linear test liteMode
 exports[`Progress component > Has to render progressbar for liteMode on mobile screen size for linear test 1`] = `
 <body>
   <div>
+    
     <div
       class="progress-container progressbar"
     >
@@ -258,10 +300,15 @@ exports[`Progress component > Has to render progressbar for liteMode on mobile s
             style="--progress-value-width: 34%;"
           />
            
+          
         </div>
          
+        
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -270,6 +317,7 @@ exports[`Progress component > Has to render progressbar for liteMode on mobile s
 exports[`Progress component > Has to render progressbar for liteMode on mobile screen size for non-linear test 1`] = `
 <body>
   <div>
+    
     <div
       class="progress-container progressbar"
     >
@@ -289,10 +337,15 @@ exports[`Progress component > Has to render progressbar for liteMode on mobile s
             style="--progress-value-width: 15%;"
           />
            
+          
         </div>
          
+        
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -301,6 +354,7 @@ exports[`Progress component > Has to render progressbar for liteMode on mobile s
 exports[`Progress component > Has to render progressbar for liteMode on over-tablet-portrait screen size if items count > 18 1`] = `
 <body>
   <div>
+    
     <div
       class="progress-container progressbar"
     >
@@ -320,10 +374,15 @@ exports[`Progress component > Has to render progressbar for liteMode on over-tab
             style="--progress-value-width: 15%;"
           />
            
+          
         </div>
          
+        
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -332,6 +391,7 @@ exports[`Progress component > Has to render progressbar for liteMode on over-tab
 exports[`Progress component > Has to render progressbar for liteMode on tablet-portrait screen size if items count > 12 1`] = `
 <body>
   <div>
+    
     <div
       class="progress-container progressbar"
     >
@@ -351,10 +411,15 @@ exports[`Progress component > Has to render progressbar for liteMode on tablet-p
             style="--progress-value-width: 15%;"
           />
            
+          
         </div>
          
+        
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -363,17 +428,19 @@ exports[`Progress component > Has to render progressbar for liteMode on tablet-p
 exports[`Progress component > Has to render question number for linear adaptive test 1`] = `
 <body>
   <div>
+    
     <div
       class="progress-container number"
     >
       <div
         class="number"
       >
-        Question
-         
-        1
+        Question 1
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -382,6 +449,7 @@ exports[`Progress component > Has to render question number for linear adaptive 
 exports[`Progress component > Has to render steps for non-linear non-lite mode on over-tablet-portrait screen size 1`] = `
 <body>
   <div>
+    
     <div
       class="progress-container steps"
     >
@@ -393,12 +461,19 @@ exports[`Progress component > Has to render steps for non-linear non-lite mode o
         >
           <div
             class="more"
-          />
+          >
+            
+          </div>
+          
            
+          
            
           <div
             class="more"
-          />
+          >
+            
+          </div>
+          
         </div>
          
         <span
@@ -421,14 +496,22 @@ exports[`Progress component > Has to render steps for non-linear non-lite mode o
               <path
                 d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
               />
+              
             </svg>
+            
              
+            
              
             Overview (20)
+            
           </button>
+          
         </span>
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -437,6 +520,7 @@ exports[`Progress component > Has to render steps for non-linear non-lite mode o
 exports[`Progress component > Has to render steps for non-linear non-lite mode on tablet-portrait screen size 1`] = `
 <body>
   <div>
+    
     <div
       class="progress-container steps"
     >
@@ -448,12 +532,19 @@ exports[`Progress component > Has to render steps for non-linear non-lite mode o
         >
           <div
             class="more"
-          />
+          >
+            
+          </div>
+          
            
+          
            
           <div
             class="more"
-          />
+          >
+            
+          </div>
+          
         </div>
          
         <span
@@ -476,14 +567,22 @@ exports[`Progress component > Has to render steps for non-linear non-lite mode o
               <path
                 d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
               />
+              
             </svg>
+            
              
+            
              
             Overview (20)
+            
           </button>
+          
         </span>
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -492,6 +591,9 @@ exports[`Progress component > Has to render steps for non-linear non-lite mode o
 exports[`Progress component > renders with empty store 1`] = `
 <body>
   <div>
+    
+    
+    
     
   </div>
 </body>

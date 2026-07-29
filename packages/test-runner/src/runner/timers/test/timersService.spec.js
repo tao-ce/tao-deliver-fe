@@ -20,6 +20,11 @@ vi.mock('../timersProxy.js', () => {
     };
 });
 
+vi.mock('@oat-sa-private/ui-components', () => ({
+    showNotification: vi.fn()
+}));
+
+import { showNotification } from '@oat-sa-private/ui-components';
 import { timersServiceFactory } from '../timersService.js';
 import { clearAllTimersStores } from '../timersStore.js';
 import timerModes from '../timerModes.js';
@@ -598,6 +603,192 @@ describe('timersService', () => {
                     ]
                 });
                 expect(configWithCallbacks.onTimerTimeout).not.toHaveBeenCalled();
+            });
+        });
+
+        describe('onTimerWarning', () => {
+            let refreshTimersCallbackRef;
+
+            beforeEach(() => {
+                refreshTimersCallbackRef = void 0;
+                showNotification.mockClear();
+                timersProxyApiRef.on.mockClear();
+                timersProxyApiRef.on.mockImplementationOnce((eventName, callback) => {
+                    if (eventName === 'refresh-timers') {
+                        refreshTimersCallbackRef = callback;
+                    }
+                });
+            });
+
+            afterEach(() => {
+                timersProxyApiRef.on.mockReset();
+                showNotification.mockClear();
+            });
+
+            it('shows warning notification once when threshold is crossed', () => {
+                const warningSpy = vi.fn();
+                const service = timersServiceFactory(socketProxyMock, {
+                    ...config,
+                    onTimerWarning: warningSpy,
+                    warningConfig: {
+                        levels: {
+                            test: {
+                                thresholdsInMs: [20000]
+                            }
+                        },
+                        notificationTimeout: 7000
+                    }
+                });
+                service.setInitialData({
+                    test: initTimersData.test
+                });
+                expect(warningSpy).not.toHaveBeenCalled();
+                expect(typeof refreshTimersCallbackRef).toBe('function');
+
+                refreshTimersCallbackRef({
+                    test: {
+                        id: 'test-1',
+                        maxTime: 60000,
+                        maxTimeRemaining: 19000
+                    }
+                });
+
+                expect(showNotification).toHaveBeenCalledTimes(1);
+                expect(showNotification).toHaveBeenCalledWith(
+                    {
+                        title: 'You have 20 seconds left to finish the test',
+                        hierarchy: 'warning',
+                        closeable: true
+                    },
+                    'autoclose',
+                    7000
+                );
+
+                refreshTimersCallbackRef({
+                    test: {
+                        id: 'test-1',
+                        maxTime: 60000,
+                        maxTimeRemaining: 15000
+                    }
+                });
+
+                expect(showNotification).toHaveBeenCalledTimes(1);
+            });
+
+            it.each([
+                [40000, 50000],
+                [60000, 50000]
+            ])(
+                'does not show warning notification immediately if initial time is %sms and threshold %sms',
+                (maxTimeRemaining, threshold) => {
+                    const warningSpy = vi.fn();
+                    const service = timersServiceFactory(socketProxyMock, {
+                        ...config,
+                        onTimerWarning: warningSpy,
+                        warningConfig: {
+                            levels: {
+                                test: {
+                                    thresholdsInMs: [threshold]
+                                }
+                            }
+                        }
+                    });
+                    service.setInitialData({
+                        test: {
+                            id: 'test-1',
+                            maxTime: 60000,
+                            maxTimeRemaining
+                        }
+                    });
+
+                    expect(showNotification).not.toHaveBeenCalled();
+                }
+            );
+
+            it('does not show warning notifications for timers that are not at test level', () => {
+                const service = timersServiceFactory(socketProxyMock, {
+                    ...config,
+                    warningConfig: {
+                        levels: {
+                            test: {
+                                thresholdsInMs: [20000]
+                            }
+                        }
+                    }
+                });
+                service.setInitialData({
+                    sections: initTimersData.sections
+                });
+
+                refreshTimersCallbackRef({
+                    section: {
+                        id: 'assessmentSection-1',
+                        maxTime: 40000,
+                        maxTimeRemaining: 15000
+                    }
+                });
+
+                expect(showNotification).not.toHaveBeenCalled();
+            });
+
+            it('considers extra time when evaluating warning thresholds', () => {
+                const service = timersServiceFactory(socketProxyMock, {
+                    ...config,
+                    warningConfig: {
+                        levels: {
+                            test: {
+                                thresholdsInMs: [5 * 60 * 1000]
+                            }
+                        }
+                    }
+                });
+
+                const extra = {
+                    maxTime: 60000,
+                    maxTimeRemaining: 60000
+                };
+
+                service.setInitialData({
+                    test: {
+                        id: 'test-1',
+                        maxTime: 600000,
+                        maxTimeRemaining: 6 * 60 * 1000
+                    },
+                    extra
+                });
+
+                expect(showNotification).not.toHaveBeenCalled();
+
+                refreshTimersCallbackRef({
+                    test: {
+                        id: 'test-1',
+                        maxTime: 600000,
+                        maxTimeRemaining: 4.5 * 60 * 1000
+                    },
+                    extra
+                });
+
+                expect(showNotification).not.toHaveBeenCalled();
+
+                refreshTimersCallbackRef({
+                    test: {
+                        id: 'test-1',
+                        maxTime: 600000,
+                        maxTimeRemaining: 4 * 60 * 1000
+                    },
+                    extra
+                });
+
+                expect(showNotification).toHaveBeenCalledTimes(1);
+                expect(showNotification).toHaveBeenCalledWith(
+                    {
+                        title: 'You have 5 minutes left to finish the test',
+                        hierarchy: 'warning',
+                        closeable: true
+                    },
+                    'autoclose',
+                    5000
+                );
             });
         });
     });

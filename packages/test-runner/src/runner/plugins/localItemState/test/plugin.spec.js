@@ -908,7 +908,7 @@ describe('with triggerUpdate enabled in config', () => {
             runner.init();
         }));
 
-    it('triggers statusupdate ', () =>
+    it('triggers statusupdate', () =>
         new Promise(done => {
             const interval = 30003;
             const state = true;

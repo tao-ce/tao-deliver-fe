@@ -82,9 +82,15 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      */
     function handleFontChange(event) {
         value = event.detail.value;
-        const fontStack = fontStacks[value] || fontStacks.default;
-        targetElt?.style.setProperty('--font-ui', fontStack);
-        targetElt?.style.setProperty('--letter-width', letterWidthByFont[value]);
+        const defaultValue = 'default';
+
+        if (targetElt) {
+            targetElt.dataset.a11yOverrideFontFamily = value !== defaultValue;
+
+            const fontStack = fontStacks[value] || fontStacks[defaultValue];
+            targetElt.style.setProperty('--font-ui', fontStack);
+            targetElt.style.setProperty('--letter-width', letterWidthByFont[value]);
+        }
 
         dispatch('change', {
             key: settingsKeys.fontFamily,
@@ -96,6 +102,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 
     onDestroy(() => {
+        delete targetElt?.dataset.a11yOverrideFontFamily;
+
         targetElt?.style.removeProperty('--font-ui');
         targetElt?.style.removeProperty('--letter-width');
     });

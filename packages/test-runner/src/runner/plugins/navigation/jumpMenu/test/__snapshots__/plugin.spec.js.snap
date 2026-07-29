@@ -227,52 +227,47 @@ exports[`jump menu plugin > renders and destroys 2`] = `
             <button
               data-test-id="jump-toolbox"
             >
-              Jump to
-               
+              Jump to 
               <strong>
                 Toolbox & Configuration
               </strong>
             </button>
-             
           </li>
           <li>
             <button
               data-test-id="jump-question"
             >
-              Jump to
-               
+              Jump to 
               <strong>
                 Question 2: unanswered
               </strong>
             </button>
-             
           </li>
           <li>
             <button
               data-test-id="jump-navigation"
             >
-              Jump to
-               
+              Jump to 
               <strong>
                 Test Navigation
               </strong>
             </button>
-             
           </li>
           <li>
             <button
               data-test-id="jump-itemModalFeedback-navigation"
             >
-              Jump to
-               
+              Jump to 
               <strong>
                 Test Navigation
               </strong>
             </button>
-             
           </li>
+          
         </ul>
       </div>
+      
+      
     </div>
   </div>
 </body>

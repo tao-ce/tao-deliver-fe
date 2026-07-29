@@ -42,6 +42,13 @@ vi.mock('../../util/scaling.js', async importOriginal => {
     };
 });
 
+vi.mock('../../util/polygon.js', async () => {
+    const originalModule = await vi.importActual('../../util/polygon.js');
+    return Object.assign({ __esModule: true }, originalModule, {
+        getIsThin: () => false
+    });
+});
+
 // vi.hoisted will execute these before the mocks which reference them
 const getPlacedAnswersOriginalValue = vi.hoisted(() => ({}));
 const getPlacedAnswersMockImpl = vi.hoisted(() => (gaps, choices, matches, choiceWidth, choiceHeight) => {
@@ -600,6 +607,7 @@ describe('GraphicGapMatchInteraction', () => {
                     });
                     return tick();
                 })
+                .then(tick)
                 .then(() => {
                     expectAnswersCount(container, 3);
                     expectAnswerRendered(container, 'A', 'a');
@@ -613,6 +621,7 @@ describe('GraphicGapMatchInteraction', () => {
                     });
                     return tick();
                 })
+                .then(tick)
                 .then(() => {
                     expectAnswersCount(container, 0);
                 });

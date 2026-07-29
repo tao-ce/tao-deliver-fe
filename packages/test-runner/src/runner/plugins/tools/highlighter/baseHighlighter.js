@@ -165,6 +165,7 @@ export default function baseHighlighterFactory(options) {
         const ranges = getSelectionRangesOnEvent();
 
         if (ranges && ranges.length) {
+            discardSelectionAfterwards = discardSelectionAfterwards && highlightHelper.canHighlightAllRanges(ranges);
             const prevIndex = highlightHelper.getHighlightIndex();
 
             highlightHelper.setActiveColor(colorKey || activeColorKey);
@@ -199,6 +200,7 @@ export default function baseHighlighterFactory(options) {
         const ranges = getSelectionRangesOnEvent();
 
         if (ranges && ranges.length) {
+            discardSelectionAfterwards = discardSelectionAfterwards && highlightHelper.canHighlightAllRanges(ranges);
             const prevIndex = highlightHelper.getHighlightIndex();
 
             highlightHelper.setActiveColor(options.eraserColor);
@@ -436,7 +438,8 @@ export default function baseHighlighterFactory(options) {
          * @returns {Boolean}
          */
         getHasSelection() {
-            return (getSelectionRangesOnEvent() || []).length > 0;
+            const ranges = getSelectionRangesOnEvent() || [];
+            return highlightHelper.canHighlightAllRanges(ranges);
         },
 
         /**

@@ -14,4 +14,4 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     dispatch('complete');
 </script>
 
-<div class="styles-container-mock" data-props={JSON.stringify($$restProps)} />
+<div class="styles-container-mock" data-props={JSON.stringify($$restProps)}></div>

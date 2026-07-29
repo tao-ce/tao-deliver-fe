@@ -44,6 +44,7 @@ exports[`SettingsContent > Renders itself correctly 1`] = `
                 Off
               </span>
             </label>
+            
              
             <p
               class="caption"
@@ -53,6 +54,7 @@ exports[`SettingsContent > Renders itself correctly 1`] = `
             </p>
           </div>
         </section>
+        
          
         <section
           class="panel"
@@ -85,6 +87,7 @@ exports[`SettingsContent > Renders itself correctly 1`] = `
                 Off
               </span>
             </label>
+            
              
             <p
               class="caption"
@@ -94,8 +97,12 @@ exports[`SettingsContent > Renders itself correctly 1`] = `
             </p>
           </div>
         </section>
+        
       </section>
+      
     </div>
+    
+    
   </div>
 </body>
 `;

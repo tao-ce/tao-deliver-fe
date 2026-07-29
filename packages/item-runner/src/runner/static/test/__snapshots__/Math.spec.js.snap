@@ -3,6 +3,7 @@
 exports[`Math > renders the provided mathML correctly 1`] = `
 <body>
   <div>
+    
     <span
       tabindex="0"
     >
@@ -209,7 +210,10 @@ exports[`Math > renders the provided mathML correctly 1`] = `
           </math>
         </mjx-assistive-mml>
       </mjx-container>
+      
     </span>
+    
+    
     
   </div>
 </body>
@@ -218,6 +222,7 @@ exports[`Math > renders the provided mathML correctly 1`] = `
 exports[`Math > updates mathML on attributes change 1`] = `
 <body>
   <div>
+    
     <span
       tabindex="0"
     >
@@ -340,7 +345,10 @@ exports[`Math > updates mathML on attributes change 1`] = `
           </math>
         </mjx-assistive-mml>
       </mjx-container>
+      
     </span>
+    
+    
     
   </div>
 </body>
@@ -349,6 +357,7 @@ exports[`Math > updates mathML on attributes change 1`] = `
 exports[`Math > updates mathML on attributes change 2`] = `
 <body>
   <div>
+    
     <span
       tabindex="0"
     >
@@ -498,7 +507,10 @@ exports[`Math > updates mathML on attributes change 2`] = `
           </math>
         </mjx-assistive-mml>
       </mjx-container>
+      
     </span>
+    
+    
     
   </div>
 </body>

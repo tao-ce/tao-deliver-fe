@@ -5,6 +5,7 @@
 
 import { render, fireEvent } from '@testing-library/svelte';
 import DeepLinks from './DeepLinks.svelte';
+import { tick } from 'svelte';
 
 import * as deliverServiceMock from '../service/deliverService';
 vi.mock('../service/deliverService', () => ({
@@ -91,7 +92,7 @@ describe('DeepLinks page', () => {
 
         expect(deliverServiceMock.getDeliveries).toHaveBeenCalled();
         expect(deliverServiceMock.submitBatteriesAndDeliveries).toHaveBeenCalled();
-        await Promise.resolve();
+        await tick();
 
         expect(global.window.location.href).toBe('https://example.com/lti13');
 

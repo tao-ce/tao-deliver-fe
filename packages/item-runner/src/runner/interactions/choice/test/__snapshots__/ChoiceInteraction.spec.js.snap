@@ -5,11 +5,17 @@ exports[`ChoiceInteraction > choice answerMasking > do not render answerMasking 
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-choiceInteraction mask"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
-      />
+        dir=""
+      >
+        
+      </div>
+      
        
       <div
         aria-roledescription="selectablechoice"
@@ -19,22 +25,29 @@ exports[`ChoiceInteraction > choice answerMasking > do not render answerMasking 
         <ul
           class="vertical"
         >
+          
+          
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 1
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -48,45 +61,60 @@ exports[`ChoiceInteraction > choice answerMasking > do not render answerMasking 
                 type="radio"
                 value="c1"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 1
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 2
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -100,45 +128,60 @@ exports[`ChoiceInteraction > choice answerMasking > do not render answerMasking 
                 type="radio"
                 value="c2"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 2
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 3
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -152,45 +195,60 @@ exports[`ChoiceInteraction > choice answerMasking > do not render answerMasking 
                 type="radio"
                 value="c3"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 3
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 4
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -204,33 +262,48 @@ exports[`ChoiceInteraction > choice answerMasking > do not render answerMasking 
                 type="radio"
                 value="c4"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 4
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
+          
+          
           
         </ul>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -240,11 +313,17 @@ exports[`ChoiceInteraction > choice answerMasking > renders answerMasking button
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-choiceInteraction mask"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
-      />
+        dir=""
+      >
+        
+      </div>
+      
        
       <div
         aria-roledescription="selectablechoice"
@@ -254,26 +333,33 @@ exports[`ChoiceInteraction > choice answerMasking > renders answerMasking button
         <ul
           class="vertical"
         >
+          
+          
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 1
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
-            class="has-actions controls radio"
+            class="has-actions has-answermasking controls radio"
             style="--stacking: 0;"
           >
             <label>
@@ -283,31 +369,41 @@ exports[`ChoiceInteraction > choice answerMasking > renders answerMasking button
                 type="radio"
                 value="c1"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 1
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
             <div
               class="action-container"
             >
+              
                
               <button
                 aria-label="mask choice number 1"
@@ -325,33 +421,44 @@ exports[`ChoiceInteraction > choice answerMasking > renders answerMasking button
                   <path
                     d="M11.87 4.84l4-4a.48.48 0 000-.7.48.48 0 00-.7 0l-4.31 4.3A9.52 9.52 0 008 4a10.37 10.37 0 00-8 4 11.16 11.16 0 004.13 3.16l-4 4a.48.48 0 000 .7.47.47 0 00.37.14.47.47 0 00.35-.15l4.31-4.3A9.52 9.52 0 008 12a10.37 10.37 0 008-4 11.16 11.16 0 00-4.13-3.16zM8 5.5a2.44 2.44 0 011.38.42L5.92 9.38A2.44 2.44 0 015.5 8 2.5 2.5 0 018 5.5zM1.49 8a9.59 9.59 0 014-2.41 3.43 3.43 0 00-.27 4.49l-.22.17A9.63 9.63 0 011.49 8zM8 10.5a2.44 2.44 0 01-1.38-.42l3.46-3.46A2.44 2.44 0 0110.5 8 2.5 2.5 0 018 10.5zm2.52-.09a3.43 3.43 0 00.27-4.49l.21-.17A9.63 9.63 0 0114.51 8a9.59 9.59 0 01-3.99 2.41z"
                   />
+                  
                 </svg>
-                 
+                
                  
                 
+                 
+                
+                
               </button>
+              
             </div>
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 2
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
-            class="has-actions controls radio"
+            class="has-actions has-answermasking controls radio"
             style="--stacking: 0;"
           >
             <label>
@@ -361,31 +468,41 @@ exports[`ChoiceInteraction > choice answerMasking > renders answerMasking button
                 type="radio"
                 value="c2"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 2
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
             <div
               class="action-container"
             >
+              
                
               <button
                 aria-label="mask choice number 2"
@@ -403,33 +520,44 @@ exports[`ChoiceInteraction > choice answerMasking > renders answerMasking button
                   <path
                     d="M11.87 4.84l4-4a.48.48 0 000-.7.48.48 0 00-.7 0l-4.31 4.3A9.52 9.52 0 008 4a10.37 10.37 0 00-8 4 11.16 11.16 0 004.13 3.16l-4 4a.48.48 0 000 .7.47.47 0 00.37.14.47.47 0 00.35-.15l4.31-4.3A9.52 9.52 0 008 12a10.37 10.37 0 008-4 11.16 11.16 0 00-4.13-3.16zM8 5.5a2.44 2.44 0 011.38.42L5.92 9.38A2.44 2.44 0 015.5 8 2.5 2.5 0 018 5.5zM1.49 8a9.59 9.59 0 014-2.41 3.43 3.43 0 00-.27 4.49l-.22.17A9.63 9.63 0 011.49 8zM8 10.5a2.44 2.44 0 01-1.38-.42l3.46-3.46A2.44 2.44 0 0110.5 8 2.5 2.5 0 018 10.5zm2.52-.09a3.43 3.43 0 00.27-4.49l.21-.17A9.63 9.63 0 0114.51 8a9.59 9.59 0 01-3.99 2.41z"
                   />
+                  
                 </svg>
-                 
+                
                  
                 
+                 
+                
+                
               </button>
+              
             </div>
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 3
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
-            class="has-actions controls radio"
+            class="has-actions has-answermasking controls radio"
             style="--stacking: 0;"
           >
             <label>
@@ -439,31 +567,41 @@ exports[`ChoiceInteraction > choice answerMasking > renders answerMasking button
                 type="radio"
                 value="c3"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 3
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
             <div
               class="action-container"
             >
+              
                
               <button
                 aria-label="mask choice number 3"
@@ -481,33 +619,44 @@ exports[`ChoiceInteraction > choice answerMasking > renders answerMasking button
                   <path
                     d="M11.87 4.84l4-4a.48.48 0 000-.7.48.48 0 00-.7 0l-4.31 4.3A9.52 9.52 0 008 4a10.37 10.37 0 00-8 4 11.16 11.16 0 004.13 3.16l-4 4a.48.48 0 000 .7.47.47 0 00.37.14.47.47 0 00.35-.15l4.31-4.3A9.52 9.52 0 008 12a10.37 10.37 0 008-4 11.16 11.16 0 00-4.13-3.16zM8 5.5a2.44 2.44 0 011.38.42L5.92 9.38A2.44 2.44 0 015.5 8 2.5 2.5 0 018 5.5zM1.49 8a9.59 9.59 0 014-2.41 3.43 3.43 0 00-.27 4.49l-.22.17A9.63 9.63 0 011.49 8zM8 10.5a2.44 2.44 0 01-1.38-.42l3.46-3.46A2.44 2.44 0 0110.5 8 2.5 2.5 0 018 10.5zm2.52-.09a3.43 3.43 0 00.27-4.49l.21-.17A9.63 9.63 0 0114.51 8a9.59 9.59 0 01-3.99 2.41z"
                   />
+                  
                 </svg>
-                 
+                
                  
                 
+                 
+                
+                
               </button>
+              
             </div>
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 4
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
-            class="has-actions controls radio"
+            class="has-actions has-answermasking controls radio"
             style="--stacking: 0;"
           >
             <label>
@@ -517,31 +666,41 @@ exports[`ChoiceInteraction > choice answerMasking > renders answerMasking button
                 type="radio"
                 value="c4"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 4
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
             <div
               class="action-container"
             >
+              
                
               <button
                 aria-label="mask choice number 4"
@@ -559,17 +718,28 @@ exports[`ChoiceInteraction > choice answerMasking > renders answerMasking button
                   <path
                     d="M11.87 4.84l4-4a.48.48 0 000-.7.48.48 0 00-.7 0l-4.31 4.3A9.52 9.52 0 008 4a10.37 10.37 0 00-8 4 11.16 11.16 0 004.13 3.16l-4 4a.48.48 0 000 .7.47.47 0 00.37.14.47.47 0 00.35-.15l4.31-4.3A9.52 9.52 0 008 12a10.37 10.37 0 008-4 11.16 11.16 0 00-4.13-3.16zM8 5.5a2.44 2.44 0 011.38.42L5.92 9.38A2.44 2.44 0 015.5 8 2.5 2.5 0 018 5.5zM1.49 8a9.59 9.59 0 014-2.41 3.43 3.43 0 00-.27 4.49l-.22.17A9.63 9.63 0 011.49 8zM8 10.5a2.44 2.44 0 01-1.38-.42l3.46-3.46A2.44 2.44 0 0110.5 8 2.5 2.5 0 018 10.5zm2.52-.09a3.43 3.43 0 00.27-4.49l.21-.17A9.63 9.63 0 0114.51 8a9.59 9.59 0 01-3.99 2.41z"
                   />
+                  
                 </svg>
-                 
+                
                  
                 
+                 
+                
+                
               </button>
+              
             </div>
+            
           </li>
+          
+          
           
         </ul>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -579,11 +749,17 @@ exports[`ChoiceInteraction > choice elimination > renders elimination buttons if
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-choiceInteraction eliminable"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
-      />
+        dir=""
+      >
+        
+      </div>
+      
        
       <div
         aria-roledescription="selectablechoice"
@@ -593,26 +769,33 @@ exports[`ChoiceInteraction > choice elimination > renders elimination buttons if
         <ul
           class="vertical"
         >
+          
+          
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 1
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
-            class="has-actions controls radio"
+            class="has-actions has-eliminator controls radio"
             style="--stacking: 0;"
           >
             <label>
@@ -622,25 +805,34 @@ exports[`ChoiceInteraction > choice elimination > renders elimination buttons if
                 type="radio"
                 value="c1"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 1
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
@@ -663,34 +855,46 @@ exports[`ChoiceInteraction > choice elimination > renders elimination buttons if
                   <path
                     d="M16 9.78v-1h-.78V7.44A1.61 1.61 0 0014.45 6a3.8 3.8 0 00-2-.48 3.39 3.39 0 00-1.91.48 2 2 0 00-.84 1.83h1.1a1.65 1.65 0 01.29-.83 1.52 1.52 0 011.31-.5 2.29 2.29 0 011.23.27 1 1 0 01.43.88 1 1 0 01-.08.46.65.65 0 01-.54.34l-1.89.24a2.22 2.22 0 00-.37.09h-4L5.12 3H3.64L1.48 8.78H0v1h1.11L0 12.72h1.34l1.07-2.94h3.76l1 2.94h1.46L7.57 9.78h2a2.17 2.17 0 00-.27 1.09 2 2 0 00.7 1.49 2.22 2.22 0 001.6.6 3.25 3.25 0 001.5-.35 3.07 3.07 0 001-.83 1.91 1.91 0 00.2.66 1 1 0 00.89.43h.4a3 3 0 00.42-.1v-.87h-.39a.36.36 0 01-.32-.12.5.5 0 01-.07-.29V9.78zm-13.23-1l1.56-4.3 1.5 4.3zM14 10.09a1.62 1.62 0 01-1 1.57 2.73 2.73 0 01-1.21.29 1.39 1.39 0 01-.89-.3 1 1 0 01-.37-.81 1 1 0 01.55-1l.2-.08H14z"
                   />
+                  
                 </svg>
-                 
+                
                  
                 
+                 
+                
+                
               </button>
+              
                
+              
             </div>
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 2
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
-            class="has-actions controls radio"
+            class="has-actions has-eliminator controls radio"
             style="--stacking: 0;"
           >
             <label>
@@ -700,25 +904,34 @@ exports[`ChoiceInteraction > choice elimination > renders elimination buttons if
                 type="radio"
                 value="c2"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 2
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
@@ -741,34 +954,46 @@ exports[`ChoiceInteraction > choice elimination > renders elimination buttons if
                   <path
                     d="M16 9.78v-1h-.78V7.44A1.61 1.61 0 0014.45 6a3.8 3.8 0 00-2-.48 3.39 3.39 0 00-1.91.48 2 2 0 00-.84 1.83h1.1a1.65 1.65 0 01.29-.83 1.52 1.52 0 011.31-.5 2.29 2.29 0 011.23.27 1 1 0 01.43.88 1 1 0 01-.08.46.65.65 0 01-.54.34l-1.89.24a2.22 2.22 0 00-.37.09h-4L5.12 3H3.64L1.48 8.78H0v1h1.11L0 12.72h1.34l1.07-2.94h3.76l1 2.94h1.46L7.57 9.78h2a2.17 2.17 0 00-.27 1.09 2 2 0 00.7 1.49 2.22 2.22 0 001.6.6 3.25 3.25 0 001.5-.35 3.07 3.07 0 001-.83 1.91 1.91 0 00.2.66 1 1 0 00.89.43h.4a3 3 0 00.42-.1v-.87h-.39a.36.36 0 01-.32-.12.5.5 0 01-.07-.29V9.78zm-13.23-1l1.56-4.3 1.5 4.3zM14 10.09a1.62 1.62 0 01-1 1.57 2.73 2.73 0 01-1.21.29 1.39 1.39 0 01-.89-.3 1 1 0 01-.37-.81 1 1 0 01.55-1l.2-.08H14z"
                   />
+                  
                 </svg>
-                 
+                
                  
                 
+                 
+                
+                
               </button>
+              
                
+              
             </div>
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 3
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
-            class="has-actions controls radio"
+            class="has-actions has-eliminator controls radio"
             style="--stacking: 0;"
           >
             <label>
@@ -778,25 +1003,34 @@ exports[`ChoiceInteraction > choice elimination > renders elimination buttons if
                 type="radio"
                 value="c3"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 3
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
@@ -819,34 +1053,46 @@ exports[`ChoiceInteraction > choice elimination > renders elimination buttons if
                   <path
                     d="M16 9.78v-1h-.78V7.44A1.61 1.61 0 0014.45 6a3.8 3.8 0 00-2-.48 3.39 3.39 0 00-1.91.48 2 2 0 00-.84 1.83h1.1a1.65 1.65 0 01.29-.83 1.52 1.52 0 011.31-.5 2.29 2.29 0 011.23.27 1 1 0 01.43.88 1 1 0 01-.08.46.65.65 0 01-.54.34l-1.89.24a2.22 2.22 0 00-.37.09h-4L5.12 3H3.64L1.48 8.78H0v1h1.11L0 12.72h1.34l1.07-2.94h3.76l1 2.94h1.46L7.57 9.78h2a2.17 2.17 0 00-.27 1.09 2 2 0 00.7 1.49 2.22 2.22 0 001.6.6 3.25 3.25 0 001.5-.35 3.07 3.07 0 001-.83 1.91 1.91 0 00.2.66 1 1 0 00.89.43h.4a3 3 0 00.42-.1v-.87h-.39a.36.36 0 01-.32-.12.5.5 0 01-.07-.29V9.78zm-13.23-1l1.56-4.3 1.5 4.3zM14 10.09a1.62 1.62 0 01-1 1.57 2.73 2.73 0 01-1.21.29 1.39 1.39 0 01-.89-.3 1 1 0 01-.37-.81 1 1 0 01.55-1l.2-.08H14z"
                   />
+                  
                 </svg>
-                 
+                
                  
                 
+                 
+                
+                
               </button>
+              
                
+              
             </div>
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 4
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
-            class="has-actions controls radio"
+            class="has-actions has-eliminator controls radio"
             style="--stacking: 0;"
           >
             <label>
@@ -856,25 +1102,34 @@ exports[`ChoiceInteraction > choice elimination > renders elimination buttons if
                 type="radio"
                 value="c4"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 4
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
@@ -897,18 +1152,30 @@ exports[`ChoiceInteraction > choice elimination > renders elimination buttons if
                   <path
                     d="M16 9.78v-1h-.78V7.44A1.61 1.61 0 0014.45 6a3.8 3.8 0 00-2-.48 3.39 3.39 0 00-1.91.48 2 2 0 00-.84 1.83h1.1a1.65 1.65 0 01.29-.83 1.52 1.52 0 011.31-.5 2.29 2.29 0 011.23.27 1 1 0 01.43.88 1 1 0 01-.08.46.65.65 0 01-.54.34l-1.89.24a2.22 2.22 0 00-.37.09h-4L5.12 3H3.64L1.48 8.78H0v1h1.11L0 12.72h1.34l1.07-2.94h3.76l1 2.94h1.46L7.57 9.78h2a2.17 2.17 0 00-.27 1.09 2 2 0 00.7 1.49 2.22 2.22 0 001.6.6 3.25 3.25 0 001.5-.35 3.07 3.07 0 001-.83 1.91 1.91 0 00.2.66 1 1 0 00.89.43h.4a3 3 0 00.42-.1v-.87h-.39a.36.36 0 01-.32-.12.5.5 0 01-.07-.29V9.78zm-13.23-1l1.56-4.3 1.5 4.3zM14 10.09a1.62 1.62 0 01-1 1.57 2.73 2.73 0 01-1.21.29 1.39 1.39 0 01-.89-.3 1 1 0 01-.37-.81 1 1 0 01.55-1l.2-.08H14z"
                   />
+                  
                 </svg>
-                 
+                
                  
                 
+                 
+                
+                
               </button>
+              
                
+              
             </div>
+            
           </li>
+          
+          
           
         </ul>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -918,22 +1185,28 @@ exports[`ChoiceInteraction > loads & saves interaction state from the ItemStateS
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-choiceInteraction"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
+        dir=""
       >
         <div
           aria-atomic="true"
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You can select up to 3 choices
           </p>
         </div>
+        
       </div>
+      
        
       <div
         aria-roledescription="selectablechoice"
@@ -943,22 +1216,29 @@ exports[`ChoiceInteraction > loads & saves interaction state from the ItemStateS
         <ul
           class="vertical"
         >
+          
+          
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 1
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -972,10 +1252,12 @@ exports[`ChoiceInteraction > loads & saves interaction state from the ItemStateS
                 type="checkbox"
                 value="c1"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
@@ -991,38 +1273,52 @@ exports[`ChoiceInteraction > loads & saves interaction state from the ItemStateS
                     <path
                       d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 1
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 2
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1036,10 +1332,12 @@ exports[`ChoiceInteraction > loads & saves interaction state from the ItemStateS
                 type="checkbox"
                 value="c2"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
@@ -1055,38 +1353,52 @@ exports[`ChoiceInteraction > loads & saves interaction state from the ItemStateS
                     <path
                       d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 2
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 3
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1100,10 +1412,12 @@ exports[`ChoiceInteraction > loads & saves interaction state from the ItemStateS
                 type="checkbox"
                 value="c3"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
@@ -1119,38 +1433,52 @@ exports[`ChoiceInteraction > loads & saves interaction state from the ItemStateS
                     <path
                       d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 3
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 4
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1164,10 +1492,12 @@ exports[`ChoiceInteraction > loads & saves interaction state from the ItemStateS
                 type="checkbox"
                 value="c4"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
@@ -1183,26 +1513,40 @@ exports[`ChoiceInteraction > loads & saves interaction state from the ItemStateS
                     <path
                       d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 4
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
+          
+          
           
         </ul>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -1212,11 +1556,17 @@ exports[`ChoiceInteraction > renders choices shuffled if attribute is true 1`] =
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-choiceInteraction"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
-      />
+        dir=""
+      >
+        
+      </div>
+      
        
       <div
         aria-roledescription="selectablechoice"
@@ -1226,22 +1576,29 @@ exports[`ChoiceInteraction > renders choices shuffled if attribute is true 1`] =
         <ul
           class="vertical"
         >
+          
+          
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 2
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1255,45 +1612,60 @@ exports[`ChoiceInteraction > renders choices shuffled if attribute is true 1`] =
                 type="radio"
                 value="c2"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 2
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 1
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1307,45 +1679,60 @@ exports[`ChoiceInteraction > renders choices shuffled if attribute is true 1`] =
                 type="radio"
                 value="c1"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 1
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 3
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1359,45 +1746,60 @@ exports[`ChoiceInteraction > renders choices shuffled if attribute is true 1`] =
                 type="radio"
                 value="c3"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 3
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 4
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1411,33 +1813,48 @@ exports[`ChoiceInteraction > renders choices shuffled if attribute is true 1`] =
                 type="radio"
                 value="c4"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 4
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
+          
+          
           
         </ul>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -1447,11 +1864,17 @@ exports[`ChoiceInteraction > renders correctly if qti-label is set without qti-l
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-choiceInteraction qti-labels-decimal"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
-      />
+        dir=""
+      >
+        
+      </div>
+      
        
       <div
         aria-roledescription="selectablechoice"
@@ -1461,10 +1884,13 @@ exports[`ChoiceInteraction > renders correctly if qti-label is set without qti-l
         <ul
           class="vertical"
         >
+          
+          
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
@@ -1473,16 +1899,19 @@ exports[`ChoiceInteraction > renders correctly if qti-label is set without qti-l
                 class="choice-label"
               >
                 1
-                
               </span>
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 1
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1496,39 +1925,49 @@ exports[`ChoiceInteraction > renders correctly if qti-label is set without qti-l
                 type="radio"
                 value="c1"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
                   <span
                     class="choice-label"
                   >
                     1
-                    
                   </span>
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 1
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
@@ -1537,16 +1976,19 @@ exports[`ChoiceInteraction > renders correctly if qti-label is set without qti-l
                 class="choice-label"
               >
                 2
-                
               </span>
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 2
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1560,39 +2002,49 @@ exports[`ChoiceInteraction > renders correctly if qti-label is set without qti-l
                 type="radio"
                 value="c2"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
                   <span
                     class="choice-label"
                   >
                     2
-                    
                   </span>
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 2
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
@@ -1601,16 +2053,19 @@ exports[`ChoiceInteraction > renders correctly if qti-label is set without qti-l
                 class="choice-label"
               >
                 3
-                
               </span>
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 3
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1624,39 +2079,49 @@ exports[`ChoiceInteraction > renders correctly if qti-label is set without qti-l
                 type="radio"
                 value="c3"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
                   <span
                     class="choice-label"
                   >
                     3
-                    
                   </span>
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 3
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
@@ -1665,16 +2130,19 @@ exports[`ChoiceInteraction > renders correctly if qti-label is set without qti-l
                 class="choice-label"
               >
                 4
-                
               </span>
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 4
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1688,39 +2156,53 @@ exports[`ChoiceInteraction > renders correctly if qti-label is set without qti-l
                 type="radio"
                 value="c4"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
                   <span
                     class="choice-label"
                   >
                     4
-                    
                   </span>
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 4
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
+          
+          
           
         </ul>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -1730,22 +2212,28 @@ exports[`ChoiceInteraction > renders correctly with basic props - checkbox mode 
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-choiceInteraction"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
+        dir=""
       >
         <div
           aria-atomic="true"
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You need to select 2 choices
           </p>
         </div>
+        
       </div>
+      
        
       <div
         aria-roledescription="selectablechoice"
@@ -1755,22 +2243,29 @@ exports[`ChoiceInteraction > renders correctly with basic props - checkbox mode 
         <ul
           class="vertical"
         >
+          
+          
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 1
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1784,10 +2279,12 @@ exports[`ChoiceInteraction > renders correctly with basic props - checkbox mode 
                 type="checkbox"
                 value="c1"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
@@ -1803,38 +2300,52 @@ exports[`ChoiceInteraction > renders correctly with basic props - checkbox mode 
                     <path
                       d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 1
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 2
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1848,10 +2359,12 @@ exports[`ChoiceInteraction > renders correctly with basic props - checkbox mode 
                 type="checkbox"
                 value="c2"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
@@ -1867,38 +2380,52 @@ exports[`ChoiceInteraction > renders correctly with basic props - checkbox mode 
                     <path
                       d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 2
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 3
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1912,10 +2439,12 @@ exports[`ChoiceInteraction > renders correctly with basic props - checkbox mode 
                 type="checkbox"
                 value="c3"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
@@ -1931,38 +2460,52 @@ exports[`ChoiceInteraction > renders correctly with basic props - checkbox mode 
                     <path
                       d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 3
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 4
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -1976,10 +2519,12 @@ exports[`ChoiceInteraction > renders correctly with basic props - checkbox mode 
                 type="checkbox"
                 value="c4"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
@@ -1995,26 +2540,40 @@ exports[`ChoiceInteraction > renders correctly with basic props - checkbox mode 
                     <path
                       d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 4
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
+          
+          
           
         </ul>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -2024,11 +2583,17 @@ exports[`ChoiceInteraction > renders correctly with basic props - radio mode 1`]
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-choiceInteraction"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
-      />
+        dir=""
+      >
+        
+      </div>
+      
        
       <div
         aria-roledescription="selectablechoice"
@@ -2038,22 +2603,29 @@ exports[`ChoiceInteraction > renders correctly with basic props - radio mode 1`]
         <ul
           class="vertical"
         >
+          
+          
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 1
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -2067,45 +2639,60 @@ exports[`ChoiceInteraction > renders correctly with basic props - radio mode 1`]
                 type="radio"
                 value="c1"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 1
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 2
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -2119,45 +2706,60 @@ exports[`ChoiceInteraction > renders correctly with basic props - radio mode 1`]
                 type="radio"
                 value="c2"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 2
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 3
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -2171,45 +2773,60 @@ exports[`ChoiceInteraction > renders correctly with basic props - radio mode 1`]
                 type="radio"
                 value="c3"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 3
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 4
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -2223,33 +2840,48 @@ exports[`ChoiceInteraction > renders correctly with basic props - radio mode 1`]
                 type="radio"
                 value="c4"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 4
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
+          
+          
           
         </ul>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -2262,20 +2894,29 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
       class="qti-interaction qti-blockInteraction qti-choiceInteraction qti-choices-stacking-2 qti-control-hidden qti-labels-lower-alpha qti-label-suffix-period qti-orientation-vertical"
       data-max-selections-message="You're limited to 4!"
       data-min-selections-message="You need at least 1!"
+      dir=""
       role="group"
     >
       <div
         class="qti-prompt cf"
         id="tao-prompt-123"
       >
+        
+        
         Question 1
         
         
+        
       </div>
+      
        
       <div
         class="qti-instruction-container"
-      />
+        dir=""
+      >
+        
+      </div>
+      
        
       <div
         aria-roledescription="selectablechoice"
@@ -2285,10 +2926,13 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
         <ul
           class="vertical"
         >
+          
+          
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
@@ -2296,17 +2940,20 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
               <span
                 class="choice-label"
               >
-                a
-                .
+                a.
               </span>
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 1
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -2320,10 +2967,12 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
                 type="checkbox"
                 value="c1"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
@@ -2339,32 +2988,41 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
                     <path
                       d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                     />
+                    
                   </svg>
+                  
                    
                   <span
                     class="choice-label"
                   >
-                    a
-                    .
+                    a.
                   </span>
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 1
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
@@ -2372,17 +3030,20 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
               <span
                 class="choice-label"
               >
-                b
-                .
+                b.
               </span>
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 2
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -2396,10 +3057,12 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
                 type="checkbox"
                 value="c2"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
@@ -2415,32 +3078,41 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
                     <path
                       d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                     />
+                    
                   </svg>
+                  
                    
                   <span
                     class="choice-label"
                   >
-                    b
-                    .
+                    b.
                   </span>
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 2
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
@@ -2448,17 +3120,20 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
               <span
                 class="choice-label"
               >
-                c
-                .
+                c.
               </span>
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 3
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -2472,10 +3147,12 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
                 type="checkbox"
                 value="c3"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
@@ -2491,32 +3168,41 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
                     <path
                       d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                     />
+                    
                   </svg>
+                  
                    
                   <span
                     class="choice-label"
                   >
-                    c
-                    .
+                    c.
                   </span>
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 3
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
@@ -2524,17 +3210,20 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
               <span
                 class="choice-label"
               >
-                d
-                .
+                d.
               </span>
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 4
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -2548,10 +3237,12 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
                 type="checkbox"
                 value="c4"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
@@ -2567,32 +3258,45 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
                     <path
                       d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                     />
+                    
                   </svg>
+                  
                    
                   <span
                     class="choice-label"
                   >
-                    d
-                    .
+                    d.
                   </span>
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 4
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
+          
+          
           
         </ul>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -2600,15 +3304,21 @@ exports[`ChoiceInteraction > renders correctly with full props 1`] = `
 exports[`ChoiceInteraction > renders the instruction lang on the feedback block 1`] = `
 <body>
   <div>
+    
     <div
       class="qti-interaction qti-blockInteraction qti-choiceInteraction"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
         dir="ltr"
         lang="fr-FR"
-      />
+      >
+        
+      </div>
+      
        
       <div
         aria-roledescription="selectablechoice"
@@ -2618,22 +3328,29 @@ exports[`ChoiceInteraction > renders the instruction lang on the feedback block 
         <ul
           class="vertical"
         >
+          
+          
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 1
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -2647,45 +3364,60 @@ exports[`ChoiceInteraction > renders the instruction lang on the feedback block 
                 type="radio"
                 value="c1"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 1
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 2
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -2699,45 +3431,60 @@ exports[`ChoiceInteraction > renders the instruction lang on the feedback block 
                 type="radio"
                 value="c2"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 2
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 3
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -2751,45 +3498,60 @@ exports[`ChoiceInteraction > renders the instruction lang on the feedback block 
                 type="radio"
                 value="c3"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 3
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
           <span
             class="hidden"
             id="tao-choice-label-123"
           >
+            
              
             <span
               class="caption-container"
             >
+              
                
               <span
                 class="choice-content"
               >
+                
                 Choice 4
-                 
+                
+                
               </span>
             </span>
+            
           </span>
            
           <li
@@ -2803,33 +3565,48 @@ exports[`ChoiceInteraction > renders the instruction lang on the feedback block 
                 type="radio"
                 value="c4"
               />
+              
                
               <span
                 class="container"
               >
+                
                  
                 <span
                   class="caption-container"
                 >
+                  
                    
+                  
                    
                   <span
                     class="choice-content"
                   >
+                    
                     Choice 4
-                     
+                    
+                    
                   </span>
                 </span>
+                
                  
+                
                  
+                
               </span>
             </label>
              
+            
           </li>
+          
+          
           
         </ul>
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>

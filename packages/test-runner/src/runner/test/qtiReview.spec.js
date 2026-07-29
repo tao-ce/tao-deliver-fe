@@ -819,7 +819,7 @@ describe('QTI NUI test runner behavior', () => {
             }));
 
         it('loads response on correct response tab', () =>
-            new Promise(done => {
+            new Promise((done, fail) => {
                 const container = document.createElement('section');
                 const init = vi.fn(() => ({
                     testMap: sampleTestMap
@@ -858,14 +858,13 @@ describe('QTI NUI test runner behavior', () => {
                     }
                 });
 
-                runner.on('loaditem', () => {
-                    const correctResponseTabButton = Array.prototype.filter.call(
-                        container.querySelectorAll('button'),
-                        button => button.innerHTML.trim().startsWith('Correct')
-                    )[0];
-                    correctResponseTabButton.removeAttribute('disabled'); // force enable button
-                    correctResponseTabButton.click();
-                });
+                runner
+                    .on('error', fail)
+                    .on('loaditem', () => {
+                        const correctResponseTabButton = container.querySelectorAll('button[role="tab"]')[2];
+                        correctResponseTabButton.removeAttribute('disabled'); // force enable button
+                        correctResponseTabButton.click();
+                    });
                 runner.init();
             }));
 

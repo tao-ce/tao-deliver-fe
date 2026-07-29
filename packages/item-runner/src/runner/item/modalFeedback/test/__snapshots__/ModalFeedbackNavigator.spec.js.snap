@@ -10,11 +10,17 @@ exports[`ModalFeedbackNavigator > renders and sends event on "continue" button c
         class="actionable primary pill small"
         type="button"
       >
+        
          
+        
          
         Continue
+        
       </button>
+      
     </div>
+    
+    
   </div>
 </body>
 `;

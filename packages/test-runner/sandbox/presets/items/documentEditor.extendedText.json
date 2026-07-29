@@ -1,0 +1,81 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "extended_text_document",
+            "serial": "i5ec7d8d84b935",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "extended_text_document",
+                "title": "Document Editor (Extended Text Interaction)",
+                "label": "Document Editor (Extended Text Interaction)",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "3.4.0-sprint117",
+                "class": ""
+            },
+            "body": {
+                "serial": "i5ec7d8d84b92d",
+                "body": "<div class=\"grid-row\">  <div class=\"col-12\">  <h2>Summarising what you know</h2>  <p>Write approximately 500 words explaining your understanding of the laws of electromagnetism. Mention at least 3 scientists and their major works. Don't forget to contextualise your answer within the social and historical setting of the relevant period.</p>  </div>  </div>    <div class=\"grid-row\">  <div class=\"col-12\"> {{i5ec7d8d84baa2}}  </div>  </div>",
+                "elements": {
+                    "i5ec7d8d84baa2": {
+                        "serial": "i5ec7d8d84baa2",
+                        "qtiClass": "extendedTextInteraction",
+                        "attributes": {
+                            "responseIdentifier": "extended_text_document",
+                            "format": "xhtml",
+                            "data-editor-type": "document",
+                            "data-toolbar-should-not-group-when-full": false,
+                            "data-image-upload": true,
+                            "expectedLines": 100,
+                            "class": "qti-counter-up"
+                        },
+                        "choices": [],
+                        "prompt": {
+                            "serial": "i5ec7d8d84baf8",
+                            "body": "",
+                            "elements": []
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": [],
+            "responses": {
+                "i5ec7d8d84b9b9": {
+                    "identifier": "extended_text_document",
+                    "serial": "i5ec7d8d84b9b9",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "extended_text_document",
+                        "cardinality": "single",
+                        "baseType": "string"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {}
+    },
+    "itemState": {},
+    "itemIdentifier": "item-8",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    },
+    "success": true,
+    "messages": []
+}

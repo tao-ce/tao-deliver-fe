@@ -50,12 +50,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     let svgElement;
     let labelId = label ? generateElementId('desc') : void 0;
 
-    /**
-     * flag that user started interact with component
-     *
-     */
-    let focused = false;
-
     let imgOffsetX = 0;
     let imgOffsetY = 0;
     let svgWidth = imgWidth;
@@ -72,17 +66,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 
     $: currentLang = getCurrentLanguage(svgElement);
-
-    /**
-     * Dispatch knowledge, that user started interact with component or it's children
-     * @fires 'focused'
-     */
-    function handleStartInteracting() {
-        if (!focused) {
-            dispatch('focused');
-            focused = true;
-        }
-    }
 
     /**
      * Background load handler
@@ -124,6 +107,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 </style>
 
 {#if svgWidth && svgHeight}
+    <!-- svelte-ignore a11y-no-static-element-interactions a11y_click_events_have_key_events -->
     <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
@@ -136,10 +120,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         aria-labelledby={labelId}
         style={`--shadow-filter-url: url(#${svgId}-filter-shadow)`}
         bind:this={svgElement}
-        on:keydown|once={handleStartInteracting}
-        on:mousedown|once={handleStartInteracting}
-        on:touchstart|once={handleStartInteracting}
-        on:focusin|once={handleStartInteracting}
         on:mousemove
         on:touchmove|nonpassive
         on:click>

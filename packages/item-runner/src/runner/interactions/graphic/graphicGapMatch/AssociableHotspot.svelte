@@ -74,6 +74,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     let shapeComponent = shapeToComponent[shape];
 
     let groupElement;
+    // eslint-disable-next-line no-unused-vars
     let svgGroup;
 
     onMount(() => {
@@ -132,7 +133,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 <style>
     .associable-hotspot {
-        --outer-frame-border-width: 0.875rem;
+        --outer-frame-border-width: 0.5rem;
         --frame-border-width: 0.25rem;
 
         /**** default state styles *****/
@@ -168,6 +169,27 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             stroke-linejoin: round;
         }
 
+        /**** polygon hotspot styles *****/
+
+        & :global(g.shape.poly:not(.thin-poly):hover),
+        &:focus-visible :global(g.shape.poly:not(.thin-poly)) {
+            & :global(.shape-outer-border.shape-outer-border) {
+                stroke-width: 1rem;
+            }
+            & :global(.shape-inner-border.shape-inner-border) {
+                stroke-width: 1.5rem;
+            }
+        }
+        & :global(g.shape.thin-poly:hover),
+        &:focus-visible :global(g.shape.thin-poly) {
+            & :global(.shape-outer-border.shape-outer-border) {
+                stroke-width: 1.25rem;
+            }
+            & :global(.shape-inner-border.shape-inner-border) {
+                stroke-width: 0.25rem;
+            }
+        }
+
         /****** active state styles *******/
         &.targetable {
             cursor: pointer;
@@ -192,22 +214,21 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     /****** invisible styles *******/
     :global(.associable-hotspot.invisible:not(.targeted):not(:focus-visible)) {
-        & :global(.shape-outer-border) {
-            stroke: transparent;
-            fill: transparent;
-        }
-        & :global(.shape-inner-border) {
+        & :global(.shape-outer-border),
+        & :global(.shape-inner-border),
+        & :global(.shape-outline-cover),
+        & :global(.shape-shadow) {
             stroke: transparent;
             fill: transparent;
         }
     }
 </style>
 
-<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+<!-- svelte-ignore a11y-no-noninteractive-tabindex a11y-no-static-element-interactions -->
 <g
     key={identifier}
     class="associable-hotspot"
-    style={`--draw-focus-dasharray:${borderDotWidth}px;--dash-width:${borderDashWidth};px`}
+    style={`--draw-focus-dasharray:${borderDotWidth}px;--dash-width:${borderDashWidth}px;`}
     class:targetable
     class:targeted
     class:invisible
@@ -226,6 +247,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         {disabled}
         label={hotspotLabel}
         {invisible}
+        {targeted}
         {ariaLabel}
         ariaLabelledBy={instructionsEltId}
         selected={false}

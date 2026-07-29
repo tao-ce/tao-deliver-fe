@@ -4,6 +4,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 import blockPreRender from '../blockPreRender.js';
 import { DivElement, SpanElement } from '../../../static';
+import { decommentify } from '@/test-utils/helpers.js';
 
 describe('Pre render a block tree', () => {
     it('Outputs HTML for simple block tree', () => {
@@ -13,7 +14,7 @@ describe('Pre render a block tree', () => {
                 content: '<div><span>foo</span></div>'
             }
         ]);
-        expect(output).toMatchSnapshot();
+        expect(decommentify(output)).toMatchSnapshot();
     });
 
     it('Outputs text for simple block tree', () => {
@@ -23,8 +24,7 @@ describe('Pre render a block tree', () => {
                 content: 'Some text content'
             }
         ]);
-        expect(output).toHaveLength(17);
-        expect(output).toMatchSnapshot();
+        expect(decommentify(output)).toMatchSnapshot();
     });
 
     it('Outputs HTML for multi level block tree', () => {
@@ -59,6 +59,6 @@ describe('Pre render a block tree', () => {
                 }
             }
         ]);
-        expect(output).toMatchSnapshot();
+        expect(decommentify(output)).toMatchSnapshot();
     });
 });

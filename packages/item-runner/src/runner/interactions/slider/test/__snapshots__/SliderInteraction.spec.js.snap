@@ -3,17 +3,23 @@
 exports[`SliderInteraction > context > renders correctly with different instructions lang 1`] = `
 <body>
   <div>
+    
     <div
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-sliderInteraction"
+      dir=""
     >
+      
        
       <div
         aria-atomic="true"
         aria-live="assertive"
         class="visually-hidden"
         lang="en-AU"
-      />
+      >
+        
+      </div>
+      
        
       <div
         class="hidden"
@@ -71,12 +77,9 @@ exports[`SliderInteraction > context > renders correctly with different instruct
              
             <span
               class="positioning-wrapper height-medium"
-              style="
-        --suffix-width: 0px;
-        --prefix-width: 0px;
-        --fixed-size-letters: 3;
-    "
+              style="--suffix-width: 0px; --prefix-width: 0px; --fixed-size-letters: 3;"
             >
+              
                
               <input
                 aria-describedby="tao-input-123"
@@ -88,11 +91,15 @@ exports[`SliderInteraction > context > renders correctly with different instruct
                 type="text"
               />
                
+              
                
+              
             </span>
+            
           </label>
         </div>
          
+        
         <button
           aria-describedby="tao-minus-123"
           aria-labelledby="tao-minus-label-123"
@@ -111,10 +118,15 @@ exports[`SliderInteraction > context > renders correctly with different instruct
             <path
               d="M0 7h16v2H0z"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
          
         <button
           aria-describedby="tao-plus-123"
@@ -134,10 +146,16 @@ exports[`SliderInteraction > context > renders correctly with different instruct
             <path
               d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
+        
          
         <div
           class="slider-container"
@@ -191,6 +209,7 @@ exports[`SliderInteraction > context > renders correctly with different instruct
               </div>
             </div>
           </div>
+          
            
           <span
             class="hidden"
@@ -202,6 +221,8 @@ exports[`SliderInteraction > context > renders correctly with different instruct
         </div>
       </div>
     </div>
+    
+    
     
   </div>
 </body>
@@ -225,16 +246,23 @@ exports[`SliderInteraction > rendering > renders props correctly into markup 1`]
       <div
         class="qti-prompt cf"
       >
+        
+        
         Question 1
         
         
+        
       </div>
+      
        
       <div
         aria-atomic="true"
         aria-live="assertive"
         class="visually-hidden"
-      />
+      >
+        
+      </div>
+      
        
       <div
         class="hidden"
@@ -291,12 +319,9 @@ exports[`SliderInteraction > rendering > renders props correctly into markup 1`]
              
             <span
               class="positioning-wrapper height-medium"
-              style="
-        --suffix-width: 0px;
-        --prefix-width: 0px;
-        --fixed-size-letters: 4;
-    "
+              style="--suffix-width: 0px; --prefix-width: 0px; --fixed-size-letters: 4;"
             >
+              
                
               <input
                 aria-describedby="tao-input-123"
@@ -308,11 +333,15 @@ exports[`SliderInteraction > rendering > renders props correctly into markup 1`]
                 type="text"
               />
                
+              
                
+              
             </span>
+            
           </label>
         </div>
          
+        
         <button
           aria-describedby="tao-minus-123"
           aria-labelledby="tao-minus-label-123"
@@ -331,10 +360,15 @@ exports[`SliderInteraction > rendering > renders props correctly into markup 1`]
             <path
               d="M0 7h16v2H0z"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
          
         <button
           aria-describedby="tao-plus-123"
@@ -354,10 +388,16 @@ exports[`SliderInteraction > rendering > renders props correctly into markup 1`]
             <path
               d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
+        
          
         <div
           class="slider-container"
@@ -411,6 +451,7 @@ exports[`SliderInteraction > rendering > renders props correctly into markup 1`]
               </div>
             </div>
           </div>
+          
            
           <span
             class="hidden"
@@ -421,6 +462,8 @@ exports[`SliderInteraction > rendering > renders props correctly into markup 1`]
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -431,13 +474,18 @@ exports[`SliderInteraction > rendering > renders with default props 1`] = `
     <div
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-sliderInteraction"
+      dir=""
     >
+      
        
       <div
         aria-atomic="true"
         aria-live="assertive"
         class="visually-hidden"
-      />
+      >
+        
+      </div>
+      
        
       <div
         class="hidden"
@@ -494,12 +542,9 @@ exports[`SliderInteraction > rendering > renders with default props 1`] = `
              
             <span
               class="positioning-wrapper height-medium"
-              style="
-        --suffix-width: 0px;
-        --prefix-width: 0px;
-        --fixed-size-letters: 3;
-    "
+              style="--suffix-width: 0px; --prefix-width: 0px; --fixed-size-letters: 3;"
             >
+              
                
               <input
                 aria-describedby="tao-input-123"
@@ -511,11 +556,15 @@ exports[`SliderInteraction > rendering > renders with default props 1`] = `
                 type="text"
               />
                
+              
                
+              
             </span>
+            
           </label>
         </div>
          
+        
         <button
           aria-describedby="tao-minus-123"
           aria-labelledby="tao-minus-label-123"
@@ -534,10 +583,15 @@ exports[`SliderInteraction > rendering > renders with default props 1`] = `
             <path
               d="M0 7h16v2H0z"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
          
         <button
           aria-describedby="tao-plus-123"
@@ -557,10 +611,16 @@ exports[`SliderInteraction > rendering > renders with default props 1`] = `
             <path
               d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
+        
          
         <div
           class="slider-container"
@@ -614,6 +674,7 @@ exports[`SliderInteraction > rendering > renders with default props 1`] = `
               </div>
             </div>
           </div>
+          
            
           <span
             class="hidden"
@@ -624,6 +685,8 @@ exports[`SliderInteraction > rendering > renders with default props 1`] = `
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;

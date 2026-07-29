@@ -46,11 +46,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     let choiceUsedCounter; //how many times choices is linked to gaps at this moment
     let choicesMax; // choices array length
     let renderChoice; // contains info for rendering choice
-    let targetable = false;
+    let targetable = false; // eslint-disable-line no-unused-vars
     let selected = false;
 
     $: if ($choicesStore) {
-        choicesMax = Object.keys($choicesStore).length;
+        choicesMax = Object.keys($choicesStore).length; // eslint-disable-line no-unused-vars
         renderChoice = $choicesStore[key]; // choice which will be rendered to gap
     }
     $: choiceUsedCounter = $stateStore.selectedChoices[key] || 0; //used for correct showing stacked choices
@@ -183,10 +183,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 activeElementStore.set(null);
                 return;
             }
-            storeMatches([{
-                draggableKey: key,
-                dropAreaKey: $activeElementStore.dropAreaKey
-            }]);
+            storeMatches([
+                {
+                    draggableKey: key,
+                    dropAreaKey: $activeElementStore.dropAreaKey
+                }
+            ]);
             activeElementStore.set(null);
         }
     }
@@ -277,6 +279,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             <span lang={instructionsLang}>
                 {__('Return %s to the available options.').split('%s')[0]}
             </span>
+            <!-- eslint-disable-next-line svelte/no-at-html-tags -->
             <p>{@html renderChoice.content}</p>
             <span lang={instructionsLang}>
                 {__('Return %s to the available options.').split('%s')[1]}

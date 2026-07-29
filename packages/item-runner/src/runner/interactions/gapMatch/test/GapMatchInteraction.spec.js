@@ -173,7 +173,7 @@ const dragAndDropElement = (element, dropAreaElement) => {
 window.HTMLElement.prototype.scrollIntoView = function () {};
 
 beforeAll(() => {
-    const originalConsoleError = console.error; // eslint-disable-line no-console
+    const originalConsoleError = console.error;
     vi.spyOn(console, 'error').mockImplementation((...args) => {
         if (args[0]?.includes('invalid response')) {
             return;
@@ -321,7 +321,7 @@ describe('GapMatchInteraction', () => {
 
         const gap = container.querySelector('.gap');
         if (qtiWidthClass === 72) {
-            expect(gap.getAttribute('style')).toContain(`--qti-gap-width: ${gapWidth};--matched-gap-width: 100%`);
+            expect(gap.getAttribute('style')).toContain(`--qti-gap-width: ${gapWidth}; --matched-gap-width: 100%`);
         } else if (qtiWidthClass === 100) {
             expect(gap.getAttribute('style')).toContain(`--qti-gap-width: ${gapWidth};`);
         } else if (qtiWidthClass < 4) {
@@ -769,6 +769,7 @@ describe('GapMatchInteraction', () => {
         clickOrPress(removeButton, controlActions.enter);
 
         await tick();
+        await tick();
 
         expect(container.querySelectorAll('.draggable-list .item-btn')[0]).toHaveFocus();
     });
@@ -806,7 +807,7 @@ describe('GapMatchInteraction', () => {
         });
     });
 
-    it('adds choice to answer area by click', () => {
+    it('adds choice to answer area by click 2', () => {
         const { container } = render(GapMatchInteraction, {
             props: {
                 itemIdentifier,
@@ -888,7 +889,6 @@ describe('drag and drop', () => {
         const firstChoice = container.querySelector('li .item-btn');
 
         return tick().then(() =>
-            // eslint-disable-next-line implicit-arrow-linebreak
             dragAndDropElement(firstChoice, firstGap).then(() => {
                 expect(firstGap).toMatchSnapshot();
 
@@ -922,7 +922,6 @@ describe('drag and drop', () => {
         const firstEmptyGap = container.querySelectorAll('.gap-droppable:not(.matched)')[0];
         const matchedChoice = matchedGap.querySelector('.draggable-container');
         return tick().then(() =>
-            // eslint-disable-next-line implicit-arrow-linebreak
             dragAndDropElement(matchedChoice, firstEmptyGap).then(() => {
                 expect(matchedGap.children).toHaveLength(1);
                 expect(firstEmptyGap).toMatchSnapshot();
@@ -960,7 +959,6 @@ describe('drag and drop', () => {
         const choicesList = container.querySelector('.draggable-list');
         const matchedChoice = matchedGap.querySelector('.draggable-container');
         return tick().then(() =>
-            // eslint-disable-next-line implicit-arrow-linebreak
             dragAndDropElement(matchedChoice, choicesList).then(() => {
                 expect(matchedGap.children).toHaveLength(1);
                 expect(choicesList).toMatchSnapshot();
@@ -1000,7 +998,6 @@ describe('drag and drop', () => {
         const matchedChoice = matchedGaps[0].querySelector('.draggable-container');
         expect(matchedGaps.length).toBe(2);
         return tick().then(() =>
-            // eslint-disable-next-line implicit-arrow-linebreak
             dragAndDropElement(matchedChoice, matchedGaps[1]).then(() => {
                 expect(matchedGaps[0]).toMatchSnapshot();
                 expect(matchedGaps[1]).toMatchSnapshot();
@@ -1040,7 +1037,6 @@ describe('drag and drop', () => {
         expect(matchedGaps.length).toBe(1);
 
         return tick().then(() =>
-            // eslint-disable-next-line implicit-arrow-linebreak
             dragAndDropElement(firstChoice, matchedGaps[0]).then(() => {
                 matchedGaps = container.querySelectorAll('.gap-droppable.matched');
                 expect(matchedGaps[0]).toMatchSnapshot();
@@ -1076,7 +1072,6 @@ describe('drag and drop', () => {
         const firstChoiceInList = container.querySelector('li:not(.removed) .drop-area');
         const matchedChoice = container.querySelector('.gap-droppable.matched .item-btn');
         return tick().then(() =>
-            // eslint-disable-next-line implicit-arrow-linebreak
             dragAndDropElement(matchedChoice, firstChoiceInList).then(() => {
                 expect(matchedGap).not.toBeEmptyDOMElement();
                 expect(firstChoiceInList).toMatchSnapshot();
@@ -1104,7 +1099,6 @@ describe('drag and drop', () => {
         const firstChoice = choicesInList[0].querySelector('.draggable-container');
         const secondChoice = choicesInList[1].querySelector('.drop-area');
         return tick().then(() =>
-            // eslint-disable-next-line implicit-arrow-linebreak
             dragAndDropElement(firstChoice, secondChoice).then(() => {
                 expect(choicesInList).toMatchSnapshot();
                 expect(container.getElementsByTagName('li').length).toBe(3);

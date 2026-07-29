@@ -5,6 +5,7 @@ exports[`TestLayout > HeaderBar > hide menu button based on the theme 1`] = `
   class="headerbar"
 >
   <header>
+    
      
     <div
       class="logo"
@@ -13,7 +14,9 @@ exports[`TestLayout > HeaderBar > hide menu button based on the theme 1`] = `
         alt="TAO Logo"
         src="logo.svg"
       />
+      
     </div>
+    
      
     <div
       class="content"
@@ -21,6 +24,7 @@ exports[`TestLayout > HeaderBar > hide menu button based on the theme 1`] = `
       <div
         class="header-bar-content"
       />
+      
     </div>
   </header>
    
@@ -28,12 +32,17 @@ exports[`TestLayout > HeaderBar > hide menu button based on the theme 1`] = `
     <ol
       class="end"
     >
+      
        
+      
     </ol>
      
     <div
       slot="aside-after"
-    />
+    >
+      
+    </div>
+    
   </aside>
 </div>
 `;
@@ -80,13 +89,19 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
                       <path
                         d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
-                   
+                  
                 </li>
+                
               </ol>
+              
                
               <div
                 class="logo"
@@ -95,7 +110,9 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
                   alt="custom logo"
                   src="bar.png"
                 />
+                
               </div>
+              
                
               <div
                 class="content"
@@ -103,6 +120,7 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
                 <div
                   class="header-bar-content"
                 />
+                
               </div>
             </header>
              
@@ -110,14 +128,20 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
               <ol
                 class="end"
               >
+                
                  
+                
               </ol>
                
               <div
                 slot="aside-after"
-              />
+              >
+                
+              </div>
+              
             </aside>
           </div>
+          
         </div>
          
         <div
@@ -127,10 +151,7 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
             class="floating-toolbars"
           >
             
-             
-            <div
-              class="flex-break"
-            />
+            
             
             
              
@@ -139,9 +160,23 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
             />
             
             
+            
+            
+            
              
+            <div
+              class="flex-break"
+            />
+            
+            
+            
+            
+            
+             
+            
             
           </div>
+          
         </div>
       </div>
        
@@ -152,7 +187,10 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
           aria-label="Notifications"
           class="notification-container"
           role="log"
-        />
+        >
+          
+        </div>
+        
       </div>
        
       <main
@@ -175,7 +213,7 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
           class="test-content-columns"
         >
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-start"
             role="aside"
           />
@@ -185,7 +223,7 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
           />
            
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-end"
             role="aside"
           />
@@ -198,7 +236,9 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
        
       <div
         class="transition-wrapper"
-      />
+      >
+        
+      </div>
        
       <nav
         aria-hidden="true"
@@ -214,12 +254,14 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
        
       <nav
         class="item-modalfeedback-nav hidden"
-        style="--nav-height: var(--testrunner-footer-height);"
+        style="--nav-height: var(--testrunner-footer-height)"
       />
        
       <div
         class="item-hanger-wrapper not-printable"
-      />
+      >
+        
+      </div>
        
       <div
         aria-hidden="true"
@@ -231,6 +273,7 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
           <div
             slot="header"
           />
+          
         </header>
          
         <div
@@ -245,6 +288,7 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
           <div
             slot="content"
           />
+          
            
           <div
             class="scroll-last-child"
@@ -255,11 +299,14 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
           <div
             slot="footer"
           />
+          
         </footer>
       </div>
+      
     </div>
      
     <div
+      aria-hidden="true"
       class="panel close-initial inverted-color"
       id="tao-panel-123"
     >
@@ -288,12 +335,18 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
                 <path
                   d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </div>
            
+          
         </div>
          
         <div
@@ -302,9 +355,11 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
           <div
             class="panel-content use-a11y-text-styles"
           />
+          
         </div>
       </div>
     </div>
+    
      
     <div
       class="panel-wrapper use-a11y-text-styles"
@@ -315,7 +370,11 @@ exports[`TestLayout > HeaderBar > update the logo based on the theme 1`] = `
       class="feedback-dialogs-wrapper use-a11y-text-styles"
     >
       
+      
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -329,7 +388,6 @@ exports[`TestLayout > NotificationContainer > can render and remove notification
     class="notification-container"
     role="log"
   >
-    
     <div
       class="notification-wrapper button-fill success"
     >
@@ -344,7 +402,9 @@ exports[`TestLayout > NotificationContainer > can render and remove notification
         <path
           d="M14.73 1.91L16 3.18 5.09 14.09 0 9l1.27-1.27 3.82 3.82z"
         />
+        
       </svg>
+      
        
       <div
         aria-live="assertive"
@@ -353,15 +413,19 @@ exports[`TestLayout > NotificationContainer > can render and remove notification
         <div
           class="notification-text"
         >
+          
            
+          
           <span
             class="notification-body"
           >
             hello world
           </span>
           
+          
         </div>
          
+        
       </div>
        
       <div
@@ -383,13 +447,21 @@ exports[`TestLayout > NotificationContainer > can render and remove notification
             <path
               d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
       </div>
+      
     </div>
+    
   </div>
+  
 </div>
 `;
 
@@ -400,12 +472,12 @@ exports[`TestLayout > mounts with the main areas 1`] = `
     id="tao-panel-123"
   />,
   "asideEnd": <aside
-    class="not-displayed"
+    class="not-printable not-displayed"
     id="test-content-aside-end"
     role="aside"
   />,
   "asideStart": <aside
-    class="not-displayed"
+    class="not-printable not-displayed"
     id="test-content-aside-start"
     role="aside"
   />,
@@ -416,13 +488,15 @@ exports[`TestLayout > mounts with the main areas 1`] = `
     class="feedback-dialogs-wrapper use-a11y-text-styles"
   >
     
+    
+    
   </div>,
   "header": <div
     class="header-bar-content"
   />,
   "itemModalFeedbackNavigator": <nav
     class="item-modalfeedback-nav hidden"
-    style="--nav-height: var(--testrunner-footer-height);"
+    style="--nav-height: var(--testrunner-footer-height)"
   />,
   "jumpMenu": <div />,
   "main": <main
@@ -445,7 +519,7 @@ exports[`TestLayout > mounts with the main areas 1`] = `
       class="test-content-columns"
     >
       <aside
-        class="not-displayed"
+        class="not-printable not-displayed"
         id="test-content-aside-start"
         role="aside"
       />
@@ -455,7 +529,7 @@ exports[`TestLayout > mounts with the main areas 1`] = `
       />
        
       <aside
-        class="not-displayed"
+        class="not-printable not-displayed"
         id="test-content-aside-end"
         role="aside"
       />
@@ -527,13 +601,19 @@ exports[`TestLayout > mounts with the main areas 1`] = `
                     <path
                       d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
+                  
                 </button>
-                 
+                
               </li>
+              
             </ol>
+            
              
             <div
               class="logo"
@@ -542,7 +622,9 @@ exports[`TestLayout > mounts with the main areas 1`] = `
                 alt="TAO Logo"
                 src="logo.svg"
               />
+              
             </div>
+            
              
             <div
               class="content"
@@ -550,6 +632,7 @@ exports[`TestLayout > mounts with the main areas 1`] = `
               <div
                 class="header-bar-content"
               />
+              
             </div>
           </header>
            
@@ -557,14 +640,20 @@ exports[`TestLayout > mounts with the main areas 1`] = `
             <ol
               class="end"
             >
+              
                
+              
             </ol>
              
             <div
               slot="aside-after"
-            />
+            >
+              
+            </div>
+            
           </aside>
         </div>
+        
       </div>
        
       <div
@@ -574,10 +663,7 @@ exports[`TestLayout > mounts with the main areas 1`] = `
           class="floating-toolbars"
         >
           
-           
-          <div
-            class="flex-break"
-          />
+          
           
           
            
@@ -586,9 +672,23 @@ exports[`TestLayout > mounts with the main areas 1`] = `
           />
           
           
+          
+          
+          
            
+          <div
+            class="flex-break"
+          />
+          
+          
+          
+          
+          
+           
+          
           
         </div>
+        
       </div>
     </div>
      
@@ -599,7 +699,10 @@ exports[`TestLayout > mounts with the main areas 1`] = `
         aria-label="Notifications"
         class="notification-container"
         role="log"
-      />
+      >
+        
+      </div>
+      
     </div>
      
     <main
@@ -622,7 +725,7 @@ exports[`TestLayout > mounts with the main areas 1`] = `
         class="test-content-columns"
       >
         <aside
-          class="not-displayed"
+          class="not-printable not-displayed"
           id="test-content-aside-start"
           role="aside"
         />
@@ -632,7 +735,7 @@ exports[`TestLayout > mounts with the main areas 1`] = `
         />
          
         <aside
-          class="not-displayed"
+          class="not-printable not-displayed"
           id="test-content-aside-end"
           role="aside"
         />
@@ -645,7 +748,9 @@ exports[`TestLayout > mounts with the main areas 1`] = `
      
     <div
       class="transition-wrapper"
-    />
+    >
+      
+    </div>
      
     <nav
       aria-hidden="true"
@@ -661,12 +766,14 @@ exports[`TestLayout > mounts with the main areas 1`] = `
      
     <nav
       class="item-modalfeedback-nav hidden"
-      style="--nav-height: var(--testrunner-footer-height);"
+      style="--nav-height: var(--testrunner-footer-height)"
     />
      
     <div
       class="item-hanger-wrapper not-printable"
-    />
+    >
+      
+    </div>
      
     <div
       aria-hidden="true"
@@ -678,6 +785,7 @@ exports[`TestLayout > mounts with the main areas 1`] = `
         <div
           slot="header"
         />
+        
       </header>
        
       <div
@@ -692,6 +800,7 @@ exports[`TestLayout > mounts with the main areas 1`] = `
         <div
           slot="content"
         />
+        
          
         <div
           class="scroll-last-child"
@@ -702,8 +811,10 @@ exports[`TestLayout > mounts with the main areas 1`] = `
         <div
           slot="footer"
         />
+        
       </footer>
     </div>
+    
   </div>,
   "tools": <div
     class="floating-toolbars-wrapper"
@@ -712,10 +823,7 @@ exports[`TestLayout > mounts with the main areas 1`] = `
       class="floating-toolbars"
     >
       
-       
-      <div
-        class="flex-break"
-      />
+      
       
       
        
@@ -724,9 +832,23 @@ exports[`TestLayout > mounts with the main areas 1`] = `
       />
       
       
+      
+      
+      
        
+      <div
+        class="flex-break"
+      />
+      
+      
+      
+      
+      
+       
+      
       
     </div>
+    
   </div>,
   "topBar": <div
     class="top-bar not-printable"
@@ -761,13 +883,19 @@ exports[`TestLayout > mounts with the main areas 1`] = `
                   <path
                     d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
-               
+              
             </li>
+            
           </ol>
+          
            
           <div
             class="logo"
@@ -776,7 +904,9 @@ exports[`TestLayout > mounts with the main areas 1`] = `
               alt="TAO Logo"
               src="logo.svg"
             />
+            
           </div>
+          
            
           <div
             class="content"
@@ -784,6 +914,7 @@ exports[`TestLayout > mounts with the main areas 1`] = `
             <div
               class="header-bar-content"
             />
+            
           </div>
         </header>
          
@@ -791,14 +922,20 @@ exports[`TestLayout > mounts with the main areas 1`] = `
           <ol
             class="end"
           >
+            
              
+            
           </ol>
            
           <div
             slot="aside-after"
-          />
+          >
+            
+          </div>
+          
         </aside>
       </div>
+      
     </div>
      
     <div
@@ -808,10 +945,7 @@ exports[`TestLayout > mounts with the main areas 1`] = `
         class="floating-toolbars"
       >
         
-         
-        <div
-          class="flex-break"
-        />
+        
         
         
          
@@ -820,9 +954,23 @@ exports[`TestLayout > mounts with the main areas 1`] = `
         />
         
         
+        
+        
+        
          
+        <div
+          class="flex-break"
+        />
+        
+        
+        
+        
+        
+         
+        
         
       </div>
+      
     </div>
   </div>,
 }
@@ -870,13 +1018,19 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
                       <path
                         d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
-                   
+                  
                 </li>
+                
               </ol>
+              
                
               <div
                 class="logo"
@@ -885,7 +1039,9 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
                   alt="TAO Logo"
                   src="logo.svg"
                 />
+                
               </div>
+              
                
               <div
                 class="content"
@@ -893,6 +1049,7 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
                 <div
                   class="header-bar-content"
                 />
+                
               </div>
             </header>
              
@@ -900,14 +1057,20 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
               <ol
                 class="end"
               >
+                
                  
+                
               </ol>
                
               <div
                 slot="aside-after"
-              />
+              >
+                
+              </div>
+              
             </aside>
           </div>
+          
         </div>
          
         <div
@@ -917,10 +1080,7 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
             class="floating-toolbars"
           >
             
-             
-            <div
-              class="flex-break"
-            />
+            
             
             
              
@@ -929,9 +1089,23 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
             />
             
             
+            
+            
+            
              
+            <div
+              class="flex-break"
+            />
+            
+            
+            
+            
+            
+             
+            
             
           </div>
+          
         </div>
       </div>
        
@@ -942,7 +1116,10 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
           aria-label="Notifications"
           class="notification-container"
           role="log"
-        />
+        >
+          
+        </div>
+        
       </div>
        
       <main
@@ -965,7 +1142,7 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
           class="test-content-columns"
         >
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-start"
             role="aside"
           />
@@ -975,7 +1152,7 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
           />
            
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-end"
             role="aside"
           />
@@ -988,7 +1165,9 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
        
       <div
         class="transition-wrapper"
-      />
+      >
+        
+      </div>
        
       <nav
         aria-hidden="true"
@@ -1004,7 +1183,7 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
        
       <nav
         class="item-modalfeedback-nav hidden"
-        style="--nav-height: var(--testrunner-footer-height);"
+        style="--nav-height: var(--testrunner-footer-height)"
       />
        
       <div
@@ -1021,10 +1200,14 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
             >
               Hello world
             </span>
+            
              
+            
              
+            
           </p>
         </div>
+        
       </div>
        
       <div
@@ -1037,6 +1220,7 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
           <div
             slot="header"
           />
+          
         </header>
          
         <div
@@ -1051,6 +1235,7 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
           <div
             slot="content"
           />
+          
            
           <div
             class="scroll-last-child"
@@ -1061,11 +1246,14 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
           <div
             slot="footer"
           />
+          
         </footer>
       </div>
+      
     </div>
      
     <div
+      aria-hidden="true"
       class="panel close-initial inverted-color"
       id="tao-panel-123"
     >
@@ -1094,12 +1282,18 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
                 <path
                   d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </div>
            
+          
         </div>
          
         <div
@@ -1108,9 +1302,11 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
           <div
             class="panel-content use-a11y-text-styles"
           />
+          
         </div>
       </div>
     </div>
+    
      
     <div
       class="panel-wrapper use-a11y-text-styles"
@@ -1121,7 +1317,11 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 1`
       class="feedback-dialogs-wrapper use-a11y-text-styles"
     >
       
+      
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -1168,13 +1368,19 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
                       <path
                         d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
-                   
+                  
                 </li>
+                
               </ol>
+              
                
               <div
                 class="logo"
@@ -1183,7 +1389,9 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
                   alt="TAO Logo"
                   src="logo.svg"
                 />
+                
               </div>
+              
                
               <div
                 class="content"
@@ -1191,6 +1399,7 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
                 <div
                   class="header-bar-content"
                 />
+                
               </div>
             </header>
              
@@ -1198,14 +1407,20 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
               <ol
                 class="end"
               >
+                
                  
+                
               </ol>
                
               <div
                 slot="aside-after"
-              />
+              >
+                
+              </div>
+              
             </aside>
           </div>
+          
         </div>
          
         <div
@@ -1215,10 +1430,7 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
             class="floating-toolbars"
           >
             
-             
-            <div
-              class="flex-break"
-            />
+            
             
             
              
@@ -1227,9 +1439,23 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
             />
             
             
+            
+            
+            
              
+            <div
+              class="flex-break"
+            />
+            
+            
+            
+            
+            
+             
+            
             
           </div>
+          
         </div>
       </div>
        
@@ -1240,7 +1466,10 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
           aria-label="Notifications"
           class="notification-container"
           role="log"
-        />
+        >
+          
+        </div>
+        
       </div>
        
       <main
@@ -1263,7 +1492,7 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
           class="test-content-columns"
         >
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-start"
             role="aside"
           />
@@ -1273,7 +1502,7 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
           />
            
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-end"
             role="aside"
           />
@@ -1286,7 +1515,9 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
        
       <div
         class="transition-wrapper"
-      />
+      >
+        
+      </div>
        
       <nav
         aria-hidden="true"
@@ -1302,12 +1533,14 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
        
       <nav
         class="item-modalfeedback-nav hidden"
-        style="--nav-height: var(--testrunner-footer-height);"
+        style="--nav-height: var(--testrunner-footer-height)"
       />
        
       <div
         class="item-hanger-wrapper not-printable"
-      />
+      >
+        
+      </div>
        
       <div
         aria-hidden="true"
@@ -1319,6 +1552,7 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
           <div
             slot="header"
           />
+          
         </header>
          
         <div
@@ -1333,6 +1567,7 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
           <div
             slot="content"
           />
+          
            
           <div
             class="scroll-last-child"
@@ -1343,11 +1578,14 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
           <div
             slot="footer"
           />
+          
         </footer>
       </div>
+      
     </div>
      
     <div
+      aria-hidden="true"
       class="panel close-initial inverted-color"
       id="tao-panel-123"
     >
@@ -1376,12 +1614,18 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
                 <path
                   d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </div>
            
+          
         </div>
          
         <div
@@ -1390,9 +1634,11 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
           <div
             class="panel-content use-a11y-text-styles"
           />
+          
         </div>
       </div>
     </div>
+    
      
     <div
       class="panel-wrapper use-a11y-text-styles"
@@ -1403,7 +1649,11 @@ exports[`TestLayout > notification (itemHanger) > displays and clear messages 2`
       class="feedback-dialogs-wrapper use-a11y-text-styles"
     >
       
+      
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -1450,13 +1700,19 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
                       <path
                         d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
-                   
+                  
                 </li>
+                
               </ol>
+              
                
               <div
                 class="logo"
@@ -1465,7 +1721,9 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
                   alt="TAO Logo"
                   src="logo.svg"
                 />
+                
               </div>
+              
                
               <div
                 class="content"
@@ -1473,6 +1731,7 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
                 <div
                   class="header-bar-content"
                 />
+                
               </div>
             </header>
              
@@ -1480,14 +1739,20 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
               <ol
                 class="end"
               >
+                
                  
+                
               </ol>
                
               <div
                 slot="aside-after"
-              />
+              >
+                
+              </div>
+              
             </aside>
           </div>
+          
         </div>
          
         <div
@@ -1497,10 +1762,7 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
             class="floating-toolbars"
           >
             
-             
-            <div
-              class="flex-break"
-            />
+            
             
             
              
@@ -1509,9 +1771,23 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
             />
             
             
+            
+            
+            
              
+            <div
+              class="flex-break"
+            />
+            
+            
+            
+            
+            
+             
+            
             
           </div>
+          
         </div>
       </div>
        
@@ -1522,7 +1798,10 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
           aria-label="Notifications"
           class="notification-container"
           role="log"
-        />
+        >
+          
+        </div>
+        
       </div>
        
       <main
@@ -1545,7 +1824,7 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
           class="test-content-columns"
         >
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-start"
             role="aside"
           />
@@ -1555,7 +1834,7 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
           />
            
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-end"
             role="aside"
           />
@@ -1568,7 +1847,9 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
        
       <div
         class="transition-wrapper"
-      />
+      >
+        
+      </div>
        
       <nav
         aria-hidden="true"
@@ -1584,12 +1865,14 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
        
       <nav
         class="item-modalfeedback-nav hidden"
-        style="--nav-height: var(--testrunner-footer-height);"
+        style="--nav-height: var(--testrunner-footer-height)"
       />
        
       <div
         class="item-hanger-wrapper not-printable"
-      />
+      >
+        
+      </div>
        
       <div
         aria-hidden="true"
@@ -1601,6 +1884,7 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
           <div
             slot="header"
           />
+          
         </header>
          
         <div
@@ -1615,6 +1899,7 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
           <div
             slot="content"
           />
+          
            
           <div
             class="scroll-last-child"
@@ -1625,11 +1910,14 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
           <div
             slot="footer"
           />
+          
         </footer>
       </div>
+      
     </div>
      
     <div
+      aria-hidden="true"
       class="panel close-initial inverted-color"
       id="tao-panel-123"
     >
@@ -1658,12 +1946,18 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
                 <path
                   d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </div>
            
+          
         </div>
          
         <div
@@ -1672,9 +1966,11 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
           <div
             class="panel-content use-a11y-text-styles"
           />
+          
         </div>
       </div>
     </div>
+    
      
     <div
       class="panel-wrapper use-a11y-text-styles"
@@ -1685,7 +1981,11 @@ exports[`TestLayout > renders correctly with a serviceCallId 1`] = `
       class="feedback-dialogs-wrapper use-a11y-text-styles"
     >
       
+      
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -1732,13 +2032,19 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
                       <path
                         d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
-                   
+                  
                 </li>
+                
               </ol>
+              
                
               <div
                 class="logo"
@@ -1747,7 +2053,9 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
                   alt="TAO Logo"
                   src="logo.svg"
                 />
+                
               </div>
+              
                
               <div
                 class="content"
@@ -1755,6 +2063,7 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
                 <div
                   class="header-bar-content"
                 />
+                
               </div>
             </header>
              
@@ -1762,14 +2071,20 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
               <ol
                 class="end"
               >
+                
                  
+                
               </ol>
                
               <div
                 slot="aside-after"
-              />
+              >
+                
+              </div>
+              
             </aside>
           </div>
+          
         </div>
          
         <div
@@ -1779,10 +2094,7 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
             class="floating-toolbars"
           >
             
-             
-            <div
-              class="flex-break"
-            />
+            
             
             
              
@@ -1791,9 +2103,23 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
             />
             
             
+            
+            
+            
              
+            <div
+              class="flex-break"
+            />
+            
+            
+            
+            
+            
+             
+            
             
           </div>
+          
         </div>
       </div>
        
@@ -1804,7 +2130,10 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
           aria-label="Notifications"
           class="notification-container"
           role="log"
-        />
+        >
+          
+        </div>
+        
       </div>
        
       <main
@@ -1827,7 +2156,7 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
           class="test-content-columns"
         >
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-start"
             role="aside"
           />
@@ -1837,7 +2166,7 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
           />
            
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-end"
             role="aside"
           />
@@ -1850,7 +2179,9 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
        
       <div
         class="transition-wrapper"
-      />
+      >
+        
+      </div>
        
       <nav
         aria-hidden="true"
@@ -1866,12 +2197,14 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
        
       <nav
         class="item-modalfeedback-nav"
-        style="--nav-height: var(--testrunner-footer-height);"
+        style="--nav-height: var(--testrunner-footer-height)"
       />
        
       <div
         class="item-hanger-wrapper not-printable"
-      />
+      >
+        
+      </div>
        
       <div
         aria-hidden="true"
@@ -1883,6 +2216,7 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
           <div
             slot="header"
           />
+          
         </header>
          
         <div
@@ -1897,6 +2231,7 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
           <div
             slot="content"
           />
+          
            
           <div
             class="scroll-last-child"
@@ -1907,11 +2242,14 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
           <div
             slot="footer"
           />
+          
         </footer>
       </div>
+      
     </div>
      
     <div
+      aria-hidden="true"
       class="panel close-initial inverted-color"
       id="tao-panel-123"
     >
@@ -1940,12 +2278,18 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
                 <path
                   d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </div>
            
+          
         </div>
          
         <div
@@ -1954,9 +2298,11 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
           <div
             class="panel-content use-a11y-text-styles"
           />
+          
         </div>
       </div>
     </div>
+    
      
     <div
       class="panel-wrapper use-a11y-text-styles"
@@ -1967,7 +2313,11 @@ exports[`TestLayout > updates based on itemSessionState 1`] = `
       class="feedback-dialogs-wrapper use-a11y-text-styles"
     >
       
+      
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -2014,13 +2364,19 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
                       <path
                         d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
-                   
+                  
                 </li>
+                
               </ol>
+              
                
               <div
                 class="logo"
@@ -2029,7 +2385,9 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
                   alt="TAO Logo"
                   src="logo.svg"
                 />
+                
               </div>
+              
                
               <div
                 class="content"
@@ -2037,6 +2395,7 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
                 <div
                   class="header-bar-content"
                 />
+                
               </div>
             </header>
              
@@ -2044,14 +2403,20 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
               <ol
                 class="end"
               >
+                
                  
+                
               </ol>
                
               <div
                 slot="aside-after"
-              />
+              >
+                
+              </div>
+              
             </aside>
           </div>
+          
         </div>
          
         <div
@@ -2061,10 +2426,7 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
             class="floating-toolbars"
           >
             
-             
-            <div
-              class="flex-break"
-            />
+            
             
             
              
@@ -2073,9 +2435,23 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
             />
             
             
+            
+            
+            
              
+            <div
+              class="flex-break"
+            />
+            
+            
+            
+            
+            
+             
+            
             
           </div>
+          
         </div>
       </div>
        
@@ -2086,7 +2462,10 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
           aria-label="Notifications"
           class="notification-container"
           role="log"
-        />
+        >
+          
+        </div>
+        
       </div>
        
       <main
@@ -2109,7 +2488,7 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
           class="test-content-columns"
         >
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-start"
             role="aside"
           />
@@ -2119,7 +2498,7 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
           />
            
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-end"
             role="aside"
           />
@@ -2132,7 +2511,9 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
        
       <div
         class="transition-wrapper"
-      />
+      >
+        
+      </div>
        
       <nav
         aria-hidden="true"
@@ -2148,12 +2529,14 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
        
       <nav
         class="item-modalfeedback-nav hidden"
-        style="--nav-height: var(--testrunner-footer-height);"
+        style="--nav-height: var(--testrunner-footer-height)"
       />
        
       <div
         class="item-hanger-wrapper not-printable"
-      />
+      >
+        
+      </div>
        
       <div
         aria-hidden="true"
@@ -2165,6 +2548,7 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
           <div
             slot="header"
           />
+          
         </header>
          
         <div
@@ -2179,6 +2563,7 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
           <div
             slot="content"
           />
+          
            
           <div
             class="scroll-last-child"
@@ -2189,11 +2574,14 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
           <div
             slot="footer"
           />
+          
         </footer>
       </div>
+      
     </div>
      
     <div
+      aria-hidden="true"
       class="panel close-initial inverted-color"
       id="tao-panel-123"
     >
@@ -2222,12 +2610,18 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
                 <path
                   d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </div>
            
+          
         </div>
          
         <div
@@ -2236,9 +2630,11 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
           <div
             class="panel-content use-a11y-text-styles"
           />
+          
         </div>
       </div>
     </div>
+    
      
     <div
       class="panel-wrapper use-a11y-text-styles"
@@ -2249,7 +2645,11 @@ exports[`TestLayout > updates based on the test runner status 1`] = `
       class="feedback-dialogs-wrapper use-a11y-text-styles"
     >
       
+      
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -2296,13 +2696,19 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
                       <path
                         d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
-                   
+                  
                 </li>
+                
               </ol>
+              
                
               <div
                 class="logo"
@@ -2311,7 +2717,9 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
                   alt="TAO Logo"
                   src="logo.svg"
                 />
+                
               </div>
+              
                
               <div
                 class="content"
@@ -2319,6 +2727,7 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
                 <div
                   class="header-bar-content"
                 />
+                
               </div>
             </header>
              
@@ -2326,14 +2735,20 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
               <ol
                 class="end"
               >
+                
                  
+                
               </ol>
                
               <div
                 slot="aside-after"
-              />
+              >
+                
+              </div>
+              
             </aside>
           </div>
+          
         </div>
          
         <div
@@ -2343,10 +2758,7 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
             class="floating-toolbars"
           >
             
-             
-            <div
-              class="flex-break"
-            />
+            
             
             
              
@@ -2355,9 +2767,23 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
             />
             
             
+            
+            
+            
              
+            <div
+              class="flex-break"
+            />
+            
+            
+            
+            
+            
+             
+            
             
           </div>
+          
         </div>
       </div>
        
@@ -2368,7 +2794,10 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
           aria-label="Notifications"
           class="notification-container"
           role="log"
-        />
+        >
+          
+        </div>
+        
       </div>
        
       <main
@@ -2392,7 +2821,7 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
           class="test-content-columns"
         >
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-start"
             role="aside"
           />
@@ -2403,7 +2832,7 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
           />
            
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-end"
             role="aside"
           />
@@ -2437,15 +2866,16 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
               >
                 loading
               </p>
+              
             </div>
           </div>
+          
            
-          <p
-            style="animation: __svelte_2884083938_0 500ms linear 4500ms 1 both;"
-          >
+          <p>
             Please wait a little longer while your content loads
           </p>
         </div>
+        
       </div>
        
       <nav
@@ -2462,12 +2892,14 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
        
       <nav
         class="item-modalfeedback-nav hidden"
-        style="--nav-height: var(--testrunner-footer-height);"
+        style="--nav-height: var(--testrunner-footer-height)"
       />
        
       <div
         class="item-hanger-wrapper not-printable"
-      />
+      >
+        
+      </div>
        
       <div
         aria-hidden="true"
@@ -2479,6 +2911,7 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
           <div
             slot="header"
           />
+          
         </header>
          
         <div
@@ -2493,6 +2926,7 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
           <div
             slot="content"
           />
+          
            
           <div
             class="scroll-last-child"
@@ -2503,11 +2937,14 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
           <div
             slot="footer"
           />
+          
         </footer>
       </div>
+      
     </div>
      
     <div
+      aria-hidden="true"
       class="panel close-initial inverted-color"
       id="tao-panel-123"
     >
@@ -2536,12 +2973,18 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
                 <path
                   d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </div>
            
+          
         </div>
          
         <div
@@ -2550,9 +2993,11 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
           <div
             class="panel-content use-a11y-text-styles"
           />
+          
         </div>
       </div>
     </div>
+    
      
     <div
       class="panel-wrapper use-a11y-text-styles"
@@ -2563,7 +3008,11 @@ exports[`TestLayout > updates based on the test runner status 2`] = `
       class="feedback-dialogs-wrapper use-a11y-text-styles"
     >
       
+      
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -2610,13 +3059,19 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
                       <path
                         d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
-                   
+                  
                 </li>
+                
               </ol>
+              
                
               <div
                 class="logo"
@@ -2625,7 +3080,9 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
                   alt="TAO Logo"
                   src="logo.svg"
                 />
+                
               </div>
+              
                
               <div
                 class="content"
@@ -2633,6 +3090,7 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
                 <div
                   class="header-bar-content"
                 />
+                
               </div>
             </header>
              
@@ -2640,14 +3098,20 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
               <ol
                 class="end"
               >
+                
                  
+                
               </ol>
                
               <div
                 slot="aside-after"
-              />
+              >
+                
+              </div>
+              
             </aside>
           </div>
+          
         </div>
          
         <div
@@ -2657,10 +3121,7 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
             class="floating-toolbars"
           >
             
-             
-            <div
-              class="flex-break"
-            />
+            
             
             
              
@@ -2669,9 +3130,23 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
             />
             
             
+            
+            
+            
              
+            <div
+              class="flex-break"
+            />
+            
+            
+            
+            
+            
+             
+            
             
           </div>
+          
         </div>
       </div>
        
@@ -2682,14 +3157,18 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
           aria-label="Notifications"
           class="notification-container"
           role="log"
-        />
+        >
+          
+        </div>
+        
       </div>
        
       <main
+        aria-hidden="true"
         aria-labelledby="a11y-main"
         id="test-main"
-        role="main"
-        tabindex="0"
+        role="none"
+        tabindex="-1"
       >
         <div
           class="scroll-first-child"
@@ -2705,7 +3184,7 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
           class="test-content-columns"
         >
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-start"
             role="aside"
           />
@@ -2715,7 +3194,7 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
           />
            
           <aside
-            class="not-displayed"
+            class="not-printable not-displayed"
             id="test-content-aside-end"
             role="aside"
           />
@@ -2728,7 +3207,9 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
        
       <div
         class="transition-wrapper"
-      />
+      >
+        
+      </div>
        
       <nav
         aria-hidden="true"
@@ -2744,12 +3225,14 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
        
       <nav
         class="item-modalfeedback-nav hidden"
-        style="--nav-height: var(--testrunner-footer-height);"
+        style="--nav-height: var(--testrunner-footer-height)"
       />
        
       <div
         class="item-hanger-wrapper not-printable"
-      />
+      >
+        
+      </div>
        
       <div
         aria-hidden="true"
@@ -2761,6 +3244,7 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
           <div
             slot="header"
           />
+          
         </header>
          
         <div
@@ -2775,6 +3259,7 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
           <div
             slot="content"
           />
+          
            
           <div
             class="scroll-last-child"
@@ -2785,11 +3270,14 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
           <div
             slot="footer"
           />
+          
         </footer>
       </div>
+      
     </div>
      
     <div
+      aria-hidden="true"
       class="panel close-initial inverted-color"
       id="tao-panel-123"
     >
@@ -2818,12 +3306,18 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
                 <path
                   d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </div>
            
+          
         </div>
          
         <div
@@ -2832,9 +3326,11 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
           <div
             class="panel-content use-a11y-text-styles"
           />
+          
         </div>
       </div>
     </div>
+    
      
     <div
       class="panel-wrapper use-a11y-text-styles"
@@ -2845,7 +3341,11 @@ exports[`TestLayout > updates based on the test runner status 3`] = `
       class="feedback-dialogs-wrapper use-a11y-text-styles"
     >
       
+      
+      
     </div>
+    
+    
   </div>
 </body>
 `;

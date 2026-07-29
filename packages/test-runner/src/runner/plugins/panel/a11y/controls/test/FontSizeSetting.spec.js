@@ -100,6 +100,8 @@ describe('FontSizeSetting', () => {
 
         btn1.click();
         expect(ctr.style.getPropertyValue('--fontsize-body')).toBe('2.5rem'); // 3
+        expect(ctr.style.getPropertyValue('--a11y-fontsize-scale')).toBe('1.25');
+        expect(ctr.getAttribute('data-a11y-override-font-size')).toBe('true');
 
         await tick();
 
@@ -115,6 +117,8 @@ describe('FontSizeSetting', () => {
 
         btn2.click();
         expect(ctr.style.getPropertyValue('--fontsize-body')).toBe('2rem');
+        expect(ctr.style.getPropertyValue('--a11y-fontsize-scale')).toBe('1');
+        expect(ctr.getAttribute('data-a11y-override-font-size')).toBe('false');
     });
 
     it('applies initial state value to document on load', async () => {
@@ -130,5 +134,7 @@ describe('FontSizeSetting', () => {
         const ctr = document.querySelector('.test-container');
         expect(container.querySelector('.non-default')).toBeTruthy();
         expect(ctr.style.getPropertyValue('--fontsize-body')).toBe('2.5rem');
+        expect(ctr.style.getPropertyValue('--a11y-fontsize-scale')).toBe('1.25');
+        expect(ctr.getAttribute('data-a11y-override-font-size')).toBe('true');
     });
 });

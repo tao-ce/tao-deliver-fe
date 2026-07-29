@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tao-ignite\n"
-"POT-Creation-Date: 2025-09-10 13:17\n"
-"PO-Revision-Date: 2025-09-11 02:38\n"
+"POT-Creation-Date: 2026-05-12 13:56\n"
+"PO-Revision-Date: 2026-05-13 01:53\n"
 "Last-Translator: \n"
 "Language-Team: Romanian\n"
 "Language: ro\n"
@@ -33,11 +33,11 @@ msgstr[2] "Încă %d elemente"
 msgid "breadcrumb"
 msgstr "breadcrumb"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:64
+#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:66
 msgid "the result is"
 msgstr "rezultatul este"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:65
+#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:67
 msgid "Input area"
 msgstr "Input area"
 
@@ -478,6 +478,14 @@ msgstr "valoare aleatorie"
 msgid "Remove"
 msgstr "Elimină"
 
+#: ../../../node_modules/@oat-sa-private/ui-components/colorPicker/ColorPicker.svelte:16
+msgid "Please provide a valid CSS color value (e.g. #RRGGBB, rgb(...), rgba(...))."
+msgstr "Vă rugăm să furnizați o valoare validă a culorii CSS (de ex. #RRGGBB, rgb(...), rgba(...))."
+
+#: ../../../node_modules/@oat-sa-private/ui-components/colorPicker/ColorPicker.svelte:35
+msgid "This field is required."
+msgstr "Acest câmp este necesar."
+
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:248
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:41
 msgid "Manage Preferences"
@@ -490,6 +498,10 @@ msgstr "Personalizați preferințele dvs. pentru cookie. Puteți alege tipurile 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:262
 msgid "Always Active"
 msgstr "Întotdeauna activ"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:279
+msgid "Confirm Choices"
+msgstr "Confirmă Alegerile"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:29
 msgid "Cookie Policy"
@@ -704,55 +716,70 @@ msgstr "anulează"
 msgid "ok"
 msgstr "ok"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:409
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:197
 msgid "Document toolbar"
 msgstr "Bară de instrumente document"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:412
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:202
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:283
+msgid "Search"
+msgstr "Caută"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:214
 msgid "Zoom in"
 msgstr "Zoom in"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:418
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:220
 msgid "Zoom out"
 msgstr "Zoom out"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:427
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:229
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:296
 msgid "Previous"
 msgstr "Anterior"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:445
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:246
 msgid "of %d"
 msgstr "din %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:449
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:249
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:305
 msgid "Next"
 msgstr "Următoarea"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:461
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:261
 msgid "Download"
 msgstr "Descărcare"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:469
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:269
 msgid "Open in new tab"
 msgstr "Deschide într-o filă nouă"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:491
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:291
+msgid "%d of %d matches"
+msgstr "%d din %d potriviri"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:292
+msgid "No matches found"
+msgstr "Nicio potrivire găsită"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:295
 msgid "Open in new tab: %s"
 msgstr "Deschide în filă nouă: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:83
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:91
 msgid "Missing PDF file %s"
 msgstr "Lipseste fisierul PDF %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:85
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:93
 msgid "Invalid or corrupted PDF file."
 msgstr "Fișier PDF invalid sau deteriorat."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:87
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:95
 msgid "An error occurred while loading the PDF."
 msgstr "A apărut o eroare la încărcarea PDF."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:199
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:139
 msgid "Missing PDF file."
 msgstr "Lipsește fișierul PDF."
 
@@ -764,11 +791,11 @@ msgstr "%s, %d articole"
 msgid "draggable list"
 msgstr "listă draggable"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:434
+#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:435
 msgid "You can use this option %d times."
 msgstr "Puteți utiliza această opțiune de %d ori."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:439
+#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:440
 msgid "You can use this option multiple times."
 msgstr "Puteți utiliza această opțiune de mai multe ori."
 
@@ -776,73 +803,113 @@ msgstr "Puteți utiliza această opțiune de mai multe ori."
 msgid "Close Panel"
 msgstr "Închide panoul"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:413
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:107
+msgid "... or drop your file here"
+msgstr "... sau plasați fișierul aici"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:112
+msgid "Accepted: %s"
+msgstr "Acceptat: %s"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:114
+msgid "Up to %s files"
+msgstr "Până la fişierele %s"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:116
+msgid "Max size: %s"
+msgstr "Dimensiune maximă: %s"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:152
 msgid "File selected successfully"
 msgstr "Fişier selectat cu succes"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:417
-msgid "Answer file selected:"
-msgstr "Fișier răspuns selectat:"
-
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:422
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:165
 msgid "This file is not accepted"
 msgstr "Acest fișier nu este acceptat"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:426
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:176
+msgid "Remove file %s"
+msgstr "Şterge fişierul %s"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:30
+msgid "File selected:"
+msgstr "Fişier selectat:"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:412
 msgid "Select different file"
 msgstr "Selectați un fișier diferit"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:435
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:421
 msgid "Clear file"
 msgstr "Ştergeţi fişierul"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:445
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:431
 msgid "Browse your computer"
 msgstr "Răsfoiți calculatorul"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:447
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:433
 msgid "Select a file"
 msgstr "Selectați un fișier"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:450
-msgid "expected formats: %s"
-msgstr "formate așteptate: %s"
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:441
+msgid "Maximum file size: %s"
+msgstr "Dimensiunea maximă a fişierului: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:453
-msgid "maximum file size: %s"
-msgstr "dimensiunea maximă a fişierului: %s"
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:50
+msgid "Answer file selected:"
+msgstr "Fișier răspuns selectat:"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:467
-msgid "..or drop your file here"
-msgstr "...sau plasați fișierul aici"
-
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:144
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:150
 msgid "Folders are not accepted, expected formats are: %s"
 msgstr "Dosarele nu sunt acceptate, formatele așteptate sunt: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:146
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:152
 msgid "files"
 msgstr "fişiere"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:148
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:154
 msgid "Empty files are not accepted, please try again."
 msgstr "Fişierele goale nu sunt acceptate, vă rugăm să încercaţi din nou."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:150
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:156
 msgid "The size of the selected file is %s that is more than the accepted %s"
 msgstr "Fișierul selectat este %s care este mai mult decât cel acceptat %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:157
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:163
 msgid "The %s file format is not accepted, expected formats are: %s"
 msgstr "Formatul de fișier %s nu este acceptat, formatele așteptate sunt: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:163
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:169
 msgid "The unknown file format is not accepted, expected formats are: %s"
 msgstr "Formatul de fișier necunoscut nu este acceptat, formatele așteptate sunt: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:165
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:171
 msgid "Multiple files are not accepted. Please try again."
 msgstr "Fișierele multiple nu sunt acceptate. Vă rugăm să încercați din nou."
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:222
+msgid "%d of %d"
+msgstr "%d de %d"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:228
+msgid "Add file"
+msgstr "Adauga fisier"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:236
+msgid "Remove all"
+msgstr "Elimină tot"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:253
+msgid "Select files"
+msgstr "Selectaţi fişierele"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:268
+msgid "Maximum file size: %s. "
+msgstr "Mărimea maximă a fişierului: %s. "
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:269
+msgid "Up to %d files"
+msgstr "Până la fişierele %d"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/mimetype.js:31
 msgid "all images"
@@ -855,6 +922,10 @@ msgstr "toate videoclipurile"
 #: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/mimetype.js:33
 msgid "all audios"
 msgstr "toate audio-urile"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/validation.js:80
+msgid "No file selected."
+msgstr "Nici un fişier selectat."
 
 #: ../../../node_modules/@oat-sa-private/ui-components/languageSelector/LanguageSelector.svelte:99
 msgid "Select language"
@@ -900,7 +971,7 @@ msgstr "Restrânge meniul"
 msgid "Expand Menu"
 msgstr "Extinde meniul"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/notificationContainer/NotificationContainer.svelte:202
+#: ../../../node_modules/@oat-sa-private/ui-components/notificationContainer/NotificationContainer.svelte:203
 msgid "Notifications"
 msgstr "Notificări"
 
@@ -936,103 +1007,103 @@ msgstr "Arată parola"
 msgid "Hide password"
 msgstr "Ascunde parola"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1280
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1288
 msgid "Media error detected"
 msgstr "Eroare media detectată"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1281
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1289
 msgid "Please reload the media to try again"
 msgstr "Vă rugăm să reîncărcați media pentru a încerca din nou"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1322
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1330
 msgid "media player"
 msgstr "player media"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:186
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:194
 msgid "start playing"
 msgstr "începe redarea"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:188
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:196
 msgid "play again"
 msgstr "joacă-te din nou"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:192
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:200
 msgid "resume playing"
 msgstr "reia redarea"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:254
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:262
 msgid "Play"
 msgstr "Redare"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:255
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:263
 msgid "Play: %d of %d"
 msgstr "Joacă: %d din %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:267
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:275
 msgid "delete"
 msgstr "şterge"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:471
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:479
 msgid "%s of %s"
 msgstr "%s din %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:809
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:817
 msgid "play"
 msgstr "redă"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:810
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:818
 msgid "pause"
 msgstr "pauză"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:811
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:819
 msgid "mute"
 msgstr "amuțește"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:812
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:820
 msgid "unmute"
 msgstr "activează sunetul"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:813
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:821
 msgid "enter fullscreen"
 msgstr "introdu ecran complet"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:814
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:822
 msgid "exit fullscreen"
 msgstr "Ieșire ecran complet"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:815
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:823
 msgid "volume"
 msgstr "volum"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:816
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:824
 msgid "seek"
 msgstr "cauta"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:818
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:826
 msgid "buffered"
 msgstr "tamponat"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:819
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:827
 msgid "Player for {title}"
 msgstr "Jucător pentru {title}"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:820
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:828
 msgid "Captions"
 msgstr "Subtitrări"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:821
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:829
 msgid "Settings"
 msgstr "Setări"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:822
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:830
 msgid "Go back to previous menu"
 msgstr "Mergi înapoi la meniul anterior"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:823
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:831
 msgid "Disabled"
 msgstr "Dezactivat"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:824
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:832
 msgid "Enabled"
 msgstr "Activat"
 
@@ -1060,23 +1131,23 @@ msgstr "Selectat de un alt scor."
 msgid "Rejected."
 msgstr "Respins."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:68
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:70
 msgid "Select option"
 msgstr "Selectați opțiunea"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:82
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:84
 msgid "List is empty"
 msgstr "Lista este goală"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:83
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:85
 msgid "No results found."
 msgstr "Nici un rezultat găsit."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:768
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:771
 msgid "This is a required field."
 msgstr "Acesta este un câmp obligatoriu."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:775
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:778
 msgid "Invalid value."
 msgstr "Valoare invalidă."
 
@@ -1088,27 +1159,27 @@ msgstr "TOATE"
 msgid "SELECTED"
 msgstr "SELECTAT"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:796
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:808
 msgid "eliminated"
 msgstr "eliminat"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:798
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:810
 msgid "masked"
 msgstr "mascat"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:809
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:821
 msgid "restore choice number %d"
 msgstr "restaurează numărul de alegere %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:810
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:822
 msgid "eliminate choice number %d"
 msgstr "elimină numărul de alegere %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:821
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:833
 msgid "unmask choice number %d"
 msgstr "demască numărul de alegere %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:822
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:834
 msgid "mask choice number %d"
 msgstr "mascheaza selectia numarul %d"
 
@@ -1136,6 +1207,10 @@ msgstr "parțial"
 #: ../../../node_modules/@oat-sa-private/ui-components/stepProgress/StepProgress.svelte:38
 msgid "waiting"
 msgstr "aşteptare"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/tabGroup/TabGroup.svelte:223
+msgid "%s moved to position %d of %d"
+msgstr "%s s-a mutat la poziția %d din %d"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/tree/ExpandButton.svelte:102
 msgid "Collapse"
@@ -1862,7 +1937,7 @@ msgstr "%dsec"
 msgid "button"
 msgstr "buton"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:963
+#: ../../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:962
 msgid "Dropdown"
 msgstr "Renunțare"
 
@@ -1910,43 +1985,43 @@ msgstr "link"
 msgid "Radio button"
 msgstr "Buton radio"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:35
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:40
 msgid "Text editor"
 msgstr "Editor de text"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:50
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:56
 msgid "Sorry, this action is not supported in the text editor."
 msgstr "Ne pare rău, această acțiune nu este acceptată în editorul de text."
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:175
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:188
 msgid "Editor toolbar"
 msgstr "Editor bara de instrumente"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:223
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:222
 msgid "Paragraph"
 msgstr "Paragraful"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:224
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:223
 msgid "Heading 1"
 msgstr "Rubrica 1"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:225
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:224
 msgid "Heading 2"
 msgstr "Rubrica 2"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:253
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:252
 msgid "Tiny"
 msgstr "Mică"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:257
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:256
 msgid "Small"
 msgstr "Mică"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:262
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:261
 msgid "Big"
 msgstr "Mare"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:266
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:265
 msgid "Huge"
 msgstr "Imens"
 
@@ -3315,10 +3390,6 @@ msgstr "Editor de text îmbogățit"
 msgid "Edit block"
 msgstr "Editare bloc"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:355
-msgid "%d of %d"
-msgstr "%d de %d"
-
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:357
 msgid "Dropdown toolbar"
 msgstr "Bară de instrumente verticală"
@@ -3875,7 +3946,71 @@ msgstr "Deschideți dialogul privind accesibilitatea"
 msgid "(may require <kbd>Fn</kbd>)"
 msgstr "(poate necesita <kbd>Fn</kbd>)"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/slider/Slider.svelte:390
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:530
+msgid "Arrows"
+msgstr "Săgeți"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:531
+msgid "Currency"
+msgstr "Monedă"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:532
+msgid "Mathematical"
+msgstr "Matematică"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:533
+msgid "Latin"
+msgstr "Latină"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:534
+msgid "Text"
+msgstr "Text"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:536
+msgid "Basic Latin"
+msgstr "Latină de bază"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:537
+msgid "Currency Symbols"
+msgstr "Simboluri Monedă"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:538
+msgid "General Punctuation"
+msgstr "Punctualizare generală"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:539
+msgid "Latin-1 Supplement"
+msgstr "Supliment latin-1"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:540
+msgid "Latin Extended-A"
+msgstr "Lungimea latină-A"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:541
+msgid "Letterlike Symbols"
+msgstr "Letterlike Symbols"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:542
+msgid "Geometric Shapes"
+msgstr "Forme geometrice"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:543
+msgid "Miscellaneous Symbols"
+msgstr "Diverse simboluri"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:544
+msgid "Mathematical Operators"
+msgstr "Operatori matematici"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:545
+msgid "Greek and Coptic"
+msgstr "Greacă și coptă"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:547
+msgid "Latin common"
+msgstr "Latină comună"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/slider/Slider.svelte:392
 msgid "default"
 msgstr "implicit"
 
@@ -4184,227 +4319,261 @@ msgstr "Microsoft Excel binary format"
 msgid "Microsoft Powerpoint slideshow"
 msgstr "slideshow Microsoft Powerpoint"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:104
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:106
 msgid "Please select a language"
 msgstr "Vă rugăm să selectați o limbă"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:122
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:124
 msgid "Select"
 msgstr "Selectare"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:54
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:56
 msgid "Something went wrong."
 msgstr "Ceva nu a mers bine."
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:55
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:57
 msgid "Please try again."
 msgstr "Te rugăm să încerci din nou."
 
-#: ../../apps-common/src/component/PasswordPage.svelte:131
+#: ../../apps-common/src/component/PasswordPage.svelte:134
 msgid "Please wait until you are given the password to begin"
 msgstr "Vă rugăm să aşteptaţi până vi se dă parola pentru a începe"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:142
+#: ../../apps-common/src/component/PasswordPage.svelte:145
 msgid "Password"
 msgstr "Parolă"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:146
+#: ../../apps-common/src/component/PasswordPage.svelte:149
 msgid "Type here"
 msgstr "Scrie aici"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:152
+#: ../../apps-common/src/component/PasswordPage.svelte:155
 msgid "Start"
 msgstr "Pornire"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:45
+#: ../../apps-common/src/component/PasswordPage.svelte:48
 msgid "Wrong Password."
 msgstr "Parolă greșită."
 
-#: ../../apps-common/src/component/TheEnd.svelte:128
+#: ../../apps-common/src/component/TheEnd.svelte:179
+msgid "Exit browser"
+msgstr "Ieșire din browser"
+
+#: ../../apps-common/src/component/TheEnd.svelte:179
 msgid "Reload the page"
 msgstr "Reîncarcă pagina"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:160
+#: ../../apps-common/src/component/WaitingPage.svelte:164
 msgid "Logout"
 msgstr "Deconectare"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:164
+#: ../../apps-common/src/component/WaitingPage.svelte:168
 msgid "Hello"
 msgstr "Bună"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:166
+#: ../../apps-common/src/component/WaitingPage.svelte:170
 msgid "Great! You are ready, but the exam hasn't started yet."
 msgstr "Minunat! Ești gata, dar examenul nu a început încă."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:169
+#: ../../apps-common/src/component/WaitingPage.svelte:173
 msgid "If you have extra time, it is not shown here."
 msgstr "Dacă aveţi timp suplimentar, acesta nu este indicat aici."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:172
+#: ../../apps-common/src/component/WaitingPage.svelte:176
 msgid "You are registered with %s as your main language. Contact a proctor if this is not correct."
 msgstr "Sunteți înregistrat cu %s ca limbă principală. Contactați un proctor dacă acest lucru nu este corect."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:180
+#: ../../apps-common/src/component/WaitingPage.svelte:184
 msgid "In %d minutes and %d seconds the exam will start. Good luck!"
 msgstr "În %d minute și %d secunde examenul va începe. Mult noroc!"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:191
+#: ../../apps-common/src/component/WaitingPage.svelte:195
 msgid "Declaration of availability"
 msgstr "Declarație de disponibilitate"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:20
+#: ../../apps-common/src/component/WaitingPage.svelte:26
 msgid "TAO Logo"
 msgstr "Logo TAO"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:71
+#: ../../apps-common/src/component/WaitingPage.svelte:75
 msgid "You are enrolled in %s, %s from %s."
 msgstr "Sunteți înscris în %s, %s de la %s."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:79
+#: ../../apps-common/src/component/WaitingPage.svelte:83
 msgid "You are enrolled in %s, %s from %s to %s."
 msgstr "Sunteți înscris în %s, %s de la %s la %s."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:82
+#: ../../apps-common/src/component/WaitingPage.svelte:86
 msgid "You are enrolled in %s, from %s to %s."
 msgstr "Sunteți înscris în %s, de la %s la %s."
 
-#: ../../apps-common/src/controller/runner.js:108
+#: ../../apps-common/src/controller/runner.js:136
 msgid "Test is finished"
 msgstr "Testul s-a terminat"
 
-#: ../../apps-common/src/controller/thankyou.js:32
+#: ../../apps-common/src/controller/thankyou.js:34
+msgid "Proceed"
+msgstr "Continuă"
+
+#: ../../apps-common/src/controller/thankyou.js:51
 msgid "Thank you"
 msgstr "Vă mulţumim"
 
-#: ../../apps-common/src/controller/thankyou.js:33
+#: ../../apps-common/src/controller/thankyou.js:52
 msgid "Your test has been submitted."
 msgstr "Testul dvs. a fost trimis."
 
-#: ../../apps-common/src/core/error/messages.js:36
+#: ../../apps-common/src/core/error/messages.js:38
 msgid "Timeout"
 msgstr "Expirare"
 
-#: ../../apps-common/src/core/error/messages.js:39
+#: ../../apps-common/src/core/error/messages.js:41
 msgid "This page cannot be reached."
 msgstr "Această pagină nu poate fi accesată."
 
-#: ../../apps-common/src/core/error/messages.js:42
+#: ../../apps-common/src/core/error/messages.js:44
 msgid "Please reload the page or contact your administrator."
 msgstr "Vă rugăm să reîncărcaţi pagina sau să contactaţi administratorul."
 
-#: ../../apps-common/src/core/error/messages.js:48
+#: ../../apps-common/src/core/error/messages.js:50
 msgid "No connection to the service."
 msgstr "Nicio conexiune la serviciu."
 
-#: ../../apps-common/src/core/error/messages.js:51
-#: ../../apps-common/src/core/error/messages.js:122
+#: ../../apps-common/src/core/error/messages.js:53
+#: ../../apps-common/src/core/error/messages.js:124
 msgid "Please contact your test administrator."
 msgstr "Vă rugăm să contactaţi administratorul de teste."
 
-#: ../../apps-common/src/core/error/messages.js:57
+#: ../../apps-common/src/core/error/messages.js:59
 msgid "No internet connection."
 msgstr "Fără conexiune la internet."
 
-#: ../../apps-common/src/core/error/messages.js:60
+#: ../../apps-common/src/core/error/messages.js:62
 msgid "Please check your internet connection or contact your test administrator."
 msgstr "Verificați conexiunea la internet sau contactați administratorul de teste."
 
-#: ../../apps-common/src/core/error/messages.js:66
+#: ../../apps-common/src/core/error/messages.js:68
 msgid "Test not available."
 msgstr "Testul nu este disponibil."
 
-#: ../../apps-common/src/core/error/messages.js:69
+#: ../../apps-common/src/core/error/messages.js:71
 msgid "Sorry, we cannot start your test."
 msgstr "Ne pare rău, nu putem începe testul tău."
 
-#: ../../apps-common/src/core/error/messages.js:72
-#: ../../apps-common/src/core/error/messages.js:181
+#: ../../apps-common/src/core/error/messages.js:74
+#: ../../apps-common/src/core/error/messages.js:192
 msgid "Please launch your test again or contact your administrator."
 msgstr "Vă rugăm să vă lansați din nou testul sau să contactați administratorul."
 
-#: ../../apps-common/src/core/error/messages.js:78
+#: ../../apps-common/src/core/error/messages.js:80
 msgid "Service busy."
 msgstr "Serviciu ocupat."
 
-#: ../../apps-common/src/core/error/messages.js:81
+#: ../../apps-common/src/core/error/messages.js:83
 msgid "The service is temporarily unavailable due to high traffic load."
 msgstr "Serviciul este temporar indisponibil din cauza încărcării mari a traficului."
 
-#: ../../apps-common/src/core/error/messages.js:84
+#: ../../apps-common/src/core/error/messages.js:86
 msgid "Please wait for a few minutes and try again."
 msgstr "Vă rugăm să aşteptaţi câteva minute şi să încercaţi din nou."
 
-#: ../../apps-common/src/core/error/messages.js:90
-#: ../../apps-common/src/core/error/messages.js:102
-#: ../../apps-common/src/core/error/messages.js:116
-#: ../../apps-common/src/core/error/messages.js:128
+#: ../../apps-common/src/core/error/messages.js:92
+#: ../../apps-common/src/core/error/messages.js:104
+#: ../../apps-common/src/core/error/messages.js:118
+#: ../../apps-common/src/core/error/messages.js:130
 msgid "Unexpected error."
 msgstr "Eroare neașteptată."
 
-#: ../../apps-common/src/core/error/messages.js:93
-#: ../../apps-common/src/core/error/messages.js:119
+#: ../../apps-common/src/core/error/messages.js:95
+#: ../../apps-common/src/core/error/messages.js:121
 msgid "Sorry, an unexpected error happened during the test."
 msgstr "Ne pare rău, a apărut o eroare neașteptată în timpul testului."
 
-#: ../../apps-common/src/core/error/messages.js:96
+#: ../../apps-common/src/core/error/messages.js:98
 msgid "Please reload the page or contact your test administrator."
 msgstr "Vă rugăm să reîncărcaţi pagina sau să contactaţi administratorul de teste."
 
-#: ../../apps-common/src/core/error/messages.js:105
+#: ../../apps-common/src/core/error/messages.js:107
 msgid "Certain third-party tools are not supported in TAO Advance. For example, \"Read aloud\" provided by Edge browser."
 msgstr "Anumite instrumente terțe nu sunt acceptate în TAO Advance. De exemplu, \"Citește aloud\" furnizat de browserul Edge."
 
-#: ../../apps-common/src/core/error/messages.js:110
+#: ../../apps-common/src/core/error/messages.js:112
 msgid "Please disable them and reload the page, or contact your test administrator for more details."
 msgstr "Vă rugăm să le dezactivați și să reîncărcați pagina, sau contactați administratorul de test pentru mai multe detalii."
 
-#: ../../apps-common/src/core/error/messages.js:131
+#: ../../apps-common/src/core/error/messages.js:133
 msgid "The system identified multiple active sessions."
 msgstr "Sistemul a identificat mai multe sesiuni active."
 
-#: ../../apps-common/src/core/error/messages.js:134
+#: ../../apps-common/src/core/error/messages.js:136
 msgid "In order to continue, please click on the Reload button."
 msgstr "Pentru a continua, vă rugăm să faceţi clic pe butonul de reîncărcare."
 
-#: ../../apps-common/src/core/error/messages.js:140
+#: ../../apps-common/src/core/error/messages.js:142
+msgid "Session ended"
+msgstr "Sesiunea s-a încheiat"
+
+#: ../../apps-common/src/core/error/messages.js:145
+msgid "You have been logged out due to a new login."
+msgstr "Ai fost deconectat din cauza unei noi autentificări."
+
+#: ../../apps-common/src/core/error/messages.js:151
 msgid "Test terminated"
 msgstr "Testare terminată"
 
-#: ../../apps-common/src/core/error/messages.js:143
+#: ../../apps-common/src/core/error/messages.js:154
 msgid "Your test has been terminated by the proctor."
 msgstr "Testul tău a fost oprit de către proctor."
 
-#: ../../apps-common/src/core/error/messages.js:149
+#: ../../apps-common/src/core/error/messages.js:160
 msgid "Test paused"
 msgstr "Test întrerupt"
 
-#: ../../apps-common/src/core/error/messages.js:152
+#: ../../apps-common/src/core/error/messages.js:163
 msgid "Your test has been paused by the proctor."
 msgstr "Testul tău a fost întrerupt de către proctor."
 
-#: ../../apps-common/src/core/error/messages.js:156
+#: ../../apps-common/src/core/error/messages.js:167
 msgid "Please click on the Reload button."
 msgstr "Vă rugăm să faceţi clic pe butonul de reîncărcare."
 
-#: ../../apps-common/src/core/error/messages.js:162
+#: ../../apps-common/src/core/error/messages.js:173
 msgid "Test was reset"
 msgstr "Testul a fost resetat"
 
-#: ../../apps-common/src/core/error/messages.js:165
+#: ../../apps-common/src/core/error/messages.js:176
 msgid "The administrator reset your test, you need to start again."
 msgstr "Administratorul resetează testul, trebuie să începeți din nou."
 
-#: ../../apps-common/src/core/error/messages.js:169
+#: ../../apps-common/src/core/error/messages.js:180
 msgid "Please click on the Reload button to restart."
 msgstr "Vă rugăm să faceţi clic pe butonul de reîncărcare pentru a reporni."
 
-#: ../../apps-common/src/core/error/messages.js:175
+#: ../../apps-common/src/core/error/messages.js:186
 msgid "The test cannot be continued."
 msgstr "Testul nu poate fi continuat."
 
-#: ../../apps-common/src/core/error/messages.js:178
+#: ../../apps-common/src/core/error/messages.js:189
 msgid "Sorry, a problem occurred due to long inactivity."
 msgstr "Ne pare rău, a apărut o problemă din cauza inactivității prelungite."
+
+#: ../../apps-common/src/core/error/messages.js:198
+#: ../../apps-common/src/core/error/messages.js:220
+msgid "Can't start secure session"
+msgstr "Nu se poate începe o sesiune securizată"
+
+#: ../../apps-common/src/core/error/messages.js:201
+#: ../../apps-common/src/core/error/messages.js:212
+msgid "To continue, you must close the apps listed below. Click \"Exit browser\", then close the apps, and relaunch TAO Secure Browser."
+msgstr "Pentru a continua, trebuie să închideți aplicațiile listate mai jos. Faceți clic pe \"Exit browser\", apoi închideți aplicațiile și relansați TAO Secure Browser."
+
+#: ../../apps-common/src/core/error/messages.js:209
+msgid "Can't continue secure session"
+msgstr "Nu se poate continua sesiunea securizată"
+
+#: ../../apps-common/src/core/error/messages.js:223
+msgid "To start this secure session, install or update TAO Secure Browser."
+msgstr "Pentru a porni această sesiune sigură, instalați sau actualizați TAO Safure Browser."
 
 #: ../../item-runner/src/runner/ItemPreviewer/PreviewerHeaderBar.svelte:78
 msgid "close item preview"
@@ -4431,51 +4600,51 @@ msgstr "Scorul elementului: "
 msgid "SUBMIT RESPONSE"
 msgstr "TRIMITE RĂSPUNSUL"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1628
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1627
 msgid "Press enter or space to grab and browse the answer area. To move to the next available option, use the arrow keys."
 msgstr "Apăsați enter sau spațiu pentru a prinde și naviga zona de răspuns. Pentru a muta la următoarea opțiune disponibilă, utilizați tastele săgeți."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1633
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1632
 msgid "Press enter or space to grab. To move to next available answer, use the arrow keys."
 msgstr "Apăsați enter sau spațiu pentru a apuca. Pentru a muta la următorul răspuns disponibil, utilizați săgețile."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1636
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1635
 msgid "Press enter or space to replace. To browse other drop zones use the arrow keys. Press escape to cancel."
 msgstr "Apăsați enter sau spațiu pentru a îl înlocui. Pentru a naviga prin alte zone de picături, utilizați tastele săgeți. Apăsați Evită pentru a anula."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1639
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1638
 msgid "Press enter or space to place down. To browse other drop zones use the arrow keys. Press escape to cancel."
 msgstr "Apăsați enter sau spațiu pentru a plasa în jos. Pentru a naviga în alte zone de picături, utilizați săgețile. Apăsați Evită pentru a anula."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1649
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1648
 msgid "unassociated options"
 msgstr "opțiuni neasociate"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1751
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1752
 msgid "Drop zone occupied by "
 msgstr "Zona de plutire ocupata de "
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1761
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1765
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1762
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1766
 msgid "Return %s to unassociated options."
 msgstr "Returnează %s la opțiunile neasociate."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1792
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1793
 msgid "Empty dropzone."
 msgstr "Golire coloană."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1823
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1828
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1833
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1824
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1829
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1834
 msgid "Return the association %s and %s to unassociated options."
 msgstr "Returnează asocierea %s și %s la opțiunile neasociate."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1843
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1844
 msgid "answer area, %d items"
 msgstr "zona raspunsului, %d elemente"
 
 #: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:76
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:437
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:435
 msgid "%lb has been placed down."
 msgstr "%lb a fost plasat în jos."
 
@@ -4495,7 +4664,7 @@ msgstr "%lb și %lb au fost returnate la opțiunile neasociate."
 msgid "cancelled"
 msgstr "anulat"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1375
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1373
 msgid "Option %d"
 msgstr "Opțiunea %d"
 
@@ -4527,74 +4696,212 @@ msgstr ""
 msgid "Response file cleared."
 msgstr ""
 
-#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:279
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:294
 msgid "Unable to restore the uploaded audio file. Please reload the page to try again."
 msgstr ""
 
-#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:285
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:300
 msgid "Reload"
 msgstr ""
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:82
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:709
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:267
+msgid "Playback is disabled for this recording by item configuration."
+msgstr "Redarea este dezactivată pentru această înregistrare după configurarea obiectului."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:716
+msgid "No uploaded video is available for review."
+msgstr "Nu este disponibil niciun video încărcat pentru recenzie."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:718
+msgid "Record a response to play it back locally. Sandbox/manual mode can also keep a local saved response for this session."
+msgstr "Înregistrează un răspuns pentru a-l reda local. Modul Sandbox/manual poate, de asemenea, să păstreze un răspuns local salvat pentru această sesiune."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:734
+msgid "Recording"
+msgstr "Înregistrare"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:736
+msgid "Preparing camera"
+msgstr "Pregătirea camerei foto"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:738
+msgid "Finalizing local recording"
+msgstr "Finalizarea înregistrării locale"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:740
+msgid "Preparing saved response"
+msgstr "Pregătirea răspunsului salvat"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:742
+msgid "Uploading saved response"
+msgstr "Se încarcă răspunsul salvat"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:744
+msgid "Saved response ready"
+msgstr "Răspuns salvat pregătit"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:746
+msgid "Local playback ready"
+msgstr "Redare locală pregătită"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:748
+msgid "Ready"
+msgstr "Gata"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:761
+msgid "Stop"
+msgstr "Oprește"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:768
+msgid "Reset"
+msgstr "Reset"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:60
+msgid "Preparing saved response."
+msgstr "Pregătirea răspunsului salvat."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:61
+msgid "Saved response ready."
+msgstr "Răspuns salvat gata."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:62
+msgid "Saved response unavailable."
+msgstr "Răspuns salvat indisponibil."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:175
+msgid "Recording starts in {{seconds}} seconds."
+msgstr "Înregistrarea începe în {{seconds}} secunde."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:188
+msgid "Container / MIME"
+msgstr "Recipient / MIME"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:188
+msgid "Unavailable"
+msgstr "Unavailable"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:189
+msgid "Duration"
+msgstr "Durată"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:189
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:190
+msgid "Not recorded"
+msgstr "Nu sunt înregistrate"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:190
+msgid "File size"
+msgstr "Dimensiune fişier"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:192
+msgid "Average bitrate"
+msgstr "Bitrate mediu"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:193
+msgid "Not available"
+msgstr "Nu este disponibil"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:196
+msgid "Save mode"
+msgstr "Mod de salvare"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:197
+msgid "Not saved yet"
+msgstr "Încă nu a fost salvat"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:259
+msgid "Maximum recording attempts reached."
+msgstr "Numărul maxim de încercări de înregistrare atins."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:263
+msgid "Recording is in progress and will stop automatically when the time limit is reached."
+msgstr "Înregistrarea este în curs de desfăşurare şi se va opri automat când este atins limita de timp."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:271
+msgid "Recording is in progress. Use Stop to finish or wait for the time limit."
+msgstr "Înregistrarea este în curs de desfăşurare. Utilizaţi Oprire pentru a termina sau aştepta limita de timp."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:275
+msgid "Use the video controls to play back the current recording. Use Reset to clear it."
+msgstr "Utilizaţi controalele video pentru a reda înapoi înregistrarea curentă. Utilizaţi Reset pentru a o şterge."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:278
+msgid "Use Start recording to begin. Use Stop to finish. Use Reset to clear the current response."
+msgstr "Începeți să începeți înregistrarea. Utilizați Opriți pentru a termina. Utilizați Reset pentru a șterge răspunsul curent."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:433
+msgid "No supported recording MIME type was found for this browser."
+msgstr "Nu a fost găsit niciun tip de înregistrare acceptat pentru acest browser."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:518
+msgid "Unable to start video recording. Check browser permissions and try again."
+msgstr "Imposibil de pornit înregistrarea video. Verificați permisiunile browser-ului și încercați din nou."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/upload.js:41
+msgid "Unable to upload this recording. You can still play it back locally in this session, but it will stay unanswered until the upload succeeds."
+msgstr "Imposibil de încărcat această înregistrare. O puteți reda la nivel local în această sesiune, dar va rămâne fără răspuns până când încărcarea reușește."
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/upload.js:45
+msgid "Local playback is still available in this session. Retry the recording or upload before you submit."
+msgstr "Redarea locală este încă disponibilă în această sesiune. Încercați din nou înregistrarea sau încărcarea înainte de a trimite."
+
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:87
 msgid "Your answer"
 msgstr "Răspunsul tău"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:245
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:305
 msgid "Your image file is too big. Please insert an image no larger than %s"
 msgstr "Fișierul imagine este prea mare. Te rugăm să introduci o imagine nu mai mare de %s"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:250
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:310
 msgid "Your image failed to upload, please try again"
 msgstr "Încărcarea imaginii a eșuat, te rugăm să încerci din nou"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:301
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:361
 msgid "Maximum characters reached (maximum: %d)"
 msgstr "Numărul maxim de caractere atins (maxim: %d)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:307
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:367
 msgid "Maximum words reached (maximum: %d)"
 msgstr "S-a atins numărul maxim de cuvinte (maxim: %d)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:314
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:374
 msgid "<strong>%d</strong> / %d word(s) typed"
 msgstr "<strong>%d</strong> / %d cuvinte tastate"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:319
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:379
 msgid "<strong>%d</strong> word(s) typed"
 msgstr "<strong>%d</strong> cuvint(e) tastat(e)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:324
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:332
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:384
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:391
 msgid "<strong>%d</strong> character(s) typed"
 msgstr "<strong>%d</strong> caracter(e) tastat(e)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:332
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:391
 msgid "recommended: %d"
 msgstr "recomandat: %d"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:336
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:395
 msgid "<strong>%d</strong> characters left."
 msgstr "<strong>%d</strong> caractere rămase."
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:342
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:400
 msgid "%d out of %d characters typed"
 msgstr "%d din %d caractere introduse"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:342
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:400
 msgid "<strong>%d</strong> / %d character(s) typed"
 msgstr "<strong>%d</strong> / %d caractere(e) tastat(e)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:351
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:409
 msgid "Invalid format, please refer to the instructions."
 msgstr "Format nevalid, vă rugăm să consultaţi instrucţiunile."
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:357
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:415
 msgid "Answer required."
 msgstr "Răspuns necesar."
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:22
-msgid "Basic Latin"
-msgstr "Latină de bază"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:23
 msgid "EXCLAMATION MARK"
@@ -4965,16 +5272,8 @@ msgid "TILDE"
 msgstr "CUMPĂRĂ"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:118
-msgid "Currency Symbols"
-msgstr "Simboluri Monedă"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:118
 msgid "EURO SIGN"
 msgstr "SIGN EURO"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:119
-msgid "General Punctuation"
-msgstr "Punctualizare generală"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:120
 msgid "LEFT SINGLE QUOTATION MARK"
@@ -5019,10 +5318,6 @@ msgstr "ELLIPSIS ORIZONTAL"
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:130
 msgid "BULLET"
 msgstr "BULLET"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:132
-msgid "Latin-1 Supplement"
-msgstr "Supliment latin-1"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:133
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:282
@@ -5452,10 +5747,6 @@ msgstr "LETTER LETTER MICI LATIN"
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:277
 msgid "LATIN SMALL LETTER Y WITH DIAERESIS"
 msgstr "LETUL MICI LATIN Y CU DIAERESIS"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:284
-msgid "Latin Extended-A"
-msgstr "Lungimea latină-A"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:285
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:359
@@ -5898,24 +6189,12 @@ msgid "LATIN SMALL LETTER Z WITH CARON"
 msgstr "LATINĂ MICI LETTER Z CU CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:401
-msgid "Letterlike Symbols"
-msgstr "Letterlike Symbols"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:401
 msgid "TRADE MARK SIGN"
 msgstr "MARCA COMERCIALĂ"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:404
-msgid "Geometric Shapes"
-msgstr "Forme geometrice"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:404
 msgid "BLACK RIGHT-POINTING POINTER"
 msgstr "PUNCT DREPTURI PUNCT DE PUNCĂ"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:405
-msgid "Arrows"
-msgstr "Săgeți"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:406
 msgid "RIGHTWARDS ARROW"
@@ -5930,24 +6209,12 @@ msgid "LEFT RIGHT DOUBLE ARROW"
 msgstr "ALEGE DREPTUL DOUABIL"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:412
-msgid "Miscellaneous Symbols"
-msgstr "Diverse simboluri"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:412
 msgid "BLACK DIAMOND SUIT"
 msgstr "SUD DIAMONAT DE BLACK"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:415
-msgid "Mathematical Operators"
-msgstr "Operatori matematici"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:415
 msgid "ALMOST EQUAL TO"
 msgstr "ALMOST egal cu:"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:418
-msgid "Greek and Coptic"
-msgstr "Greacă și coptă"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:418
 msgid "GREEK CAPITAL LETTER OMEGA"
@@ -6063,12 +6330,12 @@ msgstr "Trebuie să faceți exact o asociere"
 msgid "Currently %d"
 msgstr "În prezent %d"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:242
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:244
 msgid "Option %d."
 msgstr "Opțiunea %d."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:272
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:276
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:274
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:279
 msgid "Return %s to the available options."
 msgstr "Returnează %s la opțiunile disponibile."
 
@@ -6080,65 +6347,65 @@ msgstr "Zona de răspuns este plină. Pentru a muta în zona răspunsului, apăs
 msgid "%s has been returned to available options."
 msgstr "%s a fost returnat la opțiunile disponibile."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:431
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:433
 msgid "Gap %d %s %s"
 msgstr "Declanșează %d %s %s"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:434
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:46
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:296
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:436
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:47
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:297
 msgid "empty"
 msgstr "gol"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:55
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:56
 msgid "required"
 msgstr "necesar"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:257
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:258
 msgid "%s has been placed in Gap %d."
 msgstr "%s a fost plasat în Gap %d."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:748
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:746
 msgid "Press enter or space to grab and browse the answer area."
 msgstr "Apăsați enter sau spațiu pentru a prinde și naviga zona de răspuns."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:749
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:747
 msgid "To move to next available option, use the arrow keys."
 msgstr "Pentru a trece la următoarea opţiune disponibilă, utilizaţi tastele săgeată."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:752
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:750
 msgid "Press enter or space to place down."
 msgstr "Apăsați enter sau spațiu pentru a plasa."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:753
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:751
 msgid "To browse other gaps use the arrow keys."
 msgstr "Pentru a parcurge alte goluri, folosiți tastele săgeți."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:754
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:752
 msgid "Press escape to cancel."
 msgstr "Apăsați Evacuarea pentru a anula."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:757
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:755
 msgid "Press enter or space to grab."
 msgstr "Apăsați enter sau spațiu pentru a apuca."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:758
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:756
 msgid "To move to next available answer, use the arrow keys."
 msgstr "Pentru a trece la următorul răspuns disponibil, folosiți tastele săgeți."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:759
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:757
 msgid "Double press shift+tab to return to choices."
 msgstr "Apăsați dublu tab shift+pentru a reveni la alegeri."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:797
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:795
 msgid "Available options"
 msgstr "Opțiuni disponibile"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:832
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:830
 msgid "Text Passage. To read use the arrow keys."
 msgstr "Text Passage. Pentru a citi folosind tastele săgeată."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:506
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:504
 msgid "%s has not been placed."
 msgstr "%s nu a fost plasat."
 
@@ -6194,11 +6461,11 @@ msgstr "Asocierea dintre %s și %s a fost creată."
 msgid "The association between %s and %s has been deleted."
 msgstr "Asocierea dintre %s și %s a fost ștearsă."
 
-#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1281
+#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1282
 msgid "Available options, %d items"
 msgstr "Opțiuni disponibile, %d elemente"
 
-#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1332
+#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1333
 msgid "Answer area"
 msgstr "Zona de răspuns"
 
@@ -6355,19 +6622,19 @@ msgstr "min %d"
 msgid "max %d"
 msgstr "max %d"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:871
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:872
 msgid "List"
 msgstr "Listă"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:325
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:326
 msgid "deselected"
 msgstr "deselectate"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:336
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:337
 msgid "selected %s"
 msgstr "selectat %s"
 
-#: ../../item-runner/src/runner/interactions/match/TabularMatch.svelte:458
+#: ../../item-runner/src/runner/interactions/match/TabularMatch.svelte:457
 msgid "%s matches %s"
 msgstr "%s se potrivește cu %s"
 
@@ -6415,7 +6682,7 @@ msgstr "disponibil de %d ori."
 msgid "grouped in %s."
 msgstr "grupat în %s."
 
-#: ../../item-runner/src/runner/interactions/media/MediaInteractionImpl.svelte:523
+#: ../../item-runner/src/runner/interactions/media/MediaInteractionImpl.svelte:533
 msgid "Click to listen"
 msgstr "Click pentru a asculta"
 
@@ -6427,11 +6694,11 @@ msgstr "Trebuie să redați această media de cel puțin %d ori"
 msgid "You have played this media maximum times"
 msgstr "Ai redat aceste fișiere media de maxim ori"
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:617
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:629
 msgid "Press enter or space to grab and place in the answer area. To move to next available option, use the arrow keys."
 msgstr "Apăsați enter sau spațiu pentru a apuca și plasa în zona de răspuns. Pentru a muta la următoarea opțiune disponibilă, utilizați tastele săgeți."
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:637
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:650
 msgid "Unordered options"
 msgstr "Opțiuni neordonate"
 
@@ -6439,21 +6706,21 @@ msgstr "Opțiuni neordonate"
 msgid "Answer area is full. To move to the answer area, press Tab."
 msgstr "Zona de răspuns este plină. Pentru a muta în zona de răspuns, apăsați Tab."
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:491
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:494
 msgid "%lb has been placed down"
 msgstr "%lb a fost plasat jos"
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:500
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:503
 msgid "%lb moved to position %d"
 msgstr "%lb s-a mutat la poziția %d"
 
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:931
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:938
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:942
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:949
 msgid "Position %d"
 msgstr "Poziția %d"
 
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:934
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:939
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:945
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:950
 msgid "Return %s to the unordered options"
 msgstr "Returnează %s la opțiunile neordonate"
 
@@ -6469,27 +6736,27 @@ msgstr "Apăsați enter sau spațiu pentru a apuca. Pentru a muta la următorul 
 msgid "Press enter or space to place down. To reorder use the arrow keys. Press escape to cancel"
 msgstr "Apăsați enter sau spațiu pentru a plasa în jos. Pentru a reordona utilizarea tastelor săgeți. Apăsați Evită pentru a anula"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:390
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:394
 msgid "Plus. %s"
 msgstr "Plus. %s"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:391
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:395
 msgid "Minus. %s"
 msgstr "Minus. %s"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:392
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:396
 msgid "To enter the slider value in this field, type."
 msgstr "Pentru a introduce valoarea slider în acest câmp, tastaţi."
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:393
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:397
 msgid "Use to decrease the slider value by %d"
 msgstr "Folosiți pentru a scădea valoarea slider-ului cu %d"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:394
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:398
 msgid "Use to increase the slider value by %d"
 msgstr "Folosiți pentru a crește valoarea slider-ului de %d"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:395
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:399
 msgid "Use the arrow keys to increase or decrease the value by %d"
 msgstr "Utilizați tastele săgeată pentru a crește sau a scădea valoarea cu %d"
 
@@ -6509,31 +6776,31 @@ msgstr "Valoarea curentă %d"
 msgid "%s, min %d max %d"
 msgstr "%s, min %d max %d"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:164
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:169
 msgid "(dot)"
 msgstr "(punct)"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:165
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:170
 msgid "(comma)"
 msgstr "(virgulă)"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:174
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:178
 msgid "Invalid value, use %s %s for decimal point separator"
 msgstr "Valoare nevalidă, utilizați %s %s pentru separatorul de punct zecimal"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:179
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:183
 msgid "Invalid value, please refer to the instructions"
 msgstr "Valoare nevalidă, vă rugăm să consultaţi instrucţiunile"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:188
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:191
 msgid "Number is out of range"
 msgstr "Numărul nu este în limite"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:200
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:203
 msgid "Max length has been reached"
 msgstr "Lungimea maximă a fost atinsă"
 
-#: ../../item-runner/src/runner/interactions/upload/UploadInteraction.svelte:368
+#: ../../item-runner/src/runner/interactions/upload/UploadInteraction.svelte:373
 msgid "Loading"
 msgstr "Încărcare"
 
@@ -6545,7 +6812,7 @@ msgstr "Imposibil de accesat fișierul încărcat"
 msgid "Unable to upload the selected file. Please try again or refresh the page."
 msgstr "Imposibil de încărcat fișierul selectat. Încercați din nou sau reîncărcați pagina."
 
-#: ../../item-runner/src/runner/item/modalFeedback/ModalFeedbackNavigator.svelte:20
+#: ../../item-runner/src/runner/item/modalFeedback/ModalFeedbackNavigator.svelte:22
 msgid "Continue"
 msgstr "Continuă"
 
@@ -6553,7 +6820,7 @@ msgstr "Continuă"
 msgid "No answer file selected"
 msgstr "Nici un fişier de răspuns selectat"
 
-#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:72
+#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:71
 msgid "view report"
 msgstr "vizualizați raportul"
 
@@ -6572,6 +6839,10 @@ msgstr "Suspiciune de plagiu:"
 #: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:27
 msgid "No suspicion of plagiarism."
 msgstr "Nicio suspiciune de plagiat."
+
+#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/HblMessage.svelte:65
+msgid "Failed to load the plagiarism report. Please try again."
+msgstr "Încărcarea raportului de plagiat a eșuat. Vă rugăm să încercați din nou."
 
 #: ../../item-runner/src/runner/static/ModalFeedback.svelte:64
 msgid "Response feedback"
@@ -6601,48 +6872,48 @@ msgstr "Mergeți la întrebarea anterioară"
 msgid "Question %d."
 msgstr "Întrebarea %d."
 
-#: ../../test-runner/src/runner/TestLayout.svelte:581
+#: ../../test-runner/src/runner/TestLayout.svelte:588
 msgid "Test Navigation"
 msgstr "Testare navigare"
 
+#: ../../test-runner/src/runner/TestLayout.svelte:70
 #: ../../test-runner/src/runner/TestLayout.svelte:71
-#: ../../test-runner/src/runner/TestLayout.svelte:72
 msgid "Main menu"
 msgstr "Meniul principal"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:385
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:408
 msgid "Review"
 msgstr "Revizuire"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:428
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:457
 msgid "Overall feedback"
 msgstr "Feedback general"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:439
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:468
 msgid "Awaiting manual scoring"
 msgstr "Aşteptare scoruri manuale"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:440
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:469
 msgid "All or part of this question needs to be manually scored. Please check back later to view the score."
 msgstr "Toate sau o parte din această întrebare trebuie să fie punctaj manual. Vă rugăm să reveniți mai târziu pentru a vedea scorul."
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:125
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:130
 msgid "Questions"
 msgstr "Întrebări"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:125
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:130
 msgid "Question"
 msgstr "Întrebare"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:133
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:138
 msgid "Correct"
 msgstr "Corect"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:142
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:147
 msgid "Answers"
 msgstr "Răspunsuri"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:142
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:147
 msgid "Answer"
 msgstr "Răspuns"
 
@@ -6667,7 +6938,7 @@ msgid "You still have %d incomplete questions. If you submit this part you won't
 msgstr "Încă mai ai %d întrebări incomplete. Dacă trimiteți acest capitol, nu veți putea să reveniți la întrebări fără răspuns sau să schimbați răspunsurile."
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:89
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:347
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:345
 msgid "Review my answers"
 msgstr "Examinați răspunsurile mele"
 
@@ -6729,103 +7000,103 @@ msgstr "Răspunsul sau o parte din acesta nu este validă."
 msgid "Your answer is not valid."
 msgstr "Răspunsul dvs. nu este valid."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:200
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:199
 msgid "You have %d invalid answers out of %d. Please provide valid answers before proceeding."
 msgstr "Aveți %d răspunsuri invalide din %d. Vă rugăm să furnizați răspunsuri valide înainte de a continua."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:205
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:204
 msgid "Please provide a valid answer."
 msgstr "Vă rugăm să furnizați un răspuns valid."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:212
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:233
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:210
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:231
 msgid "Ok"
 msgstr "Ok"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:225
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:223
 msgid "An answer is required before leaving this question."
 msgstr "Este necesar un răspuns înainte de a lăsa această întrebare."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:227
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:225
 msgid "You will be able to navigate away once you answer the question."
 msgstr "Veţi putea naviga de îndată ce răspundeţi la întrebare."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:247
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:245
 msgid "Your test has been terminated by the proctor and your answers have been submitted."
 msgstr "Testul dvs. a fost încheiat de către proctor și răspunsurile dvs. au fost trimise."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:252
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:250
 msgid "I understand"
 msgstr "Am înțeles"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:266
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:264
 msgid "You need to restart the test"
 msgstr "Trebuie să reporniți testul"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:272
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:270
 msgid "Restart now"
 msgstr "Repornește acum"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:289
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:287
 msgid "Your test and its timer have been paused by proctor."
 msgstr "Testul și cronometrul tău au fost întrerupte de proctor."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:295
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:293
 msgid "OK"
 msgstr "Ok"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:333
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:331
 msgid "Finish the test"
 msgstr "Finalizează testul"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:340
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:338
 msgid "Submit this part"
 msgstr "Trimite acest capitol"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:360
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:370
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:378
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:400
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:427
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:444
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:471
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:358
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:368
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:376
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:398
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:425
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:442
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:469
 msgid "The time limit for the test has been reached."
 msgstr "A fost atins termenul limită pentru test."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:373
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:384
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:371
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:382
 msgid "The time limit for this part has been reached."
 msgstr "S-a atins termenul limită pentru acest capitol."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:379
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:413
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:457
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:377
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:411
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:455
 msgid "You are at the end of the test. You can either finish the test or keep reviewing your answers."
 msgstr "Sunteți la sfârșitul testului. Puteți termina testul sau să continuați să vă revizuiți răspunsurile."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:385
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:418
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:462
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:383
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:416
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:460
 msgid "You are at the end of this part. You can either submit this part or keep reviewing your answers."
 msgstr "Sunteţi la sfârşitul acestui capitol. Puteţi trimite acest capitol sau continuaţi să vă revizuiţi răspunsurile."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:392
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:403
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:430
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:390
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:401
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:428
 msgid "The time limit for this section has been reached."
 msgstr "Termenul pentru această secțiune a fost atins."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:436
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:447
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:474
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:434
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:445
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:472
 msgid "The time limit for this item has been reached."
 msgstr "Limita de timp pentru acest articol a fost atinsă."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:498
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:496
 msgid "This test needs to be taken in full screen mode"
 msgstr "Acest test trebuie efectuat în modul ecran complet"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:499
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:497
 msgid "Leaving the test window is not allowed"
 msgstr "Părăsirea ferestrei de testare nu este permisă"
 
@@ -6841,51 +7112,56 @@ msgstr "Overlay"
 msgid "End of test"
 msgstr "Sfârșitul încercării"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:62
+#: ../../test-runner/src/runner/layout/toolbarItems.js:61
+#: ../../test-runner/src/runner/layout/toolbarItems.js:64
+msgid "Reload this page"
+msgstr "Reîncarcă această pagină"
+
+#: ../../test-runner/src/runner/layout/toolbarItems.js:73
 msgid "Attachments"
 msgstr "Atașamente"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:72
+#: ../../test-runner/src/runner/layout/toolbarItems.js:83
 msgid "Scratchpad"
 msgstr "Tapet"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:81
+#: ../../test-runner/src/runner/layout/toolbarItems.js:92
 msgid "Highlighter"
 msgstr "Evidențiere"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:90
+#: ../../test-runner/src/runner/layout/toolbarItems.js:111
 msgid "Calculator"
 msgstr "Calculator"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:99
+#: ../../test-runner/src/runner/layout/toolbarItems.js:120
 msgid "Read Aloud"
 msgstr "Citește tare"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:103
+#: ../../test-runner/src/runner/layout/toolbarItems.js:124
 msgid "Read aloud tool. To close, press enter or space"
 msgstr "Citește un instrument puternic. Pentru a închide, apasă enter sau spațiu"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:104
+#: ../../test-runner/src/runner/layout/toolbarItems.js:125
 msgid "Read aloud tool. To open, press enter or space"
 msgstr "Citește un instrument puternic. Pentru a deschide, apasă enter sau spațiu"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:113
+#: ../../test-runner/src/runner/layout/toolbarItems.js:134
 msgid "Line Reader"
 msgstr "Cititor de linii"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:124
+#: ../../test-runner/src/runner/layout/toolbarItems.js:145
 msgid "Exit full screen"
 msgstr "Ieșiți din ecran complet"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:124
+#: ../../test-runner/src/runner/layout/toolbarItems.js:145
 msgid "Full screen"
 msgstr "Ecran complet"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:142
+#: ../../test-runner/src/runner/layout/toolbarItems.js:163
 msgid "Open accessibility panel"
 msgstr "Deschide panoul de accesibilitate"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:152
+#: ../../test-runner/src/runner/layout/toolbarItems.js:173
 msgid "Print"
 msgstr "Tipărește"
 
@@ -6893,7 +7169,7 @@ msgstr "Tipărește"
 msgid "User: %s"
 msgstr ""
 
-#: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:117
+#: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:121
 msgid "Attachment: %s"
 msgstr "Atașament: %s"
 
@@ -6907,15 +7183,15 @@ msgstr "Mai multe atașamente"
 msgid "Close attachment"
 msgstr "Închide atașamentul"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:96
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:97
 msgid "Open attachment %s"
 msgstr "Deschide atașamentul %s"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:103
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:104
 msgid "Open attachment %s in a new tab"
 msgstr "Deschide atașamentul %s într-o filă nouă"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsOverlayBox.svelte:74
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsOverlayBox.svelte:75
 msgid "Attachments (%s)"
 msgstr "Atașamente (%s)"
 
@@ -6995,33 +7271,33 @@ msgstr "Meniu salt"
 msgid "Jump to"
 msgstr "Sari la"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:64
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:65
 msgid "Toolbox & Configuration"
 msgstr "Toolbox & Configurare"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:80
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:88
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:81
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:89
 msgid "Item attachment"
 msgstr "Articol atașat"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:119
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:120
 msgid "the overview of all %d questions"
 msgstr "prezentarea generală a tuturor întrebărilor %d"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:165
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:166
 msgid "Question %d"
 msgstr "Întrebarea %d"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:305
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:314
 msgid "Remove bookmark from this question"
 msgstr "Elimină marcajul de la această întrebare"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:306
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:315
 msgid "Bookmark this question"
 msgstr "Marchează această întrebare"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:345
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:346
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:354
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:355
 msgid "Submit test part"
 msgstr "Trimite partea de test"
 
@@ -7050,7 +7326,7 @@ msgstr "marcat (%d)"
 msgid "incomplete (%d)"
 msgstr "incomplet (%d)"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/plugin.js:86
+#: ../../test-runner/src/runner/plugins/navigation/navigator/plugin.js:139
 msgid "Overview"
 msgstr "Prezentare generală"
 
@@ -7141,15 +7417,15 @@ msgstr "Ieșire din test"
 msgid "Continue to next test"
 msgstr ""
 
-#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:254
+#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:262
 msgid "There are still questions waiting to be scored"
 msgstr "Încă mai există întrebări care așteaptă să fie marcate"
 
-#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:255
+#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:263
 msgid "Your total score cannot be calculated until all of the questions have been scored. Please come back later to see your total score."
 msgstr "Scorul total nu poate fi calculat până când toate întrebările nu au fost scoruri. Vă rugăm să reveniți mai târziu pentru a vedea scorul total."
 
-#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:263
+#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:271
 msgid "Total score"
 msgstr "Scor total"
 
@@ -7181,15 +7457,15 @@ msgstr "Instrumente de accesibilitate"
 msgid "Default font"
 msgstr "Default font"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:83
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:96
 msgid "Size"
 msgstr "Dimensiune"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:89
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:102
 msgid "decrease font size"
 msgstr "scade mărimea fontului"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:90
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:103
 msgid "increase font size"
 msgstr "măreşte dimensiunea fontului"
 
@@ -7325,10 +7601,6 @@ msgstr "restrânge setările textului"
 msgid "expand text settings"
 msgstr "extinde setările de text"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/groups/TextGroup.svelte:72
-msgid "Text"
-msgstr "Text"
-
 #: ../../test-runner/src/runner/plugins/panel/a11y/groups/ZoomGroup.svelte:41
 msgid "collapse zoom settings"
 msgstr "restrânge setările de zoom"
@@ -7341,19 +7613,19 @@ msgstr "extinde setările de zoom"
 msgid "Zoom"
 msgstr "Mareste"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:20
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:25
 msgid "Privacy Policy"
 msgstr "Politica de confidenţialitate"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:24
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:29
 msgid "About"
 msgstr "Despre"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:32
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:37
 msgid "TAO logo"
 msgstr "Sigla TAO"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:40
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:45
 msgid "All rights reserved"
 msgstr "Toate drepturile rezervate"
 
@@ -7373,17 +7645,29 @@ msgstr "Testul tău este întrerupt"
 msgid "Please wait for the proctor to resume your test."
 msgstr "Așteptați ca proctorul să reia testul."
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:419
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:430
 msgid "Extra time has been removed"
 msgstr "Timpul suplimentar a fost eliminat"
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:421
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:432
 msgid "Extra time limit adjusted to %s"
 msgstr "Termenul suplimentar ajustat la %s"
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:423
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:434
 msgid "%s of extra time granted"
 msgstr "%s de timp suplimentar acordat"
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:56
+msgid "You are about to leave the document and the test will be paused."
+msgstr "Sunteți pe cale să părăsiți documentul și testul va fi întrerupt."
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:58
+msgid "Press Tab to keep focus within the document and resume the test."
+msgstr "Apăsați Tab pentru a vă concentra în document și reluați testul."
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:60
+msgid "Press Shift+Tab to keep focus within the document and resume the test."
+msgstr "Apăsați Shift+Tab pentru a vă concentra în document și reluați testul."
 
 #: ../../test-runner/src/runner/plugins/settings/SettingsContent.svelte:119
 msgid "My settings"
@@ -7415,11 +7699,11 @@ msgstr "Raspunde la masca"
 msgid "Answer masking lets you hide answer options that you are sure are incorrect."
 msgstr "Masca raspunsul iti permite sa ascunzi optiunile raspunsurilor care sunt sigure sunt incorecte."
 
-#: ../../test-runner/src/runner/plugins/settings/plugin.js:264
+#: ../../test-runner/src/runner/plugins/settings/plugin.js:265
 msgid "Test Configuration"
 msgstr "Testare configurare"
 
-#: ../../test-runner/src/runner/plugins/tools/highlighter/HighlighterBar.svelte:283
+#: ../../test-runner/src/runner/plugins/tools/highlighter/HighlighterBar.svelte:286
 msgid "clear all"
 msgstr "curăță tot"
 
@@ -7443,11 +7727,11 @@ msgstr "Ștergeți feedback-ul"
 msgid "Grader's comment:"
 msgstr "Comentariul Graderului:"
 
-#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:298
+#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:300
 msgid "Saving failed"
 msgstr "Salvarea a eșuat"
 
-#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:342
+#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:345
 msgid "Deletion failed"
 msgstr "Ștergerea a eșuat"
 
@@ -7459,6 +7743,10 @@ msgstr "Pictogramă de redimensionare verticală"
 msgid "Draggable element handle icon"
 msgstr "Pictograma pentru manipularea elementului de draggable"
 
+#: ../../test-runner/src/runner/plugins/tools/markingSymbols/MarkingSymbolsBar.svelte:282
+msgid "Marking symbols"
+msgstr "Simboluri de marcare"
+
 #: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:103
 msgid "read aloud"
 msgstr "citește tare"
@@ -7467,31 +7755,31 @@ msgstr "citește tare"
 msgid "Continuous reading"
 msgstr "Lectură continuă"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:119
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:118
 msgid "Click to read"
 msgstr "Click pentru a citi"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:131
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:129
 msgid "Select and read"
 msgstr "Selectează și citește"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:143
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:140
 msgid "ReadAloud settings"
 msgstr "Setări ReadAloud"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:156
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:152
 msgid "Select text to read aloud"
 msgstr "Selectează textul pentru a citi tare"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:159
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:155
 msgid "Click on any text to read aloud"
 msgstr "Faceți clic pe orice text pentru a citi tare"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:168
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:164
 msgid "Press enter or space to activate select and read. To move the next available action, use the arrow keys. To close press escape."
 msgstr "Apăsaţi enter sau spaţiu pentru a activa selectarea şi citirea. Pentru a muta următoarea acţiune disponibilă, utilizaţi săgeţile. Pentru a închide apăsaţi pe evadare."
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:173
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:169
 msgid "Press enter or space to activate continuous reading. If activated press enter or space to stop the reading."
 msgstr "Apăsați enter sau spațiu pentru a activa citirea continuă. Dacă este activată, apăsați enter sau spațiu pentru a opri citirea."
 
@@ -7559,21 +7847,21 @@ msgstr "medie"
 msgid "high"
 msgstr "înalt"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:181
+#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:182
 msgid "Look at the formula."
 msgstr "Uitaţi-vă la formulă."
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:740
+#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:741
 msgid "Read aloud not available"
 msgstr "Citește tare indisponibil"
 
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:504
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:505
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:507
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:508
 msgid "undo"
 msgstr "anulare"
 
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:509
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:509
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:512
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:512
 msgid "redo"
 msgstr "recuperează"
 
@@ -7610,20 +7898,24 @@ msgstr "Linie"
 msgid "Eraser"
 msgstr "Eraser"
 
-#: ../../test-runner/src/runner/qti.js:540
+#: ../../test-runner/src/runner/qti.js:319
+msgid "Please wait while the answer is saved..."
+msgstr "Așteptați până când răspunsul este salvat..."
+
+#: ../../test-runner/src/runner/qti.js:594
 msgid "All attempts have been used for this question"
 msgstr "Toate încercările au fost folosite pentru această întrebare"
 
-#: ../../test-runner/src/runner/qti.js:542
-#: ../../test-runner/src/runner/qti.js:546
+#: ../../test-runner/src/runner/qti.js:596
+#: ../../test-runner/src/runner/qti.js:600
 msgid "You have %d attempts left for this question"
 msgstr "Mai ai %d încercări rămase pentru această întrebare"
 
-#: ../../test-runner/src/runner/qti.js:563
+#: ../../test-runner/src/runner/qti.js:617
 msgid "Time has run out for this question"
 msgstr "Timpul a expirat pentru această întrebare"
 
-#: ../../test-runner/src/runner/qti.js:565
+#: ../../test-runner/src/runner/qti.js:619
 msgid "Time has run out for this question's section"
 msgstr "Timpul a expirat pentru secțiunea acestei întrebări"
 
@@ -7631,11 +7923,44 @@ msgstr "Timpul a expirat pentru secțiunea acestei întrebări"
 msgid "%s, extra time %s"
 msgstr "%s, timp suplimentar %s"
 
-#: ../../test-runner/src/runner/util/testPart.js:187
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:65
 msgid "Part"
 msgstr "Capitol"
 
-#: ../src/config.js:136
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:68
+msgid "You have %s left to finish this part"
+msgstr "Mai ai %s pentru a termina acest capitol"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:72
+msgid "You have %s left to finish %s"
+msgstr "Ai încă %s pentru a termina %s"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:75
+msgid "You have %s left to finish %s part"
+msgstr "Mai ai %s pentru a termina partea %s"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:94
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:110
+msgid "You have %s left to finish the test"
+msgstr "Mai ai %s pentru a termina testul"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:101
+msgid "You have %s left to finish %s section"
+msgstr "Aveți %s rămase pentru a termina secțiunea %s"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:102
+msgid "You have %s left to finish this section"
+msgstr "Mai ai %s pentru a termina această secţiune"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:106
+msgid "You have %s left to finish %s item"
+msgstr "Aveți %s rămase pentru a termina articolul %s"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:107
+msgid "You have %s left to finish this item"
+msgstr "Mai ai %s pentru a termina acest obiect"
+
+#: ../src/config.js:142
 msgid "TAO: test session"
 msgstr "TAO: sesiune de test"
 

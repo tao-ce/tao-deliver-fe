@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2023 (original work) Open Assessment Technologies SA ;
+// Copyright (C) 2023-2026 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
@@ -131,7 +131,7 @@ describe('customUiStyles plugin', () => {
                 .init();
         }));
 
-    it('adds custom styles to head, and removes them on destroy', () =>
+    it('adds custom style tag to head, and removes it on destroy', () =>
         new Promise(done => {
             const runner = createTestRunner();
             const testConfig = runner.getConfig();
@@ -154,11 +154,52 @@ describe('customUiStyles plugin', () => {
                     runner.loadItem(itemIdentifier);
                 })
                 .after(`renderitem`, () => {
-                    expect(document.head.innerHTML).toContain(customCss);
+                    expect(document.head.querySelector('style[data-custom-ui-id="core1"]').textContent).toBe(customCss);
                     runner.destroy();
                 })
                 .on('destroy', () => {
-                    expect(document.head.innerHTML).not.toContain(customCss);
+                    expect(document.head.querySelector('style[data-custom-ui-id="core1"]')).toBeNull();
+                    done();
+                })
+                .init();
+        }));
+
+    it('adds multiple custom style tags to head, and removes them on destroy', () =>
+        new Promise(done => {
+            const runner = createTestRunner();
+            const testConfig = runner.getConfig();
+            testConfig.options = {
+                customUiId: ['core1', 'core2']
+            };
+            const customCss1 = '.core1 {background-color: silver}';
+            const customCss2 = 'body {outline: 1px solid gold}';
+            runner.getPluginConfig = () => ({
+                qtiItemContainerSelector: '.qti-item',
+                core1: customCss1,
+                core2: customCss2
+            });
+
+            const itemIdentifier = 'item1';
+
+            runner
+                .on('error', err => {
+                    throw err;
+                })
+                .on('ready', () => {
+                    runner.loadItem(itemIdentifier);
+                })
+                .after(`renderitem`, () => {
+                    expect(document.head.querySelector('style[data-custom-ui-id="core1"]').textContent).toBe(
+                        customCss1
+                    );
+                    expect(document.head.querySelector('style[data-custom-ui-id="core2"]').textContent).toBe(
+                        customCss2
+                    );
+                    runner.destroy();
+                })
+                .on('destroy', () => {
+                    expect(document.head.querySelector('style[data-custom-ui-id="core1"]')).toBeNull();
+                    expect(document.head.querySelector('style[data-custom-ui-id="core2"]')).toBeNull();
                     done();
                 })
                 .init();

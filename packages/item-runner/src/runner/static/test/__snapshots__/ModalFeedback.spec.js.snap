@@ -30,15 +30,21 @@ exports[`ModalFeedback > renders negative style; no title and text content 1`] =
               fill="currentColor"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
            
           <span
             class="visually-hidden"
           >
             Response feedback
           </span>
+          
         </h2>
          
+        
+        
+        
         <div
           class="x-tao-wrapper x-tao-modalFeedback-positive x-tao-relatedOutcome-RESPONSE_1"
         >
@@ -47,8 +53,11 @@ exports[`ModalFeedback > renders negative style; no title and text content 1`] =
         
         
         
+        
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -66,25 +75,39 @@ exports[`ModalFeedback > renders neutral style; title and complex content 1`] = 
           class="ui-heading-l"
           tabindex="-1"
         >
+          
            
           <span>
             Neutral title
           </span>
+          
         </h2>
          
+        
+        
+        
         <div
           class="x-tao-wrapper x-tao-relatedOutcome-RESPONSE"
         >
+          
+          
+          
+          
           Neutral content
           
           
-           
+          
+          
+          
         </div>
+        
         
         
         
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -113,21 +136,30 @@ exports[`ModalFeedback > renders positive style; title and no content 1`] = `
             <path
               d="M5.57 8.79 10.71 13.93 18.43 4.93 21 7.5 10.71 19.07 3 11.36 5.57 8.79z"
             />
+            
           </svg>
+          
            
           <span>
             Good title
           </span>
+          
         </h2>
          
+        
+        
+        
         <div
           class="x-tao-wrapper x-tao-relatedOutcome-RESPONSE_1"
         />
         
         
         
+        
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;

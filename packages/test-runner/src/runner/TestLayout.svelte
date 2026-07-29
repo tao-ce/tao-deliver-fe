@@ -68,7 +68,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     const showUserMenu = theme && theme.showUserMenu;
     const showMenuButton = theme && !theme.hideMenuButton;
     // startActions configures the buttons at the start of the HeaderBar
-    /* eslint-disable indent */
     $: startActions = showMenuButton
         ? [
               {
@@ -83,7 +82,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
               }
           ]
         : [];
-    /* eslint-enable indent */
 
     // plugins toolbar init + store reactivity
     const toolbarItemsApi = createToolbarItemsApi(plugins, toolsStore);
@@ -136,6 +134,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     $: isItemModalFeedback = $testStateStore && isItemModalFeedbackState(testStateStore.getTestContext());
 
+    $: isMainAreaMain = [testSessionStatus.initial, testSessionStatus.loading, testSessionStatus.interacting].includes(
+        $status
+    );
+
     onMount(() => {
         /**
          * @event mount
@@ -153,8 +155,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 <style>
     /* local vars */
     :root {
-        --testrunner-header-height: 8rem;
-        --testrunner-footer-height: 10rem;
+        --testrunner-header-height: 7rem;
+        --testrunner-footer-height: 9rem;
         --testrunner-item-top-padding: 0rem;
         --testrunner-item-bottom-padding: 0rem;
         --testrunner-item-max-width: 170.75rem;
@@ -213,9 +215,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         position: relative;
     }
     .bottom-bar {
-        z-index: var(--layer-4);
-    }
-    .test-runner :global(.overlay) {
         z-index: var(--layer-4);
     }
     .top-bar.overlay {
@@ -358,25 +357,28 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         }
     }
 
-    /* reduce space taken by LiveSaveIndicator */
-    @define-mixin hide-live-save-indicator {
-        & :global(h1 ~ .livesave) {
-            min-width: 4rem;
-            & :global(.status) {
-                display: none;
-            }
-        }
-    }
     @media screen and (--mq-maxwidth-medium) {
+        /* reduce space taken by LiveSaveIndicator */
         .header-bar-content {
-            @add-mixin hide-live-save-indicator;
+            & :global(h1 ~ .livesave) {
+                min-width: 4rem;
+                & :global(.status) {
+                    display: none;
+                }
+            }
         }
     }
     :global(body[data-zoom-level='150']),
     :global(body[data-zoom-level='175']),
     :global(body[data-zoom-level='200']) {
+        /* reduce space taken by LiveSaveIndicator */
         & .header-bar-content {
-            @add-mixin hide-live-save-indicator;
+            & :global(h1 ~ .livesave) {
+                min-width: 4rem;
+                & :global(.status) {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -448,12 +450,14 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         .test-runner,
         .test-content,
         main,
+        .test-content-columns,
         .qti-item-container {
-            height: auto;
-            overflow: visible;
+            height: auto !important;
+            overflow: visible !important;
         }
-        .test-runner {
-            display: block; /* seems better for Firefox in some cases */
+        .test-runner,
+        .test-content-columns {
+            display: block !important; /* seems better for Firefox in some cases */
         }
         .feedback-dialogs-wrapper, /* Safari, x-tao-printable, Ctrl+P, pauseOnBlur+forceFullscreen: security modal will cut item content in the middle */
         .test-runner :global(.draggable-modal),
@@ -478,7 +482,7 @@ Other instances of bind:inner* could be replaced by the screenSizeStore, if it i
     aria-hidden={modalFeedbackIsShown ? true : void 0}
     bind:this={areas.testRunner}
     class:not-displayed={isHiddenArea('testRunner')}>
-    <div bind:this={areas.jumpMenu} class:not-displayed={isHiddenArea('jumpMenu')} />
+    <div bind:this={areas.jumpMenu} class:not-displayed={isHiddenArea('jumpMenu')}></div>
     <div
         id="test-top-bar"
         class="top-bar not-printable"
@@ -495,7 +499,7 @@ Other instances of bind:inner* could be replaced by the screenSizeStore, if it i
                 maxEndActions={$screenSize.mobile ? 4 : 9}
                 logoSrc={logo.src}
                 logoAltText={logo.alt}>
-                <div class="header-bar-content" bind:this={areas.header} class:not-displayed={isHiddenArea('header')} />
+                <div class="header-bar-content" bind:this={areas.header} class:not-displayed={isHiddenArea('header')}></div>
                 <div slot="aside-after">
                     {#if showUserMenu}
                         <UserMenu {testTaker} />
@@ -523,9 +527,9 @@ Other instances of bind:inner* could be replaced by the screenSizeStore, if it i
     <main
         id="test-main"
         aria-labelledby="a11y-main"
-        role={$status === testSessionStatus.overlay ? 'none' : 'main'}
-        tabindex={$status === testSessionStatus.overlay ? '-1' : '0'}
-        aria-hidden={$status === testSessionStatus.overlay ? 'true' : void 0}
+        role={isMainAreaMain ? 'main' : 'none'}
+        tabindex={isMainAreaMain ? '0' : '-1'}
+        aria-hidden={isMainAreaMain ? void 0 : 'true'}
         bind:this={areas.main}
         class:with-aside-start={$testLayoutStore.asideStart}
         class:with-aside-end={$testLayoutStore.asideEnd}
@@ -534,19 +538,20 @@ Other instances of bind:inner* could be replaced by the screenSizeStore, if it i
         <div
             class="scroll-first-child"
             use:visibilityObserver={areas.main || void 0}
-            on:isVisible={e => (fullyScrolledUp = e.detail)} />
+            on:isVisible={e => (fullyScrolledUp = e.detail)}></div>
 
         <!-- svelte-ignore a11y-missing-content -->
-        <h2 id="a11y-main" class="visually-hidden" tabindex="-1" />
+        <h2 id="a11y-main" class="visually-hidden" tabindex="-1"></h2>
         <!-- tabindex because it should be programmatically focusable -->
 
         <div class="test-content-columns">
             <aside
                 id="test-content-aside-start"
+                class="not-printable"
                 class:not-displayed={!$testLayoutStore.asideStart || $status !== testSessionStatus.interacting}
                 role={$status === testSessionStatus.overlay ? 'none' : 'aside'}
                 aria-hidden={$status === testSessionStatus.overlay ? 'true' : void 0}
-                bind:this={areas.asideStart} />
+                bind:this={areas.asideStart}></aside>
 
             <div
                 class="qti-item-container"
@@ -554,20 +559,21 @@ Other instances of bind:inner* could be replaced by the screenSizeStore, if it i
                     $status === testSessionStatus.proctorwait}
                 bind:this={areas.content}
                 class:not-displayed={isHiddenArea('content')}
-                aria-hidden={$status === testSessionStatus.loading ? 'true' : void 0} />
+                aria-hidden={$status === testSessionStatus.loading ? 'true' : void 0}></div>
 
             <aside
                 id="test-content-aside-end"
+                class="not-printable"
                 class:not-displayed={!$testLayoutStore.asideEnd || $status !== testSessionStatus.interacting}
                 role={$status === testSessionStatus.overlay ? 'none' : 'aside'}
                 aria-hidden={$status === testSessionStatus.overlay ? 'true' : void 0}
-                bind:this={areas.asideEnd} />
+                bind:this={areas.asideEnd}></aside>
         </div>
 
         <div
             class="scroll-last-child"
             use:visibilityObserver={areas.main || void 0}
-            on:isVisible={e => (fullyScrolledDown = e.detail)} />
+            on:isVisible={e => (fullyScrolledDown = e.detail)}></div>
         <!-- div.proctorwait and some floating tools also get injected here -->
     </main>
 
@@ -595,7 +601,7 @@ Other instances of bind:inner* could be replaced by the screenSizeStore, if it i
             $status === testSessionStatus.overlay}
         class:shadow-top={!fullyScrolledDown}
         style="--nav-height: var(--testrunner-footer-height)"
-        bind:this={areas.itemModalFeedbackNavigator} />
+        bind:this={areas.itemModalFeedbackNavigator}></nav>
 
     <div class="item-hanger-wrapper not-printable">
         {#if itemHangerMessages && itemHangerMessages.length}
@@ -604,9 +610,9 @@ Other instances of bind:inner* could be replaced by the screenSizeStore, if it i
     </div>
 
     <Overlay open={$status === testSessionStatus.overlay}>
-        <div slot="header" bind:this={areas.overlayHeader} class:not-displayed={isHiddenArea('overlayHeader')} />
-        <div slot="content" bind:this={areas.overlayContent} class:not-displayed={isHiddenArea('overlayContent')} />
-        <div slot="footer" bind:this={areas.overlayFooter} class:not-displayed={isHiddenArea('overlayFooter')} />
+        <div slot="header" bind:this={areas.overlayHeader} class:not-displayed={isHiddenArea('overlayHeader')}></div>
+        <div slot="content" bind:this={areas.overlayContent} class:not-displayed={isHiddenArea('overlayContent')}></div>
+        <div slot="footer" bind:this={areas.overlayFooter} class:not-displayed={isHiddenArea('overlayFooter')}></div>
     </Overlay>
 </div>
 
@@ -616,10 +622,10 @@ Other instances of bind:inner* could be replaced by the screenSizeStore, if it i
     <div
         class="panel-content use-a11y-text-styles"
         bind:this={areas.panel}
-        class:not-displayed={isHiddenArea('panel')} />
+        class:not-displayed={isHiddenArea('panel')}></div>
 </Panel>
 
-<div class="panel-wrapper use-a11y-text-styles" bind:this={areas.a11yMenuPanel} id={a11yPanelId} />
+<div class="panel-wrapper use-a11y-text-styles" bind:this={areas.a11yMenuPanel} id={a11yPanelId}></div>
 
 <div class="feedback-dialogs-wrapper use-a11y-text-styles" bind:this={areas.feedbackDialogs}>
     <FeedbackDialogsContainer {serviceCallId} />

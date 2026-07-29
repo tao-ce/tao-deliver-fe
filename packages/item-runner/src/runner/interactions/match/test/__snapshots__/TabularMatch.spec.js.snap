@@ -3,11 +3,14 @@
 exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component correctly in checkbox mode 1`] = `
 <body>
   <div>
+    
     <div
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-matchInteraction qti-match-tabular"
       data-first-column-header="first column header"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
@@ -19,12 +22,15 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You must make a maximum of 1 association - Currently 1
           </p>
         </div>
+        
       </div>
+      
        
       <div
         class="match-tabular"
@@ -33,6 +39,8 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
           <legend
             class="visually-hidden"
           >
+            
+            
             
           </legend>
            
@@ -45,39 +53,44 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
                 >
                   first column header
                 </th>
-                 
                 <th
                   class="match-tabular-header-cell font-weight-normal"
                   scope="col"
                 >
+                  
+                  
                   A
                   
                   
-                   
+                  
                 </th>
                 <th
                   class="match-tabular-header-cell font-weight-normal"
                   scope="col"
                 >
+                  
+                  
                   B
                   
                   
-                   
+                  
                 </th>
+                
               </tr>
             </thead>
-             
             <tbody>
               <tr>
                 <th
                   class="header-y match-tabular-header-cell font-weight-normal"
                   scope="row"
                 >
+                  
+                  
                   C
                   
                   
+                  
                 </th>
-                 
                 <td>
                   <input
                     aria-labelledby="tao-tabularMatch-123_0_0_label"
@@ -85,6 +98,7 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
                     id="tao-tabularMatch-123_0_0"
                     type="checkbox"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_0_0"
@@ -103,7 +117,9 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
                         <path
                           d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                         />
+                        
                       </svg>
+                      
                     </div>
                   </label>
                    
@@ -111,18 +127,30 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
                     class="hidden"
                     id="tao-tabularMatch-123_0_0_label"
                   >
+                    
+                    
+                    
+                    
                     A
+                    
+                    
                     
                     
                     <span
                       lang="nb-NO"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
                     
+                    
+                    
+                    
                     C
+                    
+                    
                     
                     
                     
@@ -135,6 +163,7 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
                     id="tao-tabularMatch-123_1_0"
                     type="checkbox"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_1_0"
@@ -153,7 +182,9 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
                         <path
                           d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                         />
+                        
                       </svg>
+                      
                     </div>
                   </label>
                    
@@ -161,35 +192,49 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
                     class="hidden"
                     id="tao-tabularMatch-123_1_0_label"
                   >
+                    
+                    
+                    
+                    
                     B
+                    
+                    
                     
                     
                     <span
                       lang="nb-NO"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
+                    
+                    
+                    
                     
                     C
                     
                     
                     
+                    
+                    
                   </span>
                 </td>
-                 
+                
               </tr>
               <tr>
                 <th
                   class="header-y match-tabular-header-cell font-weight-normal"
                   scope="row"
                 >
+                  
+                  
                   D
                   
                   
+                  
                 </th>
-                 
                 <td>
                   <input
                     aria-labelledby="tao-tabularMatch-123_0_1_label"
@@ -197,6 +242,7 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
                     id="tao-tabularMatch-123_0_1"
                     type="checkbox"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_0_1"
@@ -215,7 +261,9 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
                         <path
                           d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                         />
+                        
                       </svg>
+                      
                     </div>
                   </label>
                    
@@ -223,18 +271,30 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
                     class="hidden"
                     id="tao-tabularMatch-123_0_1_label"
                   >
+                    
+                    
+                    
+                    
                     A
+                    
+                    
                     
                     
                     <span
                       lang="nb-NO"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
                     
+                    
+                    
+                    
                     D
+                    
+                    
                     
                     
                     
@@ -247,6 +307,7 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
                     id="tao-tabularMatch-123_1_1"
                     type="checkbox"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_1_1"
@@ -265,7 +326,9 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
                         <path
                           d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                         />
+                        
                       </svg>
+                      
                     </div>
                   </label>
                    
@@ -273,30 +336,46 @@ exports[`MatchInteraction Tabular > Checkbox mode > renders tabular component co
                     class="hidden"
                     id="tao-tabularMatch-123_1_1_label"
                   >
+                    
+                    
+                    
+                    
                     B
+                    
+                    
                     
                     
                     <span
                       lang="nb-NO"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
+                    
+                    
+                    
                     
                     D
                     
                     
                     
+                    
+                    
                   </span>
                 </td>
-                 
+                
               </tr>
+              
             </tbody>
           </table>
         </fieldset>
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -308,22 +387,28 @@ exports[`MatchInteraction Tabular > Complex content > renders tabular component 
     <div
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-matchInteraction qti-match-tabular"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
+        dir=""
       >
         <div
           aria-atomic="true"
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You must make a maximum of 1 association
           </p>
         </div>
+        
       </div>
+      
        
       <div
         class="match-tabular"
@@ -332,6 +417,8 @@ exports[`MatchInteraction Tabular > Complex content > renders tabular component 
           <legend
             class="visually-hidden"
           >
+            
+            
             
           </legend>
            
@@ -344,11 +431,14 @@ exports[`MatchInteraction Tabular > Complex content > renders tabular component 
                 >
                   
                 </th>
-                 
                 <th
                   class="match-tabular-header-cell font-weight-normal"
                   scope="col"
                 >
+                  
+                  
+                  
+                  
                   <span
                     tabindex="0"
                   >
@@ -432,7 +522,10 @@ exports[`MatchInteraction Tabular > Complex content > renders tabular component 
                         </math>
                       </mjx-assistive-mml>
                     </mjx-container>
+                    
                   </span>
+                  
+                  
                   
                   
                   
@@ -441,9 +534,13 @@ exports[`MatchInteraction Tabular > Complex content > renders tabular component 
                   </i>
                   
                   
+                  
+                  
                   <sup>
                     2
                   </sup>
+                  
+                  
                   
                   
                   <i>
@@ -452,17 +549,21 @@ exports[`MatchInteraction Tabular > Complex content > renders tabular component 
                   
                   
                   
-                   
+                  
                 </th>
+                
               </tr>
             </thead>
-             
             <tbody>
               <tr>
                 <th
                   class="header-y match-tabular-header-cell font-weight-normal"
                   scope="row"
                 >
+                  
+                  
+                  
+                  
                   <span
                     tabindex="0"
                   >
@@ -546,7 +647,10 @@ exports[`MatchInteraction Tabular > Complex content > renders tabular component 
                         </math>
                       </mjx-assistive-mml>
                     </mjx-container>
+                    
                   </span>
+                  
+                  
                   
                   
                   
@@ -556,8 +660,8 @@ exports[`MatchInteraction Tabular > Complex content > renders tabular component 
                   
                   
                   
+                  
                 </th>
-                 
                 <td>
                   <input
                     aria-labelledby="tao-tabularMatch-123_0_0_label"
@@ -565,6 +669,7 @@ exports[`MatchInteraction Tabular > Complex content > renders tabular component 
                     id="tao-tabularMatch-123_0_0"
                     type="checkbox"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_0_0"
@@ -583,7 +688,9 @@ exports[`MatchInteraction Tabular > Complex content > renders tabular component 
                         <path
                           d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                         />
+                        
                       </svg>
+                      
                     </div>
                   </label>
                    
@@ -591,19 +698,29 @@ exports[`MatchInteraction Tabular > Complex content > renders tabular component 
                     class="hidden"
                     id="tao-tabularMatch-123_0_0_label"
                   >
+                    
+                    
+                    
+                    
                     {{i5f50a5ada92e3}} 
                     <em>
                       d
                     </em>
                     
                     
+                    
+                    
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
+                    
+                    
+                    
                     
                     {{i5f50a5ada918c}} 
                     <em>
@@ -612,15 +729,21 @@ exports[`MatchInteraction Tabular > Complex content > renders tabular component 
                     
                     
                     
+                    
+                    
                   </span>
                 </td>
-                 
+                
               </tr>
+              
             </tbody>
           </table>
         </fieldset>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -632,11 +755,17 @@ exports[`MatchInteraction Tabular > Radio X & Y mode > renders tabular component
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-matchInteraction qti-match-tabular"
       data-first-column-header="first column header"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
-      />
+        dir=""
+      >
+        
+      </div>
+      
        
       <div
         class="match-tabular radio radio-x radio-y"
@@ -645,6 +774,8 @@ exports[`MatchInteraction Tabular > Radio X & Y mode > renders tabular component
           <legend
             class="visually-hidden"
           >
+            
+            
             
           </legend>
            
@@ -657,48 +788,55 @@ exports[`MatchInteraction Tabular > Radio X & Y mode > renders tabular component
                 >
                   first column header
                 </th>
-                 
                 <th
                   class="match-tabular-header-cell font-weight-normal"
                   scope="col"
                 >
+                  
+                  
                   A
                   
                   
-                   
+                  
                 </th>
                 <th
                   class="match-tabular-header-cell font-weight-normal"
                   scope="col"
                 >
+                  
+                  
                   B
                   
                   
-                   
+                  
                 </th>
                 <th
                   class="match-tabular-header-cell font-weight-normal"
                   scope="col"
                 >
+                  
+                  
                   M
                   
                   
-                   
+                  
                 </th>
+                
               </tr>
             </thead>
-             
             <tbody>
               <tr>
                 <th
                   class="header-y match-tabular-header-cell font-weight-normal"
                   scope="row"
                 >
+                  
+                  
                   C
                   
                   
+                  
                 </th>
-                 
                 <td>
                   <input
                     aria-labelledby="tao-tabularMatch-123_0_0_label"
@@ -708,31 +846,46 @@ exports[`MatchInteraction Tabular > Radio X & Y mode > renders tabular component
                     type="radio"
                     value="0"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_0_0"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_0_0_label"
                   >
+                    
+                    
+                    
+                    
                     A
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
                     
+                    
+                    
+                    
                     C
+                    
+                    
                     
                     
                     
@@ -747,31 +900,46 @@ exports[`MatchInteraction Tabular > Radio X & Y mode > renders tabular component
                     type="radio"
                     value="0"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_1_0"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_1_0_label"
                   >
+                    
+                    
+                    
+                    
                     B
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
                     
+                    
+                    
+                    
                     C
+                    
+                    
                     
                     
                     
@@ -786,48 +954,65 @@ exports[`MatchInteraction Tabular > Radio X & Y mode > renders tabular component
                     type="radio"
                     value="0"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_2_0"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_2_0_label"
                   >
+                    
+                    
+                    
+                    
                     M
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
+                    
+                    
+                    
                     
                     C
                     
                     
                     
+                    
+                    
                   </span>
                 </td>
-                 
+                
               </tr>
               <tr>
                 <th
                   class="header-y match-tabular-header-cell font-weight-normal"
                   scope="row"
                 >
+                  
+                  
                   D
                   
                   
+                  
                 </th>
-                 
                 <td>
                   <input
                     aria-labelledby="tao-tabularMatch-123_0_1_label"
@@ -837,31 +1022,46 @@ exports[`MatchInteraction Tabular > Radio X & Y mode > renders tabular component
                     type="radio"
                     value="1"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_0_1"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_0_1_label"
                   >
+                    
+                    
+                    
+                    
                     A
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
                     
+                    
+                    
+                    
                     D
+                    
+                    
                     
                     
                     
@@ -876,31 +1076,46 @@ exports[`MatchInteraction Tabular > Radio X & Y mode > renders tabular component
                     type="radio"
                     value="1"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_1_1"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_1_1_label"
                   >
+                    
+                    
+                    
+                    
                     B
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
                     
+                    
+                    
+                    
                     D
+                    
+                    
                     
                     
                     
@@ -915,48 +1130,65 @@ exports[`MatchInteraction Tabular > Radio X & Y mode > renders tabular component
                     type="radio"
                     value="1"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_2_1"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_2_1_label"
                   >
+                    
+                    
+                    
+                    
                     M
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
+                    
+                    
+                    
                     
                     D
                     
                     
                     
+                    
+                    
                   </span>
                 </td>
-                 
+                
               </tr>
               <tr>
                 <th
                   class="header-y match-tabular-header-cell font-weight-normal"
                   scope="row"
                 >
+                  
+                  
                   N
                   
                   
+                  
                 </th>
-                 
                 <td>
                   <input
                     aria-labelledby="tao-tabularMatch-123_0_2_label"
@@ -966,31 +1198,46 @@ exports[`MatchInteraction Tabular > Radio X & Y mode > renders tabular component
                     type="radio"
                     value="2"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_0_2"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_0_2_label"
                   >
+                    
+                    
+                    
+                    
                     A
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
                     
+                    
+                    
+                    
                     N
+                    
+                    
                     
                     
                     
@@ -1005,31 +1252,46 @@ exports[`MatchInteraction Tabular > Radio X & Y mode > renders tabular component
                     type="radio"
                     value="2"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_1_2"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_1_2_label"
                   >
+                    
+                    
+                    
+                    
                     B
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
                     
+                    
+                    
+                    
                     N
+                    
+                    
                     
                     
                     
@@ -1044,43 +1306,62 @@ exports[`MatchInteraction Tabular > Radio X & Y mode > renders tabular component
                     type="radio"
                     value="2"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_2_2"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_2_2_label"
                   >
+                    
+                    
+                    
+                    
                     M
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
+                    
+                    
+                    
                     
                     N
                     
                     
                     
+                    
+                    
                   </span>
                 </td>
-                 
+                
               </tr>
+              
             </tbody>
           </table>
         </fieldset>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -1092,22 +1373,28 @@ exports[`MatchInteraction Tabular > Radio X mode > renders tabular component cor
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-matchInteraction qti-match-tabular"
       data-first-column-header="first column header"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
+        dir=""
       >
         <div
           aria-atomic="true"
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You must make a maximum of 1 association - Currently 1
           </p>
         </div>
+        
       </div>
+      
        
       <div
         class="match-tabular radio radio-x"
@@ -1116,6 +1403,8 @@ exports[`MatchInteraction Tabular > Radio X mode > renders tabular component cor
           <legend
             class="visually-hidden"
           >
+            
+            
             
           </legend>
            
@@ -1128,39 +1417,44 @@ exports[`MatchInteraction Tabular > Radio X mode > renders tabular component cor
                 >
                   first column header
                 </th>
-                 
                 <th
                   class="match-tabular-header-cell font-weight-normal"
                   scope="col"
                 >
+                  
+                  
                   A
                   
                   
-                   
+                  
                 </th>
                 <th
                   class="match-tabular-header-cell font-weight-normal"
                   scope="col"
                 >
+                  
+                  
                   B
                   
                   
-                   
+                  
                 </th>
+                
               </tr>
             </thead>
-             
             <tbody>
               <tr>
                 <th
                   class="header-y match-tabular-header-cell font-weight-normal"
                   scope="row"
                 >
+                  
+                  
                   C
                   
                   
+                  
                 </th>
-                 
                 <td>
                   <input
                     aria-labelledby="tao-tabularMatch-123_0_0_label"
@@ -1170,31 +1464,46 @@ exports[`MatchInteraction Tabular > Radio X mode > renders tabular component cor
                     type="radio"
                     value="0"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_0_0"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_0_0_label"
                   >
+                    
+                    
+                    
+                    
                     A
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
                     
+                    
+                    
+                    
                     C
+                    
+                    
                     
                     
                     
@@ -1209,48 +1518,65 @@ exports[`MatchInteraction Tabular > Radio X mode > renders tabular component cor
                     type="radio"
                     value="0"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_1_0"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_1_0_label"
                   >
+                    
+                    
+                    
+                    
                     B
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
+                    
+                    
+                    
                     
                     C
                     
                     
                     
+                    
+                    
                   </span>
                 </td>
-                 
+                
               </tr>
               <tr>
                 <th
                   class="header-y match-tabular-header-cell font-weight-normal"
                   scope="row"
                 >
+                  
+                  
                   D
                   
                   
+                  
                 </th>
-                 
                 <td>
                   <input
                     aria-labelledby="tao-tabularMatch-123_0_1_label"
@@ -1260,31 +1586,46 @@ exports[`MatchInteraction Tabular > Radio X mode > renders tabular component cor
                     type="radio"
                     value="1"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_0_1"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_0_1_label"
                   >
+                    
+                    
+                    
+                    
                     A
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
                     
+                    
+                    
+                    
                     D
+                    
+                    
                     
                     
                     
@@ -1299,43 +1640,62 @@ exports[`MatchInteraction Tabular > Radio X mode > renders tabular component cor
                     type="radio"
                     value="1"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_1_1"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_1_1_label"
                   >
+                    
+                    
+                    
+                    
                     B
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
+                    
+                    
+                    
                     
                     D
                     
                     
                     
+                    
+                    
                   </span>
                 </td>
-                 
+                
               </tr>
+              
             </tbody>
           </table>
         </fieldset>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -1347,22 +1707,28 @@ exports[`MatchInteraction Tabular > Radio Y mode > renders tabular component cor
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-matchInteraction qti-match-tabular"
       data-first-column-header="first column header"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
+        dir=""
       >
         <div
           aria-atomic="true"
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You must make a maximum of 1 association - Currently 1
           </p>
         </div>
+        
       </div>
+      
        
       <div
         class="match-tabular radio radio-y"
@@ -1371,6 +1737,8 @@ exports[`MatchInteraction Tabular > Radio Y mode > renders tabular component cor
           <legend
             class="visually-hidden"
           >
+            
+            
             
           </legend>
            
@@ -1383,39 +1751,44 @@ exports[`MatchInteraction Tabular > Radio Y mode > renders tabular component cor
                 >
                   first column header
                 </th>
-                 
                 <th
                   class="match-tabular-header-cell font-weight-normal"
                   scope="col"
                 >
+                  
+                  
                   A
                   
                   
-                   
+                  
                 </th>
                 <th
                   class="match-tabular-header-cell font-weight-normal"
                   scope="col"
                 >
+                  
+                  
                   B
                   
                   
-                   
+                  
                 </th>
+                
               </tr>
             </thead>
-             
             <tbody>
               <tr>
                 <th
                   class="header-y match-tabular-header-cell font-weight-normal"
                   scope="row"
                 >
+                  
+                  
                   C
                   
                   
+                  
                 </th>
-                 
                 <td>
                   <input
                     aria-labelledby="tao-tabularMatch-123_0_0_label"
@@ -1425,31 +1798,46 @@ exports[`MatchInteraction Tabular > Radio Y mode > renders tabular component cor
                     type="radio"
                     value="0"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_0_0"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_0_0_label"
                   >
+                    
+                    
+                    
+                    
                     A
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
                     
+                    
+                    
+                    
                     C
+                    
+                    
                     
                     
                     
@@ -1464,48 +1852,65 @@ exports[`MatchInteraction Tabular > Radio Y mode > renders tabular component cor
                     type="radio"
                     value="1"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_1_0"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_1_0_label"
                   >
+                    
+                    
+                    
+                    
                     B
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
+                    
+                    
+                    
                     
                     C
                     
                     
                     
+                    
+                    
                   </span>
                 </td>
-                 
+                
               </tr>
               <tr>
                 <th
                   class="header-y match-tabular-header-cell font-weight-normal"
                   scope="row"
                 >
+                  
+                  
                   D
                   
                   
+                  
                 </th>
-                 
                 <td>
                   <input
                     aria-labelledby="tao-tabularMatch-123_0_1_label"
@@ -1515,31 +1920,46 @@ exports[`MatchInteraction Tabular > Radio Y mode > renders tabular component cor
                     type="radio"
                     value="0"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_0_1"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_0_1_label"
                   >
+                    
+                    
+                    
+                    
                     A
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
                     
+                    
+                    
+                    
                     D
+                    
+                    
                     
                     
                     
@@ -1554,43 +1974,62 @@ exports[`MatchInteraction Tabular > Radio Y mode > renders tabular component cor
                     type="radio"
                     value="1"
                   />
+                  
                    
                   <label
                     for="tao-tabularMatch-123_1_1"
                   >
                     <div
                       class="control"
-                    />
+                    >
+                      
+                    </div>
                   </label>
                    
                   <span
                     class="hidden"
                     id="tao-tabularMatch-123_1_1_label"
                   >
+                    
+                    
+                    
+                    
                     B
+                    
+                    
                     
                     
                     <span
                       lang="en"
                     >
+                      
                        matches 
                       
-                       
+                      
                     </span>
+                    
+                    
+                    
                     
                     D
                     
                     
                     
+                    
+                    
                   </span>
                 </td>
-                 
+                
               </tr>
+              
             </tbody>
           </table>
         </fieldset>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;

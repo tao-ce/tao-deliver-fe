@@ -3,9 +3,9 @@
 exports[`UploadProgress component > renders in full after enough progress events to estimate duration 1`] = `
 <body>
   <div>
+    
     <div
       class="upload-progress"
-      style="animation: __svelte_907596006_0 150ms linear 0ms 1 both;"
     >
       <div
         aria-valuemax="100"
@@ -23,6 +23,7 @@ exports[`UploadProgress component > renders in full after enough progress events
             style="--progress-value-width: 50%;"
           />
            
+          
         </div>
          
         <span
@@ -30,12 +31,17 @@ exports[`UploadProgress component > renders in full after enough progress events
         >
           50%
         </span>
+        
       </div>
+      
        
       <button>
         Cancel
       </button>
+      
     </div>
+    
+    
     
   </div>
 </body>

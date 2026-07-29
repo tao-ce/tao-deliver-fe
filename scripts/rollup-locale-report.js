@@ -1,5 +1,3 @@
-/* eslint-disable no-console */
-
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
 // Copyright (C) 2024 (original work) Open Assessment Technologies SA ;
 //
@@ -58,10 +56,14 @@ glob(input, (globError, files) => {
             }
         });
         const missing = defaultMessagesCount - translated - untranslated;
-        const percentTranslated = Math.round(100 * translated / defaultMessagesCount);
+        const percentTranslated = Math.round((100 * translated) / defaultMessagesCount);
 
         const color = isStatsExcluded || percentTranslated > 90 ? 'green' : percentTranslated > 70 ? 'yellow' : 'red';
-        console.log(chalk[color](`* ${locale}/messages.po: ${translated} translated, ${untranslated} untranslated, ${missing} missing. Completion: ${percentTranslated}%`));
+        console.log(
+            chalk[color](
+                `* ${locale}/messages.po: ${translated} translated, ${untranslated} untranslated, ${missing} missing. Completion: ${percentTranslated}%`
+            )
+        );
     });
 
     console.log('Untranslated messages? PO files should be merged from CrowdIn or other translators.');

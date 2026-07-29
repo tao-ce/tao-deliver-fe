@@ -3,6 +3,7 @@
 exports[`Dots component > Has to render correct message for screen reader 1`] = `
 <body>
   <div>
+    
     <div>
       <span
         class="visually-hidden"
@@ -18,8 +19,11 @@ exports[`Dots component > Has to render correct message for screen reader 1`] = 
         />
         <li />
         <li />
+        
       </ol>
     </div>
+    
+    
     
   </div>
 </body>
@@ -28,6 +32,7 @@ exports[`Dots component > Has to render correct message for screen reader 1`] = 
 exports[`Dots component > Has to render correct quantity of viewed and unseen dots 1`] = `
 <body>
   <div>
+    
     <div>
       <span
         class="visually-hidden"
@@ -43,8 +48,11 @@ exports[`Dots component > Has to render correct quantity of viewed and unseen do
         />
         <li />
         <li />
+        
       </ol>
     </div>
+    
+    
     
   </div>
 </body>

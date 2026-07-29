@@ -181,7 +181,6 @@ export function alertInvalidConfig() {
     const heading =
         countOfInteractions > 1 ? __('Your answer or parts of it are not valid.') : __('Your answer is not valid.');
 
-    /* eslint-disable indent */
     const message =
         countOfInteractions > 1
             ? __(
@@ -190,7 +189,6 @@ export function alertInvalidConfig() {
                   countOfInteractions
               )
             : __('Please provide a valid answer.');
-    /* eslint-enable indent */
 
     const buttons = [
         {

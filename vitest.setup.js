@@ -2,6 +2,7 @@
 // Copyright (C) 2025 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+/* global vi */
 
 import 'core-js/stable/structured-clone';
 import '@testing-library/jest-dom/vitest'; // extends matchers
@@ -161,30 +162,38 @@ vi.mock('@oat-sa-private/ui-core/dom/positioning.js', async importOriginal => {
     };
 });
 
-vi.mock('pdfjs-dist', () => ({
-    __esModule: true,
-    getDocument: () => ({
-        promise: Promise.resolve({
-            // pdfDocument
-            numPages: 1,
-            getPage: () => ({
-                // pdfPage
-                render: () => ({
-                    promise: Promise.resolve()
+vi.mock('@oat-sa-private/ui-components/documentViewer/pdfApiFactory.js', async importOriginal => {
+    const actual = await importOriginal();
+    return {
+        ...actual,
+        pdfApiFactory: vi.fn(() => {
+            const actualInstance = actual.pdfApiFactory();
+            return {
+                store: actualInstance.store,
+                init: vi.fn(async ({ container, ...options }) => {
+                    const strOptions = Object.fromEntries(
+                        Object.entries(options).filter(([, val]) => typeof val === 'string' || typeof val === 'number')
+                    );
+                    await Promise.resolve();
+                    (container.firstChild || container).append(JSON.stringify(strOptions));
                 }),
-                streamTextContent: () => {},
-                getViewport: () => ({ width: 400, height: 600, scale: 1 })
-            })
-        }),
-    }),
-    TextLayer: () => {},
-    ResponseException: Error,
-    InvalidPDFException: Error,
-    PixelsPerInch: {
-        PDF_TO_CSS_UNITS: 1
-    },
-    GlobalWorkerOptions: {}
-}));
+                destroy: vi.fn(),
+                resetScale: vi.fn(),
+                updatePage: vi.fn(),
+                updateZoom: vi.fn(),
+                search: vi.fn(),
+                searchNext: vi.fn(),
+                searchPrevious: vi.fn(),
+                getPageHeight: vi.fn(() => 400)
+            };
+        })
+    };
+});
+
+/**
+ * Svelte section
+ */
+vi.mock('svelte/transition'); // otherwise any component containing an animation will throw
 
 // Silence Svelte's stupid prop warnings
 // eslint-disable-next-line

@@ -8,18 +8,23 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     // Licensed under Gnu Public Licence version 2
     // Copyright (c) 2020 (original work) Open Assessment Technologies SA ;
     import { __ } from '@oat-sa-private/ui-core';
+    import { endAssessment } from 'taoDeliverAppsCommon/util/endAssessment.js';
 
     /**
      * This component let's you manage the content of the menu panel
+     * @property {Object} [jwtTokenHandler]
      * @property {string} [exitUrl] - if an exit url is defined the logout button is added
+     * @property {string} [endAssessmentUrl] - LtiEndAssessment initiation URL
      * @property {Object[]} [links] - the list of links for the panel
      * @property {Object} [footer] - the footer configuration
      * @property {Object} [footer.logo] - a custom logo
-     * @property {string} [theme.logo.src] - custom logo URL
-     * @property {string} [theme.logo.alt] - custom logo alternative text
+     * @property {string} [footer.logo.src] - custom logo URL
+     * @property {string} [footer.logo.alt] - custom logo alternative text
      * @property {Array} [footer.content] - list of content for the footer, each item can be a string or a link
      */
+    export let jwtTokenHandler;
     export let exitUrl;
+    export let endAssessmentUrl;
 
     export let links = [
         {
@@ -46,6 +51,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             __('All rights reserved')
         ]
     };
+
+    function exit() {
+        return endAssessment({ jwtTokenHandler, exitUrl, endAssessmentUrl });
+    }
 </script>
 
 <style>
@@ -140,7 +149,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     </ul>
     <ul class="panel-actions">
         {#if exitUrl}
-            <li><a href={exitUrl}>{__('Logout')}</a></li>
+            <li><a href={exitUrl} on:click|preventDefault={exit}>{__('Logout')}</a></li>
         {/if}
     </ul>
     <footer>

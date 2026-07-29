@@ -5,6 +5,7 @@
 
 import pluginFactory from 'taoTests/runner/plugin';
 import PreviewerHeader from './PreviewerHeader.svelte';
+import { mount, unmount } from 'svelte';
 
 /**
  * This plugin generates a contextual titles
@@ -22,7 +23,7 @@ export default pluginFactory({
         const testConfig = testRunner.getConfig();
         const { getLaunchUrlForLocale, serviceCallId } = testConfig;
 
-        this.header = new PreviewerHeader({
+        this.header = mount(PreviewerHeader, {
             target: areaBroker.getTopBarArea(),
             props: {
                 serviceCallId,
@@ -33,7 +34,7 @@ export default pluginFactory({
 
     destroy() {
         if (this.header) {
-            this.header.$destroy();
+            unmount(this.header);
         }
     }
 });

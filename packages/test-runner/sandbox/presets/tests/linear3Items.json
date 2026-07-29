@@ -99,6 +99,7 @@
                                     "x-tao-option-tts",
                                     "x-tao-option-scratchpad",
                                     "x-tao-option-eliminator",
+                                    "x-tao-option-answerMasking",
                                     "x-tao-option-highlighter",
                                     "x-tao-option-lineReader",
                                     "x-tao-option-calculatorBodmas",

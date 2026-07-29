@@ -18,6 +18,13 @@ vi.mock('../../util/scaling.js', async () => {
     );
 });
 
+vi.mock('../../util/polygon.js', async () => {
+    const originalModule = await vi.importActual('../../util/polygon.js');
+    return Object.assign({ __esModule: true }, originalModule, {
+        getIsThin: () => false
+    });
+});
+
 //mock getBBox for <text> rendering
 const originalGetBBox = SVGElement.prototype.getBBox;
 beforeEach(() => {

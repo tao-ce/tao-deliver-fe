@@ -140,6 +140,7 @@ describe('FontFamilySetting', () => {
         await tick();
 
         expect(ctr.style.getPropertyValue('--font-ui')).toMatch(/^Verdana/i);
+        expect(ctr.getAttribute('data-a11y-override-font-family')).toBe('true');
 
         fireEvent.mouseDown(dropdownButton);
         await tick();
@@ -164,5 +165,6 @@ describe('FontFamilySetting', () => {
         });
         const ctr = document.querySelector('.test-container');
         expect(ctr.style.getPropertyValue('--font-ui')).toMatch(/^Courier/i);
+        expect(ctr.getAttribute('data-a11y-override-font-family')).toBe('true');
     });
 });

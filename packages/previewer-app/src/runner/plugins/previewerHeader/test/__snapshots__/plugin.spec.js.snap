@@ -20,6 +20,7 @@ exports[`previewerHeader plugin > mounts PreviewHeader component 1`] = `
         <span>
           
         </span>
+        
          
         <span>
           /
@@ -28,6 +29,7 @@ exports[`previewerHeader plugin > mounts PreviewHeader component 1`] = `
         <span>
           ab-CD
         </span>
+        
          
         <ul>
           <li>
@@ -37,10 +39,12 @@ exports[`previewerHeader plugin > mounts PreviewHeader component 1`] = `
             >
               View yy-YY
             </a>
-             
           </li>
+          
         </ul>
       </header>
+      
+      
     </div>
   </div>
 </body>

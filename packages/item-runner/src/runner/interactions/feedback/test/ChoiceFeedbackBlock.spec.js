@@ -84,8 +84,8 @@ describe('ChoiceFeedbackBlock', () => {
     });
 
     test.each([
-        [void 0, null, null],
-        ['', '', null],
+        [void 0, null, ''],
+        ['', '', ''],
         ['en-US', 'en-US', 'ltr'],
         ['ar-arb', 'ar-arb', 'rtl'],
         ['de', 'de', 'ltr']

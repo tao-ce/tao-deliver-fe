@@ -30,7 +30,9 @@ exports[`InlineChoiceInteraction > renders props correctly into markup 1`] = `
       >
         <span
           class="dropdown-placeholder"
-        />
+        >
+          
+        </span>
          
         <svg
           aria-hidden="true"
@@ -43,7 +45,9 @@ exports[`InlineChoiceInteraction > renders props correctly into markup 1`] = `
           <path
             d="M15.46 4.29A.51.51 0 0015 4H1a.5.5 0 00-.38.83l7 8a.51.51 0 00.76 0l7-8a.51.51 0 00.08-.54z"
           />
+          
         </svg>
+        
       </button>
        
       <span
@@ -68,6 +72,7 @@ exports[`InlineChoiceInteraction > renders props correctly into markup 1`] = `
             role="option"
           >
             leave blank
+            
           </span>
           <span
             aria-selected="false"
@@ -76,6 +81,7 @@ exports[`InlineChoiceInteraction > renders props correctly into markup 1`] = `
             role="option"
           >
             Choice 1
+            
           </span>
           <span
             aria-selected="false"
@@ -84,6 +90,7 @@ exports[`InlineChoiceInteraction > renders props correctly into markup 1`] = `
             role="option"
           >
             Choice 2
+            
           </span>
           <span
             aria-selected="false"
@@ -92,7 +99,9 @@ exports[`InlineChoiceInteraction > renders props correctly into markup 1`] = `
             role="option"
           >
             Choice 3
+            
           </span>
+          
            
           <span
             class="scroll-child"
@@ -109,8 +118,13 @@ exports[`InlineChoiceInteraction > renders props correctly into markup 1`] = `
         type="text"
       />
        
+      
        
+      
     </span>
+    
   </span>
+  
+  
 </div>
 `;

@@ -11,6 +11,8 @@ exports[`Image > rendering > renders default props to markup 1`] = `
       x="0"
       y="0"
     />
+    
+    
   </div>
 </body>
 `;
@@ -27,6 +29,8 @@ exports[`Image > rendering > renders given props to markup 1`] = `
       x="98"
       y="76"
     />
+    
+    
   </div>
 </body>
 `;

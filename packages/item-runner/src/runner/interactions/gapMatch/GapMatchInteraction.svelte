@@ -79,7 +79,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     let choiceOptions = choices;
     if (shuffle) {
-        /* eslint-disable indent */
         choiceOptions = Array.isArray(choices)
             ? shuffleChoiceOptions(choices, interactionStateStore)
             : shuffleChoiceOptions(Object.keys(choices), interactionStateStore).reduce(
@@ -89,7 +88,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                   }),
                   {}
               );
-        /* eslint-enable indent */
     }
 
     const choicesStore = createChoicesStore();
@@ -174,7 +172,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
     $: if ($stateStore) {
         selectedSnapshot = $stateStore.selected;
-        selectedChoices = $stateStore.selectedChoices;
+        selectedChoices = $stateStore.selectedChoices; // eslint-disable-line no-unused-vars
         choicesToRender = getChoiceToRender(choicesToRender);
         choicesCount = choicesToRender.filter(choice => !choice.removed).length;
         availableGaps = $stateStore.gapsNumber - $stateStore.selectedGaps.length;
@@ -273,7 +271,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      */
     function saveResponse(value) {
         if (!validateResponsePairs(value)) {
-            console.error('invalid response detected:', value); // eslint-disable-line no-console
+            console.error('invalid response detected:', value);
             return;
         }
         const validity = getValidity(value);
@@ -600,20 +598,19 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 min-height: initial;
                 width: auto;
             }
-            & :global-nested(.item-btn-container .item-btn .label-container) {
+            & :global(.item-btn-container .item-btn .label-container) {
                 padding-bottom: 0.25rem;
                 padding-top: 0.25rem;
                 line-height: 1.2;
 
-                & > .blocks {
+                & > :global(.blocks) {
                     align-items: center;
-
-                    &.complex {
-                        padding: 0.5rem 0;
-                    }
+                }
+                & > :global(.blocks.complex) {
+                    padding: 0.5rem 0;
                 }
 
-                & img {
+                & :global(img) {
                     max-width: 10rem;
                     max-height: 10rem;
                     margin: 0 var(--space-1x);
@@ -730,6 +727,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         lang={instructionsLang} />
 
     <div aria-live="assertive" class="hidden" id={ariaLiveContainerId} lang={instructionsLang}>
+        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
         {@html $stateStore.confirmation}
     </div>
     <div id={ariaDescribedByContainerIdForUnselectedOptions} class="hidden" lang={instructionsLang}>
@@ -813,7 +811,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                         bind:this={focusRouterElement}
                         class="visually-hidden"
                         tabindex="0"
-                        on:focus={!disabledBySession && handleFocus} />
+                        on:focus={!disabledBySession && handleFocus}></div>
                     <ItemBlocks {blockTree} />
                     {#if isAnswerAreaApplication}
                         <span id={answerAreaLabelId} class="hidden" lang={instructionsLang}>

@@ -2,13 +2,18 @@
 
 exports[`editorConfigFactory > returns default configuration 1`] = `
 {
-  "extraPlugins": [],
+  "extraPlugins": [
+    [Function],
+  ],
   "language": {
     "content": "en",
     "ui": "en",
   },
   "mathBox": {
     "virtualKeyboards": "simple roman",
+  },
+  "mathEditor": {
+    "provider": null,
   },
   "removePlugins": [
     "MathBox",
@@ -26,6 +31,7 @@ exports[`editorConfigFactory > returns default configuration 1`] = `
       "uploadImage",
       "wproofreader",
     ],
+    "shouldNotGroupWhenFull": true,
   },
   "uploadAdapterPlugin": {
     "identifierAttribute": "data-img-id",

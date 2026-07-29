@@ -5,7 +5,6 @@
 
 vi.mock('core/store', () => {
     const store = () =>
-        // eslint-disable-next-line implicit-arrow-linebreak
         Promise.resolve({
             getItem() {
                 return Promise.resolve();
@@ -86,7 +85,7 @@ describe('Parse item content', () => {
         ['pci', samples.demoPCI.itemData],
         ['styled passage', samples.styledPassage.itemData],
         ['modal feedback', samples.modalFeedback.itemData]
-    ])('creates parsed data from %s ', (itemType, compiledItem) => {
+    ])('creates parsed data from %s', (itemType, compiledItem) => {
         const output = itemDataParser(compiledItem, {}, getInteractionComponent);
         expect(output).toMatchSnapshot();
     });

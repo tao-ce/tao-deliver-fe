@@ -9,8 +9,8 @@ import { filterBlockByLayout, getCustomLayouts, getElementName, getLayouts } fro
 vi.mock('./../dualColumnLayout.js', () => ({
     __esModule: true,
     getElementName: vi.fn().mockImplementation(() => 'customElement'),
-    filterBlock: vi.fn().mockImplementation(node => (node ? node.classList.contains('correct') : false)), // eslint-disable-line no-confusing-arrow
-    validate: vi.fn().mockImplementation(node => (node ? node.classList.contains('correct') : false)) // eslint-disable-line no-confusing-arrow
+    filterBlock: vi.fn().mockImplementation(node => (node ? node.classList.contains('correct') : false)),
+    validate: vi.fn().mockImplementation(node => (node ? node.classList.contains('correct') : false))
 }));
 
 const nonExistingLayout = 'superCoolLayout';

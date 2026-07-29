@@ -129,10 +129,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 align-items: center;
                 font-size: var(--fontsize-body-s);
             }
-            & :global-nested(.radio-group) {
+            & :global(.radio-group) {
                 font-size: var(--fontsize-body-xs);
 
-                & .radio {
+                & :global(.radio) {
                     margin-bottom: 0.25rem;
 
                     &:last-child {
@@ -140,7 +140,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                     }
                 }
             }
-            & :global-nested(.icon-bar-btn) {
+            & :global(.icon-bar-btn) {
                 background: inherit;
 
                 &:hover,

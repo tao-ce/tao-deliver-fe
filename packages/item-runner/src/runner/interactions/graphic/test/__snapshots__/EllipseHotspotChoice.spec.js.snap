@@ -5,28 +5,29 @@ exports[`ellipse hotspot choice > rendering > renders ellipse elements with give
   <div>
     <g
       class="shape"
+      role="button"
       tabindex="-1"
     >
       <ellipse
         class="shape-outer-border"
         cx="100"
         cy="100"
-        rx="44"
-        ry="54"
+        rx="46"
+        ry="56"
       />
       <ellipse
         class="shape-inner-border"
         cx="100"
         cy="100"
-        rx="36"
-        ry="46"
+        rx="40"
+        ry="50"
       />
       <ellipse
         class="shape-dashed-outline"
         cx="100"
         cy="100"
-        rx="44"
-        ry="54"
+        rx="46"
+        ry="56"
       />
       <circle
         class="shape-checkmark"
@@ -35,37 +36,40 @@ exports[`ellipse hotspot choice > rendering > renders ellipse elements with give
         r="10"
       />
     </g>
+    
+    
   </div>
 </body>
 `;
 
-exports[`ellipse hotspot choice > rendering > renders text label as a checkmark if label is set  1`] = `
+exports[`ellipse hotspot choice > rendering > renders text label as a checkmark if label is set 1`] = `
 <body>
   <div>
     <g
       class="shape selected"
+      role="button"
       tabindex="-1"
     >
       <ellipse
         class="shape-outer-border"
         cx="100"
         cy="100"
-        rx="44"
-        ry="54"
+        rx="46"
+        ry="56"
       />
       <ellipse
         class="shape-inner-border"
         cx="100"
         cy="100"
-        rx="36"
-        ry="46"
+        rx="40"
+        ry="50"
       />
       <ellipse
         class="shape-dashed-outline"
         cx="100"
         cy="100"
-        rx="44"
-        ry="54"
+        rx="46"
+        ry="56"
       />
       <text
         class="shape-checkmark"
@@ -80,6 +84,8 @@ exports[`ellipse hotspot choice > rendering > renders text label as a checkmark 
         </tspan>
       </text>
     </g>
+    
+    
   </div>
 </body>
 `;
@@ -89,8 +95,11 @@ exports[`ellipse hotspot choice > rendering > renders with no props 1`] = `
   <div>
     <g
       class="shape"
+      role="button"
       tabindex="-1"
     />
+    
+    
   </div>
 </body>
 `;

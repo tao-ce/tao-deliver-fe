@@ -108,6 +108,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         & :global(.feedback) {
             margin-inline: auto;
             margin-block: 0;
+
+            & :global(p) {
+                margin: 1rem;
+            }
         }
     }
 

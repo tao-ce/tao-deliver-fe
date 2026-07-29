@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Parse item content > creates parsed data from caption choice  1`] = `
+exports[`Parse item content > creates parsed data from caption choice 1`] = `
 {
   "blockTree": [
     {
@@ -702,7 +702,7 @@ exports[`Parse item content > creates parsed data from caption choice  1`] = `
 }
 `;
 
-exports[`Parse item content > creates parsed data from choice  1`] = `
+exports[`Parse item content > creates parsed data from choice 1`] = `
 {
   "blockTree": [
     {
@@ -814,7 +814,7 @@ exports[`Parse item content > creates parsed data from choice  1`] = `
 }
 `;
 
-exports[`Parse item content > creates parsed data from choice and image  1`] = `
+exports[`Parse item content > creates parsed data from choice and image 1`] = `
 {
   "blockTree": [
     {
@@ -1032,7 +1032,7 @@ exports[`Parse item content > creates parsed data from choice and image  1`] = `
 }
 `;
 
-exports[`Parse item content > creates parsed data from extendedText  1`] = `
+exports[`Parse item content > creates parsed data from extendedText 1`] = `
 {
   "blockTree": [
     {
@@ -1459,7 +1459,7 @@ For several hours I sat thinking or brooding in the boat, which lay upon its sid
 }
 `;
 
-exports[`Parse item content > creates parsed data from hottext  1`] = `
+exports[`Parse item content > creates parsed data from hottext 1`] = `
 {
   "blockTree": [
     {
@@ -2973,7 +2973,7 @@ And ",
                           ],
                           "content": "い",
                           "fixed": false,
-                          "identifier": "hottext_7",
+                          "identifier": "hottext_8",
                           "itemIdentifier": "item-1",
                         },
                         "type": "element",
@@ -3261,7 +3261,7 @@ And ",
 }
 `;
 
-exports[`Parse item content > creates parsed data from informational  1`] = `
+exports[`Parse item content > creates parsed data from informational 1`] = `
 {
   "blockTree": [
     {
@@ -3369,7 +3369,7 @@ exports[`Parse item content > creates parsed data from informational  1`] = `
 }
 `;
 
-exports[`Parse item content > creates parsed data from inlineChoice  1`] = `
+exports[`Parse item content > creates parsed data from inlineChoice 1`] = `
 {
   "blockTree": [
     {
@@ -3665,7 +3665,7 @@ exports[`Parse item content > creates parsed data from inlineChoice  1`] = `
 }
 `;
 
-exports[`Parse item content > creates parsed data from match  1`] = `
+exports[`Parse item content > creates parsed data from match 1`] = `
 {
   "blockTree": [
     {
@@ -3822,7 +3822,7 @@ exports[`Parse item content > creates parsed data from match  1`] = `
 }
 `;
 
-exports[`Parse item content > creates parsed data from math  1`] = `
+exports[`Parse item content > creates parsed data from math 1`] = `
 {
   "blockTree": [
     {
@@ -3957,7 +3957,7 @@ exports[`Parse item content > creates parsed data from math  1`] = `
 }
 `;
 
-exports[`Parse item content > creates parsed data from modal feedback  1`] = `
+exports[`Parse item content > creates parsed data from modal feedback 1`] = `
 {
   "blockTree": [
     {
@@ -4347,7 +4347,7 @@ exports[`Parse item content > creates parsed data from modal feedback  1`] = `
 }
 `;
 
-exports[`Parse item content > creates parsed data from pci  1`] = `
+exports[`Parse item content > creates parsed data from pci 1`] = `
 {
   "blockTree": [
     {
@@ -4434,7 +4434,7 @@ exports[`Parse item content > creates parsed data from pci  1`] = `
 }
 `;
 
-exports[`Parse item content > creates parsed data from styled passage  1`] = `
+exports[`Parse item content > creates parsed data from styled passage 1`] = `
 {
   "blockTree": [
     {
@@ -4571,7 +4571,7 @@ exports[`Parse item content > creates parsed data from styled passage  1`] = `
 }
 `;
 
-exports[`Parse item content > creates parsed data from table  1`] = `
+exports[`Parse item content > creates parsed data from table 1`] = `
 {
   "blockTree": [
     {
@@ -5936,7 +5936,7 @@ exports[`Parse item content > creates parsed data from table  1`] = `
 }
 `;
 
-exports[`Parse item content > creates parsed data from textEntry  1`] = `
+exports[`Parse item content > creates parsed data from textEntry 1`] = `
 {
   "blockTree": [
     {

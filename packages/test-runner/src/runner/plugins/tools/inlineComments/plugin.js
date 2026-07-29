@@ -15,6 +15,7 @@ import CommentViewer from './controls/CommentViewer.svelte';
 import { getCommentElements, getResponseIdForElement, getExtendedTextInteractionElements } from './selectors.js';
 import { modelHelperFactory } from './model.js';
 import { __ } from '@oat-sa-private/ui-core';
+import { mount, unmount } from 'svelte';
 
 const defaultPluginConfig = {};
 
@@ -102,7 +103,7 @@ export default pluginFactory({
         };
 
         this.mountStyle = () => {
-            this.components.style = new CommentStyle({
+            this.components.style = mount(CommentStyle, {
                 target: areaBroker.getContentArea(),
                 props: {}
             });
@@ -111,7 +112,7 @@ export default pluginFactory({
             if (open) {
                 this.state.lastFocusedElement = document.activeElement;
                 if (!this.components.editor) {
-                    this.components.editor = new CommentEditor({
+                    this.components.editor = mount(CommentEditor, {
                         target: areaBroker.getContentArea(),
                         props: {}
                     });
@@ -148,7 +149,7 @@ export default pluginFactory({
         this.toggleViewer = (open, { anchorElement, commentValue } = {}) => {
             if (open) {
                 if (!this.components.viewer) {
-                    this.components.viewer = new CommentViewer({
+                    this.components.viewer = mount(CommentViewer, {
                         target: areaBroker.getContentArea(),
                         props: {}
                     });
@@ -171,7 +172,7 @@ export default pluginFactory({
         this.toggleButton = (open, { range } = {}) => {
             if (open) {
                 if (!this.components.button) {
-                    this.components.button = new CommentButton({
+                    this.components.button = mount(CommentButton, {
                         target: areaBroker.getContentArea(),
                         props: {}
                     });
@@ -191,7 +192,7 @@ export default pluginFactory({
         this.destroyComponents = () => {
             for (const componentName of Object.keys(this.components)) {
                 if (this.components[componentName]) {
-                    this.components[componentName].$destroy();
+                    unmount(this.components[componentName]);
                     this.components[componentName] = null;
                 }
             }
@@ -278,6 +279,7 @@ export default pluginFactory({
                     this.highlighterPlugin.notifyHasUnsaved(false, { restorePreviousModel: false });
                 }
             } catch (error) {
+                console.error(error);
                 this.components.editor.$set({
                     disabled: false,
                     submitting: false,
@@ -322,6 +324,7 @@ export default pluginFactory({
 
                 commentHighlighter.clearHighlights(this.state.currentColorKey);
             } catch (error) {
+                console.error(error);
                 this.components.editor.$set({
                     disabled: false,
                     submitting: false,

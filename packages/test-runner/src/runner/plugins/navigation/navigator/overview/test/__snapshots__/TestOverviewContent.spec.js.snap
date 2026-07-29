@@ -12,6 +12,14 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
         <div
           class="tabgroup"
         >
+          <span
+            aria-live="polite"
+            class="visually-hidden"
+          >
+            
+          </span>
+           
+          
            
           <div
             class="scrollbox"
@@ -25,13 +33,16 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                 <button
                   aria-current="true"
                   aria-selected="true"
+                  data-tab-key="all"
                   role="tab"
                 >
+                  
                    
                   all questions
+                  
                    
+                  
                 </button>
-                 
               </li>
               <li
                 role="presentation"
@@ -39,13 +50,16 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                 <button
                   aria-current="false"
                   aria-selected="false"
+                  data-tab-key="bookmarked"
                   role="tab"
                 >
+                  
                    
                   bookmarked (1)
+                  
                    
+                  
                 </button>
-                 
               </li>
               <li
                 role="presentation"
@@ -53,24 +67,25 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                 <button
                   aria-current="false"
                   aria-selected="false"
+                  data-tab-key="incomplete"
                   role="tab"
                 >
+                  
                    
                   incomplete (19)
+                  
                    
+                  
                 </button>
-                 
               </li>
+              
             </ul>
-            <iframe
-              aria-hidden="true"
-              src="about:blank"
-              style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-              tabindex="-1"
-            />
+            
           </div>
            
+          
         </div>
+        
       </div>
        
       <div>
@@ -79,6 +94,7 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
           role="tabpanel"
         >
           <div>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -90,7 +106,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                 Section 1
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -102,7 +120,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   class="step completed"
                   tabindex="0"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -110,8 +130,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     1
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -119,7 +139,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   class="step visited"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -127,8 +149,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     2
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -155,9 +177,13 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                         d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </span>
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -165,8 +191,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     3
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -176,7 +202,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <svg
                     aria-hidden="true"
@@ -190,9 +218,10 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                       d="M9 0H3a1 1 0 00-1 1v10a1 1 0 00.67.94A1 1 0 003 12a1 1 0 00.78-.38L6 8l2.22 3.62A1 1 0 009 12a1 1 0 00.33-.06A1 1 0 0010 11V1a1 1 0 00-1-1"
                       fill-rule="evenodd"
                     />
+                    
                   </svg>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -202,7 +231,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -210,10 +241,12 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     5
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -225,7 +258,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                 Section 2
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -239,7 +274,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -247,8 +284,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     6
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -258,7 +295,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -266,8 +305,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     7
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -277,7 +316,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -285,8 +326,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     8
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -296,7 +337,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -304,8 +347,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     9
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -315,7 +358,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -323,8 +368,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     10
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -334,7 +379,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -342,8 +389,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     11
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -353,7 +400,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -361,8 +410,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     12
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -372,7 +421,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -380,8 +431,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     13
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -391,7 +442,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -399,8 +452,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     14
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -410,7 +463,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -418,8 +473,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     15
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -429,7 +484,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -437,8 +494,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     16
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -448,7 +505,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -456,10 +515,12 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     17
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -471,7 +532,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                 Section 3
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -485,7 +548,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -493,8 +558,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     18
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -504,7 +569,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -512,10 +579,12 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     19
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -527,7 +596,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                 Section 4
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -541,7 +612,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -549,19 +622,23 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     20
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
             
+            
+            
           </div>
-           
+          
         </div>
         <div
           class="tabpanel hidden"
           role="tabpanel"
         >
           <div>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -573,7 +650,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                 Section 1
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -587,7 +666,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -595,19 +676,23 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     4
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
             
+            
+            
           </div>
-           
+          
         </div>
         <div
           class="tabpanel hidden"
           role="tabpanel"
         >
           <div>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -619,7 +704,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                 Section 1
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -631,7 +718,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   class="step visited"
                   tabindex="0"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -639,8 +728,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     2
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -667,9 +756,13 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                         d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </span>
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -677,8 +770,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     3
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -688,7 +781,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -696,8 +791,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     4
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -707,7 +802,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -715,10 +812,12 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     5
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -730,7 +829,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                 Section 2
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -744,7 +845,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -752,8 +855,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     6
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -763,7 +866,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -771,8 +876,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     7
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -782,7 +887,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -790,8 +897,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     8
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -801,7 +908,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -809,8 +918,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     9
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -820,7 +929,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -828,8 +939,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     10
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -839,7 +950,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -847,8 +960,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     11
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -858,7 +971,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -866,8 +981,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     12
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -877,7 +992,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -885,8 +1002,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     13
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -896,7 +1013,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -904,8 +1023,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     14
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -915,7 +1034,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -923,8 +1044,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     15
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -934,7 +1055,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -942,8 +1065,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     16
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -953,7 +1076,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -961,10 +1086,12 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     17
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -976,7 +1103,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                 Section 3
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -990,7 +1119,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -998,8 +1129,8 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     18
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -1009,7 +1140,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -1017,10 +1150,12 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     19
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -1032,7 +1167,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                 Section 4
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -1046,7 +1183,9 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   disabled=""
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -1054,21 +1193,33 @@ exports[`TestOverviewContent > disables unvisited 1`] = `
                   >
                     20
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
             
+            
+            
           </div>
-           
+          
         </div>
+        
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
 
-exports[`TestOverviewContent > fails to render without a serviceCallId 1`] = `[TypeError: A "serviceCallId" is required to get the state store of the test session]`;
+exports[`TestOverviewContent > fails to render without a serviceCallId 1`] = `
+[TypeError: A "serviceCallId" is required to get the state store of the test session
+
+	in <unknown>
+]
+`;
 
 exports[`TestOverviewContent > gets timers state to render timed-out steps and sections 1`] = `
 <div
@@ -1076,6 +1227,7 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
   role="tabpanel"
 >
   <div>
+    
     
     <div
       class="ui-heading tabpanel-heading"
@@ -1092,7 +1244,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
       >
         OUT OF TIME
       </div>
+      
     </div>
+    
      
     <ol
       aria-labelledby="tao-sectionheader-123"
@@ -1104,7 +1258,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           class="step completed"
           tabindex="0"
         >
+          
            
+          
            
           <svg
             aria-hidden="true"
@@ -1117,9 +1273,10 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
             <path
               d="M5.50001 1.50006H10.5V2.50182H8.50001V3.50357C9.90951 3.63247 11.2152 4.30073 12.1454 5.36936C13.0756 6.438 13.5587 7.82473 13.4943 9.24111C13.4299 10.6575 12.8229 11.9945 11.7996 12.974C10.7763 13.9535 9.41537 14.5001 8.00001 14.5001C6.58464 14.5001 5.22376 13.9535 4.20043 12.974C3.1771 11.9945 2.5701 10.6575 2.5057 9.24111C2.4413 7.82473 2.92445 6.438 3.85465 5.36936C4.78486 4.30073 6.0905 3.63247 7.50001 3.50357V2.50182H5.50001V1.50006ZM5.49994 12.7614C6.23996 13.2567 7.10999 13.5211 8.00001 13.5211C9.19267 13.5185 10.3357 13.0427 11.1791 12.1979C12.0224 11.353 12.4974 10.208 12.5 9.01322C12.5 8.12165 12.2361 7.25009 11.7416 6.50877C11.2472 5.76745 10.5443 5.18966 9.72208 4.84847C8.89981 4.50728 7.99501 4.41801 7.1221 4.59194C6.24918 4.76588 5.44736 5.19522 4.81802 5.82566C4.18869 6.4561 3.7601 7.25933 3.58647 8.13378C3.41284 9.00822 3.50195 9.91461 3.84255 10.7383C4.18314 11.562 4.75992 12.2661 5.49994 12.7614ZM7.5 5.50006H8.5V9.50006H7.5V5.50006Z"
             />
+            
           </svg>
+          
         </button>
-         
       </li>
       <li>
         <button
@@ -1127,7 +1284,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           class="step visited"
           tabindex="-1"
         >
+          
            
+          
            
           <svg
             aria-hidden="true"
@@ -1141,9 +1300,10 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
               d="M9 0H3a1 1 0 00-1 1v10a1 1 0 00.67.94A1 1 0 003 12a1 1 0 00.78-.38L6 8l2.22 3.62A1 1 0 009 12a1 1 0 00.33-.06A1 1 0 0010 11V1a1 1 0 00-1-1"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
         </button>
-         
       </li>
       <li>
         <button
@@ -1151,7 +1311,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           class="step completed"
           tabindex="-1"
         >
+          
            
+          
            
           <svg
             aria-hidden="true"
@@ -1165,9 +1327,10 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
               d="M9 0H3a1 1 0 00-1 1v10a1 1 0 00.67.94A1 1 0 003 12a1 1 0 00.78-.38L6 8l2.22 3.62A1 1 0 009 12a1 1 0 00.33-.06A1 1 0 0010 11V1a1 1 0 00-1-1"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
         </button>
-         
       </li>
       <li>
         <button
@@ -1175,7 +1338,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           class="step completed"
           tabindex="-1"
         >
+          
            
+          
            
           <svg
             aria-hidden="true"
@@ -1188,9 +1353,10 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
             <path
               d="M5.50001 1.50006H10.5V2.50182H8.50001V3.50357C9.90951 3.63247 11.2152 4.30073 12.1454 5.36936C13.0756 6.438 13.5587 7.82473 13.4943 9.24111C13.4299 10.6575 12.8229 11.9945 11.7996 12.974C10.7763 13.9535 9.41537 14.5001 8.00001 14.5001C6.58464 14.5001 5.22376 13.9535 4.20043 12.974C3.1771 11.9945 2.5701 10.6575 2.5057 9.24111C2.4413 7.82473 2.92445 6.438 3.85465 5.36936C4.78486 4.30073 6.0905 3.63247 7.50001 3.50357V2.50182H5.50001V1.50006ZM5.49994 12.7614C6.23996 13.2567 7.10999 13.5211 8.00001 13.5211C9.19267 13.5185 10.3357 13.0427 11.1791 12.1979C12.0224 11.353 12.4974 10.208 12.5 9.01322C12.5 8.12165 12.2361 7.25009 11.7416 6.50877C11.2472 5.76745 10.5443 5.18966 9.72208 4.84847C8.89981 4.50728 7.99501 4.41801 7.1221 4.59194C6.24918 4.76588 5.44736 5.19522 4.81802 5.82566C4.18869 6.4561 3.7601 7.25933 3.58647 8.13378C3.41284 9.00822 3.50195 9.91461 3.84255 10.7383C4.18314 11.562 4.75992 12.2661 5.49994 12.7614ZM7.5 5.50006H8.5V9.50006H7.5V5.50006Z"
             />
+            
           </svg>
+          
         </button>
-         
       </li>
       <li>
         <button
@@ -1198,7 +1364,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           class="step completed"
           tabindex="-1"
         >
+          
            
+          
            
           <svg
             aria-hidden="true"
@@ -1211,11 +1379,14 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
             <path
               d="M5.50001 1.50006H10.5V2.50182H8.50001V3.50357C9.90951 3.63247 11.2152 4.30073 12.1454 5.36936C13.0756 6.438 13.5587 7.82473 13.4943 9.24111C13.4299 10.6575 12.8229 11.9945 11.7996 12.974C10.7763 13.9535 9.41537 14.5001 8.00001 14.5001C6.58464 14.5001 5.22376 13.9535 4.20043 12.974C3.1771 11.9945 2.5701 10.6575 2.5057 9.24111C2.4413 7.82473 2.92445 6.438 3.85465 5.36936C4.78486 4.30073 6.0905 3.63247 7.50001 3.50357V2.50182H5.50001V1.50006ZM5.49994 12.7614C6.23996 13.2567 7.10999 13.5211 8.00001 13.5211C9.19267 13.5185 10.3357 13.0427 11.1791 12.1979C12.0224 11.353 12.4974 10.208 12.5 9.01322C12.5 8.12165 12.2361 7.25009 11.7416 6.50877C11.2472 5.76745 10.5443 5.18966 9.72208 4.84847C8.89981 4.50728 7.99501 4.41801 7.1221 4.59194C6.24918 4.76588 5.44736 5.19522 4.81802 5.82566C4.18869 6.4561 3.7601 7.25933 3.58647 8.13378C3.41284 9.00822 3.50195 9.91461 3.84255 10.7383C4.18314 11.562 4.75992 12.2661 5.49994 12.7614ZM7.5 5.50006H8.5V9.50006H7.5V5.50006Z"
             />
+            
           </svg>
+          
         </button>
-         
       </li>
+      
     </ol>
+    
     
     <div
       class="ui-heading tabpanel-heading"
@@ -1232,7 +1403,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
       >
         30s left
       </div>
+      
     </div>
+    
      
     <ol
       aria-labelledby="tao-sectionheader-123"
@@ -1261,9 +1434,13 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
                 d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                 fill-rule="evenodd"
               />
+              
             </svg>
+            
           </span>
+          
            
+          
            
           <span
             aria-hidden="true"
@@ -1271,8 +1448,8 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           >
             4
           </span>
+          
         </button>
-         
       </li>
       <li>
         <button
@@ -1280,7 +1457,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           class="step default"
           tabindex="-1"
         >
+          
            
+          
            
           <svg
             aria-hidden="true"
@@ -1293,9 +1472,10 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
             <path
               d="M5.50001 1.50006H10.5V2.50182H8.50001V3.50357C9.90951 3.63247 11.2152 4.30073 12.1454 5.36936C13.0756 6.438 13.5587 7.82473 13.4943 9.24111C13.4299 10.6575 12.8229 11.9945 11.7996 12.974C10.7763 13.9535 9.41537 14.5001 8.00001 14.5001C6.58464 14.5001 5.22376 13.9535 4.20043 12.974C3.1771 11.9945 2.5701 10.6575 2.5057 9.24111C2.4413 7.82473 2.92445 6.438 3.85465 5.36936C4.78486 4.30073 6.0905 3.63247 7.50001 3.50357V2.50182H5.50001V1.50006ZM5.49994 12.7614C6.23996 13.2567 7.10999 13.5211 8.00001 13.5211C9.19267 13.5185 10.3357 13.0427 11.1791 12.1979C12.0224 11.353 12.4974 10.208 12.5 9.01322C12.5 8.12165 12.2361 7.25009 11.7416 6.50877C11.2472 5.76745 10.5443 5.18966 9.72208 4.84847C8.89981 4.50728 7.99501 4.41801 7.1221 4.59194C6.24918 4.76588 5.44736 5.19522 4.81802 5.82566C4.18869 6.4561 3.7601 7.25933 3.58647 8.13378C3.41284 9.00822 3.50195 9.91461 3.84255 10.7383C4.18314 11.562 4.75992 12.2661 5.49994 12.7614ZM7.5 5.50006H8.5V9.50006H7.5V5.50006Z"
             />
+            
           </svg>
+          
         </button>
-         
       </li>
       <li>
         <button
@@ -1303,7 +1483,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           class="step default"
           tabindex="-1"
         >
+          
            
+          
            
           <svg
             aria-hidden="true"
@@ -1317,14 +1499,18 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
               d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
         </button>
-         
       </li>
+      
     </ol>
     
+    
+    
   </div>
-   
+  
 </div>
 `;
 
@@ -1334,6 +1520,7 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
   role="tabpanel"
 >
   <div>
+    
     
     <div
       class="ui-heading tabpanel-heading"
@@ -1350,7 +1537,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
       >
         40s
       </div>
+      
     </div>
+    
      
     <ol
       aria-labelledby="tao-sectionheader-123"
@@ -1362,7 +1551,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           class="step completed"
           tabindex="0"
         >
+          
            
+          
            
           <span
             aria-hidden="true"
@@ -1370,8 +1561,8 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           >
             1
           </span>
+          
         </button>
-         
       </li>
       <li>
         <button
@@ -1379,7 +1570,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           class="step visited"
           tabindex="-1"
         >
+          
            
+          
            
           <svg
             aria-hidden="true"
@@ -1393,9 +1586,10 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
               d="M9 0H3a1 1 0 00-1 1v10a1 1 0 00.67.94A1 1 0 003 12a1 1 0 00.78-.38L6 8l2.22 3.62A1 1 0 009 12a1 1 0 00.33-.06A1 1 0 0010 11V1a1 1 0 00-1-1"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
         </button>
-         
       </li>
       <li>
         <button
@@ -1403,7 +1597,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           class="step completed"
           tabindex="-1"
         >
+          
            
+          
            
           <svg
             aria-hidden="true"
@@ -1417,9 +1613,10 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
               d="M9 0H3a1 1 0 00-1 1v10a1 1 0 00.67.94A1 1 0 003 12a1 1 0 00.78-.38L6 8l2.22 3.62A1 1 0 009 12a1 1 0 00.33-.06A1 1 0 0010 11V1a1 1 0 00-1-1"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
         </button>
-         
       </li>
       <li>
         <button
@@ -1427,7 +1624,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           class="step completed"
           tabindex="-1"
         >
+          
            
+          
            
           <svg
             aria-hidden="true"
@@ -1440,9 +1639,10 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
             <path
               d="M5.50001 1.50006H10.5V2.50182H8.50001V3.50357C9.90951 3.63247 11.2152 4.30073 12.1454 5.36936C13.0756 6.438 13.5587 7.82473 13.4943 9.24111C13.4299 10.6575 12.8229 11.9945 11.7996 12.974C10.7763 13.9535 9.41537 14.5001 8.00001 14.5001C6.58464 14.5001 5.22376 13.9535 4.20043 12.974C3.1771 11.9945 2.5701 10.6575 2.5057 9.24111C2.4413 7.82473 2.92445 6.438 3.85465 5.36936C4.78486 4.30073 6.0905 3.63247 7.50001 3.50357V2.50182H5.50001V1.50006ZM5.49994 12.7614C6.23996 13.2567 7.10999 13.5211 8.00001 13.5211C9.19267 13.5185 10.3357 13.0427 11.1791 12.1979C12.0224 11.353 12.4974 10.208 12.5 9.01322C12.5 8.12165 12.2361 7.25009 11.7416 6.50877C11.2472 5.76745 10.5443 5.18966 9.72208 4.84847C8.89981 4.50728 7.99501 4.41801 7.1221 4.59194C6.24918 4.76588 5.44736 5.19522 4.81802 5.82566C4.18869 6.4561 3.7601 7.25933 3.58647 8.13378C3.41284 9.00822 3.50195 9.91461 3.84255 10.7383C4.18314 11.562 4.75992 12.2661 5.49994 12.7614ZM7.5 5.50006H8.5V9.50006H7.5V5.50006Z"
             />
+            
           </svg>
+          
         </button>
-         
       </li>
       <li>
         <button
@@ -1450,7 +1650,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           class="step completed"
           tabindex="-1"
         >
+          
            
+          
            
           <svg
             aria-hidden="true"
@@ -1464,11 +1666,14 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
               d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
         </button>
-         
       </li>
+      
     </ol>
+    
     
     <div
       class="ui-heading tabpanel-heading"
@@ -1485,7 +1690,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
       >
         OUT OF TIME
       </div>
+      
     </div>
+    
      
     <ol
       aria-labelledby="tao-sectionheader-123"
@@ -1514,9 +1721,13 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
                 d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                 fill-rule="evenodd"
               />
+              
             </svg>
+            
           </span>
+          
            
+          
            
           <svg
             aria-hidden="true"
@@ -1529,9 +1740,10 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
             <path
               d="M5.50001 1.50006H10.5V2.50182H8.50001V3.50357C9.90951 3.63247 11.2152 4.30073 12.1454 5.36936C13.0756 6.438 13.5587 7.82473 13.4943 9.24111C13.4299 10.6575 12.8229 11.9945 11.7996 12.974C10.7763 13.9535 9.41537 14.5001 8.00001 14.5001C6.58464 14.5001 5.22376 13.9535 4.20043 12.974C3.1771 11.9945 2.5701 10.6575 2.5057 9.24111C2.4413 7.82473 2.92445 6.438 3.85465 5.36936C4.78486 4.30073 6.0905 3.63247 7.50001 3.50357V2.50182H5.50001V1.50006ZM5.49994 12.7614C6.23996 13.2567 7.10999 13.5211 8.00001 13.5211C9.19267 13.5185 10.3357 13.0427 11.1791 12.1979C12.0224 11.353 12.4974 10.208 12.5 9.01322C12.5 8.12165 12.2361 7.25009 11.7416 6.50877C11.2472 5.76745 10.5443 5.18966 9.72208 4.84847C8.89981 4.50728 7.99501 4.41801 7.1221 4.59194C6.24918 4.76588 5.44736 5.19522 4.81802 5.82566C4.18869 6.4561 3.7601 7.25933 3.58647 8.13378C3.41284 9.00822 3.50195 9.91461 3.84255 10.7383C4.18314 11.562 4.75992 12.2661 5.49994 12.7614ZM7.5 5.50006H8.5V9.50006H7.5V5.50006Z"
             />
+            
           </svg>
+          
         </button>
-         
       </li>
       <li>
         <button
@@ -1539,7 +1751,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           class="step default"
           tabindex="-1"
         >
+          
            
+          
            
           <svg
             aria-hidden="true"
@@ -1552,9 +1766,10 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
             <path
               d="M5.50001 1.50006H10.5V2.50182H8.50001V3.50357C9.90951 3.63247 11.2152 4.30073 12.1454 5.36936C13.0756 6.438 13.5587 7.82473 13.4943 9.24111C13.4299 10.6575 12.8229 11.9945 11.7996 12.974C10.7763 13.9535 9.41537 14.5001 8.00001 14.5001C6.58464 14.5001 5.22376 13.9535 4.20043 12.974C3.1771 11.9945 2.5701 10.6575 2.5057 9.24111C2.4413 7.82473 2.92445 6.438 3.85465 5.36936C4.78486 4.30073 6.0905 3.63247 7.50001 3.50357V2.50182H5.50001V1.50006ZM5.49994 12.7614C6.23996 13.2567 7.10999 13.5211 8.00001 13.5211C9.19267 13.5185 10.3357 13.0427 11.1791 12.1979C12.0224 11.353 12.4974 10.208 12.5 9.01322C12.5 8.12165 12.2361 7.25009 11.7416 6.50877C11.2472 5.76745 10.5443 5.18966 9.72208 4.84847C8.89981 4.50728 7.99501 4.41801 7.1221 4.59194C6.24918 4.76588 5.44736 5.19522 4.81802 5.82566C4.18869 6.4561 3.7601 7.25933 3.58647 8.13378C3.41284 9.00822 3.50195 9.91461 3.84255 10.7383C4.18314 11.562 4.75992 12.2661 5.49994 12.7614ZM7.5 5.50006H8.5V9.50006H7.5V5.50006Z"
             />
+            
           </svg>
+          
         </button>
-         
       </li>
       <li>
         <button
@@ -1562,7 +1777,9 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
           class="step default"
           tabindex="-1"
         >
+          
            
+          
            
           <svg
             aria-hidden="true"
@@ -1575,14 +1792,18 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
             <path
               d="M5.50001 1.50006H10.5V2.50182H8.50001V3.50357C9.90951 3.63247 11.2152 4.30073 12.1454 5.36936C13.0756 6.438 13.5587 7.82473 13.4943 9.24111C13.4299 10.6575 12.8229 11.9945 11.7996 12.974C10.7763 13.9535 9.41537 14.5001 8.00001 14.5001C6.58464 14.5001 5.22376 13.9535 4.20043 12.974C3.1771 11.9945 2.5701 10.6575 2.5057 9.24111C2.4413 7.82473 2.92445 6.438 3.85465 5.36936C4.78486 4.30073 6.0905 3.63247 7.50001 3.50357V2.50182H5.50001V1.50006ZM5.49994 12.7614C6.23996 13.2567 7.10999 13.5211 8.00001 13.5211C9.19267 13.5185 10.3357 13.0427 11.1791 12.1979C12.0224 11.353 12.4974 10.208 12.5 9.01322C12.5 8.12165 12.2361 7.25009 11.7416 6.50877C11.2472 5.76745 10.5443 5.18966 9.72208 4.84847C8.89981 4.50728 7.99501 4.41801 7.1221 4.59194C6.24918 4.76588 5.44736 5.19522 4.81802 5.82566C4.18869 6.4561 3.7601 7.25933 3.58647 8.13378C3.41284 9.00822 3.50195 9.91461 3.84255 10.7383C4.18314 11.562 4.75992 12.2661 5.49994 12.7614ZM7.5 5.50006H8.5V9.50006H7.5V5.50006Z"
             />
+            
           </svg>
+          
         </button>
-         
       </li>
+      
     </ol>
     
+    
+    
   </div>
-   
+  
 </div>
 `;
 
@@ -1602,6 +1823,7 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
   >
     40s
   </div>
+  
 </div>
 `;
 
@@ -1621,6 +1843,7 @@ exports[`TestOverviewContent > gets timers state to render timed-out steps and s
   >
     (+ 3s) left
   </div>
+  
 </div>
 `;
 
@@ -1636,6 +1859,14 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
         <div
           class="tabgroup"
         >
+          <span
+            aria-live="polite"
+            class="visually-hidden"
+          >
+            
+          </span>
+           
+          
            
           <div
             class="scrollbox"
@@ -1649,13 +1880,16 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                 <button
                   aria-current="true"
                   aria-selected="true"
+                  data-tab-key="all"
                   role="tab"
                 >
+                  
                    
                   all questions
+                  
                    
+                  
                 </button>
-                 
               </li>
               <li
                 role="presentation"
@@ -1663,13 +1897,16 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                 <button
                   aria-current="false"
                   aria-selected="false"
+                  data-tab-key="bookmarked"
                   role="tab"
                 >
+                  
                    
                   bookmarked (2)
+                  
                    
+                  
                 </button>
-                 
               </li>
               <li
                 role="presentation"
@@ -1677,24 +1914,25 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                 <button
                   aria-current="false"
                   aria-selected="false"
+                  data-tab-key="incomplete"
                   role="tab"
                 >
+                  
                    
                   incomplete (1)
+                  
                    
+                  
                 </button>
-                 
               </li>
+              
             </ul>
-            <iframe
-              aria-hidden="true"
-              src="about:blank"
-              style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-              tabindex="-1"
-            />
+            
           </div>
            
+          
         </div>
+        
       </div>
        
       <div>
@@ -1703,6 +1941,7 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
           role="tabpanel"
         >
           <div>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -1714,7 +1953,9 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                 Physics of elemetary particles: bosons, mesons, quarks and whatever is supposed to exist in this world
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -1726,7 +1967,9 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   class="step completed"
                   tabindex="0"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -1734,8 +1977,8 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   >
                     1
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -1743,7 +1986,9 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   class="step visited"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <svg
                     aria-hidden="true"
@@ -1757,9 +2002,10 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                       d="M9 0H3a1 1 0 00-1 1v10a1 1 0 00.67.94A1 1 0 003 12a1 1 0 00.78-.38L6 8l2.22 3.62A1 1 0 009 12a1 1 0 00.33-.06A1 1 0 0010 11V1a1 1 0 00-1-1"
                       fill-rule="evenodd"
                     />
+                    
                   </svg>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -1767,7 +2013,9 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <svg
                     aria-hidden="true"
@@ -1781,9 +2029,10 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                       d="M9 0H3a1 1 0 00-1 1v10a1 1 0 00.67.94A1 1 0 003 12a1 1 0 00.78-.38L6 8l2.22 3.62A1 1 0 009 12a1 1 0 00.33-.06A1 1 0 0010 11V1a1 1 0 00-1-1"
                       fill-rule="evenodd"
                     />
+                    
                   </svg>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -1791,7 +2040,9 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <svg
                     aria-hidden="true"
@@ -1805,9 +2056,10 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                       d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
                       fill-rule="evenodd"
                     />
+                    
                   </svg>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -1815,7 +2067,9 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <svg
                     aria-hidden="true"
@@ -1829,11 +2083,14 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                       d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
                       fill-rule="evenodd"
                     />
+                    
                   </svg>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -1845,7 +2102,9 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                 Optics
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -1874,9 +2133,13 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                         d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </span>
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -1884,8 +2147,8 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   >
                     4
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -1893,7 +2156,9 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   class="step default"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -1901,8 +2166,8 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   >
                     5
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -1910,7 +2175,9 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   class="step default"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <svg
                     aria-hidden="true"
@@ -1924,20 +2191,25 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                       d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
                       fill-rule="evenodd"
                     />
+                    
                   </svg>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
             
+            
+            
           </div>
-           
+          
         </div>
         <div
           class="tabpanel hidden"
           role="tabpanel"
         >
           <div>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -1949,7 +2221,9 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                 Physics of elemetary particles: bosons, mesons, quarks and whatever is supposed to exist in this world
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -1961,7 +2235,9 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   class="step visited"
                   tabindex="0"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -1969,8 +2245,8 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   >
                     2
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -1978,7 +2254,9 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -1986,19 +2264,23 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   >
                     3
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
             
+            
+            
           </div>
-           
+          
         </div>
         <div
           class="tabpanel hidden"
           role="tabpanel"
         >
           <div>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -2010,7 +2292,9 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                 Optics
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -2022,7 +2306,9 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   class="step default"
                   tabindex="0"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -2030,16 +2316,23 @@ exports[`TestOverviewContent > renders steps with different states, grouped into
                   >
                     5
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
             
+            
+            
           </div>
-           
+          
         </div>
+        
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -2056,6 +2349,14 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
         <div
           class="tabgroup"
         >
+          <span
+            aria-live="polite"
+            class="visually-hidden"
+          >
+            
+          </span>
+           
+          
            
           <div
             class="scrollbox"
@@ -2069,13 +2370,16 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                 <button
                   aria-current="true"
                   aria-selected="true"
+                  data-tab-key="all"
                   role="tab"
                 >
+                  
                    
                   all questions
+                  
                    
+                  
                 </button>
-                 
               </li>
               <li
                 role="presentation"
@@ -2083,24 +2387,25 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                 <button
                   aria-current="false"
                   aria-selected="false"
+                  data-tab-key="incomplete"
                   role="tab"
                 >
+                  
                    
                   incomplete (1)
+                  
                    
+                  
                 </button>
-                 
               </li>
+              
             </ul>
-            <iframe
-              aria-hidden="true"
-              src="about:blank"
-              style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-              tabindex="-1"
-            />
+            
           </div>
            
+          
         </div>
+        
       </div>
        
       <div>
@@ -2109,6 +2414,7 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
           role="tabpanel"
         >
           <div>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -2120,7 +2426,9 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                 Physics of elemetary particles: bosons, mesons, quarks and whatever is supposed to exist in this world
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -2132,7 +2440,9 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                   class="step completed"
                   tabindex="0"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -2140,8 +2450,8 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                   >
                     1
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -2149,7 +2459,9 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                   class="step visited"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <svg
                     aria-hidden="true"
@@ -2163,9 +2475,10 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                       d="M9 0H3a1 1 0 00-1 1v10a1 1 0 00.67.94A1 1 0 003 12a1 1 0 00.78-.38L6 8l2.22 3.62A1 1 0 009 12a1 1 0 00.33-.06A1 1 0 0010 11V1a1 1 0 00-1-1"
                       fill-rule="evenodd"
                     />
+                    
                   </svg>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -2173,7 +2486,9 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <svg
                     aria-hidden="true"
@@ -2187,9 +2502,10 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                       d="M9 0H3a1 1 0 00-1 1v10a1 1 0 00.67.94A1 1 0 003 12a1 1 0 00.78-.38L6 8l2.22 3.62A1 1 0 009 12a1 1 0 00.33-.06A1 1 0 0010 11V1a1 1 0 00-1-1"
                       fill-rule="evenodd"
                     />
+                    
                   </svg>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -2197,7 +2513,9 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <svg
                     aria-hidden="true"
@@ -2211,9 +2529,10 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                       d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
                       fill-rule="evenodd"
                     />
+                    
                   </svg>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -2221,7 +2540,9 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <svg
                     aria-hidden="true"
@@ -2235,11 +2556,14 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                       d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
                       fill-rule="evenodd"
                     />
+                    
                   </svg>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -2251,7 +2575,9 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                 Optics
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -2280,9 +2606,13 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                         d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </span>
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -2290,8 +2620,8 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                   >
                     4
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -2299,7 +2629,9 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                   class="step default"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -2307,8 +2639,8 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                   >
                     5
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -2316,7 +2648,9 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                   class="step default"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <svg
                     aria-hidden="true"
@@ -2330,20 +2664,25 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                       d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
                       fill-rule="evenodd"
                     />
+                    
                   </svg>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
             
+            
+            
           </div>
-           
+          
         </div>
         <div
           class="tabpanel hidden"
           role="tabpanel"
         >
           <div>
+            
             
             <div
               class="ui-heading tabpanel-heading"
@@ -2355,7 +2694,9 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                 Optics
               </div>
                
+              
             </div>
+            
              
             <ol
               aria-labelledby="tao-sectionheader-123"
@@ -2367,7 +2708,9 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                   class="step default"
                   tabindex="0"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -2375,16 +2718,23 @@ exports[`TestOverviewContent > renders with bookmarks disabled 1`] = `
                   >
                     5
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
             
+            
+            
           </div>
-           
+          
         </div>
+        
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -2394,7 +2744,11 @@ exports[`TestOverviewContent > renders with empty store 1`] = `
   <div>
     <div
       class="overview"
-    />
+    >
+      
+    </div>
+    
+    
   </div>
 </body>
 `;
@@ -2411,6 +2765,14 @@ exports[`TestOverviewContent > renders without section header if only one sectio
         <div
           class="tabgroup"
         >
+          <span
+            aria-live="polite"
+            class="visually-hidden"
+          >
+            
+          </span>
+           
+          
            
           <div
             class="scrollbox"
@@ -2424,13 +2786,16 @@ exports[`TestOverviewContent > renders without section header if only one sectio
                 <button
                   aria-current="true"
                   aria-selected="true"
+                  data-tab-key="all"
                   role="tab"
                 >
+                  
                    
                   all questions
+                  
                    
+                  
                 </button>
-                 
               </li>
               <li
                 role="presentation"
@@ -2438,13 +2803,16 @@ exports[`TestOverviewContent > renders without section header if only one sectio
                 <button
                   aria-current="false"
                   aria-selected="false"
+                  data-tab-key="bookmarked"
                   role="tab"
                 >
+                  
                    
                   bookmarked (0)
+                  
                    
+                  
                 </button>
-                 
               </li>
               <li
                 role="presentation"
@@ -2452,24 +2820,25 @@ exports[`TestOverviewContent > renders without section header if only one sectio
                 <button
                   aria-current="false"
                   aria-selected="false"
+                  data-tab-key="incomplete"
                   role="tab"
                 >
+                  
                    
                   incomplete (1)
+                  
                    
+                  
                 </button>
-                 
               </li>
+              
             </ul>
-            <iframe
-              aria-hidden="true"
-              src="about:blank"
-              style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-              tabindex="-1"
-            />
+            
           </div>
            
+          
         </div>
+        
       </div>
        
       <div>
@@ -2479,65 +2848,7 @@ exports[`TestOverviewContent > renders without section header if only one sectio
         >
           <div>
             
-             
-            <ol
-              class="space-large wrapped"
-            >
-              <li>
-                <button
-                  aria-current="location"
-                  aria-label="Question 1. Not completed."
-                  class="step visited current"
-                  tabindex="0"
-                >
-                  <span
-                    aria-hidden="true"
-                    class="indicator"
-                  >
-                    <svg
-                      aria-hidden="false"
-                      class="icon small"
-                      viewBox="0 0 12 12"
-                    >
-                      <title>
-                        Current item indicator
-                      </title>
-                      <path
-                        d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
-                        fill-rule="evenodd"
-                      />
-                    </svg>
-                  </span>
-                   
-                   
-                  <span
-                    aria-hidden="true"
-                    class="step-label"
-                  >
-                    1
-                  </span>
-                </button>
-                 
-              </li>
-            </ol>
             
-          </div>
-           
-        </div>
-        <div
-          class="tabpanel hidden"
-          role="tabpanel"
-        >
-          <div>
-            
-          </div>
-           
-        </div>
-        <div
-          class="tabpanel hidden"
-          role="tabpanel"
-        >
-          <div>
             
              
             <ol
@@ -2566,9 +2877,13 @@ exports[`TestOverviewContent > renders without section header if only one sectio
                         d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </span>
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -2576,16 +2891,94 @@ exports[`TestOverviewContent > renders without section header if only one sectio
                   >
                     1
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
             
+            
+            
           </div>
-           
+          
         </div>
+        <div
+          class="tabpanel hidden"
+          role="tabpanel"
+        >
+          <div>
+            
+            
+            
+          </div>
+          
+        </div>
+        <div
+          class="tabpanel hidden"
+          role="tabpanel"
+        >
+          <div>
+            
+            
+            
+             
+            <ol
+              class="space-large wrapped"
+            >
+              <li>
+                <button
+                  aria-current="location"
+                  aria-label="Question 1. Not completed."
+                  class="step visited current"
+                  tabindex="0"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="indicator"
+                  >
+                    <svg
+                      aria-hidden="false"
+                      class="icon small"
+                      viewBox="0 0 12 12"
+                    >
+                      <title>
+                        Current item indicator
+                      </title>
+                      <path
+                        d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
+                        fill-rule="evenodd"
+                      />
+                      
+                    </svg>
+                    
+                  </span>
+                  
+                   
+                  
+                   
+                  <span
+                    aria-hidden="true"
+                    class="step-label"
+                  >
+                    1
+                  </span>
+                  
+                </button>
+              </li>
+              
+            </ol>
+            
+            
+            
+          </div>
+          
+        </div>
+        
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;

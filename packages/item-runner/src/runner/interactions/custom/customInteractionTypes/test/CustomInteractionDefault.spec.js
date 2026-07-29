@@ -38,6 +38,7 @@ import { render } from '@testing-library/svelte';
 import CustomInteraction from '../CustomInteractionDefault.svelte';
 import itemsStateStore, { getInteractionStateStore } from '../../../../itemsStateStore.js';
 import ContextWrapper from '../../../../static/test/ContextWrapper.svelte';
+import { decommentify } from '@/test-utils/helpers.js';
 
 const createModuleResponse = function (source, timeout = 0) {
     return function () {
@@ -119,11 +120,11 @@ describe('CustomInteraction', () => {
             interactionStateStore.set({ state: previousState });
             interactionStateStore.setResponse(previousResponse);
 
-            let component;
+            let unmount;
             let stateUpdateHandler;
 
             window.parameterChecker = (container, configuration, state) => {
-                expect(container.innerHTML).toBe(markup);
+                expect(decommentify(container.innerHTML)).toBe(markup);
                 expect(typeof configuration.onready).toBe('function');
                 expect(configuration.properties).toMatchObject(properties);
                 expect(configuration.boundTo).toMatchObject({ [responseIdentifier]: previousResponse });
@@ -145,7 +146,7 @@ describe('CustomInteraction', () => {
                     expect(interactionStateStore.get().state).toMatchObject(newState);
                     expect(interactionStateStore.get()).toMatchObject({ qtiClass, typeIdentifier });
 
-                    component.$destroy(); // simulates test runner navigation
+                    unmount();
                 }, 0);
 
                 // clean function
@@ -193,7 +194,7 @@ describe('CustomInteraction', () => {
                 );
             });
 
-            component = render(ContextWrapper, {
+            ({ unmount } = render(ContextWrapper, {
                 props: {
                     testComponent: CustomInteraction,
                     testComponentProps: {
@@ -233,7 +234,7 @@ describe('CustomInteraction', () => {
                         }
                     }
                 }
-            }).component;
+            }));
         }));
 
     it('loads PCI and waits for "afterPciInstantiated", if it was defined in props', () =>
@@ -270,6 +271,12 @@ describe('CustomInteraction', () => {
                                 typeIdentifier: "${typeIdentifier}",
                                 getInstance(container, configuration, state) {
                                     configuration.onready({
+                                        getResponse() {
+                                            return '{}';
+                                        },
+                                        getState() {
+                                            return '{}';
+                                        },
                                         oncompleted() {},
                                         foo: 'bar-instance-prop'
                                     }, ${JSON.stringify(initialState)});
@@ -343,10 +350,10 @@ describe('CustomInteraction', () => {
             interactionStateStore.set({ state: previousState });
             interactionStateStore.setResponse(previousResponse);
 
-            let component;
+            let unmount;
 
             window.parameterChecker = (container, configuration, state) => {
-                expect(container.innerHTML).toBe(markup);
+                expect(decommentify(container.innerHTML)).toBe(markup);
                 expect(typeof configuration.onready).toBe('function');
                 expect(configuration.properties).toMatchObject(properties);
                 expect(configuration.boundTo).toMatchObject({ [responseIdentifier]: previousResponse });
@@ -363,7 +370,7 @@ describe('CustomInteraction', () => {
                     // state was NOT saved
                     expect(interactionStateStore.get().state).toMatchObject(previousState);
 
-                    component.$destroy(); // simulates test runner navigation
+                    unmount();
                 }, 0);
 
                 // clean function
@@ -411,7 +418,7 @@ describe('CustomInteraction', () => {
                 );
             });
 
-            component = render(ContextWrapper, {
+            ({ unmount } = render(ContextWrapper, {
                 props: {
                     testComponent: CustomInteraction,
                     testComponentProps: {
@@ -444,7 +451,7 @@ describe('CustomInteraction', () => {
                         off() {}
                     }
                 }
-            }).component;
+            }));
         }));
 
     it('if not isInitialMount, loads PCI outside of context.registerLoadingElement', () =>
@@ -456,14 +463,14 @@ describe('CustomInteraction', () => {
             const resolvedModulePath = 'http://example.com/module.js';
             const markup = '<div class="fooPCI">Hello</div>';
 
-            let component;
+            let unmount;
 
             window.parameterChecker = container => {
-                expect(container.innerHTML).toBe(markup);
+                expect(decommentify(container.innerHTML)).toBe(markup);
 
                 // setTimeout is necessary to allow to finish parameterChecker function
                 setTimeout(() => {
-                    component.$destroy();
+                    unmount();
                     done();
                 }, 0);
 
@@ -494,7 +501,7 @@ describe('CustomInteraction', () => {
                 );
             });
 
-            component = render(ContextWrapper, {
+            ({ unmount } = render(ContextWrapper, {
                 props: {
                     testComponent: CustomInteraction,
                     testComponentProps: {
@@ -525,7 +532,92 @@ describe('CustomInteraction', () => {
                         off() {}
                     }
                 }
-            }).component;
+            }));
+        }));
+
+    it('calls full stateUpdate and oncompleted before destroy', () =>
+        new Promise(done => {
+            expect.assertions(7);
+
+            const typeIdentifier = 'foo';
+
+            // checks PCI oncompleted was called
+            window.oncompletedChecker = () => {
+                // clean function
+                delete window.oncompletedChecker;
+
+                expect(true).toBe(true);
+            };
+
+            fetch.mockResponse(function () {
+                const responsePromise = createModuleResponse(`
+                    define(['qtiCustomInteractionContext'], function(qtiCustomInteractionContext) {
+                        qtiCustomInteractionContext.register({
+                            typeIdentifier: '${typeIdentifier}',
+                            getInstance(container, configuration, state) {
+                                configuration.onready({
+                                    getResponse() {
+                                        return 'response';
+                                    },
+                                    getState() {
+                                        return 'state';
+                                    },
+                                    oncompleted() {
+                                        window.oncompletedChecker();
+                                    }
+                                });
+                            }
+                        });
+                    });
+                `)();
+                // put component into global context to be destroyable from PCI
+                return responsePromise;
+            });
+
+            const handleState = vi.fn();
+            const handleResponse = vi.fn();
+
+            const { unmount } = render(ContextWrapper, {
+                props: {
+                    testComponent: CustomInteraction,
+                    testComponentProps: {
+                        itemIdentifier,
+                        typeIdentifier,
+                        handleState,
+                        handleResponse
+                    },
+                    testContextKey: itemIdentifier,
+                    testContext: {
+                        getPCI() {
+                            return { runtime: { hook: 'pci.js' } };
+                        },
+                        getAssetManager() {
+                            return {
+                                resolve() {
+                                    return 'http://example.com/resolvedPathPCI.js';
+                                }
+                            };
+                        },
+                        registerLoadingElement(loadingPromiseGetter) {
+                            loadingPromiseGetter().then(() => {
+                                expect(handleState).not.toHaveBeenCalled();
+                                expect(handleResponse).not.toHaveBeenCalled();
+
+                                unmount();
+
+                                expect(handleState).toHaveBeenCalledTimes(1);
+                                expect(handleState).toHaveBeenCalledWith('state');
+                                expect(handleResponse).toHaveBeenCalledTimes(1);
+                                expect(handleResponse).toHaveBeenCalledWith('response');
+
+                                done();
+                            });
+                        },
+                        on() {},
+                        off() {}
+                    }
+                }
+            });
         }));
 
     it('forwards load error back to item', () =>
@@ -658,7 +750,7 @@ describe('CustomInteraction', () => {
     it('handles destroy during PCI source load', () =>
         new Promise(done => {
             const typeIdentifier = 'foo';
-            let component;
+            let unmount;
 
             fetch.mockResponse(function (req) {
                 expect(req.url).toBe('http://example.com/resolvedPathPCI.js');
@@ -672,11 +764,11 @@ describe('CustomInteraction', () => {
                     });
                 });
             `)();
-                component.$destroy();
+                unmount();
                 return responsePromise;
             });
 
-            component = render(ContextWrapper, {
+            ({ unmount } = render(ContextWrapper, {
                 props: {
                     testComponent: CustomInteraction,
                     testComponentProps: {
@@ -700,7 +792,7 @@ describe('CustomInteraction', () => {
                         }
                     }
                 }
-            }).component;
+            }));
         }));
 
     it('handles destroy during PCI initialization', () =>
@@ -708,7 +800,7 @@ describe('CustomInteraction', () => {
             expect.assertions(1);
 
             const typeIdentifier = 'foo';
-            let component;
+            let unmount;
 
             // checks PCI oncompleted was called
             window.oncompletedChecker = () => {
@@ -725,7 +817,7 @@ describe('CustomInteraction', () => {
                         typeIdentifier: '${typeIdentifier}',
                         getInstance(container, configuration, state) {
                             // simulates destroy during init
-                            window.component.$destroy();
+                            unmount();
                             configuration.onready({
                                 oncompleted() {
                                     window.oncompletedChecker();
@@ -736,11 +828,11 @@ describe('CustomInteraction', () => {
                 });
             `)();
                 // put component into global context to be destroyable from PCI
-                window.component = component;
+                window.unmount = unmount;
                 return responsePromise;
             });
 
-            component = render(ContextWrapper, {
+            ({ unmount } = render(ContextWrapper, {
                 props: {
                     testComponent: CustomInteraction,
                     testComponentProps: {
@@ -764,7 +856,7 @@ describe('CustomInteraction', () => {
                         }
                     }
                 }
-            }).component;
+            }));
         }));
 
     it('forwards interactiontrace event', () =>
@@ -778,20 +870,26 @@ describe('CustomInteraction', () => {
 
             fetch.mockResponse(
                 createModuleResponse(`
-                define(['qtiCustomInteractionContext'], function(qtiCustomInteractionContext) {
-                    qtiCustomInteractionContext.register({
-                        typeIdentifier: '${typeIdentifier}',
-                        getInstance(container, configuration) {
-                            configuration.onready({
-                                oncompleted() {}
-                            });
-                            container.dispatchEvent(new CustomEvent('interactiontrace', {
-                                detail: ${JSON.stringify(detail)}
-                            }));
-                        }
+                    define(['qtiCustomInteractionContext'], function(qtiCustomInteractionContext) {
+                        qtiCustomInteractionContext.register({
+                            typeIdentifier: '${typeIdentifier}',
+                            getInstance(container, configuration) {
+                                configuration.onready({
+                                    getResponse() {
+                                        return '{}';
+                                    },
+                                    getState() {
+                                        return '{}';
+                                    },
+                                    oncompleted() {}
+                                });
+                                container.dispatchEvent(new CustomEvent('interactiontrace', {
+                                    detail: ${JSON.stringify(detail)}
+                                }));
+                            }
+                        });
                     });
-                });
-            `)
+                `)
             );
 
             const { container } = render(ContextWrapper, {

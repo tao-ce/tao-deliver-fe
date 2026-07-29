@@ -19,4 +19,4 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 </style>
 
-<div id="page-main" />
+<div id="page-main"></div>

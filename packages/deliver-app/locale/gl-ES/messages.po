@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tao-ignite\n"
-"POT-Creation-Date: 2025-09-10 13:17\n"
-"PO-Revision-Date: 2025-09-11 02:38\n"
+"POT-Creation-Date: 2026-05-12 13:56\n"
+"PO-Revision-Date: 2026-05-13 01:53\n"
 "Last-Translator: \n"
 "Language-Team: Galician\n"
 "Language: gl\n"
@@ -32,11 +32,11 @@ msgstr[1] "%d elementos máis"
 msgid "breadcrumb"
 msgstr "ruta de navegación"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:64
+#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:66
 msgid "the result is"
 msgstr "o resultado é"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:65
+#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:67
 msgid "Input area"
 msgstr "Área de entrada"
 
@@ -475,36 +475,48 @@ msgstr "valor aleatorio"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/chip/Chip.svelte:15
 msgid "Remove"
+msgstr "Eliminar"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/colorPicker/ColorPicker.svelte:16
+msgid "Please provide a valid CSS color value (e.g. #RRGGBB, rgb(...), rgba(...))."
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/colorPicker/ColorPicker.svelte:35
+msgid "This field is required."
 msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:248
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:41
 msgid "Manage Preferences"
-msgstr ""
+msgstr "Xestionar preferencias"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:250
 msgid "Customize your cookie preferences. You can choose which types of cookies you want to allow to improve your experience."
-msgstr ""
+msgstr "Personaliza as túas preferencias de cookies. Podes escoller que tipos de cookies queres permitir para mellorar a túa experiencia."
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:262
 msgid "Always Active"
+msgstr "Sempre activo"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:279
+msgid "Confirm Choices"
 msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:29
 msgid "Cookie Policy"
-msgstr ""
+msgstr "Política de cookies"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:30
 msgid "This site uses cookies to improve your browsing experience and to perform analytics and research. To change your preferences, click Manage preferences. Otherwise, clicking Accept all cookies indicates you agree to our use of cookies on your device. Clicking Reject all cookies means you do not agree to our use of non-strictly necessary cookies on your device."
-msgstr ""
+msgstr "Este sitio usa cookies para mellorar a túa experiencia de navegación e para realizar análises e investigacións. Para cambiar as túas preferencias, fai clic en Xestionar preferencias. En caso contrario, se fas clic en Aceptar todas as cookies, indicas que aceptas o noso uso de cookies no teu dispositivo. Se fas clic en Rexeitar todas as cookies, significas que non aceptas o noso uso de cookies non estritamente necesarias no teu dispositivo."
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:46
 msgid "Reject All"
-msgstr ""
+msgstr "Rexeitar todo"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:52
 msgid "Accept All"
-msgstr ""
+msgstr "Aceptar todo"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/dataTable/DragButtonCell.svelte:45
 msgid "Press enter or space to select the row to reorder"
@@ -703,55 +715,70 @@ msgstr "cancelar"
 msgid "ok"
 msgstr "ok"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:409
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:197
 msgid "Document toolbar"
 msgstr "Barra de ferramentas do documento"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:412
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:202
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:283
+msgid "Search"
+msgstr "Buscar"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:214
 msgid "Zoom in"
 msgstr "Zoom +"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:418
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:220
 msgid "Zoom out"
 msgstr "Zoom -"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:427
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:229
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:296
 msgid "Previous"
 msgstr "Anterior"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:445
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:246
 msgid "of %d"
 msgstr "de %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:449
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:249
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:305
 msgid "Next"
 msgstr "Seguinte"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:461
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:261
 msgid "Download"
 msgstr "Descargar"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:469
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:269
 msgid "Open in new tab"
-msgstr ""
+msgstr "Abrir nunha nova lapela"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:491
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:291
+msgid "%d of %d matches"
+msgstr "%d de %d coincidencias"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:292
+msgid "No matches found"
+msgstr "Non se atoparon coincidencias"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:295
 msgid "Open in new tab: %s"
-msgstr ""
+msgstr "Abrir nunha nova lapela: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:83
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:91
 msgid "Missing PDF file %s"
 msgstr "Falta arquivo PDF %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:85
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:93
 msgid "Invalid or corrupted PDF file."
 msgstr "Arquivo PDF non válido ou corrupto."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:87
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:95
 msgid "An error occurred while loading the PDF."
 msgstr "Produciuse un erro ao cargar o PDF."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:199
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:139
 msgid "Missing PDF file."
 msgstr "Falta arquivo PDF."
 
@@ -763,11 +790,11 @@ msgstr "%s, %d elementos"
 msgid "draggable list"
 msgstr "lista arrastrable"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:434
+#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:435
 msgid "You can use this option %d times."
 msgstr "Podes usar esta opción %d veces."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:439
+#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:440
 msgid "You can use this option multiple times."
 msgstr "Podes usar esta opción %d veces."
 
@@ -775,73 +802,113 @@ msgstr "Podes usar esta opción %d veces."
 msgid "Close Panel"
 msgstr "Pechar panel"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:413
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:107
+msgid "... or drop your file here"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:112
+msgid "Accepted: %s"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:114
+msgid "Up to %s files"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:116
+msgid "Max size: %s"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:152
 msgid "File selected successfully"
 msgstr "Arquivo seleccionado correctamente"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:417
-msgid "Answer file selected:"
-msgstr "Arquivo seleccionado:"
-
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:422
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:165
 msgid "This file is not accepted"
 msgstr "Non se acepta este arquivo"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:426
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:176
+msgid "Remove file %s"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:30
+msgid "File selected:"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:412
 msgid "Select different file"
 msgstr "Seleccionar arquivo diferente"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:435
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:421
 msgid "Clear file"
 msgstr "Borrar arquivo"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:445
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:431
 msgid "Browse your computer"
 msgstr "Navega polo teu ordenador"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:447
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:433
 msgid "Select a file"
 msgstr "Seleccionar un arquivo"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:450
-msgid "expected formats: %s"
-msgstr "formatos esperados: %s"
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:441
+msgid "Maximum file size: %s"
+msgstr ""
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:453
-msgid "maximum file size: %s"
-msgstr "tamaño máximo do arquivo: %s"
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:50
+msgid "Answer file selected:"
+msgstr "Arquivo seleccionado:"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:467
-msgid "..or drop your file here"
-msgstr "..ou solta aquí o teu arquivo"
-
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:144
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:150
 msgid "Folders are not accepted, expected formats are: %s"
 msgstr "Non se aceptan carpetas, os formatos esperados son: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:146
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:152
 msgid "files"
 msgstr "arquivos"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:148
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:154
 msgid "Empty files are not accepted, please try again."
 msgstr "Non se aceptan arquivos baleiros, inténtao de novo."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:150
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:156
 msgid "The size of the selected file is %s that is more than the accepted %s"
 msgstr "O tamaño do arquivo seleccionado é %s, que é maior que o %s aceptado"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:157
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:163
 msgid "The %s file format is not accepted, expected formats are: %s"
 msgstr "O formato de arquivo %s non é válido, os formatos válidos son: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:163
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:169
 msgid "The unknown file format is not accepted, expected formats are: %s"
 msgstr "Non se acepta o formato descoñecido, os formatos válidos son: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:165
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:171
 msgid "Multiple files are not accepted. Please try again."
 msgstr "Non se aceptan múltiples arquivos. Inténtao de novo."
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:222
+msgid "%d of %d"
+msgstr "%d de %d"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:228
+msgid "Add file"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:236
+msgid "Remove all"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:253
+msgid "Select files"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:268
+msgid "Maximum file size: %s. "
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:269
+msgid "Up to %d files"
+msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/mimetype.js:31
 msgid "all images"
@@ -854,6 +921,10 @@ msgstr "tódolos vídeos"
 #: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/mimetype.js:33
 msgid "all audios"
 msgstr "tódolos sons"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/validation.js:80
+msgid "No file selected."
+msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-components/languageSelector/LanguageSelector.svelte:99
 msgid "Select language"
@@ -893,13 +964,13 @@ msgstr "pechar"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/navigationMenu/NavigationMenu.svelte:240
 msgid "Collapse Menu"
-msgstr ""
+msgstr "Contraer menú"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/navigationMenu/NavigationMenu.svelte:240
 msgid "Expand Menu"
-msgstr ""
+msgstr "Expandir menú"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/notificationContainer/NotificationContainer.svelte:202
+#: ../../../node_modules/@oat-sa-private/ui-components/notificationContainer/NotificationContainer.svelte:203
 msgid "Notifications"
 msgstr "Notificacións"
 
@@ -935,103 +1006,103 @@ msgstr "Amosar contrasinal"
 msgid "Hide password"
 msgstr "Ocultar contrasinal"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1280
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1288
 msgid "Media error detected"
 msgstr "Detectouse un erro multimedia"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1281
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1289
 msgid "Please reload the media to try again"
 msgstr "Recarga para tentar de novo"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1322
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1330
 msgid "media player"
 msgstr "multimedia"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:186
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:194
 msgid "start playing"
 msgstr "reproducir"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:188
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:196
 msgid "play again"
 msgstr "reproducir de novo"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:192
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:200
 msgid "resume playing"
 msgstr "retomar reprodución"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:254
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:262
 msgid "Play"
 msgstr "Reproducir"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:255
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:263
 msgid "Play: %d of %d"
 msgstr "Reprodución: %d de %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:267
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:275
 msgid "delete"
 msgstr "eliminar"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:471
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:479
 msgid "%s of %s"
 msgstr "%s de %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:809
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:817
 msgid "play"
 msgstr "reproducir"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:810
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:818
 msgid "pause"
 msgstr "pausa"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:811
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:819
 msgid "mute"
 msgstr "silenciar"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:812
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:820
 msgid "unmute"
 msgstr "desactivar o silencio"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:813
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:821
 msgid "enter fullscreen"
 msgstr "activar pantalla completa"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:814
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:822
 msgid "exit fullscreen"
 msgstr "saír de pantalla completa"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:815
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:823
 msgid "volume"
 msgstr "volume"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:816
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:824
 msgid "seek"
 msgstr "buscar"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:818
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:826
 msgid "buffered"
 msgstr "cargado"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:819
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:827
 msgid "Player for {title}"
 msgstr "Reprodutor para {title}"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:820
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:828
 msgid "Captions"
 msgstr "Subtítulos"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:821
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:829
 msgid "Settings"
 msgstr "Axustes"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:822
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:830
 msgid "Go back to previous menu"
 msgstr "Volver ao menú anterior"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:823
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:831
 msgid "Disabled"
 msgstr "Desactivado"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:824
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:832
 msgid "Enabled"
 msgstr "Activado"
 
@@ -1059,23 +1130,23 @@ msgstr "Seleccionado por outro corrector."
 msgid "Rejected."
 msgstr "Rexeitado."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:68
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:70
 msgid "Select option"
 msgstr "Seleccionar opción"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:82
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:84
 msgid "List is empty"
 msgstr "A lista está baleira"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:83
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:85
 msgid "No results found."
 msgstr "Non se atoparon resultados."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:768
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:771
 msgid "This is a required field."
 msgstr "Campo obrigatorio."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:775
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:778
 msgid "Invalid value."
 msgstr "Valor non válido."
 
@@ -1087,27 +1158,27 @@ msgstr "TODO"
 msgid "SELECTED"
 msgstr "SELECCIONADO"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:796
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:808
 msgid "eliminated"
 msgstr "eliminado"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:798
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:810
 msgid "masked"
 msgstr "ocultada"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:809
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:821
 msgid "restore choice number %d"
 msgstr "restaurar número de opción %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:810
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:822
 msgid "eliminate choice number %d"
 msgstr "eliminar número de opción %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:821
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:833
 msgid "unmask choice number %d"
 msgstr "amosar número de opción %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:822
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:834
 msgid "mask choice number %d"
 msgstr "ocultar número de opción %d"
 
@@ -1135,6 +1206,10 @@ msgstr "parcial"
 #: ../../../node_modules/@oat-sa-private/ui-components/stepProgress/StepProgress.svelte:38
 msgid "waiting"
 msgstr "esperando"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/tabGroup/TabGroup.svelte:223
+msgid "%s moved to position %d of %d"
+msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-components/tree/ExpandButton.svelte:102
 msgid "Collapse"
@@ -1170,644 +1245,644 @@ msgstr "Nivel de entrada"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:38
 msgid "Afrikaans"
-msgstr ""
+msgstr "Afrikaans"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:44
 msgid "Amharic"
-msgstr ""
+msgstr "Amhárico"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:50
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:1000
 msgid "Arabic"
-msgstr ""
+msgstr "Árabe"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:56
 msgid "Azerbaijani"
-msgstr ""
+msgstr "Acerbaixano"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:62
 msgid "Belarusian"
-msgstr ""
+msgstr "Bielorruso"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:68
 msgid "Bulgarian"
-msgstr ""
+msgstr "Búlgaro"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:74
 msgid "Bengali"
-msgstr ""
+msgstr "Bengalí"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:80
 msgid "Bosnian"
-msgstr ""
+msgstr "Bosníaco"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:86
 msgid "Catalan"
-msgstr ""
+msgstr "Catalán"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:92
 msgid "Czech"
-msgstr ""
+msgstr "Checo"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:98
 msgid "Welsh"
-msgstr ""
+msgstr "galés"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:104
 msgid "Danish"
-msgstr ""
+msgstr "Dinamarqués"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:110
 msgid "German"
-msgstr ""
+msgstr "Alemán"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:116
 msgid "Divehi"
-msgstr ""
+msgstr "Divehi"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:122
 msgid "Greek"
-msgstr ""
+msgstr "Grego"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:128
 msgid "English"
-msgstr ""
+msgstr "Inglés"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:134
 msgid "Spanish"
-msgstr ""
+msgstr "Español"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:140
 msgid "Estonian"
-msgstr ""
+msgstr "Estoniano"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:146
 msgid "Basque"
-msgstr ""
+msgstr "Éuscaro"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:152
 msgid "Persian"
-msgstr ""
+msgstr "Persa"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:158
 msgid "Finnish"
-msgstr ""
+msgstr "Finlandés"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:164
 msgid "Filipino"
-msgstr ""
+msgstr "Filipino"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:170
 msgid "Faroese"
-msgstr ""
+msgstr "Feroés"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:176
 msgid "French"
-msgstr ""
+msgstr "Francés"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:182
 msgid "Galician"
-msgstr ""
+msgstr "Galego"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:188
 msgid "Gujarati"
-msgstr ""
+msgstr "Gujarati"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:194
 msgid "Hebrew"
-msgstr ""
+msgstr "Hebreo"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:200
 msgid "Hindi"
-msgstr ""
+msgstr "Hindi"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:206
 msgid "Croatian"
-msgstr ""
+msgstr "Croata"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:212
 msgid "Hungarian"
-msgstr ""
+msgstr "Húngaro"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:218
 msgid "Armenian"
-msgstr ""
+msgstr "Armenio"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:224
 msgid "Indonesian"
-msgstr ""
+msgstr "Indonesio"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:230
 msgid "Icelandic"
-msgstr ""
+msgstr "Islandés"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:236
 msgid "Italian"
-msgstr ""
+msgstr "Italiano"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:242
 msgid "Japanese"
-msgstr ""
+msgstr "Xaponés"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:248
 msgid "Georgian"
-msgstr ""
+msgstr "Xeorxiano"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:254
 msgid "Kazakh"
-msgstr ""
+msgstr "Casaco"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:260
 msgid "Khmer"
-msgstr ""
+msgstr "Khmer"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:266
 msgid "Kannada"
-msgstr ""
+msgstr "Kannada"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:272
 msgid "Korean"
-msgstr ""
+msgstr "Coreano"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:278
 msgid "Kyrgyz"
-msgstr ""
+msgstr "Kirguiz"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:284
 msgid "Lao"
-msgstr ""
+msgstr "Laos"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:290
 msgid "Lithuanian"
-msgstr ""
+msgstr "Lituano"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:296
 msgid "Latvian"
-msgstr ""
+msgstr "Letón"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:302
 msgid "Macedonian"
-msgstr ""
+msgstr "Macedonio"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:308
 msgid "Malayalam"
-msgstr ""
+msgstr "Malayalam"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:314
 msgid "Mongolian"
-msgstr ""
+msgstr "Mongol"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:320
 msgid "Marathi"
-msgstr ""
+msgstr "Maratí"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:326
 msgid "Malay"
-msgstr ""
+msgstr "Malaio"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:332
 msgid "Maltese"
-msgstr ""
+msgstr "Maltés"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:338
 msgid "Norwegian Bokmål"
-msgstr ""
+msgstr "Bokmål noruegués"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:344
 msgid "Nepali"
-msgstr ""
+msgstr "Nepalí"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:350
 msgid "Dutch"
-msgstr ""
+msgstr "Holandés"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:356
 msgid "Norwegian Nynorsk"
-msgstr ""
+msgstr "Noruegués nynorsk"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:362
 msgid "Oriya"
-msgstr ""
+msgstr "Oriya"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:368
 msgid "Punjabi"
-msgstr ""
+msgstr "Punjabi"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:374
 msgid "Polish"
-msgstr ""
+msgstr "Polaco"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:380
 msgid "Portuguese"
-msgstr ""
+msgstr "Portugués"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:386
 msgid "Romanian"
-msgstr ""
+msgstr "Romanés"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:392
 msgid "Russian"
-msgstr ""
+msgstr "Ruso"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:398
 msgid "Sinhala"
-msgstr ""
+msgstr "Cingalés"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:404
 msgid "Slovak"
-msgstr ""
+msgstr "Eslovaco"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:410
 msgid "Slovenian"
-msgstr ""
+msgstr "Esloveno"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:416
 msgid "Albanian"
-msgstr ""
+msgstr "Albanés"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:422
 msgid "Serbian"
-msgstr ""
+msgstr "Serbio"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:428
 msgid "Swedish"
-msgstr ""
+msgstr "Sueco"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:434
 msgid "Swahili"
-msgstr ""
+msgstr "Suahili"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:440
 msgid "Tamil"
-msgstr ""
+msgstr "Támil"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:446
 msgid "Telugu"
-msgstr ""
+msgstr "Telugu"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:452
 msgid "Thai"
-msgstr ""
+msgstr "Tailandés"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:458
 msgid "Turkish"
-msgstr ""
+msgstr "Turco"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:464
 msgid "Ukrainian"
-msgstr ""
+msgstr "Ucraíno"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:470
 msgid "Urdu"
-msgstr ""
+msgstr "Urdú"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:476
 msgid "Uzbek"
-msgstr ""
+msgstr "Uzbeko"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:482
 msgid "Vietnamese"
-msgstr ""
+msgstr "Vietnamita"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:488
 msgid "Chinese"
-msgstr ""
+msgstr "Chinés"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:494
 msgid "Zulu"
-msgstr ""
+msgstr "Zulú"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:501
 msgid "Afrikaans (Suid-Afrika)"
-msgstr ""
+msgstr "Afrikaans (Suíde de África)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:507
 msgid "Amharic (Ethiopia)"
-msgstr ""
+msgstr "Amhárico (Etiopía)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:513
 msgid "Arabic (UAE)"
-msgstr ""
+msgstr "Árabe (EAU)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:519
 msgid "Arabic (Saudi Arabia)"
-msgstr ""
+msgstr "Árabe (Arabia Saudita)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:525
 msgid "Azerbaijani (Azerbaijan)"
-msgstr ""
+msgstr "Acerbaixán (Acerbaixán)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:531
 msgid "Belarusian (Belarus)"
-msgstr ""
+msgstr "Bielorruso (Belarús)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:537
 msgid "Bulgarian (Bulgaria)"
-msgstr ""
+msgstr "Búlgaro (Bulgaria)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:543
 msgid "Bengali (Bangladesh)"
-msgstr ""
+msgstr "Bengalí (Bangladesh)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:549
 msgid "Bengali (India)"
-msgstr ""
+msgstr "Bengalí (India)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:555
 msgid "Bosnian (Bosnia and Herzegovina)"
-msgstr ""
+msgstr "Bosníaco (Bosnia e Hercegovina)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:561
 msgid "Catalan (Spain)"
-msgstr ""
+msgstr "Catalán (España)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:567
 msgid "Czech (Czech Republic)"
-msgstr ""
+msgstr "Checo (República Checa)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:573
 msgid "Welsh (United Kingdom)"
-msgstr ""
+msgstr "galés (Reino Unido)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:579
 msgid "Danish (Denmark)"
-msgstr ""
+msgstr "Dinamarqués (Dinamarca)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:585
 msgid "German (Austria)"
-msgstr ""
+msgstr "Alemán (Austria)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:591
 msgid "German (Switzerland)"
-msgstr ""
+msgstr "Alemán (Suíza)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:597
 msgid "German (Germany)"
-msgstr ""
+msgstr "Alemán (Alemaña)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:603
 msgid "Greek (Greece)"
-msgstr ""
+msgstr "Grego (Grecia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:609
 msgid "English (Australia)"
-msgstr ""
+msgstr "Inglés (Australia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:615
 msgid "English (United Kingdom)"
-msgstr ""
+msgstr "Inglés (Reino Unido)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:621
 msgid "English (India)"
-msgstr ""
+msgstr "Inglés (India)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:627
 msgid "English (United States)"
-msgstr ""
+msgstr "Inglés (Estados Unidos)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:633
 msgid "Spanish (Spain)"
-msgstr ""
+msgstr "Español (España)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:639
 msgid "Spanish (Mexico)"
-msgstr ""
+msgstr "Español (México)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:645
 msgid "Spanish (Argentina)"
-msgstr ""
+msgstr "Español (Arxentina)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:651
 msgid "Estonian (Estonia)"
-msgstr ""
+msgstr "Estoniano (Estonia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:657
 msgid "Dari (Afghanistan)"
-msgstr ""
+msgstr "Dari (Afganistán)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:663
 msgid "Farsi (Iran)"
-msgstr ""
+msgstr "Farsi (Irán)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:669
 msgid "Finnish (Finland)"
-msgstr ""
+msgstr "Finlandés (Finlandia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:675
 msgid "French (France)"
-msgstr ""
+msgstr "Francés (Francia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:681
 msgid "French (Canada)"
-msgstr ""
+msgstr "Francés (Canadá)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:687
 msgid "Galician (Spain)"
-msgstr ""
+msgstr "Galego (España)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:693
 msgid "Gujarati (India)"
-msgstr ""
+msgstr "Gujarati (India)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:699
 msgid "Hebrew (Israel)"
-msgstr ""
+msgstr "Hebreo (Israel)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:705
 msgid "Hindi (India)"
-msgstr ""
+msgstr "Hindi (India)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:711
 msgid "Croatian (Croatia)"
-msgstr ""
+msgstr "Croata (Croacia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:717
 msgid "Hungarian (Hungary)"
-msgstr ""
+msgstr "Húngaro (Hungría)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:723
 msgid "Indonesian (Indonesia)"
-msgstr ""
+msgstr "Indonesio (Indonesia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:729
 msgid "Italian (Italy)"
-msgstr ""
+msgstr "Italiano (Italia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:735
 msgid "Japanese (Japan)"
-msgstr ""
+msgstr "Xaponés (Xapón)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:741
 msgid "Georgian (Georgia)"
-msgstr ""
+msgstr "Xeorxiano (Xeorxia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:747
 msgid "Kazakh (Kazakhstan)"
-msgstr ""
+msgstr "Casaquistán (Casaquistán)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:753
 msgid "Korean (South Korea)"
-msgstr ""
+msgstr "Coreano (Corea do Sur)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:759
 msgid "Sorani (Iraq)"
-msgstr ""
+msgstr "Soraní (Iraq)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:765
 msgid "Lithuanian (Lithuania)"
-msgstr ""
+msgstr "Lituano (Lituania)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:771
 msgid "Latvian (Latvia)"
-msgstr ""
+msgstr "Letón (Letonia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:777
 msgid "Macedonian (North Macedonia)"
-msgstr ""
+msgstr "Macedonio (Macedonia do Norte)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:783
 msgid "Malayalam (India)"
-msgstr ""
+msgstr "Malayalam (India)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:789
 msgid "Marathi (India)"
-msgstr ""
+msgstr "Maratí (India)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:795
 msgid "Malay (Malaysia)"
-msgstr ""
+msgstr "Malaio (Malaisia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:801
 msgid "Burmese (Myanmar)"
-msgstr ""
+msgstr "Birmano (Myanmar)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:807
 msgid "Norwegian Bokmål (Norway)"
-msgstr ""
+msgstr "Bokmål noruegués (Noruega)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:813
 msgid "Nepali (Nepal)"
-msgstr ""
+msgstr "Nepalí (Nepal)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:819
 msgid "Dutch (Netherlands)"
-msgstr ""
+msgstr "Neerlandés (Países Baixos)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:825
 msgid "Norwegian Nynorsk (Norway)"
-msgstr ""
+msgstr "Noruegués nynorsk (Noruega)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:831
 msgid "Polish (Poland)"
-msgstr ""
+msgstr "Polaco (Polonia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:837
 msgid "Pashto (Afghanistan)"
-msgstr ""
+msgstr "Paxtún (Afganistán)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:843
 msgid "Portuguese (Brazil)"
-msgstr ""
+msgstr "Portugués (Brasil)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:849
 msgid "Portuguese (Portugal)"
-msgstr ""
+msgstr "Portugués (Portugal)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:855
 msgid "Romanian (Romania)"
-msgstr ""
+msgstr "Romanés (Romanía)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:861
 msgid "Russian (Russia)"
-msgstr ""
+msgstr "Ruso (Rusia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:867
 msgid "Sinhala (Sri Lanka)"
-msgstr ""
+msgstr "cingalese (Sri Lanka)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:873
 msgid "Slovak (Slovakia)"
-msgstr ""
+msgstr "Eslovaco (Eslovaquia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:879
 msgid "Slovenian (Slovenia)"
-msgstr ""
+msgstr "Esloveno (Eslovenia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:885
 msgid "Somali (Somalia)"
-msgstr ""
+msgstr "Somalí (Somalia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:891
 msgid "Albanian (Albania)"
-msgstr ""
+msgstr "Albanés (Albania)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:897
 msgid "Serbian (Serbia)"
-msgstr ""
+msgstr "Serbio (Serbia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:903
 msgid "Swedish (Sweden)"
-msgstr ""
+msgstr "Sueco (Suecia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:909
 msgid "Swahili (Kenya)"
-msgstr ""
+msgstr "Suahili (Quenia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:915
 msgid "Tamil (India)"
-msgstr ""
+msgstr "Támil (India)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:921
 msgid "Telugu (India)"
-msgstr ""
+msgstr "Telugu (India)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:927
 msgid "Thai (Thailand)"
-msgstr ""
+msgstr "Tailandés (Tailandia)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:933
 msgid "Tigrinya (Eritrea)"
-msgstr ""
+msgstr "Tigriña (Eritrea)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:939
 msgid "Tagalog (Philippines)"
-msgstr ""
+msgstr "Tagalo (Filipinas)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:945
 msgid "Turkish (Turkey)"
-msgstr ""
+msgstr "Turco (Turquía)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:951
 msgid "Uyghur (China)"
-msgstr ""
+msgstr "Uigur (China)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:957
 msgid "Ukrainian (Ukraine)"
-msgstr ""
+msgstr "Ucraíno (Ucraína)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:963
 msgid "Urdu (India)"
-msgstr ""
+msgstr "Urdú (India)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:969
 msgid "Urdu (Pakistan)"
-msgstr ""
+msgstr "Urdú (Paquistán)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:975
 msgid "Vietnamese (Vietnam)"
-msgstr ""
+msgstr "Vietnamita (Vietnam)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:981
 msgid "Chinese (China)"
-msgstr ""
+msgstr "Chinés (China)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:987
 msgid "Chinese (Taiwan)"
-msgstr ""
+msgstr "Chinés (Taiwán)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:993
 msgid "Zulu (South Africa)"
-msgstr ""
+msgstr "Zulú (Sudáfrica)"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/time/duration.js:35
 msgid "1 day"
@@ -1861,7 +1936,7 @@ msgstr "%ds"
 msgid "button"
 msgstr "botón"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:963
+#: ../../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:962
 msgid "Dropdown"
 msgstr "Menú despregable"
 
@@ -1909,43 +1984,43 @@ msgstr "ligazón"
 msgid "Radio button"
 msgstr "Botón radial"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:35
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:40
 msgid "Text editor"
 msgstr "Editor de texto"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:50
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:56
 msgid "Sorry, this action is not supported in the text editor."
 msgstr "Sentímolo, esta acción non é compatible co editor de texto."
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:175
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:188
 msgid "Editor toolbar"
 msgstr "Barra de edición"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:223
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:222
 msgid "Paragraph"
 msgstr "Parágrafo\n"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:224
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:223
 msgid "Heading 1"
 msgstr "Título 1"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:225
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:224
 msgid "Heading 2"
 msgstr "Título 2"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:253
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:252
 msgid "Tiny"
 msgstr "Moi pequeno"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:257
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:256
 msgid "Small"
 msgstr "Pequeno"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:262
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:261
 msgid "Big"
 msgstr "Grande"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:266
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:265
 msgid "Huge"
 msgstr "Moi grande"
 
@@ -1988,7 +2063,7 @@ msgstr "refacer"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/plugins/mathbox/configs/mathlive/extraLocales.js:34
 msgid "Toggle virtual keyboard"
-msgstr ""
+msgstr "Activar/desactivar teclado virtual"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/plugins/mathbox/configs/mathlive/extraLocales.js:35
 msgid "Undo"
@@ -2192,19 +2267,19 @@ msgstr "g"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:69
 msgid "end with leftwards arrow above"
-msgstr ""
+msgstr "rematar cunha frecha cara á esquerda enriba"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:70
 msgid "on with exclamation mark with left right arrow above"
-msgstr ""
+msgstr "con signo de exclamación e frecha esquerda/dereita enriba"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:73
 msgid "soon with rightwards arrow above"
-msgstr ""
+msgstr "pronto cunha frecha cara á dereita enriba"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:74
 msgid "top with upwards arrow above"
-msgstr ""
+msgstr "arriba cunha frecha cara arriba"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:75
 msgid "Dollar sign"
@@ -2224,11 +2299,11 @@ msgstr "Signo da libra"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:79
 msgid "Cent sign"
-msgstr ""
+msgstr "Signo de centavo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:80
 msgid "Euro-currency sign"
-msgstr ""
+msgstr "símbolo da moeda euro"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:81
 msgid "Colon sign"
@@ -2248,7 +2323,7 @@ msgstr "Signo da lira"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:85
 msgid "Currency sign"
-msgstr ""
+msgstr "Signo de moeda"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:86
 msgid "Bitcoin sign"
@@ -2256,11 +2331,11 @@ msgstr "Signo do bitcoin"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:87
 msgid "Mill sign"
-msgstr ""
+msgstr "Sinal de muíño"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:88
 msgid "Naira sign"
-msgstr ""
+msgstr "Signo de naira"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:89
 msgid "Peseta sign"
@@ -2272,31 +2347,31 @@ msgstr "Signo da rupia"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:91
 msgid "Won sign"
-msgstr ""
+msgstr "Signo gañador"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:92
 msgid "New sheqel sign"
-msgstr ""
+msgstr "Novo signo de shekel"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:93
 msgid "Dong sign"
-msgstr ""
+msgstr "Signo Dong"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:94
 msgid "Kip sign"
-msgstr ""
+msgstr "Sinal de Kip"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:95
 msgid "Tugrik sign"
-msgstr ""
+msgstr "Sinal de Tugrik"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:96
 msgid "Drachma sign"
-msgstr ""
+msgstr "Signo do dracma"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:97
 msgid "German penny sign"
-msgstr ""
+msgstr "Signo do centavo alemán"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:98
 msgid "Peso sign"
@@ -2308,27 +2383,27 @@ msgstr "Signo guaraní"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:100
 msgid "Austral sign"
-msgstr ""
+msgstr "Signo austral"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:101
 msgid "Hryvnia sign"
-msgstr ""
+msgstr "Signo de Hryvnia"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:102
 msgid "Cedi sign"
-msgstr ""
+msgstr "Signo de cedi"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:103
 msgid "Livre tournois sign"
-msgstr ""
+msgstr "Sinal de libra torneo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:104
 msgid "Spesmilo sign"
-msgstr ""
+msgstr "Signo de Spesmilo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:105
 msgid "Tenge sign"
-msgstr ""
+msgstr "Signo de Tenge"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:106
 msgid "Indian rupee sign"
@@ -2336,19 +2411,19 @@ msgstr "Signo da rupia da India"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:107
 msgid "Turkish lira sign"
-msgstr ""
+msgstr "Signo da lira turca"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:108
 msgid "Nordic mark sign"
-msgstr ""
+msgstr "Signo de marca nórdica"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:109
 msgid "Manat sign"
-msgstr ""
+msgstr "Signo de manat"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:110
 msgid "Ruble sign"
-msgstr ""
+msgstr "Signo do rublo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:111
 msgid "Latin capital letter a with macron"
@@ -2416,11 +2491,11 @@ msgstr "Letra d minúsculo con caron"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:127
 msgid "Latin capital letter d with stroke"
-msgstr ""
+msgstr "Letra maiúscula latina d con trazo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:128
 msgid "Latin small letter d with stroke"
-msgstr ""
+msgstr "Letra minúscula latina d con trazo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:129
 msgid "Latin capital letter e with macron"
@@ -2484,7 +2559,7 @@ msgstr "Letra g maiúsculo con punto superior"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:144
 msgid "Latin small letter g with dot above"
-msgstr ""
+msgstr "Letra minúscula latina g cun punto enriba"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:145
 msgid "Latin capital letter g with cedilla"
@@ -2504,11 +2579,11 @@ msgstr "Letra minúscula h con circunflexo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:149
 msgid "Latin capital letter h with stroke"
-msgstr ""
+msgstr "Letra maiúscula latina h con trazo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:150
 msgid "Latin small letter h with stroke"
-msgstr ""
+msgstr "Letra minúscula latina h con trazo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:151
 msgid "Latin capital letter i with tilde"
@@ -2520,43 +2595,43 @@ msgstr "Letra minúscula i con acento"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:153
 msgid "Latin capital letter i with macron"
-msgstr ""
+msgstr "Letra maiúscula latina i con macron"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:154
 msgid "Latin small letter i with macron"
-msgstr ""
+msgstr "Letra minúscula latina i con macron"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:155
 msgid "Latin capital letter i with breve"
-msgstr ""
+msgstr "Letra maiúscula latina i con letra breve"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:156
 msgid "Latin small letter i with breve"
-msgstr ""
+msgstr "Letra minúscula latina i con letra breve"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:157
 msgid "Latin capital letter i with ogonek"
-msgstr ""
+msgstr "Letra maiúscula latina i con ogonek"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:158
 msgid "Latin small letter i with ogonek"
-msgstr ""
+msgstr "Letra minúscula latina i con ogonek"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:159
 msgid "Latin capital letter i with dot above"
-msgstr ""
+msgstr "Letra maiúscula latina i cun punto enriba"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:160
 msgid "Latin small letter dotless i"
-msgstr ""
+msgstr "Letra minúscula latina i sen punto"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:161
 msgid "Latin capital ligature ij"
-msgstr ""
+msgstr "Ligatura maiúscula latina ij"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:162
 msgid "Latin small ligature ij"
-msgstr ""
+msgstr "Ligatura latina pequena ij"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:163
 msgid "Latin capital letter j with circumflex"
@@ -2596,27 +2671,27 @@ msgstr "Letra minúscula l con cedilla"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:172
 msgid "Latin capital letter l with caron"
-msgstr ""
+msgstr "Letra maiúscula latina l con carón"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:173
 msgid "Latin small letter l with caron"
-msgstr ""
+msgstr "Letra minúscula latina l con carón"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:174
 msgid "Latin capital letter l with middle dot"
-msgstr ""
+msgstr "Letra maiúscula latina l con punto no medio"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:175
 msgid "Latin small letter l with middle dot"
-msgstr ""
+msgstr "Letra minúscula latina l con punto central"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:176
 msgid "Latin capital letter l with stroke"
-msgstr ""
+msgstr "Letra maiúscula latina l con trazo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:177
 msgid "Latin small letter l with stroke"
-msgstr ""
+msgstr "Letra minúscula latina l con trazo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:178
 msgid "Latin capital letter n with acute"
@@ -2636,11 +2711,11 @@ msgstr "Letra minúscula n con cedilla"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:182
 msgid "Latin capital letter n with caron"
-msgstr ""
+msgstr "Letra maiúscula latina n con carón"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:183
 msgid "Latin small letter n with caron"
-msgstr ""
+msgstr "Letra minúscula latina n con carón"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:184
 msgid "Latin small letter n preceded by apostrophe"
@@ -2648,51 +2723,51 @@ msgstr "Letra minúscula n precedida de apóstrofe"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:185
 msgid "Latin capital letter eng"
-msgstr ""
+msgstr "Letra maiúscula latina eng"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:186
 msgid "Latin small letter eng"
-msgstr ""
+msgstr "Letra minúscula latina eng"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:187
 msgid "Latin capital letter o with macron"
-msgstr ""
+msgstr "Letra maiúscula latina o con macron"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:188
 msgid "Latin small letter o with macron"
-msgstr ""
+msgstr "Letra minúscula latina o con macron"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:189
 msgid "Latin capital letter o with breve"
-msgstr ""
+msgstr "Letra maiúscula latina o con letra breve"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:190
 msgid "Latin small letter o with breve"
-msgstr ""
+msgstr "Letra minúscula latina o con letra breve"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:191
 msgid "Latin capital letter o with double acute"
-msgstr ""
+msgstr "Letra maiúscula latina o con dobre agudo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:192
 msgid "Latin small letter o with double acute"
-msgstr ""
+msgstr "Letra minúscula latina o con dobre agudo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:193
 msgid "Latin capital ligature oe"
-msgstr ""
+msgstr "Ligatura maiúscula latina oe"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:194
 msgid "Latin small ligature oe"
-msgstr ""
+msgstr "Ligatura latina pequena oe"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:195
 msgid "Latin capital letter r with acute"
-msgstr ""
+msgstr "Letra maiúscula latina r con agudo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:196
 msgid "Latin small letter r with acute"
-msgstr ""
+msgstr "Letra minúscula latina r con agudo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:197
 msgid "Latin capital letter r with cedilla"
@@ -2704,11 +2779,11 @@ msgstr "Letra minúscula r con cedilla"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:199
 msgid "Latin capital letter r with caron"
-msgstr ""
+msgstr "Letra maiúscula latina r con carón"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:200
 msgid "Latin small letter r with caron"
-msgstr ""
+msgstr "Letra minúscula latina r con carón"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:201
 msgid "Latin capital letter s with acute"
@@ -2736,11 +2811,11 @@ msgstr "Letra minúscula s con cedilla"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:207
 msgid "Latin capital letter s with caron"
-msgstr ""
+msgstr "Letra maiúscula latina s con carón"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:208
 msgid "Latin small letter s with caron"
-msgstr ""
+msgstr "Letra minúscula latina s con carón"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:209
 msgid "Latin capital letter t with cedilla"
@@ -2752,19 +2827,19 @@ msgstr "Letra minúscula t con cedilla"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:211
 msgid "Latin capital letter t with caron"
-msgstr ""
+msgstr "Letra maiúscula latina t con carón"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:212
 msgid "Latin small letter t with caron"
-msgstr ""
+msgstr "Letra minúscula latina t con carón"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:213
 msgid "Latin capital letter t with stroke"
-msgstr ""
+msgstr "Letra maiúscula latina t con trazo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:214
 msgid "Latin small letter t with stroke"
-msgstr ""
+msgstr "Letra minúscula latina t con trazo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:215
 msgid "Latin capital letter u with tilde"
@@ -2776,31 +2851,31 @@ msgstr "Letra minúscula u con acento"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:217
 msgid "Latin capital letter u with macron"
-msgstr ""
+msgstr "Letra maiúscula latina u con macron"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:218
 msgid "Latin small letter u with macron"
-msgstr ""
+msgstr "Letra minúscula latina u con macron"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:219
 msgid "Latin capital letter u with breve"
-msgstr ""
+msgstr "Letra maiúscula latina u con letra breve"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:220
 msgid "Latin small letter u with breve"
-msgstr ""
+msgstr "Letra minúscula latina u con letra breve"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:221
 msgid "Latin capital letter u with ring above"
-msgstr ""
+msgstr "Letra maiúscula latina u cun anel enriba"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:222
 msgid "Latin small letter u with ring above"
-msgstr ""
+msgstr "Letra minúscula latina u cun anel enriba"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:223
 msgid "Latin capital letter u with double acute"
-msgstr ""
+msgstr "Letra maiúscula latina u con dobre agudo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:224
 msgid "Latin small letter u with double acute"
@@ -2808,11 +2883,11 @@ msgstr "quiere"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:225
 msgid "Latin capital letter u with ogonek"
-msgstr ""
+msgstr "Letra maiúscula latina u con ogonek"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:226
 msgid "Latin small letter u with ogonek"
-msgstr ""
+msgstr "Letra minúscula latina u con ogonek"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:227
 msgid "Latin capital letter w with circumflex"
@@ -3088,15 +3163,15 @@ msgstr "Ángulo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:296
 msgid "Vulgar fraction one quarter"
-msgstr ""
+msgstr "Fracción vulgar dun cuarto"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:297
 msgid "Vulgar fraction one half"
-msgstr ""
+msgstr "Fracción vulgar unha metade"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:298
 msgid "Vulgar fraction three quarters"
-msgstr ""
+msgstr "Fracción vulgar tres cuartos"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:299
 msgid "Single left-pointing angle quotation mark"
@@ -3132,11 +3207,11 @@ msgstr "Comiñas dereitas"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:307
 msgid "Single low-9 quotation mark"
-msgstr ""
+msgstr "Comiña simple de 9 baixos"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:308
 msgid "Double low-9 quotation mark"
-msgstr ""
+msgstr "Comiña dobre de 9 baixos"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:309
 msgid "Inverted exclamation mark"
@@ -3148,39 +3223,39 @@ msgstr "Signo de interrogación"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:311
 msgid "Two dot leader"
-msgstr ""
+msgstr "Líder de dous puntos"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:312
 msgid "Horizontal ellipsis"
-msgstr ""
+msgstr "Elipse horizontal"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:313
 msgid "Double dagger"
-msgstr ""
+msgstr "Daga dobre"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:314
 msgid "Per mille sign"
-msgstr ""
+msgstr "Signo por milla"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:315
 msgid "Per ten thousand sign"
-msgstr ""
+msgstr "Signo por dez mil"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:316
 msgid "Double exclamation mark"
-msgstr ""
+msgstr "Signo de exclamación dobre"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:317
 msgid "Question exclamation mark"
-msgstr ""
+msgstr "Signo de interrogación e exclamación"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:318
 msgid "Exclamation question mark"
-msgstr ""
+msgstr "Signo de exclamación e interrogación"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:319
 msgid "Double question mark"
-msgstr ""
+msgstr "Dobre signo de interrogación"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:320
 msgid "Copyright sign"
@@ -3192,7 +3267,7 @@ msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:322
 msgid "Trade mark sign"
-msgstr ""
+msgstr "Sinal de marca rexistrada"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:323
 msgid "Section sign"
@@ -3200,11 +3275,11 @@ msgstr "Signo da sección"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:324
 msgid "Paragraph sign"
-msgstr ""
+msgstr "Signo de parágrafo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:325
 msgid "Reversed paragraph sign"
-msgstr ""
+msgstr "Signo de parágrafo invertido"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:326
 msgid "Character categories"
@@ -3216,7 +3291,7 @@ msgstr "Listaxe numerada"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:328
 msgid "Bulleted List"
-msgstr ""
+msgstr "Lista con viñetas"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:329
 msgid "To-do List"
@@ -3224,7 +3299,7 @@ msgstr "Lista de tarefas"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:330
 msgid "Bulleted list styles toolbar"
-msgstr ""
+msgstr "Barra de ferramentas de estilos de lista con viñetas"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:331
 msgid "Numbered list styles toolbar"
@@ -3232,39 +3307,39 @@ msgstr "Barra de ferramentas de estilos numerada"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:332
 msgid "Toggle the disc list style"
-msgstr ""
+msgstr "Alternar o estilo da lista de discos"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:333
 msgid "Toggle the circle list style"
-msgstr ""
+msgstr "Activar/desactivar o estilo de lista circular"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:334
 msgid "Toggle the square list style"
-msgstr ""
+msgstr "Activar/desactivar o estilo de lista cadrada"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:335
 msgid "Toggle the decimal list style"
-msgstr ""
+msgstr "Activar/desactivar o estilo de lista decimal"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:336
 msgid "Toggle the decimal with leading zero list style"
-msgstr ""
+msgstr "Alternar o estilo de lista decimal con ceros á esquerda"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:337
 msgid "Toggle the lower–roman list style"
-msgstr ""
+msgstr "Activar/desactivar o estilo de lista romana minúscula"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:338
 msgid "Toggle the upper–roman list style"
-msgstr ""
+msgstr "Activar/desactivar o estilo de lista romana maiúscula"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:339
 msgid "Toggle the lower–latin list style"
-msgstr ""
+msgstr "Alternar o estilo de lista en latín minúsculo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:340
 msgid "Toggle the upper–latin list style"
-msgstr ""
+msgstr "Alternar o estilo de lista en maiúsculas latinas"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:341
 msgid "Disc"
@@ -3284,23 +3359,23 @@ msgstr "Decimal"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:345
 msgid "Decimal with leading zero"
-msgstr ""
+msgstr "Decimal con cero inicial"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:346
 msgid "Lower–roman"
-msgstr ""
+msgstr "baixorromana"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:347
 msgid "Upper-roman"
-msgstr ""
+msgstr "Romano superior"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:348
 msgid "Lower-latin"
-msgstr ""
+msgstr "Latín baixo"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:349
 msgid "Upper-latin"
-msgstr ""
+msgstr "Latín superior"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:350
 msgid "Rich Text Editor, %s"
@@ -3313,10 +3388,6 @@ msgstr "Editor de Texto Enriquecido"
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:352
 msgid "Edit block"
 msgstr "Editar bloque"
-
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:355
-msgid "%d of %d"
-msgstr "%d de %d"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:357
 msgid "Dropdown toolbar"
@@ -3874,7 +3945,71 @@ msgstr "Abrir o cadro de diálogo de axuda de accesibilidade"
 msgid "(may require <kbd>Fn</kbd>)"
 msgstr "(pode requirir <kbd>Fn</kbd>)"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/slider/Slider.svelte:390
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:530
+msgid "Arrows"
+msgstr "Frechas"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:531
+msgid "Currency"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:532
+msgid "Mathematical"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:533
+msgid "Latin"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:534
+msgid "Text"
+msgstr "Texto"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:536
+msgid "Basic Latin"
+msgstr "Latín básico"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:537
+msgid "Currency Symbols"
+msgstr "Símbolos de moeda"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:538
+msgid "General Punctuation"
+msgstr "Signos de puntuación xeral"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:539
+msgid "Latin-1 Supplement"
+msgstr "Suplemento de latín-1"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:540
+msgid "Latin Extended-A"
+msgstr "Latín estendido-A"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:541
+msgid "Letterlike Symbols"
+msgstr "Símbolos de letras"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:542
+msgid "Geometric Shapes"
+msgstr "Formas xeométricas"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:543
+msgid "Miscellaneous Symbols"
+msgstr "Símbolos diversos"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:544
+msgid "Mathematical Operators"
+msgstr "Operadores matemáticos"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:545
+msgid "Greek and Coptic"
+msgstr "Grego e copto"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:547
+msgid "Latin common"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/slider/Slider.svelte:392
 msgid "default"
 msgstr "predeterminado"
 
@@ -3974,7 +4109,7 @@ msgstr "Folla de cálculo OpenDocument"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:186
 msgid "C++ file"
-msgstr ""
+msgstr "Ficheiro C++"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:192
 msgid "C file"
@@ -3982,7 +4117,7 @@ msgstr "Fichero C"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:198
 msgid "Pascal file"
-msgstr ""
+msgstr "Ficheiro Pascal"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:204
 msgid "Audio Video Interleave"
@@ -4030,11 +4165,11 @@ msgstr "Imaxe de documento Microsoft Office"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:267
 msgid "MIME encapsulation of aggregate HTML documents"
-msgstr ""
+msgstr "Encapsulación MIME de documentos HTML agregados"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:272
 msgid "Mind mapping software application (free mind open source)"
-msgstr ""
+msgstr "Aplicación de mapas mentais (software de código aberto e gratuíto)"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:278
 msgid "MPEG-4 audio file"
@@ -4062,7 +4197,7 @@ msgstr "Modelo de documento de texto OpenDocument"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:314
 msgid "Flowchart-based programming environment & TI Interactive Workbook"
-msgstr ""
+msgstr "Entorno de programación baseado en diagramas de fluxo e libro de traballo interactivo de TI"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:319
 msgid "RealMedia file"
@@ -4074,7 +4209,7 @@ msgstr "Arquivo de texto enriquecido"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:331
 msgid "Document templates (Staroffice)"
-msgstr ""
+msgstr "Modelos de documentos (Staroffice)"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:337
 msgid "Adobe Flash file"
@@ -4082,7 +4217,7 @@ msgstr "Arquivo Adobe Flash"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:342
 msgid "Sibelius music notation"
-msgstr ""
+msgstr "Notación musical de Sibelius"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:348
 msgid "Compressed tar file"
@@ -4094,7 +4229,7 @@ msgstr "Folla de cálculo (Staroffice)"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:359
 msgid "Text document file format (Staroffice)"
-msgstr ""
+msgstr "Formato de ficheiro de documento de texto (Staroffice)"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:365
 msgid "TeX file"
@@ -4114,7 +4249,7 @@ msgstr "Arquivo Microsoft Works"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:388
 msgid "Windows Media file (metafile)"
-msgstr ""
+msgstr "Ficheiro de Windows Media (metaficheiro)"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:393
 msgid "Write Document"
@@ -4151,7 +4286,7 @@ msgstr "Vídeo Ogg Vorbis"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:464
 msgid "Ogg Vorbis audio"
-msgstr ""
+msgstr "Audio Ogg Vorbis"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:470
 msgid "WebM video"
@@ -4183,227 +4318,261 @@ msgstr "Microsoft Excel formato binario"
 msgid "Microsoft Powerpoint slideshow"
 msgstr "Presentación de diapositivas Microsoft Powerpoint"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:104
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:106
 msgid "Please select a language"
 msgstr "Selecciona un idioma"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:122
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:124
 msgid "Select"
 msgstr "Seleccionar"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:54
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:56
 msgid "Something went wrong."
 msgstr "Algo saíu mal."
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:55
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:57
 msgid "Please try again."
 msgstr "Por favor, inténteo de novo."
 
-#: ../../apps-common/src/component/PasswordPage.svelte:131
+#: ../../apps-common/src/component/PasswordPage.svelte:134
 msgid "Please wait until you are given the password to begin"
 msgstr "Agarda polo contrasinal para comezar"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:142
+#: ../../apps-common/src/component/PasswordPage.svelte:145
 msgid "Password"
 msgstr "Contrasinal"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:146
+#: ../../apps-common/src/component/PasswordPage.svelte:149
 msgid "Type here"
 msgstr "Teclea aquí"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:152
+#: ../../apps-common/src/component/PasswordPage.svelte:155
 msgid "Start"
 msgstr "Comezar"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:45
+#: ../../apps-common/src/component/PasswordPage.svelte:48
 msgid "Wrong Password."
 msgstr "Contrasinal incorrecto."
 
-#: ../../apps-common/src/component/TheEnd.svelte:128
+#: ../../apps-common/src/component/TheEnd.svelte:179
+msgid "Exit browser"
+msgstr ""
+
+#: ../../apps-common/src/component/TheEnd.svelte:179
 msgid "Reload the page"
 msgstr "Recarga a páxina"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:160
+#: ../../apps-common/src/component/WaitingPage.svelte:164
 msgid "Logout"
 msgstr "Pecha a sesión"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:164
+#: ../../apps-common/src/component/WaitingPage.svelte:168
 msgid "Hello"
 msgstr "Ola"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:166
+#: ../../apps-common/src/component/WaitingPage.svelte:170
 msgid "Great! You are ready, but the exam hasn't started yet."
 msgstr "Xenial! Estás listo, pero a proba aínda non comezou."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:169
+#: ../../apps-common/src/component/WaitingPage.svelte:173
 msgid "If you have extra time, it is not shown here."
 msgstr "Se tes tempo extra, non se amosa aquí."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:172
+#: ../../apps-common/src/component/WaitingPage.svelte:176
 msgid "You are registered with %s as your main language. Contact a proctor if this is not correct."
 msgstr "Estás rexistrado con %s como idioma principal. Contacta cun supervisor/a se non é correcto."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:180
+#: ../../apps-common/src/component/WaitingPage.svelte:184
 msgid "In %d minutes and %d seconds the exam will start. Good luck!"
 msgstr "En %d minutos e %d segundos comezará a proba. Boa sorte!"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:191
+#: ../../apps-common/src/component/WaitingPage.svelte:195
 msgid "Declaration of availability"
 msgstr "Declaración de dispoñibilidade"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:20
+#: ../../apps-common/src/component/WaitingPage.svelte:26
 msgid "TAO Logo"
 msgstr "Logo de TAO"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:71
+#: ../../apps-common/src/component/WaitingPage.svelte:75
 msgid "You are enrolled in %s, %s from %s."
 msgstr "Estás inscrito en %s, %s de %s."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:79
+#: ../../apps-common/src/component/WaitingPage.svelte:83
 msgid "You are enrolled in %s, %s from %s to %s."
 msgstr "Estás inscrito en %s, %s de %s a %s."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:82
+#: ../../apps-common/src/component/WaitingPage.svelte:86
 msgid "You are enrolled in %s, from %s to %s."
 msgstr "Estás inscrito en %s, de %s a %s."
 
-#: ../../apps-common/src/controller/runner.js:108
+#: ../../apps-common/src/controller/runner.js:136
 msgid "Test is finished"
 msgstr "A túa proba rematou"
 
-#: ../../apps-common/src/controller/thankyou.js:32
+#: ../../apps-common/src/controller/thankyou.js:34
+msgid "Proceed"
+msgstr ""
+
+#: ../../apps-common/src/controller/thankyou.js:51
 msgid "Thank you"
 msgstr "Grazas"
 
-#: ../../apps-common/src/controller/thankyou.js:33
+#: ../../apps-common/src/controller/thankyou.js:52
 msgid "Your test has been submitted."
 msgstr "A túa proba foi enviada."
 
-#: ../../apps-common/src/core/error/messages.js:36
+#: ../../apps-common/src/core/error/messages.js:38
 msgid "Timeout"
 msgstr "Tempo esgotado"
 
-#: ../../apps-common/src/core/error/messages.js:39
+#: ../../apps-common/src/core/error/messages.js:41
 msgid "This page cannot be reached."
 msgstr "Non se pode acceder a esta páxina."
 
-#: ../../apps-common/src/core/error/messages.js:42
+#: ../../apps-common/src/core/error/messages.js:44
 msgid "Please reload the page or contact your administrator."
 msgstr "Recarga a páxina ou contacta co administrador/a."
 
-#: ../../apps-common/src/core/error/messages.js:48
+#: ../../apps-common/src/core/error/messages.js:50
 msgid "No connection to the service."
 msgstr "Sen conexión ao servidor."
 
-#: ../../apps-common/src/core/error/messages.js:51
-#: ../../apps-common/src/core/error/messages.js:122
+#: ../../apps-common/src/core/error/messages.js:53
+#: ../../apps-common/src/core/error/messages.js:124
 msgid "Please contact your test administrator."
 msgstr "Contacta co administrador/a da túa proba."
 
-#: ../../apps-common/src/core/error/messages.js:57
+#: ../../apps-common/src/core/error/messages.js:59
 msgid "No internet connection."
 msgstr "Sen conexión a internet."
 
-#: ../../apps-common/src/core/error/messages.js:60
+#: ../../apps-common/src/core/error/messages.js:62
 msgid "Please check your internet connection or contact your test administrator."
 msgstr "Comproba a conexión a internet ou ponte en contacto co administrador/a da proba."
 
-#: ../../apps-common/src/core/error/messages.js:66
+#: ../../apps-common/src/core/error/messages.js:68
 msgid "Test not available."
 msgstr "Proba non dispoñible."
 
-#: ../../apps-common/src/core/error/messages.js:69
+#: ../../apps-common/src/core/error/messages.js:71
 msgid "Sorry, we cannot start your test."
 msgstr "Sentímolo, non podemos iniciar a túa proba."
 
-#: ../../apps-common/src/core/error/messages.js:72
-#: ../../apps-common/src/core/error/messages.js:181
+#: ../../apps-common/src/core/error/messages.js:74
+#: ../../apps-common/src/core/error/messages.js:192
 msgid "Please launch your test again or contact your administrator."
 msgstr "Inicie a proba de novo ou contacte co administrador/a."
 
-#: ../../apps-common/src/core/error/messages.js:78
+#: ../../apps-common/src/core/error/messages.js:80
 msgid "Service busy."
 msgstr "Servizo ocupado."
 
-#: ../../apps-common/src/core/error/messages.js:81
+#: ../../apps-common/src/core/error/messages.js:83
 msgid "The service is temporarily unavailable due to high traffic load."
 msgstr "Servizo non dispoñible temporalmente debido á alta carga de tráfico."
 
-#: ../../apps-common/src/core/error/messages.js:84
+#: ../../apps-common/src/core/error/messages.js:86
 msgid "Please wait for a few minutes and try again."
 msgstr "Espera uns minutos e volve intentalo."
 
-#: ../../apps-common/src/core/error/messages.js:90
-#: ../../apps-common/src/core/error/messages.js:102
-#: ../../apps-common/src/core/error/messages.js:116
-#: ../../apps-common/src/core/error/messages.js:128
+#: ../../apps-common/src/core/error/messages.js:92
+#: ../../apps-common/src/core/error/messages.js:104
+#: ../../apps-common/src/core/error/messages.js:118
+#: ../../apps-common/src/core/error/messages.js:130
 msgid "Unexpected error."
 msgstr "Erro inesperado."
 
-#: ../../apps-common/src/core/error/messages.js:93
-#: ../../apps-common/src/core/error/messages.js:119
+#: ../../apps-common/src/core/error/messages.js:95
+#: ../../apps-common/src/core/error/messages.js:121
 msgid "Sorry, an unexpected error happened during the test."
 msgstr "Sentímolo, durante a proba ocorreu un erro inesperado."
 
-#: ../../apps-common/src/core/error/messages.js:96
+#: ../../apps-common/src/core/error/messages.js:98
 msgid "Please reload the page or contact your test administrator."
 msgstr "Recarga a páxina ou contacta co administrador/a da proba."
 
-#: ../../apps-common/src/core/error/messages.js:105
+#: ../../apps-common/src/core/error/messages.js:107
 msgid "Certain third-party tools are not supported in TAO Advance. For example, \"Read aloud\" provided by Edge browser."
 msgstr "Algunhas ferramentas de terceiros non son compatibles con TAO Advance. Por exemplo, \"Ler en voz alta\" proporcionado polo navegador Edge."
 
-#: ../../apps-common/src/core/error/messages.js:110
+#: ../../apps-common/src/core/error/messages.js:112
 msgid "Please disable them and reload the page, or contact your test administrator for more details."
 msgstr "Desactívaos e recarga a páxina, ou ponte en contacto co administrador/a da proba para obter máis detalles."
 
-#: ../../apps-common/src/core/error/messages.js:131
+#: ../../apps-common/src/core/error/messages.js:133
 msgid "The system identified multiple active sessions."
 msgstr "O sistema identificou varias sesións activas."
 
-#: ../../apps-common/src/core/error/messages.js:134
+#: ../../apps-common/src/core/error/messages.js:136
 msgid "In order to continue, please click on the Reload button."
 msgstr "Para continuares fai clic no botón Recargar."
 
-#: ../../apps-common/src/core/error/messages.js:140
+#: ../../apps-common/src/core/error/messages.js:142
+msgid "Session ended"
+msgstr "Rematada a sesión"
+
+#: ../../apps-common/src/core/error/messages.js:145
+msgid "You have been logged out due to a new login."
+msgstr "Pechaches sesión debido a un novo inicio de sesión."
+
+#: ../../apps-common/src/core/error/messages.js:151
 msgid "Test terminated"
 msgstr "Proba rematada"
 
-#: ../../apps-common/src/core/error/messages.js:143
+#: ../../apps-common/src/core/error/messages.js:154
 msgid "Your test has been terminated by the proctor."
 msgstr "A túa proba foi rematada polo supervisor/a."
 
-#: ../../apps-common/src/core/error/messages.js:149
+#: ../../apps-common/src/core/error/messages.js:160
 msgid "Test paused"
 msgstr "Proba pausada"
 
-#: ../../apps-common/src/core/error/messages.js:152
+#: ../../apps-common/src/core/error/messages.js:163
 msgid "Your test has been paused by the proctor."
 msgstr "A túa proba foi pausada polo supervisor/a."
 
-#: ../../apps-common/src/core/error/messages.js:156
+#: ../../apps-common/src/core/error/messages.js:167
 msgid "Please click on the Reload button."
 msgstr "Fai clic no botón Recargar."
 
-#: ../../apps-common/src/core/error/messages.js:162
+#: ../../apps-common/src/core/error/messages.js:173
 msgid "Test was reset"
-msgstr ""
+msgstr "A proba foi restablecida"
 
-#: ../../apps-common/src/core/error/messages.js:165
+#: ../../apps-common/src/core/error/messages.js:176
 msgid "The administrator reset your test, you need to start again."
-msgstr ""
+msgstr "O administrador restableceu a túa proba; tes que comezar de novo."
 
-#: ../../apps-common/src/core/error/messages.js:169
+#: ../../apps-common/src/core/error/messages.js:180
 msgid "Please click on the Reload button to restart."
-msgstr ""
+msgstr "Fai clic no botón Recargar para reiniciar."
 
-#: ../../apps-common/src/core/error/messages.js:175
+#: ../../apps-common/src/core/error/messages.js:186
 msgid "The test cannot be continued."
 msgstr "Non se pode continuar a proba."
 
-#: ../../apps-common/src/core/error/messages.js:178
+#: ../../apps-common/src/core/error/messages.js:189
 msgid "Sorry, a problem occurred due to long inactivity."
 msgstr "Produciuse un problema debido a unha longa inactividade."
+
+#: ../../apps-common/src/core/error/messages.js:198
+#: ../../apps-common/src/core/error/messages.js:220
+msgid "Can't start secure session"
+msgstr ""
+
+#: ../../apps-common/src/core/error/messages.js:201
+#: ../../apps-common/src/core/error/messages.js:212
+msgid "To continue, you must close the apps listed below. Click \"Exit browser\", then close the apps, and relaunch TAO Secure Browser."
+msgstr ""
+
+#: ../../apps-common/src/core/error/messages.js:209
+msgid "Can't continue secure session"
+msgstr ""
+
+#: ../../apps-common/src/core/error/messages.js:223
+msgid "To start this secure session, install or update TAO Secure Browser."
+msgstr ""
 
 #: ../../item-runner/src/runner/ItemPreviewer/PreviewerHeaderBar.svelte:78
 msgid "close item preview"
@@ -4430,51 +4599,51 @@ msgstr "Puntuación da pregunta:"
 msgid "SUBMIT RESPONSE"
 msgstr "ENVIAR RESPOSTA"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1628
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1627
 msgid "Press enter or space to grab and browse the answer area. To move to the next available option, use the arrow keys."
 msgstr "Pulsa Enter ou espazo para coller e navegar na área de resposta. Para moverte á seguinte opción dispoñible, usa as teclas de frechas."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1633
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1632
 msgid "Press enter or space to grab. To move to next available answer, use the arrow keys."
 msgstr "Pulsa Enter ou espazo para coller. Para moverte á seguinte pregunta, usa as teclas de frecha."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1636
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1635
 msgid "Press enter or space to replace. To browse other drop zones use the arrow keys. Press escape to cancel."
 msgstr "Pulsa Enter ou espazo para substituír. Para navegar por outras zonas de soltar usa as teclas de frecha. Pulsa Esc para cancelar."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1639
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1638
 msgid "Press enter or space to place down. To browse other drop zones use the arrow keys. Press escape to cancel."
 msgstr "Pulsa Enter ou espazo para colocalo. Para buscar outras zonas de soltar usa as teclas de frechas."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1649
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1648
 msgid "unassociated options"
 msgstr "opcións sen asociar"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1751
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1752
 msgid "Drop zone occupied by "
 msgstr "Área ocupada por "
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1761
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1765
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1762
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1766
 msgid "Return %s to unassociated options."
 msgstr "Devolver %s ás opcións non asociadas."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1792
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1793
 msgid "Empty dropzone."
 msgstr "Zona de soltar baleira."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1823
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1828
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1833
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1824
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1829
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1834
 msgid "Return the association %s and %s to unassociated options."
 msgstr "Devolver a asociación %s e %s a opcións non asociadas."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1843
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1844
 msgid "answer area, %d items"
 msgstr "zona de resposta, %d elementos"
 
 #: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:76
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:437
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:435
 msgid "%lb has been placed down."
 msgstr "%lb colocouse."
 
@@ -4494,7 +4663,7 @@ msgstr "%lb e %lb devoltos a opcións non asociadas."
 msgid "cancelled"
 msgstr "cancelado"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1375
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1373
 msgid "Option %d"
 msgstr "Opción %d"
 
@@ -4512,88 +4681,226 @@ msgstr "Fai clic para gravar"
 
 #: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:91
 msgid "Upload started."
-msgstr ""
+msgstr "Carga iniciada."
 
 #: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:92
 msgid "Upload completed."
-msgstr ""
+msgstr "Carga completada."
 
 #: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:93
 msgid "Upload cancelled."
-msgstr ""
+msgstr "Carga cancelada."
 
 #: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:94
 msgid "Response file cleared."
-msgstr ""
+msgstr "Ficheiro de respostas borrado."
 
-#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:279
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:294
 msgid "Unable to restore the uploaded audio file. Please reload the page to try again."
 msgstr "Non foi posible restaurar o ficheiro de audio subido. Por favor, recarga a páxina e téntao de novo."
 
-#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:285
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:300
 msgid "Reload"
+msgstr "Recargar"
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:709
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:267
+msgid "Playback is disabled for this recording by item configuration."
 msgstr ""
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:82
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:716
+msgid "No uploaded video is available for review."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:718
+msgid "Record a response to play it back locally. Sandbox/manual mode can also keep a local saved response for this session."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:734
+msgid "Recording"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:736
+msgid "Preparing camera"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:738
+msgid "Finalizing local recording"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:740
+msgid "Preparing saved response"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:742
+msgid "Uploading saved response"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:744
+msgid "Saved response ready"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:746
+msgid "Local playback ready"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:748
+msgid "Ready"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:761
+msgid "Stop"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:768
+msgid "Reset"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:60
+msgid "Preparing saved response."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:61
+msgid "Saved response ready."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:62
+msgid "Saved response unavailable."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:175
+msgid "Recording starts in {{seconds}} seconds."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:188
+msgid "Container / MIME"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:188
+msgid "Unavailable"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:189
+msgid "Duration"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:189
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:190
+msgid "Not recorded"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:190
+msgid "File size"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:192
+msgid "Average bitrate"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:193
+msgid "Not available"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:196
+msgid "Save mode"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:197
+msgid "Not saved yet"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:259
+msgid "Maximum recording attempts reached."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:263
+msgid "Recording is in progress and will stop automatically when the time limit is reached."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:271
+msgid "Recording is in progress. Use Stop to finish or wait for the time limit."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:275
+msgid "Use the video controls to play back the current recording. Use Reset to clear it."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:278
+msgid "Use Start recording to begin. Use Stop to finish. Use Reset to clear the current response."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:433
+msgid "No supported recording MIME type was found for this browser."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:518
+msgid "Unable to start video recording. Check browser permissions and try again."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/upload.js:41
+msgid "Unable to upload this recording. You can still play it back locally in this session, but it will stay unanswered until the upload succeeds."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/upload.js:45
+msgid "Local playback is still available in this session. Retry the recording or upload before you submit."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:87
 msgid "Your answer"
 msgstr "A túa resposta"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:245
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:305
 msgid "Your image file is too big. Please insert an image no larger than %s"
 msgstr "O arquivo de imaxe é demasiado grande. Usa unha imaxe de non máis de %s"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:250
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:310
 msgid "Your image failed to upload, please try again"
 msgstr "Fallou a subida da túa imaxe, téntao de novo"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:301
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:361
 msgid "Maximum characters reached (maximum: %d)"
 msgstr "Caracteres máximos alcanzados (máximo: %d)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:307
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:367
 msgid "Maximum words reached (maximum: %d)"
 msgstr "Alcanzouse o máximo de palabras (máximo: %d)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:314
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:374
 msgid "<strong>%d</strong> / %d word(s) typed"
 msgstr "<strong>%d</strong> / %d palabra(s) introducida(s)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:319
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:379
 msgid "<strong>%d</strong> word(s) typed"
 msgstr "<strong>%d</strong> palabra(s) introducida(s)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:324
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:332
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:384
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:391
 msgid "<strong>%d</strong> character(s) typed"
 msgstr "<strong>%d</strong> carácter(es) introducidos(s)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:332
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:391
 msgid "recommended: %d"
 msgstr "recomendado: %d"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:336
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:395
 msgid "<strong>%d</strong> characters left."
 msgstr "<strong>%d</strong> caracteres restantes."
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:342
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:400
 msgid "%d out of %d characters typed"
 msgstr "%d de %d caracteres introducidos"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:342
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:400
 msgid "<strong>%d</strong> / %d character(s) typed"
 msgstr "<strong>%d</strong> carácter(es) introducido(s)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:351
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:409
 msgid "Invalid format, please refer to the instructions."
 msgstr "Formato inválido, consulte as instrucións."
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:357
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:415
 msgid "Answer required."
 msgstr "Resposta obrigatoria."
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:22
-msgid "Basic Latin"
-msgstr "Latín básico"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:23
 msgid "EXCLAMATION MARK"
@@ -4605,7 +4912,7 @@ msgstr "COMIÑAS"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:25
 msgid "NUMBER SIGN"
-msgstr ""
+msgstr "SIGNO DE NÚMERO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:26
 msgid "DOLLAR SIGN"
@@ -4617,7 +4924,7 @@ msgstr "SIGNO DE PORCENTAXE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:28
 msgid "AMPERSAND"
-msgstr ""
+msgstr "E COMERCIAL"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:29
 msgid "APOSTROPHE"
@@ -4949,7 +5256,7 @@ msgstr "LETRA MINÚSCULA Z"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:111
 msgid "LEFT CURLY BRACKET"
-msgstr ""
+msgstr "CORCHETE ESQUERDO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:112
 msgid "VERTICAL LINE"
@@ -4957,23 +5264,15 @@ msgstr "LIÑA VERTICAL"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:113
 msgid "RIGHT CURLY BRACKET"
-msgstr ""
+msgstr "CORCHETE DEREITO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:114
 msgid "TILDE"
 msgstr "ACENTO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:118
-msgid "Currency Symbols"
-msgstr ""
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:118
 msgid "EURO SIGN"
 msgstr "SIGNO DO EURO"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:119
-msgid "General Punctuation"
-msgstr "Signos de puntuación xeral"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:120
 msgid "LEFT SINGLE QUOTATION MARK"
@@ -4993,35 +5292,31 @@ msgstr "SIGNO DE PECHAR COMIÑAS"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:124
 msgid "EN DASH"
-msgstr ""
+msgstr "EN DASH"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:125
 msgid "EM DASH"
-msgstr ""
+msgstr "EM DASH"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:126
 msgid "SINGLE LOW-9 QUOTATION MARK"
-msgstr ""
+msgstr "COMILLA SIMPLE DE 9 INFERIOR"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:127
 msgid "SINGLE HIGH-REVERSED-9 QUOTATION MARK"
-msgstr ""
+msgstr "COMILLA INVERTIDA SEN COMILLAS 9 INVERTIDAS"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:128
 msgid "DOUBLE LOW-9 QUOTATION MARK"
-msgstr ""
+msgstr "COMILLA DOBRE 9 LÍMITE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:129
 msgid "HORIZONTAL ELLIPSIS"
-msgstr ""
+msgstr "Elipse horizontal"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:130
 msgid "BULLET"
-msgstr ""
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:132
-msgid "Latin-1 Supplement"
-msgstr ""
+msgstr "BALA"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:133
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:282
@@ -5078,7 +5373,7 @@ msgstr "SIGNO REXISTRADO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:146
 msgid "MACRON"
-msgstr ""
+msgstr "MACRON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:147
 msgid "DEGREE SIGN"
@@ -5102,7 +5397,7 @@ msgstr "SIGNO MICRO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:152
 msgid "PILCROW SIGN"
-msgstr ""
+msgstr "SINAL DE PILCROW"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:153
 msgid "MIDDLE DOT"
@@ -5130,11 +5425,11 @@ msgstr "FRACCIÓN UN CUARTO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:159
 msgid "VULGAR FRACTION ONE HALF"
-msgstr ""
+msgstr "FRACCIÓN VULGAR UNHA METADE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:160
 msgid "VULGAR FRACTION THREE QUARTERS"
-msgstr ""
+msgstr "FRACCIÓN VULGAR TRES CUARTOS"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:161
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:281
@@ -5168,7 +5463,7 @@ msgstr "LETRA MAIÚSCULA A CON DIÉRESE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:167
 msgid "LATIN CAPITAL LETTER A WITH RING ABOVE"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA A CON ANEL ENRIMA"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:168
 msgid "LATIN CAPITAL LETTER AE"
@@ -5259,7 +5554,7 @@ msgstr "SIGNO DE MULTIPLICACIÓN"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:186
 msgid "LATIN CAPITAL LETTER O WITH STROKE"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA O CON TRAZO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:187
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:267
@@ -5323,7 +5618,7 @@ msgstr "LETRA MINÚSCULA A CON DIÉRESE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:199
 msgid "LATIN SMALL LETTER A WITH RING ABOVE"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA A CON ANEL ENRIMA"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:200
 msgid "LATIN SMALL LETTER AE"
@@ -5415,7 +5710,7 @@ msgstr "SIGNO DE DIVISIÓN"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:218
 msgid "LATIN SMALL LETTER O WITH STROKE"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA O CON TRAZO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:219
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:268
@@ -5445,16 +5740,12 @@ msgstr "LETRA MINÚSCULA Y CON AGUDO"
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:224
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:279
 msgid "LATIN SMALL LETTER THORN"
-msgstr ""
+msgstr "ESPINA MINÚSCULA LATINA"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:225
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:277
 msgid "LATIN SMALL LETTER Y WITH DIAERESIS"
 msgstr "LETRA MINÚSCULA Y CON DIÉRESE"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:284
-msgid "Latin Extended-A"
-msgstr ""
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:285
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:359
@@ -5464,7 +5755,7 @@ msgstr "LETRA MAIÚSCULA OE"
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:286
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:360
 msgid "LATIN SMALL LIGATURE OE"
-msgstr ""
+msgstr "LIGATURA LATINA MINÚS OE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:287
 msgid "LATIN CAPITAL LETTER W WITH CIRCUMFLEX"
@@ -5486,23 +5777,23 @@ msgstr "LETRA MINÚSCULA Y CON CIRCUNFLEXO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:291
 msgid "LATIN CAPITAL LETTER A WITH MACRON"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA A CON MACRON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:292
 msgid "LATIN SMALL LETTER A WITH MACRON"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA A CON MACRON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:293
 msgid "LATIN CAPITAL LETTER A WITH BREVE"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA A CON BREVE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:294
 msgid "LATIN SMALL LETTER A WITH BREVE"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA A CON BREVE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:295
 msgid "LATIN CAPITAL LETTER A WITH OGONEK"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA A CON OGONEK"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:296
 msgid "LATIN SMALL LETTER A WITH OGONEK"
@@ -5510,11 +5801,11 @@ msgstr "LETRA A MINÚSCULO CON OGONEK"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:297
 msgid "LATIN CAPITAL LETTER C WITH ACUTE"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA C CON ACUTA"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:298
 msgid "LATIN SMALL LETTER C WITH ACUTE"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA C CON AGUDO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:299
 msgid "LATIN CAPITAL LETTER C WITH CIRCUMFLEX"
@@ -5530,47 +5821,47 @@ msgstr ""
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:302
 msgid "LATIN SMALL LETTER C WITH DOT ABOVE"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA C CON PUNTO ENCIMA"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:303
 msgid "LATIN CAPITAL LETTER C WITH CARON"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA C CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:304
 msgid "LATIN SMALL LETTER C WITH CARON"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA C CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:305
 msgid "LATIN CAPITAL LETTER D WITH CARON"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA D CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:306
 msgid "LATIN SMALL LETTER D WITH CARON"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA D CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:307
 msgid "LATIN CAPITAL LETTER D WITH STROKE"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA D CON TRAZO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:308
 msgid "LATIN SMALL LETTER D WITH STROKE"
-msgstr ""
+msgstr "LETRA LATINA MINÚSCULA D CON TRAZO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:309
 msgid "LATIN CAPITAL LETTER E WITH MACRON"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA E CON MACRON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:310
 msgid "LATIN SMALL LETTER E WITH MACRON"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA E CON MACRON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:311
 msgid "LATIN CAPITAL LETTER E WITH BREVE"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA E CON BREVE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:312
 msgid "LATIN SMALL LETTER E WITH BREVE"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA E CON BREVE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:313
 msgid "LATIN CAPITAL LETTER E WITH DOT ABOVE"
@@ -5586,15 +5877,15 @@ msgstr "LETRA E MAIÚSCULO CON OGONEK"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:316
 msgid "LATIN SMALL LETTER E WITH OGONEK"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA E CON OGONEK"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:317
 msgid "LATIN CAPITAL LETTER E WITH CARON"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA E CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:318
 msgid "LATIN SMALL LETTER E WITH CARON"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA E CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:319
 msgid "LATIN CAPITAL LETTER G WITH CIRCUMFLEX"
@@ -5610,15 +5901,15 @@ msgstr "LETRA MAIÚSCULA G CON BREVE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:322
 msgid "LATIN SMALL LETTER G WITH BREVE"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA G CON BREVE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:323
 msgid "LATIN CAPITAL LETTER G WITH DOT ABOVE"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA G CUN PUNTO ENCIMA"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:324
 msgid "LATIN SMALL LETTER G WITH DOT ABOVE"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA G CON PUNTO ENCIMA"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:325
 msgid "LATIN CAPITAL LETTER G WITH CEDILLA"
@@ -5646,19 +5937,19 @@ msgstr "LETRA MINÚSCULA I CON ACENTO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:331
 msgid "LATIN CAPITAL LETTER I WITH MACRON"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA I CON MACRON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:332
 msgid "LATIN SMALL LETTER I WITH MACRON"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA I CON MACRON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:333
 msgid "LATIN CAPITAL LETTER I WITH BREVE"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA I CON BREVE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:334
 msgid "LATIN SMALL LETTER I WITH BREVE"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA I CON BREVE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:335
 msgid "LATIN CAPITAL LETTER I WITH DOT ABOVE"
@@ -5670,11 +5961,11 @@ msgstr "LETRA MINÚSCULA I SEN PUNTO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:337
 msgid "LATIN CAPITAL LETTER I WITH OGONEK"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA I CON OGONEK"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:338
 msgid "LATIN SMALL LETTER I WITH OGONEK"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA I CON OGONEK"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:339
 msgid "LATIN CAPITAL LETTER K WITH CEDILLA"
@@ -5710,19 +6001,19 @@ msgstr "LETRA MINÚSCULA N CON AGUDO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:347
 msgid "LATIN CAPITAL LETTER N WITH CARON"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA N CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:348
 msgid "LATIN SMALL LETTER N WITH CARON"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA N CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:349
 msgid "LATIN CAPITAL LETTER ENG"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA ING"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:350
 msgid "LATIN SMALL LETTER ENG"
-msgstr ""
+msgstr "MINÚSCULAS LATINAS INGLESES"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:351
 msgid "LATIN CAPITAL LETTER N WITH CEDILLA"
@@ -5734,43 +6025,43 @@ msgstr "LETRA MINÚSCULA N CON CEDILLA"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:353
 msgid "LATIN CAPITAL LETTER O WITH MACRON"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA O CON MACRON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:354
 msgid "LATIN SMALL LETTER O WITH MACRON"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA O CON MACRON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:355
 msgid "LATIN CAPITAL LETTER O WITH BREVE"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA O CON BREVE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:356
 msgid "LATIN SMALL LETTER O WITH BREVE"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA O CON BREVE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:357
 msgid "LATIN CAPITAL LETTER O WITH DOUBLE ACUTE"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA O CON DOBRE AGUDÍSIMO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:358
 msgid "LATIN SMALL LETTER O WITH DOUBLE ACUTE"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA O CON DOBRE AGUDÍSIMO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:361
 msgid "LATIN CAPITAL LETTER R WITH ACUTE"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA R CON AGUDÍA"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:362
 msgid "LATIN SMALL LETTER R WITH ACUTE"
-msgstr ""
+msgstr "LETRA LATINA MINÚSCULA R CON AGUDO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:363
 msgid "LATIN CAPITAL LETTER R WITH CARON"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA R CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:364
 msgid "LATIN SMALL LETTER R WITH CARON"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA R CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:365
 msgid "LATIN CAPITAL LETTER S WITH ACUTE"
@@ -5798,11 +6089,11 @@ msgstr "LETRA MINÚSCULA S CON CEDILLA"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:371
 msgid "LATIN CAPITAL LETTER S WITH CARON"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA S CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:372
 msgid "LATIN SMALL LETTER S WITH CARON"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA S CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:373
 msgid "LATIN CAPITAL LETTER T WITH CEDILLA"
@@ -5814,19 +6105,19 @@ msgstr "LETRA MINÚSCULA T CON CEDILLA"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:375
 msgid "LATIN CAPITAL LETTER T WITH CARON"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA T CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:376
 msgid "LATIN SMALL LETTER T WITH CARON"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA T CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:377
 msgid "LATIN CAPITAL LETTER T WITH STROKE"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA T CON TRAZO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:378
 msgid "LATIN SMALL LETTER T WITH STROKE"
-msgstr ""
+msgstr "LETRA LATINA MINÚSCULA T CON TRAZO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:379
 msgid "LATIN CAPITAL LETTER U WITH TILDE"
@@ -5838,19 +6129,19 @@ msgstr "LETRA MINÚSCULA U CON ACENTO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:381
 msgid "LATIN CAPITAL LETTER U WITH MACRON"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA U CON MACRON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:382
 msgid "LATIN SMALL LETTER U WITH MACRON"
-msgstr ""
+msgstr "LETRA LATINA MINÚSCULA U CON MACRON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:383
 msgid "LATIN CAPITAL LETTER U WITH BREVE"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA U CON BREVE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:384
 msgid "LATIN SMALL LETTER U WITH BREVE"
-msgstr ""
+msgstr "LETRA LATINA U MINÚSCULA CON BREVE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:385
 msgid "LATIN CAPITAL LETTER U WITH DOUBLE ACUTE"
@@ -5862,11 +6153,11 @@ msgstr "LETRA MINÚSCULA U CON DOBRE AGUDO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:387
 msgid "LATIN CAPITAL LETTER U WITH OGONEK"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA U CON OGONEK"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:388
 msgid "LATIN SMALL LETTER U WITH OGONEK"
-msgstr ""
+msgstr "LETRA MINÚSCULA LATINA U CON OGONEK"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:389
 msgid "LATIN CAPITAL LETTER Y WITH DIAERESIS"
@@ -5890,31 +6181,19 @@ msgstr "LETRA MAIÚSCULA Z CON PUNTO ABAIXO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:396
 msgid "LATIN CAPITAL LETTER Z WITH CARON"
-msgstr ""
+msgstr "LETRA MAIÚSCULA LATINA Z CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:397
 msgid "LATIN SMALL LETTER Z WITH CARON"
-msgstr ""
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:401
-msgid "Letterlike Symbols"
-msgstr "Símbolos de letras"
+msgstr "LETRA MINÚSCULA LATINA Z CON CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:401
 msgid "TRADE MARK SIGN"
 msgstr "SIGNO DE MARCA REXISTRADA"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:404
-msgid "Geometric Shapes"
-msgstr "Formas xeométricas"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:404
 msgid "BLACK RIGHT-POINTING POINTER"
 msgstr "PUNTEIRO NEGRO DEREITO"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:405
-msgid "Arrows"
-msgstr "Frechas"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:406
 msgid "RIGHTWARDS ARROW"
@@ -5929,24 +6208,12 @@ msgid "LEFT RIGHT DOUBLE ARROW"
 msgstr "FRECHA CARA A ESQUERDA"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:412
-msgid "Miscellaneous Symbols"
-msgstr "Símbolos diversos"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:412
 msgid "BLACK DIAMOND SUIT"
-msgstr ""
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:415
-msgid "Mathematical Operators"
-msgstr "Operadores matemáticos"
+msgstr "TRAXE DE DIAMANTE NEGRO"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:415
 msgid "ALMOST EQUAL TO"
 msgstr "CASE IGUAL A"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:418
-msgid "Greek and Coptic"
-msgstr "Grego e copto"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:418
 msgid "GREEK CAPITAL LETTER OMEGA"
@@ -6062,12 +6329,12 @@ msgstr "Debes facer exactamente 1 asociación"
 msgid "Currently %d"
 msgstr "Actualmente %d"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:242
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:244
 msgid "Option %d."
 msgstr "Opción %d."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:272
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:276
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:274
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:279
 msgid "Return %s to the available options."
 msgstr "Devolve %s ás opcións dispoñibles."
 
@@ -6079,65 +6346,65 @@ msgstr "A área de resposta está chea. Para moverte a área de resposta pulsa T
 msgid "%s has been returned to available options."
 msgstr "%s volveu a opcións dispoñibles."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:431
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:433
 msgid "Gap %d %s %s"
 msgstr "Oco %d %s %s"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:434
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:46
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:296
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:436
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:47
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:297
 msgid "empty"
 msgstr "baleiro"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:55
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:56
 msgid "required"
 msgstr "requirido"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:257
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:258
 msgid "%s has been placed in Gap %d."
 msgstr "%s colocado no Oco %d."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:748
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:746
 msgid "Press enter or space to grab and browse the answer area."
 msgstr "Pulsa Enter ou espazo para seleccionar e navegar pola área de resposta."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:749
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:747
 msgid "To move to next available option, use the arrow keys."
 msgstr "Para pasar á seguinte opción dispoñible, usa as frechas."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:752
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:750
 msgid "Press enter or space to place down."
 msgstr "Pulsa Enter ou espazo para colocar abaixo."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:753
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:751
 msgid "To browse other gaps use the arrow keys."
 msgstr "Para navegar por outros ocos usa as teclas de frechas."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:754
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:752
 msgid "Press escape to cancel."
 msgstr "Pulsa Escape para cancelar."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:757
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:755
 msgid "Press enter or space to grab."
 msgstr "Pulsa Enter ou espazo para seleccionar."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:758
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:756
 msgid "To move to next available answer, use the arrow keys."
 msgstr "Para pasar á seguinte resposta dispoñible, usa as teclas de frecha."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:759
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:757
 msgid "Double press shift+tab to return to choices."
 msgstr "Pulsa Maiús+Tab para volver ás opcións."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:797
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:795
 msgid "Available options"
 msgstr "Opcións dispoñibles"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:832
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:830
 msgid "Text Passage. To read use the arrow keys."
 msgstr "Passagem de Texto. Para ler, use as setas."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:506
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:504
 msgid "%s has not been placed."
 msgstr "%s sen colocar."
 
@@ -6193,11 +6460,11 @@ msgstr "Asociación entre %s e %s creada."
 msgid "The association between %s and %s has been deleted."
 msgstr "A asociación entre %s e %s eliminouse."
 
-#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1281
+#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1282
 msgid "Available options, %d items"
 msgstr "Opcións dispoñibles, %d elementos"
 
-#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1332
+#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1333
 msgid "Answer area"
 msgstr "Área de resposta"
 
@@ -6300,15 +6567,15 @@ msgstr "Ordenouse o elemento activo %d."
 
 #: ../../item-runner/src/runner/interactions/graphic/hotspot/util/ariaLabelGenerator.js:30
 msgid "unselected toggle button"
-msgstr ""
+msgstr "botón de alternancia non seleccionado"
 
 #: ../../item-runner/src/runner/interactions/graphic/hotspot/util/ariaLabelGenerator.js:31
 msgid "selected toggle button"
-msgstr ""
+msgstr "botón de alternancia seleccionado"
 
 #: ../../item-runner/src/runner/interactions/graphic/hotspot/util/ariaLabelGenerator.js:32
 msgid "disabled toggle button"
-msgstr ""
+msgstr "botón de alternancia desactivado"
 
 #: ../../item-runner/src/runner/interactions/graphic/hotspot/util/ariaLabelGenerator.js:33
 msgid "press enter or space to select"
@@ -6354,19 +6621,19 @@ msgstr "mín. %d"
 msgid "max %d"
 msgstr "máx. %d"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:871
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:872
 msgid "List"
 msgstr "Lista"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:325
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:326
 msgid "deselected"
 msgstr "deseleccionado"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:336
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:337
 msgid "selected %s"
 msgstr "%s selecionados"
 
-#: ../../item-runner/src/runner/interactions/match/TabularMatch.svelte:458
+#: ../../item-runner/src/runner/interactions/match/TabularMatch.svelte:457
 msgid "%s matches %s"
 msgstr "%s coincidencias %s"
 
@@ -6414,7 +6681,7 @@ msgstr "dispoñible %d veces."
 msgid "grouped in %s."
 msgstr "agrupado en %s."
 
-#: ../../item-runner/src/runner/interactions/media/MediaInteractionImpl.svelte:523
+#: ../../item-runner/src/runner/interactions/media/MediaInteractionImpl.svelte:533
 msgid "Click to listen"
 msgstr "Fai clic para escoitar"
 
@@ -6426,11 +6693,11 @@ msgstr "Debes reproducir este audio polo menos %d veces"
 msgid "You have played this media maximum times"
 msgstr "Reproduciches este audio o máximo de veces"
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:617
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:629
 msgid "Press enter or space to grab and place in the answer area. To move to next available option, use the arrow keys."
 msgstr "Pulsa Enter ou espazo para coller e colocar na área de resposta. Para moverse á seguinte opción dispoñible, usa as teclas de frechas."
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:637
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:650
 msgid "Unordered options"
 msgstr "Opcións sen ordear"
 
@@ -6438,21 +6705,21 @@ msgstr "Opcións sen ordear"
 msgid "Answer area is full. To move to the answer area, press Tab."
 msgstr "A área de resposta está chea. Para moverte á área de resposta pulsa Tab."
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:491
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:494
 msgid "%lb has been placed down"
 msgstr "%lb colocouse debaixo"
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:500
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:503
 msgid "%lb moved to position %d"
 msgstr "%lb movido á posición %d"
 
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:931
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:938
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:942
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:949
 msgid "Position %d"
 msgstr "Posición %d"
 
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:934
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:939
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:945
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:950
 msgid "Return %s to the unordered options"
 msgstr "Devolver %s ás opcións desordenadas"
 
@@ -6468,27 +6735,27 @@ msgstr "Pulsa Enter ou espazo para agarrar. Para moverte á próxima resposta di
 msgid "Press enter or space to place down. To reorder use the arrow keys. Press escape to cancel"
 msgstr "Pulsa Enter ou espazo para colocar.  Para reordenar usa as teclas de frecha. Pulsa Escape para cancelar"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:390
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:394
 msgid "Plus. %s"
 msgstr "Mais. %s"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:391
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:395
 msgid "Minus. %s"
 msgstr "Menos. %s"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:392
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:396
 msgid "To enter the slider value in this field, type."
 msgstr "Para inserir o valor do control deslizante neste campo teclea"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:393
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:397
 msgid "Use to decrease the slider value by %d"
 msgstr "Usa para baixar o valor do control deslizante en %d"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:394
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:398
 msgid "Use to increase the slider value by %d"
 msgstr "Usa para subir o valor do control deslizante en d%"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:395
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:399
 msgid "Use the arrow keys to increase or decrease the value by %d"
 msgstr "Usas as teclas de frecha para subir ou baixar o valor en %d"
 
@@ -6508,31 +6775,31 @@ msgstr "Valor actual %d"
 msgid "%s, min %d max %d"
 msgstr "%s, mín %d máx. %d"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:164
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:169
 msgid "(dot)"
 msgstr "(punto)"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:165
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:170
 msgid "(comma)"
 msgstr "(coma)"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:174
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:178
 msgid "Invalid value, use %s %s for decimal point separator"
 msgstr "Valor non válido, emprega %s %s para o separador de decimais"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:179
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:183
 msgid "Invalid value, please refer to the instructions"
 msgstr "Valor non válido, consulta as instrucións"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:188
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:191
 msgid "Number is out of range"
 msgstr "O número está fora do intervalo"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:200
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:203
 msgid "Max length has been reached"
 msgstr "Acadouse a lonxitude máxima"
 
-#: ../../item-runner/src/runner/interactions/upload/UploadInteraction.svelte:368
+#: ../../item-runner/src/runner/interactions/upload/UploadInteraction.svelte:373
 msgid "Loading"
 msgstr "Cargando"
 
@@ -6544,7 +6811,7 @@ msgstr "Imposible acceder ao ficheiro subido"
 msgid "Unable to upload the selected file. Please try again or refresh the page."
 msgstr "Imposible subir o ficheiro seleccionado. Téntao de novo ou refresca a páxina."
 
-#: ../../item-runner/src/runner/item/modalFeedback/ModalFeedbackNavigator.svelte:20
+#: ../../item-runner/src/runner/item/modalFeedback/ModalFeedbackNavigator.svelte:22
 msgid "Continue"
 msgstr "Continuar"
 
@@ -6552,7 +6819,7 @@ msgstr "Continuar"
 msgid "No answer file selected"
 msgstr "Ningún arquivo de resposta seleccionado"
 
-#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:72
+#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:71
 msgid "view report"
 msgstr "ver informe"
 
@@ -6571,6 +6838,10 @@ msgstr "Sospeita de plaxio:"
 #: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:27
 msgid "No suspicion of plagiarism."
 msgstr "Non hai sospeita de plaxio."
+
+#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/HblMessage.svelte:65
+msgid "Failed to load the plagiarism report. Please try again."
+msgstr "Non se puido cargar o informe de plaxio. Téntao de novo."
 
 #: ../../item-runner/src/runner/static/ModalFeedback.svelte:64
 msgid "Response feedback"
@@ -6600,48 +6871,48 @@ msgstr "Pregunta anterior"
 msgid "Question %d."
 msgstr "Pregunta %d."
 
-#: ../../test-runner/src/runner/TestLayout.svelte:581
+#: ../../test-runner/src/runner/TestLayout.svelte:588
 msgid "Test Navigation"
 msgstr "Navegación da proba"
 
+#: ../../test-runner/src/runner/TestLayout.svelte:70
 #: ../../test-runner/src/runner/TestLayout.svelte:71
-#: ../../test-runner/src/runner/TestLayout.svelte:72
 msgid "Main menu"
 msgstr "Menú principal"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:385
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:408
 msgid "Review"
 msgstr "Revisión"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:428
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:457
 msgid "Overall feedback"
 msgstr "Comentario xeral"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:439
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:468
 msgid "Awaiting manual scoring"
 msgstr "Esperando puntuación manual"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:440
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:469
 msgid "All or part of this question needs to be manually scored. Please check back later to view the score."
 msgstr "A pregunta ou unha parte dela debe ser puntuada manualmente. Volve máis tarde para ver a puntuación"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:125
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:130
 msgid "Questions"
-msgstr ""
+msgstr "Preguntas"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:125
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:130
 msgid "Question"
 msgstr "Pregunta"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:133
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:138
 msgid "Correct"
 msgstr "Correcto"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:142
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:147
 msgid "Answers"
-msgstr ""
+msgstr "Respostas"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:142
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:147
 msgid "Answer"
 msgstr "Resposta"
 
@@ -6666,7 +6937,7 @@ msgid "You still have %d incomplete questions. If you submit this part you won't
 msgstr "Aínda tes %d preguntas incompletas. Se envías esta parte, non poderás completar ou cambiar as túas respostas."
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:89
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:347
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:345
 msgid "Review my answers"
 msgstr "Revisar as miñas respostas"
 
@@ -6728,103 +6999,103 @@ msgstr "A túa resposta ou algunha parte non son válidas."
 msgid "Your answer is not valid."
 msgstr "A túa resposta non é válida."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:200
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:199
 msgid "You have %d invalid answers out of %d. Please provide valid answers before proceeding."
 msgstr "%d respostas de %d non son válidas. Proporciona respostas válidas antes de proceder."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:205
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:204
 msgid "Please provide a valid answer."
 msgstr "Proporciona unha resposta válida."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:212
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:233
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:210
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:231
 msgid "Ok"
 msgstr "Aceptar"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:225
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:223
 msgid "An answer is required before leaving this question."
 msgstr "É necesaria unha resposta antes de saír desta pregunta."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:227
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:225
 msgid "You will be able to navigate away once you answer the question."
 msgstr "Cando respondas a pregunta poderás seguir navegando. "
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:247
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:245
 msgid "Your test has been terminated by the proctor and your answers have been submitted."
 msgstr "A túa proba foi finalizada polo supervisor/a e as túas respostas foron enviadas. "
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:252
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:250
 msgid "I understand"
 msgstr "Entendo"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:266
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:264
 msgid "You need to restart the test"
-msgstr ""
+msgstr "Tes que reiniciar a proba"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:272
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:270
 msgid "Restart now"
-msgstr ""
+msgstr "Reiniciar agora"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:289
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:287
 msgid "Your test and its timer have been paused by proctor."
 msgstr "O supervisor/a pausou a túa proba e o temporizador."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:295
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:293
 msgid "OK"
 msgstr "Aceptar"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:333
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:331
 msgid "Finish the test"
 msgstr "Finalizar a proba"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:340
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:338
 msgid "Submit this part"
 msgstr "Enviar esta parte"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:360
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:370
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:378
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:400
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:427
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:444
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:471
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:358
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:368
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:376
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:398
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:425
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:442
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:469
 msgid "The time limit for the test has been reached."
 msgstr "Alcanzouse o límite de tempo."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:373
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:384
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:371
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:382
 msgid "The time limit for this part has been reached."
 msgstr "Alcanzouse o tempo límite para esta parte."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:379
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:413
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:457
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:377
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:411
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:455
 msgid "You are at the end of the test. You can either finish the test or keep reviewing your answers."
 msgstr "Estás no final da proba. Podes rematala ou seguir revisando as túas respostas."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:385
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:418
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:462
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:383
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:416
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:460
 msgid "You are at the end of this part. You can either submit this part or keep reviewing your answers."
 msgstr "Estás no final desta parte. Podes enviar esta parte ou seguir revisando as túas respostas."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:392
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:403
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:430
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:390
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:401
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:428
 msgid "The time limit for this section has been reached."
 msgstr "Alcanzouse o límite de tempo para esta sección."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:436
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:447
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:474
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:434
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:445
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:472
 msgid "The time limit for this item has been reached."
 msgstr "Alcanzouse o límite de tempo para este elemento."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:498
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:496
 msgid "This test needs to be taken in full screen mode"
 msgstr "A proba debe realizarse na pantalla completa"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:499
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:497
 msgid "Leaving the test window is not allowed"
 msgstr "Non se permite saír da pantalla da proba"
 
@@ -6838,85 +7109,90 @@ msgstr "Superposición"
 
 #: ../../test-runner/src/runner/layout/review/AllItemsFooter.svelte:21
 msgid "End of test"
+msgstr "Fin da proba"
+
+#: ../../test-runner/src/runner/layout/toolbarItems.js:61
+#: ../../test-runner/src/runner/layout/toolbarItems.js:64
+msgid "Reload this page"
 msgstr ""
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:62
+#: ../../test-runner/src/runner/layout/toolbarItems.js:73
 msgid "Attachments"
-msgstr ""
+msgstr "Adxuntos"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:72
+#: ../../test-runner/src/runner/layout/toolbarItems.js:83
 msgid "Scratchpad"
 msgstr "Bloc de notas"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:81
+#: ../../test-runner/src/runner/layout/toolbarItems.js:92
 msgid "Highlighter"
 msgstr "Resaltar"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:90
+#: ../../test-runner/src/runner/layout/toolbarItems.js:111
 msgid "Calculator"
 msgstr "Calculadora"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:99
+#: ../../test-runner/src/runner/layout/toolbarItems.js:120
 msgid "Read Aloud"
 msgstr "Ler en voz alta"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:103
+#: ../../test-runner/src/runner/layout/toolbarItems.js:124
 msgid "Read aloud tool. To close, press enter or space"
 msgstr "Ler en voz alta. Para pechar, pulsa Enter ou espazo"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:104
+#: ../../test-runner/src/runner/layout/toolbarItems.js:125
 msgid "Read aloud tool. To open, press enter or space"
 msgstr "Ler en voz alta. Para abrir, pulsa Enter ou espazo"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:113
+#: ../../test-runner/src/runner/layout/toolbarItems.js:134
 msgid "Line Reader"
 msgstr "Lector de liña"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:124
+#: ../../test-runner/src/runner/layout/toolbarItems.js:145
 msgid "Exit full screen"
 msgstr "Saír da pantalla completa"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:124
+#: ../../test-runner/src/runner/layout/toolbarItems.js:145
 msgid "Full screen"
 msgstr "Pantalla completa"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:142
+#: ../../test-runner/src/runner/layout/toolbarItems.js:163
 msgid "Open accessibility panel"
 msgstr "Abrir panel de accesibilidade"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:152
+#: ../../test-runner/src/runner/layout/toolbarItems.js:173
 msgid "Print"
 msgstr "Imprimir"
 
 #: ../../test-runner/src/runner/layout/userMenu/UserMenu.svelte:76
 msgid "User: %s"
-msgstr ""
+msgstr "Usuario: %s"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:117
+#: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:121
 msgid "Attachment: %s"
-msgstr ""
+msgstr "Adxunto: %s"
 
 #: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:45
 #: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:46
 msgid "More attachments"
-msgstr ""
+msgstr "Máis anexos"
 
 #: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:56
 #: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:57
 msgid "Close attachment"
-msgstr ""
+msgstr "Pechar anexo"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:96
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:97
 msgid "Open attachment %s"
-msgstr ""
+msgstr "Abrir ficheiro adxunto %s"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:103
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:104
 msgid "Open attachment %s in a new tab"
-msgstr ""
+msgstr "Abrir o ficheiro adxunto %s nunha nova lapela"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsOverlayBox.svelte:74
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsOverlayBox.svelte:75
 msgid "Attachments (%s)"
-msgstr ""
+msgstr "Adxuntos (%s)"
 
 #: ../../test-runner/src/runner/plugins/content/title/HiddenContentTitle.svelte:31
 msgid "Current question %d of %d"
@@ -6994,33 +7270,33 @@ msgstr "Menú de desprazamento"
 msgid "Jump to"
 msgstr "Ir a "
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:64
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:65
 msgid "Toolbox & Configuration"
 msgstr "Ferramentas e configuración"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:80
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:88
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:81
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:89
 msgid "Item attachment"
-msgstr ""
+msgstr "Adxunto do elemento"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:119
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:120
 msgid "the overview of all %d questions"
 msgstr "o resumo de todas as %d preguntas"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:165
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:166
 msgid "Question %d"
 msgstr "Pregunta %d"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:305
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:314
 msgid "Remove bookmark from this question"
 msgstr "Quitar marcador desta pregunta"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:306
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:315
 msgid "Bookmark this question"
 msgstr "Marcar esta pregunta"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:345
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:346
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:354
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:355
 msgid "Submit test part"
 msgstr "Enviar esta parte da proba"
 
@@ -7049,7 +7325,7 @@ msgstr "marcadas (%d)"
 msgid "incomplete (%d)"
 msgstr "incompleto (%d)"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/plugin.js:86
+#: ../../test-runner/src/runner/plugins/navigation/navigator/plugin.js:139
 msgid "Overview"
 msgstr "Resumo"
 
@@ -7138,17 +7414,17 @@ msgstr "Saír da revisión"
 
 #: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/ReviewNavigator.svelte:33
 msgid "Continue to next test"
-msgstr ""
+msgstr "Continuar á seguinte proba"
 
-#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:254
+#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:262
 msgid "There are still questions waiting to be scored"
 msgstr "Aínda quedan preguntas por puntuar"
 
-#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:255
+#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:263
 msgid "Your total score cannot be calculated until all of the questions have been scored. Please come back later to see your total score."
 msgstr "A puntuación total non se pode calcular ata que todas as preguntas sexan puntuadas. Volve máis tarde para ver a puntuación total"
 
-#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:263
+#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:271
 msgid "Total score"
 msgstr "Puntuación total"
 
@@ -7180,15 +7456,15 @@ msgstr "Ferramentas de accesibilidade"
 msgid "Default font"
 msgstr "Fonte estándar"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:83
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:96
 msgid "Size"
 msgstr "Tamaño"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:89
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:102
 msgid "decrease font size"
 msgstr "diminuír o tamaño da fonte"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:90
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:103
 msgid "increase font size"
 msgstr "aumentar o tamaño da fonte"
 
@@ -7324,10 +7600,6 @@ msgstr "pechar opcións de texto"
 msgid "expand text settings"
 msgstr "despregar opcións de texto"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/groups/TextGroup.svelte:72
-msgid "Text"
-msgstr "Texto"
-
 #: ../../test-runner/src/runner/plugins/panel/a11y/groups/ZoomGroup.svelte:41
 msgid "collapse zoom settings"
 msgstr "pechar opcións de zoom"
@@ -7340,19 +7612,19 @@ msgstr "despregar opcións de zoom"
 msgid "Zoom"
 msgstr "Zoom"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:20
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:25
 msgid "Privacy Policy"
 msgstr "Política de privacidade"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:24
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:29
 msgid "About"
 msgstr "Acerca de"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:32
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:37
 msgid "TAO logo"
 msgstr "Logo de TAO"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:40
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:45
 msgid "All rights reserved"
 msgstr "Todos os dereitos reservados"
 
@@ -7372,17 +7644,29 @@ msgstr "A túa proba está en pausa"
 msgid "Please wait for the proctor to resume your test."
 msgstr "Espera polo supervisor/a para retomar a túa proba."
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:419
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:430
 msgid "Extra time has been removed"
 msgstr "Eliminouse o tempo extra"
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:421
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:432
 msgid "Extra time limit adjusted to %s"
 msgstr "Límite de tempo extra axustado a %s"
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:423
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:434
 msgid "%s of extra time granted"
 msgstr "%s de tempo extra outorgado"
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:56
+msgid "You are about to leave the document and the test will be paused."
+msgstr "Estás a piques de saír do documento e a proba porase en pausa."
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:58
+msgid "Press Tab to keep focus within the document and resume the test."
+msgstr "Prema a tecla Tab para manter o foco dentro do documento e retomar a proba."
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:60
+msgid "Press Shift+Tab to keep focus within the document and resume the test."
+msgstr "Prema Maiús+Tab para manter o foco dentro do documento e retomar a proba."
 
 #: ../../test-runner/src/runner/plugins/settings/SettingsContent.svelte:119
 msgid "My settings"
@@ -7414,11 +7698,11 @@ msgstr "Ocultar opcións"
 msgid "Answer masking lets you hide answer options that you are sure are incorrect."
 msgstr "A opción de ocultar opcións permite ocultar as opcións de resposta que estás seguro/a que son incorrectas."
 
-#: ../../test-runner/src/runner/plugins/settings/plugin.js:264
+#: ../../test-runner/src/runner/plugins/settings/plugin.js:265
 msgid "Test Configuration"
 msgstr "Configuración da proba"
 
-#: ../../test-runner/src/runner/plugins/tools/highlighter/HighlighterBar.svelte:283
+#: ../../test-runner/src/runner/plugins/tools/highlighter/HighlighterBar.svelte:286
 msgid "clear all"
 msgstr "borrar todo"
 
@@ -7442,11 +7726,11 @@ msgstr "Borrar comentarios"
 msgid "Grader's comment:"
 msgstr "Comentarios do corrector:"
 
-#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:298
+#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:300
 msgid "Saving failed"
 msgstr "Fallo ao gardar"
 
-#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:342
+#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:345
 msgid "Deletion failed"
 msgstr "Fallo ao eliminar"
 
@@ -7458,6 +7742,10 @@ msgstr "Cambiar o tamaño vertical do cursor"
 msgid "Draggable element handle icon"
 msgstr "Icona de manexo de elementos arrastrable"
 
+#: ../../test-runner/src/runner/plugins/tools/markingSymbols/MarkingSymbolsBar.svelte:282
+msgid "Marking symbols"
+msgstr "Símbolos de marcado"
+
 #: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:103
 msgid "read aloud"
 msgstr "ler en voz alta"
@@ -7466,31 +7754,31 @@ msgstr "ler en voz alta"
 msgid "Continuous reading"
 msgstr "Lectura continua"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:119
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:118
 msgid "Click to read"
 msgstr "Fai clic para ler"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:131
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:129
 msgid "Select and read"
 msgstr "Seleccionar e ler"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:143
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:140
 msgid "ReadAloud settings"
 msgstr "Opcións de lectura en voz alta"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:156
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:152
 msgid "Select text to read aloud"
 msgstr "Seleccionar texto para ler en voz alta"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:159
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:155
 msgid "Click on any text to read aloud"
 msgstr "Fai clic en calquera texto para ler en voz alta"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:168
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:164
 msgid "Press enter or space to activate select and read. To move the next available action, use the arrow keys. To close press escape."
 msgstr "Pulsa Enter ou espazo para activar selección e lectura. Para seleccionar a seguinte acción dispoñible, usa as frechas de dirección. Para pechar pulsa Escape."
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:173
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:169
 msgid "Press enter or space to activate continuous reading. If activated press enter or space to stop the reading."
 msgstr "Pulsa Enter ou espazo para activar a lectura continua. Se se activa, presiona Enter ou espazo para deter a lectura."
 
@@ -7558,21 +7846,21 @@ msgstr "medio"
 msgid "high"
 msgstr "alto"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:181
+#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:182
 msgid "Look at the formula."
 msgstr "Mira a fórmula."
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:740
+#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:741
 msgid "Read aloud not available"
 msgstr "Lectura en voz alta non dispoñible"
 
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:504
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:505
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:507
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:508
 msgid "undo"
 msgstr "desfacer"
 
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:509
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:509
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:512
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:512
 msgid "redo"
 msgstr "refacer"
 
@@ -7609,20 +7897,24 @@ msgstr "Liña"
 msgid "Eraser"
 msgstr "Borrador"
 
-#: ../../test-runner/src/runner/qti.js:540
+#: ../../test-runner/src/runner/qti.js:319
+msgid "Please wait while the answer is saved..."
+msgstr ""
+
+#: ../../test-runner/src/runner/qti.js:594
 msgid "All attempts have been used for this question"
 msgstr "Empregáronse todos os intentos para esta pregunta"
 
-#: ../../test-runner/src/runner/qti.js:542
-#: ../../test-runner/src/runner/qti.js:546
+#: ../../test-runner/src/runner/qti.js:596
+#: ../../test-runner/src/runner/qti.js:600
 msgid "You have %d attempts left for this question"
 msgstr "Quédanlle %d intentos para esta pregunta"
 
-#: ../../test-runner/src/runner/qti.js:563
+#: ../../test-runner/src/runner/qti.js:617
 msgid "Time has run out for this question"
 msgstr "Esgotouse o tempo para esta pregunta"
 
-#: ../../test-runner/src/runner/qti.js:565
+#: ../../test-runner/src/runner/qti.js:619
 msgid "Time has run out for this question's section"
 msgstr "Esgotouse o tempo para esta sección de preguntas"
 
@@ -7630,11 +7922,44 @@ msgstr "Esgotouse o tempo para esta sección de preguntas"
 msgid "%s, extra time %s"
 msgstr "%s, tempo extra %s"
 
-#: ../../test-runner/src/runner/util/testPart.js:187
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:65
 msgid "Part"
 msgstr "Parte"
 
-#: ../src/config.js:136
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:68
+msgid "You have %s left to finish this part"
+msgstr ""
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:72
+msgid "You have %s left to finish %s"
+msgstr ""
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:75
+msgid "You have %s left to finish %s part"
+msgstr ""
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:94
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:110
+msgid "You have %s left to finish the test"
+msgstr "Quédache %s para rematar a proba"
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:101
+msgid "You have %s left to finish %s section"
+msgstr ""
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:102
+msgid "You have %s left to finish this section"
+msgstr ""
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:106
+msgid "You have %s left to finish %s item"
+msgstr ""
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:107
+msgid "You have %s left to finish this item"
+msgstr ""
+
+#: ../src/config.js:142
 msgid "TAO: test session"
 msgstr "TAO: sesión da proba"
 

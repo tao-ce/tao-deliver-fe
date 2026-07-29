@@ -700,7 +700,7 @@ describe('getPartTitle', () => {
         expect(getPartTitle({ id: 'p1', position: 3, sections: { s1: {} } }, testMap, false)).toEqual('Part IV');
     });
 
-    it('part number is calculated as index among other parts ', () => {
+    it('part number is calculated as index among other parts', () => {
         const testMap = generateTestMapWithParts(3, 4);
         expect(getPartTitle({ id: 'p1', position: 0, sections: { s1: {} } }, testMap, true)).toEqual('Part I');
         expect(getPartTitle({ id: 'p1', position: 4, sections: { s1: {} } }, testMap, false)).toEqual('Part II');

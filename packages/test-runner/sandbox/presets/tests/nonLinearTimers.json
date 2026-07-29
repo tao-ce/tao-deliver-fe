@@ -43,7 +43,7 @@
                                 "answered": false,
                                 "flagged": false,
                                 "viewed": true,
-                                "categories": [],
+                                "categories": ["x-tao-option-noAlertTimeout"],
                                 "hasFeedbacks": false,
                                 "allowComment": false,
                                 "informational": false,

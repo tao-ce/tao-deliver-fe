@@ -24,11 +24,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     onDestroy(() => {
         dispatch('destroy');
     });
-
 </script>
 
 {#each blockTree as block}
     {#if block.type === blockTypes.html}
+        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
         {@html block.content}
     {:else if block.type === blockTypes.text}
         {block.content}

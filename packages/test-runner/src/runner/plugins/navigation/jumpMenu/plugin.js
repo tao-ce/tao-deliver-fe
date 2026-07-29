@@ -8,8 +8,8 @@
  * @property {string} type - type of item which that belongs to corresponding area
  * @property {HTMLElement} area - area from AreaBroker
  * @property {Array<string>} availableStatuses - list of statuses available to show menu item
- * @property {function(area: HTMLElement, selector: string)} getHighlightElement - function to get HTMLElement for highlighting
- * @property {function(area: HTMLElement, selector: string)} getFocusableElement - function to get HTMLElement for focusing
+ * @property {function(HTMLElement): ?HTMLElement} getHighlightElement - function to get HTMLElement for highlighting
+ * @property {function(HTMLElement): ?HTMLElement} getFocusableElement - function to get HTMLElement for focusing
  * @property {Function} getLabel - function to get label for link item
  */
 
@@ -18,6 +18,7 @@ import JumpMenu from './JumpMenu.svelte';
 import { testSessionStatus } from '../../../session/sessionStates.js';
 import { __ } from '@oat-sa-private/ui-core';
 import { getKeyboardFocusableElements } from '@oat-sa-private/ui-core/dom/dom.js';
+import { mount, unmount } from 'svelte';
 
 /**
  * Jump Menu plugin
@@ -108,7 +109,7 @@ export default pluginFactory({
         ].filter(i => i);
 
         //render the plugin component
-        this.jumpMenu = new JumpMenu({
+        this.jumpMenu = mount(JumpMenu, {
             target: areaBroker.getJumpMenuArea(),
             props: {
                 serviceCallId: testConfig.serviceCallId,
@@ -218,7 +219,7 @@ export default pluginFactory({
      */
     destroy() {
         if (this.jumpMenu) {
-            this.jumpMenu.$destroy();
+            unmount(this.jumpMenu);
         }
     }
 });

@@ -10,8 +10,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     import { DraggableModal } from '@oat-sa-private/ui-components';
     import ScratchpadTools from './ScratchpadTools.svelte';
     import { __, getPointerEventCoords, generateElementId, getDefaultRemSizePx } from '@oat-sa-private/ui-core';
+    import { testLayoutStore, setActiveTool } from '../../../layout/testLayoutStore.js';
     import { move, getShapePositionDelta, getShapeBBoxDelta } from './util/geometry.js';
-    import { createEventDispatcher } from 'svelte';
+    import { createEventDispatcher, mount, unmount } from 'svelte';
     import { cloneDeep } from 'lodash';
     import Shape from './Shape.svelte';
     import Text from './Text.svelte';
@@ -93,6 +94,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @param {Object} activeTool - current active tool
      */
     function onCurrentToolChange(activeTool) {
+        setActiveTool('scratchpad');
         if (!activeTool) {
             return;
         }
@@ -112,6 +114,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @param {MouseEvent} e event
      */
     function handlePointerDown(e) {
+        setActiveTool('scratchpad');
         //act only if tool selected or drawing is not in progress
         if (currentTool && !drewShape) {
             //if we attempting to draw something
@@ -123,7 +126,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                     if (currentTool.options && currentTool.options.size) {
                         drawingGeometry.size = currentTool.options.size;
                     }
-                    drewShape = new Shape({
+                    drewShape = mount(Shape, {
                         target: drawArea,
                         props: {
                             drawingGeometry,
@@ -143,7 +146,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                         redrawShapes();
                         triggerUpdate();
                         triggerChange();
-                        drewShape.$destroy();
+                        unmount(drewShape);
                         drewShape = null;
                     });
                 }
@@ -179,14 +182,14 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             if (currentTool.type === 'text') {
                 const drawingGeometry = getDrawingGeometry(e, drawArea);
                 const key = generateElementId('text');
-                const currentText = new Text({
+                const currentText = mount(Text, {
                     target: drawArea,
                     props: { key, drawingGeometry }
                 });
 
                 currentText.$on('finishEditing', ev => {
                     shapes.push({ key, type: 'text' });
-                    currentText.$destroy();
+                    unmount(currentText);
                     handleFinishEditing(ev);
                 });
                 currentText.$on('editing', handleTextEditing);
@@ -493,7 +496,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                     }
                 }
             });
-            redrawShapes();
+            shapes = [...shapes];
             triggerChange();
         }
     }
@@ -557,6 +560,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         height: 100%;
         /* disable drag guestures for touch devices */
         touch-action: none;
+        position: relative;
+        z-index: calc(var(--layer-5) - 2);
+
+        &.active {
+            z-index: calc(var(--layer-5));
+        }
     }
 
     svg {
@@ -575,14 +584,15 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     {minHeight}
     noRemScaling={true}
     actions={stateActions}
+    pointerDownCallback={() => setActiveTool('scratchpad')}
     on:close={handleClose}
     on:action={handleModalAction}
     on:resize={handleResize}
     on:move={handleMove}
     let:transformScale>
-    <div class="scratchpad-container" bind:this={shapeContainer}>
-        <ScratchpadTools on:select={handleToolSelection} on:mount={handleToolsMount} {tools} />
-        <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <div class="scratchpad-container" class:active={$testLayoutStore.activeTool === 'scratchpad'} bind:this={shapeContainer}>
+        <ScratchpadTools on:select={handleToolSelection} on:mount={handleToolsMount} {tools} pointerDownCallback={() => setActiveTool('scratchpad')}/>
+        <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
         <svg
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"

@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2020-2024 (original work) Open Assessment Technologies SA ;
+// Copyright (C) 2020-2026 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
@@ -116,4 +116,20 @@ export function extractDataValueList(attrValue = '') {
         return [];
     }
     return attrValue.split(',').map(s => s.trim());
+}
+
+/**
+ * Extract a data-attribute value as a Boolean
+ * @param {String} attrValue
+ * @param {Boolean} [defaultValue=false]
+ * @returns {Boolean}
+ */
+export function extractDataValueBoolean(attrValue, defaultValue = false) {
+    if (typeof attrValue === 'undefined') {
+        return defaultValue;
+    }
+    if (typeof attrValue === 'boolean') {
+        return attrValue;
+    }
+    return Boolean(attrValue && attrValue !== 'false');
 }

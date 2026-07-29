@@ -25,7 +25,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @property {boolean} disabled disabled state of hotspot
      * @property {boolean} invisible invisible state of hotspot
      * @property {boolean} checkmark draw or not circle/label in the center of element
-     * @property {boolean} hoverable draw or not hoverable scaling
      * @property {number} scale scale shape
      */
     export let coords;
@@ -36,12 +35,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     export let disabled;
     export let invisible;
     export let checkmark = true;
-    export let hoverable = true;
     export let scale = 1;
 
     let groupElement;
     let svgGroup;
-    let hovered;
     let cx = null;
     let cy = null;
 
@@ -62,8 +59,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             let width = coords[2] - coords[0];
             let height = coords[3] - coords[1];
 
-            const outerWidthOffset = remToPx(0.75);
-            const innerWidthOffset = hovered && hoverable ? remToPx(1.5) : remToPx(1.75);
+            const outerWidthOffset = remToPx(0.5);
+            const innerWidthOffset = remToPx(1.25);
 
             // apply minSize if needed (to each dimension independently)
             // include offets into comparison to avoid negative values when rendered
@@ -118,24 +115,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         // 4. potentially other props, but not expected
         draw(svgGroup);
     });
-
-    function handleMouseEnter() {
-        if (!hovered) {
-            hovered = true;
-            draw(svgGroup);
-        }
-    }
-
-    function handleMouseLeave() {
-        if (hovered) {
-            hovered = false;
-            draw(svgGroup);
-        }
-    }
 </script>
 
 <g
     tabindex="-1"
+    role="button"
     aria-label={ariaLabel}
     aria-labelledby={ariaLabelledBy}
     aria-disabled={disabled}
@@ -145,6 +129,4 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     class:selected
     on:click
     on:keydown
-    on:keyup
-    on:mouseenter={handleMouseEnter}
-    on:mouseleave={handleMouseLeave} />
+    on:keyup />

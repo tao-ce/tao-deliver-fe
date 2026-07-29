@@ -6,6 +6,57 @@ import { timersProxyFactory } from './timersProxy.js';
 import timerModes from './timerModes.js';
 import { getTimersStore } from './timersStore.js';
 import { cloneDeep } from 'lodash';
+import { showNotification } from '@oat-sa-private/ui-components';
+import { __, humanizeTime } from '@oat-sa-private/ui-core';
+
+const defaultWarningConfig = {
+    levels: {
+        test: {
+            thresholdsInMs: []
+        }
+    },
+    notificationTimeout: 5000
+};
+
+const defaultWarningMessages = {
+    levels: {
+        test: {
+            getMessage(thresholdMs) {
+                return __('You have %s left to finish the test', humanizeTime(thresholdMs / 1000));
+            }
+        }
+    }
+};
+
+/**
+ * Normalize the warning configuration passed to the timers service.
+ * @param {Object} [warningConfig]
+ * @returns {Object}
+ */
+function normalizeWarningConfig(warningConfig = {}) {
+    const normalized = cloneDeep(defaultWarningConfig);
+
+    warningConfig.levels ??= {};
+    for (const key of Object.keys(warningConfig.levels)) {
+        let thresholdsInMs = warningConfig.levels[key]?.thresholdsInMs;
+
+        if (!Array.isArray(thresholdsInMs)) {
+            thresholdsInMs = [thresholdsInMs];
+        }
+
+        normalized.levels[key] ??= {};
+        normalized.levels[key].thresholdsInMs = thresholdsInMs
+            .map(value => Number(value))
+            .filter(value => Number.isFinite(value) && value > 0)
+            .sort((a, b) => a - b);
+    }
+
+    if (typeof warningConfig.notificationTimeout === 'number') {
+        normalized.notificationTimeout = Math.max(0, warningConfig.notificationTimeout);
+    }
+
+    return normalized;
+}
 
 /**
  * Creates timersService object with methods to control timers
@@ -16,7 +67,8 @@ import { cloneDeep } from 'lodash';
  * @param {Function} config.onError - callback to propagate errors to consumer
  * @param {Function} [config.onTimerTimeout] - callback to propagate timeouts to consumer
  * @param {Function} [config.onExtraAdded] - callback when extra-time is added: it will resume timers that were timed-out earlier
- * @param {Object} [config.throttleConfig]
+ * @param {Object} [config.throttleConfig] - configuration for how often to notify about timer updates
+ * @param {Object} [config.warningConfig] - configuration for pre-timeout warning notifications
  * @returns {Object} API
  */
 export function timersServiceFactory(socketProxy, config) {
@@ -30,6 +82,7 @@ export function timersServiceFactory(socketProxy, config) {
     const store = getTimersStore(config.serviceCallId, {
         throttleConfig: config.throttleConfig
     });
+    const warningConfig = normalizeWarningConfig(config.warningConfig);
 
     // subscribe to changes in order to report whenever timers time out
     let prevTimersArray = [];
@@ -49,13 +102,35 @@ export function timersServiceFactory(socketProxy, config) {
                     const prevTimerData = prevTimersArray.find(
                         t => t.level === timerData.level && (!timerData.id || t.id === timerData.id)
                     );
-                    if (prevTimerData) {
-                        const wasTimedOut =
-                            prevTimerData.timerValue.timeLeft + (prevExtra ? prevExtra.timerValue.timeLeft : 0) <= 0;
-                        const isTimedOut =
-                            timerData.timerValue.timeLeft + (currentExtra ? currentExtra.timerValue.timeLeft : 0) <= 0;
-                        if (!wasTimedOut && isTimedOut) {
-                            timedOutTimers.push(timerData);
+                    const prevEffectiveTimeLeft = prevTimerData
+                        ? prevTimerData.timerValue.timeLeft + (prevExtra ? prevExtra.timerValue.timeLeft : 0)
+                        : Infinity;
+                    const currentEffectiveTimeLeft =
+                        timerData.timerValue.timeLeft + (currentExtra ? currentExtra.timerValue.timeLeft : 0);
+
+                    const wasTimedOut = prevEffectiveTimeLeft <= 0;
+                    const isTimedOut = currentEffectiveTimeLeft <= 0;
+
+                    if (prevTimerData && !wasTimedOut && isTimedOut) {
+                        timedOutTimers.push(timerData);
+                    }
+
+                    // only 'test' level is implemented for the next code section on warnings
+                    if (timerData.level !== 'test') {
+                        continue;
+                    }
+
+                    if (warningConfig.levels[timerData.level]?.thresholdsInMs.length) {
+                        for (const thresholdInMs of warningConfig.levels[timerData.level].thresholdsInMs) {
+                            const wasAboveThreshold = prevTimerData && prevEffectiveTimeLeft > thresholdInMs;
+                            const isAtOrBelowThreshold = currentEffectiveTimeLeft <= thresholdInMs;
+
+                            if (wasAboveThreshold && isAtOrBelowThreshold) {
+                                notifyTimerWarning(timerData.level, thresholdInMs, warningConfig.notificationTimeout);
+                                // only notify about the first (=lowest) matching threshold value
+                                // (because proctor extraTime deduction could cause multiple thresholds to be passed):
+                                break;
+                            }
                         }
                     }
                 }
@@ -223,4 +298,17 @@ export function timersServiceFactory(socketProxy, config) {
     };
 
     return service;
+}
+
+function notifyTimerWarning(timerLevel, thresholdInMs, notificationTimeout) {
+    const message = defaultWarningMessages.levels[timerLevel]?.getMessage?.(thresholdInMs);
+    showNotification(
+        {
+            title: message,
+            hierarchy: 'warning',
+            closeable: true
+        },
+        'autoclose',
+        notificationTimeout
+    );
 }

@@ -7,7 +7,7 @@ import { render, fireEvent } from '@testing-library/svelte';
 import PreviewerHeaderBar from '../PreviewerHeaderBar.svelte';
 
 describe('PreviewerHeaderBar', () => {
-    it('it renders correctly', () => {
+    it('renders correctly', () => {
         const { container } = render(PreviewerHeaderBar, {
             itemTitle: 'test item'
         });
@@ -21,7 +21,7 @@ describe('PreviewerHeaderBar', () => {
         expect(container.querySelector('.bar-section>.item-name').innerHTML).toContain('test item');
     });
 
-    it('it triggers close event', () => {
+    it('triggers close event', () => {
         const { container, component } = render(PreviewerHeaderBar, {});
         let mockEvent = vi.fn();
         component.$on('close', mockEvent);
@@ -29,7 +29,7 @@ describe('PreviewerHeaderBar', () => {
         expect(mockEvent).toHaveBeenCalled();
     });
 
-    it('it triggers toggle response panel event', () => {
+    it('triggers toggle response panel event', () => {
         const { container, component } = render(PreviewerHeaderBar, {});
         let mockEvent = vi.fn();
         component.$on('toggleResponsePanel', mockEvent);

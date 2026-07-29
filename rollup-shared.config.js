@@ -11,7 +11,7 @@ import json from '@rollup/plugin-json';
 import postcss from 'rollup-plugin-postcss';
 import commonJs from '@rollup/plugin-commonjs';
 import dynamicImportVariables from '@rollup/plugin-dynamic-import-vars';
-import { terser } from 'rollup-plugin-terser';
+import terser from '@rollup/plugin-terser';
 import svg from 'rollup-plugin-svg';
 import visualizer from 'rollup-plugin-visualizer';
 
@@ -83,11 +83,12 @@ export default {
     //shared warning handler
     onwarn(warning, next) {
         // Silence circular dependency warning for ckeditor package
-        if (
-            warning.code === 'CIRCULAR_DEPENDENCY' &&
-            (warning.importer.includes(path.normalize('node_modules/@ckeditor')) ||
-                warning.importer.includes(path.normalize('node_modules/@svgdotjs')))
-        ) {
+        if (warning.code === 'CIRCULAR_DEPENDENCY' &&
+            /node_modules[\\/]+(@ckeditor|@svgdotjs|es-toolkit|@wiris\/mathtype-html-integration-devkit|svelte)/.test(warning.message)) {
+            return;
+        }
+        // Silence eval warning from wiris
+        if (warning.code === 'EVAL' && /node_modules[\\/]+@wiris/.test(warning.id ?? '')) {
             return;
         }
         // Silence flatpickr warning: "`this` has been rewritten to `undefined`"
@@ -97,6 +98,10 @@ export default {
         // Silence pdf.js warning: "Use of eval is strongly discouraged"
         if (warning.code === 'EVAL' && warning.id.includes('pdf.js')) {
             return;
+        }
+        // Silence Svelte 5 default warnings
+        if (warning.plugin === 'svelte' && warning.pluginCode === 'element_invalid_self_closing_tag') {
+            return false;
         }
 
         // keep original warning handle

@@ -3,6 +3,7 @@
 exports[`UserMenu > renders user avatar, on click opens flyout with name & id 1`] = `
 <body>
   <div>
+    
     <div
       class="user-menu"
     >
@@ -14,27 +15,33 @@ exports[`UserMenu > renders user avatar, on click opens flyout with name & id 1`
         class="icon-bar-btn actionable base-24 default"
         title="User: John Doe"
       >
+        
          
+        
          
         <span
           aria-label="John Doe"
           class="avatar"
           role="img"
-          style="
-        --size: 4rem;
-        --bg-color: #8405D8;
-    "
+          style="--size: 4rem; --bg-color: #8405D8;"
         >
           <span
             class="initials"
           >
             JD
           </span>
+          
         </span>
+        
       </button>
+      
        
       
+      
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -43,6 +50,7 @@ exports[`UserMenu > renders user avatar, on click opens flyout with name & id 1`
 exports[`UserMenu > renders user avatar, on click opens flyout with name & id 2`] = `
 <body>
   <div>
+    
     <div
       class="user-menu"
     >
@@ -54,25 +62,28 @@ exports[`UserMenu > renders user avatar, on click opens flyout with name & id 2`
         class="icon-bar-btn actionable base-24 default"
         title="User: John Doe"
       >
+        
          
+        
          
         <span
           aria-label="John Doe"
           class="avatar"
           role="img"
-          style="
-        --size: 4rem;
-        --bg-color: #8405D8;
-    "
+          style="--size: 4rem; --bg-color: #8405D8;"
         >
           <span
             class="initials"
           >
             JD
           </span>
+          
         </span>
+        
       </button>
+      
        
+      
       <div
         class="flyout"
       >
@@ -84,17 +95,16 @@ exports[`UserMenu > renders user avatar, on click opens flyout with name & id 2`
             aria-label="John Doe"
             class="avatar"
             role="img"
-            style="
-        --size: 4rem;
-        --bg-color: #8405D8;
-    "
+            style="--size: 4rem; --bg-color: #8405D8;"
           >
             <span
               class="initials"
             >
               JD
             </span>
+            
           </span>
+          
            
           <div>
             <div
@@ -110,9 +120,13 @@ exports[`UserMenu > renders user avatar, on click opens flyout with name & id 2`
             </div>
           </div>
         </div>
+        
       </div>
       
+      
     </div>
+    
+    
     
   </div>
 </body>

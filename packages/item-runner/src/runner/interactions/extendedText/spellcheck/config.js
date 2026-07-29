@@ -38,7 +38,7 @@ export const spellCheckConfigs = {
                 actionItems: ['ignoreAll', 'settings'],
                 cache: true,
                 onErrorRequest: function (data) {
-                    console.error('[wproofreader]', data); // eslint-disable-line no-console
+                    console.error('[wproofreader]', data);
                 }
             }, receivedConfig);
         }

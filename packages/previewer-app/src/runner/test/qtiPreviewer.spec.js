@@ -462,7 +462,6 @@ describe('QTI NUI test runner behavior', () => {
             const container = document.createElement('section');
             proxyFactory.registerProvider('foo', {
                 init: () =>
-                    //eslint-disable-next-line implicit-arrow-linebreak
                     new Promise(() => {
                         throw new Error('error-spy-for-init');
                     }),
@@ -504,7 +503,6 @@ describe('QTI NUI test runner behavior', () => {
                 init: proxyInit,
                 callItemAction: vi.fn(),
                 getItem: () =>
-                    //eslint-disable-next-line implicit-arrow-linebreak
                     new Promise(() => {
                         throw new Error('error-spy-for-getItem');
                     })

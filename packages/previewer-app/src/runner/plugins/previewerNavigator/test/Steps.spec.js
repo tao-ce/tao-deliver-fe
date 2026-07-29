@@ -29,7 +29,7 @@ const setupStore = () => {
     stateStore.setTestContext(preset.testContext);
 };
 
-describe('Steps for PreviewerNavigator ', () => {
+describe('Steps for PreviewerNavigator', () => {
     afterEach(() => {
         testsStateStore.clear();
     });

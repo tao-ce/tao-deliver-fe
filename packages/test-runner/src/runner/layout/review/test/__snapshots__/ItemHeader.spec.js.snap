@@ -10,6 +10,8 @@ exports[`ItemHeader component > Renders correctly with title prop 1`] = `
         Item du jour
       </h3>
     </header>
+    
+    
   </div>
 </body>
 `;

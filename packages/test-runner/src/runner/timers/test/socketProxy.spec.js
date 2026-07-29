@@ -6,6 +6,7 @@ import { createServer } from 'http';
 import { Server } from 'socket.io';
 import Client from 'socket.io-client';
 import { socketProxyFactory } from '../socketProxy.js';
+import { actionErrorCodes } from 'taoDeliverAppsCommon/core/error/ActionError';
 
 describe('socketProxy', () => {
     const deliveryExecutionId = 'delivery123';
@@ -230,6 +231,27 @@ describe('socketProxy', () => {
                 expect(launchSpy).not.toHaveBeenCalled();
 
                 proxy.connect();
+            });
+        });
+
+        it('on force_logout, should disconnect and notify via onProxyEvent', async () => {
+            const opts = { jwtTokenHandler, socketUrl, deliveryExecutionId };
+            const proxy = await socketProxyFactory(opts);
+
+            const clientSocket = await proxy.connect();
+            expect(clientSocket.connected).toBe(true);
+
+            return new Promise(done => {
+                const forceLogoutSpy = vi.fn().mockImplementationOnce(err => {
+                    expect(err && err.errorCode).toBe(actionErrorCodes.forceLogout);
+                    expect(proxy.isConnected()).toBe(false);
+                    done();
+                });
+                proxy.onProxyEvent('force_logout', forceLogoutSpy);
+
+                expect(forceLogoutSpy).not.toHaveBeenCalled();
+
+                serverSocket.emit('force_logout', 'session taken over');
             });
         });
 

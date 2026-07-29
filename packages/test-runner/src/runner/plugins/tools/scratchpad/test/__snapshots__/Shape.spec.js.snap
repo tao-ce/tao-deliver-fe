@@ -10,7 +10,6 @@ exports[`Shape > rendering > should render the ellipse shape based on oval type 
       <ellipse
         class="shape"
       />
-       
       <rect
         class="hitbox"
         height="NaN"
@@ -18,10 +17,12 @@ exports[`Shape > rendering > should render the ellipse shape based on oval type 
         x="NaN"
         y="NaN"
       />
-       
-       
+      
+      
       
     </g>
+    
+    
   </div>
 </body>
 `;
@@ -36,17 +37,17 @@ exports[`Shape > rendering > should render the line shape based on line type 1`]
       <line
         class="shape"
       />
-       
       <line
         class="line-hitbox"
       />
-       
       <line
         class="bounding"
       />
-       
+      
       
     </g>
+    
+    
   </div>
 </body>
 `;
@@ -61,10 +62,12 @@ exports[`Shape > rendering > should render the path shape based on brush type 1`
       <path
         class="shape"
       />
-       
-       
+      
+      
       
     </g>
+    
+    
   </div>
 </body>
 `;
@@ -79,10 +82,12 @@ exports[`Shape > rendering > should render the rect shape based on rectangle typ
       <rect
         class="shape"
       />
-       
-       
+      
+      
       
     </g>
+    
+    
   </div>
 </body>
 `;

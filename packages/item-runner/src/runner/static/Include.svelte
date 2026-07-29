@@ -32,6 +32,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     export let itemIdentifier;
 
     const itemContext = getContext(itemIdentifier);
+    const itemRunnerConfigContext = getContext('itemRunnerConfig') || {};
 
     /**
      * Centralised list of current item's xinclude hrefs
@@ -100,8 +101,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     let restoreScrollTimeout = null;
     onMount(() => {
         //if the passage contains h1 or h2
-        //we re rank the heading levels
-        reRankHeadings(article);
+        //we re rank the heading levels (only when enabled via itemRunnerConfig)
+        if (itemRunnerConfigContext.options?.reRankHeadings) {
+            reRankHeadings(article);
+        }
 
         // scroll parent exists if tao-overflow-y was set on the custom wrapper
         articleScrollParent = article.closest('.tao-overflow-y');

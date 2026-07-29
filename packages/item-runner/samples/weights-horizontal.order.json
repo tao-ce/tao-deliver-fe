@@ -19,7 +19,7 @@
             },
             "body": {
                 "serial": "i5f171f4ddf3bf",
-                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i5f171f4ddf7b2_left}}\n        {{i5f171f4ddf7b2_right}}\n        {{i5f171f4ddf7b2_top}}\n        {{i5f171f4ddf7b2_bottom}}\n      </div>\n    </div>\n  ",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        {{i5f171f4ddf7b2_left}}\n        {{i5f171f4ddf7b2_right}}\n        {{i5f171f4ddf7b2_top}}\n        {{i5f171f4ddf7b2_bottom}}\n              order='single':\n{{i697c8e255ae7d_single}}\n      </div>\n    </div>\n  ",
                 "elements": {
                     "i5f171f4ddf7b2_left": {
                         "serial": "i5f171f4ddf7b2_left",
@@ -264,8 +264,156 @@
                             "body": "<h3>Horizontal - Bottom</h3><br/>Put these weight values in ascending order",
                             "elements": {}
                         }
+                    },
+                    "i697c8e255ae7d_single": {
+                        "serial": "i697c8e255ae7d_single",
+                        "qtiClass": "orderInteraction",
+                        "attributes": {
+                            "responseIdentifier": "RESPONSE_single",
+                            "shuffle": false,
+                            "maxChoices": 0,
+                            "minChoices": 0,
+                            "orientation": "horizontal",
+                            "data-order": "single"
+                        },
+                        "choices": {
+                            "i697c8e255aef6": {
+                                "identifier": "choice_1",
+                                "serial": "i697c8e255aef6",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_1",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i697c8e255af0d",
+                                    "body": "choice #1",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "i697c8e255b2c1": {
+                                "identifier": "choice_2",
+                                "serial": "i697c8e255b2c1",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_2",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i697c8e255b2d0",
+                                    "body": "choice #2",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "i697c8e255b66e": {
+                                "identifier": "choice_3",
+                                "serial": "i697c8e255b66e",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_3",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i697c8e255b678",
+                                    "body": "choice #3",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "i697c8e255ba0b": {
+                                "identifier": "choice_4",
+                                "serial": "i697c8e255ba0b",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_4",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i697c8e255ba15",
+                                    "body": "choice #4",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "i697c8e255bd6a": {
+                                "identifier": "choice_5",
+                                "serial": "i697c8e255bd6a",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_5",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i697c8e255bd73",
+                                    "body": "choice with longer label #5",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "i697c8e255c0d9": {
+                                "identifier": "choice_6",
+                                "serial": "i697c8e255c0d9",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_6",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i697c8e255c0e2",
+                                    "body": "choice #6",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "i697c8e255c442": {
+                                "identifier": "choice_7",
+                                "serial": "i697c8e255c442",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_7",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i697c8e255c44b",
+                                    "body": "choice #7",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            },
+                            "i697c8e255c7ca": {
+                                "identifier": "choice_8",
+                                "serial": "i697c8e255c7ca",
+                                "qtiClass": "simpleChoice",
+                                "attributes": {
+                                    "identifier": "choice_8",
+                                    "fixed": false,
+                                    "showHide": "show"
+                                },
+                                "body": {
+                                    "serial": "i697c8e255c7d3",
+                                    "body": "choice #8",
+                                    "elements": {},
+                                    "attributes": []
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i697c8e255aeca",
+                            "body": "",
+                            "elements": {},
+                            "attributes": []
+                        }
                     }
-                }
+                 }
             },
             "namespaces": {
                 "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
@@ -359,6 +507,25 @@
                     "howMatch": "http://www.imsglobal.org/question/qti_v2p1/rptemplates/match_correct",
                     "correctResponses": ["choice_3", "choice_2", "choice_1"],
                     "mappingAttributes": { "defaultValue": 0 },
+                    "feedbackRules": {}
+                },
+                "i697c8e255ad20": {
+                    "identifier": "RESPONSE_single",
+                    "serial": "i697c8e255ad20",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "RESPONSE_single",
+                        "cardinality": "ordered",
+                        "baseType": "identifier"
+                    },
+                    "defaultValue": [],
+                    "mapping": [],
+                    "areaMapping": [],
+                    "howMatch": "http:\/\/www.imsglobal.org\/question\/qti_v2p1\/rptemplates\/match_correct",
+                    "correctResponses": [],
+                    "mappingAttributes": {
+                        "defaultValue": 0
+                    },
                     "feedbackRules": {}
                 }
             },

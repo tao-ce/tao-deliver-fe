@@ -25,6 +25,7 @@ exports[`MenuPanelContent > add a logout link with an exitUrl 1`] = `
             About
           </a>
         </li>
+        
       </ul>
        
       <ul
@@ -37,6 +38,7 @@ exports[`MenuPanelContent > add a logout link with an exitUrl 1`] = `
             Logout
           </a>
         </li>
+        
       </ul>
        
       <footer>
@@ -44,11 +46,15 @@ exports[`MenuPanelContent > add a logout link with an exitUrl 1`] = `
           alt="TAO logo"
           src="logo.svg"
         />
+        
          
         <p>
-          © TAO 2025
+          
+          © TAO 2026
+          
            
           <br />
+          
           
           <a
             href="https://taotesting.com"
@@ -57,15 +63,22 @@ exports[`MenuPanelContent > add a logout link with an exitUrl 1`] = `
           >
             Open Assessment Technologies S.A.
           </a>
+          
            
           <br />
           
+          
           All rights reserved
+          
            
           
+          
         </p>
+        
       </footer>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -95,22 +108,29 @@ exports[`MenuPanelContent > renders correctly without any property 1`] = `
             About
           </a>
         </li>
+        
       </ul>
        
       <ul
         class="panel-actions"
-      />
+      >
+        
+      </ul>
        
       <footer>
         <img
           alt="TAO logo"
           src="logo.svg"
         />
+        
          
         <p>
-          © TAO 2025
+          
+          © TAO 2026
+          
            
           <br />
+          
           
           <a
             href="https://taotesting.com"
@@ -119,15 +139,22 @@ exports[`MenuPanelContent > renders correctly without any property 1`] = `
           >
             Open Assessment Technologies S.A.
           </a>
+          
            
           <br />
           
+          
           All rights reserved
+          
            
           
+          
         </p>
+        
       </footer>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -157,21 +184,28 @@ exports[`MenuPanelContent > update the footer with a logo and some content 1`] =
             About
           </a>
         </li>
+        
       </ul>
        
       <ul
         class="panel-actions"
-      />
+      >
+        
+      </ul>
        
       <footer>
         <img
           src="foo.png"
         />
+        
          
         <p>
+          
           made with love by us
+          
            
           <br />
+          
           
           <a
             href="https://foo.bar"
@@ -180,11 +214,16 @@ exports[`MenuPanelContent > update the footer with a logo and some content 1`] =
           >
             foo bar
           </a>
+          
            
           
+          
         </p>
+        
       </footer>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -214,19 +253,26 @@ exports[`MenuPanelContent > update the footer with only a logo 1`] = `
             About
           </a>
         </li>
+        
       </ul>
        
       <ul
         class="panel-actions"
-      />
+      >
+        
+      </ul>
        
       <footer>
         <img
           src="foo.png"
         />
+        
          
+        
       </footer>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -265,22 +311,29 @@ exports[`MenuPanelContent > update the links list 1`] = `
             noz & nox
           </a>
         </li>
+        
       </ul>
        
       <ul
         class="panel-actions"
-      />
+      >
+        
+      </ul>
        
       <footer>
         <img
           alt="TAO logo"
           src="logo.svg"
         />
+        
          
         <p>
-          © TAO 2025
+          
+          © TAO 2026
+          
            
           <br />
+          
           
           <a
             href="https://taotesting.com"
@@ -289,15 +342,22 @@ exports[`MenuPanelContent > update the links list 1`] = `
           >
             Open Assessment Technologies S.A.
           </a>
+          
            
           <br />
           
+          
           All rights reserved
+          
            
           
+          
         </p>
+        
       </footer>
     </div>
+    
+    
   </div>
 </body>
 `;

@@ -49,7 +49,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     const testStateStore = getTestStateStore(serviceCallId);
 
     let part;
-    let currentItem;
     let stats;
     let testContext;
     let currentPosition;
@@ -57,7 +56,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     $: {
         part = $testStateStore ? testStateStore.getCurrentTestPart() : null;
-        currentItem = $testStateStore ? testStateStore.getCurrentItem() : null;
         testContext = $testStateStore ? testStateStore.getTestContext() : null;
 
         if (part) {

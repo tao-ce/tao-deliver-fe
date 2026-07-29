@@ -6,7 +6,9 @@ exports[`ReadAloudSettingsDrawer > renders only pitch control if constraints say
     <div
       class="read-aloud-settings-drawer"
     >
+      
        
+      
        
       <div
         class="control-row"
@@ -34,10 +36,15 @@ exports[`ReadAloudSettingsDrawer > renders only pitch control if constraints say
               <path
                 d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
           <button
             aria-label="decrease reading pitch"
@@ -55,13 +62,22 @@ exports[`ReadAloudSettingsDrawer > renders only pitch control if constraints say
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </span>
+        
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -72,6 +88,7 @@ exports[`ReadAloudSettingsDrawer > renders only speed control if constraints say
     <div
       class="read-aloud-settings-drawer"
     >
+      
        
       <div
         class="control-row"
@@ -99,10 +116,15 @@ exports[`ReadAloudSettingsDrawer > renders only speed control if constraints say
               <path
                 d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
           <button
             aria-label="decrease reading speed"
@@ -120,14 +142,24 @@ exports[`ReadAloudSettingsDrawer > renders only speed control if constraints say
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </span>
+        
       </div>
+      
        
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -172,6 +204,7 @@ exports[`ReadAloudSettingsDrawer > renders only voice control if constraints say
                 <title>
                   Radio button
                 </title>
+                
                 <circle
                   class="radio-border"
                   cx="8"
@@ -188,7 +221,6 @@ exports[`ReadAloudSettingsDrawer > renders only voice control if constraints say
                 Male
               </span>
             </label>
-             
           </div>
           <div
             class="radio"
@@ -217,6 +249,7 @@ exports[`ReadAloudSettingsDrawer > renders only voice control if constraints say
                   cy="8"
                   r="4"
                 />
+                
                 <circle
                   class="radio-border"
                   cx="8"
@@ -233,13 +266,19 @@ exports[`ReadAloudSettingsDrawer > renders only voice control if constraints say
                 Female
               </span>
             </label>
-             
           </div>
+          
         </div>
+        
       </div>
+      
        
+      
        
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -290,6 +329,7 @@ exports[`ReadAloudSettingsDrawer > renders restoring given toolState 1`] = `
                   cy="8"
                   r="4"
                 />
+                
                 <circle
                   class="radio-border"
                   cx="8"
@@ -306,7 +346,6 @@ exports[`ReadAloudSettingsDrawer > renders restoring given toolState 1`] = `
                 Male
               </span>
             </label>
-             
           </div>
           <div
             class="radio"
@@ -329,6 +368,7 @@ exports[`ReadAloudSettingsDrawer > renders restoring given toolState 1`] = `
                 <title>
                   Radio button
                 </title>
+                
                 <circle
                   class="radio-border"
                   cx="8"
@@ -345,10 +385,12 @@ exports[`ReadAloudSettingsDrawer > renders restoring given toolState 1`] = `
                 Female
               </span>
             </label>
-             
           </div>
+          
         </div>
+        
       </div>
+      
        
       <div
         class="control-row"
@@ -377,10 +419,15 @@ exports[`ReadAloudSettingsDrawer > renders restoring given toolState 1`] = `
               <path
                 d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
           <button
             aria-label="decrease reading speed"
@@ -398,12 +445,19 @@ exports[`ReadAloudSettingsDrawer > renders restoring given toolState 1`] = `
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </span>
+        
       </div>
+      
        
       <div
         class="control-row"
@@ -431,10 +485,15 @@ exports[`ReadAloudSettingsDrawer > renders restoring given toolState 1`] = `
               <path
                 d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
           <button
             aria-disabled="true"
@@ -453,13 +512,22 @@ exports[`ReadAloudSettingsDrawer > renders restoring given toolState 1`] = `
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </span>
+        
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -504,6 +572,7 @@ exports[`ReadAloudSettingsDrawer > renders with default props & toolState 1`] = 
                 <title>
                   Radio button
                 </title>
+                
                 <circle
                   class="radio-border"
                   cx="8"
@@ -520,7 +589,6 @@ exports[`ReadAloudSettingsDrawer > renders with default props & toolState 1`] = 
                 Male
               </span>
             </label>
-             
           </div>
           <div
             class="radio"
@@ -549,6 +617,7 @@ exports[`ReadAloudSettingsDrawer > renders with default props & toolState 1`] = 
                   cy="8"
                   r="4"
                 />
+                
                 <circle
                   class="radio-border"
                   cx="8"
@@ -565,10 +634,12 @@ exports[`ReadAloudSettingsDrawer > renders with default props & toolState 1`] = 
                 Female
               </span>
             </label>
-             
           </div>
+          
         </div>
+        
       </div>
+      
        
       <div
         class="control-row"
@@ -596,10 +667,15 @@ exports[`ReadAloudSettingsDrawer > renders with default props & toolState 1`] = 
               <path
                 d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
           <button
             aria-label="decrease reading speed"
@@ -617,12 +693,19 @@ exports[`ReadAloudSettingsDrawer > renders with default props & toolState 1`] = 
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </span>
+        
       </div>
+      
        
       <div
         class="control-row"
@@ -650,10 +733,15 @@ exports[`ReadAloudSettingsDrawer > renders with default props & toolState 1`] = 
               <path
                 d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
           <button
             aria-label="decrease reading pitch"
@@ -671,13 +759,22 @@ exports[`ReadAloudSettingsDrawer > renders with default props & toolState 1`] = 
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </span>
+        
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;

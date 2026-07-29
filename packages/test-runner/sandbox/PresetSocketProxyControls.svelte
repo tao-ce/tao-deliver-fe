@@ -23,7 +23,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         proctoringAcsActionReopen: 'Proctor reopen',
         proctoringAcsActionUpdate: 'Proctor update time',
         proctoringAcsActionReset: 'Proctor reset',
-        proctoringAcsActionError: 'Proctoring error'
+        proctoringAcsActionError: 'Proctoring error',
+        forceLogout: 'Force logout'
     };
     const presetEventNames = {
         refreshTimers: 'refresh-timers',
@@ -33,7 +34,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         proctoringAcsActionReopen: 'proctoring-acs-action',
         proctoringAcsActionUpdate: 'proctoring-acs-action',
         proctoringAcsActionReset: 'proctoring-acs-action',
-        proctoringAcsActionError: 'proctoring-acs-action-error'
+        proctoringAcsActionError: 'proctoring-acs-action-error',
+        forceLogout: 'force_logout'
     };
     const presetPayloads = {
         refreshTimers: {
@@ -162,7 +164,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     <div>
         <Dropdown height="small" reset={false} fullwidth options={dropdownOptions} on:change={handleDropdownChange} />
         <input placeholder="eventName" bind:value={eventName} />
-        <pre><textarea placeholder="payload" rows="8" bind:value={payloadStr} /></pre>
+        <pre><textarea placeholder="payload" rows="8" bind:value={payloadStr}></textarea></pre>
         <button class="presetsocket-setup-send" on:click={dispatchToProxy}>SEND</button>
     </div>
     <!-- <button>connect</button> -->

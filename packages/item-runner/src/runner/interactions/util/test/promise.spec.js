@@ -24,6 +24,7 @@ describe('DeferredPromise', () => {
         let resolveTimes = 0;
         const p = new DeferredPromise();
 
+        // eslint-disable-next-line vitest/valid-expect-in-promise
         p.promise
             .then(() => {
                 resolveTimes++;
@@ -44,6 +45,7 @@ describe('DeferredPromise', () => {
         let rejectTimes = 0;
         const p = new DeferredPromise();
 
+        // eslint-disable-next-line vitest/valid-expect-in-promise
         p.promise
             .then(() => {
                 throw new Error('should not resolve');

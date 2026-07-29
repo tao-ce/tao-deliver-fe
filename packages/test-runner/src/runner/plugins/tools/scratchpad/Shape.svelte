@@ -81,13 +81,14 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 <style>
     .shape-container {
-        & :global-nested(.shape) {
+        & :global(.shape) {
             fill: transparent;
             stroke: var(--color-gs-dark);
             stroke-linecap: round;
-            &.too-small {
-                display: none;
-            }
+        }
+
+        & :global(.shape.too-small) {
+            display: none;
         }
 
         & :global(rect.shape) {
@@ -157,7 +158,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 </style>
 
-<!-- svelte-ignore a11y-click-events-have-key-events -->
+<!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
 <g
     class={`shape-container ${type}`}
     class:selected

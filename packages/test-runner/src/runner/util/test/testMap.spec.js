@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2020-2024 (original work) Open Assessment Technologies SA ;
+// Copyright (C) 2020-2026 (original work) Open Assessment Technologies SA;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
@@ -16,9 +16,11 @@ import {
     calculateTotalScore,
     getItemByIdentifier,
     isItemWaitingForExternalScore,
-    getAllItems
+    getAllItems,
+    itemHasCategory,
+    isLastItemInCurrentPart
 } from '../testMap.js';
-import _ from 'lodash';
+import { cloneDeep } from 'lodash';
 import inaccurateStatsTestMap from './testMapMocks/inaccurateStats.json';
 
 describe('deepGetItemProperty', () => {
@@ -531,7 +533,7 @@ describe('buildStats', () => {
     });
 
     it('updates stats, and returns mutated testMap', () => {
-        const testMap = _.cloneDeep(inaccurateStatsTestMap);
+        const testMap = cloneDeep(inaccurateStatsTestMap);
         const updated = buildStats(testMap);
         expect(updated === testMap).toBe(true);
         expect(testMap).toMatchSnapshot();
@@ -592,7 +594,7 @@ describe('calculateTotalScore', () => {
         [1, 2, { totalScore: 4, totalMaxScore: 6 }],
         [void 0, void 0, { totalScore: 3, totalMaxScore: 4 }],
         [null, null, { totalScore: 3, totalMaxScore: 4 }],
-        [1, null, { totalScore: 3, totalMaxScore: 4 }],
+        [1, null, { totalScore: 4, totalMaxScore: 4 }],
         [1.5, 2.5, { totalScore: 4.5, totalMaxScore: 6.5 }]
     ])('calculates total score correctly (score: %s, maxScore: %s)', (score, maxScore, totalScore) => {
         const testMap = {
@@ -663,6 +665,41 @@ describe('calculateTotalScore', () => {
             expect(calculateTotalScore(testMap)).toMatchObject(totalScore);
         }
     );
+
+    // other items have score: 0.7, maxScore: undefined
+    test.each([
+        [0, undefined, { totalScore: 0.7, totalMaxScore: null }],
+        [0, null, { totalScore: 0.7, totalMaxScore: null }],
+        [0, 1.5, { totalScore: 0.7, totalMaxScore: 1.5 }],
+        [0.2, undefined, { totalScore: 0.9, totalMaxScore: null }],
+        [0.2, null, { totalScore: 0.9, totalMaxScore: null }],
+        [0.2, 1.0, { totalScore: 0.9, totalMaxScore: 1 }],
+        [0.3, undefined, { totalScore: 1, totalMaxScore: null }],
+        [0.3, null, { totalScore: 1, totalMaxScore: null }],
+        [0.3, 1.0, { totalScore: 1, totalMaxScore: 1 }]
+    ])('calculates total score and max score independently', (score, maxScore, totalScore) => {
+        const testMap = {
+            parts: {
+                part1: {
+                    sections: {
+                        section1: {
+                            items: {
+                                item1: {
+                                    score,
+                                    maxScore
+                                },
+                                item2: {
+                                    score: 0.7
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        expect(calculateTotalScore(testMap)).toMatchObject(totalScore);
+    });
 });
 
 describe('isItemWaitingForExternalScore', () => {
@@ -717,5 +754,86 @@ describe('getAllItems', () => {
             }
         };
         expect(getAllItems(testMap)).toEqual([{ position: 0 }, { position: 1 }, { position: 2 }, { position: 3 }]);
+    });
+});
+
+describe('itemHasCategory', () => {
+    it('returns true if item has specified category', () => {
+        const testMap = {
+            parts: {
+                part1: {
+                    id: 'part1',
+                    sections: {
+                        section1: {
+                            id: 'section1',
+                            items: {
+                                item1: { id: 'item1', position: 0, categories: [] }
+                            }
+                        }
+                    }
+                },
+                part2: {
+                    id: 'part2',
+                    sections: {
+                        section2: {
+                            id: 'section2',
+                            items: {
+                                item2: { id: 'item2', position: 1, categories: ['foo-bar', 'this-ctg'] }
+                            }
+                        }
+                    }
+                }
+            }
+        };
+        expect(itemHasCategory(testMap, 'item2', 'this-ctg')).toBe(true);
+        expect(itemHasCategory(testMap, 'item2', 'that-ctg')).toBe(false);
+        expect(itemHasCategory(testMap, 'item1', 'this-ctg')).toBe(false);
+    });
+});
+
+describe('isLastItemInCurrentPart', () => {
+    const testMap = {
+        parts: {
+            part1: {
+                id: 'part1',
+                sections: {
+                    section1: {
+                        id: 'section1',
+                        items: {
+                            item1: { id: 'item1', position: 0 },
+                            item2: { id: 'item2', position: 1 }
+                        }
+                    },
+                    section2: {
+                        id: 'section2',
+                        items: {
+                            item3: { id: 'item3', position: 2 }
+                        }
+                    }
+                }
+            },
+            part2: {
+                id: 'part2',
+                sections: {
+                    section3: {
+                        id: 'section3',
+                        items: {
+                            item4: { id: 'item4', position: 3 },
+                            item5: { id: 'item5', position: 4 }
+                        }
+                    }
+                }
+            }
+        }
+    };
+
+    test.each([
+        [false, 'non-last item in first section', 'item1'],
+        [false, 'last item in first section', 'item2'],
+        [true, 'last item in first part', 'item3'],
+        [false, 'non-last item in second part', 'item4'],
+        [true, 'last item in second part', 'item5']
+    ])('returns %s for %s', (expected, title, itemIdentifier) => {
+        expect(isLastItemInCurrentPart(testMap, itemIdentifier)).toBe(expected);
     });
 });

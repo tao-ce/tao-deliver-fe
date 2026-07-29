@@ -10,6 +10,8 @@ exports[`AllItemsFooter component > Renders correctly 1`] = `
         End of test
       </p>
     </footer>
+    
+    
   </div>
 </body>
 `;

@@ -170,10 +170,17 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     itemContext?.registerLoadingElement(initPromise);
 
     /**
-     * Handle the PCI state whenever it is extracted from the PCI
+     * Handle the PCI state whenever it is extracted from the PCI (e.g. on recording stop and on destroy)
+     * The state.response.baseType will always be 'file' at this point, so we discard it in favour of the last one stored
+     * @param {Object} state
      */
-    function handleState() {
-        // do nothing, because we will use the response as the state later
+    function handleState(state) {
+        interactionStateStore.merge({
+            state: {
+                ...state,
+                response: interactionStateStore.getResponse()
+            }
+        });
     }
 
     /**
@@ -215,18 +222,22 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     /**
      * (CustomInteraction prop) Update the PCI's state in the state store
-     * But we will in fact ignore the state the PCI gives us, as it will not always have the right baseType
+     * But we will in fact ignore the response within the state the PCI gives us, as it will not always have the right baseType
+     * @param {Object} state
      */
-    function doInitialStateUpdate() {
+    function doInitialStateUpdate(state) {
         interactionStateStore.merge({
             qtiClass,
             typeIdentifier,
-            state: interactionStateStore.getResponse()
+            state: {
+                ...state,
+                response: interactionStateStore.getResponse()
+            }
         });
     }
 
     /**
-     * Update the response value in the state store
+     * Update the state and response values in the items state store
      * @param {FileData|FileHashData|null} responseValue
      */
     function storeResponse(responseValue) {
@@ -251,8 +262,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             },
             true
         );
+        // Merge latest state captured from the PCI, with response just set from local responseValue
         interactionStateStore.merge({
-            state: interactionStateStore.getResponse() // state == response... ugly but it works (for this PCI)
+            state: {
+                ...interactionStateStore.get().state,
+                response: interactionStateStore.getResponse()
+            }
         });
     }
 
@@ -374,6 +389,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         }
     }
 
+    /**
+     * Handle the PCI's recorder-start event.
+     */
     function handleRecorderStart() {
         itemContext?.clearItemNotificationsByKeys(notificationKeys);
         notificationKeys = [];
@@ -460,21 +478,25 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 <UploadProgress {...uploadStats} cancelable={false} />
             {/if}
         </div>
-        <AudioRecordingInteractionImpl
-            {...$$restProps}
-            {typeIdentifier}
-            {itemIdentifier}
-            {responseIdentifier}
-            {properties}
-            {isInitialMount}
-            {doNotPlayMedia}
-            {handleState}
-            {handleResponse}
-            {getInitialState}
-            {getInitialResponse}
-            {doInitialStateUpdate}
-            on:mount={handleMount}
-            bind:container />
+        {#key doNotPlayMedia && !isInitialMount}
+            {#if !doNotPlayMedia || isInitialMount}
+                <AudioRecordingInteractionImpl
+                    {...$$restProps}
+                    {typeIdentifier}
+                    {itemIdentifier}
+                    {responseIdentifier}
+                    {properties}
+                    {isInitialMount}
+                    {doNotPlayMedia}
+                    {handleState}
+                    {handleResponse}
+                    {getInitialState}
+                    {getInitialResponse}
+                    {doInitialStateUpdate}
+                    on:mount={handleMount}
+                    bind:container />
+            {/if}
+        {/key}
         <AtomicAriaLive id={ariaLiveContainerId} announcement={ariaLiveAnnouncement} lang={instructionsLang} />
     {/await}
 </div>

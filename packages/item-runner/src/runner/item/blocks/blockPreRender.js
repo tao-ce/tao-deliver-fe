@@ -4,6 +4,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 import ItemBlocks from './ItemBlocks.svelte';
+import { mount } from 'svelte';
 
 /**
  * Get the rendered HTML from a blockTree.
@@ -20,7 +21,7 @@ export default function blockTreePreRender(blockTree = []) {
     const container = document.createElement('div');
     fragment.appendChild(container);
 
-    new ItemBlocks({
+    mount(ItemBlocks, {
         target: container,
         props: {
             blockTree

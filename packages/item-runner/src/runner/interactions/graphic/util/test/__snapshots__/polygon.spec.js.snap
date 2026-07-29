@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`polygon util functions > getInvertedClipPathCoords > clockwise polygon: returns coords of its cut-out shape 1`] = `"[[0,10],[0,0],[10,0],[10,10],[0,10],[-10,20],[20,20],[20,-10],[-10,-10],[-10,20]]"`;
+
+exports[`polygon util functions > getInvertedClipPathCoords > clockwise polygon: returns coords of its cut-out shape 2`] = `"[[0,10],[0,0],[0,0],[10,0],[10,10],[0,10],[-10,20],[20,20],[20,-10],[-10,-10],[-10,20]]"`;
+
+exports[`polygon util functions > getInvertedClipPathCoords > clockwise polygon: returns coords of its cut-out shape 3`] = `"[[0,10],[0,0],[10,0],[10,10],[0,10],[-10,20],[20,20],[20,-10],[-10,-10],[-10,20]]"`;
+
+exports[`polygon util functions > getInvertedClipPathCoords > clockwise polygon: returns coords of its cut-out shape 4`] = `"[[0,10],[0,0],[10,0],[10,10],[0,10],[-10,20],[20,20],[20,-10],[-10,-10],[-10,20]]"`;
+
+exports[`polygon util functions > getInvertedClipPathCoords > clockwise polygon: returns coords of its cut-out shape 5`] = `"[[252,610],[359,506],[261,432],[404,479],[438,391],[435,489],[543,532],[433,526],[464,625],[401,532],[252,610],[242,635],[553,635],[553,381],[242,381],[242,635]]"`;
+
+exports[`polygon util functions > getInvertedClipPathCoords > counter-clockwise polygon: returns coords of its cut-out shape 1`] = `"[[0,0],[0,10],[10,10],[10,0],[0,0],[-10,-10],[20,-10],[20,20],[-10,20],[-10,-10]]"`;
+
+exports[`polygon util functions > getInvertedClipPathCoords > counter-clockwise polygon: returns coords of its cut-out shape 2`] = `"[[0,0],[0,10],[10,10],[10,0],[0,0],[0,0],[-10,-10],[20,-10],[20,20],[-10,20],[-10,-10]]"`;
+
+exports[`polygon util functions > getInvertedClipPathCoords > counter-clockwise polygon: returns coords of its cut-out shape 3`] = `"[[0,0],[0,10],[10,10],[10,0],[0,0],[-10,-10],[20,-10],[20,20],[-10,20],[-10,-10]]"`;
+
+exports[`polygon util functions > getInvertedClipPathCoords > counter-clockwise polygon: returns coords of its cut-out shape 4`] = `"[[0,0],[0,10],[10,10],[10,0],[0,0],[-10,-10],[20,-10],[20,20],[-10,20],[-10,-10]]"`;
+
+exports[`polygon util functions > getInvertedClipPathCoords > counter-clockwise polygon: returns coords of its cut-out shape 5`] = `"[[284,628],[420,679],[204,748],[242,752],[486,689],[383,626],[284,628],[194,616],[496,616],[496,762],[194,762],[194,616]]"`;

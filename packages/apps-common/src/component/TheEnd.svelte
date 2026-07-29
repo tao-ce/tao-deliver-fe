@@ -25,19 +25,18 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     export let info;
     export let cause = false;
     export let remediation = false;
+    export let detailsComponent;
+    export let detailsComponentProps = {};
     export let icon = 'lightning-16';
     export let retry = false;
     export let withExitUrlRedirect = false;
+    export let withKioskExit = false;
+    export let actionHref = false;
+    export let actionLabel = false;
+    export let actionTarget = false;
 
     let windowWidth;
     $: fullwidth = windowWidth && windowWidth <= breakpoints.width.small;
-
-    /**
-     * Handle action
-     */
-    function handleClick() {
-        window.location.reload();
-    }
 
     /**
      * Enqueues the element focus
@@ -46,6 +45,30 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     function focus(element) {
         element.tabIndex = '-1';
         setTimeout(() => element.focus(), 1);
+    }
+
+    function handleAction() {
+        if (!actionHref) {
+            return;
+        }
+
+        const target = actionTarget || '_self';
+
+        if (target === '_self') {
+            window.location.assign(actionHref);
+            return;
+        }
+
+        if (target === '_top') {
+            try {
+                window.top.location.href = actionHref;
+                return;
+            } catch {
+                // fallback to target-based navigation
+            }
+        }
+
+        window.open(actionHref, target);
     }
 </script>
 
@@ -74,7 +97,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 
     .info {
-        max-width: 55rem;
+        max-width: 65rem;
         & > h1 {
             outline: none;
             margin: 0 var(--space-half) var(--space-2x) var(--space-half);
@@ -89,6 +112,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     .button-container {
         margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
     }
 
     @media screen and (--mq-maxwidth-small) {
@@ -125,15 +151,28 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             {#if remediation && !withExitUrlRedirect}
                 <p>{remediation}</p>
             {/if}
-            {#if retry}
+            {#if detailsComponent}
+                <svelte:component this={detailsComponent} {...detailsComponentProps} />
+            {/if}
+            {#if retry || withKioskExit || (actionHref && actionLabel)}
                 <div class="button-container">
-                    <Button
-                        shape="pill"
-                        size="small"
-                        skin="secondary"
-                        label={__('Reload the page')}
-                        on:click={handleClick}
-                        {fullwidth} />
+                    {#if retry || withKioskExit}
+                        <Button
+                            shape="pill"
+                            size="small"
+                            skin="secondary"
+                            label={withKioskExit ? __('Exit browser') : __('Reload the page')}
+                            on:click
+                            {fullwidth} />
+                    {/if}
+                    {#if actionHref && actionLabel}
+                        <Button
+                            shape="pill"
+                            skin="secondary"
+                            label={actionLabel}
+                            on:click={handleAction}
+                            {fullwidth} />
+                    {/if}
                 </div>
             {/if}
             <!-- This is needed to announce focused h1 by NVDA -->

@@ -6,7 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 <script>
     // Licensed under Gnu Public Licence version 2
-    // Copyright (c) 2020-2025 (original work) Open Assessment Technologies SA ;
+    // Copyright (c) 2020-2026 (original work) Open Assessment Technologies SA ;
 
     import { __, generateElementId, convertSizeToReadableFormat, getLanguageDirection } from '@oat-sa-private/ui-core';
     import { Textarea, Icon, RichTextEditor } from '@oat-sa-private/ui-elements';
@@ -16,7 +16,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     import { getItemSessionStatusStore } from '../../itemsSessionStatusStore.js';
     import { getItemPendingOperationsStore } from '../../itemsPendingOperationsStore.js';
     import itemSessionStatus from '../../itemSessionStatus.js';
-    import { hasClass, extractFromClasses, extractDataValueList } from '../util/attributes.js';
+    import { hasClass, extractFromClasses, extractDataValueList, extractDataValueBoolean } from '../util/attributes.js';
     import { formatResponseValue, formatInputValue } from '../util/responseType.js';
     import { getRowsValue, getAdditionalSpacing } from '../util/rows.js';
     import { convertPatternMask } from '../util/pattern.js';
@@ -74,6 +74,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     export let uploadMaxSize = 20 * 1000 * 1000; //20Mb
     export let uploadServiceType; //empty for default or 'sandbox' for no backend
 
+    // for math editor, from attributes override
+    export let mathEditor = {
+        provider: null
+    };
+
     // Element refs
     let interactionElement;
     let feedbacksRootRef;
@@ -91,14 +96,59 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     export let dataAttrs = {};
     const qtiPatternMaskMessage = dataAttrs['data-patternmask-message'];
     const resizable = dataAttrs['data-resizable'] !== 'false';
-    const hasWordCount = dataAttrs['data-word-count'] && dataAttrs['data-word-count'] !== 'false';
-    const hasCharCount = dataAttrs['data-character-count'] && dataAttrs['data-character-count'] !== 'false';
+    const hasWordCount = extractDataValueBoolean(dataAttrs['data-word-count']);
+    const hasCharCount = extractDataValueBoolean(dataAttrs['data-character-count']);
+    const hasCharCountForExpectedLength = extractDataValueBoolean(dataAttrs['data-character-count-expected'], true);
+    const hasCharCountForMaxLength = extractDataValueBoolean(dataAttrs['data-character-count-max'], true);
     // xhtml-only options
-    const hasMathEntry = dataAttrs['data-math-entry'] && dataAttrs['data-math-entry'] !== 'false';
+    const hasMathEntry = extractDataValueBoolean(dataAttrs['data-math-entry']);
     const mathEntryKeyboards = dataAttrs['data-math-entry-keyboards'];
-    const hasImageUpload = dataAttrs['data-image-upload'] && dataAttrs['data-image-upload'] !== 'false';
+    const hasImageUpload = extractDataValueBoolean(dataAttrs['data-image-upload']);
     const removePlugins = extractDataValueList(dataAttrs['data-remove-plugins']);
     const toolbarRemoveItems = extractDataValueList(dataAttrs['data-toolbar-remove-items']);
+
+    /**
+     * Mapping for RichTextEditor prop editorType
+     * Settable by:
+     * 1. authoring the data-attr into the item QTI
+     * 2. tenant config (propertyOverride) setting dataAttrs (overrides #1)
+     * 3. LTI claim (goes into itemRunnerConfigContext) (overrides #2)
+     * @type {String} 'classic' (default) or 'document'
+     */
+    const editorType = (function () {
+        const itemDataVal = dataAttrs['data-editor-type'];
+        // set by LTI
+        const configuredVal = itemRunnerConfigContext.elements?.ExtendedTextInteraction?.editorType;
+        return typeof configuredVal !== 'undefined' ? configuredVal : itemDataVal;
+    })();
+
+    /**
+     * Mapping for CKEditor config property toolbar.shouldNotGroupWhenFull
+     * Settable by:
+     * 1. authoring the data-attr into the item QTI
+     * 2. tenant config (propertyOverride) setting dataAttrs (overrides #1)
+     * 3. LTI claim (goes into itemRunnerConfigContext) (overrides #2)
+     * @type {Boolean} if toolbar should NOT group overflowing items (default: true, items not grouped)
+     */
+    const toolbarShouldNotGroupWhenFull = (function () {
+        const itemDataVal = extractDataValueBoolean(dataAttrs['data-toolbar-should-not-group-when-full'], true);
+        // set by LTI
+        const configuredVal = itemRunnerConfigContext.elements?.ExtendedTextInteraction?.toolbarShouldNotGroupWhenFull;
+        return typeof configuredVal !== 'undefined' ? configuredVal : itemDataVal;
+    })();
+
+    export let toolbarPresets = {};
+    /**
+     * Mapping for CKEditor config property toolbar.items
+     * - toolbarPresets settable by tenant config (via propertyOverride of toolbarPresets)
+     * - toolbarPreset settable by LTI claim (via itemRunnerConfigContext)
+     * @type {Object} toolbarPreset
+     * @property {String[]} items - maps to editorConfig.toolbar.items
+     */
+    const toolbarPreset = (function () {
+        const presetName = itemRunnerConfigContext.elements?.ExtendedTextInteraction?.toolbarPreset;
+        return toolbarPresets[presetName] || {};
+    })();
 
     /**
      * spellCheckConfig should ultimately be settable by:
@@ -112,20 +162,21 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     // tenant config
     export let spellCheckConfig = {};
     // LTI claim
-    const configuredSpellCheckConfig = itemRunnerConfigContext.elements?.ExtendedTextInteraction?.spellCheckConfig || {};
+    const configuredSpellCheckConfig =
+        itemRunnerConfigContext.elements?.ExtendedTextInteraction?.spellCheckConfig || {};
 
-    const finalSpellCheckConfig = defaultsDeep(
-        {},
-        configuredSpellCheckConfig,
-        spellCheckConfig,
-        { enabled: true, providerId: 'native' }
-    );
+    const finalSpellCheckConfig = defaultsDeep({}, configuredSpellCheckConfig, spellCheckConfig, {
+        enabled: true,
+        providerId: 'native'
+    });
 
     // if plain or preformatted format, maxCharLimit applies to total response characters
     // if xhtml format, maxCharLimit applies to only visible characters, as reported in the count
     const charBoundary = 20000;
     let maxCharLimit = Number.isInteger(dataAttrs['data-max-chars']) ? dataAttrs['data-max-chars'] : charBoundary;
+
     const specialCharacterSetName = dataAttrs['data-special-characters'];
+    export let specialCharactersConfig;
 
     const enforceMaxWords = hasClass(classes, 'tao-constrain-maxWords');
 
@@ -167,7 +218,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     });
 
     // interaction-level QTI attributes derived from classes:
-    const rows = getRowsValue(expectedLength, expectedLines, maxlength, maxWordsLimit, classes);
+    const rows = getRowsValue({ expectedLength, expectedLines, maxlength, maxWordsLimit, classes });
     const counterDirection =
         extractFromClasses(classes, 'qti-counter-', val => counterDirectionTypes[val]) || counterDirectionTypes.up;
 
@@ -219,16 +270,23 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         notificationKeys = [];
     }
 
+    const inProgressUploadKeys = new Set();
+    const finishedUploadKeys = new Set();
+
     // extend config template based on interaction data
     const editorConfig = editorConfigFactory({
+        toolbarItems: toolbarPreset?.items,
         removePlugins,
         toolbarRemoveItems,
+        toolbarShouldNotGroupWhenFull,
         toolbarLang: instructionsLang || userLang,
         inputLang: language || itemLang || userLang,
         hasMathEntry,
+        isWirisMathEditorEnabled: mathEditor.provider === 'wiris',
         mathEntryKeyboards,
         hasImageUpload,
         specialCharacterSetName,
+        specialCharactersConfig,
         spellCheckConfig: finalSpellCheckConfig,
         uploadServiceType,
         uploadTimeout,
@@ -239,11 +297,13 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         onUploadStarted: uploadKey => {
             //register pending operation in the store, in case consumer wants to wait for upload completion
             pendingOperationsStore.add(uploadKey);
+            inProgressUploadKeys.add(uploadKey);
         },
         onUploadFinished: (uploadKey, success, error) => {
             //NB! Do not unmount svelte component until this completes!
-            //unregister pending operation in the store; but response will be updated only on next `change` event
-            pendingOperationsStore.delete(uploadKey);
+            //response will be updated only on next `change` event, so unregister global pending operation after that
+            inProgressUploadKeys.delete(uploadKey);
+            finishedUploadKeys.add(uploadKey);
 
             if (error && error.name !== 'AbortError') {
                 let uploadErrorMessage;
@@ -332,16 +392,14 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             error: false
         },
         {
-            /* eslint-disable indent */
             message:
                 counterDirection === counterDirectionTypes.up
-                    ? `${__('<strong>%d</strong> character(s) typed', count.chars)} (${__(
+                    ? `${__('<strong>%d</strong> character(s) typed', count?.chars)} (${__(
                           'recommended: %d',
                           expectedResponseLength
                       )}).`
-                    : __('<strong>%d</strong> characters left.', expectedResponseLength - count.chars),
-            /*  eslint-enable indent */
-            permanent: expectedResponseLength && !maxlength,
+                    : __('<strong>%d</strong> characters left.', expectedResponseLength - count?.chars),
+            permanent: hasCharCountForExpectedLength && expectedResponseLength && !maxlength,
             error: false
         },
         {
@@ -350,12 +408,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 count?.chars || 0,
                 maxlength
             )}</span>`,
-            permanent: maxlength,
+            permanent: hasCharCountForMaxLength && maxlength,
             error: false
         },
         {
             message: qtiPatternMaskMessage || __('Invalid format, please refer to the instructions.'),
-            permanent: typeof qtiPatternMaskMessage !== 'undefined',
+            permanent: qtiPatternMaskMessage && validity.patternMismatch,
             error: visited && validity.patternMismatch,
             ariaLive: 'polite'
         },
@@ -411,14 +469,14 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @param {CustomEvent} e
      * @param {Object} e.detail
      * @param {String} e.detail.value
-     * @param {Object} e.detail.count
-     * @param {Number} e.detail.count.words
-     * @param {Number} e.detail.count.chars
+     * @param {Object?} [e.detail.count]
+     * @param {Number?} [e.detail.count.words]
+     * @param {Number?} [e.detail.count.chars]
      */
     function handleChange(e) {
         let parsedValue = null;
         let { value: newValue } = e.detail;
-        count = e.detail.count;
+        count = e.detail.count || {};
         count.maxCharLimitExceeded = maxCharLimit && count?.chars && count?.chars > maxCharLimit;
         count.maxLengthLimitExceeded = maxlength && count?.chars && count?.chars > maxlength;
         count.maxWordsExceeded = maxWordsLimit && count?.words && count?.words > maxWordsLimit;
@@ -507,15 +565,20 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         interactionStateStore.update({
             count
         });
+
+        // only now is it safe to delete pendingOperations entries of finished uploads
+        finishedUploadKeys.forEach(uploadKey => {
+            pendingOperationsStore.delete(uploadKey);
+        });
     }
 
     /**
      * Runs on subcomponent 'ready' event
      * @param {CustomEvent} e
      * @param {Object} e.detail
-     * @param {Object} e.detail.count
-     * @param {Number} e.detail.count.words
-     * @param {Number} e.detail.count.chars
+     * @param {Object?} [e.detail.count]
+     * @param {Number?} [e.detail.count.words]
+     * @param {Number?} [e.detail.count.chars]
      */
     function handleEditorReady(e) {
         editorLoad.resolve();
@@ -710,6 +773,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         --feedbacks-margin-top: 0px;
         --base-control-height: min(var(--item-container-inner-block-size), 150rem);
         --row-height: calc(var(--line-height-default) * 1em);
+        --maximal-visible-height: calc(var(--item-container-block-size, 80vh) - var(--toolbar-height, 0) - 2rem);
 
         cursor: auto;
 
@@ -726,6 +790,38 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 block-size: var(--control-default-height);
                 min-block-size: calc(var(--row-height) * 3 + 3rem);
                 vertical-align: top;
+            }
+
+            & :global(.document-editor) {
+                & :global(.ck.ck-editor__main) {
+                    block-size: var(--control-default-height);
+                    min-block-size: calc(var(--row-height) + 15rem);
+                }
+            }
+        }
+        /* For better UX, make editor content area fit on screen without scrolling item */
+        & :global(.classic-editor .ck.ck-content),
+        & :global(textarea) {
+            max-block-size: var(--maximal-visible-height);
+        }
+        & :global(.document-editor) {
+            & :global(.ck.ck-editor__main) {
+                max-block-size: var(--maximal-visible-height);
+                & :global(.ck.ck-content) {
+                    min-block-size: calc(var(--row-height) * var(--rows-count) - 9rem);
+                    block-size: fit-content;
+                }
+            }
+        }
+        /* document-editor, when rows is undefined or zero or set high enough, should expand its empty page */
+        &.auto-height,
+        &.grow-empty-document {
+            & :global(.document-editor) {
+                & :global(.ck.ck-editor__main) {
+                    & :global(.ck.ck-content) {
+                        min-block-size: calc(0.9 * var(--maximal-visible-height));
+                    }
+                }
             }
         }
     }
@@ -787,11 +883,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     {dir}
     {role}
     {...ariaAttrs}
-    {...dataAttrs}
->
+    {...dataAttrs}>
     {#if prompt && prompt.length}
         <Prompt blockTree={prompt} />
     {/if}
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div
         class:do-not-read={!value}
         bind:this={controlWrapperRef}
@@ -801,16 +897,18 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                     editorToolbarHeight + feedbacksHeight
                 }px - ${additionalSpace} - var(--feedbacks-margin-top)
             );
-            --rows-count: ${rows}
+            --rows-count: ${rows};
+            --toolbar-height: ${editorToolbarHeight}px;
         `}
         aria-controls={elementId}
         class:has-feedbacks={visibleFeedbacks.length > 0}
         class:auto-height={!rows}
+        class:grow-empty-document={editorType === 'document' && rows > 15}
         class:vertical-unsupported={!isVerticalTextareaSupported}
-        on:keydown={lastPressedKeyListener.saveLastPressedKey}
-    >
+        on:keydown={lastPressedKeyListener.saveLastPressedKey}>
         {#if format === formats.xhtml}
             <RichTextEditor
+                {editorType}
                 {rows}
                 minRows={rows ? 1 : 3}
                 value={initialValue}
@@ -836,8 +934,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 on:blur={handleBlur}
                 on:clipboard={handleClipboard}
                 on:dragdrop={handleDragDropEvent}
-                on:historyUpdate={handleHistoryUpdate}
-            />
+                on:historyUpdate={handleHistoryUpdate} />
         {:else}
             <Textarea
                 id={editorElementId}
@@ -864,8 +961,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 on:focus={handleFocus}
                 on:blur={handleBlur}
                 on:dragdrop={handleDragDropEvent}
-                on:clipboard={handleClipboard}
-            />
+                on:clipboard={handleClipboard} />
         {/if}
         <label for={editorElementId}>
             <ul
@@ -873,8 +969,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 id={elementId}
                 class="feedbacks do-not-read"
                 lang={instructionsLang}
-                dir={instructionsDir}
-            >
+                dir={instructionsDir}>
                 {#each visibleFeedbacks as feedback}
                     <li class="feedback" class:error={feedback.error} aria-live={feedback.ariaLive}>
                         {#if visibleFeedbacks.length > 1 || feedback.error}
@@ -884,6 +979,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                                 {:else}•{/if}
                             </span>
                         {/if}
+                        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
                         <span>{@html feedback.message}</span>
                     </li>
                 {/each}

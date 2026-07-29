@@ -122,16 +122,25 @@ describe('baseHighlighter', () => {
     it('getHasSelection: returns true if user selection exists', () => {
         const { h, itemContainer } = createHighlighterWithDomFixture();
         itemContainer.innerHTML = '<div>summer</div><div>winter</div>';
+        itemContainer.parentElement.append('external');
 
         expect(h.getHasSelection()).toBe(false);
 
-        const range = selectRange();
+        let range = selectRange();
         range.setStart(itemContainer.childNodes[1].childNodes[0], 2);
         range.setEnd(itemContainer.childNodes[1].childNodes[0], 3);
 
         expect(h.getHasSelection()).toBe(true);
 
         selection.collapse(itemContainer.childNodes[1].childNodes[0], 2);
+
+        expect(h.getHasSelection()).toBe(false);
+
+        discardSelection();
+        range = selectRange();
+        range.setStart(itemContainer.childNodes[1].childNodes[0], 2);
+        range.setEnd(itemContainer.parentElement.childNodes[1], 3);
+        expect(selection.toString()).toBe('nterext');
 
         expect(h.getHasSelection()).toBe(false);
     });
@@ -223,6 +232,32 @@ describe('baseHighlighter', () => {
         expect(selection.isCollapsed).toBe(true);
         expect(onUpdatedSpy).toHaveBeenCalled();
         onUpdatedSpy.mockClear();
+    });
+
+    it('highlightSelection: does nit discard selection is outside container', async () => {
+        const { h, itemContainer } = createHighlighterWithDomFixture();
+        itemContainer.innerHTML = '<div>summer</div><div>winter</div>';
+        itemContainer.parentElement.append('external');
+
+        let range = selectRange();
+        range.setStart(itemContainer.childNodes[0].childNodes[0], 0);
+        range.setEnd(itemContainer.childNodes[0].childNodes[0], 3);
+        expect(selection.toString()).toBe('sum');
+        h.highlightSelection();
+        expect(getHighlights().length).toBe(1);
+
+        await vi.runAllTimersAsync();
+        expect(selection.isCollapsed).toBe(true);
+
+        range = selectRange();
+        range.setStart(itemContainer.parentElement.childNodes[1], 0);
+        range.setEnd(itemContainer.parentElement.childNodes[1], 3);
+        expect(selection.toString()).toBe('ext');
+        h.highlightSelection();
+        expect(getHighlights().length).toBe(1);
+
+        await vi.runAllTimersAsync();
+        expect(selection.isCollapsed).toBe(false);
     });
 
     it('eraseSelection: removes highlight based on selection', () => {

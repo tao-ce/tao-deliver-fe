@@ -10,7 +10,7 @@ global.jest = { fn: vi.fn };
 require('jest-fetch-mock').enableMocks();
 
 import jwtTokenHandlerFactory from 'core/jwt/jwtTokenHandler';
-import { getAttachmentsUploadData, doRequest } from '../shared.js';
+import { getAttachmentsUploadData, doRequest, getData } from '../shared.js';
 import ApiError from 'core/error/ApiError';
 import NetworkError from 'core/error/NetworkError.js';
 import { omit } from 'lodash';
@@ -273,6 +273,48 @@ describe('doRequest', () => {
                 expect(result).toEqual(['abc', 'def']);
             });
         });
+
+        describe('handlingOptions', () => {
+            it('resolves with the rawResponse', () => {
+                expect.assertions(1);
+
+                const handlingOptions = {
+                    returnRawResponse: true
+                };
+
+                fetch.mockResponseOnce(() =>
+                    Promise.resolve(
+                        JSON.stringify({
+                            success: true
+                        })
+                    )
+                );
+
+                return doRequest(serviceUrl, requestOptions, handlingOptions).then(result => {
+                    expect(result).toBeInstanceOf(Response);
+                });
+            });
+
+            it('resolves with the parsedJsonResponse', () => {
+                expect.assertions(1);
+
+                const handlingOptions = {
+                    returnParsedJsonResponse: true
+                };
+                const responseJson = {
+                    success: true,
+                    data: {
+                        foo: true
+                    }
+                };
+
+                fetch.mockResponseOnce(() => Promise.resolve(JSON.stringify(responseJson)));
+
+                return doRequest(serviceUrl, requestOptions, handlingOptions).then(result => {
+                    expect(result).toEqual(responseJson);
+                });
+            });
+        });
     });
 
     describe('Partial failure', () => {
@@ -376,5 +418,57 @@ describe('doRequest', () => {
                 expect(e.response).toBe(errorResponse);
             });
         });
+    });
+});
+
+describe('getData', () => {
+    const jwtTokenHandler = jwtTokenHandlerFactory({
+        refreshTokenUrl: '/refreshUrl'
+    });
+    const config = {
+        jwtTokenHandler,
+        requestTimeout: 200
+    };
+
+    it('calls through to fetch with url, requestOptions and handlingOptions, and resolves with response', () => {
+        expect.assertions(3);
+
+        fetch.mockResponseOnce(() =>
+            Promise.resolve(
+                JSON.stringify({
+                    foo: true
+                })
+            )
+        );
+
+        const url = 'http://ngs.test/api/v1/xyz';
+        const headers = {
+            foo: 'bar'
+        };
+        const requestOptions = {
+            headers
+        };
+        const handlingOptions = {
+            returnParsedJsonResponse: true
+        };
+
+        return getData(config, url, requestOptions, handlingOptions)
+            .then(result => {
+                expect(result).toEqual({ foo: true });
+                expect(fetch).toHaveBeenCalledTimes(1);
+                expect(fetch).toHaveBeenCalledWith(url, {
+                    ...requestOptions,
+                    jwtTokenHandler: config.jwtTokenHandler,
+                    timeout: config.requestTimeout,
+                    returnOriginalResponse: true,
+                    headers: {
+                        ...requestOptions.headers,
+                        Authorization: 'Bearer token'
+                    }
+                });
+            })
+            .catch(err => {
+                throw err;
+            });
     });
 });

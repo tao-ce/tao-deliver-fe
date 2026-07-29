@@ -27,6 +27,8 @@ exports[`Text > rendering > should render component in non-editable state 1`] = 
         />
       </div>
     </foreignobject>
+    
+    
   </div>
 </body>
 `;
@@ -59,6 +61,8 @@ exports[`Text > rendering > should render component in selected state 1`] = `
         />
       </div>
     </foreignobject>
+    
+    
   </div>
 </body>
 `;
@@ -91,6 +95,8 @@ exports[`Text > rendering > should render the foreignObject with the given drawi
         />
       </div>
     </foreignobject>
+    
+    
   </div>
 </body>
 `;
@@ -123,6 +129,8 @@ exports[`Text > rendering > should render the foreignObject with the given geome
         />
       </div>
     </foreignobject>
+    
+    
   </div>
 </body>
 `;

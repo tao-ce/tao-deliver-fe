@@ -14,6 +14,7 @@ import areaBrokerFactory from './areaBroker.js';
 import itemRunnerFactory from 'taoItems/runner/api/itemRunner';
 import getAssetManager from './config/assetManager.js';
 import { reviewResponseDisplays } from './session/reviewResponseDisplays.js';
+import { mount, unmount } from 'svelte';
 
 /**
  * Get the serviceCallId (the test session unique identifier)
@@ -197,7 +198,7 @@ export default {
          * @param {String} itemIdentifier
          * @param {Object} itemData
          * @param {String} reviewResponseDisplay
-         * @returns {Promise<>}
+         * @returns {Promise<void>}
          */
         this.renderItemWithResponse = (itemIdentifier, itemData, reviewResponseDisplay) => {
             const config = this.getConfig();
@@ -244,7 +245,7 @@ export default {
                     const item = stateStore.getCurrentItem();
 
                     this.renderedComponents.push(
-                        new ItemHeader({
+                        mount(ItemHeader, {
                             target: this.getAreaBroker().getContentArea(),
                             props: {
                                 title: item.label || item.identifier
@@ -264,7 +265,8 @@ export default {
                         itemContainerHeight: 'var(--testrunner-item-container-height)',
                         itemContainerWidth: 'var(--testrunner-item-container-width)',
                         itemContainerOffsetRight: 'var(--testrunner-item-container-offset-right)',
-                        getAttachmentsUploadData: (...args) => this.getProxy().getAttachmentsUploadData(...args)
+                        getAttachmentsUploadData: (...args) => this.getProxy().getAttachmentsUploadData(...args),
+                        getData: (...args) => this.getProxy().getData(...args)
                     }
                 )
                     .on('error', reject)
@@ -288,8 +290,8 @@ export default {
          */
         this.destroyRenderedComponents = () => {
             this.renderedComponents.forEach(component => {
-                if (component?.$destroy) {
-                    component.$destroy();
+                if (component) {
+                    unmount(component);
                 }
             });
             this.renderedComponents = [];
@@ -327,18 +329,19 @@ export default {
          */
         this.destroyAllItemRunners = () =>
             Promise.all(
-                Object.entries(this.itemRunnersMap).map(([itemIdentifier, itemRunner]) =>
-                    new Promise(resolve => {
-                        if (itemRunner) {
-                            itemRunner.on('clear', () => {
-                                delete this.itemRunnersMap[itemIdentifier];
+                Object.entries(this.itemRunnersMap).map(
+                    ([itemIdentifier, itemRunner]) =>
+                        new Promise(resolve => {
+                            if (itemRunner) {
+                                itemRunner.on('clear', () => {
+                                    delete this.itemRunnersMap[itemIdentifier];
+                                    resolve();
+                                });
+                                itemRunner.clear();
+                            } else {
                                 resolve();
-                            });
-                            itemRunner.clear();
-                        } else {
-                            resolve();
-                        }
-                    })
+                            }
+                        })
                 )
             );
     },
@@ -356,7 +359,7 @@ export default {
         this.allItemsMode = !!config?.options?.review?.allInOne;
 
         //we prepare the layout early
-        this.testLayout = new TestReviewLayout({
+        this.testLayout = mount(TestReviewLayout, {
             target: getContainer(config),
             props: {
                 serviceCallId: getServiceCallId(config),
@@ -564,7 +567,7 @@ export default {
         if (testContext.itemPosition + 1 >= testMap.stats.total) {
             if (this.allItemsMode) {
                 this.renderedComponents.push(
-                    new AllItemsFooter({
+                    mount(AllItemsFooter, {
                         target: this.getAreaBroker().getContentArea(),
                         props: {}
                     })
@@ -648,7 +651,7 @@ export default {
      */
     destroy() {
         if (this.testLayout) {
-            this.testLayout.$destroy();
+            unmount(this.testLayout);
         }
     }
 };

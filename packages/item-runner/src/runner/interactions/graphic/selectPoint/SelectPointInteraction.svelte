@@ -81,7 +81,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 
     /**
-     * @typedef {Point} - rendered by the Marker component
+     * @typedef {Object} Point - rendered by the Marker component
      * @property {Number[]} coords - [x,y]; top left of SVG is [0,0]
      * @property {String} key - identifier
      */
@@ -194,7 +194,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
         if (!points.length) {
             points = storedResponse.map(coordinatePair =>
-                // eslint-disable-next-line implicit-arrow-linebreak
                 Object.assign(
                     {},
                     {
@@ -206,7 +205,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         } else {
             //if Marker re-renders while drag is in progress, it will lose its position
             const newPoints = storedResponse.map((coordinatePair, i) =>
-                //eslint-disable-next-line implicit-arrow-linebreak
                 Object.assign({}, points[i], {
                     coords: formatCoordinatePair(coordinatePair)
                 })
@@ -630,7 +628,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     </div>
 
     <div class="qti-flow-container">
-        <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+        <!-- svelte-ignore a11y-no-noninteractive-tabindex a11y-no-static-element-interactions -->
         <div
             class="qti-block"
             tabindex="0"

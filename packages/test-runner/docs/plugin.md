@@ -46,6 +46,7 @@ It will be available in the sandbox.
 In order to use Svelte components in plugins we have to follow some lifecycle constraints (because the TestLayout is ready only once the test runner is initialized). So we mount the component when the plugin renders and attach it to areas using the `areaBroker`:
 
 ```js
+import { mount, unmount } from 'svelte';
 import RedButton from './RedButton.svelte';
 import pluginFactory from 'taoTests/runner/plugin.js';
 
@@ -62,7 +63,7 @@ export default pluginFactory({
         const testConfig = testRunner.getConfig();
         const serviceCallId = testConfig.serviceCallId;
 
-        this.redButton = new RedButton(
+        this.redButton = mount(RedButton, {
             target : areaBroker.getContentArea(),
             props : {
                 serviceCallId
@@ -75,8 +76,8 @@ export default pluginFactory({
     },
 
     destroy(){
-        if(this.redButton) {
-            this.redButton.$destroy();
+        if (this.redButton) {
+            unmount(this.redButton);
         }
     }
 });

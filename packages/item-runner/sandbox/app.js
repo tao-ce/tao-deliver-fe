@@ -8,10 +8,11 @@ import '@oat-sa-private/ui-core/polyfills.js';
 import '@oat-sa-private/ui-identity/css/main.css';
 import itemRunner from 'taoItems/runner/api/itemRunner.js';
 import { providerName, default as provider } from '../src/runner/qti.js';
+import { mount } from 'svelte';
 
 //the provider needs to be registered globally, once.
 itemRunner.register(providerName, provider);
 
-new ItemRunnerSandbox({
+mount(ItemRunnerSandbox, {
     target: document.body
 });

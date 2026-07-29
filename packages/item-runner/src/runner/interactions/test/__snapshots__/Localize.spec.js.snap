@@ -4,6 +4,9 @@ exports[`Localize > renders nothing without props 1`] = `
 <body>
   <div>
     
+    
+    
+    
   </div>
 </body>
 `;
@@ -11,11 +14,15 @@ exports[`Localize > renders nothing without props 1`] = `
 exports[`Localize > renders string in user lang 1`] = `
 <body>
   <div>
+    
+    
     <span
       lang="ab-CD"
     >
-       
+      
     </span>
+    
+    
     
     
   </div>
@@ -25,39 +32,59 @@ exports[`Localize > renders string in user lang 1`] = `
 exports[`Localize > renders string in user lang with params in content lang 1`] = `
 <body>
   <div>
-    <span
-      lang="ab-CD"
-    >
-       
-    </span>
     
     
     <span
       lang="ab-CD"
     >
-       
+      
     </span>
+    
+    
+    
+    
     
     
     <span
       lang="ab-CD"
     >
-       
+      
     </span>
+    
+    
+    
+    
     
     
     <span
       lang="ab-CD"
     >
-       
+      
     </span>
+    
+    
+    
+    
     
     
     <span
       lang="ab-CD"
     >
-       
+      
     </span>
+    
+    
+    
+    
+    
+    
+    <span
+      lang="ab-CD"
+    >
+      
+    </span>
+    
+    
     
     
   </div>
@@ -68,11 +95,21 @@ exports[`Localize > renders string in user lang with params in content lang 2`] 
 <body>
   <div>
     
+    
+    
+    
+    
+    
     <span
       lang="ab-CD"
     >
-       
+      
     </span>
+    
+    
+    
+    
+    
     
     
     
@@ -83,11 +120,18 @@ exports[`Localize > renders string in user lang with params in content lang 2`] 
 exports[`Localize > renders string in user lang with params in content lang 3`] = `
 <body>
   <div>
+    
+    
     <span
       lang="ab-CD"
     >
-       
+      
     </span>
+    
+    
+    
+    
+    
     
     
     
@@ -99,11 +143,18 @@ exports[`Localize > renders string in user lang with params in content lang 4`] 
 <body>
   <div>
     
+    
+    
+    
+    
+    
     <span
       lang="ab-CD"
     >
-       
+      
     </span>
+    
+    
     
     
   </div>

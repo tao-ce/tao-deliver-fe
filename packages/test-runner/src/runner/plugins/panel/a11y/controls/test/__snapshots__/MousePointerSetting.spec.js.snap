@@ -9,6 +9,7 @@ exports[`MousePointerSetting > applies initial state value to document on load 1
   <div
     style="position: fixed; pointer-events: none; z-index: 10000; width: 22px; height: 32px; left: -2px; top: -5px; transform: translate(80px, 50px);"
   >
+    
     <svg
       fill="none"
       height="32"
@@ -28,6 +29,9 @@ exports[`MousePointerSetting > applies initial state value to document on load 1
       />
     </svg>
     
+    
   </div>
+  
+  
 </section>
 `;

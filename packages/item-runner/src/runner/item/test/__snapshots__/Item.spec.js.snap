@@ -4,9 +4,14 @@ exports[`Item > Context > Notifications > children can call showItemNotification
 <section
   class="qti-item initial notranslate"
   data-item-id="item-5"
+  dir=""
   style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px);"
   translate="no"
 >
+  
+  
+  
+  
   
   
   
@@ -19,7 +24,6 @@ exports[`Item > Context > Notifications > children can call showItemNotification
       class="notification-container"
       role="log"
     >
-      
       <div
         class="notification-wrapper button-fill neutral"
       >
@@ -35,7 +39,9 @@ exports[`Item > Context > Notifications > children can call showItemNotification
             d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
             fill-rule="evenodd"
           />
+          
         </svg>
+        
          
         <div
           aria-live="assertive"
@@ -44,15 +50,19 @@ exports[`Item > Context > Notifications > children can call showItemNotification
           <div
             class="notification-text"
           >
+            
              
+            
             <span
               class="notification-body"
             >
               I am notifying you
             </span>
             
+            
           </div>
            
+          
         </div>
          
         <div
@@ -74,32 +84,51 @@ exports[`Item > Context > Notifications > children can call showItemNotification
               <path
                 d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
+        
       </div>
+      
     </div>
+    
   </div>
+  
 </section>
 `;
 
 exports[`Item > change sessionStatus to closed 1`] = `
 <body>
   <div>
+    
+    
+    
      
     <section
       class="qti-item initial notranslate"
       data-item-id="item-3"
+      dir=""
       style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px);"
       translate="no"
     >
       
+      
+      
        
+      
     </section>
      
+    
      
+    
+    
     
     
   </div>
@@ -109,18 +138,28 @@ exports[`Item > change sessionStatus to closed 1`] = `
 exports[`Item > change sessionStatus to closed 2`] = `
 <body>
   <div>
+    
+    
+    
      
     <section
       class="qti-item closed notranslate"
       data-item-id="item-3"
+      dir=""
       style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px);"
       translate="no"
     >
       
+      
+      
        
+      
     </section>
      
+    
      
+    
+    
     
     
   </div>
@@ -130,17 +169,25 @@ exports[`Item > change sessionStatus to closed 2`] = `
 exports[`Item > renders a style tag if options.itemRunnerConfig.itemStyles is set 1`] = `
 <body>
   <div>
+    
+    
+    
      
     <section
       class="qti-item initial notranslate"
       data-item-id="item-2"
+      dir=""
       style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px);"
       translate="no"
     >
       
+      
+      
        
+      
     </section>
      
+    
      
     <div
       class="styles-container-mock"
@@ -148,31 +195,6 @@ exports[`Item > renders a style tag if options.itemRunnerConfig.itemStyles is se
     />
     
     
-  </div>
-</body>
-`;
-
-exports[`Item > renders style tags when the loading completes - including suspend/unsuspend 1`] = `
-<body>
-  <div>
-     
-    <section
-      class="qti-item initial notranslate"
-      data-item-id="item-1"
-      style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px);"
-      translate="no"
-    >
-      A short item
-      
-      
-       
-    </section>
-     
-     
-    <div
-      class="styles-container-mock"
-      data-props="{"stylesheets":[{"href":"style/simple.css"},{"href":"style/passageStyles.css","scope":".scope-me"}],"itemScopeSelector":".qti-item[data-item-id=\\"item-1\\"]","convertPxToRemOptions":{"enabled":true,"cssProperties":["my-css-prop","abc"]}}"
-    />
     
     
   </div>
@@ -182,18 +204,28 @@ exports[`Item > renders style tags when the loading completes - including suspen
 exports[`Item > renders with basic props (but no blockTree) 1`] = `
 <body>
   <div>
+    
+    
+    
      
     <section
       class="qti-item initial notranslate"
       data-item-id="item-1"
+      dir=""
       style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px);"
       translate="no"
     >
       
+      
+      
        
+      
     </section>
      
+    
      
+    
+    
     
     
   </div>
@@ -203,6 +235,9 @@ exports[`Item > renders with basic props (but no blockTree) 1`] = `
 exports[`Item > renders with itemLang "ar-arb" and infers itemDir 1`] = `
 <body>
   <div>
+    
+    
+    
      
     <section
       class="qti-item initial notranslate"
@@ -213,10 +248,16 @@ exports[`Item > renders with itemLang "ar-arb" and infers itemDir 1`] = `
       translate="no"
     >
       
+      
+      
        
+      
     </section>
      
+    
      
+    
+    
     
     
   </div>
@@ -226,6 +267,9 @@ exports[`Item > renders with itemLang "ar-arb" and infers itemDir 1`] = `
 exports[`Item > renders with itemLang "it-IT" and infers itemDir 1`] = `
 <body>
   <div>
+    
+    
+    
      
     <section
       class="qti-item initial notranslate"
@@ -236,10 +280,16 @@ exports[`Item > renders with itemLang "it-IT" and infers itemDir 1`] = `
       translate="no"
     >
       
+      
+      
        
+      
     </section>
      
+    
      
+    
+    
     
     
   </div>
@@ -249,6 +299,9 @@ exports[`Item > renders with itemLang "it-IT" and infers itemDir 1`] = `
 exports[`Item > renders with itemLang and itemDir and itemClassList props 1`] = `
 <body>
   <div>
+    
+    
+    
      
     <section
       class="qti-item initial notranslate separator-between-columns"
@@ -259,10 +312,16 @@ exports[`Item > renders with itemLang and itemDir and itemClassList props 1`] = 
       translate="no"
     >
       
+      
+      
        
+      
     </section>
      
+    
      
+    
+    
     
     
   </div>
@@ -272,6 +331,9 @@ exports[`Item > renders with itemLang and itemDir and itemClassList props 1`] = 
 exports[`Item > renders with sessionStatus from store 1`] = `
 <body>
   <div>
+    
+    
+    
     
   </div>
 </body>

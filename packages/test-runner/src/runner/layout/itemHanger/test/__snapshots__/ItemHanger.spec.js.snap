@@ -14,10 +14,15 @@ exports[`ItemHanger > renders at bottom depending on tools state 1`] = `
         >
           Hello world!
         </span>
+        
          
+        
          
+        
       </p>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -31,10 +36,15 @@ exports[`ItemHanger > renders if no messages 1`] = `
       <p
         class="inverted"
       >
+        
          
+        
          
+        
       </p>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -53,10 +63,12 @@ exports[`ItemHanger > renders multiple messages 1`] = `
         >
           Tea - Coffee
         </span>
+        
          
         <span>
            - 
         </span>
+        
          
         <span
           aria-live="off"
@@ -74,8 +86,11 @@ exports[`ItemHanger > renders multiple messages 1`] = `
             1 hour
           </span>
         </span>
+        
       </p>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -94,10 +109,15 @@ exports[`ItemHanger > renders text message 1`] = `
         >
           Hello world!
         </span>
+        
          
+        
          
+        
       </p>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -111,7 +131,9 @@ exports[`ItemHanger > renders timer message 1`] = `
       <p
         class="inverted"
       >
+        
          
+        
          
         <span
           aria-live="off"
@@ -129,8 +151,11 @@ exports[`ItemHanger > renders timer message 1`] = `
             1 hour
           </span>
         </span>
+        
       </p>
     </div>
+    
+    
   </div>
 </body>
 `;

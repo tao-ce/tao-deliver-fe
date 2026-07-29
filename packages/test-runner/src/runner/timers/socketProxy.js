@@ -4,6 +4,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 import NetworkError from 'core/error/NetworkError';
 import TimeoutError from 'core/error/TimeoutError';
+import ActionError, { actionErrorCodes } from 'taoDeliverAppsCommon/core/error/ActionError';
 
 /**
  * Create a new interface for socket communication
@@ -172,6 +173,18 @@ export async function socketProxyFactory(config = {}) {
 
                         socket.on('unexpected-error', err => {
                             handleProxyEvent('error', new NetworkError(err));
+                        });
+
+                        // user got disconnected due to another active session
+                        socket.on('force_logout', message => {
+                            // stop any further reconnection attempts
+                            socket.disconnect();
+                            // forward to proxy consumers
+                            // emit a specific 'force_logout' event for explicit handling
+                            handleProxyEvent(
+                                'force_logout',
+                                new ActionError(message, actionErrorCodes.forceLogout)
+                            );
                         });
 
                         // initialise connection

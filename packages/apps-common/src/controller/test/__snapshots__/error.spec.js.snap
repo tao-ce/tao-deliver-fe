@@ -1,0 +1,275 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`handling errors > KioskError: if denyProcesses specified, renders TheEnd page: afterLaunch=false 1`] = `
+<div
+  class="the-end"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="icon-container"
+    >
+      <svg
+        aria-hidden="false"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Lightning bolt icon
+        </title>
+        <path
+          d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
+        />
+        
+      </svg>
+      
+    </div>
+     
+    <div
+      class="info"
+    >
+      <h1
+        class="ui-heading-xl"
+      >
+        Can't start secure session
+      </h1>
+       
+      
+       
+      
+       
+      <p>
+        To continue, you must close the apps listed below. Click "Exit browser", then close the apps, and relaunch TAO Secure Browser.
+      </p>
+      
+       
+      
+      <ul>
+        <li>
+          Process B
+        </li>
+        <li>
+          Process C
+        </li>
+        
+      </ul>
+      
+      
+       
+      <div
+        class="button-container"
+      >
+        <button
+          class="actionable secondary pill small"
+          type="button"
+        >
+          
+           
+          
+           
+          Exit browser
+          
+        </button>
+        
+         
+        
+      </div>
+      
+       
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`handling errors > KioskError: if denyProcesses specified, renders TheEnd page: afterLaunch=true 1`] = `
+<div
+  class="the-end"
+>
+  <div
+    class="container"
+  >
+    <div
+      class="icon-container"
+    >
+      <svg
+        aria-hidden="false"
+        class="icon medium"
+        viewBox="0 0 16 16"
+      >
+        <title>
+          Lightning bolt icon
+        </title>
+        <path
+          d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
+        />
+        
+      </svg>
+      
+    </div>
+     
+    <div
+      class="info"
+    >
+      <h1
+        class="ui-heading-xl"
+      >
+        Can't continue secure session
+      </h1>
+       
+      
+       
+      
+       
+      <p>
+        To continue, you must close the apps listed below. Click "Exit browser", then close the apps, and relaunch TAO Secure Browser.
+      </p>
+      
+       
+      
+      <ul>
+        <li>
+          Process B
+        </li>
+        <li>
+          Process C
+        </li>
+        
+      </ul>
+      
+      
+       
+      <div
+        class="button-container"
+      >
+        <button
+          class="actionable secondary pill small"
+          type="button"
+        >
+          
+           
+          
+           
+          Exit browser
+          
+        </button>
+        
+         
+        
+      </div>
+      
+       
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`handling errors > renders TheEnd page if no params passed 1`] = `
+<div
+  class="info"
+>
+  <h1
+    class="ui-heading-xl"
+  >
+    Unexpected error.
+  </h1>
+   
+  
+   
+  <p>
+    Sorry, an unexpected error happened during the test.
+  </p>
+  
+   
+  <p>
+    Please contact your test administrator.
+  </p>
+  
+   
+  
+   
+  
+   
+  
+</div>
+`;
+
+exports[`handling errors > renders TheEnd page if only messages passed 1`] = `
+<div
+  class="info"
+>
+  <h1
+    class="ui-heading-xl"
+  >
+    Error
+  </h1>
+   
+  
+   
+  <p>
+    is
+  </p>
+  
+   
+  <p>
+    happened.
+  </p>
+  
+   
+  
+   
+  
+   
+  
+</div>
+`;
+
+exports[`handling errors > renders TheEnd page if only recoverable internal error passed 1`] = `
+<div
+  class="info"
+>
+  <h1
+    class="ui-heading-xl"
+  >
+    Unexpected error.
+  </h1>
+   
+  
+   
+  <p>
+    Sorry, an unexpected error happened during the test.
+  </p>
+  
+   
+  <p>
+    Please contact your test administrator.
+  </p>
+  
+   
+  
+   
+  <div
+    class="button-container"
+  >
+    <button
+      class="actionable secondary pill small"
+      type="button"
+    >
+      
+       
+      
+       
+      Reload the page
+      
+    </button>
+    
+     
+    
+  </div>
+  
+   
+  
+</div>
+`;

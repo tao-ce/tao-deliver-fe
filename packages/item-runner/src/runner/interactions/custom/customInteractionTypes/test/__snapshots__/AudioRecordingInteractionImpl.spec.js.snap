@@ -3,6 +3,8 @@
 exports[`AudioRecordingInteraction > renders props into markup 1`] = `
 <body>
   <div>
+    
+    
      
     <div
       ariabar="baz"
@@ -18,7 +20,7 @@ exports[`AudioRecordingInteraction > renders props into markup 1`] = `
       <div
         class="prompt"
       >
-        undefined
+        
       </div>
        
       <div
@@ -33,8 +35,12 @@ exports[`AudioRecordingInteraction > renders props into markup 1`] = `
         <div
           class="markup"
         />
+        
       </div>
     </div>
+    
+    
+    
   </div>
 </body>
 `;

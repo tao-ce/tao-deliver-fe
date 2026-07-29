@@ -27,9 +27,9 @@ Promise.all([
 
         fs.writeFile('server.js', resolvedTemplate, err => {
             if (err) {
-                console.error(err); /* eslint-disable-line */
+                console.error(err);
                 process.exit(-1);
             }
         });
     })
-    .catch(e => console.error(e)); /* eslint-disable-line */
+    .catch(e => console.error(e));

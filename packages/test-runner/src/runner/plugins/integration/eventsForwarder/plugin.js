@@ -2,6 +2,7 @@
 // Copyright (C) 2023 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+/* eslint-disable jsdoc/valid-types */
 
 import pluginFactory from 'taoTests/runner/plugin';
 import { defaultsDeep } from 'lodash';
@@ -98,7 +99,7 @@ export default pluginFactory({
          * Queues the trace events, and sends if queue got big.
          * @param {CustomEvent} event
          * @param {Object} event.detail
-         * @param {Object[]} event.detail.* - some property containing a list of trace events
+         * @param {Object[]} [event.detail.*] - some property containing a list of trace events
          */
         const handlePciEvent = event => {
             const matchedPciEventSchema = this.pluginConfig.pciEvents.find(e => e.type === event.type);

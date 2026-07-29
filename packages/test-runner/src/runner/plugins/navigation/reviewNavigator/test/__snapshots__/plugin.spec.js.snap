@@ -9,6 +9,9 @@ exports[`navigator plugin > opens and closes overview on events from own compone
       aria-hidden="true"
     >
       
+      
+      
+      
     </nav>
     
         
@@ -51,16 +54,25 @@ exports[`navigator plugin > opens and closes overview on events from own compone
                 <path
                   d="M1 0l11 11L23 0l1 1-11 11 11 11-1 1-11-11L1 24l-1-1 11-11L0 1z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </span>
            
           <span
             class="end"
-          />
+          >
+            
+          </span>
         </div>
+        
+        
       </div>
       
             
@@ -70,6 +82,7 @@ exports[`navigator plugin > opens and closes overview on events from own compone
         <div
           class="overview"
         >
+          
            
           <div
             class="tabs"
@@ -77,6 +90,14 @@ exports[`navigator plugin > opens and closes overview on events from own compone
             <div
               class="tabgroup"
             >
+              <span
+                aria-live="polite"
+                class="visually-hidden"
+              >
+                
+              </span>
+               
+              
                
               <div
                 class="scrollbox"
@@ -90,24 +111,25 @@ exports[`navigator plugin > opens and closes overview on events from own compone
                     <button
                       aria-current="true"
                       aria-selected="true"
+                      data-tab-key="all"
                       role="tab"
                     >
+                      
                        
                       all questions
+                      
                        
+                      
                     </button>
-                     
                   </li>
+                  
                 </ul>
-                <iframe
-                  aria-hidden="true"
-                  src="about:blank"
-                  style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-                  tabindex="-1"
-                />
+                
               </div>
                
+              
             </div>
+            
           </div>
            
           <div>
@@ -117,7 +139,10 @@ exports[`navigator plugin > opens and closes overview on events from own compone
             >
               <div>
                 
+                
+                
                  
+                
                 
                  
                 <ol
@@ -129,7 +154,9 @@ exports[`navigator plugin > opens and closes overview on events from own compone
                       class="step completed"
                       tabindex="0"
                     >
+                      
                        
+                      
                        
                       <span
                         aria-hidden="true"
@@ -137,8 +164,8 @@ exports[`navigator plugin > opens and closes overview on events from own compone
                       >
                         1
                       </span>
+                      
                     </button>
-                     
                   </li>
                   <li>
                     <button
@@ -163,9 +190,13 @@ exports[`navigator plugin > opens and closes overview on events from own compone
                             d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                             fill-rule="evenodd"
                           />
+                          
                         </svg>
+                        
                       </span>
+                      
                        
+                      
                        
                       <span
                         aria-hidden="true"
@@ -173,8 +204,8 @@ exports[`navigator plugin > opens and closes overview on events from own compone
                       >
                         2
                       </span>
+                      
                     </button>
-                     
                   </li>
                   <li>
                     <button
@@ -182,7 +213,9 @@ exports[`navigator plugin > opens and closes overview on events from own compone
                       class="step default"
                       tabindex="-1"
                     >
+                      
                        
+                      
                        
                       <span
                         aria-hidden="true"
@@ -190,17 +223,24 @@ exports[`navigator plugin > opens and closes overview on events from own compone
                       >
                         3
                       </span>
+                      
                     </button>
-                     
                   </li>
+                  
                 </ol>
                 
                 
+                
+                
               </div>
-               
+              
             </div>
+            
           </div>
+          
         </div>
+        
+        
       </div>
       
             
@@ -230,11 +270,16 @@ exports[`navigator plugin > opens and closes overview on events from own compone
                 <path
                   d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
                 />
+                
               </svg>
+              
                
+              
                
               Go back to the question
+              
             </button>
+            
           </span>
            
           <button
@@ -243,11 +288,17 @@ exports[`navigator plugin > opens and closes overview on events from own compone
             name="overview-finish"
             type="button"
           >
+            
              
+            
              
             Exit test review
+            
           </button>
+          
         </div>
+        
+        
       </div>
       
         
@@ -262,6 +313,7 @@ exports[`navigator plugin > renders and destroys without error 1`] = `
     
         
     <nav>
+      
       <div
         class="navigator"
       >
@@ -288,10 +340,15 @@ exports[`navigator plugin > renders and destroys without error 1`] = `
                 d="M8 16l-2-2 4.5-4.5H0v-3h10.5L6 2l2-2 8 8-8 8z"
                 fill-rule="evenodd"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
         <div
@@ -317,13 +374,20 @@ exports[`navigator plugin > renders and destroys without error 1`] = `
                 d="M7.7-.13l2 2-4.5 4.5h10.5v3H5.2l4.5 4.5-2 2-8-8 8-8z"
                 fill-rule="evenodd"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
+        
          
+        
         <div
           class="progress-container"
         >
@@ -335,12 +399,19 @@ exports[`navigator plugin > renders and destroys without error 1`] = `
             >
               <div
                 class="more"
-              />
+              >
+                
+              </div>
+              
                
+              
                
               <div
                 class="more"
-              />
+              >
+                
+              </div>
+              
             </div>
              
             <span
@@ -365,16 +436,25 @@ exports[`navigator plugin > renders and destroys without error 1`] = `
                   <path
                     d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
                 Overview (3)
+                
               </button>
+              
             </span>
           </div>
+          
         </div>
         
+        
       </div>
+      
+      
       
     </nav>
     

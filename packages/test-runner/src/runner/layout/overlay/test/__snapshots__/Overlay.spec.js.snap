@@ -15,6 +15,7 @@ exports[`Overlay component > Renders all named slots 1`] = `
         >
           Heading
         </p>
+        
       </header>
        
       <div
@@ -31,6 +32,7 @@ exports[`Overlay component > Renders all named slots 1`] = `
         >
           Content
         </article>
+        
          
         <div
           class="scroll-last-child"
@@ -43,8 +45,11 @@ exports[`Overlay component > Renders all named slots 1`] = `
         >
           1 2 3
         </nav>
+        
       </footer>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -58,7 +63,9 @@ exports[`Overlay component > Renders correctly 1`] = `
     >
       <header
         role="none"
-      />
+      >
+        
+      </header>
        
       <div
         aria-labelledby="a11y-overlay"
@@ -69,14 +76,19 @@ exports[`Overlay component > Renders correctly 1`] = `
           class="scroll-first-child"
         />
          
+        
          
         <div
           class="scroll-last-child"
         />
       </div>
        
-      <footer />
+      <footer>
+        
+      </footer>
     </div>
+    
+    
   </div>
 </body>
 `;

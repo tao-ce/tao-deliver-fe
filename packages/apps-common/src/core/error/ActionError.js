@@ -9,7 +9,8 @@
 export const actionErrorCodes = {
     proctorTerminated: 100,
     proctorPaused: 102,
-    proctorReset: 105
+    proctorReset: 105,
+    forceLogout: 460
 };
 
 /**
@@ -33,7 +34,7 @@ export default class ActionError extends Error {
         this.name = 'ActionError';
         this.message = message;
         this.type = 'action';
-        this.recoverable = errorCode !== actionErrorCodes.proctorTerminated;
+        this.recoverable = errorCode !== actionErrorCodes.proctorTerminated && errorCode !== actionErrorCodes.forceLogout;
         this.errorCode = errorCode;
     }
 }

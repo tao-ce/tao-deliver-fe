@@ -107,7 +107,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         // validate matchMin and matchMax properties of choices
         if (validity) {
             choices.some(choiceSet =>
-                // eslint-disable-next-line implicit-arrow-linebreak
                 choiceSet.some(choice => {
                     const choiceUsageCount = pairs.filter(
                         pair => pair[0] === choice.key || pair[1] === choice.key

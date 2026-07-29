@@ -51,6 +51,12 @@ export default {
             resource: 'scoring/inline-comment',
             method: 'PUT'
         },
+        saveScoringAnnotationComment: {
+            rootUrl,
+            path: '/api/v1/delivery-executions',
+            resource: 'scoring/annotation-comment',
+            method: 'PUT'
+        },
         batteryDistributionLocale: {
             rootUrl,
             path: '/api/v1/battery-distributions',

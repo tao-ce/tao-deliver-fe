@@ -51,7 +51,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     let choiceOptions = choices;
     if (shuffle) {
-        /* eslint-disable indent */
         choiceOptions = Array.isArray(choices)
             ? shuffleChoiceOptions(choices, interactionStateStore)
             : shuffleChoiceOptions(Object.keys(choices), interactionStateStore).reduce(
@@ -61,7 +60,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                   }),
                   {}
               );
-        /* eslint-enable indent */
     }
 
     let wrapperElement;

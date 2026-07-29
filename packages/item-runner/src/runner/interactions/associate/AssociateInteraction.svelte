@@ -102,7 +102,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     let choiceOptions = choices;
     if (shuffle) {
-        /* eslint-disable indent */
         choiceOptions = Array.isArray(choices)
             ? shuffleChoiceOptions(choices, interactionStateStore)
             : shuffleChoiceOptions(Object.keys(choices), interactionStateStore).reduce(
@@ -112,7 +111,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                   }),
                   {}
               );
-        /* eslint-enable indent */
     }
 
     const itemContext = getContext(itemIdentifier);
@@ -1492,6 +1490,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     :global(body.draggable--is-dragging) .remove-pair {
         cursor: unset;
+        border: none;
     }
 
     .remove-pair {
@@ -1701,6 +1700,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 {/each}
             </DraggableList>
         </div>
+        <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
         <ol
             class="pairs"
             role="application"
@@ -1709,6 +1709,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             on:focusin={handleAnswerAreaFocusIn}
             on:focusout={handleAnswerAreaFocusOut}
             on:keydown={!disabled && handlePairsKeyDown}>
+            <!-- eslint-disable-next-line no-unused-vars -->
             {#each placeholders as placeholder, i}
                 <li
                     class="pair"
@@ -1809,7 +1810,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                                 </DropArea>
                             </div>
                             {#if n === 0}
-                                <div class="pair-link" />
+                                <div class="pair-link"></div>
                             {/if}
                         {/each}
                     </div>

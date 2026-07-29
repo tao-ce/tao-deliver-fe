@@ -21,7 +21,7 @@ exports[`SortableList > rendering > should render with given selected slots 1`] 
       aria-label="answer list, 2 items"
       class="sortable-list orientation-vertical position-left"
       role="application"
-      style="--item-width:400px;--item-height:44px"
+      style="--item-width: 400px; --item-height: 44px;"
     >
       <li>
         <div
@@ -39,21 +39,25 @@ exports[`SortableList > rendering > should render with given selected slots 1`] 
             class="answer-placeholder"
             data-index="0"
           >
+            
             <span
               class="hidden"
               id="tao-choice-label-123"
             >
+              
               <div
                 class="item"
               >
                 item0
               </div>
+              
                
               <p
                 class="visually-hidden"
               >
                 Position 1
               </p>
+              
             </span>
              
             <div
@@ -64,6 +68,8 @@ exports[`SortableList > rendering > should render with given selected slots 1`] 
                 data-drag-drop-disabled="false"
                 data-drag-drop-key="item0"
               >
+                
+                
                  
                 <div
                   aria-describedby="tao-keyboard-info-def-123"
@@ -88,26 +94,33 @@ exports[`SortableList > rendering > should render with given selected slots 1`] 
                         d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </div>
                    
                   <div
                     class="label-container"
                   >
+                    
                     <div
                       class="item"
                     >
                       item0
                     </div>
+                    
                      
                     <p
                       class="visually-hidden"
                     >
                       Position 1
                     </p>
+                    
                   </div>
                    
+                  
                    
+                  
                 </div>
                  
                 <button
@@ -126,7 +139,9 @@ exports[`SortableList > rendering > should render with given selected slots 1`] 
                     <path
                       d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                     />
+                    
                   </svg>
+                  
                 </button>
                  
                 <div
@@ -136,34 +151,39 @@ exports[`SortableList > rendering > should render with given selected slots 1`] 
                   <span
                     slot="remover-aria-label"
                   >
-                    Return 
-                     
+                    Return  
                     <span>
                       <div
                         class="item"
                       >
                         item0
                       </div>
+                      
                     </span>
-                     
-                    Position 1
-                     
-                     to the unordered options
+                     Position 1
+                                 to the unordered options
                   </span>
+                  
                 </div>
                 
+                
               </div>
+              
             </div>
+            
              
             <span
               aria-hidden="true"
               class="focus-keeper visually-hidden"
               tabindex="-1"
             />
+            
              
+            
           </div>
+          
         </div>
-         
+        
       </li>
       <li>
         <div
@@ -181,10 +201,13 @@ exports[`SortableList > rendering > should render with given selected slots 1`] 
             class="answer-placeholder"
             data-index="1"
           >
+            
              
+            
           </div>
+          
         </div>
-         
+        
       </li>
       <li>
         <div
@@ -202,21 +225,25 @@ exports[`SortableList > rendering > should render with given selected slots 1`] 
             class="answer-placeholder"
             data-index="2"
           >
+            
             <span
               class="hidden"
               id="tao-choice-label-123"
             >
+              
               <div
                 class="item"
               >
                 item2
               </div>
+              
                
               <p
                 class="visually-hidden"
               >
                 Position 3
               </p>
+              
             </span>
              
             <div
@@ -227,6 +254,8 @@ exports[`SortableList > rendering > should render with given selected slots 1`] 
                 data-drag-drop-disabled="false"
                 data-drag-drop-key="item2"
               >
+                
+                
                  
                 <div
                   aria-describedby="tao-keyboard-info-def-123"
@@ -251,26 +280,33 @@ exports[`SortableList > rendering > should render with given selected slots 1`] 
                         d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </div>
                    
                   <div
                     class="label-container"
                   >
+                    
                     <div
                       class="item"
                     >
                       item2
                     </div>
+                    
                      
                     <p
                       class="visually-hidden"
                     >
                       Position 3
                     </p>
+                    
                   </div>
                    
+                  
                    
+                  
                 </div>
                  
                 <button
@@ -289,7 +325,9 @@ exports[`SortableList > rendering > should render with given selected slots 1`] 
                     <path
                       d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                     />
+                    
                   </svg>
+                  
                 </button>
                  
                 <div
@@ -299,36 +337,44 @@ exports[`SortableList > rendering > should render with given selected slots 1`] 
                   <span
                     slot="remover-aria-label"
                   >
-                    Return 
-                     
+                    Return  
                     <span>
                       <div
                         class="item"
                       >
                         item2
                       </div>
+                      
                     </span>
-                     
-                    Position 3
-                     
-                     to the unordered options
+                     Position 3
+                                 to the unordered options
                   </span>
+                  
                 </div>
                 
+                
               </div>
+              
             </div>
+            
              
             <span
               aria-hidden="true"
               class="focus-keeper visually-hidden"
               tabindex="-1"
             />
+            
              
+            
           </div>
+          
         </div>
-         
+        
       </li>
+      
     </ol>
+    
+    
   </div>
 </body>
 `;
@@ -354,7 +400,7 @@ exports[`SortableList > rendering > should render with max null - filled slots i
       aria-label="answer list, 0 items"
       class="sortable-list orientation-vertical position-left"
       role="application"
-      style="--item-width:400px;--item-height:44px"
+      style="--item-width: 400px; --item-height: 44px;"
     >
       <li>
         <div
@@ -372,10 +418,13 @@ exports[`SortableList > rendering > should render with max null - filled slots i
             class="answer-placeholder"
             data-index="0"
           >
+            
              
+            
           </div>
+          
         </div>
-         
+        
       </li>
       <li>
         <div
@@ -393,10 +442,13 @@ exports[`SortableList > rendering > should render with max null - filled slots i
             class="answer-placeholder"
             data-index="1"
           >
+            
              
+            
           </div>
+          
         </div>
-         
+        
       </li>
       <li>
         <div
@@ -414,17 +466,23 @@ exports[`SortableList > rendering > should render with max null - filled slots i
             class="answer-placeholder"
             data-index="2"
           >
+            
              
+            
           </div>
+          
         </div>
-         
+        
       </li>
+      
     </ol>
+    
+    
   </div>
 </body>
 `;
 
-exports[`SortableList > rendering > should render with max null - filled slots if selected length is less than max  1`] = `
+exports[`SortableList > rendering > should render with max null - filled slots if selected length is less than max 1`] = `
 <body>
   <div>
     <p
@@ -445,7 +503,7 @@ exports[`SortableList > rendering > should render with max null - filled slots i
       aria-label="answer list, 1 items"
       class="sortable-list orientation-vertical position-left"
       role="application"
-      style="--item-width:400px;--item-height:44px"
+      style="--item-width: 400px; --item-height: 44px;"
     >
       <li>
         <div
@@ -463,21 +521,25 @@ exports[`SortableList > rendering > should render with max null - filled slots i
             class="answer-placeholder"
             data-index="0"
           >
+            
             <span
               class="hidden"
               id="tao-choice-label-123"
             >
+              
               <div
                 class="item"
               >
                 item0
               </div>
+              
                
               <p
                 class="visually-hidden"
               >
                 Position 1
               </p>
+              
             </span>
              
             <div
@@ -488,6 +550,8 @@ exports[`SortableList > rendering > should render with max null - filled slots i
                 data-drag-drop-disabled="false"
                 data-drag-drop-key="item0"
               >
+                
+                
                  
                 <div
                   aria-describedby="tao-keyboard-info-def-123"
@@ -512,26 +576,33 @@ exports[`SortableList > rendering > should render with max null - filled slots i
                         d="M13 3v1H9V3zM7 3v1H3V3zm6 4v1H9V7zM7 7v1H3V7zm6 4v1H9v-1zm-6 0v1H3v-1z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </div>
                    
                   <div
                     class="label-container"
                   >
+                    
                     <div
                       class="item"
                     >
                       item0
                     </div>
+                    
                      
                     <p
                       class="visually-hidden"
                     >
                       Position 1
                     </p>
+                    
                   </div>
                    
+                  
                    
+                  
                 </div>
                  
                 <button
@@ -550,7 +621,9 @@ exports[`SortableList > rendering > should render with max null - filled slots i
                     <path
                       d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                     />
+                    
                   </svg>
+                  
                 </button>
                  
                 <div
@@ -560,34 +633,39 @@ exports[`SortableList > rendering > should render with max null - filled slots i
                   <span
                     slot="remover-aria-label"
                   >
-                    Return 
-                     
+                    Return  
                     <span>
                       <div
                         class="item"
                       >
                         item0
                       </div>
+                      
                     </span>
-                     
-                    Position 1
-                     
-                     to the unordered options
+                     Position 1
+                                 to the unordered options
                   </span>
+                  
                 </div>
                 
+                
               </div>
+              
             </div>
+            
              
             <span
               aria-hidden="true"
               class="focus-keeper visually-hidden"
               tabindex="-1"
             />
+            
              
+            
           </div>
+          
         </div>
-         
+        
       </li>
       <li>
         <div
@@ -605,10 +683,13 @@ exports[`SortableList > rendering > should render with max null - filled slots i
             class="answer-placeholder"
             data-index="1"
           >
+            
              
+            
           </div>
+          
         </div>
-         
+        
       </li>
       <li>
         <div
@@ -626,12 +707,18 @@ exports[`SortableList > rendering > should render with max null - filled slots i
             class="answer-placeholder"
             data-index="2"
           >
+            
              
+            
           </div>
+          
         </div>
-         
+        
       </li>
+      
     </ol>
+    
+    
   </div>
 </body>
 `;

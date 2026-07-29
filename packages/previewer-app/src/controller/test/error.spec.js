@@ -4,8 +4,6 @@
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 import ErrorController from '../error.js';
-
-import TheEnd from '../../component/TheEnd.svelte';
 import ActionError from 'taoDeliverAppsCommon/core/error/ActionError.js';
 import NetworkError from '@oat-sa/tao-core-sdk/src/core/error/NetworkError';
 import { getIsRetriableFromError } from '../../core/errorMessages.js';
@@ -22,8 +20,6 @@ vi.mock('../page.js', () => ({
             }
         })
 }));
-
-vi.mock('../../component/TheEnd.svelte');
 
 vi.mock('../../core/errorMessages.js', async () => {
     const originalModule = await vi.importActual('../../core/errorMessages.js');
@@ -42,15 +38,6 @@ vi.mock('../../core/errorMessages.js', async () => {
 describe('handling errors', () => {
     let controller;
     const error = new ActionError('Item is not available', 500); //default recoverable error
-    //default props for rendering TheEnd page based on default error (see above)
-    const theEndPageProps = {
-        props: {
-            cause: 'Sorry, an unexpected error happened during the test.',
-            remediation: 'Please contact your test administrator.',
-            retry: true,
-            title: 'Unexpected error.'
-        }
-    };
 
     beforeEach(() => {
         document.body.innerHTML = `
@@ -64,23 +51,13 @@ describe('handling errors', () => {
     afterEach(() => {
         controller.stop();
         document.body.innerHTML = '';
-        TheEnd.mockClear();
     });
-
-    /**
-     * Extend "props" attribute in default params
-     * @param {object} props
-     * @returns {{props: {remediation: string, cause: string, title: string, retry: boolean}} & {props: any}}
-     */
-    function extendFinalPageProps(props) {
-        return Object.assign({}, theEndPageProps, {
-            props: Object.assign({}, theEndPageProps.props, props)
-        });
-    }
 
     it('renders TheEnd page if no params passed', () => {
         controller.start();
-        expect(TheEnd.mock.calls[0][0]).toMatchObject(extendFinalPageProps({ retry: false }));
+        expect(document.querySelector('.the-end h1')).toBeInTheDocument();
+        expect(document.querySelector('button')).not.toBeInTheDocument();
+        expect(document.querySelector('.the-end')).toMatchSnapshot();
         expect(controller.logger.error).toHaveBeenCalledTimes(0);
     });
 
@@ -90,7 +67,8 @@ describe('handling errors', () => {
         };
         controller.start(params);
         expect(controller.logger.error).toHaveBeenCalledWith(error);
-        expect(TheEnd.mock.calls[0][0]).toMatchObject(theEndPageProps);
+        expect(document.querySelector('.the-end h1')).toBeInTheDocument();
+        expect(document.querySelector('button')).toBeInTheDocument();
     });
 
     it('redirect non-recoverable issue to external page', () => {
@@ -125,7 +103,8 @@ describe('handling errors', () => {
             internalError: error
         };
         controller.start(params);
-        expect(TheEnd.mock.calls[0][0]).toMatchObject(theEndPageProps);
+        expect(document.querySelector('.the-end h1')).toBeInTheDocument();
+        expect(document.querySelector('button')).toBeInTheDocument();
         expect(controller.logger.error).toHaveBeenCalledWith(error);
     });
 
@@ -135,15 +114,9 @@ describe('handling errors', () => {
             exitUrl: 'http://new.url'
         };
         controller.start(params);
-        expect(TheEnd.mock.calls[0][0]).toMatchObject(theEndPageProps);
+        expect(document.querySelector('.the-end h1')).toBeInTheDocument();
+        expect(document.querySelector('button')).toBeInTheDocument();
         expect(controller.logger.error).toHaveBeenCalledWith(error);
-    });
-
-    it('destroys TheEnd page if initialized', () => {
-        controller.start();
-        expect(TheEnd.mock.calls[0][0]).toMatchObject(extendFinalPageProps({ retry: false }));
-        controller.stop();
-        expect(controller.theEndComponent.$destroy).toHaveBeenCalled();
     });
 
     it('do nothing if controller was not started', () => {

@@ -2,6 +2,7 @@
 // Copyright (C) 2025 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+import { vi } from 'vitest';
 
 /**
  * Factory for mock for window.FileReader
@@ -31,7 +32,7 @@ export function mockFileReader(overrides = {}) {
     const mock = Object.assign(
         {
             _trigger,
-            readAsDataURL: vi.fn(function() {
+            readAsDataURL: vi.fn(function () {
                 this.readyState = 1; // LOADING
                 this._timeout = setTimeout(() => {
                     this.result = `data://${overrides.data}`;

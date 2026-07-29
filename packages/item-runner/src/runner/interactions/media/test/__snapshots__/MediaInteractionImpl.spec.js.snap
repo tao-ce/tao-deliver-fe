@@ -31,13 +31,34 @@ exports[`MediaInteraction > renders base props into markup 1`] = `
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
       </div>
+      
        
+      
        
+      
        
+      
        
       <div>
-         
+        
+        
+          
         <div
           aria-labelledby="tao-feedback-123"
           class="player mode-video"
@@ -49,6 +70,7 @@ exports[`MediaInteraction > renders base props into markup 1`] = `
             crossorigin="anonymous"
             id="tao-player-123"
           />
+          
           <div
             class="plyr"
             tabindex="0"
@@ -111,8 +133,11 @@ exports[`MediaInteraction > renders base props into markup 1`] = `
         >
           media player
         </span>
+        
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -120,9 +145,12 @@ exports[`MediaInteraction > renders base props into markup 1`] = `
 exports[`MediaInteraction > renders player and controls labels with correct lang "ar-arb" 1`] = `
 <body>
   <div>
+    
     <div
       class="qti-interaction qti-blockInteraction qti-mediaInteraction"
+      dir=""
     >
+      
        
       <div
         class="feedback"
@@ -131,11 +159,16 @@ exports[`MediaInteraction > renders player and controls labels with correct lang
       >
         You must play this media at least 1 times
       </div>
+      
        
+      
        
+      
        
       <div>
-         
+        
+        
+          
         <div
           aria-labelledby="tao-feedback-123"
           class="player mode-video linear"
@@ -147,6 +180,7 @@ exports[`MediaInteraction > renders player and controls labels with correct lang
             crossorigin="anonymous"
             id="tao-player-123"
           />
+          
           <div
             class="plyr"
             tabindex="0"
@@ -210,8 +244,11 @@ exports[`MediaInteraction > renders player and controls labels with correct lang
         >
           media player
         </span>
+        
       </div>
     </div>
+    
+    
     
   </div>
 </body>
@@ -220,9 +257,12 @@ exports[`MediaInteraction > renders player and controls labels with correct lang
 exports[`MediaInteraction > renders player and controls labels with correct lang "en-US" 1`] = `
 <body>
   <div>
+    
     <div
       class="qti-interaction qti-blockInteraction qti-mediaInteraction"
+      dir=""
     >
+      
        
       <div
         class="feedback"
@@ -231,11 +271,16 @@ exports[`MediaInteraction > renders player and controls labels with correct lang
       >
         You must play this media at least 1 times
       </div>
+      
        
+      
        
+      
        
       <div>
-         
+        
+        
+          
         <div
           aria-labelledby="tao-feedback-123"
           class="player mode-video linear"
@@ -247,6 +292,7 @@ exports[`MediaInteraction > renders player and controls labels with correct lang
             crossorigin="anonymous"
             id="tao-player-123"
           />
+          
           <div
             class="plyr"
             tabindex="0"
@@ -310,8 +356,11 @@ exports[`MediaInteraction > renders player and controls labels with correct lang
         >
           media player
         </span>
+        
       </div>
     </div>
+    
+    
     
   </div>
 </body>

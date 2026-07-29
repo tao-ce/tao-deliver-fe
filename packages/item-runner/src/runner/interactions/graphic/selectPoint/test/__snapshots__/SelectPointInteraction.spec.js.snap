@@ -3,40 +3,47 @@
 exports[`SelectPointInteraction > Mouse events > click on marker fire feedback update 1`] = `
 <div
   class="qti-instruction-container"
+  dir=""
 >
   <div
     aria-atomic="true"
     class="feedback warning fullwidth"
     role="alert"
   >
+    
      
     <p>
       You need to place from 1 to 3 answers
     </p>
   </div>
+  
 </div>
 `;
 
 exports[`SelectPointInteraction > Rendering > renders correct feedbacks 1`] = `
 <div
   class="qti-instruction-container"
+  dir=""
 >
   <div
     aria-atomic="true"
     class="feedback info fullwidth"
     role="status"
   >
+    
      
     <p>
       You need to place from 1 to 3 answers
     </p>
   </div>
+  
 </div>
 `;
 
 exports[`SelectPointInteraction > Rendering > renders simple props into markup 1`] = `
 <body>
   <div>
+    
     <div
       aria-disabled="true"
       ariabar="baz"
@@ -49,14 +56,20 @@ exports[`SelectPointInteraction > Rendering > renders simple props into markup 1
       lang="hu"
       role="someUniqueRole"
     >
+      
        
       <div
         class="info-area"
       >
         <div
           class="qti-instruction-container"
-        />
+          dir=""
+        >
+          
+        </div>
+        
          
+        
       </div>
        
       <div
@@ -66,11 +79,13 @@ exports[`SelectPointInteraction > Rendering > renders simple props into markup 1
           class="qti-block"
           tabindex="0"
         >
+          
            
+          
           <svg
             aria-labelledby="tao-desc-123"
             height="672"
-            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow);"
             version="1.1"
             viewBox="0 0 848 672"
             width="848"
@@ -83,6 +98,7 @@ exports[`SelectPointInteraction > Rendering > renders simple props into markup 1
             >
               graphic interaction
             </desc>
+            
             <defs>
               <filter
                 filterUnits="userSpaceOnUse"
@@ -96,6 +112,7 @@ exports[`SelectPointInteraction > Rendering > renders simple props into markup 1
                 />
               </filter>
             </defs>
+            
             <g
               class="image"
               transform="translate(24, 68)"
@@ -109,15 +126,22 @@ exports[`SelectPointInteraction > Rendering > renders simple props into markup 1
                 x="0"
                 y="0"
               />
+              
               <g
                 slot="content"
-              />
+              >
+                
+              </g>
+              
             </g>
           </svg>
+          
           
         </div>
       </div>
     </div>
+    
+    
     
   </div>
 </body>
@@ -129,18 +153,22 @@ exports[`SelectPointInteraction > Rendering > renders some MiniPins 1`] = `
 >
   <div
     class="qti-instruction-container"
+    dir=""
   >
     <div
       aria-atomic="true"
       class="feedback info fullwidth"
       role="status"
     >
+      
        
       <p>
         You can place up to 5 answers
       </p>
     </div>
+    
   </div>
+  
    
   <ul
     class="mini-pins"
@@ -178,7 +206,7 @@ exports[`SelectPointInteraction > Rendering > renders some MiniPins 1`] = `
           r="5"
         />
       </svg>
-       
+      
     </li>
     <li
       class="dimmed"
@@ -213,7 +241,7 @@ exports[`SelectPointInteraction > Rendering > renders some MiniPins 1`] = `
           r="5"
         />
       </svg>
-       
+      
     </li>
     <li>
       <svg
@@ -246,7 +274,7 @@ exports[`SelectPointInteraction > Rendering > renders some MiniPins 1`] = `
           r="5"
         />
       </svg>
-       
+      
     </li>
     <li>
       <svg
@@ -279,7 +307,7 @@ exports[`SelectPointInteraction > Rendering > renders some MiniPins 1`] = `
           r="5"
         />
       </svg>
-       
+      
     </li>
     <li>
       <svg
@@ -312,19 +340,24 @@ exports[`SelectPointInteraction > Rendering > renders some MiniPins 1`] = `
           r="5"
         />
       </svg>
-       
+      
     </li>
+    
   </ul>
+  
 </div>
 `;
 
 exports[`SelectPointInteraction > Rendering > renders the instruction lang on the feedback block 1`] = `
 <body>
   <div>
+    
     <div
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-selectPointInteraction"
+      dir=""
     >
+      
        
       <div
         class="info-area with-pins"
@@ -339,12 +372,15 @@ exports[`SelectPointInteraction > Rendering > renders the instruction lang on th
             class="feedback info fullwidth"
             role="status"
           >
+            
              
             <p>
               You need to place from 1 to 3 answers
             </p>
           </div>
+          
         </div>
+        
          
         <ul
           class="mini-pins"
@@ -380,7 +416,7 @@ exports[`SelectPointInteraction > Rendering > renders the instruction lang on th
                 r="5"
               />
             </svg>
-             
+            
           </li>
           <li>
             <svg
@@ -413,7 +449,7 @@ exports[`SelectPointInteraction > Rendering > renders the instruction lang on th
                 r="5"
               />
             </svg>
-             
+            
           </li>
           <li>
             <svg
@@ -446,9 +482,11 @@ exports[`SelectPointInteraction > Rendering > renders the instruction lang on th
                 r="5"
               />
             </svg>
-             
+            
           </li>
+          
         </ul>
+        
       </div>
        
       <div
@@ -458,11 +496,13 @@ exports[`SelectPointInteraction > Rendering > renders the instruction lang on th
           class="qti-block"
           tabindex="0"
         >
+          
            
+          
           <svg
             aria-labelledby="tao-desc-123"
             height="672"
-            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow);"
             version="1.1"
             viewBox="0 0 848 672"
             width="848"
@@ -475,6 +515,7 @@ exports[`SelectPointInteraction > Rendering > renders the instruction lang on th
             >
               graphic interaction
             </desc>
+            
             <defs>
               <filter
                 filterUnits="userSpaceOnUse"
@@ -488,6 +529,7 @@ exports[`SelectPointInteraction > Rendering > renders the instruction lang on th
                 />
               </filter>
             </defs>
+            
             <g
               class="image"
               transform="translate(24, 68)"
@@ -501,15 +543,22 @@ exports[`SelectPointInteraction > Rendering > renders the instruction lang on th
                 x="0"
                 y="0"
               />
+              
               <g
                 slot="content"
-              />
+              >
+                
+              </g>
+              
             </g>
           </svg>
+          
           
         </div>
       </div>
     </div>
+    
+    
     
   </div>
 </body>

@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2020-2022 (original work) Open Assessment Technologies SA ;
+// Copyright (C) 2020-2026 (original work) Open Assessment Technologies SA;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
@@ -11,7 +11,7 @@ import preset from '../../../navigator/test/testStoreMocks/overviewPreset.json';
 import presetWithScoreWithoutCutScore from '../../test/testStoreMocks/overviewPresetWithScoreWithoutCutScore.json';
 import presetWithScoreWithCutScorePassed from '../../test/testStoreMocks/overviewPresetWithScoreWithCutScorePassed.json';
 import presetWithScoreWithCutScoreFailed from '../../test/testStoreMocks/overviewPresetWithScoreWithCutScoreFailed.json';
-import { cloneDeep } from 'lodash';
+import { cloneDeep, each } from 'lodash';
 
 const severalSectionsPreset = {
     testContext: preset.testContext,
@@ -76,10 +76,10 @@ describe('TestOverviewContent', () => {
             }
         });
 
-        expect(container).toMatchSnapshot();
-
         const headers = container.querySelectorAll('[role="tabpanel"] > .ui-heading');
         expect(headers.length).toBe(0);
+        expect(container.querySelector('.tabs [role="tab"][aria-selected="true"]')).toHaveTextContent('all questions');
+        expect(container.querySelector('.tabpanel:not(.hidden) .step')).toBeInTheDocument();
     });
 
     it('fires move event', () => {
@@ -181,7 +181,36 @@ describe('TestOverviewContent', () => {
             }
         });
 
-        expect(container).toMatchSnapshot();
+        expect(container.querySelector('.inline-notification')).toBeInTheDocument();
+        expect(container.querySelector('.inline-notification')).toHaveTextContent(
+            'There are still questions waiting to be scored'
+        );
+        expect(container.querySelector('.inline-notification')).toHaveTextContent(
+            'Your total score cannot be calculated until all of the questions have been scored. Please come back later to see your total score.'
+        );
+        expect(container.querySelector('.total-score')).not.toBeInTheDocument();
+        expect(container.querySelectorAll('.tabs [role="tab"]')).toHaveLength(2);
+    });
+
+    it('renders score without max score', () => {
+        const testMap = cloneDeep(presetWithScoreWithoutCutScore.testMap);
+        each(testMap.parts, ({ sections }) =>
+            each(sections, ({ items }) => each(items, item => (item.maxScore = undefined)))
+        );
+
+        const serviceCallId = 'test-123';
+        const stateStore = getTestStateStore(serviceCallId);
+        stateStore.setTestMap(testMap);
+        stateStore.setTestContext(presetWithScoreWithoutCutScore.testContext);
+
+        const { container } = render(TestOverviewContent, {
+            props: {
+                serviceCallId,
+                showScore: true
+            }
+        });
+
+        expect(container.querySelector('.total-score')).toMatchSnapshot();
     });
 
     it('renders steps with correct state based on score', () => {

@@ -7,9 +7,12 @@ exports[`provider > Modal feedback > renderFeedbacks renders multiple feedbacks 
   data-renderer="common"
   dir="ltr"
   lang="en-US"
-  style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px); animation: __svelte_665066525_0 300ms linear 0ms 1 both;"
+  style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px);"
   translate="no"
 >
+  
+  
+  
   <div
     class="qti-modalFeedback"
   >
@@ -20,13 +23,18 @@ exports[`provider > Modal feedback > renderFeedbacks renders multiple feedbacks 
         class="ui-heading-l"
         tabindex="-1"
       >
+        
          
         <span>
           111
         </span>
+        
       </h2>
        
+      
+      
       1 Modal feedback content 1
+      
       
       
     </div>
@@ -34,7 +42,9 @@ exports[`provider > Modal feedback > renderFeedbacks renders multiple feedbacks 
   
   
   
+  
    
+  
 </section>
 `;
 
@@ -48,11 +58,17 @@ exports[`provider > Modal feedback > renderFeedbacks renders multiple feedbacks 
         class="actionable primary pill small"
         type="button"
       >
+        
          
+        
          
         Continue
+        
       </button>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -64,9 +80,12 @@ exports[`provider > Modal feedback > renderFeedbacks renders multiple feedbacks 
   data-renderer="common"
   dir="ltr"
   lang="en-US"
-  style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px); animation: __svelte_665066525_0 300ms linear 0ms 1 both;"
+  style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px);"
   translate="no"
 >
+  
+  
+  
   <div
     class="qti-modalFeedback"
   >
@@ -77,13 +96,18 @@ exports[`provider > Modal feedback > renderFeedbacks renders multiple feedbacks 
         class="ui-heading-l"
         tabindex="-1"
       >
+        
          
         <span>
           222
         </span>
+        
       </h2>
        
+      
+      
       2 Modal feedback content 2
+      
       
       
     </div>
@@ -91,7 +115,9 @@ exports[`provider > Modal feedback > renderFeedbacks renders multiple feedbacks 
   
   
   
+  
    
+  
 </section>
 `;
 
@@ -105,11 +131,17 @@ exports[`provider > Modal feedback > renderFeedbacks renders multiple feedbacks 
         class="actionable primary pill small"
         type="button"
       >
+        
          
+        
          
         Continue
+        
       </button>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -120,6 +152,9 @@ exports[`provider > Render and clear > renders item to the given container 1`] =
     <span>
       Some other content
     </span>
+    
+    
+    
      
     <section
       class="qti-item initial notranslate"
@@ -128,20 +163,35 @@ exports[`provider > Render and clear > renders item to the given container 1`] =
       data-renderer="common"
       dir="ltr"
       lang="en-US"
-      style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px); animation: __svelte_665066525_0 300ms linear 0ms 1 both;"
+      style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px);"
       translate="no"
     >
+      
+      
+      
       <div
         class="grid-row"
       >
         
+        
+        
+        
+        
       
+        
+        
         
         <div
           class="col-12"
         >
           
+          
+          
+          
+          
         
+          
+          
           
           <h4>
             
@@ -155,7 +205,10 @@ exports[`provider > Render and clear > renders item to the given container 1`] =
           
           
           
+          
         
+          
+          
           
           <p>
             
@@ -169,26 +222,34 @@ exports[`provider > Render and clear > renders item to the given container 1`] =
           
           
           
+          
         
+          
+          
           
           <p
             class="textentry-interaction-container"
           >
+            
+            
+            
+            
              In year 
+            
+            
             
             <span
               class="qti-interaction qti-inlineInteraction qti-textEntryInteraction"
               data-qti-class="textEntryInteraction"
               data-response-id="RESPONSE"
+              dir=""
             >
+              
               <span
                 class="positioning-wrapper height-x-small"
-                style="
-        --suffix-width: 0px;
-        --prefix-width: 0px;
-        --fixed-size-letters: 4;
-    "
+                style="--suffix-width: 0px; --prefix-width: 0px; --fixed-size-letters: 4;"
               >
+                
                  
                 <input
                   aria-invalid="false"
@@ -201,43 +262,61 @@ exports[`provider > Render and clear > renders item to the given container 1`] =
                   type="text"
                 />
                  
+                
                  
+                
               </span>
               
+              
             </span>
+            
             
             
             .
             
             
-             
+            
+            
+            
           </p>
+          
           
           
           
       
           
           
-           
+          
+          
+          
         </div>
+        
         
         
         
     
         
         
-         
+        
+        
+        
       </div>
+      
       
       
       
   
       
       
+      
        
+      
     </section>
      
+    
      
+    
+    
     
     
   </div>
@@ -257,6 +336,9 @@ exports[`provider > Render and clear > renders item to the given container 2`] =
 exports[`provider > Render and clear > renders with provided renderer 1`] = `
 <body>
   <div>
+    
+    
+    
      
     <section
       class="qti-item initial notranslate"
@@ -264,37 +346,59 @@ exports[`provider > Render and clear > renders with provided renderer 1`] = `
       data-renderer="review"
       dir="ltr"
       lang="en-US"
-      style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px); animation: __svelte_665066525_0 300ms linear 0ms 1 both;"
+      style="--item-container-height: 80vh; --item-container-offset-top: 0px; --item-container-width: calc(100vw); --item-container-offset-right: calc(0px);"
       translate="no"
     >
+      
+      
+      
       <div
         class="grid-row"
       >
         
+        
+        
+        
+        
       
+        
+        
         
         <div
           class="col-12"
         >
           
+          
+          
+          
+          
         
+          
+          
           
           <div
             class="qti-interaction qti-reviewInteraction qti-blockInteraction qti-uploadInteraction"
             data-qti-class="uploadInteraction"
             data-response-id="RESPONSE"
+            dir=""
           >
             <div
               class="qti-prompt cf"
             >
+              
+              
+              
               <strong>
                 Please select your photo
               </strong>
               
               
               
+              
             </div>
+            
              
+            
              
             <div
               class="selected-file-container empty"
@@ -302,6 +406,7 @@ exports[`provider > Render and clear > renders with provided renderer 1`] = `
               <p
                 tabindex="-1"
               >
+                
                 <svg
                   aria-hidden="false"
                   class="icon medium"
@@ -313,40 +418,55 @@ exports[`provider > Render and clear > renders with provided renderer 1`] = `
                   <path
                     d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                   />
+                  
                 </svg>
+                
                  
                 <span>
                   No answer file selected
                 </span>
+                
               </p>
             </div>
           </div>
           
           
           
+          
       
           
           
-           
+          
+          
+          
         </div>
+        
         
         
         
     
         
         
-         
+        
+        
+        
       </div>
+      
       
       
       
   
       
       
+      
        
+      
     </section>
      
+    
      
+    
+    
     
     
   </div>

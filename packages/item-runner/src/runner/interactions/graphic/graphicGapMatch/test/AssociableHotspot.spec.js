@@ -3,6 +3,13 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
+vi.mock('../../util/polygon.js', async () => {
+    const originalModule = await vi.importActual('../../util/polygon.js');
+    return Object.assign({ __esModule: true }, originalModule, {
+        getIsThin: vi.fn().mockReturnValue(false)
+    });
+});
+
 import { fireEvent, render } from '@testing-library/svelte';
 import AssociableHotspot from '../AssociableHotspot.svelte';
 import dropAreaRegistryFactory from '../util/dropAreaRegistry.js';
@@ -18,10 +25,17 @@ let staticProps = {
     coords: '177,87,320,205'
 };
 
+let rootSvgEl;
+
 describe('AssociableHotspot', () => {
+    beforeEach(() => {
+        rootSvgEl = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        rootSvgEl.setAttributeNS('http://www.w3.org/2000/xmlns/', 'xmlns:xlink', 'http://www.w3.org/1999/xlink');
+    });
+
     describe('events', () => {
         it('fires click event', () => {
-            const { container, component } = render(AssociableHotspot, staticProps);
+            const { container, component } = render(AssociableHotspot, { target: rootSvgEl, props: staticProps });
             const clickSpy = vi.fn();
             component.$on('click', clickSpy);
 
@@ -34,7 +48,7 @@ describe('AssociableHotspot', () => {
         });
 
         test.each(['space', 'enter'])('fires keypress events for %s button', key => {
-            const { container, component } = render(AssociableHotspot, staticProps);
+            const { container, component } = render(AssociableHotspot, { target: rootSvgEl, props: staticProps });
             const keypressSpy = vi.fn();
             component.$on('keySelect', keypressSpy);
 
@@ -54,7 +68,7 @@ describe('AssociableHotspot', () => {
         });
 
         it('fires hoverOver & hoverOut', () => {
-            const { container, component } = render(AssociableHotspot, staticProps);
+            const { container, component } = render(AssociableHotspot, { target: rootSvgEl, props: staticProps });
             const hoverOverSpy = vi.fn();
             const hoverOutSpy = vi.fn();
             component.$on('hoverOver', hoverOverSpy);
@@ -77,7 +91,7 @@ describe('AssociableHotspot', () => {
         });
 
         it('fires drop event', () => {
-            const { container, component } = render(AssociableHotspot, staticProps);
+            const { container, component } = render(AssociableHotspot, { target: rootSvgEl, props: staticProps });
             const spyDrop = vi.fn();
             component.$on('drop', spyDrop);
 
@@ -88,11 +102,11 @@ describe('AssociableHotspot', () => {
 
     describe('render', () => {
         it('renders hotspot without props', () => {
-            const { container } = render(AssociableHotspot, {});
+            const { container } = render(AssociableHotspot, { target: rootSvgEl });
             expect(container).toMatchSnapshot();
         });
         it('renders hotspot with minimal props', () => {
-            const { container } = render(AssociableHotspot, staticProps);
+            const { container } = render(AssociableHotspot, { target: rootSvgEl, props: staticProps });
             expect(container).toMatchSnapshot();
         });
         it('renders disabled gap', () => {
@@ -105,21 +119,21 @@ describe('AssociableHotspot', () => {
             expect(container).toMatchSnapshot();
         });
         it('renders gap in active state', () => {
-            const { container } = render(
-                AssociableHotspot,
-                Object.assign({}, staticProps, {
+            const { container } = render(AssociableHotspot, {
+                target: rootSvgEl,
+                props: Object.assign({}, staticProps, {
                     targetable: true
                 })
-            );
+            });
             expect(container).toMatchSnapshot();
         });
         it('renders gap in target state', () => {
-            const { container } = render(
-                AssociableHotspot,
-                Object.assign({}, staticProps, {
+            const { container } = render(AssociableHotspot, {
+                target: rootSvgEl,
+                props: Object.assign({}, staticProps, {
                     targeted: true
                 })
-            );
+            });
             expect(container).toMatchSnapshot();
         });
         test.each([
@@ -128,13 +142,13 @@ describe('AssociableHotspot', () => {
             ['rect', '177,87,320,205'],
             ['poly', '49,402,49,408,41,408,39,421,48,424,48,429,60,429,59,402']
         ])('render %s shapes', (shape, coords) => {
-            const { container } = render(
-                AssociableHotspot,
-                Object.assign({}, staticProps, {
+            const { container } = render(AssociableHotspot, {
+                target: rootSvgEl,
+                props: Object.assign({}, staticProps, {
                     shape,
                     coords: getScaledCoords(coords, 1)
                 })
-            );
+            });
 
             expect(container).toMatchSnapshot();
         });

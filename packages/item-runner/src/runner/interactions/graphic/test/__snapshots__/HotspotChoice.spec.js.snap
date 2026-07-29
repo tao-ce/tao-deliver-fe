@@ -11,6 +11,7 @@ exports[`HotspotChoice component > rendering > renders hotspot with custom class
         aria-disabled="false"
         aria-label="ariaLabel"
         class="shape"
+        role="button"
         tabindex="-1"
       >
         <circle
@@ -45,7 +46,10 @@ exports[`HotspotChoice component > rendering > renders hotspot with custom class
         </text>
       </g>
       
+      
     </g>
+    
+    
   </div>
 </body>
 `;
@@ -61,6 +65,7 @@ exports[`HotspotChoice component > rendering > renders in activated state 1`] = 
         aria-disabled="false"
         aria-label="ariaLabel"
         class="shape"
+        role="button"
         tabindex="-1"
       >
         <circle
@@ -99,7 +104,10 @@ exports[`HotspotChoice component > rendering > renders in activated state 1`] = 
         </text>
       </g>
       
+      
     </g>
+    
+    
   </div>
 </body>
 `;
@@ -115,6 +123,7 @@ exports[`HotspotChoice component > rendering > renders in target state 1`] = `
         aria-disabled="false"
         aria-label="ariaLabel"
         class="shape"
+        role="button"
         tabindex="-1"
       >
         <circle
@@ -149,7 +158,10 @@ exports[`HotspotChoice component > rendering > renders in target state 1`] = `
         </text>
       </g>
       
+      
     </g>
+    
+    
   </div>
 </body>
 `;
@@ -165,6 +177,7 @@ exports[`HotspotChoice component > rendering > renders in targetable state 1`] =
         aria-disabled="false"
         aria-label="ariaLabel"
         class="shape"
+        role="button"
         tabindex="-1"
       >
         <circle
@@ -199,7 +212,10 @@ exports[`HotspotChoice component > rendering > renders in targetable state 1`] =
         </text>
       </g>
       
+      
     </g>
+    
+    
   </div>
 </body>
 `;
@@ -215,6 +231,7 @@ exports[`HotspotChoice component > rendering > renders scaled hotspot in hoverab
         aria-disabled="false"
         aria-label="ariaLabel"
         class="shape"
+        role="button"
         tabindex="-1"
       >
         <circle
@@ -249,7 +266,10 @@ exports[`HotspotChoice component > rendering > renders scaled hotspot in hoverab
         </text>
       </g>
       
+      
     </g>
+    
+    
   </div>
 </body>
 `;
@@ -265,6 +285,7 @@ exports[`HotspotChoice component > rendering > renders with basic props 1`] = `
         aria-disabled="false"
         aria-label="ariaLabel"
         class="shape"
+        role="button"
         tabindex="-1"
       >
         <circle
@@ -299,7 +320,10 @@ exports[`HotspotChoice component > rendering > renders with basic props 1`] = `
         </text>
       </g>
       
+      
     </g>
+    
+    
   </div>
 </body>
 `;
@@ -315,6 +339,7 @@ exports[`HotspotChoice component > rendering > renders with disabled true 1`] = 
         aria-disabled="true"
         aria-label="ariaLabel"
         class="shape"
+        role="button"
         tabindex="-1"
       >
         <circle
@@ -349,7 +374,10 @@ exports[`HotspotChoice component > rendering > renders with disabled true 1`] = 
         </text>
       </g>
       
+      
     </g>
+    
+    
   </div>
 </body>
 `;
@@ -365,6 +393,7 @@ exports[`HotspotChoice component > rendering > renders with selected true 1`] = 
         aria-disabled="false"
         aria-label="ariaLabel"
         class="shape selected"
+        role="button"
         tabindex="-1"
       >
         <circle
@@ -399,7 +428,10 @@ exports[`HotspotChoice component > rendering > renders with selected true 1`] = 
         </text>
       </g>
       
+      
     </g>
+    
+    
   </div>
 </body>
 `;

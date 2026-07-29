@@ -1,86 +1,88 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2021-2024 Open Assessment Technologies SA;
+// Copyright (C) 2021-2026 (original work) Open Assessment Technologies SA;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
-
-import ErrorController from '../error.js';
-import ActionError from '../../core/error/ActionError.js';
-import TheEnd from '../../component/TheEnd.svelte';
-import NetworkError from 'core/error/NetworkError';
-import request from 'core/fetchRequest';
 
 vi.mock('../page.js', () => ({
     __esModule: true,
     default: controller =>
         Object.assign(controller, {
-            container: 'body',
+            container: document.body,
             logger: {
                 error: vi.fn()
             }
         })
 }));
 
-vi.mock('../../component/TheEnd.svelte');
+vi.mock('../../util/notify.js', () => ({
+    notifyFactory: vi.fn().mockImplementation(() => vi.fn())
+}));
+vi.mock('../../core/async.js', () => ({
+    wait: vi.fn().mockResolvedValue()
+}));
 
 vi.mock('core/fetchRequest');
 
-function createWindowSpyWithLocationReplace() {
+import { tick } from 'svelte';
+import ErrorController from '../error.js';
+import ActionError from '../../core/error/ActionError.js';
+import NetworkError from 'core/error/NetworkError';
+import request from 'core/fetchRequest';
+import { notifyFactory } from '../../util/notify.js';
+import { expect } from 'vitest';
+import KioskError from '../../core/error/KioskError.js';
+
+export function createWindowLocationSpy() {
     const replaceMock = vi.fn();
-    const originalWindow = { ...window };
-    const windowSpy = vi.spyOn(global, 'window', 'get');
-    windowSpy.mockImplementation(() => ({
-        ...originalWindow,
-        location: {
-            replace: replaceMock
+    const reloadMock = vi.fn();
+
+    const originalLocation = window.location;
+
+    Object.defineProperty(window, 'location', {
+      configurable: true,
+      value: {
+          ...originalLocation,
+          replace: replaceMock,
+          reload: reloadMock
+      }
+    });
+
+    return {
+        replaceMock,
+        reloadMock,
+        restore() {
+            Object.defineProperty(window, 'location', {
+                configurable: true,
+                value: originalLocation
+            });
         }
-    }));
-    return windowSpy;
+    };
 }
 
 describe('handling errors', () => {
     beforeEach(() => {
         vi.clearAllMocks();
         request.mockReset();
+        document.body.innerHTML = '';
     });
 
     const controller = ErrorController();
 
     //default recoverable error
-    const error = new ActionError('Item is not available', 500);
-    error.stack = 'ActionError: Try again at bar.js:24:42';
+    const recoverableErrorMessage = 'Item is not available';
+    const recoverableError = new ActionError(recoverableErrorMessage, 500);
+    recoverableError.stack = 'ActionError: Try again at bar.js:24:42';
 
     //default non-recoverable error
-    const nonRecoverableError = new NetworkError('Something goes wrong', 503, null, false);
+    const nonRecoverableErrorMessage = 'Something goes wrong';
+    const nonRecoverableError = new NetworkError(nonRecoverableErrorMessage, 503, null, false);
     nonRecoverableError.itemIdentifier = 'item-5';
     nonRecoverableError.stack = 'NetworkError: Something goes wrong at foo.js:13:31';
 
-    //default props for rendering TheEnd page based on default error (see above)
-    const theEndPageProps = {
-        props: {
-            cause: 'Sorry, an unexpected error happened during the test.',
-            remediation: 'Please contact your test administrator.',
-            title: 'Unexpected error.',
-            retry: true,
-            withExitUrlRedirect: false
-        },
-        target: 'body'
-    };
-
-    /**
-     * Extend "props" attribute in default params
-     * @param {object} props
-     * @returns {{props: {remediation: string, cause: string, title: string, retry: boolean}, target: string} & {props: any}}
-     */
-    function extendFinalPageProps(props) {
-        return Object.assign({}, theEndPageProps, {
-            props: Object.assign({}, theEndPageProps.props, props)
-        });
-    }
-
     it('renders TheEnd page if no params passed', () => {
         controller.start();
-        expect(TheEnd).toHaveBeenCalledWith(extendFinalPageProps({ retry: false }));
-        expect(controller.logger.error).toHaveBeenCalledTimes(0);
+        expect(document.querySelector('.the-end .info')).toMatchSnapshot();
+        expect(controller.logger.error).not.toHaveBeenCalled();
     });
 
     it('renders TheEnd page if only messages passed', () => {
@@ -89,23 +91,23 @@ describe('handling errors', () => {
             lti_errorlog: 'Log error message'
         };
         controller.start(params);
-        expect(TheEnd).toHaveBeenCalledWith(
-            extendFinalPageProps({ cause: 'is', remediation: 'happened.', title: 'Error', retry: false })
-        );
+        expect(document.querySelector('.the-end .info')).toMatchSnapshot();
         expect(controller.logger.error).toHaveBeenCalledTimes(1);
+        expect(notifyFactory).not.toHaveBeenCalled();
     });
 
     it('renders TheEnd page if only recoverable internal error passed', () => {
         const params = {
-            internalError: error
+            internalError: recoverableError
         };
         controller.start(params);
-        expect(controller.logger.error).toHaveBeenCalledWith(expect.stringMatching(error.message));
-        expect(TheEnd).toHaveBeenCalledWith(theEndPageProps);
+        expect(controller.logger.error).toHaveBeenCalledWith(expect.stringMatching(recoverableError.message));
+        expect(document.querySelector('.the-end .info')).toMatchSnapshot();
+        expect(notifyFactory).not.toHaveBeenCalled();
     });
 
-    it('redirect non-recoverable issue to external page', () => {
-        const windowSpy = createWindowSpyWithLocationReplace();
+    it('redirects non-recoverable issue to external page', async () => {
+        const windowLocationSpy = createWindowLocationSpy();
 
         const params = {
             internalError: nonRecoverableError,
@@ -116,56 +118,134 @@ describe('handling errors', () => {
         };
 
         const expectedUrl = new URL(params.exitUrl);
-        expectedUrl.searchParams.append(
-            'lti_errormsg',
-            `No connection to the service.\nPlease contact your test administrator.`
-        );
-        expectedUrl.searchParams.append(
-            'lti_errorlog',
-            `${nonRecoverableError.message}\n${nonRecoverableError.stack}\n[dx123][item-5]`
-        );
+        const lti_errormsg = 'No connection to the service.\nPlease contact your test administrator.';
+        const lti_errorlog = `${nonRecoverableError.message}\n${nonRecoverableError.stack}\n[dx123][item-5]`;
+        expectedUrl.searchParams.append('lti_errormsg', lti_errormsg);
+        expectedUrl.searchParams.append('lti_errorlog', lti_errorlog);
 
         controller.start(params);
         expect(controller.logger.error).toHaveBeenCalledWith(expect.stringMatching(nonRecoverableError.message));
-        expect(window.location.replace).toHaveBeenCalledWith(expectedUrl);
+        expect(notifyFactory).toHaveBeenCalledWith(params.exitUrl);
+        expect(controller.notify).toHaveBeenCalledWith('error', {
+            errorLog: `${nonRecoverableErrorMessage}\n${nonRecoverableError.stack}`,
+            errorMsg: lti_errormsg,
+            recoverable: false
+        });
 
-        windowSpy.mockRestore();
+        await vi.waitFor(async () => {
+            expect(window.location.replace).toHaveBeenCalledWith(expectedUrl.toString());
+        });
+        windowLocationSpy.restore();
     });
 
     it('renders TheEnd page if exitUrl is absent', () => {
         const params = {
-            internalError: error,
+            internalError: recoverableError,
             lti_errormsg: 'Error is happened.',
             lti_errorlog: 'Log error message'
         };
         controller.start(params);
-        expect(TheEnd).toHaveBeenCalledWith(theEndPageProps);
-        expect(controller.logger.error).toHaveBeenCalledWith(expect.stringMatching(error.message));
+        expect(document.querySelector('.the-end')).toBeInTheDocument();
+        expect(controller.logger.error).toHaveBeenCalledWith(expect.stringMatching(recoverableError.message));
+        expect(notifyFactory).not.toHaveBeenCalled();
     });
 
-    it('renders TheEnd page if error is recoverable', () => {
+    it('renders TheEnd page if error is recoverable, reloads the page on button click', async () => {
+        const windowLocationSpy = createWindowLocationSpy();
+
         const params = {
-            internalError: error,
+            internalError: recoverableError,
             lti_errormsg: 'Error is happened.',
             lti_errorlog: 'Log error message',
             exitUrl: 'http://new.url'
         };
         controller.start(params);
-        expect(TheEnd).toHaveBeenCalledWith(theEndPageProps);
-        expect(controller.logger.error).toHaveBeenCalledWith(expect.stringMatching(error.message));
+        expect(document.querySelector('.the-end button')).toBeInTheDocument();
+        expect(controller.logger.error).toHaveBeenCalledWith(expect.stringMatching(recoverableError.message));
+        expect(notifyFactory).toHaveBeenCalledWith(params.exitUrl);
+        expect(controller.notify).toHaveBeenCalledWith('error', {
+            errorLog: `${recoverableErrorMessage}\n${recoverableError.stack}`,
+            errorMsg: expect.any(String),
+            recoverable: true
+        });
+
+        const theEndReloadButton = document.querySelector('.the-end button');
+        theEndReloadButton.click();
+        await tick();
+        await tick();
+        expect(window.location.reload).toHaveBeenCalled();
+        windowLocationSpy.restore();
     });
 
     it('destroys TheEnd page if initialized', () => {
         controller.start();
-        expect(TheEnd).toHaveBeenCalledWith(extendFinalPageProps({ retry: false }));
+        expect(document.querySelector('.the-end')).toBeTruthy();
         controller.stop();
-        expect(controller.theEndComponent.$destroy).toHaveBeenCalled();
+        expect(document.querySelector('.the-end')).toBeFalsy();
     });
 
     it('do nothing if controller was not started', () => {
         const newController = ErrorController();
         controller.stop();
         expect(newController.theEndComponent).not.toBeDefined();
+    });
+
+    test.each([[false], [true]])(
+        'KioskError: if denyProcesses specified, renders TheEnd page: afterLaunch=%s',
+        afterLaunch => {
+            const kioskService = { exit: vi.fn() };
+
+            const denyProcessesError = new KioskError('oh no');
+            denyProcessesError.denyProcesses = [
+                { name: 'pr-b', label: 'Process B' },
+                { name: 'pr-c', label: 'Process C' }
+            ];
+            denyProcessesError.afterLaunch = afterLaunch;
+
+            const params = {
+                internalError: denyProcessesError,
+                exitUrl: 'http://new.url',
+                kioskService,
+                deliveryExecutionId: 'dx123'
+            };
+            controller.start(params);
+
+            const theEndEl = document.querySelector('.the-end');
+            expect(theEndEl).toBeTruthy();
+            expect(theEndEl).toMatchSnapshot();
+
+            const btn = theEndEl.querySelector('button');
+            expect(kioskService.exit).not.toHaveBeenCalled();
+            btn.click();
+            expect(kioskService.exit).toHaveBeenCalled();
+        }
+    );
+
+    it('KioskError: if no denyProcesses, redirects as other non-recoverable errors, adds special lti_errorlog', async () => {
+        const kioskService = { exit: vi.fn() };
+        const windowLocationSpy = createWindowLocationSpy();
+
+        const kioskLaunchError = new KioskError('oh no');
+
+        const params = {
+            internalError: kioskLaunchError,
+            exitUrl: 'http://new.url',
+            kioskService,
+            deliveryExecutionId: 'dx123'
+        };
+        controller.start(params);
+
+        const lti_errormsg =
+            "Can't start secure session\nTo start this secure session, install or update TAO Secure Browser.";
+        const lti_errorlog = `Secure browser validation\n[dx123]`;
+        const expectedUrl = new URL(params.exitUrl);
+        expectedUrl.searchParams.append('lti_errormsg', lti_errormsg);
+        expectedUrl.searchParams.append('lti_errorlog', lti_errorlog);
+
+        await vi.waitFor(async () => {
+            expect(window.location.replace).toHaveBeenCalledWith(expectedUrl.toString());
+        });
+        windowLocationSpy.restore();
     });
 
     describe('save error log', () => {
@@ -186,20 +266,25 @@ describe('handling errors', () => {
         const controllerParams = {
             jwtTokenHandler: { jwt: 'handler' },
             deliveryExecutionId: 'dx123',
-            internalError: error,
+            internalError: recoverableError,
             exitUrl: null
         };
 
-        let windowSpy;
+        let windowLocationSpy;
         beforeAll(() => {
-            windowSpy = createWindowSpyWithLocationReplace();
+            windowLocationSpy = createWindowLocationSpy();
         });
         afterAll(() => {
-            windowSpy.mockRestore();
+            windowLocationSpy.restore();
         });
 
         test.each([
-            ['recoverable error', 'http://exit.url', error, `${error.message}\n${error.stack}\n[recoverable]`],
+            [
+                'recoverable error',
+                'http://exit.url',
+                recoverableError,
+                `${recoverableError.message}\n${recoverableError.stack}\n[recoverable]`
+            ],
             [
                 'unrecoverable error & no exitUrl',
                 null,

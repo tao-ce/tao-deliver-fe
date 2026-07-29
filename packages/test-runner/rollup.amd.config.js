@@ -9,7 +9,7 @@ import json from '@rollup/plugin-json';
 import postcss from 'rollup-plugin-postcss';
 import commonJs from '@rollup/plugin-commonjs';
 import alias from '@rollup/plugin-alias';
-import { terser } from 'rollup-plugin-terser';
+import terser from '@rollup/plugin-terser';
 import svg from 'rollup-plugin-svg';
 import wildcardExternal from '@oat-sa/rollup-plugin-wildcard-external';
 import sharedConfig from '../../rollup-shared.config.js';

@@ -23,6 +23,8 @@ import TestRunnerSandbox from './TestRunnerSandbox.svelte';
 
 // MSW is set up to act as the tao-timers-be websocket backend in the sandbox
 import { worker } from './mswMocks/browser.js';
+import { mount } from 'svelte';
+
 await worker.start({ quiet: true });
 
 testRunnerFactory.registerProvider('qtinui', qtinuiTestRunnerProvider);
@@ -31,6 +33,6 @@ testRunnerFactory.registerProvider('qtinuiExport', qtinuiTestRunnerExportProvide
 proxyFactory.registerProvider('preset', presetProxy);
 itemRunner.register('qtinui', qtinuiItemRunnerProvider);
 
-new TestRunnerSandbox({
+mount(TestRunnerSandbox, {
     target: document.body
 });

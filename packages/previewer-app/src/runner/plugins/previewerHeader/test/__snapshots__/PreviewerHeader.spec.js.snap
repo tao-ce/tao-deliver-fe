@@ -17,6 +17,7 @@ exports[`PreviewerHeader > renders unit label and item label and current locale 
       <span>
         SomeItem
       </span>
+      
        
       <span>
         /
@@ -25,6 +26,7 @@ exports[`PreviewerHeader > renders unit label and item label and current locale 
       <span>
         ab-CD
       </span>
+      
        
       <ul>
         <li>
@@ -34,7 +36,6 @@ exports[`PreviewerHeader > renders unit label and item label and current locale 
           >
             View yy-YY
           </a>
-           
         </li>
         <li>
           <a
@@ -43,10 +44,12 @@ exports[`PreviewerHeader > renders unit label and item label and current locale 
           >
             View kk-KK
           </a>
-           
         </li>
+        
       </ul>
     </header>
+    
+    
   </div>
 </body>
 `;
@@ -68,6 +71,7 @@ exports[`PreviewerHeader > renders unit label and item label and current locale 
       <span>
         SomeItem
       </span>
+      
        
       <span>
         /
@@ -76,9 +80,14 @@ exports[`PreviewerHeader > renders unit label and item label and current locale 
       <span>
         ab-CD
       </span>
+      
        
-      <ul />
+      <ul>
+        
+      </ul>
     </header>
+    
+    
   </div>
 </body>
 `;
@@ -93,10 +102,16 @@ exports[`PreviewerHeader > renders without error if testStateStore is empty 1`] 
         
       </span>
        
+      
        
+      
        
-      <ul />
+      <ul>
+        
+      </ul>
     </header>
+    
+    
   </div>
 </body>
 `;

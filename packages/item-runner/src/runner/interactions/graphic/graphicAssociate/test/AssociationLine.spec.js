@@ -16,6 +16,7 @@ describe('Association line', () => {
         });
         expect(container).toMatchSnapshot();
     });
+
     it('renders line with remove button', () => {
         const { container } = render(AssociationLine, {
             props: {
@@ -30,6 +31,7 @@ describe('Association line', () => {
         expect(button).toHaveAttribute('aria-label');
         expect(button.getAttribute('aria-label')).toEqual('rmbt');
     });
+
     it('renders line in disabled state', () => {
         const { container } = render(AssociationLine, {
             props: {
@@ -40,6 +42,7 @@ describe('Association line', () => {
         });
         expect(container.querySelector('.association-line')).toHaveClass('disabled');
     });
+
     it('renders line in selected state', () => {
         const { container } = render(AssociationLine, {
             props: {
@@ -71,6 +74,7 @@ describe('Association line', () => {
         fireEvent.click(container.querySelector('.remove-button-hitbox'));
         expect(removeSpy).toHaveBeenCalled();
     });
+
     it('forwards keyup/keydown event', () => {
         const { container, component } = render(AssociationLine, {
             props: {
@@ -91,6 +95,7 @@ describe('Association line', () => {
         fireEvent.keyDown(button);
         expect(keyDownFnc).toHaveBeenCalled();
     });
+
     it('does not dispatch click if disabled', () => {
         const { container, component } = render(AssociationLine, {
             props: {

@@ -5,23 +5,33 @@ exports[`UploadInteraction > listens store modifications 1`] = `
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-uploadInteraction"
+      dir=""
     >
+      
        
       <div
         class="wrap"
       >
+        
          
         <div
           class="uploading hidden"
-        />
+        >
+          
+        </div>
          
-        <div>
+        <div
+          class="file-select"
+          dir=""
+        >
           <input
             aria-hidden="true"
+            class="file-select-input"
             tabindex="-1"
             type="file"
           />
            
+          
            
           <span
             class="label"
@@ -36,18 +46,28 @@ exports[`UploadInteraction > listens store modifications 1`] = `
               class="actionable primary pill medium"
               type="button"
             >
+              
                
+              
                
               Select a file
+              
             </button>
+            
           </div>
            
-           
-          <p
-            class="expected-formats"
+          <div
+            class="applied-rules"
           >
-            maximum file size: 1 MB
-          </p>
+            
+             
+            <span
+              class="applied-rule"
+            >
+              Maximum file size: 1 MB
+            </span>
+            
+          </div>
            
           <div
             aria-hidden="true"
@@ -58,12 +78,14 @@ exports[`UploadInteraction > listens store modifications 1`] = `
               role="region"
             >
               <span>
-                ..or drop your file here
+                ... or drop your file here
               </span>
             </div>
           </div>
           
+          
         </div>
+        
       </div>
        
       <div
@@ -71,8 +93,13 @@ exports[`UploadInteraction > listens store modifications 1`] = `
         aria-live="assertive"
         class="visually-hidden"
         id="tao-live-123"
-      />
+      >
+        
+      </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -82,19 +109,28 @@ exports[`UploadInteraction > listens store modifications 2`] = `
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-uploadInteraction"
+      dir=""
     >
+      
        
       <div
         class="wrap"
       >
+        
          
         <div
           class="uploading"
-        />
+        >
+          
+        </div>
          
-        <div>
+        <div
+          class="file-select"
+          dir=""
+        >
           <input
             aria-hidden="true"
+            class="file-select-input"
             tabindex="-1"
             type="file"
           />
@@ -119,7 +155,9 @@ exports[`UploadInteraction > listens store modifications 2`] = `
                   <path
                     d="M14.73 1.91L16 3.18 5.09 14.09 0 9l1.27-1.27 3.82 3.82z"
                   />
+                  
                 </svg>
+                
               </span>
                
               <span>
@@ -135,28 +173,40 @@ exports[`UploadInteraction > listens store modifications 2`] = `
                 test.png
               </a>
               
+              
             </p>
              
             <button
               class="actionable secondary pill medium"
               type="button"
             >
+              
                
+              
                
               Select different file
+              
             </button>
+            
              
             <button
               class="actionable secondary pill medium"
               type="button"
             >
+              
                
+              
                
               Clear file
+              
             </button>
+            
           </div>
+          
            
+          
         </div>
+        
       </div>
        
       <div
@@ -164,8 +214,13 @@ exports[`UploadInteraction > listens store modifications 2`] = `
         aria-live="assertive"
         class="visually-hidden"
         id="tao-live-123"
-      />
+      >
+        
+      </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -175,19 +230,28 @@ exports[`UploadInteraction > listens store modifications 3`] = `
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-uploadInteraction"
+      dir=""
     >
+      
        
       <div
         class="wrap"
       >
+        
          
         <div
           class="uploading"
-        />
+        >
+          
+        </div>
          
-        <div>
+        <div
+          class="file-select"
+          dir=""
+        >
           <input
             aria-hidden="true"
+            class="file-select-input"
             tabindex="-1"
             type="file"
           />
@@ -212,7 +276,9 @@ exports[`UploadInteraction > listens store modifications 3`] = `
                   <path
                     d="M14.73 1.91L16 3.18 5.09 14.09 0 9l1.27-1.27 3.82 3.82z"
                   />
+                  
                 </svg>
+                
               </span>
                
               <span>
@@ -228,28 +294,40 @@ exports[`UploadInteraction > listens store modifications 3`] = `
                 test.png
               </a>
               
+              
             </p>
              
             <button
               class="actionable secondary pill medium"
               type="button"
             >
+              
                
+              
                
               Select different file
+              
             </button>
+            
              
             <button
               class="actionable secondary pill medium"
               type="button"
             >
+              
                
+              
                
               Clear file
+              
             </button>
+            
           </div>
+          
            
+          
         </div>
+        
       </div>
        
       <div
@@ -257,8 +335,13 @@ exports[`UploadInteraction > listens store modifications 3`] = `
         aria-live="assertive"
         class="visually-hidden"
         id="tao-live-123"
-      />
+      >
+        
+      </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -299,27 +382,54 @@ exports[`UploadInteraction > renders props into markup 1`] = `
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
       </div>
+      
        
       <div
         class="wrap"
       >
+        
          
         <div
           class="uploading hidden"
-        />
+        >
+          
+        </div>
          
         <div
-          class="disabled"
+          class="file-select disabled"
+          dir=""
         >
           <input
             accept="image/png"
             aria-hidden="true"
+            class="file-select-input"
             disabled=""
             tabindex="-1"
             type="file"
           />
            
+          
            
           <span
             class="label"
@@ -336,23 +446,33 @@ exports[`UploadInteraction > renders props into markup 1`] = `
               disabled=""
               type="button"
             >
+              
                
+              
                
               Select a file
+              
             </button>
+            
           </div>
            
-          <p
-            class="expected-formats"
+          <div
+            class="applied-rules"
           >
-            expected formats: .png
-          </p>
-           
-          <p
-            class="expected-formats"
-          >
-            maximum file size: 1 MB
-          </p>
+            <span
+              class="applied-rule"
+            >
+              Accepted: .png.
+            </span>
+            
+             
+            <span
+              class="applied-rule"
+            >
+              Maximum file size: 1 MB
+            </span>
+            
+          </div>
            
           <div
             aria-hidden="true"
@@ -363,12 +483,14 @@ exports[`UploadInteraction > renders props into markup 1`] = `
               role="region"
             >
               <span>
-                ..or drop your file here
+                ... or drop your file here
               </span>
             </div>
           </div>
           
+          
         </div>
+        
       </div>
        
       <div
@@ -376,8 +498,13 @@ exports[`UploadInteraction > renders props into markup 1`] = `
         aria-live="assertive"
         class="visually-hidden"
         id="tao-live-123"
-      />
+      >
+        
+      </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -387,19 +514,28 @@ exports[`UploadInteraction > restore states with a local file in a fileHash base
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-uploadInteraction"
+      dir=""
     >
+      
        
       <div
         class="wrap"
       >
+        
          
         <div
           class="uploading"
-        />
+        >
+          
+        </div>
          
-        <div>
+        <div
+          class="file-select"
+          dir=""
+        >
           <input
             aria-hidden="true"
+            class="file-select-input"
             tabindex="-1"
             type="file"
           />
@@ -424,7 +560,9 @@ exports[`UploadInteraction > restore states with a local file in a fileHash base
                   <path
                     d="M14.73 1.91L16 3.18 5.09 14.09 0 9l1.27-1.27 3.82 3.82z"
                   />
+                  
                 </svg>
+                
               </span>
                
               <span>
@@ -440,28 +578,40 @@ exports[`UploadInteraction > restore states with a local file in a fileHash base
                 test.png
               </a>
               
+              
             </p>
              
             <button
               class="actionable secondary pill medium"
               type="button"
             >
+              
                
+              
                
               Select different file
+              
             </button>
+            
              
             <button
               class="actionable secondary pill medium"
               type="button"
             >
+              
                
+              
                
               Clear file
+              
             </button>
+            
           </div>
+          
            
+          
         </div>
+        
       </div>
        
       <div
@@ -469,8 +619,13 @@ exports[`UploadInteraction > restore states with a local file in a fileHash base
         aria-live="assertive"
         class="visually-hidden"
         id="tao-live-123"
-      />
+      >
+        
+      </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -480,19 +635,28 @@ exports[`UploadInteraction > restore states with fileHash baseType 1`] = `
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-uploadInteraction"
+      dir=""
     >
+      
        
       <div
         class="wrap"
       >
+        
          
         <div
           class="uploading"
-        />
+        >
+          
+        </div>
          
-        <div>
+        <div
+          class="file-select"
+          dir=""
+        >
           <input
             aria-hidden="true"
+            class="file-select-input"
             tabindex="-1"
             type="file"
           />
@@ -517,7 +681,9 @@ exports[`UploadInteraction > restore states with fileHash baseType 1`] = `
                   <path
                     d="M14.73 1.91L16 3.18 5.09 14.09 0 9l1.27-1.27 3.82 3.82z"
                   />
+                  
                 </svg>
+                
               </span>
                
               <span>
@@ -533,28 +699,40 @@ exports[`UploadInteraction > restore states with fileHash baseType 1`] = `
                 foo.wav
               </a>
               
+              
             </p>
              
             <button
               class="actionable secondary pill medium"
               type="button"
             >
+              
                
+              
                
               Select different file
+              
             </button>
+            
              
             <button
               class="actionable secondary pill medium"
               type="button"
             >
+              
                
+              
                
               Clear file
+              
             </button>
+            
           </div>
+          
            
+          
         </div>
+        
       </div>
        
       <div
@@ -562,8 +740,13 @@ exports[`UploadInteraction > restore states with fileHash baseType 1`] = `
         aria-live="assertive"
         class="visually-hidden"
         id="tao-live-123"
-      />
+      >
+        
+      </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -573,26 +756,34 @@ exports[`UploadInteraction > sets instruction language from context 1`] = `
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-uploadInteraction"
+      dir=""
     >
+      
        
       <div
         class="wrap"
       >
+        
          
         <div
           class="uploading hidden"
-        />
+        >
+          
+        </div>
          
         <div
+          class="file-select"
           dir="ltr"
           lang="nb-NO"
         >
           <input
             aria-hidden="true"
+            class="file-select-input"
             tabindex="-1"
             type="file"
           />
            
+          
            
           <span
             class="label"
@@ -607,18 +798,28 @@ exports[`UploadInteraction > sets instruction language from context 1`] = `
               class="actionable primary pill medium"
               type="button"
             >
+              
                
+              
                
               Select a file
+              
             </button>
+            
           </div>
            
-           
-          <p
-            class="expected-formats"
+          <div
+            class="applied-rules"
           >
-            maximum file size: 1 MB
-          </p>
+            
+             
+            <span
+              class="applied-rule"
+            >
+              Maximum file size: 1 MB
+            </span>
+            
+          </div>
            
           <div
             aria-hidden="true"
@@ -629,12 +830,14 @@ exports[`UploadInteraction > sets instruction language from context 1`] = `
               role="region"
             >
               <span>
-                ..or drop your file here
+                ... or drop your file here
               </span>
             </div>
           </div>
           
+          
         </div>
+        
       </div>
        
       <div
@@ -643,8 +846,13 @@ exports[`UploadInteraction > sets instruction language from context 1`] = `
         class="visually-hidden"
         id="tao-live-123"
         lang="nb-NO"
-      />
+      >
+        
+      </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -654,20 +862,29 @@ exports[`UploadInteraction > sets store value correctly when invalid file is sel
   <div>
     <div
       class="qti-interaction qti-blockInteraction qti-uploadInteraction"
+      dir=""
     >
+      
        
       <div
         class="wrap"
       >
+        
          
         <div
           class="uploading"
-        />
+        >
+          
+        </div>
          
-        <div>
+        <div
+          class="file-select"
+          dir=""
+        >
           <input
             accept="image/png"
             aria-hidden="true"
+            class="file-select-input"
             tabindex="-1"
             type="file"
           />
@@ -679,10 +896,14 @@ exports[`UploadInteraction > sets store value correctly when invalid file is sel
               tabindex="-1"
             >
               The .txt file format is not accepted, expected formats are: .png
+              
             </p>
              
+            
              
+            
           </div>
+          
            
           <span
             class="label"
@@ -697,23 +918,33 @@ exports[`UploadInteraction > sets store value correctly when invalid file is sel
               class="actionable primary pill medium"
               type="button"
             >
+              
                
+              
                
               Select a file
+              
             </button>
+            
           </div>
            
-          <p
-            class="expected-formats"
+          <div
+            class="applied-rules"
           >
-            expected formats: .png
-          </p>
-           
-          <p
-            class="expected-formats"
-          >
-            maximum file size: 1 MB
-          </p>
+            <span
+              class="applied-rule"
+            >
+              Accepted: .png.
+            </span>
+            
+             
+            <span
+              class="applied-rule"
+            >
+              Maximum file size: 1 MB
+            </span>
+            
+          </div>
            
           <div
             aria-hidden="true"
@@ -724,12 +955,14 @@ exports[`UploadInteraction > sets store value correctly when invalid file is sel
               role="region"
             >
               <span>
-                ..or drop your file here
+                ... or drop your file here
               </span>
             </div>
           </div>
           
+          
         </div>
+        
       </div>
        
       <div
@@ -739,8 +972,12 @@ exports[`UploadInteraction > sets store value correctly when invalid file is sel
         id="tao-live-123"
       >
          Response file cleared.
+        
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;

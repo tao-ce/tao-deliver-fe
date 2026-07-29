@@ -46,13 +46,9 @@ exports[`Association line > renders line 1`] = `
         />
         <svg
           height="12"
-          version="1.1"
           viewBox="0 0 12 12"
           width="12"
           x="-1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:svgjs="http://svgjs.com/svgjs"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
           y="-1"
         >
           <path
@@ -68,6 +64,8 @@ exports[`Association line > renders line 1`] = `
         />
       </g>
     </g>
+    
+    
   </div>
 </body>
 `;
@@ -119,13 +117,9 @@ exports[`Association line > renders line with remove button 1`] = `
         />
         <svg
           height="12"
-          version="1.1"
           viewBox="0 0 12 12"
           width="12"
           x="-1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:svgjs="http://svgjs.com/svgjs"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
           y="-1"
         >
           <path
@@ -141,6 +135,8 @@ exports[`Association line > renders line with remove button 1`] = `
         />
       </g>
     </g>
+    
+    
   </div>
 </body>
 `;

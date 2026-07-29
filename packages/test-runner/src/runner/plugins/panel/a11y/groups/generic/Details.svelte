@@ -46,7 +46,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @fires 'toggle'
      */
     function handleToggle() {
-        open = detailsElement.open;
+        open = detailsElement?.open;
         dispatch('toggle', {
             key,
             collapsed: !open
@@ -83,7 +83,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             padding-inline: 0.5rem;
             @add-mixin outline-focus 0rem;
 
-            & :global(:first-child) {
+            & > :global(:first-child) {
                 flex-grow: 1;
             }
         }

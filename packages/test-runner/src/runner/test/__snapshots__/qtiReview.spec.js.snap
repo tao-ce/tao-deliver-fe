@@ -4,21 +4,30 @@ exports[`QTI NUI test runner behavior > Response tabs > shows scores on answer t
 <button
   aria-current="true"
   aria-selected="true"
+  data-tab-key="answer"
   disabled=""
   role="tab"
 >
+  
    
+  
+  
+  
   <span>
     Answer
   </span>
+  
    
+  
   <span
     class="tablabel-partial"
   >
     ( 66 / 99 )
   </span>
   
+  
    
+  
 </button>
 `;
 
@@ -67,14 +76,21 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
                     <path
                       d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
+                  
                 </button>
-                 
+                
               </li>
+              
             </ol>
+            
              
+            
              
             <div
               class="content"
@@ -100,10 +116,7 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
                   class="floating-toolbars"
                 >
                   
-                   
-                  <div
-                    class="flex-break"
-                  />
+                  
                   
                   
                    
@@ -112,10 +125,25 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
                   />
                   
                   
+                  
+                  
+                  
                    
+                  <div
+                    class="flex-break"
+                  />
+                  
+                  
+                  
+                  
+                  
+                   
+                  
                   
                 </div>
+                
               </div>
+              
             </div>
           </header>
            
@@ -123,12 +151,29 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
             <ol
               class="end"
             >
+              
                
+              
             </ol>
              
+            
           </aside>
         </div>
+        
       </div>
+    </div>
+     
+    <div
+      class="notification-container-wrapper not-printable"
+    >
+      <div
+        aria-label="Notifications"
+        class="notification-container"
+        role="log"
+      >
+        
+      </div>
+      
     </div>
      
     <main
@@ -153,6 +198,14 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
         <div
           class="tabgroup"
         >
+          <span
+            aria-live="polite"
+            class="visually-hidden"
+          >
+            
+          </span>
+           
+          
            
           <div
             class="scrollbox"
@@ -166,27 +219,30 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
                 <button
                   aria-current="true"
                   aria-selected="true"
+                  data-tab-key="question"
                   disabled=""
                   role="tab"
                 >
+                  
                    
                   Question
+                  
                    
+                  
                 </button>
-                 
               </li>
+              
             </ul>
-            <iframe
-              aria-hidden="true"
-              src="about:blank"
-              style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-              tabindex="-1"
-            />
+            
           </div>
            
+          
         </div>
+        
          
+        
          
+        
          
         <div
           aria-hidden="true"
@@ -217,15 +273,16 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
               >
                 loading
               </p>
+              
             </div>
           </div>
+          
            
-          <p
-            style="animation: __svelte_2884083938_0 500ms linear 4500ms 1 both;"
-          >
+          <p>
             Please wait a little longer while your content loads
           </p>
         </div>
+        
       </div>
        
       <div
@@ -255,6 +312,7 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
         <div
           slot="header"
         />
+        
       </header>
        
       <div
@@ -269,6 +327,7 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
         <div
           slot="content"
         />
+        
          
         <div
           class="scroll-last-child"
@@ -279,11 +338,14 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
         <div
           slot="footer"
         />
+        
       </footer>
     </div>
+    
   </div>
    
   <div
+    aria-hidden="true"
     class="panel close-initial inverted-color"
     id="tao-panel-123"
   >
@@ -312,12 +374,18 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
               <path
                 d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
+        
       </div>
        
       <div
@@ -326,8 +394,12 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
         <div
           class="panel-content"
         />
+        
       </div>
     </div>
   </div>
+  
+  
+  
 </section>
 `;

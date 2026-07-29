@@ -121,7 +121,7 @@ describe('JumpMenu', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('Fires highlight events', () => {
+    it('Fires highlight events', async () => {
         const highlight = vi.fn();
         const unhighlight = vi.fn();
 
@@ -135,22 +135,23 @@ describe('JumpMenu', () => {
         component.$on('highlight', highlight);
         component.$on('unhighlight', unhighlight);
 
-        return tick().then(() => {
-            fireEvent.focus(container.querySelector('li:nth-child(2) button'));
+        await tick();
+        await tick();
 
-            expect(highlight.mock.calls[0][0].detail).toMatchObject({
-                itemType: 'question'
-            });
+        await fireEvent.focus(container.querySelector('li:nth-child(2) button'));
 
-            fireEvent.focusOut(container.querySelector('li:nth-child(2) button'));
+        expect(highlight.mock.calls[0][0].detail).toMatchObject({
+            itemType: 'question'
+        });
 
-            expect(unhighlight.mock.calls[0][0].detail).toMatchObject({
-                itemType: 'question'
-            });
+        await fireEvent.focusOut(container.querySelector('li:nth-child(2) button'));
+
+        expect(unhighlight.mock.calls[0][0].detail).toMatchObject({
+            itemType: 'question'
         });
     });
 
-    it('Fires focus event', () => {
+    it('Fires focus event', async () => {
         const focusElement = vi.fn();
 
         const { container, component } = render(JumpMenu, {
@@ -162,12 +163,13 @@ describe('JumpMenu', () => {
 
         component.$on('focusElement', focusElement);
 
-        return tick().then(() => {
-            fireEvent.click(container.querySelector('li:nth-child(2) button'));
+        await tick();
+        await tick();
 
-            expect(focusElement.mock.calls[0][0].detail).toMatchObject({
-                itemType: 'question'
-            });
+        await fireEvent.click(container.querySelector('li:nth-child(2) button'));
+
+        expect(focusElement.mock.calls[0][0].detail).toMatchObject({
+            itemType: 'question'
         });
     });
 });

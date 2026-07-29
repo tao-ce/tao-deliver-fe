@@ -8,7 +8,7 @@ exports[`QTI NUI test runner behavior > loads and renders an item, mounts areas,
 <section>
   <div
     class="test-runner loading"
-    style="--window-height:767px;"
+    style="--window-height: 767px;"
   >
     <div
       class="top-bar"
@@ -47,15 +47,16 @@ exports[`QTI NUI test runner behavior > loads and renders an item, mounts areas,
             >
               loading
             </p>
+            
           </div>
         </div>
+        
          
-        <p
-          style="animation: __svelte_2884083938_0 500ms linear 4500ms 1 both;"
-        >
+        <p>
           Please wait a little longer while your content loads
         </p>
       </div>
+      
        
       <div
         class="scroll-last-child"
@@ -67,5 +68,7 @@ exports[`QTI NUI test runner behavior > loads and renders an item, mounts areas,
       id="test-navigation"
     />
   </div>
+  
+  
 </section>
 `;

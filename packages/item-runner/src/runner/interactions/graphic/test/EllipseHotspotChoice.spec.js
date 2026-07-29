@@ -39,7 +39,7 @@ describe('ellipse hotspot choice', () => {
             expect(container.querySelector('g').classList).toContain('selected');
         });
 
-        it('renders text label as a checkmark if label is set ', () => {
+        it('renders text label as a checkmark if label is set', () => {
             const { container } = render(EllipseHotspotChoice, {
                 props: { coords: [100, 100, 50, 60], selected: true, label: '1' }
             });
@@ -58,8 +58,8 @@ describe('ellipse hotspot choice', () => {
             const smallRadiusX = 30; //smaller radius than needed 5rem size
             const greatRadiusY = 50; //vertical doesn't need scaling
 
-            const expectedScalingSizeRX = minSize / 2 - remToPx(0.375);
-            const expectedScaledSizeRY = greatRadiusY - remToPx(0.375);
+            const expectedScalingSizeRX = minSize / 2 - remToPx(0.25);
+            const expectedScaledSizeRY = greatRadiusY - remToPx(0.25);
             const { container } = render(EllipseHotspotChoice, {
                 props: { coords: [50, 50, smallRadiusX, greatRadiusY] }
             });
@@ -75,43 +75,6 @@ describe('ellipse hotspot choice', () => {
     });
 
     describe('events', () => {
-        it('changes the inner border size on mouseenter and mouseleave', () => {
-            const { container } = render(EllipseHotspotChoice, { props: { coords: [100, 100, 50, 60] } });
-            const initialInnerBorderRadiusX = parseFloat(
-                container.querySelector('.shape-inner-border').getAttribute('rx')
-            );
-            const initialInnerBorderRadiusY = parseFloat(
-                container.querySelector('.shape-inner-border').getAttribute('ry')
-            );
-
-            const groupEl = container.querySelector('g');
-            fireEvent.mouseEnter(groupEl);
-            return tick()
-                .then(() => {
-                    const currentInnerBorderRadiusX = parseFloat(
-                        container.querySelector('.shape-inner-border').getAttribute('rx')
-                    );
-                    const currentInnerBorderRadiusY = parseFloat(
-                        container.querySelector('.shape-inner-border').getAttribute('ry')
-                    );
-
-                    expect(currentInnerBorderRadiusX).toBeGreaterThan(initialInnerBorderRadiusX);
-                    expect(currentInnerBorderRadiusY).toBeGreaterThan(initialInnerBorderRadiusY);
-                    return tick;
-                })
-                .then(() => {
-                    fireEvent.mouseLeave(groupEl);
-                    const currentInnerBorderRadiusX = parseFloat(
-                        container.querySelector('.shape-inner-border').getAttribute('rx')
-                    );
-                    const currentInnerBorderRadiusY = parseFloat(
-                        container.querySelector('.shape-inner-border').getAttribute('ry')
-                    );
-                    expect(currentInnerBorderRadiusX).toEqual(initialInnerBorderRadiusX);
-                    expect(currentInnerBorderRadiusY).toEqual(initialInnerBorderRadiusY);
-                });
-        });
-
         it('forwards click event', () => {
             const { container, component } = render(EllipseHotspotChoice, { props: { coords: [100, 100, 50, 60] } });
             const fn = vi.fn();

@@ -19,6 +19,11 @@ export default {
 
     // function which serializes DOMElements, cleaning classes and adding body wrapper
     serialize(domElt, config, indentation, depth, refs, printer) {
+        // remove the comment nodes <!----> because Svelte 5 renders so many
+        if (domElt.nodeType === Node.COMMENT_NODE) {
+            return '';
+        }
+
         // remove unnecessary fixed className for brevity
         domElt.classList?.remove(vitestSnapshotClassName);
         if (domElt.classList?.length === 0) {

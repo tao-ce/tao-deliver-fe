@@ -10,7 +10,11 @@ exports[`proctoring plugin > pause/resume > on pause show feedback, render wait 
         
       <div
         class="proctor-wait transition"
-      />
+      >
+        
+      </div>
+      
+      
     </main>
   </div>
 </body>
@@ -27,6 +31,7 @@ exports[`proctoring plugin > pause/resume > on pause show feedback, render wait 
       <div
         class="proctor-wait transition"
       >
+        
         <h2
           tabindex="-1"
         >
@@ -50,10 +55,15 @@ exports[`proctoring plugin > pause/resume > on pause show feedback, render wait 
             >
               Please wait for the proctor to resume your test.
             </p>
+            
           </div>
         </div>
         
+        
+        
       </div>
+      
+      
     </main>
   </div>
 </body>
@@ -70,12 +80,14 @@ exports[`proctoring plugin > pause/resume > on pause show feedback, render wait 
       <div
         class="proctor-wait transition"
       >
+        
         <h2
           tabindex="-1"
         >
           Your test is ready
         </h2>
          
+        
          
         <div
           class="btn-container"
@@ -85,13 +97,20 @@ exports[`proctoring plugin > pause/resume > on pause show feedback, render wait 
             name="proctor-resume"
             type="button"
           >
+            
              
+            
              
             Resume test
+            
           </button>
+          
         </div>
         
+        
       </div>
+      
+      
     </main>
   </div>
 </body>
@@ -121,6 +140,7 @@ exports[`proctoring plugin > pause/resume > when already paused on init 1`] = `
       <div
         class="proctor-wait transition"
       >
+        
         <h2
           tabindex="-1"
         >
@@ -144,10 +164,15 @@ exports[`proctoring plugin > pause/resume > when already paused on init 1`] = `
             >
               Please wait for the proctor to resume your test.
             </p>
+            
           </div>
         </div>
         
+        
+        
       </div>
+      
+      
     </main>
   </div>
 </body>

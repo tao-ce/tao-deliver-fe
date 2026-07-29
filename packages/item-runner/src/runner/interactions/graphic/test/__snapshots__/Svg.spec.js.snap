@@ -3,10 +3,11 @@
 exports[`Svg > rendering > does not render desc without a label 1`] = `
 <body>
   <div>
+    
     <svg
       aria-labelledby="tao-desc-123"
       height="567"
-      style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+      style="--shadow-filter-url: url(#tao-svg-123-filter-shadow);"
       version="1.1"
       viewBox="0 0 1234 567"
       width="1234"
@@ -19,6 +20,7 @@ exports[`Svg > rendering > does not render desc without a label 1`] = `
       >
         graphic interaction
       </desc>
+      
       <defs>
         <filter
           filterUnits="userSpaceOnUse"
@@ -32,6 +34,7 @@ exports[`Svg > rendering > does not render desc without a label 1`] = `
           />
         </filter>
       </defs>
+      
       <g
         class="image"
         transform="translate(0, 0)"
@@ -45,8 +48,12 @@ exports[`Svg > rendering > does not render desc without a label 1`] = `
           x="0"
           y="0"
         />
+        
+        
       </g>
     </svg>
+    
+    
     
   </div>
 </body>
@@ -55,10 +62,11 @@ exports[`Svg > rendering > does not render desc without a label 1`] = `
 exports[`Svg > rendering > renders basic + bayAttrs props to markup 1`] = `
 <body>
   <div>
+    
     <svg
       aria-labelledby="tao-desc-123"
       height="567"
-      style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+      style="--shadow-filter-url: url(#tao-svg-123-filter-shadow);"
       version="1.1"
       viewBox="0 0 1434 567"
       width="1434"
@@ -71,6 +79,7 @@ exports[`Svg > rendering > renders basic + bayAttrs props to markup 1`] = `
       >
         a foovist artwork
       </desc>
+      
       <defs>
         <filter
           filterUnits="userSpaceOnUse"
@@ -84,6 +93,7 @@ exports[`Svg > rendering > renders basic + bayAttrs props to markup 1`] = `
           />
         </filter>
       </defs>
+      
       <g
         class="image"
         transform="translate(200, 0)"
@@ -97,8 +107,12 @@ exports[`Svg > rendering > renders basic + bayAttrs props to markup 1`] = `
           x="0"
           y="0"
         />
+        
+        
       </g>
     </svg>
+    
+    
     
   </div>
 </body>
@@ -107,10 +121,11 @@ exports[`Svg > rendering > renders basic + bayAttrs props to markup 1`] = `
 exports[`Svg > rendering > renders basic props to markup 1`] = `
 <body>
   <div>
+    
     <svg
       aria-labelledby="tao-desc-123"
       height="567"
-      style="--shadow-filter-url: url(#external-svgid-123-filter-shadow)"
+      style="--shadow-filter-url: url(#external-svgid-123-filter-shadow);"
       version="1.1"
       viewBox="0 0 1234 567"
       width="1234"
@@ -123,6 +138,7 @@ exports[`Svg > rendering > renders basic props to markup 1`] = `
       >
         a foovist artwork
       </desc>
+      
       <defs>
         <filter
           filterUnits="userSpaceOnUse"
@@ -136,6 +152,7 @@ exports[`Svg > rendering > renders basic props to markup 1`] = `
           />
         </filter>
       </defs>
+      
       <g
         class="image"
         transform="translate(0, 0)"
@@ -149,8 +166,12 @@ exports[`Svg > rendering > renders basic props to markup 1`] = `
           x="0"
           y="0"
         />
+        
+        
       </g>
     </svg>
+    
+    
     
   </div>
 </body>
@@ -159,10 +180,11 @@ exports[`Svg > rendering > renders basic props to markup 1`] = `
 exports[`Svg > rendering > renders slot contents 1`] = `
 <body>
   <div>
+    
     <svg
       aria-labelledby="tao-desc-123"
       height="3000"
-      style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+      style="--shadow-filter-url: url(#tao-svg-123-filter-shadow);"
       version="1.1"
       viewBox="0 0 5000 3000"
       width="5000"
@@ -175,6 +197,7 @@ exports[`Svg > rendering > renders slot contents 1`] = `
       >
         graphic interaction
       </desc>
+      
       <defs>
         <filter
           filterUnits="userSpaceOnUse"
@@ -195,6 +218,7 @@ exports[`Svg > rendering > renders slot contents 1`] = `
           Test Bay Slot
         </text>
       </g>
+      
       <g
         class="image"
         transform="translate(0, 0)"
@@ -208,6 +232,7 @@ exports[`Svg > rendering > renders slot contents 1`] = `
           x="0"
           y="0"
         />
+        
         <g
           slot="content"
         >
@@ -215,8 +240,11 @@ exports[`Svg > rendering > renders slot contents 1`] = `
             Test Content Slot
           </text>
         </g>
+        
       </g>
     </svg>
+    
+    
     
   </div>
 </body>

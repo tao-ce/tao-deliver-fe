@@ -3,8 +3,6 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
-// eslint-disable-next-line
-
 import { render } from '@testing-library/svelte';
 import itemsStateStore from '../../../itemsStateStore.js';
 import MatchInteraction from '../MatchInteraction.svelte';
@@ -129,7 +127,7 @@ describe('MatchInteraction', () => {
         expect(container.querySelectorAll('th.font-weight-normal')).toHaveLength(0);
     });
 
-    it('styles table header as normal, if boldTableHeader is false ', () => {
+    it('styles table header as normal, if boldTableHeader is false', () => {
         const { container } = render(ContextWrapper, {
             props: {
                 testComponent: MatchInteraction,

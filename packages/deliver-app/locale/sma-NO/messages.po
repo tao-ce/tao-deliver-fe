@@ -316,9 +316,7 @@ msgid "Answer area"
 msgstr "Vaastoesijjie"
 
 #: ../../test-runner/src/runner/plugins/settings/SettingsContent.svelte:174
-msgid ""
-"Answer elimination lets you exclude answer options that you are sure are "
-"incorrect."
+msgid "Answer elimination lets you exclude answer options that you are sure are incorrect."
 msgstr "Vaastoeskubpemen gaavhtan maahta vaastoealternatijvh skubpedh."
 
 #: ../../test-runner/src/runner/plugins/settings/SettingsContent.svelte:164
@@ -1261,8 +1259,7 @@ msgid "In line"
 msgstr "Nueliesïeve"
 
 #: ../src/core/error/messages.js:120
-msgid ""
-"In order to continue, please click on the Reload button."
+msgid "In order to continue, please click on the Reload button."
 msgstr "Jis edtjh jåerhkedh tjoerh daam sæjroem orresistie veedtjedh."
 
 #: ../../item-runner/src/runner/interactions/graphic/graphicAssociate/util/ariaHelper.js:35
@@ -3212,8 +3209,7 @@ msgstr "Jåerhkieh"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:163
 msgid "Multiple files are not accepted. Please try again."
-msgstr ""
-"Pryövih jienebh fijlh veedtjedh, men idtji gåaredh. Pryövh ikth vielie."
+msgstr "Pryövih jienebh fijlh veedtjedh, men idtji gåaredh. Pryövh ikth vielie."
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:247
 msgid "Multiplication sign"
@@ -3530,11 +3526,8 @@ msgid "Player for {title}"
 msgstr "Daan spïelije (tihtele)"
 
 #: ../src/core/error/messages.js:60
-msgid ""
-"Please check your internet connection or contact your test administrator."
-msgstr ""
-"Gïehtjedh mejtie dov lea gaskeviermie jallh gaskesadth naakenem mij maahta "
-"datnem viehkiehtidh."
+msgid "Please check your internet connection or contact your test administrator."
+msgstr "Gïehtjedh mejtie dov lea gaskeviermie jallh gaskesadth naakenem mij maahta datnem viehkiehtidh."
 
 #: ../../test-runner/src/runner/plugins/navigation/warnBeforeLeaving/plugin.js:30
 msgid "Please confirm you want to leave the test."
@@ -3546,9 +3539,7 @@ msgstr "Gaskesadth naakenem mij maahta datnem viehkiehtidh."
 
 #: ../src/core/error/messages.js:72 ../src/core/error/messages.js:140
 msgid "Please launch your test again or contact your administrator."
-msgstr ""
-"Veedtjh laavenjasside ikth vielie jallh gaskesadth naakenem mij maahta "
-"datnem viehkiehtidh."
+msgstr "Veedtjh laavenjasside ikth vielie jallh gaskesadth naakenem mij maahta datnem viehkiehtidh."
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:195
 msgid "Please provide a valid answer."
@@ -3556,15 +3547,11 @@ msgstr "Årroeh gïemhpe vedtieh luhpies vaestiedassem."
 
 #: ../src/core/error/messages.js:42
 msgid "Please reload the page or contact your administrator."
-msgstr ""
-"Veedtjh sæjroem orresistie jallh gaskesadth naakenem mij maahta datnem "
-"viehkiehtidh."
+msgstr "Veedtjh sæjroem orresistie jallh gaskesadth naakenem mij maahta datnem viehkiehtidh."
 
 #: ../src/core/error/messages.js:96
 msgid "Please reload the page or contact your test administrator."
-msgstr ""
-"Veedtjh sæjroem orresistie jallh gaskesadth naakenem mij maahta datnem "
-"viehkiehtidh."
+msgstr "Veedtjh sæjroem orresistie jallh gaskesadth naakenem mij maahta datnem viehkiehtidh."
 
 #: ../../test-runner/src/runner/TestLayout.svelte:289
 #: ../../test-runner/src/runner/TestReviewLayout.svelte:307
@@ -3599,78 +3586,45 @@ msgstr "Pund-væhta"
 
 #: ../../item-runner/src/runner/interactions/graphic/selectPoint/TutorialLayer.svelte:33
 msgid "Press Backspace/Delete to remove a selected answer"
-msgstr ""
-"Diedtieh Backspace jallh skubpemebåalam juktie veeljeme vaestiedassem "
-"skubpedh"
+msgstr "Diedtieh Backspace jallh skubpemebåalam juktie veeljeme vaestiedassem skubpedh"
 
 #: ../../item-runner/src/runner/interactions/graphic/selectPoint/TutorialLayer.svelte:32
 msgid "Press Space/Enter again to place your answer"
-msgstr ""
-"Diedtieh Enter jallh gaskebåalam juktie dov vaestiedassem sïjse bïejedh"
+msgstr "Diedtieh Enter jallh gaskebåalam juktie dov vaestiedassem sïjse bïejedh"
 
 #: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:159
-msgid ""
-"Press enter or space to activate continuous reading. If activated press "
-"enter or space to stop the reading."
-msgstr ""
-"Diedtieh Enter jallh gaskebåalam juktie ahkedh lohkemem aktiveeredh. Jis "
-"aktijve, diedtieh enter jallh gaskebåalam juktie lohkemem tjöödtjestidh."
+msgid "Press enter or space to activate continuous reading. If activated press enter or space to stop the reading."
+msgstr "Diedtieh Enter jallh gaskebåalam juktie ahkedh lohkemem aktiveeredh. Jis aktijve, diedtieh enter jallh gaskebåalam juktie lohkemem tjöödtjestidh."
 
 #: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:154
-msgid ""
-"Press enter or space to activate select and read. To move the next available "
-"action, use the arrow keys. To close press escape."
-msgstr ""
-"Diedtieh Enter jallh gaskebåalam juktie aktiveeredh jïh lohkedh. Nuhtjh "
-"njoelide juktie jåerhkedh. Diedtieh escapebåalam gosse edtjh dahpedh."
+msgid "Press enter or space to activate select and read. To move the next available action, use the arrow keys. To close press escape."
+msgstr "Diedtieh Enter jallh gaskebåalam juktie aktiveeredh jïh lohkedh. Nuhtjh njoelide juktie jåerhkedh. Diedtieh escapebåalam gosse edtjh dahpedh."
 
 #: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/util/ariaHelper.js:25
-msgid ""
-"Press enter or space to grab and browse the answer area. To move to next "
-"available option, use the arrow keys."
-msgstr ""
-"Diedtieh Enter jallh gaskebåalam juktie vaastoesijjiem doerelidh jïh "
-"goerehtidh. Nuhtjh njoelide juktie jåerhkedh."
+msgid "Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys."
+msgstr "Diedtieh Enter jallh gaskebåalam juktie vaastoesijjiem doerelidh jïh goerehtidh. Nuhtjh njoelide juktie jåerhkedh."
 
 #: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1373
-msgid ""
-"Press enter or space to grab and browse the answer area. To move to the next "
-"available option, use the arrow keys."
-msgstr ""
-"Diedtieh Enter jallh gaskebåalam jukitie vaastoesijjiem doerelidh jïh "
-"goerehtidh. Nuhtjh njoelide juktie jåerhkedh."
+msgid "Press enter or space to grab and browse the answer area. To move to the next available option, use the arrow keys."
+msgstr "Diedtieh Enter jallh gaskebåalam jukitie vaastoesijjiem doerelidh jïh goerehtidh. Nuhtjh njoelide juktie jåerhkedh."
 
 #: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:669
 #: ../../item-runner/src/runner/interactions/match/util/ariaHelper.js:38
 msgid "Press enter or space to grab and browse the answer area."
-msgstr ""
-"Diedtieh Enter jallh gaskebåalam juktie vaastoesijjiem doerelidh jïh "
-"goerehtidh."
+msgstr "Diedtieh Enter jallh gaskebåalam juktie vaastoesijjiem doerelidh jïh goerehtidh."
 
 #: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:496
-msgid ""
-"Press enter or space to grab and place in the answer area. To move to next "
-"available option, use the arrow keys."
-msgstr ""
-"Diedtieh Enter jallh gaskebåalam juktie vaestiedassem doerelidh jïh sïjse "
-"bïejedh. Nuhtjh njoelide juktie jåerhkedh."
+msgid "Press enter or space to grab and place in the answer area. To move to next available option, use the arrow keys."
+msgstr "Diedtieh Enter jallh gaskebåalam juktie vaestiedassem doerelidh jïh sïjse bïejedh. Nuhtjh njoelide juktie jåerhkedh."
 
 #: ../../item-runner/src/runner/interactions/order/SortableList.svelte:67
-msgid ""
-"Press enter or space to grab. To move to next available answer, use the "
-"arrow keys"
-msgstr ""
-"Diedtieh Enter jallh gaskebåalam juktie doerelidh. Nuhtjh njoelide juktie "
-"jåerhkedh"
+msgid "Press enter or space to grab. To move to next available answer, use the arrow keys"
+msgstr "Diedtieh Enter jallh gaskebåalam juktie doerelidh. Nuhtjh njoelide juktie jåerhkedh"
 
 #: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1382
 #: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/util/ariaHelper.js:28
-msgid ""
-"Press enter or space to grab. To move to next available answer, use the "
-"arrow keys."
-msgstr ""
-"Diedtieh Enter jallh gaskebåalam juktie doerelidh. Nuhtjh njoelide juktie "
-"jåerhkedh."
+msgid "Press enter or space to grab. To move to next available answer, use the arrow keys."
+msgstr "Diedtieh Enter jallh gaskebåalam juktie doerelidh. Nuhtjh njoelide juktie jåerhkedh."
 
 #: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:686
 #: ../../item-runner/src/runner/interactions/match/util/ariaHelper.js:39
@@ -3682,29 +3636,16 @@ msgid "Press enter or space to order to position %d."
 msgstr "Diedtieh Enter jallh gaskebåalam juktie %d sïjse bïejedh."
 
 #: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1396
-msgid ""
-"Press enter or space to place down. To browse other drop zones use the arrow "
-"keys. Press escape to cancel."
-msgstr ""
-"Diedtieh Enter jallh gaskebåalam juktie sïjse bïejedh. Nuhtjh njoelide "
-"juktie minngebe luejhtemesæjjan jåerhkedh. Diedtieh Escape-båalam juktie "
-"skubpedh."
+msgid "Press enter or space to place down. To browse other drop zones use the arrow keys. Press escape to cancel."
+msgstr "Diedtieh Enter jallh gaskebåalam juktie sïjse bïejedh. Nuhtjh njoelide juktie minngebe luejhtemesæjjan jåerhkedh. Diedtieh Escape-båalam juktie skubpedh."
 
 #: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/util/ariaHelper.js:29
-msgid ""
-"Press enter or space to place down. To browse other gaps use the arrow keys. "
-"Press escape to cancel."
-msgstr ""
-"Diedtieh Enter jallh gaskebåalam juktie doererlidh jïh vaastoesijjiem "
-"goerehtidh. Nuhtjh njoelide juktie jåerhkedh."
+msgid "Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel."
+msgstr "Diedtieh Enter jallh gaskebåalam juktie doererlidh jïh vaastoesijjiem goerehtidh. Nuhtjh njoelide juktie jåerhkedh."
 
 #: ../../item-runner/src/runner/interactions/order/SortableList.svelte:70
-msgid ""
-"Press enter or space to place down. To reorder use the arrow keys. Press "
-"escape to cancel"
-msgstr ""
-"Diedtieh Enter jallh gaskebåalam juktie sïjse bïejedh. Nuhtjh njoelide "
-"juktie orresistie bïejedh. Nuhtjh njoelide juktie skubpedh"
+msgid "Press enter or space to place down. To reorder use the arrow keys. Press escape to cancel"
+msgstr "Diedtieh Enter jallh gaskebåalam juktie sïjse bïejedh. Nuhtjh njoelide juktie orresistie bïejedh. Nuhtjh njoelide juktie skubpedh"
 
 #: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:677
 #: ../../item-runner/src/runner/interactions/match/util/ariaHelper.js:42
@@ -3712,21 +3653,12 @@ msgid "Press enter or space to place down."
 msgstr "Diedtieh Enter jallh gaskebåalam juktie sïjse bïejedh."
 
 #: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1389
-msgid ""
-"Press enter or space to replace. To browse other drop zones use the arrow "
-"keys. Press escape to cancel."
-msgstr ""
-"Diedtieh Enter jallh gaskebåalam juktie sïjse bïejedh. Nuhtjh njoelide "
-"juktie minngebe luejhtemesæjjan jåerhkedh. Diedtieh Escape-båalam juktie "
-"skubpedh."
+msgid "Press enter or space to replace. To browse other drop zones use the arrow keys. Press escape to cancel."
+msgstr "Diedtieh Enter jallh gaskebåalam juktie sïjse bïejedh. Nuhtjh njoelide juktie minngebe luejhtemesæjjan jåerhkedh. Diedtieh Escape-båalam juktie skubpedh."
 
 #: ../../item-runner/src/runner/interactions/graphic/graphicAssociate/util/ariaHelper.js:25
-msgid ""
-"Press enter or space to select and form an association. To move to the next "
-"available option, use the arrow keys"
-msgstr ""
-"Diedtieh Enter jallh gaskebåalam juktie vaastoesijjiem doerelidh jïh "
-"goerehtidh. Diedtieh njoelide juktie jåerhkedh"
+msgid "Press enter or space to select and form an association. To move to the next available option, use the arrow keys"
+msgstr "Diedtieh Enter jallh gaskebåalam juktie vaastoesijjiem doerelidh jïh goerehtidh. Diedtieh njoelide juktie jåerhkedh"
 
 #: ../../item-runner/src/runner/interactions/graphic/graphicOrder/util/ariaHelper.js:28
 msgid "Press enter or space to unorder."
@@ -3738,12 +3670,8 @@ msgid "Press escape to cancel."
 msgstr "Diedtieh Escape-båalam juktie tjöödtjestidh."
 
 #: ../../item-runner/src/runner/interactions/graphic/graphicAssociate/util/ariaHelper.js:28
-msgid ""
-"Press space to associate. To move to next available option, use the arrow "
-"keys. Press escape to cancel."
-msgstr ""
-"Diedtieh gaskebåalam juktie sïjse bïejedh. Nuhtjh njoelide juktie minngebe "
-"luejhtemesæjjan jåerhkedh. Diedtieh Escape-båalam juktie skubpedh."
+msgid "Press space to associate. To move to next available option, use the arrow keys. Press escape to cancel."
+msgstr "Diedtieh gaskebåalam juktie sïjse bïejedh. Nuhtjh njoelide juktie minngebe luejhtemesæjjan jåerhkedh. Diedtieh Escape-båalam juktie skubpedh."
 
 #: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:360
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:333
@@ -4093,12 +4021,8 @@ msgid "Selected by another scorer."
 msgstr "Veeljesovveme såemies jeatjabistie."
 
 #: ../../item-runner/src/runner/interactions/graphic/graphicAssociate/util/ariaHelper.js:31
-msgid ""
-"Selected. To move to next available option, use the arrow keys. Press escape "
-"or space to cancel."
-msgstr ""
-"Nuhtjh njoelh juktie mubpien alternatijvese jåerhkedh. Diedtieh Escape-"
-"båalam jallh gaskebåalam juktie skubpedh."
+msgid "Selected. To move to next available option, use the arrow keys. Press escape or space to cancel."
+msgstr "Nuhtjh njoelh juktie mubpien alternatijvese jåerhkedh. Diedtieh Escape-båalam jallh gaskebåalam juktie skubpedh."
 
 #: ../src/core/error/messages.js:78
 msgid "Service busy."
@@ -4378,8 +4302,7 @@ msgstr "Ektiedimmie gaskem %s jïh %s lea båarhte vaaltasovveme."
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:426
 msgid "The color is invalid. Try \"#FF0000\" or \"rgb(255,0,0)\" or \"red\"."
-msgstr ""
-"Klaerie luhpehts. Pryövh «#FF0000» jallh «rgb(255,0,0)» jallh «rööpses»."
+msgstr "Klaerie luhpehts. Pryövh «#FF0000» jallh «rgb(255,0,0)» jallh «rööpses»."
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/input/inputValidation.js:35
 msgid "The format must match the pattern."
@@ -4394,8 +4317,7 @@ msgid "The minimum length is %d."
 msgstr "Unnemes gåhkoe lea %d."
 
 #: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:16
-msgid ""
-"The plagiarism check could not be performed. Please contact an administrator."
+msgid "The plagiarism check could not be performed. Please contact an administrator."
 msgstr "Plagiaategïehtjedimmie ij gaavnoes."
 
 #: ../src/core/error/messages.js:81
@@ -4468,12 +4390,8 @@ msgid "To enter the slider value in this field, type."
 msgstr "Tjaelieh aarvoem daennie sijjesne."
 
 #: ../../item-runner/src/runner/interactions/graphic/selectPoint/TutorialLayer.svelte:31
-msgid ""
-"To move it around use arrow keys, or Shift + arrow keys for more precise "
-"placement"
-msgstr ""
-"Nuhtjh njoelide bïjre jarkan svïhtjedh jallh Shift-båalam + njoelide akten "
-"veelebe sæjjan"
+msgid "To move it around use arrow keys, or Shift + arrow keys for more precise placement"
+msgstr "Nuhtjh njoelide bïjre jarkan svïhtjedh jallh Shift-båalam + njoelide akten veelebe sæjjan"
 
 #: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:687
 #: ../../item-runner/src/runner/interactions/match/util/ariaHelper.js:41
@@ -4769,11 +4687,8 @@ msgid "You have %d attempts left for this question"
 msgstr "Dov leah %d pryövenassh aajmene"
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:190
-msgid ""
-"You have %d invalid answers out of %d. Please provide valid answers before "
-"proceeding."
-msgstr ""
-"Dov leah %d luhpehts vaestiedassh. Jarkelh vaestiedasside åvtelen jåarhkah."
+msgid "You have %d invalid answers out of %d. Please provide valid answers before proceeding."
+msgstr "Dov leah %d luhpehts vaestiedassh. Jarkelh vaestiedasside åvtelen jåarhkah."
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:154
 msgid "You have changed your answer since your last attempt."
@@ -4880,20 +4795,12 @@ msgid "You need to select from %d to %d choices"
 msgstr "Tjoerh %d raejeste %d alternatijvi raajan veeljedh"
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:121
-msgid ""
-"You still have %d attempts left. You won't be able to change your answer "
-"later if you skip this question."
-msgstr ""
-"Dov leah annje %d pryövenassh aajmene. Ih maehtieh vaestiedassem jarkelidh "
-"jis jåarhkah."
+msgid "You still have %d attempts left. You won't be able to change your answer later if you skip this question."
+msgstr "Dov leah annje %d pryövenassh aajmene. Ih maehtieh vaestiedassem jarkelidh jis jåarhkah."
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:68
-msgid ""
-"You still have %d incomplete questions, if you submit you won't be able to "
-"change your answers."
-msgstr ""
-"Dov leah annje %d laavenjassh mejtie ih leah vaestiedamme. Ih maehtieh dov "
-"vaestiedassh jarkelidh gosse leah deelleme."
+msgid "You still have %d incomplete questions, if you submit you won't be able to change your answers."
+msgstr "Dov leah annje %d laavenjassh mejtie ih leah vaestiedamme. Ih maehtieh dov vaestiedassh jarkelidh gosse leah deelleme."
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:216
 msgid "You will be able to navigate away once you answer the question."
@@ -5439,6 +5346,48 @@ msgstr "vååksjeme"
 msgid "volume"
 msgstr "volume"
 
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:63
+msgid "You have reached the end of the test. Are you sure you want to submit the test for scoring?"
+msgstr "Sïjhth deelledh jïh orrijidh?"
+
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:64
+msgid "Are you sure you want to submit this part and proceed to the next one?"
+msgstr "Sïjhth deelledh jïh mubpien bealan jåerhkedh?"
+
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:69
+msgid "You won't be able to go back to review or change your answers after submission."
+msgstr "Ih maehtieh dov vaestiedassh vuartasjidh gosse leah deelleme."
+
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:71
+msgid "You still have %d incomplete questions. If you submit the test you won't be able to go back to complete unanswered questions or change your answers."
+msgstr "Dov leah annje %d laavenjassh mejtie ih leah vaestiedamme. Ih maehtieh dov vaestiedassh jarkelidh gosse leah deelleme."
+
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:74
+msgid "You still have %d incomplete questions. If you submit this part you won't be able to go back to complete unanswered questions or change your answers."
+msgstr "Dov leah annje %d laavenjassh mejtie ih leah vaestiedamme. Ih maehtieh dov vaestiedassh jarkelidh gosse leah deelleme."
+
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:93
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:103
+msgid "Submit the Test"
+msgstr "Orrijh jïh deellh"
+
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:93
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:103
+msgid "Submit and proceed"
+msgstr "Deellh daam bieliem"
+
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:164
+msgid "(dot)"
+msgstr "(punktum)"
+
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:165
+msgid "(comma)"
+msgstr "(komma)"
+
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:174
+msgid "Invalid value, use %s %s for decimal point separator"
+msgstr "Ugyldig verdi, bruk %s %s som desimaltegn"
+
 #, fuzzy
 #~ msgid "%s has been placed down"
 #~ msgstr "%s lea biejesovveme"
@@ -5460,12 +5409,8 @@ msgstr "volume"
 #~ msgid "{currentTime} of {duration}"
 #~ msgstr "{currentTime} av {duration}"
 
-#~ msgid ""
-#~ "Press enter or space to place down. To browse other groups use the arrow "
-#~ "keys. Press escape to cancel."
-#~ msgstr ""
-#~ "Trykk Enter eller mellomromstasten for å plassere. Bruk piltastene for å "
-#~ "gå videre. Trykk Escape-tasten for å avbryte."
+#~ msgid "Press enter or space to place down. To browse other groups use the arrow keys. Press escape to cancel."
+#~ msgstr "Trykk Enter eller mellomromstasten for å plassere. Bruk piltastene for å gå videre. Trykk Escape-tasten for å avbryte."
 
 #~ msgid "added choice %s to set %s"
 #~ msgstr "alternativ %s til %s"
@@ -5476,11 +5421,8 @@ msgstr "volume"
 #~ msgid "return %s to the unused choices"
 #~ msgstr "legg tilbake %s"
 
-#~ msgid ""
-#~ " Press enter or space to grab. To move to next available answer, use the "
-#~ "arrow keys."
-#~ msgstr ""
-#~ " Trykk Enter eller mellomrom for å gripe. Bruk piltaster for å flytte."
+#~ msgid " Press enter or space to grab. To move to next available answer, use the arrow keys."
+#~ msgstr " Trykk Enter eller mellomrom for å gripe. Bruk piltaster for å flytte."
 
 #~ msgid "Unexpected error"
 #~ msgstr "Uventet feil"
@@ -5505,40 +5447,3 @@ msgstr "volume"
 
 #~ msgid "You have to order at least 1 choice"
 #~ msgstr "Sorter minst ett alternativ"
-
-
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:63
-msgid "You have reached the end of the test. Are you sure you want to submit the test for scoring?"
-msgstr "Sïjhth deelledh jïh orrijidh?"
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:64
-msgid "Are you sure you want to submit this part and proceed to the next one?"
-msgstr "Sïjhth deelledh jïh mubpien bealan jåerhkedh?"
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:69
-msgid "You won't be able to go back to review or change your answers after submission."
-msgstr "Ih maehtieh dov vaestiedassh vuartasjidh gosse leah deelleme."
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:71
-msgid "You still have %d incomplete questions. If you submit the test you won't be able to go back to complete unanswered questions or change your answers."
-msgstr "Dov leah annje %d laavenjassh mejtie ih leah vaestiedamme. Ih maehtieh dov vaestiedassh jarkelidh gosse leah deelleme."
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:74
-msgid "You still have %d incomplete questions. If you submit this part you won't be able to go back to complete unanswered questions or change your answers."
-msgstr "Dov leah annje %d laavenjassh mejtie ih leah vaestiedamme. Ih maehtieh dov vaestiedassh jarkelidh gosse leah deelleme."
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:93
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:103
-msgid "Submit the Test"
-msgstr "Orrijh jïh deellh"
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:93
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:103
-msgid "Submit and proceed"
-msgstr "Deellh daam bieliem"
-
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:164
-msgid "(dot)"
-msgstr "(punktum)"
-
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:165
-msgid "(comma)"
-msgstr "(komma)"
-
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:174
-msgid "Invalid value, use %s %s for decimal point separator"
-msgstr "Ugyldig verdi, bruk %s %s som desimaltegn"

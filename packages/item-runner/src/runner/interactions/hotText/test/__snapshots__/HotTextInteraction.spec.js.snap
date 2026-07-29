@@ -6,12 +6,18 @@ exports[`HotTextInteraction > renders a blockTree with checkboxes if maxChoices=
     <div
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-hottextInteraction tao-control-input-default"
+      dir=""
       name="tao-hottext-interaction-123"
     >
+      
        
       <div
         class="qti-instruction-container"
-      />
+        dir=""
+      >
+        
+      </div>
+      
        
       <div
         class="qti-flow-container"
@@ -20,7 +26,15 @@ exports[`HotTextInteraction > renders a blockTree with checkboxes if maxChoices=
           class="qti-block"
           tabindex="0"
         >
+          
+          
+          
           <p>
+            
+            
+            
+            
+            
             <label
               class="qti-hottext"
             >
@@ -40,13 +54,20 @@ exports[`HotTextInteraction > renders a blockTree with checkboxes if maxChoices=
                 <path
                   d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                 />
+                
               </svg>
+              
+              
                
               moo
+              
             </label>
             
             
+            
              TEXT 
+            
+            
             
             <label
               class="qti-hottext"
@@ -67,13 +88,20 @@ exports[`HotTextInteraction > renders a blockTree with checkboxes if maxChoices=
                 <path
                   d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                 />
+                
               </svg>
+              
+              
                
               oink
+              
             </label>
             
             
+            
              TEXT 
+            
+            
             
             <label
               class="qti-hottext"
@@ -94,21 +122,30 @@ exports[`HotTextInteraction > renders a blockTree with checkboxes if maxChoices=
                 <path
                   d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                 />
+                
               </svg>
+              
+              
                
               roar
+              
             </label>
             
             
             
-             
+            
+            
+            
           </p>
+          
           
           
           
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -119,23 +156,29 @@ exports[`HotTextInteraction > renders a blockTree with radios if maxChoices=1 1`
     <div
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-hottextInteraction tao-control-input-default"
+      dir=""
       name="tao-hottext-interaction-123"
     >
+      
        
       <div
         class="qti-instruction-container"
+        dir=""
       >
         <div
           aria-atomic="true"
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You must pick a maximum of 1 choice
           </p>
         </div>
+        
       </div>
+      
        
       <div
         class="qti-flow-container"
@@ -144,7 +187,15 @@ exports[`HotTextInteraction > renders a blockTree with radios if maxChoices=1 1`
           class="qti-block"
           tabindex="0"
         >
+          
+          
+          
           <p>
+            
+            
+            
+            
+            
             <label
               class="qti-hottext radio"
             >
@@ -155,12 +206,17 @@ exports[`HotTextInteraction > renders a blockTree with radios if maxChoices=1 1`
               />
                
               <span />
+              
                
               moo
+              
             </label>
             
             
+            
              TEXT 
+            
+            
             
             <label
               class="qti-hottext radio"
@@ -172,12 +228,17 @@ exports[`HotTextInteraction > renders a blockTree with radios if maxChoices=1 1`
               />
                
               <span />
+              
                
               oink
+              
             </label>
             
             
+            
              TEXT 
+            
+            
             
             <label
               class="qti-hottext radio"
@@ -189,20 +250,27 @@ exports[`HotTextInteraction > renders a blockTree with radios if maxChoices=1 1`
               />
                
               <span />
+              
                
               roar
+              
             </label>
             
             
             
-             
+            
+            
+            
           </p>
+          
           
           
           
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -210,17 +278,20 @@ exports[`HotTextInteraction > renders a blockTree with radios if maxChoices=1 1`
 exports[`HotTextInteraction > renders correct feedbacks 1`] = `
 <div
   class="qti-instruction-container"
+  dir=""
 >
   <div
     aria-atomic="true"
     class="feedback info fullwidth"
     role="status"
   >
+    
      
     <p>
       You must pick at least 1 choice and a maximum of 3 - Currently 2
     </p>
   </div>
+  
 </div>
 `;
 
@@ -240,21 +311,26 @@ exports[`HotTextInteraction > renders props into markup 1`] = `
       name="tao-hottext-interaction-123"
       role="someUniqueRole"
     >
+      
        
       <div
         class="qti-instruction-container"
+        dir=""
       >
         <div
           aria-atomic="true"
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You must pick a maximum of 1 choice
           </p>
         </div>
+        
       </div>
+      
        
       <div
         class="qti-flow-container"
@@ -264,9 +340,13 @@ exports[`HotTextInteraction > renders props into markup 1`] = `
           tabindex="0"
         >
           
+          
+          
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -274,11 +354,14 @@ exports[`HotTextInteraction > renders props into markup 1`] = `
 exports[`HotTextInteraction > renders the instruction lang on the feedback block 1`] = `
 <body>
   <div>
+    
     <div
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-hottextInteraction tao-control-input-default"
+      dir=""
       name="tao-hottext-interaction-123"
     >
+      
        
       <div
         class="qti-instruction-container"
@@ -290,12 +373,15 @@ exports[`HotTextInteraction > renders the instruction lang on the feedback block
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You must pick a maximum of 2 choices
           </p>
         </div>
+        
       </div>
+      
        
       <div
         class="qti-flow-container"
@@ -304,7 +390,15 @@ exports[`HotTextInteraction > renders the instruction lang on the feedback block
           class="qti-block"
           tabindex="0"
         >
+          
+          
+          
           <p>
+            
+            
+            
+            
+            
             <label
               class="qti-hottext"
             >
@@ -324,13 +418,20 @@ exports[`HotTextInteraction > renders the instruction lang on the feedback block
                 <path
                   d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                 />
+                
               </svg>
+              
+              
                
               moo
+              
             </label>
             
             
+            
              TEXT 
+            
+            
             
             <label
               class="qti-hottext"
@@ -351,13 +452,20 @@ exports[`HotTextInteraction > renders the instruction lang on the feedback block
                 <path
                   d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                 />
+                
               </svg>
+              
+              
                
               oink
+              
             </label>
             
             
+            
              TEXT 
+            
+            
             
             <label
               class="qti-hottext"
@@ -378,21 +486,30 @@ exports[`HotTextInteraction > renders the instruction lang on the feedback block
                 <path
                   d="M3 6l4 4 6-7 2 2-8 9-6-6 2-2z"
                 />
+                
               </svg>
+              
+              
                
               roar
+              
             </label>
             
             
             
-             
+            
+            
+            
           </p>
+          
           
           
           
         </div>
       </div>
     </div>
+    
+    
     
   </div>
 </body>

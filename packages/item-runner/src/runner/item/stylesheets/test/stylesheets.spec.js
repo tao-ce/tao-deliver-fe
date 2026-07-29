@@ -163,8 +163,6 @@ describe('scopeStyles', () => {
 describe('convertPxToRem', () => {
     const cssRulesToString = cssRules => cssRules.map(rule => rule.cssText).join('\n');
 
-    //media too!!!
-
     const sampleRules = [
         `body div.qti-item .grid-row p:first-child {
             font-size: 12px !important;

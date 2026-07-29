@@ -62,8 +62,8 @@ export default function dropAreaRegistryFactory() {
          * @param {String} areaKey - draggable identifier part 2
          * @param {Number} pointerX - mouse/touch x coordinate
          * @param {Number} pointerY - mouse/touch y coordinate
-         * @fires {CustomEvent} dragOver - if draggable moves over some droparea
-         * @fires {CustomEvent} dragOut - if draggable exits some droparea
+         * @fires dragOver {CustomEvent} - if draggable moves over some droparea
+         * @fires dragOut {CustomEvent} - if draggable exits some droparea
          */
         handleDragMove(key, areaKey, pointerX, pointerY) {
             const overElement = document.elementFromPoint(pointerX, pointerY);
@@ -104,7 +104,7 @@ export default function dropAreaRegistryFactory() {
          * Draggable notifies about its dragStop event
          * @param {String} key - draggable identifier part 1
          * @param {String} areaKey - draggable identifier part 2
-         * @fires {CustomEvent} drop - if draggable was over some droparea
+         * @fires drop {CustomEvent} - if draggable was over some droparea
          */
         handleDragStop(key, areaKey) {
             if (overDroparea) {

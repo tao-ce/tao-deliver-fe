@@ -23,7 +23,7 @@ describe('ItemPreviewer', () => {
         Element.prototype.scroll = scrollMock;
     });
 
-    it('it renders correctly', () => {
+    it('renders correctly', () => {
         const { container } = render(ItemPreviewer, { itemIdentifier: 'item-123' });
         expect(container).toMatchSnapshot();
     });
@@ -106,4 +106,113 @@ describe('ItemPreviewer', () => {
         expect(errorListenerMock).toHaveBeenCalled();
         expect(closeListenerMock).toHaveBeenCalled();
     });
+
+    it('calls renderFeedbacks when displayFeedback is true', () =>
+        new Promise(resolve => {
+            const renderFeedbacksMock = vi.fn();
+            const mockItemRunner = {
+                renderFeedbacks: renderFeedbacksMock
+            };
+
+            const { container } = render(ItemPreviewer, {
+                itemIdentifier: 'item-123',
+                options: { itemRunnerConfig: { previewerMode: { submitResponseUrl: 'https://example.com/' } } },
+                itemRunner: mockItemRunner,
+                content: {
+                    data: {
+                        feedbacks: {
+                            feedback1: { title: 'Test Feedback', content: 'Feedback content' }
+                        }
+                    }
+                }
+            });
+
+            const fetchDonePromise = new Promise(fetchDone => {
+                fetch.mockImplementation(function () {
+                    setTimeout(fetchDone);
+                    return Promise.resolve(
+                        new Response(
+                            JSON.stringify({
+                                success: true,
+                                displayFeedback: true,
+                                itemSession: { FEEDBACK_1: { base: { identifier: 'feedback1' } } }
+                            }),
+                            {
+                                headers: {
+                                    'Content-Type': 'application/json; charset=UTF-8'
+                                }
+                            }
+                        )
+                    );
+                });
+            });
+
+            fireEvent.click(container.querySelector('[data-test-id="toggle-response-panel"]'));
+            tick().then(() => {
+                fireEvent.click(container.querySelector('[data-test-id="submit-response"]'));
+
+                fetchDonePromise.then(() => {
+                    tick().then(() => {
+                        expect(renderFeedbacksMock).toHaveBeenCalledWith(
+                            { feedback1: { title: 'Test Feedback', content: 'Feedback content' } },
+                            { FEEDBACK_1: { base: { identifier: 'feedback1' } } }
+                        );
+                        resolve();
+                    });
+                });
+            });
+        }));
+
+    it('does not call renderFeedbacks when displayFeedback is false', () =>
+        new Promise(resolve => {
+            const renderFeedbacksMock = vi.fn();
+            const mockItemRunner = {
+                renderFeedbacks: renderFeedbacksMock
+            };
+
+            const { container } = render(ItemPreviewer, {
+                itemIdentifier: 'item-123',
+                options: { itemRunnerConfig: { previewerMode: { submitResponseUrl: 'https://example.com/' } } },
+                itemRunner: mockItemRunner,
+                content: {
+                    data: {
+                        feedbacks: {
+                            feedback1: { title: 'Test Feedback', content: 'Feedback content' }
+                        }
+                    }
+                }
+            });
+
+            const fetchDonePromise = new Promise(fetchDone => {
+                fetch.mockImplementation(function () {
+                    setTimeout(fetchDone);
+                    return Promise.resolve(
+                        new Response(
+                            JSON.stringify({
+                                success: true,
+                                displayFeedback: false,
+                                itemSession: {}
+                            }),
+                            {
+                                headers: {
+                                    'Content-Type': 'application/json; charset=UTF-8'
+                                }
+                            }
+                        )
+                    );
+                });
+            });
+
+            fireEvent.click(container.querySelector('[data-test-id="toggle-response-panel"]'));
+            tick().then(() => {
+                fireEvent.click(container.querySelector('[data-test-id="submit-response"]'));
+
+                fetchDonePromise.then(() => {
+                    tick().then(() => {
+                        expect(renderFeedbacksMock).not.toHaveBeenCalled();
+                        resolve();
+                    });
+                });
+            });
+        }));
 });

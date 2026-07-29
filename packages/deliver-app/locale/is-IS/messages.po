@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tao-ignite\n"
-"POT-Creation-Date: 2025-09-10 13:17\n"
-"PO-Revision-Date: 2025-09-11 02:38\n"
+"POT-Creation-Date: 2026-05-12 13:56\n"
+"PO-Revision-Date: 2026-05-13 01:53\n"
 "Last-Translator: \n"
 "Language-Team: Icelandic\n"
 "Language: is\n"
@@ -32,11 +32,11 @@ msgstr[1] "%d fleiri atriði"
 msgid "breadcrumb"
 msgstr "brauðmolar"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:64
+#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:66
 msgid "the result is"
 msgstr "niðurstaðan er"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:65
+#: ../../../node_modules/@oat-sa-private/ui-components/calculator/Calculator.svelte:67
 msgid "Input area"
 msgstr "Innsláttarsvæði"
 
@@ -160,7 +160,7 @@ msgstr "Óendanleiki"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:196
 msgid "Syntax error"
-msgstr "Setningafræðivilla"
+msgstr "Málskipanarvilla"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:202
 msgid "exp"
@@ -189,11 +189,11 @@ msgstr "nth rót einingar"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:227
 msgid "sin"
-msgstr "synd"
+msgstr "sin"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:228
 msgid "sine"
-msgstr "sinu"
+msgstr "sine"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:232
 msgid "cos"
@@ -205,11 +205,11 @@ msgstr "kósínus"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:237
 msgid "tan"
-msgstr "brúnku"
+msgstr "tan"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:238
 msgid "tangent"
-msgstr "snerti"
+msgstr "tangent"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:243
 msgid "arcsine"
@@ -277,7 +277,7 @@ msgstr "AC"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:300
 msgid "all clear"
-msgstr "allt á hreinu"
+msgstr "allt hreint"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:304
 msgid "="
@@ -318,11 +318,11 @@ msgstr "lið"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:344
 msgid "multiply by ten in the power of"
-msgstr "margfaldaðu með tíu í krafti"
+msgstr "margfalda með tíu í veldinu"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:347
 msgid "comma"
-msgstr "kommu"
+msgstr "komma"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:348
 msgid "ellipsis"
@@ -374,7 +374,7 @@ msgstr "óendanlegt"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:366
 msgid "syntax error"
-msgstr "setningafræðivilla"
+msgstr "málskipanarvilla"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:368
 msgid "square root of"
@@ -390,19 +390,19 @@ msgstr "nth rót af"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:371
 msgid "floor value of"
-msgstr "gólfverð á"
+msgstr "lægsta gildi á"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:372
 msgid "ceil value of"
-msgstr "loft gildi af"
+msgstr "hæsta gildi af"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:373
 msgid "round value of"
-msgstr "umferð verðmæti"
+msgstr "námundað gildi"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:374
 msgid "truncate value of"
-msgstr "stytta gildi af"
+msgstr "stytta gildi"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:375
 msgid "sine of"
@@ -471,40 +471,52 @@ msgstr "algildi á"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/calculator/labels.js:392
 msgid "random value"
-msgstr "tilviljunarkennd gildi"
+msgstr "tilviljunarkennt gildi"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/chip/Chip.svelte:15
 msgid "Remove"
+msgstr "Fjarlægja"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/colorPicker/ColorPicker.svelte:16
+msgid "Please provide a valid CSS color value (e.g. #RRGGBB, rgb(...), rgba(...))."
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/colorPicker/ColorPicker.svelte:35
+msgid "This field is required."
 msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:248
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:41
 msgid "Manage Preferences"
-msgstr ""
+msgstr "Stýra stillingum"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:250
 msgid "Customize your cookie preferences. You can choose which types of cookies you want to allow to improve your experience."
-msgstr ""
+msgstr "Sérsníða stillingar fyrir vafrakökur. Þú getur valið þær vafrakökur sem þú vilt leyfa til að bæta upplifun þína."
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:262
 msgid "Always Active"
+msgstr "Alltaf virkt"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:279
+msgid "Confirm Choices"
 msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:29
 msgid "Cookie Policy"
-msgstr ""
+msgstr "Vafrakökustefna"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:30
 msgid "This site uses cookies to improve your browsing experience and to perform analytics and research. To change your preferences, click Manage preferences. Otherwise, clicking Accept all cookies indicates you agree to our use of cookies on your device. Clicking Reject all cookies means you do not agree to our use of non-strictly necessary cookies on your device."
-msgstr ""
+msgstr "Þessi síða notar vafrakökur til að gera upplifun þína betri og til að framkvæma greiningar og rannsóknir. Til að breyta stillingum skaltu smella á Stjórna stillingum. Annars samþykkir þú notkun okkar á vafrakökum á tækinu þínu með því að smella á Samþykkja allar vafrakökur. Með því að smella á Hafna öllum vafrakökum samþykkir þú ekki notkun á ónauðsynlegum vafrakökum á tækinu þínu."
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:46
 msgid "Reject All"
-msgstr ""
+msgstr "Hafna öllum"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/cookiePolicy/CookiePolicy.svelte:52
 msgid "Accept All"
-msgstr ""
+msgstr "Samþykkja allar"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/dataTable/DragButtonCell.svelte:45
 msgid "Press enter or space to select the row to reorder"
@@ -703,55 +715,70 @@ msgstr "hætta við"
 msgid "ok"
 msgstr "allt í lagi"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:409
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:197
 msgid "Document toolbar"
 msgstr "Verkfærastika skjala"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:412
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:202
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:283
+msgid "Search"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:214
 msgid "Zoom in"
 msgstr "Stækka"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:418
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:220
 msgid "Zoom out"
 msgstr "Minnka"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:427
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:229
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:296
 msgid "Previous"
 msgstr "Fyrri"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:445
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:246
 msgid "of %d"
 msgstr "af %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:449
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:249
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:305
 msgid "Next"
-msgstr "Næst"
+msgstr "Næsta"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:461
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:261
 msgid "Download"
 msgstr "Sækja"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:469
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:269
 msgid "Open in new tab"
+msgstr "Opna í nýjum flipa"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:291
+msgid "%d of %d matches"
 msgstr ""
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:491
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentToolbar.svelte:292
+msgid "No matches found"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:295
 msgid "Open in new tab: %s"
-msgstr ""
+msgstr "Opna í nýjum flipa: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:83
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:91
 msgid "Missing PDF file %s"
 msgstr "Vantar PDF skjal %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:85
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:93
 msgid "Invalid or corrupted PDF file."
 msgstr "Ógild eða skemmd PDF-skrá."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:87
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:95
 msgid "An error occurred while loading the PDF."
 msgstr "Villa kom upp við að hlaða PDF-skjalinu."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:199
+#: ../../../node_modules/@oat-sa-private/ui-components/documentViewer/DocumentViewer.svelte:139
 msgid "Missing PDF file."
 msgstr "Vantar PDF skjal."
 
@@ -761,13 +788,13 @@ msgstr "%s, %d atriði"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableList.svelte:17
 msgid "draggable list"
-msgstr "draganlegur lista"
+msgstr "draganlegur listi"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:434
+#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:435
 msgid "You can use this option %d times."
 msgstr "Þú getur notað þennan valkost %d sinnum."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:439
+#: ../../../node_modules/@oat-sa-private/ui-components/dragAndDrop/DraggableListButton.svelte:440
 msgid "You can use this option multiple times."
 msgstr "Þú getur notað þennan valmöguleika mörgum sinnum."
 
@@ -775,73 +802,113 @@ msgstr "Þú getur notað þennan valmöguleika mörgum sinnum."
 msgid "Close Panel"
 msgstr "Lokaðu"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:413
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:107
+msgid "... or drop your file here"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:112
+msgid "Accepted: %s"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:114
+msgid "Up to %s files"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/DropZone.svelte:116
+msgid "Max size: %s"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:152
 msgid "File selected successfully"
 msgstr "Skrá valin"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:417
-msgid "Answer file selected:"
-msgstr "Svarskrá valin:"
-
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:422
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:165
 msgid "This file is not accepted"
 msgstr "Þessi skrá er ekki samþykkt"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:426
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:176
+msgid "Remove file %s"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileItem.svelte:30
+msgid "File selected:"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:412
 msgid "Select different file"
 msgstr "Veldu aðra skrá"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:435
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:421
 msgid "Clear file"
 msgstr "Hreinsa skrá"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:445
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:431
 msgid "Browse your computer"
 msgstr "Leitaðu í tölvunni þinni"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:447
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:433
 msgid "Select a file"
 msgstr "Veldu skrá"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:450
-msgid "expected formats: %s"
-msgstr "æskileg snið: %s"
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:441
+msgid "Maximum file size: %s"
+msgstr ""
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:453
-msgid "maximum file size: %s"
-msgstr "hámarks skráarstærð: %s"
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:50
+msgid "Answer file selected:"
+msgstr "Svarskrá valin:"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:467
-msgid "..or drop your file here"
-msgstr "...eða slepptu skránni þinni hér"
-
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:144
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:150
 msgid "Folders are not accepted, expected formats are: %s"
 msgstr "Ekki er tekið við möppum, æskileg snið eru: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:146
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:152
 msgid "files"
 msgstr "skrár"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:148
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:154
 msgid "Empty files are not accepted, please try again."
 msgstr "Ekki er tekið við tómum skrám, vinsamlegast reyndu aftur."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:150
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:156
 msgid "The size of the selected file is %s that is more than the accepted %s"
 msgstr "Stærðin á valinni skrá er %s sem er stærra en hámarksstærð, %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:157
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:163
 msgid "The %s file format is not accepted, expected formats are: %s"
 msgstr "%s skráarsniðið er ekki samþykkt, æskileg snið eru: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:163
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:169
 msgid "The unknown file format is not accepted, expected formats are: %s"
 msgstr "Óþekkt skráarsnið er ekki samþykkt, æskileg snið eru: %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:165
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/FileSelect.svelte:171
 msgid "Multiple files are not accepted. Please try again."
 msgstr "Ekki er tekið við mörgum skrám í einu. Reyndu aftur."
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:222
+msgid "%d of %d"
+msgstr "%d af %d"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:228
+msgid "Add file"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:236
+msgid "Remove all"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:253
+msgid "Select files"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:268
+msgid "Maximum file size: %s. "
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/MultiFileSelect.svelte:269
+msgid "Up to %d files"
+msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/mimetype.js:31
 msgid "all images"
@@ -854,6 +921,10 @@ msgstr "öll myndbönd"
 #: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/mimetype.js:33
 msgid "all audios"
 msgstr "allt hljóð"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/fileSelect/util/validation.js:80
+msgid "No file selected."
+msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-components/languageSelector/LanguageSelector.svelte:99
 msgid "Select language"
@@ -893,13 +964,13 @@ msgstr "loka"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/navigationMenu/NavigationMenu.svelte:240
 msgid "Collapse Menu"
-msgstr ""
+msgstr "Loka valmynd"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/navigationMenu/NavigationMenu.svelte:240
 msgid "Expand Menu"
-msgstr ""
+msgstr "Opna valmynd"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/notificationContainer/NotificationContainer.svelte:202
+#: ../../../node_modules/@oat-sa-private/ui-components/notificationContainer/NotificationContainer.svelte:203
 msgid "Notifications"
 msgstr "Tilkynningar"
 
@@ -935,103 +1006,103 @@ msgstr "Sýna lykilorð"
 msgid "Hide password"
 msgstr "Fela lykilorð"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1280
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1288
 msgid "Media error detected"
 msgstr "Villa í upphleðslu"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1281
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1289
 msgid "Please reload the media to try again"
 msgstr "Vinsamlegast endurhlaðið miðilinn til að reyna aftur"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1322
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:1330
 msgid "media player"
 msgstr "fjölmiðlaspilari"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:186
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:194
 msgid "start playing"
 msgstr "byrja að spila"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:188
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:196
 msgid "play again"
 msgstr "spila aftur"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:192
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:200
 msgid "resume playing"
 msgstr "halda áfram að spila"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:254
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:262
 msgid "Play"
 msgstr "Spila"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:255
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:263
 msgid "Play: %d of %d"
 msgstr "Spila: %d af %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:267
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:275
 msgid "delete"
 msgstr "eyða"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:471
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:479
 msgid "%s of %s"
 msgstr "%s af %s"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:809
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:817
 msgid "play"
 msgstr "spila"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:810
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:818
 msgid "pause"
 msgstr "hlé"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:811
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:819
 msgid "mute"
 msgstr "hljóðlaus"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:812
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:820
 msgid "unmute"
-msgstr "slökkva á hljóði"
+msgstr "kveikja á hljóði"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:813
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:821
 msgid "enter fullscreen"
 msgstr "fara í heilskjá"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:814
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:822
 msgid "exit fullscreen"
 msgstr "fara úr heilskjá"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:815
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:823
 msgid "volume"
-msgstr "bindi"
+msgstr "hljóðstyrkur"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:816
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:824
 msgid "seek"
-msgstr "leita"
+msgstr "leitar"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:818
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:826
 msgid "buffered"
-msgstr "biðminni"
+msgstr "hleður"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:819
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:827
 msgid "Player for {title}"
 msgstr "Spilari fyrir {title}"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:820
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:828
 msgid "Captions"
-msgstr "Skýringartextar"
+msgstr "Skýringatextar"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:821
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:829
 msgid "Settings"
 msgstr "Stillingar"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:822
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:830
 msgid "Go back to previous menu"
 msgstr "Fara aftur í fyrri valmynd"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:823
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:831
 msgid "Disabled"
-msgstr "Öryrkjar"
+msgstr "Óvirkt"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:824
+#: ../../../node_modules/@oat-sa-private/ui-components/player/Player.svelte:832
 msgid "Enabled"
 msgstr "Virkt"
 
@@ -1059,23 +1130,23 @@ msgstr "Þegar í yfirferð"
 msgid "Rejected."
 msgstr "Hafnað."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:68
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:70
 msgid "Select option"
-msgstr "Veldu valkost"
+msgstr "Veldu"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:82
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:84
 msgid "List is empty"
 msgstr "Listinn er tómur"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:83
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:85
 msgid "No results found."
 msgstr "Engar niðurstöður fundust."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:768
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:771
 msgid "This is a required field."
 msgstr "Þessu verður að svara."
 
-#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:775
+#: ../../../node_modules/@oat-sa-private/ui-components/searchableDropdown/SearchableDropdown.svelte:778
 msgid "Invalid value."
 msgstr "Óleyfilegt gildi."
 
@@ -1087,29 +1158,29 @@ msgstr "ALLT"
 msgid "SELECTED"
 msgstr "VALIÐ"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:796
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:808
 msgid "eliminated"
 msgstr "eytt"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:798
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:810
 msgid "masked"
-msgstr "Sigurgrímuklæddur"
+msgstr "falið"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:809
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:821
 msgid "restore choice number %d"
 msgstr "endurheimta valið númer %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:810
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:822
 msgid "eliminate choice number %d"
 msgstr "útiloka valið númer %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:821
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:833
 msgid "unmask choice number %d"
 msgstr "sýna valið númer %d"
 
-#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:822
+#: ../../../node_modules/@oat-sa-private/ui-components/selectableChoices/SelectableChoice.svelte:834
 msgid "mask choice number %d"
-msgstr "Sigurgrímuvalsnúmer %d"
+msgstr "fela númer valkostar %d"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/stepProgress/StepProgress.svelte:32
 msgid "visited"
@@ -1135,6 +1206,10 @@ msgstr "að hluta"
 #: ../../../node_modules/@oat-sa-private/ui-components/stepProgress/StepProgress.svelte:38
 msgid "waiting"
 msgstr "bið"
+
+#: ../../../node_modules/@oat-sa-private/ui-components/tabGroup/TabGroup.svelte:223
+msgid "%s moved to position %d of %d"
+msgstr ""
 
 #: ../../../node_modules/@oat-sa-private/ui-components/tree/ExpandButton.svelte:102
 msgid "Collapse"
@@ -1166,7 +1241,7 @@ msgstr "Aðgerðir"
 
 #: ../../../node_modules/@oat-sa-private/ui-components/volumeVisualizer/VolumeVisualizer.svelte:29
 msgid "Input level"
-msgstr "Inntaksstig"
+msgstr "Skráning"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:38
 msgid "Afrikaans"
@@ -1351,7 +1426,7 @@ msgstr "Makedónía"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:308
 msgid "Malayalam"
-msgstr "Malæjalam"
+msgstr "Malajalam"
 
 #: ../../../node_modules/@oat-sa-private/ui-core/i18n/languageNames.js:314
 msgid "Mongolian"
@@ -1861,9 +1936,9 @@ msgstr "%ds"
 msgid "button"
 msgstr "hnappur"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:963
+#: ../../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:962
 msgid "Dropdown"
-msgstr "Fellilistie"
+msgstr "Fellilisti"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/dropdown/Dropdown.svelte:989
 msgid "dropdown list"
@@ -1909,43 +1984,43 @@ msgstr "hlekkur"
 msgid "Radio button"
 msgstr "Fjölval"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:35
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:40
 msgid "Text editor"
 msgstr "Textaritill"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:50
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:56
 msgid "Sorry, this action is not supported in the text editor."
 msgstr "Þessi aðgerð er ekki möguleg."
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:175
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/RichTextEditor.svelte:188
 msgid "Editor toolbar"
 msgstr "Verkfærastika ritstjóra"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:223
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:222
 msgid "Paragraph"
 msgstr "Málsgrein"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:224
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:223
 msgid "Heading 1"
 msgstr "Fyrirsögn 1"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:225
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:224
 msgid "Heading 2"
 msgstr "Fyrirsögn 2"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:253
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:252
 msgid "Tiny"
 msgstr "Smátt"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:257
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:256
 msgid "Small"
 msgstr "Lítið"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:262
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:261
 msgid "Big"
 msgstr "Stórt"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:266
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/ckeditor.js:265
 msgid "Huge"
 msgstr "Mjög stórt"
 
@@ -2036,19 +2111,19 @@ msgstr "Minnka inndrátt"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:26
 msgid "Align left"
-msgstr "Stilltu til vinstri"
+msgstr "Vinstri jöfnun"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:27
 msgid "Align right"
-msgstr "Stilltu til hægri"
+msgstr "Hægri jöfnun"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:28
 msgid "Align center"
-msgstr "Samræma miðju"
+msgstr "Miðjað"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:29
 msgid "Justify"
-msgstr "Rökstyðja"
+msgstr "Jafnað"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:30
 msgid "Text alignment"
@@ -2056,11 +2131,11 @@ msgstr "Textajöfnun"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:31
 msgid "Text alignment toolbar"
-msgstr "Textajöfnunartækjastika"
+msgstr "Textajöfnunarstika"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:32
 msgid "Widget toolbar"
-msgstr "Tækjastika græju"
+msgstr "Smától stika"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:33
 msgid "Insert paragraph before block"
@@ -2076,7 +2151,7 @@ msgstr "Leturstærð"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:40
 msgid "Font Family"
-msgstr "Leturfjölskylda"
+msgstr "Leturgerð"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:41
 msgid "Default"
@@ -2088,15 +2163,15 @@ msgstr "Leturlitur"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:43
 msgid "Font Background Color"
-msgstr "Bakgrunnslitur leturs"
+msgstr "Bakgrunnslitur"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:44
 msgid "Document colors"
-msgstr "Skjallitir"
+msgstr "Litir skjala"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:45
 msgid "Bold"
-msgstr "Djarft"
+msgstr "Feitletrað"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:46
 msgid "Italic"
@@ -2104,7 +2179,7 @@ msgstr "Skáletrað"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:47
 msgid "Underline"
-msgstr "Undirstrika"
+msgstr "Undirstrikað"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:48
 msgid "Code"
@@ -2116,11 +2191,11 @@ msgstr "Yfirstrikað"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:50
 msgid "Subscript"
-msgstr "Áskrift"
+msgstr "Hnéletur"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:51
 msgid "Superscript"
-msgstr "Yfirskrift"
+msgstr "Brjóstletur"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:52
 msgid "Words: %d"
@@ -2960,7 +3035,7 @@ msgstr "Yfirlína"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:263
 msgid "Degree sign"
-msgstr "Gráðamerki"
+msgstr "Gráðumerki"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:264
 msgid "Minus sign"
@@ -2972,7 +3047,7 @@ msgstr "Plús mínus merki"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:266
 msgid "Division sign"
-msgstr "Deildarmerki"
+msgstr "Deilingarmerki"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:267
 msgid "Fraction slash"
@@ -2988,11 +3063,11 @@ msgstr "Latneskur smástafur f með krók"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:270
 msgid "Integral"
-msgstr "Óaðskiljanlegur"
+msgstr "Heildi"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:271
 msgid "N-ary summation"
-msgstr "N-ary samantekt"
+msgstr "Summutákn"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:273
 msgid "Square root"
@@ -3000,7 +3075,7 @@ msgstr "Kvaðratrót"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:274
 msgid "Tilde operator"
-msgstr "Tilde rekstraraðili"
+msgstr "Bugða"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:275
 msgid "Approximately equal to"
@@ -3048,11 +3123,11 @@ msgstr "Ekki merki"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:286
 msgid "Intersection"
-msgstr "Gatnamót"
+msgstr "Sniðmengi"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:287
 msgid "Union"
-msgstr "Samband"
+msgstr "Sammengi"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:288
 msgid "Partial differential"
@@ -3096,39 +3171,39 @@ msgstr "Almennt brot einn helmingur"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:298
 msgid "Vulgar fraction three quarters"
-msgstr "Dónabrot þrír fjórðu"
+msgstr "Almennt brot þrír fjórðu"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:299
 msgid "Single left-pointing angle quotation mark"
-msgstr "Ein gæsalapp sem vísar til vinstri"
+msgstr "Ein gæsalöpp sem vísar til vinstri"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:300
 msgid "Single right-pointing angle quotation mark"
-msgstr "Ein gæsalapp sem vísar til hægri"
+msgstr "Ein gæsalöpp sem vísar til hægri"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:301
 msgid "Left-pointing double angle quotation mark"
-msgstr "Tvö horns gæsalappir sem vísa til vinstri"
+msgstr "Tvöföld gæsalöpp sem vísar til vinstri"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:302
 msgid "Right-pointing double angle quotation mark"
-msgstr "Tvöföld gæsalapp sem vísar til hægri"
+msgstr "Tvöföld gæsalöpp sem vísar til hægri"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:303
 msgid "Left single quotation mark"
-msgstr "Vinstri stak gæsalappir"
+msgstr "Vinstri stök gæsalöpp"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:304
 msgid "Right single quotation mark"
-msgstr "Hægri gæsalappir"
+msgstr "Hægri stök gæsalöpp"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:305
 msgid "Left double quotation mark"
-msgstr "Tvöfalda gæsalappir til vinstri"
+msgstr "Vinstri gæsalappir"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:306
 msgid "Right double quotation mark"
-msgstr "Hægri tvöföld gæsalappir"
+msgstr "Hægri gæsalappir"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:307
 msgid "Single low-9 quotation mark"
@@ -3136,7 +3211,7 @@ msgstr "Einstök lág-9 gæsalappir"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:308
 msgid "Double low-9 quotation mark"
-msgstr "Tvöfalt lág-9 gæsalappir"
+msgstr "Tvöfalt tilvitnunarmerki"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:309
 msgid "Inverted exclamation mark"
@@ -3156,7 +3231,7 @@ msgstr "Lárétt sporbaug"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:313
 msgid "Double dagger"
-msgstr "Tvöfaldur rýtingur"
+msgstr "Tvírýtingur"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:314
 msgid "Per mille sign"
@@ -3172,7 +3247,7 @@ msgstr "Tvöfalt upphrópunarmerki"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:317
 msgid "Question exclamation mark"
-msgstr "Spurning upphrópunarmerki"
+msgstr "Spurningarmerki upphrópunarmerki"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:318
 msgid "Exclamation question mark"
@@ -3200,7 +3275,7 @@ msgstr "Hlutamerki"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:324
 msgid "Paragraph sign"
-msgstr "Málsgrein merki"
+msgstr "Málsgreinamerki"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:325
 msgid "Reversed paragraph sign"
@@ -3314,10 +3389,6 @@ msgstr "Rich Text Editor"
 msgid "Edit block"
 msgstr "Breyta blokk"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:355
-msgid "%d of %d"
-msgstr "%d af %d"
-
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:357
 msgid "Dropdown toolbar"
 msgstr "Tækjastika í fellivalmynd"
@@ -3368,7 +3439,7 @@ msgstr "Grænn"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:369
 msgid "Aquamarine"
-msgstr "Aquamarine"
+msgstr "Sægrænn"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:370
 msgid "Turquoise"
@@ -3752,11 +3823,11 @@ msgstr "Afritaðu valið efni"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:479
 msgid "Insert a hard break (a new paragraph)"
-msgstr "Settu inn harða brot (ný málsgrein)"
+msgstr "Settu inn föst greinaskil (ný málsgrein)"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:480
 msgid "Insert a soft break (a br element)"
-msgstr "Settu inn mjúkt brot (br element)"
+msgstr "Settu inn hverful línuskil (greinaskil)"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:481
 msgid "Italic text"
@@ -3852,7 +3923,7 @@ msgstr "Keyrðu hnappinn sem er í fókus. Að keyra hnappa sem hafa samskipti v
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:519
 msgid "Move focus between form fields (inputs, buttons, etc.)"
-msgstr "Færa fókus á milli formreita (inntak, hnappar osfrv.)"
+msgstr "Færa fókus á milli formreita (inntak, hnappar o.s.frv.)"
 
 #: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:522
 msgid "Move focus in and out of an active dialog window"
@@ -3874,7 +3945,71 @@ msgstr "Opnaðu aðgengishjálpargluggann"
 msgid "(may require <kbd>Fn</kbd>)"
 msgstr "(gæti krafist <kbd>Fn</kbd>)"
 
-#: ../../../node_modules/@oat-sa-private/ui-elements/slider/Slider.svelte:390
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:530
+msgid "Arrows"
+msgstr "Örvar"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:531
+msgid "Currency"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:532
+msgid "Mathematical"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:533
+msgid "Latin"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:534
+msgid "Text"
+msgstr "Texti"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:536
+msgid "Basic Latin"
+msgstr "Grunn latína"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:537
+msgid "Currency Symbols"
+msgstr "Gjaldeyristákn"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:538
+msgid "General Punctuation"
+msgstr "Almenn greinarmerki"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:539
+msgid "Latin-1 Supplement"
+msgstr "Latin-1 viðbót"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:540
+msgid "Latin Extended-A"
+msgstr "Latin Extended-A"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:541
+msgid "Letterlike Symbols"
+msgstr "Stafræn tákn"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:542
+msgid "Geometric Shapes"
+msgstr "Geómetrísk form"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:543
+msgid "Miscellaneous Symbols"
+msgstr "Ýmis tákn"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:544
+msgid "Mathematical Operators"
+msgstr "Stærðfræðilegar aðgerðir"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:545
+msgid "Greek and Coptic"
+msgstr "gríska og koptíska"
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/richTextEditor/translationMapping.js:547
+msgid "Latin common"
+msgstr ""
+
+#: ../../../node_modules/@oat-sa-private/ui-elements/slider/Slider.svelte:392
 msgid "default"
 msgstr "sjálfgefið"
 
@@ -3974,7 +4109,7 @@ msgstr "OpenDocument töflureiknisskjal"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:186
 msgid "C++ file"
-msgstr ""
+msgstr "C++ skrá"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:192
 msgid "C file"
@@ -3982,7 +4117,7 @@ msgstr "C skrá"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:198
 msgid "Pascal file"
-msgstr ""
+msgstr "Pascal skrá"
 
 #: ../../../node_modules/@oat-sa/tao-core-sdk/src/core/mimetype/definitions.js:204
 msgid "Audio Video Interleave"
@@ -4183,227 +4318,261 @@ msgstr "Microsoft Excel tvöfaldur snið"
 msgid "Microsoft Powerpoint slideshow"
 msgstr "Microsoft Powerpoint myndasýning"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:104
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:106
 msgid "Please select a language"
 msgstr "Vinsamlegast veldu tungumál"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:122
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:124
 msgid "Select"
 msgstr "Veldu"
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:54
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:56
 msgid "Something went wrong."
 msgstr "Eitthvað fór úrskeiðis."
 
-#: ../../apps-common/src/component/LanguageSelectionPage.svelte:55
+#: ../../apps-common/src/component/LanguageSelectionPage.svelte:57
 msgid "Please try again."
 msgstr "Vinsamlegast reyndu aftur."
 
-#: ../../apps-common/src/component/PasswordPage.svelte:131
+#: ../../apps-common/src/component/PasswordPage.svelte:134
 msgid "Please wait until you are given the password to begin"
 msgstr "Vinsamlegast bíddu þar til þú færð lykilorðið til að byrja"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:142
+#: ../../apps-common/src/component/PasswordPage.svelte:145
 msgid "Password"
 msgstr "Lykilorð"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:146
+#: ../../apps-common/src/component/PasswordPage.svelte:149
 msgid "Type here"
 msgstr "Skrifaðu hér"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:152
+#: ../../apps-common/src/component/PasswordPage.svelte:155
 msgid "Start"
 msgstr "Byrja"
 
-#: ../../apps-common/src/component/PasswordPage.svelte:45
+#: ../../apps-common/src/component/PasswordPage.svelte:48
 msgid "Wrong Password."
 msgstr "Rangt lykilorð."
 
-#: ../../apps-common/src/component/TheEnd.svelte:128
+#: ../../apps-common/src/component/TheEnd.svelte:179
+msgid "Exit browser"
+msgstr ""
+
+#: ../../apps-common/src/component/TheEnd.svelte:179
 msgid "Reload the page"
 msgstr "Endurhlaða síðu"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:160
+#: ../../apps-common/src/component/WaitingPage.svelte:164
 msgid "Logout"
 msgstr "Skrá út"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:164
+#: ../../apps-common/src/component/WaitingPage.svelte:168
 msgid "Hello"
 msgstr "Halló"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:166
+#: ../../apps-common/src/component/WaitingPage.svelte:170
 msgid "Great! You are ready, but the exam hasn't started yet."
 msgstr "Frábært! Þú ert á réttum stað en prófið er ekki byrjað."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:169
+#: ../../apps-common/src/component/WaitingPage.svelte:173
 msgid "If you have extra time, it is not shown here."
 msgstr "Viðbótartími sést ekki hér."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:172
+#: ../../apps-common/src/component/WaitingPage.svelte:176
 msgid "You are registered with %s as your main language. Contact a proctor if this is not correct."
-msgstr "Þú ert með %s sem aðaltungumál. Hafðu samband við lækni ef þetta er ekki rétt."
+msgstr "Þú ert með %s sem aðaltungumál. Hafðu samband við prófaumsjón ef þetta er ekki rétt."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:180
+#: ../../apps-common/src/component/WaitingPage.svelte:184
 msgid "In %d minutes and %d seconds the exam will start. Good luck!"
 msgstr "Prófið byrjar eftir %d mínútur og %d sekúndur. Gangi þér vel."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:191
+#: ../../apps-common/src/component/WaitingPage.svelte:195
 msgid "Declaration of availability"
 msgstr "Þetta er ekki aðgengilegt"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:20
+#: ../../apps-common/src/component/WaitingPage.svelte:26
 msgid "TAO Logo"
 msgstr "TAO merki"
 
-#: ../../apps-common/src/component/WaitingPage.svelte:71
+#: ../../apps-common/src/component/WaitingPage.svelte:75
 msgid "You are enrolled in %s, %s from %s."
 msgstr "Þú ert í %s, %s frá %s."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:79
+#: ../../apps-common/src/component/WaitingPage.svelte:83
 msgid "You are enrolled in %s, %s from %s to %s."
 msgstr "Þú ert í %s, %s frá %s til %s."
 
-#: ../../apps-common/src/component/WaitingPage.svelte:82
+#: ../../apps-common/src/component/WaitingPage.svelte:86
 msgid "You are enrolled in %s, from %s to %s."
 msgstr "Þú ert í %s, frá %s til %s."
 
-#: ../../apps-common/src/controller/runner.js:108
+#: ../../apps-common/src/controller/runner.js:136
 msgid "Test is finished"
 msgstr "Prófi er lokið"
 
-#: ../../apps-common/src/controller/thankyou.js:32
+#: ../../apps-common/src/controller/thankyou.js:34
+msgid "Proceed"
+msgstr ""
+
+#: ../../apps-common/src/controller/thankyou.js:51
 msgid "Thank you"
 msgstr "Þakka þér fyrir"
 
-#: ../../apps-common/src/controller/thankyou.js:33
+#: ../../apps-common/src/controller/thankyou.js:52
 msgid "Your test has been submitted."
 msgstr "Prófinu þínu hefur verið skilað."
 
-#: ../../apps-common/src/core/error/messages.js:36
+#: ../../apps-common/src/core/error/messages.js:38
 msgid "Timeout"
 msgstr "Tíma lokið"
 
-#: ../../apps-common/src/core/error/messages.js:39
+#: ../../apps-common/src/core/error/messages.js:41
 msgid "This page cannot be reached."
 msgstr "Ekki er hægt að ná í þessa síðu."
 
-#: ../../apps-common/src/core/error/messages.js:42
+#: ../../apps-common/src/core/error/messages.js:44
 msgid "Please reload the page or contact your administrator."
 msgstr "Vinsamlegast endurhlaðið síðuna eða hafðið samband við stjórnanda."
 
-#: ../../apps-common/src/core/error/messages.js:48
+#: ../../apps-common/src/core/error/messages.js:50
 msgid "No connection to the service."
 msgstr "Engin tenging við þjónustuna."
 
-#: ../../apps-common/src/core/error/messages.js:51
-#: ../../apps-common/src/core/error/messages.js:122
+#: ../../apps-common/src/core/error/messages.js:53
+#: ../../apps-common/src/core/error/messages.js:124
 msgid "Please contact your test administrator."
 msgstr "Talaðu við kennara."
 
-#: ../../apps-common/src/core/error/messages.js:57
+#: ../../apps-common/src/core/error/messages.js:59
 msgid "No internet connection."
 msgstr "Engin nettenging."
 
-#: ../../apps-common/src/core/error/messages.js:60
+#: ../../apps-common/src/core/error/messages.js:62
 msgid "Please check your internet connection or contact your test administrator."
 msgstr "Athugaðu nettenginguna þína eða hafðu samband við prófunarstjórann þinn."
 
-#: ../../apps-common/src/core/error/messages.js:66
+#: ../../apps-common/src/core/error/messages.js:68
 msgid "Test not available."
 msgstr "Próf ekki í boði."
 
-#: ../../apps-common/src/core/error/messages.js:69
+#: ../../apps-common/src/core/error/messages.js:71
 msgid "Sorry, we cannot start your test."
 msgstr "Því miður getum við ekki hafið prófið þitt."
 
-#: ../../apps-common/src/core/error/messages.js:72
-#: ../../apps-common/src/core/error/messages.js:181
+#: ../../apps-common/src/core/error/messages.js:74
+#: ../../apps-common/src/core/error/messages.js:192
 msgid "Please launch your test again or contact your administrator."
 msgstr "Opnaðu prófið aftur eða hafðu samband við kennara."
 
-#: ../../apps-common/src/core/error/messages.js:78
+#: ../../apps-common/src/core/error/messages.js:80
 msgid "Service busy."
 msgstr "Þjónusta upptekin."
 
-#: ../../apps-common/src/core/error/messages.js:81
+#: ../../apps-common/src/core/error/messages.js:83
 msgid "The service is temporarily unavailable due to high traffic load."
 msgstr "Þjónustan liggur tímabundið niðuri vegna mikils álags."
 
-#: ../../apps-common/src/core/error/messages.js:84
+#: ../../apps-common/src/core/error/messages.js:86
 msgid "Please wait for a few minutes and try again."
 msgstr "Bíddu í nokkrar mínútur og reyndu aftur."
 
-#: ../../apps-common/src/core/error/messages.js:90
-#: ../../apps-common/src/core/error/messages.js:102
-#: ../../apps-common/src/core/error/messages.js:116
-#: ../../apps-common/src/core/error/messages.js:128
+#: ../../apps-common/src/core/error/messages.js:92
+#: ../../apps-common/src/core/error/messages.js:104
+#: ../../apps-common/src/core/error/messages.js:118
+#: ../../apps-common/src/core/error/messages.js:130
 msgid "Unexpected error."
 msgstr "Óvænt villa."
 
-#: ../../apps-common/src/core/error/messages.js:93
-#: ../../apps-common/src/core/error/messages.js:119
+#: ../../apps-common/src/core/error/messages.js:95
+#: ../../apps-common/src/core/error/messages.js:121
 msgid "Sorry, an unexpected error happened during the test."
 msgstr "Því miður kom upp óvænt villa í prófuninni."
 
-#: ../../apps-common/src/core/error/messages.js:96
+#: ../../apps-common/src/core/error/messages.js:98
 msgid "Please reload the page or contact your test administrator."
 msgstr "Reyndu að endurhlaða síðuna eða hafa samband við prófunarstjórann þinn."
 
-#: ../../apps-common/src/core/error/messages.js:105
+#: ../../apps-common/src/core/error/messages.js:107
 msgid "Certain third-party tools are not supported in TAO Advance. For example, \"Read aloud\" provided by Edge browser."
 msgstr "Ákveðin verkfæri þriðja aðila eru ekki studd í TAO Advance. Til dæmis, „Lestu upp“ frá Edge vafranum."
 
-#: ../../apps-common/src/core/error/messages.js:110
+#: ../../apps-common/src/core/error/messages.js:112
 msgid "Please disable them and reload the page, or contact your test administrator for more details."
 msgstr "Vinsamlegast slökktu á þeim og endurhlaða síðuna, eða hafðu samband við prófunarstjórann þinn til að fá frekari upplýsingar."
 
-#: ../../apps-common/src/core/error/messages.js:131
+#: ../../apps-common/src/core/error/messages.js:133
 msgid "The system identified multiple active sessions."
 msgstr "Kerfið fann mörg virk próf."
 
-#: ../../apps-common/src/core/error/messages.js:134
+#: ../../apps-common/src/core/error/messages.js:136
 msgid "In order to continue, please click on the Reload button."
 msgstr "Til að halda áfram skaltu smella á Endurhlaða hnappinn."
 
-#: ../../apps-common/src/core/error/messages.js:140
+#: ../../apps-common/src/core/error/messages.js:142
+msgid "Session ended"
+msgstr ""
+
+#: ../../apps-common/src/core/error/messages.js:145
+msgid "You have been logged out due to a new login."
+msgstr ""
+
+#: ../../apps-common/src/core/error/messages.js:151
 msgid "Test terminated"
 msgstr "Prófi lokið"
 
-#: ../../apps-common/src/core/error/messages.js:143
+#: ../../apps-common/src/core/error/messages.js:154
 msgid "Your test has been terminated by the proctor."
 msgstr "Prófinu þitt hefur verið lokað af umsjónarmönnum."
 
-#: ../../apps-common/src/core/error/messages.js:149
+#: ../../apps-common/src/core/error/messages.js:160
 msgid "Test paused"
 msgstr "Gert hefur verið hlé á prófinu"
 
-#: ../../apps-common/src/core/error/messages.js:152
+#: ../../apps-common/src/core/error/messages.js:163
 msgid "Your test has been paused by the proctor."
 msgstr "Umsjónarmenn hafa gert hlé á prófinu þínu. "
 
-#: ../../apps-common/src/core/error/messages.js:156
+#: ../../apps-common/src/core/error/messages.js:167
 msgid "Please click on the Reload button."
 msgstr "Endurhlaðið síðuna."
 
-#: ../../apps-common/src/core/error/messages.js:162
+#: ../../apps-common/src/core/error/messages.js:173
 msgid "Test was reset"
 msgstr "Prófið var endurræst"
 
-#: ../../apps-common/src/core/error/messages.js:165
+#: ../../apps-common/src/core/error/messages.js:176
 msgid "The administrator reset your test, you need to start again."
-msgstr ""
+msgstr "Prófaumsjón hefur endurstillt prófið, þú þarft að byrja aftur."
 
-#: ../../apps-common/src/core/error/messages.js:169
+#: ../../apps-common/src/core/error/messages.js:180
 msgid "Please click on the Reload button to restart."
-msgstr ""
+msgstr "Smelltu á endurhleðsluhnappinn til að endurræsa."
 
-#: ../../apps-common/src/core/error/messages.js:175
+#: ../../apps-common/src/core/error/messages.js:186
 msgid "The test cannot be continued."
 msgstr "Ekki er hægt að halda prófinu áfram."
 
-#: ../../apps-common/src/core/error/messages.js:178
+#: ../../apps-common/src/core/error/messages.js:189
 msgid "Sorry, a problem occurred due to long inactivity."
 msgstr "Vandamál kom upp vegna þess að notandi hefur verið óvirkur lengi."
+
+#: ../../apps-common/src/core/error/messages.js:198
+#: ../../apps-common/src/core/error/messages.js:220
+msgid "Can't start secure session"
+msgstr ""
+
+#: ../../apps-common/src/core/error/messages.js:201
+#: ../../apps-common/src/core/error/messages.js:212
+msgid "To continue, you must close the apps listed below. Click \"Exit browser\", then close the apps, and relaunch TAO Secure Browser."
+msgstr ""
+
+#: ../../apps-common/src/core/error/messages.js:209
+msgid "Can't continue secure session"
+msgstr ""
+
+#: ../../apps-common/src/core/error/messages.js:223
+msgid "To start this secure session, install or update TAO Secure Browser."
+msgstr ""
 
 #: ../../item-runner/src/runner/ItemPreviewer/PreviewerHeaderBar.svelte:78
 msgid "close item preview"
@@ -4411,7 +4580,7 @@ msgstr "loka forskoðun hlutar"
 
 #: ../../item-runner/src/runner/ItemPreviewer/PreviewerHeaderBar.svelte:84
 msgid "RESPONSE PANEL"
-msgstr "SVARSPÁLDI"
+msgstr "SVARSPJALD"
 
 #: ../../item-runner/src/runner/ItemPreviewer/PreviewerHeaderBar.svelte:13
 msgid "hide response panel"
@@ -4430,51 +4599,51 @@ msgstr "Atriðastig: "
 msgid "SUBMIT RESPONSE"
 msgstr "SENDA SVAR"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1628
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1627
 msgid "Press enter or space to grab and browse the answer area. To move to the next available option, use the arrow keys."
 msgstr "Ýttu á enter eða bil til að grípa og fletta í svarsvæðið. Til að fara í næsta tiltæka valmöguleika, notaðu örvatakkana."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1633
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1632
 msgid "Press enter or space to grab. To move to next available answer, use the arrow keys."
 msgstr "Ýttu á enter eða bil til að grípa. Til að fara í næsta tiltæka svar, notaðu örvatakkana."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1636
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1635
 msgid "Press enter or space to replace. To browse other drop zones use the arrow keys. Press escape to cancel."
 msgstr "Ýttu á enter eða bil til að skipta út. Notaðu örvatakkana til að skoða önnur fallsvæði. Ýttu á Escape til að hætta við."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1639
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1638
 msgid "Press enter or space to place down. To browse other drop zones use the arrow keys. Press escape to cancel."
 msgstr "Ýttu á enter eða bil til að setja niður. Notaðu örvatakkana til að skoða önnur fallsvæði. Ýttu á Escape til að hætta við."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1649
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1648
 msgid "unassociated options"
 msgstr "ótengda valkosti"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1751
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1752
 msgid "Drop zone occupied by "
-msgstr "Fallsvæði upptekið af "
+msgstr "Sleppisvæði upptekið af "
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1761
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1765
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1762
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1766
 msgid "Return %s to unassociated options."
 msgstr "Skilaðu %s í ótengda valkosti."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1792
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1793
 msgid "Empty dropzone."
-msgstr "Tómt fallsvæði."
+msgstr "Tómt sleppisvæði."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1823
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1828
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1833
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1824
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1829
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1834
 msgid "Return the association %s and %s to unassociated options."
 msgstr "Skilaðu tengingunni %s og %s í ótengda valkosti."
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1843
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1844
 msgid "answer area, %d items"
 msgstr "svarsvæði, %d atriði"
 
 #: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:76
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:437
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:435
 msgid "%lb has been placed down."
 msgstr "%lb hefur verið sett niður."
 
@@ -4494,7 +4663,7 @@ msgstr "%lb og %lb hefur verið skilað í ótengda valkosti."
 msgid "cancelled"
 msgstr "hætt við"
 
-#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1375
+#: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1373
 msgid "Option %d"
 msgstr "Valkostur %d"
 
@@ -4504,7 +4673,7 @@ msgstr "Tengt við"
 
 #: ../../item-runner/src/runner/interactions/associate/ChoiceContentDescription.svelte:18
 msgid "No association."
-msgstr "Ekkert félag."
+msgstr "Engin tengsl."
 
 #: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingInteractionImpl.svelte:176
 msgid "Click to record"
@@ -4512,88 +4681,226 @@ msgstr "Smelltu til að taka upp"
 
 #: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:91
 msgid "Upload started."
-msgstr ""
+msgstr "Upphleðsla hafin."
 
 #: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:92
 msgid "Upload completed."
-msgstr ""
+msgstr "Upphleðslu lokið."
 
 #: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:93
 msgid "Upload cancelled."
-msgstr ""
+msgstr "Hætt við upphleðslu."
 
 #: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:94
 msgid "Response file cleared."
-msgstr ""
+msgstr "Svarskrá hreinsuð."
 
-#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:279
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:294
 msgid "Unable to restore the uploaded audio file. Please reload the page to try again."
 msgstr "Ekki tókst að endurheimta upphlaðinni hljóðskrá. Vinsamlegast endurhlaðið síðuna til að reyna aftur.rafullok"
 
-#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:285
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/AudioRecordingUploader.svelte:300
 msgid "Reload"
 msgstr "Endurhlaða"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:82
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:709
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:267
+msgid "Playback is disabled for this recording by item configuration."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:716
+msgid "No uploaded video is available for review."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:718
+msgid "Record a response to play it back locally. Sandbox/manual mode can also keep a local saved response for this session."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:734
+msgid "Recording"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:736
+msgid "Preparing camera"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:738
+msgid "Finalizing local recording"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:740
+msgid "Preparing saved response"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:742
+msgid "Uploading saved response"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:744
+msgid "Saved response ready"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:746
+msgid "Local playback ready"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:748
+msgid "Ready"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:761
+msgid "Stop"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:768
+msgid "Reset"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:60
+msgid "Preparing saved response."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:61
+msgid "Saved response ready."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:62
+msgid "Saved response unavailable."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:175
+msgid "Recording starts in {{seconds}} seconds."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:188
+msgid "Container / MIME"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:188
+msgid "Unavailable"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:189
+msgid "Duration"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:189
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:190
+msgid "Not recorded"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:190
+msgid "File size"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:192
+msgid "Average bitrate"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:193
+msgid "Not available"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:196
+msgid "Save mode"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:197
+msgid "Not saved yet"
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:259
+msgid "Maximum recording attempts reached."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:263
+msgid "Recording is in progress and will stop automatically when the time limit is reached."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:271
+msgid "Recording is in progress. Use Stop to finish or wait for the time limit."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:275
+msgid "Use the video controls to play back the current recording. Use Reset to clear it."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:278
+msgid "Use Start recording to begin. Use Stop to finish. Use Reset to clear the current response."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:433
+msgid "No supported recording MIME type was found for this browser."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/VideoRecordingInteractionImpl.svelte:518
+msgid "Unable to start video recording. Check browser permissions and try again."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/upload.js:41
+msgid "Unable to upload this recording. You can still play it back locally in this session, but it will stay unanswered until the upload succeeds."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/custom/customInteractionTypes/videoRecordingInteraction/upload.js:45
+msgid "Local playback is still available in this session. Retry the recording or upload before you submit."
+msgstr ""
+
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:87
 msgid "Your answer"
 msgstr "Svar þitt"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:245
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:305
 msgid "Your image file is too big. Please insert an image no larger than %s"
 msgstr "Myndskráin þín er of stór. Vinsamlegast settu inn mynd sem er ekki stærri en %s"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:250
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:310
 msgid "Your image failed to upload, please try again"
 msgstr "Ekki tókst að hlaða upp myndinni þinni, vinsamlegast reyndu aftur"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:301
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:361
 msgid "Maximum characters reached (maximum: %d)"
 msgstr "Hámarki stafa náð (hámark: %d)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:307
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:367
 msgid "Maximum words reached (maximum: %d)"
 msgstr "Hámarks orðum náð (hámark: %d)"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:314
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:374
 msgid "<strong>%d</strong> / %d word(s) typed"
 msgstr "<strong>%d</strong> / %d orð slegin inn"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:319
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:379
 msgid "<strong>%d</strong> word(s) typed"
 msgstr "<strong>%d</strong> orð/orð slegið inn"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:324
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:332
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:384
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:391
 msgid "<strong>%d</strong> character(s) typed"
 msgstr "<strong>%d</strong> stafir slegnir inn"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:332
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:391
 msgid "recommended: %d"
 msgstr "mælt með: %d"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:336
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:395
 msgid "<strong>%d</strong> characters left."
 msgstr "<strong>%d</strong> stafir eftir."
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:342
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:400
 msgid "%d out of %d characters typed"
 msgstr "%d af %d stöfum slegnir inn"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:342
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:400
 msgid "<strong>%d</strong> / %d character(s) typed"
 msgstr "<strong>%d</strong> / %d stafir slegnir inn"
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:351
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:409
 msgid "Invalid format, please refer to the instructions."
 msgstr "Óleyfilegt gildi."
 
-#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:357
+#: ../../item-runner/src/runner/interactions/extendedText/ExtendedTextInteraction.svelte:415
 msgid "Answer required."
-msgstr "Svar krafist."
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:22
-msgid "Basic Latin"
-msgstr "Grunn latína"
+msgstr "Verður að svara."
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:23
 msgid "EXCLAMATION MARK"
@@ -4964,16 +5271,8 @@ msgid "TILDE"
 msgstr "TILDE"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:118
-msgid "Currency Symbols"
-msgstr "Gjaldeyristákn"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:118
 msgid "EURO SIGN"
 msgstr "EVRU MERKI"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:119
-msgid "General Punctuation"
-msgstr "Almenn greinarmerki"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:120
 msgid "LEFT SINGLE QUOTATION MARK"
@@ -5018,10 +5317,6 @@ msgstr "LÁRÁLÆÐ SÖGU"
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:130
 msgid "BULLET"
 msgstr "KÚLUR"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:132
-msgid "Latin-1 Supplement"
-msgstr "Latin-1 viðbót"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:133
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:282
@@ -5451,10 +5746,6 @@ msgstr "LATÍNSKUR SMÁBÓFA ÞORN"
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:277
 msgid "LATIN SMALL LETTER Y WITH DIAERESIS"
 msgstr "LATÍNSKUR LITI STAFUR Y MEÐ SÝKUR"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:284
-msgid "Latin Extended-A"
-msgstr "Latin Extended-A"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:285
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:359
@@ -5897,24 +6188,12 @@ msgid "LATIN SMALL LETTER Z WITH CARON"
 msgstr "LATÍNSKUR LÍTI STAFUR Z MEÐ CARON"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:401
-msgid "Letterlike Symbols"
-msgstr "Stafræn tákn"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:401
 msgid "TRADE MARK SIGN"
 msgstr "VÖRUMERKIÐ"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:404
-msgid "Geometric Shapes"
-msgstr "Geómetrísk form"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:404
 msgid "BLACK RIGHT-POINTING POINTER"
 msgstr "SVARTUR HÆGRI BENDUR"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:405
-msgid "Arrows"
-msgstr "Örvar"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:406
 msgid "RIGHTWARDS ARROW"
@@ -5929,24 +6208,12 @@ msgid "LEFT RIGHT DOUBLE ARROW"
 msgstr "VINSTRI HÆGRI TVÖLD ÖR"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:412
-msgid "Miscellaneous Symbols"
-msgstr "Ýmis tákn"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:412
 msgid "BLACK DIAMOND SUIT"
 msgstr "SVART DIAMANT FATTI"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:415
-msgid "Mathematical Operators"
-msgstr "Stærðfræðilegir rekstraraðilar"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:415
 msgid "ALMOST EQUAL TO"
 msgstr "NÆSTUM JAFN"
-
-#: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:418
-msgid "Greek and Coptic"
-msgstr "gríska og koptíska"
 
 #: ../../item-runner/src/runner/interactions/extendedText/specialCharacters/latinAndMaths.js:418
 msgid "GREEK CAPITAL LETTER OMEGA"
@@ -6056,18 +6323,18 @@ msgstr "Þú verður að búa til nákvæmlega %d tengsl"
 
 #: ../../item-runner/src/runner/interactions/feedback/choiceFeedbackHelper.js:248
 msgid "You must make exactly 1 association"
-msgstr "Þú verður að gera nákvæmlega 1 samband"
+msgstr "Þú verður að gera nákvæmlega 1 tengsl"
 
 #: ../../item-runner/src/runner/interactions/feedback/choiceFeedbackHelper.js:253
 msgid "Currently %d"
 msgstr "Sem stendur %d"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:242
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:244
 msgid "Option %d."
 msgstr "Valkostur %d."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:272
-#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:276
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:274
+#: ../../item-runner/src/runner/interactions/gapMatch/Choice.svelte:279
 msgid "Return %s to the available options."
 msgstr "Farðu aftur %s í tiltæka valkosti."
 
@@ -6079,65 +6346,65 @@ msgstr "Svarsvæði er fullt. Til að fara á svarsvæðið ýttu á Tab."
 msgid "%s has been returned to available options."
 msgstr "%s hefur verið skilað í tiltæka valkosti."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:431
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:433
 msgid "Gap %d %s %s"
 msgstr "Bil %d %s %s"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:434
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:46
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:296
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:436
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:47
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:297
 msgid "empty"
 msgstr "tómt"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:55
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:56
 msgid "required"
 msgstr "krafist"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:257
+#: ../../item-runner/src/runner/interactions/gapMatch/Gap.svelte:258
 msgid "%s has been placed in Gap %d."
 msgstr "%s hefur verið sett í Gap %d."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:748
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:746
 msgid "Press enter or space to grab and browse the answer area."
 msgstr "Ýttu á enter eða bil til að grípa og fletta í svarsvæðinu."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:749
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:747
 msgid "To move to next available option, use the arrow keys."
 msgstr "Til að fara í næsta tiltæka valmöguleika, notaðu örvatakkana."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:752
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:750
 msgid "Press enter or space to place down."
 msgstr "Ýttu á enter eða bil til að setja niður."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:753
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:751
 msgid "To browse other gaps use the arrow keys."
-msgstr "Notaðu örvatakkana til að skoða önnur eyður."
+msgstr "Notaðu örvatakkana til að skoða aðrar eyður."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:754
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:752
 msgid "Press escape to cancel."
 msgstr "Ýttu á Escape til að hætta við."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:757
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:755
 msgid "Press enter or space to grab."
 msgstr "Ýttu á enter eða bil til að grípa."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:758
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:756
 msgid "To move to next available answer, use the arrow keys."
 msgstr "Til að fara í næsta tiltæka svar, notaðu örvatakkana."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:759
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:757
 msgid "Double press shift+tab to return to choices."
 msgstr "Ýttu tvisvar á shift+tab til að fara aftur í valkosti."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:797
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:795
 msgid "Available options"
 msgstr "Lausir valkostir"
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:832
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:830
 msgid "Text Passage. To read use the arrow keys."
-msgstr "Textaleið. Til að lesa notaðu örvatakkana."
+msgstr "Lestexti. Til að lesa skaltu nota örvatakkana."
 
-#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:506
+#: ../../item-runner/src/runner/interactions/gapMatch/GapMatchInteraction.svelte:504
 msgid "%s has not been placed."
 msgstr "%s hefur ekki verið sett."
 
@@ -6193,11 +6460,11 @@ msgstr "Samband milli %s og %s stofnað."
 msgid "The association between %s and %s has been deleted."
 msgstr "Tengslinu milli %s og %s hefur verið eytt."
 
-#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1281
+#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1282
 msgid "Available options, %d items"
 msgstr "Lausir valkostir, %d hlutir"
 
-#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1332
+#: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/GraphicGapMatchInteraction.svelte:1333
 msgid "Answer area"
 msgstr "Svarsvæði"
 
@@ -6354,19 +6621,19 @@ msgstr "mín %d"
 msgid "max %d"
 msgstr "hámark %d"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:871
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:872
 msgid "List"
 msgstr "Listi"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:325
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:326
 msgid "deselected"
 msgstr "afvalið"
 
-#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:336
+#: ../../item-runner/src/runner/interactions/match/NonTabularMatch.svelte:337
 msgid "selected %s"
 msgstr "valinn %s"
 
-#: ../../item-runner/src/runner/interactions/match/TabularMatch.svelte:458
+#: ../../item-runner/src/runner/interactions/match/TabularMatch.svelte:457
 msgid "%s matches %s"
 msgstr "%s passar við %s"
 
@@ -6414,7 +6681,7 @@ msgstr "í boði %d sinnum."
 msgid "grouped in %s."
 msgstr "flokkað í %s."
 
-#: ../../item-runner/src/runner/interactions/media/MediaInteractionImpl.svelte:523
+#: ../../item-runner/src/runner/interactions/media/MediaInteractionImpl.svelte:533
 msgid "Click to listen"
 msgstr "Smelltu til að hlusta"
 
@@ -6426,11 +6693,11 @@ msgstr "Þú verður að spila þennan miðil að minnsta kosti %d sinnum"
 msgid "You have played this media maximum times"
 msgstr "Þú hefur spilað þennan miðil hámarkstíma"
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:617
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:629
 msgid "Press enter or space to grab and place in the answer area. To move to next available option, use the arrow keys."
 msgstr "Ýttu á enter eða bil til að grípa og setja á svarsvæðið. Notaðu örvatakkana til að fara í næsta tiltæka valmöguleika."
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:637
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:650
 msgid "Unordered options"
 msgstr "Óraðaðir valkostir"
 
@@ -6438,21 +6705,21 @@ msgstr "Óraðaðir valkostir"
 msgid "Answer area is full. To move to the answer area, press Tab."
 msgstr "Svarsvæði er fullt. Til að fara á svarsvæðið, ýttu á Tab."
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:491
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:494
 msgid "%lb has been placed down"
 msgstr "%lb hefur verið sett niður"
 
-#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:500
+#: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:503
 msgid "%lb moved to position %d"
 msgstr "%lb færður í stöðu %d"
 
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:931
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:938
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:942
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:949
 msgid "Position %d"
 msgstr "Staða %d"
 
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:934
-#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:939
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:945
+#: ../../item-runner/src/runner/interactions/order/SortableList.svelte:950
 msgid "Return %s to the unordered options"
 msgstr "Farðu aftur %s í óraðaða valkostina"
 
@@ -6468,27 +6735,27 @@ msgstr "Ýttu á enter eða bil til að grípa. Til að fara í næsta tiltæka 
 msgid "Press enter or space to place down. To reorder use the arrow keys. Press escape to cancel"
 msgstr "Ýttu á enter eða bil til að setja niður. Til að endurraða skaltu nota örvatakkana. Ýttu á Escape til að hætta við"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:390
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:394
 msgid "Plus. %s"
 msgstr "Auk þess. %s"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:391
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:395
 msgid "Minus. %s"
 msgstr "Mínus. %s"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:392
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:396
 msgid "To enter the slider value in this field, type."
-msgstr "Til að slá inn sleðann í þessum reit skaltu slá inn."
+msgstr "Til að setja inn gildi fyrir sleðann skaltu slá inn."
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:393
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:397
 msgid "Use to decrease the slider value by %d"
 msgstr "Notaðu til að minnka sleðann um %d"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:394
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:398
 msgid "Use to increase the slider value by %d"
 msgstr "Notaðu til að hækka sleðann um %d"
 
-#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:395
+#: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:399
 msgid "Use the arrow keys to increase or decrease the value by %d"
 msgstr "Notaðu örvatakkana til að hækka eða lækka gildið um %d"
 
@@ -6506,33 +6773,33 @@ msgstr "Núverandi gildi %d"
 
 #: ../../item-runner/src/runner/interactions/slider/SliderInteraction.svelte:273
 msgid "%s, min %d max %d"
-msgstr "%s, mín. %d hámark %d"
+msgstr "%s, minnst %d hámark %d"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:164
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:169
 msgid "(dot)"
 msgstr "(punktur)"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:165
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:170
 msgid "(comma)"
 msgstr "(komma)"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:174
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:178
 msgid "Invalid value, use %s %s for decimal point separator"
 msgstr "Ógilt gildi, notaðu %s %s fyrir aukastafaskil"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:179
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:183
 msgid "Invalid value, please refer to the instructions"
 msgstr "Óleyfilegt gildi."
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:188
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:191
 msgid "Number is out of range"
 msgstr "Fjöldi er utan sviðs"
 
-#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:200
+#: ../../item-runner/src/runner/interactions/textEntry/TextEntryInteraction.svelte:203
 msgid "Max length has been reached"
 msgstr "Hámarkslengd hefur verið náð"
 
-#: ../../item-runner/src/runner/interactions/upload/UploadInteraction.svelte:368
+#: ../../item-runner/src/runner/interactions/upload/UploadInteraction.svelte:373
 msgid "Loading"
 msgstr "Hleður"
 
@@ -6544,7 +6811,7 @@ msgstr "Ekki er hægt að opna skrána sem hlaðið var upp"
 msgid "Unable to upload the selected file. Please try again or refresh the page."
 msgstr "Ekki tókst að hlaða upp skrá. Reynið aftur eða endurhlaðið síðuna."
 
-#: ../../item-runner/src/runner/item/modalFeedback/ModalFeedbackNavigator.svelte:20
+#: ../../item-runner/src/runner/item/modalFeedback/ModalFeedbackNavigator.svelte:22
 msgid "Continue"
 msgstr "Halda áfram"
 
@@ -6552,7 +6819,7 @@ msgstr "Halda áfram"
 msgid "No answer file selected"
 msgstr "Engin svarskrá valin"
 
-#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:72
+#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:71
 msgid "view report"
 msgstr "skoða skýrslu"
 
@@ -6572,9 +6839,13 @@ msgstr "Grunur um ritstuld:"
 msgid "No suspicion of plagiarism."
 msgstr "Enginn grunur um ritstuld."
 
+#: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/HblMessage.svelte:65
+msgid "Failed to load the plagiarism report. Please try again."
+msgstr ""
+
 #: ../../item-runner/src/runner/static/ModalFeedback.svelte:64
 msgid "Response feedback"
-msgstr "Viðbrögð viðbrögð"
+msgstr "Endurgjöf við svörum"
 
 #: ../../previewer-app/src/runner/layout/PreviewerTestLayout.svelte:113
 msgid "loading"
@@ -6600,48 +6871,48 @@ msgstr "Farðu í fyrri spurningu"
 msgid "Question %d."
 msgstr "Spurning %d."
 
-#: ../../test-runner/src/runner/TestLayout.svelte:581
+#: ../../test-runner/src/runner/TestLayout.svelte:588
 msgid "Test Navigation"
 msgstr "Yfirlitssíða"
 
+#: ../../test-runner/src/runner/TestLayout.svelte:70
 #: ../../test-runner/src/runner/TestLayout.svelte:71
-#: ../../test-runner/src/runner/TestLayout.svelte:72
 msgid "Main menu"
 msgstr "Aðalvalmynd"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:385
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:408
 msgid "Review"
 msgstr "Fara yfir"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:428
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:457
 msgid "Overall feedback"
 msgstr "Heildarendurgjöf"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:439
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:468
 msgid "Awaiting manual scoring"
 msgstr "Beðið er eftir handvirkri yfirferð"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:440
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:469
 msgid "All or part of this question needs to be manually scored. Please check back later to view the score."
-msgstr "Allt eða hluta þessarar spurningar þarf að vera handvirkt. Vinsamlegast athugaðu aftur síðar til að skoða stigið."
+msgstr "Þessa spurningu, eða hluta hennar, þarf að fara handvirkt yfir. Vinsamlegast athugaðu aftur síðar til að skoða stigið."
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:125
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:130
 msgid "Questions"
-msgstr ""
+msgstr "Spurningar"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:125
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:130
 msgid "Question"
 msgstr "Spurning"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:133
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:138
 msgid "Correct"
 msgstr "Rétt"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:142
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:147
 msgid "Answers"
-msgstr ""
+msgstr "Svör"
 
-#: ../../test-runner/src/runner/TestReviewLayout.svelte:142
+#: ../../test-runner/src/runner/TestReviewLayout.svelte:147
 msgid "Answer"
 msgstr "Svar"
 
@@ -6655,7 +6926,7 @@ msgstr "Ertu viss um að þú viljir skila þessum prófhluta og halda áfram í
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:69
 msgid "You won't be able to go back to review or change your answers after submission."
-msgstr "Þú munt ekki geta farið til baka til að skoða eða breyta svörunum þínum eftir að hafa verið send inn."
+msgstr "Þegar þú hefur ýtt á hnappinn „Ljúka prófi“ getur þú ekki farið til baka og breytt eða skoðað svörin þín."
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:72
 msgid "You still have %d incomplete questions. If you submit the test you won't be able to go back to complete unanswered questions or change your answers."
@@ -6663,12 +6934,12 @@ msgstr "Þú átt enn eftir að svara %d spurningu/m. Ekki er hægt að fara til
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:76
 msgid "You still have %d incomplete questions. If you submit this part you won't be able to go back to complete unanswered questions or change your answers."
-msgstr "Þú ert enn með %d ófullnægjandi spurningar. Ef þú sendir inn þennan hluta muntu ekki geta farið til baka til að svara ósvöruðum spurningum eða breytt svörum þínum."
+msgstr "Þú átt enn eftir að svara %d spurningu/m. Ekki er hægt að fara til baka og breyta svörum eftir að þú hefur skilað inn prófhlutanum."
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:89
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:347
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:345
 msgid "Review my answers"
-msgstr "Farðu yfir svörin mín"
+msgstr "Fara yfir svörin mín"
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:95
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:105
@@ -6728,103 +6999,103 @@ msgstr "Óleyfileg gildi í svari."
 msgid "Your answer is not valid."
 msgstr "Svarið er ógilt."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:200
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:199
 msgid "You have %d invalid answers out of %d. Please provide valid answers before proceeding."
 msgstr "%d svör eru ófullnægjandi af %d. Vinsamlegast lagaðu svörin."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:205
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:204
 msgid "Please provide a valid answer."
 msgstr "Breyttu svarinu."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:212
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:233
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:210
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:231
 msgid "Ok"
 msgstr "Allt í lagi"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:225
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:223
 msgid "An answer is required before leaving this question."
-msgstr "Svaraðu spurningunni."
+msgstr "Svaraðu spurningunni til að halda áfram."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:227
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:225
 msgid "You will be able to navigate away once you answer the question."
 msgstr "Þú getur haldið áfram eftir að þú svarar spurningu."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:247
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:245
 msgid "Your test has been terminated by the proctor and your answers have been submitted."
 msgstr "Umsjónarmaður prófs hefur lokað prófinu og því skilað inn."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:252
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:250
 msgid "I understand"
 msgstr "Ég skil"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:266
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:264
 msgid "You need to restart the test"
-msgstr ""
+msgstr "Þú þarft að endurræsa prófið"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:272
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:270
 msgid "Restart now"
-msgstr ""
+msgstr "Endurræsa núna"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:289
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:287
 msgid "Your test and its timer have been paused by proctor."
 msgstr "Umsjónarmaður hefur gert hlé á prófi þínu og tími stöðvaður."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:295
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:293
 msgid "OK"
 msgstr "Allt í lagi"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:333
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:331
 msgid "Finish the test"
-msgstr "Ljúktu prófinu"
+msgstr "Ljúka prófi"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:340
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:338
 msgid "Submit this part"
 msgstr "Ljúka prófi"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:360
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:370
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:378
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:400
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:427
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:444
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:471
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:358
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:368
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:376
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:398
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:425
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:442
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:469
 msgid "The time limit for the test has been reached."
 msgstr "Tímamörkum fyrir prófið er náð."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:373
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:384
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:371
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:382
 msgid "The time limit for this part has been reached."
 msgstr "Tímamörkum þessa hluta er náð."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:379
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:413
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:457
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:377
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:411
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:455
 msgid "You are at the end of the test. You can either finish the test or keep reviewing your answers."
 msgstr "Þú ert í lok prófsins. Þú getur annað hvort klárað prófið eða haldið áfram að fara yfir svörin þín."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:385
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:418
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:462
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:383
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:416
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:460
 msgid "You are at the end of this part. You can either submit this part or keep reviewing your answers."
 msgstr "Þú ert í lok þessa hluta. Þú getur annað hvort sent inn þennan hluta eða haldið áfram að fara yfir svörin þín."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:392
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:403
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:430
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:390
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:401
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:428
 msgid "The time limit for this section has been reached."
 msgstr "Tímamörkum þessa hluta er náð."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:436
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:447
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:474
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:434
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:445
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:472
 msgid "The time limit for this item has been reached."
 msgstr "Tímamörkum þessa liðar er náð."
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:498
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:496
 msgid "This test needs to be taken in full screen mode"
 msgstr "Þetta próf þarf að taka á heilskjá"
 
-#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:499
+#: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:497
 msgid "Leaving the test window is not allowed"
 msgstr "Ekki er leyfilegt að fara út úr vafra prófsins"
 
@@ -6838,85 +7109,90 @@ msgstr "Yfirlag"
 
 #: ../../test-runner/src/runner/layout/review/AllItemsFooter.svelte:21
 msgid "End of test"
+msgstr "Lok prófs"
+
+#: ../../test-runner/src/runner/layout/toolbarItems.js:61
+#: ../../test-runner/src/runner/layout/toolbarItems.js:64
+msgid "Reload this page"
 msgstr ""
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:62
+#: ../../test-runner/src/runner/layout/toolbarItems.js:73
 msgid "Attachments"
-msgstr ""
+msgstr "Viðhengi"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:72
+#: ../../test-runner/src/runner/layout/toolbarItems.js:83
 msgid "Scratchpad"
 msgstr "Rissblað"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:81
+#: ../../test-runner/src/runner/layout/toolbarItems.js:92
 msgid "Highlighter"
 msgstr "Áherslupenni"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:90
+#: ../../test-runner/src/runner/layout/toolbarItems.js:111
 msgid "Calculator"
 msgstr "Reiknivél"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:99
+#: ../../test-runner/src/runner/layout/toolbarItems.js:120
 msgid "Read Aloud"
 msgstr "Upplestur"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:103
+#: ../../test-runner/src/runner/layout/toolbarItems.js:124
 msgid "Read aloud tool. To close, press enter or space"
 msgstr "Upplestrartól. Til að loka skaltu ýta á enter eða bil"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:104
+#: ../../test-runner/src/runner/layout/toolbarItems.js:125
 msgid "Read aloud tool. To open, press enter or space"
-msgstr "Upplestrartól. Til að opna ýtirðu á enter eða bil"
+msgstr "Upplestrartól. Til að opna skaltu ýta á enter eða bil"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:113
+#: ../../test-runner/src/runner/layout/toolbarItems.js:134
 msgid "Line Reader"
 msgstr "Lestrarstika"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:124
+#: ../../test-runner/src/runner/layout/toolbarItems.js:145
 msgid "Exit full screen"
 msgstr "Fara úr heilskjá"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:124
+#: ../../test-runner/src/runner/layout/toolbarItems.js:145
 msgid "Full screen"
 msgstr "Heilskjár"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:142
+#: ../../test-runner/src/runner/layout/toolbarItems.js:163
 msgid "Open accessibility panel"
 msgstr "Aðgengistól"
 
-#: ../../test-runner/src/runner/layout/toolbarItems.js:152
+#: ../../test-runner/src/runner/layout/toolbarItems.js:173
 msgid "Print"
 msgstr "Prenta"
 
 #: ../../test-runner/src/runner/layout/userMenu/UserMenu.svelte:76
 msgid "User: %s"
-msgstr ""
+msgstr "Notandi %s"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:117
+#: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:121
 msgid "Attachment: %s"
-msgstr ""
+msgstr "Viðhengi: %s"
 
 #: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:45
 #: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:46
 msgid "More attachments"
-msgstr ""
+msgstr "Fleiri viðhengi"
 
 #: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:56
 #: ../../test-runner/src/runner/plugins/content/attachments/Attachment.svelte:57
 msgid "Close attachment"
-msgstr ""
+msgstr "Loka viðhengi"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:96
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:97
 msgid "Open attachment %s"
-msgstr ""
+msgstr "Opna viðhengi %s"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:103
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsList.svelte:104
 msgid "Open attachment %s in a new tab"
-msgstr ""
+msgstr "Opna viðhengi %s í nýjum flipa"
 
-#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsOverlayBox.svelte:74
+#: ../../test-runner/src/runner/plugins/content/attachments/AttachmentsOverlayBox.svelte:75
 msgid "Attachments (%s)"
-msgstr ""
+msgstr "Viðhengi (%s)"
 
 #: ../../test-runner/src/runner/plugins/content/title/HiddenContentTitle.svelte:31
 msgid "Current question %d of %d"
@@ -6994,35 +7270,35 @@ msgstr "Valmynd"
 msgid "Jump to"
 msgstr "Fara til"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:64
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:65
 msgid "Toolbox & Configuration"
 msgstr "Verkfærakista og stillingar"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:80
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:88
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:81
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:89
 msgid "Item attachment"
-msgstr ""
+msgstr "Viðengi atriðis"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:119
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:120
 msgid "the overview of all %d questions"
 msgstr "yfirlit yfir allar %d spurningar"
 
-#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:165
+#: ../../test-runner/src/runner/plugins/navigation/jumpMenu/plugin.js:166
 msgid "Question %d"
 msgstr "Spurning %d"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:305
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:314
 msgid "Remove bookmark from this question"
 msgstr "Fjarlægðu bókamerki af þessari spurningu"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:306
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:315
 msgid "Bookmark this question"
 msgstr "Merkja spurningu"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:345
-#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:346
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:354
+#: ../../test-runner/src/runner/plugins/navigation/navigator/TestNavigator.svelte:355
 msgid "Submit test part"
-msgstr "Sendu prófhluta"
+msgstr "Skila prófhluta"
 
 #: ../../test-runner/src/runner/plugins/navigation/navigator/overview/TestOverviewBottomBar.svelte:55
 #: ../../test-runner/src/runner/plugins/navigation/navigator/overview/TestOverviewBottomBar.svelte:56
@@ -7049,7 +7325,7 @@ msgstr "Merkt (%d)"
 msgid "incomplete (%d)"
 msgstr "Ósvarað (%d)"
 
-#: ../../test-runner/src/runner/plugins/navigation/navigator/plugin.js:86
+#: ../../test-runner/src/runner/plugins/navigation/navigator/plugin.js:139
 msgid "Overview"
 msgstr "Yfirlit"
 
@@ -7069,7 +7345,7 @@ msgstr "Næsta spurning"
 #: ../../test-runner/src/runner/plugins/navigation/navigator/progress/AttemptsNavigator.svelte:170
 #: ../../test-runner/src/runner/plugins/navigation/navigator/progress/AttemptsNavigator.svelte:208
 msgid "Skip question"
-msgstr "Slepptu spurningu"
+msgstr "Sleppa spurningu"
 
 #: ../../test-runner/src/runner/plugins/navigation/navigator/progress/Dots.svelte:43
 msgid "Question %d of %d"
@@ -7138,17 +7414,17 @@ msgstr "Hætta próf endurskoðun"
 
 #: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/ReviewNavigator.svelte:33
 msgid "Continue to next test"
-msgstr ""
+msgstr "Halda áfram í næsta próf"
 
-#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:254
+#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:262
 msgid "There are still questions waiting to be scored"
 msgstr "Ekki er búið að fara yfir allar spurningar"
 
-#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:255
-msgid "Your total score cannot be calculated until all of the questions have been scored. Please come back later to see your total score."
-msgstr "Einkunn er ekki komin. Ekki er búið að fara yfir allar spurningar"
-
 #: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:263
+msgid "Your total score cannot be calculated until all of the questions have been scored. Please come back later to see your total score."
+msgstr "Einkunn er ekki komin. Ekki er búið að fara yfir allar spurningar. Athugaðu aftur síðar."
+
+#: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:271
 msgid "Total score"
 msgstr "Heildarstig"
 
@@ -7180,15 +7456,15 @@ msgstr "Aðgengistól"
 msgid "Default font"
 msgstr "Sjálfgefin leturgerð"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:83
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:96
 msgid "Size"
 msgstr "Stærð"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:89
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:102
 msgid "decrease font size"
 msgstr "minnka leturstærð"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:90
+#: ../../test-runner/src/runner/plugins/panel/a11y/controls/FontSizeSetting.svelte:103
 msgid "increase font size"
 msgstr "auka leturstærð"
 
@@ -7306,7 +7582,7 @@ msgstr "Bakgrunnslitur"
 
 #: ../../test-runner/src/runner/plugins/panel/a11y/groups/PointerGroup.svelte:43
 msgid "collapse pointer settings"
-msgstr "stillingar fyrir samdráttarbendingu"
+msgstr "loka bendilstillingum"
 
 #: ../../test-runner/src/runner/plugins/panel/a11y/groups/PointerGroup.svelte:44
 msgid "expand pointer settings"
@@ -7318,19 +7594,15 @@ msgstr "Bendill"
 
 #: ../../test-runner/src/runner/plugins/panel/a11y/groups/TextGroup.svelte:67
 msgid "collapse text settings"
-msgstr "draga saman textastillingar"
+msgstr "loka textastillingum"
 
 #: ../../test-runner/src/runner/plugins/panel/a11y/groups/TextGroup.svelte:68
 msgid "expand text settings"
 msgstr "stækka textastillingar"
 
-#: ../../test-runner/src/runner/plugins/panel/a11y/groups/TextGroup.svelte:72
-msgid "Text"
-msgstr "Texti"
-
 #: ../../test-runner/src/runner/plugins/panel/a11y/groups/ZoomGroup.svelte:41
 msgid "collapse zoom settings"
-msgstr "draga saman aðdráttarstillingar"
+msgstr "loka aðdráttarstillingum"
 
 #: ../../test-runner/src/runner/plugins/panel/a11y/groups/ZoomGroup.svelte:42
 msgid "expand zoom settings"
@@ -7340,19 +7612,19 @@ msgstr "stækka aðdráttarstillingar"
 msgid "Zoom"
 msgstr "Stækka/minnka"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:20
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:25
 msgid "Privacy Policy"
 msgstr "Persónuverndarstefna"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:24
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:29
 msgid "About"
 msgstr "Um"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:32
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:37
 msgid "TAO logo"
 msgstr "TAO merki"
 
-#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:40
+#: ../../test-runner/src/runner/plugins/panel/menu/MenuPanelContent.svelte:45
 msgid "All rights reserved"
 msgstr "Allur réttur áskilinn"
 
@@ -7372,17 +7644,29 @@ msgstr "Hlé gert á prófi"
 msgid "Please wait for the proctor to resume your test."
 msgstr "Bíddu eftir að umsjónarmaður opni prófið aftur."
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:419
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:430
 msgid "Extra time has been removed"
 msgstr "Viðbótartími hefur verið fjarlægður"
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:421
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:432
 msgid "Extra time limit adjusted to %s"
 msgstr "Viðbótartíma var breytt í %s"
 
-#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:423
+#: ../../test-runner/src/runner/plugins/proctoring/plugin.js:434
 msgid "%s of extra time granted"
 msgstr "%s viðbótartími veittur"
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:56
+msgid "You are about to leave the document and the test will be paused."
+msgstr ""
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:58
+msgid "Press Tab to keep focus within the document and resume the test."
+msgstr ""
+
+#: ../../test-runner/src/runner/plugins/security/pauseOnBlur/FocusSentinel.svelte:60
+msgid "Press Shift+Tab to keep focus within the document and resume the test."
+msgstr ""
 
 #: ../../test-runner/src/runner/plugins/settings/SettingsContent.svelte:119
 msgid "My settings"
@@ -7395,7 +7679,7 @@ msgstr "Útilokun svara"
 #: ../../test-runner/src/runner/plugins/settings/SettingsContent.svelte:126
 #: ../../test-runner/src/runner/plugins/settings/SettingsContent.svelte:142
 msgid "On"
-msgstr "Á"
+msgstr "Kveikt"
 
 #: ../../test-runner/src/runner/plugins/settings/SettingsContent.svelte:127
 #: ../../test-runner/src/runner/plugins/settings/SettingsContent.svelte:143
@@ -7414,11 +7698,11 @@ msgstr "Fela svarmöguleika"
 msgid "Answer masking lets you hide answer options that you are sure are incorrect."
 msgstr "Þessi stilling gerir þér kleift að fela svarmöguleika."
 
-#: ../../test-runner/src/runner/plugins/settings/plugin.js:264
+#: ../../test-runner/src/runner/plugins/settings/plugin.js:265
 msgid "Test Configuration"
 msgstr "Stillingar prófs"
 
-#: ../../test-runner/src/runner/plugins/tools/highlighter/HighlighterBar.svelte:283
+#: ../../test-runner/src/runner/plugins/tools/highlighter/HighlighterBar.svelte:286
 msgid "clear all"
 msgstr "hreinsa allt"
 
@@ -7442,11 +7726,11 @@ msgstr "Eyða athugasemdum"
 msgid "Grader's comment:"
 msgstr "Athugasemd bekkjarins:"
 
-#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:298
+#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:300
 msgid "Saving failed"
 msgstr "Mistókst að vista"
 
-#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:342
+#: ../../test-runner/src/runner/plugins/tools/inlineComments/plugin.js:345
 msgid "Deletion failed"
 msgstr "Ekki tókst að eyða"
 
@@ -7458,6 +7742,10 @@ msgstr "Lóðrétt stærðarbendils tákn"
 msgid "Draggable element handle icon"
 msgstr "Hægt að draga"
 
+#: ../../test-runner/src/runner/plugins/tools/markingSymbols/MarkingSymbolsBar.svelte:282
+msgid "Marking symbols"
+msgstr ""
+
 #: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:103
 msgid "read aloud"
 msgstr "upplestur"
@@ -7466,31 +7754,31 @@ msgstr "upplestur"
 msgid "Continuous reading"
 msgstr "Lesa áfram"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:119
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:118
 msgid "Click to read"
 msgstr "Smelltu til að lesa"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:131
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:129
 msgid "Select and read"
 msgstr "Veldu og lestu"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:143
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:140
 msgid "ReadAloud settings"
 msgstr "ReadAloud stillingar"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:156
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:152
 msgid "Select text to read aloud"
 msgstr "Veldu texta til að lesa upp"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:159
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:155
 msgid "Click on any text to read aloud"
 msgstr "Smelltu á hvaða texta sem er til að lesa upp"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:168
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:164
 msgid "Press enter or space to activate select and read. To move the next available action, use the arrow keys. To close press escape."
 msgstr "Notaðu enter eða bilslá til að hefja lestur. Notaðu örvatakka til að velja aðra aðgerð. Ýttu á Esc-hnapp til að loka."
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:173
+#: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:169
 msgid "Press enter or space to activate continuous reading. If activated press enter or space to stop the reading."
 msgstr "Notaðu enter eða bilslá til að virkja eða hætta upplestri."
 
@@ -7558,21 +7846,21 @@ msgstr "miðlungs"
 msgid "high"
 msgstr "hátt"
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:181
+#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:182
 msgid "Look at the formula."
 msgstr "Horfðu á formúluna."
 
-#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:740
+#: ../../test-runner/src/runner/plugins/tools/readAloud/plugin.js:741
 msgid "Read aloud not available"
 msgstr "Lesa upphátt ekki í boði"
 
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:504
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:505
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:507
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:508
 msgid "undo"
 msgstr "afturkalla"
 
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:509
-#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:509
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:512
+#: ../../test-runner/src/runner/plugins/tools/scratchpad/Scratchpad.svelte:512
 msgid "redo"
 msgstr "endurtaka"
 
@@ -7609,20 +7897,24 @@ msgstr "Lína"
 msgid "Eraser"
 msgstr "Strokleður"
 
-#: ../../test-runner/src/runner/qti.js:540
+#: ../../test-runner/src/runner/qti.js:319
+msgid "Please wait while the answer is saved..."
+msgstr ""
+
+#: ../../test-runner/src/runner/qti.js:594
 msgid "All attempts have been used for this question"
 msgstr "Þú átt ekki fleiri tilraunir eftir"
 
-#: ../../test-runner/src/runner/qti.js:542
-#: ../../test-runner/src/runner/qti.js:546
+#: ../../test-runner/src/runner/qti.js:596
+#: ../../test-runner/src/runner/qti.js:600
 msgid "You have %d attempts left for this question"
 msgstr "Þú átt %d tilraunir eftir fyrir þessa spurningu"
 
-#: ../../test-runner/src/runner/qti.js:563
+#: ../../test-runner/src/runner/qti.js:617
 msgid "Time has run out for this question"
 msgstr "Tíminn er búinn fyrir þessa spurningu"
 
-#: ../../test-runner/src/runner/qti.js:565
+#: ../../test-runner/src/runner/qti.js:619
 msgid "Time has run out for this question's section"
 msgstr "Tíminn er búinn fyrir þennan kafla"
 
@@ -7630,11 +7922,44 @@ msgstr "Tíminn er búinn fyrir þennan kafla"
 msgid "%s, extra time %s"
 msgstr "%s, framlenging %s"
 
-#: ../../test-runner/src/runner/util/testPart.js:187
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:65
 msgid "Part"
 msgstr "Hluti"
 
-#: ../src/config.js:136
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:68
+msgid "You have %s left to finish this part"
+msgstr ""
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:72
+msgid "You have %s left to finish %s"
+msgstr ""
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:75
+msgid "You have %s left to finish %s part"
+msgstr ""
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:94
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:110
+msgid "You have %s left to finish the test"
+msgstr ""
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:101
+msgid "You have %s left to finish %s section"
+msgstr ""
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:102
+msgid "You have %s left to finish this section"
+msgstr ""
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:106
+msgid "You have %s left to finish %s item"
+msgstr ""
+
+#: ../../test-runner/src/runner/timers/timerWarningMessage.js:107
+msgid "You have %s left to finish this item"
+msgstr ""
+
+#: ../src/config.js:142
 msgid "TAO: test session"
 msgstr "TAO: próf"
 

@@ -304,6 +304,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         qtiMaxChoicesMessage,
         qtiMinChoicesMessage
     );
+    // eslint-disable-next-line no-unused-vars
     $: ({ maxChoicesFeedback, minChoicesFeedback } = setConstraintsFeedback(selectedKeys.length));
 
     /**

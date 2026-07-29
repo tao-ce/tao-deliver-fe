@@ -38,6 +38,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             values: normalFontSizeValues.map(size => size * 1.5)
         }
     ];
+    const defaultValue = 0;
 
     export let initialState;
 
@@ -53,14 +54,22 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      */
     function handleFontSizeChange(event) {
         value = event.detail.value;
-        const { name, values } = fontSizesMap[value] || fontSizesMap[0];
-        targetElt?.style.setProperty('--fontsize-body-xs', `${values[0]}rem`);
-        targetElt?.style.setProperty('--fontsize-body-s', `${values[1]}rem`);
-        targetElt?.style.setProperty('--fontsize-body', `${values[2]}rem`);
-        targetElt?.style.setProperty('--fontsize-heading', `${values[3]}rem`);
-        targetElt?.style.setProperty('--fontsize-heading-l', `${values[4]}rem`);
-        targetElt?.style.setProperty('--fontsize-heading-xl', `${values[5]}rem`);
-        targetElt?.style.setProperty('--fontsize-heading-xxl', `${values[6]}rem`);
+        const { name, values } = fontSizesMap[value] || fontSizesMap[defaultValue];
+
+        if (targetElt) {
+            targetElt.dataset.a11yOverrideFontSize = value !== defaultValue;
+
+            targetElt.style.setProperty('--fontsize-body-xs', `${values[0]}rem`);
+            targetElt.style.setProperty('--fontsize-body-s', `${values[1]}rem`);
+            targetElt.style.setProperty('--fontsize-body', `${values[2]}rem`);
+            targetElt.style.setProperty('--fontsize-heading', `${values[3]}rem`);
+            targetElt.style.setProperty('--fontsize-heading-l', `${values[4]}rem`);
+            targetElt.style.setProperty('--fontsize-heading-xl', `${values[5]}rem`);
+            targetElt.style.setProperty('--fontsize-heading-xxl', `${values[6]}rem`);
+
+            const fontSizeScale = values[2] / fontSizesMap[defaultValue].values[2];
+            targetElt.style.setProperty('--a11y-fontsize-scale', fontSizeScale);
+        }
 
         dispatch('change', {
             key: settingsKeys.fontSize,
@@ -74,6 +83,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 
     onDestroy(() => {
+        delete targetElt?.dataset.a11yOverrideFontSize;
+
         targetElt?.style.removeProperty('--fontsize-body-xs');
         targetElt?.style.removeProperty('--fontsize-body-s');
         targetElt?.style.removeProperty('--fontsize-body');
@@ -81,6 +92,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         targetElt?.style.removeProperty('--fontsize-heading-l');
         targetElt?.style.removeProperty('--fontsize-heading-xl');
         targetElt?.style.removeProperty('--fontsize-heading-xxl');
+
+        targetElt?.style.removeProperty('--a11y-fontsize-scale');
     });
 </script>
 

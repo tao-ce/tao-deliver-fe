@@ -452,8 +452,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 
     /* Remover styles */
-    .choice :global(.remover) {
-        @add-mixin outline-focus var(--border-medium);
+    :where(.choice) :global(.remover) {
+        @add-mixin outline-focus var(--border-medium); /* adds position: relative */
     }
     .remover {
         display: flex;
@@ -490,6 +490,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 </style>
 
 <!-- ui-core drag-drop requires draggable to be wrapped into droparea, so 2 dragAndDropAction hooks -->
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
     class="choice"
     class:placed
@@ -549,7 +550,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             on:click|stopPropagation={!disabled ? handleRemoverClick : void 0}
             on:keydown={!disabled ? handleKeydown : void 0}
             on:keyup={!disabled ? handleRemoverKeyup : void 0}>
-            <div class="icon-wrapper" />
+            <div class="icon-wrapper"></div>
             <Icon name="remove-12" aria-hidden={true} />
         </button>
     {/if}

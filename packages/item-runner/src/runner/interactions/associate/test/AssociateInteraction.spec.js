@@ -130,6 +130,12 @@ const selectorHelperFactory = container => ({
     }
 });
 
+function expectChoicesTextContents(container, expectedTextContents = []) {
+    const renderedChoices = Array.from(container.querySelectorAll('li .label-container'));
+    const renderedTexts = renderedChoices.map(choice => choice.textContent);
+    expect(renderedTexts).toEqual(expectedTextContents);
+}
+
 describe('AssociateInteraction', () => {
     afterEach(() => {
         itemsStateStore.clear();
@@ -171,7 +177,36 @@ describe('AssociateInteraction', () => {
                 }
             });
 
+            // only snapshot root element attributes
+            container.querySelector('.qti-associateInteraction').innerHTML = '';
             expect(container).toMatchSnapshot();
+        });
+
+        it('renders the instruction lang on the feedback block', () => {
+            const getInstructionsLang = vi.fn(() => 'nb_NO');
+            const testContext = {
+                getAssetManager: () => ({
+                    resolve: src => src
+                }),
+                registerLoadingElement: vi.fn(),
+                getInstructionsLang
+            };
+
+            const { container } = render(ContextWrapper, {
+                props: {
+                    testContextKey: itemIdentifier,
+                    testContext,
+                    testComponent: AssociateInteraction,
+                    testComponentProps: {
+                        itemIdentifier,
+                        responseIdentifier,
+                        maxAssociations: 4,
+                        choices
+                    }
+                }
+            });
+            expect(getInstructionsLang).toHaveBeenCalled();
+            expect(container.querySelector('.qti-instruction-container').getAttribute('lang')).toEqual('nb_NO');
         });
 
         it('renders maxAssociations pairs of placeholders if set', () => {
@@ -200,7 +235,6 @@ describe('AssociateInteraction', () => {
                 }
             });
 
-            expect(container).toMatchSnapshot();
             expect(container.querySelectorAll('.pair').length).toEqual(1);
         });
 
@@ -215,7 +249,6 @@ describe('AssociateInteraction', () => {
                 }
             });
 
-            expect(container).toMatchSnapshot();
             expect(container.querySelectorAll('.pair').length).toEqual(2);
         });
 
@@ -230,6 +263,7 @@ describe('AssociateInteraction', () => {
                     choices
                 }
             });
+            const selectorHelper = selectorHelperFactory(container);
 
             interactionStateStore.set({
                 pairs: [
@@ -240,7 +274,19 @@ describe('AssociateInteraction', () => {
             });
 
             return tick().then(() => {
-                expect(container).toMatchSnapshot();
+                expectChoicesTextContents(selectorHelper.choiceArea, [
+                    'A Option 1',
+                    'B Option 2',
+                    'Blocktree D Option 3',
+                    'C Option 0'
+                ]);
+                expectChoicesTextContents(selectorHelper.answerArea, [
+                    ' Blocktree D Associated with C',
+                    ' C Associated with Blocktree D',
+                    ' A Associated with B',
+                    ' B Associated with A',
+                    ' C No association.'
+                ]);
                 expect(container.querySelectorAll('.pair').length).toEqual(3);
             });
         });
@@ -267,7 +313,6 @@ describe('AssociateInteraction', () => {
 
             return tick()
                 .then(() => {
-                    expect(container).toMatchSnapshot();
                     expect(container.querySelectorAll('.pair').length).toEqual(4);
 
                     interactionStateStore.set({
@@ -570,8 +615,6 @@ describe('AssociateInteraction', () => {
 
             return tick().then(() => {
                 // there is only one and it is in answer area
-                expect(container).toMatchSnapshot();
-
                 expect(selectorHelper.getChoice('C')).toBe(null);
                 expect(selectorHelper.getPairItem(0, 1)).toMatchSnapshot();
 
@@ -651,6 +694,7 @@ describe('AssociateInteraction', () => {
             const pairItemRemoveButton = selectorHelper.getPairItemRemoveButton(0, 1);
             fireEvent.keyUp(pairItemRemoveButton, { key: 'Enter', keyCode: 13, detail: 1 });
 
+            await tick();
             await tick();
             expect(selectorHelper.getChoice('C')).toHaveFocus();
         });
@@ -779,7 +823,12 @@ describe('AssociateInteraction', () => {
             });
             const selectorHelper = selectorHelperFactory(container);
 
-            expect(selectorHelper.choiceArea).toMatchSnapshot();
+            expectChoicesTextContents(selectorHelper.choiceArea, [
+                'C Option 1',
+                'A Option 2',
+                'Blocktree D Option 3',
+                'B Option 0',
+            ]);
 
             selectorHelper.getChoice('C').click();
             selectorHelper.getPlaceholder(0, 1).click();
@@ -792,7 +841,12 @@ describe('AssociateInteraction', () => {
                     return tick();
                 })
                 .then(() => {
-                    expect(selectorHelper.choiceArea).toMatchSnapshot();
+                    expectChoicesTextContents(selectorHelper.choiceArea, [
+                        'A Option 1',
+                        'Blocktree D Option 2',
+                        'C Option 3',
+                        'B Option 0',
+                    ]);
 
                     //newly restored choice 'D' goes after other not-removed choices, and not to its original position
                     expect(interactionStateStore.get().pairs).toMatchObject([['B', void 0], ['B']]);
@@ -1894,34 +1948,6 @@ describe('AssociateInteraction', () => {
         });
     });
 
-    it('renders the instruction lang on the feedback block', () => {
-        const getInstructionsLang = vi.fn(() => 'nb_NO');
-        const testContext = {
-            getAssetManager: () => ({
-                resolve: src => src
-            }),
-            registerLoadingElement: vi.fn(),
-            getInstructionsLang
-        };
-
-        const { container } = render(ContextWrapper, {
-            props: {
-                testContextKey: itemIdentifier,
-                testContext,
-                testComponent: AssociateInteraction,
-                testComponentProps: {
-                    itemIdentifier,
-                    responseIdentifier,
-                    maxAssociations: 4,
-                    choices
-                }
-            }
-        });
-        expect(container).toMatchSnapshot();
-        expect(getInstructionsLang).toHaveBeenCalled();
-        expect(container.querySelector('.qti-instruction-container').getAttribute('lang')).toEqual('nb_NO');
-    });
-
     describe('shuffle choices', () => {
         it('renders choices shuffled if attribute is true', () => {
             shuffleChoiceOptions.mockImplementationOnce(choicesParam => {
@@ -1937,8 +1963,14 @@ describe('AssociateInteraction', () => {
                     shuffle: true
                 }
             });
+            const selectorHelper = selectorHelperFactory(container);
 
-            expect(container).toMatchSnapshot();
+            expectChoicesTextContents(selectorHelper.choiceArea, [
+                'B Option 1',
+                'A Option 2',
+                'C Option 3',
+                'Blocktree D Option 4'
+            ]);
         });
 
         it('should not override optionsOrder in the store', () => {

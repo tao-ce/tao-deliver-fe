@@ -33,6 +33,12 @@ exports[`title plugin > renders and destroys 2`] = `
   >
     
     
+    
+    
+    
+    
+    
+    
   </header>
   
     
@@ -43,6 +49,9 @@ exports[`title plugin > renders and destroys 2`] = `
       id="a11y-main"
       tabindex="-1"
     >
+      
+      
+      
       
     </h2>
     

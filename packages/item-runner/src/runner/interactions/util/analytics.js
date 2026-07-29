@@ -54,7 +54,11 @@ const noopInteractionStateStore = {
 };
 
 /**
- * @typedef {{ wait: number, [trailing]: boolean, [leading]: boolean, [maxWait]: number }} DebounceOptions
+ * @typedef {Object} DebounceOptions
+ * @property {Number} wait
+ * @property {Boolean} [leading]
+ * @property {Boolean} [trailing]
+ * @property {Number} [maxWait]
  */
 
 /**
@@ -62,7 +66,7 @@ const noopInteractionStateStore = {
  *
  * @param {{}} props
  * @param {(function(void): HTMLElement )} props.getInteractionElement
- * @param {(function(*): void)} props.[handler]
+ * @param {(function(*): void)} [props.handler]
  * @param {{ snapshotResponse: Function, getResponseIfChanged: Function }} [props.interactionStateStore]
  * @param {Object} [props.eventTypeToDomEventTypeMap]
  * @param {(function(Event): Object)} [props.getDetails] - extracts and formats details from event

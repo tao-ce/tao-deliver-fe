@@ -1,10 +1,11 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2024 (original work) Open Assessment Technologies SA ;
+// Copyright (C) 2024-2026 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 import editorConfigFactory from '../editorConfig.js';
 import specialCharsPluginsMapping from '../specialCharacters/index.js';
+import { SpecialCharactersUpdaterPlugin, SpecialCharactersDiacriticsPlugin } from '@oat-sa-private/ui-elements';
 
 describe('editorConfigFactory', () => {
     afterEach(() => {
@@ -32,6 +33,15 @@ describe('editorConfigFactory', () => {
         expect(config.removePlugins).toContain('MathBox');
         expect(config.toolbar.removeItems).toContain('mathBox');
     });
+
+    it('sets wiris as math editor provider when hasMathEntry and isWirisMathEditorEnabled are true', () => {
+        const config = editorConfigFactory({
+            isWirisMathEditorEnabled: true,
+            hasMathEntry: true
+        });
+        expect(config.mathEditor.provider).toBe('wiris');
+    });
+
 
     it('sets math entry keyboards if hasMathEntry is true', () => {
         const config = editorConfigFactory({
@@ -63,7 +73,33 @@ describe('editorConfigFactory', () => {
             specialCharacterSetName: 'latinAndMaths'
         });
         expect(config.removePlugins).toEqual(expect.arrayContaining(specialCharsPluginsMapping.defaultList));
-        expect(config.extraPlugins).toContain(specialCharsPluginsMapping.latinAndMaths);
+        expect(config.extraPlugins).toEqual([
+            specialCharsPluginsMapping.latinAndMaths,
+            SpecialCharactersDiacriticsPlugin
+        ]);
+    });
+
+    it('applies specialCharactersConfig property if provided', () => {
+        const specialCharactersConfig = {
+            addGroups: [
+                {
+                    identifier: 'foo',
+                    label: 'bar',
+                    items: [
+                        {
+                            character: 'A',
+                            title: 'the letter A'
+                        }
+                    ]
+                }
+            ],
+            order: ['foo']
+        };
+        const config = editorConfigFactory({
+            specialCharactersConfig
+        });
+        expect(config.extraPlugins).toEqual([SpecialCharactersUpdaterPlugin, SpecialCharactersDiacriticsPlugin]);
+        expect(config.specialCharacters).toEqual(specialCharactersConfig);
     });
 
     it('removes wproofreader plugin and toolbar item if no config', () => {
@@ -83,5 +119,12 @@ describe('editorConfigFactory', () => {
         });
         expect(config.removePlugins).toEqual(expect.arrayContaining(['Plugin1', 'Plugin2']));
         expect(config.toolbar.removeItems).toEqual(expect.arrayContaining(['item1', 'item2']));
+    });
+
+    it('sets toolbar.shouldNotGroupWhenFull if provided', () => {
+        const config = editorConfigFactory({
+            toolbarShouldNotGroupWhenFull: false
+        });
+        expect(config.toolbar.shouldNotGroupWhenFull).toBe(false);
     });
 });

@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2020-2024 (original work) Open Assessment Technologies SA
+// Copyright (C) 2020-2026 (original work) Open Assessment Technologies SA
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
@@ -13,6 +13,7 @@ import {
     extractLastMatchingClass,
     extractAllFromClasses,
     extractDataValueList,
+    extractDataValueBoolean
 } from '../attributes.js';
 
 describe('attributes API', () => {
@@ -103,7 +104,7 @@ describe('attributes: extractLastMatchingClass', () => {
     });
 });
 
-describe('attributes: extractLastMatchingClass', () => {
+describe('attributes: extractDataValueList', () => {
     it('correctly extracts list of strings', () => {
         expect(extractDataValueList('first, middle,last')).toEqual(['first', 'middle', 'last']);
     });
@@ -115,5 +116,23 @@ describe('attributes: extractLastMatchingClass', () => {
     });
     it('correctly extracts from undefined input', () => {
         expect(extractDataValueList(void 0)).toEqual([]);
+    });
+});
+
+describe('attributes: extractDataValueBoolean', () => {
+    it('correctly extracts falsy values', () => {
+        expect(extractDataValueBoolean(void 0)).toBe(false);
+        expect(extractDataValueBoolean(null)).toBe(false);
+        expect(extractDataValueBoolean(false)).toBe(false);
+        expect(extractDataValueBoolean('')).toBe(false);
+        expect(extractDataValueBoolean('false')).toBe(false);
+    });
+    it('correctly extracts truthy values', () => {
+        expect(extractDataValueBoolean(true)).toBe(true);
+        expect(extractDataValueBoolean('true')).toBe(true);
+    });
+    it('correctly extracts undefined values using default provided', () => {
+        expect(extractDataValueBoolean(void 0, false)).toBe(false);
+        expect(extractDataValueBoolean(void 0, true)).toBe(true);
     });
 });

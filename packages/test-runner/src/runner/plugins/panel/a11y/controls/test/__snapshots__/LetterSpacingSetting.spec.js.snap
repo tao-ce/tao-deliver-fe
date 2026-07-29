@@ -22,11 +22,13 @@ exports[`LetterSpacingSetting > renders correctly 1`] = `
           fill-rule="evenodd"
           id="Union"
         />
+        
       </svg>
+      
        
       <label>
-        Letter spacing
-         
+        Letter spacing 
+        
       </label>
        
       <span
@@ -48,10 +50,15 @@ exports[`LetterSpacingSetting > renders correctly 1`] = `
             <path
               d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
          
         <button
           aria-disabled="true"
@@ -70,12 +77,20 @@ exports[`LetterSpacingSetting > renders correctly 1`] = `
             <path
               d="M0 7h16v2H0z"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
       </span>
+      
     </span>
+    
+    
   </div>
 </body>
 `;

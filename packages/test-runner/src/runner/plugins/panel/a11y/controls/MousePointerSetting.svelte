@@ -7,7 +7,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 <script>
     // Licensed under Gnu Public Licence version 2
     // Copyright (c) 2023-2024 (original work) Open Assessment Technologies SA ;
-    import { createEventDispatcher, onMount, onDestroy } from 'svelte';
+    import { createEventDispatcher, onMount, onDestroy, mount, unmount } from 'svelte';
     import { __ } from '@oat-sa-private/ui-core';
     import settingsKeys from '../../../settings/settingsKeys.js';
 
@@ -97,7 +97,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     function addCursor(position) {
         if (!cursorSvg) {
             // Create the component if it doesn't exist yet
-            cursorSvg = new CursorSvg({
+            cursorSvg = mount(CursorSvg, {
                 target: targetElement,
                 props: {
                     size: sizes.pointer[stepperValue],
@@ -120,7 +120,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     function removeCursor() {
         if (cursorSvg) {
-            cursorSvg.$destroy();
+            unmount(cursorSvg);
             cursorSvg = null;
         }
     }

@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2020-2025 (original work) Open Assessment Technologies SA;
+// Copyright (C) 2020-2026 (original work) Open Assessment Technologies SA;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 import { cloneDeep, isEqual } from 'lodash';
@@ -14,7 +14,7 @@ import {
     reduceStateToResponses,
     updateItemAttempt
 } from './session/attempt.js';
-import { buildStats, updateAttempt, updateItemProperty, updateStats } from './util/testMap.js';
+import { buildStats, updateAttempt, updateItemProperty, updateStats, itemHasCategory } from './util/testMap.js';
 import { isNavigationDisabledByTimers } from './timers/navigation.js';
 import { getAllowLateSubmission, isItemModalFeedbackState } from './util/testContext.js';
 import { isPausedByProctorExecution, isPausedByProctorUiFlow, isProctoredSession } from './util/proctoring';
@@ -30,6 +30,7 @@ import { getTestSessionUserDataService } from './session/testSessionUserDataServ
 import { timersServiceFactory } from './timers/timersService.js';
 import { getTimerLabelForLevel } from './timers/timerLabel.js';
 import timerModes from './timers/timerModes.js';
+import { createGuidedNavFallback } from './timers/guidedNavFallback.js';
 import {
     hasTimeRemainingItems,
     hasTimeRemainingItemsAhead,
@@ -39,6 +40,7 @@ import {
 import { setAdditionalErrorInfo } from './util/error.js';
 import { socketProxyFactory } from './timers/socketProxy.js';
 import { disableNavReasons } from './plugins/navigation/navigator/constants.js';
+import { mount, unmount } from 'svelte';
 
 /**
  * Get the serviceCallId (the test session unique identifier)
@@ -138,6 +140,10 @@ export default {
 
         this.navigationFeedbacksStore = getNavigationFeedbacksStore(getServiceCallId(this.getConfig()));
 
+        this.settingsStore = this.testSessionUserDataService.getSettingsStore();
+
+        this.guidedNavFallback = null;
+
         /**
          * Create proxy for socket connection
          * @param {Boolean} isSocketProxyBlocking - if false, ignore socketProxy errors - session can continue even if disconnected
@@ -159,8 +165,11 @@ export default {
                 if (isSocketProxyBlocking) {
                     this.handleError(err);
                 } else {
-                    console.error(err); // eslint-disable-line no-console
+                    console.error(err);
                 }
+            };
+            const handleSocketProxyForceLogoutError = err => {
+                this.handleError(err);
             };
             let socketProxy;
             try {
@@ -173,6 +182,8 @@ export default {
                 handleSocketProxyError(err);
             }
             socketProxy.onProxyEvent('error', handleSocketProxyError);
+            socketProxy.onProxyEvent('force_logout', handleSocketProxyForceLogoutError);
+
             return socketProxy;
         };
 
@@ -196,6 +207,9 @@ export default {
                 mode: options.realTimeService.timersClientManaged === false ? timerModes.server : timerModes.client,
                 serviceCallId: getServiceCallId(this.getConfig()),
                 onError: err => {
+                    if (this.guidedNavFallback?.isStartErrorHandled(err)) {
+                        return;
+                    }
                     timersService.stop();
                     this.handleError(err);
                 },
@@ -205,11 +219,13 @@ export default {
                 onExtraAdded: () => {
                     this.checkItemOpen('extraAdded');
                 },
-                throttleConfig: options.timersService?.throttleConfig
+                throttleConfig: options.timersService?.throttleConfig,
+                warningConfig: options.timersService?.warningConfig
             });
             timersService.setInitialData(timerDefinition);
 
             this.on('timersservice-stop', () => {
+                this.guidedNavFallback?.stop();
                 if (this.timersService) {
                     this.timersService.stop();
                 }
@@ -217,6 +233,17 @@ export default {
 
             return timersService;
         };
+        this.guidedNavFallback = createGuidedNavFallback({
+            getServiceCallId: () => getServiceCallId(this.getConfig()),
+            getCurrentTestPart: () => this.getDataHolder()?.getCurrentTestPart(),
+            getCurrentItemIdentifier: () => this.getCurrentItemIdentifier(),
+            getTimersService: () => this.timersService,
+            isTimersInitDone: () => this.timersInitDone,
+            isPaused: () => isPausedByProctorUiFlow(this),
+            getRealtimeOptions: () => this.getConfig()?.options?.realTimeService,
+            stopTimers: () => this.timersService?.stop(),
+            onTimeout: timerData => this.trigger('timeout', timerData)
+        });
 
         /**
          * Check for timed out timer in current testContext
@@ -252,14 +279,20 @@ export default {
 
         /**
          * Wait for pendingOperations (uploads) to finish, so any response data is not lost.
-         * TODO: finalise usage in TR-4623
          * @returns {Promise<void>} - resolves when nothing more is pending
          */
         this.awaitPendingOperations = () =>
             new Promise(resolve => {
-                if (this.itemRunner.pendingOperationsStore.isEmpty()) {
+                if (!this.itemRunner?.pendingOperationsStore || this.itemRunner.pendingOperationsStore.isEmpty()) {
                     resolve();
                 } else {
+                    this.showItemHangerMessage([
+                        {
+                            content: __('Please wait while the answer is saved...'),
+                            colored: false,
+                            isTimer: false
+                        }
+                    ]);
                     // wait for all pending operations to finish
                     this.itemRunner.on('pendingoperationschange.timeout', ({ size }) => {
                         if (size === 0) {
@@ -271,9 +304,11 @@ export default {
             });
 
         /**
-         * Handle the 'timeout' event
+         * Handle the 'timeout' event:
+         * - stop the item playing media
+         * - (optional) block navigation and show a dialog, which can result in a navigation or an overview
+         * - wait for pendingOperations to finish
          * - send a 'timeout' action
-         * - show a dialog, which can result in a navigation or an overview
          * @param {Object} highestTimedOutTimer
          * @param {String} highestTimedOutTimer.level
          * @param {String} highestTimedOutTimer.id
@@ -281,24 +316,20 @@ export default {
          * @param {Number} highestTimedOutTimer.timerValue.timeLeft
          */
         this.on('timeout', highestTimedOutTimer => {
-            // TODO: Do we wait for:
-            //  - upload response [ok if item unloaded],
-            //  - image upload [must have item loaded; can check 'pendingoperationschange'] -> TR-4623
-            //       if we don't wait, response may be in corrupted intermediate state?
-            //       like image without src [well, ckeditor should simply delete it on render]
-            //       but check it won't cause errors on revisit/for reviewer
-            //  - ALSO what if item has validateResponses/allowSkipping and user response is invalid? -> TR-4424
+            this.guidedNavFallback?.stop();
 
             const itemIdentifier = this.getCurrentItemIdentifier();
+            const testContext = this.getTestContext();
             const testMap = this.getTestMap();
             const testPart = this.getDataHolder().getCurrentTestPart();
-            const testContext = this.getTestContext();
 
             const isTimersGuidedNavigation = isNavigationDisabledByTimers(
                 getServiceCallId(this.getConfig()),
                 testPart,
                 itemIdentifier
             );
+            const hasNoAlertTimeoutCategory = itemHasCategory(testMap, itemIdentifier, 'x-tao-option-noAlertTimeout');
+            const shouldAutoNavigate = isTimersGuidedNavigation || hasNoAlertTimeoutCategory;
 
             /**
              * Call the 'timeout' action, submitting the item state and response
@@ -331,13 +362,8 @@ export default {
 
             // calculate additional context for this timeout
             const partHasTimeRemainingItems = hasTimeRemainingItems(testPart, timersStore);
-            const feedbackConfig = getNavigationFeedbackConfig(feedbackTypeArgs, {
-                timedOutScope: highestTimedOutTimer.level,
-                timeLeftInPart: partHasTimeRemainingItems,
-                timeLeftAheadInPart: hasTimeRemainingItemsAhead(testContext, testPart, timersStore),
-                lastPartInTest: isLastPartOfTest(testPart, testMap),
-                linearPart: testPart.isLinear
-            });
+
+            this.settingsStore.setSetting('doNotPlayMedia', true);
 
             const doNextMove = level => {
                 // when continue/submit/finish option chosen from dialog
@@ -351,12 +377,14 @@ export default {
                 }
             };
 
-            //case 1: "guided navigation": no feedback, move immediately
-            if (isTimersGuidedNavigation) {
+            //case 1: auto navigation: no feedback, wait for requests, then move or open overview
+            if (shouldAutoNavigate) {
                 this.clearItemHangerMessages();
-                this.setTestSessionStatus(testSessionStatus.loading);
 
-                return callTimeoutAction()
+                return this.itemRunner
+                    .close() // prevents interacting
+                    .then(this.awaitPendingOperations) // ensures recordings & file uploads ended
+                    .then(callTimeoutAction) // sends response
                     .then(() => {
                         if (isPausedByProctorUiFlow(this)) {
                             return;
@@ -368,9 +396,20 @@ export default {
                     });
             }
 
-            // case 2: normal: show feedback, after that move or open overview
-            const showFeedbackPromise = showNavigationFeedback(feedbackTypeArgs, feedbackConfig)
-                .then(feedbackResult =>
+            // case 2: show disabled feedback, wait for requests, enable dialog buttons,
+            // after that send timeout action and wait for dialog accept,
+            // then move or open overview
+            const feedbackConfig = getNavigationFeedbackConfig(feedbackTypeArgs, {
+                timedOutScope: highestTimedOutTimer.level,
+                timeLeftInPart: partHasTimeRemainingItems,
+                timeLeftAheadInPart: hasTimeRemainingItemsAhead(testContext, testPart, timersStore),
+                lastPartInTest: isLastPartOfTest(testPart, testMap),
+                linearPart: testPart.isLinear
+            });
+            feedbackConfig?.buttons?.forEach(btn => (btn.disabled = true));
+
+            const showFeedbackPromise = showNavigationFeedback(feedbackTypeArgs, feedbackConfig).then(
+                feedbackResult =>
                     new Promise(resolve => {
                         if (feedbackResult.cancelled) {
                             resolve(feedbackResult);
@@ -384,11 +423,13 @@ export default {
                         this.setTestSessionStatus(testSessionStatus.loading);
                         resolve(feedbackResult);
                     })
-                );
-
+            );
             this.trigger('disablenav', { reason: disableNavReasons.overlay });
 
-            Promise.all([showFeedbackPromise, callTimeoutAction()])
+            // dialog already prevents interacting and is preferable to itemRunner.close()
+            this.awaitPendingOperations() // ensures recordings & file uploads ended
+                .then(() => this.navigationFeedbacksStore.enableButtons(feedback => feedback.config.type === 'timeout'))
+                .then(() => Promise.all([showFeedbackPromise, callTimeoutAction()]))
                 .then(([feedbackResult]) => {
                     this.trigger('enablenav', { reason: disableNavReasons.overlay });
 
@@ -1010,6 +1051,7 @@ export default {
 
                 // Move or skip action can go ahead
                 const itemIdentifier = this.getCurrentItemIdentifier();
+                const prevItemSessionState = testContext.itemSessionState;
                 const { itemResults, submitItemWasCalled } = endItemSessionResults;
                 let action = submitResponse && !submitItemWasCalled ? 'move' : 'skip';
                 let params = Object.assign(
@@ -1027,7 +1069,18 @@ export default {
                         if (!results || !results.testContext) {
                             throw new Error('No testContext received');
                         }
-                        this.setTestContext(results.testContext);
+                        const newTextContent = { ...results.testContext };
+                        if (
+                            newTextContent.itemIdentifier === itemIdentifier &&
+                            newTextContent.itemSessionState === itemSessionStates.modalFeedback
+                        ) {
+                            //modalFeedback is supported only on endItemSession, initial rendering from modalFeedback status is not supported
+                            //if moved to another item, backend will reset itemSessionState,
+                            //if moved to the same item, backend won't reset it, so do it here
+                            newTextContent.itemSessionState = prevItemSessionState;
+                        }
+                        this.setTestContext(newTextContent);
+
                         if (typeof results.batteryContext !== 'undefined') {
                             this.trigger('testfinished', results.batteryContext);
                         }
@@ -1058,7 +1111,7 @@ export default {
 
         //we update the item runner options if the settings change while the item is running
         this.storeSubscriptions.push(
-            this.testSessionUserDataService.getSettingsStore().subscribe(settings => {
+            this.settingsStore.subscribe(settings => {
                 if (this.itemRunner) {
                     this.itemRunner.setOptions(Object.assign({}, this.itemRunner.getOptions(), { settings }));
                 }
@@ -1142,6 +1195,7 @@ export default {
         };
 
         this.resetTestState = () => {
+            this.guidedNavFallback?.stop();
             // Clear session status
             testSessionStatusStore.clear();
 
@@ -1171,7 +1225,7 @@ export default {
         window.addEventListener('unhandledrejection', this.handleUnhandledPromiseRejection);
 
         //we prepare the layout early
-        this.testLayout = new TestLayout({
+        this.testLayout = mount(TestLayout, {
             target: testContainer,
             props: {
                 serviceCallId: getServiceCallId(config),
@@ -1213,11 +1267,12 @@ export default {
                 .then(() => {
                     this.storeSubscriptions.push(
                         this.navigationFeedbacksStore.subscribe(() => {
-                            const settingsStore = this.testSessionUserDataService.getSettingsStore();
-                            const oldDoNotPlayMedia = settingsStore.getSetting('doNotPlayMedia');
-                            const newDoNotPlayMedia = this.navigationFeedbacksStore.isSecurityShown() || this.navigationFeedbacksStore.isTimeoutShown();
+                            const oldDoNotPlayMedia = this.settingsStore.getSetting('doNotPlayMedia');
+                            const newDoNotPlayMedia =
+                                this.navigationFeedbacksStore.isSecurityShown() ||
+                                this.navigationFeedbacksStore.isTimeoutShown();
                             if (Boolean(oldDoNotPlayMedia) !== Boolean(newDoNotPlayMedia)) {
-                                settingsStore.setSetting('doNotPlayMedia', newDoNotPlayMedia);
+                                this.settingsStore.setSetting('doNotPlayMedia', newDoNotPlayMedia);
                             }
                         })
                     );
@@ -1246,31 +1301,28 @@ export default {
                     this.setTestContext(results.testContext);
 
                     const hasTimers = !!results.timer;
-                    if (hasTimers || isProctoredSession(this.getTestContext())) {
-                        //for timers, socket is required, so do not start test until connected, and throw errors on disconnect;
-                        //for proctoring, socket is optional, so do not wait for connection before starting test, and silence errors if any.
-                        const isSocketProxyBlocking = hasTimers;
+                    const proctored = isProctoredSession(results.testContext);
+                    const isSocketProxyBlocking = hasTimers || proctored;
 
-                        return this.createSocketProxy(isSocketProxyBlocking).then(socketProxy => {
-                            /**
-                             * @public
-                             * plugins can access it with `testRunner.socketProxy`
-                             * (TODO: add this.getSocketProxy() to provider & use moduleLoader, or add some container for shared service instances)
-                             */
-                            this.socketProxy = socketProxy;
-                            this.timersService = this.createTimersService(results.timer, this.socketProxy);
-                            if (this.socketProxy) {
-                                if (isSocketProxyBlocking) {
-                                    return this.socketProxy.connect();
-                                } else {
-                                    this.socketProxy.connect().catch(err => {
-                                        console.error(err); // eslint-disable-line no-console
-                                    });
-                                    return Promise.resolve();
-                                }
+                    return this.createSocketProxy(isSocketProxyBlocking).then(socketProxy => {
+                        /**
+                         * plugins can access it with `testRunner.socketProxy`
+                         * (TODO: add this.getSocketProxy() to provider & use moduleLoader, or add some container for shared service instances)
+                         */
+                        /** @public */
+                        this.socketProxy = socketProxy;
+                        this.timersService = this.createTimersService(results.timer, this.socketProxy);
+                        if (this.socketProxy) {
+                            if (isSocketProxyBlocking) {
+                                return this.socketProxy.connect();
+                            } else {
+                                this.socketProxy.connect().catch(err => {
+                                    console.error(err);
+                                });
+                                return Promise.resolve();
                             }
-                        });
-                    }
+                        }
+                    });
                 })
                 .then(() => {
                     if (this.timersService) {
@@ -1305,6 +1357,8 @@ export default {
         }
         this.trigger('proctor-socket-unsubscribe');
 
+        this.settingsStore.setSetting('doNotPlayMedia', false);
+
         //load item data
         return this.getProxy()
             .getItem(itemIdentifier)
@@ -1324,7 +1378,7 @@ export default {
         const config = this.getConfig();
         const itemRunnerConfig = config && config.options && config.options.itemRunnerConfig;
         const assetManager = this.getAssetManager();
-        const settings = this.testSessionUserDataService.getSettingsStore().get();
+        const settings = this.settingsStore.get();
         const toolsState = this.testSessionUserDataService.getToolsStore().getItemToolsState(itemIdentifier);
         const { rubrics, validateResponses } = this.getTestContext();
         const categories = this.getDataHolder().getCurrentItem().categories;
@@ -1355,6 +1409,8 @@ export default {
                         }
                     }
                     this.setTestSessionStatus(testSessionStatus.interacting);
+
+                    this.guidedNavFallback?.start();
 
                     if (this.timersService && !isItemModalFeedbackState(this.getTestContext())) {
                         this.timersService.start(this.getTestContext());
@@ -1415,6 +1471,7 @@ export default {
     // eslint-disable-next-line no-unused-vars
     unloadItem(itemIdentifier) {
         return new Promise(resolve => {
+            this.guidedNavFallback?.stop();
             this.clearItemHangerMessages();
 
             if (this.timersService) {
@@ -1459,6 +1516,8 @@ export default {
             this.itemTimerUnsubscribe = null;
         }
 
+        this.guidedNavFallback?.stop();
+
         if (this.itemRunner) {
             return this.itemRunner.suspend();
         }
@@ -1499,6 +1558,8 @@ export default {
                     this.setTestSessionStatus(testSessionStatus.interacting);
 
                     this.trigger('enablenav', { reason: disableNavReasons.moving });
+
+                    this.guidedNavFallback?.start();
 
                     if (this.timersService) {
                         this.timersService.start(this.getTestContext());
@@ -1606,8 +1667,10 @@ export default {
      */
     destroy() {
         if (this.testLayout) {
-            this.testLayout.$destroy();
+            unmount(this.testLayout);
         }
+
+        this.guidedNavFallback?.stop();
 
         if (this.testSessionUserDataService) {
             this.testSessionUserDataService.stopSyncWithStorage();

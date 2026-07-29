@@ -22,6 +22,7 @@ exports[`Table > renders the provided table from blockTree 1`] = `
         <div
           class="shadow bottom hidden"
         />
+        
          
         <div
           class="scrollable-wrapper"
@@ -29,9 +30,14 @@ exports[`Table > renders the provided table from blockTree 1`] = `
           tabindex="0"
         >
           <table>
+            
+            
+            
             <caption>
               Sample
             </caption>
+            
+            
             
             
             <thead>
@@ -44,6 +50,8 @@ exports[`Table > renders the provided table from blockTree 1`] = `
                 </th>
               </tr>
             </thead>
+            
+            
             
             
             <tbody>
@@ -59,11 +67,16 @@ exports[`Table > renders the provided table from blockTree 1`] = `
             
             
             
-             
+            
+            
           </table>
+          
         </div>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -90,6 +103,7 @@ exports[`Table > renders without a blockTree by using its slot 1`] = `
         <div
           class="shadow bottom hidden"
         />
+        
          
         <div
           class="scrollable-wrapper"
@@ -99,7 +113,7 @@ exports[`Table > renders without a blockTree by using its slot 1`] = `
           <table
             class="funky-monkey"
           >
-             
+            
             <caption>
               My table
             </caption>
@@ -124,7 +138,6 @@ exports[`Table > renders without a blockTree by using its slot 1`] = `
                   TD2
                 </td>
               </tr>
-               
               <tr>
                 <td>
                   TD3
@@ -134,10 +147,15 @@ exports[`Table > renders without a blockTree by using its slot 1`] = `
                 </td>
               </tr>
             </tbody>
+            
           </table>
+          
         </div>
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;

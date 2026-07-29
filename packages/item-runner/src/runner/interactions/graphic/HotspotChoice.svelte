@@ -69,6 +69,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @param {MouseEvent} event
      */
     function handleClick(event) {
+        if (disabled) {
+            return;
+        }
         const eventData = {
             target: event.target,
             type: event.type,
@@ -85,6 +88,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @param {KeyboardEvent} event
      */
     function handleKeyUp(event) {
+        if (disabled) {
+            return;
+        }
         const actualKey = getActualKey(event);
         if (actualKey === 'space' || actualKey === 'enter') {
             const eventData = {
@@ -113,7 +119,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             cursor: not-allowed;
         }
         &.disabled {
-            & :global(.shape-outer-border),
             & :global(.shape-inner-border),
             & :global(.shape-checkmark) {
                 opacity: 0.5;
@@ -148,7 +153,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         & :global(.shape-outer-border) {
             fill: transparent;
             stroke: var(--color-gs-light);
-            stroke-width: 0.75rem;
+            stroke-width: 0.5rem;
             filter: var(--shadow-filter-url);
         }
 
@@ -171,12 +176,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             fill: transparent;
         }
 
-        & :global(g.invisible > .shape-outer-border) {
-            stroke: transparent;
-            fill: transparent;
-        }
-
-        & :global(g.invisible > .shape-inner-border) {
+        & :global(g.invisible > .shape-outer-border),
+        & :global(g.invisible > .shape-inner-border),
+        & :global(g.shape.poly.invisible:not(:focus-visible):not(:hover):not(.selected) > .shape-shadow),
+        & :global(g.shape.poly.invisible:not(:focus-visible):not(:hover):not(.selected) > .shape-outline-cover) {
             stroke: transparent;
             fill: transparent;
         }
@@ -232,6 +235,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 </style>
 
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <g
     data-choice-key={key}
     class="hotspot-choice {classes}"
@@ -255,11 +259,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         {ariaLabel}
         ariaLabelledBy={instructionsEltId}
         scale={activated ? 1.25 : 1}
-        on:click={!disabled && handleClick}
+        on:click={handleClick}
         on:center={handleCenter}
         on:mount
         on:keydown
-        on:keyup={!disabled && handleKeyUp} />
+        on:keyup={handleKeyUp} />
 
     {#if instructions}
         <text id={instructionsEltId} class="hidden" lang={instructionsLang}>{instructions}</text>

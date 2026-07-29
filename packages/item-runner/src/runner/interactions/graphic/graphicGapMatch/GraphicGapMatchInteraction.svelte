@@ -1244,6 +1244,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     <AtomicAriaLive {announcement} lang={instructionsLang} />
 
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div
         class="qti-flow-container position-{qtiPosition}"
         class:dragging
@@ -1256,7 +1257,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             {#if area === areas.choices}
                 <div class="scroll-shadows">
                     {#each ['left', 'right', 'top', 'bottom'] as bound}
-                        <div class="shadow {bound}" class:hidden={!shadowVisibility[bound]} />
+                        <div class="shadow {bound}" class:hidden={!shadowVisibility[bound]}></div>
                     {/each}
                     <div
                         class="choice-area"
@@ -1393,7 +1394,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                             {/if}
                         </g>
                     </Svg>
-                    {#each placedAnswers as answer, i (answer.concatenatedKey)}
+                    {#each placedAnswers as answer (answer.concatenatedKey)}
                         <Choice
                             {itemIdentifier}
                             key={answer.key}

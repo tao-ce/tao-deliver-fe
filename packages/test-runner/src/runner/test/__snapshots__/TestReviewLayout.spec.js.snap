@@ -5,7 +5,9 @@ exports[`TestReviewLayout > hides menu button based on the theme 1`] = `
   class="headerbar"
 >
   <header>
+    
      
+    
      
     <div
       class="content"
@@ -31,10 +33,7 @@ exports[`TestReviewLayout > hides menu button based on the theme 1`] = `
           class="floating-toolbars"
         >
           
-           
-          <div
-            class="flex-break"
-          />
+          
           
           
            
@@ -43,10 +42,25 @@ exports[`TestReviewLayout > hides menu button based on the theme 1`] = `
           />
           
           
+          
+          
+          
            
+          <div
+            class="flex-break"
+          />
+          
+          
+          
+          
+          
+           
+          
           
         </div>
+        
       </div>
+      
     </div>
   </header>
    
@@ -54,9 +68,12 @@ exports[`TestReviewLayout > hides menu button based on the theme 1`] = `
     <ol
       class="end"
     >
+      
        
+      
     </ol>
      
+    
   </aside>
 </div>
 `;
@@ -68,6 +85,14 @@ exports[`TestReviewLayout > if waitingForExternalScore, renders inline notificat
   <div
     class="tabgroup"
   >
+    <span
+      aria-live="polite"
+      class="visually-hidden"
+    >
+      
+    </span>
+     
+    
      
     <div
       class="scrollbox"
@@ -81,13 +106,16 @@ exports[`TestReviewLayout > if waitingForExternalScore, renders inline notificat
           <button
             aria-current="false"
             aria-selected="false"
+            data-tab-key="question"
             role="tab"
           >
+            
              
             Question
+            
              
+            
           </button>
-           
         </li>
         <li
           role="presentation"
@@ -95,22 +123,30 @@ exports[`TestReviewLayout > if waitingForExternalScore, renders inline notificat
           <button
             aria-current="true"
             aria-selected="true"
+            data-tab-key="answer"
             role="tab"
           >
+            
              
+            
+            
+            
             <span>
               Answer
             </span>
+            
              
+            
             <span
               class="tablabel-waiting"
             >
               ( - / - )
             </span>
             
+            
              
+            
           </button>
-           
         </li>
         <li
           role="presentation"
@@ -118,25 +154,27 @@ exports[`TestReviewLayout > if waitingForExternalScore, renders inline notificat
           <button
             aria-current="false"
             aria-selected="false"
+            data-tab-key="correct"
             role="tab"
           >
+            
              
             Correct
+            
              
+            
           </button>
-           
         </li>
+        
       </ul>
-      <iframe
-        aria-hidden="true"
-        src="about:blank"
-        style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-        tabindex="-1"
-      />
+      
     </div>
      
+    
   </div>
+  
    
+  
    
   <div
     class="inline-notification"
@@ -156,7 +194,9 @@ exports[`TestReviewLayout > if waitingForExternalScore, renders inline notificat
           d="M11.31 14.25l-.22.91-1.6.6A4.19 4.19 0 018.1 16a2.8 2.8 0 01-1.89-.59 2 2 0 01-.67-1.51 6.09 6.09 0 010-.72c0-.25.09-.52.16-.83l.84-3c.07-.28.14-.55.19-.8a3.68 3.68 0 00.07-.7 1.07 1.07 0 00-.23-.79 1.37 1.37 0 00-.89-.22 2.65 2.65 0 00-.67.1l-.58.19.22-.91c.55-.22 1.07-.41 1.57-.57a4.65 4.65 0 011.42-.24A2.71 2.71 0 019.55 6a1.9 1.9 0 01.65 1.51v.68a4.68 4.68 0 01-.17.89L9.16 12a7 7 0 00-.18.81 3.7 3.7 0 00-.08.69 1 1 0 00.26.8 1.48 1.48 0 00.91.21 2.54 2.54 0 00.68-.1 3.85 3.85 0 00.56-.19m.21-12.36a1.72 1.72 0 01-.58 1.31 2 2 0 01-1.4.54 2 2 0 01-1.41-.51 1.73 1.73 0 01-.59-1.31A1.73 1.73 0 018.13.58 2 2 0 019.54 0a2 2 0 011.4.55 1.72 1.72 0 01.58 1.31"
           fill-rule="evenodd"
         />
+        
       </svg>
+      
        
       <div
         aria-live="assertive"
@@ -170,19 +210,26 @@ exports[`TestReviewLayout > if waitingForExternalScore, renders inline notificat
           >
             Awaiting manual scoring
           </span>
+          
            
+          
           <span
             class="notification-body"
           >
             All or part of this question needs to be manually scored. Please check back later to view the score.
           </span>
           
+          
         </div>
          
+        
       </div>
        
+      
     </div>
+    
   </div>
+  
    
   <div
     class="item-content-container"
@@ -221,6 +268,14 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
       <div
         class="tabgroup"
       >
+        <span
+          aria-live="polite"
+          class="visually-hidden"
+        >
+          
+        </span>
+         
+        
          
         <div
           class="scrollbox"
@@ -234,26 +289,29 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
               <button
                 aria-current="true"
                 aria-selected="true"
+                data-tab-key="question"
                 role="tab"
               >
+                
                  
                 Question
+                
                  
+                
               </button>
-               
             </li>
+            
           </ul>
-          <iframe
-            aria-hidden="true"
-            src="about:blank"
-            style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-            tabindex="-1"
-          />
+          
         </div>
          
+        
       </div>
+      
        
+      
        
+      
        
       <div
         class="item-content-container"
@@ -262,7 +320,9 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
      
     <div
       class="transition-wrapper"
-    />
+    >
+      
+    </div>
      
     <div
       class="scroll-last-child"
@@ -330,14 +390,21 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
                     <path
                       d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
+                  
                 </button>
-                 
+                
               </li>
+              
             </ol>
+            
              
+            
              
             <div
               class="content"
@@ -363,10 +430,7 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
                   class="floating-toolbars"
                 >
                   
-                   
-                  <div
-                    class="flex-break"
-                  />
+                  
                   
                   
                    
@@ -375,10 +439,25 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
                   />
                   
                   
+                  
+                  
+                  
                    
+                  <div
+                    class="flex-break"
+                  />
+                  
+                  
+                  
+                  
+                  
+                   
+                  
                   
                 </div>
+                
               </div>
+              
             </div>
           </header>
            
@@ -386,12 +465,29 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
             <ol
               class="end"
             >
+              
                
+              
             </ol>
              
+            
           </aside>
         </div>
+        
       </div>
+    </div>
+     
+    <div
+      class="notification-container-wrapper not-printable"
+    >
+      <div
+        aria-label="Notifications"
+        class="notification-container"
+        role="log"
+      >
+        
+      </div>
+      
     </div>
      
     <main
@@ -416,6 +512,14 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
         <div
           class="tabgroup"
         >
+          <span
+            aria-live="polite"
+            class="visually-hidden"
+          >
+            
+          </span>
+           
+          
            
           <div
             class="scrollbox"
@@ -429,26 +533,29 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
                 <button
                   aria-current="true"
                   aria-selected="true"
+                  data-tab-key="question"
                   role="tab"
                 >
+                  
                    
                   Question
+                  
                    
+                  
                 </button>
-                 
               </li>
+              
             </ul>
-            <iframe
-              aria-hidden="true"
-              src="about:blank"
-              style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-              tabindex="-1"
-            />
+            
           </div>
            
+          
         </div>
+        
          
+        
          
+        
          
         <div
           class="item-content-container"
@@ -457,7 +564,9 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
        
       <div
         class="transition-wrapper"
-      />
+      >
+        
+      </div>
        
       <div
         class="scroll-last-child"
@@ -486,6 +595,7 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
         <div
           slot="header"
         />
+        
       </header>
        
       <div
@@ -500,6 +610,7 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
         <div
           slot="content"
         />
+        
          
         <div
           class="scroll-last-child"
@@ -510,8 +621,10 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
         <div
           slot="footer"
         />
+        
       </footer>
     </div>
+    
   </div>,
   "tools": <div
     class="floating-toolbars-wrapper"
@@ -520,10 +633,7 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
       class="floating-toolbars"
     >
       
-       
-      <div
-        class="flex-break"
-      />
+      
       
       
        
@@ -532,9 +642,23 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
       />
       
       
+      
+      
+      
        
+      <div
+        class="flex-break"
+      />
+      
+      
+      
+      
+      
+       
+      
       
     </div>
+    
   </div>,
   "topBar": <div
     class="top-bar"
@@ -569,14 +693,21 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
                   <path
                     d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
-               
+              
             </li>
+            
           </ol>
+          
            
+          
            
           <div
             class="content"
@@ -602,10 +733,7 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
                 class="floating-toolbars"
               >
                 
-                 
-                <div
-                  class="flex-break"
-                />
+                
                 
                 
                  
@@ -614,10 +742,25 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
                 />
                 
                 
+                
+                
+                
                  
+                <div
+                  class="flex-break"
+                />
+                
+                
+                
+                
+                
+                 
+                
                 
               </div>
+              
             </div>
+            
           </div>
         </header>
          
@@ -625,11 +768,15 @@ exports[`TestReviewLayout > mounts with the main areas 1`] = `
           <ol
             class="end"
           >
+            
              
+            
           </ol>
            
+          
         </aside>
       </div>
+      
     </div>
   </div>,
 }
@@ -645,14 +792,18 @@ exports[`TestReviewLayout > renders correctly when showResponse: false, showCorr
     <button
       aria-current="true"
       aria-selected="true"
+      data-tab-key="question"
       role="tab"
     >
+      
        
       Question
+      
        
+      
     </button>
-     
   </li>
+  
 </ul>
 `;
 
@@ -666,14 +817,18 @@ exports[`TestReviewLayout > renders correctly when showResponse: false, showCorr
     <button
       aria-current="true"
       aria-selected="true"
+      data-tab-key="correct"
       role="tab"
     >
+      
        
       Correct
+      
        
+      
     </button>
-     
   </li>
+  
 </ul>
 `;
 
@@ -687,13 +842,16 @@ exports[`TestReviewLayout > renders correctly when showResponse: false, showCorr
     <button
       aria-current="true"
       aria-selected="true"
+      data-tab-key="question"
       role="tab"
     >
+      
        
       Question
+      
        
+      
     </button>
-     
   </li>
   <li
     role="presentation"
@@ -701,14 +859,18 @@ exports[`TestReviewLayout > renders correctly when showResponse: false, showCorr
     <button
       aria-current="false"
       aria-selected="false"
+      data-tab-key="correct"
       role="tab"
     >
+      
        
       Correct
+      
        
+      
     </button>
-     
   </li>
+  
 </ul>
 `;
 
@@ -722,14 +884,18 @@ exports[`TestReviewLayout > renders correctly when showResponse: true, showCorre
     <button
       aria-current="true"
       aria-selected="true"
+      data-tab-key="answer"
       role="tab"
     >
+      
        
       Answer
+      
        
+      
     </button>
-     
   </li>
+  
 </ul>
 `;
 
@@ -743,13 +909,16 @@ exports[`TestReviewLayout > renders correctly when showResponse: true, showCorre
     <button
       aria-current="false"
       aria-selected="false"
+      data-tab-key="question"
       role="tab"
     >
+      
        
       Question
+      
        
+      
     </button>
-     
   </li>
   <li
     role="presentation"
@@ -757,14 +926,18 @@ exports[`TestReviewLayout > renders correctly when showResponse: true, showCorre
     <button
       aria-current="true"
       aria-selected="true"
+      data-tab-key="answer"
       role="tab"
     >
+      
        
       Answer
+      
        
+      
     </button>
-     
   </li>
+  
 </ul>
 `;
 
@@ -778,13 +951,16 @@ exports[`TestReviewLayout > renders correctly when showResponse: true, showCorre
     <button
       aria-current="true"
       aria-selected="true"
+      data-tab-key="answer"
       role="tab"
     >
+      
        
       Answer
+      
        
+      
     </button>
-     
   </li>
   <li
     role="presentation"
@@ -792,14 +968,18 @@ exports[`TestReviewLayout > renders correctly when showResponse: true, showCorre
     <button
       aria-current="false"
       aria-selected="false"
+      data-tab-key="correct"
       role="tab"
     >
+      
        
       Correct
+      
        
+      
     </button>
-     
   </li>
+  
 </ul>
 `;
 
@@ -813,13 +993,16 @@ exports[`TestReviewLayout > renders correctly when showResponse: true, showCorre
     <button
       aria-current="false"
       aria-selected="false"
+      data-tab-key="question"
       role="tab"
     >
+      
        
       Question
+      
        
+      
     </button>
-     
   </li>
   <li
     role="presentation"
@@ -827,13 +1010,16 @@ exports[`TestReviewLayout > renders correctly when showResponse: true, showCorre
     <button
       aria-current="true"
       aria-selected="true"
+      data-tab-key="answer"
       role="tab"
     >
+      
        
       Answer
+      
        
+      
     </button>
-     
   </li>
   <li
     role="presentation"
@@ -841,14 +1027,18 @@ exports[`TestReviewLayout > renders correctly when showResponse: true, showCorre
     <button
       aria-current="false"
       aria-selected="false"
+      data-tab-key="correct"
       role="tab"
     >
+      
        
       Correct
+      
        
+      
     </button>
-     
   </li>
+  
 </ul>
 `;
 
@@ -894,14 +1084,21 @@ exports[`TestReviewLayout > renders correctly with a serviceCallId 1`] = `
                       <path
                         d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
-                   
+                  
                 </li>
+                
               </ol>
+              
                
+              
                
               <div
                 class="content"
@@ -927,10 +1124,7 @@ exports[`TestReviewLayout > renders correctly with a serviceCallId 1`] = `
                     class="floating-toolbars"
                   >
                     
-                     
-                    <div
-                      class="flex-break"
-                    />
+                    
                     
                     
                      
@@ -939,10 +1133,25 @@ exports[`TestReviewLayout > renders correctly with a serviceCallId 1`] = `
                     />
                     
                     
+                    
+                    
+                    
                      
+                    <div
+                      class="flex-break"
+                    />
+                    
+                    
+                    
+                    
+                    
+                     
+                    
                     
                   </div>
+                  
                 </div>
+                
               </div>
             </header>
              
@@ -950,12 +1159,29 @@ exports[`TestReviewLayout > renders correctly with a serviceCallId 1`] = `
               <ol
                 class="end"
               >
+                
                  
+                
               </ol>
                
+              
             </aside>
           </div>
+          
         </div>
+      </div>
+       
+      <div
+        class="notification-container-wrapper not-printable"
+      >
+        <div
+          aria-label="Notifications"
+          class="notification-container"
+          role="log"
+        >
+          
+        </div>
+        
       </div>
        
       <main
@@ -980,6 +1206,14 @@ exports[`TestReviewLayout > renders correctly with a serviceCallId 1`] = `
           <div
             class="tabgroup"
           >
+            <span
+              aria-live="polite"
+              class="visually-hidden"
+            >
+              
+            </span>
+             
+            
              
             <div
               class="scrollbox"
@@ -993,26 +1227,29 @@ exports[`TestReviewLayout > renders correctly with a serviceCallId 1`] = `
                   <button
                     aria-current="true"
                     aria-selected="true"
+                    data-tab-key="question"
                     role="tab"
                   >
+                    
                      
                     Question
+                    
                      
+                    
                   </button>
-                   
                 </li>
+                
               </ul>
-              <iframe
-                aria-hidden="true"
-                src="about:blank"
-                style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-                tabindex="-1"
-              />
+              
             </div>
              
+            
           </div>
+          
            
+          
            
+          
            
           <div
             class="item-content-container"
@@ -1021,7 +1258,9 @@ exports[`TestReviewLayout > renders correctly with a serviceCallId 1`] = `
          
         <div
           class="transition-wrapper"
-        />
+        >
+          
+        </div>
          
         <div
           class="scroll-last-child"
@@ -1050,6 +1289,7 @@ exports[`TestReviewLayout > renders correctly with a serviceCallId 1`] = `
           <div
             slot="header"
           />
+          
         </header>
          
         <div
@@ -1064,6 +1304,7 @@ exports[`TestReviewLayout > renders correctly with a serviceCallId 1`] = `
           <div
             slot="content"
           />
+          
            
           <div
             class="scroll-last-child"
@@ -1074,11 +1315,14 @@ exports[`TestReviewLayout > renders correctly with a serviceCallId 1`] = `
           <div
             slot="footer"
           />
+          
         </footer>
       </div>
+      
     </div>
      
     <div
+      aria-hidden="true"
       class="panel close-initial inverted-color"
       id="tao-panel-123"
     >
@@ -1107,12 +1351,18 @@ exports[`TestReviewLayout > renders correctly with a serviceCallId 1`] = `
                 <path
                   d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </div>
            
+          
         </div>
          
         <div
@@ -1121,9 +1371,13 @@ exports[`TestReviewLayout > renders correctly with a serviceCallId 1`] = `
           <div
             class="panel-content"
           />
+          
         </div>
       </div>
     </div>
+    
+    
+    
   </div>
 </body>
 `;
@@ -1149,11 +1403,15 @@ exports[`TestReviewLayout > renders scores correctly on answer tab (score: 0, ma
 <button
   aria-current="true"
   aria-selected="true"
+  data-tab-key="answer"
   role="tab"
 >
+  
    
   Answer
+  
    
+  
 </button>
 `;
 
@@ -1161,20 +1419,29 @@ exports[`TestReviewLayout > renders scores correctly on answer tab (score: 0, ma
 <button
   aria-current="true"
   aria-selected="true"
+  data-tab-key="answer"
   role="tab"
 >
+  
    
+  
+  
+  
   <span>
     Answer
   </span>
+  
    
+  
   <span
     class="tablabel-waiting"
   >
     ( - / - )
   </span>
   
+  
    
+  
 </button>
 `;
 
@@ -1182,20 +1449,29 @@ exports[`TestReviewLayout > renders scores correctly on answer tab (score: 0, ma
 <button
   aria-current="true"
   aria-selected="true"
+  data-tab-key="answer"
   role="tab"
 >
+  
    
+  
+  
+  
   <span>
     Answer
   </span>
+  
    
+  
   <span
     class="warning"
   >
     ( 0 / 8 )
   </span>
   
+  
    
+  
 </button>
 `;
 
@@ -1203,11 +1479,15 @@ exports[`TestReviewLayout > renders scores correctly on answer tab (score: 1, ma
 <button
   aria-current="true"
   aria-selected="true"
+  data-tab-key="answer"
   role="tab"
 >
+  
    
   Answer
+  
    
+  
 </button>
 `;
 
@@ -1215,20 +1495,29 @@ exports[`TestReviewLayout > renders scores correctly on answer tab (score: 1, ma
 <button
   aria-current="true"
   aria-selected="true"
+  data-tab-key="answer"
   role="tab"
 >
+  
    
+  
+  
+  
   <span>
     Answer
   </span>
+  
    
+  
   <span
     class="tablabel-partial"
   >
     ( 1 / 2 )
   </span>
   
+  
    
+  
 </button>
 `;
 
@@ -1236,11 +1525,15 @@ exports[`TestReviewLayout > renders scores correctly on answer tab (score: 4, ma
 <button
   aria-current="true"
   aria-selected="true"
+  data-tab-key="answer"
   role="tab"
 >
+  
    
   Answer
+  
    
+  
 </button>
 `;
 
@@ -1286,14 +1579,21 @@ exports[`TestReviewLayout > updates based on the test runner status 1`] = `
                       <path
                         d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
-                   
+                  
                 </li>
+                
               </ol>
+              
                
+              
                
               <div
                 class="content"
@@ -1319,10 +1619,7 @@ exports[`TestReviewLayout > updates based on the test runner status 1`] = `
                     class="floating-toolbars"
                   >
                     
-                     
-                    <div
-                      class="flex-break"
-                    />
+                    
                     
                     
                      
@@ -1331,10 +1628,25 @@ exports[`TestReviewLayout > updates based on the test runner status 1`] = `
                     />
                     
                     
+                    
+                    
+                    
                      
+                    <div
+                      class="flex-break"
+                    />
+                    
+                    
+                    
+                    
+                    
+                     
+                    
                     
                   </div>
+                  
                 </div>
+                
               </div>
             </header>
              
@@ -1342,12 +1654,29 @@ exports[`TestReviewLayout > updates based on the test runner status 1`] = `
               <ol
                 class="end"
               >
+                
                  
+                
               </ol>
                
+              
             </aside>
           </div>
+          
         </div>
+      </div>
+       
+      <div
+        class="notification-container-wrapper not-printable"
+      >
+        <div
+          aria-label="Notifications"
+          class="notification-container"
+          role="log"
+        >
+          
+        </div>
+        
       </div>
        
       <main
@@ -1372,6 +1701,14 @@ exports[`TestReviewLayout > updates based on the test runner status 1`] = `
           <div
             class="tabgroup"
           >
+            <span
+              aria-live="polite"
+              class="visually-hidden"
+            >
+              
+            </span>
+             
+            
              
             <div
               class="scrollbox"
@@ -1385,26 +1722,29 @@ exports[`TestReviewLayout > updates based on the test runner status 1`] = `
                   <button
                     aria-current="true"
                     aria-selected="true"
+                    data-tab-key="question"
                     role="tab"
                   >
+                    
                      
                     Question
+                    
                      
+                    
                   </button>
-                   
                 </li>
+                
               </ul>
-              <iframe
-                aria-hidden="true"
-                src="about:blank"
-                style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-                tabindex="-1"
-              />
+              
             </div>
              
+            
           </div>
+          
            
+          
            
+          
            
           <div
             class="item-content-container"
@@ -1413,7 +1753,9 @@ exports[`TestReviewLayout > updates based on the test runner status 1`] = `
          
         <div
           class="transition-wrapper"
-        />
+        >
+          
+        </div>
          
         <div
           class="scroll-last-child"
@@ -1442,6 +1784,7 @@ exports[`TestReviewLayout > updates based on the test runner status 1`] = `
           <div
             slot="header"
           />
+          
         </header>
          
         <div
@@ -1456,6 +1799,7 @@ exports[`TestReviewLayout > updates based on the test runner status 1`] = `
           <div
             slot="content"
           />
+          
            
           <div
             class="scroll-last-child"
@@ -1466,11 +1810,14 @@ exports[`TestReviewLayout > updates based on the test runner status 1`] = `
           <div
             slot="footer"
           />
+          
         </footer>
       </div>
+      
     </div>
      
     <div
+      aria-hidden="true"
       class="panel close-initial inverted-color"
       id="tao-panel-123"
     >
@@ -1499,12 +1846,18 @@ exports[`TestReviewLayout > updates based on the test runner status 1`] = `
                 <path
                   d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </div>
            
+          
         </div>
          
         <div
@@ -1513,9 +1866,13 @@ exports[`TestReviewLayout > updates based on the test runner status 1`] = `
           <div
             class="panel-content"
           />
+          
         </div>
       </div>
     </div>
+    
+    
+    
   </div>
 </body>
 `;
@@ -1562,14 +1919,21 @@ exports[`TestReviewLayout > updates based on the test runner status 2`] = `
                       <path
                         d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
-                   
+                  
                 </li>
+                
               </ol>
+              
                
+              
                
               <div
                 class="content"
@@ -1595,10 +1959,7 @@ exports[`TestReviewLayout > updates based on the test runner status 2`] = `
                     class="floating-toolbars"
                   >
                     
-                     
-                    <div
-                      class="flex-break"
-                    />
+                    
                     
                     
                      
@@ -1607,10 +1968,25 @@ exports[`TestReviewLayout > updates based on the test runner status 2`] = `
                     />
                     
                     
+                    
+                    
+                    
                      
+                    <div
+                      class="flex-break"
+                    />
+                    
+                    
+                    
+                    
+                    
+                     
+                    
                     
                   </div>
+                  
                 </div>
+                
               </div>
             </header>
              
@@ -1618,12 +1994,29 @@ exports[`TestReviewLayout > updates based on the test runner status 2`] = `
               <ol
                 class="end"
               >
+                
                  
+                
               </ol>
                
+              
             </aside>
           </div>
+          
         </div>
+      </div>
+       
+      <div
+        class="notification-container-wrapper not-printable"
+      >
+        <div
+          aria-label="Notifications"
+          class="notification-container"
+          role="log"
+        >
+          
+        </div>
+        
       </div>
        
       <main
@@ -1648,6 +2041,14 @@ exports[`TestReviewLayout > updates based on the test runner status 2`] = `
           <div
             class="tabgroup"
           >
+            <span
+              aria-live="polite"
+              class="visually-hidden"
+            >
+              
+            </span>
+             
+            
              
             <div
               class="scrollbox"
@@ -1661,27 +2062,30 @@ exports[`TestReviewLayout > updates based on the test runner status 2`] = `
                   <button
                     aria-current="true"
                     aria-selected="true"
+                    data-tab-key="question"
                     disabled=""
                     role="tab"
                   >
+                    
                      
                     Question
+                    
                      
+                    
                   </button>
-                   
                 </li>
+                
               </ul>
-              <iframe
-                aria-hidden="true"
-                src="about:blank"
-                style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-                tabindex="-1"
-              />
+              
             </div>
              
+            
           </div>
+          
            
+          
            
+          
            
           <div
             aria-hidden="true"
@@ -1712,15 +2116,16 @@ exports[`TestReviewLayout > updates based on the test runner status 2`] = `
                 >
                   loading
                 </p>
+                
               </div>
             </div>
+            
              
-            <p
-              style="animation: __svelte_2884083938_0 500ms linear 4500ms 1 both;"
-            >
+            <p>
               Please wait a little longer while your content loads
             </p>
           </div>
+          
         </div>
          
         <div
@@ -1750,6 +2155,7 @@ exports[`TestReviewLayout > updates based on the test runner status 2`] = `
           <div
             slot="header"
           />
+          
         </header>
          
         <div
@@ -1764,6 +2170,7 @@ exports[`TestReviewLayout > updates based on the test runner status 2`] = `
           <div
             slot="content"
           />
+          
            
           <div
             class="scroll-last-child"
@@ -1774,11 +2181,14 @@ exports[`TestReviewLayout > updates based on the test runner status 2`] = `
           <div
             slot="footer"
           />
+          
         </footer>
       </div>
+      
     </div>
      
     <div
+      aria-hidden="true"
       class="panel close-initial inverted-color"
       id="tao-panel-123"
     >
@@ -1807,12 +2217,18 @@ exports[`TestReviewLayout > updates based on the test runner status 2`] = `
                 <path
                   d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </div>
            
+          
         </div>
          
         <div
@@ -1821,9 +2237,13 @@ exports[`TestReviewLayout > updates based on the test runner status 2`] = `
           <div
             class="panel-content"
           />
+          
         </div>
       </div>
     </div>
+    
+    
+    
   </div>
 </body>
 `;

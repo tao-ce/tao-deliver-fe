@@ -12,20 +12,18 @@ const packageVersion = process.env.npm_package_version;
 
 Promise.all([
     fs.promises.readFile(path.join(bootstrapDir, 'server.tpl.js'), 'utf8'),
-    fs.promises.readFile(path.join(srcDir, 'index.html'), 'utf8'),
+    fs.promises.readFile(path.join(srcDir, 'index.html'), 'utf8')
 ])
     .then(([bootstrap, index]) => {
         const packageVersionRegex = /\{\{\{package_version\}\}\}/g;
 
-        const resolvedTemplate = bootstrap
-            .replace('{{{index}}}', index)
-            .replace(packageVersionRegex, packageVersion);
+        const resolvedTemplate = bootstrap.replace('{{{index}}}', index).replace(packageVersionRegex, packageVersion);
 
         fs.writeFile('server.js', resolvedTemplate, err => {
             if (err) {
-                console.error(err); /* eslint-disable-line */
+                console.error(err);
                 process.exit(-1);
             }
         });
     })
-    .catch(e => console.error(e)); /* eslint-disable-line */
+    .catch(e => console.error(e));

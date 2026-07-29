@@ -14,7 +14,7 @@ export default {
      * ${rootUrl}/${path}/${path}...
      *
      * @param {String} rootUrl - configuration endpoint rootUrl
-     * @param {String...} paths - path chunks
+     * @param {...String} paths - path chunks
      * @returns {String} the URL
      */
     urlFromPaths(rootUrl = '', ...paths) {

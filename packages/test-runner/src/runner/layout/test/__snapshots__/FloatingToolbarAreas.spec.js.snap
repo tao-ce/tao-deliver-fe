@@ -6,28 +6,40 @@ exports[`FloatingToolbarAreas component > Renders all divs for plugins, and only
     <div
       class="floating-toolbars"
     >
+      
+      
       <div
         class="toolbar-readAloud"
       />
+      
       
        
       <div
         class="flex-break"
       />
+      
+      
       
       <div
         class="toolbar-highlighter"
       />
       
+      
        
       <div
         class="flex-break"
       />
       
       
+      
+      
+      
        
       
+      
     </div>
+    
+    
   </div>
 </body>
 `;

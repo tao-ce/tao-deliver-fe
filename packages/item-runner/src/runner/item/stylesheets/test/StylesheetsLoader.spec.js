@@ -45,6 +45,7 @@ function buildStyleSheet(rules) {
 describe('StylesheetsLoader', () => {
     afterEach(() => {
         scopeStyles.mockClear();
+        document.head.innerHTML = '';
     });
 
     // For now, content of external resources such as these (accessed via <link href=""> tags) can't be mocked

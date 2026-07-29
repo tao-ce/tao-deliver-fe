@@ -9,7 +9,7 @@ import { getTestSessionUserDataService } from '../../../session/testSessionUserD
  * Allow works with store for exact tool, by wrapping logic into simple methods
  * @param {String} serviceCallId
  * @param {String} toolName
- * @returns {{set(String, Boolean): void, get(String): Boolean}|*}
+ * @returns {Object} API
  */
 export default function toolsStoreHandler(serviceCallId, toolName) {
     const toolsStore = getTestSessionUserDataService(serviceCallId).getToolsStore();

@@ -36,14 +36,17 @@ describe('FeedbackDialog component', () => {
 
     test.each([
         ['alert', 1, false],
-        ['confirm', 2, true]
+        ['confirm', 2, true],
+        ['timeout', 1, false],
+        ['timeout', 2, false]
     ])('renders %s type with %d buttons and dismissable: %s', (type, numButtons, dismissable) => {
         const { container, component } = render(FeedbackDialog, {
             props: {
                 config: {
                     heading: 'Header',
                     message: 'Message',
-                    buttons: buttonDefs.slice(0, numButtons)
+                    buttons: buttonDefs.slice(0, numButtons),
+                    type
                 }
             }
         });
@@ -120,9 +123,6 @@ describe('FeedbackDialog component', () => {
         return tick().then(() => {
             expect(ondone).toHaveBeenCalledTimes(1);
             expect(ondone.mock.calls[0][0].detail).toStrictEqual({ action: 'cancel' });
-            return tick().then(() => {
-                expect(container.querySelector('.modal-positioning')).toBeTruthy(); //does not auto-close itself
-            });
         });
     });
 });

@@ -7,6 +7,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 <script>
     // Licensed under Gnu Public Licence version 2
     // Copyright (c) 2024 (original work) Open Assessment Technologies SA ;
+    /* eslint-disable svelte/valid-compile */
     import CustomInteractionDefault from './CustomInteractionDefault.svelte';
     import { getContext } from 'svelte';
 
@@ -14,7 +15,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     const hideTooltips = !!itemRunnerConfigContext.options?.hideTooltips;
 
     export let properties = {};
-    properties.hideTooltips = hideTooltips;
 </script>
 
 <style>
@@ -69,4 +69,4 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 </style>
 
-<CustomInteractionDefault {...$$restProps} {properties} />
+<CustomInteractionDefault {...$$restProps} properties={{...properties, hideTooltips}} />

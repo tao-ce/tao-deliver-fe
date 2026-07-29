@@ -10,7 +10,7 @@ import { getTestSessionStatusStore } from '../../../testsStateStore.js';
 import { actionKeys } from './highlighterActionKeys.js';
 import { highlighterCollection } from './collection.js';
 import { getTextItemPassagesHrefs } from '@oat-sa-private/tao-item-runner-qtinui/src/runner/util/passage.js';
-import { tick } from 'svelte';
+import { tick, mount, unmount } from 'svelte';
 import { getItemProperty } from '../../../util/testMap.js';
 import toolsStoreHandler from '../util/toolsStoreHandler.js';
 import { isMutuallyExclusiveTool } from '../../../layout/toolbarItems.js';
@@ -160,7 +160,7 @@ export const highlighterPlugin = {
         this.activeActionKey = null;
         /**
          * Count of highlighted elements for each color (key is actionKey of this color's button)
-         * @type {Object<String, Number}}
+         * @type {Object<String, Number>}
          */
         this.highlightsPerColor = {};
 
@@ -259,7 +259,7 @@ export const highlighterPlugin = {
                     throw new Error(`No container '${toolbarContainerSelector}' found to render plugin into.`);
                 }
 
-                this.toolbar = new HighlighterBar({
+                this.toolbar = mount(HighlighterBar, {
                     target: toolbarContainer,
                     props: {
                         serviceCallId: testConfig.serviceCallId,
@@ -296,7 +296,7 @@ export const highlighterPlugin = {
          */
         this.destroyToolbar = () => {
             if (this.toolbar) {
-                this.toolbar.$destroy();
+                unmount(this.toolbar);
             }
             this.toolbar = null;
         };

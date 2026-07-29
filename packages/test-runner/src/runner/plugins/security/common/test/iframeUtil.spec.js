@@ -3,7 +3,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
-import { createNewIframeObserver, runActionInIframesRecursively } from '../iframeUtil.js';
+import { createNewIframeObserver, runActionInIframesRecursively, getIframesRecursively } from '../iframeUtil.js';
 
 describe('Security iframeUtil', () => {
     let callbackMock;
@@ -16,6 +16,7 @@ describe('Security iframeUtil', () => {
     afterEach(() => {
         // Clear the callback mock and disconnect the observer after each test
         callbackMock.mockClear();
+        document.body.innerHTML = '';
     });
 
     it('should call the callback when a new iframe is added', () => {
@@ -51,5 +52,26 @@ describe('Security iframeUtil', () => {
 
         // it finds the iframe if is detected by the observer
         expect(callbackMock.mock.calls[1][0]).toBe(newIframe);
+    });
+
+    it('getIframesRecursively returns array of all iframes', () => {
+        expect(getIframesRecursively()).toEqual([]);
+
+        const iframeA = document.createElement('iframe');
+        document.body.appendChild(iframeA);
+
+        const iframeB = document.createElement('iframe');
+        document.body.appendChild(iframeB);
+
+        const iframeAA = document.createElement('iframe');
+        iframeA.contentDocument.body.appendChild(iframeAA);
+
+        const iframeAB = document.createElement('iframe');
+        iframeA.contentDocument.body.appendChild(iframeAB);
+
+        const iframeAAA = document.createElement('iframe');
+        iframeAA.contentDocument.body.appendChild(iframeAAA);
+
+        expect(getIframesRecursively()).toEqual([iframeA, iframeAA, iframeAAA, iframeAB, iframeB]);
     });
 });

@@ -215,7 +215,7 @@ describe('AudioRecordingInteraction', () => {
         });
 
         it('renders button if current in completed sequence', () => {
-            const { component } = render(AudioRecordingInteraction, {
+            const { unmount } = render(AudioRecordingInteraction, {
                 props: {
                     itemIdentifier,
                     responseIdentifier,
@@ -229,7 +229,7 @@ describe('AudioRecordingInteraction', () => {
             sequence.start(responseIdentifier);
             sequence.finish(responseIdentifier);
             expect(sequence.completedTimes).toBe(1);
-            component.$destroy();
+            unmount();
             sequence.clear(); // must not reset completedTimes
 
             sequence.register(responseIdentifier); //wrapper component registers

@@ -2,12 +2,13 @@
 // Copyright (C) 2020-21 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
-
 import { render } from '@testing-library/svelte';
 import TheEnd from '../TheEnd.svelte';
+import { Feedback } from '@oat-sa-private/ui-elements';
 
 describe('TheEnd component', () => {
     const { location } = window;
+    const { open } = window;
 
     beforeAll(() => {
         delete window.location;
@@ -15,6 +16,7 @@ describe('TheEnd component', () => {
 
     afterAll(() => {
         window.location = location;
+        window.open = open;
     });
 
     it('Renders correctly with only a title', () => {
@@ -52,21 +54,18 @@ describe('TheEnd component', () => {
 
     it('The retry button reloads the current page', () => {
         expect.assertions(1);
-        const { container } = render(TheEnd, {
+        const { container, component } = render(TheEnd, {
             title: 'Error',
             cause: 'Something went wrong',
             retry: true
         });
+        const clickSpy = vi.fn();
+        component.$on('click', clickSpy);
         const button = container.querySelector('button');
-
-        const reload = vi.fn();
-        window.location = {
-            reload
-        };
 
         button.click();
 
-        expect(reload).toHaveBeenCalled();
+        expect(clickSpy).toHaveBeenCalled();
     });
 
     it('Focuses the heading element on mount', () => {
@@ -79,5 +78,84 @@ describe('TheEnd component', () => {
                 resolve();
             }, 10);
         });
+    });
+
+    it('Renders detailsComponent if defined', async () => {
+        const { container } = render(TheEnd, {
+            title: 'Error',
+            cause: 'Something went wrong',
+            remediation: 'Please follow these instructions',
+            detailsComponent: Feedback,
+            detailsComponentProps: { heading: 'Whatever', content: 'they are supposed to be' }
+        });
+        expect(container).toMatchSnapshot();
+    });
+
+    it('Renders exit button if withKioskExit=true', () => {
+        const { container } = render(TheEnd, {
+            title: 'Error',
+            cause: 'Something went wrong',
+            remediation: 'Please forget about it',
+            withKioskExit: true
+        });
+        expect(container).toMatchSnapshot();
+    });
+
+    it('Renders proceed action if actionHref is provided', () => {
+        const { container } = render(TheEnd, {
+            title: 'Thank you',
+            info: 'Your test has been submitted.',
+            actionHref: 'https://portal.example.com/my-sessions',
+            actionLabel: 'Proceed',
+            actionTarget: '_top'
+        });
+        expect(container).toMatchSnapshot();
+    });
+
+    it('The proceed button redirects the top window when actionTarget is _top', () => {
+        const openSpy = vi.fn();
+        window.location = {
+            href: 'https://deliver.example.com/thank-you',
+            assign: vi.fn()
+        };
+        window.open = openSpy;
+
+        const { container } = render(TheEnd, {
+            title: 'Thank you',
+            info: 'Your test has been submitted.',
+            actionHref: 'https://portal.example.com/my-sessions',
+            actionLabel: 'Proceed',
+            actionTarget: '_top'
+        });
+
+        const button = container.querySelector('.button-container button');
+
+        button.click();
+
+        expect(window.location.href).toBe('https://portal.example.com/my-sessions');
+        expect(openSpy).not.toHaveBeenCalled();
+    });
+
+    it('The proceed button falls back to window.open for other action targets', () => {
+        const openSpy = vi.fn();
+        window.location = {
+            href: 'https://deliver.example.com/thank-you',
+            assign: vi.fn()
+        };
+        window.open = openSpy;
+
+        const { container } = render(TheEnd, {
+            title: 'Thank you',
+            info: 'Your test has been submitted.',
+            actionHref: 'https://portal.example.com/my-sessions',
+            actionLabel: 'Proceed',
+            actionTarget: '_blank'
+        });
+
+        const button = container.querySelector('.button-container button');
+
+        button.click();
+
+        expect(openSpy).toHaveBeenCalledWith('https://portal.example.com/my-sessions', '_blank');
     });
 });

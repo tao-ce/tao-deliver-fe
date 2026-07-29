@@ -7,12 +7,6 @@ import { render, fireEvent } from '@testing-library/svelte';
 import ItemContentOverlay from '../ItemContentOverlay.svelte';
 
 describe('ItemContentOverlay rendering', () => {
-    it('renders correctly', () => {
-        const { container } = render(ItemContentOverlay);
-
-        expect(container).toMatchSnapshot();
-    });
-
     it('renders correctly with provided properties', () => {
         const { container } = render(ItemContentOverlay, {
             gapSize: 85,

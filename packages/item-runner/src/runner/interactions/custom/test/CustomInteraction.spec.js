@@ -6,6 +6,7 @@
 import MockCustomInteractionChild from './MockCustomInteractionChild.svelte';
 import MockAudioRecordingInteractionChild from './MockAudioRecordingInteractionChild.svelte';
 import MockTextReaderInteractionChild from './MockTextReaderInteractionChild.svelte';
+import { decommentify } from '@/test-utils/helpers.js';
 
 vi.mock('../customInteractionTypes/CustomInteractionDefault.svelte', () => ({
     default: MockCustomInteractionChild
@@ -29,7 +30,7 @@ describe('CustomInteraction switcher', () => {
                     typeIdentifier
                 }
             });
-            expect(container.innerHTML.trim()).toBe(
+            expect(decommentify(container.innerHTML.trim())).toBe(
                 `<div data-typeidentifier="${typeIdentifier}">Default component</div>`
             );
         }
@@ -42,7 +43,7 @@ describe('CustomInteraction switcher', () => {
                 typeIdentifier
             }
         });
-        expect(container.innerHTML.trim()).toBe(
+        expect(decommentify(container.innerHTML.trim())).toBe(
             `<div data-typeidentifier="${typeIdentifier}">AudioRecording component</div>`
         );
     });
@@ -54,7 +55,7 @@ describe('CustomInteraction switcher', () => {
                 typeIdentifier
             }
         });
-        expect(container.innerHTML.trim()).toBe(
+        expect(decommentify(container.innerHTML.trim())).toBe(
             `<div data-typeidentifier="${typeIdentifier}">TextReader component</div>`
         );
     });

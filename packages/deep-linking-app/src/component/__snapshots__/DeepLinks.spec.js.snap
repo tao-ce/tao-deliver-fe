@@ -6,14 +6,25 @@ exports[`DeepLinks page > should render 1`] = `
     <div
       class="deep-linking-page"
     >
+      
       <h1>
         Select content and link to course
+        
       </h1>
+      
       
        
       <div
         class="tabgroup"
       >
+        <span
+          aria-live="polite"
+          class="visually-hidden"
+        >
+          
+        </span>
+         
+        
          
         <div
           class="scrollbox"
@@ -27,14 +38,17 @@ exports[`DeepLinks page > should render 1`] = `
               <button
                 aria-current="true"
                 aria-selected="true"
+                data-tab-key="batteries"
                 disabled=""
                 role="tab"
               >
+                
                  
                 Batteries
+                
                  
+                
               </button>
-               
             </li>
             <li
               role="presentation"
@@ -42,25 +56,26 @@ exports[`DeepLinks page > should render 1`] = `
               <button
                 aria-current="false"
                 aria-selected="false"
+                data-tab-key="deliveries"
                 disabled=""
                 role="tab"
               >
+                
                  
                 Deliveries
+                
                  
+                
               </button>
-               
             </li>
+            
           </ul>
-          <iframe
-            aria-hidden="true"
-            src="about:blank"
-            style="display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; border: 0; opacity: 0; pointer-events: none; z-index: -1;"
-            tabindex="-1"
-          />
+          
         </div>
          
+        
       </div>
+      
        
       <div
         class="row"
@@ -82,7 +97,9 @@ exports[`DeepLinks page > should render 1`] = `
               <path
                 d="M16 15.29l-4.57-4.56a6.51 6.51 0 10-.7.7L15.29 16zM6.5 12A5.5 5.5 0 1112 6.5 5.51 5.51 0 016.5 12z"
               />
+              
             </svg>
+            
           </div>
            
           <input
@@ -90,20 +107,30 @@ exports[`DeepLinks page > should render 1`] = `
             placeholder="Search"
           />
            
+          
         </label>
+        
          
         <button
           class="actionable primary pill medium"
           type="button"
         >
+          
            
+          
            
           Link selected
+          
         </button>
+        
       </div>
        
+      
        
+      
     </div>
+    
+    
   </div>
 </body>
 `;

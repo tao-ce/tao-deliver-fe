@@ -101,9 +101,7 @@ msgid "If you have extra time, it is not shown here."
 msgstr ""
 
 #: ../../apps-common/src/component/WaitingPage.svelte:172
-msgid ""
-"You are registered with %s as your main language. Contact a proctor if this "
-"is not correct."
+msgid "You are registered with %s as your main language. Contact a proctor if this is not correct."
 msgstr ""
 
 #: ../../apps-common/src/component/WaitingPage.svelte:180
@@ -175,8 +173,7 @@ msgid "No internet connection."
 msgstr ""
 
 #: ../../apps-common/src/core/error/messages.js:60
-msgid ""
-"Please check your internet connection or contact your test administrator."
+msgid "Please check your internet connection or contact your test administrator."
 msgstr ""
 
 #: ../../apps-common/src/core/error/messages.js:66
@@ -768,9 +765,7 @@ msgid "Awaiting manual scoring"
 msgstr ""
 
 #: ../../test-runner/src/runner/TestReviewLayout.svelte:341
-msgid ""
-"All or part of this question needs to be manually scored. Please check back "
-"later to view the score."
+msgid "All or part of this question needs to be manually scored. Please check back later to view the score."
 msgstr ""
 
 #: ../../test-runner/src/runner/TestReviewLayout.svelte:370
@@ -858,9 +853,7 @@ msgid "Answer elimination"
 msgstr ""
 
 #: ../../test-runner/src/runner/plugins/settings/SettingsContent.svelte:145
-msgid ""
-"Answer elimination lets you exclude answer options that you are sure are "
-"incorrect."
+msgid "Answer elimination lets you exclude answer options that you are sure are incorrect."
 msgstr ""
 
 #: ../../test-runner/src/runner/plugins/settings/SettingsContent.svelte:152
@@ -868,8 +861,7 @@ msgid "Answer masking"
 msgstr ""
 
 #: ../../test-runner/src/runner/plugins/settings/SettingsContent.svelte:161
-msgid ""
-"Answer masking lets you hide answer options that you are sure are incorrect."
+msgid "Answer masking lets you hide answer options that you are sure are incorrect."
 msgstr ""
 
 #: ../../test-runner/src/runner/layout/overlay/OverlayHeaderBar.svelte:75
@@ -1021,15 +1013,11 @@ msgid "Click on any text to read aloud"
 msgstr ""
 
 #: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:168
-msgid ""
-"Press enter or space to activate select and read. To move the next available "
-"action, use the arrow keys. To close press escape."
+msgid "Press enter or space to activate select and read. To move the next available action, use the arrow keys. To close press escape."
 msgstr ""
 
 #: ../../test-runner/src/runner/plugins/tools/readAloud/ReadAloudBar.svelte:173
-msgid ""
-"Press enter or space to activate continuous reading. If activated press "
-"enter or space to stop the reading."
+msgid "Press enter or space to activate continuous reading. If activated press enter or space to stop the reading."
 msgstr ""
 
 #: ../../test-runner/src/runner/plugins/tools/highlighter/HighlighterBar.svelte:255
@@ -1105,9 +1093,7 @@ msgid "There are still questions waiting to be scored"
 msgstr ""
 
 #: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:232
-msgid ""
-"Your total score cannot be calculated until all of the questions have been "
-"scored. Please come back later to see your total score."
+msgid "Your total score cannot be calculated until all of the questions have been scored. Please come back later to see your total score."
 msgstr ""
 
 #: ../../test-runner/src/runner/plugins/navigation/reviewNavigator/overview/TestOverviewContent.svelte:240
@@ -3231,9 +3217,7 @@ msgid "You won't be able to review your answers after submission."
 msgstr ""
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:72
-msgid ""
-"You still have %d incomplete questions, if you submit you won't be able to "
-"change your answers."
+msgid "You still have %d incomplete questions, if you submit you won't be able to change your answers."
 msgstr ""
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:101
@@ -3249,9 +3233,7 @@ msgid "Are you sure you want to skip this question?"
 msgstr ""
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:126
-msgid ""
-"You still have %d attempts left. You won't be able to change your answer "
-"later if you skip this question."
+msgid "You still have %d attempts left. You won't be able to change your answer later if you skip this question."
 msgstr ""
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:134
@@ -3291,9 +3273,7 @@ msgid "Your answer is not valid."
 msgstr ""
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:196
-msgid ""
-"You have %d invalid answers out of %d. Please provide valid answers before "
-"proceeding."
+msgid "You have %d invalid answers out of %d. Please provide valid answers before proceeding."
 msgstr ""
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:201
@@ -3309,9 +3289,7 @@ msgid "You will be able to navigate away once you answer the question."
 msgstr ""
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:243
-msgid ""
-"Your test has been terminated by the proctor and your answers have been "
-"submitted."
+msgid "Your test has been terminated by the proctor and your answers have been submitted."
 msgstr ""
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:248
@@ -3903,27 +3881,19 @@ msgid "Max length has been reached"
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1617
-msgid ""
-"Press enter or space to grab and browse the answer area. To move to the next "
-"available option, use the arrow keys."
+msgid "Press enter or space to grab and browse the answer area. To move to the next available option, use the arrow keys."
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1622
-msgid ""
-"Press enter or space to grab. To move to next available answer, use the "
-"arrow keys."
+msgid "Press enter or space to grab. To move to next available answer, use the arrow keys."
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1625
-msgid ""
-"Press enter or space to replace. To browse other drop zones use the arrow "
-"keys. Press escape to cancel."
+msgid "Press enter or space to replace. To browse other drop zones use the arrow keys. Press escape to cancel."
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1628
-msgid ""
-"Press enter or space to place down. To browse other drop zones use the arrow "
-"keys. Press escape to cancel."
+msgid "Press enter or space to place down. To browse other drop zones use the arrow keys. Press escape to cancel."
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/associate/AssociateInteraction.svelte:1638
@@ -3963,9 +3933,7 @@ msgid "Option %d"
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:536
-msgid ""
-"Press enter or space to grab and place in the answer area. To move to next "
-"available option, use the arrow keys."
+msgid "Press enter or space to grab and place in the answer area. To move to next available option, use the arrow keys."
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/order/OrderInteraction.svelte:554
@@ -4349,15 +4317,11 @@ msgid "answer list"
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/order/SortableList.svelte:69
-msgid ""
-"Press enter or space to grab. To move to next available answer, use the "
-"arrow keys"
+msgid "Press enter or space to grab. To move to next available answer, use the arrow keys"
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/order/SortableList.svelte:72
-msgid ""
-"Press enter or space to place down. To reorder use the arrow keys. Press "
-"escape to cancel"
+msgid "Press enter or space to place down. To reorder use the arrow keys. Press escape to cancel"
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/graphic/Svg.svelte:18
@@ -4369,9 +4333,7 @@ msgid "To add an answer, press Space/Enter"
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/graphic/selectPoint/TutorialLayer.svelte:31
-msgid ""
-"To move it around use arrow keys, or Shift + arrow keys for more precise "
-"placement"
+msgid "To move it around use arrow keys, or Shift + arrow keys for more precise placement"
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/graphic/selectPoint/TutorialLayer.svelte:32
@@ -4451,21 +4413,15 @@ msgid "Ordered hotspot %d has been unordered."
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/graphic/graphicAssociate/util/ariaHelper.js:25
-msgid ""
-"Press enter or space to select and form an association. To move to the next "
-"available option, use the arrow keys"
+msgid "Press enter or space to select and form an association. To move to the next available option, use the arrow keys"
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/graphic/graphicAssociate/util/ariaHelper.js:28
-msgid ""
-"Press space to associate. To move to next available option, use the arrow "
-"keys. Press escape to cancel."
+msgid "Press space to associate. To move to next available option, use the arrow keys. Press escape to cancel."
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/graphic/graphicAssociate/util/ariaHelper.js:31
-msgid ""
-"Selected. To move to next available option, use the arrow keys. Press escape "
-"or space to cancel."
+msgid "Selected. To move to next available option, use the arrow keys. Press escape or space to cancel."
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/graphic/graphicAssociate/util/ariaHelper.js:34
@@ -4505,15 +4461,11 @@ msgid "The association between %s and %s has been deleted."
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/util/ariaHelper.js:25
-msgid ""
-"Press enter or space to grab and browse the answer area. To move to next "
-"available option, use the arrow keys."
+msgid "Press enter or space to grab and browse the answer area. To move to next available option, use the arrow keys."
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/util/ariaHelper.js:29
-msgid ""
-"Press enter or space to place down. To browse other gaps use the arrow keys. "
-"Press escape to cancel."
+msgid "Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel."
 msgstr ""
 
 #: ../../item-runner/src/runner/interactions/graphic/graphicGapMatch/util/ariaHelper.js:32
@@ -4589,8 +4541,7 @@ msgid "A plagiarism check is in progress, awaiting the results."
 msgstr ""
 
 #: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:16
-msgid ""
-"The plagiarism check could not be performed. Please contact an administrator."
+msgid "The plagiarism check could not be performed. Please contact an administrator."
 msgstr ""
 
 #: ../../item-runner/src/runner/reviewInteractions/util/plagiarism/BasicMessage.svelte:21
@@ -6315,17 +6266,13 @@ msgstr ""
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:355
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:389
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:433
-msgid ""
-"You are at the end of the test. You can either finish the test or keep "
-"reviewing your answers."
+msgid "You are at the end of the test. You can either finish the test or keep reviewing your answers."
 msgstr ""
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:361
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:394
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:438
-msgid ""
-"You are at the end of this part. You can either submit this part or keep "
-"reviewing your answers."
+msgid "You are at the end of this part. You can either submit this part or keep reviewing your answers."
 msgstr ""
 
 #: ../../test-runner/src/runner/feedback/navigationFeedbackConfigs.js:368

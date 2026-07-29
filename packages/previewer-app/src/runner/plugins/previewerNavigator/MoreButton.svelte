@@ -49,9 +49,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 <div class="more">
     {#if active}
         <button class="ellipsis-container" aria-hidden="true" tabindex="-1" {disabled}>
-            <span />
-            <span />
-            <span />
+            <span></span>
+            <span></span>
+            <span></span>
         </button>
     {/if}
 </div>

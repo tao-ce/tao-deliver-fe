@@ -3,10 +3,14 @@
 exports[`Object > loads the item context 1`] = `
 <body>
   <div>
+    
+    
     <div
       class="mock-document-viewer"
-      data-props="{"src":"assets/sheet.pdf","width":"340px","height":"500px","options":{"workerSrc":"pdf.worker.min.js"}}"
+      data-props="{"src":"assets/sheet.pdf","width":"440px","height":"560px","options":{"workerSrc":"pdf.worker.min.js"}}"
     />
+    
+    
     
     
   </div>
@@ -16,12 +20,15 @@ exports[`Object > loads the item context 1`] = `
 exports[`Object > renders a video player for video/* type 1`] = `
 <body>
   <div>
+    
     <div
       aria-hidden="true"
       class="qti-video-container not-printable"
       id="scene-video"
     >
-       
+      
+      
+        
       <div
         aria-labelledby="tao-feedback-123"
         class="player mode-video"
@@ -33,6 +40,7 @@ exports[`Object > renders a video player for video/* type 1`] = `
           crossorigin="anonymous"
           id="tao-player-123"
         />
+        
       </div>
        
       <span
@@ -41,7 +49,10 @@ exports[`Object > renders a video player for video/* type 1`] = `
       >
         media player
       </span>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -50,10 +61,13 @@ exports[`Object > renders a video player for video/* type 1`] = `
 exports[`Object > renders an audio player for audio/* type 1`] = `
 <body>
   <div>
+    
     <div
       class="qti-audio-container not-printable"
     >
-       
+      
+      
+        
       <div
         aria-labelledby="tao-feedback-123"
         class="player mode-audio"
@@ -65,6 +79,7 @@ exports[`Object > renders an audio player for audio/* type 1`] = `
           crossorigin="anonymous"
           id="tao-player-123"
         />
+        
       </div>
        
       <span
@@ -73,7 +88,10 @@ exports[`Object > renders an audio player for audio/* type 1`] = `
       >
         media player
       </span>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -82,10 +100,14 @@ exports[`Object > renders an audio player for audio/* type 1`] = `
 exports[`Object > renders correctly with HTML attributes 1`] = `
 <body>
   <div>
+    
+    
     <div
       class="mock-document-viewer"
-      data-props="{"src":"assets/sheet.pdf","width":"340px","height":"500px","options":{"workerSrc":"pdf.worker.min.js"},"aria-label":"explanation sheet","data-foo":"bar"}"
+      data-props="{"src":"assets/sheet.pdf","width":"440px","height":"560px","options":{"workerSrc":"pdf.worker.min.js"},"aria-label":"explanation sheet","data-foo":"bar"}"
     />
+    
+    
     
     
   </div>
@@ -95,7 +117,12 @@ exports[`Object > renders correctly with HTML attributes 1`] = `
 exports[`Object > renders correctly with no props 1`] = `
 <body>
   <div>
-    <object />
+    
+    <object>
+      
+    </object>
+    
+    
     
   </div>
 </body>
@@ -104,9 +131,15 @@ exports[`Object > renders correctly with no props 1`] = `
 exports[`Object > resolves data through the asset manager 1`] = `
 <body>
   <div>
+    
+    
     <object
       data="http://localhost/assets/pig.png"
-    />
+    >
+      
+    </object>
+    
+    
     
     
   </div>

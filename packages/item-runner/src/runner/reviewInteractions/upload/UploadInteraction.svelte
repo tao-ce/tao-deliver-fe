@@ -96,7 +96,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     {/if}
     {#if isReviewAnswerMode}
         {#each plagiarismReportList as report}
-            <PlagiarismReport {report} />
+            <PlagiarismReport {itemIdentifier} {report} />
         {/each}
     {/if}
     <div class="selected-file-container" class:empty={!value}>

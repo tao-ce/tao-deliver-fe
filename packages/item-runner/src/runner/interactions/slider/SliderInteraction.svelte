@@ -405,7 +405,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             class="input-container"
             on:focusin={handleInputContainerFocusin}
             on:focusout={handleInputContainerFocusout}>
-            <!-- svelte-ignore a11y-label-has-associated-control -->
             <label>
                 <span class="visually-hidden">{getStatusAriaLabel(isValueSet, value)}</span>
                 <Input

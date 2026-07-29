@@ -13,7 +13,6 @@
 import codec from '../pciJsonCodec.js';
 
 const isomorphicTestCases = [
-    // eslint-disable-next-line no-undefined
     ['single null', { cardinality: 'single', baseType: null, value: undefined }, { base: null }],
     ['single boolean', { cardinality: 'single', baseType: 'boolean', value: true }, { base: { boolean: true } }],
     ['single integer', { cardinality: 'single', baseType: 'integer', value: 123 }, { base: { integer: 123 } }],
@@ -265,7 +264,6 @@ const decoderTestCases = [
         { cardinality: 'single', baseType: 'integer', value: 123 },
         { foo: 'bar', base: { integer: 123 } }
     ],
-    // eslint-disable-next-line no-undefined
     ['single null', { cardinality: 'single', baseType: null, value: undefined }, { base: null }]
 ];
 

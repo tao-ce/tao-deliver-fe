@@ -1,78 +1,188 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`poly hotspot choice > rendering > renders poly elements with given coords 1`] = `
-<body>
-  <div>
-    <g
-      class="shape"
-      tabindex="-1"
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <g
+    aria-disabled="false"
+    class="shape poly"
+    role="button"
+    tabindex="-1"
+  >
+    <polygon
+      class="shape-shadow"
+      points="100,100 400,600 100,800 0,150"
+    />
+    <polygon
+      class="shape-inner-border"
+      clip-path="url(#SvgjsClipPath1000)"
+      points="100,100 400,600 100,800 0,150"
+    />
+    <polygon
+      class="shape-outer-border"
+      clip-path="url(#SvgjsClipPath1000)"
+      points="100,100 400,600 100,800 0,150"
+    />
+    <polygon
+      class="shape-dashed-outline"
+      clip-path="url(#SvgjsClipPath1000)"
+      points="100,100 400,600 100,800 0,150"
+    />
+    <polygon
+      class="shape-outline-cover"
+      clip-path="url(#SvgjsClipPath1000)"
+      points="100,100 400,600 100,800 0,150"
+    />
+    <circle
+      class="shape-checkmark"
+      cx="207.421875"
+      cy="556.640625"
+      r="5"
+    />
+  </g>
+  
+  
+  <defs>
+    <clippath
+      id="SvgjsClipPath1000"
     >
       <polygon
-        class="shape-outer-border"
-        points="97.71367698898867,107.85136543800505 391.91156871116345,598.181184974963 104.49968419948415,789.7891079827492 6.5952918923424395,153.41055798632814"
+        points="100,100 400,600 100,800 0,150"
       />
-      <polygon
-        class="shape-inner-border"
-        points="94.66524630764022,118.31985268867842 381.1269936593814,595.7560982749138 110.49926313212968,776.1745852930816 15.389014415465692,157.95796863476568"
-      />
-      <polygon
-        class="shape-dashed-outline"
-        points="97.71367698898867,107.85136543800505 391.91156871116345,598.181184974963 104.49968419948415,789.7891079827492 6.5952918923424395,153.41055798632814"
-      />
-      <circle
-        class="shape-checkmark"
-        cx="206.82998792595282"
-        cy="555.4910310036714"
-        r="10"
-      />
-    </g>
-  </div>
-</body>
+    </clippath>
+  </defs>
+</svg>
 `;
 
-exports[`poly hotspot choice > rendering > renders text label as a checkmark if label is set  1`] = `
-<body>
-  <div>
-    <g
-      class="shape selected"
-      tabindex="-1"
+exports[`poly hotspot choice > rendering > renders text label as a checkmark if label is set 1`] = `
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <g
+    aria-disabled="false"
+    class="shape poly selected with-label"
+    role="button"
+    tabindex="-1"
+  >
+    <polygon
+      class="shape-shadow"
+      points="100,100 400,600 100,800 0,150"
+    />
+    <polygon
+      class="shape-inner-border"
+      clip-path="url(#SvgjsClipPath1002)"
+      points="100,100 400,600 100,800 0,150"
+    />
+    <polygon
+      class="shape-outer-border"
+      clip-path="url(#SvgjsClipPath1002)"
+      points="100,100 400,600 100,800 0,150"
+    />
+    <polygon
+      class="shape-dashed-outline"
+      clip-path="url(#SvgjsClipPath1002)"
+      points="100,100 400,600 100,800 0,150"
+    />
+    <polygon
+      class="shape-outline-cover"
+      clip-path="url(#SvgjsClipPath1002)"
+      points="100,100 400,600 100,800 0,150"
+    />
+    <text
+      class="shape-checkmark"
+      x="205.921875"
+      y="555.140625"
+    >
+      <tspan
+        dy="0"
+        x="205.921875"
+      >
+        1
+      </tspan>
+    </text>
+  </g>
+  
+  
+  <defs>
+    <clippath
+      id="SvgjsClipPath1002"
     >
       <polygon
-        class="shape-outer-border"
-        points="97.71367698898867,107.85136543800505 391.91156871116345,598.181184974963 104.49968419948415,789.7891079827492 6.5952918923424395,153.41055798632814"
+        points="100,100 400,600 100,800 0,150"
       />
+    </clippath>
+  </defs>
+</svg>
+`;
+
+exports[`poly hotspot choice > rendering > renders thin polygons with another style 1`] = `
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <g
+    aria-disabled="false"
+    class="shape poly thin-poly"
+    role="button"
+    tabindex="-1"
+  >
+    <polygon
+      class="shape-outer-border"
+      clip-path="url(#SvgjsClipPath1003)"
+      points="10,10 20,10 20,110 10,110"
+    />
+    <polygon
+      class="shape-dashed-outline"
+      clip-path="url(#SvgjsClipPath1003)"
+      points="10,10 20,10 20,110 10,110"
+    />
+    <polygon
+      class="shape-outline-cover"
+      clip-path="url(#SvgjsClipPath1003)"
+      points="10,10 20,10 20,110 10,110"
+    />
+    <polygon
+      class="shape-inner-border"
+      points="10,10 20,10 20,110 10,110"
+    />
+    <circle
+      class="shape-checkmark"
+      cx="15"
+      cy="60"
+      r="5"
+    />
+  </g>
+  
+  
+  <defs>
+    <clippath
+      id="SvgjsClipPath1003"
+    >
       <polygon
-        class="shape-inner-border"
-        points="94.66524630764022,118.31985268867842 381.1269936593814,595.7560982749138 110.49926313212968,776.1745852930816 15.389014415465692,157.95796863476568"
+        points="10,10 20,10 20,110 10,110 10,10 -9,12 12,12 12,-9 -9,-9 -9,12"
       />
-      <polygon
-        class="shape-dashed-outline"
-        points="97.71367698898867,107.85136543800505 391.91156871116345,598.181184974963 104.49968419948415,789.7891079827492 6.5952918923424395,153.41055798632814"
-      />
-      <text
-        class="shape-checkmark"
-        x="205.32998792595282"
-        y="553.9910310036714"
-      >
-        <tspan
-          dy="0"
-          x="205.32998792595282"
-        >
-          1
-        </tspan>
-      </text>
-    </g>
-  </div>
-</body>
+    </clippath>
+  </defs>
+</svg>
 `;
 
 exports[`poly hotspot choice > rendering > renders with no props 1`] = `
-<body>
-  <div>
-    <g
-      class="shape"
-      tabindex="-1"
-    />
-  </div>
-</body>
+<svg
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <g
+    aria-disabled="false"
+    class="shape poly"
+    role="button"
+    tabindex="-1"
+  />
+  
+  
+</svg>
 `;

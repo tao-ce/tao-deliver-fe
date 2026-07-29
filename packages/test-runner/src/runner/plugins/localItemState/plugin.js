@@ -3,6 +3,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 import { get } from 'svelte/store';
+import { mount, unmount } from 'svelte';
 import pluginFactory from 'taoTests/runner/plugin';
 import { waitForResponsePromises } from '../../util/response.js';
 import { getAllowLateSubmission } from '../../util/testContext.js';
@@ -271,7 +272,6 @@ export default pluginFactory({
 
                     //clear all other items
                     return localStore.getItems().then(entries =>
-                        //eslint-disable-next-line implicit-arrow-linebreak
                         Promise.all(
                             Object.keys(entries)
                                 .filter(entry => entry !== itemRef)
@@ -376,7 +376,7 @@ export default pluginFactory({
 
         // render Live Save Indicator, if configured
         if (this.liveSaveStoreApi) {
-            this.liveSaveIndicator = new LiveSaveIndicator({
+            this.liveSaveIndicator = mount(LiveSaveIndicator, {
                 target: areaBroker.getHeaderArea(),
                 props: {
                     namespace: this.liveSaveStoreKey,
@@ -413,7 +413,7 @@ export default pluginFactory({
         delete this.lastUnsavedData;
 
         if (this.liveSaveIndicator) {
-            this.liveSaveIndicator.$destroy();
+            unmount(this.liveSaveIndicator);
         }
     }
 });

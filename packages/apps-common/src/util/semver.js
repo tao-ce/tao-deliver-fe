@@ -8,7 +8,7 @@
  * for simple cases like 1.22.33 - doesn't check postfix, doesn't properly validate version
  * @param {String} versionA
  * @param {String} versionB
- * @returns {Number|void 0} 1 if A newer than B; 0 if A equal to B; -1 if A older than B; undefined if versions are not valid
+ * @returns {?Number} 1 if A newer than B; 0 if A equal to B; -1 if A older than B; undefined if versions are not valid
  */
 export function semverCompare(versionA, versionB) {
     const parsedA = typeof versionA === 'string' && semverParse(versionA);

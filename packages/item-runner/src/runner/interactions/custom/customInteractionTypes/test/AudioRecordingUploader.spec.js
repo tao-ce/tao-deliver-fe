@@ -26,11 +26,12 @@ vi.mock('../AudioRecordingInteractionImpl.svelte', async () => {
     const MockAudioRecordingInteractionImpl = await import('./MockAudioRecordingInteractionImpl.svelte');
     return {
         default: MockAudioRecordingInteractionImpl.default,
+        triggerHandleState: MockAudioRecordingInteractionImpl.triggerHandleState,
         triggerHandleResponse: MockAudioRecordingInteractionImpl.triggerHandleResponse
     };
 });
 
-import { triggerHandleResponse } from '../AudioRecordingInteractionImpl.svelte';
+import { triggerHandleState, triggerHandleResponse } from '../AudioRecordingInteractionImpl.svelte';
 
 const itemIdentifier = 'item-123';
 const responseIdentifier = 'RESPONSE_1';
@@ -223,6 +224,10 @@ describe('AudioRecordingUploader', () => {
                 }
             }
         };
+        const pciState = {
+            recordsAttempts: 1,
+            response: fileResponse
+        };
 
         const { container } = render(ContextWrapper, {
             props: {
@@ -245,6 +250,7 @@ describe('AudioRecordingUploader', () => {
         xhrSpy.mockImplementation(() => xhrMock);
 
         // the following is used as a workaround for 'stateupdate' event:
+        triggerHandleState(pciState);
         triggerHandleResponse(fileResponse);
         container.querySelector('.mock-audio-interaction').dispatchEvent(new CustomEvent('recorder-stop'));
 
@@ -257,7 +263,7 @@ describe('AudioRecordingUploader', () => {
             expect(xhrMock.send.mock.calls[0][0]).toBeInstanceOf(File);
 
             const storedResponse = interactionStateStore.getResponse();
-            delete storedResponse.base.fileHash.localFile; // jest can't compare File objects
+            delete storedResponse.base.fileHash.localFile; // can't compare File objects
             expect(storedResponse).toEqual({
                 base: {
                     fileHash: {
@@ -267,6 +273,23 @@ describe('AudioRecordingUploader', () => {
                         id: uploadData.id,
                         version: null,
                         downloadUrl: uploadData.downloadUrl
+                    }
+                }
+            });
+            const storedState = interactionStateStore.get().state;
+            delete storedState.response.base.fileHash.localFile;
+            expect(storedState).toEqual({
+                recordsAttempts: 1,
+                response: {
+                    base: {
+                        fileHash: {
+                            data: 'abcd-efgh', // from core-digest mock
+                            name,
+                            mime,
+                            id: uploadData.id,
+                            version: null,
+                            downloadUrl: uploadData.downloadUrl
+                        }
                     }
                 }
             });
@@ -285,6 +308,10 @@ describe('AudioRecordingUploader', () => {
                     mime
                 }
             }
+        };
+        const pciState = {
+            recordsAttempts: 52,
+            response: fileResponse
         };
 
         const { container } = render(ContextWrapper, {
@@ -310,6 +337,7 @@ describe('AudioRecordingUploader', () => {
         xhrSpy.mockImplementation(() => xhrMock);
 
         // the following is used as a workaround for 'stateupdate' event:
+        triggerHandleState(pciState);
         triggerHandleResponse(fileResponse);
         container.querySelector('.mock-audio-interaction').dispatchEvent(new CustomEvent('recorder-stop'));
 
@@ -321,6 +349,9 @@ describe('AudioRecordingUploader', () => {
 
             const storedResponse = interactionStateStore.getResponse();
             expect(storedResponse).toEqual(fileResponse);
+
+            const storedState = interactionStateStore.get().state;
+            expect(storedState).toEqual(pciState);
         });
     });
 
@@ -385,6 +416,10 @@ describe('AudioRecordingUploader', () => {
                 }
             }
         };
+        const pciState = {
+            recordsAttempts: 1,
+            response: fileResponse
+        };
 
         const { container } = render(ContextWrapper, {
             props: {
@@ -409,6 +444,7 @@ describe('AudioRecordingUploader', () => {
         xhrSpy.mockImplementation(() => xhrMock);
 
         // the following is used as a workaround for 'stateupdate' event:
+        triggerHandleState(pciState);
         triggerHandleResponse(fileResponse);
         container.querySelector('.mock-audio-interaction').dispatchEvent(new CustomEvent('recorder-stop'));
 

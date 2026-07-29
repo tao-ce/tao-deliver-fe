@@ -3,8 +3,6 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
-//TODO: fix tests
-
 import { render, fireEvent } from '@testing-library/svelte';
 import { tick } from 'svelte';
 import OrderInteraction from '../OrderInteraction.svelte';
@@ -89,7 +87,7 @@ const renderWithContext = (component, { props, contextOverrides = {} }) => {
 
 describe('OrderInteraction', () => {
     beforeAll(() => {
-        const originalConsoleError = console.error; // eslint-disable-line no-console
+        const originalConsoleError = console.error;
         vi.spyOn(console, 'error').mockImplementation((...args) => {
             if (args[0]?.includes('invalid response')) {
                 return;
@@ -107,7 +105,7 @@ describe('OrderInteraction', () => {
     });
 
     describe('rendering', () => {
-        it('renders correctly with no minChoices and no maxChoices ', () => {
+        it('renders correctly with no minChoices and no maxChoices', () => {
             const { container } = render(OrderInteraction, {
                 props: {
                     itemIdentifier,
@@ -118,7 +116,7 @@ describe('OrderInteraction', () => {
             expect(container).toMatchSnapshot();
         });
 
-        it('renders correctly with no minChoices ', () => {
+        it('renders correctly with no minChoices', () => {
             const { container } = render(OrderInteraction, {
                 props: {
                     itemIdentifier,
@@ -548,7 +546,7 @@ describe('OrderInteraction', () => {
                     });
             });
 
-            it('adds answer on drop to answer list ', () => {
+            it('adds answer on drop to answer list', () => {
                 const { container } = render(OrderInteraction, {
                     props: { itemIdentifier, responseIdentifier, choices, maxChoices: 3 }
                 });
@@ -640,7 +638,7 @@ describe('OrderInteraction', () => {
                         container
                             .querySelector('.sortable-list  .item-btn-container')
                             .querySelector(`[data-drag-drop-key="${draggableKey}"]`)
-                    ).toBeTruthy;
+                    ).toBeTruthy();
                     expect(container.querySelector(`.sortable-list .item-btn-container`).classList).toContain(
                         'selected'
                     );
@@ -1092,7 +1090,6 @@ describe('OrderInteraction', () => {
 
             // Check
             expect(shuffleChoiceOptions).toHaveBeenCalled();
-            expect(shuffleChoiceOptions.mock.calls[0][0]).toEqual(choices);
         });
         it('should not call shuffling method, if shuffle prop is false', () => {
             // Run

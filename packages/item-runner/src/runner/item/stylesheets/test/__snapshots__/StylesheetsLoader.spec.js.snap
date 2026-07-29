@@ -1,12 +1,16 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`StylesheetsLoader > applies style-editor theme if defined, and applies covertPxToRem to it 1`] = `
-".qti-item[data-item-id="item13"] {--styleeditor-font-size: 24px;}
-.qti-item[data-item-id="item13"] {--fontsize-body: var(--styleeditor-font-size); --fontsize-body-xs: calc(var(--styleeditor-font-size) * 0.75); --fontsize-body-s: calc(var(--styleeditor-font-size) * 0.875); --fontsize-heading: var(--styleeditor-font-size); --fontsize-heading-l: calc(var(--styleeditor-font-size) * 1.25); --fontsize-heading-xl: calc(var(--styleeditor-font-size) * 1.875); --fontsize-heading-xxl: calc(var(--styleeditor-font-size) * 2.5);}"
+".qti-item[data-item-id="item13"] {--styleeditor-font-size: 3rem;}
+.qti-item[data-item-id="item13"] {--fontsize-body: var(--styleeditor-font-size); --fontsize-body-xs: calc(var(--styleeditor-font-size) * 0.75); --fontsize-body-s: calc(var(--styleeditor-font-size) * 0.875); --fontsize-heading: var(--styleeditor-font-size); --fontsize-heading-l: calc(var(--styleeditor-font-size) * 1.25); --fontsize-heading-xl: calc(var(--styleeditor-font-size) * 1.875); --fontsize-heading-xxl: calc(var(--styleeditor-font-size) * 2.5); --styleeditor-font-size-initial: 3rem;}
+[data-a11y-override-font-size="true"] .qti-item[data-item-id="item13"] {--styleeditor-font-size: calc(var(--styleeditor-font-size-initial) * var(--a11y-fontsize-scale, 1));}
+[data-a11y-override-font-family="true"] .qti-item[data-item-id="item13"] {--styleeditor-font-family: unset;}"
 `;
 
 exports[`StylesheetsLoader > renders link tags into head, and removes them after loading 1`] = `
 <head>
+  
+  
   <link
     crossorigin="anonymous"
     href="style1.css"
@@ -14,12 +18,14 @@ exports[`StylesheetsLoader > renders link tags into head, and removes them after
     rel="stylesheet"
   />
   
+  
   <link
     crossorigin="anonymous"
     href="style2.css"
     media="none"
     rel="stylesheet"
   />
+  
   
   
 </head>
@@ -28,6 +34,9 @@ exports[`StylesheetsLoader > renders link tags into head, and removes them after
 exports[`StylesheetsLoader > renders link tags into head, and removes them after loading 2`] = `
 <head>
   
+  
+  
+  
   <link
     crossorigin="anonymous"
     href="style2.css"
@@ -36,11 +45,14 @@ exports[`StylesheetsLoader > renders link tags into head, and removes them after
   />
   
   
+  
 </head>
 `;
 
 exports[`StylesheetsLoader > renders nothing when no stylesheets 1`] = `
 <head>
+  
+  
   
 </head>
 `;
@@ -48,10 +60,11 @@ exports[`StylesheetsLoader > renders nothing when no stylesheets 1`] = `
 exports[`StylesheetsLoader > renders nothing when no stylesheets 2`] = `
 <body>
   <div>
-     
     <div
       class="styles-container"
     />
+    
+    
   </div>
 </body>
 `;
@@ -59,7 +72,6 @@ exports[`StylesheetsLoader > renders nothing when no stylesheets 2`] = `
 exports[`StylesheetsLoader > renders style tags for stylesheets without hrefs 1`] = `
 <body>
   <div>
-     
     <div
       class="styles-container"
     >
@@ -74,6 +86,8 @@ exports[`StylesheetsLoader > renders style tags for stylesheets without hrefs 1`
         span { background: green; }
       </style>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -81,7 +95,6 @@ exports[`StylesheetsLoader > renders style tags for stylesheets without hrefs 1`
 exports[`StylesheetsLoader > renders style tags in component after loading 1`] = `
 <body>
   <div>
-     
     <div
       class="styles-container"
     >
@@ -98,6 +111,8 @@ exports[`StylesheetsLoader > renders style tags in component after loading 1`] =
         undefined
       </style>
     </div>
+    
+    
   </div>
 </body>
 `;

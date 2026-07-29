@@ -15,8 +15,12 @@ exports[`JumpMenu > renders correctly with a serviceCallId 1`] = `
         Jump Menu
       </h2>
        
-      <ul />
+      <ul>
+        
+      </ul>
     </div>
+    
+    
   </div>
 </body>
 `;

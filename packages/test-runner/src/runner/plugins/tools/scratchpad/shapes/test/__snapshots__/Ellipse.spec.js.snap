@@ -10,7 +10,6 @@ exports[`Ellipse > behaviour > draws ellipse with mousemove 1`] = `
       rx="25"
       ry="25"
     />
-     
     <rect
       class="hitbox"
       height="86"
@@ -18,7 +17,6 @@ exports[`Ellipse > behaviour > draws ellipse with mousemove 1`] = `
       x="32"
       y="32"
     />
-     
     <rect
       class="bounding"
       height="54"
@@ -26,7 +24,9 @@ exports[`Ellipse > behaviour > draws ellipse with mousemove 1`] = `
       x="48"
       y="48"
     />
-     
+    
+    
+    
     
   </div>
 </body>
@@ -42,7 +42,6 @@ exports[`Ellipse > rendering > renders with given drawingGeometry 1`] = `
       rx="0"
       ry="0"
     />
-     
     <rect
       class="hitbox"
       height="36"
@@ -50,7 +49,6 @@ exports[`Ellipse > rendering > renders with given drawingGeometry 1`] = `
       x="82"
       y="82"
     />
-     
     <rect
       class="bounding"
       height="4"
@@ -58,7 +56,9 @@ exports[`Ellipse > rendering > renders with given drawingGeometry 1`] = `
       x="98"
       y="98"
     />
-     
+    
+    
+    
     
   </div>
 </body>
@@ -74,7 +74,6 @@ exports[`Ellipse > rendering > renders with the given geometry 1`] = `
       rx="30"
       ry="20"
     />
-     
     <rect
       class="hitbox"
       height="76"
@@ -82,7 +81,6 @@ exports[`Ellipse > rendering > renders with the given geometry 1`] = `
       x="52"
       y="62"
     />
-     
     <rect
       class="bounding"
       height="44"
@@ -90,7 +88,9 @@ exports[`Ellipse > rendering > renders with the given geometry 1`] = `
       x="68"
       y="78"
     />
-     
+    
+    
+    
     
   </div>
 </body>
@@ -106,7 +106,6 @@ exports[`Ellipse > rendering > renders with the given key and selected state 1`]
       rx="30"
       ry="20"
     />
-     
     <rect
       class="hitbox"
       height="76"
@@ -114,7 +113,6 @@ exports[`Ellipse > rendering > renders with the given key and selected state 1`]
       x="52"
       y="62"
     />
-     
     <rect
       class="bounding"
       height="44"
@@ -122,7 +120,7 @@ exports[`Ellipse > rendering > renders with the given key and selected state 1`]
       x="68"
       y="78"
     />
-     
+    
     <g
       class="resize-hitbox-container"
     >
@@ -141,6 +139,8 @@ exports[`Ellipse > rendering > renders with the given key and selected state 1`]
         y="78"
       />
     </g>
+    
+    
     
   </div>
 </body>

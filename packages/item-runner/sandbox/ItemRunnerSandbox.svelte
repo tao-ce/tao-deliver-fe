@@ -25,7 +25,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     import { onMount } from 'svelte';
 
     //this prop is passed through replace rollup plugin
-    // eslint-disable-next-line no-undef
     const production = process.env.NODE_ENV === 'production';
 
     // elements
@@ -82,7 +81,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     let error = '';
     let feedbackTimeout;
     $: if (error) {
-        console.error(error); //eslint-disable-line
+        console.error(error);
         clearTimeout(feedbackTimeout);
         feedbackTimeout = setTimeout(() => {
             error = '';
@@ -94,6 +93,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         elements: {
             HottextInteraction: {
                 qtiClassesOverride: []
+            },
+            ExtendedTextInteraction: {
+                propertyOverride: {
+                    reviewAutoSizeContent: true
+                }
             }
         },
         options: {
@@ -484,8 +488,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             </Label>
         </div>
     </section>
-    <div class="resizer" class:hidden={!showSetupPanel} on:mousedown={dragStart} />
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
+    <div class="resizer" class:hidden={!showSetupPanel} on:mousedown={dragStart}></div>
     <section class="scroll-container">
-        <section bind:this={itemContainer} class="item-container" {dir} />
+        <section bind:this={itemContainer} class="item-container qti-item-container" {dir}></section>
     </section>
 </main>

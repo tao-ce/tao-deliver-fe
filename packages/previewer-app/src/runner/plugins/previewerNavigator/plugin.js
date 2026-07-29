@@ -4,6 +4,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 import pluginFactory from 'taoTests/runner/plugin';
 import PreviewerNavigator from './PreviewerNavigator.svelte';
+import { mount, unmount } from 'svelte';
 
 /**
  * the previewer navigator plugin handles:
@@ -29,7 +30,7 @@ export default pluginFactory({
         const areaBroker = testRunner.getAreaBroker();
         const testConfig = testRunner.getConfig();
 
-        this.navigator = new PreviewerNavigator({
+        this.navigator = mount(PreviewerNavigator, {
             target: areaBroker.getNavigationArea(),
             props: {
                 serviceCallId: testConfig.serviceCallId,
@@ -65,7 +66,7 @@ export default pluginFactory({
 
     destroy() {
         if (this.navigator) {
-            this.navigator.$destroy();
+            unmount(this.navigator);
         }
     }
 });

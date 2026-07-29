@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2020-2023 (original work) Open Assessment Technologies SA ;
+// Copyright (C) 2020-2026 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
@@ -21,8 +21,17 @@ vi.mock('@oat-sa-private/ui-elements/input/writingModeSupport.js', () => ({
     supportsVerticalFormElement: vi.fn().mockReturnValue(true)
 }));
 
+vi.mock('lodash', async importOriginal => {
+    const originalModule = await importOriginal();
+    return Object.assign({ __esModule: true }, originalModule, {
+        // mock debounce with zero delay because async validation uses it with too much
+        debounce: fn => originalModule.debounce(fn, 0)
+    });
+});
+
 import { render, fireEvent } from '@testing-library/svelte';
 import { tick } from 'svelte';
+import { wait } from '../../../../runner/util/async.js';
 import ExtendedTextInteraction from '../ExtendedTextInteraction.svelte';
 import ContextWrapper from '../../../static/test/ContextWrapper.svelte';
 import itemsStateStore, { getInteractionStateStore } from '../../../itemsStateStore.js';
@@ -157,14 +166,18 @@ describe('ExtendedTextInteraction', () => {
                 testComponentProps: {
                     itemIdentifier,
                     responseIdentifier,
+                    format: 'plain',
                     required,
                     patternMask
                 }
             }
         });
 
-        expect(interactionStateStore.getResponse()).toMatchObject({ base: null });
-        expect(interactionStateStore.getValidity()).toBe(expected);
+        // mocked debounce must run first
+        return wait(5).then(() => {
+            expect(interactionStateStore.getResponse()).toMatchObject({ base: null });
+            expect(interactionStateStore.getValidity()).toBe(expected);
+        });
     });
 
     test.each([
@@ -232,15 +245,14 @@ describe('ExtendedTextInteraction', () => {
     });
 
     test.each([
-        [void 0, void 0, '(?:(?:[^\\s\\:\\!\\?\\;\\…\\€]+)[\\s\\:\\!\\?\\;\\…\\€]*){0,100}', '8'],
-        [void 0, void 0, '[\\s\\S]{0,500}', '7'],
-        [void 0, void 0, '[\\s\\S]{0,502}', null],
-        [void 0, void 0, '.*', null],
-        [152, void 0, void 0, '3'],
-        [void 0, 3, void 0, '3']
+        [void 0, void 0, '(?:(?:[^\\s\\:\\!\\?\\;\\…\\€]+)[\\s\\:\\!\\?\\;\\…\\€]*){0,100}', '8', false],
+        [void 0, void 0, '[\\s\\S]{0,500}', '7', false],
+        [void 0, void 0, '.*', null, true],
+        [152, void 0, void 0, '3', false],
+        [void 0, 3, void 0, '3', false]
     ])(
         'sets correct rows value when expectedLength is %s, expectedLines is %s, patternMask is %s',
-        (expectedLength, expectedLines, patternMask, expectedValue) => {
+        (expectedLength, expectedLines, patternMask, expectedValue, expectedAutoHeight) => {
             const { container } = render(ContextWrapper, {
                 props: {
                     testContextKey: itemIdentifier,
@@ -260,6 +272,7 @@ describe('ExtendedTextInteraction', () => {
             const rowsValue = textarea.getAttribute('rows');
 
             expect(rowsValue).toBe(expectedValue);
+            expect(Boolean(container.querySelector('.auto-height'))).toBe(expectedAutoHeight);
         }
     );
 
@@ -399,6 +412,31 @@ describe('ExtendedTextInteraction', () => {
             { patternMask: '^[\\s\\S]{0,5}$' }, //maxlength
             '',
             true
+        ],
+        [
+            { dataAttrs: { 'data-character-count': true } },
+            '12345',
+            true
+        ],
+        [
+            { expectedLength: 5, dataAttrs: { 'data-character-count-expected': true } },
+            '12345',
+            true
+        ],
+        [
+            { expectedLength: 5, dataAttrs: { 'data-character-count-expected': false } },
+            'any',
+            true
+        ],
+        [
+            { patternMask: '^[\\s\\S]{0,5}$', dataAttrs: { 'data-character-count-max': true } },
+            '12345',
+            true
+        ],
+        [
+            { patternMask: '^[\\s\\S]{0,5}$', dataAttrs: { 'data-character-count-max': false } },
+            'any',
+            true
         ]
     ])('has correct feedbacks %j, %s', (props, value, expectedValidity) => {
         let uniqueItemIdentifier = JSON.stringify(props);
@@ -434,7 +472,8 @@ describe('ExtendedTextInteraction', () => {
             })
             .then(() => {
                 if (props.patternMask) {
-                    return new Promise(resolve => setTimeout(resolve, 500)); //for debounce minWait in @oat-sa-private/ui-core/input/validate.js
+                    //for debounce minWait in @oat-sa-private/ui-core/input/validate.js
+                    return wait(5);
                 }
             })
             .then(async () => {

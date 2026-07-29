@@ -19,6 +19,7 @@ const mockPlugins = {
     readAloud: makeMockPlugin('readAloud'),
     lineReader: makeMockPlugin('lineReader'),
     fullscreen: makeMockPlugin('fullscreen'),
+    refresh: makeMockPlugin('refresh'),
     a11yMenuPanel: makeMockPlugin('a11yMenuPanel'),
     print: makeMockPlugin('print')
 };
@@ -60,6 +61,7 @@ describe('toolbarItems', () => {
             ['readAloud'],
             ['lineReader'],
             ['fullscreen'],
+            ['refresh'],
             ['settings'],
             ['a11yMenuPanel'],
             ['print']
@@ -134,8 +136,9 @@ describe('toolbarItems', () => {
             const toolbarItemsApi = createToolbarItemsApi(mockPlugins);
             const actions = toolbarItemsApi.getToolbarActions();
 
-            expect(actions.length).toBe(8);
+            expect(actions.length).toBe(9);
             expect(actions.map(action => action.key)).toEqual([
+                'refresh',
                 'scratchpad',
                 'highlighter',
                 'readAloud',

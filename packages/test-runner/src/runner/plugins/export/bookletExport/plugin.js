@@ -2,7 +2,7 @@
 // Copyright (C) 2023-2024 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
-import { tick } from 'svelte';
+import { tick, mount, unmount } from 'svelte';
 import pluginFactory from 'taoTests/runner/plugin';
 import Toolbar from './Toolbar.svelte';
 import { bookletFileConverterFactory } from './bookletFileConverter.js';
@@ -83,7 +83,7 @@ export default pluginFactory({
         const allItems = this.getItemsForBooklet();
         this.bookletFileConverter = bookletFileConverterFactory();
 
-        this.toolbar = new Toolbar({
+        this.toolbar = mount(Toolbar, {
             target: areaBroker.getTopBarArea()
         });
 
@@ -187,7 +187,7 @@ export default pluginFactory({
         });
 
         if (!config.interactive) {
-            this.transition = new Transition({
+            this.transition = mount(Transition, {
                 target: areaBroker.getTestRunnerArea(),
                 props: { subtext: __('Please wait while booklet export is in progress') }
             });
@@ -205,10 +205,10 @@ export default pluginFactory({
         document.body.classList.remove('booklet-export-mode');
 
         if (this.toolbar) {
-            this.toolbar.$destroy();
+            unmount(this.toolbar);
         }
         if (this.transition) {
-            this.transition.$destroy();
+            unmount(this.transition);
         }
         this.getTestRunner().off('.bookletexport');
         this.getTestRunner().off('.autobookletexport');

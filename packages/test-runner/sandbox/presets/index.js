@@ -289,7 +289,9 @@ export default {
             item1: items.marketplace,
             item2: items.marketplaceWithResponse,
             item3: items.mathEntry,
-            item4: items.extended
+            item4: items.extended,
+            item5: items.documentEditor,
+            item6: items.verticalWritingExtendedText
         }
     },
     nonLinearModalFeedbacks: {

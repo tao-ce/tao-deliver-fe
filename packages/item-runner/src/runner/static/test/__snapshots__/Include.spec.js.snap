@@ -7,6 +7,9 @@ exports[`Include > renders with a scrollable content 1`] = `
       class="qti-include tao-overflow-y scrollable"
       tabindex="0"
     >
+      
+      
+      
       <div>
         This 
         <em>
@@ -17,7 +20,10 @@ exports[`Include > renders with a scrollable content 1`] = `
       
       
       
+      
     </article>
+    
+    
   </div>
 </body>
 `;
@@ -28,9 +34,23 @@ exports[`Include > renders with some content 1`] = `
     <article
       class="qti-include"
     >
+      
+      
+      
       <p>
+        
+        
+        
+        
+        
         <em>
+          
+          
+          
+          
           Hello here
+          
+          
           
           <img
             alt="dummy"
@@ -39,17 +59,24 @@ exports[`Include > renders with some content 1`] = `
           
           
           
-           
+          
+          
+          
         </em>
         
         
         
-         
+        
+        
+        
       </p>
       
       
       
+      
     </article>
+    
+    
   </div>
 </body>
 `;
@@ -59,7 +86,11 @@ exports[`Include > renders without any content 1`] = `
   <div>
     <article
       class="qti-include"
-    />
+    >
+      
+    </article>
+    
+    
   </div>
 </body>
 `;

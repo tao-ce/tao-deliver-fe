@@ -9,6 +9,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     // Copyright (c) 2024 (original work) Open Assessment Technologies SA ;
     import { createEventDispatcher } from 'svelte';
     import Stepper from './Stepper.svelte';
+    import { isEqual } from 'lodash';
 
     const dispatch = createEventDispatcher();
 
@@ -29,7 +30,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     const min = 0;
 
     $: max = options.length - 1;
-    $: index = Math.max(0, options.indexOf(value));
+    $: index = Math.max(0, options.findIndex(val => isEqual(val, value)));
 
     /**
      * @param {CustomEvent} e

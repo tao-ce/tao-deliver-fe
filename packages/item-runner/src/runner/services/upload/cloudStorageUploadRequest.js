@@ -115,6 +115,7 @@ function parseCloudStorageError(xmlError) {
                 message: messageElement && messageElement.textContent
             };
         }
+        // eslint-disable-next-line no-unused-vars
     } catch (parsingErr) {
         return null;
     }
@@ -136,6 +137,7 @@ function parseJsonError(jsonError, statusCode) {
                 message: json.error.message
             };
         }
+        // eslint-disable-next-line no-unused-vars
     } catch (parsingErr) {
         return null;
     }

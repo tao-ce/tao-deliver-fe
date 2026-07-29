@@ -1,13 +1,15 @@
 {
   "name": "@oat-sa-private/tao-item-runner-qtinui",
-  "version": "8.65.0",
+  "version": "8.73.0",
   "displayName": "TAO QTI Item Runner",
   "description": "TAO QTI Item Runner new user interface",
   "homepage": "https://github.com/oat-sa/tao-deliver-fe#readme",
   "files": [
     "dist",
+    "!dist/**/*.map",
     "src",
     "samples",
+    "!samples/assets/",
     "locale",
     "!**/test/"
   ],
@@ -37,13 +39,13 @@
   "dependencies": {
     "@oat-sa/tao-core-sdk": "^3.6.0",
     "@oat-sa/tao-item-runner": "^1.0.0",
-    "@svgdotjs/svg.draggable.js": "3.0.2",
-    "@svgdotjs/svg.filter.js": "3.0.7",
-    "@svgdotjs/svg.js": "3.0.16",
+    "@svgdotjs/svg.draggable.js": "3.0.6",
+    "@svgdotjs/svg.filter.js": "3.0.9",
+    "@svgdotjs/svg.js": "3.2.5",
     "construct-style-sheets-polyfill": "^3.1.0",
     "lodash": "^4.17.21",
     "mathjax": "3.1.2",
-    "polylabel": "^1.1.0",
+    "polylabel": "^2.0.1",
     "systemjs": "6.8.3"
   },
   "author": {

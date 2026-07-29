@@ -1,39 +1,21 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`ItemContentOverlay rendering > renders correctly 1`] = `
-<body>
-  <div>
-    <div
-      class="item-content-overlay not-printable"
-      style="height: 0px"
-    />
-     
-    <div
-      class="item-content-overlay not-printable"
-      style="
-        height: -160px;
-        transform: translateY(160px);
-    "
-    />
-  </div>
-</body>
-`;
-
 exports[`ItemContentOverlay rendering > renders correctly with provided properties 1`] = `
 <body>
   <div>
     <div
+      aria-hidden="true"
       class="item-content-overlay not-printable"
-      style="height: 112px"
+      style="height: 112px;"
     />
      
     <div
+      aria-hidden="true"
       class="item-content-overlay not-printable"
-      style="
-        height: 3px;
-        transform: translateY(197px);
-    "
+      style="height: 3px; transform: translateY(197px);"
     />
+    
+    
   </div>
 </body>
 `;

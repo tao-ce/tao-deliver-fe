@@ -234,7 +234,7 @@ describe('TestLayout', () => {
 
             statusStore.set(testSessionStatus.overlay);
 
-            const { container, component } = render(TestLayout, {
+            const { container, unmount } = render(TestLayout, {
                 props: {
                     serviceCallId
                 }
@@ -247,7 +247,7 @@ describe('TestLayout', () => {
                 resizeWindow(780);
                 return tick().then(() => {
                     expect(headerBarContainer.classList.contains('hidden')).toBe(false);
-                    component.$destroy(); //stop listening to window resize event immediately
+                    unmount(); //stop listening to window resize event immediately
                 });
             });
         });
@@ -510,7 +510,7 @@ describe('TestLayout', () => {
                 hierarchy: 'success'
             });
 
-            const { container, component } = render(TestLayout, {
+            const { container, unmount } = render(TestLayout, {
                 props: {
                     serviceCallId
                 }
@@ -522,7 +522,7 @@ describe('TestLayout', () => {
                     expect(document.querySelectorAll('.notification-wrapper').length).toBe(1);
                 })
                 .then(() => {
-                    component.$destroy();
+                    unmount();
                     render(TestLayout, {
                         props: {
                             serviceCallId

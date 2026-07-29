@@ -3,116 +3,141 @@
 exports[`GraphicOrderInteraction > Rendering > renders correct feedbacks: min=0 max=0 1`] = `
 <div
   class="qti-instruction-container"
+  dir=""
 >
   <div
     aria-atomic="true"
     class="feedback info fullwidth"
     role="status"
   >
+    
      
     <p>
       You must pick exactly 4 choices
     </p>
   </div>
+  
 </div>
 `;
 
 exports[`GraphicOrderInteraction > Rendering > renders correct feedbacks: min=0 max=3 1`] = `
 <div
   class="qti-instruction-container"
+  dir=""
 >
   <div
     aria-atomic="true"
     class="feedback info fullwidth"
     role="status"
   >
+    
      
     <p>
       You must pick exactly 4 choices
     </p>
   </div>
+  
 </div>
 `;
 
 exports[`GraphicOrderInteraction > Rendering > renders correct feedbacks: min=2 max=3 1`] = `
 <div
   class="qti-instruction-container"
+  dir=""
 >
   <div
     aria-atomic="true"
     class="feedback info fullwidth"
     role="status"
   >
+    
      
     <p>
       You must pick at least 2 choices and a maximum of 3
     </p>
   </div>
+  
 </div>
 `;
 
 exports[`GraphicOrderInteraction > Rendering > renders correct feedbacks: min=3 max=0 1`] = `
 <div
   class="qti-instruction-container"
+  dir=""
 >
   <div
     aria-atomic="true"
     class="feedback info fullwidth"
     role="status"
   >
+    
      
     <p>
       You must pick at least 3 choices
     </p>
   </div>
+  
 </div>
 `;
 
 exports[`GraphicOrderInteraction > Rendering > renders correct feedbacks: min=3 max=3 1`] = `
 <div
   class="qti-instruction-container"
+  dir=""
 >
   <div
     aria-atomic="true"
     class="feedback info fullwidth"
     role="status"
   >
+    
      
     <p>
       You must pick exactly 3 choices
     </p>
   </div>
+  
 </div>
 `;
 
 exports[`GraphicOrderInteraction > Rendering > renders image & choices 1`] = `
 <body>
   <div>
+    
     <div
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-graphicOrderInteraction"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
+        dir=""
       >
         <div
           aria-atomic="true"
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You must pick exactly 4 choices
           </p>
         </div>
+        
       </div>
+      
        
       <div
         aria-atomic="true"
         aria-live="assertive"
         class="visually-hidden"
-      />
+      >
+        
+      </div>
+      
        
       <div
         class="qti-flow-container"
@@ -122,10 +147,11 @@ exports[`GraphicOrderInteraction > Rendering > renders image & choices 1`] = `
           class="qti-block"
           tabindex="0"
         >
+          
           <svg
             aria-labelledby="tao-desc-123"
             height="860"
-            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow);"
             version="1.1"
             viewBox="0 0 1213 860"
             width="1213"
@@ -138,6 +164,7 @@ exports[`GraphicOrderInteraction > Rendering > renders image & choices 1`] = `
             >
               graphic interaction
             </desc>
+            
             <defs>
               <filter
                 filterUnits="userSpaceOnUse"
@@ -150,7 +177,15 @@ exports[`GraphicOrderInteraction > Rendering > renders image & choices 1`] = `
                   stdDeviation="1.5"
                 />
               </filter>
+              <clippath
+                id="SvgjsClipPath1003"
+              >
+                <polygon
+                  points="112,491 190,482 193,551 106,549"
+                />
+              </clippath>
             </defs>
+            
             <g
               class="image"
               transform="translate(0, 0)"
@@ -164,10 +199,10 @@ exports[`GraphicOrderInteraction > Rendering > renders image & choices 1`] = `
                 x="0"
                 y="0"
               />
+              
               <g
                 slot="content"
               >
-                
                 <g
                   class="hotspot-choice"
                   data-choice-key="hotspot_1"
@@ -175,28 +210,29 @@ exports[`GraphicOrderInteraction > Rendering > renders image & choices 1`] = `
                   <g
                     aria-disabled="false"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <rect
                       class="shape-outer-border"
-                      height="68"
-                      width="68"
-                      x="314"
-                      y="346"
+                      height="72"
+                      width="72"
+                      x="312"
+                      y="344"
                     />
                     <rect
                       class="shape-inner-border"
-                      height="52"
-                      width="52"
-                      x="322"
-                      y="354"
+                      height="60"
+                      width="60"
+                      x="318"
+                      y="350"
                     />
                     <rect
                       class="shape-dashed-outline"
-                      height="68"
-                      width="68"
-                      x="314"
-                      y="346"
+                      height="72"
+                      width="72"
+                      x="312"
+                      y="344"
                     />
                     <text
                       class="shape-checkmark"
@@ -212,45 +248,58 @@ exports[`GraphicOrderInteraction > Rendering > renders image & choices 1`] = `
                     </text>
                   </g>
                   
+                  
                 </g>
-                
                 <g
                   class="hotspot-choice"
                   data-choice-key="hotspot_4"
                 >
                   <g
                     aria-disabled="false"
-                    class="shape"
+                    class="shape poly with-label"
+                    role="button"
                     tabindex="-1"
                   >
                     <polygon
-                      class="shape-outer-border"
-                      points="112.80926878769378,491.79977931896707 189.15496433181391,482.9906606023378 192.07237784041715,550.0911713002118 106.98148126187783,548.135058735188"
+                      class="shape-shadow"
+                      points="112,491 190,482 193,551 106,549"
                     />
                     <polygon
                       class="shape-inner-border"
-                      points="120.10598000766774,499.0109294571562 181.5357637212195,491.9228774902079 183.7085423352651,541.8967856132559 115.83093331617843,540.3363808082195"
+                      clip-path="url(#SvgjsClipPath1003)"
+                      points="112,491 190,482 193,551 106,549"
+                    />
+                    <polygon
+                      class="shape-outer-border"
+                      clip-path="url(#SvgjsClipPath1003)"
+                      points="112,491 190,482 193,551 106,549"
                     />
                     <polygon
                       class="shape-dashed-outline"
-                      points="112.80926878769378,491.79977931896707 189.15496433181391,482.9906606023378 192.07237784041715,550.0911713002118 106.98148126187783,548.135058735188"
+                      clip-path="url(#SvgjsClipPath1003)"
+                      points="112,491 190,482 193,551 106,549"
+                    />
+                    <polygon
+                      class="shape-outline-cover"
+                      clip-path="url(#SvgjsClipPath1003)"
+                      points="112,491 190,482 193,551 106,549"
                     />
                     <text
                       class="shape-checkmark"
-                      x="157.6676817666341"
-                      y="516.581095023366"
+                      x="157.8671875"
+                      y="516.6171875"
                     >
                       <tspan
                         dy="0"
-                        x="157.6676817666341"
+                        x="157.8671875"
                       >
                         0
                       </tspan>
                     </text>
                   </g>
                   
+                  
                 </g>
-                
                 <g
                   class="hotspot-choice"
                   data-choice-key="hotspot_5"
@@ -258,28 +307,29 @@ exports[`GraphicOrderInteraction > Rendering > renders image & choices 1`] = `
                   <g
                     aria-disabled="false"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <ellipse
                       class="shape-outer-border"
                       cx="153"
                       cy="41"
-                      rx="45"
-                      ry="34"
+                      rx="47"
+                      ry="36"
                     />
                     <ellipse
                       class="shape-inner-border"
                       cx="153"
                       cy="41"
-                      rx="37"
-                      ry="26"
+                      rx="41"
+                      ry="30"
                     />
                     <ellipse
                       class="shape-dashed-outline"
                       cx="153"
                       cy="41"
-                      rx="45"
-                      ry="34"
+                      rx="47"
+                      ry="36"
                     />
                     <text
                       class="shape-checkmark"
@@ -295,8 +345,8 @@ exports[`GraphicOrderInteraction > Rendering > renders image & choices 1`] = `
                     </text>
                   </g>
                   
+                  
                 </g>
-                
                 <g
                   class="hotspot-choice"
                   data-choice-key="hotspot_6"
@@ -304,25 +354,26 @@ exports[`GraphicOrderInteraction > Rendering > renders image & choices 1`] = `
                   <g
                     aria-disabled="false"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <circle
                       class="shape-outer-border"
                       cx="50"
                       cy="50"
-                      r="44"
+                      r="46"
                     />
                     <circle
                       class="shape-inner-border"
                       cx="50"
                       cy="50"
-                      r="36"
+                      r="40"
                     />
                     <circle
                       class="shape-dashed-outline"
                       cx="50"
                       cy="50"
-                      r="44"
+                      r="46"
                     />
                     <text
                       class="shape-checkmark"
@@ -338,14 +389,20 @@ exports[`GraphicOrderInteraction > Rendering > renders image & choices 1`] = `
                     </text>
                   </g>
                   
+                  
                 </g>
+                
               </g>
+              
             </g>
           </svg>
+          
           
         </div>
       </div>
     </div>
+    
+    
     
   </div>
 </body>
@@ -354,6 +411,7 @@ exports[`GraphicOrderInteraction > Rendering > renders image & choices 1`] = `
 exports[`GraphicOrderInteraction > Rendering > renders simple props into markup 1`] = `
 <body>
   <div>
+    
     <div
       aria-disabled="true"
       ariabar="baz"
@@ -366,16 +424,24 @@ exports[`GraphicOrderInteraction > Rendering > renders simple props into markup 
       lang="hu"
       role="someUniqueRole"
     >
+      
        
       <div
         class="qti-instruction-container"
-      />
+        dir=""
+      >
+        
+      </div>
+      
        
       <div
         aria-atomic="true"
         aria-live="assertive"
         class="visually-hidden"
-      />
+      >
+        
+      </div>
+      
        
       <div
         class="qti-flow-container"
@@ -385,10 +451,11 @@ exports[`GraphicOrderInteraction > Rendering > renders simple props into markup 
           class="qti-block"
           tabindex="0"
         >
+          
           <svg
             aria-labelledby="tao-desc-123"
             height="860"
-            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow);"
             version="1.1"
             viewBox="0 0 1213 860"
             width="1213"
@@ -401,6 +468,7 @@ exports[`GraphicOrderInteraction > Rendering > renders simple props into markup 
             >
               graphic interaction
             </desc>
+            
             <defs>
               <filter
                 filterUnits="userSpaceOnUse"
@@ -414,6 +482,7 @@ exports[`GraphicOrderInteraction > Rendering > renders simple props into markup 
                 />
               </filter>
             </defs>
+            
             <g
               class="image"
               transform="translate(0, 0)"
@@ -427,15 +496,22 @@ exports[`GraphicOrderInteraction > Rendering > renders simple props into markup 
                 x="0"
                 y="0"
               />
+              
               <g
                 slot="content"
-              />
+              >
+                
+              </g>
+              
             </g>
           </svg>
+          
           
         </div>
       </div>
     </div>
+    
+    
     
   </div>
 </body>
@@ -444,10 +520,13 @@ exports[`GraphicOrderInteraction > Rendering > renders simple props into markup 
 exports[`GraphicOrderInteraction > Rendering > renders the instruction lang on the feedback block 1`] = `
 <body>
   <div>
+    
     <div
       aria-disabled="false"
       class="qti-interaction qti-blockInteraction qti-graphicOrderInteraction"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
@@ -459,19 +538,25 @@ exports[`GraphicOrderInteraction > Rendering > renders the instruction lang on t
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You must pick at least 1 choice and a maximum of 3
           </p>
         </div>
+        
       </div>
+      
        
       <div
         aria-atomic="true"
         aria-live="assertive"
         class="visually-hidden"
         lang="en-GB"
-      />
+      >
+        
+      </div>
+      
        
       <div
         class="qti-flow-container"
@@ -481,10 +566,11 @@ exports[`GraphicOrderInteraction > Rendering > renders the instruction lang on t
           class="qti-block"
           tabindex="0"
         >
+          
           <svg
             aria-labelledby="tao-desc-123"
             height="860"
-            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow);"
             version="1.1"
             viewBox="0 0 1213 860"
             width="1213"
@@ -497,6 +583,7 @@ exports[`GraphicOrderInteraction > Rendering > renders the instruction lang on t
             >
               graphic interaction
             </desc>
+            
             <defs>
               <filter
                 filterUnits="userSpaceOnUse"
@@ -509,7 +596,15 @@ exports[`GraphicOrderInteraction > Rendering > renders the instruction lang on t
                   stdDeviation="1.5"
                 />
               </filter>
+              <clippath
+                id="SvgjsClipPath1018"
+              >
+                <polygon
+                  points="112,491 190,482 193,551 106,549"
+                />
+              </clippath>
             </defs>
+            
             <g
               class="image"
               transform="translate(0, 0)"
@@ -523,10 +618,10 @@ exports[`GraphicOrderInteraction > Rendering > renders the instruction lang on t
                 x="0"
                 y="0"
               />
+              
               <g
                 slot="content"
               >
-                
                 <g
                   class="hotspot-choice"
                   data-choice-key="hotspot_1"
@@ -534,28 +629,29 @@ exports[`GraphicOrderInteraction > Rendering > renders the instruction lang on t
                   <g
                     aria-disabled="false"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <rect
                       class="shape-outer-border"
-                      height="68"
-                      width="68"
-                      x="314"
-                      y="346"
+                      height="72"
+                      width="72"
+                      x="312"
+                      y="344"
                     />
                     <rect
                       class="shape-inner-border"
-                      height="52"
-                      width="52"
-                      x="322"
-                      y="354"
+                      height="60"
+                      width="60"
+                      x="318"
+                      y="350"
                     />
                     <rect
                       class="shape-dashed-outline"
-                      height="68"
-                      width="68"
-                      x="314"
-                      y="346"
+                      height="72"
+                      width="72"
+                      x="312"
+                      y="344"
                     />
                     <text
                       class="shape-checkmark"
@@ -571,45 +667,58 @@ exports[`GraphicOrderInteraction > Rendering > renders the instruction lang on t
                     </text>
                   </g>
                   
+                  
                 </g>
-                
                 <g
                   class="hotspot-choice"
                   data-choice-key="hotspot_4"
                 >
                   <g
                     aria-disabled="false"
-                    class="shape"
+                    class="shape poly with-label"
+                    role="button"
                     tabindex="-1"
                   >
                     <polygon
-                      class="shape-outer-border"
-                      points="112.80926878769378,491.79977931896707 189.15496433181391,482.9906606023378 192.07237784041715,550.0911713002118 106.98148126187783,548.135058735188"
+                      class="shape-shadow"
+                      points="112,491 190,482 193,551 106,549"
                     />
                     <polygon
                       class="shape-inner-border"
-                      points="120.10598000766774,499.0109294571562 181.5357637212195,491.9228774902079 183.7085423352651,541.8967856132559 115.83093331617843,540.3363808082195"
+                      clip-path="url(#SvgjsClipPath1018)"
+                      points="112,491 190,482 193,551 106,549"
+                    />
+                    <polygon
+                      class="shape-outer-border"
+                      clip-path="url(#SvgjsClipPath1018)"
+                      points="112,491 190,482 193,551 106,549"
                     />
                     <polygon
                       class="shape-dashed-outline"
-                      points="112.80926878769378,491.79977931896707 189.15496433181391,482.9906606023378 192.07237784041715,550.0911713002118 106.98148126187783,548.135058735188"
+                      clip-path="url(#SvgjsClipPath1018)"
+                      points="112,491 190,482 193,551 106,549"
+                    />
+                    <polygon
+                      class="shape-outline-cover"
+                      clip-path="url(#SvgjsClipPath1018)"
+                      points="112,491 190,482 193,551 106,549"
                     />
                     <text
                       class="shape-checkmark"
-                      x="157.6676817666341"
-                      y="516.581095023366"
+                      x="157.8671875"
+                      y="516.6171875"
                     >
                       <tspan
                         dy="0"
-                        x="157.6676817666341"
+                        x="157.8671875"
                       >
                         0
                       </tspan>
                     </text>
                   </g>
                   
+                  
                 </g>
-                
                 <g
                   class="hotspot-choice"
                   data-choice-key="hotspot_5"
@@ -617,28 +726,29 @@ exports[`GraphicOrderInteraction > Rendering > renders the instruction lang on t
                   <g
                     aria-disabled="false"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <ellipse
                       class="shape-outer-border"
                       cx="153"
                       cy="41"
-                      rx="45"
-                      ry="34"
+                      rx="47"
+                      ry="36"
                     />
                     <ellipse
                       class="shape-inner-border"
                       cx="153"
                       cy="41"
-                      rx="37"
-                      ry="26"
+                      rx="41"
+                      ry="30"
                     />
                     <ellipse
                       class="shape-dashed-outline"
                       cx="153"
                       cy="41"
-                      rx="45"
-                      ry="34"
+                      rx="47"
+                      ry="36"
                     />
                     <text
                       class="shape-checkmark"
@@ -654,8 +764,8 @@ exports[`GraphicOrderInteraction > Rendering > renders the instruction lang on t
                     </text>
                   </g>
                   
+                  
                 </g>
-                
                 <g
                   class="hotspot-choice"
                   data-choice-key="hotspot_6"
@@ -663,25 +773,26 @@ exports[`GraphicOrderInteraction > Rendering > renders the instruction lang on t
                   <g
                     aria-disabled="false"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <circle
                       class="shape-outer-border"
                       cx="50"
                       cy="50"
-                      r="44"
+                      r="46"
                     />
                     <circle
                       class="shape-inner-border"
                       cx="50"
                       cy="50"
-                      r="36"
+                      r="40"
                     />
                     <circle
                       class="shape-dashed-outline"
                       cx="50"
                       cy="50"
-                      r="44"
+                      r="46"
                     />
                     <text
                       class="shape-checkmark"
@@ -697,14 +808,20 @@ exports[`GraphicOrderInteraction > Rendering > renders the instruction lang on t
                     </text>
                   </g>
                   
+                  
                 </g>
+                
               </g>
+              
             </g>
           </svg>
+          
           
         </div>
       </div>
     </div>
+    
+    
     
   </div>
 </body>

@@ -20,6 +20,7 @@ import NetworkError from 'core/error/NetworkError';
 import { getTimersStore } from '../../timers/timersStore.js';
 import { getNavigationFeedbackConfig } from 'testRunnerDynamicModulesIndex';
 import { disableNavReasons } from '../navigation/navigator/constants.js';
+import { mount, unmount } from 'svelte';
 
 /**
  * the proctoring plugin handles real-time Proctoring ACS actions:
@@ -178,7 +179,7 @@ export default pluginFactory({
         this.showProctorWaitScreen = skipProctorDialog => {
             testSessionStatusStore.set(testSessionStatus.proctorwait);
 
-            this.proctorWaitComponent = new ProctorWait({
+            this.proctorWaitComponent = mount(ProctorWait, {
                 target: areaBroker.getMainArea(),
                 props: {
                     serviceCallId,
@@ -191,20 +192,23 @@ export default pluginFactory({
                     testRunner.off('resume.proctorwait');
 
                     this.cancelBackupResumePolling();
-                    this.proctorWaitComponent.$destroy();
+                    unmount(this.proctorWaitComponent);
                     this.proctorWaitComponent = null;
-                    testSessionStatusStore.set(testSessionStatus.loading);
 
                     testRunner.trigger('enablenav', { reason: disableNavReasons.proctorWait });
 
                     const currentItemIdentifier = testRunner.getCurrentItemIdentifier();
                     if (testRunner.getItemState(currentItemIdentifier, 'disabled')) {
+                        testSessionStatusStore.set(testSessionStatus.loading);
+
                         testRunner.on('enableitem.proctorwait', () => {
                             testRunner.off('enableitem.proctorwait');
                             this.showExtraTimeNotificationIfUnshown();
                         });
                         testRunner.enableItem(currentItemIdentifier);
-                    } else {
+                    } else if (!testRunner.getItemState(currentItemIdentifier, 'loaded')) {
+                        testSessionStatusStore.set(testSessionStatus.loading);
+
                         testRunner.on('renderitem.proctorwait', () => {
                             testRunner.off('renderitem.proctorwait');
                             this.showExtraTimeNotificationIfUnshown();
@@ -318,14 +322,20 @@ export default pluginFactory({
             if (!isPausedByProctorExecution(testRunner.getTestContext())) {
                 testRunner.setTestContext(updatePausedByProctorExecution(testRunner.getTestContext(), true));
             }
+            const currentItemIdentifier = testRunner.getCurrentItemIdentifier();
             if (!isPausedByProctorUiFlow(testRunner)) {
                 testRunner.on('pause.proctorwait', () => {
                     testRunner.off('pause.proctorwait');
-                    const currentItemIdentifier = testRunner.getCurrentItemIdentifier();
-                    const skipProctorDialog = !testRunner.getItemState(currentItemIdentifier, 'loaded'); //if from `testRunner.init()`
+                    const currentItemIdOnPause = testRunner.getCurrentItemIdentifier();
+                    const skipProctorDialog = !testRunner.getItemState(currentItemIdOnPause, 'loaded'); //if from `testRunner.init()`
                     this.startProctorPauseUiFlow(skipProctorDialog);
                 });
                 testRunner.pause();
+            } else if (
+                testRunner.getItemState(currentItemIdentifier, 'loaded') &&
+                !testRunner.getItemState(currentItemIdentifier, 'disabled')
+            ) {
+                testRunner.disableItem(currentItemIdentifier);
             }
         });
 
@@ -347,7 +357,6 @@ export default pluginFactory({
 
             // 1. cancel any uploads because these are likely to give errors
             // if they complete and try to update item response after BE resets test session
-            //testRunner.itemRunner?.cancelAllUploads();
             testRunner.trigger('itemrunner-cancelAllUploads');
 
             // 2. unload the item to stop whatever's happening (PCI, media playback, etc.)
@@ -377,7 +386,6 @@ export default pluginFactory({
 
             // 1. cancel any uploads because these are likely to give errors
             // if they complete and try to update item response after BE resets test session
-            //testRunner.itemRunner?.cancelAllUploads();
             testRunner.trigger('itemrunner-cancelAllUploads');
 
             // 2. unload the item to stop whatever's happening (PCI, media playback, etc.)
@@ -470,7 +478,7 @@ export default pluginFactory({
         this.getTestRunner().off('.proctorwait');
 
         if (this.proctorWaitComponent) {
-            this.proctorWaitComponent.$destroy();
+            unmount(this.proctorWaitComponent);
         }
 
         if (this.resumePollingInterval) {

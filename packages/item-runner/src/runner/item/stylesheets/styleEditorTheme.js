@@ -26,6 +26,8 @@ export function applyStyleEditorTheme(cssRules) {
             for (let i = 0; i < style.length; i++) {
                 const propertyName = style[i];
                 const propertyValue = `var(${propertyName})`;
+                const resolvedPropertyValue = style.getPropertyValue(propertyName);
+
                 switch (propertyName) {
                     case '--styleeditor-font-size': {
                         newProps.push(`--fontsize-body: ${propertyValue}`);
@@ -35,6 +37,8 @@ export function applyStyleEditorTheme(cssRules) {
                         newProps.push(`--fontsize-heading-l: calc(${propertyValue} * 1.25)`);
                         newProps.push(`--fontsize-heading-xl: calc(${propertyValue} * 1.875)`);
                         newProps.push(`--fontsize-heading-xxl: calc(${propertyValue} * 2.5)`);
+
+                        newProps.push(`--styleeditor-font-size-initial: ${resolvedPropertyValue}`);
                         break;
                     }
                     case '--styleeditor-font-family': {
@@ -70,12 +74,40 @@ export function applyStyleEditorTheme(cssRules) {
             }
 
             const newStylesheet = new CSSStyleSheet();
+
+            addA11yOverrideRules(newStylesheet, styleEditorVarsScope);
+
             newStylesheet.insertRule(`${itemRunnerVarsScope} {${newProps.join(';')}}`);
             for (const existingRule of cssRules) {
-                newStylesheet.insertRule(existingRule.cssText);
+                try {
+                    // rules like @import now throw
+                    newStylesheet.insertRule(existingRule.cssText);
+                } catch(err) {
+                    console.error(err);
+                }
             }
+
             return newStylesheet.cssRules;
         }
     }
     return void 0;
+}
+
+/**
+ * Test-runner's 'a11y' plugin should override StyleEditor's styles.
+ * Add some rules to support that.
+ * @param {CSSStyleSheet} newStylesheet - rules are appended to it
+ * @param {String} styleEditorVarsScope
+ */
+function addA11yOverrideRules(newStylesheet, styleEditorVarsScope) {
+    // FontFamilySetting: unset StyleEditor font-family
+    const fontFamilyScope = '[data-a11y-override-font-family="true"]';
+    const fontFamilyValues = '--styleeditor-font-family: unset';
+    newStylesheet.insertRule(`${fontFamilyScope} ${styleEditorVarsScope} {${fontFamilyValues}}`);
+
+    // FontSizeSetting: scale StyleEditor font-size relatively
+    const fontSizeScope = '[data-a11y-override-font-size="true"]';
+    const fontSizeValues =
+        '--styleeditor-font-size: calc(var(--styleeditor-font-size-initial) * var(--a11y-fontsize-scale, 1))';
+    newStylesheet.insertRule(`${fontSizeScope} ${styleEditorVarsScope} {${fontSizeValues}}`);
 }

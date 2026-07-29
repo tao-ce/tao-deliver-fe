@@ -27,26 +27,26 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 </style>
 
-<!-- svelte-ignore a11y-click-events-have-key-events -->
 <div
     class="item-content-overlay not-printable"
     style={`height: ${areaScrollTop + gapOffset}px`}
+    aria-hidden={true}
     on:click={(evt) => {
         dispatch('topareaclick', {
             pageY: evt.pageY
         });
     }}
-/>
-<!-- svelte-ignore a11y-click-events-have-key-events -->
+></div>
 <div
     class="item-content-overlay not-printable"
     style={`
         height: ${areaScrollHeight - areaScrollTop - gapOffset - gapSize}px;
         transform: translateY(${gapOffset + gapSize + areaScrollTop}px);
     `}
+    aria-hidden={true}
     on:click={(evt) => {
         dispatch('bottomareaclick', {
             pageY: evt.pageY
         });
     }}
-/>
+></div>

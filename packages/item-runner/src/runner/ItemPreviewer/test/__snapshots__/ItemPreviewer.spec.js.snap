@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`ItemPreviewer > it renders correctly 1`] = `
+exports[`ItemPreviewer > renders correctly 1`] = `
 <body>
   <div>
     <div
@@ -30,15 +30,20 @@ exports[`ItemPreviewer > it renders correctly 1`] = `
                 <path
                   d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
              
             <div
               class="item-name"
             >
-              undefined
+              
             </div>
           </div>
            
@@ -85,11 +90,16 @@ exports[`ItemPreviewer > it renders correctly 1`] = `
                     fill="currentColor"
                     transform="translate(2 12)"
                   />
+                  
                 </svg>
+                
                  
+                
                  
                 RESPONSE PANEL
+                
               </button>
+              
             </div>
              
             <div
@@ -130,13 +140,19 @@ exports[`ItemPreviewer > it renders correctly 1`] = `
                     fill="currentColor"
                     transform="translate(2 12)"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
+              
             </div>
           </div>
         </div>
+        
       </div>
        
       <div
@@ -151,7 +167,9 @@ exports[`ItemPreviewer > it renders correctly 1`] = `
             <div
               class="responses-container"
             >
-              <ul />
+              <ul>
+                
+              </ul>
             </div>
              
             <div
@@ -163,16 +181,21 @@ exports[`ItemPreviewer > it renders correctly 1`] = `
                 name="SUBMIT RESPONSE"
                 type="button"
               >
+                
                  
+                
                  
                 SUBMIT RESPONSE
+                
               </button>
+              
             </div>
           </div>
+          
         </div>
          
         <div
-          class="item-preview-container"
+          class="item-preview-container qti-item-container"
         >
           <div
             class="item-mock"
@@ -185,9 +208,12 @@ exports[`ItemPreviewer > it renders correctly 1`] = `
               data-test-id="dispatchError"
             />
           </div>
+          
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -204,6 +230,7 @@ exports[`ItemPreviewer > submits the response to the url provided, updates respo
     >
       <ul>
         <li>
+          
            
           <div
             class="response-entry"
@@ -217,13 +244,11 @@ exports[`ItemPreviewer > submits the response to the url provided, updates respo
             <div
               class="score"
             >
-              0
-              /
-              1
+              0/1
             </div>
           </div>
-           
         </li>
+        
       </ul>
     </div>
      
@@ -236,11 +261,16 @@ exports[`ItemPreviewer > submits the response to the url provided, updates respo
         name="SUBMIT RESPONSE"
         type="button"
       >
+        
          
+        
          
         SUBMIT RESPONSE
+        
       </button>
+      
     </div>
   </div>
+  
 </div>
 `;

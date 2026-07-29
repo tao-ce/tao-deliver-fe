@@ -1,0 +1,67 @@
+{
+    "baseUrl": "./assets/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "000000003",
+            "serial": "item_68f230786e1d8446974047",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "000000003",
+                "title": "Item 1",
+                "label": "Item 1",
+                "xml:lang": "ja-JP",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "2025.10",
+                "class": "writing-mode-vertical-rl"
+            },
+            "body": {
+                "serial": "container_containeritembody_68f230786e1d0531379757",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <p><sub class=\"txt-subscript\">\u2460<\/sub><span class=\"txt-underline\"><ruby><rb>\u304b\u306f \u304a\u5143\u6c17\u3067\u3059\u304b<\/rb><rt>\u3067\u3059\u304b<\/rt><\/ruby><\/span>subscript + solid + ruby<br\/><sub class=\"txt-subscript\">\u2460<\/sub><span class=\"txt-strike\">\u304b\u306f \u304a\u5143\u6c17\u3067\u3059\u304b <\/span>subscript +strike<br\/><sub class=\"txt-subscript\">\u2460<\/sub><span class=\"txt-dashed\">\u304b\u306f \u304a\u5143\u6c17\u3067\u3059\u304b <\/span>subscript +dashed<br\/><sub class=\"txt-subscript\">\u2460<\/sub><span class=\"txt-wavy\">\u304b\u306f \u304a\u5143\u6c17\u3067\u3059\u304b <\/span>subscript+ wavy<br\/><sup class=\"txt-superscript\">\u2460<\/sup>\u304b\u306f \u304a\u5143\u6c17\u3067\u3059\u304b superscript<br\/>\n<sub class=\"txt-subscript\">\u3059<\/sub><ruby><rb>\u3059\u5143\u6c17\u3067\u3059<\/rb><rt>\u3067\u3059<\/rt><\/ruby>subscript(letter)+ruby<\/p>\n      <\/div>\n    <\/div>\n  ",
+                "elements": {},
+                "attributes": [],
+                "debug": {
+                    "relatedItem": "item_68f230786e1d8446974047"
+                }
+            },
+            "debug": {
+                "relatedItem": "item_68f230786e1d8446974047"
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd",
+                "http://www.imsglobal.org/xsd/imsqtiv2p2_html5_v1p0": "https://purl.imsglobal.org/spec/qti/v2p2/schema/xsd/imsqtiv2p2p4_html5_v1p0.xsd"
+            },
+            "stylesheets": {},
+            "outcomes": {},
+            "responses": {},
+            "feedbacks": {},
+            "responseProcessing": {
+                "serial": "response_templatesdriven_68f230786e797626914604",
+                "qtiClass": "responseProcessing",
+                "attributes": {},
+                "debug": {
+                    "relatedItem": "item_68f230786e1d8446974047"
+                },
+                "processingType": "templateDriven",
+                "responseRules": []
+            },
+            "apipAccessibility": ""
+        },
+        "assets": []
+    },
+    "itemState": {},
+    "itemIdentifier": "item-3",
+    "portableElements": {
+        "pci": [],
+        "pic": []
+    },
+    "success": true,
+    "messages": []
+}

@@ -6,6 +6,7 @@
 import { tick } from 'svelte';
 import { render, fireEvent } from '@testing-library/svelte';
 import UserMenu from '../UserMenu.svelte';
+import { decommentify } from '@/test-utils/helpers.js';
 
 describe('UserMenu', () => {
     it('renders user avatar, on click opens flyout with name & id', async () => {
@@ -41,7 +42,7 @@ describe('UserMenu', () => {
                 }
             }
         });
-        expect(container.innerHTML).toBe('');
+        expect(decommentify(container.innerHTML)).toBe('');
     });
 
     it('renders name from firstName & lastName if set', () => {

@@ -1,6 +1,11 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`PreviewerNavigator > fails rendering with no serviceCallId 1`] = `[TypeError: A "serviceCallId" is required to get the state store of the test session]`;
+exports[`PreviewerNavigator > fails rendering with no serviceCallId 1`] = `
+[TypeError: A "serviceCallId" is required to get the state store of the test session
+
+	in <unknown>
+]
+`;
 
 exports[`PreviewerNavigator > renders previous button, steps and next button 1`] = `
 <body>
@@ -29,10 +34,15 @@ exports[`PreviewerNavigator > renders previous button, steps and next button 1`]
               d="M8 16l-2-2 4.5-4.5H0v-3h10.5L6 2l2-2 8 8-8 8z"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
       </div>
        
       <div
@@ -56,10 +66,15 @@ exports[`PreviewerNavigator > renders previous button, steps and next button 1`]
               d="M7.7-.13l2 2-4.5 4.5h10.5v3H5.2l4.5 4.5-2 2-8-8 8-8z"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
       </div>
        
       <div
@@ -68,11 +83,16 @@ exports[`PreviewerNavigator > renders previous button, steps and next button 1`]
         <div
           class="width-tracker"
         >
+          
           <div
             class="more"
-          />
+          >
+            
+          </div>
+          
            
           <div>
+            
             <ol
               class="space-medium"
             >
@@ -82,7 +102,9 @@ exports[`PreviewerNavigator > renders previous button, steps and next button 1`]
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -90,8 +112,8 @@ exports[`PreviewerNavigator > renders previous button, steps and next button 1`]
                   >
                     1
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -116,9 +138,13 @@ exports[`PreviewerNavigator > renders previous button, steps and next button 1`]
                         d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </span>
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -126,8 +152,8 @@ exports[`PreviewerNavigator > renders previous button, steps and next button 1`]
                   >
                     2
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -135,7 +161,9 @@ exports[`PreviewerNavigator > renders previous button, steps and next button 1`]
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -143,8 +171,8 @@ exports[`PreviewerNavigator > renders previous button, steps and next button 1`]
                   >
                     3
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -152,7 +180,9 @@ exports[`PreviewerNavigator > renders previous button, steps and next button 1`]
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -160,8 +190,8 @@ exports[`PreviewerNavigator > renders previous button, steps and next button 1`]
                   >
                     4
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -169,7 +199,9 @@ exports[`PreviewerNavigator > renders previous button, steps and next button 1`]
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -177,19 +209,28 @@ exports[`PreviewerNavigator > renders previous button, steps and next button 1`]
                   >
                     5
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
             
+            
           </div>
+          
            
           <div
             class="more"
-          />
+          >
+            
+          </div>
+          
+          
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -202,11 +243,15 @@ exports[`PreviewerNavigator > renders without error if testStateStore is empty 1
     >
       <div
         class="button-container end"
-      />
+      >
+        
+      </div>
        
       <div
         class="button-container start"
-      />
+      >
+        
+      </div>
        
       <div
         class="progress-container"
@@ -214,20 +259,33 @@ exports[`PreviewerNavigator > renders without error if testStateStore is empty 1
         <div
           class="width-tracker"
         >
+          
           <div
             class="more"
-          />
+          >
+            
+          </div>
+          
            
           <div>
             
+            
+            
           </div>
+          
            
           <div
             class="more"
-          />
+          >
+            
+          </div>
+          
+          
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -240,7 +298,9 @@ exports[`PreviewerNavigator > renders without next button if last item 1`] = `
     >
       <div
         class="button-container end"
-      />
+      >
+        
+      </div>
        
       <div
         class="button-container start"
@@ -263,10 +323,15 @@ exports[`PreviewerNavigator > renders without next button if last item 1`] = `
               d="M7.7-.13l2 2-4.5 4.5h10.5v3H5.2l4.5 4.5-2 2-8-8 8-8z"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
       </div>
        
       <div
@@ -275,11 +340,16 @@ exports[`PreviewerNavigator > renders without next button if last item 1`] = `
         <div
           class="width-tracker"
         >
+          
           <div
             class="more"
-          />
+          >
+            
+          </div>
+          
            
           <div>
+            
             <ol
               class="space-medium"
             >
@@ -289,7 +359,9 @@ exports[`PreviewerNavigator > renders without next button if last item 1`] = `
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -297,8 +369,8 @@ exports[`PreviewerNavigator > renders without next button if last item 1`] = `
                   >
                     1
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -306,7 +378,9 @@ exports[`PreviewerNavigator > renders without next button if last item 1`] = `
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -314,8 +388,8 @@ exports[`PreviewerNavigator > renders without next button if last item 1`] = `
                   >
                     2
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -323,7 +397,9 @@ exports[`PreviewerNavigator > renders without next button if last item 1`] = `
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -331,8 +407,8 @@ exports[`PreviewerNavigator > renders without next button if last item 1`] = `
                   >
                     3
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -340,7 +416,9 @@ exports[`PreviewerNavigator > renders without next button if last item 1`] = `
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -348,8 +426,8 @@ exports[`PreviewerNavigator > renders without next button if last item 1`] = `
                   >
                     4
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -374,9 +452,13 @@ exports[`PreviewerNavigator > renders without next button if last item 1`] = `
                         d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </span>
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -384,19 +466,28 @@ exports[`PreviewerNavigator > renders without next button if last item 1`] = `
                   >
                     5
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
             
+            
           </div>
+          
            
           <div
             class="more"
-          />
+          >
+            
+          </div>
+          
+          
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -428,15 +519,22 @@ exports[`PreviewerNavigator > renders without previous button if first item 1`] 
               d="M8 16l-2-2 4.5-4.5H0v-3h10.5L6 2l2-2 8 8-8 8z"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
       </div>
        
       <div
         class="button-container start"
-      />
+      >
+        
+      </div>
        
       <div
         class="progress-container"
@@ -444,11 +542,16 @@ exports[`PreviewerNavigator > renders without previous button if first item 1`] 
         <div
           class="width-tracker"
         >
+          
           <div
             class="more"
-          />
+          >
+            
+          </div>
+          
            
           <div>
+            
             <ol
               class="space-medium"
             >
@@ -475,9 +578,13 @@ exports[`PreviewerNavigator > renders without previous button if first item 1`] 
                         d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </span>
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -485,8 +592,8 @@ exports[`PreviewerNavigator > renders without previous button if first item 1`] 
                   >
                     1
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -494,7 +601,9 @@ exports[`PreviewerNavigator > renders without previous button if first item 1`] 
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -502,8 +611,8 @@ exports[`PreviewerNavigator > renders without previous button if first item 1`] 
                   >
                     2
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -511,7 +620,9 @@ exports[`PreviewerNavigator > renders without previous button if first item 1`] 
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -519,8 +630,8 @@ exports[`PreviewerNavigator > renders without previous button if first item 1`] 
                   >
                     3
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -528,7 +639,9 @@ exports[`PreviewerNavigator > renders without previous button if first item 1`] 
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -536,8 +649,8 @@ exports[`PreviewerNavigator > renders without previous button if first item 1`] 
                   >
                     4
                   </span>
+                  
                 </button>
-                 
               </li>
               <li>
                 <button
@@ -545,7 +658,9 @@ exports[`PreviewerNavigator > renders without previous button if first item 1`] 
                   class="step completed"
                   tabindex="-1"
                 >
+                  
                    
+                  
                    
                   <span
                     aria-hidden="true"
@@ -553,19 +668,28 @@ exports[`PreviewerNavigator > renders without previous button if first item 1`] 
                   >
                     5
                   </span>
+                  
                 </button>
-                 
               </li>
+              
             </ol>
             
+            
           </div>
+          
            
           <div
             class="more"
-          />
+          >
+            
+          </div>
+          
+          
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;

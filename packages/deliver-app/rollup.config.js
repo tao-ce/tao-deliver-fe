@@ -18,9 +18,11 @@ const appsCommonSrcDir = path.join(rootDir, 'packages', 'apps-common', 'src');
 const sharedModulesDir = path.join(rootDir, 'node_modules');
 const localeModulesDir = path.join(__dirname, 'node_modules');
 
+const isExtractTranslations = typeof process.env.EXTRACT_TRANSLATION_KEYS !== 'undefined';
+
 let extraPlugins = sharedConfig.plugins;
 
-if (typeof process.env.EXTRACT_TRANSLATION_KEYS !== 'undefined') {
+if (isExtractTranslations) {
     const i18nTool = i18n({
         exclude: ['**/node_modules/**'],
         include: ['**/@oat-sa-private/*/!(node_modules)/**', '**/@oat-sa/**'],
@@ -36,31 +38,42 @@ let plugins = [
     }),
     alias({
         resolve: ['.js', '.json', '.css', '.svelte'],
-        entries: {
-            async: path.join(localeModulesDir, '@oat-sa-private', 'tao-test-runner-qtinui', 'node_modules', 'async'),
-            'core/moduleLoader': path.join(appsCommonSrcDir, 'core', 'moduleLoader.js'),
-            core: path.join(localeModulesDir, '@oat-sa', 'tao-core-sdk', 'src', 'core'),
-            util: path.join(localeModulesDir, '@oat-sa', 'tao-core-sdk', 'src', 'util'),
-            taoItems: path.join(localeModulesDir, '@oat-sa', 'tao-item-runner', 'src'),
-            'taoTests/runner': path.join(localeModulesDir, '@oat-sa', 'tao-test-runner', 'src'),
-            taoDeliverAppsCommon: path.join(localeModulesDir, '@oat-sa-private', 'tao-deliver-apps-common', 'src'),
-            taoQtiNuiPreviewer: path.join(rootDir, 'packages', 'previewer-app', 'src'),
-            taoQtiNuiTest: path.join(localeModulesDir, '@oat-sa-private', 'tao-test-runner-qtinui', 'src'),
-            taoQtiNuiItem: path.join(localeModulesDir, '@oat-sa-private', 'tao-item-runner-qtinui', 'src'),
-            // the dynamic modules entrypoint references all the overridable modules
-            testRunnerDynamicModulesIndex: path.join(
-                localeModulesDir,
-                '@oat-sa-private',
-                'tao-test-runner-qtinui',
-                'src',
-                'dynamicModulesIndex.js'
-            ),
-
-            // these modules are required, but they won't be called, so they can be replaced with empty module
-            module: path.join(mockDir, 'module.js'),
-            moment: path.join(mockDir, 'module.js'),
-            context: path.join(mockDir, 'module.js')
-        }
+        entries: Object.assign(
+            {
+                async: path.join(
+                    localeModulesDir,
+                    '@oat-sa-private',
+                    'tao-test-runner-qtinui',
+                    'node_modules',
+                    'async'
+                ),
+                'core/moduleLoader': path.join(appsCommonSrcDir, 'core', 'moduleLoader.js'),
+                core: path.join(localeModulesDir, '@oat-sa', 'tao-core-sdk', 'src', 'core'),
+                util: path.join(localeModulesDir, '@oat-sa', 'tao-core-sdk', 'src', 'util'),
+                taoItems: path.join(localeModulesDir, '@oat-sa', 'tao-item-runner', 'src'),
+                'taoTests/runner': path.join(localeModulesDir, '@oat-sa', 'tao-test-runner', 'src'),
+                taoDeliverAppsCommon: path.join(localeModulesDir, '@oat-sa-private', 'tao-deliver-apps-common', 'src'),
+                taoQtiNuiPreviewer: path.join(rootDir, 'packages', 'previewer-app', 'src'),
+                taoQtiNuiTest: path.join(localeModulesDir, '@oat-sa-private', 'tao-test-runner-qtinui', 'src'),
+                taoQtiNuiItem: path.join(localeModulesDir, '@oat-sa-private', 'tao-item-runner-qtinui', 'src'),
+                // the dynamic modules entrypoint references all the overridable modules
+                testRunnerDynamicModulesIndex: path.join(
+                    localeModulesDir,
+                    '@oat-sa-private',
+                    'tao-test-runner-qtinui',
+                    'src',
+                    'dynamicModulesIndex.js'
+                ),
+                // these modules are required, but they won't be called, so they can be replaced with empty module
+                module: path.join(mockDir, 'module.js'),
+                moment: path.join(mockDir, 'module.js'),
+                context: path.join(mockDir, 'module.js')
+            },
+            isExtractTranslations && {
+                // improve i18n build performance by aliasing large external libraries
+                './pdf.js': path.join(mockDir, 'module.js')
+            }
+        )
     }),
     ...extraPlugins,
     copy({

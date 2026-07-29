@@ -127,7 +127,7 @@ describe('bookletExport plugin', () => {
                 ...Object.values(preset.testMap.parts['testPart-1'].sections['section-2'].items),
                 ...Object.values(preset.testMap.parts['testPart-2'].sections['section-3'].items)
             ].find(i => i.position === position);
-            expect(itemIdentifier).toBeTruthy();
+            expect(itemIdentifier).toBeTruthy(); // eslint-disable-line vitest/no-standalone-expect
 
             stateStore.setTestContext({
                 ...preset.testContext,

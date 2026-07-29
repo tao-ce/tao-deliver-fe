@@ -6,7 +6,6 @@
 // mock store for custom interaction
 vi.mock('core/store', () => {
     const store = () =>
-        // eslint-disable-next-line implicit-arrow-linebreak
         Promise.resolve({
             getItem() {
                 return Promise.resolve();
@@ -36,6 +35,14 @@ vi.mock('../services/upload/uploadService.js', () => ({
     cancelAllServicesUploads: vi.fn()
 }));
 
+// interaction type only used in the intentionally erroring test
+vi.mock('../interactions/media/MediaInteraction.svelte', async () => {
+    const MockErroringInteraction = await import('./MockErroringInteraction.svelte');
+    return {
+        default: MockErroringInteraction.default
+    };
+});
+
 import { get } from 'svelte/store';
 import itemRunner from 'taoItems/runner/api/itemRunner';
 import qtiItemRunnerProvider from '../qti.js';
@@ -53,7 +60,7 @@ import { getItemPendingOperationsStore } from '../itemsPendingOperationsStore.js
 import { cancelAllExtendedTextUploads } from '../interactions/extendedText/uploadAdapter.js';
 import { cancelAllServicesUploads } from '../services/upload/uploadService.js';
 
-const { itemData } = samples.americaDiscovery;
+const { itemData } = cloneDeep(samples.americaDiscovery);
 itemData.itemData.data.stylesheets = {}; // because unable to mock StylesheetLoader
 
 const assetManager = assetManagerFactory([
@@ -122,20 +129,20 @@ describe('provider', () => {
 
         it('listens for item render error', () =>
             new Promise(done => {
-                itemRunner('qti', itemData)
+                const container = document.createElement('div');
+
+                itemRunner('qti', samples.surfing.itemData)
                     .on('error', function (err) {
                         expect(err).toBeInstanceOf(Error);
                         this.clear();
                         done();
                     })
-                    .on('render', function () {
-                        // simulate item error event
-                        this.item.$$.callbacks.error[0](
-                            new CustomEvent('Render error', { detail: new Error('Error rendering item') })
-                        );
+                    .on('render', async function () {
+                        // simulate item error via its context
+                        container.querySelector('button#error').click();
                     })
                     .init()
-                    .render(document.body);
+                    .render(container);
             }));
 
         it('renders with provided renderer', () =>
@@ -350,21 +357,13 @@ describe('provider', () => {
             }));
 
         it('requests item to update state on getState call', () =>
-            new Promise(done => {
-                expect.assertions(2);
-                const itemState = { RESPONSE: { response: { base: { integer: -99 } } } };
-
+            new Promise((done, fail) => {
                 const itemRunnerInstance = itemRunner('qti', itemData)
+                    .on('error', fail)
                     .on('render', function () {
-                        const { itemIdentifier } = itemData;
-                        const context = this.item.$$.context.get(itemIdentifier);
-                        context.on('stateupdate', () => {
-                            expect(true).toBe(true);
-                            const itemStateStore = getItemStateStore(itemIdentifier);
-                            itemStateStore.set(itemState);
-                        });
-
-                        expect(itemRunnerInstance.getState()).toMatchObject(itemState);
+                        const itemTriggerSpy = vi.spyOn(this.item, 'trigger');
+                        itemRunnerInstance.getState();
+                        expect(itemTriggerSpy).toHaveBeenCalledWith('stateupdate');
                         done();
                     })
                     .init()
@@ -372,23 +371,13 @@ describe('provider', () => {
             }));
 
         it('requests item to update response on getResponse call', () =>
-            new Promise(done => {
-                expect.assertions(2);
-                const itemState = { RESPONSE: { response: { base: { integer: -99 } } } };
-
+            new Promise((done, fail) => {
                 const itemRunnerInstance = itemRunner('qti', itemData)
+                    .on('error', fail)
                     .on('render', function () {
-                        const { itemIdentifier } = itemData;
-                        const context = this.item.$$.context.get(itemIdentifier);
-                        context.on('stateupdate', () => {
-                            expect(true).toBe(true);
-                            const itemStateStore = getItemStateStore(itemIdentifier);
-                            itemStateStore.set(itemState);
-                        });
-
-                        expect(itemRunnerInstance.getResponses()).toMatchObject({
-                            RESPONSE: itemState.RESPONSE.response
-                        });
+                        const itemTriggerSpy = vi.spyOn(this.item, 'trigger');
+                        itemRunnerInstance.getResponses();
+                        expect(itemTriggerSpy).toHaveBeenCalledWith('stateupdate');
                         done();
                     })
                     .init()

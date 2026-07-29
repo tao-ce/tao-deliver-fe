@@ -6,6 +6,7 @@ import { tick } from 'svelte';
 import { render } from '@testing-library/svelte';
 import AttachmentsFlyout from '../AttachmentsFlyout.svelte';
 import { getTestSessionStatusStore } from '../../../../testsStateStore.js';
+import { decommentify } from '@/test-utils/helpers.js';
 
 describe('AttachmentsFlyout', () => {
     const attachments = [
@@ -42,7 +43,7 @@ describe('AttachmentsFlyout', () => {
                 serviceCallId
             }
         });
-        expect(container.innerHTML.trim()).toBe('');
+        expect(decommentify(container.innerHTML.trim())).toBe('');
     });
 
     it('renders when reference present and clicked', async () => {

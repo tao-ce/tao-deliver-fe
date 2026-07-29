@@ -297,13 +297,8 @@ describe('TextEntryInteraction', () => {
             expect(container.querySelector(selectorVisibleInvalidFeedback())).toBeInTheDocument();
             expect(container.querySelector(selectorVisibleValidFeedback())).not.toBeInTheDocument();
         }
-        function valueIsValid(container) {
-            expect(container.querySelector(selectorVisibleFeedback(' svg>title'))).toBeInTheDocument();
-            expect(container.querySelector(selectorVisibleFeedback(' svg>title')).textContent).toEqual(
-                'Check mark icon'
-            );
-        }
         function valueIsInvalid(container) {
+            //no checkmark icon in the feedback
             expect(container.querySelector(selectorVisibleFeedback(' svg>title'))).not.toBeInTheDocument();
         }
         function inputStateIsValid(container) {
@@ -381,7 +376,7 @@ describe('TextEntryInteraction', () => {
                 patternMask: '^[0-9]{3}$'
             };
 
-            it('shows valid feedback on first try', () => {
+            it('shows feedback on first try only if invalid', () => {
                 const lang = 'nb-NO';
                 const { container } = render(ContextWrapper, {
                     props: {
@@ -400,34 +395,26 @@ describe('TextEntryInteraction', () => {
 
                 return tick()
                     .then(() => {
-                        // valid state with pattern message on initial focusing
-                        feedbackIsPresent(container);
-                        feedbackHasText(container, patternMessage);
-                        feedbackStateIsValid(container);
+                        // valid state without pattern message on initial focusing
+                        feedbackIsAbsent(container);
                         inputStateIsValid(container);
-                        valueIsInvalid(container);
-                        feedbackHasLang(container, lang);
-                        expect(container.querySelector('.feedback-inline')).toMatchSnapshot();
                         //fire next step
                         fireEvent.input(container.querySelector('input'), { target: { value: '12' } });
                     })
                     .then(() => {
-                        // valid state with pattern message and partially correct value
+                        // valid state withpattern message and partially correct value
                         feedbackIsPresent(container);
                         feedbackHasText(container, patternMessage);
                         feedbackStateIsValid(container);
-                        inputStateIsValid(container);
                         valueIsInvalid(container);
+                        inputStateIsValid(container);
                         //fire next step
                         fireEvent.input(container.querySelector('input'), { target: { value: '123' } });
                     })
                     .then(() => {
-                        // valid state with pattern message and completely correct value
-                        feedbackIsPresent(container);
-                        feedbackHasText(container, patternMessage);
-                        feedbackStateIsValid(container);
+                        // valid state without pattern message and completely correct value
+                        feedbackIsAbsent(container);
                         inputStateIsValid(container);
-                        valueIsValid(container);
                         //fire next step
                         fireEvent.blur(container.querySelector('input'));
                     })
@@ -439,21 +426,20 @@ describe('TextEntryInteraction', () => {
                         fireEvent.focus(container.querySelector('input'));
                     })
                     .then(() => {
-                        // valid state with pattern message and completely correct value
-                        feedbackIsPresent(container);
-                        feedbackHasText(container, patternMessage);
-                        feedbackStateIsValid(container);
+                        // valid state without pattern message and completely correct value
+                        feedbackIsAbsent(container);
                         inputStateIsValid(container);
-                        valueIsValid(container);
                         fireEvent.input(container.querySelector('input'), { target: { value: '12' } });
                     })
                     .then(() => {
-                        // valid state with pattern message and partially correct value
+                        // invalid state with pattern message and partially correct value
                         feedbackIsPresent(container);
                         feedbackHasText(container, patternMessage);
                         feedbackStateIsInvalid(container);
                         inputStateIsInvalid(container);
                         valueIsInvalid(container);
+                        feedbackHasLang(container, lang);
+                        expect(container.querySelector('.feedback-inline')).toMatchSnapshot();
                         //fire next step
                         fireEvent.blur(container.querySelector('input'));
                     })
@@ -471,12 +457,9 @@ describe('TextEntryInteraction', () => {
 
                 return tick()
                     .then(() => {
-                        // valid state with pattern message on initial focusing
-                        feedbackIsPresent(container);
-                        feedbackHasText(container, patternMessage);
-                        feedbackStateIsValid(container);
+                        // valid state without pattern message on initial focusing
+                        feedbackIsAbsent(container);
                         inputStateIsValid(container);
-                        valueIsInvalid(container);
                         //fire next step
                         fireEvent.input(container.querySelector('input'), { target: { value: 'as' } });
                     })
@@ -485,8 +468,8 @@ describe('TextEntryInteraction', () => {
                         feedbackIsPresent(container);
                         feedbackHasText(container, patternMessage);
                         feedbackStateIsValid(container);
-                        inputStateIsValid(container);
                         valueIsInvalid(container);
+                        inputStateIsValid(container);
                         //fire next step
                         fireEvent.blur(container.querySelector('input'));
                     })
@@ -504,12 +487,9 @@ describe('TextEntryInteraction', () => {
 
                 return tick()
                     .then(() => {
-                        // valid state with pattern message on initial focusing
-                        feedbackIsPresent(container);
-                        feedbackHasText(container, patternMessage);
-                        feedbackStateIsValid(container);
+                        // valid state without pattern message on initial focusing
+                        feedbackIsAbsent(container);
                         inputStateIsValid(container);
-                        valueIsInvalid(container);
                         //fire next step
                         fireEvent.input(container.querySelector('input'), { target: { value: '1' } });
                     })
@@ -518,8 +498,8 @@ describe('TextEntryInteraction', () => {
                         feedbackIsPresent(container);
                         feedbackHasText(container, patternMessage);
                         feedbackStateIsValid(container);
-                        inputStateIsValid(container);
                         valueIsInvalid(container);
+                        inputStateIsValid(container);
                         //fire next step
                         fireEvent.blur(container.querySelector('input'));
                     })
@@ -569,12 +549,9 @@ describe('TextEntryInteraction', () => {
                         fireEvent.input(container.querySelector('input'), { target: { value: '123' } });
                     })
                     .then(() => {
-                        // valid state with pattern message and fully resolved value
-                        feedbackIsPresent(container);
-                        feedbackHasText(container, patternMessage);
-                        feedbackStateIsValid(container);
+                        // valid state without pattern message and fully resolved value
+                        feedbackIsAbsent(container);
                         inputStateIsValid(container);
-                        valueIsValid(container);
                     });
             });
         });

@@ -7,6 +7,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 <script>
     // Licensed under Gnu Public License version 2
     // Copyright (c) 2020-24 (original work) Open Assessment Technologies SA ;
+    /* eslint-disable svelte/valid-compile */
     import { __, generateElementId, getActualKey } from '@oat-sa-private/ui-core';
     import { breakpoints } from '@oat-sa-private/ui-identity';
     import { DraggableList, DraggableListItem } from '@oat-sa-private/ui-components';
@@ -787,11 +788,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     /* suggested area hover style - needs to use absence of global library class on body */
     :global(
-            body:not(.draggable--is-dragging)
-                .layout-container.choices-top.has-selected-choice
-                .choices
-                .drop-area.suggested:hover
-        ) {
+        body:not(.draggable--is-dragging)
+            .layout-container.choices-top.has-selected-choice
+            .choices
+            .drop-area.suggested:hover
+    ) {
         @add-mixin extended-drop-area-background;
     }
 </style>
@@ -860,7 +861,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 </div>
             {:else if area === areas.answers}
                 <div class="buckets" bind:this={answerArea}>
-                    {#each choices[1] as choiceY, j (choiceY.key)}
+                    {#each choices[1] as choiceY (choiceY.key)}
                         <header class="bucket-heading">
                             <h6>
                                 <ItemBlocks blockTree={choiceY.blockTree} />

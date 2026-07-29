@@ -61,6 +61,13 @@ vi.mock('@oat-sa-private/ui-core/dom/dom.js', () => ({
     getPointerEventCoords: () => ({ x: 50, y: 50 })
 }));
 
+vi.mock('../../util/polygon.js', async () => {
+    const originalModule = await vi.importActual('../../util/polygon.js');
+    return Object.assign({ __esModule: true }, originalModule, {
+        getIsThin: () => false
+    });
+});
+
 const qtiClass = 'qti-graphicAssociateInteraction';
 const itemIdentifier = 'i12345';
 const responseIdentifier = 'RESPONSE_1';
@@ -102,6 +109,42 @@ const getChoices = () => [
         matchMin: 0
     }
 ];
+const getArrowChoices = () => [
+    {
+        key: 'a',
+        shape: 'rect',
+        coords: '0,0,100,50',
+        hotspotLabel: 'a spot',
+        matchMax: 0,
+        matchMin: 0,
+        'data-start': 'true'
+    },
+    {
+        key: 'b',
+        shape: 'circle',
+        coords: '100,400,100',
+        matchMax: 0,
+        matchMin: 0,
+        'data-end': 'true'
+    },
+    {
+        key: 'c',
+        shape: 'ellipse',
+        coords: '400,400,100,50',
+        hotspotLabel: 'a spot',
+        matchMax: 0,
+        matchMin: 0,
+        'data-start': 'true'
+    },
+    {
+        key: 'd',
+        shape: 'poly',
+        coords: '400,0,600,0,400,200',
+        matchMax: 0,
+        matchMin: 0,
+        'data-end': 'true'
+    }
+];
 
 const predefinedAssociations = {
     list: {
@@ -133,6 +176,41 @@ describe('Graphic associate interaction', () => {
 
     function associationsCount(container) {
         return container.querySelectorAll('.association-line').length;
+    }
+    function getSnapshotContainer(container) {
+        const normalizedContainer = container.cloneNode(true);
+        const replacementById = new Map();
+        const xmlNamespace = 'http://www.w3.org/2000/xmlns/';
+        let clipPathCounter = 1;
+        normalizedContainer.querySelectorAll('[id]').forEach(element => {
+            const id = element.getAttribute('id');
+            if (!id || !/^SvgjsClipPath\d+$/.test(id)) {
+                return;
+            }
+            const normalizedId = `SvgjsClipPath${clipPathCounter++}`;
+            replacementById.set(id, normalizedId);
+            element.setAttribute('id', normalizedId);
+        });
+        normalizedContainer.querySelectorAll('*').forEach(element => {
+            ['version', 'xmlns', 'xmlns:svgjs', 'xmlns:xlink'].forEach(attributeName => {
+                element.removeAttribute(attributeName);
+            });
+            element.removeAttributeNS(xmlNamespace, 'svgjs');
+            element.removeAttributeNS(xmlNamespace, 'xlink');
+            for (const attribute of element.getAttributeNames()) {
+                const value = element.getAttribute(attribute);
+                if (!value) {
+                    continue;
+                }
+                let normalizedValue = value;
+                replacementById.forEach((normalizedId, originalId) => {
+                    normalizedValue = normalizedValue.replaceAll(originalId, normalizedId);
+                });
+                normalizedValue = normalizedValue.replace(/url\("#(SvgjsClipPath\d+)"\)/g, 'url(#$1)');
+                element.setAttribute(attribute, normalizedValue);
+            }
+        });
+        return normalizedContainer;
     }
     function drawAssociation(container, key1, key2) {
         fireEvent.click(container.querySelector(`.hotspot-choice[data-choice-key="${key1}"] > g`));
@@ -167,8 +245,9 @@ describe('Graphic associate interaction', () => {
                     }
                 }
             });
-            return tick().then(() => {
-                expect(container).toMatchSnapshot();
+            // 2 ticks to wait for scaling calculations connected to <svelte:window bind:innerHeight> to complete
+            return tick().then(tick).then(() => {
+                expect(getSnapshotContainer(container)).toMatchSnapshot();
             });
         });
 
@@ -216,8 +295,8 @@ describe('Graphic associate interaction', () => {
                     }
                 }
             });
-            return tick().then(() => {
-                expect(container).toMatchSnapshot();
+            return tick().then(tick).then(() => {
+                expect(getSnapshotContainer(container)).toMatchSnapshot();
             });
         });
 
@@ -302,11 +381,14 @@ describe('Graphic associate interaction', () => {
                     }
                 }
             });
-            expect(container).toMatchSnapshot();
 
             expect(getInstructionsLang).toHaveBeenCalled();
             expect(container.querySelector('.qti-instruction-container').getAttribute('lang')).toEqual('it-IT');
             expect(container.querySelector('.hotspot-choice text').getAttribute('lang')).toEqual('it-IT');
+
+            return tick().then(tick).then(() => {
+                expect(getSnapshotContainer(container)).toMatchSnapshot();
+            });
         });
     });
 
@@ -370,7 +452,7 @@ describe('Graphic associate interaction', () => {
                 })
                 .then(() => {
                     expect(associationsCount(container)).toBe(1);
-                    expect(container).toMatchSnapshot();
+                    expect(getSnapshotContainer(container)).toMatchSnapshot();
                 });
         });
 
@@ -411,6 +493,7 @@ describe('Graphic associate interaction', () => {
                     expect(container.querySelector('.glass-layer')).not.toBeInTheDocument();
                 });
         });
+
         it('remove line', () => {
             const { container } = render(ContextWrapper, {
                 props: {
@@ -441,13 +524,63 @@ describe('Graphic associate interaction', () => {
                     expect(container.querySelectorAll('.association-line.selected .remove-button').length).toBe(1);
                     expect(container.querySelector('.glass-layer')).toBeInTheDocument();
                     const focusedElement = document.activeElement;
-                    expect(container).toMatchSnapshot();
+                    expect(getSnapshotContainer(container)).toMatchSnapshot();
                     return fireEvent.keyUp(focusedElement, { key: 'Space' });
                 })
                 .then(() => {
                     expect(associationsCount(container)).toBe(0);
                     expect(container.querySelector('.glass-layer')).not.toBeInTheDocument();
                 });
+        });
+    });
+
+    describe('arrow subtype', () => {
+        it('renders arrow mode', () => {
+            const { container } = render(ContextWrapper, {
+                props: {
+                    testContextKey: itemIdentifier,
+                    testContext,
+                    testComponent: GraphicAssociateInteraction,
+                    testComponentProps: {
+                        itemIdentifier,
+                        responseIdentifier,
+                        imgObject,
+                        choices: getArrowChoices(),
+                        dataAttrs: { 'data-interaction-subtype': 'arrow' }
+                    }
+                }
+            });
+
+            return tick().then(tick).then(() => {
+                expect(getSnapshotContainer(container)).toMatchSnapshot();
+            });
+        });
+
+        it('stores associations in selection order', () => {
+            const interactionStateStore = getInteractionStateStore(itemIdentifier, responseIdentifier);
+            const { container } = render(ContextWrapper, {
+                props: {
+                    testContextKey: itemIdentifier,
+                    testContext,
+                    testComponent: GraphicAssociateInteraction,
+                    testComponentProps: {
+                        itemIdentifier,
+                        responseIdentifier,
+                        imgObject,
+                        maxAssociations: 0,
+                        choices: getArrowChoices(),
+                        dataAttrs: { 'data-interaction-subtype': 'arrow' }
+                    }
+                }
+            });
+
+            return drawAssociation(container, 'a', 'b').then(() => {
+                expect(interactionStateStore.getResponse()).toEqual({
+                    list: {
+                        directedPair: [['a', 'b']]
+                    }
+                });
+            });
         });
     });
 
@@ -573,7 +706,7 @@ describe('Graphic associate interaction', () => {
                     expect(container.querySelector('.association-line.selected .remove-button')).toBeInTheDocument();
                     expect(container.querySelectorAll('.association-line.selected .remove-button').length).toBe(1);
                     expect(container.querySelector('.glass-layer')).toBeInTheDocument();
-                    expect(container).toMatchSnapshot();
+                    expect(getSnapshotContainer(container)).toMatchSnapshot();
                     return fireEvent.click(container.querySelector(`.association-line.selected .remove-button-hitbox`));
                 })
                 .then(() => {
@@ -689,7 +822,7 @@ describe('Graphic associate interaction', () => {
 
             // Trigger the window resize event.
             global.dispatchEvent(new Event('resize'));
-            return tick().then(() => {
+            return tick().then(tick).then(() => {
                 expect(container.querySelector('.image>image').getAttribute('width')).toBe('1000');
                 expect(container.querySelector('.image>image').getAttribute('height')).toBe('750');
             });

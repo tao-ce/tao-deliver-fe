@@ -4,6 +4,12 @@
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 /**
+ * @param {Document} doc
+ * @returns {HTMLIFrameElement[]}
+ */
+const getIframes = doc => [...doc.querySelectorAll('iframe')];
+
+/**
  * Observes new iframes and executes the action on them.
  * @param {Window|Iframe} win
  * @param {MutationObserver} observer
@@ -14,7 +20,7 @@ const observeIframes = (win, observer, callback) => {
 
     // If the iframe is not loaded yet or has different domain, we can't access its contentDocument
     if (contentDocument) {
-        contentDocument.querySelectorAll('iframe').forEach(callback);
+        getIframes(contentDocument).forEach(callback);
         // disconnect is not necessary, because if the iframe is removed, the observer won't listen to it anymore
         observer.observe(contentDocument, { childList: true, subtree: true });
     }
@@ -56,4 +62,21 @@ export const runActionInIframesRecursively = action => {
     observeIframes(window, observer, callback);
 
     return observer;
+};
+
+/**
+ * Flat list of all iframes on the page, including nested ones
+ * @param {Document|null} doc - document where to start looking for iframes
+ * @returns {HTMLIFrameElement[]}
+ */
+export const getIframesRecursively = (doc = null) => {
+    doc = doc || document;
+    const iframesNested = getIframes(doc).map(iframeEl => {
+        if (iframeEl.contentDocument) {
+            return [iframeEl, ...getIframesRecursively(iframeEl.contentDocument)];
+        } else {
+            return iframeEl;
+        }
+    });
+    return iframesNested.flat();
 };

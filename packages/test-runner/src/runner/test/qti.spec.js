@@ -61,11 +61,13 @@ import { showNavigationFeedback, clearAllNavigationFeedbacksStores } from '../fe
 import { checkNavigationFeedback, getNavigationFeedbackConfig } from 'testRunnerDynamicModulesIndex';
 import { getTestSessionUserDataService, clearAllTestSessionsUserData } from '../session/testSessionUserDataService.js';
 import timer from 'core/timer';
+import { socketProxyFactory } from '../timers/socketProxy.js';
 import { settingsPlugin, highlighterPlugin, scratchpadPlugin, readAloudPlugin } from '../plugins';
 import { cloneDeep } from 'lodash';
 import { getConfigStore } from '../config/configStore.js';
 import { DeferredPromise } from '@oat-sa-private/tao-item-runner-qtinui/src/runner/interactions/util/promise.js';
 import { getItemPendingOperationsStore } from '@oat-sa-private/tao-item-runner-qtinui/src/runner/itemsPendingOperationsStore.js';
+import { clearNotifications } from '@oat-sa-private/ui-components';
 
 const sampleItem = {};
 const sampleTestMap = {
@@ -150,6 +152,7 @@ describe('QTI NUI test runner behavior', () => {
         itemRunnerFactory.providers = {};
         clearAllTestSessionsUserData();
         clearAllNavigationFeedbacksStores();
+        clearNotifications();
     });
 
     it('cannot initialize misconfigured', () => {
@@ -1111,7 +1114,6 @@ describe('QTI NUI test runner behavior', () => {
                 getItem: proxyGetItem,
                 submitItem: () => Promise.resolve(),
                 callItemAction: (itemId, action) =>
-                    //eslint-disable-next-line implicit-arrow-linebreak
                     new Promise(() => {
                         if (action === 'move') {
                             throw new Error('error-spy-for-move');
@@ -2127,33 +2129,6 @@ describe('QTI NUI test runner behavior', () => {
                     });
                 runner.init();
             }));
-
-        it('does not initialize if neither timers nor proctored', () =>
-            new Promise(done => {
-                const init = vi.fn(() => ({
-                    testContext: {
-                        position: 0
-                    },
-                    testMap: {
-                        total: 0
-                    }
-                }));
-                proxyFactory.registerProvider('foo', { init });
-                const runner = testRunnerFactory(providerName, [], configForSocket);
-                runner
-                    .on('error', e => {
-                        throw e;
-                    })
-                    .on('init', () => {
-                        expect(init).toHaveBeenCalled();
-                        expect(runner.socketProxy).toBeFalsy();
-                        runner.destroy();
-                    })
-                    .on('destroy', () => {
-                        done();
-                    });
-                runner.init();
-            }));
     });
 
     describe('#getItemResults', () => {
@@ -2323,9 +2298,126 @@ describe('QTI NUI test runner behavior', () => {
         }));
 
     describe('timeout', () => {
-        it('on timeout, submits response, shows feedback, and moves', () =>
+        it('on timeout, shows feedback, stops media, submits response, and moves', () =>
             new Promise(done => {
-                expect.assertions(7);
+                expect.assertions(10);
+
+                const serviceCallId = 'test-session-5x1y';
+                const container = document.createElement('section');
+                const itemIdentifier = 'item-2';
+
+                const proxyInit = vi.fn(() => ({
+                    testContext: {
+                        state: testSessionStates.interacting,
+                        itemIdentifier,
+                        sectionId: 's1',
+                        testPartId: 'p1',
+                        position: 0
+                    },
+                    testMap: sampleTestMap,
+                    timer: {
+                        test: {
+                            id: 'test',
+                            maxTime: 60000,
+                            maxTimeRemaining: 45000
+                        }
+                    }
+                }));
+                const proxyGetItem = vi.fn(() => sampleItem);
+                const proxyCallItemAction = vi.fn(() => ({
+                    testContext: {
+                        state: testSessionStates.interacting,
+                        itemPosition: 1,
+                        itemIdentifier,
+                        sectionId: 's1',
+                        testPartId: 'p1'
+                    }
+                }));
+                proxyFactory.registerProvider('foo', {
+                    init: proxyInit,
+                    getItem: proxyGetItem,
+                    callItemAction: proxyCallItemAction
+                });
+
+                const pendingOpsStore = getItemPendingOperationsStore(itemIdentifier);
+
+                const settingsStore = getTestSessionUserDataService(serviceCallId).getSettingsStore();
+                expect(settingsStore.getSetting('doNotPlayMedia')).toBeFalsy();
+
+                const itemRunnerInit = vi.fn(function (itemData, initDone) {
+                    this.pendingOperationsStore = pendingOpsStore;
+                    initDone();
+                });
+                const itemRunnerRender = vi.fn((itemContainer, renderDone) => renderDone());
+                itemRunnerFactory.register('itemRunnerFoo', {
+                    init: itemRunnerInit,
+                    render: itemRunnerRender,
+                    getState: () => ({})
+                });
+
+                const runner = testRunnerFactory(providerName, [], {
+                    serviceCallId,
+                    proxy: 'foo',
+                    itemRunner: 'itemRunnerFoo',
+                    renderTo: container,
+                    jwtTokenHandler: { getToken: vi.fn() },
+                    deliveryExecutionId: '123',
+                    options: {
+                        realTimeService: {
+                            enabled: true,
+                            socketConnectionUrl: true
+                        }
+                    }
+                });
+
+                runner
+                    .on('error', err => {
+                        throw err;
+                    })
+                    .on('init', () => {
+                        expect(proxyInit).toHaveBeenCalled();
+                        expect(runner.socketProxy).toEqual(
+                            expect.objectContaining({ connect: expect.anything(), disconnect: expect.anything() })
+                        );
+                        expect(runner.socketProxy.connect).toHaveBeenCalled();
+                    })
+                    .on('renderitem', () => {
+                        runner.off('renderitem');
+
+                        showNavigationFeedback.mockImplementation(() => {
+                            expect(settingsStore.getSetting('doNotPlayMedia')).toBe(true);
+                            return Promise.resolve({ proceed: true });
+                        });
+
+                        runner.trigger('timeout', { level: 'test' });
+                    })
+                    .on('move', (direction, scope) => {
+                        expect(direction).toEqual('next');
+                        expect(scope).toEqual('test');
+                        expect(proxyCallItemAction).toHaveBeenCalledWith(
+                            'item-2',
+                            'timeout',
+                            expect.objectContaining({
+                                scope: 'test',
+                                itemState: { touched: false },
+                                itemResponse: {},
+                                itemDuration: NaN
+                            }),
+                            noop
+                        );
+                        expect(showNavigationFeedback).toHaveBeenCalled();
+
+                        expect(settingsStore.getSetting('doNotPlayMedia')).toBe(false);
+
+                        runner.on('renderitem', done);
+                    });
+
+                runner.init();
+            }));
+
+        it('on timeout, awaits pendingOperations before submitting', () =>
+            new Promise(done => {
+                expect.assertions(4);
 
                 const serviceCallId = 'test-session-5x1y';
                 const container = document.createElement('section');
@@ -2392,39 +2484,43 @@ describe('QTI NUI test runner behavior', () => {
                     }
                 });
 
+                const enablenavSpy = vi.fn();
+
                 runner
                     .on('error', err => {
                         throw err;
                     })
-                    .on('init', () => {
-                        expect(proxyInit).toHaveBeenCalled();
-                        expect(runner.socketProxy).toEqual(
-                            expect.objectContaining({ connect: expect.anything(), disconnect: expect.anything() })
-                        );
-                        expect(runner.socketProxy.connect).toHaveBeenCalled();
-                    })
-                    .on('renderitem', () => {
+                    .on('renderitem', async () => {
                         runner.off('renderitem');
+
+                        enablenavSpy.mockClear();
 
                         showNavigationFeedback.mockImplementation(() => Promise.resolve({ proceed: true }));
 
+                        pendingOpsStore.add('tao-recordKey-123');
+                        runner.itemRunner.trigger('pendingoperationschange', { size: 1 });
+                        pendingOpsStore.add('tao-uploadKey-123');
+                        runner.itemRunner.trigger('pendingoperationschange', { size: 2 });
+
                         runner.trigger('timeout', { level: 'test' });
+
+                        expect(enablenavSpy).not.toHaveBeenCalled();
+
+                        pendingOpsStore.delete('tao-recordKey-123');
+                        runner.itemRunner.trigger('pendingoperationschange', { size: 1 });
+
+                        setTimeout(() => {
+                            expect(enablenavSpy).not.toHaveBeenCalled();
+                            setTimeout(() => {
+                                pendingOpsStore.delete('tao-uploadKey-123');
+                                runner.itemRunner.trigger('pendingoperationschange', { size: 0 });
+                            }, 25);
+                        }, 25);
                     })
-                    .on('move', (direction, scope) => {
-                        expect(direction).toEqual('next');
-                        expect(scope).toEqual('test');
-                        expect(proxyCallItemAction).toHaveBeenCalledWith(
-                            'item-2',
-                            'timeout',
-                            expect.objectContaining({
-                                scope: 'test',
-                                itemState: { touched: false },
-                                itemResponse: {},
-                                itemDuration: NaN
-                            }),
-                            noop
-                        );
-                        expect(showNavigationFeedback).toHaveBeenCalled();
+                    .on('enablenav', enablenavSpy)
+                    .on('move', () => {
+                        expect(enablenavSpy).toHaveBeenCalledTimes(1);
+                        expect(pendingOpsStore.isEmpty()).toBe(true);
 
                         runner.on('renderitem', done);
                     });
@@ -2432,44 +2528,193 @@ describe('QTI NUI test runner behavior', () => {
                 runner.init();
             }));
 
-        it('on guidedNavigation timeout, submits response, and moves', () =>
-            new Promise(done => {
-                expect.assertions(7);
+        it.each([
+            [
+                'guidedNavigation',
+                ({ testMap, timer: timerConfig }) => {
+                    testMap.parts.p1.isLinear = true;
+                    timerConfig.items[0].minTime = timerConfig.items[0].maxTime;
+                }
+            ],
+            [
+                'x-tao-option-noAlertTimeout',
+                ({ testMap }) => {
+                    testMap.parts.p1.sections.s1.items['item-1'].categories = ['x-tao-option-noAlertTimeout'];
+                }
+            ]
+        ])(
+            'on %s timeout, closes item, submits response, and moves',
+            (title, setData) =>
+                new Promise(done => {
+                    expect.assertions(8);
 
-                const serviceCallId = 'test-session-5x1y';
-                const container = document.createElement('section');
-                const itemIdentifier = 'item-1';
+                    const serviceCallId = 'test-session-5x1y';
+                    const container = document.createElement('section');
+                    const itemIdentifier = 'item-1';
 
-                const linearTestMap = structuredClone(sampleTestMap);
-                linearTestMap.parts.p1.isLinear = true; // for guidedNavigation
-
-                const proxyInit = vi.fn(() => ({
-                    testContext: {
-                        state: testSessionStates.interacting,
-                        itemIdentifier,
-                        sectionId: 's1',
-                        testPartId: 'p1',
-                        position: 0
-                    },
-                    testMap: linearTestMap,
-                    timer: {
-                        // data for guidedNavigation
-                        items: [
-                            {
-                                id: itemIdentifier,
-                                minTime: 60000,
-                                maxTime: 60000,
-                                maxTimeRemaining: 10000
+                    const proxyInit = vi.fn(() => {
+                        const resp = {
+                            testContext: {
+                                state: testSessionStates.interacting,
+                                itemIdentifier,
+                                sectionId: 's1',
+                                testPartId: 'p1',
+                                position: 0
+                            },
+                            testMap: structuredClone(sampleTestMap),
+                            timer: {
+                                items: [
+                                    {
+                                        id: itemIdentifier,
+                                        minTime: 0,
+                                        maxTime: 60000,
+                                        maxTimeRemaining: 10000
+                                    }
+                                ]
                             }
-                        ]
-                    }
+                        };
+                        setData(resp);
+                        return resp;
+                    });
+                    const proxyGetItem = vi.fn(() => sampleItem);
+                    const proxyCallItemAction = vi.fn(() => ({
+                        testContext: {
+                            state: testSessionStates.interacting,
+                            itemPosition: 1,
+                            itemIdentifier,
+                            sectionId: 's1',
+                            testPartId: 'p1'
+                        }
+                    }));
+                    proxyFactory.registerProvider('foo', {
+                        init: proxyInit,
+                        getItem: proxyGetItem,
+                        callItemAction: proxyCallItemAction
+                    });
+
+                    const itemRunnerInit = vi.fn(function (itemData, initDone) {
+                        initDone();
+                    });
+                    const itemRunnerRender = vi.fn((itemContainer, renderDone) => renderDone());
+                    const itemRunnerCloseSpy = vi.fn(() => Promise.resolve());
+                    itemRunnerFactory.register('itemRunnerFoo', {
+                        init: itemRunnerInit,
+                        render: itemRunnerRender,
+                        close: itemRunnerCloseSpy,
+                        getState: () => ({})
+                    });
+
+                    const runner = testRunnerFactory(providerName, [], {
+                        serviceCallId,
+                        proxy: 'foo',
+                        itemRunner: 'itemRunnerFoo',
+                        renderTo: container,
+                        jwtTokenHandler: { getToken: vi.fn() },
+                        deliveryExecutionId: '123',
+                        options: {
+                            realTimeService: {
+                                enabled: true,
+                                socketConnectionUrl: true
+                            }
+                        }
+                    });
+
+                    runner
+                        .on('error', err => {
+                            throw err;
+                        })
+                        .on('init', () => {
+                            expect(proxyInit).toHaveBeenCalled();
+                            expect(runner.socketProxy).toEqual(
+                                expect.objectContaining({ connect: expect.anything(), disconnect: expect.anything() })
+                            );
+                            expect(runner.socketProxy.connect).toHaveBeenCalled();
+                        })
+                        .on('renderitem', () => {
+                            runner.off('renderitem');
+
+                            showNavigationFeedback.mockResolvedValue({ proceed: true });
+
+                            runner.trigger('timeout', { level: 'item' });
+                        })
+                        .on('move', (direction, scope) => {
+                            expect(direction).toEqual('next');
+                            expect(scope).toEqual('item');
+                            expect(proxyCallItemAction).toHaveBeenCalledWith(
+                                'item-1',
+                                'timeout',
+                                expect.objectContaining({
+                                    scope: 'item',
+                                    itemState: { touched: false },
+                                    itemResponse: {},
+                                    itemDuration: NaN
+                                }),
+                                noop
+                            );
+                            expect(itemRunnerCloseSpy).toHaveBeenCalledTimes(1);
+                            expect(showNavigationFeedback).not.toHaveBeenCalled();
+
+                            runner.on('renderitem', done);
+                        });
+
+                    runner.init();
+                })
+        );
+
+        describe('guided navigation: local setTimeout fallback', () => {
+            const serviceCallId = 'test-session-fallback';
+            const itemIdentifier = 'item-1';
+
+            const buildGuidedNavRunner = ({ initialTimeRemaining = 1000 } = {}) => {
+                const container = document.createElement('section');
+
+                let startTimersCalls = 0;
+
+                socketProxyFactory.mockImplementationOnce(() => ({
+                    on: vi.fn(),
+                    onProxyEvent: vi.fn(),
+                    emit: vi.fn((eventName, payload, cb = () => {}) => {
+                        if (eventName === 'start-timers') {
+                            startTimersCalls += 1;
+                            cb({ processed: startTimersCalls > 1 });
+                            return;
+                        }
+                        cb({ processed: true });
+                    }),
+                    connect: vi.fn().mockResolvedValue(),
+                    disconnect: vi.fn().mockResolvedValue()
                 }));
+
+                const proxyInit = vi.fn(() => {
+                    const resp = {
+                        testContext: {
+                            state: testSessionStates.interacting,
+                            itemIdentifier,
+                            sectionId: 's1',
+                            testPartId: 'p1',
+                            position: 0
+                        },
+                        testMap: structuredClone(sampleTestMap),
+                        timer: {
+                            items: [
+                                {
+                                    id: itemIdentifier,
+                                    minTime: 1000,
+                                    maxTime: 1000,
+                                    maxTimeRemaining: initialTimeRemaining
+                                }
+                            ]
+                        }
+                    };
+                    resp.testMap.parts.p1.isLinear = true;
+                    return resp;
+                });
                 const proxyGetItem = vi.fn(() => sampleItem);
                 const proxyCallItemAction = vi.fn(() => ({
                     testContext: {
                         state: testSessionStates.interacting,
                         itemPosition: 1,
-                        itemIdentifier,
+                        itemIdentifier: 'item-2',
                         sectionId: 's1',
                         testPartId: 'p1'
                     }
@@ -2480,13 +2725,15 @@ describe('QTI NUI test runner behavior', () => {
                     callItemAction: proxyCallItemAction
                 });
 
-                const itemRunnerInit = vi.fn(function (itemData, initDone) {
-                    initDone();
-                });
-                const itemRunnerRender = vi.fn((itemContainer, renderDone) => renderDone());
+                const itemRunnerCloseSpy = vi.fn(() => Promise.resolve());
                 itemRunnerFactory.register('itemRunnerFoo', {
-                    init: itemRunnerInit,
-                    render: itemRunnerRender,
+                    init(itemData, initDone) {
+                        initDone();
+                    },
+                    render(itemContainer, renderDone) {
+                        renderDone();
+                    },
+                    close: itemRunnerCloseSpy,
                     getState: () => ({})
                 });
 
@@ -2505,44 +2752,57 @@ describe('QTI NUI test runner behavior', () => {
                     }
                 });
 
-                runner
-                    .on('error', err => {
-                        throw err;
-                    })
-                    .on('init', () => {
-                        expect(proxyInit).toHaveBeenCalled();
-                        expect(runner.socketProxy).toEqual(
-                            expect.objectContaining({ connect: expect.anything(), disconnect: expect.anything() })
-                        );
-                        expect(runner.socketProxy.connect).toHaveBeenCalled();
-                    })
-                    .on('renderitem', () => {
+                showNavigationFeedback.mockResolvedValue({ proceed: true });
+
+                return { runner, proxyCallItemAction, itemRunnerCloseSpy };
+            };
+
+            const waitForFirstRender = runner =>
+                new Promise((resolve, reject) => {
+                    runner.on('error', err => reject(err));
+                    runner.on('renderitem', () => {
                         runner.off('renderitem');
+                        resolve();
+                    });
+                });
 
-                        showNavigationFeedback.mockResolvedValue({ proceed: true });
+            it('still moves to the next item when start-timers fails but the fallback is active', async () => {
+                expect.assertions(4);
 
-                        runner.trigger('timeout', { level: 'item' });
-                    })
-                    .on('move', (direction, scope) => {
-                        expect(direction).toEqual('next');
-                        expect(scope).toEqual('item');
-                        expect(proxyCallItemAction).toHaveBeenCalledWith(
-                            'item-1',
-                            'timeout',
-                            expect.objectContaining({
-                                scope: 'item',
-                                itemState: { touched: false },
-                                itemResponse: {},
-                                itemDuration: NaN
-                            }),
-                            noop
-                        );
-                        expect(showNavigationFeedback).not.toHaveBeenCalled();
+                const { runner, proxyCallItemAction, itemRunnerCloseSpy } = buildGuidedNavRunner({
+                    initialTimeRemaining: 20
+                });
 
-                        runner.on('renderitem', done);
+                try {
+                    const firstRender = waitForFirstRender(runner);
+                    const moveDone = new Promise((resolve, reject) => {
+                        runner.on('move', function onMove(direction, scope) {
+                            try {
+                                expect(direction).toEqual('next');
+                                expect(scope).toEqual('item');
+                                runner.off('move', onMove);
+                                runner.on('renderitem', resolve);
+                            } catch (err) {
+                                reject(err);
+                            }
+                        });
                     });
 
-                runner.init();
-            }));
+                    await runner.init();
+                    await firstRender;
+                    await moveDone;
+
+                    expect(proxyCallItemAction).toHaveBeenCalledWith(
+                        itemIdentifier,
+                        'timeout',
+                        expect.objectContaining({ scope: 'item' }),
+                        noop
+                    );
+                    expect(itemRunnerCloseSpy).toHaveBeenCalled();
+                } finally {
+                    runner?.destroy?.();
+                }
+            }, 10_000);
+        });
     });
 });

@@ -17,6 +17,7 @@ exports[`ReadAloudBar > renders playOnClick footer 1`] = `
           <header>
             read aloud
           </header>
+          
            
           <div
             class="floating-bar-actions"
@@ -47,10 +48,15 @@ exports[`ReadAloudBar > renders playOnClick footer 1`] = `
                     d="M1 0V16L15 8L1 0Z"
                     fill="currentColor"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
+              
                
               <button
                 aria-describedby="tao-ra-sel-123"
@@ -81,10 +87,15 @@ exports[`ReadAloudBar > renders playOnClick footer 1`] = `
                     fill="currentColor"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
+              
                
               <button
                 aria-label="ReadAloud settings"
@@ -106,11 +117,17 @@ exports[`ReadAloudBar > renders playOnClick footer 1`] = `
                   <path
                     d="M8 6a2 2 0 11-2 2 2 2 0 012-2m0-1a3 3 0 103 3 3 3 0 00-3-3z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
+              
             </div>
+            
           </div>
         </div>
          
@@ -119,16 +136,22 @@ exports[`ReadAloudBar > renders playOnClick footer 1`] = `
             class="footer"
             slot="footer"
           >
+            
              
             <p
               class="instruction"
             >
               Click on any text to read aloud
             </p>
+            
              
+            
           </div>
+          
         </footer>
+        
       </div>
+      
        
       <div
         class="hidden"
@@ -144,6 +167,8 @@ exports[`ReadAloudBar > renders playOnClick footer 1`] = `
         Press enter or space to activate continuous reading. If activated press enter or space to stop the reading.
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -165,6 +190,7 @@ exports[`ReadAloudBar > renders playSelection footer 1`] = `
           <header>
             read aloud
           </header>
+          
            
           <div
             class="floating-bar-actions"
@@ -195,10 +221,15 @@ exports[`ReadAloudBar > renders playSelection footer 1`] = `
                     d="M1 0V16L15 8L1 0Z"
                     fill="currentColor"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
+              
                
               <button
                 aria-describedby="tao-ra-sel-123"
@@ -219,10 +250,15 @@ exports[`ReadAloudBar > renders playSelection footer 1`] = `
                   <path
                     d="M15 12H1a1 1 0 000 2h14a1 1 0 000-2zm0-5H9a1 1 0 000 2h6a1 1 0 000-2zm0-5H9a1 1 0 000 2h6a1 1 0 000-2zM0 2v7l5.83-3.5L0 2z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
+              
                
               <button
                 aria-label="ReadAloud settings"
@@ -244,11 +280,17 @@ exports[`ReadAloudBar > renders playSelection footer 1`] = `
                   <path
                     d="M8 6a2 2 0 11-2 2 2 2 0 012-2m0-1a3 3 0 103 3 3 3 0 00-3-3z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
+              
             </div>
+            
           </div>
         </div>
          
@@ -262,11 +304,17 @@ exports[`ReadAloudBar > renders playSelection footer 1`] = `
             >
               Select text to read aloud
             </p>
+            
              
+            
              
+            
           </div>
+          
         </footer>
+        
       </div>
+      
        
       <div
         class="hidden"
@@ -282,6 +330,8 @@ exports[`ReadAloudBar > renders playSelection footer 1`] = `
         Press enter or space to activate continuous reading. If activated press enter or space to stop the reading.
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -303,6 +353,7 @@ exports[`ReadAloudBar > renders settings footer 1`] = `
           <header>
             read aloud
           </header>
+          
            
           <div
             class="floating-bar-actions"
@@ -333,10 +384,15 @@ exports[`ReadAloudBar > renders settings footer 1`] = `
                     d="M1 0V16L15 8L1 0Z"
                     fill="currentColor"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
+              
                
               <button
                 aria-describedby="tao-ra-sel-123"
@@ -357,10 +413,15 @@ exports[`ReadAloudBar > renders settings footer 1`] = `
                   <path
                     d="M15 12H1a1 1 0 000 2h14a1 1 0 000-2zm0-5H9a1 1 0 000 2h6a1 1 0 000-2zm0-5H9a1 1 0 000 2h6a1 1 0 000-2zM0 2v7l5.83-3.5L0 2z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
+              
                
               <button
                 aria-label="ReadAloud settings"
@@ -383,11 +444,17 @@ exports[`ReadAloudBar > renders settings footer 1`] = `
                   <path
                     d="M8 6a2 2 0 11-2 2 2 2 0 012-2m0-1a3 3 0 103 3 3 3 0 00-3-3z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
+              
             </div>
+            
           </div>
         </div>
          
@@ -396,7 +463,9 @@ exports[`ReadAloudBar > renders settings footer 1`] = `
             class="footer"
             slot="footer"
           >
+            
              
+            
              
             <div
               class="read-aloud-settings-drawer"
@@ -435,6 +504,7 @@ exports[`ReadAloudBar > renders settings footer 1`] = `
                         <title>
                           Radio button
                         </title>
+                        
                         <circle
                           class="radio-border"
                           cx="8"
@@ -451,7 +521,6 @@ exports[`ReadAloudBar > renders settings footer 1`] = `
                         Male
                       </span>
                     </label>
-                     
                   </div>
                   <div
                     class="radio"
@@ -480,6 +549,7 @@ exports[`ReadAloudBar > renders settings footer 1`] = `
                           cy="8"
                           r="4"
                         />
+                        
                         <circle
                           class="radio-border"
                           cx="8"
@@ -496,10 +566,12 @@ exports[`ReadAloudBar > renders settings footer 1`] = `
                         Female
                       </span>
                     </label>
-                     
                   </div>
+                  
                 </div>
+                
               </div>
+              
                
               <div
                 class="control-row"
@@ -527,10 +599,15 @@ exports[`ReadAloudBar > renders settings footer 1`] = `
                       <path
                         d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
+                  
                    
                   <button
                     aria-label="decrease reading speed"
@@ -548,12 +625,19 @@ exports[`ReadAloudBar > renders settings footer 1`] = `
                       <path
                         d="M0 7h16v2H0z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
+                  
                 </span>
+                
               </div>
+              
                
               <div
                 class="control-row"
@@ -581,10 +665,15 @@ exports[`ReadAloudBar > renders settings footer 1`] = `
                       <path
                         d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
+                  
                    
                   <button
                     aria-label="decrease reading pitch"
@@ -602,16 +691,27 @@ exports[`ReadAloudBar > renders settings footer 1`] = `
                       <path
                         d="M0 7h16v2H0z"
                       />
+                      
                     </svg>
+                    
                      
+                    
                      
+                    
                   </button>
+                  
                 </span>
+                
               </div>
+              
             </div>
+            
           </div>
+          
         </footer>
+        
       </div>
+      
        
       <div
         class="hidden"
@@ -627,6 +727,8 @@ exports[`ReadAloudBar > renders settings footer 1`] = `
         Press enter or space to activate continuous reading. If activated press enter or space to stop the reading.
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -648,6 +750,7 @@ exports[`ReadAloudBar > renders with default props 1`] = `
           <header>
             read aloud
           </header>
+          
            
           <div
             class="floating-bar-actions"
@@ -678,10 +781,15 @@ exports[`ReadAloudBar > renders with default props 1`] = `
                     d="M1 0V16L15 8L1 0Z"
                     fill="currentColor"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
+              
                
               <button
                 aria-describedby="tao-ra-sel-123"
@@ -702,10 +810,15 @@ exports[`ReadAloudBar > renders with default props 1`] = `
                   <path
                     d="M15 12H1a1 1 0 000 2h14a1 1 0 000-2zm0-5H9a1 1 0 000 2h6a1 1 0 000-2zm0-5H9a1 1 0 000 2h6a1 1 0 000-2zM0 2v7l5.83-3.5L0 2z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
+              
                
               <button
                 aria-label="ReadAloud settings"
@@ -727,11 +840,17 @@ exports[`ReadAloudBar > renders with default props 1`] = `
                   <path
                     d="M8 6a2 2 0 11-2 2 2 2 0 012-2m0-1a3 3 0 103 3 3 3 0 00-3-3z"
                   />
+                  
                 </svg>
+                
                  
+                
                  
+                
               </button>
+              
             </div>
+            
           </div>
         </div>
          
@@ -740,11 +859,17 @@ exports[`ReadAloudBar > renders with default props 1`] = `
             class="footer"
             slot="footer"
           >
+            
              
+            
              
+            
           </div>
+          
         </footer>
+        
       </div>
+      
        
       <div
         class="hidden"
@@ -760,6 +885,8 @@ exports[`ReadAloudBar > renders with default props 1`] = `
         Press enter or space to activate continuous reading. If activated press enter or space to stop the reading.
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;

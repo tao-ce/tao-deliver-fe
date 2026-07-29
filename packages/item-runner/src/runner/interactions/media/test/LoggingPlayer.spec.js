@@ -159,7 +159,7 @@ describe('LoggingPlayer', () => {
             });
         });
 
-        it('logs play-event with autostart=true and touched=false, if start-event with autostart is captured ', async () => {
+        it('logs play-event with autostart=true and touched=false, if start-event with autostart is captured', async () => {
             // Run
             fireEvent(player, new CustomEvent('start', { bubbles: true, detail: { autostart: true } }));
 

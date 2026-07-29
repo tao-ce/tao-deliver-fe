@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Pre render a block tree > Outputs HTML for multi level block tree 1`] = `"<div id="best-foo" class="container feedback" data-foo="bar" role="foo"><span>Hello tree </span> </div>"`;
+exports[`Pre render a block tree > Outputs HTML for multi level block tree 1`] = `"<div id="best-foo" class="container feedback" data-foo="bar" role="foo"><span>Hello tree</span></div>"`;
 
 exports[`Pre render a block tree > Outputs HTML for simple block tree 1`] = `"<div><span>foo</span></div>"`;
 

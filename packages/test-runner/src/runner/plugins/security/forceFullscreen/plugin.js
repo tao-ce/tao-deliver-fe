@@ -31,6 +31,7 @@ export default pluginFactory({
         const testRunner = this.getTestRunner();
         const providedConfig = testRunner.getPluginConfig(this.getName()) || {};
         const pluginConfig = defaults({}, providedConfig, defaultConfig);
+        this.setConfig(pluginConfig);
         const testConfig = testRunner.getConfig();
         const serviceCallId = testConfig.serviceCallId;
 
@@ -255,5 +256,6 @@ export default pluginFactory({
         this.getTestRunner().off(`.${this.getName()}`);
         this.eventListener?.cancel();
         this.eventListenerDelayed?.cancel();
+        clearTimeout(this.timeoutWindowsKeyPressed);
     }
 });

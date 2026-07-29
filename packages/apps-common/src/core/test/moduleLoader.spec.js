@@ -181,7 +181,7 @@ describe('moduleLoader', () => {
         });
 
         // cannot be run due to vite's handling of invalid imports
-        it.skip('cannot load non-existent module', () => {
+        it.todo('cannot load non-existent module', () => {
             const moduleDef = {
                 name: 'fooBarBaz',
                 module: 'taoQtiNuiTest/runner/plugins/foo/bar/baz/plugin',
@@ -190,7 +190,7 @@ describe('moduleLoader', () => {
 
             const loader = moduleLoaderFactory();
 
-            loader
+            return loader
                 .add(moduleDef)
                 .load(false)
                 .then(loaded => {

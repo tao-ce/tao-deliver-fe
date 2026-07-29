@@ -3,23 +3,27 @@
 exports[`GraphicGapMatchInteraction > rendering > renders correct feedbacks 1`] = `
 <div
   class="qti-instruction-container"
+  dir=""
 >
   <div
     aria-atomic="true"
     class="feedback info fullwidth"
     role="status"
   >
+    
      
     <p>
       You must make at least 1 association and a maximum of 3 - Currently 2
     </p>
   </div>
+  
 </div>
 `;
 
 exports[`GraphicGapMatchInteraction > rendering > renders props correctly into markup 1`] = `
 <body>
   <div>
+    
     <div
       ariabar="baz"
       ariafoo="12"
@@ -34,20 +38,31 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
       <div
         class="qti-prompt cf"
       >
+        
+        
         Question 1
         
         
+        
       </div>
+      
        
       <div
         class="qti-instruction-container"
-      />
+        dir=""
+      >
+        
+      </div>
+      
        
       <div
         aria-atomic="true"
         aria-live="assertive"
         class="visually-hidden"
-      />
+      >
+        
+      </div>
+      
        
       <div
         class="qti-flow-container position-left horizontal"
@@ -69,6 +84,7 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
           <div
             class="shadow bottom hidden"
           />
+          
            
           <div
             class="choice-area"
@@ -88,14 +104,13 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
                 Available options, 4 items
               </span>
                
-              
               <div
                 class="choice last"
                 data-drag-drop-disabled="false"
                 data-drag-drop-key="da_choice_tao-gapmatch-123_A"
                 data-droparea-area=""
                 data-droparea-key="A"
-                style="--draw-x: 24px;--draw-y: 24px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+                style="--draw-x: 24px; --draw-y: 24px; --draw-width: 161.16666666666669px; --draw-height: 128px; --draw-selected-scale: 1;"
               >
                 <div
                   aria-grabbed="false"
@@ -122,15 +137,15 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
                   </div>
                 </div>
                  
+                
               </div>
-              
               <div
                 class="choice"
                 data-drag-drop-disabled="false"
                 data-drag-drop-key="da_choice_tao-gapmatch-123_B"
                 data-droparea-area=""
                 data-droparea-key="B"
-                style="--draw-x: 24px;--draw-y: 192px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+                style="--draw-x: 24px; --draw-y: 192px; --draw-width: 161.16666666666669px; --draw-height: 128px; --draw-selected-scale: 1;"
               >
                 <div
                   aria-grabbed="false"
@@ -157,15 +172,15 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
                   </div>
                 </div>
                  
+                
               </div>
-              
               <div
                 class="choice last"
                 data-drag-drop-disabled="false"
                 data-drag-drop-key="da_choice_tao-gapmatch-123_C"
                 data-droparea-area=""
                 data-droparea-key="C"
-                style="--draw-x: 24px;--draw-y: 360px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+                style="--draw-x: 24px; --draw-y: 360px; --draw-width: 161.16666666666669px; --draw-height: 128px; --draw-selected-scale: 1;"
               >
                 <div
                   aria-grabbed="false"
@@ -192,15 +207,15 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
                   </div>
                 </div>
                  
+                
               </div>
-              
               <div
                 class="choice"
                 data-drag-drop-disabled="false"
                 data-drag-drop-key="da_choice_tao-gapmatch-123_D"
                 data-droparea-area=""
                 data-droparea-key="D"
-                style="--draw-x: 24px;--draw-y: 528px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+                style="--draw-x: 24px; --draw-y: 528px; --draw-width: 161.16666666666669px; --draw-height: 128px; --draw-selected-scale: 1;"
               >
                 <div
                   aria-grabbed="false"
@@ -227,10 +242,11 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
                   </div>
                 </div>
                  
+                
               </div>
+              
             </div>
           </div>
-           
         </div>
         
         
@@ -239,10 +255,11 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
           class="answer-area"
           role="application"
         >
+          
           <svg
             aria-labelledby="tao-desc-123"
             height="600"
-            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow);"
             version="1.1"
             viewBox="0 0 800 600"
             width="800"
@@ -255,6 +272,7 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
             >
               graphic interaction
             </desc>
+            
             <defs>
               <filter
                 filterUnits="userSpaceOnUse"
@@ -267,7 +285,15 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
                   stdDeviation="1.5"
                 />
               </filter>
+              <clippath
+                id="SvgjsClipPath1000"
+              >
+                <polygon
+                  points="400,0 600,0 400,200"
+                />
+              </clippath>
             </defs>
+            
             <g
               class="image"
               transform="translate(0, 0)"
@@ -281,6 +307,7 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
                 x="0"
                 y="0"
               />
+              
               <g
                 slot="content"
               >
@@ -290,35 +317,36 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
                   data-droparea-area=""
                   data-droparea-key="a"
                   key="a"
-                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
                   tabindex="-1"
                 >
                   <g
                     aria-disabled="false"
                     aria-labelledby="tao-hotspot-choice-label-123"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <rect
                       class="shape-outer-border"
-                      height="68"
-                      width="88"
-                      x="6"
-                      y="-9"
+                      height="72"
+                      width="92"
+                      x="4"
+                      y="-11"
                     />
                     <rect
                       class="shape-inner-border"
-                      height="52"
-                      width="72"
-                      x="14"
-                      y="-1"
+                      height="60"
+                      width="80"
+                      x="10"
+                      y="-5"
                     />
                     <rect
                       class="shape-dashed-outline"
-                      height="68"
-                      width="88"
-                      x="6"
-                      y="-9"
+                      height="72"
+                      width="92"
+                      x="4"
+                      y="-11"
                     />
                   </g>
                   
@@ -328,39 +356,40 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
                   >
                     a spot gap 1. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
                   </text>
+                  
                 </g>
-                
                 <g
                   class="associable-hotspot"
                   data-droparea-area=""
                   data-droparea-key="b"
                   key="b"
-                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
                   tabindex="-1"
                 >
                   <g
                     aria-disabled="false"
                     aria-labelledby="tao-hotspot-choice-label-123"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <circle
                       class="shape-outer-border"
                       cx="100"
                       cy="400"
-                      r="94"
+                      r="96"
                     />
                     <circle
                       class="shape-inner-border"
                       cx="100"
                       cy="400"
-                      r="86"
+                      r="90"
                     />
                     <circle
                       class="shape-dashed-outline"
                       cx="100"
                       cy="400"
-                      r="94"
+                      r="96"
                     />
                   </g>
                   
@@ -370,42 +399,43 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
                   >
                      gap 2. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
                   </text>
+                  
                 </g>
-                
                 <g
                   class="associable-hotspot"
                   data-droparea-area=""
                   data-droparea-key="c"
                   key="c"
-                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
                   tabindex="-1"
                 >
                   <g
                     aria-disabled="false"
                     aria-labelledby="tao-hotspot-choice-label-123"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <ellipse
                       class="shape-outer-border"
                       cx="400"
                       cy="400"
-                      rx="94"
-                      ry="44"
+                      rx="96"
+                      ry="46"
                     />
                     <ellipse
                       class="shape-inner-border"
                       cx="400"
                       cy="400"
-                      rx="86"
-                      ry="36"
+                      rx="90"
+                      ry="40"
                     />
                     <ellipse
                       class="shape-dashed-outline"
                       cx="400"
                       cy="400"
-                      rx="94"
-                      ry="44"
+                      rx="96"
+                      ry="46"
                     />
                   </g>
                   
@@ -415,33 +445,46 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
                   >
                     a spot gap 3. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
                   </text>
+                  
                 </g>
-                
                 <g
                   class="associable-hotspot"
                   data-droparea-area=""
                   data-droparea-key="d"
                   key="d"
-                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
                   tabindex="-1"
                 >
                   <g
                     aria-disabled="false"
                     aria-labelledby="tao-hotspot-choice-label-123"
-                    class="shape"
+                    class="shape poly"
+                    role="button"
                     tabindex="-1"
                   >
                     <polygon
-                      class="shape-outer-border"
-                      points="406,6 585.5147186257615,6.000000000000001 406,185.51471862576142"
+                      class="shape-shadow"
+                      points="400,0 600,0 400,200"
                     />
                     <polygon
                       class="shape-inner-border"
-                      points="414,13.999999999999998 566.2010101267767,14 414,166.20101012677665"
+                      clip-path="url(#SvgjsClipPath1000)"
+                      points="400,0 600,0 400,200"
+                    />
+                    <polygon
+                      class="shape-outer-border"
+                      clip-path="url(#SvgjsClipPath1000)"
+                      points="400,0 600,0 400,200"
                     />
                     <polygon
                       class="shape-dashed-outline"
-                      points="406,6 585.5147186257615,6.000000000000001 406,185.51471862576142"
+                      clip-path="url(#SvgjsClipPath1000)"
+                      points="400,0 600,0 400,200"
+                    />
+                    <polygon
+                      class="shape-outline-cover"
+                      clip-path="url(#SvgjsClipPath1000)"
+                      points="400,0 600,0 400,200"
                     />
                   </g>
                   
@@ -451,18 +494,25 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
                   >
                      gap 4. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
                   </text>
+                  
                 </g>
                 
+                
               </g>
+              
             </g>
           </svg>
           
+          
            
-           
+          
         </div>
+        
         
       </div>
     </div>
+    
+    
     
   </div>
 </body>
@@ -471,9 +521,12 @@ exports[`GraphicGapMatchInteraction > rendering > renders props correctly into m
 exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang on the feedback block 1`] = `
 <body>
   <div>
+    
     <div
       class="qti-interaction qti-blockInteraction qti-graphicGapMatchInteraction"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
@@ -485,19 +538,25 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
           class="feedback info fullwidth"
           role="status"
         >
+          
            
           <p>
             You must make at least 1 association and a maximum of 3
           </p>
         </div>
+        
       </div>
+      
        
       <div
         aria-atomic="true"
         aria-live="assertive"
         class="visually-hidden"
         lang="ro"
-      />
+      >
+        
+      </div>
+      
        
       <div
         class="qti-flow-container position-left horizontal"
@@ -519,6 +578,7 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
           <div
             class="shadow bottom hidden"
           />
+          
            
           <div
             class="choice-area"
@@ -538,14 +598,13 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
                 Available options, 4 items
               </span>
                
-              
               <div
                 class="choice last"
                 data-drag-drop-disabled="false"
                 data-drag-drop-key="da_choice_tao-gapmatch-123_A"
                 data-droparea-area=""
                 data-droparea-key="A"
-                style="--draw-x: 24px;--draw-y: 24px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+                style="--draw-x: 24px; --draw-y: 24px; --draw-width: 161.16666666666669px; --draw-height: 128px; --draw-selected-scale: 1;"
               >
                 <div
                   aria-grabbed="false"
@@ -572,15 +631,15 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
                   </div>
                 </div>
                  
+                
               </div>
-              
               <div
                 class="choice"
                 data-drag-drop-disabled="false"
                 data-drag-drop-key="da_choice_tao-gapmatch-123_B"
                 data-droparea-area=""
                 data-droparea-key="B"
-                style="--draw-x: 24px;--draw-y: 192px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+                style="--draw-x: 24px; --draw-y: 192px; --draw-width: 161.16666666666669px; --draw-height: 128px; --draw-selected-scale: 1;"
               >
                 <div
                   aria-grabbed="false"
@@ -607,15 +666,15 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
                   </div>
                 </div>
                  
+                
               </div>
-              
               <div
                 class="choice last"
                 data-drag-drop-disabled="false"
                 data-drag-drop-key="da_choice_tao-gapmatch-123_C"
                 data-droparea-area=""
                 data-droparea-key="C"
-                style="--draw-x: 24px;--draw-y: 360px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+                style="--draw-x: 24px; --draw-y: 360px; --draw-width: 161.16666666666669px; --draw-height: 128px; --draw-selected-scale: 1;"
               >
                 <div
                   aria-grabbed="false"
@@ -642,15 +701,15 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
                   </div>
                 </div>
                  
+                
               </div>
-              
               <div
                 class="choice"
                 data-drag-drop-disabled="false"
                 data-drag-drop-key="da_choice_tao-gapmatch-123_D"
                 data-droparea-area=""
                 data-droparea-key="D"
-                style="--draw-x: 24px;--draw-y: 528px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+                style="--draw-x: 24px; --draw-y: 528px; --draw-width: 161.16666666666669px; --draw-height: 128px; --draw-selected-scale: 1;"
               >
                 <div
                   aria-grabbed="false"
@@ -677,10 +736,11 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
                   </div>
                 </div>
                  
+                
               </div>
+              
             </div>
           </div>
-           
         </div>
         
         
@@ -689,10 +749,11 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
           class="answer-area"
           role="application"
         >
+          
           <svg
             aria-labelledby="tao-desc-123"
             height="600"
-            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow);"
             version="1.1"
             viewBox="0 0 800 600"
             width="800"
@@ -705,6 +766,7 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
             >
               graphic interaction
             </desc>
+            
             <defs>
               <filter
                 filterUnits="userSpaceOnUse"
@@ -717,7 +779,15 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
                   stdDeviation="1.5"
                 />
               </filter>
+              <clippath
+                id="SvgjsClipPath1008"
+              >
+                <polygon
+                  points="400,0 600,0 400,200"
+                />
+              </clippath>
             </defs>
+            
             <g
               class="image"
               transform="translate(0, 0)"
@@ -731,6 +801,7 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
                 x="0"
                 y="0"
               />
+              
               <g
                 slot="content"
               >
@@ -740,35 +811,36 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
                   data-droparea-area=""
                   data-droparea-key="a"
                   key="a"
-                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
                   tabindex="-1"
                 >
                   <g
                     aria-disabled="false"
                     aria-labelledby="tao-hotspot-choice-label-123"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <rect
                       class="shape-outer-border"
-                      height="68"
-                      width="88"
-                      x="6"
-                      y="-9"
+                      height="72"
+                      width="92"
+                      x="4"
+                      y="-11"
                     />
                     <rect
                       class="shape-inner-border"
-                      height="52"
-                      width="72"
-                      x="14"
-                      y="-1"
+                      height="60"
+                      width="80"
+                      x="10"
+                      y="-5"
                     />
                     <rect
                       class="shape-dashed-outline"
-                      height="68"
-                      width="88"
-                      x="6"
-                      y="-9"
+                      height="72"
+                      width="92"
+                      x="4"
+                      y="-11"
                     />
                   </g>
                   
@@ -779,39 +851,40 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
                   >
                     a spot gap 1. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
                   </text>
+                  
                 </g>
-                
                 <g
                   class="associable-hotspot"
                   data-droparea-area=""
                   data-droparea-key="b"
                   key="b"
-                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
                   tabindex="-1"
                 >
                   <g
                     aria-disabled="false"
                     aria-labelledby="tao-hotspot-choice-label-123"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <circle
                       class="shape-outer-border"
                       cx="100"
                       cy="400"
-                      r="94"
+                      r="96"
                     />
                     <circle
                       class="shape-inner-border"
                       cx="100"
                       cy="400"
-                      r="86"
+                      r="90"
                     />
                     <circle
                       class="shape-dashed-outline"
                       cx="100"
                       cy="400"
-                      r="94"
+                      r="96"
                     />
                   </g>
                   
@@ -822,42 +895,43 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
                   >
                      gap 2. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
                   </text>
+                  
                 </g>
-                
                 <g
                   class="associable-hotspot"
                   data-droparea-area=""
                   data-droparea-key="c"
                   key="c"
-                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
                   tabindex="-1"
                 >
                   <g
                     aria-disabled="false"
                     aria-labelledby="tao-hotspot-choice-label-123"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <ellipse
                       class="shape-outer-border"
                       cx="400"
                       cy="400"
-                      rx="94"
-                      ry="44"
+                      rx="96"
+                      ry="46"
                     />
                     <ellipse
                       class="shape-inner-border"
                       cx="400"
                       cy="400"
-                      rx="86"
-                      ry="36"
+                      rx="90"
+                      ry="40"
                     />
                     <ellipse
                       class="shape-dashed-outline"
                       cx="400"
                       cy="400"
-                      rx="94"
-                      ry="44"
+                      rx="96"
+                      ry="46"
                     />
                   </g>
                   
@@ -868,33 +942,46 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
                   >
                     a spot gap 3. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
                   </text>
+                  
                 </g>
-                
                 <g
                   class="associable-hotspot"
                   data-droparea-area=""
                   data-droparea-key="d"
                   key="d"
-                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
                   tabindex="-1"
                 >
                   <g
                     aria-disabled="false"
                     aria-labelledby="tao-hotspot-choice-label-123"
-                    class="shape"
+                    class="shape poly"
+                    role="button"
                     tabindex="-1"
                   >
                     <polygon
-                      class="shape-outer-border"
-                      points="406,6 585.5147186257615,6.000000000000001 406,185.51471862576142"
+                      class="shape-shadow"
+                      points="400,0 600,0 400,200"
                     />
                     <polygon
                       class="shape-inner-border"
-                      points="414,13.999999999999998 566.2010101267767,14 414,166.20101012677665"
+                      clip-path="url(#SvgjsClipPath1008)"
+                      points="400,0 600,0 400,200"
+                    />
+                    <polygon
+                      class="shape-outer-border"
+                      clip-path="url(#SvgjsClipPath1008)"
+                      points="400,0 600,0 400,200"
                     />
                     <polygon
                       class="shape-dashed-outline"
-                      points="406,6 585.5147186257615,6.000000000000001 406,185.51471862576142"
+                      clip-path="url(#SvgjsClipPath1008)"
+                      points="400,0 600,0 400,200"
+                    />
+                    <polygon
+                      class="shape-outline-cover"
+                      clip-path="url(#SvgjsClipPath1008)"
+                      points="400,0 600,0 400,200"
                     />
                   </g>
                   
@@ -905,18 +992,25 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
                   >
                      gap 4. Empty. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
                   </text>
+                  
                 </g>
                 
+                
               </g>
+              
             </g>
           </svg>
           
+          
            
-           
+          
         </div>
+        
         
       </div>
     </div>
+    
+    
     
   </div>
 </body>
@@ -925,19 +1019,29 @@ exports[`GraphicGapMatchInteraction > rendering > renders the instruction lang o
 exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
 <body>
   <div>
+    
     <div
       class="qti-interaction qti-blockInteraction qti-graphicGapMatchInteraction"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
-      />
+        dir=""
+      >
+        
+      </div>
+      
        
       <div
         aria-atomic="true"
         aria-live="assertive"
         class="visually-hidden"
-      />
+      >
+        
+      </div>
+      
        
       <div
         class="qti-flow-container position-left horizontal"
@@ -959,6 +1063,7 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
           <div
             class="shadow bottom hidden"
           />
+          
            
           <div
             class="choice-area"
@@ -978,14 +1083,13 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
                 Available options, 2 items
               </span>
                
-              
               <div
                 class="choice"
                 data-drag-drop-disabled="false"
                 data-drag-drop-key="da_choice_tao-gapmatch-123_B"
                 data-droparea-area=""
                 data-droparea-key="B"
-                style="--draw-x: 24px;--draw-y: 24px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+                style="--draw-x: 24px; --draw-y: 24px; --draw-width: 161.16666666666669px; --draw-height: 128px; --draw-selected-scale: 1;"
               >
                 <div
                   aria-grabbed="false"
@@ -1012,15 +1116,15 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
                   </div>
                 </div>
                  
+                
               </div>
-              
               <div
                 class="choice last"
                 data-drag-drop-disabled="false"
                 data-drag-drop-key="da_choice_tao-gapmatch-123_D"
                 data-droparea-area=""
                 data-droparea-key="D"
-                style="--draw-x: 24px;--draw-y: 192px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+                style="--draw-x: 24px; --draw-y: 192px; --draw-width: 161.16666666666669px; --draw-height: 128px; --draw-selected-scale: 1;"
               >
                 <div
                   aria-grabbed="false"
@@ -1047,10 +1151,11 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
                   </div>
                 </div>
                  
+                
               </div>
+              
             </div>
           </div>
-           
         </div>
         
         
@@ -1059,10 +1164,11 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
           class="answer-area"
           role="application"
         >
+          
           <svg
             aria-labelledby="tao-desc-123"
             height="600"
-            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow);"
             version="1.1"
             viewBox="0 0 800 600"
             width="800"
@@ -1075,6 +1181,7 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
             >
               graphic interaction
             </desc>
+            
             <defs>
               <filter
                 filterUnits="userSpaceOnUse"
@@ -1087,7 +1194,15 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
                   stdDeviation="1.5"
                 />
               </filter>
+              <clippath
+                id="SvgjsClipPath1001"
+              >
+                <polygon
+                  points="400,0 600,0 400,200"
+                />
+              </clippath>
             </defs>
+            
             <g
               class="image"
               transform="translate(0, 0)"
@@ -1101,6 +1216,7 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
                 x="0"
                 y="0"
               />
+              
               <g
                 slot="content"
               >
@@ -1110,35 +1226,36 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
                   data-droparea-area=""
                   data-droparea-key="a"
                   key="a"
-                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
                   tabindex="-1"
                 >
                   <g
                     aria-disabled="false"
                     aria-labelledby="tao-hotspot-choice-label-123"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <rect
                       class="shape-outer-border"
-                      height="68"
-                      width="88"
-                      x="6"
-                      y="-9"
+                      height="72"
+                      width="92"
+                      x="4"
+                      y="-11"
                     />
                     <rect
                       class="shape-inner-border"
-                      height="52"
-                      width="72"
-                      x="14"
-                      y="-1"
+                      height="60"
+                      width="80"
+                      x="10"
+                      y="-5"
                     />
                     <rect
                       class="shape-dashed-outline"
-                      height="68"
-                      width="88"
-                      x="6"
-                      y="-9"
+                      height="72"
+                      width="92"
+                      x="4"
+                      y="-11"
                     />
                   </g>
                   
@@ -1148,39 +1265,40 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
                   >
                     a spot gap 1. Partially filled. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
                   </text>
+                  
                 </g>
-                
                 <g
                   class="associable-hotspot"
                   data-droparea-area=""
                   data-droparea-key="b"
                   key="b"
-                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
                   tabindex="-1"
                 >
                   <g
                     aria-disabled="false"
                     aria-labelledby="tao-hotspot-choice-label-123"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <circle
                       class="shape-outer-border"
                       cx="100"
                       cy="400"
-                      r="94"
+                      r="96"
                     />
                     <circle
                       class="shape-inner-border"
                       cx="100"
                       cy="400"
-                      r="86"
+                      r="90"
                     />
                     <circle
                       class="shape-dashed-outline"
                       cx="100"
                       cy="400"
-                      r="94"
+                      r="96"
                     />
                   </g>
                   
@@ -1190,42 +1308,43 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
                   >
                      gap 2. Partially filled. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
                   </text>
+                  
                 </g>
-                
                 <g
                   class="associable-hotspot"
                   data-droparea-area=""
                   data-droparea-key="c"
                   key="c"
-                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
                   tabindex="-1"
                 >
                   <g
                     aria-disabled="false"
                     aria-labelledby="tao-hotspot-choice-label-123"
                     class="shape"
+                    role="button"
                     tabindex="-1"
                   >
                     <ellipse
                       class="shape-outer-border"
                       cx="400"
                       cy="400"
-                      rx="94"
-                      ry="44"
+                      rx="96"
+                      ry="46"
                     />
                     <ellipse
                       class="shape-inner-border"
                       cx="400"
                       cy="400"
-                      rx="86"
-                      ry="36"
+                      rx="90"
+                      ry="40"
                     />
                     <ellipse
                       class="shape-dashed-outline"
                       cx="400"
                       cy="400"
-                      rx="94"
-                      ry="44"
+                      rx="96"
+                      ry="46"
                     />
                   </g>
                   
@@ -1235,33 +1354,46 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
                   >
                     a spot gap 3. Partially filled. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
                   </text>
+                  
                 </g>
-                
                 <g
                   class="associable-hotspot"
                   data-droparea-area=""
                   data-droparea-key="d"
                   key="d"
-                  style="--draw-focus-dasharray:4px;--dash-width:12;px"
+                  style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
                   tabindex="-1"
                 >
                   <g
                     aria-disabled="false"
                     aria-labelledby="tao-hotspot-choice-label-123"
-                    class="shape"
+                    class="shape poly"
+                    role="button"
                     tabindex="-1"
                   >
                     <polygon
-                      class="shape-outer-border"
-                      points="406,6 585.5147186257615,6.000000000000001 406,185.51471862576142"
+                      class="shape-shadow"
+                      points="400,0 600,0 400,200"
                     />
                     <polygon
                       class="shape-inner-border"
-                      points="414,13.999999999999998 566.2010101267767,14 414,166.20101012677665"
+                      clip-path="url(#SvgjsClipPath1001)"
+                      points="400,0 600,0 400,200"
+                    />
+                    <polygon
+                      class="shape-outer-border"
+                      clip-path="url(#SvgjsClipPath1001)"
+                      points="400,0 600,0 400,200"
                     />
                     <polygon
                       class="shape-dashed-outline"
-                      points="406,6 585.5147186257615,6.000000000000001 406,185.51471862576142"
+                      clip-path="url(#SvgjsClipPath1001)"
+                      points="400,0 600,0 400,200"
+                    />
+                    <polygon
+                      class="shape-outline-cover"
+                      clip-path="url(#SvgjsClipPath1001)"
+                      points="400,0 600,0 400,200"
                     />
                   </g>
                   
@@ -1271,21 +1403,24 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
                   >
                      gap 4. Partially filled. Press enter or space to place down. To browse other gaps use the arrow keys. Press escape to cancel.
                   </text>
+                  
                 </g>
                 
+                
               </g>
+              
             </g>
           </svg>
           
-           
           
+           
           <div
             class="choice placed last"
             data-drag-drop-disabled="false"
             data-drag-drop-key="da_d_tao-gapmatch-123_D"
             data-droparea-area="d"
             data-droparea-key="D"
-            style="--draw-x: 378.0068063522457px;--draw-y: -69.40986031442091px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+            style="--draw-x: 378.01041666666663px; --draw-y: -69.40625px; --draw-width: 161.16666666666669px; --draw-height: 128px; --draw-selected-scale: 1;"
           >
             <div
               aria-grabbed="false"
@@ -1332,17 +1467,19 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
                 <path
                   d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
                 />
+                
               </svg>
+              
             </button>
+            
           </div>
-          
           <div
             class="choice placed last"
             data-drag-drop-disabled="false"
             data-drag-drop-key="da_b_tao-gapmatch-123_B"
             data-droparea-area="b"
             data-droparea-key="B"
-            style="--draw-x: 1.5px;--draw-y: -62.5px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+            style="--draw-x: 1.5px; --draw-y: -62.5px; --draw-width: 161.16666666666669px; --draw-height: 128px; --draw-selected-scale: 1;"
           >
             <div
               aria-grabbed="false"
@@ -1389,17 +1526,19 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
                 <path
                   d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
                 />
+                
               </svg>
+              
             </button>
+            
           </div>
-          
           <div
             class="choice placed last"
             data-drag-drop-disabled="false"
             data-drag-drop-key="da_a_tao-gapmatch-123_A"
             data-droparea-area="a"
             data-droparea-key="A"
-            style="--draw-x: -79.08333333333334px;--draw-y: -62.5px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+            style="--draw-x: -79.08333333333334px; --draw-y: -62.5px; --draw-width: 161.16666666666669px; --draw-height: 128px; --draw-selected-scale: 1;"
           >
             <div
               aria-grabbed="false"
@@ -1446,17 +1585,19 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
                 <path
                   d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
                 />
+                
               </svg>
+              
             </button>
+            
           </div>
-          
           <div
             class="choice placed last"
             data-drag-drop-disabled="false"
             data-drag-drop-key="da_c_tao-gapmatch-123_C"
             data-droparea-area="c"
             data-droparea-key="C"
-            style="--draw-x: -79.08333333333334px;--draw-y: -62.5px;--draw-width: 161.16666666666669px;--draw-height: 128px;--draw-selected-scale: 1;"
+            style="--draw-x: -79.08333333333334px; --draw-y: -62.5px; --draw-width: 161.16666666666669px; --draw-height: 128px; --draw-selected-scale: 1;"
           >
             <div
               aria-grabbed="false"
@@ -1503,14 +1644,20 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
                 <path
                   d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
                 />
+                
               </svg>
+              
             </button>
+            
           </div>
-           
+          
         </div>
+        
         
       </div>
     </div>
+    
+    
     
   </div>
 </body>
@@ -1519,23 +1666,33 @@ exports[`GraphicGapMatchInteraction > rendering > renders with answers 1`] = `
 exports[`GraphicGapMatchInteraction > rendering > renders with default props 1`] = `
 <body>
   <div>
+    
     <div
       class="qti-interaction qti-blockInteraction qti-graphicGapMatchInteraction"
+      dir=""
     >
+      
        
       <div
         class="qti-instruction-container"
-      />
+        dir=""
+      >
+        
+      </div>
+      
        
       <div
         aria-atomic="true"
         aria-live="assertive"
         class="visually-hidden"
-      />
+      >
+        
+      </div>
+      
        
       <div
         class="qti-flow-container position-left horizontal"
-        style="--bay-width: undefinedpx; --bay-height: undefinedpx; --bay-scroll-height: undefinedpx;"
+        style="--bay-width: px; --bay-height: px; --bay-scroll-height: px;"
       >
         
         <div
@@ -1553,6 +1710,7 @@ exports[`GraphicGapMatchInteraction > rendering > renders with default props 1`]
           <div
             class="shadow bottom hidden"
           />
+          
            
           <div
             class="choice-area"
@@ -1572,9 +1730,9 @@ exports[`GraphicGapMatchInteraction > rendering > renders with default props 1`]
                 Available options, 0 items
               </span>
                
+              
             </div>
           </div>
-           
         </div>
         
         
@@ -1583,10 +1741,11 @@ exports[`GraphicGapMatchInteraction > rendering > renders with default props 1`]
           class="answer-area"
           role="application"
         >
+          
           <svg
             aria-labelledby="tao-desc-123"
             height="10"
-            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow)"
+            style="--shadow-filter-url: url(#tao-svg-123-filter-shadow);"
             version="1.1"
             viewBox="0 0 10 10"
             width="10"
@@ -1599,6 +1758,7 @@ exports[`GraphicGapMatchInteraction > rendering > renders with default props 1`]
             >
               graphic interaction
             </desc>
+            
             <defs>
               <filter
                 filterUnits="userSpaceOnUse"
@@ -1612,6 +1772,7 @@ exports[`GraphicGapMatchInteraction > rendering > renders with default props 1`]
                 />
               </filter>
             </defs>
+            
             <g
               class="image"
               transform="translate(0, 0)"
@@ -1625,18 +1786,26 @@ exports[`GraphicGapMatchInteraction > rendering > renders with default props 1`]
                 x="0"
                 y="0"
               />
+              
               <g
                 slot="content"
-              />
+              >
+                
+              </g>
+              
             </g>
           </svg>
           
+          
            
-           
+          
         </div>
+        
         
       </div>
     </div>
+    
+    
     
   </div>
 </body>

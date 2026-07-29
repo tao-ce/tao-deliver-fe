@@ -68,7 +68,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     {#if icon}
         <Icon name={icon} ariaHidden />
     {/if}
-    <!-- svelte-ignore a11y-label-has-associated-control -->
     <label>
         {label || ''}
         {#if nonDefault}

@@ -11,87 +11,106 @@ exports[`MicroValidity > renders max and min constraints 1`] = `
   >
     constraints:
   </span>
+  
    
   <span>
     min 2
   </span>
+  
    
   <span>
     max 3
   </span>
+  
 </div>
 `;
 
 exports[`MicroValidity > renders with invalid class if usage above max 1`] = `
 <div
   class="constraints"
+  dir=""
 >
   <span
     class="visually-hidden"
   >
     constraints:
   </span>
+  
    
+  
    
   <span
     class="invalid"
   >
     max 3
   </span>
+  
 </div>
 `;
 
 exports[`MicroValidity > renders with invalid class if usage below min 1`] = `
 <div
   class="constraints"
+  dir=""
 >
   <span
     class="visually-hidden"
   >
     constraints:
   </span>
+  
    
   <span
     class="invalid"
   >
     min 2
   </span>
+  
    
+  
 </div>
 `;
 
 exports[`MicroValidity > responds to usageCount prop change 1`] = `
 <div
   class="constraints"
+  dir=""
 >
   <span
     class="visually-hidden"
   >
     constraints:
   </span>
+  
    
+  
    
   <span>
     max 1
   </span>
+  
 </div>
 `;
 
 exports[`MicroValidity > responds to usageCount prop change 2`] = `
 <div
   class="constraints"
+  dir=""
 >
   <span
     class="visually-hidden"
   >
     constraints:
   </span>
+  
    
+  
    
   <span
     class="invalid"
   >
     max 1
   </span>
+  
 </div>
 `;

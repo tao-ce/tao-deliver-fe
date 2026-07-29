@@ -1,0 +1,258 @@
+{
+    "baseUrl": "./assets/graphic/tools/",
+    "itemData": {
+        "type": "qti",
+        "data": {
+            "identifier": "gr_associate_tools_arrow",
+            "serial": "i600ec4ab74009",
+            "qtiClass": "assessmentItem",
+            "attributes": {
+                "identifier": "gr_associate_tools_arrow",
+                "title": "Tool Associations (Arrow Mode)",
+                "label": "Tool Associations (Arrow Mode)",
+                "xml:lang": "en-US",
+                "adaptive": false,
+                "timeDependent": false,
+                "toolName": "TAO",
+                "toolVersion": "NextGen",
+                "class": ""
+            },
+            "body": {
+                "serial": "i600ec4ab74006",
+                "body": "\n    <div class=\"grid-row\">\n      <div class=\"col-12\">\n        <h1>Graphic Associate Interaction</h1>\n        <h2>Match tools and materials (arrow mode)</h2>\n      </div>\n    </div>\n    <div class=\"grid-row\">\n      <div class=\"col-5\">\n        <p>Carpenters use many different tools and materials in their daily work, but not every tool is right for every task. </p>\n        <p>The composite picture shows a selection of items that can be found in every workshop - can you match them up?</p>\n        <p>Build up to 4 pairs of tools and materials by starting on a tool and drawing to a material.</p>\n        <p> </p>\n        {{i600ec4ab74430}}\n        <p>Picture by <a href=\"https://unsplash.com/photos/xzPMUMDDsfk\" target=\"_blank\">Joel &amp; Jasmin Førestbird</a>, released under the <a href=\"https://unsplash.com/license\" target=\"_blank\">Unsplash License</a>.</p>\n      </div>\n      <div class=\"col-1\"></div>\n      <div class=\"col-6\">\n        {{i600ec4ab7417b}}\n        <p>Composite picture by <a href=\"https://taotesting.com\" target=\"_blank\">O.A.T.</a>, released under <a href=\"https://creativecommons.org/licenses/by-sa/4.0\" target=\"_blank\">CC BY-SA 4.0</a>.</p>\n      </div>\n    </div>\n  ",
+                "elements": {
+                    "i600ec4ab7417b": {
+                        "serial": "i600ec4ab7417b",
+                        "qtiClass": "graphicAssociateInteraction",
+                        "attributes": {
+                            "responseIdentifier": "gr_associate_tools_arrow",
+                            "maxAssociations": 4,
+                            "minAssociations": 2,
+                            "class": "responsive",
+                            "data-interaction-subtype": "arrow"
+                        },
+                        "choices": {
+                            "i600ec4ab741cb": {
+                                "identifier": "peg",
+                                "serial": "i600ec4ab741cb",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "peg",
+                                    "fixed": false,
+                                    "matchMax": 2,
+                                    "matchMin": 1,
+                                    "hotspotLabel": "peg",
+                                    "shape": "circle",
+                                    "coords": "30,125,20",
+                                    "data-end": "true"
+                                }
+                            },
+                            "i600ec4ab741ea": {
+                                "identifier": "level",
+                                "serial": "i600ec4ab741ea",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "level",
+                                    "fixed": false,
+                                    "matchMax": 2,
+                                    "matchMin": 0,
+                                    "shape": "circle",
+                                    "hotspotLabel": "level",
+                                    "coords": "185,125,20",
+                                    "data-start": "true"
+                                }
+                            },
+                            "i600ec4ab74206": {
+                                "identifier": "screwdriver",
+                                "serial": "i600ec4ab74206",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "screwdriver",
+                                    "fixed": false,
+                                    "matchMax": 2,
+                                    "matchMin": 0,
+                                    "shape": "circle",
+                                    "hotspotLabel": "screwdriver",
+                                    "coords": "340,125,20",
+                                    "data-start": "true"
+                                }
+                            },
+                            "i600ec4ab74220": {
+                                "identifier": "drill",
+                                "serial": "i600ec4ab74220",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "drill",
+                                    "fixed": false,
+                                    "matchMax": 2,
+                                    "matchMin": 0,
+                                    "shape": "circle",
+                                    "hotspotLabel": "drill",
+                                    "coords": "30,280,20",
+                                    "data-start": "true"
+                                }
+                            },
+                            "i600ec4ab7423a": {
+                                "identifier": "nails",
+                                "serial": "i600ec4ab7423a",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "nails",
+                                    "fixed": false,
+                                    "matchMax": 2,
+                                    "matchMin": 0,
+                                    "shape": "circle",
+                                    "hotspotLabel": "nails",
+                                    "coords": "185,280,20",
+                                    "data-end": "true"
+                                }
+                            },
+                            "i600ec4ab74254": {
+                                "identifier": "pincer",
+                                "serial": "i600ec4ab74254",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "pincer",
+                                    "fixed": false,
+                                    "matchMax": 2,
+                                    "matchMin": 0,
+                                    "shape": "circle",
+                                    "hotspotLabel": "pincer",
+                                    "coords": "340,280,20",
+                                    "data-start": "true"
+                                }
+                            },
+                            "i600ec4ab7426e": {
+                                "identifier": "hammer",
+                                "serial": "i600ec4ab7426e",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "hammer",
+                                    "fixed": false,
+                                    "matchMax": 2,
+                                    "matchMin": 0,
+                                    "shape": "circle",
+                                    "hotspotLabel": "hammer",
+                                    "coords": "30,435,20",
+                                    "data-start": "true"
+                                }
+                            },
+                            "i600ec4ab74287": {
+                                "identifier": "screws",
+                                "serial": "i600ec4ab74287",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "screws",
+                                    "fixed": false,
+                                    "matchMax": 2,
+                                    "matchMin": 0,
+                                    "shape": "circle",
+                                    "hotspotLabel": "screws",
+                                    "coords": "185,435,20",
+                                    "data-end": "true"
+                                }
+                            },
+                            "i600ec4ab742a1": {
+                                "identifier": "bent_nail",
+                                "serial": "i600ec4ab742a1",
+                                "qtiClass": "associableHotspot",
+                                "attributes": {
+                                    "identifier": "bent_nail",
+                                    "fixed": false,
+                                    "matchMax": 2,
+                                    "matchMin": 0,
+                                    "shape": "circle",
+                                    "hotspotLabel": "bent_nail",
+                                    "coords": "340,435,20",
+                                    "data-end": "true"
+                                }
+                            }
+                        },
+                        "prompt": {
+                            "serial": "i600ec4ab74199",
+                            "body": "",
+                            "elements": []
+                        },
+                        "object": {
+                            "serial": "i600ec4ab742c6",
+                            "qtiClass": "object",
+                            "attributes": {
+                                "data": "tools-and-materials.jpg",
+                                "type": "image/jpeg",
+                                "width": 464,
+                                "height": 464
+                            }
+                        }
+                    },
+                    "i600ec4ab74430": {
+                        "serial": "i600ec4ab74430",
+                        "qtiClass": "img",
+                        "attributes": {
+                            "src": "joel-jasmin-forestbird-xzPMUMDDsfk-unsplash.jpg",
+                            "alt": "Wood",
+                            "width": "100%",
+                            "type": "image/jpeg"
+                        }
+                    }
+                }
+            },
+            "namespaces": {
+                "": "http://www.imsglobal.org/xsd/imsqti_v2p2",
+                "m": "http://www.w3.org/1998/Math/MathML",
+                "xsi": "http://www.w3.org/2001/XMLSchema-instance"
+            },
+            "schemaLocations": {
+                "http://www.imsglobal.org/xsd/imsqti_v2p2": "http://www.imsglobal.org/xsd/qti/qtiv2p2/imsqti_v2p2.xsd"
+            },
+            "stylesheets": [],
+            "outcomes": {
+                "i600ec4ab74089": {
+                    "identifier": "SCORE",
+                    "serial": "i600ec4ab74089",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "SCORE",
+                        "cardinality": "single",
+                        "baseType": "float",
+                        "normalMaximum": 4
+                    },
+                    "defaultValue": null
+                },
+                "i600ec4ab740a2": {
+                    "identifier": "MAXSCORE",
+                    "serial": "i600ec4ab740a2",
+                    "qtiClass": "outcomeDeclaration",
+                    "attributes": {
+                        "identifier": "MAXSCORE",
+                        "cardinality": "single",
+                        "baseType": "float"
+                    },
+                    "defaultValue": "4"
+                }
+            },
+            "responses": {
+                "i600ec4ab74055": {
+                    "identifier": "gr_associate_tools_arrow",
+                    "serial": "i600ec4ab74055",
+                    "qtiClass": "responseDeclaration",
+                    "attributes": {
+                        "identifier": "gr_associate_tools_arrow",
+                        "cardinality": "multiple",
+                        "baseType": "directedPair"
+                    },
+                    "defaultValue": []
+                }
+            },
+            "feedbacks": [],
+            "apipAccessibility": ""
+        },
+        "assets": {
+            "img": {
+                "joel-jasmin-forestbird-xzPMUMDDsfk-unsplash.jpg": "joel-jasmin-forestbird-xzPMUMDDsfk-unsplash.jpg",
+                "tools-and-materials.jpg": "tools-and-materials.jpg"
+            }
+        }
+    },
+    "itemIdentifier": "item-1",
+    "success": true
+}

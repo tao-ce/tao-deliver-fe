@@ -31,20 +31,27 @@ exports[`menu panel plugin > renders a custom theme 2`] = `
               Foo
             </a>
           </li>
+          
         </ul>
          
         <ul
           class="panel-actions"
-        />
+        >
+          
+        </ul>
          
         <footer>
           <img
             alt="my logo"
             src="http://192.168.1.12:8080/logo.png"
           />
+          
            
+          
         </footer>
       </div>
+      
+      
     </aside>
     
  
@@ -104,22 +111,29 @@ exports[`menu panel plugin > renders and destroys 2`] = `
               About
             </a>
           </li>
+          
         </ul>
          
         <ul
           class="panel-actions"
-        />
+        >
+          
+        </ul>
          
         <footer>
           <img
             alt="TAO logo"
             src="logo.svg"
           />
+          
            
           <p>
-            © TAO 2025
+            
+            © TAO 2026
+            
              
             <br />
+            
             
             <a
               href="https://taotesting.com"
@@ -128,15 +142,22 @@ exports[`menu panel plugin > renders and destroys 2`] = `
             >
               Open Assessment Technologies S.A.
             </a>
+            
              
             <br />
             
+            
             All rights reserved
+            
              
             
+            
           </p>
+          
         </footer>
       </div>
+      
+      
     </aside>
     
  

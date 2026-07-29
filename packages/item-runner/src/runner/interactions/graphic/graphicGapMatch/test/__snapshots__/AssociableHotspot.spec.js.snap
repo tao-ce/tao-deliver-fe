@@ -1,167 +1,206 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`AssociableHotspot > render > render circle shapes 1`] = `
-<body>
-  <div>
+<svg
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <g
+    class="associable-hotspot"
+    data-droparea-area=""
+    data-droparea-key="item1"
+    key="item1"
+    style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
+  >
     <g
-      class="associable-hotspot"
-      data-droparea-area=""
-      data-droparea-key="item1"
-      key="item1"
-      style="--draw-focus-dasharray:4px;--dash-width:12;px"
+      aria-disabled="false"
+      aria-label="put choice here"
+      class="shape"
+      role="button"
+      tabindex="-1"
     >
-      <g
-        aria-disabled="false"
-        aria-label="put choice here"
-        class="shape"
-        tabindex="-1"
-      >
-        <circle
-          class="shape-outer-border"
-          cx="94"
-          cy="302"
-          r="34"
-        />
-        <circle
-          class="shape-inner-border"
-          cx="94"
-          cy="302"
-          r="26"
-        />
-        <circle
-          class="shape-dashed-outline"
-          cx="94"
-          cy="302"
-          r="34"
-        />
-      </g>
-      
+      <circle
+        class="shape-outer-border"
+        cx="94"
+        cy="302"
+        r="36"
+      />
+      <circle
+        class="shape-inner-border"
+        cx="94"
+        cy="302"
+        r="30"
+      />
+      <circle
+        class="shape-dashed-outline"
+        cx="94"
+        cy="302"
+        r="36"
+      />
     </g>
-  </div>
-</body>
+    
+    
+  </g>
+  
+  
+</svg>
 `;
 
 exports[`AssociableHotspot > render > render ellipse shapes 1`] = `
-<body>
-  <div>
+<svg
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <g
+    class="associable-hotspot"
+    data-droparea-area=""
+    data-droparea-key="item1"
+    key="item1"
+    style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
+  >
     <g
-      class="associable-hotspot"
-      data-droparea-area=""
-      data-droparea-key="item1"
-      key="item1"
-      style="--draw-focus-dasharray:4px;--dash-width:12;px"
+      aria-disabled="false"
+      aria-label="put choice here"
+      class="shape"
+      role="button"
+      tabindex="-1"
     >
-      <g
-        aria-disabled="false"
-        aria-label="put choice here"
-        class="shape"
-        tabindex="-1"
-      >
-        <ellipse
-          class="shape-outer-border"
-          cx="373"
-          cy="22"
-          rx="34"
-          ry="34"
-        />
-        <ellipse
-          class="shape-inner-border"
-          cx="373"
-          cy="22"
-          rx="26"
-          ry="26"
-        />
-        <ellipse
-          class="shape-dashed-outline"
-          cx="373"
-          cy="22"
-          rx="34"
-          ry="34"
-        />
-      </g>
-      
+      <ellipse
+        class="shape-outer-border"
+        cx="373"
+        cy="22"
+        rx="36"
+        ry="36"
+      />
+      <ellipse
+        class="shape-inner-border"
+        cx="373"
+        cy="22"
+        rx="30"
+        ry="30"
+      />
+      <ellipse
+        class="shape-dashed-outline"
+        cx="373"
+        cy="22"
+        rx="36"
+        ry="36"
+      />
     </g>
-  </div>
-</body>
+    
+    
+  </g>
+  
+  
+</svg>
 `;
 
 exports[`AssociableHotspot > render > render poly shapes 1`] = `
-<body>
-  <div>
+<svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <g
+    class="associable-hotspot"
+    data-droparea-area=""
+    data-droparea-key="item1"
+    key="item1"
+    style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
+  >
     <g
-      class="associable-hotspot"
-      data-droparea-area=""
-      data-droparea-key="item1"
-      key="item1"
-      style="--draw-focus-dasharray:4px;--dash-width:12;px"
+      aria-disabled="false"
+      aria-label="put choice here"
+      class="shape poly with-label"
+      role="button"
+      tabindex="-1"
     >
-      <g
-        aria-disabled="false"
-        aria-label="put choice here"
-        class="shape"
-        tabindex="-1"
-      >
-        <polygon
-          class="shape-outer-border"
-          points="27.777264814118737,380.7772648141187 27.777264814118737,386.7772648141187 22.79261316959476,386.7772648141187 15.301247311388888,435.4711428924569 26.777264814118745,439.2964820600335 26.77726481411874,450.2227351858813 82.02331348641698,450.2227351858813 79.45125902820355,380.7772648141187"
-        />
-        <polygon
-          class="shape-inner-border"
-          points="35.77726481411874,388.7772648141187 35.77726481411874,394.7772648141187 29.655964823727622,394.7772648141187 24.234592605873665,430.0161842301695 34.777264814118745,433.53040829958445 34.77726481411874,442.2227351858813 73.7215321020577,442.2227351858813 71.74207023643686,388.7772648141187"
-        />
-        <polygon
-          class="shape-dashed-outline"
-          points="27.777264814118737,380.7772648141187 27.777264814118737,386.7772648141187 22.79261316959476,386.7772648141187 15.301247311388888,435.4711428924569 26.777264814118745,439.2964820600335 26.77726481411874,450.2227351858813 82.02331348641698,450.2227351858813 79.45125902820355,380.7772648141187"
-        />
-      </g>
-      
+      <polygon
+        class="shape-shadow"
+        points="49,402 49,408 41,408 39,421 48,424 48,429 60,429 59,402"
+      />
+      <polygon
+        class="shape-inner-border"
+        clip-path="url(#SvgjsClipPath1000)"
+        points="49,402 49,408 41,408 39,421 48,424 48,429 60,429 59,402"
+      />
+      <polygon
+        class="shape-outer-border"
+        clip-path="url(#SvgjsClipPath1000)"
+        points="49,402 49,408 41,408 39,421 48,424 48,429 60,429 59,402"
+      />
+      <polygon
+        class="shape-dashed-outline"
+        clip-path="url(#SvgjsClipPath1000)"
+        points="49,402 49,408 41,408 39,421 48,424 48,429 60,429 59,402"
+      />
+      <polygon
+        class="shape-outline-cover"
+        clip-path="url(#SvgjsClipPath1000)"
+        points="49,402 49,408 41,408 39,421 48,424 48,429 60,429 59,402"
+      />
     </g>
-  </div>
-</body>
+    
+    
+  </g>
+  
+  
+  <defs>
+    <clippath
+      id="SvgjsClipPath1000"
+    >
+      <polygon
+        points="49,402 49,408 41,408 39,421 48,424 48,429 60,429 59,402"
+      />
+    </clippath>
+  </defs>
+</svg>
 `;
 
 exports[`AssociableHotspot > render > render rect shapes 1`] = `
-<body>
-  <div>
+<svg
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <g
+    class="associable-hotspot"
+    data-droparea-area=""
+    data-droparea-key="item1"
+    key="item1"
+    style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
+  >
     <g
-      class="associable-hotspot"
-      data-droparea-area=""
-      data-droparea-key="item1"
-      key="item1"
-      style="--draw-focus-dasharray:4px;--dash-width:12;px"
+      aria-disabled="false"
+      aria-label="put choice here"
+      class="shape"
+      role="button"
+      tabindex="-1"
     >
-      <g
-        aria-disabled="false"
-        aria-label="put choice here"
-        class="shape"
-        tabindex="-1"
-      >
-        <rect
-          class="shape-outer-border"
-          height="106"
-          width="131"
-          x="183"
-          y="93"
-        />
-        <rect
-          class="shape-inner-border"
-          height="90"
-          width="115"
-          x="191"
-          y="101"
-        />
-        <rect
-          class="shape-dashed-outline"
-          height="106"
-          width="131"
-          x="183"
-          y="93"
-        />
-      </g>
-      
+      <rect
+        class="shape-outer-border"
+        height="110"
+        width="135"
+        x="181"
+        y="91"
+      />
+      <rect
+        class="shape-inner-border"
+        height="98"
+        width="123"
+        x="187"
+        y="97"
+      />
+      <rect
+        class="shape-dashed-outline"
+        height="110"
+        width="135"
+        x="181"
+        y="91"
+      />
     </g>
-  </div>
-</body>
+    
+    
+  </g>
+  
+  
+</svg>
 `;
 
 exports[`AssociableHotspot > render > renders disabled gap 1`] = `
@@ -172,183 +211,202 @@ exports[`AssociableHotspot > render > renders disabled gap 1`] = `
       data-droparea-area=""
       data-droparea-key="item1"
       key="item1"
-      style="--draw-focus-dasharray:4px;--dash-width:12;px"
+      style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
     >
       <g
         aria-disabled="true"
         aria-label="put choice here"
         class="shape"
+        role="button"
         tabindex="-1"
       >
         <rect
           class="shape-outer-border"
           height="0"
-          width="68"
-          x="1.5"
+          width="72"
+          x="-0.5"
           y="0"
         />
         <rect
           class="shape-inner-border"
           height="0"
-          width="52"
-          x="9.5"
+          width="60"
+          x="5.5"
           y="0"
         />
         <rect
           class="shape-dashed-outline"
           height="0"
-          width="68"
-          x="1.5"
+          width="72"
+          x="-0.5"
           y="0"
         />
       </g>
       
+      
     </g>
+    
+    
   </div>
 </body>
 `;
 
 exports[`AssociableHotspot > render > renders gap in active state 1`] = `
-<body>
-  <div>
+<svg
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <g
+    class="associable-hotspot targetable"
+    data-droparea-area=""
+    data-droparea-key="item1"
+    key="item1"
+    style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
+  >
     <g
-      class="associable-hotspot targetable"
-      data-droparea-area=""
-      data-droparea-key="item1"
-      key="item1"
-      style="--draw-focus-dasharray:4px;--dash-width:12;px"
+      aria-disabled="false"
+      aria-label="put choice here"
+      class="shape"
+      role="button"
+      tabindex="-1"
     >
-      <g
-        aria-disabled="false"
-        aria-label="put choice here"
-        class="shape"
-        tabindex="-1"
-      >
-        <rect
-          class="shape-outer-border"
-          height="0"
-          width="68"
-          x="1.5"
-          y="0"
-        />
-        <rect
-          class="shape-inner-border"
-          height="0"
-          width="52"
-          x="9.5"
-          y="0"
-        />
-        <rect
-          class="shape-dashed-outline"
-          height="0"
-          width="68"
-          x="1.5"
-          y="0"
-        />
-      </g>
-      
+      <rect
+        class="shape-outer-border"
+        height="0"
+        width="72"
+        x="-0.5"
+        y="0"
+      />
+      <rect
+        class="shape-inner-border"
+        height="0"
+        width="60"
+        x="5.5"
+        y="0"
+      />
+      <rect
+        class="shape-dashed-outline"
+        height="0"
+        width="72"
+        x="-0.5"
+        y="0"
+      />
     </g>
-  </div>
-</body>
+    
+    
+  </g>
+  
+  
+</svg>
 `;
 
 exports[`AssociableHotspot > render > renders gap in target state 1`] = `
-<body>
-  <div>
+<svg
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <g
+    class="associable-hotspot targeted"
+    data-droparea-area=""
+    data-droparea-key="item1"
+    key="item1"
+    style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
+  >
     <g
-      class="associable-hotspot targeted"
-      data-droparea-area=""
-      data-droparea-key="item1"
-      key="item1"
-      style="--draw-focus-dasharray:4px;--dash-width:12;px"
+      aria-disabled="false"
+      aria-label="put choice here"
+      class="shape"
+      role="button"
+      tabindex="-1"
     >
-      <g
-        aria-disabled="false"
-        aria-label="put choice here"
-        class="shape"
-        tabindex="-1"
-      >
-        <rect
-          class="shape-outer-border"
-          height="0"
-          width="68"
-          x="1.5"
-          y="0"
-        />
-        <rect
-          class="shape-inner-border"
-          height="0"
-          width="52"
-          x="9.5"
-          y="0"
-        />
-        <rect
-          class="shape-dashed-outline"
-          height="0"
-          width="68"
-          x="1.5"
-          y="0"
-        />
-      </g>
-      
+      <rect
+        class="shape-outer-border"
+        height="0"
+        width="72"
+        x="-0.5"
+        y="0"
+      />
+      <rect
+        class="shape-inner-border"
+        height="0"
+        width="60"
+        x="5.5"
+        y="0"
+      />
+      <rect
+        class="shape-dashed-outline"
+        height="0"
+        width="72"
+        x="-0.5"
+        y="0"
+      />
     </g>
-  </div>
-</body>
+    
+    
+  </g>
+  
+  
+</svg>
 `;
 
 exports[`AssociableHotspot > render > renders hotspot with minimal props 1`] = `
-<body>
-  <div>
+<svg
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <g
+    class="associable-hotspot"
+    data-droparea-area=""
+    data-droparea-key="item1"
+    key="item1"
+    style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
+  >
     <g
-      class="associable-hotspot"
-      data-droparea-area=""
-      data-droparea-key="item1"
-      key="item1"
-      style="--draw-focus-dasharray:4px;--dash-width:12;px"
+      aria-disabled="false"
+      aria-label="put choice here"
+      class="shape"
+      role="button"
+      tabindex="-1"
     >
-      <g
-        aria-disabled="false"
-        aria-label="put choice here"
-        class="shape"
-        tabindex="-1"
-      >
-        <rect
-          class="shape-outer-border"
-          height="0"
-          width="68"
-          x="1.5"
-          y="0"
-        />
-        <rect
-          class="shape-inner-border"
-          height="0"
-          width="52"
-          x="9.5"
-          y="0"
-        />
-        <rect
-          class="shape-dashed-outline"
-          height="0"
-          width="68"
-          x="1.5"
-          y="0"
-        />
-      </g>
-      
+      <rect
+        class="shape-outer-border"
+        height="0"
+        width="72"
+        x="-0.5"
+        y="0"
+      />
+      <rect
+        class="shape-inner-border"
+        height="0"
+        width="60"
+        x="5.5"
+        y="0"
+      />
+      <rect
+        class="shape-dashed-outline"
+        height="0"
+        width="72"
+        x="-0.5"
+        y="0"
+      />
     </g>
-  </div>
-</body>
+    
+    
+  </g>
+  
+  
+</svg>
 `;
 
 exports[`AssociableHotspot > render > renders hotspot without props 1`] = `
-<body>
-  <div>
-    <g
-      class="associable-hotspot"
-      style="--draw-focus-dasharray:4px;--dash-width:12;px"
-    >
-      
-    </g>
-  </div>
-</body>
+<svg
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <g
+    class="associable-hotspot"
+    style="--draw-focus-dasharray: 4px; --dash-width: 12px;"
+  >
+    
+    
+  </g>
+  
+  
+</svg>
 `;

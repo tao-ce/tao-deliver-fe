@@ -48,8 +48,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     <div>
         <span class="visually-hidden">{__('Question %d of %d', 1 + currentPosition, total)}</span>
         <ol class="dots">
+            <!-- eslint-disable-next-line no-unused-vars -->
             {#each Array(total) as val, i (`${total}-${i}`)}
-                <li class:viewed={i <= currentPosition} />
+                <li class:viewed={i <= currentPosition}></li>
             {/each}
         </ol>
     </div>

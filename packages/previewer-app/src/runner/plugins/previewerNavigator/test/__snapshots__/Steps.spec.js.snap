@@ -1,15 +1,25 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Steps for PreviewerNavigator  > fails rendering with no serviceCallId 1`] = `[TypeError: A "serviceCallId" is required to get the state store of the test session]`;
+exports[`Steps for PreviewerNavigator > fails rendering with no serviceCallId 1`] = `
+[TypeError: A "serviceCallId" is required to get the state store of the test session
 
-exports[`Steps for PreviewerNavigator  > renders all steps if there is enough space 1`] = `
+	in <unknown>
+]
+`;
+
+exports[`Steps for PreviewerNavigator > renders all steps if there is enough space 1`] = `
 <body>
   <div>
+    
     <div
       class="more"
-    />
+    >
+      
+    </div>
+    
      
     <div>
+      
       <ol
         class="space-medium"
       >
@@ -19,7 +29,9 @@ exports[`Steps for PreviewerNavigator  > renders all steps if there is enough sp
             class="step completed"
             tabindex="-1"
           >
+            
              
+            
              
             <span
               aria-hidden="true"
@@ -27,8 +39,8 @@ exports[`Steps for PreviewerNavigator  > renders all steps if there is enough sp
             >
               1
             </span>
+            
           </button>
-           
         </li>
         <li>
           <button
@@ -53,9 +65,13 @@ exports[`Steps for PreviewerNavigator  > renders all steps if there is enough sp
                   d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                   fill-rule="evenodd"
                 />
+                
               </svg>
+              
             </span>
+            
              
+            
              
             <span
               aria-hidden="true"
@@ -63,8 +79,8 @@ exports[`Steps for PreviewerNavigator  > renders all steps if there is enough sp
             >
               2
             </span>
+            
           </button>
-           
         </li>
         <li>
           <button
@@ -72,7 +88,9 @@ exports[`Steps for PreviewerNavigator  > renders all steps if there is enough sp
             class="step completed"
             tabindex="-1"
           >
+            
              
+            
              
             <span
               aria-hidden="true"
@@ -80,8 +98,8 @@ exports[`Steps for PreviewerNavigator  > renders all steps if there is enough sp
             >
               3
             </span>
+            
           </button>
-           
         </li>
         <li>
           <button
@@ -89,7 +107,9 @@ exports[`Steps for PreviewerNavigator  > renders all steps if there is enough sp
             class="step completed"
             tabindex="-1"
           >
+            
              
+            
              
             <span
               aria-hidden="true"
@@ -97,8 +117,8 @@ exports[`Steps for PreviewerNavigator  > renders all steps if there is enough sp
             >
               4
             </span>
+            
           </button>
-           
         </li>
         <li>
           <button
@@ -106,7 +126,9 @@ exports[`Steps for PreviewerNavigator  > renders all steps if there is enough sp
             class="step completed"
             tabindex="-1"
           >
+            
              
+            
              
             <span
               aria-hidden="true"
@@ -114,41 +136,62 @@ exports[`Steps for PreviewerNavigator  > renders all steps if there is enough sp
             >
               5
             </span>
+            
           </button>
-           
         </li>
+        
       </ol>
       
+      
     </div>
+    
      
     <div
       class="more"
-    />
+    >
+      
+    </div>
+    
+    
+    
   </div>
 </body>
 `;
 
-exports[`Steps for PreviewerNavigator  > renders empty if testStateStore is empty 1`] = `
+exports[`Steps for PreviewerNavigator > renders empty if testStateStore is empty 1`] = `
 <body>
   <div>
+    
     <div
       class="more"
-    />
+    >
+      
+    </div>
+    
      
     <div>
       
+      
+      
     </div>
+    
      
     <div
       class="more"
-    />
+    >
+      
+    </div>
+    
+    
+    
   </div>
 </body>
 `;
 
-exports[`Steps for PreviewerNavigator  > renders with more button on the left 1`] = `
+exports[`Steps for PreviewerNavigator > renders with more button on the left 1`] = `
 <body>
   <div>
+    
     <div
       class="more"
     >
@@ -163,9 +206,12 @@ exports[`Steps for PreviewerNavigator  > renders with more button on the left 1`
          
         <span />
       </button>
+      
     </div>
+    
      
     <div>
+      
       <ol
         class="space-medium"
       >
@@ -175,7 +221,9 @@ exports[`Steps for PreviewerNavigator  > renders with more button on the left 1`
             class="step completed"
             tabindex="-1"
           >
+            
              
+            
              
             <span
               aria-hidden="true"
@@ -183,8 +231,8 @@ exports[`Steps for PreviewerNavigator  > renders with more button on the left 1`
             >
               3
             </span>
+            
           </button>
-           
         </li>
         <li>
           <button
@@ -192,7 +240,9 @@ exports[`Steps for PreviewerNavigator  > renders with more button on the left 1`
             class="step completed"
             tabindex="-1"
           >
+            
              
+            
              
             <span
               aria-hidden="true"
@@ -200,8 +250,8 @@ exports[`Steps for PreviewerNavigator  > renders with more button on the left 1`
             >
               4
             </span>
+            
           </button>
-           
         </li>
         <li>
           <button
@@ -226,9 +276,13 @@ exports[`Steps for PreviewerNavigator  > renders with more button on the left 1`
                   d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                   fill-rule="evenodd"
                 />
+                
               </svg>
+              
             </span>
+            
              
+            
              
             <span
               aria-hidden="true"
@@ -236,28 +290,41 @@ exports[`Steps for PreviewerNavigator  > renders with more button on the left 1`
             >
               5
             </span>
+            
           </button>
-           
         </li>
+        
       </ol>
       
+      
     </div>
+    
      
     <div
       class="more"
-    />
+    >
+      
+    </div>
+    
+    
+    
   </div>
 </body>
 `;
 
-exports[`Steps for PreviewerNavigator  > renders with more button on the right 1`] = `
+exports[`Steps for PreviewerNavigator > renders with more button on the right 1`] = `
 <body>
   <div>
+    
     <div
       class="more"
-    />
+    >
+      
+    </div>
+    
      
     <div>
+      
       <ol
         class="space-medium"
       >
@@ -267,7 +334,9 @@ exports[`Steps for PreviewerNavigator  > renders with more button on the right 1
             class="step completed"
             tabindex="-1"
           >
+            
              
+            
              
             <span
               aria-hidden="true"
@@ -275,8 +344,8 @@ exports[`Steps for PreviewerNavigator  > renders with more button on the right 1
             >
               1
             </span>
+            
           </button>
-           
         </li>
         <li>
           <button
@@ -301,9 +370,13 @@ exports[`Steps for PreviewerNavigator  > renders with more button on the right 1
                   d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                   fill-rule="evenodd"
                 />
+                
               </svg>
+              
             </span>
+            
              
+            
              
             <span
               aria-hidden="true"
@@ -311,8 +384,8 @@ exports[`Steps for PreviewerNavigator  > renders with more button on the right 1
             >
               2
             </span>
+            
           </button>
-           
         </li>
         <li>
           <button
@@ -320,7 +393,9 @@ exports[`Steps for PreviewerNavigator  > renders with more button on the right 1
             class="step completed"
             tabindex="-1"
           >
+            
              
+            
              
             <span
               aria-hidden="true"
@@ -328,12 +403,15 @@ exports[`Steps for PreviewerNavigator  > renders with more button on the right 1
             >
               3
             </span>
+            
           </button>
-           
         </li>
+        
       </ol>
       
+      
     </div>
+    
      
     <div
       class="more"
@@ -349,14 +427,19 @@ exports[`Steps for PreviewerNavigator  > renders with more button on the right 1
          
         <span />
       </button>
+      
     </div>
+    
+    
+    
   </div>
 </body>
 `;
 
-exports[`Steps for PreviewerNavigator  > renders with more buttons on both sides 1`] = `
+exports[`Steps for PreviewerNavigator > renders with more buttons on both sides 1`] = `
 <body>
   <div>
+    
     <div
       class="more"
     >
@@ -371,9 +454,12 @@ exports[`Steps for PreviewerNavigator  > renders with more buttons on both sides
          
         <span />
       </button>
+      
     </div>
+    
      
     <div>
+      
       <ol
         class="space-medium"
       >
@@ -383,7 +469,9 @@ exports[`Steps for PreviewerNavigator  > renders with more buttons on both sides
             class="step completed"
             tabindex="-1"
           >
+            
              
+            
              
             <span
               aria-hidden="true"
@@ -391,8 +479,8 @@ exports[`Steps for PreviewerNavigator  > renders with more buttons on both sides
             >
               2
             </span>
+            
           </button>
-           
         </li>
         <li>
           <button
@@ -417,9 +505,13 @@ exports[`Steps for PreviewerNavigator  > renders with more buttons on both sides
                   d="M1 8.75a.48.48 0 00.46.25h9.09a.47.47 0 00.45-.25.4.4 0 00-.07-.45L6.35 3.15a.48.48 0 00-.7 0L1.11 8.3a.4.4 0 00-.11.45"
                   fill-rule="evenodd"
                 />
+                
               </svg>
+              
             </span>
+            
              
+            
              
             <span
               aria-hidden="true"
@@ -427,8 +519,8 @@ exports[`Steps for PreviewerNavigator  > renders with more buttons on both sides
             >
               3
             </span>
+            
           </button>
-           
         </li>
         <li>
           <button
@@ -436,7 +528,9 @@ exports[`Steps for PreviewerNavigator  > renders with more buttons on both sides
             class="step completed"
             tabindex="-1"
           >
+            
              
+            
              
             <span
               aria-hidden="true"
@@ -444,12 +538,15 @@ exports[`Steps for PreviewerNavigator  > renders with more buttons on both sides
             >
               4
             </span>
+            
           </button>
-           
         </li>
+        
       </ol>
       
+      
     </div>
+    
      
     <div
       class="more"
@@ -465,7 +562,11 @@ exports[`Steps for PreviewerNavigator  > renders with more buttons on both sides
          
         <span />
       </button>
+      
     </div>
+    
+    
+    
   </div>
 </body>
 `;

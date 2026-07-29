@@ -23,7 +23,9 @@ exports[`TheEnd component > Renders correctly with a title and info 1`] = `
             <path
               d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
             />
+            
           </svg>
+          
         </div>
          
         <div
@@ -39,18 +41,27 @@ exports[`TheEnd component > Renders correctly with a title and info 1`] = `
           <p>
             Your test has been submitted.
           </p>
+          
            
+          
            
+          
            
+          
+           
+          
            
           <div
             class="visually-hidden"
           >
             Error
           </div>
+          
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -78,7 +89,9 @@ exports[`TheEnd component > Renders correctly with only a title 1`] = `
             <path
               d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
             />
+            
           </svg>
+          
         </div>
          
         <div
@@ -91,18 +104,27 @@ exports[`TheEnd component > Renders correctly with only a title 1`] = `
             Error
           </h1>
            
+          
            
+          
            
+          
            
+          
+           
+          
            
           <div
             class="visually-hidden"
           >
             Error
           </div>
+          
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -130,7 +152,9 @@ exports[`TheEnd component > Renders correctly with only a title and a cause 1`] 
             <path
               d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
             />
+            
           </svg>
+          
         </div>
          
         <div
@@ -143,16 +167,273 @@ exports[`TheEnd component > Renders correctly with only a title and a cause 1`] 
             Error
           </h1>
            
+          
            
           <p>
             Something went wrong
           </p>
+          
            
+          
            
+          
            
+          
+           
+          
         </div>
       </div>
     </div>
+    
+    
+  </div>
+</body>
+`;
+
+exports[`TheEnd component > Renders detailsComponent if defined 1`] = `
+<body>
+  <div>
+    <div
+      class="the-end"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="icon-container"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Lightning bolt icon
+            </title>
+            <path
+              d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
+            />
+            
+          </svg>
+          
+        </div>
+         
+        <div
+          class="info"
+        >
+          <h1
+            class="ui-heading-xl"
+            tabindex="-1"
+          >
+            Error
+          </h1>
+           
+          
+           
+          <p>
+            Something went wrong
+          </p>
+          
+           
+          <p>
+            Please follow these instructions
+          </p>
+          
+           
+          
+          <div
+            aria-atomic="true"
+            class="feedback info"
+            role="status"
+          >
+            <h4
+              class="heading"
+            >
+              Whatever
+            </h4>
+            
+             
+            <p>
+              they are supposed to be
+            </p>
+          </div>
+          
+          
+           
+          
+           
+          
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</body>
+`;
+
+exports[`TheEnd component > Renders exit button if withKioskExit=true 1`] = `
+<body>
+  <div>
+    <div
+      class="the-end"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="icon-container"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Lightning bolt icon
+            </title>
+            <path
+              d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
+            />
+            
+          </svg>
+          
+        </div>
+         
+        <div
+          class="info"
+        >
+          <h1
+            class="ui-heading-xl"
+            tabindex="-1"
+          >
+            Error
+          </h1>
+           
+          
+           
+          <p>
+            Something went wrong
+          </p>
+          
+           
+          <p>
+            Please forget about it
+          </p>
+          
+           
+          
+           
+          <div
+            class="button-container"
+          >
+            <button
+              class="actionable secondary pill small"
+              type="button"
+            >
+              
+               
+              
+               
+              Exit browser
+              
+            </button>
+            
+             
+            
+          </div>
+          
+           
+          
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+</body>
+`;
+
+exports[`TheEnd component > Renders proceed action if actionHref is provided 1`] = `
+<body>
+  <div>
+    <div
+      class="the-end"
+    >
+      <div
+        class="container"
+      >
+        <div
+          class="icon-container"
+        >
+          <svg
+            aria-hidden="false"
+            class="icon medium"
+            viewBox="0 0 16 16"
+          >
+            <title>
+              Lightning bolt icon
+            </title>
+            <path
+              d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
+            />
+            
+          </svg>
+          
+        </div>
+         
+        <div
+          class="info"
+        >
+          <h1
+            class="ui-heading-xl"
+            tabindex="-1"
+          >
+            Thank you
+          </h1>
+           
+          <p>
+            Your test has been submitted.
+          </p>
+          
+           
+          
+           
+          
+           
+          
+           
+          <div
+            class="button-container"
+          >
+            
+             
+            <button
+              class="actionable secondary pill medium"
+              type="button"
+            >
+              
+               
+              
+               
+              Proceed
+              
+            </button>
+            
+          </div>
+          
+           
+          <div
+            class="visually-hidden"
+          >
+            Thank you
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    
   </div>
 </body>
 `;
@@ -180,7 +461,9 @@ exports[`TheEnd component > Renders the retry button 1`] = `
             <path
               d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
             />
+            
           </svg>
+          
         </div>
          
         <div
@@ -193,14 +476,19 @@ exports[`TheEnd component > Renders the retry button 1`] = `
             Error
           </h1>
            
+          
            
           <p>
             Something went wrong
           </p>
+          
            
           <p>
             Please reload the page
           </p>
+          
+           
+          
            
           <div
             class="button-container"
@@ -209,15 +497,25 @@ exports[`TheEnd component > Renders the retry button 1`] = `
               class="actionable secondary pill small"
               type="button"
             >
+              
                
+              
                
               Reload the page
+              
             </button>
+            
+             
+            
           </div>
+          
            
+          
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;

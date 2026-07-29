@@ -22,6 +22,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     const dispatch = createEventDispatcher();
 
     export let tools = [];
+    export let pointerDownCallback = () => {};
 
     let currentKey;
     let longpressTimerId;
@@ -68,6 +69,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @param {String} key
      */
     function handleMousedown(key) {
+        pointerDownCallback();
         currentKey = key;
         longpressTimerId = setTimeout(handleToolExpansion, longpressInterval);
     }

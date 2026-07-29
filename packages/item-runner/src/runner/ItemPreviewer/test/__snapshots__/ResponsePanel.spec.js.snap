@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`ResponsePanel > it renders correctly 1`] = `
+exports[`ResponsePanel > renders correctly 1`] = `
 <body>
   <div>
     <div
@@ -17,14 +17,14 @@ exports[`ResponsePanel > it renders correctly 1`] = `
               <div
                 class="response-label"
               >
-                RESPONSE1
-                :
+                RESPONSE1:
               </div>
                
               <div>
                 (directedPair) [[choice_2, gap_1]]
               </div>
             </div>
+            
              
             <div
               class="response-entry"
@@ -38,12 +38,9 @@ exports[`ResponsePanel > it renders correctly 1`] = `
               <div
                 class="score"
               >
-                1
-                /
-                1
+                1/1
               </div>
             </div>
-             
           </li>
           <li>
             <div
@@ -52,14 +49,14 @@ exports[`ResponsePanel > it renders correctly 1`] = `
               <div
                 class="response-label"
               >
-                RESPONSE1
-                :
+                RESPONSE1:
               </div>
                
               <div>
                 (identifier) Discovery
               </div>
             </div>
+            
              
             <div
               class="response-entry"
@@ -73,12 +70,9 @@ exports[`ResponsePanel > it renders correctly 1`] = `
               <div
                 class="score"
               >
-                0
-                /
-                1
+                0/1
               </div>
             </div>
-             
           </li>
           <li>
             <div
@@ -87,8 +81,7 @@ exports[`ResponsePanel > it renders correctly 1`] = `
               <div
                 class="response-label"
               >
-                RESPONSE1
-                :
+                RESPONSE1:
               </div>
                
               <div>
@@ -101,14 +94,14 @@ exports[`ResponsePanel > it renders correctly 1`] = `
               <div
                 class="response-label"
               >
-                RESPONSE1
-                :
+                RESPONSE1:
               </div>
                
               <div>
                 (string) "1982"
               </div>
             </div>
+            
              
             <div
               class="response-entry"
@@ -122,13 +115,11 @@ exports[`ResponsePanel > it renders correctly 1`] = `
               <div
                 class="score"
               >
-                2
-                /
-                3
+                2/3
               </div>
             </div>
-             
           </li>
+          
         </ul>
       </div>
        
@@ -141,12 +132,18 @@ exports[`ResponsePanel > it renders correctly 1`] = `
           name="SUBMIT RESPONSE"
           type="button"
         >
+          
            
+          
            
           SUBMIT RESPONSE
+          
         </button>
+        
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;

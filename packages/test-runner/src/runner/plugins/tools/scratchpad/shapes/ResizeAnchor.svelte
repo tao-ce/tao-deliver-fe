@@ -104,6 +104,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 <g class="resize-hitbox-container">
     <rect class="resize-square" x={cx - rectOffset} y={cy - rectOffset} width={rectWidth} height={rectWidth} />
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
     <rect
         class="resize-hitbox"
         x={cx - hitboxOffset}

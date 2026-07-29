@@ -6,6 +6,7 @@
 import { writable } from 'svelte/store';
 
 const defaultStoreValue = {
+    activeTool: '',
     // should the TestLayout display the asideStart area
     asideStart: false,
     // should the TestLayout display the asideEnd area
@@ -17,3 +18,5 @@ export const testLayoutStore = writable({ ...defaultStoreValue });
 export const clearTestLayoutStore = () => {
     testLayoutStore.set({ ...defaultStoreValue });
 };
+
+export const setActiveTool = toolType => testLayoutStore.set({activeTool: toolType});

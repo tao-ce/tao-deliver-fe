@@ -7,6 +7,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 <script>
     // Licensed under Gnu Public Licence version 2
     // Copyright (c) 2020-2022 (original work) Open Assessment Technologies SA ;
+    /* eslint-disable svelte/valid-compile */ // because of CSS mixin
+
     import { getContext } from 'svelte';
     import itemSessionStatus from '../../itemSessionStatus.js';
     import { getItemSessionStatusStore } from '../../itemsSessionStatusStore.js';
@@ -58,6 +60,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         isWithRubyClass = true;
     }
 
+    let inputElt;
     let checked = false;
     let tabindex = '0';
 
@@ -65,10 +68,20 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     $: updateTabindex($focusStore);
 
     /**
+     * Update the DOM element 'checked' property, because the template can only set 'checked' attribute
+     */
+    function updateElement() {
+        if (inputElt) {
+            inputElt.checked = checked;
+        }
+    }
+
+    /**
      * Set the checked state of the checkbox/radio input
      */
     function updateInput() {
         checked = $selectedStore && $selectedStore.has(identifier);
+        updateElement();
     }
 
     /**
@@ -84,6 +97,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     function handleClick() {
         checked = !checked;
         updateStore();
+        updateElement();
     }
 
     /**
@@ -96,6 +110,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             e.preventDefault();
             checked = !checked;
             updateStore();
+            updateElement();
         }
     }
 
@@ -268,8 +283,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         @add-mixin states-colors;
         @add-mixin custom-checkbox;
         @add-mixin enlarged-hitbox;
-        padding-left: 3.5rem; /* RTL not implemented for checkbox variant */
-        white-space: nowrap;
+        /* to ensure it appears after mixins in compiled CSS: */
+        & {
+            padding-left: 3.5rem; /* RTL not implemented for checkbox variant */
+            white-space: nowrap;
+        }
     }
 
     /* variant with checkbox hidden */
@@ -325,8 +343,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         @add-mixin states-colors;
         @add-mixin custom-radio;
         @add-mixin enlarged-hitbox;
-        padding-left: 3.5rem; /* RTL not implemented for radio variant */
-        white-space: nowrap;
+        /* to ensure it appears after mixins in compiled CSS: */
+        & {
+            padding-left: 3.5rem; /* RTL not implemented for radio variant */
+            white-space: nowrap;
+        }
     }
 
     /* Target only firefox to increase space for Hiragana symbols*/
@@ -341,7 +362,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 </style>
 
-<!-- svelte-ignore a11y-label-has-associated-control -->
 <label class="qti-hottext" class:selected={checked} class:radio={isRadio} class:with-ruby={isWithRubyClass}>
     {#if isRadio}
         <input
@@ -351,10 +371,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             {tabindex}
             on:click={handleClick}
             on:keyup={handleKeyUp}
+            bind:this={inputElt}
             {disabled} />
         <span />
     {:else}
-        <input type="checkbox" value={identifier} {checked} on:click={handleClick} on:keyup={handleKeyUp} {disabled} />
+        <input type="checkbox" value={identifier} {checked} on:click={handleClick} on:keyup={handleKeyUp} bind:this={inputElt} {disabled} />
         <Icon name="checkbox-check-16" ariaHidden={true} />
     {/if}
     {#if blockTree}

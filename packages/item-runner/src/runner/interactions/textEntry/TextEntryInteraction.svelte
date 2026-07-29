@@ -96,14 +96,19 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     const feedbackProps = {
         showValidFeedback: {
-            //customValidity is set only if invalid; this is for 'firstTry' (before first blur)
-            custom: Boolean(!patternMask || qtiPatternMaskMessage || (maxlength && !limitMaxlength)),
-            pattern: Boolean(qtiPatternMaskMessage),
+            custom: true, //customValidity is set only if invalid
+            pattern: false,
             maxlength: !qtiPatternMaskMessage && !limitMaxlength
         },
         showInvalidFeedback: {
             custom: true,
             pattern: Boolean(qtiPatternMaskMessage || !maxlength), //currently if maxlength is set, then pattern matches *anything* limited by this maxlength
+            maxlength: !qtiPatternMaskMessage && !limitMaxlength
+        },
+        //before first blur
+        showInvalidOnFirstTry: {
+            custom: Boolean(!patternMask || qtiPatternMaskMessage || (maxlength && !limitMaxlength)),
+            pattern: Boolean(qtiPatternMaskMessage),
             maxlength: !qtiPatternMaskMessage && !limitMaxlength
         }
     };
@@ -172,7 +177,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                         };
                         const decimalSeparatorName = separatorName[decimalSeparator] ?? '';
 
-                        /*eslint-disable indent */
                         customValidity = {
                             valid: false,
                             msg:
@@ -184,7 +188,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                                       )
                                     : __('Invalid value, please refer to the instructions')
                         };
-                        /*eslint-enable indent */
                     }
                 } else if (e instanceof RangeError) {
                     if (isValid) {

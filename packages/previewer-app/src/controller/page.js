@@ -6,6 +6,7 @@
 import router from '../core/router.js';
 import logger from 'core/logger';
 import Page from '../component/Page.svelte';
+import { mount, unmount } from 'svelte';
 
 let container;
 let pageComponent;
@@ -65,7 +66,7 @@ export default controller =>
         prepare() {
             this.container.dataset.controller = this.name;
             if (!pageComponent) {
-                pageComponent = new Page({
+                pageComponent = mount(Page, {
                     target: this.container
                 });
             }
@@ -77,7 +78,7 @@ export default controller =>
         clean() {
             const pageContainer = this.container;
             if (pageComponent) {
-                pageComponent.$destroy();
+                unmount(pageComponent);
                 pageComponent = null;
             }
             delete pageContainer.dataset.controller;

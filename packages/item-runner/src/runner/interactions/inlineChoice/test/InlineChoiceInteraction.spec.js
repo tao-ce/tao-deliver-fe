@@ -15,6 +15,7 @@ import { tick } from 'svelte';
 import InlineChoiceInteraction from '../InlineChoiceInteraction.svelte';
 import itemsStateStore, { getItemStateStore, getInteractionStateStore } from '../../../itemsStateStore.js';
 import ContextWrapper from '../../../static/test/ContextWrapper.svelte';
+import { decommentify } from '@/test-utils/helpers.js';
 
 // common fixtures
 const qtiClass = 'qti-inlineChoiceInteraction';
@@ -406,7 +407,7 @@ describe('InlineChoiceInteraction', () => {
             });
 
             for (const index of fixedItemsIndexes) {
-                expect(container.querySelectorAll('[role="option"]')[index + 1].innerHTML).toEqual(
+                expect(decommentify(container.querySelectorAll('[role="option"]')[index + 1].innerHTML)).toEqual(
                     choiceOpts[index].label
                 );
             }

@@ -9,4 +9,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     // Copyright (c) 2023 (original work) Open Assessment Technologies SA ;
     export let attributes = {};
 </script>
+
+<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 <div class="rubric-block">{@html attributes.body}</div>

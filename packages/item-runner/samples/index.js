@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2020-2023 (original work) Open Assessment Technologies SA ;
+// Copyright (C) 2020-2025 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
@@ -55,11 +55,13 @@ import usPopulation from './us-population.graphicOrder.json';
 import kanjiPainting from './kanji-painting.graphicOrder.json';
 import slider from './slider.json';
 import toolsAndMaterials from './toolsAndMaterials.graphicAssociate.json';
+import toolsAndMaterialsArrow from './toolsAndMaterials.arrow.graphicAssociate.json';
 import feedbacksTextEntry from './feedbacks.textentry.json';
 import richardThirdStyled from './styled-richard3.inlineChoice.json';
 import layout from './layout.json';
 import pdf from './pdf.json';
 import styledPassage from './styled-passage.json';
+import styledPassageJp from './styled-passage-jp.json';
 import modalFeedback from './modalFeedback.json';
 import extendedTextMaxlength from './extendedText.maxlength.json';
 import tooltip from './tooltip.choice.json';
@@ -476,6 +478,14 @@ export default {
         },
         itemData: toolsAndMaterials
     },
+    toolsAndMaterialsArrow: {
+        label: 'Tool Associations (Arrow)',
+        meta: {
+            interactions: 'graphicAssociate',
+            features: 'graphic arrow'
+        },
+        itemData: toolsAndMaterialsArrow
+    },
     slider: {
         label: 'Slider',
         meta: {
@@ -505,6 +515,13 @@ export default {
             features: 'stimulus stylesheet'
         },
         itemData: styledPassage
+    },
+    styledPassageJp: {
+        label: 'Styled passage(JP vertical)',
+        meta: {
+            features: 'stimulus stylesheet'
+        },
+        itemData: styledPassageJp
     },
     modalFeedback: {
         label: 'Modal feedback',

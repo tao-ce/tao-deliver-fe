@@ -7,6 +7,7 @@ exports[`ColourSwitcher > renders passed options 1`] = `
       class="colour-switcher"
       role="radiogroup"
     >
+      
       <div
         class="border-wrapper"
       >
@@ -19,8 +20,8 @@ exports[`ColourSwitcher > renders passed options 1`] = `
           type="radio"
           value="default"
         />
-         
       </div>
+      
       
       <div
         class="border-wrapper"
@@ -34,8 +35,8 @@ exports[`ColourSwitcher > renders passed options 1`] = `
           type="radio"
           value="whiteOnBlack"
         />
-         
       </div>
+      
       
       <div
         class="border-wrapper"
@@ -49,8 +50,8 @@ exports[`ColourSwitcher > renders passed options 1`] = `
           type="radio"
           value="blackOnCream"
         />
-         
       </div>
+      
       
       <div
         class="border-wrapper"
@@ -64,8 +65,8 @@ exports[`ColourSwitcher > renders passed options 1`] = `
           type="radio"
           value="yellowOnBlack"
         />
-         
       </div>
+      
       
       <div
         class="border-wrapper"
@@ -79,8 +80,8 @@ exports[`ColourSwitcher > renders passed options 1`] = `
           type="radio"
           value="yellowOnBlue"
         />
-         
       </div>
+      
       
       <div
         class="border-wrapper"
@@ -94,8 +95,8 @@ exports[`ColourSwitcher > renders passed options 1`] = `
           type="radio"
           value="blackOnMagenta"
         />
-         
       </div>
+      
       
       <div
         class="border-wrapper"
@@ -109,8 +110,8 @@ exports[`ColourSwitcher > renders passed options 1`] = `
           type="radio"
           value="greyOnGreen"
         />
-         
       </div>
+      
       
       <div
         class="border-wrapper"
@@ -124,10 +125,12 @@ exports[`ColourSwitcher > renders passed options 1`] = `
           type="radio"
           value="blackOnBlue"
         />
-         
       </div>
       
+      
     </div>
+    
+    
   </div>
 </body>
 `;

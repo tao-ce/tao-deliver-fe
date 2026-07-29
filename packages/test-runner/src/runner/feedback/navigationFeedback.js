@@ -327,6 +327,34 @@ function createNavigationFeedbacksStore() {
         },
 
         /**
+         * Disable all buttons in one or more feedback dialogs
+         * @param {Function?} filterCallback - specifiy which feedbacks to affect: `(feedbacksArrayItem: object) => boolean`
+         */
+        disableButtons(filterCallback = null) {
+            this.update(stored => {
+                const toUpdate = stored.feedbacksArray.filter(i => !filterCallback || filterCallback(i));
+                toUpdate.forEach(fb => {
+                    fb?.config?.buttons?.forEach(btn => (btn.disabled = true));
+                });
+                return stored;
+            });
+        },
+
+        /**
+         * Enable all buttons in one or more feedback dialogs
+         * @param {Function?} filterCallback - specifiy which feedbacks to affect: `(feedbacksArrayItem: object) => boolean`
+         */
+        enableButtons(filterCallback = null) {
+            this.update(stored => {
+                const toUpdate = stored.feedbacksArray.filter(i => !filterCallback || filterCallback(i));
+                toUpdate.forEach(fb => {
+                    fb?.config?.buttons?.forEach(btn => (btn.disabled = false));
+                });
+                return stored;
+            });
+        },
+
+        /**
          * If any feedbacks are currently rendered
          * @returns {Boolean}
          */
@@ -348,6 +376,6 @@ function createNavigationFeedbacksStore() {
          */
         isTimeoutShown() {
             return this.isAnyShown() && !!this.get().feedbacksArray.find(f => f.config && f.config.type === 'timeout');
-        },
+        }
     };
 }

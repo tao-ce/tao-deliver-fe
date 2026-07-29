@@ -11,7 +11,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     import Item from '../item/Item.svelte';
     import ResponsePanel from './ResponsePanel.svelte';
     import PreviewerHeaderBar from './PreviewerHeaderBar.svelte';
-    import { createEventDispatcher } from 'svelte';
+    import { createEventDispatcher, onMount, onDestroy } from 'svelte';
     import request from 'core/fetchRequest';
     import { getItemStateStore } from '../itemsStateStore.js';
     import prettyPrint from '../helpers/prettyPrint.js';
@@ -22,11 +22,17 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     export let itemTitle;
 
+    export let itemRunner = null;
+
+    export let content = null;
+
     //svelte binding to item component
     let itemComponent;
     let responses = [];
 
     let showResponsePanel = false;
+
+    let itemPreviewContainer = null;
 
     const dispatch = createEventDispatcher();
 
@@ -41,6 +47,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      */
     function forwardReadyEvent(e) {
         dispatch('ready', e.detail);
+        requestAnimationFrame(calculateScale);
     }
 
     /**
@@ -122,6 +129,20 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 
     /**
+     * Displays modal feedback if conditions are met
+     * @param {object} response - submitItem response object
+     */
+    function displayFeedback(response) {
+        if (response && response.displayFeedback && response.itemSession && itemRunner && typeof itemRunner.renderFeedbacks === 'function') {
+            const feedbacks = content?.data?.feedbacks;
+
+            if (feedbacks) {
+                itemRunner.renderFeedbacks(feedbacks, response.itemSession);
+            }
+        }
+    }
+
+    /**
      * Sends post request to submitResponse endpoint
      */
     function submitItemResponse() {
@@ -148,6 +169,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
         request(submitResponseUrl, requestOptions).then(response => {
             updateResponses(submitId, response);
+            displayFeedback(response);
         });
     }
 
@@ -157,6 +179,45 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     function handleToggleResponsePanel() {
         showResponsePanel = !showResponsePanel;
     }
+
+    /**
+     * Calculate and apply scale to fit content in device preview
+     */
+    function calculateScale() {
+        if (!itemPreviewContainer) return;
+
+        const qtiItem = itemPreviewContainer.querySelector('.qti-item');
+        if (!qtiItem) return;
+
+        const availableWidth = itemPreviewContainer.clientWidth;
+
+        qtiItem.style.transform = '';
+        qtiItem.style.width = '';
+
+        const contentWidth = qtiItem.scrollWidth;
+        const scale = Math.min(availableWidth / contentWidth, 1);
+
+        if (scale < 1) {
+            qtiItem.style.transform = `scale(${scale})`;
+            qtiItem.style.transformOrigin = 'top left';
+            qtiItem.style.width = `${100 / scale}%`;
+        }
+    }
+
+    let resizeObserver;
+
+    onMount(() => {
+        if (itemPreviewContainer?.parentElement) {
+            resizeObserver = new ResizeObserver(() => {
+                requestAnimationFrame(calculateScale);
+            });
+            resizeObserver.observe(itemPreviewContainer.parentElement);
+        }
+    });
+
+    onDestroy(() => {
+        resizeObserver?.disconnect();
+    });
 </script>
 
 <style>
@@ -182,11 +243,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 
     .item-preview-container {
-        display: initial;
         flex-grow: 1;
         background-color: var(--color-bg-default);
-        align-items: stretch;
-        overflow: scroll;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transform-origin: top left;
     }
 
     .response-panel-container {
@@ -195,10 +256,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     .hidden {
         display: none;
-    }
-
-    :global(.item-preview-container .qti-item) {
-        margin: 0 auto;
     }
 
     @media only screen and (--mq-maxwidth-large) {
@@ -230,7 +287,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         <div class="response-panel-container" class:hidden={!showResponsePanel}>
             <ResponsePanel {responses} on:submit={submitItemResponse} />
         </div>
-        <div class="item-preview-container">
+        <div class="item-preview-container qti-item-container" bind:this={itemPreviewContainer}>
             <Item {...$$props} on:error={forwardErrorEvent} on:ready={forwardReadyEvent} bind:this={itemComponent} />
         </div>
     </div>

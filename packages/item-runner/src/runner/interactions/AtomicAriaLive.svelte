@@ -116,5 +116,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     {lang}
     class="visually-hidden"
     bind:this={container}>
+    <!-- eslint-disable-next-line svelte/no-at-html-tags -->
     {@html content}
 </div>

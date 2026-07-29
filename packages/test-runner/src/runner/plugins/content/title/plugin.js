@@ -3,7 +3,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
-import { tick } from 'svelte';
+import { tick, mount, unmount } from 'svelte';
 import pluginFactory from 'taoTests/runner/plugin';
 import { testSessionStatus } from '../../../session/sessionStates.js';
 import { getTestSessionStatusStore } from '../../../testsStateStore.js';
@@ -38,7 +38,7 @@ export default pluginFactory({
         const navigationFeedbacksStore = getNavigationFeedbacksStore(serviceCallId);
 
         //render the title
-        this.testTitle = new TestTitle({
+        this.testTitle = mount(TestTitle, {
             target: areaBroker.getHeaderArea(),
             props: {
                 serviceCallId,
@@ -47,14 +47,14 @@ export default pluginFactory({
         });
 
         //update the hidden title
-        this.hiddenContentTitle = new HiddenContentTitle({
+        this.hiddenContentTitle = mount(HiddenContentTitle, {
             target: areaBroker.getContainer().querySelector('#a11y-main'),
             props: {
                 serviceCallId
             }
         });
 
-        this.timersAriaLive = new TimersAriaLive({
+        this.timersAriaLive = mount(TimersAriaLive, {
             target: areaBroker.getHeaderArea(),
             props: {
                 serviceCallId,
@@ -81,13 +81,13 @@ export default pluginFactory({
             this.unsubscribeSessionStatus = null;
         }
         if (this.hiddenContentTitle) {
-            this.hiddenContentTitle.$destroy();
+            unmount(this.hiddenContentTitle);
         }
         if (this.testTitle) {
-            this.testTitle.$destroy();
+            unmount(this.testTitle);
         }
         if (this.timersAriaLive) {
-            this.timersAriaLive.$destroy();
+            unmount(this.timersAriaLive);
         }
     }
 });

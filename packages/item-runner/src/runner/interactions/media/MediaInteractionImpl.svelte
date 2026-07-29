@@ -460,6 +460,16 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         margin-block: 0;
     }
 
+    :global(.qti-prompt .compact-appearance),
+    :global(.match-tabular-header-cell .compact-appearance),
+    :global(.label-container .compact-appearance),
+    :global(.inline-interaction-container .compact-appearance),
+    :global(div[id^='tao-choice'] .compact-appearance) {
+        display: inline-block;
+        vertical-align: bottom;
+        max-width: 100%;
+    }
+
     :global(.compact-appearance .plyr.plyr--audio) {
         min-width: 1rem;
     }

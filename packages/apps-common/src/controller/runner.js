@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2019-2025 (original work) Open Assessment Technologies SA;
+// Copyright (C) 2019-2026 (original work) Open Assessment Technologies SA;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
@@ -10,8 +10,10 @@ import runnerComponentFactory from 'taoTests/runner/runnerComponentSimple';
 import configurationLoader from '../service/runner/configurationLoader.js';
 import urlBuilder from '../core/urlBuilder.js';
 import themingServiceFactory from '../service/theming.js';
+import kioskServiceFactory from '../service/runner/kiosk.js';
 import LaunchError from '../core/error/LaunchError.js';
 import ActionError from '../core/error/ActionError';
+import KioskError from '../core/error/KioskError.js';
 import { __, getLocaleDirection, setLanguageDirectionMapping } from '@oat-sa-private/ui-core';
 import WaitingPage from '../component/WaitingPage.svelte';
 import PasswordPage from '../component/PasswordPage.svelte';
@@ -19,9 +21,37 @@ import LanguageSelectionPage from '../component/LanguageSelectionPage.svelte';
 import request from 'core/fetchRequest';
 import { getLocaleFallback } from '../util/locale.js';
 import { saveErrorLog } from '../service/runner/saveErrorLog.js';
+import { securityLog } from '../service/runner/securityLog.js';
+import { endAssessment } from '../util/endAssessment.js';
+import { notifyFactory } from '../util/notify.js';
+import { mount, unmount } from 'svelte';
+
+function createThankYouReturnUrl(returnUrl, returnUrlParameters = {}) {
+    try {
+        const url = new URL(returnUrl);
+
+        for (const [parameter, value] of Object.entries(returnUrlParameters)) {
+            url.searchParams.append(parameter, value);
+        }
+
+        return url.toString();
+    } catch {
+        return returnUrl;
+    }
+}
+
+function createThankYouUrl(path, returnUrl, returnUrlParameters = {}, locale) {
+    const url = new URL(path, window.location.origin);
+    url.searchParams.set('returnUrl', createThankYouReturnUrl(returnUrl, returnUrlParameters));
+
+    if (locale) {
+        url.searchParams.set('lti_locale', locale);
+    }
+
+    return url.toString();
+}
 
 export default () =>
-    // eslint-disable-next-line implicit-arrow-linebreak
     pageController({
         name: 'runner',
         runnerComponent: null,
@@ -66,6 +96,7 @@ export default () =>
             this.runnerComponent = runnerComponentFactory(this.container, configuration)
                 .on('ready', runner => {
                     this.logger.info('The test runner is ready to serve the test');
+                    this.notify('ready', { location: window.location.href });
 
                     runner
                         .on('testfinished', context => {
@@ -95,16 +126,32 @@ export default () =>
                                 lti_msg: __('Test is finished'), //message to be displayed to test taker
                                 lti_log: 'Test taker finished the test' //log entry (new in LTI 1.3)
                             };
-                            if (configuration.options && configuration.options.exitUrl) {
-                                const exitUrlEntity = new URL(configuration.options.exitUrl);
-                                for (const [param, value] of Object.entries(ltiMessageParameters)) {
-                                    exitUrlEntity.searchParams.append(param, value);
-                                }
-                                // LTI return_url defined, so use it immediately
-                                window.location.replace(exitUrlEntity);
+                            if (configuration.options?.exitUrl || configuration.options?.endAssessmentUrl) {
+                                const successUrl =
+                                    configuration.options?.showThankYouPageBeforeRedirect && configuration.options?.exitUrl
+                                        ? createThankYouUrl(
+                                              this.config.exitPageRoutes.thankYou,
+                                              configuration.options.exitUrl,
+                                              ltiMessageParameters,
+                                              __.getLocale()
+                                          )
+                                        : undefined;
+
+                                return endAssessment({
+                                    ...configuration.options,
+                                    jwtTokenHandler: configuration.jwtTokenHandler,
+                                    exitUrlParameters: ltiMessageParameters,
+                                    successUrl
+                                });
                             } else {
                                 // switch to local Thank You page with defaults
-                                this.router.replace(this.config.exitPageRoutes.thankYou);
+                                this.notify('exit');
+                                const thankYouUrl = new URL(this.config.exitPageRoutes.thankYou, window.location.origin);
+                                const locale = __.getLocale();
+                                if (locale) {
+                                    thankYouUrl.searchParams.set('lti_locale', locale);
+                                }
+                                this.router.replace(thankYouUrl.pathname + thankYouUrl.search);
                             }
                         })
 
@@ -116,7 +163,7 @@ export default () =>
                     if (err?.logOnly) {
                         this.logError(err);
                     } else {
-                        // check wheather error related to an action
+                        // check whether error related to an action
                         const actionError =
                             err.response &&
                             err.response.responses &&
@@ -159,8 +206,8 @@ export default () =>
          */
         startWaiting() {
             const configuration = this.runnerConfiguration;
-            const { options, testTaker, themes } = configuration;
-            const { waitTimeRemaining, testTitle, exitUrl, startsAt, endsAt } = options || {};
+            const { options, jwtTokenHandler, testTaker, themes } = configuration;
+            const { waitTimeRemaining, testTitle, exitUrl, endAssessmentUrl, startsAt, endsAt } = options || {};
             const { name: testTakerName } = testTaker || {};
             const theme = themes?.testRunner;
 
@@ -178,12 +225,14 @@ export default () =>
                 const waitingPromise = new Promise(resolve => {
                     waitingPromiseResolve = resolve;
                 });
-                const waitingPage = new WaitingPage({
+                const waitingPage = mount(WaitingPage, {
                     target: this.container,
                     props: {
                         waitTimeRemaining,
                         testTitle,
-                        logoutUrl,
+                        exitUrl: logoutUrl,
+                        endAssessmentUrl,
+                        jwtTokenHandler,
                         testTakerName,
                         theme,
                         startsAt,
@@ -193,7 +242,7 @@ export default () =>
                 });
 
                 waitingPage.$on('timeout', () => {
-                    waitingPage.$destroy();
+                    unmount(waitingPage);
                     waitingPromiseResolve();
                 });
                 return waitingPromise;
@@ -219,7 +268,7 @@ export default () =>
                 waitingPromiseResolve = resolve;
             });
 
-            const passwordPage = new PasswordPage({
+            const passwordPage = mount(PasswordPage, {
                 target: this.container,
                 props: {
                     validationEndpoint: options.passwordProtection.validationEndpoint,
@@ -228,10 +277,45 @@ export default () =>
                 }
             });
             passwordPage.$on('success', () => {
-                passwordPage.$destroy();
+                unmount(passwordPage);
                 waitingPromiseResolve();
             });
             return waitingPromise;
+        },
+
+        /**
+         * If configured to run in lockdown (kiosk) browser, check that app runs in it.
+         * @throws {KioskError} if didn't pass validation
+         * @returns {Promise<void>} test can be started
+         */
+        async validateKiosk() {
+            const configuration = this.runnerConfiguration;
+            const { options } = configuration;
+
+            if (options?.kiosk?.enabled) {
+                this.kioskService = kioskServiceFactory(options.kiosk);
+
+                try {
+                    await this.kioskService.validateMinVersion();
+                    await this.kioskService.validateProcessDenyList();
+                } catch (err) {
+                    if (err instanceof KioskError) {
+                        let reason, details;
+                        if (err.denyProcesses) {
+                            reason = 'lockdown-processes-on-launch';
+                            details = { processes: err.denyProcesses.map(i => i.name).join(', ') };
+                        } else if (err.detectedVersion) {
+                            reason = 'lockdown-version';
+                            details = { required: err.requiredVersion, detected: err.detectedVersion };
+                        } else {
+                            reason = 'lockdown-missing';
+                            details = {};
+                        }
+                        this.logSecurityError(reason, details);
+                    }
+                    throw err;
+                }
+            }
         },
 
         /**
@@ -285,7 +369,7 @@ export default () =>
 
             supportedLocales = localization.supportedLocales;
 
-            const languageSelectionPage = new LanguageSelectionPage({
+            const languageSelectionPage = mount(LanguageSelectionPage, {
                 target: this.container,
                 props: {
                     submitSelectionEndpoint,
@@ -296,7 +380,7 @@ export default () =>
             });
 
             languageSelectionPage.$on('selected', ({ detail }) => {
-                languageSelectionPage.$destroy();
+                unmount(languageSelectionPage);
                 //set the localization.locale to the selected one
                 //set default testRunner locale to selected one as well
                 //then it will be used by proxy to init the items
@@ -366,6 +450,18 @@ export default () =>
                         setLanguageDirectionMapping(configuration.options.languageDirectionMapping);
                     }
 
+                    if (configuration.options?.exitUrl) {
+                        try {
+                            configuration.options.iframeParentOrigin = new URL(configuration.options.exitUrl).origin;
+                            this.notify = notifyFactory(configuration.options.iframeParentOrigin);
+                        } catch (err) {
+                            this.logger.error(err);
+                            this.notify = () => {};
+                        }
+                    } else {
+                        this.notify = () => {};
+                    }
+
                     this.runnerConfiguration = configuration;
                     const locale = this.runnerConfiguration.locale || this.config.locale;
                     return this.setLocale(locale);
@@ -389,6 +485,7 @@ export default () =>
                     );
                     return this.loadPlatformTheme(platformTheme);
                 })
+                .then(() => this.validateKiosk())
                 .then(() => this.showPassword())
                 .then(() => this.startWaiting())
                 .then(() => this.showLanguageSelection())
@@ -405,10 +502,12 @@ export default () =>
         handleError(err) {
             this.router.dispatch(this.config.exitPageRoutes.error, {
                 internalError: err,
-                exitUrl: this.runnerConfiguration && this.runnerConfiguration.options.exitUrl,
+                endAssessmentUrl: this.runnerConfiguration?.options.endAssessmentUrl,
+                exitUrl: this.runnerConfiguration?.options.exitUrl,
                 deliveryExecutionId: this.deliveryExecutionId,
                 lti_locale: this.initialLocale,
-                jwtTokenHandler: this.jwtTokenHandler
+                jwtTokenHandler: this.jwtTokenHandler,
+                kioskService: this.kioskService
             });
         },
 
@@ -434,6 +533,21 @@ export default () =>
                         logger: this.logger
                     });
             }
+        },
+
+        /**
+         * Logs security issue in the security log
+         * @param {string} reason
+         * @param {object?} details
+         */
+        logSecurityError(reason, details) {
+            securityLog({
+                reason,
+                details,
+                deliveryExecutionId: this.runnerConfiguration.deliveryExecutionId,
+                jwtTokenHandler: this.jwtTokenHandler,
+                config: this.config
+            });
         },
 
         /**

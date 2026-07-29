@@ -606,6 +606,8 @@ describe('Scratchpad', () => {
 
                     return tick();
                 })
+                .then(tick)
+                .then(tick)
                 .then(() => {
                     const rect = canvas.querySelector('[data-shape-type="rectangle"]');
 

@@ -381,6 +381,8 @@ describe('jump menu plugin', () => {
 
                             return tick();
                         })
+                        .then(tick)
+                        .then(tick)
                         .then(() => {
                             expect(
                                 layout.querySelectorAll('#jump-menu li')[0]?.querySelector('button strong').innerHTML
@@ -416,6 +418,8 @@ describe('jump menu plugin', () => {
 
                             return tick();
                         })
+                        .then(tick)
+                        .then(tick)
                         .then(() => {
                             expect(
                                 layout.querySelectorAll('#jump-menu li')[0]?.querySelector('button strong').innerHTML

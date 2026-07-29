@@ -55,6 +55,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 <ul class="mini-pins">
     {#each pins as pin}
         <li class:dimmed={pin.used}>
+            <!-- eslint-disable-next-line svelte/no-at-html-tags -->
             {@html defaultPin}
         </li>
     {/each}

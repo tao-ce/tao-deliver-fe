@@ -8,7 +8,11 @@ exports[`CursorSvg > renders empty element if no initial position 1`] = `
   <div>
     <div
       style="position: fixed; pointer-events: none; z-index: 10000; width: 12px; height: 16px; left: -2px; top: -5px; transform: translate(0px, 0px);"
-    />
+    >
+      
+    </div>
+    
+    
   </div>
 </body>
 `;
@@ -22,6 +26,7 @@ exports[`CursorSvg > renders passed options 1`] = `
     <div
       style="position: fixed; pointer-events: none; z-index: 10000; width: 12px; height: 16px; left: -2px; top: -5px; transform: translate(0px, 0px);"
     >
+      
       <svg
         fill="none"
         height="16"
@@ -41,7 +46,10 @@ exports[`CursorSvg > renders passed options 1`] = `
         />
       </svg>
       
+      
     </div>
+    
+    
   </div>
 </body>
 `;

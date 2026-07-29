@@ -9,11 +9,11 @@ exports[`GraphicGapMatch Choice > rendering > reacts to basic props 1`] = `
       data-drag-drop-key="da_gap1_xyz_choice1"
       data-droparea-area="gap1"
       data-droparea-key="choice1"
-      style="--draw-x: 0px;--draw-y: 2px;--draw-width: 10px;--draw-height: 40px;--draw-selected-scale: 2;"
+      style="--draw-x: 0px; --draw-y: 2px; --draw-width: 10px; --draw-height: 40px; --draw-selected-scale: 2;"
     >
       <div
         aria-grabbed="false"
-        aria-label="undefined, undefined"
+        aria-label=", "
         class="drag-anchor draggable-source"
         data-drag-drop-disabled="false"
         data-drag-drop-key="gap1__xyz__choice1"
@@ -34,7 +34,10 @@ exports[`GraphicGapMatch Choice > rendering > reacts to basic props 1`] = `
         </div>
       </div>
        
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -48,11 +51,11 @@ exports[`GraphicGapMatch Choice > rendering > reacts to basic props 2`] = `
       data-drag-drop-key="da_gap1_xyz_choice1"
       data-droparea-area="gap1"
       data-droparea-key="choice1"
-      style="--draw-x: 5px;--draw-y: 8px;--draw-width: 10px;--draw-height: 40px;--draw-selected-scale: 2;"
+      style="--draw-x: 5px; --draw-y: 8px; --draw-width: 10px; --draw-height: 40px; --draw-selected-scale: 2;"
     >
       <div
         aria-grabbed="false"
-        aria-label="undefined, undefined"
+        aria-label=", "
         class="drag-anchor draggable-source"
         data-drag-drop-disabled="false"
         data-drag-drop-key="gap1__xyz__choice1"
@@ -73,7 +76,10 @@ exports[`GraphicGapMatch Choice > rendering > reacts to basic props 2`] = `
         </div>
       </div>
        
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -88,7 +94,7 @@ exports[`GraphicGapMatch Choice > rendering > renders empty container without co
     >
       <div
         aria-grabbed="false"
-        aria-label="undefined, undefined"
+        aria-label=", "
         class="drag-anchor draggable-source"
         data-drag-drop-disabled="false"
         data-drag-drop-key="choice__xyz__choice1"
@@ -108,7 +114,10 @@ exports[`GraphicGapMatch Choice > rendering > renders empty container without co
         </div>
       </div>
        
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -120,7 +129,7 @@ exports[`GraphicGapMatch Choice > rendering > renders with detailed props 1`] = 
       class="choice targetable targeted disabled"
       data-drag-drop-disabled="true"
       data-drag-drop-key="da_gap1_xyz_choice1"
-      style="--draw-x: 10px;--draw-y: 20px;--draw-width: 100px;--draw-height: 200px;--draw-selected-scale: 1.24;"
+      style="--draw-x: 10px; --draw-y: 20px; --draw-width: 100px; --draw-height: 200px; --draw-selected-scale: 1.24;"
     >
       <div
         aria-disabled="true"
@@ -147,7 +156,10 @@ exports[`GraphicGapMatch Choice > rendering > renders with detailed props 1`] = 
         </div>
       </div>
        
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -161,11 +173,11 @@ exports[`GraphicGapMatch Choice > rendering > renders with placed props 1`] = `
       data-drag-drop-key="da_gap1_xyz_choice1"
       data-droparea-area="gap1"
       data-droparea-key="choice1"
-      style="--draw-x: 0px;--draw-y: 0px;--draw-width: 10px;--draw-height: 10px;--draw-selected-scale: 2;"
+      style="--draw-x: 0px; --draw-y: 0px; --draw-width: 10px; --draw-height: 10px; --draw-selected-scale: 2;"
     >
       <div
         aria-grabbed="false"
-        aria-label="undefined, undefined"
+        aria-label=", "
         class="drag-anchor draggable-source"
         data-drag-drop-disabled="false"
         data-drag-drop-key="gap1__xyz__choice1"
@@ -205,9 +217,14 @@ exports[`GraphicGapMatch Choice > rendering > renders with placed props 1`] = `
           <path
             d="M1 0l5 5 5-5 1 1-5 5 5 5-1 1-5-5-5 5-1-1 5-5-5-5 1-1z"
           />
+          
         </svg>
+        
       </button>
+      
     </div>
+    
+    
   </div>
 </body>
 `;

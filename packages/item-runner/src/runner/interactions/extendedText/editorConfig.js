@@ -1,10 +1,15 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2022-2025 (original work) Open Assessment Technologies SA ;
+// Copyright (C) 2022-2026 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 import { getLanguageShortCode } from '@oat-sa-private/ui-core';
-import specialCharacters from './specialCharacters';
+import specialCharsPluginsMapping from './specialCharacters';
 import defaultSpecialCharsList from './specialCharacters/defaultList.js';
+import {
+    enrichStaticSpecialCharsConfig,
+    SpecialCharactersUpdaterPlugin,
+    SpecialCharactersDiacriticsPlugin
+} from '@oat-sa-private/ui-elements';
 import createUploadAdapterFactory from './uploadAdapter.js';
 import { spellCheckConfigs } from './spellcheck/config.js';
 
@@ -13,7 +18,8 @@ function getDefaultEditorConfig() {
         removePlugins: [],
         extraPlugins: [],
         toolbar: {
-            removeItems: []
+            removeItems: [],
+            shouldNotGroupWhenFull: true
         },
         language: {
             ui: 'en',
@@ -25,21 +31,28 @@ function getDefaultEditorConfig() {
         uploadAdapterPlugin: {
             identifierAttribute: 'data-img-id',
             inlineAlignImageStyles: true
+        },
+        mathEditor: {
+            provider: null,
         }
     };
 }
 
 export default function editorConfigFactory({
     //basic
+    toolbarItems,
     removePlugins,
     toolbarRemoveItems,
+    toolbarShouldNotGroupWhenFull,
     toolbarLang,
     inputLang,
     //math entry
     hasMathEntry,
     mathEntryKeyboards,
+    isWirisMathEditorEnabled,
     //special characters
     specialCharacterSetName,
+    specialCharactersConfig,
     //image upload
     hasImageUpload,
     uploadServiceType,
@@ -54,6 +67,13 @@ export default function editorConfigFactory({
     spellCheckConfig
 }) {
     const editorConfig = getDefaultEditorConfig();
+
+    if (Array.isArray(toolbarItems) && toolbarItems.length) {
+        editorConfig.toolbar.items = toolbarItems;
+    }
+    if (toolbarShouldNotGroupWhenFull === false) {
+        editorConfig.toolbar.shouldNotGroupWhenFull = false;
+    }
 
     if (toolbarLang || inputLang) {
         if (!editorConfig.language) {
@@ -70,8 +90,11 @@ export default function editorConfigFactory({
         editorConfig.removePlugins.push('MathBox');
         editorConfig.toolbar.removeItems.push('mathBox');
     }
-    if (hasMathEntry && mathEntryKeyboards) {
+    if (hasMathEntry && mathEntryKeyboards && !isWirisMathEditorEnabled) {
         editorConfig.mathBox.virtualKeyboards = mathEntryKeyboards;
+    }
+    if (hasMathEntry && isWirisMathEditorEnabled) {
+        editorConfig.mathEditor.provider = 'wiris';
     }
 
     if (!hasImageUpload) {
@@ -101,10 +124,17 @@ export default function editorConfigFactory({
         });
     }
 
-    if (specialCharacterSetName && specialCharacters[specialCharacterSetName]) {
+    // Replace default special characters by one of the preset names
+    if (specialCharacterSetName && specialCharsPluginsMapping[specialCharacterSetName]) {
         editorConfig.removePlugins.push(...defaultSpecialCharsList);
-        editorConfig.extraPlugins.push(specialCharacters[specialCharacterSetName]);
+        editorConfig.extraPlugins.push(specialCharsPluginsMapping[specialCharacterSetName]);
     }
+    // Another way of customising special characters
+    if (specialCharactersConfig) {
+        editorConfig.specialCharacters = enrichStaticSpecialCharsConfig(specialCharactersConfig);
+        editorConfig.extraPlugins.push(SpecialCharactersUpdaterPlugin);
+    }
+    editorConfig.extraPlugins.push(SpecialCharactersDiacriticsPlugin);
 
     if (!spellCheckConfig || spellCheckConfig.enabled === false || spellCheckConfig.providerId !== 'wproofreader') {
         editorConfig.removePlugins.push('WProofreader');

@@ -7,6 +7,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 <script>
     // Licensed under Gnu Public License version 2
     // Copyright (c) 2020-2025 (original work) Open Assessment Technologies SA ;
+    /* eslint-disable svelte/valid-compile */ // because of CSS mixin
 
     import { afterUpdate, createEventDispatcher, onDestroy, onMount, setContext } from 'svelte';
     import { fade } from 'svelte/transition';
@@ -262,6 +263,15 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         },
 
         /**
+         * From passed options, get generic API data fetcher function (usually from a TR proxy).
+         * Not guaranteed to exist
+         * @returns {Function?}
+         */
+        getGetData() {
+            return options.getData;
+        },
+
+        /**
          * Register an event handler for an event
          * @param {string} eventName
          * @param {() => void} listener
@@ -314,6 +324,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             get hideTooltips() {
                 const hideTooltipsOptionValue = options?.itemRunnerConfig?.options?.hideTooltips;
                 return hideTooltipsOptionValue ?? true;
+            },
+            get reRankHeadings() {
+                return options?.itemRunnerConfig?.options?.reRankHeadings ?? true;
             }
         },
         elements: {
@@ -624,22 +637,24 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     .qti-item {
         min-height: 30rem;
 
+        --item-container-block-size: var(--item-container-height);
+        --item-container-inner-block-size: calc(var(--item-container-block-size) - 2rem);
+        --item-container-offset-block-start: var(--item-container-offset-top);
+        position: relative;
+        block-size: 100%;
+
+        /**
+         * reduce standard sizes of LDS headings and paragraphs, to the specified sizes for item-runner
+         */
+        --item-fontsize-heading-xxl: calc(var(--fontsize-heading-xxl) * 0.7); /* 3.5rem */
+        --item-fontsize-heading-xl: calc(var(--fontsize-heading-xl) * 0.767); /* 2.875rem */
+        --item-fontsize-heading-l: calc(var(--fontsize-heading-l) * 0.95); /* 2.375rem */
+
+        --dir-typography-bold-weight: 700;
+        --dir-typography-italic-style: italic;
+
         & :global-nested {
-            --item-container-block-size: var(--item-container-height);
-            --item-container-inner-block-size: calc(var(--item-container-block-size) - 2rem);
-            --item-container-offset-block-start: var(--item-container-offset-top);
-            position: relative;
-            block-size: 100%;
-
-            /**
-             * reduce standard sizes of LDS headings and paragraphs, to the specified sizes for item-runner
-             */
-            --item-fontsize-heading-xxl: calc(var(--fontsize-heading-xxl) * 0.7); /* 3.5rem */
-            --item-fontsize-heading-xl: calc(var(--fontsize-heading-xl) * 0.767); /* 2.875rem */
-            --item-fontsize-heading-l: calc(var(--fontsize-heading-l) * 0.95); /* 2.375rem */
-
             /** unset LDS styles which force bold/italic elements to become 'normal' in RTL  */
-            &,
             & [dir='rtl'],
             & [dir='ltr'] [dir='rtl'],
             & [dir='rtl'] [dir='ltr'] [dir='rtl'],
@@ -681,10 +696,30 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 margin-inline: 0;
                 margin-block: var(--space-1x);
             }
-
+            & ruby rt span.txt-underline,
+            & ruby rt span.txt-dashed,
+            & ruby rt span.txt-wavy,
+            & ruby rt span.txt-strike {
+                /*  hide text decorations on ruby tags (ckeditor fix) */
+                text-decoration: none;
+            }
             & .qti-underline,
             & .txt-underline {
                 text-decoration: underline;
+            }
+            & .txt-strike {
+                text-decoration: line-through;
+            }
+            & .txt-dashed,
+            & .txt-wavy {
+                text-decoration-color: currentColor;
+                text-decoration-line: underline;
+            }
+            & .txt-dashed {
+                text-decoration-style: dashed;
+            }
+            & .txt-wavy {
+                text-decoration-style: wavy;
             }
             & .qti-italic {
                 font-style: italic;
@@ -786,7 +821,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
         /* Prevent from showing the instructions and the constraints */
         &.remove-instructions {
-            & :global-nested(.qti-interaction .qti-instruction-container) {
+            & :global(.qti-interaction .qti-instruction-container) {
                 display: none;
             }
         }
@@ -834,10 +869,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     /* above mobile */
     @container (768px <= width) {
         .qti-item {
-            & :global-nested {
-                /* container height without padding */
-                --item-container-inner-block-size: calc(var(--item-container-block-size) - 4rem);
+            /* container height without padding */
+            --item-container-inner-block-size: calc(var(--item-container-block-size) - 4rem);
 
+            & :global-nested {
                 @mixin rows {
                     position: relative;
                     display: grid;
@@ -1219,6 +1254,37 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 overflow-x: auto;
                 position: relative; /* has-left-shadow/has-right-shadow */
             }
+
+            /*underlines and sub/superscript*/
+            & .txt-underline {
+                text-underline-position: right;
+            }
+            & .txt-subscript {
+                inset-block-start: -0.9em;
+                bottom: 0;
+            }
+            & .txt-superscript {
+                inset-block-end: -0.4em;
+                top: 0;
+            }
+            /*special case for ruby text - shift ruby text after underline*/
+            & .txt-underline,
+            & .txt-dashed,
+            & .txt-wavy {
+                & ruby rt {
+                    position: relative;
+                    inset-block-start: -1rem;
+                }
+            }
+
+            & ruby rt > .txt-wavy {
+                position: relative;
+                left: 0.7rem;
+            }
+            /* wavy underline of subscript needs additional space to be shown */
+            & .custom-text-box {
+                padding-block-start: var(--space-1x5);
+            }
         }
     }
 
@@ -1238,10 +1304,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     @media print {
         .qti-item {
-            & :global-nested {
-                block-size: auto;
-                overflow: visible;
+            block-size: auto;
+            overflow: visible;
 
+            & :global-nested {
                 & .not-printable {
                     display: none !important;
                 }

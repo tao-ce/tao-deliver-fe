@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2022-2023 (original work) Open Assessment Technologies SA
+// Copyright (C) 2022-2026 (original work) Open Assessment Technologies SA
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
@@ -19,40 +19,109 @@ describe('API', () => {
 });
 
 describe('rows calculation helper', () => {
-    it('empty case', () => {
+    it('empty cases', () => {
         expect(getRowsValue()).toEqual(null);
+        expect(getRowsValue({})).toEqual(null);
     });
 
     it('extracts number from classes', () => {
-        expect(getRowsValue(void 0, void 0, void 0, void 0, 'qti-height-lines-15')).toEqual(15);
+        expect(
+            getRowsValue({
+                classes: 'qti-height-lines-15'
+            })
+        ).toEqual(15);
     });
 
     it('invalid class is not taken into account', () => {
-        expect(getRowsValue(void 0, void 0, void 0, void 0, 'qti-height-lines-13')).toEqual(null);
+        expect(
+            getRowsValue({
+                classes: 'qti-height-lines-13'
+            })
+        ).toEqual(null);
     });
 
     it('calculates based on expected length', () => {
-        expect(getRowsValue(144, void 0, void 0, void 0, void 0)).toEqual(2);
+        expect(
+            getRowsValue({
+                expectedLength: 144
+            })
+        ).toEqual(2);
+    });
+
+    it('calculates based on expected length with large number', () => {
+        expect(
+            getRowsValue({
+                expectedLength: 7210
+            })
+        ).toEqual(101);
     });
 
     it('calculates based on expected lines', () => {
-        expect(getRowsValue(void 0, 3, void 0, void 0, void 0)).toEqual(3);
+        expect(
+            getRowsValue({
+                expectedLines: 3
+            })
+        ).toEqual(3);
     });
 
-    it('calculates based on maxWords pattern', () => {
-        expect(getRowsValue(void 0, void 0, void 0, 100, void 0)).toEqual(8);
+    it('returns hardcoded default value if maxWordsLimit', () => {
+        expect(
+            getRowsValue({
+                maxWordsLimit: 100
+            })
+        ).toEqual(8);
     });
 
-    it('calculates based on maxCharacters pattern', () => {
-        expect(getRowsValue(void 0, void 0, 200, void 0, void 0)).toEqual(3);
+    it('calculates based on maxlength', () => {
+        expect(
+            getRowsValue({
+                maxlength: 200
+            })
+        ).toEqual(3);
     });
 
-    it('class has the most priority in calculations', () => {
-        expect(getRowsValue(10, 3, 200, void 0, 'qti-height-lines-15')).toEqual(15);
+    it('calculates based on maxlength with large number', () => {
+        expect(
+            getRowsValue({
+                maxlength: 7210
+            })
+        ).toEqual(101);
     });
 
-    it('length has more priority over lines and pattern in calculations', () => {
-        expect(getRowsValue(300, 1, 200, void 0, void 0)).toEqual(5);
+    it('class has more priority over expectedLength in calculations', () => {
+        expect(
+            getRowsValue({
+                expectedLength: 10,
+                classes: 'qti-height-lines-15'
+            })
+        ).toEqual(15);
+    });
+
+    it('expectedLength has more priority over expectedLines in calculations', () => {
+        expect(
+            getRowsValue({
+                expectedLength: 73,
+                expectedLines: 5
+            })
+        ).toEqual(2);
+    });
+
+    it('expectedLines has more priority over maxWordsLimit constraint in calculations', () => {
+        expect(
+            getRowsValue({
+                expectedLines: 5,
+                maxWordsLimit: 60
+            })
+        ).toEqual(5);
+    });
+
+    it('maxWordsLimit constraint has more priority over maxlength constraint in calculations', () => {
+        expect(
+            getRowsValue({
+                maxlength: 200,
+                maxWordsLimit: 60
+            })
+        ).toEqual(8);
     });
 });
 

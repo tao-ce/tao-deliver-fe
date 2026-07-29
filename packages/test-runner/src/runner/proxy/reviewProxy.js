@@ -1,11 +1,11 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2020-24 (original work) Open Assessment Technologies SA ;
+// Copyright (C) 2020-2025 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 // https://github.com/oat-sa/taohub-articles/blob/master/technical-documentation/tao-test/test-runner.md#proxy
 
-import { doRequest } from './shared.js';
+import { doRequest, getData } from './shared.js';
 import request from 'core/fetchRequest';
 
 const proxy = {
@@ -112,6 +112,18 @@ const proxy = {
         };
 
         /**
+         * Generic data fetcher using proxy & application config
+         * Public method and is intended to be called from outside, even though it doesn't belong to proxy interface
+         * @public
+         * @param {string} url
+         * @param {object} [requestOptions]
+         * @param {object} [handlingOptions]
+         * @returns {Promise<*>}
+         */
+        this.getData = (url, requestOptions, handlingOptions) =>
+            getData(this.config, url, requestOptions, handlingOptions);
+
+        /**
          * For Scorer using manual-scoring, save inline comment
          * Public method and is intended to be called from outside, even though it doesn't belong to proxy interface
          * @public
@@ -131,6 +143,37 @@ const proxy = {
                 })
             });
             return request(this.config.saveScoringInlineCommentsUrl, requestOptions);
+        };
+
+        /**
+         * For Scorer using manual-scoring, save annotation comments (marking symbols)
+         * @public
+         * @param {String} itemIdentifier
+         * @param {Object} annotations
+         * @returns {Promise<Object>}
+         */
+        this.saveScoringAnnotationComment = async (itemIdentifier, annotations) => {
+            if (!this.config.saveScoringAnnotationCommentUrl) {
+                throw new Error('saveScoringAnnotationComment url is not configured');
+            }
+            let responseIdentifier = null;
+            if (annotations?.responseIdentifier) {
+                responseIdentifier = annotations.responseIdentifier;
+            } else if (annotations?.responses && typeof annotations.responses === 'object') {
+                const keys = Object.keys(annotations.responses);
+                if (keys.length === 1) {
+                    [responseIdentifier] = keys;
+                }
+            }
+            const requestOptions = Object.assign(this.getBaseRequestOptions(), {
+                method: 'PUT',
+                body: JSON.stringify({
+                    itemId: itemIdentifier,
+                    annotations,
+                    ...(responseIdentifier ? { responseIdentifier } : {})
+                })
+            });
+            return request(this.config.saveScoringAnnotationCommentUrl, requestOptions);
         };
     },
 
@@ -196,6 +239,7 @@ const proxy = {
                             if (item[responseName] && typeof item[responseName] === 'string') {
                                 try {
                                     item[responseName] = JSON.parse(item[responseName]);
+                                    // eslint-disable-next-line no-unused-vars
                                 } catch (e) {
                                     delete item[responseName];
                                 }

@@ -6,10 +6,17 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 <script>
     // Licensed under Gnu Public Licence version 2
-    // Copyright (c) 2020-2024 (original work) Open Assessment Technologies SA ;
-    import { createEventDispatcher, onMount } from 'svelte';
+    // Copyright (c) 2020-2025 (original work) Open Assessment Technologies SA ;
+    import { createEventDispatcher, onMount, onDestroy } from 'svelte';
     import { __, visibilityObserver, generateElementId, resizeObserver } from '@oat-sa-private/ui-core';
-    import { HeaderBar, Panel, TabGroup, Notification } from '@oat-sa-private/ui-components';
+    import {
+        HeaderBar,
+        Panel,
+        TabGroup,
+        Notification,
+        NotificationContainer,
+        clearNotifications
+    } from '@oat-sa-private/ui-components';
     import Transition from './layout/Transition.svelte';
     import { testSessionStatus } from './session/sessionStates.js';
     import { reviewResponseDisplays } from './session/reviewResponseDisplays.js';
@@ -64,7 +71,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     const showMenuButton = theme && !theme.hideMenuButton;
     // startActions configures the buttons at the start of the HeaderBar
-    /* eslint-disable indent */
     $: startActions = showMenuButton
         ? [
               {
@@ -87,7 +93,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
               //   }
           ]
         : [];
-    /* eslint-enable indent */
 
     /**
      * Header Bar items click handler
@@ -111,7 +116,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         return plugins?.areaHider?.hiddenAreas?.includes(areaId);
     }
 
-    // floating tools
+    // eslint-disable-next-line no-unused-vars
     let floatingToolsHeight = 0; // measured from element
 
     let windowWidth;
@@ -201,13 +206,17 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
          */
         setTimeout(() => dispatch('mount', { areas }), 0);
     });
+
+    onDestroy(() => {
+        clearNotifications();
+    });
 </script>
 
 <style>
     .test-runner {
         /* local vars */
-        --testrunner-header-height: 8rem;
-        --testrunner-footer-height: 10rem;
+        --testrunner-header-height: 7rem;
+        --testrunner-footer-height: 9rem;
         --testrunner-item-top-padding: 0rem;
         --testrunner-item-bottom-padding: 0rem;
         --testrunner-tabs-bottom-margin: 2rem;
@@ -246,9 +255,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 
     .bottom-bar {
-        z-index: var(--layer-4);
-    }
-    .test-runner :global(.overlay) {
         z-index: var(--layer-4);
     }
     .top-bar.overlay {
@@ -357,6 +363,23 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         }
     }
 
+    /* override NotificationContainer's default positioning */
+    .notification-container-wrapper {
+        pointer-events: none; /* it may cover interactive elements */
+        position: absolute;
+        width: 100%;
+        inset-inline-end: 0;
+        top: calc(var(--testrunner-header-height) + var(--testrunner-item-top-padding));
+        margin: 0 3rem; /* should not cover item scrollbar */
+        z-index: calc(var(--layer-5) + 1);
+        @media screen and (--mq-maxwidth-small) {
+            margin: 0;
+        }
+        & :global(.notification-wrapper) {
+            pointer-events: initial;
+        }
+    }
+
     :global(.modal-wrapper.modal-wrapper) {
         z-index: var(--layer-5);
     }
@@ -378,7 +401,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         --window-height:{safeWindowHeight ? `${safeWindowHeight}px` : '100vh'};
     "
     bind:this={areas.testRunner}>
-    <div bind:this={areas.jumpMenu} />
+    <div bind:this={areas.jumpMenu}></div>
     <div
         id="test-top-bar"
         class="top-bar"
@@ -389,7 +412,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             <HeaderBar on:action={handleHeaderBarAction} {startActions} maxEndActions={10}>
                 <div class="header-bar-content">
                     <div class="header-label">{__('Review')}</div>
-                    <div class="header-title" bind:this={areas.header} />
+                    <div class="header-title" bind:this={areas.header}></div>
                 </div>
                 <div
                     class="floating-toolbars-wrapper"
@@ -401,6 +424,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 </div>
             </HeaderBar>
         </div>
+    </div>
+
+    <!-- This should be the only NotificationContainer rendered in the app.
+    Its API methods allow any code to add or remove Notifications here. -->
+    <div class="notification-container-wrapper not-printable">
+        <NotificationContainer />
     </div>
 
     <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
@@ -416,9 +445,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         <div
             class="scroll-first-child"
             use:visibilityObserver={areas.main || void 0}
-            on:isVisible={e => (fullyScrolledUp = e.detail)} />
+            on:isVisible={e => (fullyScrolledUp = e.detail)}></div>
         <!-- svelte-ignore a11y-missing-content -->
-        <h2 id="a11y-main" class="visually-hidden" tabindex="-1" />
+        <h2 id="a11y-main" class="visually-hidden" tabindex="-1"></h2>
         <!-- tabindex because it should be programmatically focusable -->
 
         <div class="qti-item-container">
@@ -454,7 +483,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 class="item-content-container"
                 class:hidden-item-container={$status === testSessionStatus.loading}
                 bind:this={areas.content}
-                aria-hidden={$status === testSessionStatus.loading ? true : void 0} />
+                aria-hidden={$status === testSessionStatus.loading ? true : void 0}></div>
         </div>
 
         <div class="transition-wrapper">
@@ -466,7 +495,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         <div
             class="scroll-last-child"
             use:visibilityObserver={areas.main || void 0}
-            on:isVisible={e => (fullyScrolledDown = e.detail)} />
+            on:isVisible={e => (fullyScrolledDown = e.detail)}></div>
     </main>
 
     <nav
@@ -479,12 +508,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     </nav>
 
     <Overlay open={$status === testSessionStatus.overlay}>
-        <div slot="header" bind:this={areas.overlayHeader} />
-        <div slot="content" bind:this={areas.overlayContent} />
-        <div slot="footer" bind:this={areas.overlayFooter} />
+        <div slot="header" bind:this={areas.overlayHeader}></div>
+        <div slot="content" bind:this={areas.overlayContent}></div>
+        <div slot="footer" bind:this={areas.overlayFooter}></div>
     </Overlay>
 </div>
 
 <Panel bind:open={menuPanelOpen} id={panelId}>
-    <div class="panel-content" bind:this={areas.panel} />
+    <div class="panel-content" bind:this={areas.panel}></div>
 </Panel>

@@ -14,8 +14,15 @@ import OverlayHeaderBar from '../../../layout/overlay/OverlayHeaderBar.svelte';
 import TestOverviewContent from './overview/TestOverviewContent.svelte';
 import TestOverviewBottomBar from './overview/TestOverviewBottomBar.svelte';
 import { __ } from '@oat-sa-private/ui-core';
-import { tick } from 'svelte';
+import { tick, mount, unmount } from 'svelte';
 import { resetLastVisitedStep } from './nonLinearNavigationHelper.js';
+import { isLastItemInCurrentPart } from '../../../util/testMap.js';
+
+const defaultConfig = {
+    nonLinearRestricted: false, // was also provided as options.nonLinearRestricted
+    linearNavDelayBeforeEnabled: null,
+    preventEarlyTestPartSubmission: false
+};
 
 /**
  * the navigator plugin handles :
@@ -29,15 +36,60 @@ export default pluginFactory({
 
     install() {
         const testRunner = this.getTestRunner();
+        const providedConfig = testRunner.getPluginConfig(this.getName()) || {};
+        const pluginConfig = { ...defaultConfig, ...providedConfig };
+        this.setConfig(pluginConfig);
+
         const testConfig = testRunner.getConfig();
         const testStateStore = getTestStateStore(testConfig.serviceCallId);
         const testSessionStatusStore = getTestSessionStatusStore(testConfig.serviceCallId);
 
         /**
-         * Track which reasons the navigation should be disabled for
-         * @type {Set<String>}
+         * Track all navigation disabling reasons.
+         * direction:
+         *   - null  => global disable
+         *   - 'next' => only block forward
+         *   - 'previous' => only block backward
+         *
+         * reason / key are used for concurrency semantics.
+         * @type {Array<{reason: (string|null), key: (string|null), direction: ('next'|'previous'|null)}>}
          */
-        this.navDisablers = new Set();
+        this.navDisablers = [];
+
+        /**
+         * Central function to recalculate navigation props from navDisablers.
+         * - Global disabled if there is at least one entry with direction === null
+         * - Next/previous disabled if there is at least one entry with that direction
+         */
+        this.updateNavigatorState = () => {
+            const hasGlobalDisable = this.navDisablers.some(disabler => disabler.direction === null);
+            const disableNext = this.navDisablers.some(disabler => disabler.direction === 'next');
+            const disablePrevious = this.navDisablers.some(disabler => disabler.direction === 'previous');
+
+            [this.testNavigator, this.overlayContent, this.overlayFooter].forEach(component => {
+                if (!component) {
+                    return;
+                }
+
+                const props = {
+                    disabled: hasGlobalDisable
+                };
+
+                if (component === this.testNavigator) {
+                    props.disableNext = disableNext;
+                    props.disablePrevious = disablePrevious;
+                }
+
+                if (component === this.overlayFooter && !props.disabled) {
+                    // disable submit button according to pluginConfig, but still enable it in certain more important conditions
+                    const allowSubmissionBecauseContext =
+                        this.isLastItemInCurrentPart || this.isAutoOpenOnLastItem || this.isTestPartTimedOut;
+                    props.disabled = pluginConfig.preventEarlyTestPartSubmission && !allowSubmissionBecauseContext;
+                }
+
+                component.$set(props);
+            });
+        };
 
         /**
          * Set the session status to "overlay"
@@ -70,6 +122,7 @@ export default pluginFactory({
             const footerSlot = areaBroker.getOverlayFooterArea();
             areaBroker.clearAreasContent(['overlayHeader', 'overlayContent', 'overlayFooter']);
 
+            const testOptions = testRunner.getOptions();
             const overviewTitle = __('Overview');
             const testPartTitle = getPartTitle(testStateStore.getCurrentTestPart(), testStateStore.getTestMap(), true);
 
@@ -78,22 +131,24 @@ export default pluginFactory({
                 heading += ` - ${testPartTitle}`;
             }
 
-            this.overlayHeader = new OverlayHeaderBar({
+            this.overlayHeader = mount(OverlayHeaderBar, {
                 target: headerSlot,
                 props: {
                     heading
                 }
             });
-            this.overlayContent = new TestOverviewContent({
+            this.overlayContent = mount(TestOverviewContent, {
                 target: contentSlot,
                 props: {
+                    allowBookmarks: !testOptions.hideBookmarks,
                     serviceCallId: testConfig.serviceCallId,
-                    nonLinearRestricted: !!testConfig.options?.nonLinearRestricted
+                    nonLinearRestricted: !!(pluginConfig.nonLinearRestricted || testConfig.options?.nonLinearRestricted)
                 }
             });
-            this.overlayFooter = new TestOverviewBottomBar({
+            this.overlayFooter = mount(TestOverviewBottomBar, {
                 target: footerSlot
             });
+            this.updateNavigatorState();
 
             // listen to Overlay content events
             this.overlayHeader.$on('close', () => {
@@ -136,13 +191,13 @@ export default pluginFactory({
          */
         this.destroyOverview = () => {
             if (this.overlayHeader) {
-                this.overlayHeader.$destroy();
+                unmount(this.overlayHeader);
             }
             if (this.overlayContent) {
-                this.overlayContent.$destroy();
+                unmount(this.overlayContent);
             }
             if (this.overlayFooter) {
-                this.overlayFooter.$destroy();
+                unmount(this.overlayFooter);
             }
             this.overlayHeader = null;
             this.overlayContent = null;
@@ -227,6 +282,9 @@ export default pluginFactory({
         const testSessionStatusStore = getTestSessionStatusStore(testConfig.serviceCallId);
 
         testRunner
+            .on('loaditem', itemIdentifier => {
+                this.isLastItemInCurrentPart = isLastItemInCurrentPart(testRunner.getTestMap(), itemIdentifier);
+            })
             /**
              * To disable the test runner nav elements, you should trigger this event, and provide the reason in the param.
              * (It's allowed not to provide a reason, but don't assume that this disablement will last long.)
@@ -235,13 +293,29 @@ export default pluginFactory({
              * @param {String?} [params.key] - optional, to provide extra uniqueness
              */
             .on('disablenav', params => {
-                if (params?.reason) {
-                    if (params?.key) {
-                        params.reason += `:${params.key}`;
-                    }
-                    this.navDisablers.add(params.reason);
+                const direction = params?.detail?.direction ?? null;
+
+                // - "disablenav()" (no reason, no direction) is a plain global disable
+                // - "disablenav({ reason, key?, detail: { direction? } })" participates
+                //   in the concurrency logic.
+                if (!params || (!params.reason && !params.key && !direction)) {
+                    this.navDisablers.push({
+                        reason: null,
+                        key: null,
+                        direction: null
+                    });
+                } else {
+                    const reason = params.reason || null;
+                    const key = params.key || null;
+
+                    this.navDisablers.push({
+                        reason,
+                        key,
+                        direction
+                    });
                 }
-                this.disable();
+
+                this.updateNavigatorState();
             })
             /**
              * To enable the nav again, you must also provide the same reason, which matches your reason for disabling.
@@ -253,29 +327,79 @@ export default pluginFactory({
              * @param {Boolean?} [params.force]
              */
             .on('enablenav', params => {
+                // Force: clear everything
+                if (params?.force) {
+                    this.navDisablers = [];
+                    this.updateNavigatorState();
+                    return;
+                }
+
+                const direction = params?.detail?.direction ?? null;
+
                 if (params?.reason) {
+                    // reason can be a string or an array of strings
                     const reasons = Array.isArray(params.reason) ? params.reason : [params.reason];
+
                     reasons.forEach(reason => {
-                        if (params?.key) {
-                            reason += `:${params.key}`;
-                            this.navDisablers.delete(reason);
+                        if (params.key) {
+                            const key = params.key;
+                            // Exact match on reason + key; optionally constrained by direction
+                            this.navDisablers = this.navDisablers.filter(disabler => {
+                                const sameReason = disabler.reason === reason;
+                                const sameKey = disabler.key === key;
+                                const sameDirection = direction ? disabler.direction === direction : true;
+
+                                return !(sameReason && sameKey && sameDirection);
+                            });
                         } else {
-                            // since no specific key, delete all reasons matching reason prefix
-                            this.navDisablers.forEach(value => {
-                                if (value.startsWith(reason)) {
-                                    this.navDisablers.delete(value);
-                                }
+                            // No key: remove all entries with this reason; optionally constrained by direction.
+                            this.navDisablers = this.navDisablers.filter(disabler => {
+                                const sameReason = disabler.reason === reason;
+                                const sameDirection = direction ? disabler.direction === direction : true;
+
+                                return !(sameReason && sameDirection);
                             });
                         }
                     });
-                } else if (params?.force) {
-                    this.navDisablers.clear();
+
+                    this.updateNavigatorState();
+                    return;
                 }
-                if (this.navDisablers.size === 0) {
-                    this.enable();
+
+                // Only cancels the anonymous global disables created by `disablenav()`
+                // without touching the reason-based ones.
+                this.navDisablers = this.navDisablers.filter(disabler => {
+                    const isAnonymousGlobal =
+                        disabler.reason === null && disabler.key === null && disabler.direction === null;
+
+                    return !isAnonymousGlobal;
+                });
+
+                this.updateNavigatorState();
+            })
+            .on('timeout', timer => {
+                this.isTestPartTimedOut = ['test', 'testPart'].includes(timer.level);
+                if (this.isTestPartTimedOut) {
+                    this.updateNavigatorState();
                 }
             })
-            .on('unloaditem destroy', () => resetLastVisitedStep());
+            .on('unloaditem destroy', () => {
+                resetLastVisitedStep();
+
+                // Clear per-direction flags when we leave the item,
+                // but keep global reasons (direction === null).
+                this.navDisablers = this.navDisablers.filter(disabler => disabler.direction === null);
+
+                delete this.isLastItemInCurrentPart;
+                delete this.isAutoOpenOnLastItem;
+
+                this.updateNavigatorState();
+            }).on('next', level => {
+                if (['test', 'testPart'].includes(level)) {
+                    delete this.isTestPartTimedOut;
+                    this.updateNavigatorState();
+                }
+            });
 
         /**
          * Actually close overview component.
@@ -311,6 +435,8 @@ export default pluginFactory({
         const testConfig = testRunner.getConfig();
         const testOptions = testRunner.getOptions();
 
+        const pluginConfig = testRunner.getPluginConfig(this.getName()) || {};
+
         /**
          * Bookmark/unbookmark the current item
          * @returns {Promise}
@@ -344,14 +470,18 @@ export default pluginFactory({
             throw new Error('NavigationArea is required for TestNavigator component');
         }
 
-        this.testNavigator = new TestNavigator({
+        this.testNavigator = mount(TestNavigator, {
             target: navigationArea,
             props: {
+                hideBookmarks: !!testOptions.hideBookmarks,
                 serviceCallId: testConfig.serviceCallId,
                 liteMode: !!testOptions.liteMode,
                 disabled: true,
-                nonLinearRestricted: !!testConfig.options?.nonLinearRestricted,
-                linearNavDelayBeforeEnabled: testConfig.options?.plugins?.navigator?.linearNavDelayBeforeEnabled
+                // nonLinearRestricted was now added to this plugin's config, to replace the old one.
+                // testConfig.options.nonLinearRestricted is now deprecated.
+                // TODO: Next, update deployed configs, and remove code when safe (not just the line below)
+                nonLinearRestricted: !!(pluginConfig.nonLinearRestricted || testOptions.nonLinearRestricted),
+                linearNavDelayBeforeEnabled: pluginConfig.linearNavDelayBeforeEnabled
             }
         });
 
@@ -430,19 +560,18 @@ export default pluginFactory({
     },
 
     enable() {
-        [this.testNavigator, this.overlayContent, this.overlayFooter].forEach(component => {
-            if (component) {
-                component.$set({ disabled: false });
-            }
-        });
+        // Clear ALL disablers and recompute
+        this.navDisablers = [];
+        this.updateNavigatorState();
     },
 
     disable() {
-        [this.testNavigator, this.overlayContent, this.overlayFooter].forEach(component => {
-            if (component) {
-                component.$set({ disabled: true });
-            }
+        this.navDisablers.push({
+            reason: null,
+            key: null,
+            direction: null
         });
+        this.updateNavigatorState();
     },
 
     destroy() {
@@ -450,9 +579,10 @@ export default pluginFactory({
             this.unsubscribeFromStatusChanges();
         }
         if (this.testNavigator) {
-            this.testNavigator.$destroy();
+            unmount(this.testNavigator);
         }
         this.destroyOverview();
-        this.navDisablers.clear();
+
+        this.navDisablers = [];
     }
 });

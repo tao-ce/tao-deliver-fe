@@ -6,6 +6,7 @@
 import { coverageConfigDefaults, defineConfig } from 'vitest/config';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import svelteConfig from './svelte.config.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,17 +17,6 @@ export default defineConfig(async () => {
     // Dynamic import for ESM-only package
     const { svelte } = await import('@sveltejs/vite-plugin-svelte');
     const { svelteTesting } = await import('@testing-library/svelte/vite');
-    const { default: sveltePreprocess } = await import('svelte-preprocess');
-
-    // Load your existing svelte config
-    const svelteConfig = {
-        compilerOptions: {
-            dev: process.env.NODE_ENV !== 'production'
-        },
-        preprocess: sveltePreprocess({
-            postcss: true
-        })
-    };
 
     return {
         plugins: [
@@ -42,6 +32,7 @@ export default defineConfig(async () => {
                 },
                 onwarn: (warning, handler) => {
                     if (warning.code === 'vite-plugin-svelte-preprocess-many-dependencies') return;
+                    if (warning.name === 'CompileWarning') return;
                     // let vite handle all other warnings normally
                     handler(warning);
                 }
@@ -89,7 +80,7 @@ export default defineConfig(async () => {
         resolve: {
             // prettier-ignore
             alias: [
-                { find: /^@\/(.*)$/, replacement: path.resolve(__dirname, './src/$1') },
+                { find: /^@\/(.*)$/, replacement: path.resolve(__dirname, './$1') },
                 { find: /^lodash\/(.*)$/, replacement: path.resolve(__dirname, './node_modules/lodash/$1.js') },
                 { find: 'lodash', replacement: path.resolve(__dirname, './node_modules/lodash/index.js') },
                 { find: /^@oat-sa-private\/ui-core\/(.*)$/, replacement: path.resolve(__dirname, './node_modules/@oat-sa-private/ui-core/$1') },

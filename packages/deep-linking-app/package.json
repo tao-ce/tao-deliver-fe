@@ -1,7 +1,7 @@
 {
   "name": "@oat-sa-private/tao-deep-linking-app",
   "private": true,
-  "version": "0.15.0",
+  "version": "0.21.0",
   "displayName": "TAO Deep Linking",
   "description": "TAO Deep Linking frontend application",
   "homepage": "https://github.com/oat-sa/tao-deliver-fe#readme",
@@ -26,7 +26,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@oat-sa-private/tao-deliver-apps-common": "^1.19.0",
+    "@oat-sa-private/tao-deliver-apps-common": "^1.26.0",
     "@oat-sa/tao-core-sdk": "^3.6.0",
     "lodash": "^4.17.21"
   },

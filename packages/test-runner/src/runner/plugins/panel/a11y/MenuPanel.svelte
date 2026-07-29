@@ -34,7 +34,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @fires 'change' - corresponding to child controls
      * @fires 'toggle' - corresponding to details groups
      */
-    export let open;
+    export let open = false;
     export let areaBroker;
     export let pluginConfig = {};
     export let initialSettingsState = {};
@@ -86,29 +86,29 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             padding: 0 0 0.5rem;
         }
 
-        & :global-nested(h3) {
+        & :global(h3) {
             display: inline-block;
             margin: 0;
 
-            &.flex {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-            }
-
             & > :global(.icon),
-            & > span > :global(.icon) {
+            & > :global(span > .icon) {
                 margin-inline-end: 0.75rem;
             }
         }
 
-        & :global-nested(ul) {
+        & :global(h3.flex) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        & :global(ul) {
             list-style: none;
             padding: 0;
             margin-block: 0;
             margin-inline: 0.5rem 0;
 
-            & li {
+            & :global(li) {
                 border-top: var(--border-thin) solid var(--color-gs-light-alternative-bg);
                 padding-block: 0.5rem;
                 &:first-child {

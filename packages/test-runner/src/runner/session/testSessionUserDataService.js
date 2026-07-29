@@ -9,6 +9,10 @@ import { writable, get } from 'svelte/store';
  * The "test session user data service" provides stores for user data linked to the test session.
  * It also allows you to synchronize the stored data with a long term storage (server, localstorage, indexeddb, etc.)
  * @typedef {Object} TestSessionUserDataService
+ * @property {Function} getSettingsStore
+ * @property {Function} getToolsStore
+ * @property {Function} startSyncWithStorage
+ * @property {Function} stopSyncWithStorage
  */
 
 //keep the stores for multiple test sessions

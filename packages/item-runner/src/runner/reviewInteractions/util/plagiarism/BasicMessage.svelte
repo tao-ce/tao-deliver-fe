@@ -6,7 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 <script>
     // Licensed under Gnu Public Licence version 2
-    // Copyright (c) 2022 (original work) Open Assessment Technologies SA ;
+    // Copyright (c) 2022-2025 (original work) Open Assessment Technologies SA ;
     import { __ } from '@oat-sa-private/ui-core';
     import { Icon } from '@oat-sa-private/ui-elements';
 
@@ -36,13 +36,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     /**
      * Message display component
-     * @property {String} status - status of the plagiarism check. Must be a key of 'statuses' object.
-     * @property {String} href - attribute for <a> tag
+     * @property {import('./typings').PlagiarismCheckReport} report
+     * @fires 'click' - for intercepting anchor click to fetch data
      */
-    export let status;
-    export let href;
+    export let report;
 
-    $: uiValues = status && statuses[status];
+    $: uiValues = report && report.status && statuses[report.status];
 </script>
 
 <style>
@@ -74,8 +73,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     <p class="plagiarism-message {uiValues.className}">
         <Icon name={uiValues.iconName} />
         {uiValues.text}
-        {#if uiValues.showLink && href}
-            <a {href} target="_blank">{__('view report')}</a>
+        {#if uiValues.showLink}
+            <a href={report.href || '#'} target="_blank" on:click>{__('view report')}</a>
         {/if}
     </p>
 {/if}

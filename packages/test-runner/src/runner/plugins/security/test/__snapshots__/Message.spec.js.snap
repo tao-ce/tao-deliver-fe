@@ -14,8 +14,11 @@ exports[`Message component > renders modal window with props 1`] = `
         id="tao-description-123"
       >
         Message
+        
       </p>
+      
        
+      
        
       <div
         class="actions"
@@ -25,12 +28,18 @@ exports[`Message component > renders modal window with props 1`] = `
           data-test-id="ok"
           type="button"
         >
+          
            
+          
            
           ok
+          
         </button>
+        
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;

@@ -136,7 +136,7 @@ export default function itemDataParser(compiledItemData, itemRunnerConfig, getIn
     /**
      * Get the component prototype for an element tag.
      * @param {String} componentName - the component name (without the suffix)
-     * @returns {Function*} the component prototype
+     * @returns {Function} the component prototype
      */
     function getStaticComponent(componentName = '') {
         if (excludeComponents.includes(componentName)) {
@@ -275,7 +275,6 @@ export default function itemDataParser(compiledItemData, itemRunnerConfig, getIn
         if (typeof element.choices === 'object') {
             const choiceSets = [].concat(element.choices);
             properties.choices = choiceSets.map(choiceSet =>
-                //eslint-disable-next-line implicit-arrow-linebreak
                 Object.values(choiceSet).map(choice => {
                     const choiceProperties = parseChoiceAttributes(choice);
 

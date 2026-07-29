@@ -7,6 +7,7 @@ import { tick } from 'svelte';
 import { render } from '@testing-library/svelte';
 import InlineChoiceInteraction from '../InlineChoiceInteraction.svelte';
 import itemsStateStore, { getInteractionStateStore } from '../../../itemsStateStore.js';
+import { decommentify } from '@/test-utils/helpers.js';
 
 const itemIdentifier = 'iabcd';
 const responseIdentifier = 'RESPONSE_123';
@@ -57,11 +58,11 @@ describe('InlineChoiceInteraction', () => {
         interactionStateStore.setResponse({ base: { identifier: 'c2' } });
 
         await tick();
-        expect(container.querySelector('.select .option.selected').innerHTML).toBe(choices.c2);
+        expect(decommentify(container.querySelector('.select .option.selected').innerHTML)).toBe(choices.c2);
 
         interactionStateStore.setResponse({ base: null });
 
         await tick();
-        expect(container.querySelector('.select .option.selected').innerHTML).toBe(choices.c2);
+        expect(decommentify(container.querySelector('.select .option.selected').innerHTML)).toBe(choices.c2);
     });
 });

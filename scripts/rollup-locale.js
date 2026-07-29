@@ -29,7 +29,6 @@ glob(input, (globError, files) => {
         const localeMatch = file.match(/locale\/(.+)\/messages/);
         const locale = localeMatch && localeMatch[1];
         if (!locale) {
-            //eslint-disable-next-line no-console
             console.warn(`Cannot parse locale for ${file}`);
             return;
         }
@@ -78,7 +77,7 @@ glob(input, (globError, files) => {
         Object.keys(translationSubsets).forEach(packageName => {
             const localeDir = `${packagesDir}/${packageName}/${translationSubsets[packageName].dir}/${locale}`;
 
-            fs.mkdir(localeDir, { recursive: true }, (mkdirError) => {
+            fs.mkdir(localeDir, { recursive: true }, mkdirError => {
                 if (mkdirError) {
                     throw mkdirError;
                 }

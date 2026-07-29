@@ -25,7 +25,7 @@ describe('Media element properties mapper', () => {
         );
     });
 
-    it('it keeps properties if attributes is not defined', () => {
+    it('keeps properties if attributes is not defined', () => {
         const properties = { id: 12 };
         expect(mediaMapper.mapProperties(properties, { object: {} })).toMatchObject(properties);
     });

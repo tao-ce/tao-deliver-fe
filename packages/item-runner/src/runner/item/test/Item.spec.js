@@ -111,61 +111,67 @@ describe('Item', () => {
     });
 
     // skipped: snapshots refuse to pass - DOM not reacting to status store changes...
-    it.skip('renders style tags when the loading completes - including suspend/unsuspend', () =>
-        new Promise(done => {
-            const itemIdentifier = 'item-1';
+    it.todo(
+        'renders style tags when the loading completes - including suspend/unsuspend',
+        () =>
+            new Promise(done => {
+                const itemIdentifier = 'item-1';
 
-            const itemSettingsStore = getItemSettingsStore(itemIdentifier);
-            itemSettingsStore.set({
-                a11yMenuPanel: {
-                    convertPxToRem: {
-                        enabled: true,
-                        cssProperties: ['my-css-prop', 'abc']
-                    },
-                    abc: 'def'
-                }
-            });
+                const itemSettingsStore = getItemSettingsStore(itemIdentifier);
+                itemSettingsStore.set({
+                    a11yMenuPanel: {
+                        convertPxToRem: {
+                            enabled: true,
+                            cssProperties: ['my-css-prop', 'abc']
+                        },
+                        abc: 'def'
+                    }
+                });
 
-            const { container } = render(Item, {
-                props: {
-                    itemIdentifier,
-                    blockTree: [{ type: 'text', content: 'A short item' }],
-                    stylesheets: {
-                        1: { attributes: { href: 'style/simple.css', media: 'all', type: 'text/css' }, serial: '1' },
-                        2: {
-                            attributes: {
-                                href: 'style/passageStyles.css',
-                                media: 'all',
-                                type: 'text/css',
-                                scope: '.scope-me'
+                const { container } = render(Item, {
+                    props: {
+                        itemIdentifier,
+                        blockTree: [{ type: 'text', content: 'A short item' }],
+                        stylesheets: {
+                            1: {
+                                attributes: { href: 'style/simple.css', media: 'all', type: 'text/css' },
+                                serial: '1'
                             },
-                            serial: '2'
-                        }
-                    },
-                    assetManager: mockAssetManager
-                }
-            });
+                            2: {
+                                attributes: {
+                                    href: 'style/passageStyles.css',
+                                    media: 'all',
+                                    type: 'text/css',
+                                    scope: '.scope-me'
+                                },
+                                serial: '2'
+                            }
+                        },
+                        assetManager: mockAssetManager
+                    }
+                });
 
-            expect(container).toMatchSnapshot();
-            expect(container.querySelector('.styles-container-mock')).toBeInTheDocument();
+                expect(container).toMatchSnapshot();
+                expect(container.querySelector('.styles-container-mock')).toBeInTheDocument();
 
-            getItemSessionStatusStore(itemIdentifier).set('suspended');
+                getItemSessionStatusStore(itemIdentifier).set('suspended');
 
-            return vi.waitFor(async () => {
-                expect(container.querySelector('.qti-item')).not.toBeInTheDocument();
-                expect(container.querySelector('.styles-container-mock')).not.toBeInTheDocument();
+                return vi.waitFor(async () => {
+                    expect(container.querySelector('.qti-item')).not.toBeInTheDocument();
+                    expect(container.querySelector('.styles-container-mock')).not.toBeInTheDocument();
 
-                getItemSessionStatusStore(itemIdentifier).set('interacting');
+                    getItemSessionStatusStore(itemIdentifier).set('interacting');
 
-                return vi.waitFor(() => {
-                    expect(container.querySelector('.qti-item')).toBeInTheDocument();
-                    expect(container.querySelector('.styles-container-mock')).toBeInTheDocument();
-                    itemSettingsStore.set({});
-                    releaseItemSettingsStore(itemIdentifier);
-                    done();
+                    return vi.waitFor(() => {
+                        expect(container.querySelector('.qti-item')).toBeInTheDocument();
+                        expect(container.querySelector('.styles-container-mock')).toBeInTheDocument();
+                        itemSettingsStore.set({});
+                        releaseItemSettingsStore(itemIdentifier);
+                        done();
+                    }, 2500);
                 }, 2500);
-            }, 2500);
-        }));
+            })
+    );
 
     it('renders a style tag if options.itemRunnerConfig.itemStyles is set', () => {
         const itemIdentifier = 'item-2';
@@ -238,6 +244,7 @@ describe('Item', () => {
                     'getTestContext',
                     'getExtraData',
                     'getGetAttachmentsUploadData',
+                    'getGetData',
                     'on',
                     'off',
                     'trigger',
@@ -582,13 +589,43 @@ describe('Item', () => {
                 });
             }));
 
-        it('passes config options correctly in context', () => {
+        it('gets getData function from itemContext', () =>
+            new Promise(done => {
+                const itemIdentifier = 'item-3';
+                const getData = () => {};
+
+                const itemContextHandler = itemContext => {
+                    expect(itemContext.getGetData()).toEqual(getData);
+                    done();
+                };
+
+                render(Item, {
+                    props: {
+                        itemIdentifier,
+                        blockTree: [
+                            {
+                                type: 'element',
+                                component: ContextGetter,
+                                props: {
+                                    itemIdentifier,
+                                    itemContextHandler
+                                }
+                            }
+                        ],
+                        options: {
+                            getData
+                        }
+                    }
+                });
+            }));
+
+        it('passes config options correctly in context: default values', () => {
             const itemIdentifier = 'item-1';
             const itemContextHandler = vi.fn();
             render(Item, {
                 props: {
                     itemIdentifier,
-                    options: { itemRunnerConfig: { options: { stylePromptAsHeader: true } } },
+                    options: { itemRunnerConfig: { options: {} } },
                     blockTree: [
                         {
                             type: blockTypes.element,
@@ -600,8 +637,36 @@ describe('Item', () => {
             });
 
             expect(itemContextHandler).toHaveBeenCalledWith({
-                options: { hideTooltips: true, stylePromptAsHeader: true },
+                options: { hideTooltips: true, stylePromptAsHeader: void 0, reRankHeadings: true },
                 elements: { ExtendedTextInteraction: void 0 }
+            });
+        });
+
+        it('passes config options correctly in context: non-default values', () => {
+            const itemIdentifier = 'item-1';
+            const itemContextHandler = vi.fn();
+            render(Item, {
+                props: {
+                    itemIdentifier,
+                    options: {
+                        itemRunnerConfig: {
+                            options: { hideTooltips: false, stylePromptAsHeader: true, reRankHeadings: false },
+                            elements: { ExtendedTextInteraction: { foo: 'bar' } }
+                        }
+                    },
+                    blockTree: [
+                        {
+                            type: blockTypes.element,
+                            component: ContextGetter,
+                            props: { itemContextHandler, itemIdentifier: 'itemRunnerConfig' }
+                        }
+                    ]
+                }
+            });
+
+            expect(itemContextHandler).toHaveBeenCalledWith({
+                options: { hideTooltips: false, stylePromptAsHeader: true, reRankHeadings: false },
+                elements: { ExtendedTextInteraction: { foo: 'bar' } }
             });
         });
 
@@ -1068,7 +1133,7 @@ describe('Item', () => {
 
                     const itemIdentifier = 'item-5';
 
-                    let component;
+                    let unmount;
 
                     const itemContextHandler = itemContext => {
                         itemContext.showItemNotification({
@@ -1084,7 +1149,7 @@ describe('Item', () => {
                             .then(() => {
                                 expect(document.querySelectorAll('.notification-wrapper').length).toBe(2);
 
-                                component.$destroy();
+                                unmount();
                             })
                             .then(() => {
                                 render(Item, {
@@ -1104,7 +1169,7 @@ describe('Item', () => {
                     };
 
                     // First item
-                    ({ component } = render(Item, {
+                    ({ unmount } = render(Item, {
                         props: {
                             itemIdentifier,
                             options: {

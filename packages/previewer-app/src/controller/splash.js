@@ -5,6 +5,7 @@
 
 import pageController from './page.js';
 import Splash from '../component/Splash.svelte';
+import { mount, unmount } from 'svelte';
 
 export default () =>
     pageController({
@@ -16,14 +17,14 @@ export default () =>
         start() {
             const container = this.container.querySelector('#page-main');
 
-            this.theEndComponent = new Splash({
+            this.theEndComponent = mount(Splash, {
                 target: container
             });
         },
 
         stop() {
             if (this.theEndComponent) {
-                this.theEndComponent.$destroy();
+                unmount(this.theEndComponent);
             }
         }
     });

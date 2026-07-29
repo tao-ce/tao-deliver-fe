@@ -72,7 +72,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         startY = drawingGeometry.drawAreaStartY;
         x = startX;
         y = startY;
+        // eslint-disable-next-line no-unused-vars
         initialPointerX = drawingGeometry.initialPointerX;
+        // eslint-disable-next-line no-unused-vars
         initialPointerY = drawingGeometry.initialPointerY;
         width = minWidth;
         height = minHeight;
@@ -312,13 +314,14 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     y={(selected ? 0 : y) - hitboxOffset}
     width={selected ? '100%' : width + hitboxOffset}
     height={selected ? '100%' : height + hitboxOffset}>
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
     <div
         class="editable-wrapper"
         style={`margin-left: ${selected ? x : 0}px; margin-top: ${selected ? y : 0}px; --rem: ${defaultPxInRem}px;`}
         bind:this={wrapperElement}
         on:click={handleClick}
         on:mousedown>
+        <!-- svelte-ignore a11y-no-static-element-interactions -->
         <span
             xmlns="http://www.w3.org/1999/xhtml"
             class:editable
@@ -331,6 +334,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             on:drop|preventDefault
             on:dragend|preventDefault
             tabindex="-1">{content}</span>
-        <div class="resize-anchor" />
+        <div class="resize-anchor"></div>
     </div>
 </foreignObject>

@@ -1,9 +1,9 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2021 (original work) Open Assessment Technologies SA ;
+// Copyright (C) 2021-2026 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
-import MockRichTextEditor from './MockRichTextEditor.svelte';
+import MockRichTextEditor, { triggerChange } from './MockRichTextEditor.svelte';
 
 var spyCreateUploadAdapterFactory;
 
@@ -25,9 +25,13 @@ vi.mock('../uploadAdapter.js', async importOriginal => {
 import { render } from '@testing-library/svelte';
 import ExtendedTextInteraction from '../ExtendedTextInteraction.svelte';
 import ContextWrapper from '../../../static/test/ContextWrapper.svelte';
+import { getItemPendingOperationsStore } from '../../../itemsPendingOperationsStore.js';
+import itemsStateStore, { getInteractionStateStore } from '../../../itemsStateStore.js';
 
 const itemIdentifier = 'iabcd';
 const responseIdentifier = 'RESPONSE_123';
+const interactionStateStore = getInteractionStateStore(itemIdentifier, responseIdentifier);
+const pendingOperationsStore = getItemPendingOperationsStore(itemIdentifier);
 
 const registerLoadingElement = vi.fn();
 const getInstructionsLang = () => 'nb-NO';
@@ -80,8 +84,13 @@ describe('ExtendedTextInteraction', () => {
         providerId: 'native',
         enabled: false
     };
+    const keyboardsDefault = 'simple roman';
+    const removePluginsDefault = [...mathboxPlugins, ...imagePlugins, ...wproofreaderPlugins];
+    const toolbarRemoveItemsDefault = [...maxboxToolbar, ...imageToolbar, ...wproofreaderToolbar];
 
     afterEach(() => {
+        itemsStateStore.clear();
+        pendingOperationsStore.clear();
         registerLoadingElement.mockClear();
         spyCreateUploadAdapterFactory.mockClear();
         vi.resetModules();
@@ -92,9 +101,10 @@ describe('ExtendedTextInteraction', () => {
             { interaction: 'fr-FR', item: void 0, user: void 0, instructions: void 0 },
             { 'data-math-entry': 'true' },
             spellCheckConfigWP,
-            'simple roman',
+            keyboardsDefault,
             [...imagePlugins],
             [...imageToolbar],
+            true,
             { ui: 'en', content: 'fr' },
             true
         ],
@@ -105,6 +115,7 @@ describe('ExtendedTextInteraction', () => {
             'kb1 kb2',
             [...imagePlugins, ...wproofreaderPlugins],
             [...imageToolbar, ...wproofreaderToolbar],
+            true,
             { ui: 'ar', content: 'ar' },
             true
         ],
@@ -112,9 +123,10 @@ describe('ExtendedTextInteraction', () => {
             { interaction: void 0, item: 'ar-arb', user: 'hu', instructions: 'hu' },
             { 'data-math-entry': 'false' },
             spellCheckConfigNativeOff,
-            'simple roman',
-            [...mathboxPlugins, ...imagePlugins, ...wproofreaderPlugins],
-            [...maxboxToolbar, ...imageToolbar, ...wproofreaderToolbar],
+            keyboardsDefault,
+            removePluginsDefault,
+            toolbarRemoveItemsDefault,
+            true,
             { ui: 'hu', content: 'ar' },
             false
         ],
@@ -122,9 +134,10 @@ describe('ExtendedTextInteraction', () => {
             { interaction: void 0, item: 'hu', user: 'ar-arb', instructions: 'ar-arb' },
             { 'data-image-upload': 'true' },
             spellCheckConfigDefault,
-            'simple roman',
+            keyboardsDefault,
             [...mathboxPlugins, ...wproofreaderPlugins],
             [...maxboxToolbar, ...wproofreaderToolbar],
+            true,
             { ui: 'ar', content: 'hu' },
             true
         ],
@@ -132,9 +145,10 @@ describe('ExtendedTextInteraction', () => {
             { interaction: 'fr-FR', item: 'hu', user: 'hu', instructions: void 0 },
             { 'data-image-upload': 'false' },
             spellCheckConfigDefault,
-            'simple roman',
-            [...mathboxPlugins, ...imagePlugins, ...wproofreaderPlugins],
-            [...maxboxToolbar, ...imageToolbar, ...wproofreaderToolbar],
+            keyboardsDefault,
+            removePluginsDefault,
+            toolbarRemoveItemsDefault,
+            true,
             { ui: 'hu', content: 'fr' },
             true
         ],
@@ -142,9 +156,10 @@ describe('ExtendedTextInteraction', () => {
             { interaction: void 0, item: void 0, user: 'hu', instructions: void 0 },
             { 'data-math-entry': 'true', 'data-image-upload': 'true', 'data-spellcheck': 'true' },
             spellCheckConfigWP,
-            'simple roman',
+            keyboardsDefault,
             [],
             [],
+            true,
             { ui: 'hu', content: 'hu' },
             true
         ],
@@ -154,9 +169,33 @@ describe('ExtendedTextInteraction', () => {
             spellCheckConfigDefault,
             'simple roman',
             [...mathboxPlugins, ...imagePlugins, ...specialCharsDefaultPlugins, ...wproofreaderPlugins],
-            [...maxboxToolbar, ...imageToolbar, ...wproofreaderToolbar],
+            toolbarRemoveItemsDefault,
+            true,
             { ui: 'en', content: 'en' },
             true
+        ],
+        [
+            { interaction: void 0, item: void 0, user: void 0, instructions: void 0 },
+            { 'data-toolbar-should-not-group-when-full': 'false' },
+            spellCheckConfigDefault,
+            'simple roman',
+            removePluginsDefault,
+            toolbarRemoveItemsDefault,
+            false,
+            { ui: 'en', content: 'en' },
+            true
+        ],
+        [
+            { interaction: void 0, item: void 0, user: void 0, instructions: void 0 },
+            { 'data-editor-type': 'document' },
+            spellCheckConfigDefault,
+            'simple roman',
+            removePluginsDefault,
+            toolbarRemoveItemsDefault,
+            true,
+            { ui: 'en', content: 'en' },
+            true,
+            'document'
         ]
     ])(
         'configures XHTML editorConfig according to attributes: case %#',
@@ -167,8 +206,10 @@ describe('ExtendedTextInteraction', () => {
             expectedKeyboards,
             expectedRemovePlugins,
             expectedToolbarRemoveItems,
+            expectedToolbarShouldNotGroupWhenFull,
             expectedLangs,
-            expectedSpellCheck
+            expectedSpellCheck,
+            expectedEditorType
         ) => {
             const { container } = render(ContextWrapper, {
                 props: {
@@ -197,7 +238,11 @@ describe('ExtendedTextInteraction', () => {
             expect(rteProps.editorConfig.mathBox.virtualKeyboards).toBe(expectedKeyboards);
             expect(rteProps.editorConfig.removePlugins).toStrictEqual(expectedRemovePlugins);
             expect(rteProps.editorConfig.toolbar.removeItems).toStrictEqual(expectedToolbarRemoveItems);
+            expect(rteProps.editorConfig.toolbar.shouldNotGroupWhenFull).toStrictEqual(
+                expectedToolbarShouldNotGroupWhenFull
+            );
             expect(rteProps.spellcheck).toBe(expectedSpellCheck);
+            expect(rteProps.editorType).toBe(expectedEditorType);
         }
     );
 
@@ -239,6 +284,121 @@ describe('ExtendedTextInteraction', () => {
             } else {
                 expect(callArgs.getAttachmentsUploadData).toEqual(getAttachmentsUploadData); //from itemContext
             }
+        }
+    );
+
+    it('registers a pendingOperation when upload starts, and removes it after upload has completed and response is stored', () => {
+        const uploadKey = 'upload-foo';
+
+        expect(pendingOperationsStore.isEmpty()).toBe(true);
+        render(ContextWrapper, {
+            props: {
+                testContextKey: itemIdentifier,
+                testContext,
+                testComponent: ExtendedTextInteraction,
+                testComponentProps: {
+                    itemIdentifier,
+                    responseIdentifier,
+                    format: 'xhtml',
+                    dataAttrs: { 'data-image-upload': 'true' },
+                    uploadServiceType: 'sandbox'
+                }
+            }
+        });
+        expect(spyCreateUploadAdapterFactory).toHaveBeenCalled();
+
+        const callArgs = spyCreateUploadAdapterFactory.mock.calls[0][0];
+        expect(typeof callArgs.getAttachmentsUploadData).toBe('function');
+        expect(typeof callArgs.onUploadStarted).toBe('function');
+        expect(typeof callArgs.onUploadFinished).toBe('function');
+
+        triggerChange({ value: '<p>text</p>' });
+        expect(pendingOperationsStore.isEmpty()).toBe(true);
+
+        callArgs.onUploadStarted(uploadKey);
+        triggerChange({ value: '<p>text</p><img data-ck-upload-id="temp-123">' });
+        expect(pendingOperationsStore.isEmpty()).toBe(false);
+
+        callArgs.onUploadFinished(uploadKey, true);
+        expect(pendingOperationsStore.isEmpty()).toBe(false);
+        triggerChange({ value: '<p>text</p><img data-img-id="final-123">' });
+
+        expect(interactionStateStore.getResponse()).toMatchObject({
+            base: { string: '<p>text</p><img data-img-id="final-123">' }
+        });
+        expect(interactionStateStore.getValidity()).toBe(true);
+
+        expect(pendingOperationsStore.isEmpty()).toBe(true);
+    });
+
+    test.each([
+        ['default', {}, void 0, void 0],
+        ['configured by tenant', { 'data-editor-type': 'document' }, void 0, 'document'],
+        ['tenant overridden by claim', { 'data-editor-type': 'document' }, 'classic', 'classic']
+    ])(
+        'configures editorType according to property overrides and claims: %s',
+        (title, tenantDataAttrs, contextEditorType, expectedDataEditorType) => {
+            const { container } = render(ContextWrapper, {
+                props: {
+                    testContextKey: itemIdentifier,
+                    testContext,
+                    testContextKey2: 'itemRunnerConfig',
+                    testContext2: {
+                        elements: {
+                            ExtendedTextInteraction: {
+                                editorType: contextEditorType
+                            }
+                        }
+                    },
+                    testComponent: ExtendedTextInteraction,
+                    testComponentProps: {
+                        itemIdentifier,
+                        responseIdentifier,
+                        format: 'xhtml',
+                        dataAttrs: tenantDataAttrs
+                    }
+                }
+            });
+            const rte = container.querySelector('.rich-text-editor-mock');
+            const rteProps = JSON.parse(rte.dataset.props);
+
+            expect(rteProps.editorType).toBe(expectedDataEditorType);
+        }
+    );
+
+    test.each([
+        ['default', void 0, void 0],
+        ['overridden by claim', 'tb1', ['bold', 'italic']]
+    ])(
+        'configures toolbar items according to property overrides and claims: %s',
+        (title, toolbarPreset, expectedToolbarItems) => {
+            const { container } = render(ContextWrapper, {
+                props: {
+                    testContextKey: itemIdentifier,
+                    testContext,
+                    testContextKey2: 'itemRunnerConfig',
+                    testContext2: {
+                        elements: {
+                            ExtendedTextInteraction: {
+                                toolbarPreset
+                            }
+                        }
+                    },
+                    testComponent: ExtendedTextInteraction,
+                    testComponentProps: {
+                        itemIdentifier,
+                        responseIdentifier,
+                        format: 'xhtml',
+                        toolbarPresets: {
+                            tb1: { items: ['bold', 'italic'] }
+                        }
+                    }
+                }
+            });
+            const rte = container.querySelector('.rich-text-editor-mock');
+            const rteProps = JSON.parse(rte.dataset.props);
+
+            expect(rteProps.editorConfig.toolbar.items).toEqual(expectedToolbarItems);
         }
     );
 

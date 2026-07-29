@@ -335,6 +335,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         display: flex;
         align-items: center;
     }
+
+    :global([dir='rtl'] .qti-choiceInteraction .compact-appearance) {
+        margin-left: initial;
+        margin-right: auto;
+    }
 </style>
 
 <svelte:window bind:innerWidth={windowWidth} />

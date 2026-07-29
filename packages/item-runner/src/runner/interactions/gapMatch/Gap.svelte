@@ -27,6 +27,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     const allowedGapWidths = [1, 2, 3, 4, 6, 10, 15, 20, 72]; //widths allowed by QTI classes "qti-input-width-*"
     const letterWidth = 2.15; // UI approved "M" letter width in rems
 
+    // eslint-disable-next-line no-unused-vars
     let tabbable = true; // if gap filled by choice we shouldn't focus gap
     let gapElement; // gap element
     let selectedChoice; // if gap filled by choice - it is id will be here
@@ -416,6 +417,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                     {disabled} />
             {:else if required}<span class="required-label">{requiredAtr}</span>{/if}
             <div class="hidden" id={`gap_${gapsNumber}_label`}>
+                <!-- eslint-disable-next-line svelte/no-at-html-tags -->
                 {@html __(
                     'Gap %d %s %s',
                     gapsNumber,

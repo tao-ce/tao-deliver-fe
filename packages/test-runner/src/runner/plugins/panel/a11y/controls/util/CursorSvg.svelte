@@ -150,8 +150,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 <div
     style={`position: fixed; pointer-events: none; z-index: 10000; width: ${size.w}px; height: ${size.h}px; left: -2px; top: -5px; transform: ${transform};`}>
     {#if cursorType === 'default'}
+        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
         {@html getDefaultCursorSvgTemplate(size, color)}
     {:else if cursorType === 'pointer'}
+        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
         {@html getPointerCursorSvgTemplate(size, color)}
     {/if}
 </div>

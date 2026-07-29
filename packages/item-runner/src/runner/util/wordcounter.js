@@ -4,13 +4,14 @@
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 /**
- * Get word counts from riche text editor
+ * @typedef {Object} Count - holds word and character counts
+ * @property {number} words
+ * @property {number} chars
+ */
+
+/**
+ * Get word counts from rich text editor
  * @param {string} text target text to count words length
- *
- * @typedef {Object} Count, a word and characters counts
- * @property {number} count.words
- * @property {number} count.chars
- *
  * @returns {Count}
  */
 export function getRichEditorCount(text) {
@@ -33,11 +34,6 @@ export function getRichEditorCount(text) {
 /**
  * Get word counts from simple text area
  * @param {string} text target text to count words length
- *
- * @typedef {Object} Count, a word and characters counts
- * @property {number} count.words
- * @property {number} count.chars
- *
  * @returns {Count}
  */
 export function getPlainEditorCount(text) {

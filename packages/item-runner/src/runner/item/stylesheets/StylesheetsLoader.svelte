@@ -144,7 +144,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 </script>
 
 <svelte:head>
-    {#each stylesheets as ss}
+    {#each [...stylesheets] as ss}
         {#if ss.href && ss.state === stylesheetStates.init}
             <link
                 crossorigin="anonymous"
@@ -157,4 +157,4 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     {/each}
 </svelte:head>
 
-<div class="styles-container" bind:this={stylesContainerElt} />
+<div class="styles-container" bind:this={stylesContainerElt}></div>

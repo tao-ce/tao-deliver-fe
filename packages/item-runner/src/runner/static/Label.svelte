@@ -5,13 +5,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 -->
 
 <script>
+    // Licensed under Gnu Public Licence version 2
+    // Copyright (c) 2020 (original work) Open Assessment Technologies SA ;
+    // Auto generated content
 
-// Licensed under Gnu Public Licence version 2
-// Copyright (c) 2020 (original work) Open Assessment Technologies SA ;
-// Auto generated content
-
-export let attributes = {};
+    export let attributes = {};
 </script>
 
-<!-- svelte-ignore a11y-label-has-associated-control -->
-<label  {...attributes} ><slot /></label>
+<label {...attributes}><slot /></label>

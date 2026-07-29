@@ -72,11 +72,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     {#each template as row, i}
         {#each row as toolName}
             {#if getPlugin(toolName)}
-                <div class="toolbar-{toolName}" class:open={openedPlugins.includes(toolName)} />
+                <div class="toolbar-{toolName}" class:open={openedPlugins.includes(toolName)}></div>
             {/if}
         {/each}
         {#if i + 1 < template.length}
-            <div class="flex-break" />
+            <div class="flex-break"></div>
         {/if}
     {/each}
 </div>

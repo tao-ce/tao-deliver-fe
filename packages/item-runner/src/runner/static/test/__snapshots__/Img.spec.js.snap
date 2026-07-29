@@ -3,10 +3,13 @@
 exports[`Img > loads the item context 1`] = `
 <body>
   <div>
+    
     <img
       alt="cute hamster"
       src="assets/hamster.png"
     />
+    
+    
     
   </div>
 </body>
@@ -16,6 +19,8 @@ exports[`Img > renders correctly with no props 1`] = `
 <body>
   <div>
     <img />
+    
+    
   </div>
 </body>
 `;
@@ -28,6 +33,8 @@ exports[`Img > renders correctly with src and alt and data-serial 1`] = `
       data-serial="123"
       src="assets/cat.png"
     />
+    
+    
   </div>
 </body>
 `;
@@ -35,9 +42,12 @@ exports[`Img > renders correctly with src and alt and data-serial 1`] = `
 exports[`Img > resolves image src through the asset manager 1`] = `
 <body>
   <div>
+    
     <img
       src="http://localhost/assets/pig.png"
     />
+    
+    
     
   </div>
 </body>

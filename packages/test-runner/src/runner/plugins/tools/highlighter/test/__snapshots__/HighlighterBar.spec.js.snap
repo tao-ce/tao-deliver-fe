@@ -17,10 +17,12 @@ exports[`SettingsContent > renders count of highlights inside color buttons 1`] 
           <header>
             Highlighter
           </header>
+          
            
           <div
             class="floating-bar-actions"
           >
+            
             <button
               class="color-btn color-btn-yellow"
             >
@@ -42,6 +44,7 @@ exports[`SettingsContent > renders count of highlights inside color buttons 1`] 
                 0
               </span>
             </button>
+            
              
             <button
               class="eraser-btn"
@@ -57,7 +60,9 @@ exports[`SettingsContent > renders count of highlights inside color buttons 1`] 
                 <path
                   d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
                 />
+                
               </svg>
+              
             </button>
              
             <button
@@ -67,11 +72,16 @@ exports[`SettingsContent > renders count of highlights inside color buttons 1`] 
                 clear all
               </span>
             </button>
+            
           </div>
         </div>
          
+        
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -93,10 +103,12 @@ exports[`SettingsContent > renders specified button in active state 1`] = `
           <header>
             Highlighter
           </header>
+          
            
           <div
             class="floating-bar-actions"
           >
+            
             <button
               class="color-btn color-btn-yellow"
             >
@@ -118,6 +130,7 @@ exports[`SettingsContent > renders specified button in active state 1`] = `
                 0
               </span>
             </button>
+            
              
             <button
               class="eraser-btn active"
@@ -133,7 +146,9 @@ exports[`SettingsContent > renders specified button in active state 1`] = `
                 <path
                   d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
                 />
+                
               </svg>
+              
             </button>
              
             <button
@@ -143,11 +158,16 @@ exports[`SettingsContent > renders specified button in active state 1`] = `
                 clear all
               </span>
             </button>
+            
           </div>
         </div>
          
+        
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -169,10 +189,12 @@ exports[`SettingsContent > renders with default props 1`] = `
           <header>
             Highlighter
           </header>
+          
            
           <div
             class="floating-bar-actions"
           >
+            
             <button
               class="color-btn color-btn-yellow"
             >
@@ -180,6 +202,7 @@ exports[`SettingsContent > renders with default props 1`] = `
                 0
               </span>
             </button>
+            
              
             <button
               class="eraser-btn"
@@ -195,7 +218,9 @@ exports[`SettingsContent > renders with default props 1`] = `
                 <path
                   d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
                 />
+                
               </svg>
+              
             </button>
              
             <button
@@ -205,11 +230,16 @@ exports[`SettingsContent > renders with default props 1`] = `
                 clear all
               </span>
             </button>
+            
           </div>
         </div>
          
+        
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -231,10 +261,12 @@ exports[`SettingsContent > renders with the provided colors in props 1`] = `
           <header>
             Highlighter
           </header>
+          
            
           <div
             class="floating-bar-actions"
           >
+            
             <button
               class="color-btn color-btn-yellow"
             >
@@ -256,6 +288,7 @@ exports[`SettingsContent > renders with the provided colors in props 1`] = `
                 0
               </span>
             </button>
+            
              
             <button
               class="eraser-btn"
@@ -271,7 +304,9 @@ exports[`SettingsContent > renders with the provided colors in props 1`] = `
                 <path
                   d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
                 />
+                
               </svg>
+              
             </button>
              
             <button
@@ -281,11 +316,16 @@ exports[`SettingsContent > renders with the provided colors in props 1`] = `
                 clear all
               </span>
             </button>
+            
           </div>
         </div>
          
+        
       </div>
+      
     </div>
+    
+    
   </div>
 </body>
 `;

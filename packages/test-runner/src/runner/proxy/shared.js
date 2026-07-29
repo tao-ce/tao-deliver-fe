@@ -78,9 +78,12 @@ export function getAttachmentsUploadData(config, itemIdentifier, responseIdentif
  * transform its response (as an action) and handle any errors
  * @param {string} url
  * @param {object} requestOptions
- * @returns {Promise<Object>} data
+ * @param {object} [handlingOptions]
+ * @param {Boolean} [handlingOptions.returnRawResponse] - causes early return of raw response
+ * @param {Boolean} [handlingOptions.returnParsedJsonResponse] - causes early return of parsed JSON
+ * @returns {Promise<Object>} data, by default post-transformation of action response
  */
-export const doRequest = async (url, requestOptions) => {
+export const doRequest = async (url, requestOptions = {}, handlingOptions = {}) => {
     let rawResponse;
     try {
         requestOptions = Object.assign({}, requestOptions, { returnOriginalResponse: true });
@@ -124,6 +127,10 @@ export const doRequest = async (url, requestOptions) => {
         throw new Error(`Action error: null or empty response`);
     }
 
+    if (handlingOptions.returnRawResponse) {
+        return rawResponse;
+    }
+
     // process response...
 
     let requestResponse;
@@ -137,6 +144,10 @@ export const doRequest = async (url, requestOptions) => {
             err.recoverable = true;
         }
         throw err;
+    }
+
+    if (handlingOptions.returnParsedJsonResponse) {
+        return requestResponse;
     }
 
     // destructure & check response data...
@@ -160,3 +171,22 @@ export const doRequest = async (url, requestOptions) => {
 
     return response.map(result => result.values);
 };
+
+/**
+ * Generic data fetcher using proxy config & passed configuration
+ * @public
+ * @param {Object} config - proxy config
+ * @param {string} url
+ * @param {object} [requestOptions]
+ * @param {object} [handlingOptions]
+ * @returns {Promise<*>}
+ */
+export function getData(config, url, requestOptions = {}, handlingOptions = {}) {
+    if (!requestOptions.jwtTokenHandler && config.jwtTokenHandler) {
+        requestOptions.jwtTokenHandler = config.jwtTokenHandler;
+    }
+    if (typeof requestOptions.timeout !== 'number' && typeof config.requestTimeout === 'number') {
+        requestOptions.timeout = config.requestTimeout;
+    }
+    return doRequest(url, requestOptions, handlingOptions);
+}

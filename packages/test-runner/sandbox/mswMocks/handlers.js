@@ -39,6 +39,7 @@ window.addEventListener('presetsocket-send', ({ detail: { eventName, payloadStr 
     let payload;
     try {
         payload = payloadStr ? JSON.parse(payloadStr) : void 0;
+        // eslint-disable-next-line no-unused-vars
     } catch (err) {
         payload = payloadStr;
     }
@@ -49,6 +50,8 @@ window.addEventListener('presetsocket-send', ({ detail: { eventName, payloadStr 
         if (typeof payload.extra_time === 'number') {
             timers.setExtraTime(payload.extra_time * 60 * 1000);
         }
+        io.client.emit(eventName, payload);
+    } else {
         io.client.emit(eventName, payload);
     }
 });

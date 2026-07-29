@@ -50,7 +50,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: var(--color-bg-default); 
+        background-color: var(--color-bg-default);
         @add-mixin flex-center-center;
         flex-direction: column;
         height: 100%;
@@ -73,17 +73,13 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     role="dialog"
     tabindex="-1"
     aria-describedby={config.message ? messageId : null}
-    bind:this={dialogElement}
-    >
+    bind:this={dialogElement}>
     {#if config.message}
+        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
         <p class="ui-heading-l" id={messageId}>{@html config.message}</p>
     {/if}
     <slot></slot>
     <div class="actions" use:focusTrap>
-        <Button
-            { ...okButton }
-            shape="pill"
-            on:click={() => handleBtnClick()}
-        />
+        <Button {...okButton} shape="pill" on:click={() => handleBtnClick()} />
     </div>
 </div>

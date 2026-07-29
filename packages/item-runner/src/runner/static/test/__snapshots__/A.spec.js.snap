@@ -7,7 +7,11 @@ exports[`A > appends target="_blank" 1`] = `
       href="www.hello.org"
       rel="noopener noreferrer"
       target="_blank"
-    />
+    >
+      
+    </a>
+    
+    
   </div>
 </body>
 `;
@@ -17,7 +21,11 @@ exports[`A > does not append target="_blank" if # href 1`] = `
   <div>
     <a
       href="#element123"
-    />
+    >
+      
+    </a>
+    
+    
   </div>
 </body>
 `;
@@ -25,7 +33,11 @@ exports[`A > does not append target="_blank" if # href 1`] = `
 exports[`A > renders with no props 1`] = `
 <body>
   <div>
-    <a />
+    <a>
+      
+    </a>
+    
+    
   </div>
 </body>
 `;

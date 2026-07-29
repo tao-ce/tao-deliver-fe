@@ -1,6 +1,6 @@
 {
   "name": "@oat-sa-private/tao-deliver-apps-common",
-  "version": "1.19.0",
+  "version": "1.26.0",
   "displayName": "TAO Deliver Apps Common",
   "description": "Common modules for TAO Deliver frontend apps",
   "homepage": "https://github.com/oat-sa/tao-deliver-fe#readme",

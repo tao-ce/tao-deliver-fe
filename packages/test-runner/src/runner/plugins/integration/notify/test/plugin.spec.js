@@ -14,6 +14,7 @@ function setupLayout() {
 }
 
 describe('notify plugin', () => {
+    const parentOrigin = 'https://test-origin.test';
     const postMessage = vi.fn();
     const originalWindow = { ...window };
     const windowSpy = vi.spyOn(global, 'window', 'get');
@@ -43,7 +44,10 @@ describe('notify plugin', () => {
         });
         const runner = testRunnerFactory('foo', [pluginFactory], {
             renderTo: container,
-            serviceCallId: 'test-session-1234'
+            serviceCallId: 'test-session-1234',
+            options: {
+                iframeParentOrigin: parentOrigin
+            }
         });
 
         return new Promise(resolve => {
@@ -71,14 +75,23 @@ describe('notify plugin', () => {
                 })
                 .init();
         }).then(() => {
-            expect(postMessage).toHaveBeenCalledWith({ event: 'init', parameters: {} }, '*');
-            expect(postMessage).toHaveBeenCalledWith({ event: 'render', parameters: {} }, '*');
-            expect(postMessage).toHaveBeenCalledWith({ event: 'loaditem', parameters: { itemIdentifier } }, '*');
-            expect(postMessage).toHaveBeenCalledWith({ event: 'renderitem', parameters: { itemIdentifier } }, '*');
-            expect(postMessage).toHaveBeenCalledWith({ event: 'unloaditem', parameters: { itemIdentifier } }, '*');
-            expect(postMessage).toHaveBeenCalledWith({ event: 'finish', parameters: {} }, '*');
-            expect(postMessage).toHaveBeenCalledWith({ event: 'flush', parameters: {} }, '*');
-            expect(postMessage).toHaveBeenCalledWith({ event: 'destroy', parameters: {} }, '*');
+            expect(postMessage).toHaveBeenCalledWith({ event: 'init', parameters: {} }, parentOrigin);
+            expect(postMessage).toHaveBeenCalledWith({ event: 'render', parameters: {} }, parentOrigin);
+            expect(postMessage).toHaveBeenCalledWith(
+                { event: 'loaditem', parameters: { itemIdentifier } },
+                parentOrigin
+            );
+            expect(postMessage).toHaveBeenCalledWith(
+                { event: 'renderitem', parameters: { itemIdentifier } },
+                parentOrigin
+            );
+            expect(postMessage).toHaveBeenCalledWith(
+                { event: 'unloaditem', parameters: { itemIdentifier } },
+                parentOrigin
+            );
+            expect(postMessage).toHaveBeenCalledWith({ event: 'finish', parameters: {} }, parentOrigin);
+            expect(postMessage).toHaveBeenCalledWith({ event: 'flush', parameters: {} }, parentOrigin);
+            expect(postMessage).toHaveBeenCalledWith({ event: 'destroy', parameters: {} }, parentOrigin);
         });
     });
 });

@@ -23,7 +23,9 @@ exports[`TheEnd component > Renders correctly with a title and info 1`] = `
             <path
               d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
             />
+            
           </svg>
+          
         </div>
          
         <div
@@ -39,19 +41,27 @@ exports[`TheEnd component > Renders correctly with a title and info 1`] = `
           <p>
             Your test has been submitted.
           </p>
+          
            
+          
            
+          
            
+          
            
+          
            
           <div
             class="visually-hidden"
           >
             Error
           </div>
+          
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -79,7 +89,9 @@ exports[`TheEnd component > Renders correctly with only a title 1`] = `
             <path
               d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
             />
+            
           </svg>
+          
         </div>
          
         <div
@@ -92,19 +104,27 @@ exports[`TheEnd component > Renders correctly with only a title 1`] = `
             Error
           </h1>
            
+          
            
+          
            
+          
            
+          
            
+          
            
           <div
             class="visually-hidden"
           >
             Error
           </div>
+          
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -132,7 +152,9 @@ exports[`TheEnd component > Renders correctly with only a title and a cause 1`] 
             <path
               d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
             />
+            
           </svg>
+          
         </div>
          
         <div
@@ -145,17 +167,25 @@ exports[`TheEnd component > Renders correctly with only a title and a cause 1`] 
             Error
           </h1>
            
+          
            
           <p>
             Something went wrong
           </p>
+          
            
+          
            
+          
            
+          
            
+          
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -183,7 +213,9 @@ exports[`TheEnd component > Renders the retry button 1`] = `
             <path
               d="M8 0h4.08L9 6h4L5 16l2-7H4l4-9z"
             />
+            
           </svg>
+          
         </div>
          
         <div
@@ -196,14 +228,17 @@ exports[`TheEnd component > Renders the retry button 1`] = `
             Error
           </h1>
            
+          
            
           <p>
             Something went wrong
           </p>
+          
            
           <p>
             Please reload the page
           </p>
+          
            
           <div
             class="button-container"
@@ -212,16 +247,25 @@ exports[`TheEnd component > Renders the retry button 1`] = `
               class="actionable secondary pill small"
               type="button"
             >
+              
                
+              
                
               Reload the page
+              
             </button>
+            
           </div>
+          
            
+          
            
+          
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;

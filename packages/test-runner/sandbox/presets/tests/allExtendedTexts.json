@@ -20,11 +20,11 @@
         "scope": "test",
         "stats": {
             "questionsViewed": 2,
-            "questions": 4,
+            "questions": 6,
             "answered": 1,
             "flagged": 0,
             "viewed": 2,
-            "total": 4
+            "total": 6
         },
         "parts": {
             "TP01": {
@@ -159,6 +159,53 @@
                                 "position": 3,
                                 "occurrence": 0,
                                 "remainingAttempts": 5,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [
+                                    "x-tao-option-tts",
+                                    "x-tao-option-scratchpad",
+                                    "x-tao-option-highlighter",
+                                    "x-tao-option-lineReader"
+                                ],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "timeConstraint": {
+                                    "allowLateSubmission": true,
+                                    "maxTime": false,
+                                    "maxTimeRemaining": false,
+                                    "minTime": false,
+                                    "minTimeRemaining": false,
+                                    "qtiClassName": "assessmentItemRef"
+                                }
+                            },
+                            "item5": {
+                                "id": "item5",
+                                "label": "Document editor",
+                                "position": 4,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
+                                "answered": false,
+                                "flagged": false,
+                                "viewed": false,
+                                "categories": [],
+                                "hasFeedbacks": false,
+                                "allowComment": false,
+                                "timeConstraint": {
+                                    "allowLateSubmission": true,
+                                    "maxTime": false,
+                                    "maxTimeRemaining": false,
+                                    "minTime": false,
+                                    "minTimeRemaining": false,
+                                    "qtiClassName": "assessmentItemRef"
+                                }
+                            },
+                            "item6": {
+                                "id": "item6",
+                                "label": "Vertical editor",
+                                "position": 5,
+                                "occurrence": 0,
+                                "remainingAttempts": -1,
                                 "answered": false,
                                 "flagged": false,
                                 "viewed": false,

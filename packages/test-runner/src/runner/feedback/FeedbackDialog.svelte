@@ -32,7 +32,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     };
 
     //don't dispatch ModalDialog's 'close' event if button was clicked
-    const buttons = config.buttons.map(btn => Object.assign({}, btn, { autoClose: false }));
+    $: buttons = config.buttons.map(btn => Object.assign({}, btn, { autoClose: false }));
 
     /**
      * Handle dialog button click
@@ -56,8 +56,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     heading={config.heading}
     message={config.message}
     {buttons}
-    disableClosing={buttons.length === 1}
-    disableEscape={buttons.length === 1}
+    disableClosing={buttons.length === 1 || config.type === 'timeout'}
+    disableEscape={buttons.length === 1 || config.type === 'timeout'}
     caller={callerElement}
     {anchoring}
     on:close={handleClose}

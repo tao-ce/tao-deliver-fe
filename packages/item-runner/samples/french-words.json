@@ -897,11 +897,11 @@
                                     }
                                 },
                                 "choice_hottext_123eb14a344b9271830389": {
-                                    "identifier": "hottext_7",
+                                    "identifier": "hottext_8",
                                     "serial": "choice_hottext_123eb14a344b9271830389",
                                     "qtiClass": "hottext",
                                     "attributes": {
-                                        "identifier": "hottext_7",
+                                        "identifier": "hottext_8",
                                         "fixed": false
                                     },
                                     "body": {

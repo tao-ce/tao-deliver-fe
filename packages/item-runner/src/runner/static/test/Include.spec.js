@@ -4,6 +4,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 import { render } from '@testing-library/svelte';
+import { tick } from 'svelte';
 import Include from '../Include.svelte';
 import itemsStateStore from '../../itemsStateStore.js';
 import { EmElement, PElement, ImgElement } from '../index.js';
@@ -186,4 +187,68 @@ describe('Include', () => {
                 }, 510);
             }, 610);
         }));
+
+    it('re-ranks headings when itemRunnerConfig.options.reRankHeadings is true', async () => {
+        const itemIdentifier = 'item1';
+        const { container } = render(ContextWrapper, {
+            props: {
+                testComponent: Include,
+                testComponentProps: {
+                    itemIdentifier,
+                    attributes: {
+                        blockTree: [
+                            {
+                                type: 'html',
+                                content: '<div><h1>Title</h1><h2>Subtitle</h2></div>'
+                            }
+                        ]
+                    }
+                },
+                testContextKey: itemIdentifier,
+                testContext: { getXIncludeHrefs: () => [] },
+                testContextKey2: 'itemRunnerConfig',
+                testContext2: { options: { reRankHeadings: true } }
+            }
+        });
+        await tick();
+
+        const article = container.querySelector('article');
+        const h1 = article.querySelector('h1');
+        const h2 = article.querySelector('h2');
+
+        expect(h1.getAttribute('aria-level')).toBe('2');
+        expect(h2.getAttribute('aria-level')).toBe('3');
+    });
+
+    it('does not re-rank headings when itemRunnerConfig.options.reRankHeadings is false', async () => {
+        const itemIdentifier = 'item1';
+        const { container } = render(ContextWrapper, {
+            props: {
+                testComponent: Include,
+                testComponentProps: {
+                    itemIdentifier,
+                    attributes: {
+                        blockTree: [
+                            {
+                                type: 'html',
+                                content: '<div><h1>Title</h1><h2>Subtitle</h2></div>'
+                            }
+                        ]
+                    }
+                },
+                testContextKey: itemIdentifier,
+                testContext: { getXIncludeHrefs: () => [] },
+                testContextKey2: 'itemRunnerConfig',
+                testContext2: { options: { reRankHeadings: false } }
+            }
+        });
+        await tick();
+
+        const article = container.querySelector('article');
+        const h1 = article.querySelector('h1');
+        const h2 = article.querySelector('h2');
+
+        expect(h1.getAttribute('aria-level')).toBeNull();
+        expect(h2.getAttribute('aria-level')).toBeNull();
+    });
 });

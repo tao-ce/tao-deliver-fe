@@ -6,7 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 <script>
     // Licensed under Gnu Public License version 2
-    // Copyright (c) 2020-2025 (original work) Open Assessment Technologies SA ;
+    // Copyright (c) 2020-2026 (original work) Open Assessment Technologies SA ;
     import {
         Button,
         Checkbox,
@@ -53,8 +53,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         bookletExportPlugin,
         inlineCommentsPlugin,
         preventDropToInputPlugin,
-        attachmentsPlugin
+        attachmentsPlugin,
+        customUIStylesPlugin
     } from '../src/runner/plugins';
+    import { testRunnerConfig } from './testRunnerConfig.js';
     import { timers } from './mswMocks/timersBackend.js';
 
     // elements
@@ -78,38 +80,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         'nb-NO': 'nb-NO',
         'nn-NO': 'nn-NO',
         'pt-BR': 'pt-BR',
+        'sk-SK': 'sk-SK',
+        'hu-HU': 'hu-HU',
         'se-NO': 'se-NO',
         'sma-NO': 'sma-NO',
         'smj-NO': 'smj-NO'
-    };
-    const defaultPluginsConfig = {
-        localItemState: {
-            saveState: {
-                enabled: true,
-                minWait: 2000,
-                maxWait: 5000,
-                liveSaveIndicator: {
-                    enabled: true
-                }
-            }
-        },
-        a11yMenuPanel: {
-            convertPxToRem: {
-                enabled: true,
-                cssProperties: ['font-size']
-            }
-        },
-        readAloud: {
-            // providerId can be manually set to 'texthelp' or 'readweb', and the providerConfig adapted to match
-            // If using 'texthelp', sandbox must be reconfigured to run on localhost:5400 as this is the supported domain/port
-            providerId: 'native',
-            providerConfig: {
-                ignoreSelector: '.do-not-read, #test-navigation button'
-            }
-        },
-        inlineComments: {
-            mode: ['read', 'write']
-        }
     };
     const launchModes = {
         delivery: 'delivery',
@@ -126,7 +101,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     let itemDir = DIRECTION_DEFAULT;
 
     //this prop is passed through replace rollup plugin
-    // eslint-disable-next-line no-undef
     const production = process.env.NODE_ENV === 'production';
 
     // test data
@@ -138,7 +112,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     let timer;
     let testContextString = '';
     let testMapString = '';
-    let pluginsConfigString = JSON.stringify(defaultPluginsConfig, null, 2);
+    let pluginsConfigString = JSON.stringify(testRunnerConfig.options.plugins, null, 2);
     let timerString = '';
     let liteMode = false;
     let launchMode = launchModes.delivery;
@@ -149,7 +123,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     let feedbackTimeout;
     $: if (feedback) {
         if (feedback.status === 'warning') {
-            console.error(feedback.content); //eslint-disable-line
+            console.error(feedback.content);
         }
         clearTimeout(feedbackTimeout);
         feedbackTimeout = setTimeout(() => {
@@ -196,7 +170,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 a11yMenuPanelPlugin,
                 PCINavigationHelperPlugin,
                 preventDropToInputPlugin,
-                attachmentsPlugin
+                attachmentsPlugin,
+                customUIStylesPlugin
             ];
         }
 
@@ -249,6 +224,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         }
         timers.setTimersData(timer || {});
         testRunner = testRunnerFactory(getQtiName(), getPlugins(), {
+            ...testRunnerConfig,
             staticUrl: './dist',
             serviceCallId: `test-session-id-${preserveServiceCallId ? '' : Date.now()}`,
             renderTo: testContainer,
@@ -260,46 +236,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             deliveryExecutionId: `delivery-execution-id-${preserveServiceCallId ? '' : Date.now()}`,
             jwtTokenHandler: { getToken: () => Promise.resolve() },
             options: {
+                ...testRunnerConfig.options,
                 liteMode,
-                itemRunnerConfig: {
-                    options: {
-                        hideTooltips: false
-                    },
-                    elements: {
-                        HottextInteraction: {
-                            qtiClassesOverride: []
-                        },
-                        ExtendedTextInteraction: {
-                            propertyOverride: {
-                                uploadMaxSize: 1000000,
-                                uploadTimeout: 300000
-                            }
-                        }
-                    }
-                },
                 review: getReviewModeOptions(),
-
-                plugins: pluginsConfig,
-                realTimeService: {
-                    enabled: true,
-                    socketConnectionUrl: 'wss://localhost:5500'
-                },
-                timersService: {
-                    throttleConfig: {
-                        minutesThreshold: 10
-                    }
-                }
-            },
-            testTaker: {
-                id: 'sandbox-taker',
-                name: 'Sandbox Taker',
-                firstName: null,
-                lastName: null
-            },
-            themes: {
-                testRunner: {
-                    showUserMenu: true
-                }
+                plugins: pluginsConfig
             }
         })
             .on('loaditem', (ref, itemDataObject) => {
@@ -576,10 +516,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         <section class="sandbox-setup" style="--setup-panel-width: {setupPanelWidth}px">
             <div class="sandbox-setup-content" data-theme="default">
                 <p class="ui-heading-l">TAO Test Runner Sandbox</p>
-                <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <p class="text-xs" on:click={toggleSetupPanel}>
+                <a href="/" class="text-xs" on:click|preventDefault={toggleSetupPanel}>
                     <em> <kbd>Esc</kbd> or Click here to hide/show this panel </em>
-                </p>
+                </a>
                 <RadioGroup
                     options={{
                         [launchModes.delivery]: 'Delivery',
@@ -688,7 +627,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                     </p>
                 </div>
             </div>
-            <div class="resizer" on:mousedown={dragStart} />
+            <!-- svelte-ignore a11y-no-static-element-interactions -->
+            <div class="resizer" on:mousedown={dragStart}></div>
             {#if showSocketProxy}
                 <PresetSocketProxyControls on:close={() => (showSocketProxy = false)} />
             {/if}

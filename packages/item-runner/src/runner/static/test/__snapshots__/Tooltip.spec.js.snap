@@ -11,6 +11,7 @@ exports[`Tooltip > renders tooltip on anchor focus 1`] = `
       content
     </span>
      
+    
     <div
       class="flyout tooltip-flyout"
     >
@@ -20,8 +21,13 @@ exports[`Tooltip > renders tooltip on anchor focus 1`] = `
         role="tooltip"
       >
         text
+        
       </div>
+      
     </div>
+    
+    
+    
     
   </div>
 </body>
@@ -39,6 +45,10 @@ exports[`Tooltip > renders with attributes 1`] = `
     </span>
      
     
+    
+    
+    
+    
   </div>
 </body>
 `;
@@ -54,6 +64,10 @@ exports[`Tooltip > renders with no attributes 1`] = `
       
     </span>
      
+    
+    
+    
+    
     
   </div>
 </body>

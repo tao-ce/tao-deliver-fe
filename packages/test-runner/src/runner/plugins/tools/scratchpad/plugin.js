@@ -12,6 +12,7 @@ import toolDefinitions from './toolDefinitions.js';
 import toolsStoreHandler from '../util/toolsStoreHandler.js';
 import { isMutuallyExclusiveTool } from '../../../layout/toolbarItems.js';
 import { getDefaultRemSizePx } from '@oat-sa-private/ui-core';
+import { mount, unmount } from 'svelte';
 
 const toolKey = 'scratchpad';
 const defaultConfig = {
@@ -53,14 +54,14 @@ export default pluginFactory({
             }
         };
 
-        this.getInitialStateValues = state => {
+        this.getInitialStateValues = () => {
             const defaultPxInRem = getDefaultRemSizePx();
             const innerWidth = window.innerWidth;
             const innerHeight = window.innerHeight;
             const initialWidth = 62 * defaultPxInRem; //62 rem comes from scratchpad spec
             const initialHeight = innerHeight / 2;
 
-            state = state || {};
+            const state = { ...this.toolState };
             if (typeof state.left === 'undefined' || state.left < 0) {
                 state.left = (innerWidth - initialWidth) / 2;
             }
@@ -109,8 +110,8 @@ export default pluginFactory({
         //renders scratchpad and updates 'open' store state
         this.open = () => {
             const areaBroker = this.getAreaBroker();
-            const initialState = this.getInitialStateValues(this.toolState);
-            this.scratchpad = new Scratchpad({
+            const initialState = this.getInitialStateValues();
+            this.scratchpad = mount(Scratchpad, {
                 target: areaBroker.getMainArea(),
                 props: initialState
             });
@@ -151,7 +152,7 @@ export default pluginFactory({
         //removes scratchpad from dom and updates 'open' store state
         this.close = () => {
             if (this.scratchpad) {
-                this.scratchpad.$destroy();
+                unmount(this.scratchpad);
                 this.scratchpad = null;
             }
             this.updateState({ open: false });
@@ -215,7 +216,7 @@ export default pluginFactory({
     hide() {
         this.toolsStoreHandler.set('visible', false);
         if (this.scratchpad) {
-            this.scratchpad.$destroy();
+            unmount(this.scratchpad);
             this.scratchpad = null;
         }
     },
@@ -224,7 +225,7 @@ export default pluginFactory({
     destroy() {
         this.getTestRunner().off('.scratchpad');
         if (this.scratchpad) {
-            this.scratchpad.$destroy();
+            unmount(this.scratchpad);
         }
     }
 });

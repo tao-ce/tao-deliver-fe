@@ -10,6 +10,7 @@ import MenuPanel from './MenuPanel.svelte';
 import settingsKeys from '../../settings/settingsKeys.js';
 import queueFactory from '../../integration/eventsForwarder/queue.js';
 import { defaultsDeepNoArrayMerge } from '../../../util/common.js';
+import { mount, unmount } from 'svelte';
 
 /**
  * This plugin provides the accessibility panel content
@@ -102,7 +103,7 @@ export default pluginFactory({
         }, {});
 
         //render the plugin component
-        this.menuPanel = new MenuPanel({
+        this.menuPanel = mount(MenuPanel, {
             target: areaBroker.getA11yMenuPanelArea(),
             props: {
                 areaBroker,
@@ -186,7 +187,7 @@ export default pluginFactory({
      */
     destroy() {
         if (this.menuPanel) {
-            this.menuPanel.$destroy();
+            unmount(this.menuPanel);
         }
 
         this.eventsQueue?.flush();

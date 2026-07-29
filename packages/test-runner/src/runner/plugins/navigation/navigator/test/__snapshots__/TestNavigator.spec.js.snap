@@ -3,6 +3,7 @@
 exports[`Test navigation > Does render bookmark and overview buttons for non-linear test and not-liteMode 1`] = `
 <body>
   <div>
+    
     <div
       class="navigator"
     >
@@ -23,10 +24,15 @@ exports[`Test navigation > Does render bookmark and overview buttons for non-lin
           <path
             d="M12 0H4a2.15 2.15 0 00-2 2v13a1 1 0 00.67.94A1 1 0 003 16a1 1 0 00.78-.38L8 10.6l4.22 5a1 1 0 00.78.4 1 1 0 00.33-.06A1 1 0 0014 15V2a2.15 2.15 0 00-2-2zm0 13L8 8l-4 5V2h8z"
           />
+          
         </svg>
+        
          
+        
          
+        
       </button>
+      
        
       <div
         class="button-container end"
@@ -49,17 +55,27 @@ exports[`Test navigation > Does render bookmark and overview buttons for non-lin
               d="M8 16l-2-2 4.5-4.5H0v-3h10.5L6 2l2-2 8 8-8 8z"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
       </div>
        
       <div
         class="button-container start"
-      />
+      >
+        
+      </div>
+      
        
+      
        
+      
       <div
         class="progress-container steps"
       >
@@ -71,12 +87,19 @@ exports[`Test navigation > Does render bookmark and overview buttons for non-lin
           >
             <div
               class="more"
-            />
+            >
+              
+            </div>
+            
              
+            
              
             <div
               class="more"
-            />
+            >
+              
+            </div>
+            
           </div>
            
           <span
@@ -99,16 +122,26 @@ exports[`Test navigation > Does render bookmark and overview buttons for non-lin
                 <path
                   d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
                 />
+                
               </svg>
+              
                
+              
                
               Overview (20)
+              
             </button>
+            
           </span>
         </div>
+        
       </div>
       
+      
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -117,6 +150,7 @@ exports[`Test navigation > Does render bookmark and overview buttons for non-lin
 exports[`Test navigation > Does render bookmark and overview buttons for non-linear test and not-liteMode 2`] = `
 <body>
   <div>
+    
     <div
       class="navigator"
     >
@@ -137,10 +171,15 @@ exports[`Test navigation > Does render bookmark and overview buttons for non-lin
           <path
             d="M12 0H4a2.15 2.15 0 00-2 2v13a1 1 0 00.67.94A1 1 0 003 16a1 1 0 00.78-.38L8 10.6l4.22 5a1 1 0 00.78.4 1 1 0 00.33-.06A1 1 0 0014 15V2a2.15 2.15 0 00-2-2zm0 13L8 8l-4 5V2h8z"
           />
+          
         </svg>
+        
          
+        
          
+        
       </button>
+      
        
       <div
         class="button-container end"
@@ -163,15 +202,23 @@ exports[`Test navigation > Does render bookmark and overview buttons for non-lin
               d="M8 16l-2-2 4.5-4.5H0v-3h10.5L6 2l2-2 8 8-8 8z"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
       </div>
        
       <div
         class="button-container start"
-      />
+      >
+        
+      </div>
+      
        
       <div
         class="overview-btn-container"
@@ -193,15 +240,26 @@ exports[`Test navigation > Does render bookmark and overview buttons for non-lin
             <path
               d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
             />
+            
           </svg>
+          
            
+          
            
           1 / 20
+          
         </button>
+        
       </div>
+      
        
       
+      
+      
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -210,9 +268,11 @@ exports[`Test navigation > Does render bookmark and overview buttons for non-lin
 exports[`Test navigation > Does render finish button last item in test (for linear or liteMode) 1`] = `
 <body>
   <div>
+    
     <div
       class="navigator"
     >
+      
        
       <div
         class="button-container end"
@@ -239,21 +299,32 @@ exports[`Test navigation > Does render finish button last item in test (for line
               d="M3 1H2V2H15V10H2V16H1V1H0V0H3V1ZM2 5H3V7H2V9H3V7H5V9H7V7H9V9H11V7H13V5H14V3H13V5H11V3H9V5H7V3H5V5H3V3H2V5ZM13 9H14V7H13V9ZM7 7H5V5H7V7ZM11 5V7H9V5H11Z"
               fill="currentColor"
             />
+            
           </svg>
+          
            
+          
            
           Finish the test
+          
         </button>
+        
       </div>
        
       <div
         class="button-container start"
-      />
+      >
+        
+      </div>
+      
        
+      
        
+      
       <div
         class="progress-container dots"
       >
+        
         <div>
           <span
             class="visually-hidden"
@@ -267,12 +338,18 @@ exports[`Test navigation > Does render finish button last item in test (for line
             <li
               class="viewed"
             />
+            
           </ol>
         </div>
         
+        
       </div>
       
+      
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -281,9 +358,11 @@ exports[`Test navigation > Does render finish button last item in test (for line
 exports[`Test navigation > Does render forward button non-last item 1`] = `
 <body>
   <div>
+    
     <div
       class="navigator"
     >
+      
        
       <div
         class="button-container end"
@@ -306,28 +385,40 @@ exports[`Test navigation > Does render forward button non-last item 1`] = `
               d="M8 16l-2-2 4.5-4.5H0v-3h10.5L6 2l2-2 8 8-8 8z"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
       </div>
        
+      
        
+      
        
+      
       <div
         class="progress-container counter"
       >
+        
         <div
           class="counter"
         >
-          1
-           / 
-          3
+          1 / 3
         </div>
+        
         
       </div>
       
+      
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -336,6 +427,7 @@ exports[`Test navigation > Does render forward button non-last item 1`] = `
 exports[`Test navigation > Does render prev button for non-linear test non-first item 1`] = `
 <body>
   <div>
+    
     <div
       class="navigator"
     >
@@ -356,10 +448,15 @@ exports[`Test navigation > Does render prev button for non-linear test non-first
           <path
             d="M12 0H4a2.15 2.15 0 00-2 2v13a1 1 0 00.67.94A1 1 0 003 16a1 1 0 00.78-.38L8 10.6l4.22 5a1 1 0 00.78.4 1 1 0 00.33-.06A1 1 0 0014 15V2a2.15 2.15 0 00-2-2zm0 13L8 8l-4 5V2h8z"
           />
+          
         </svg>
+        
          
+        
          
+        
       </button>
+      
        
       <div
         class="button-container end"
@@ -382,10 +479,15 @@ exports[`Test navigation > Does render prev button for non-linear test non-first
               d="M8 16l-2-2 4.5-4.5H0v-3h10.5L6 2l2-2 8 8-8 8z"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
       </div>
        
       <div
@@ -409,13 +511,21 @@ exports[`Test navigation > Does render prev button for non-linear test non-first
               d="M7.7-.13l2 2-4.5 4.5h10.5v3H5.2l4.5 4.5-2 2-8-8 8-8z"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
       </div>
+      
        
+      
        
+      
       <div
         class="progress-container steps"
       >
@@ -427,12 +537,19 @@ exports[`Test navigation > Does render prev button for non-linear test non-first
           >
             <div
               class="more"
-            />
+            >
+              
+            </div>
+            
              
+            
              
             <div
               class="more"
-            />
+            >
+              
+            </div>
+            
           </div>
            
           <span
@@ -455,16 +572,26 @@ exports[`Test navigation > Does render prev button for non-linear test non-first
                 <path
                   d="M8 3l8 8-2 2-6-6-6 6-2-2 8-8z"
                 />
+                
               </svg>
+              
                
+              
                
               Overview (20)
+              
             </button>
+            
           </span>
         </div>
+        
       </div>
       
+      
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -473,9 +600,11 @@ exports[`Test navigation > Does render prev button for non-linear test non-first
 exports[`Test navigation > Does render submit button last item in test part (for linear or liteMode) 1`] = `
 <body>
   <div>
+    
     <div
       class="navigator"
     >
+      
        
       <div
         class="button-container end"
@@ -498,11 +627,16 @@ exports[`Test navigation > Does render submit button last item in test part (for
               d="M14 8.71l-11.2 5.6a.8.8 0 01-1.08-1L3.59 9a.87.87 0 00.07-.17h5.51a.8.8 0 100-1.6H3.66A1.34 1.34 0 003.59 7L1.68 2.73a.81.81 0 01.18-.9.79.79 0 01.9-.14L14 7.29a.78.78 0 01.43.71.79.79 0 01-.43.71zm.71-2.86L3.47.25A2.4 2.4 0 00.21 3.37l1.92 4.3a.84.84 0 010 .66L.21 12.62A2.41 2.41 0 002.4 16a2.56 2.56 0 001.08-.26l11.2-5.6a2.4 2.4 0 000-4.29z"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
            
+          
            
           Submit test part
+          
         </button>
+        
       </div>
        
       <div
@@ -526,13 +660,21 @@ exports[`Test navigation > Does render submit button last item in test part (for
               d="M7.7-.13l2 2-4.5 4.5h10.5v3H5.2l4.5 4.5-2 2-8-8 8-8z"
               fill-rule="evenodd"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
       </div>
+      
        
+      
        
+      
       <div
         class="progress-container progressbar"
       >
@@ -552,12 +694,19 @@ exports[`Test navigation > Does render submit button last item in test part (for
               style="--progress-value-width: 100%;"
             />
              
+            
           </div>
            
+          
         </div>
+        
       </div>
       
+      
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -566,9 +715,11 @@ exports[`Test navigation > Does render submit button last item in test part (for
 exports[`Test navigation > Doesnt render forward button last item 1`] = `
 <body>
   <div>
+    
     <div
       class="navigator"
     >
+      
        
       <div
         class="button-container end"
@@ -595,29 +746,41 @@ exports[`Test navigation > Doesnt render forward button last item 1`] = `
               d="M3 1H2V2H15V10H2V16H1V1H0V0H3V1ZM2 5H3V7H2V9H3V7H5V9H7V7H9V9H11V7H13V5H14V3H13V5H11V3H9V5H7V3H5V5H3V3H2V5ZM13 9H14V7H13V9ZM7 7H5V5H7V7ZM11 5V7H9V5H11Z"
               fill="currentColor"
             />
+            
           </svg>
+          
            
+          
            
           Finish the test
+          
         </button>
+        
       </div>
        
+      
        
+      
        
+      
       <div
         class="progress-container counter"
       >
+        
         <div
           class="counter"
         >
-          3
-           / 
-          3
+          3 / 3
         </div>
+        
         
       </div>
       
+      
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -626,18 +789,29 @@ exports[`Test navigation > Doesnt render forward button last item 1`] = `
 exports[`Test navigation > Renders without error if testStateStore empty 1`] = `
 <body>
   <div>
+    
     <div
       class="navigator"
     >
+      
        
       <div
         class="button-container end"
-      />
-       
-       
+      >
+        
+      </div>
        
       
+       
+      
+       
+      
+      
+      
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -646,13 +820,17 @@ exports[`Test navigation > Renders without error if testStateStore empty 1`] = `
 exports[`Test navigation with attempts > Does render Attempt button when attempts remain 1`] = `
 <body>
   <div>
+    
     <div
       class="navigator"
     >
+      
        
+      
       <div
         class="button-container end"
       >
+        
          
         <button
           aria-label="Attempt. You have 3 attempts left for this question."
@@ -660,40 +838,53 @@ exports[`Test navigation with attempts > Does render Attempt button when attempt
           name="attempt"
           type="button"
         >
+          
            
+          
            
           Attempt (3 left)
+          
         </button>
+        
          
         <button
           class="actionable secondary pill medium"
           name="skip"
           type="button"
         >
+          
            
+          
            
           Skip question
+          
         </button>
+        
       </div>
        
       <div
         class="button-container start"
       >
+        
         <div
           class="counter"
         >
-          1
-           / 
-          3
+          1 / 3
         </div>
+        
         
       </div>
        
       <div
         class="button-container center"
-      />
+      >
+        
+      </div>
+      
       
     </div>
+    
+    
     
   </div>
 </body>

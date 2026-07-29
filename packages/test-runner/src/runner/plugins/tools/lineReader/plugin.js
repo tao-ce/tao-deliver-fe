@@ -7,6 +7,7 @@ import LineReaderMask from './LineReaderMask.svelte';
 import ItemContentOverlay from './ItemContentOverlay.svelte';
 import toolsStoreHandler from '../util/toolsStoreHandler.js';
 import { getItemProperty } from '../../../util/testMap.js';
+import { mount, unmount } from 'svelte';
 
 const categoryName = 'x-tao-option-lineReader'; // can be found on an item
 
@@ -47,7 +48,7 @@ export default pluginFactory({
             const mainArea = areaBroker.getMainArea();
             const testRunnerArea = areaBroker.getTestRunnerArea();
             if (!this.maskComponent) {
-                this.maskComponent = new LineReaderMask({
+                this.maskComponent = mount(LineReaderMask, {
                     target: testRunnerArea,
                     props: {
                         gapSize: this.toolsStoreHandler.get('size'),
@@ -57,7 +58,7 @@ export default pluginFactory({
                 testRunnerArea.style.setProperty('--testrunner-item-bottom-padding', '5.5rem');
             }
             if (!this.itemContentOverlayComponent) {
-                this.itemContentOverlayComponent = new ItemContentOverlay({
+                this.itemContentOverlayComponent = mount(ItemContentOverlay, {
                     target: mainArea,
                     props: {
                         areaScrollTop: mainArea.scrollTop,
@@ -97,12 +98,12 @@ export default pluginFactory({
             }
 
             if (this.maskComponent) {
-                this.maskComponent.$destroy();
+                unmount(this.maskComponent);
             }
             this.maskComponent = null;
 
             if (this.itemContentOverlayComponent) {
-                this.itemContentOverlayComponent.$destroy();
+                unmount(this.itemContentOverlayComponent);
             }
             this.itemContentOverlayComponent = null;
 

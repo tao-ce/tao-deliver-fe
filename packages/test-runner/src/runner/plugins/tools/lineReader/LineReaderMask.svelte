@@ -428,10 +428,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         `}
         bind:this={gap}
     >
-        <div class="gap-overlay top" />
-        <div class="gap-overlay bottom" />
+        <div class="gap-overlay top"></div>
+        <div class="gap-overlay bottom"></div>
         <div class="line-reader-controls" bind:this={gapControls}>
-            <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+            <!-- svelte-ignore a11y-no-noninteractive-tabindex a11y-no-static-element-interactions -->
             <div
                 class="line-reader-control resize"
                 tabindex="0"
@@ -450,7 +450,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             >
                 <Icon name="cursor-resize-v-16" ariaHidden={true}/>
             </div>
-            <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+            <!-- svelte-ignore a11y-no-noninteractive-tabindex a11y-no-static-element-interactions -->
             <div
                 class="line-reader-control move"
                 tabindex="0"

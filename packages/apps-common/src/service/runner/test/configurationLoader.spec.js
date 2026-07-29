@@ -18,7 +18,8 @@ describe('configurationLoader', () => {
             actions: { path: '/actions' },
             initItems: { path: '/init-items' },
             attachmentsUploadData: { path: '/attachments' },
-            saveScoringInlineComments: { path: '/save-scoring-inline-comments' }
+            saveScoringInlineComments: { path: '/save-scoring-inline-comments' },
+            saveScoringAnnotationComment: { path: '/save-scoring-annotation-comment' }
         },
         runnerConfiguration: {
             requestTimeout: 2500,
@@ -126,6 +127,7 @@ describe('configurationLoader', () => {
             initItemsUrl: '/init-items',
             attachmentsUploadDataUrl: '/attachments/abc123',
             saveScoringInlineCommentsUrl: '/save-scoring-inline-comments/abc123',
+            saveScoringAnnotationCommentUrl: '/save-scoring-annotation-comment/abc123',
             ...defaultConfiguration.runnerConfiguration,
             runnerConfiguration
         });

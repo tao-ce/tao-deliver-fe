@@ -3,6 +3,7 @@
 exports[`FeedbackDialog component > renders alert type with 1 buttons and dismissable: false 1`] = `
 <body>
   <div>
+    
     <div
       class="modal-wrapper"
     >
@@ -14,6 +15,7 @@ exports[`FeedbackDialog component > renders alert type with 1 buttons and dismis
         aria-modal="true"
         class="modal-positioning"
       >
+        
         <div
           aria-describedby="tao-description-123"
           aria-labelledby="tao-heading-123"
@@ -21,6 +23,7 @@ exports[`FeedbackDialog component > renders alert type with 1 buttons and dismis
           role="dialog"
           tabindex="-1"
         >
+          
            
           <h2
             class="ui-heading"
@@ -28,6 +31,7 @@ exports[`FeedbackDialog component > renders alert type with 1 buttons and dismis
           >
             Header
           </h2>
+          
            
           <div
             id="tao-description-123"
@@ -35,8 +39,13 @@ exports[`FeedbackDialog component > renders alert type with 1 buttons and dismis
             <p>
               Message
             </p>
+            
           </div>
+          
            
+          
+          
+          
            
           <div
             class="actions aligned-end"
@@ -45,15 +54,23 @@ exports[`FeedbackDialog component > renders alert type with 1 buttons and dismis
               class="actionable primary pill medium fullwidth"
               type="button"
             >
+              
                
+              
                
               Btn1
+              
             </button>
+            
           </div>
         </div>
         
+        
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -62,6 +79,7 @@ exports[`FeedbackDialog component > renders alert type with 1 buttons and dismis
 exports[`FeedbackDialog component > renders confirm type with 2 buttons and dismissable: true 1`] = `
 <body>
   <div>
+    
     <div
       class="modal-wrapper"
     >
@@ -73,6 +91,7 @@ exports[`FeedbackDialog component > renders confirm type with 2 buttons and dism
         aria-modal="true"
         class="modal-positioning"
       >
+        
         <div
           aria-describedby="tao-description-123"
           aria-labelledby="tao-heading-123"
@@ -80,6 +99,7 @@ exports[`FeedbackDialog component > renders confirm type with 2 buttons and dism
           role="dialog"
           tabindex="-1"
         >
+          
            
           <h2
             class="ui-heading"
@@ -87,6 +107,7 @@ exports[`FeedbackDialog component > renders confirm type with 2 buttons and dism
           >
             Header
           </h2>
+          
            
           <div
             id="tao-description-123"
@@ -94,8 +115,13 @@ exports[`FeedbackDialog component > renders confirm type with 2 buttons and dism
             <p>
               Message
             </p>
+            
           </div>
+          
            
+          
+          
+          
            
           <div
             class="actions aligned-end"
@@ -104,23 +130,34 @@ exports[`FeedbackDialog component > renders confirm type with 2 buttons and dism
               class="actionable primary pill medium"
               type="button"
             >
+              
                
+              
                
               Btn1
+              
             </button>
             <button
               class="actionable secondary pill medium"
               type="button"
             >
+              
                
+              
                
               Btn2
+              
             </button>
+            
           </div>
         </div>
         
+        
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -129,6 +166,7 @@ exports[`FeedbackDialog component > renders confirm type with 2 buttons and dism
 exports[`FeedbackDialog component > renders modal dialog with props 1`] = `
 <body>
   <div>
+    
     <div
       class="modal-wrapper"
     >
@@ -140,6 +178,7 @@ exports[`FeedbackDialog component > renders modal dialog with props 1`] = `
         aria-modal="true"
         class="modal-positioning"
       >
+        
         <div
           aria-describedby="tao-description-123"
           aria-labelledby="tao-heading-123"
@@ -147,6 +186,7 @@ exports[`FeedbackDialog component > renders modal dialog with props 1`] = `
           role="dialog"
           tabindex="-1"
         >
+          
            
           <h2
             class="ui-heading"
@@ -154,6 +194,7 @@ exports[`FeedbackDialog component > renders modal dialog with props 1`] = `
           >
             Header
           </h2>
+          
            
           <div
             id="tao-description-123"
@@ -161,8 +202,13 @@ exports[`FeedbackDialog component > renders modal dialog with props 1`] = `
             <p>
               Message
             </p>
+            
           </div>
+          
            
+          
+          
+          
            
           <div
             class="actions aligned-end"
@@ -171,31 +217,45 @@ exports[`FeedbackDialog component > renders modal dialog with props 1`] = `
               class="actionable primary pill medium"
               type="button"
             >
+              
                
+              
                
               Btn1
+              
             </button>
             <button
               class="actionable secondary pill medium"
               type="button"
             >
+              
                
+              
                
               Btn2
+              
             </button>
             <button
               class="actionable secondary pill medium"
               type="button"
             >
+              
                
+              
                
               Btn3
+              
             </button>
+            
           </div>
         </div>
         
+        
       </div>
+      
     </div>
+    
+    
     
   </div>
 </body>
@@ -204,6 +264,7 @@ exports[`FeedbackDialog component > renders modal dialog with props 1`] = `
 exports[`FeedbackDialog component > renders multiline message 1`] = `
 <body>
   <div>
+    
     <div
       class="modal-wrapper"
     >
@@ -215,6 +276,7 @@ exports[`FeedbackDialog component > renders multiline message 1`] = `
         aria-modal="true"
         class="modal-positioning"
       >
+        
         <div
           aria-describedby="tao-description-123"
           aria-labelledby="tao-heading-123"
@@ -222,6 +284,7 @@ exports[`FeedbackDialog component > renders multiline message 1`] = `
           role="dialog"
           tabindex="-1"
         >
+          
            
           <h2
             class="ui-heading"
@@ -229,6 +292,7 @@ exports[`FeedbackDialog component > renders multiline message 1`] = `
           >
             Header
           </h2>
+          
            
           <div
             id="tao-description-123"
@@ -245,8 +309,13 @@ exports[`FeedbackDialog component > renders multiline message 1`] = `
             <p>
               Third line
             </p>
+            
           </div>
+          
            
+          
+          
+          
            
           <div
             class="actions aligned-end"
@@ -255,15 +324,186 @@ exports[`FeedbackDialog component > renders multiline message 1`] = `
               class="actionable primary pill medium fullwidth"
               type="button"
             >
+              
                
+              
                
               Btn1
+              
             </button>
+            
           </div>
         </div>
         
+        
       </div>
+      
     </div>
+    
+    
+    
+  </div>
+</body>
+`;
+
+exports[`FeedbackDialog component > renders timeout type with 1 buttons and dismissable: false 1`] = `
+<body>
+  <div>
+    
+    <div
+      class="modal-wrapper"
+    >
+      <div
+        class="modal-background light"
+      />
+       
+      <div
+        aria-modal="true"
+        class="modal-positioning"
+      >
+        
+        <div
+          aria-describedby="tao-description-123"
+          aria-labelledby="tao-heading-123"
+          class="dialog inverted"
+          role="dialog"
+          tabindex="-1"
+        >
+          
+           
+          <h2
+            class="ui-heading"
+            id="tao-heading-123"
+          >
+            Header
+          </h2>
+          
+           
+          <div
+            id="tao-description-123"
+          >
+            <p>
+              Message
+            </p>
+            
+          </div>
+          
+           
+          
+          
+          
+           
+          <div
+            class="actions aligned-end"
+          >
+            <button
+              class="actionable primary pill medium fullwidth"
+              type="button"
+            >
+              
+               
+              
+               
+              Btn1
+              
+            </button>
+            
+          </div>
+        </div>
+        
+        
+      </div>
+      
+    </div>
+    
+    
+    
+  </div>
+</body>
+`;
+
+exports[`FeedbackDialog component > renders timeout type with 2 buttons and dismissable: false 1`] = `
+<body>
+  <div>
+    
+    <div
+      class="modal-wrapper"
+    >
+      <div
+        class="modal-background light"
+      />
+       
+      <div
+        aria-modal="true"
+        class="modal-positioning"
+      >
+        
+        <div
+          aria-describedby="tao-description-123"
+          aria-labelledby="tao-heading-123"
+          class="dialog inverted"
+          role="dialog"
+          tabindex="-1"
+        >
+          
+           
+          <h2
+            class="ui-heading"
+            id="tao-heading-123"
+          >
+            Header
+          </h2>
+          
+           
+          <div
+            id="tao-description-123"
+          >
+            <p>
+              Message
+            </p>
+            
+          </div>
+          
+           
+          
+          
+          
+           
+          <div
+            class="actions aligned-end"
+          >
+            <button
+              class="actionable primary pill medium"
+              type="button"
+            >
+              
+               
+              
+               
+              Btn1
+              
+            </button>
+            <button
+              class="actionable secondary pill medium"
+              type="button"
+            >
+              
+               
+              
+               
+              Btn2
+              
+            </button>
+            
+          </div>
+        </div>
+        
+        
+      </div>
+      
+    </div>
+    
+    
     
   </div>
 </body>

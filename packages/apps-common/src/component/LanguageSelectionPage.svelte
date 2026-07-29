@@ -55,6 +55,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 jwtTokenHandler
             });
             dispatch('selected', { selectedLocale });
+            // eslint-disable-next-line no-unused-vars
         } catch (e) {
             error = {
                 title: __('Something went wrong.'),

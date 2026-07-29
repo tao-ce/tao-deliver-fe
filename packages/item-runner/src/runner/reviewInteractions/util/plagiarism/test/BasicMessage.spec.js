@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2022 (original work) Open Assessment Technologies SA ;
+// Copyright (C) 2022-2025 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
@@ -10,7 +10,9 @@ describe('BasicMessage', () => {
     test.each([[void 0], [null], [''], ['purple']])('renders no element with status %s', status => {
         const { container } = render(BasicMessage, {
             props: {
-                status
+                report: {
+                    status
+                }
             }
         });
         expect(container.querySelector('.plagiarism-message')).not.toBeInTheDocument();
@@ -21,8 +23,10 @@ describe('BasicMessage', () => {
         (status, href = null) => {
             const { container } = render(BasicMessage, {
                 props: {
-                    status,
-                    href
+                    report: {
+                        status,
+                        href
+                    }
                 }
             });
             expect(container).toMatchSnapshot();

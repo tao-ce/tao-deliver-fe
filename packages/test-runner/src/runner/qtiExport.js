@@ -10,7 +10,7 @@ import areaBrokerFactory from './areaBroker.js';
 import itemRunnerFactory from 'taoItems/runner/api/itemRunner.js';
 import getAssetManager from './config/assetManager.js';
 import testStoreFactory from 'taoTests/runner/testStore.js';
-import { tick } from 'svelte';
+import { tick, mount, unmount } from 'svelte';
 import { itemPathForPosition } from './util/testMap.js';
 
 /**
@@ -137,7 +137,7 @@ export default {
         this.setTestSessionStatus(testSessionStatus.initial);
 
         //we prepare the layout early
-        this.testLayout = new TestLayout({
+        this.testLayout = mount(TestLayout, {
             target: getContainer(config),
             props: {
                 serviceCallId: getServiceCallId(config)
@@ -339,7 +339,7 @@ export default {
      */
     destroy() {
         if (this.testLayout) {
-            this.testLayout.$destroy();
+            unmount(this.testLayout);
         }
     }
 };

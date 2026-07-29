@@ -10,7 +10,6 @@ exports[`Rectangle > behaviour > draws rect with mousemove 1`] = `
       x="0"
       y="0"
     />
-     
     <rect
       class="hitbox"
       height="136"
@@ -18,7 +17,6 @@ exports[`Rectangle > behaviour > draws rect with mousemove 1`] = `
       x="-18"
       y="-18"
     />
-     
     <rect
       class="bounding"
       height="104"
@@ -26,7 +24,9 @@ exports[`Rectangle > behaviour > draws rect with mousemove 1`] = `
       x="-2"
       y="-2"
     />
-     
+    
+    
+    
     
   </div>
 </body>
@@ -40,8 +40,9 @@ exports[`Rectangle > rendering > renders with given drawingGeometry 1`] = `
       height="0"
       width="0"
     />
-     
-     
+    
+    
+    
     
   </div>
 </body>
@@ -57,7 +58,6 @@ exports[`Rectangle > rendering > renders with the given geometry 1`] = `
       x="100"
       y="100"
     />
-     
     <rect
       class="hitbox"
       height="336"
@@ -65,7 +65,6 @@ exports[`Rectangle > rendering > renders with the given geometry 1`] = `
       x="82"
       y="82"
     />
-     
     <rect
       class="bounding"
       height="304"
@@ -73,7 +72,9 @@ exports[`Rectangle > rendering > renders with the given geometry 1`] = `
       x="98"
       y="98"
     />
-     
+    
+    
+    
     
   </div>
 </body>
@@ -89,7 +90,6 @@ exports[`Rectangle > rendering > renders with the given key and selected state 1
       x="100"
       y="100"
     />
-     
     <rect
       class="hitbox"
       height="336"
@@ -97,7 +97,6 @@ exports[`Rectangle > rendering > renders with the given key and selected state 1
       x="82"
       y="82"
     />
-     
     <rect
       class="bounding"
       height="304"
@@ -105,7 +104,7 @@ exports[`Rectangle > rendering > renders with the given key and selected state 1
       x="98"
       y="98"
     />
-     
+    
     <g
       class="resize-hitbox-container"
     >
@@ -124,6 +123,8 @@ exports[`Rectangle > rendering > renders with the given key and selected state 1
         y="354"
       />
     </g>
+    
+    
     
   </div>
 </body>

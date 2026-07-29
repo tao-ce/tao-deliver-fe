@@ -73,6 +73,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 </style>
 
 {#if $statusStore === testSessionStatus.interacting}
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div class="attachments-bar" class:hidden={$statusStore === testSessionStatus.overlay} on:keydown={handleKeyDown} use:focusTrap>
         <OverlayBox
             {startActions}

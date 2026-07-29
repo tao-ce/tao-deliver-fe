@@ -17,7 +17,10 @@ exports[`MoreButton > renders button if active is set to true 1`] = `
          
         <span />
       </button>
+      
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -27,7 +30,11 @@ exports[`MoreButton > renders without props 1`] = `
   <div>
     <div
       class="more"
-    />
+    >
+      
+    </div>
+    
+    
   </div>
 </body>
 `;

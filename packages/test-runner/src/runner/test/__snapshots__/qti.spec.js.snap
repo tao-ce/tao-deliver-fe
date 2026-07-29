@@ -47,13 +47,19 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
                     <path
                       d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
+                  
                 </button>
-                 
+                
               </li>
+              
             </ol>
+            
              
             <div
               class="logo"
@@ -62,7 +68,9 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
                 alt="TAO Logo"
                 src="logo.svg"
               />
+              
             </div>
+            
              
             <div
               class="content"
@@ -70,6 +78,7 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
               <div
                 class="header-bar-content"
               />
+              
             </div>
           </header>
            
@@ -77,14 +86,20 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
             <ol
               class="end"
             >
+              
                
+              
             </ol>
              
             <div
               slot="aside-after"
-            />
+            >
+              
+            </div>
+            
           </aside>
         </div>
+        
       </div>
        
       <div
@@ -94,10 +109,7 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
           class="floating-toolbars"
         >
           
-           
-          <div
-            class="flex-break"
-          />
+          
           
           
            
@@ -106,9 +118,23 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
           />
           
           
+          
+          
+          
            
+          <div
+            class="flex-break"
+          />
+          
+          
+          
+          
+          
+           
+          
           
         </div>
+        
       </div>
     </div>
      
@@ -119,7 +145,10 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
         aria-label="Notifications"
         class="notification-container"
         role="log"
-      />
+      >
+        
+      </div>
+      
     </div>
      
     <main
@@ -143,7 +172,7 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
         class="test-content-columns"
       >
         <aside
-          class="not-displayed"
+          class="not-printable not-displayed"
           id="test-content-aside-start"
           role="aside"
         />
@@ -154,7 +183,7 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
         />
          
         <aside
-          class="not-displayed"
+          class="not-printable not-displayed"
           id="test-content-aside-end"
           role="aside"
         />
@@ -188,15 +217,16 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
             >
               loading
             </p>
+            
           </div>
         </div>
+        
          
-        <p
-          style="animation: __svelte_2884083938_0 500ms linear 4500ms 1 both;"
-        >
+        <p>
           Please wait a little longer while your content loads
         </p>
       </div>
+      
     </div>
      
     <nav
@@ -213,12 +243,14 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
      
     <nav
       class="item-modalfeedback-nav hidden"
-      style="--nav-height: var(--testrunner-footer-height);"
+      style="--nav-height: var(--testrunner-footer-height)"
     />
      
     <div
       class="item-hanger-wrapper not-printable"
-    />
+    >
+      
+    </div>
      
     <div
       aria-hidden="true"
@@ -230,6 +262,7 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
         <div
           slot="header"
         />
+        
       </header>
        
       <div
@@ -244,6 +277,7 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
         <div
           slot="content"
         />
+        
          
         <div
           class="scroll-last-child"
@@ -254,11 +288,14 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
         <div
           slot="footer"
         />
+        
       </footer>
     </div>
+    
   </div>
    
   <div
+    aria-hidden="true"
     class="panel close-initial inverted-color"
     id="tao-panel-123"
   >
@@ -287,12 +324,18 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
               <path
                 d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
+        
       </div>
        
       <div
@@ -301,9 +344,11 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
         <div
           class="panel-content use-a11y-text-styles"
         />
+        
       </div>
     </div>
   </div>
+  
    
   <div
     class="panel-wrapper use-a11y-text-styles"
@@ -314,7 +359,11 @@ exports[`QTI NUI test runner behavior > renders the test layout during initializ
     class="feedback-dialogs-wrapper use-a11y-text-styles"
   >
     
+    
+    
   </div>
+  
+  
 </section>
 `;
 
@@ -352,13 +401,19 @@ exports[`QTI NUI test runner behavior > renders the test top bar with some plugi
                 <path
                   d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
-             
+            
           </li>
+          
         </ol>
+        
          
         <div
           class="logo"
@@ -367,7 +422,9 @@ exports[`QTI NUI test runner behavior > renders the test top bar with some plugi
             alt="TAO Logo"
             src="logo.svg"
           />
+          
         </div>
+        
          
         <div
           class="content"
@@ -375,6 +432,7 @@ exports[`QTI NUI test runner behavior > renders the test top bar with some plugi
           <div
             class="header-bar-content"
           />
+          
         </div>
       </header>
        
@@ -403,10 +461,15 @@ exports[`QTI NUI test runner behavior > renders the test top bar with some plugi
                 <path
                   d="M19 2h-2V0h-1v2H8V0H7v2H5a2 2 0 00-2 2v18a2 2 0 002 2h14a2 2 0 002-2V4a2 2 0 00-2-2zm1 20a1 1 0 01-1 1H5a1 1 0 01-1-1V4a1 1 0 011-1h2v2h1V3h8v2h1V3h2a1 1 0 011 1z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </li>
           <li>
             <button
@@ -426,10 +489,15 @@ exports[`QTI NUI test runner behavior > renders the test top bar with some plugi
                 <path
                   d="M23.5 23H6l.63-1.36 4.56-3.07a1 1 0 00.39-.44.49.49 0 000-.09L17 4.11a2 2 0 00-1-2.65L13.33.19a2 2 0 00-2.66 1L3.49 14.22a.93.93 0 00-.15.63l.57 5.53-1.31 2.8a.74.74 0 00-.1.32.5.5 0 00.5.5h20.5a.5.5 0 000-1zM11.58 1.58a1 1 0 011.32-.49l2.72 1.27a1 1 0 01.49 1.33L11 16.77l-6.23-2.9zm-.91 16.13L5.84 21l-.9-.42-.61-5.8zm-6.16 3.74l.91.43L4.9 23H3.79z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </li>
           <li>
             <button
@@ -449,10 +517,15 @@ exports[`QTI NUI test runner behavior > renders the test top bar with some plugi
                 <path
                   d="M13 2v20l-8-8H1v-4h4l8-8m0-1a1 1 0 00-.71.29L4.59 9H1a1 1 0 00-1 1v4a1 1 0 001 1h3.59l7.7 7.71A1 1 0 0013 23a.84.84 0 00.38-.08A1 1 0 0014 22V2a1 1 0 00-.62-.92A.84.84 0 0013 1zm4.5 14c-.28 0-.5-.17-.5-.38V9.38c0-.21.22-.38.5-.38s.5.17.5.38v5.24c0 .21-.22.38-.5.38zm3 3a.5.5 0 01-.5-.5v-11a.5.5 0 011 0v11a.5.5 0 01-.5.5zm3 3a.5.5 0 01-.5-.5v-17a.5.5 0 011 0v17a.5.5 0 01-.5.5z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </li>
           <li>
             <button
@@ -475,19 +548,30 @@ exports[`QTI NUI test runner behavior > renders the test top bar with some plugi
                 <path
                   d="M12 8a4 4 0 11-4 4 4 4 0 014-4m0-1a5 5 0 105 5 5 5 0 00-5-5z"
                 />
+                
               </svg>
+              
                
+              
                
+              
             </button>
+            
           </li>
+          
            
+          
         </ol>
          
         <div
           slot="aside-after"
-        />
+        >
+          
+        </div>
+        
       </aside>
     </div>
+    
   </div>
    
   <div
@@ -496,28 +580,39 @@ exports[`QTI NUI test runner behavior > renders the test top bar with some plugi
     <div
       class="floating-toolbars"
     >
+      
+      
       <div
         class="toolbar-readAloud"
       />
+      
       
        
       <div
         class="flex-break"
       />
+      
+      
       
       <div
         class="toolbar-highlighter"
       />
       
+      
        
       <div
         class="flex-break"
       />
       
       
+      
+      
+      
        
       
+      
     </div>
+    
   </div>
 </div>
 `;

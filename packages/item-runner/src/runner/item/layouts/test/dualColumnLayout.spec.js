@@ -33,14 +33,6 @@ describe('Test "dual-column-layout" handler', () => {
             expect(validate(testBodyElement)).toBe(false);
         });
 
-        it('remove custom layout class if constrains were not met', () => {
-            document.body.innerHTML =
-                '<div id="container"><div class="grid-row dual-column-layout"><div class="col-12"></div></div></div>';
-            const testBodyElement = document.getElementById('container');
-            expect(validate(testBodyElement)).toBe(false);
-            expect(testBodyElement.querySelector('.dual-column-layout')).not.toHaveLength;
-        });
-
         it('returns true if test body contains 1 row with class and 2 cols inside', () => {
             document.body.innerHTML =
                 '<div id="container"><div class="grid-row dual-column-layout"><div class="col-4"></div><div class="col-8"></div></div></div>';

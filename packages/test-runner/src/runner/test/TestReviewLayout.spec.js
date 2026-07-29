@@ -96,7 +96,7 @@ describe('TestReviewLayout', () => {
 
         statusStore.set('overlay');
 
-        const { container, component } = render(TestReviewLayout, {
+        const { container, unmount } = render(TestReviewLayout, {
             props: {
                 serviceCallId
             }
@@ -109,7 +109,7 @@ describe('TestReviewLayout', () => {
             resizeWindow(780);
             return tick().then(() => {
                 expect(headerBarContainer.classList.contains('hidden')).toBe(false);
-                component.$destroy(); //stop listening to window resize event immediately
+                unmount(); //stop listening to window resize event immediately
             });
         });
     });

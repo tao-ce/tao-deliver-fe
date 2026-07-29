@@ -15,6 +15,7 @@ export function isResponseDefault(interactionState) {
     let value;
     try {
         ({ value } = pciJsonCodec.decode(interactionState.response));
+        // eslint-disable-next-line no-unused-vars
     } catch (e) {
         return true;
     }

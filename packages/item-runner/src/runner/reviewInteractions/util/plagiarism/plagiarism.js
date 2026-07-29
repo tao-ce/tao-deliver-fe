@@ -29,7 +29,6 @@
  * @param {Object[]} plagiarismReports
  * @returns {PlagiarismReportProps[]}
  */
-/* eslint-disable no-unused-vars */
 export function normalizeReports(responseIdentifier, plagiarismReports = []) {
     if (!Array.isArray(plagiarismReports)) {
         return [];

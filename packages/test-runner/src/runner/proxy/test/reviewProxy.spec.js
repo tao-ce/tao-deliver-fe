@@ -21,11 +21,13 @@ describe('Review Proxy', () => {
     const accessToken = 'token';
     const serviceUrl = '/url';
     const saveScoringInlineCommentsUrl = '/scoring-inline-comments';
+    const saveScoringAnnotationCommentUrl = '/scoring-annotation-comment';
     const itemStoreTTL = 500;
     const config = {
         jwtTokenHandler,
         serviceUrl,
         saveScoringInlineCommentsUrl,
+        saveScoringAnnotationCommentUrl,
         itemStoreTTL
     };
 
@@ -498,6 +500,53 @@ describe('Review Proxy', () => {
             headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${accessToken}` },
             method: 'PUT',
             body: '{"itemId":"item-abc","comment":{"foo":"bar"}}'
+        });
+    });
+
+    it('saveScoringAnnotationComment', async () => {
+        expect.assertions(4);
+
+        expect(proxy.saveScoringAnnotationComment).toBeTypeOf('function');
+
+        fetch.mockResponses(initRequest(), JSON.stringify({}));
+        await proxy.init(config);
+        await proxy.saveScoringAnnotationComment('item-abc', {
+            markingSymbols: [{ foo: 'bar' }]
+        });
+        const fetchCall = fetch.mock.calls[fetch.mock.calls.length - 1];
+        expect(fetchCall).toBeTruthy();
+        expect(fetchCall[0]).toBe(config.saveScoringAnnotationCommentUrl);
+
+        expect(fetchCall[1]).toMatchObject({
+            headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${accessToken}` },
+            method: 'PUT',
+            body: '{"itemId":"item-abc","annotations":{"markingSymbols":[{"foo":"bar"}]}}'
+        });
+    });
+
+    it('saveScoringAnnotationComment includes responseIdentifier when available', async () => {
+        expect.assertions(4);
+
+        fetch.mockResponses(initRequest(), JSON.stringify({}));
+        await proxy.init(config);
+        await proxy.saveScoringAnnotationComment('item-abc', {
+            responses: {
+                RESPONSE_1: {
+                    markingSymbols: [{ foo: 'bar' }]
+                }
+            }
+        });
+        const fetchCall = fetch.mock.calls[fetch.mock.calls.length - 1];
+        expect(fetchCall).toBeTruthy();
+        expect(fetchCall[0]).toBe(config.saveScoringAnnotationCommentUrl);
+        const body = JSON.parse(fetchCall[1].body);
+        expect(body.responseIdentifier).toBe('RESPONSE_1');
+        expect(body.annotations).toEqual({
+            responses: {
+                RESPONSE_1: {
+                    markingSymbols: [{ foo: 'bar' }]
+                }
+            }
         });
     });
 });

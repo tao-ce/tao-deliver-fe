@@ -8,24 +8,19 @@ const floatPrecision = 0.01;
 /**
  * Detects the orientation of a polygon
  * https://en.wikipedia.org/wiki/Curve_orientation#Orientation_of_a_simple_polygon
- * @param {Array(Number[])} vertexCoords vertex coordinates array
- * @returns {(1|-1)} -1 is for clockwise 1 is for counter-clockwise
+ * @param {Number[][]} vertexCoords vertex coordinates array
+ * @returns {boolean} true if clockwise, false if counter-clockwise
  */
-function getOrientation(vertexCoords) {
+function getIsClockwise(vertexCoords) {
     //find the vertex with the largest x and smallest y
-    const maxX = Math.max.apply(
-        null,
-        vertexCoords.map(vertexCoord => vertexCoord[0])
-    );
-    const minY = Math.min.apply(
-        null,
-        vertexCoords
+    const maxX = Math.max(...vertexCoords.map(vertexCoord => vertexCoord[0]));
+    const minY = Math.min(
+        ...vertexCoords
             .filter(vertexCoord => Math.abs(vertexCoord[0] - maxX) < floatPrecision)
             .map(vertexCoord => vertexCoord[1])
     );
     const convexHullVertexIndex = vertexCoords.findIndex(
         vertexCoord =>
-            //eslint-disable-next-line implicit-arrow-linebreak
             Math.abs(vertexCoord[0] - maxX) < floatPrecision && Math.abs(vertexCoord[1] - minY) <= floatPrecision
     );
 
@@ -35,47 +30,7 @@ function getOrientation(vertexCoords) {
 
     //orientation matrix determinant
     const det = B[0] * C[1] + A[0] * B[1] + A[1] * C[0] - A[1] * B[0] - B[1] * C[0] - A[0] * C[1];
-    return det / Math.abs(det);
-}
-
-/**
- * Calculates the vertex coordinates of inset polygon
- * @param {Number[]} coords raw array of coordinates
- * @param {Number} delta offset value in pixels
- * @returns {Array[Number[]]} vertex coordinates array
- */
-export function calculateInnerPolygonCoords(coords, delta) {
-    const vertexArray = getVertexCoords(coords);
-    const orientation = getOrientation(vertexArray);
-    const sideVectors = vertexArray.map((vertexCoord, index) => {
-        const next = (index + 1) % vertexArray.length;
-        return [vertexCoord[0] - vertexArray[next][0], vertexCoord[1] - vertexArray[next][1]];
-    });
-    const normalVectors = sideVectors.map(vectorCoords => {
-        const sideVectorLength = Math.sqrt(Math.pow(vectorCoords[0], 2) + Math.pow(vectorCoords[1], 2));
-        return [vectorCoords[1] / sideVectorLength, -vectorCoords[0] / sideVectorLength];
-    });
-
-    return vertexArray.map((coord, index) => {
-        const prevNormalVector = index === 0 ? normalVectors[normalVectors.length - 1] : normalVectors[index - 1];
-        const currentNormalVector = normalVectors[index];
-        const sumNormal = calculateSumNormal(prevNormalVector, currentNormalVector);
-        const shiftVectorLength = calculateShiftVectorLength(prevNormalVector, currentNormalVector, delta);
-        return [
-            coord[0] + shiftVectorLength * sumNormal[0] * orientation,
-            coord[1] + shiftVectorLength * sumNormal[1] * orientation
-        ];
-    });
-}
-
-/**
- * Calculates the vertex coordinates of offset polygon
- * @param {Number[]} coords raw array of coordinates
- * @param {Number} delta offset value in pixels
- * @returns {Array(Number[])} vertex coordinates array
- */
-export function calculateOuterPolygonCoords(coords, delta) {
-    return calculateInnerPolygonCoords(coords, -delta);
+    return det > 0;
 }
 
 /**
@@ -118,29 +73,9 @@ function removeRepeatingCoords(coords) {
 }
 
 /**
- * Offsets small shape coordinates to fit minSize
- * @param {Number[]} coords raw array of coordinates
- * @param {Number} minSize minimum dimension of shape
- * @returns {Number[]} raw coordinates array
- */
-export function offsetToFit(coords, minSize) {
-    const precision = 0.5;
-    let offset = calculateFitOffset(coords, minSize, precision);
-    let offsetCoords = coords;
-    let iterations = 30; // iteration limit to avoid infinite loop due to whatever
-    if (offset > 0) {
-        while (offset !== 0 && --iterations > 0) {
-            offsetCoords = getCoordsArray(calculateOuterPolygonCoords(offsetCoords, offset));
-            offset = calculateFitOffset(offsetCoords, minSize, precision);
-        }
-    }
-    return offsetCoords;
-}
-
-/**
  * Returns array of vertex coordinates
  * @param {Number[]} coords raw array of coordinates
- * @returns {Array(Number[])} vertex coordinates array
+ * @returns {Number[][]} vertex coordinates array
  */
 export function getVertexCoords(coords) {
     return coords.reduce((acc, currentCoord, index) => {
@@ -155,82 +90,78 @@ export function getVertexCoords(coords) {
 }
 
 /**
- * calculates distance of the bounding box to minSize box
- * @param {Number[]} coords raw array of coordinates
- * @param {Number} minSize minimum dimension of shape
- * @param {Number} precision precision of minSize and bounding box size difference
- * @returns {Number[]} raw coordinates array
+ * Assume that center is in the "fattest" place in the polygon (farthest from all borders),
+ * and check if at least the "fattest" place can fully fit the rectangle of the defined min size inside.
+ * @param {import('@svgdotjs/svg.js').Element} polyEl
+ * @param {Number} cx - polygon center x
+ * @param {Number} cy - polygon center y
+ * @param {Number} minSizePx
+ * @returns {Boolean}
  */
-function calculateFitOffset(coords, minSize, precision) {
-    const xCoords = coords.filter((coord, i) => i % 2 === 0);
-    const yCoords = coords.filter((coord, i) => i % 2 === 1);
-    const boundingWidth = Math.max.apply(null, xCoords) - Math.min.apply(null, xCoords);
-    const boundingHeight = Math.max.apply(null, yCoords) - Math.min.apply(null, yCoords);
+export function getIsThin(polyEl, cx, cy, minSizePx) {
+    const checker = polyEl.circle(minSizePx).attr({ cx, cy }).attr({ style: 'opacity:0' });
+    const checkerBox = checker.node.getBoundingClientRect();
+    const checkerPoints = [
+        [checkerBox.left, checkerBox.top],
+        [checkerBox.right, checkerBox.top],
+        [checkerBox.right, checkerBox.bottom],
+        [checkerBox.left, checkerBox.bottom]
+    ];
+    checker.remove();
 
-    const minDimension = Math.min(boundingHeight, boundingWidth);
-    if (minDimension >= minSize - precision && minDimension <= minSize + precision) {
-        return 0;
-    } else {
-        return (minSize - minDimension) / 2;
+    const originalStyle = polyEl.attr('style');
+    polyEl.attr({ style: `${originalStyle || ''}; pointer-events: auto` });
+    const result = checkerPoints.some(([x, y]) => {
+        const pointNode = document.elementFromPoint(x, y);
+        return !pointNode || !polyEl.node.contains(pointNode);
+    });
+    polyEl.attr({ style: originalStyle || null });
+
+    return result;
+}
+
+/**
+ * Finds the closest point in a set of points to a target point.
+ * @param {Number[]} point - point to which the distance is checked
+ * @param {Number[][]} vertexCoords - polygon coords
+ * @returns {Number}
+ */
+function findClosestPointIdx(point, vertexCoords) {
+    const distancesSq = vertexCoords.map(c => {
+        const dx = point[0] - c[0];
+        const dy = point[1] - c[1];
+        return dx * dx + dy * dy;
+    });
+    const minDistanceSq = Math.min(...distancesSq);
+    return distancesSq.indexOf(minDistanceSq);
+}
+
+/**
+ * Get coordinates for the "inverted" clipPath for the polygon:
+ * it will cut the inside half of polygon stroke, and leave the outside half
+ * @param {Number[][]}  vertexCoords - polygon coords
+ * @param {import('@svgdotjs/svg.js').Element} polyEl
+ * @returns {Number[][]}
+ */
+export function getInvertedClipPathCoords(vertexCoords, polyEl) {
+    const box = polyEl.node.getBBox({ fill: true, stroke: false, clipped: false });
+    const offset = 10;
+    let boundingRectPoints = [
+        [box.x - offset, box.y - offset],
+        [box.x + box.width + offset, box.y - offset],
+        [box.x + box.width + offset, box.y + box.height + offset],
+        [box.x - offset, box.y + box.height + offset]
+    ];
+    // If poly clockwise, then rect counter-clockwise. If poly counter-clockwise, then rect clockwise.
+    const isPolyClockwise = getIsClockwise(vertexCoords);
+    if (isPolyClockwise) {
+        boundingRectPoints.reverse();
     }
-}
 
-/**
- * Returns array of raw coordinates from array of vertex coordinates
- * @param {Array(Number[])} vertexCoords vertex coordinates array
- * @returns {Number[]} raw coordinates array
- */
-function getCoordsArray(vertexCoords) {
-    return vertexCoords.reduce((acc, currentCoords) => [...acc, ...currentCoords], []);
-}
-
-/**
- * Calculates normalizes vector sum
- * @param {Number[]} vector1 vector coordinates
- * @param {Number[]} vector2 vector coordinates
- * @returns {Number[]} vector coordinates
- */
-function calculateSumNormal(vector1, vector2) {
-    const sum = vectorSum(vector1, vector2);
-    const length = vectorLength(sum);
-    return [sum[0] / length, sum[1] / length];
-}
-
-/**
- * Calculates the move vector for the given offset
- * @param {Number[]} vector1 vector coordinates
- * @param {Number[]} vector2 vector coordinates
- * @param {Number} d offset distance
- * @returns {Number[]} vector coordinates
- */
-function calculateShiftVectorLength(vector1, vector2, d) {
-    return (d * vectorLength(vectorSum(vector1, vector2))) / dotProduct(vector1, vectorSum(vector1, vector2));
-}
-
-/**
- * Calculates vector sum of twor vectors
- * @param {Number[]} vector1 vector coordinates
- * @param {Number[]} vector2 vector coordinates
- * @returns {Number[]} vector sum
- */
-function vectorSum(vector1, vector2) {
-    return [vector1[0] + vector2[0], vector1[1] + vector2[1]];
-}
-
-/** Calculates vector length of a given vector
- * @param {Number[]} vector vector coordinates
- * @returns {Number} vector length
- */
-function vectorLength(vector) {
-    return Math.sqrt(Math.pow(vector[0], 2) + Math.pow(vector[1], 2));
-}
-
-/**
- * Calculates dotproduct of two vectors
- * @param {Number[]} vector1 vector coordinates
- * @param {Number[]} vector2 vector coordinates
- * @returns {Number} dotproduct
- */
-function dotProduct(vector1, vector2) {
-    return vector1[0] * vector2[0] + vector1[1] * vector2[1];
+    const closestVertexCoordIdx = findClosestPointIdx(boundingRectPoints[0], vertexCoords);
+    const vertexCoordsReordered = [
+        ...vertexCoords.slice(closestVertexCoordIdx),
+        ...vertexCoords.slice(0, closestVertexCoordIdx)
+    ];
+    return [...vertexCoordsReordered, vertexCoordsReordered[0], ...boundingRectPoints, boundingRectPoints[0]];
 }

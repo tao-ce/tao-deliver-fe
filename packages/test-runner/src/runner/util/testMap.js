@@ -1,7 +1,8 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2020-2024 (original work) Open Assessment Technologies SA ;
+// Copyright (C) 2020-2026 (original work) Open Assessment Technologies SA;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
+import { isLastItemOfPart } from './testPart.js';
 
 /**
  * Getter for item Booleans such as allowSkipping or validateResponses
@@ -137,9 +138,9 @@ export function updateAttempt(testMap, testPart, section, updatedItem) {
 
 /**
  * @typedef {Object} itemLookupPath
- * @property {string} path.itemId - id of item
- * @property {string} path.sectionId - id of section to which item belongs
- * @property {string} path.testPartId - id of testPart to which item belongs
+ * @property {string} itemId - id of item
+ * @property {string} sectionId - id of section to which item belongs
+ * @property {string} testPartId - id of testPart to which item belongs
  */
 /**
  * Get lookup path (item id & section id & part id) of item on the given position
@@ -266,8 +267,8 @@ export function getItemByIdentifier(testMap, itemIdentifier) {
 
 /**
  * @typedef {Object} TotalScore
- * @property {Number|null} totalScore - number >= 0, or `null` if `waitingForExternalScore`
- * @property {Number} totalMaxScore
+ * @property {?Number} totalScore - number >= 0, or `null` if `waitingForExternalScore`
+ * @property {?Number} totalMaxScore - number >= 0, or `null` if no max score outcome was defined on any of the items
  * @property {Boolean} waitingForExternalScore
  */
 /**
@@ -277,7 +278,7 @@ export function getItemByIdentifier(testMap, itemIdentifier) {
  */
 export function calculateTotalScore(testMap) {
     let totalScore = 0;
-    let totalMaxScore = 0;
+    let totalMaxScore = null;
     let waitingForExternalScore = false;
 
     for (let testPartId in testMap.parts || {}) {
@@ -285,13 +286,18 @@ export function calculateTotalScore(testMap) {
             const section = testMap.parts[testPartId].sections[sectionId];
             for (let itemId in section.items || {}) {
                 const item = section.items[itemId];
-                if (item) {
-                    if (isItemWaitingForExternalScore(item)) {
-                        waitingForExternalScore = true;
-                    } else if (Number.isFinite(item.score) && Number.isFinite(item.maxScore)) {
-                        totalScore += item.score;
-                        totalMaxScore += item.maxScore;
-                    }
+                if (!item) {
+                    continue;
+                }
+                if (isItemWaitingForExternalScore(item)) {
+                    waitingForExternalScore = true;
+                    continue;
+                }
+                if (Number.isFinite(item.score)) {
+                    totalScore += item.score;
+                }
+                if (Number.isFinite(item.maxScore)) {
+                    totalMaxScore += item.maxScore;
                 }
             }
         }
@@ -300,7 +306,7 @@ export function calculateTotalScore(testMap) {
     return {
         // remove imprecisions from float addition
         totalScore: waitingForExternalScore ? null : parseFloat(totalScore.toFixed(10)),
-        totalMaxScore: parseFloat(totalMaxScore.toFixed(10)),
+        totalMaxScore: Number.isFinite(totalMaxScore) ? parseFloat(totalMaxScore.toFixed(10)) : null,
         waitingForExternalScore
     };
 }
@@ -332,4 +338,34 @@ export function getAllItems(testMap = {}) {
         }
     }
     return allItems;
+}
+
+/**
+ * Check if item has the specified category
+ * @param {Object} testMap
+ * @param {string} itemIdentifier
+ * @param {string} category
+ * @returns {boolean}
+ */
+export function itemHasCategory(testMap, itemIdentifier, category) {
+    const item = getItemByIdentifier(testMap, itemIdentifier);
+    const { testPartId, sectionId } = itemPathForPosition(testMap, item.position);
+    const categories = getItemProperty(testMap, testPartId, sectionId, itemIdentifier, 'categories');
+    return Array.isArray(categories) && categories.some(ctg => ctg === category);
+}
+
+/**
+ * Check if item is the last in the current testPart
+ * @param {Object} testMap
+ * @param {String} itemIdentifier
+ * @returns {Boolean}
+ */
+export function isLastItemInCurrentPart(testMap, itemIdentifier) {
+    const item = getItemByIdentifier(testMap, itemIdentifier);
+    if (!item) {
+        return false;
+    }
+    const { testPartId } = itemPathForPosition(testMap, item.position);
+    const testPart = testMap.parts[testPartId];
+    return isLastItemOfPart(item, testPart);
 }

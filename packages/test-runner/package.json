@@ -1,11 +1,12 @@
 {
   "name": "@oat-sa-private/tao-test-runner-qtinui",
-  "version": "7.51.0",
+  "version": "7.59.0",
   "displayName": "TAO QTI Test Runner",
   "description": "TAO QTI Test Runner new user interface",
   "homepage": "https://github.com/oat-sa/tao-deliver-fe#readme",
   "files": [
     "dist",
+    "!dist/**/*.map",
     "src",
     "locale",
     "!**/test/"
@@ -34,14 +35,14 @@
   },
   "license": "AGPL-3.0-only OR LicenseRef-TAO-Commercial-License",
   "devDependencies": {
-    "@mswjs/socket.io-binding": "^0.1.1",
-    "msw": "^2.7.5",
+    "@mswjs/socket.io-binding": "^0.2.0",
+    "msw": "^2.12.10",
     "socket.io": "^4.5.4"
   },
   "dependencies": {
     "@extra-number/to-roman": "^2.0.26",
     "@oat-sa-private/read-aloud-client": "^0.10.0",
-    "@oat-sa-private/tao-item-runner-qtinui": "^8.65.0",
+    "@oat-sa-private/tao-item-runner-qtinui": "^8.73.0",
     "@oat-sa/tao-core-sdk": "^3.6.0",
     "@oat-sa/tao-item-runner": "^1.0.0",
     "@oat-sa/tao-test-runner": "^1.0.0",

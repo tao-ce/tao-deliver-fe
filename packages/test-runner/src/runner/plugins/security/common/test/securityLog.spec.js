@@ -26,5 +26,13 @@ describe('securityLog', () => {
             action: 'flag',
             reason: reason
         });
+
+        securityLog(mockTestRunner, reason, { 'detail-1': 'info-1' });
+
+        expect(mockTestRunner.getProxy().callTestAction).toHaveBeenCalledWith('security-log', {
+            action: 'flag',
+            reason: reason,
+            details: { 'detail-1': 'info-1' }
+        });
     });
 });

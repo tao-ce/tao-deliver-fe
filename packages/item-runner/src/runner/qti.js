@@ -21,6 +21,8 @@ import ModalFeedbackNavigator from './item/modalFeedback/ModalFeedbackNavigator.
 import { hasClass } from './interactions/util/attributes.js';
 import { cancelAllExtendedTextUploads } from './interactions/extendedText/uploadAdapter.js';
 import { cancelAllServicesUploads } from './services/upload/uploadService.js';
+import { mount, unmount } from 'svelte';
+import { generateElementId } from '@oat-sa-private/ui-core';
 
 export const providerName = 'qtinui';
 
@@ -115,7 +117,7 @@ export default {
 
                 // In terms of subcomponent asset loaders,
                 // simplest is to destroy Item component and set a new one
-                this.item.$destroy();
+                unmount(this.item);
 
                 this.sessionStatusStore.set(itemSessionStatus.initial);
 
@@ -187,14 +189,16 @@ export default {
 
         const ItemComponent = previewerMode ? ItemPreviewer : Item;
 
-        this.item = new ItemComponent({
+        this.item = mount(ItemComponent, {
             target: container,
             intro: true,
             props: Object.assign(parsedData, {
                 assetManager: this.assetManager,
                 userLang: getLocale(),
                 options,
-                extraData: this.itemData.extraData
+                extraData: this.itemData.extraData,
+                itemRunner: previewerMode ? this : null,
+                content: previewerMode ? this.itemData.itemData : null
             })
         });
 
@@ -212,8 +216,14 @@ export default {
             this.trigger('sequence-ended-nav-next');
         });
 
-        const offReady = this.item.$on('ready', () => {
-            offReady();
+        let ready = false;
+
+        // run once on ready
+        this.item.$on('ready', () => {
+            if (ready) {
+                return;
+            }
+            ready = true;
 
             this.sessionStatusStore.set(
                 this.sessionStatusToResume === itemSessionStatus.modalFeedback
@@ -241,7 +251,7 @@ export default {
 
         // destroy item
         if (this.item) {
-            this.item.$destroy();
+            unmount(this.item);
         }
 
         // unsubscribe from changes
@@ -424,17 +434,25 @@ export default {
                 if (!navigatorComponent) {
                     const navigatorArea = itemSession.modalFeedbackNavigatorArea;
                     if (navigatorArea) {
-                        navigatorComponent = new ModalFeedbackNavigator({ target: navigatorArea });
+                        navigatorComponent = mount(ModalFeedbackNavigator, {
+                            target: navigatorArea,
+                            props: {
+                                key: generateElementId('tao-modalfeedbacknav')
+                            }
+                        });
                     }
                 }
 
-                let unsubscribeContinueEvent;
+                const handledFeedbacks = [];
                 await new Promise(resolve => {
-                    unsubscribeContinueEvent = navigatorComponent.$on('modalFeedbackContinue', () => {
-                        resolve();
+                    navigatorComponent.$on('modalFeedbackContinue', e => {
+                        const { key } = e.detail;
+                        if (key && !handledFeedbacks.includes(key)) {
+                            handledFeedbacks.push(key);
+                            resolve();
+                        }
                     });
                 });
-                unsubscribeContinueEvent();
             }
 
             delete this.sessionStatusToResume;
@@ -442,7 +460,7 @@ export default {
             this.needsReRender = true;
 
             if (navigatorComponent) {
-                navigatorComponent.$destroy();
+                unmount(navigatorComponent);
             }
         }
 

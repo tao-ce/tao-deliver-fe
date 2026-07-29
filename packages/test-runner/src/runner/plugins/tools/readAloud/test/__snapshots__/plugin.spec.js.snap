@@ -20,9 +20,13 @@ exports[`readAloud plugin > play/stop reading with play all button 1`] = `
     <path
       d="M1 1h14v14H1z"
     />
+    
   </svg>
+  
    
+  
    
+  
 </button>
 `;
 
@@ -50,9 +54,13 @@ exports[`readAloud plugin > play/stop reading with play all button 2`] = `
       d="M1 0V16L15 8L1 0Z"
       fill="currentColor"
     />
+    
   </svg>
+  
    
+  
    
+  
 </button>
 `;
 
@@ -236,6 +244,7 @@ exports[`readAloud plugin > stores changed settings into toolsStore and to clien
             <header>
               read aloud
             </header>
+            
              
             <div
               class="floating-bar-actions"
@@ -266,10 +275,15 @@ exports[`readAloud plugin > stores changed settings into toolsStore and to clien
                       d="M1 0V16L15 8L1 0Z"
                       fill="currentColor"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
+                  
                 </button>
+                
                  
                 <button
                   aria-describedby="tao-ra-sel-123"
@@ -290,10 +304,15 @@ exports[`readAloud plugin > stores changed settings into toolsStore and to clien
                     <path
                       d="M15 12H1a1 1 0 000 2h14a1 1 0 000-2zm0-5H9a1 1 0 000 2h6a1 1 0 000-2zm0-5H9a1 1 0 000 2h6a1 1 0 000-2zM0 2v7l5.83-3.5L0 2z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
+                  
                 </button>
+                
                  
                 <button
                   aria-label="ReadAloud settings"
@@ -316,11 +335,17 @@ exports[`readAloud plugin > stores changed settings into toolsStore and to clien
                     <path
                       d="M8 6a2 2 0 11-2 2 2 2 0 012-2m0-1a3 3 0 103 3 3 3 0 00-3-3z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
+                  
                 </button>
+                
               </div>
+              
             </div>
           </div>
            
@@ -329,7 +354,9 @@ exports[`readAloud plugin > stores changed settings into toolsStore and to clien
               class="footer"
               slot="footer"
             >
+              
                
+              
                
               <div
                 class="read-aloud-settings-drawer"
@@ -368,6 +395,7 @@ exports[`readAloud plugin > stores changed settings into toolsStore and to clien
                           <title>
                             Radio button
                           </title>
+                          
                           <circle
                             class="radio-border"
                             cx="8"
@@ -384,7 +412,6 @@ exports[`readAloud plugin > stores changed settings into toolsStore and to clien
                           Male
                         </span>
                       </label>
-                       
                     </div>
                     <div
                       class="radio"
@@ -413,6 +440,7 @@ exports[`readAloud plugin > stores changed settings into toolsStore and to clien
                             cy="8"
                             r="4"
                           />
+                          
                           <circle
                             class="radio-border"
                             cx="8"
@@ -429,10 +457,12 @@ exports[`readAloud plugin > stores changed settings into toolsStore and to clien
                           Female
                         </span>
                       </label>
-                       
                     </div>
+                    
                   </div>
+                  
                 </div>
+                
                  
                 <div
                   class="control-row"
@@ -460,10 +490,15 @@ exports[`readAloud plugin > stores changed settings into toolsStore and to clien
                         <path
                           d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
                         />
+                        
                       </svg>
+                      
                        
+                      
                        
+                      
                     </button>
+                    
                      
                     <button
                       aria-label="decrease reading speed"
@@ -481,17 +516,29 @@ exports[`readAloud plugin > stores changed settings into toolsStore and to clien
                         <path
                           d="M0 7h16v2H0z"
                         />
+                        
                       </svg>
+                      
                        
+                      
                        
+                      
                     </button>
+                    
                   </span>
+                  
                 </div>
+                
                  
+                
               </div>
+              
             </div>
+            
           </footer>
+          
         </div>
+        
          
         <div
           class="hidden"
@@ -507,6 +554,8 @@ exports[`readAloud plugin > stores changed settings into toolsStore and to clien
           Press enter or space to activate continuous reading. If activated press enter or space to stop the reading.
         </div>
       </div>
+      
+      
     </div>
     
                 

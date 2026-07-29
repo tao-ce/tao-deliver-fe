@@ -6,7 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 <script>
     // Licensed under Gnu Public Licence version 2
-    // Copyright (c) 2021-2024 (original work) Open Assessment Technologies SA ;
+    // Copyright (c) 2021-2026 (original work) Open Assessment Technologies SA ;
     import { __ } from '@oat-sa-private/ui-core';
     import Prompt from '../../interactions/Prompt.svelte';
     import { getInteractionStateStore } from '../../itemsStateStore.js';
@@ -42,6 +42,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     export let expectedLines;
     export let dir;
     export let base = 10;
+    export let reviewAutoSizeContent = true;
 
     export let prompt;
     export let format;
@@ -77,12 +78,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             }
         }
     }
-    const rows = getRowsValue(expectedLength, expectedLines, maxlength, maxWordsLimit, classes);
+    const rows = getRowsValue({ expectedLength, expectedLines, maxlength, maxWordsLimit, classes });
 
     let textContainer;
     let rootRef;
 
-    let responsiveHeight = false;
+    let responsiveHeight = !reviewAutoSizeContent && !rows;
 
     let additionalSpace = 0;
 
@@ -145,11 +146,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     /**
      * Updates values needed for control height calculation
      */
+
     function updateTextContainerHeight() {
-        if (!rows) {
-            responsiveHeight = true;
-            additionalSpace = getAdditionalSpacing(rootRef, !!prompt, isVerticalWritingMode);
-        }
+        additionalSpace = getAdditionalSpacing(rootRef, !!prompt, isVerticalWritingMode);
     }
 
     $: feedbacks = [
@@ -167,12 +166,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             visible: hasCharCount && !maxlength && !expectedResponseLength
         },
         {
-            /* eslint-disable indent */
             message: `${__('<strong>%d</strong> character(s) typed', (count && count.chars) || 0)} (${__(
                 'recommended: %d',
                 expectedResponseLength
             )}).`,
-            /*  eslint-enable indent */
             visible: expectedResponseLength && !maxlength
         },
         {
@@ -243,6 +240,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             block-size: calc(var(--base-control-height) - var(--additionalSpace));
         }
 
+        &.auto-size {
+            block-size: auto;
+            min-block-size: 0;
+            max-block-size: none;
+        }
+
         /**************************************
          Content styles
         **************************************/
@@ -298,11 +301,17 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     {/if}
     {#if isReviewAnswerMode}
         {#each plagiarismReportList as report}
-            <PlagiarismReport {report} />
+            <PlagiarismReport {itemIdentifier} {report} />
         {/each}
     {/if}
-    <div class="text-container" class:resizable class:responsive-height={responsiveHeight} bind:this={textContainer}>
+    <div
+        class="text-container"
+        class:resizable
+        class:responsive-height={responsiveHeight}
+        class:auto-size={reviewAutoSizeContent}
+        bind:this={textContainer}>
         {#if format === formats.xhtml}
+            <!-- eslint-disable-next-line svelte/no-at-html-tags -->
             {@html value}
         {:else}{value}{/if}
     </div>
@@ -311,6 +320,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             {#if feedback.visible}
                 <li class="feedback">
                     <span class="bullet" aria-hidden="true">•</span>
+                    <!-- eslint-disable-next-line svelte/no-at-html-tags -->
                     <span>{@html feedback.message}</span>
                 </li>
             {/if}

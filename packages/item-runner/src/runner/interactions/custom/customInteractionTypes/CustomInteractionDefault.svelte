@@ -194,6 +194,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
     onDestroy(() => {
         if (pciInstance) {
+            if (!properties?.isReviewMode) {
+                stateUpdate();
+            }
             pciInstance.oncompleted();
             itemContext.off('stateupdate', stateUpdate);
         }
@@ -226,6 +229,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         <Prompt blockTree={prompt} />
     {/if}
     <div bind:this={container} on:interactiontrace|stopPropagation={dispatchInteractiontrace}>
+        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
         {@html markup}
     </div>
 </div>

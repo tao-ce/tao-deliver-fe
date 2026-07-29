@@ -339,20 +339,25 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             }
         }
     }
-    .wrap {
-        position: relative;
-    }
-    .loading {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(255, 255, 255, 0.5);
-        z-index: 100;
+    .qti-uploadInteraction {
+        & .wrap {
+            position: relative;
+        }
+        & .loading {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.5);
+            z-index: 100;
+        }
+        & :global(.expected-formats) {
+            margin: 0 0 1rem 0;
+        }
     }
 </style>
 

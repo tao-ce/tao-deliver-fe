@@ -7,10 +7,12 @@
  * Performs security logging.
  * @param {object} testRunner - The test runner object.
  * @param {string} reason - The reason for the security log action.
+ * @param {object?} details - The details for the security log action.
  */
-export const securityLog = (testRunner, reason) => {
+export const securityLog = (testRunner, reason, details) => {
     testRunner.getProxy().callTestAction('security-log', {
         action: 'flag',
-        reason: reason
+        reason,
+        details
     });
 };

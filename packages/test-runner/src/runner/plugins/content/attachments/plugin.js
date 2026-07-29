@@ -9,8 +9,8 @@ import toolsStoreHandler from '../../tools/util/toolsStoreHandler.js';
 import AttachmentsOverlayBox from './AttachmentsOverlayBox.svelte';
 import Attachment from './Attachment.svelte';
 import AttachmentsFlyout from './AttachmentsFlyout.svelte';
-import { openInNewTab } from '../../../util/common.js';
-import { tick } from 'svelte';
+import { openUrlInNewTab } from '@oat-sa-private/ui-core';
+import { tick, mount, unmount } from 'svelte';
 
 /**
  * @typedef {Object} Attachment
@@ -54,6 +54,11 @@ export default pluginFactory({
         const areaBroker = this.getAreaBroker();
         this.toolsStoreHandler = toolsStoreHandler(testConfig.serviceCallId, this.getName());
 
+        this.getCurrentItemId = () =>
+            this.state?.activeItemContext?.itemId
+            || testRunner.getDataHolder()?.getCurrentItem()?.id
+            || testRunner.getCurrentItemIdentifier();
+
         /**
          * Svelte components, all null except when mounted
          */
@@ -77,8 +82,10 @@ export default pluginFactory({
                 flyoutOpen: false,
                 showNewTabLinks: true
             },
-            byId: {}, // keyed by attachment.id; values: { page, zoom, zoomForWidth, scrollTop, scrollLeft }
-            byItem: {} // keyed by itemId; values: { selectedAttachmentId }
+            byId: {}, // keyed by attachment id; values: { page, zoom, zoomForWidth, scrollTop, scrollLeft, search }
+            byItem: {}, // keyed by itemId; values: { attachmentSignature, selectedAttachmentId }
+            activeItemContext: null,
+            previousItemContext: null
         };
 
         /**
@@ -86,28 +93,172 @@ export default pluginFactory({
          */
         this.loadState = () => {
             this.state.ui = this.toolsStoreHandler.get('ui') || this.state.ui;
-            this.state.byId = this.toolsStoreHandler.get('byId') || this.state.byId;
+            this.state.byId = {
+                ...this.state.byId,
+                ...(this.toolsStoreHandler.get('byId') || {})
+            };
         };
+
+        /**
+         * Create snapshot of the current item context before it changes
+         * @param {?{itemId: String, attachmentSignature: String}} itemContext
+         * @returns {?{itemId: String, attachmentSignature: String}}
+         */
+        this.getItemContextSnapshot = itemContext => (itemContext ? { ...itemContext } : null);
 
         /**
          * Load a particular item's local state from a central store
          * @param {String} itemId
          */
         this.loadStateForItem = itemId => {
-            this.state.byItem = {
-                ...this.state.byItem,
-                [itemId]: this.toolsStoreHandler.getForItem(itemId, 'attachments') || this.state.byItem[itemId]
-            };
+            const resolvedItemId = itemId || this.getCurrentItemId();
+            if (!resolvedItemId) {
+                return;
+            }
+
+            const storedItemState = this.toolsStoreHandler.getForItem(resolvedItemId, 'attachments');
+            if (storedItemState && Object.keys(storedItemState).length > 0) {
+                if (storedItemState.byId) {
+                    this.state.byId = {
+                        ...this.state.byId,
+                        ...storedItemState.byId
+                    };
+                }
+
+                const existingItemState = this.state.byItem[resolvedItemId] || {};
+                this.state.byItem[resolvedItemId] = {
+                    attachmentSignature: storedItemState.attachmentSignature || existingItemState.attachmentSignature,
+                    selectedAttachmentId:
+                        storedItemState.selectedAttachmentId || existingItemState.selectedAttachmentId || null
+                };
+            }
+        };
+
+        /**
+         * Normalize a serialized attachment signature so different authoring order resolves
+         * to the same attachment-set signature
+         * @param {String} attachmentSignature
+         * @returns {String}
+         */
+        this.normalizeAttachmentSignature = attachmentSignature => {
+            if (!attachmentSignature) {
+                return attachmentSignature;
+            }
+
+            try {
+                const parsedSignature = JSON.parse(attachmentSignature);
+                return Array.isArray(parsedSignature) ? JSON.stringify([...parsedSignature].sort()) : attachmentSignature;
+            } catch {
+                return attachmentSignature;
+            }
+        };
+
+        /**
+         * Get a normalized signature for the current attachment configuration
+         * @param {Attachment[]} [itemAttachments]
+         * @returns {String}
+         */
+        this.getAttachmentSignature = (itemAttachments = this.getItemAttachments()) =>
+            JSON.stringify(itemAttachments.map(attachment => attachment.id).sort());
+
+        /**
+         * Get normalized state for an item and migrate legacy item-scoped state if needed
+         * @param {String} itemId
+         * @param {Attachment[]} [itemAttachments]
+         * @returns {{attachmentSignature: String, selectedAttachmentId: ?String}}
+         */
+        this.getItemState = (itemId, itemAttachments = this.getItemAttachments()) => {
+            const resolvedItemId = itemId || this.getCurrentItemId();
+            const attachmentSignature = this.getAttachmentSignature(itemAttachments);
+
+            if (!resolvedItemId) {
+                return {
+                    attachmentSignature,
+                    selectedAttachmentId: null
+                };
+            }
+
+            const existingItemState = this.state.byItem[resolvedItemId];
+            const isCompatibleState =
+                !!existingItemState &&
+                (!existingItemState.attachmentSignature
+                    || this.normalizeAttachmentSignature(existingItemState.attachmentSignature) === attachmentSignature);
+
+            if (!existingItemState || !isCompatibleState) {
+                this.state.byItem[resolvedItemId] = {
+                    attachmentSignature,
+                    selectedAttachmentId: isCompatibleState ? existingItemState.selectedAttachmentId || null : null
+                };
+            } else if (existingItemState.attachmentSignature !== attachmentSignature) {
+                this.state.byItem[resolvedItemId] = {
+                    ...existingItemState,
+                    attachmentSignature
+                };
+            }
+
+            return this.state.byItem[resolvedItemId];
+        };
+
+        /**
+         * Copy attachment selection from one item to another when both items share
+         * the same attachment set, regardless of authoring order
+         * @param {String} sourceItemId
+         * @param {String} targetItemId
+         * @param {Attachment[]} [itemAttachments]
+         */
+        this.copyAttachmentSelectionBetweenItems = (
+            sourceItemId,
+            targetItemId,
+            itemAttachments = this.getItemAttachments()
+        ) => {
+            if (!sourceItemId || !targetItemId) {
+                return;
+            }
+
+            const sourceItemState = this.getItemState(sourceItemId, itemAttachments);
+            const targetItemState = this.getItemState(targetItemId, itemAttachments);
+
+            targetItemState.selectedAttachmentId = sourceItemState.selectedAttachmentId;
+        };
+
+        /**
+         * Get the selected attachment id for an item, if it still exists in current attachments
+         * @param {String} itemId
+         * @param {Attachment[]} [itemAttachments]
+         * @returns {?String}
+         */
+        this.getSelectedAttachmentId = (itemId, itemAttachments = this.getItemAttachments()) => {
+            const selectedAttachmentId = this.getItemState(itemId, itemAttachments).selectedAttachmentId;
+            return selectedAttachmentId && itemAttachments.find(a => a.id === selectedAttachmentId)
+                ? selectedAttachmentId
+                : null;
+        };
+
+        /**
+         * Persist the selected attachment id for an item in local state
+         * @param {String} itemId
+         * @param {String} attachmentId
+         * @param {Attachment[]} [itemAttachments]
+         */
+        this.setSelectedAttachmentIdForItem = (itemId, attachmentId, itemAttachments = this.getItemAttachments()) => {
+            if (!itemId || !attachmentId) {
+                return;
+            }
+
+            this.getItemState(itemId, itemAttachments).selectedAttachmentId = attachmentId;
         };
 
         /**
          * Save the whole local state to a central store
+         * @param {?String} [itemIdOverride]
          */
-        this.saveState = () => {
-            const itemId = testRunner.getCurrentItemIdentifier();
+        this.saveState = itemIdOverride => {
+            const itemId = itemIdOverride || this.getCurrentItemId();
             this.toolsStoreHandler.set('ui', this.state.ui);
             this.toolsStoreHandler.set('byId', this.state.byId);
-            this.toolsStoreHandler.setForItem(itemId, 'attachments', this.state.byItem[itemId]);
+            if (itemId && this.state.byItem[itemId]) {
+                this.toolsStoreHandler.setForItem(itemId, 'attachments', this.state.byItem[itemId]);
+            }
         };
 
         /**
@@ -153,7 +304,7 @@ export default pluginFactory({
         this.renderToolbar = () => {
             const itemAttachments = this.getItemAttachments();
 
-            this.components.toolbar = new AttachmentsOverlayBox({
+            this.components.toolbar = mount(AttachmentsOverlayBox, {
                 target: this.toolbarContainer,
                 props: {
                     serviceCallId: testConfig.serviceCallId,
@@ -169,7 +320,7 @@ export default pluginFactory({
                         this.renderAttachment(attachment.id);
                         this.closeToolbar();
                     } else {
-                        openInNewTab(attachment.url);
+                        openUrlInNewTab(attachment.url);
                     }
                 }
             });
@@ -189,8 +340,9 @@ export default pluginFactory({
         /**
          * Mount the Attachment of the item in the designated area; also restyles TestLayout
          * @param {String} attachmentId
+         * @param {String} [itemId]
          */
-        this.renderAttachment = attachmentId => {
+        this.renderAttachment = (attachmentId, itemId = this.getCurrentItemId()) => {
             testLayoutStore.update(s => ({
                 ...s,
                 asideStart: this.state.ui.areaName === 'asideStart',
@@ -200,23 +352,27 @@ export default pluginFactory({
             if (!attachmentId) {
                 return;
             }
-            const itemAttachments = this.getItemAttachments();
+            const itemAttachments = this.getItemAttachments(itemId);
             const attachment = itemAttachments?.find(a => a.id === attachmentId);
             if (!attachment || attachment.id === this.currentAttachment?.id) {
                 return;
             }
+            const attachmentState = this.state.byId[attachment.id] || {};
 
             // copy state to component props
-            attachment.page = this.state.byId[attachment.id]?.page || 1;
-            attachment.zoom = this.state.byId[attachment.id]?.zoom || 1;
-            attachment.zoomForWidth = this.state.byId[attachment.id]?.zoomForWidth || 0;
-            attachment.scrollTop = this.state.byId[attachment.id]?.scrollTop || 0;
-            attachment.scrollLeft = this.state.byId[attachment.id]?.scrollLeft || 0;
+            attachment.page = attachmentState.page || 1;
+            attachment.zoom = attachmentState.zoom || 1;
+            attachment.zoomForWidth = attachmentState.zoomForWidth || 0;
+            attachment.scrollTop = attachmentState.scrollTop || null;
+            attachment.scrollLeft = attachmentState.scrollLeft || null;
+            attachment.search = attachmentState.search;
 
             this.currentAttachment = attachment;
 
-            this.components.attachment?.$destroy();
-            this.components.attachment = new Attachment({
+            if (this.components.attachment) {
+                unmount(this.components.attachment);
+            }
+            this.components.attachment = mount(Attachment, {
                 target: areaBroker.getArea(this.state.ui.areaName),
                 props: {
                     serviceCallId: testConfig.serviceCallId,
@@ -245,7 +401,7 @@ export default pluginFactory({
                     ...this.state.byId[attachment.id],
                     page: e.detail
                 };
-                this.saveState();
+                this.saveState(itemId);
             });
             this.components.attachment.$on('zoomchange', e => {
                 this.state.byId[attachment.id] = {
@@ -261,13 +417,18 @@ export default pluginFactory({
                     scrollLeft: e.detail.scrollLeft
                 };
             });
+            this.components.attachment.$on('searchchange', e => {
+                this.state.byId[attachment.id] = {
+                    ...this.state.byId[attachment.id],
+                    search: e.detail
+                };
+                this.saveState(itemId);
+            });
 
-            this.state.byItem[testRunner.getCurrentItemIdentifier()] = {
-                selectedAttachmentId: attachmentId
-            };
+            this.setSelectedAttachmentIdForItem(itemId, attachmentId, itemAttachments);
             this.state.ui.attachmentRendered = true;
             this.updateOpenState();
-            this.saveState();
+            this.saveState(itemId);
 
             tick().then(() => {
                 testRunner.trigger('layoutchange');
@@ -282,8 +443,10 @@ export default pluginFactory({
         this.renderFlyout = reference => {
             const itemAttachments = this.getItemAttachments();
 
-            this.components.flyout?.$destroy();
-            this.components.flyout = new AttachmentsFlyout({
+            if (this.components.flyout) {
+                unmount(this.components.flyout);
+            }
+            this.components.flyout = mount(AttachmentsFlyout, {
                 target: areaBroker.getArea(this.state.ui.areaName),
                 props: {
                     serviceCallId: testConfig.serviceCallId,
@@ -313,7 +476,7 @@ export default pluginFactory({
                         this.components.attachment.$set({ isFlyoutOpen: false });
                         this.renderAttachment(nextAttachment.id);
                     } else {
-                        openInNewTab(nextAttachment.url);
+                        openUrlInNewTab(nextAttachment.url);
                     }
                 }
             });
@@ -326,7 +489,9 @@ export default pluginFactory({
          * Unmount AttachmentsOverlayBox (toolbar) component
          */
         this.destroyToolbar = () => {
-            this.components.toolbar?.$destroy();
+            if (this.components.toolbar) {
+                unmount(this.components.toolbar);
+            }
             this.components.toolbar = null;
         };
 
@@ -337,8 +502,10 @@ export default pluginFactory({
         this.destroyAttachment = (includeState = true) => {
             this.destroyFlyout();
 
-            this.components.attachment?.$destroy();
-            this.components.attachment = null;
+            if (this.components.attachment) {
+                unmount(this.components.attachment);
+                this.components.attachment = null;
+            }
             this.currentAttachment = null;
 
             testLayoutStore.update(s => ({ ...s, [this.state.ui.areaName]: false }));
@@ -359,16 +526,28 @@ export default pluginFactory({
          * Unmount the AttachmentsFlyout component
          */
         this.destroyFlyout = () => {
-            this.components.flyout?.$destroy();
-            this.components.flyout = null;
+            if (this.components.flyout) {
+                unmount(this.components.flyout);
+                this.components.flyout = null;
+            }
             this.state.ui.flyoutOpen = false;
         };
 
         /**
          * Get the attachments from the testMap, for the current item
+         * @param {String} [itemId]
          * @returns {Object[]}
          */
-        this.getItemAttachments = () => testRunner.getDataHolder()?.getCurrentItem()?.attachments || [];
+        this.getItemAttachments = (itemId = this.getCurrentItemId()) => {
+            const dataHolder = testRunner.getDataHolder();
+            const currentSectionId = dataHolder?.getCurrentSection()?.id || testRunner.getTestContext()?.sectionId;
+            const currentTestPartId = dataHolder?.getCurrentTestPart()?.id || testRunner.getTestContext()?.testPartId;
+            const item = itemId
+                ? dataHolder?.getItem?.(itemId, currentSectionId, currentTestPartId)
+                : dataHolder?.getCurrentItem();
+
+            return item?.attachments || [];
+        };
     },
 
     init() {
@@ -398,15 +577,15 @@ export default pluginFactory({
                         this.getToolbarButton()?.focus();
                     } else {
                         // open toolbar or previously opened attachment or first attachment, depending on amount
-                        const itemId = testRunner.getCurrentItemIdentifier();
-                        const selectedAttachmentId = this.state.byItem[itemId]?.selectedAttachmentId;
-                        const itemAttachments = this.getItemAttachments();
+                        const itemId = this.getCurrentItemId();
+                        const itemAttachments = this.getItemAttachments(itemId);
 
                         if (itemAttachments.length === 1) {
-                            this.renderAttachment(itemAttachments[0].id);
+                            this.renderAttachment(itemAttachments[0].id, itemId);
                         } else if (itemAttachments.length > 1) {
+                            const selectedAttachmentId = this.getSelectedAttachmentId(itemId, itemAttachments);
                             if (selectedAttachmentId) {
-                                this.renderAttachment(selectedAttachmentId);
+                                this.renderAttachment(selectedAttachmentId, itemId);
                             } else {
                                 this.openToolbar();
                             }
@@ -416,41 +595,57 @@ export default pluginFactory({
                 }
             })
             .on(`renderitem.${this.getName()}`, itemId => {
-                this.loadStateForItem(itemId);
+                const currentItemId = itemId || this.getCurrentItemId();
+                this.loadStateForItem(currentItemId);
 
-                const itemAttachments = this.getItemAttachments();
-                // build up the full map of attachments in state, preserving the ones already added & modified there
-                itemAttachments.forEach(att => {
-                    if (!this.state.byId[att.id]) {
-                        this.state.byId[att.id] = {};
-                    }
-                });
+                const itemAttachments = this.getItemAttachments(currentItemId);
+                const currentAttachmentSignature = this.getAttachmentSignature(itemAttachments);
+
+                if (currentItemId && this.state.activeItemContext?.itemId !== currentItemId) {
+                    this.state.previousItemContext = this.getItemContextSnapshot(this.state.activeItemContext);
+                }
+                this.getItemState(currentItemId, itemAttachments);
 
                 if (itemAttachments.length) {
                     this.setToolbarButtonState('visible', true);
                     this.components.toolbar?.$set({ attachments: itemAttachments });
 
                     if (this.state.ui.attachmentRendered) {
-                        const lastAttachmentId = this.state.byItem[itemId]?.selectedAttachmentId;
-                        if (lastAttachmentId && itemAttachments.find(a => a.id === lastAttachmentId)) {
-                            this.renderAttachment(lastAttachmentId);
-                        } else {
-                            this.renderAttachment(itemAttachments[0].id);
+                        if (this.state.previousItemContext?.attachmentSignature === currentAttachmentSignature) {
+                            this.copyAttachmentSelectionBetweenItems(
+                                this.state.previousItemContext.itemId,
+                                currentItemId,
+                                itemAttachments
+                            );
                         }
+
+                        const attachmentIdToRender = this.getSelectedAttachmentId(currentItemId, itemAttachments)
+                            || itemAttachments[0].id;
+
+                        this.renderAttachment(attachmentIdToRender, currentItemId);
+                        this.setSelectedAttachmentIdForItem(currentItemId, attachmentIdToRender, itemAttachments);
                     }
                 } else {
                     this.setToolbarButtonState('visible', false);
                     this.closeToolbar();
                     this.destroyAttachment(false);
                 }
-                this.saveState();
+                this.state.activeItemContext = currentItemId
+                    ? {
+                          itemId: currentItemId,
+                          attachmentSignature: currentAttachmentSignature
+                      }
+                    : null;
+                this.saveState(currentItemId);
             })
-            .on(`unloaditem.${this.getName()}`, () => {
+            .on(`unloaditem.${this.getName()}`, itemId => {
+                const currentItemId = itemId || this.state.activeItemContext?.itemId || this.getCurrentItemId();
+                this.state.previousItemContext = this.getItemContextSnapshot(this.state.activeItemContext);
                 this.destroyAttachment(false);
                 this.destroyToolbar();
                 this.state.ui.toolbarOpen = false;
                 this.updateOpenState();
-                this.saveState();
+                this.saveState(currentItemId);
             });
     },
 
@@ -473,8 +668,14 @@ export default pluginFactory({
         const testRunner = this.getTestRunner();
         testRunner.off(`.${this.getName()}`);
 
-        this.components.toolbar?.$destroy();
-        this.components.attachment?.$destroy();
-        this.components.flyout?.$destroy();
+        if (this.components.toolbar) {
+            unmount(this.components.toolbar);
+        }
+        if (this.components.attachment) {
+            unmount(this.components.attachment);
+        }
+        if (this.components.flyout) {
+            unmount(this.components.flyout);
+        }
     }
 });

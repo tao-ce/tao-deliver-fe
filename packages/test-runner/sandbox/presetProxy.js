@@ -68,9 +68,26 @@ export default {
             });
         };
 
+        this.getData = async url => {
+            await wait(200);
+            // mock known use cases for getData
+            if (url.includes('/hbl/')) {
+                return Promise.resolve({
+                    reportUrl: `https://example.com/hbl-plagiarism-report`
+                });
+            }
+            return Promise.resolve({});
+        };
+
         this.saveScoringInlineComments = async (itemId, model) => {
             //eslint-disable-next-line no-console
             console.log('presetProxy saveScoringInlineComments', itemId, cloneDeep(model));
+            await wait(200);
+        };
+
+        this.saveScoringAnnotationComment = async (itemId, annotations) => {
+            //eslint-disable-next-line no-console
+            console.log('presetProxy saveScoringAnnotationComment', itemId, cloneDeep(annotations));
             await wait(200);
         };
     },
@@ -217,7 +234,9 @@ export default {
 
             flagItem: () => Promise.resolve(),
 
-            saveItemState: () => Promise.resolve()
+            saveItemState: () => Promise.resolve(),
+
+            timeout: () => Promise.resolve()
         };
         // Alias move as skip, for Sandbox purposes
         actions.skip = actions.move;
@@ -241,16 +260,11 @@ export default {
     /**
      * Call action on the test
      * @param {string} action - the action id
-     * @param {Object} params
      * @returns {Promise|void} resolves with the response
      */
-    callTestAction(action, params) {
+    callTestAction(action) {
         const actions = {
-            'ui-log': () =>
-                new Promise(resolve => {
-                    console.log('ui-log', params); // eslint-disable-line no-console
-                    resolve();
-                })
+            'ui-log': () => Promise.resolve()
         };
         if (typeof actions[action] === 'function') {
             return actions[action]();

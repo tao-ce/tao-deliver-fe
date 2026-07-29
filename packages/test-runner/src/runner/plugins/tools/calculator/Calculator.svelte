@@ -9,6 +9,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     // Copyright (c) 2023-2024 (original work) Open Assessment Technologies SA ;
     import { Calculator, calculatorMinSize, DraggableModal } from '@oat-sa-private/ui-components';
     import { __, getDefaultRemSizePx } from '@oat-sa-private/ui-core';
+    import { testLayoutStore, setActiveTool } from '../../../layout/testLayoutStore.js';
 
     /**
      * A component that displays a calculator.
@@ -46,15 +47,22 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     .calculator-wrapper {
         letter-spacing: 0;
         word-spacing: 0;
+        position: fixed;
+        z-index: calc(var(--layer-5) - 2);
 
         & :global(.header) {
             white-space: nowrap;
             overflow: hidden;
         }
+
+        &.active {
+            z-index: calc(var(--layer-5));
+        }
     }
 </style>
 
-<div class="calculator-wrapper">
+<!-- svelte-ignore a11y-no-static-element-interactions -->
+<div class="calculator-wrapper" class:active={$testLayoutStore.activeTool === 'calculator'} on:mousedown={() => setActiveTool('calculator')}>
     <DraggableModal
         {title}
         {top}
@@ -67,6 +75,6 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         on:close
         on:resize
         on:move>
-        <Calculator {type} {decimals} on:command on:change on:result on:error />
+        <Calculator {type} {decimals} on:mount={() => setActiveTool('calculator')} on:result on:error />
     </DraggableModal>
 </div>

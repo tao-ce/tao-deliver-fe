@@ -6,13 +6,7 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
     aria-labelledby="tao-draggable-modal-title-123"
     class="draggable-modal"
     id="tao-draggable-modal-123"
-    style="
-            min-width: 640px;
-            min-height: 554px;
-            width: 992px;
-            height: 512px;
-            left: 144px;
-            top: 256px; --action-container-size: 11rem;"
+    style="min-width: 640px; min-height: 554px; width: 992px; height: 512px; left: 144px; top: 256px; --action-container-size: 11rem;"
   >
     <div
       class="zoom-tracker visually-hidden"
@@ -44,10 +38,15 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
         <div
@@ -77,9 +76,13 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
               <path
                 d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
           <button
             aria-label="redo"
@@ -99,11 +102,17 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
                 d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
                 fill-rule="evenodd"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
+          
         </div>
       </header>
        
@@ -111,7 +120,7 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
         class="content"
       >
         <div
-          class="scratchpad-container"
+          class="scratchpad-container active"
         >
           <ol
             class="tools-main"
@@ -133,10 +142,12 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
                     d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -155,10 +166,12 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
                     d="M1 0v2.001h6v14h2v-14h6V0z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -177,7 +190,9 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
                     d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -203,9 +218,10 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
                         d="M8 4a4 4 0 100 8 4 4 0 100-8z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -226,9 +242,10 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
                         d="M8 2a6 6 0 100 12A6 6 0 108 2z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -249,12 +266,14 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
                         d="M8 0a8 8 0 100 16A8 8 0 108 0z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li>
               <button
@@ -272,7 +291,9 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
                   <path
                     d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -297,9 +318,10 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
                       <path
                         d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -319,9 +341,10 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
                       <path
                         d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -341,12 +364,14 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
                       <path
                         d="M14.646.646l.708.708-14 14-.708-.708z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li>
               <button
@@ -364,12 +389,16 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
                   <path
                     d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
+            
           </ol>
+          
            
           <svg
             height="2160"
@@ -380,8 +409,11 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
             xmlns="http://www.w3.org/2000/svg"
             xmlns:svgjs="http://svgjs.com/svgjs"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-          />
+          >
+            
+          </svg>
         </div>
+        
       </div>
        
       <div
@@ -423,8 +455,11 @@ exports[`scratchpad plugin > adds scratchpad to main area and removes when destr
         class="resize-hitbox hitbox-left"
         data-direction="w"
       />
+      
     </div>
   </div>
+  
+  
 </main>
 `;
 
@@ -434,13 +469,7 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
     aria-labelledby="tao-draggable-modal-title-123"
     class="draggable-modal"
     id="tao-draggable-modal-123"
-    style="
-            min-width: 640px;
-            min-height: 554px;
-            width: 992px;
-            height: 512px;
-            left: 144px;
-            top: 256px; --action-container-size: 11rem;"
+    style="min-width: 640px; min-height: 554px; width: 992px; height: 512px; left: 144px; top: 256px; --action-container-size: 11rem;"
   >
     <div
       class="zoom-tracker visually-hidden"
@@ -472,10 +501,15 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
         <div
@@ -505,9 +539,13 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
               <path
                 d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
           <button
             aria-label="redo"
@@ -527,11 +565,17 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                 d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
                 fill-rule="evenodd"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
+          
         </div>
       </header>
        
@@ -539,7 +583,7 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
         class="content"
       >
         <div
-          class="scratchpad-container"
+          class="scratchpad-container active"
         >
           <ol
             class="tools-main"
@@ -561,10 +605,12 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                     d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -583,10 +629,12 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                     d="M1 0v2.001h6v14h2v-14h6V0z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -605,7 +653,9 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                     d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -631,9 +681,10 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                         d="M8 4a4 4 0 100 8 4 4 0 100-8z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -654,9 +705,10 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                         d="M8 2a6 6 0 100 12A6 6 0 108 2z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -677,12 +729,14 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                         d="M8 0a8 8 0 100 16A8 8 0 108 0z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li
               class="selected"
@@ -702,7 +756,9 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                   <path
                     d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -727,9 +783,10 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                       <path
                         d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -749,9 +806,10 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                       <path
                         d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -771,12 +829,14 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                       <path
                         d="M14.646.646l.708.708-14 14-.708-.708z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li>
               <button
@@ -794,12 +854,16 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                   <path
                     d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
+            
           </ol>
+          
            
           <svg
             height="2160"
@@ -810,8 +874,11 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
             xmlns="http://www.w3.org/2000/svg"
             xmlns:svgjs="http://svgjs.com/svgjs"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-          />
+          >
+            
+          </svg>
         </div>
+        
       </div>
        
       <div
@@ -853,8 +920,11 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
         class="resize-hitbox hitbox-left"
         data-direction="w"
       />
+      
     </div>
   </div>
+  
+  
 </main>
 `;
 
@@ -864,13 +934,7 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
     aria-labelledby="tao-draggable-modal-title-123"
     class="draggable-modal"
     id="tao-draggable-modal-123"
-    style="
-            min-width: 640px;
-            min-height: 554px;
-            width: 992px;
-            height: 512px;
-            left: 144px;
-            top: 256px; --action-container-size: 11rem;"
+    style="min-width: 640px; min-height: 554px; width: 992px; height: 512px; left: 144px; top: 256px; --action-container-size: 11rem;"
   >
     <div
       class="zoom-tracker visually-hidden"
@@ -902,10 +966,15 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
         <div
@@ -934,9 +1003,13 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
               <path
                 d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
           <button
             aria-label="redo"
@@ -956,11 +1029,17 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                 d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
                 fill-rule="evenodd"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
+          
         </div>
       </header>
        
@@ -968,7 +1047,7 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
         class="content"
       >
         <div
-          class="scratchpad-container"
+          class="scratchpad-container active"
         >
           <ol
             class="tools-main"
@@ -990,10 +1069,12 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                     d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -1012,10 +1093,12 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                     d="M1 0v2.001h6v14h2v-14h6V0z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -1034,7 +1117,9 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                     d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -1060,9 +1145,10 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                         d="M8 4a4 4 0 100 8 4 4 0 100-8z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -1083,9 +1169,10 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                         d="M8 2a6 6 0 100 12A6 6 0 108 2z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -1106,12 +1193,14 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                         d="M8 0a8 8 0 100 16A8 8 0 108 0z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li
               class="selected"
@@ -1131,7 +1220,9 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                   <path
                     d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -1156,9 +1247,10 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                       <path
                         d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -1178,9 +1270,10 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                       <path
                         d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -1200,12 +1293,14 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                       <path
                         d="M14.646.646l.708.708-14 14-.708-.708z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li>
               <button
@@ -1223,12 +1318,16 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                   <path
                     d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
+            
           </ol>
+          
            
           <svg
             height="2160"
@@ -1240,6 +1339,7 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
             xmlns:svgjs="http://svgjs.com/svgjs"
             xmlns:xlink="http://www.w3.org/1999/xlink"
           >
+            
             
             <g
               class="shape-container rectangle"
@@ -1253,7 +1353,6 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                 x="50"
                 y="50"
               />
-               
               <rect
                 class="hitbox"
                 height="86"
@@ -1261,7 +1360,6 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                 x="32"
                 y="32"
               />
-               
               <rect
                 class="bounding"
                 height="54"
@@ -1269,9 +1367,11 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                 x="48"
                 y="48"
               />
-               
+              
+              
               
             </g>
+            
             
             
             
@@ -1287,7 +1387,6 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                 x="30"
                 y="30"
               />
-               
               <rect
                 class="hitbox"
                 height="206"
@@ -1295,7 +1394,6 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                 x="12"
                 y="12"
               />
-               
               <rect
                 class="bounding"
                 height="174"
@@ -1303,7 +1401,7 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                 x="28"
                 y="28"
               />
-               
+              
               <g
                 class="resize-hitbox-container"
               >
@@ -1323,11 +1421,14 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
                 />
               </g>
               
+              
             </g>
+            
             
             
           </svg>
         </div>
+        
       </div>
        
       <div
@@ -1369,8 +1470,11 @@ exports[`scratchpad plugin > flushes next saved canvas states if change was made
         class="resize-hitbox hitbox-left"
         data-direction="w"
       />
+      
     </div>
   </div>
+  
+  
 </main>
 `;
 
@@ -1509,13 +1613,7 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
     aria-labelledby="tao-draggable-modal-title-123"
     class="draggable-modal"
     id="tao-draggable-modal-123"
-    style="
-            min-width: 640px;
-            min-height: 554px;
-            width: 992px;
-            height: 512px;
-            left: 144px;
-            top: 256px; --action-container-size: 11rem;"
+    style="min-width: 640px; min-height: 554px; width: 992px; height: 512px; left: 144px; top: 256px; --action-container-size: 11rem;"
   >
     <div
       class="zoom-tracker visually-hidden"
@@ -1547,10 +1645,15 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
         <div
@@ -1580,9 +1683,13 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
               <path
                 d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
           <button
             aria-label="redo"
@@ -1602,11 +1709,17 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
                 d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
                 fill-rule="evenodd"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
+          
         </div>
       </header>
        
@@ -1614,7 +1727,7 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
         class="content"
       >
         <div
-          class="scratchpad-container"
+          class="scratchpad-container active"
         >
           <ol
             class="tools-main"
@@ -1636,10 +1749,12 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
                     d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -1658,10 +1773,12 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
                     d="M1 0v2.001h6v14h2v-14h6V0z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -1680,7 +1797,9 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
                     d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -1706,9 +1825,10 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
                         d="M8 4a4 4 0 100 8 4 4 0 100-8z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -1729,9 +1849,10 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
                         d="M8 2a6 6 0 100 12A6 6 0 108 2z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -1752,12 +1873,14 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
                         d="M8 0a8 8 0 100 16A8 8 0 108 0z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li
               class="selected"
@@ -1777,7 +1900,9 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
                   <path
                     d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -1802,9 +1927,10 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
                       <path
                         d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -1824,9 +1950,10 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
                       <path
                         d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -1846,12 +1973,14 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
                       <path
                         d="M14.646.646l.708.708-14 14-.708-.708z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li>
               <button
@@ -1869,12 +1998,16 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
                   <path
                     d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
+            
           </ol>
+          
            
           <svg
             height="2160"
@@ -1885,8 +2018,11 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
             xmlns="http://www.w3.org/2000/svg"
             xmlns:svgjs="http://svgjs.com/svgjs"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-          />
+          >
+            
+          </svg>
         </div>
+        
       </div>
        
       <div
@@ -1928,8 +2064,11 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 1`] = `
         class="resize-hitbox hitbox-left"
         data-direction="w"
       />
+      
     </div>
   </div>
+  
+  
 </main>
 `;
 
@@ -1939,13 +2078,7 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
     aria-labelledby="tao-draggable-modal-title-123"
     class="draggable-modal"
     id="tao-draggable-modal-123"
-    style="
-            min-width: 640px;
-            min-height: 554px;
-            width: 992px;
-            height: 512px;
-            left: 144px;
-            top: 256px; --action-container-size: 11rem;"
+    style="min-width: 640px; min-height: 554px; width: 992px; height: 512px; left: 144px; top: 256px; --action-container-size: 11rem;"
   >
     <div
       class="zoom-tracker visually-hidden"
@@ -1977,10 +2110,15 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
         <div
@@ -2009,9 +2147,13 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
               <path
                 d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
           <button
             aria-label="redo"
@@ -2031,11 +2173,17 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                 d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
                 fill-rule="evenodd"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
+          
         </div>
       </header>
        
@@ -2043,7 +2191,7 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
         class="content"
       >
         <div
-          class="scratchpad-container"
+          class="scratchpad-container active"
         >
           <ol
             class="tools-main"
@@ -2065,10 +2213,12 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                     d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -2087,10 +2237,12 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                     d="M1 0v2.001h6v14h2v-14h6V0z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -2109,7 +2261,9 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                     d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -2135,9 +2289,10 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                         d="M8 4a4 4 0 100 8 4 4 0 100-8z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -2158,9 +2313,10 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                         d="M8 2a6 6 0 100 12A6 6 0 108 2z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -2181,12 +2337,14 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                         d="M8 0a8 8 0 100 16A8 8 0 108 0z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li
               class="selected"
@@ -2206,7 +2364,9 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                   <path
                     d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -2231,9 +2391,10 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                       <path
                         d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -2253,9 +2414,10 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                       <path
                         d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -2275,12 +2437,14 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                       <path
                         d="M14.646.646l.708.708-14 14-.708-.708z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li>
               <button
@@ -2298,12 +2462,16 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                   <path
                     d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
+            
           </ol>
+          
            
           <svg
             height="2160"
@@ -2315,6 +2483,7 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
             xmlns:svgjs="http://svgjs.com/svgjs"
             xmlns:xlink="http://www.w3.org/1999/xlink"
           >
+            
             
             <g
               class="shape-container rectangle"
@@ -2328,7 +2497,6 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                 x="50"
                 y="50"
               />
-               
               <rect
                 class="hitbox"
                 height="86"
@@ -2336,7 +2504,6 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                 x="32"
                 y="32"
               />
-               
               <rect
                 class="bounding"
                 height="54"
@@ -2344,13 +2511,16 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
                 x="48"
                 y="48"
               />
-               
+              
+              
               
             </g>
             
             
+            
           </svg>
         </div>
+        
       </div>
        
       <div
@@ -2392,8 +2562,11 @@ exports[`scratchpad plugin > goes to next saved canvas state on redo 2`] = `
         class="resize-hitbox hitbox-left"
         data-direction="w"
       />
+      
     </div>
   </div>
+  
+  
 </main>
 `;
 
@@ -2520,13 +2693,7 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
     aria-labelledby="tao-draggable-modal-title-123"
     class="draggable-modal"
     id="tao-draggable-modal-123"
-    style="
-            min-width: 640px;
-            min-height: 554px;
-            width: 992px;
-            height: 512px;
-            left: 144px;
-            top: 256px; --action-container-size: 11rem;"
+    style="min-width: 640px; min-height: 554px; width: 992px; height: 512px; left: 144px; top: 256px; --action-container-size: 11rem;"
   >
     <div
       class="zoom-tracker visually-hidden"
@@ -2558,10 +2725,15 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
         <div
@@ -2591,9 +2763,13 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
               <path
                 d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
           <button
             aria-label="redo"
@@ -2613,11 +2789,17 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
                 d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
                 fill-rule="evenodd"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
+          
         </div>
       </header>
        
@@ -2625,7 +2807,7 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
         class="content"
       >
         <div
-          class="scratchpad-container"
+          class="scratchpad-container active"
         >
           <ol
             class="tools-main"
@@ -2647,10 +2829,12 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
                     d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -2669,10 +2853,12 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
                     d="M1 0v2.001h6v14h2v-14h6V0z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -2691,7 +2877,9 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
                     d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -2717,9 +2905,10 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
                         d="M8 4a4 4 0 100 8 4 4 0 100-8z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -2740,9 +2929,10 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
                         d="M8 2a6 6 0 100 12A6 6 0 108 2z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -2763,12 +2953,14 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
                         d="M8 0a8 8 0 100 16A8 8 0 108 0z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li
               class="selected"
@@ -2788,7 +2980,9 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
                   <path
                     d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -2813,9 +3007,10 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
                       <path
                         d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -2835,9 +3030,10 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
                       <path
                         d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -2857,12 +3053,14 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
                       <path
                         d="M14.646.646l.708.708-14 14-.708-.708z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li>
               <button
@@ -2880,12 +3078,16 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
                   <path
                     d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
+            
           </ol>
+          
            
           <svg
             height="2160"
@@ -2896,8 +3098,11 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
             xmlns="http://www.w3.org/2000/svg"
             xmlns:svgjs="http://svgjs.com/svgjs"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-          />
+          >
+            
+          </svg>
         </div>
+        
       </div>
        
       <div
@@ -2939,8 +3144,11 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 1`] = `
         class="resize-hitbox hitbox-left"
         data-direction="w"
       />
+      
     </div>
   </div>
+  
+  
 </main>
 `;
 
@@ -2950,13 +3158,7 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
     aria-labelledby="tao-draggable-modal-title-123"
     class="draggable-modal"
     id="tao-draggable-modal-123"
-    style="
-            min-width: 640px;
-            min-height: 554px;
-            width: 992px;
-            height: 512px;
-            left: 144px;
-            top: 256px; --action-container-size: 11rem;"
+    style="min-width: 640px; min-height: 554px; width: 992px; height: 512px; left: 144px; top: 256px; --action-container-size: 11rem;"
   >
     <div
       class="zoom-tracker visually-hidden"
@@ -2988,10 +3190,15 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
         <div
@@ -3021,9 +3228,13 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
               <path
                 d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
           <button
             aria-label="redo"
@@ -3042,11 +3253,17 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
                 d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
                 fill-rule="evenodd"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
+          
         </div>
       </header>
        
@@ -3054,7 +3271,7 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
         class="content"
       >
         <div
-          class="scratchpad-container"
+          class="scratchpad-container active"
         >
           <ol
             class="tools-main"
@@ -3076,10 +3293,12 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
                     d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -3098,10 +3317,12 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
                     d="M1 0v2.001h6v14h2v-14h6V0z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -3120,7 +3341,9 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
                     d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -3146,9 +3369,10 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
                         d="M8 4a4 4 0 100 8 4 4 0 100-8z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -3169,9 +3393,10 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
                         d="M8 2a6 6 0 100 12A6 6 0 108 2z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -3192,12 +3417,14 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
                         d="M8 0a8 8 0 100 16A8 8 0 108 0z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li
               class="selected"
@@ -3217,7 +3444,9 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
                   <path
                     d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -3242,9 +3471,10 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
                       <path
                         d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -3264,9 +3494,10 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
                       <path
                         d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -3286,12 +3517,14 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
                       <path
                         d="M14.646.646l.708.708-14 14-.708-.708z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li>
               <button
@@ -3309,12 +3542,16 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
                   <path
                     d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
+            
           </ol>
+          
            
           <svg
             height="2160"
@@ -3325,8 +3562,11 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
             xmlns="http://www.w3.org/2000/svg"
             xmlns:svgjs="http://svgjs.com/svgjs"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-          />
+          >
+            
+          </svg>
         </div>
+        
       </div>
        
       <div
@@ -3368,8 +3608,11 @@ exports[`scratchpad plugin > goes to previous saved canvas state on undo 2`] = `
         class="resize-hitbox hitbox-left"
         data-direction="w"
       />
+      
     </div>
   </div>
+  
+  
 </main>
 `;
 
@@ -3485,13 +3728,7 @@ exports[`scratchpad plugin > restores the scratchpad state from the user session
     aria-labelledby="tao-draggable-modal-title-123"
     class="draggable-modal"
     id="tao-draggable-modal-123"
-    style="
-            min-width: 640px;
-            min-height: 284px;
-            width: 50px;
-            height: 50px;
-            left: 0px;
-            top: 0px; --action-container-size: 11rem;"
+    style="min-width: 640px; min-height: 284px; width: 50px; height: 50px; left: 0px; top: 0px; --action-container-size: 11rem;"
   >
     <div
       class="zoom-tracker visually-hidden"
@@ -3523,10 +3760,15 @@ exports[`scratchpad plugin > restores the scratchpad state from the user session
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
         <div
@@ -3556,9 +3798,13 @@ exports[`scratchpad plugin > restores the scratchpad state from the user session
               <path
                 d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
           <button
             aria-label="redo"
@@ -3578,11 +3824,17 @@ exports[`scratchpad plugin > restores the scratchpad state from the user session
                 d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
                 fill-rule="evenodd"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
+          
         </div>
       </header>
        
@@ -3590,7 +3842,7 @@ exports[`scratchpad plugin > restores the scratchpad state from the user session
         class="content"
       >
         <div
-          class="scratchpad-container"
+          class="scratchpad-container active"
         >
           <ol
             class="tools-main"
@@ -3612,10 +3864,12 @@ exports[`scratchpad plugin > restores the scratchpad state from the user session
                     d="M1 0v2.001h6v14h2v-14h6V0z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li
               class="selected"
@@ -3635,12 +3889,16 @@ exports[`scratchpad plugin > restores the scratchpad state from the user session
                   <path
                     d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
+            
           </ol>
+          
            
           <svg
             height="2160"
@@ -3652,6 +3910,7 @@ exports[`scratchpad plugin > restores the scratchpad state from the user session
             xmlns:svgjs="http://svgjs.com/svgjs"
             xmlns:xlink="http://www.w3.org/1999/xlink"
           >
+            
             
             <g
               class="shape-container rectangle"
@@ -3665,7 +3924,6 @@ exports[`scratchpad plugin > restores the scratchpad state from the user session
                 x="10"
                 y="10"
               />
-               
               <rect
                 class="hitbox"
                 height="46"
@@ -3673,7 +3931,6 @@ exports[`scratchpad plugin > restores the scratchpad state from the user session
                 x="-8"
                 y="-8"
               />
-               
               <rect
                 class="bounding"
                 height="14"
@@ -3681,13 +3938,16 @@ exports[`scratchpad plugin > restores the scratchpad state from the user session
                 x="8"
                 y="8"
               />
-               
+              
+              
               
             </g>
             
             
+            
           </svg>
         </div>
+        
       </div>
        
       <div
@@ -3729,8 +3989,11 @@ exports[`scratchpad plugin > restores the scratchpad state from the user session
         class="resize-hitbox hitbox-left"
         data-direction="w"
       />
+      
     </div>
   </div>
+  
+  
 </main>
 `;
 
@@ -3740,13 +4003,7 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
     aria-labelledby="tao-draggable-modal-title-123"
     class="draggable-modal"
     id="tao-draggable-modal-123"
-    style="
-            min-width: 640px;
-            min-height: 554px;
-            width: 992px;
-            height: 512px;
-            left: 144px;
-            top: 256px; --action-container-size: 11rem;"
+    style="min-width: 640px; min-height: 554px; width: 992px; height: 512px; left: 144px; top: 256px; --action-container-size: 11rem;"
   >
     <div
       class="zoom-tracker visually-hidden"
@@ -3778,10 +4035,15 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
         <div
@@ -3811,9 +4073,13 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
               <path
                 d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
           <button
             aria-label="redo"
@@ -3833,11 +4099,17 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
                 d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
                 fill-rule="evenodd"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
+          
         </div>
       </header>
        
@@ -3845,7 +4117,7 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
         class="content"
       >
         <div
-          class="scratchpad-container"
+          class="scratchpad-container active"
         >
           <ol
             class="tools-main"
@@ -3867,10 +4139,12 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
                     d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -3889,10 +4163,12 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
                     d="M1 0v2.001h6v14h2v-14h6V0z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -3911,7 +4187,9 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
                     d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -3937,9 +4215,10 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
                         d="M8 4a4 4 0 100 8 4 4 0 100-8z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -3960,9 +4239,10 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
                         d="M8 2a6 6 0 100 12A6 6 0 108 2z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -3983,12 +4263,14 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
                         d="M8 0a8 8 0 100 16A8 8 0 108 0z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li>
               <button
@@ -4006,7 +4288,9 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
                   <path
                     d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -4031,9 +4315,10 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
                       <path
                         d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -4053,9 +4338,10 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
                       <path
                         d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -4075,12 +4361,14 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
                       <path
                         d="M14.646.646l.708.708-14 14-.708-.708z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li>
               <button
@@ -4098,12 +4386,16 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
                   <path
                     d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
+            
           </ol>
+          
            
           <svg
             height="2160"
@@ -4114,8 +4406,11 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
             xmlns="http://www.w3.org/2000/svg"
             xmlns:svgjs="http://svgjs.com/svgjs"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-          />
+          >
+            
+          </svg>
         </div>
+        
       </div>
        
       <div
@@ -4157,8 +4452,11 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 1`] 
         class="resize-hitbox hitbox-left"
         data-direction="w"
       />
+      
     </div>
   </div>
+  
+  
 </main>
 `;
 
@@ -4168,13 +4466,7 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
     aria-labelledby="tao-draggable-modal-title-123"
     class="draggable-modal"
     id="tao-draggable-modal-123"
-    style="
-            min-width: 640px;
-            min-height: 554px;
-            width: 992px;
-            height: 512px;
-            left: 144px;
-            top: 256px; --action-container-size: 11rem;"
+    style="min-width: 640px; min-height: 554px; width: 992px; height: 512px; left: 144px; top: 256px; --action-container-size: 11rem;"
   >
     <div
       class="zoom-tracker visually-hidden"
@@ -4206,10 +4498,15 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
               <path
                 d="M0 7h16v2H0z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
         <div
@@ -4238,9 +4535,13 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
               <path
                 d="M12 6H5V2L0 7l5 5V8h7a2 2 0 012 2v5h2v-5a4 4 0 00-4-4z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
           <button
             aria-label="redo"
@@ -4260,11 +4561,17 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                 d="M4 5h7V1l5 5-5 5V7H4a2 2 0 00-2 2v5H0V9a4 4 0 014-4"
                 fill-rule="evenodd"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
            
+          
         </div>
       </header>
        
@@ -4272,7 +4579,7 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
         class="content"
       >
         <div
-          class="scratchpad-container"
+          class="scratchpad-container active"
         >
           <ol
             class="tools-main"
@@ -4294,10 +4601,12 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                     d="M-.007.6a1 1 0 011.279-.606l11.196 3.998a1 1 0 01.11 1.837l-3.43 1.714 6.601 6.601a1 1 0 01.083 1.32l-.083.095-.19.19a1 1 0 01-1.414 0L7.543 9.146l-1.714 3.432a1 1 0 01-.44.444l-.119.05a1 1 0 01-1.278-.605L-.007 1.272a1 1 0 010-.673z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -4316,10 +4625,12 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                     d="M1 0v2.001h6v14h2v-14h6V0z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
             <li>
               <button
@@ -4338,7 +4649,9 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                     d="M15.22 1.67l-6 7.21L7.31 7 14.36.77a.64.64 0 01.86.25.64.64 0 010 .65zM6.9 11.25L5 9.3l1.81-1.87 1.91 2zm-1.49 2.51c-.81.83-3 1.28-4.37 1.46a9.42 9.42 0 001.13-3.31A2.94 2.94 0 014.34 9.6l2.06 2.12a3.48 3.48 0 01-.99 2.04zM15.66.48A1.3 1.3 0 0014 .2L6.56 6.71 4.43 8.9a3.56 3.56 0 00-2.93 2.91 8.81 8.81 0 01-1.42 3.63.34.34 0 00.27.56c.17 0 4.17-.36 5.51-1.74A4.2 4.2 0 007 12l2.43-2.37L15.8 2a1.31 1.31 0 00-.14-1.52z"
                     fill-rule="evenodd"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -4364,9 +4677,10 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                         d="M8 4a4 4 0 100 8 4 4 0 100-8z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -4387,9 +4701,10 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                         d="M8 2a6 6 0 100 12A6 6 0 108 2z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -4410,12 +4725,14 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                         d="M8 0a8 8 0 100 16A8 8 0 108 0z"
                         fill-rule="evenodd"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li
               class="selected"
@@ -4435,7 +4752,9 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                   <path
                     d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                   />
+                  
                 </svg>
+                
               </button>
                
               <ol
@@ -4460,9 +4779,10 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                       <path
                         d="M16 0v16H0V0h16zm-1 1H1v14h14V1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -4482,9 +4802,10 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                       <path
                         d="M8 0a8 8 0 110 16A8 8 0 018 0zm0 1a7 7 0 100 14A7 7 0 008 1z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
                 <li
                   class="sub-option"
@@ -4504,12 +4825,14 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                       <path
                         d="M14.646.646l.708.708-14 14-.708-.708z"
                       />
+                      
                     </svg>
+                    
                   </button>
-                   
                 </li>
+                
               </ol>
-               
+              
             </li>
             <li>
               <button
@@ -4527,12 +4850,16 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                   <path
                     d="M14.73 5l-3.54-3.57a2 2 0 00-2.83 0L.59 9.21a2 2 0 000 2.79l3 3h11.07v-1H8.52l6.21-6.21a2 2 0 000-2.79zM14 7.09l-3.53 3.53-4.93-4.95 3.53-3.53a1 1 0 011.42 0L14 5.67a1 1 0 010 1.42z"
                   />
+                  
                 </svg>
+                
               </button>
                
-               
+              
             </li>
+            
           </ol>
+          
            
           <svg
             height="2160"
@@ -4544,6 +4871,7 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
             xmlns:svgjs="http://svgjs.com/svgjs"
             xmlns:xlink="http://www.w3.org/1999/xlink"
           >
+            
             
             <g
               class="shape-container rectangle selected"
@@ -4557,7 +4885,6 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                 x="50"
                 y="50"
               />
-               
               <rect
                 class="hitbox"
                 height="86"
@@ -4565,7 +4892,6 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                 x="32"
                 y="32"
               />
-               
               <rect
                 class="bounding"
                 height="54"
@@ -4573,7 +4899,7 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                 x="48"
                 y="48"
               />
-               
+              
               <g
                 class="resize-hitbox-container"
               >
@@ -4593,11 +4919,14 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
                 />
               </g>
               
+              
             </g>
+            
             
             
           </svg>
         </div>
+        
       </div>
        
       <div
@@ -4639,8 +4968,11 @@ exports[`scratchpad plugin > saves the scratchpad state in the user session 2`] 
         class="resize-hitbox hitbox-left"
         data-direction="w"
       />
+      
     </div>
   </div>
+  
+  
 </main>
 `;
 

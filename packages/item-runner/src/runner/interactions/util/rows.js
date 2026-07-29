@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2022-2023 (original work) Open Assessment Technologies SA ;
+// Copyright (C) 2022-2026 (original work) Open Assessment Technologies SA ;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
@@ -9,39 +9,35 @@
 
 import { extractFromClasses } from './attributes.js';
 
-const possibleHeightLinesValues = [3, 6, 15];
+const possibleQtiHeightLinesValues = [3, 6, 15];
 const charactersPerLine = 72;
-const maxCharactersDefaultBound = 500;
 const defaultLines = 8;
 
 /**
- * Calculates rows number for textare based on classes and constraints
- * @param {number} expectedLength expected response length
- * @param {number} expectedLines expected response lines
- * @param {number?} maxlength
- * @param {number?} maxWordsLimit
- * @param {string} classes qti classes
+ * Calculates rows number for textarea based on classes and constraints
+ * @param {object?} options
+ * @param {number?} [options.expectedLength] expected (recommended) response length
+ * @param {number?} [options.expectedLines] expected (recommended) response lines
+ * @param {number?} [options.maxlength] - constraint via patternmask for chars
+ * @param {number?} [options.maxWordsLimit] - constraint via patternmask for words
+ * @param {string?} [options.classes] qti classes
  * @returns {number|null} rows number or null
  */
-export function getRowsValue(expectedLength, expectedLines, maxlength, maxWordsLimit, classes) {
-    // expected length
-    const expectedResponseLength = expectedLength || expectedLines * charactersPerLine || null;
-
+export function getRowsValue({ expectedLength, expectedLines, maxlength, maxWordsLimit, classes = '' } = {}) {
     const extractedFromClasses = extractFromClasses(classes, 'qti-height-lines-', val => {
         val = parseInt(val, 10);
         return val;
     });
 
-    if (possibleHeightLinesValues.includes(extractedFromClasses)) {
+    if (possibleQtiHeightLinesValues.includes(extractedFromClasses)) {
         return extractedFromClasses;
-    } else if (expectedResponseLength !== null && expectedResponseLength <= maxCharactersDefaultBound) {
-        return Math.ceil(expectedResponseLength / charactersPerLine);
+    } else if (expectedLength) {
+        return Math.ceil(expectedLength / charactersPerLine);
+    } else if (expectedLines) {
+        return expectedLines;
     } else if (maxWordsLimit) {
         return defaultLines;
     } else if (maxlength) {
-        if (maxlength > maxCharactersDefaultBound) {
-            return null;
-        }
         return Math.ceil(maxlength / charactersPerLine);
     }
     return null;

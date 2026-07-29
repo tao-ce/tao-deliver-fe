@@ -6,7 +6,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
 <script>
     // Licensed under Gnu Public Licence version 2
-    // Copyright (c) 2021-2024 (original work) Open Assessment Technologies SA ;
+    // Copyright (c) 2021-2026 (original work) Open Assessment Technologies SA ;
 
     import { onMount, createEventDispatcher } from 'svelte';
     import { SVG } from '@svgdotjs/svg.js';
@@ -24,6 +24,10 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @property {String} ariaLabel - aria-label
      * @property {Boolean} removable - draw or not button in center of line
      * @property {String} tabindex
+     * @property {Boolean} disablePointerEvents - prevent pointer events on the line container
+     * @property {Boolean} isArrow - draw an arrow head at the end of the line
+     * @property {Number[]|undefined} arrowStart - custom arrow tail coordinates [x, y]
+     * @property {Number[]|undefined} arrowEnd - custom arrow head coordinates [x, y]
      *
      * @fires 'keydown'
      * @fires 'keyup'
@@ -39,6 +43,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     export let removable = true;
     export let tabindex = -1;
     export let disablePointerEvents = false;
+    export let isArrow = false;
+    export let arrowStart;
+    export let arrowEnd;
 
     const dispatch = createEventDispatcher();
     const removerIcon = iconList['remove-12'];
@@ -76,6 +83,13 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             groupEl.line().plot([activeLineStart, activeLineEnd]).addClass('shape-line');
             //hover area line should be over other lines
             groupEl.line().plot([activeLineStart, activeLineEnd]).addClass('shape-line-hover');
+            if (isArrow) {
+                const fromPoint = arrowStart || activeLineStart;
+                const toPoint = arrowEnd || activeLineEnd;
+                if (fromPoint && toPoint) {
+                    drawArrowHead(groupEl, fromPoint, toPoint);
+                }
+            }
             //remove button
             if (removable) {
                 const iconGroup = groupEl
@@ -105,11 +119,42 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         }
     }
 
+    function drawArrowHead(groupEl, fromPoint, toPoint) {
+        const dx = toPoint[0] - fromPoint[0];
+        const dy = toPoint[1] - fromPoint[1];
+        const length = Math.hypot(dx, dy);
+        if (!length) {
+            return;
+        }
+        const arrowLength = remToPx(3);
+        const arrowWidth = remToPx(2);
+        const ux = dx / length;
+        const uy = dy / length;
+        const baseX = toPoint[0] - ux * arrowLength;
+        const baseY = toPoint[1] - uy * arrowLength;
+        const perpX = -uy;
+        const perpY = ux;
+        const leftX = baseX + perpX * (arrowWidth / 2);
+        const leftY = baseY + perpY * (arrowWidth / 2);
+        const rightX = baseX - perpX * (arrowWidth / 2);
+        const rightY = baseY - perpY * (arrowWidth / 2);
+        groupEl
+            .polygon([
+                [toPoint[0], toPoint[1]],
+                [leftX, leftY],
+                [rightX, rightY]
+            ])
+            .addClass('shape-arrow-head');
+    }
+
     /**
      * Handle click/touch on line
      * @param {Event} e
      */
     function handleClick(e) {
+        if (disabled) {
+            return;
+        }
         if (e.target.classList.contains('remove-button-hitbox')) {
             dispatch('remove');
         } else {
@@ -163,6 +208,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             stroke: var(--color-brand-hover);
             stroke-linecap: round;
         }
+        & :global(.shape-arrow-head) {
+            fill: var(--color-brand-hover);
+            stroke: var(--color-gs-light);
+            stroke-width: 0.5rem;
+            stroke-linejoin: round;
+        }
         & :global(.remove-button-dashed-outline) {
             fill: transparent;
             stroke: transparent;
@@ -181,12 +232,13 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 </style>
 
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <g
     class="association-line"
     class:selected
     class:disabled
     class:disable-pointer-events={disablePointerEvents}
     bind:this={groupElement}
-    on:click={!disabled && handleClick}
+    on:click={handleClick}
     on:keydown
     on:keyup />

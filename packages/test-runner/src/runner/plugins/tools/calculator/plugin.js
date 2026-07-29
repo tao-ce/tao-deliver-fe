@@ -11,6 +11,7 @@ import { defaults } from 'lodash';
 import { getTestSessionUserDataService } from '../../../session/testSessionUserDataService.js';
 import { calculatorMinSize } from '@oat-sa-private/ui-components';
 import { getDefaultRemSizePx } from '@oat-sa-private/ui-core';
+import { mount, unmount } from 'svelte';
 
 // Identifier for the plugin
 const pluginName = 'calculator';
@@ -96,7 +97,7 @@ export default pluginFactory({
             const initialWidth = calculatorMinSize.width * defaultPxInRem;
             const initialHeight = calculatorMinSize.height * defaultPxInRem;
 
-            const state = this.toolState;
+            const state = { ...this.toolState };
             state.decimals = pluginConfig.decimals;
 
             if ('undefined' === typeof state.type) {
@@ -130,11 +131,12 @@ export default pluginFactory({
          */
         this.renderComponent = () => {
             const initialState = this.getInitialStateValues();
+            this.updateState(initialState);
             const { type } = initialState;
 
             if (!this.calculator) {
                 // Create the component if it doesn't exist yet
-                this.calculator = new Calculator({
+                this.calculator = mount(Calculator, {
                     target: areaBroker.getMainArea(),
                     props: initialState
                 });
@@ -153,7 +155,7 @@ export default pluginFactory({
          */
         this.destroyComponent = () => {
             if (this.calculator) {
-                this.calculator.$destroy();
+                unmount(this.calculator);
                 this.calculator = null;
             }
         };

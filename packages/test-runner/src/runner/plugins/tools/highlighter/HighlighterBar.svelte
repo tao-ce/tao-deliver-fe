@@ -12,7 +12,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * Component is used to show highlighter toolbar. Should be mounted in floating toolbar container.
      * @property {String} serviceCallId
      * @property {String} activeActionKey
-     * @property {Object<String, Number}} highlightsPerColor
+     * @property {Object<String, Number>} highlightsPerColor
      * @fires 'action'
      * @fires 'close'
      */
@@ -133,11 +133,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
             }
         }
 
-        & :global-nested(.eraser-btn) {
+        & :global(.eraser-btn) {
             color: var(--color-text-inverted);
 
-            &:hover > svg,
-            &:focus-visible > svg {
+            &:hover > :global(svg),
+            &:focus-visible > :global(svg) {
                 transform: scale(1.5);
             }
 
@@ -210,7 +210,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     :global(.highlighter-txt) {
         color: var(--hl-txt-color); /* force text inside to be of contrasting color with background */
         background-color: var(--hl-bg-color);
-        box-shadow: 0rem 0.125rem var(--hl-bg-color), 0rem -0.125rem var(--hl-bg-color);
+        box-shadow:
+            0rem 0.125rem var(--hl-bg-color),
+            0rem -0.125rem var(--hl-bg-color);
         outline: 0.125rem solid var(--hl-border-color);
     }
 
@@ -270,6 +272,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 </style>
 
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div class="highlighter-bar" class:hidden={$statusStore === testSessionStatus.overlay} on:keydown={handleKeyDown}>
     <FloatingBar title={__('Highlighter')}>
         {#each colorItems as item}

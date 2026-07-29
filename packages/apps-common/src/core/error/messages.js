@@ -10,8 +10,10 @@ import TimeoutError from 'core/error/TimeoutError';
 import UserError from 'core/error/UserError';
 import LaunchError from './LaunchError.js';
 import ActionError, { actionErrorCodes } from './ActionError.js';
+import KioskError from './KioskError.js';
 import { __ } from '@oat-sa-private/ui-core';
 import TokenError from 'core/error/TokenError';
+import DenyProcessesDetails from '../../component/DenyProcessesDetails.svelte';
 
 /**
  * List of error message targetting the end user
@@ -121,6 +123,15 @@ export const errorMessages = Object.freeze({
         }
     },
 
+    forceLogout: {
+        get title() {
+            return __('Session ended');
+        },
+        get cause() {
+            return __('You have been logged out due to a new login.');
+        }
+    },
+
     proctorTerminated: {
         get title() {
             return __('Test terminated');
@@ -166,6 +177,37 @@ export const errorMessages = Object.freeze({
         get remediation() {
             return __('Please launch your test again or contact your administrator.');
         }
+    },
+
+    kioskDenyProcessesOnLaunch: {
+        get title() {
+            return __("Can't start secure session");
+        },
+        get remediation() {
+            return __(
+                'To continue, you must close the apps listed below. Click "Exit browser", then close the apps, and relaunch TAO Secure Browser.'
+            );
+        }
+    },
+
+    kioskDenyProcessesAfterLaunch: {
+        get title() {
+            return __("Can't continue secure session");
+        },
+        get remediation() {
+            return __(
+                'To continue, you must close the apps listed below. Click "Exit browser", then close the apps, and relaunch TAO Secure Browser.'
+            );
+        }
+    },
+
+    kioskLaunch: {
+        get title() {
+            return __("Can't start secure session");
+        },
+        get cause() {
+            return __('To start this secure session, install or update TAO Secure Browser.');
+        }
     }
 });
 
@@ -202,11 +244,28 @@ export function getErrorMessageFromError(err) {
     if (err instanceof RenderingError || err instanceof UserError) {
         return errorMessages.client;
     }
+    if (err instanceof KioskError && err.denyProcesses) {
+        const result = err.afterLaunch
+            ? errorMessages.kioskDenyProcessesAfterLaunch
+            : errorMessages.kioskDenyProcessesOnLaunch;
+        return {
+            ...result,
+            withKioskExit: true,
+            detailsComponent: DenyProcessesDetails,
+            detailsComponentProps: { denyProcesses: err.denyProcesses }
+        };
+    }
+    if (err instanceof KioskError) {
+        return errorMessages.kioskLaunch;
+    }
     if (err instanceof LaunchError) {
         return errorMessages.notAvailable;
     }
     if (err instanceof TokenError) {
         return errorMessages.tokenExpired;
+    }
+    if (err instanceof ActionError && err.errorCode === actionErrorCodes.forceLogout) {
+        return errorMessages.forceLogout;
     }
     if (err instanceof ActionError && err.errorCode === actionErrorCodes.proctorTerminated) {
         return errorMessages.proctorTerminated;

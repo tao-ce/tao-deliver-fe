@@ -6,15 +6,14 @@ exports[`Line > rendering > renders with given drawingGeometry (no geometry prop
     <line
       class="shape"
     />
-     
     <line
       class="line-hitbox"
     />
-     
     <line
       class="bounding"
     />
-     
+    
+    
     
   </div>
 </body>
@@ -30,7 +29,6 @@ exports[`Line > rendering > renders with the given geometry 1`] = `
       y1="100"
       y2="300"
     />
-     
     <line
       class="line-hitbox"
       x1="100"
@@ -38,7 +36,6 @@ exports[`Line > rendering > renders with the given geometry 1`] = `
       y1="100"
       y2="300"
     />
-     
     <line
       class="bounding"
       x1="100"
@@ -46,7 +43,8 @@ exports[`Line > rendering > renders with the given geometry 1`] = `
       y1="100"
       y2="300"
     />
-     
+    
+    
     
   </div>
 </body>
@@ -62,7 +60,6 @@ exports[`Line > rendering > renders with the given key and selected state 1`] = 
       y1="100"
       y2="300"
     />
-     
     <line
       class="line-hitbox"
       x1="100"
@@ -70,7 +67,6 @@ exports[`Line > rendering > renders with the given key and selected state 1`] = 
       y1="100"
       y2="300"
     />
-     
     <line
       class="bounding"
       x1="100"
@@ -78,7 +74,7 @@ exports[`Line > rendering > renders with the given key and selected state 1`] = 
       y1="100"
       y2="300"
     />
-     
+    
     <g
       class="resize-hitbox-container"
     >
@@ -97,7 +93,7 @@ exports[`Line > rendering > renders with the given key and selected state 1`] = 
         y="56"
       />
     </g>
-     
+    
     <g
       class="resize-hitbox-container"
     >
@@ -116,6 +112,9 @@ exports[`Line > rendering > renders with the given key and selected state 1`] = 
         y="256"
       />
     </g>
+    
+    
+    
     
   </div>
 </body>

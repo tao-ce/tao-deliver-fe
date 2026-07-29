@@ -15,6 +15,7 @@ import { showNotification } from '@oat-sa-private/ui-components';
 import { __ } from '@oat-sa-private/ui-core';
 import queueFactory from '../../integration/eventsForwarder/queue.js';
 import { defaultsDeep } from 'lodash';
+import { mount, unmount } from 'svelte';
 
 // can be found on an AssessmentItemRef (testMap item)
 const ttsCategoryNames = ['x-tao-option-tts', 'x-tao-option-textToSpeech'];
@@ -441,7 +442,7 @@ export default pluginFactory({
                     throw new Error(`No container '${toolbarContainerSelector}' found to render plugin into.`);
                 }
 
-                this.toolbar = new ReadAloudBar({
+                this.toolbar = mount(ReadAloudBar, {
                     target: toolbarContainer,
                     props: {
                         serviceCallId: testConfig.serviceCallId,
@@ -514,7 +515,7 @@ export default pluginFactory({
          */
         this.destroyToolbar = () => {
             if (this.toolbar) {
-                this.toolbar.$destroy();
+                unmount(this.toolbar);
             }
             this.toolbar = null;
         };
@@ -720,7 +721,7 @@ export default pluginFactory({
                                 this.syncToolbarProps();
                             })
                             .catch(error => {
-                                console.error(error); // eslint-disable-line no-console
+                                console.error(error);
                                 // notification will be rendered in TestLayout
                                 showNotification(
                                     {

@@ -5,28 +5,29 @@ exports[`rect hotspot choice > rendering > renders rect elements with given coor
   <div>
     <g
       class="shape"
+      role="button"
       tabindex="-1"
     >
       <rect
         class="shape-outer-border"
-        height="188"
-        width="88"
-        x="106"
-        y="106"
+        height="192"
+        width="92"
+        x="104"
+        y="104"
       />
       <rect
         class="shape-inner-border"
-        height="172"
-        width="72"
-        x="114"
-        y="114"
+        height="180"
+        width="80"
+        x="110"
+        y="110"
       />
       <rect
         class="shape-dashed-outline"
-        height="188"
-        width="88"
-        x="106"
-        y="106"
+        height="192"
+        width="92"
+        x="104"
+        y="104"
       />
       <circle
         class="shape-checkmark"
@@ -35,37 +36,40 @@ exports[`rect hotspot choice > rendering > renders rect elements with given coor
         r="10"
       />
     </g>
+    
+    
   </div>
 </body>
 `;
 
-exports[`rect hotspot choice > rendering > renders text label as a checkmark if label is set  1`] = `
+exports[`rect hotspot choice > rendering > renders text label as a checkmark if label is set 1`] = `
 <body>
   <div>
     <g
       class="shape selected"
+      role="button"
       tabindex="-1"
     >
       <rect
         class="shape-outer-border"
-        height="188"
-        width="88"
-        x="106"
-        y="106"
+        height="192"
+        width="92"
+        x="104"
+        y="104"
       />
       <rect
         class="shape-inner-border"
-        height="172"
-        width="72"
-        x="114"
-        y="114"
+        height="180"
+        width="80"
+        x="110"
+        y="110"
       />
       <rect
         class="shape-dashed-outline"
-        height="188"
-        width="88"
-        x="106"
-        y="106"
+        height="192"
+        width="92"
+        x="104"
+        y="104"
       />
       <text
         class="shape-checkmark"
@@ -80,6 +84,8 @@ exports[`rect hotspot choice > rendering > renders text label as a checkmark if 
         </tspan>
       </text>
     </g>
+    
+    
   </div>
 </body>
 `;
@@ -89,8 +95,11 @@ exports[`rect hotspot choice > rendering > renders with no props 1`] = `
   <div>
     <g
       class="shape"
+      role="button"
       tabindex="-1"
     />
+    
+    
   </div>
 </body>
 `;

@@ -67,12 +67,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         <div
             class="scroll-first-child"
             use:visibilityObserver={overlayContent}
-            on:isVisible={e => (fullyScrolledUp = e.detail)} />
+            on:isVisible={e => (fullyScrolledUp = e.detail)}></div>
         <slot name="content" />
         <div
             class="scroll-last-child"
             use:visibilityObserver={overlayContent}
-            on:isVisible={e => (fullyScrolledDown = e.detail)} />
+            on:isVisible={e => (fullyScrolledDown = e.detail)}></div>
     </div>
     <footer class:shadow-top={!fullyScrolledDown}>
         <slot name="footer" />

@@ -10,46 +10,48 @@ import jwtTokenRegistry from '@oat-sa/tao-core-sdk/src/core/jwt/jwtTokenRegistry
 import { parseJwtPayload } from '@oat-sa/tao-core-sdk/src/core/jwt/jwtToken';
 import config from '../config.js';
 import DeepLinks from '../component/DeepLinks.svelte';
+import { mount, unmount } from 'svelte';
 
 export default () =>
     pageController({
         name: 'deep-links',
 
-        createJWTTokenHandler: function(sessionId) {
+        createJWTTokenHandler: function (sessionId) {
             const jwtTokenHandler = jwtTokenHandlerFactory({
                 refreshTokenUrl: urlBuilder.urlFromConfig(config.endpoints.refreshToken),
                 useCredentials: true,
                 accessTokenTTL: config.accessTokenTTL,
                 usePerTokenTTL: true,
-                refreshTokenParameters: { refreshTokenId: sessionId },
+                refreshTokenParameters: { refreshTokenId: sessionId }
             });
 
             jwtTokenRegistry.register(jwtTokenHandler);
         },
 
-        start: function({ sessionId, hideBatteries, hideDeliveries }) {
+        start: function ({ sessionId, hideBatteries, hideDeliveries }) {
             this.createJWTTokenHandler(sessionId);
 
             const jwtTokenHandler = jwtTokenRegistry.get();
 
-            jwtTokenHandler.getToken().then((token) => {
+            jwtTokenHandler.getToken().then(token => {
                 const parsedToken = parseJwtPayload(token);
-                const deepLinkingSettings = parsedToken['https://purl.imsglobal.org/spec/lti-dl/claim/deep_linking_settings'];
+                const deepLinkingSettings =
+                    parsedToken['https://purl.imsglobal.org/spec/lti-dl/claim/deep_linking_settings'];
 
-                this.deepLinksComponent = new DeepLinks({
+                this.deepLinksComponent = mount(DeepLinks, {
                     target: this.container,
                     props: {
                         isMultiSelectEnabled: deepLinkingSettings['accept_multiple'],
                         hideBatteries,
-                        hideDeliveries,
-                    },
+                        hideDeliveries
+                    }
                 });
             });
         },
 
-        stop: function() {
+        stop: function () {
             if (this.deepLinksComponent) {
-                this.deepLinksComponent.$destroy();
+                unmount(this.deepLinksComponent);
             }
         }
     });

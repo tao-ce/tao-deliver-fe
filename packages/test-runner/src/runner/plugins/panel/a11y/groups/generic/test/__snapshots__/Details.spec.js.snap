@@ -3,6 +3,7 @@
 exports[`Details > renders with slot content - collapsible 1`] = `
 <body>
   <div>
+    
     <details
       class="a11y-group"
       open=""
@@ -13,6 +14,7 @@ exports[`Details > renders with slot content - collapsible 1`] = `
         >
           The title
         </p>
+        
          
         <svg
           aria-hidden="true"
@@ -27,7 +29,9 @@ exports[`Details > renders with slot content - collapsible 1`] = `
             d="M6 0L12 6L10 8L6 4L2 8L0 6L6 0Z"
             fill="currentColor"
           />
+          
         </svg>
+        
       </summary>
        
       <div>
@@ -38,8 +42,11 @@ exports[`Details > renders with slot content - collapsible 1`] = `
         <p>
           of the content
         </p>
+        
       </div>
     </details>
+    
+    
     
   </div>
 </body>
@@ -48,6 +55,7 @@ exports[`Details > renders with slot content - collapsible 1`] = `
 exports[`Details > renders with slot content - non-collapsible 1`] = `
 <body>
   <div>
+    
     <div
       class="a11y-group"
     >
@@ -59,6 +67,7 @@ exports[`Details > renders with slot content - non-collapsible 1`] = `
         >
           The title
         </p>
+        
       </div>
        
       <p>
@@ -68,7 +77,10 @@ exports[`Details > renders with slot content - non-collapsible 1`] = `
       <p>
         of the content
       </p>
+      
     </div>
+    
+    
     
   </div>
 </body>

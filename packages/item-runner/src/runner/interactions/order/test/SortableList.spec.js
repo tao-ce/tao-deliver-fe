@@ -90,7 +90,7 @@ describe('SortableList', () => {
             expect(container).toMatchSnapshot();
         });
 
-        it('should render with max null - filled slots if selected length is less than max ', () => {
+        it('should render with max null - filled slots if selected length is less than max', () => {
             const max = 3;
             const selected = createSelected(['item0']);
             const selectedKeysLength = 1;

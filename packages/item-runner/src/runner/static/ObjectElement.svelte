@@ -46,8 +46,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     <DocumentViewer
         src={data}
         title={attributes.title}
-        width={withUnit(attributes.width) || '340px'}
-        height={withUnit(attributes.height) || '500px'}
+        width={withUnit(attributes.width) || '440px'}
+        height={withUnit(attributes.height) || '560px'}
         options={{ workerSrc: assetManager.resolve('pdf.worker.min.js') }}
         on:error={e => itemContext.getLogger().error(e.detail)}
         {...htmlAttributes(attributes, ['class', 'role'])}>

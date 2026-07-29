@@ -21,6 +21,8 @@ exports[`ResizeAnchor > rendering > renders with props 1`] = `
         y="56"
       />
     </g>
+    
+    
   </div>
 </body>
 `;

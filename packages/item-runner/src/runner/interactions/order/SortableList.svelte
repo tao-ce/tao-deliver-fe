@@ -378,6 +378,9 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
      * @returns {Boolean|void} - to prevent browser default
      */
     function handleKeyDown(event) {
+        if (disabled) {
+            return;
+        }
         const isRTL = window.getComputedStyle(event.target).getPropertyValue('direction') === 'rtl';
         const key = getActualKey(event);
         switch (key) {
@@ -754,7 +757,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     }
 
     /**
-     * @fires {CustomEvent} update event with array of selected keys
+     * @fires update {CustomEvent} update event with array of selected keys
      * @param {Boolean} controlFocus - if receiver of this event should shift focus to itself
      * @param {String} focusKey - with controlFocus, focus item with this key
      */
@@ -884,15 +887,17 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 <svelte:window on:click={handleWindowClick} on:focusin={handleWindowFocusin} />
 <p id={keyboardInfoDefaultElementId} class="hidden" lang={instructionsLang}>{keyboardInfoDefault}</p>
 <p id={keyboardInfoSortingElementId} class="hidden" lang={instructionsLang}>{keyboardInfoSorting}</p>
+<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
 <ol
     role="application"
     class="sortable-list orientation-{orientation} position-{position}"
     aria-label={__('%s, %d items', ariaLabel, selectedKeysLength)}
     style={cssStyle}
     bind:this={container}
-    on:keydown={!disabled && handleKeyDown}
+    on:keydown={handleKeyDown}
     on:focusin={handleFocusin}
     on:focusout={handleFocusout}>
+    <!-- eslint-disable-next-line no-unused-vars -->
     {#each dropAreaArray as dropArea, index (index)}
         <li>
             <div class="item-bullet">{getBullet(index)}</div>
@@ -904,7 +909,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                 on:update={handleDragUpdate}
                 on:dragOver={handleDragOver}
                 on:dragOut={handleDragOut}>
-                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
                 <div
                     class="answer-placeholder"
                     data-index={index.toString()}
@@ -945,7 +950,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                                 {__('Return %s to the unordered options').split('%s')[1]}
                             </span>
                         </DraggableListButton>
-                        <span class="focus-keeper visually-hidden" aria-hidden={true} tabindex="-1" />
+                        <span class="focus-keeper visually-hidden" aria-hidden={true} tabindex="-1"></span>
                     {/if}
                     {#if selected[index] && initialDropAreaKey === index.toString()}
                         <div class="reorder-placed-over">

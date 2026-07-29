@@ -46,8 +46,8 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     .test-runner {
         /* local vars */
         --window-height: 100vh;
-        --testrunner-header-height: 6rem;
-        --testrunner-footer-height: 10rem;
+        --testrunner-header-height: 7rem;
+        --testrunner-footer-height: 9rem;
         --testrunner-item-max-width: 170.75rem;
 
         /* this variable will be passed to itemRunner */
@@ -104,16 +104,16 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
     class="test-runner {$status || testSessionStatus.initial}"
     style={safeWindowHeight ? `--window-height:${safeWindowHeight}px;` : ''}
     bind:this={areas.testRunner}>
-    <div id="test-top-bar" class="top-bar" class:shadow-bottom={!fullyScrolledUp} bind:this={areas.topBar} />
+    <div id="test-top-bar" class="top-bar" class:shadow-bottom={!fullyScrolledUp} bind:this={areas.topBar}></div>
 
     <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
     <main id="test-main" tabindex="0" bind:this={areas.main}>
         <div
             class="scroll-first-child"
             use:visibilityObserver={areas.main || void 0}
-            on:isVisible={e => (fullyScrolledUp = e.detail)} />
+            on:isVisible={e => (fullyScrolledUp = e.detail)}></div>
 
-        <div class="qti-item-container" class:hidden-item-container={$status === 'loading'} bind:this={areas.content} />
+        <div class="qti-item-container" class:hidden-item-container={$status === 'loading'} bind:this={areas.content}></div>
 
         {#if $status === 'loading'}
             <Transition text={__('loading')} subtext={__('Please wait a little longer while your content loads')} />
@@ -122,12 +122,12 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         <div
             class="scroll-last-child"
             use:visibilityObserver={areas.main || void 0}
-            on:isVisible={e => (fullyScrolledDown = e.detail)} />
+            on:isVisible={e => (fullyScrolledDown = e.detail)}></div>
     </main>
 
     <nav
         id="test-navigation"
         class="bottom-bar do-not-read"
         class:shadow-top={!fullyScrolledDown}
-        bind:this={areas.navigation} />
+        bind:this={areas.navigation}></nav>
 </div>

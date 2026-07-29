@@ -43,13 +43,19 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
                     <path
                       d="M0 2h24v3H0zm0 8h24v3H0zm0 8h24v3H0z"
                     />
+                    
                   </svg>
+                  
                    
+                  
                    
+                  
                 </button>
-                 
+                
               </li>
+              
             </ol>
+            
              
             <div
               class="logo"
@@ -58,7 +64,9 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
                 alt="TAO Logo"
                 src="logo.svg"
               />
+              
             </div>
+            
              
             <div
               class="content"
@@ -66,6 +74,7 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
               <div
                 class="header-bar-content"
               />
+              
             </div>
           </header>
            
@@ -73,14 +82,20 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
             <ol
               class="end"
             >
+              
                
+              
             </ol>
              
             <div
               slot="aside-after"
-            />
+            >
+              
+            </div>
+            
           </aside>
         </div>
+        
       </div>
        
       <div
@@ -90,10 +105,7 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
           class="floating-toolbars"
         >
           
-           
-          <div
-            class="flex-break"
-          />
+          
           
           
            
@@ -102,9 +114,23 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
           />
           
           
+          
+          
+          
            
+          <div
+            class="flex-break"
+          />
+          
+          
+          
+          
+          
+           
+          
           
         </div>
+        
       </div>
     </div>
      
@@ -115,7 +141,10 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
         aria-label="Notifications"
         class="notification-container"
         role="log"
-      />
+      >
+        
+      </div>
+      
     </div>
      
     <main
@@ -139,7 +168,7 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
         class="test-content-columns"
       >
         <aside
-          class="not-displayed"
+          class="not-printable not-displayed"
           id="test-content-aside-start"
           role="aside"
         />
@@ -150,7 +179,7 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
         />
          
         <aside
-          class="not-displayed"
+          class="not-printable not-displayed"
           id="test-content-aside-end"
           role="aside"
         />
@@ -184,15 +213,16 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
             >
               loading
             </p>
+            
           </div>
         </div>
+        
          
-        <p
-          style="animation: __svelte_2884083938_0 500ms linear 4500ms 1 both;"
-        >
+        <p>
           Please wait a little longer while your content loads
         </p>
       </div>
+      
     </div>
      
     <nav
@@ -209,12 +239,14 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
      
     <nav
       class="item-modalfeedback-nav hidden"
-      style="--nav-height: var(--testrunner-footer-height);"
+      style="--nav-height: var(--testrunner-footer-height)"
     />
      
     <div
       class="item-hanger-wrapper not-printable"
-    />
+    >
+      
+    </div>
      
     <div
       aria-hidden="true"
@@ -226,6 +258,7 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
         <div
           slot="header"
         />
+        
       </header>
        
       <div
@@ -240,6 +273,7 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
         <div
           slot="content"
         />
+        
          
         <div
           class="scroll-last-child"
@@ -250,11 +284,14 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
         <div
           slot="footer"
         />
+        
       </footer>
     </div>
+    
   </div>
    
   <div
+    aria-hidden="true"
     class="panel close-initial inverted-color"
     id="tao-panel-123"
   >
@@ -283,12 +320,18 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
               <path
                 d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
          
+        
       </div>
        
       <div
@@ -297,9 +340,11 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
         <div
           class="panel-content use-a11y-text-styles"
         />
+        
       </div>
     </div>
   </div>
+  
    
   <div
     class="panel-wrapper use-a11y-text-styles"
@@ -310,6 +355,10 @@ exports[`QTI Export test runner behavior > renders the test layout during initia
     class="feedback-dialogs-wrapper use-a11y-text-styles"
   >
     
+    
+    
   </div>
+  
+  
 </section>
 `;

@@ -4,7 +4,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 import { hasPlaceholder, extractPlaceholderContent } from '../placeholder.js';
 
-it('check that input string contains placeholder ', () => {
+it('check that input string contains placeholder', () => {
     expect(hasPlaceholder('abc dfj')).toBe(false);
     expect(hasPlaceholder('abc {{erg}} dfj')).toBe(true);
 });

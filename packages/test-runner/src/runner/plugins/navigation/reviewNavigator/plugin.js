@@ -10,7 +10,7 @@ import OverlayHeaderBar from '../../../layout/overlay/OverlayHeaderBar.svelte';
 import TestOverviewContent from './overview/TestOverviewContent.svelte';
 import TestOverviewBottomBar from './overview/TestOverviewBottomBar.svelte';
 import { __ } from '@oat-sa-private/ui-core';
-import { tick } from 'svelte';
+import { tick, mount, unmount } from 'svelte';
 
 /**
  * the navigator plugin handles :
@@ -61,20 +61,20 @@ export default pluginFactory({
 
             const overviewTitle = __('Overview');
 
-            this.overlayHeader = new OverlayHeaderBar({
+            this.overlayHeader = mount(OverlayHeaderBar, {
                 target: headerSlot,
                 props: {
                     heading: overviewTitle.toUpperCase()
                 }
             });
-            this.overlayContent = new TestOverviewContent({
+            this.overlayContent = mount(TestOverviewContent, {
                 target: contentSlot,
                 props: {
                     serviceCallId: testConfig.serviceCallId,
                     showScore: options.review && options.review.showScore
                 }
             });
-            this.overlayFooter = new TestOverviewBottomBar({
+            this.overlayFooter = mount(TestOverviewBottomBar, {
                 target: footerSlot,
                 props: {
                     isFinalDelivery: !testConfig?.batteryContext?.nextDeliveryExecutionUrl?.length
@@ -105,13 +105,13 @@ export default pluginFactory({
          */
         this.destroyOverview = () => {
             if (this.overlayHeader) {
-                this.overlayHeader.$destroy();
+                unmount(this.overlayHeader);
             }
             if (this.overlayContent) {
-                this.overlayContent.$destroy();
+                unmount(this.overlayContent);
             }
             if (this.overlayFooter) {
-                this.overlayFooter.$destroy();
+                unmount(this.overlayFooter);
             }
             this.overlayHeader = null;
             this.overlayContent = null;
@@ -194,7 +194,7 @@ export default pluginFactory({
         const options = testRunner.getOptions();
 
         //render the navigator component
-        this.reviewNavigator = new ReviewNavigator({
+        this.reviewNavigator = mount(ReviewNavigator, {
             target: areaBroker.getNavigationArea(),
             props: {
                 serviceCallId: testConfig.serviceCallId,
@@ -242,7 +242,7 @@ export default pluginFactory({
             this.unsubscribeFromStatusChanges();
         }
         if (this.reviewNavigator) {
-            this.reviewNavigator.$destroy();
+            unmount(this.reviewNavigator);
         }
         this.destroyOverview();
     }

@@ -18,17 +18,24 @@ exports[`CustomInteraction > renders props into markup 1`] = `
       <div
         class="qti-prompt cf"
       >
+        
+        
         Some prompt
         
         
+        
       </div>
+      
        
       <div>
         <div
           class="markup"
         />
+        
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;

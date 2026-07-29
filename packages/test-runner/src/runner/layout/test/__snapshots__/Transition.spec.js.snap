@@ -23,13 +23,17 @@ exports[`Transition component > Renders correctly with no props 1`] = `
           >
             Content is loading
           </p>
+          
         </div>
       </div>
+      
        
       <p>
         
       </p>
     </div>
+    
+    
   </div>
 </body>
 `;
@@ -57,13 +61,17 @@ exports[`Transition component > Renders correctly with text & subtext 1`] = `
           >
             loading
           </p>
+          
         </div>
       </div>
+      
        
       <p>
         loady loady loady
       </p>
     </div>
+    
+    
   </div>
 </body>
 `;

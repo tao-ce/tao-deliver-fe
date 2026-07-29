@@ -96,6 +96,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 <style>
     .attachment-box {
         position: relative;
+        --overlay-box-header-height: 5.5rem;
 
         & :global(.overlay-box-header .heading-container) {
             justify-content: flex-start;
@@ -104,8 +105,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
         & :global(.overlay-box-content) {
             padding: 0;
         }
-        & .pdf-attachment :global(.document-wrapper) {
-            max-height: calc(var(--testrunner-item-container-height) - 16rem);
+        & .pdf-attachment :global(.document-viewer) {
+            --doc-viewer-height: calc(
+                var(--testrunner-item-container-height) - var(--testrunner-aside-top-padding) -
+                    var(--testrunner-aside-bottom-padding) - var(--overlay-box-header-height) - 1rem
+            );
         }
         & .image-attachment {
             max-width: 100%;
@@ -137,6 +141,7 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
                             on:pagechange
                             on:zoomchange
                             on:scrollchange
+                            on:searchchange
                             on:error />
                     </div>
                 {:else if attachment.type.toLowerCase().startsWith('image/')}

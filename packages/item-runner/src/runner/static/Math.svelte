@@ -61,10 +61,11 @@ SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 </style>
 
 {#await waitForMathJax}
-    <span />
+    <span></span>
 {:then MathJax}
     <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
     <span class:block={attributes.display === 'block'} data-serial={dataAttrs['data-serial']} tabindex="0">
+        <!-- eslint-disable-next-line svelte/no-at-html-tags -->
         {@html MathJax.mathml2svg(`<math>${attributes.mathML}</math>`).outerHTML}
     </span>
 {/await}

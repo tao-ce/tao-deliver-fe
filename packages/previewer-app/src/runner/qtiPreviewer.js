@@ -13,7 +13,7 @@ import areaBrokerFactory from '@oat-sa-private/tao-test-runner-qtinui/src/runner
 import itemRunnerFactory from 'taoItems/runner/api/itemRunner.js';
 import getAssetManager from '@oat-sa-private/tao-test-runner-qtinui/src/runner/config/assetManager.js';
 import testStoreFactory from 'taoTests/runner/testStore.js';
-import { tick } from 'svelte';
+import { tick, mount, unmount } from 'svelte';
 
 /**
  * Get the serviceCallId (the test session unique identifier)
@@ -183,7 +183,7 @@ export default {
         this.setTestSessionStatus(testSessionStatus.initial);
 
         //we prepare the layout early
-        this.testLayout = new PreviewerTestLayout({
+        this.testLayout = mount(PreviewerTestLayout, {
             target: getContainer(config),
             props: {
                 serviceCallId: getServiceCallId(config)
@@ -356,7 +356,7 @@ export default {
      */
     destroy() {
         if (this.testLayout) {
-            this.testLayout.$destroy();
+            unmount(this.testLayout);
         }
 
         if (Array.isArray(this.storeSubscriptions) && this.storeSubscriptions.length) {

@@ -53,14 +53,14 @@ describe('ResponsePanel', () => {
         Element.prototype.scroll = scrollMock;
     });
 
-    it('it renders correctly', () => {
+    it('renders correctly', () => {
         const { container } = render(ResponsePanel, {
             responses: mockResponses
         });
         expect(container).toMatchSnapshot();
     });
 
-    it('it triggers submit event', () => {
+    it('triggers submit event', () => {
         const { container, component } = render(ResponsePanel, { responses: mockResponses });
         let mockEvent = vi.fn();
         component.$on('submit', mockEvent);

@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`PreviewerHeaderBar > it renders correctly 1`] = `
+exports[`PreviewerHeaderBar > renders correctly 1`] = `
 <body>
   <div>
     <div
@@ -24,10 +24,15 @@ exports[`PreviewerHeaderBar > it renders correctly 1`] = `
             <path
               d="M1 0l7 7 7-7 1 1-7 7 7 7-1 1-7-7-7 7-1-1 7-7-7-7 1-1z"
             />
+            
           </svg>
+          
            
+          
            
+          
         </button>
+        
          
         <div
           class="item-name"
@@ -79,11 +84,16 @@ exports[`PreviewerHeaderBar > it renders correctly 1`] = `
                 fill="currentColor"
                 transform="translate(2 12)"
               />
+              
             </svg>
+            
              
+            
              
             RESPONSE PANEL
+            
           </button>
+          
         </div>
          
         <div
@@ -124,13 +134,20 @@ exports[`PreviewerHeaderBar > it renders correctly 1`] = `
                 fill="currentColor"
                 transform="translate(2 12)"
               />
+              
             </svg>
+            
              
+            
              
+            
           </button>
+          
         </div>
       </div>
     </div>
+    
+    
   </div>
 </body>
 `;

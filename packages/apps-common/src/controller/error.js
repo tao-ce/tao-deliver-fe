@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2012-2026 Open Assessment Technologies S.A.
-// Copyright (C) 2020-2024 (original work) Open Assessment Technologies SA
+// Copyright (C) 2020-2026 (original work) Open Assessment Technologies SA;
 //
 // SPDX-License-Identifier: AGPL-3.0-only OR LicenseRef-TAO-Commercial-License
 
@@ -9,6 +9,10 @@ import TheEnd from '../component/TheEnd.svelte';
 import { getErrorMessageFromError, guessMessageStructure } from '../core/error/messages.js';
 import { getLocaleFallback } from '../util/locale.js';
 import { saveErrorLog } from '../service/runner/saveErrorLog.js';
+import { endAssessment } from '../util/endAssessment.js';
+import { notifyFactory } from '../util/notify.js';
+import { mount, unmount } from 'svelte';
+import KioskError from '../core/error/KioskError.js';
 
 /**
  * Prepares error context string, for logging
@@ -48,8 +52,12 @@ export default () =>
          * @param {string} [params.lti_errorlog] - Error message to log
          * @param {string} [params.lti_locale] - User locale
          * @param {string} [params.exitUrl] - Where to redirect the user
+         * @param {string} [params.endAssessmentUrl] - Where to initiate the LtiEndAssessment flow
          * @param {string} [params.deliveryExecutionId] - optional context for any type of error
          * @param {Object} [params.jwtTokenHandler]
+         * @param {Object} [params.kioskService]
+         *
+         * @returns {Promise<void>}
          */
         async start({
             internalError,
@@ -57,8 +65,10 @@ export default () =>
             lti_errorlog,
             lti_locale,
             exitUrl,
+            endAssessmentUrl,
             deliveryExecutionId,
-            jwtTokenHandler
+            jwtTokenHandler,
+            kioskService
         } = {}) {
             const container = this.container;
 
@@ -69,6 +79,19 @@ export default () =>
 
             const itemIdentifier = internalError?.itemIdentifier;
             const errorContext = getErrorContext(itemIdentifier, deliveryExecutionId);
+
+            let iframeParentOrigin;
+            if (exitUrl) {
+                try {
+                    iframeParentOrigin = new URL(exitUrl).origin;
+                    this.notify = notifyFactory(iframeParentOrigin);
+                } catch (err) {
+                    this.logger.error(err);
+                    this.notify = () => {};
+                }
+            } else {
+                this.notify = () => {};
+            }
 
             if (lti_locale && lti_locale !== __.getLocale()) {
                 await __.setLocale(lti_locale);
@@ -83,24 +106,38 @@ export default () =>
                 retry = internalError.recoverable === true || internalError.unrecoverable === false;
 
                 errorMsg = Object.values(displayedErrorMessage).join('\n');
-                errorLog = `${internalError.message}\n${internalError.stack}`;
 
-                this.logger.error(errorLog);
+                if (internalError instanceof KioskError) {
+                    // this string is used in tao-portal, to check that error is related to the kiosk validation
+                    errorLog = 'Secure browser validation';
+                } else {
+                    errorLog = `${internalError.message}\n${internalError.stack}`;
+                }
             } else {
                 displayedErrorMessage = guessMessageStructure(errorMsg);
-
-                if (errorLog) {
-                    this.logger.error(errorLog);
-                }
             }
+
+            if (errorLog) {
+                this.logger.error(errorLog);
+            }
+            this.notify('error', { errorMsg, errorLog, recoverable: retry });
+
+            const withKioskExit = displayedErrorMessage?.withKioskExit;
 
             // recoverable errors and errors without return_url can stay within the app,
             // otherwise should redirect to external page
-            const withExitUrlRedirect = Boolean(!retry && exitUrl);
+            const withExitUrlRedirect = Boolean(!retry && (exitUrl || endAssessmentUrl) && !withKioskExit);
 
-            this.theEndComponent = new TheEnd({
+            this.theEndComponent = mount(TheEnd, {
                 target: container,
                 props: Object.assign({ retry, withExitUrlRedirect }, displayedErrorMessage)
+            });
+            this.theEndComponent.$on('click', () => {
+                if (withKioskExit) {
+                    kioskService.exit();
+                } else {
+                    window.location.reload();
+                }
             });
 
             if (errorLog && this.config?.errorLog?.saveEnabled) {
@@ -119,7 +156,7 @@ export default () =>
             if (withExitUrlRedirect) {
                 // param length must be limited in case external page can't handle it
                 const maxLength = this.config?.exitPageParams?.lti_errorlog?.maxLength;
-                if (typeof maxLength === 'number') {
+                if (errorLog && typeof maxLength === 'number') {
                     errorLog = errorLog.slice(0, maxLength - errorContext.length);
                 }
 
@@ -127,14 +164,14 @@ export default () =>
                 exitUrlEntity.searchParams.append('lti_errormsg', errorMsg);
                 exitUrlEntity.searchParams.append('lti_errorlog', `${errorLog}\n${errorContext}`);
 
-                // redirect to error page, if LTI return_url claim is defined and error is not recoverable
-                window.location.replace(exitUrlEntity);
+                return endAssessment({ jwtTokenHandler, exitUrl: exitUrlEntity.toString(), endAssessmentUrl });
             }
         },
 
         stop() {
             if (this.theEndComponent) {
-                this.theEndComponent.$destroy();
+                unmount(this.theEndComponent);
+                this.theEndComponent = null;
             }
         }
     });

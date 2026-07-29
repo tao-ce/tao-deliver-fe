@@ -7,7 +7,12 @@ exports[`ChoiceFeedbackBlock > renders empty element when no message string 1`] 
 >
   <div
     class="qti-instruction-container"
-  />
+    dir=""
+  >
+    
+  </div>
+  
+  
 </div>
 `;
 
@@ -18,18 +23,23 @@ exports[`ChoiceFeedbackBlock > renders invalid feedback correctly 1`] = `
 >
   <div
     class="qti-instruction-container"
+    dir=""
   >
     <div
       aria-atomic="true"
       class="feedback warning fullwidth"
       role="alert"
     >
+      
        
       <p>
         You must make exactly 2 associations - Currently 1
       </p>
     </div>
+    
   </div>
+  
+  
 </div>
 `;
 
@@ -40,17 +50,22 @@ exports[`ChoiceFeedbackBlock > renders valid feedback correctly 1`] = `
 >
   <div
     class="qti-instruction-container"
+    dir=""
   >
     <div
       aria-atomic="true"
       class="feedback info fullwidth"
       role="status"
     >
+      
        
       <p>
         You must pick a maximum of 1 choice - Currently 1
       </p>
     </div>
+    
   </div>
+  
+  
 </div>
 `;

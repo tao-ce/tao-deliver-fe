@@ -22,10 +22,15 @@ exports[`Stepper > renders minus/plus buttons 1`] = `
           <path
             d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
           />
+          
         </svg>
+        
          
+        
          
+        
       </button>
+      
        
       <button
         aria-label="a little less"
@@ -43,11 +48,18 @@ exports[`Stepper > renders minus/plus buttons 1`] = `
           <path
             d="M0 7h16v2H0z"
           />
+          
         </svg>
+        
          
+        
          
+        
       </button>
+      
     </span>
+    
+    
   </div>
 </body>
 `;
@@ -75,10 +87,15 @@ exports[`Stepper > renders when max value 1`] = `
           <path
             d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
           />
+          
         </svg>
+        
          
+        
          
+        
       </button>
+      
        
       <button
         aria-label="a little less"
@@ -96,11 +113,18 @@ exports[`Stepper > renders when max value 1`] = `
           <path
             d="M0 7h16v2H0z"
           />
+          
         </svg>
+        
          
+        
          
+        
       </button>
+      
     </span>
+    
+    
   </div>
 </body>
 `;
@@ -127,10 +151,15 @@ exports[`Stepper > renders when min value 1`] = `
           <path
             d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7z"
           />
+          
         </svg>
+        
          
+        
          
+        
       </button>
+      
        
       <button
         aria-disabled="true"
@@ -149,11 +178,18 @@ exports[`Stepper > renders when min value 1`] = `
           <path
             d="M0 7h16v2H0z"
           />
+          
         </svg>
+        
          
+        
          
+        
       </button>
+      
     </span>
+    
+    
   </div>
 </body>
 `;
